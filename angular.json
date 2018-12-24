@@ -17,7 +17,7 @@
           "spec": false
         },
         "@schematics/angular:directive": {
-          "spec": false
+        "spec": false
         },
         "@schematics/angular:guard": {
           "spec": false
@@ -46,8 +46,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/scss/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss"
+              ]
+            },
             "scripts": []
           },
           "configurations": {

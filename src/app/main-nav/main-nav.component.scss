@@ -1,0 +1,116 @@
+@import 'orc_ws_colors';
+
+$header-margin: 31px; // (header_ht - logo_ht) / 2;
+
+/* desktop-version header */
+#header {
+  min-height: 170px;
+  background-color: $orc-ws-background;
+
+  .header-logo {
+    padding: $header-margin;
+    float: left;
+
+    img {
+      height: 108px; // redundant -- "native" size
+    }
+  }
+
+  nav {
+    float: right;
+
+    > div {
+      padding: $header-margin $header-margin $header-margin 0;
+      display: inline-block;
+      text-transform: uppercase;
+
+      > a {
+        color: $orc-ws-font-color;
+        text-decoration: none;
+        font-size: 16px;
+        letter-spacing: 0.71px;
+        padding-bottom: 12px;
+      }
+
+      &.active-link a {
+        border-bottom: 4px solid $orc-ws-purple-primary;
+
+      }
+    }
+  }
+
+}
+
+/* desktop version footer */
+#footer {
+  font-size: 16px;
+
+  min-height: 321px;
+  background-color: $orc-ws-background;
+  position: relative;
+  z-index: 0;
+
+  .footer-content-container {
+    display: flex;
+    padding-top: 84px;
+    z-index: 10;
+
+    .footer-logo {
+      width: 50%;
+
+      > div {
+        padding-left: 184px;
+
+        .footer-copyright {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    nav.footer-links {
+      width: 20%;
+
+      > a {
+        display: block;
+        text-decoration: none;
+        margin-bottom: 7px;
+      }
+    }
+
+    .footer-social {
+      width: 30%;
+
+      .footer-social-follow {
+        margin-bottom: 16px;
+      }
+
+      a {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  .coral-background {
+    position: absolute;
+    bottom: 0;
+    left: 30px;
+    z-index: -10;
+
+    > img {
+      position: absolute;
+      bottom: 0;
+
+      &.coral-real {
+        left: 109px;
+      }
+    }
+  }
+
+  .fish-background {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: -10;
+  }
+
+}

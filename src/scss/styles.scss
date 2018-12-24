@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'orc_ws_colors';
+
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Noto Sans', sans-serif;
+  color: $orc-ws-font-color;
+}
