@@ -1,16 +1,30 @@
 <div id="header">
   <div class="header-logo">
     <a routerLink="/" aria-label="Home">
-    <img src="/assets/imgs/orchid-logo.svg" alt="Orchid logo" class="logo">
+    <img src="/assets/imgs/orchid-logo.svg" alt="Orchid logo" class="logo hide-small">
+    <img src="/assets/imgs/orchid-logo-small.svg" alt="Orchid logo" class="logo hide-large">
     </a>
   </div>
-  
   
   <nav>
       <div routerLinkActive="active-link"><a class="" routerLink="/what-is-orchid">What is Orchid</a></div>
       <div routerLinkActive="active-link"><a class="" routerLink="/why-orchid">Why Orchid</a></div>
       <div routerLinkActive="active-link"><a class="" routerLink="/dev-resources">Dev resources</a></div>
   </nav>
+  
+  <div class="hide-large hamburger" (click)="menuOpened = !menuOpened">
+    <img src="/assets/imgs/hamburger.svg">
+  </div>
+</div>
+
+<div id="hamburger-menu" *ngIf="menuOpened" [@menuSlideOpen]>
+  <div role="button" aria-label="Close menu" (click)="menuOpened = !menuOpened">
+    <img src="/assets/imgs/close-x.svg" aria-hidden="true">
+  </div>
+  
+  <div routerLinkActive="active-link"><a class="" routerLink="/what-is-orchid">What is Orchid</a></div>
+  <div routerLinkActive="active-link"><a class="" routerLink="/why-orchid">Why Orchid</a></div>
+  <div routerLinkActive="active-link"><a class="" routerLink="/dev-resources">Dev resources</a></div>
 </div>
 
 <router-outlet></router-outlet>
@@ -18,11 +32,12 @@
 <div id="footer">
   <div class="coral-background">
     <img class="coral-electric" src="assets/imgs/coral-electric.svg">
-    <img class="coral-real" src="assets/imgs/coral-real.svg">
+    <img class="coral-naturalistic hide-small" src="assets/imgs/coral-real.svg">
+    <img class="coral-naturalistic hide-large" src="assets/imgs/coral-naturalistic-small.svg">
   </div>
   
   <div class="fish-background">
-    <img class="coral-real" src="assets/imgs/footer-fish.svg">
+    <img src="assets/imgs/footer-fish.svg">
   </div>
   
   <div class="footer-content-container">
@@ -40,13 +55,13 @@
       <a routerLink="/">Orchid</a>
       <a routerLink="/what-is-orchid">What is Orchid</a>
       <a routerLink="/why-orchid">Why Orchid</a>
-      <a routerLink="/dev-resources">Developer resources</a>
+      <a routerLink="/dev-resources">Developer Resources</a>
       <a routerLink="/privacy-policy">Privacy Policy</a>
       <a routerLink="/jobs">Jobs</a>
     </nav>
     
     <div class="footer-social">
-      <div class="footer-social-follow">Follow Us</div>
+      <div class="footer-social-follow hide-small">Follow Us</div>
       <div>
         <a href="" aria-label="Follow on Facebook">
           <img src="assets/imgs/social-facebook.svg">

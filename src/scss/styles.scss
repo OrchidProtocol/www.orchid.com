@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'orc_ws_colors';
+@import 'media_queries';
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
 
@@ -10,4 +11,16 @@ body {
 * {
   font-family: 'Noto Sans', sans-serif;
   color: $orc-ws-font-color;
+}
+
+.hide-large {
+  @include large-screen {
+    display: none !important;
+  }
+}
+
+.hide-small {
+  @include small-screen {
+    display: none !important;
+  }
 }
