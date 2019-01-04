@@ -7,16 +7,18 @@ $header-margin-small: 20px;
 #header {
   background-color: $orc-ws-background;
 
+  > div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
   /* desktop-version header */
   @include large-screen {
     min-height: 170px;
 
     .header-logo {
       padding: $header-margin;
-      position: absolute;
-      left: 0;
-      top: 0;
-      // float: left;
 
       img.logo {
         height: 108px; // redundant -- "native" size
@@ -150,7 +152,7 @@ $header-margin-small: 20px;
     }
 
     .coral-background {
-      left: 30px;
+      left: 132px;
 
       > img {
         &.coral-naturalistic {
@@ -161,7 +163,7 @@ $header-margin-small: 20px;
 
     .fish-background {
       top: 40px;
-      right: 40px;
+      right: 146px;
     }
   }
 

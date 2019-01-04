@@ -46,3 +46,15 @@ h3 {
     display: none !important;
   }
 }
+
+/**
+ * top-level class to be used to center and limit the width of site content
+ */
+.centered-container {
+  width: 100%;
+
+  > * {
+    max-width: $max-width;
+    margin: auto;
+  }
+}
