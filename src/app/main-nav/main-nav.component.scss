@@ -13,7 +13,10 @@ $header-margin-small: 20px;
 
     .header-logo {
       padding: $header-margin;
-      float: left;
+      position: absolute;
+      left: 0;
+      top: 0;
+      // float: left;
 
       img.logo {
         height: 108px; // redundant -- "native" size

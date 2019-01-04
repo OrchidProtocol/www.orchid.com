@@ -1,0 +1,74 @@
+@import 'orc_ws_colors';
+@import 'media_queries';
+
+$padding-wide: 80px;
+$padding-narrow: 20px;
+
+#orchid-is-natural {
+  background-color: $orc-ws-background;
+  display: flex;
+
+  @include large-screen {
+    flex-direction: row;
+
+    > div {
+      width: 50%;
+    }
+
+    .orchid-is-natural-text {
+      padding: $padding-wide;
+    }
+
+    .orchid-is-natural-img {
+      /* shift the image to the right a bit */
+      img {
+        width: calc(100% + #{$padding-wide});
+        position: relative;
+        right: $padding-wide;
+      }
+    }
+  }
+
+  @include small-screen {
+    flex-direction: column-reverse;
+
+    > div {
+      padding: $padding-narrow;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+    }
+
+    .orchid-is-natural-text {}
+
+    .orchid-is-natural-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+#features-of-orchid {
+  display: flex;
+
+  > div {
+    text-align: center;
+    box-sizing: border-box;
+  }
+  @include large-screen {
+    > div {
+      width: 33.3%;
+    }
+  }
+
+  @include small-screen {
+    flex-direction: column;
+
+    > div {
+      width: 100%;
+      padding: 25px;
+    }
+
+  }
+}

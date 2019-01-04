@@ -1,3 +1,5 @@
+/* Content should not be wider than $max-width */
+$max-width: 1440px;
 $small-screen-max-size: 800px;
 @mixin small-screen {
   @media (max-width: $small-screen-max-size) {

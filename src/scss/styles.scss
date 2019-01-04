@@ -1,8 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'orc_ws_colors';
+@import 'orc_buttons';
 @import 'media_queries';
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 body {
   margin: 0;
@@ -11,6 +13,26 @@ body {
 * {
   font-family: 'Noto Sans', sans-serif;
   color: $orc-ws-font-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Baloo', cursive;
+  color: $orc-ws-font-color;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
+h3 {
+  color: $orc-ws-purple;
+  font-size: 26px;
 }
 
 .hide-large {

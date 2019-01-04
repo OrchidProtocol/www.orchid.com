@@ -22,9 +22,15 @@
     <img src="/assets/imgs/close-x.svg" aria-hidden="true">
   </div>
   
-  <div routerLinkActive="active-link"><a class="" routerLink="/what-is-orchid">What is Orchid</a></div>
-  <div routerLinkActive="active-link"><a class="" routerLink="/why-orchid">Why Orchid</a></div>
-  <div routerLinkActive="active-link"><a class="" routerLink="/dev-resources">Dev resources</a></div>
+  <div routerLinkActive="active-link">
+    <a class="" routerLink="/what-is-orchid" (click)="menuOpened = !menuOpened">What is Orchid</a>
+  </div>
+  <div routerLinkActive="active-link">
+    <a class="" routerLink="/why-orchid" (click)="menuOpened = !menuOpened">Why Orchid</a>
+  </div>
+  <div routerLinkActive="active-link">
+    <a class="" routerLink="/dev-resources" (click)="menuOpened = !menuOpened">Dev Resources</a>
+  </div>
 </div>
 
 <router-outlet></router-outlet>
