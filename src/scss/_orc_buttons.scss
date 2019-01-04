@@ -1,22 +1,40 @@
+@import 'media_queries';
+/* Maybe this is used for more than buttons? */
+$button-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.30);
+
 .orc-btn {
-  height: 44px;
   border-radius: 100px;
+  text-align: center;
+
+  @include large-screen {
+    height: 62px;
+    font-size: 24px;
+  }
+  @include small-screen {
+    height: 44px;
+    font-size: 18px;
+  }
 }
 
 .orc-btn-primary {
   background-color: $orc-ws-purple;
-  box-shadow: 0 1px 4px 0 rgba(0,0,0,0.30);
-  font-size: 24px;
-  color: #FFFFFF;
-  text-align: center;
+  box-shadow: $button-box-shadow;
+  color: white;
+
+  &:active {
+    background-color: $orc-ws-purple-active;
+  }
 }
 
 .orc-btn-secondary {
   background-color: white;
-  border: 1px solid $orc-ws-purple;
-  border: 2px solid rgba(95,69,186,0.98);
-  font-size: 18px;
+  border: 2px solid $orc-ws-purple;
+  color: $orc-ws-purple;
+
+  box-shadow: $button-box-shadow;
 
   &:active {
-    }
+    border-color: $orc-ws-purple-active;
+    color: $orc-ws-purple-active;
+  }
 }
