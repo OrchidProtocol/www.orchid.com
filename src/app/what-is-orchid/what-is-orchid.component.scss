@@ -1,0 +1,44 @@
+@import 'orc_ws_colors';
+@import 'media_queries';
+
+#orchid-is-a-habitat {
+  background-color: $orc-ws-background;
+}
+
+.feature-pairs {
+  @include large-screen {
+    margin: 0 100px;
+  }
+
+  .fp-pair {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    margin: 100px 0;
+
+    @include small-screen {
+      flex-flow: column nowrap;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 40px;
+    }
+  }
+
+  @include large-screen {
+    .fp-rtl {
+      flex-flow: row-reverse nowrap;
+    }
+  }
+
+  .fp-text {
+    flex: 1 1 auto;
+    margin: 0 100px;
+  }
+
+  .fp-image {
+    flex: 0 0 auto;
+  }
+}

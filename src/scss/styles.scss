@@ -3,12 +3,14 @@
 @import 'orc_buttons';
 @import 'forms';
 @import 'media_queries';
+@import 'metrics';
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Baloo');
 
 body {
   margin: 0;
+  background: $orc-ws-background-base;
 }
 
 * {
@@ -18,13 +20,13 @@ body {
   @include small-screen {
     font-size: 14px;
     letter-spacing: 0;
-    line-height: 23px;
+    line-height: (23em / 14);
   }
 
   @include large-screen {
     font-size: 20px;
     letter-spacing: 0;
-    line-height: 30px;
+    line-height: (30em / 20);
   }
 }
 
@@ -35,7 +37,16 @@ h4,
 h5,
 h6 {
   font-family: 'Baloo', cursive;
+  font-weight: 400; // TODO: there might be a better way to prevent the use of synthetic bold
   color: $orc-ws-font-color;
+}
+
+// TODO: the header sizes are wrong
+
+h1 {
+  font-size: 64px;
+  line-height: 0.91;
+  margin: 20px 0;
 }
 
 h2 {
@@ -69,5 +80,36 @@ h3 {
   > * {
     max-width: $max-width;
     margin: auto;
+  }
+}
+
+// For the top-level splash, with text on the left and an image on the right
+.header-splash {
+  display: flex;
+  flex-flow: row nowrap;
+
+  .hs-text, .hs-image {
+    width: 50%;
+  }
+
+  .hs-text {
+    padding: $padding-wide;
+  }
+
+  @include small-screen {
+    flex-flow: column-reverse nowrap;
+
+    .hs-text, .hs-image {
+      padding: $padding-narrow;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+    }
+
+    .hs-image {
+      img {
+        width: 100%;
+      }
+    }
   }
 }

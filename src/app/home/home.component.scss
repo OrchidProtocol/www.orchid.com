@@ -1,8 +1,6 @@
 @import 'orc_ws_colors';
 @import 'media_queries';
-
-$padding-wide: 80px;
-$padding-narrow: 60px 25px;
+@import 'metrics';
 
 button {
   display: block;
@@ -17,50 +15,18 @@ button {
 
 #orchid-is-natural {
   background-color: $orc-ws-background;
+}
 
-  > div {
-    display: flex;
-
+.header-splash {
+  .hs-image {
     @include large-screen {
-      flex-direction: row;
-
-      > div {
-        width: 50%;
-      }
-
-      .orchid-is-natural-text {
-        padding: $padding-wide;
-      }
-
-      .orchid-is-natural-img {
-        /* shift the image to the right a bit */
-        img {
-          width: calc(100% + #{$padding-wide});
-          position: relative;
-          right: $padding-wide;
-        }
+      /* shift the image to the right a bit */
+      img {
+        width: calc(100% + #{$padding-wide});
+        position: relative;
+        right: $padding-wide;
       }
     }
-
-    @include small-screen {
-      flex-direction: column-reverse;
-
-      > div {
-        padding: $padding-narrow;
-        box-sizing: border-box;
-        width: 100%;
-        text-align: center;
-      }
-
-      .orchid-is-natural-text {}
-
-      .orchid-is-natural-img {
-        img {
-          width: 100%;
-        }
-      }
-    }
-
   }
 }
 
