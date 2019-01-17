@@ -1,10 +1,6 @@
 @import 'orc_ws_colors';
 @import 'media_queries';
 
-#orchid-is-a-habitat {
-  background-color: $orc-ws-background;
-}
-
 .feature-pairs {
   @include large-screen {
     margin: 0 100px;

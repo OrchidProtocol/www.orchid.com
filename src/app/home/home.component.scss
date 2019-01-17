@@ -13,10 +13,6 @@ button {
   }
 }
 
-#orchid-is-natural {
-  background-color: $orc-ws-background;
-}
-
 .header-splash {
   .hs-image {
     @include large-screen {
@@ -76,8 +72,6 @@ button {
 }
 
 #what-do-you-want-to-build {
-  background-color: $orc-ws-light-lbackground;
-
   > div {
     max-width: 1110px;
 
