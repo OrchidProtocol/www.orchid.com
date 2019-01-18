@@ -1,5 +1,5 @@
 #splash-text {
-  margin: 0 -1.5rem 0 0;
+  margin: 0 -1rem 0 0;
   z-index: 1;
 }
 
@@ -7,12 +7,20 @@
   $feature-sep: 1rem;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   text-align: center;
   margin: ($feature-sep / -2.0);
 
   > li {
+    flex: 1 1 10rem;
     margin: ($feature-sep / 2.0);
   }
 }
+
+#signup-columns {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// TODO: fix layout of signup columns

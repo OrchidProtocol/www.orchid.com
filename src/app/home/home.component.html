@@ -18,8 +18,8 @@
 </div>
 
 <div class="section-root">
-  <section id="features" class="section-wide">
-    <header>
+  <section id="features" class="section-wide vpad-wide">
+    <header class="gap-bot-wide">
       <h1 class="center-text">Features of Orchid</h1>
     </header>
     <ul id="feature-list" class="phantom-list">
@@ -45,16 +45,17 @@
         <p>Build with efficient, decentralized infrastructure made stronger with use</p>
       </li>
     </ul>
-    <button class="center-block">Learn more</button>
+    <!-- #feature-list has a custom margin, so just pad the top of the next element -->
+    <button class="btn-primary center-block gap-top-wide">Learn more</button>
   </section>
 </div>
 
-<div class="section-root">
-  <section id="signup" class="section-wide">
-    <header>
-      <h1>What do you want to build with Orchid?</h1>
+<div class="section-root bk-lavender">
+  <section id="signup" class="section-wide vpad-wide">
+    <header class="gap-bot-wide">
+      <h1 class="center-text">What do you want to build with Orchid?</h1>
     </header>
-    <div id="signup-columns">
+    <div id="signup-columns" class="gap-bot-wide">
       <div>
         <h1>Join us!</h1>
         <p>
@@ -62,9 +63,19 @@
         </p>
       </div>
       <div>
-        TODO
+        <p class="required-star">required fields</p>
+        <div class="required-input">
+          <input type="email" class="required" placeholder="Email Address">
+        </div>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        <input type="tel" placeholder="Phone Number">
+        <p>What are you excited about?</p>
+        <div class="required-input">
+          <input type="text" class="required" placeholder="Share your thoughts with us">
+        </div>
       </div>
     </div>
-    <button class="center-block">Let's go!</button>
+    <button class="btn-primary center-block">Let's go!</button>
   </section>
 </div>

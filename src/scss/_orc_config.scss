@@ -1,6 +1,7 @@
 // Primary
 $orc-purple:        #5f45ba;
 $orc-purple-active: #856ed2; // NB: color-picked from sample button in playbook
+$orc-purple-hover:  mix($orc-purple, $orc-purple-active, 50%); // Arbitrary
 
 // Secondary
 $orc-purple-bright: #b88dfc;

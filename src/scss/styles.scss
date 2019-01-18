@@ -3,12 +3,15 @@
 @import 'orc_config';
 @import 'orc_fonts';
 
+$pad-wide: 4rem;
+
 // Element-specific config
 
 :root {
   background: $background;
-  font-size: $orc-b1-size;
+  font-size: 16px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
+  color: $orc-rock-gray;
 
   @include mobile {
     font-size: $orc-b2-size;
@@ -18,6 +21,10 @@
 :root, html, body {
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-size: $orc-b1-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -35,10 +42,8 @@ p {
 
 main {
   p {
-    margin: 0 0 1rem;
-
-    &:last-child {
-      margin-bottom: 0;
+    &:not(:last-child) {
+      margin: 0 0 1rem;
     }
   }
 }
@@ -51,7 +56,7 @@ main {
     ".    image"
     "text image"
     ".    image";
-  padding: 0 0 1rem;
+  padding: 0 0 $pad-wide;
 }
 
 #splash-image {
@@ -68,6 +73,108 @@ main {
 
 #splash-text {
   grid-area: text;
+}
+
+// Forms
+
+$border-w: 3px;
+
+button {
+  $pad-h: 2em;
+  $pad-v: 0.25em;
+
+  transition-property: background, border, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  padding: $pad-v $pad-h;
+  box-sizing: border-box;
+  min-width: 15rem;
+  border: 0;
+  border-radius: 100vmax;
+  font: inherit;
+  font-size: $orc-b2-size;
+  line-height: inherit;
+  box-shadow: mat-shadow(6px);
+
+  &:hover {
+    box-shadow: mat-shadow(8px);
+  }
+
+  &:active {
+    transition-duration: 0s;
+    box-shadow: mat-shadow(2px);
+  }
+
+  &.btn-primary {
+    background: $orc-purple;
+    color: $orc-beige-light;
+
+    &:hover {
+      background: $orc-purple-hover;
+    }
+
+    &:active {
+      background: $orc-purple-active;
+    }
+  }
+
+  &.btn-secondary {
+    background: none;
+    background-color: inherit;
+    border: solid $border-w $orc-purple;
+    padding: calc(#{$pad-v} - #{$border-w}) calc(#{$pad-h} - #{$border-w});
+    color: $orc-rock-gray;
+
+    &:hover {
+      border-color: $orc-purple-hover;
+    }
+
+    &:active {
+      border-color: $orc-purple-active;
+    }
+  }
+}
+
+.required-star::before {
+  content: "*"; // TODO: find a better character
+  color: $orc-purple;
+  font-weight: 700;
+}
+
+.required-input {
+  display: inline-block;
+  position: relative;
+}
+
+.required-input::after {
+  @extend .required-star::before;
+  position: absolute;
+  right: 0.5rem;
+}
+
+input {
+  $pad-h: 1em;
+  $pad-v: 0.25em;
+
+  &[type=email],
+  &[type=tel],
+  &[type=text] {
+    padding: calc(0.25em - #{$border-w}) calc(1em - #{$border-w});
+    box-sizing: border-box;
+    min-width: 20rem;
+    background: none;
+    background-color: inherit;
+    border: 3px solid $orc-gray;
+    border-radius: 100vmax;
+    font: inherit;
+    font-size: $orc-b2-size;
+    color: $orc-rock-gray;
+    line-height: inherit;
+
+    &:focus {
+      border-color: $orc-purple;
+    }
+  }
 }
 
 // Misc. helpers
@@ -114,10 +221,31 @@ main {
   max-width: 1440px;
 }
 
+.vpad-wide {
+  padding-top: $pad-wide;
+  padding-bottom: $pad-wide;
+}
+
+.gap-bot-wide {
+  margin-bottom: $pad-wide;
+}
+
+.gap-top-wide {
+  margin-top: $pad-wide;
+}
+
 // Background colors
 
 .bk-beige-light {
   background: $orc-beige-light;
+}
+
+.bk-faint-gray {
+  background: $bkgd-faint-gray;
+}
+
+.bk-lavender {
+  background: $bkgd-lavender;
 }
 
 @include mobile {

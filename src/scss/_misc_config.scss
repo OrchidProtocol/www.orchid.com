@@ -1,3 +1,13 @@
 // This file is for config taken from the site design, not the playbook
 
 $background: #fff;
+
+// NB: color-picked from site design
+$bkgd-lavender:   #f3f4f9;
+$bkgd-faint-gray: #fbfbf9;
+
+@function mat-shadow($size, $alpha: 0.4, $inset: false) {
+  $half: $size / 2.0;
+  $inset-str: if($inset, " inset", "");
+  @return unquote("0 #{$half} #{$size} #{rgba(black, $alpha)}#{$inset-str}, 0 0 #{$half} #{rgba(black, $alpha / 2.0)}#{$inset-str}");
+}

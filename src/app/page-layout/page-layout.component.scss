@@ -6,7 +6,6 @@
   align-items: center;
   padding: 1rem 0;
   font-size: $orc-f1-size;
-  text-transform: uppercase;
 }
 
 #nav-home {
@@ -26,14 +25,17 @@
 
   > li {
     padding: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
 
     &.active-link {
-      font-weight: 700;
+      color: $orc-purple;
     }
   }
 }
 
 #footer {
+  padding: 1rem 0;
   font-size: $orc-f1-size;
 }
 
