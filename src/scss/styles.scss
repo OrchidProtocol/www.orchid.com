@@ -1,123 +1,133 @@
-/* You can add global styles to this file, and also import other style files */
-@import 'orc_ws_colors';
-@import 'orc_buttons';
-@import 'forms';
 @import 'media_queries';
-@import 'metrics';
+@import 'misc_config';
+@import 'orc_config';
+@import 'orc_fonts';
 
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700');
-@import url('https://fonts.googleapis.com/css?family=Baloo');
+// Element-specific config
 
-body {
+:root {
+  background: $background;
+  font-size: $orc-b1-size;
+  font-family: $orc-tf-secondary;
+
+  @include mobile {
+    font-size: $orc-b2-size;
+  }
+}
+
+:root, html, body {
   margin: 0;
-  background: $orc-ws-background-base;
+  padding: 0;
 }
 
-* {
-  font-family: 'Noto Sans', sans-serif;
-  color: $orc-ws-font-color;
-
-  @include small-screen {
-    font-size: 14px;
-    letter-spacing: 0;
-    line-height: (23em / 14);
-  }
-
-  @include large-screen {
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: (30em / 20);
-  }
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-family: $orc-tf-primary;
+  font-weight: 700;
+  font-synthesis: none; // Prevent faux bold with Baloo
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Baloo', cursive;
-  font-weight: 400; // TODO: there might be a better way to prevent the use of synthetic bold
-  color: $orc-ws-font-color;
+p {
+  margin: 0;
+  padding: 0;
 }
 
-// TODO: the header sizes are wrong
+main {
+  p {
+    margin: 0 0 1rem;
 
-h1 {
-  font-size: 64px;
-  line-height: 0.91;
-  margin: 20px 0;
-}
-
-h2 {
-  text-align: center;
-  font-size: 26px;
-}
-
-h3 {
-  color: $orc-ws-purple;
-  font-size: 26px;
-}
-
-.hide-large {
-  @include large-screen {
-    display: none !important;
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 
-.hide-small {
-  @include small-screen {
-    display: none !important;
-  }
+#splash {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    ".    image"
+    "text image"
+    ".    image";
+  padding: 0 0 1rem;
 }
 
-/**
- * top-level class to be used to center and limit the width of site content
- */
-.centered-container {
-  width: 100%;
-
-  > * {
-    max-width: $max-width;
-    margin: auto;
-  }
-}
-
-// For the top-level splash, with text on the left and an image on the right
-.header-splash {
+#splash-image {
+  grid-area: image;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 
-  .hs-text, .hs-image {
-    width: 50%;
-  }
-
-  .hs-text {
-    padding: $padding-wide;
-  }
-
-  @include small-screen {
-    flex-flow: column-reverse nowrap;
-
-    .hs-text, .hs-image {
-      padding: $padding-narrow;
-      box-sizing: border-box;
-      width: 100%;
-      text-align: center;
-    }
-
-    .hs-image {
-      img {
-        width: 100%;
-      }
-    }
+  > img {
+    width: 100%;
   }
 }
 
-.orc-bk {
-  background-color: $orc-ws-background;
+#splash-text {
+  grid-area: text;
 }
 
-.orc-bk-light {
-  background-color: $orc-ws-light-lbackground;
+// Misc. helpers
+
+.inline-block {
+  display: inline-block;
+}
+
+.center-block {
+  display: block;
+  margin: auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.phantom-a {
+  &, &:active, &:visited {
+    color: inherit;
+    text-decoration: inherit;
+  }
+}
+
+.phantom-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Layout elements
+
+.section-root {
+  padding: 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.section-wide, .section-narrow {
+  margin: auto;
+}
+
+.section-wide {
+  max-width: 1440px;
+}
+
+// Background colors
+
+.bk-beige-light {
+  background: $orc-beige-light;
+}
+
+@include mobile {
+  .no-mobile {
+    display: none;
+  }
+}
+
+@include not-mobile {
+  .mobile-only {
+    display: none;
+  }
 }

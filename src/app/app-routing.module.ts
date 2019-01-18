@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { MainNavComponent } from './main-nav/main-nav.component';
 import { HomeComponent } from './home/home.component';
 import { WhatIsOrchidComponent } from './what-is-orchid/what-is-orchid.component';
 import { WhyOrchidComponent } from './why-orchid/why-orchid.component';
 import { DevResourcesComponent } from './dev-resources/dev-resources.component';
+import { PageLayoutComponent } from './page-layout/page-layout.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: MainNavComponent,
+    component: PageLayoutComponent,
     children: [
       {
         path: '',

@@ -1,137 +1,18 @@
-@import 'orc_ws_colors';
-@import 'media_queries';
-@import 'metrics';
-
-button {
-  display: block;
-  margin: auto;
-  @include large-screen {
-    width: 308px;
-  }
-  @include small-screen {
-    width: 180px;
-  }
+#splash-text {
+  margin: 0 -1.5rem 0 0;
+  z-index: 1;
 }
 
-.header-splash {
-  .hs-image {
-    @include large-screen {
-      /* shift the image to the right a bit */
-      img {
-        width: calc(100% + #{$padding-wide});
-        position: relative;
-        right: $padding-wide;
-      }
-    }
-  }
-}
+#feature-list {
+  $feature-sep: 1rem;
 
-.triptych {
   display: flex;
-
-  > div {
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  @include large-screen {
-    > div {
-      width: 33.3%;
-      padding: 60px; // random number
-    }
-  }
-  @include small-screen {
-    flex-direction: column;
-
-    > div {
-      max-width: 300px;
-      margin: auto;
-      padding: 25px;
-    }
-  }
-}
-
-#features-of-orchid {
+  flex-flow: row nowrap;
+  justify-content: center;
   text-align: center;
+  margin: ($feature-sep / -2.0);
 
-  h2 {
-    margin-top: 0;
-  }
-
-  @include large-screen {
-    > div {
-      padding: 100px 0;
-    }
-  }
-
-  @include small-screen {
-    > div {
-      padding: 60px 0;
-    }
-  }
-}
-
-#what-do-you-want-to-build {
-  > div {
-    max-width: 1110px;
-
-    h2 {
-      margin: auto;
-      max-width: 310px;
-    }
-
-    .join-form {
-      display: flex;
-
-      > div {
-        box-sizing: border-box;
-      }
-
-      .required-fields {
-        text-align: right;
-        font-style: italic;
-        padding-bottom: 10px;
-        padding-right: 25px;
-        font-size: 14px;
-        color: rgba(114,114,114,0.50); // ???
-      }
-
-      .required-star {
-        color: $orc-ws-purple;
-      }
-
-      input {
-        width: 100%;
-        box-sizing: border-box;
-      }
-
-    }
-    @include large-screen {
-      .join-form {
-        flex-direction: row;
-
-        > div {
-          width: 50%;
-          padding: 75px;
-        }
-      }
-
-      padding: 90px 0;
-    }
-
-    @include small-screen {
-      padding: $padding-narrow;
-
-      .join-text {
-        max-width: 260px;
-        text-align: center;
-        margin: auto;
-      }
-
-      .join-form {
-        flex-direction: column;
-      }
-
-    }
+  > li {
+    margin: ($feature-sep / 2.0);
   }
 }

@@ -1,14 +1,13 @@
-/* Content should not be wider than $max-width */
-$max-width: 1440px;
-$small-screen-max-size: 800px;
-@mixin small-screen {
-  @media (max-width: $small-screen-max-size) {
+$mobile-width: 800px;
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-width) {
     @content;
   }
 }
 
-@mixin large-screen {
-  @media (min-width: $small-screen-max-size + 1px) {
+@mixin not-mobile {
+  @media screen and (min-width: $mobile-width + 1) {
     @content;
   }
 }

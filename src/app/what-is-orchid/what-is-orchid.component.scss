@@ -1,40 +1,40 @@
-@import 'orc_ws_colors';
-@import 'media_queries';
+// @import 'orc_ws_colors';
+// @import 'media_queries';
 
-.feature-pairs {
-  @include large-screen {
-    margin: 0 100px;
-  }
+// .feature-pairs {
+//   @include large-screen {
+//     margin: 0 100px;
+//   }
 
-  .fp-pair {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin: 100px 0;
+//   .fp-pair {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: center;
+//     margin: 100px 0;
 
-    @include small-screen {
-      flex-flow: column nowrap;
-      text-align: center;
-    }
+//     @include small-screen {
+//       flex-flow: column nowrap;
+//       text-align: center;
+//     }
 
-    h3 {
-      margin: 0;
-      font-size: 40px;
-    }
-  }
+//     h3 {
+//       margin: 0;
+//       font-size: 40px;
+//     }
+//   }
 
-  @include large-screen {
-    .fp-rtl {
-      flex-flow: row-reverse nowrap;
-    }
-  }
+//   @include large-screen {
+//     .fp-rtl {
+//       flex-flow: row-reverse nowrap;
+//     }
+//   }
 
-  .fp-text {
-    flex: 1 1 auto;
-    margin: 0 100px;
-  }
+//   .fp-text {
+//     flex: 1 1 auto;
+//     margin: 0 100px;
+//   }
 
-  .fp-image {
-    flex: 0 0 auto;
-  }
-}
+//   .fp-image {
+//     flex: 0 0 auto;
+//   }
+// }

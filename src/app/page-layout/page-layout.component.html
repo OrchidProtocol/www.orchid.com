@@ -1,0 +1,63 @@
+<div class="section-root bk-beige-light">
+  <nav id="nav" class="section-wide">
+    <h1 id="nav-home">
+      <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
+        <img src="/assets/img/shared/orchid-logo.svg" alt="Orchid logo" class="no-mobile">
+        <img src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
+      </a>
+    </h1>
+    <ul id="nav-list" class="phantom-list">
+      <!-- TODO: does the li need the routerLinkActive attribute, or can I put it on the anchor? -->
+      <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/what-is-orchid">What is Orchid</a></li>
+      <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/why-orchid">Why Orchid</a></li>
+      <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/dev-resources">Dev Resources</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main id="main">
+  <router-outlet></router-outlet>
+</main>
+
+<div class="section-root bk-beige-light">
+  <footer id="footer" class="section-wide">
+    <div id="footer-layout">
+      <section class="ft-grow">
+        <img src="/assets/img/shared/orchid-logo-word.svg">
+        <p>&copy; 2019 Orchid Labs Inc.</p>
+      </section>
+      <nav class="ft-nogrow">
+        <ul class="phantom-list">
+          <li><a class="phantom-a" routerLink="/">Orchid</a></li>
+          <li><a class="phantom-a" routerLink="/what-is-orchid">What is Orchid</a></li>
+          <li><a class="phantom-a" routerLink="/why-orchid">Why Orchid</a></li>
+          <li><a class="phantom-a" routerLink="/dev-resources">Developer Resources</a></li>
+          <li><a class="phantom-a" routerLink="/privacy-policy">Privacy Policy</a></li>
+          <li><a class="phantom-a" routerLink="/jobs">Jobs</a></li>
+        </ul>
+      </nav>
+      <section class="ft-nogrow">
+        <header>
+          <h1>Follow Us (TODO) </h1>
+        </header>
+        <ul id="ft-social-list" class="phantom-list">
+          <li>
+            <a class="inline-block" href="" aria-label="Follow on Facebook" title="Facebook">
+              <img src="assets/img/shared/social-facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <li>
+            <a class="inline-block" href="" aria-label="Follow on Twitter" title="Twitter">
+              <img src="assets/img/shared/social-twitter.svg" alt="Twitter">
+            </a>
+          </li>
+          <li>
+            <a class="inline-block" href="" aria-label="Follow on Medium" title="Medium">
+              <img src="assets/img/shared/social-medium.svg" alt="Medium">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</div>
