@@ -1,3 +1,4 @@
+@import 'misc_config';
 @import 'orc_config';
 
 #nav {
@@ -5,7 +6,7 @@
   flex-flow: row nowrap;
   align-items: center;
   padding: 1rem 0;
-  font-size: $orc-f1-size;
+  font-size: $size-body-sm;
 }
 
 #nav-home {
@@ -22,21 +23,37 @@
   flex: 0 0 auto;
   display: flex;
   flex-flow: row nowrap;
+  margin: -1rem 0 1rem;
 
   > li {
-    padding: 0.5rem;
     font-weight: 700;
     text-transform: uppercase;
 
-    &.active-link {
-      color: $orc-purple;
+    $a-pad: 0.5rem;
+
+    > a {
+      position: relative;
+      padding: $a-pad;
+    }
+
+    &.active-link > a::after {
+      $height: 3px;
+
+      content: " ";
+      position: absolute;
+      left: $a-pad;
+      right: $a-pad;
+      bottom: calc(#{$a-pad} - #{$height});
+      height: $height;
+      background: $orc-purple;
+      border-radius: 100vmax;
     }
   }
 }
 
 #footer {
   padding: 1rem 0;
-  font-size: $orc-f1-size;
+  font-size: $size-body-sm;
 }
 
 #footer-layout {
@@ -63,7 +80,7 @@
 }
 
 #ft-social-list {
-  $gap: 0.25rem;
+  $gap: 0.5rem;
 
   display: flex;
   flex-flow: row nowrap;

@@ -6,6 +6,13 @@ $background: #fff;
 $bkgd-lavender:   #f3f4f9;
 $bkgd-faint-gray: #fbfbf9;
 
+$size-body: 18px;
+$size-body-sm: 16px;
+$size-btn-body: 24px;
+
+$size-h1: 54px;
+$size-h2: 40px;
+
 @function mat-shadow($size, $alpha: 0.4, $inset: false) {
   $half: $size / 2.0;
   $inset-str: if($inset, " inset", "");
