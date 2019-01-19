@@ -1,0 +1,17 @@
+#adorner {
+  $clip-height: 20rem;
+
+  overflow: hidden;
+  margin: 0 -1rem (8rem - $clip-height);
+  height: $clip-height;
+}
+
+#adorn-left {
+  left: -8rem;
+  top: 3rem;
+}
+
+#adorn-right {
+  right: 0rem;
+  top: 10rem;
+}

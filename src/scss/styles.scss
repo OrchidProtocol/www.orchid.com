@@ -8,7 +8,7 @@ $pad-wide: 4rem;
 // Element-specific config
 
 :root {
-  background: $background;
+  background: $bkgd-white;
   font-size: 18px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
@@ -263,6 +263,11 @@ input {
   list-style: none;
 }
 
+.z-index-1 {
+  @extend .pos-relative;
+  z-index: 1;
+}
+
 // Layout elements
 
 .section-root {
@@ -292,6 +297,12 @@ input {
   padding-bottom: $pad-wide;
 }
 
+.vgap-wide {
+  margin-top: $pad-wide;
+  margin-bottom: $pad-wide;
+}
+
+
 .gap-bot-wide {
   margin-bottom: $pad-wide;
 }
@@ -312,6 +323,10 @@ input {
 
 .bk-lavender {
   background: $bkgd-lavender;
+}
+
+.bk-white {
+  background: $bkgd-white;
 }
 
 @include mobile {
