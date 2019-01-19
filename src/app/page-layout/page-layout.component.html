@@ -18,9 +18,10 @@
   <router-outlet></router-outlet>
 </main>
 
-<div class="section-root bk-beige-light">
+<div class="section-root bk-beige-light pos-relative">
   <footer id="footer" class="section-wide">
-    <div id="footer-layout">
+    <!-- TODO: can I get rid of this div? -->
+    <div id="ft-layout">
       <section class="ft-grow">
         <img src="/assets/img/shared/orchid-logo-word.svg">
         <p>&copy; 2019 Orchid Labs Inc.</p>
@@ -41,32 +42,20 @@
         </header>
         <ul id="ft-social-list" class="phantom-list">
           <li>
-            <a class="inline-block"
-                href="https://www.facebook.com/OrchidProtocol"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow on Facebook"
-                title="Facebook">
+            <a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
+              aria-label="Follow on Facebook" title="Facebook">
               <img src="assets/img/shared/social-facebook.svg" alt="Facebook">
             </a>
           </li>
           <li>
-            <a class="inline-block"
-                href="https://twitter.com/OrchidProtocol"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow on Twitter"
-                title="Twitter">
+            <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
+              aria-label="Follow on Twitter" title="Twitter">
               <img src="assets/img/shared/social-twitter.svg" alt="Twitter">
             </a>
           </li>
           <li>
-            <a class="inline-block"
-                href="https://medium.com/orchid-labs"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Follow on Medium"
-                title="Medium">
+            <a class="inline-block" href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer"
+              aria-label="Follow on Medium" title="Medium">
               <img src="assets/img/shared/social-medium.svg" alt="Medium">
             </a>
           </li>
@@ -74,4 +63,12 @@
       </section>
     </div>
   </footer>
+  <div id="ft-adorner">
+    <!-- TODO: should this be outset, or should it use a different max-width limit? -->
+    <div id="ft-adorn-layout" class="section-wide">
+      <img src="/assets/img/shared/coral-electric.svg" id="ft-adorn-coral-elec" class="pos-absolute">
+      <img src="/assets/img/shared/coral-real.svg" id="ft-adorn-coral-real" class="pos-absolute">
+      <img src="/assets/img/shared/footer-fish.svg" id="ft-adorn-fish" class="pos-absolute">
+    </div>
+  </div>
 </div>

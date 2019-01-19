@@ -229,6 +229,14 @@ input {
   display: inline-block;
 }
 
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: absolute;
+}
+
 .center-block {
   display: block;
   margin: auto;

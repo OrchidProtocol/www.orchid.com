@@ -52,17 +52,20 @@
 }
 
 #footer {
-  padding: 1rem 0;
+  position: relative;
+  padding: 4rem 0;
   font-size: $size-body-sm;
 }
 
-#footer-layout {
+#ft-layout {
   $gap: 2rem;
 
   display: flex;
+  position: relative; // boosts z-index, because CSS is horrible
   flex-flow: row wrap;
   justify-content: center;
   margin: 0 ($gap / -2.0);
+  z-index: 1;
 
   > {
     section, nav {
@@ -90,4 +93,34 @@
   > li {
     margin: ($gap / 2.0);
   }
+}
+
+#ft-adorner {
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#ft-adorn-layout {
+  position: relative;
+  height: 100%;
+}
+
+#ft-adorn-coral-elec {
+  left: -8rem;
+  bottom: 0;
+  height: 14.25rem;
+}
+
+#ft-adorn-coral-real {
+  left: -2rem;
+  bottom: 0;
+}
+
+#ft-adorn-fish {
+  right: -4rem;
+  top: 3rem;
 }
