@@ -1,3 +1,5 @@
+@import 'media_queries';
+
 #splash-text {
   margin: 0 -1rem 0 0;
   z-index: 1;
@@ -14,6 +16,10 @@
   }
 }
 
+#features {
+  overflow: hidden; // TODO: this is not a great solution
+}
+
 #feature-list {
   $feature-sep: 4rem;
 
@@ -22,6 +28,10 @@
   justify-content: center;
   text-align: center;
   margin: ($feature-sep / -2.0);
+
+  @include mobile {
+    flex-flow: column nowrap;
+  }
 
   > li {
     flex: 1 1 10rem;
@@ -32,22 +42,40 @@
 #signup-columns {
   display: flex;
   flex-flow: row nowrap;
+
+  @include mobile {
+    flex-flow: column nowrap;
+  }
 }
 
 #sc-left {
-  flex: 1 1 auto;
+  flex: 1 0 8rem;
   margin-right: 2rem;
+
+  @include mobile {
+    margin-right: 0rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+}
+
+#sc-spacer {
+  flex: 1 0 0;
 }
 
 #sc-right {
-  flex: 0 0 auto;
+  flex: 1 0 auto;
   display: flex;
   flex-flow: column nowrap;
 
   > {
-    input, div {
+    input, .required-input {
       &:not(:last-child) {
         margin-bottom: 1rem;
+      }
+
+      @include mobile {
+        max-width: none;
       }
     }
 

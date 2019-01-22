@@ -26,8 +26,6 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) return;
 
-      console.log(this.titleMap, this.router.routerState.snapshot.url);
-
       // TODO: this feels very bad
       this.titleService.setTitle(
           this.titleMap.get(this.router.routerState.snapshot.url));

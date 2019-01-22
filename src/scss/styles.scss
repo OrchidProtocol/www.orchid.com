@@ -8,7 +8,9 @@ $pad-wide: 4rem;
 // Element-specific config
 
 :root {
-  background: $bkgd-white;
+  // NB: this controls the background color in the elastic scroll margins on iOS
+  //     (and probably other platforms, but I haven't tested for that)
+  background: $orc-beige-light;
   font-size: 18px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
@@ -51,7 +53,17 @@ p {
   padding: 0;
 }
 
+button {
+  padding: 0;
+  background: initial;
+  border: 0;
+  font: inherit;
+  line-height: inherit;
+}
+
 main {
+  background: $bkgd-white;
+
   p {
     &:not(:last-child) {
       margin: 0 0 1rem;
@@ -62,13 +74,23 @@ main {
 #splash {
   display: grid;
   grid-template-rows: 1fr auto 1fr;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-areas:
     "above-text image"
     "text       image"
     "below-text image";
   position: relative;
   padding: 0 0 $pad-wide;
+
+  @include mobile {
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "image"
+      "above-text"
+      "text"
+      "below-text";
+  }
 
   &::after {
     content: "\\/";
@@ -95,6 +117,10 @@ main {
 #splash-text {
   grid-area: text;
   font-size: $size-body-sm;
+
+  @include mobile {
+    text-align: center;
+  }
 }
 
 // Forms
@@ -102,7 +128,7 @@ main {
 $form-border-w: 3px;
 $form-pad-v: 0.35em;
 
-button {
+button:not(.phantom-btn) {
   $pad-h: 2em;
   $pad-v: $form-pad-v;
 
@@ -111,12 +137,9 @@ button {
   transition-timing-function: ease-out;
   padding: $pad-v $pad-h;
   box-sizing: border-box;
-  border: 0;
   border-radius: 100vmax;
-  font: inherit;
   font-size: $size-btn-body;
   font-weight: 700;
-  line-height: inherit;
   box-shadow: mat-shadow(6px);
 
   // Just in case.
@@ -189,6 +212,8 @@ button {
   pointer-events: none;
 }
 
+// TODO: input sizing needs to be overhauled
+
 input {
   $pad-h: 1em;
   $pad-v: $form-pad-v;
@@ -198,7 +223,7 @@ input {
   &[type=text] {
     padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
     box-sizing: border-box;
-    min-width: 20rem;
+    width: 100%;
     background: none;
     background-color: inherit;
     border: 3px solid $orc-gray;
@@ -213,14 +238,23 @@ input {
       padding-right: calc(#{$pad-h + 1em} - #{$form-border-w});
     }
 
-    &:not(.input-small) {
-      min-width: 28rem;
-    }
-
     &:focus {
       border-color: $orc-purple;
     }
   }
+}
+
+input, .required-input {
+  max-width: 20rem;
+
+  // TODO: this class name isn't used anywhere.  Why did I add this?
+  &:not(.input-small) {
+    max-width: 28rem;
+  }
+}
+
+.required-input > input {
+  max-width: none;
 }
 
 // Misc. helpers

@@ -1,3 +1,4 @@
+@import 'media_queries';
 @import 'misc_config';
 @import 'orc_config';
 
@@ -14,41 +15,129 @@
   line-height: 0px;
 
   > a {
-    margin: 0;
-    padding: 0;
+    margin: -1rem;
+    padding: 1rem;
   }
 }
 
+$flyout-time: 0.3s;
+$flyout-time-open: 0.4s;
+$flyout-ease-in: cubic-bezier(0.45, 0.1, 0.75, 0.5);
+$flyout-ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
+
+$flyout-spacing: 4rem;
+$flyout-gap: ($flyout-spacing / 2.0);
+
+#nav-menu {
+  @include not-mobile {
+    flex: 0 0 auto;
+    margin: -1rem 0 1rem;
+  }
+
+  @include mobile {
+    transition-property: transform;
+    transition-duration: $flyout-time;
+    transition-timing-function: $flyout-ease-in;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    padding: 1rem 1rem $flyout-gap $flyout-gap;
+    width: 10rem;
+    background: $orc-beige-light;
+    transform: translate(100%, 0);
+    z-index: 1001; // NB: this is because the background is index 1000
+
+    &.open {
+      transition-duration: $flyout-time-open;
+      transition-timing-function: $flyout-ease-out;
+      transform: translate(0, 0);
+    }
+  }
+}
+
+#nav-flyout-close {
+  display: block;
+  margin: 0;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+
 #nav-list {
-  flex: 0 0 auto;
-  display: flex;
-  flex-flow: row nowrap;
-  margin: -1rem 0 1rem;
+  @include not-mobile {
+    display: flex;
+    flex-flow: row nowrap;
+
+    > li {
+      $a-pad: 0.5rem;
+
+      > a {
+        position: relative;
+        padding: $a-pad;
+      }
+
+      &.active-link > a::after {
+        $height: 3px;
+
+        content: " ";
+        position: absolute;
+        left: $a-pad;
+        right: $a-pad;
+        bottom: calc(#{$a-pad} - #{$height});
+        height: $height;
+        background: $orc-purple;
+        border-radius: 100vmax;
+      }
+    }
+  }
+
+  @include mobile {
+    text-align: right;
+
+    > li {
+      > a {
+        display: block;
+        padding: $flyout-gap 0;
+        width: 100%;
+      }
+    }
+  }
 
   > li {
     font-weight: 700;
     text-transform: uppercase;
-
-    $a-pad: 0.5rem;
-
-    > a {
-      position: relative;
-      padding: $a-pad;
-    }
-
-    &.active-link > a::after {
-      $height: 3px;
-
-      content: " ";
-      position: absolute;
-      left: $a-pad;
-      right: $a-pad;
-      bottom: calc(#{$a-pad} - #{$height});
-      height: $height;
-      background: $orc-purple;
-      border-radius: 100vmax;
-    }
   }
+}
+
+#nav-flyout-bkgd {
+  transition-property: opacity;
+  transition-duration: $flyout-time;
+  transition-timing-function: $flyout-ease-in;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(black, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000; // I hate CSS
+
+  &.open {
+    transition-duration: $flyout-time-open;
+    transition-timing-function: $flyout-ease-out;
+    pointer-events: all;
+    opacity: 1;
+  }
+}
+
+#nav-toggle {
+  margin: -1rem;
+  padding: 1rem;
+  cursor: pointer;
 }
 
 #footer {
@@ -66,6 +155,10 @@
   justify-content: center;
   margin: 0 ($gap / -2.0);
   z-index: 1;
+
+  @include mobile {
+    flex-flow: column-reverse nowrap;
+  }
 
   > {
     section, nav {

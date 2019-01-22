@@ -1,5 +1,12 @@
+@import 'media_queries';
+
 #splash-text {
   margin-right: 4rem;
+
+  @include mobile {
+    margin-right: 0rem;
+    margin-top: 3rem;
+  }
 }
 
 #feature-list {
@@ -11,14 +18,36 @@
     &.ft-rtl {
       flex-flow: row-reverse nowrap;
     }
+
+    @include mobile {
+      &, &.ft-rtl {
+        flex-flow: column nowrap;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 4rem;
+      }
+    }
   }
 }
 
 .ft-text {
   flex: 1 1 auto;
-  margin: 0 100px;
+  margin: 0 4rem;
+
+  @include mobile {
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .ft-image {
   flex: 0 0 auto;
+
+
+  @include mobile {
+    > img {
+      max-width: 100%;
+    }
+  }
 }
