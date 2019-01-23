@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     ["/what-is-orchid", "What is Orchid"],
     ["/why-orchid", "Why Orchid"],
     ["/dev-resources", "Dev Resources"],
+    ["/privacy", "Privacy"]
   ]);
 
   public constructor(private router: Router, private titleService: Title) {}
