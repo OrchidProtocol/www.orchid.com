@@ -1,3 +1,5 @@
+@import 'media_queries';
+
 #adorner {
   $clip-height: 20rem;
 
@@ -14,4 +16,8 @@
 #adorn-right {
   right: 0rem;
   top: 10rem;
+
+  @include mobile {
+    display: none;
+  }
 }
