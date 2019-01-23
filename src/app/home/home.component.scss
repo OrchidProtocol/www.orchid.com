@@ -1,8 +1,10 @@
 @import 'media_queries';
 
 #splash-text {
-  margin: 0 -1rem 0 0;
-  z-index: 1;
+  @include not-mobile {
+    margin: 0 -1rem 0 0;
+    z-index: 1;
+  }
 }
 
 #splash-deco {
@@ -45,14 +47,16 @@
 
   @include mobile {
     flex-flow: column nowrap;
+    align-items: center;
   }
 }
 
 #sc-left {
-  flex: 1 0 8rem;
+  flex: 1 0 12rem;
   margin-right: 2rem;
 
   @include mobile {
+    flex: 1 0 auto;
     margin-right: 0rem;
     margin-bottom: 4rem;
     text-align: center;
@@ -60,22 +64,28 @@
 }
 
 #sc-spacer {
-  flex: 1 0 0;
+  flex: 2 0 0;
+
+  @include mobile {
+    display: none;
+  }
 }
 
 #sc-right {
-  flex: 1 0 auto;
+  flex: 0 0 28rem;
   display: flex;
   flex-flow: column nowrap;
+
+  @include mobile {
+    flex: 1 0 auto;
+    width: 100%;
+    max-width: 28rem;
+  }
 
   > {
     input, .required-input {
       &:not(:last-child) {
         margin-bottom: 1rem;
-      }
-
-      @include mobile {
-        max-width: none;
       }
     }
 

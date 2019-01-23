@@ -212,8 +212,6 @@ button:not(.phantom-btn) {
   pointer-events: none;
 }
 
-// TODO: input sizing needs to be overhauled
-
 input {
   $pad-h: 1em;
   $pad-v: $form-pad-v;
@@ -245,11 +243,13 @@ input {
 }
 
 input, .required-input {
-  max-width: 20rem;
+  &.input-large {
+    max-width: 28rem;
+  }
 
   // TODO: this class name isn't used anywhere.  Why did I add this?
-  &:not(.input-small) {
-    max-width: 28rem;
+  &.input-small {
+    max-width: 20rem;
   }
 }
 
