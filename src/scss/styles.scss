@@ -129,7 +129,7 @@ $form-border-w: 3px;
 $form-pad-v: 0.35em;
 
 button:not(.phantom-btn) {
-  $pad-h: 2em;
+  $pad-h: 1em;
   $pad-v: $form-pad-v;
 
   transition-property: background, border, box-shadow;
@@ -142,9 +142,9 @@ button:not(.phantom-btn) {
   font-weight: 700;
   box-shadow: mat-shadow(6px);
 
-  // Just in case.
-  &:not(.btn-small) {
-    min-width: 16.5rem;
+  &.btn-fixed {
+    width: 100%;
+    max-width: 16.5rem;
   }
 
   &:hover {
