@@ -37,6 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: $size-h1;
+
+  @include mobile-small {
+    font-size: $size-h2;
+  }
 }
 
 h2 {
@@ -69,6 +73,11 @@ main {
       margin: 0 0 1rem;
     }
   }
+}
+
+::selection {
+  background: $orc-purple;
+  color: #fff;
 }
 
 #splash {
@@ -208,7 +217,7 @@ button:not(.phantom-btn) {
   @extend .required-star::before;
   position: absolute;
   right: 1rem;
-  top: 20%; // NB: this is super hacky and arbitrary
+  top: 8.82px; // NB: this is super hacky and arbitrary
   pointer-events: none;
 }
 
@@ -240,6 +249,16 @@ input {
       border-color: $orc-purple;
     }
   }
+}
+
+textarea {
+  $min-height: 44px; // NB: hardcoded
+
+  @extend input[type=text];
+
+  min-height: $min-height;
+  border-radius: ($min-height / 2.0);
+  resize: vertical;
 }
 
 input, .required-input {
