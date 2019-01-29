@@ -4,7 +4,7 @@
 @include splash-columns(1fr, 2fr);
 
 #splash-text {
-  @include not-mobile {
+  @include not-vert-splash {
     margin: 0 -1rem 0 0;
     z-index: 1;
   }
@@ -19,10 +19,13 @@
     right: -3rem;
     bottom: -4rem; // NB: taken from $pad-wide
 
-    @include mobile {
+    @include vert-splash {
       left: -1rem;
       right: initial;
-      width: 25vw;
+    }
+
+    @include mobile {
+      max-width: 25vw;
     }
   }
 }

@@ -3,7 +3,7 @@
 #splash-text {
   margin-right: 4rem;
 
-  @include mobile {
+  @include vert-splash {
     margin-right: 0rem;
     margin-top: 3rem;
   }

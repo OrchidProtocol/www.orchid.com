@@ -32,7 +32,7 @@ $size-h2-mobile: 26px;
   #splash {
     grid-template-columns: $left $right;
 
-    @include mobile {
+    @include vert-splash {
       grid-template-columns: 1fr;
     }
   }
