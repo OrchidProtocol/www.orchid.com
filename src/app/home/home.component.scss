@@ -1,4 +1,7 @@
 @import 'media_queries';
+@import 'misc_config';
+
+@include splash-columns(1fr, 2fr);
 
 #splash-text {
   @include not-mobile {
@@ -13,13 +16,19 @@
 
   > img {
     position: absolute;
-    right: 0;
+    right: -3rem;
     bottom: -4rem; // NB: taken from $pad-wide
+
+    @include mobile {
+      left: -1rem;
+      right: initial;
+      width: 25vw;
+    }
   }
 }
 
 #features {
-  overflow: hidden; // TODO: this is not a great solution
+  overflow: hidden;
 }
 
 #feature-list {
@@ -72,7 +81,7 @@
 }
 
 #sc-right {
-  flex: 0 0 28rem;
+  flex: 0 1 28rem;
   display: flex;
   flex-flow: column nowrap;
 

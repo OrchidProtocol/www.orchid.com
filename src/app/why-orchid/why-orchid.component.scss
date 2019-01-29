@@ -1,23 +1,49 @@
 @import 'media_queries';
+@import 'misc_config';
+
+@include splash-columns(1fr, 1fr);
 
 #adorner {
   $clip-height: 20rem;
 
   overflow: hidden;
-  margin: 0 -1rem (8rem - $clip-height);
+  margin: 0 0 (8rem - $clip-height);
+  width: 100%;
   height: $clip-height;
+
+  @include mobile {
+    margin: 0 0 (4rem - $clip-height);
+  }
 }
 
 #adorn-left {
-  left: -8rem;
+  left: -4rem;
   top: 3rem;
+
+  @include mobile {
+    max-width: 10rem;
+    left: 1rem;
+    top: 3rem;
+  }
 }
 
 #adorn-right {
-  right: 0rem;
-  top: 10rem;
+  right: 5em;
+  top: 12rem;
 
   @include mobile {
     display: none;
   }
+}
+
+#adorn-right-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#adorn-right-2 {
+  position: absolute;
+  left: 18px;
+  bottom: 6px;
 }

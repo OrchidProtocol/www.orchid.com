@@ -7,13 +7,41 @@ $bkgd-faint-gray: #fbfbf9;
 
 $size-body: 18px;
 $size-body-sm: 16px;
-$size-btn-body: 24px;
+$size-btn: 24px;
 
-$size-h1: 54px;
+$size-body-mobile: 14px;
+$size-btn-mobile: 18px;
+
+$size-h1: 64px;
 $size-h2: 40px;
 
-@function mat-shadow($size, $alpha: 0.4, $inset: false) {
+$size-h1-big-mobile: 38px;
+$size-h1-mobile: 32px;
+$size-h2-mobile: 26px;
+
+@function mat-shadow($size, $alpha: 0.4, $inset: false, $x: false) {
   $half: $size / 2.0;
+  $asize: abs($size);
+  $ahalf: abs($half);
   $inset-str: if($inset, " inset", "");
-  @return unquote("0 #{$half} #{$size} #{rgba(black, $alpha)}#{$inset-str}, 0 0 #{$half} #{rgba(black, $alpha / 2.0)}#{$inset-str}");
+  $offs-str: if($x, "#{$half} 0", "0 #{$half}");
+  @return unquote("#{$offs-str} #{$asize} #{rgba(black, $alpha)}#{$inset-str}, 0 0 #{$ahalf} #{rgba(black, $alpha / 2.0)}#{$inset-str}");
+}
+
+@mixin splash-columns($left, $right) {
+  #splash {
+    grid-template-columns: $left $right;
+
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@mixin size-body-sm {
+  font-size: $size-body-sm;
+
+  @include mobile {
+    font-size: $size-body-mobile;
+  }
 }
