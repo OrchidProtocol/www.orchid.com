@@ -26,7 +26,8 @@ import { PageLayoutComponent } from './page-layout/page-layout.component';
     PageLayoutComponent
   ],
   imports: [
-    BrowserModule,
+    // TODO: how important is appId?
+    BrowserModule.withServerTransition({appId: 'orchid-www'}),
     BrowserAnimationsModule,
     AppRoutingModule
   ],
