@@ -30,6 +30,10 @@ export class AppComponent implements OnInit {
       // TODO: this feels very bad
       this.titleService.setTitle(
           this.titleMap.get(this.router.routerState.snapshot.url));
+
+      const win = typeof window !== "undefined" && window;
+
+      if (win) win.scrollTo(0, 0);
     }, (err) => {}, () => {});
   }
 }

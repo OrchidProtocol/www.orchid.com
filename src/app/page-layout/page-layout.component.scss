@@ -17,19 +17,26 @@ $mobile-nav-height: 64px;
   $ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
 
   @include mobile {
-    transition-property: box-shadow;
-    transition-duration: 0.2s;
-    transition-timing-function: $ease-out;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     padding: 1rem;
-    box-sizing: border-box;
-    height: $mobile-nav-height;
-    background: $orc-beige-light;
-    box-shadow: mat-shadow(8px, $alpha: 0.2);
-    z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+
+    &:not(.js) {
+      align-items: flex-start;
+    }
+
+    &.js {
+      transition-property: box-shadow;
+      transition-duration: 0.2s;
+      transition-timing-function: $ease-out;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      box-sizing: border-box;
+      height: $mobile-nav-height;
+      background: $orc-beige-light;
+      box-shadow: mat-shadow(8px, $alpha: 0.2);
+      z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
 
     &.no-shadow {
       transition-duration: 0.07s;
@@ -66,21 +73,24 @@ $flyout-gap: ($flyout-spacing / 2.0);
   // TODO: the transition causes some weirdness when the media query is triggered
 
   @include mobile {
-    transition-property: transform;
-    transition-duration: $flyout-time;
-    transition-timing-function: $flyout-ease-in;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
     margin: 0;
     padding: 0;
-    padding: 1rem 1rem $flyout-gap $flyout-gap;
-    width: 10rem;
-    background: $orc-beige-light;
-    box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
-    transform: translate(100%, 0);
-    z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+
+    &.js {
+      transition-property: transform;
+      transition-duration: $flyout-time;
+      transition-timing-function: $flyout-ease-in;
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 1rem 1rem $flyout-gap $flyout-gap;
+      width: 10rem;
+      background: $orc-beige-light;
+      box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
+      transform: translate(100%, 0);
+      z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
 
     &.open {
       transition-duration: $flyout-time-open;
@@ -94,6 +104,10 @@ $flyout-gap: ($flyout-spacing / 2.0);
   margin: -1rem -1rem 0;
   box-sizing: border-box;
   height: $mobile-nav-height;
+
+  :not(.js) > & {
+    display: none;
+  }
 }
 
 #nav-flyout-close {
@@ -156,6 +170,10 @@ $flyout-gap: ($flyout-spacing / 2.0);
   margin: -1rem;
   padding: 1rem;
   cursor: pointer;
+
+  :not(.js) > & {
+    display: none;
+  }
 }
 
 #nav-flyout-bkgd {

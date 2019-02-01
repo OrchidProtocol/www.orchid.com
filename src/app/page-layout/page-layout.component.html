@@ -1,12 +1,12 @@
 <div id="nav-root" class="bk-beige-light">
-  <nav id="nav" class="section-wide hpad-thin" [class.no-shadow]="this.noShadow">
+  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <img src="/assets/img/shared/orchid-logo.svg" alt="Orchid logo" class="no-mobile">
         <img src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div id="nav-menu" [class.open]="this.isOpen">
+    <div id="nav-menu" [class.js]="this.js" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img src="/assets/img/shared/close.svg">
