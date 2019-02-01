@@ -15,41 +15,45 @@ export class PageLayoutComponent implements OnInit {
     this.isOpen   = false;
     this.noShadow = true;
 
-    let btn   = document.getElementById("nav-toggle") as HTMLButtonElement;
-    let close = document.getElementById("nav-flyout-close") as
-                HTMLButtonElement;
-    let bkgd = document.getElementById("nav-flyout-bkgd") as HTMLDivElement;
+    const doc = typeof document !== "undefined" && document;
 
-    btn.addEventListener("click", _ => this.isOpen = !this.isOpen);
-    close.addEventListener("click", _ => this.isOpen = false);
-    bkgd.addEventListener("click", _ => this.isOpen = false);
+    if (doc) {
+      let btn   = doc.getElementById("nav-toggle") as HTMLButtonElement;
+      let close = doc.getElementById("nav-flyout-close") as
+                  HTMLButtonElement;
+      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
 
-    // NB: this is only necessary because of Angular
-    document.querySelectorAll("#nav-list a").forEach(el => {
-      let a = el as HTMLAnchorElement;
+      btn.addEventListener("click", _ => this.isOpen = !this.isOpen);
+      close.addEventListener("click", _ => this.isOpen = false);
+      bkgd.addEventListener("click", _ => this.isOpen = false);
 
-      a.addEventListener("click", _ => this.isOpen = false);
-    });
+      // NB: this is only necessary because of Angular
+      doc.querySelectorAll("#nav-list a").forEach(el => {
+        let a = el as HTMLAnchorElement;
 
-    // #region scroll event listener
+        a.addEventListener("click", _ => this.isOpen = false);
+      });
 
-    let scrollPos     = 0;
-    let scheduleFrame = true;
+      // #region scroll event listener
 
-    document.addEventListener("scroll", e => {
-      scrollPos = window.scrollY;
+      let scrollPos     = 0;
+      let scheduleFrame = true;
 
-      if (scheduleFrame) {
-        scheduleFrame = false;
+      document.addEventListener("scroll", e => {
+        scrollPos = window.scrollY;
 
-        requestAnimationFrame(() => {
-          this.noShadow = scrollPos <= 0; // TODO: this is inflexible
+        if (scheduleFrame) {
+          scheduleFrame = false;
 
-          scheduleFrame = true;
-        });
-      }
-    });
+          requestAnimationFrame(() => {
+            this.noShadow = scrollPos <= 0; // TODO: this is inflexible
 
-    // #endregion
+            scheduleFrame = true;
+          });
+        }
+      });
+
+      // #endregion
+    }
   }
 }
