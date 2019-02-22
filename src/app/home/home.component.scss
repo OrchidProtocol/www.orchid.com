@@ -1,3 +1,4 @@
+@import 'feature_list';
 @import 'media_queries';
 @import 'misc_config';
 
@@ -10,100 +11,17 @@
   }
 }
 
-#splash-deco {
-  grid-area: below-text;
-  position: relative;
-
-  > img {
-    position: absolute;
-    right: -3rem;
-    bottom: -4rem; // NB: taken from $pad-wide
-
-    @include vert-splash {
-      left: -1rem;
-      right: initial;
-    }
-
-    @include mobile {
-      max-width: 25vw;
-    }
-  }
-}
-
-#features {
-  overflow: hidden;
-}
-
-#feature-list {
-  $feature-sep: 4rem;
-
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  text-align: center;
-  margin: ($feature-sep / -2.0);
-
-  @include mobile {
-    flex-flow: column nowrap;
-  }
-
-  > li {
-    flex: 1 1 10rem;
-    margin: ($feature-sep / 2.0);
-  }
-}
-
-#signup-columns {
+#splash-whitepaper {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 4rem;
 
   @include mobile {
-    flex-flow: column nowrap;
-    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
   }
 }
 
-#sc-left {
-  flex: 1 0 12rem;
-  margin-right: 2rem;
-
-  @include mobile {
-    flex: 1 0 auto;
-    margin-right: 0rem;
-    margin-bottom: 4rem;
-    text-align: center;
-  }
-}
-
-#sc-spacer {
-  flex: 2 0 0;
-
-  @include mobile {
-    display: none;
-  }
-}
-
-#sc-right {
-  flex: 0 1 28rem;
-  display: flex;
-  flex-flow: column nowrap;
-
-  @include mobile {
-    flex: 1 0 auto;
-    width: 100%;
-    max-width: 28rem;
-  }
-
-  > {
-    input, .required-input {
-      &:not(:last-child) {
-        margin-bottom: 1rem;
-      }
-    }
-
-    p {
-      margin-left: 1rem;
-      margin-right: 1rem;
-    }
-  }
-}
+@include v-feature-list("#feature-list", ".ft-text", ".ft-image");
