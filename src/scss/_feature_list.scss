@@ -63,7 +63,7 @@
 //    <ul matching list-sel class="phantom-list">
 //      <li>
 //        <header>
-//          <img>
+//          <img matching image-sel>
 //          <h3>...</h3>
 //        </header>
 //        <p>...</p>
@@ -73,7 +73,7 @@
 //    . . .
 //  </*>
 
-@mixin h-feature-list($parent-sel, $list-sel) {
+@mixin h-feature-list($parent-sel, $list-sel, $image-sel) {
   $feature-sep: 4rem;
 
   #{$parent-sel} { }
@@ -93,5 +93,9 @@
       flex: 1 1 10rem;
       margin: ($feature-sep / 2.0);
     }
+  }
+
+  #{$image-sel} {
+    height: 12rem;
   }
 }
