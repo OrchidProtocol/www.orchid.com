@@ -2,3 +2,22 @@
 @import 'media_queries';
 
 @include h-feature-list("#features", "#feature-list", ".ft-image");
+
+#read-whitepaper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4rem 0 3rem;
+
+  @include mobile {
+    justify-content: center;
+    margin: 1rem 0 1rem;
+  }
+}
+
+#read-whitepaper-adorner {
+  position: absolute;
+  left: -2rem;
+  top: -5rem;
+}

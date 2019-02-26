@@ -1,0 +1,4 @@
+export module CalendarApiConfig {
+  export const CAL_ID = "CALENDAR_ID@group.calendar.google.com";
+  export const API_KEY = "MY_API_KEY";
+}

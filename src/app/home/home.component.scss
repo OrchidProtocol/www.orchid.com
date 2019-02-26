@@ -1,6 +1,7 @@
 @import 'feature_list';
 @import 'media_queries';
 @import 'misc_config';
+@import 'orc_config';
 
 @include splash-columns(1fr, 2fr);
 
@@ -25,3 +26,39 @@
 }
 
 @include v-feature-list("#feature-list", ".ft-text", ".ft-image");
+
+#ev-header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+#ev-h2 {
+  @include not-mobile {
+    padding-right: 2rem;
+  }
+}
+
+#ev-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  margin: 0 -1rem -1rem;
+}
+
+.ev-event {
+  // NB: that 68rem is kinda arbitrary
+  //     this value should be maintained to fit exactly three items horizontally
+  flex: 0 1 (68rem / 3);
+  margin: 1rem;
+}
+
+.ev-title {
+  margin: 0 0 .5rem;
+  font-weight: 700;
+}
+
+.ev-body {
+  color: $orc-gray;
+}

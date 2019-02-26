@@ -49,23 +49,30 @@
 <div class="bk-lavender">
   <section class="section-narrow hpad-wide vpad-wide">
     <h2>How it works</h2>
-    <p>
-      Orchid is an overlay network that runs on the existing internet. The network consists of relay and exit nodes that
-      stake Orchid token — an Ethereum compatible token — in order to earn fees for bandwidth. The stake keeps players
-      in the system honest. The list of nodes is stored in an Ethereum smart contract that is decentralized and
-      accessible around the world.
-    </p>
-    <p>
-      Users connect and configure their VPN service through the app. In the backend, the application is using our
-      probabilistic micropayment system to purchase bandwidth on the fly. Information is protected at each relay hop,
-      providing security not seen in traditional, single hop VPN implementations. Users can switch providers depending
-      upon speed, price and availability in the marketplace.
-    </p>
-    <p>
-      Read our whitepaper for more information.
-    </p>
+    <div class="z-index-1">
+      <p>
+        Orchid is an overlay network that runs on the existing internet. The network consists of relay and exit nodes that
+        stake Orchid token — an Ethereum compatible token — in order to earn fees for bandwidth. The stake keeps players
+        in the system honest. The list of nodes is stored in an Ethereum smart contract that is decentralized and
+        accessible around the world.
+      </p>
+      <p>
+        Users connect and configure their VPN service through the app. In the backend, the application is using our
+        probabilistic micropayment system to purchase bandwidth on the fly. Information is protected at each relay hop,
+        providing security not seen in traditional, single hop VPN implementations. Users can switch providers depending
+        upon speed, price and availability in the marketplace.
+      </p>
+      <p>
+        Read our whitepaper for more information.
+      </p>
+    </div>
+    <div id="read-whitepaper">
+      <div class="pos-relative">
+        <img id="read-whitepaper-adorner" src="/assets/img/network/read-whitepaper.svg">
+        <button class="btn-primary z-index-1">Read our Whitepaper</button>
+      </div>
+    </div>
   </section>
-  <!-- TODO: add adorner and button -->
 </div>
 
 <app-newsletter-signup></app-newsletter-signup>

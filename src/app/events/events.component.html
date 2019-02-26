@@ -1,7 +1,14 @@
 <div>
   <section class="section-med hpad-wide vpad-wide">
-    <h2>Find us IRL</h2>
-    <!-- TODO -->
+    <header>
+      <h2>Find us IRL</h2>
+    </header>
+    <ul id="ev-list" class="phantom-list" *ngIf="events$ | async as events">
+      <li class="ev-event" *ngFor="let event of events">
+        <p class="ev-title">{{event.date}} | {{event.title}} | {{event.location}}</p>
+        <p class="ev-body">{{event.desc}}</p>
+      </li>
+    </ul>
   </section>
 </div>
 

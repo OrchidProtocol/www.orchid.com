@@ -48,3 +48,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# API keys and configurations
+/src/app/calendar-api-config.ts

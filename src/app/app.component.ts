@@ -15,10 +15,13 @@ export class AppComponent implements OnInit {
 
   titleMap: Map<string, string> = new Map<string, string>([
     ["/", "Orchid"],
-    ["/what-is-orchid", "What is Orchid"],
+    ["/app", "App"],
+    ["/network", "Network"],
     ["/why-orchid", "Why Orchid"],
+    ["/events", "Events"],
     ["/dev-resources", "Dev Resources"],
-    ["/privacy", "Privacy"]
+    ["/privacy-policy", "Privacy Policy"],
+    ["/service-terms", "Terms of Service"]
   ]);
 
   public constructor(private router: Router, private titleService: Title) {}

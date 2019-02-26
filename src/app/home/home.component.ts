@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { CalEvent } from '../events/event';
+import { EventsService } from '../events/events.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  events$: Observable<CalEvent[]>;
 
-  constructor() { }
+  constructor(private events: EventsService) { }
 
   ngOnInit() {
+    this.events$ = this.events.getEvents();
   }
-
 }
