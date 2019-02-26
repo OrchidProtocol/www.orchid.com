@@ -80,13 +80,16 @@
   <section class="section-wide hpad-wide vpad-wide">
     <header id="ev-header">
       <h2 id="ev-h2">Meet the Orchid team</h2>
-      <a id="ev-more" routerLink="/events">See all events ></a>
+      <a id="ev-more" class="phantom-a" routerLink="/events">See all events ></a>
     </header>
-    <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events">
+    <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events else loadingEvents">
       <li class="ev-event" *ngFor="let event of events">
         <p class="ev-title">{{event.date}} | {{event.title}} | {{event.location}}</p>
         <p class="ev-body">{{event.desc}}</p>
       </li>
     </ul>
+    <ng-template #loadingEvents>
+      <p class="center-text gap-top-wide">loading events...</p>
+    </ng-template>
   </section>
 </div>
