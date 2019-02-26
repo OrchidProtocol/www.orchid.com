@@ -86,6 +86,9 @@
       <li class="ev-event" *ngFor="let event of events">
         <p class="ev-title">{{event.date}} | {{event.title}} | {{event.location}}</p>
         <p class="ev-body">{{event.desc}}</p>
+        <p class="ev-link" *ngIf="event.link as link">
+          <a [href]="link" target="_blank" rel="noopener noreferrer">{{link}}</a>
+        </p>
       </li>
     </ul>
     <ng-template #loadingEvents>

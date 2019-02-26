@@ -40,6 +40,10 @@
   }
 }
 
+#ev-more {
+  font-weight: 700;
+}
+
 #ev-list {
   display: flex;
   flex-flow: row wrap;
@@ -61,4 +65,5 @@
 
 .ev-body {
   color: $orc-gray;
+  white-space: pre-line;
 }

@@ -3,4 +3,5 @@ export class CalEvent {
   title: string;
   location: string;
   desc: string;
+  link?: string;
 }

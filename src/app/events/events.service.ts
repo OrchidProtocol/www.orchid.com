@@ -25,22 +25,27 @@ export class EventsService {
                   encodeURIComponent(CalendarApiConfig.CAL_ID)}/events?key=${
                   encodeURIComponent(CalendarApiConfig.API_KEY)}&timeMin=${
                   new Date().toISOString()}&timeMax=${
-                  new Date(+new Date() + 86400000 * 90).toISOString()}`)
+                  new Date(+new Date() + 86400000 * 90)
+                      .toISOString()}&singleEvents=true&orderBy=startTime`)
               .pipe(map(e => (e["items"] as any[]).map(i => {
-                let start = new Date(i["start"]["date"]);
-                let end   = new Date(i["end"]["date"]);
-                end       = new Date(+end - 1);
+                // TODO: display the time for non-all-day events?
+
+                let start = i["start"], end = i["end"];
+                start = new Date(start["date"] || start["dateTime"]);
+                end   = new Date(end["date"] || end["dateTime"]);
+                end   = new Date(+end - 1);
 
                 let dateStr = "ERR";
 
+                // NB: not displaying year numbers because I'm assuming events
+                //     won't span more than a month or so
                 if (start.getUTCFullYear() != end.getUTCFullYear() ||
                     start.getUTCMonth() != end.getUTCMonth()) {
                   dateStr = `${start.getUTCDate()} ${
                       this.printMonth(start)}\u2013${end.getUTCDate()} ${
                       this.printMonth(end)}`;
                 }
-                else if (start.getUTCMonth() != end.getUTCMonth() ||
-                         start.getUTCDate() != end.getUTCDate()) {
+                else if (start.getUTCDate() != end.getUTCDate()) {
                   dateStr = `${start.getUTCDate()}\u2013${end.getUTCDate()} ${
                       this.printMonth(start)}`;
                 }
@@ -48,12 +53,25 @@ export class EventsService {
                   dateStr = `${start.getUTCDate()} ${this.printMonth(start)}`;
                 }
 
-                return {
+                let ret: CalEvent = {
                   date: dateStr,
-                  title: i["summary"],
-                  location: i["location"],
-                  desc: i["description"],
+                  title: i["summary"].toString().trim(),
+                  location: i["location"].toString().trim(),
+                  desc: i["description"].toString().trim(),
                 };
+
+                // If the last line of the description contains a link, grab it
+
+                {
+                  let urlIndex = ret.desc.search(/\w+:\/\/[^\n]+$/);
+
+                  if (urlIndex > 0) {
+                    ret.link = ret.desc.slice(urlIndex).trim();
+                    ret.desc = ret.desc.slice(0, urlIndex).trim();
+                  }
+                }
+
+                return ret;
               })));
     }
 
