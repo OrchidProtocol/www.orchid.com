@@ -1,4 +1,0 @@
-#!/bin/bash
-
-ng build --prod
-scp -rp dist/browser/* orchid.opuslogica.com:/www/sites/orchid.opuslogica.com/
