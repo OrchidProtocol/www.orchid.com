@@ -3,10 +3,13 @@
     <header>
       <h2>Stay connected as we grow Orchid.</h2>
     </header>
-    <p>Subscribe to our newsletter.</p>
-    <input type="email" placeholder="Email address" class="input-large center-block gap-top-wide gap-bot-wide">
-    <button class="btn-primary btn-fixed center-block">Subscribe</button>
+    <div *ngIf="!submitted">
+      <p>Subscribe to our newsletter.</p>
+      <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()" class="input-large center-block gap-top-wide gap-bot-wide">
+      <button (click)="submit()" class="btn-primary btn-fixed center-block">Subscribe</button>
+      <div *ngIf="(error != '')" class="red-error-box">
+	<p [innerHTML]="error"></p>
+      </div>
+    </div>
   </section>
 </div>
-
-<!-- TODO: add the rest of the components when the form is open -->

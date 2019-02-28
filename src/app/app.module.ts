@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,7 +34,10 @@ import { PageLayoutComponent } from './page-layout/page-layout.component';
     // TODO: how important is appId?
     BrowserModule.withServerTransition({appId: 'orchid-www'}),
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    HttpClientJsonpModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
