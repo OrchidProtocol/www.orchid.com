@@ -17,6 +17,11 @@ export class EventsService {
     return date.toLocaleString([], {month: "long"});
   }
 
+  stripHTML(input) {
+    var doc = new DOMParser().parseFromString(input, 'text/html');
+    return doc.body.textContent || "";
+  }
+
   getEvents(): Observable<CalEvent[]> {
     if (!this.eventList) {
       this.eventList =
@@ -57,7 +62,7 @@ export class EventsService {
                   date: dateStr,
                   title: String(i["summary"]).trim(),
                   location: String(i["location"]).trim(),
-                  desc: String(i["description"]).trim()
+                  desc: this.stripHTML(String(i["description"]).trim())
                 };
 
                 // If the last line of the description contains a link, grab it
