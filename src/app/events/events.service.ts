@@ -65,7 +65,7 @@ export class EventsService {
                 {
                   let urlIndex = ret.desc.search(/\w*:\/\/[^\n]+$/);
 
-                  if (urlIndex > 0) {
+                  if (urlIndex > -1) {
                     ret.link = ret.desc.slice(urlIndex).trim();
                     ret.desc = ret.desc.slice(0, urlIndex).trim();
                   }
