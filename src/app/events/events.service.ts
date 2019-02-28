@@ -55,15 +55,15 @@ export class EventsService {
 
                 let ret: CalEvent = {
                   date: dateStr,
-                  title: i["summary"].toString().trim(),
-                  location: i["location"].toString().trim(),
-                  desc: i["description"].toString().trim(),
+                  title: String(i["summary"]).trim(),
+                  location: String(i["location"]).trim(),
+                  desc: String(i["description"]).trim()
                 };
 
                 // If the last line of the description contains a link, grab it
 
                 {
-                  let urlIndex = ret.desc.search(/\w+:\/\/[^\n]+$/);
+                  let urlIndex = ret.desc.search(/\w*:\/\/[^\n]+$/);
 
                   if (urlIndex > 0) {
                     ret.link = ret.desc.slice(urlIndex).trim();
