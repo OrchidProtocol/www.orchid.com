@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { downloadWhitepaper } from '../whitepaper';
 
 @Component({
   selector: 'app-about-network',
@@ -12,4 +13,5 @@ export class AboutNetworkComponent implements OnInit {
   ngOnInit() {
   }
 
+  downloadWhitepaper() { downloadWhitepaper(); }
 }

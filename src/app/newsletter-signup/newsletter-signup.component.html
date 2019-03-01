@@ -5,11 +5,12 @@
     </header>
     <div *ngIf="!submitted">
       <p>Subscribe to our newsletter.</p>
-      <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()" class="input-large center-block gap-top-wide gap-bot-wide">
+      <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
+        class="input-large center-block gap-top-wide gap-bot-wide">
       <button (click)="submit()" class="btn-primary btn-fixed center-block">Subscribe</button>
-      <div *ngIf="(error != '')" class="red-error-box">
-	<p [innerHTML]="error"></p>
-      </div>
+      <ng-container *ngIf="(error != '')">
+        <p id="error" [innerHTML]="error"></p>
+      </ng-container>
     </div>
   </section>
 </div>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CalEvent } from '../events/event';
 import { EventsService } from '../events/events.service';
 import { Observable } from 'rxjs';
+import { downloadWhitepaper } from '../whitepaper';
 
 @Component({
   selector: 'app-home',
@@ -18,16 +19,5 @@ export class HomeComponent implements OnInit {
     this.events$ = this.events.getEvents();
   }
 
-  downloadWhitepaper() {
-    let whitepaper = "";
-
-    if (window && "location" in window && "protocol" in window.location && "pathname" in window.location && "host" in window.location) {
-      whitepaper = window.location.protocol + "//" + window.location.host + "/assets/whitepaper/whitepaper.pdf";
-    } else {
-      whitepaper = "https://github.com/orchidsource/whitepaper";
-    }
-
-    console.log("Here's the whitepaper: ", whitepaper);
-    window.location.href = whitepaper;
-  }
+  downloadWhitepaper() { downloadWhitepaper(); }
 }
