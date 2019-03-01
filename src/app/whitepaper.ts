@@ -10,6 +10,5 @@ export function downloadWhitepaper() {
     whitepaper = "https://github.com/orchidsource/whitepaper";
   }
 
-  console.log("Here's the whitepaper: ", whitepaper);
   window.location.href = whitepaper;
 }
