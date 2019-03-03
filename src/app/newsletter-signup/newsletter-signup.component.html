@@ -6,11 +6,14 @@
     <div *ngIf="!submitted">
       <p>Subscribe to our newsletter.</p>
       <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
-        class="input-large center-block gap-top-wide gap-bot-wide">
+        class="input-large center-block gap-top-wide gap-bot-wide" />
       <button (click)="submit()" class="btn-primary btn-fixed center-block">Subscribe</button>
+    </div>
       <ng-container *ngIf="(error != '')">
         <p id="error" [innerHTML]="error"></p>
       </ng-container>
-    </div>
+      <div *ngIf="(success != '')">
+        <p id="success" [innerHTML]="success"></p>
+      </div>
   </section>
 </div>

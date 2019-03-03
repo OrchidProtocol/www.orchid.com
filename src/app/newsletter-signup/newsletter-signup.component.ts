@@ -16,6 +16,7 @@ interface MailChimpResponse {
 export class NewsletterSignupComponent implements OnInit {
   email: string = "";
   error:string = "";
+  success:string = "";
   submitted:boolean = false;
 
   
@@ -31,13 +32,16 @@ export class NewsletterSignupComponent implements OnInit {
 
     this.http.jsonp<MailChimpResponse>(mailchimp_url, 'c').subscribe(
       response => {
-	if (response.result && response.result !== 'error') {
-	  this.submitted = true;
+	if (response) {
+	  if (response.result == "success") {
+	    this.submitted = true;
+	    this.success = response.msg;
+	  } else if (response.result == "error") {
+	    this.error = response.msg;
+	  }
 	}
-	else {
-	  this.error = response.msg;
-	}
-      }, error => {
+      },
+      error => {
 	console.error(error);
 	this.error = 'Sorry, an error occurred.';
       });
