@@ -48,6 +48,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# bfox's helper scripts
-/deploy
