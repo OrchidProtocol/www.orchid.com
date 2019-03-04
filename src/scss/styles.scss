@@ -153,6 +153,7 @@ main {
     max-height: 100%;
 
     @include mobile {
+      //width: auto;
       max-width: 100%;
     }
   }
