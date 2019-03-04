@@ -13,7 +13,7 @@ function usage () {
 
 function copy-push () {
     local gitdest="$1"
-    local tempdir="../55-orchid-www-86"
+    local tempdir="../orchid-www-deploy-$$"
     rm -rf "$tempdir"
     (cd ./dist/browser; cp -a . ../../"$tempdir")
     pushd "$tempdir"
@@ -36,5 +36,5 @@ elif [ "$1" == "opuslogica" ]; then
 elif [ "$1" == "staging" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/new.orchid.com'
 elif [ "$1" == "production" ]; then
-    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/www.orchid.com'
+    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com'
 fi
