@@ -55,7 +55,11 @@ function warn() {
 function disconnect() {
   say 'Stopping the server'
 
-  screen -S $SCREEN -X stuff $'\000' || warn 'Failed to stop the server - it may still be running'
+  screen -S $SCREEN -X stuff $'\003' || warn 'Failed to stop the server.'
+
+  if screen -S $SCREEN -list >/dev/null 2>/dev/null; then
+    warn 'The server may still be running.'
+  fi
 }
 
 function chk-screen() {
