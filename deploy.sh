@@ -4,6 +4,9 @@
 #  Copyright (c) 2019 Brian Fox
 #  Author: Brian Fox (bfox@brianjfox.com)
 #  Birthdate: Mon Mar  4 14:03:59 2019.
+
+built_files=./dist/browser
+
 function usage () {
     local exit_status="$1"
     echo "Usage:  deploy [opus | staging | production]"
@@ -11,11 +14,13 @@ function usage () {
     exit $exit_status
 }
 
+if [ "$1" == "" ]; then usage 3; fi
+
 function copy-push () {
     local gitdest="$1"
     local tempdir="../orchid-www-deploy-$$"
     rm -rf "$tempdir"
-    (cd ./dist/browser; cp -a . ../../"$tempdir")
+    (cd ${built_files}; cp -a . ../../"$tempdir")
     pushd "$tempdir"
     git init
     git add .
@@ -25,14 +30,17 @@ function copy-push () {
     popd
 }
 
-if [ "$1" == "" ]; then usage 3; fi
+# Build the angular site...
+# ng build --prod
 
-ng build --prod
+# Build the static site...
+DEF_OUT_DIR=${built_files} ./static-render.sh
+
 
 if [ "$1" == "--help" ]; then
     usage
 elif [ "$1" == "opuslogica" ]; then
-    scp -rp ./dist/browser/* .htaccess opuslogica.com:/www/sites/orchid.opuslogica.com/
+    scp -rp ${built_files}/* .htaccess opuslogica.com:/www/sites/orchid.opuslogica.com/
 elif [ "$1" == "staging" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/new.orchid.com'
 elif [ "$1" == "production" ]; then
