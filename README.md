@@ -17,6 +17,11 @@ component. You can also use `ng generate directive|pipe|service|class|guard|inte
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
+This site has been configured to work with Angular Universal.  The Angular
+Universal server can be built with `yarn build:ssr` and run with
+`yarn serve:ssr`.  Additionally, `yarn build:static` can generate a static site
+tree in `dist/static` by running a recursive `wget` request over the server.
+
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
