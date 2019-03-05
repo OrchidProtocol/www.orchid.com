@@ -1,11 +1,48 @@
 #!/bin/bash
 
+DEF_SCREEN=static-render-server
+DEF_OUT_DIR=dist/static
+DEF_PORT=3926
+
 # Any of these three variables can be overridden at the command line if necessary
-[[ -n "$SCREEN" ]] || SCREEN=static-render-server
-[[ -n "$OUT_DIR" ]] || OUT_DIR=dist/static
-[[ -n "$PORT" ]] || PORT=3926
+[[ -n "$SCREEN" ]] || SCREEN=$DEF_SCREEN
+[[ -n "$OUT_DIR" ]] || OUT_DIR=$DEF_OUT_DIR
+[[ -n "$PORT" ]] || PORT=$DEF_PORT
 
 export PORT
+
+function usage() {
+  cat <<EOF
+Usage: static-render.sh [flags]
+
+Flags:
+  -h        Display this message
+  -u        Same as -h
+
+Environment Variables:
+  SCREEN    [optional] The name of the screen session to use (defaults to $DEF_SCREEN)
+  OUT_DIR   [optional] The directory to output to (defaults to $DEF_OUT_DIR)
+  PORT      [optional] The port to run the HTTP server on (defaults to $DEF_PORT)
+EOF
+}
+
+while getopts "hu" opt; do
+  case $opt in
+    h|u)
+      usage
+      exit 0
+      ;;
+    \?)
+      usage
+      exit 1
+      ;;
+  esac
+done
+
+if [[ -n "$@" ]]; then
+  usage
+  exit 1
+fi
 
 function say() {
   [[ -t 2 ]] && echo $'\x1b[1m==> '$@$'\x1b[m' >&2 || echo '==> '$@ >&2
@@ -35,13 +72,13 @@ if ! chk-screen; then
   warn 'Close it or choose a different session name.'
   warn '  (i.e. SCREEN=something-else ./static-render.sh'
 
-  exit 1
+  exit -1
 fi
 
 cd "$(dirname "$0")"
 
 say 'Building server files...'
-yarn build:ssr || exit 1
+yarn build:ssr || exit -1
 
 say 'Launching the server in a screen session'
 chk-screen || warn 'Leaving it open will cause problems.'
@@ -53,7 +90,7 @@ sleep 5
 
 say 'Retrieving server files...'
 [[ -d $OUT_DIR ]] && rm -rf $OUT_DIR
-mkdir -p $OUT_DIR || exit 1
-wget -nH -e robots=off -P$OUT_DIR -mE http://localhost:$PORT || exit 1
+mkdir -p $OUT_DIR || exit -1
+wget -nH -e robots=off -P$OUT_DIR -mE http://localhost:$PORT || exit -1
 
 say 'Done.'
