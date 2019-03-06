@@ -45,7 +45,7 @@ if [ "$1" == "--help" ]; then
 elif [ "$1" == "opuslogica" ]; then
     scp -rp ${built_files}/* .htaccess opuslogica.com:/www/sites/orchid.opuslogica.com/
 elif [ "$1" == "staging" ]; then
-    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/new.orchid.com'
+    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.dev'
 elif [ "$1" == "production" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com'
 fi
