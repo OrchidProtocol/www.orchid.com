@@ -93,8 +93,8 @@ say 'Waiting a bit for the server to start...'
 sleep 5
 
 say 'Retrieving server files...'
-[[ -d $OUT_DIR ]] && rm -rf $OUT_DIR
-mkdir -p $OUT_DIR || exit -1
-wget -nH -e robots=off -P$OUT_DIR -mE http://localhost:$PORT || exit -1
+[[ -d "$OUT_DIR" ]] && rm -rf "$OUT_DIR"
+mkdir -p "$OUT_DIR" || exit -1
+wget -nH -e robots=off -P"$OUT_DIR" -mE http://localhost:$PORT || exit -1
 
 say 'Done.'
