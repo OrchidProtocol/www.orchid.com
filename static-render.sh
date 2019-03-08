@@ -98,4 +98,18 @@ mkdir -p "$OUT_DIR" || exit -1
 wget -nH -e robots=off -P"$OUT_DIR" -mE http://localhost:$PORT || exit -1
 if [ ! -d "$OUT_DIR"/assets ]; then mkdir -p "$OUT_DIR"/assets; fi
 cp -r src/assets/* "$OUT_DIR"/assets/
+cat >> "$OUT_DIR"/version.html <<EOF
+<!DOCTYPE html>
+<html>
+<head>
+<title>Orchid</title>
+</head>
+<body>
+<pre>
+Git Repository: $(git remote -v | grep origin | grep push | awk '{ print $2; }')
+Deployed Hash: $(git rev-parse HEAD)
+</pre>
+</body>
+</html>
+EOF
 say 'Done.'
