@@ -100,6 +100,8 @@ wget -nH -m -k -K -E http://localhost:$PORT/ -e robots=off -P"$OUT_DIR" || exit 
 if [ ! -d "$OUT_DIR"/assets ]; then mkdir -p "$OUT_DIR"/assets; fi
 if [ ! -d "$OUT_DIR"/assets/img ]; then mkdir -p "$OUT_DIR"/assets/img; fi
 cp -r src/assets/img/* "$OUT_DIR"/assets/img
+mkdir -p "$OUT_DIR"/assets/whitepaper 2>/dev/null
+cp src/assets/whitepaper/whitepaper.pdf "$OUT_DIR"/assets/whitepaper/
 cat >> "$OUT_DIR"/version.html <<EOF
 <!DOCTYPE html>
 <html>
