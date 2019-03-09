@@ -95,7 +95,8 @@ sleep 5
 say 'Retrieving server files...'
 [[ -d "$OUT_DIR" ]] && rm -rf "$OUT_DIR"
 mkdir -p "$OUT_DIR" || exit -1
-wget -nH -e robots=off -P"$OUT_DIR" -mE http://localhost:$PORT || exit -1
+# wget -nH -e robots=off -P"$OUT_DIR" -mE http://localhost:$PORT || exit -1
+wget -nH -m -k -K -E http://localhost:$PORT/ -e robots=off -P"$OUT_DIR" || exit -1
 if [ ! -d "$OUT_DIR"/assets ]; then mkdir -p "$OUT_DIR"/assets; fi
 if [ ! -d "$OUT_DIR"/assets/img ]; then mkdir -p "$OUT_DIR"/assets/img; fi
 cp -r src/assets/img/* "$OUT_DIR"/assets/img
