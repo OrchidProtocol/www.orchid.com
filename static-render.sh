@@ -97,7 +97,8 @@ say 'Retrieving server files...'
 mkdir -p "$OUT_DIR" || exit -1
 wget -nH -e robots=off -P"$OUT_DIR" -mE http://localhost:$PORT || exit -1
 if [ ! -d "$OUT_DIR"/assets ]; then mkdir -p "$OUT_DIR"/assets; fi
-cp -r src/assets/* "$OUT_DIR"/assets/
+if [ ! -d "$OUT_DIR"/assets/img ]; then mkdir -p "$OUT_DIR"/assets/img; fi
+cp -r src/assets/img/* "$OUT_DIR"/assets/img
 cat >> "$OUT_DIR"/version.html <<EOF
 <!DOCTYPE html>
 <html>
