@@ -102,6 +102,7 @@ if [ ! -d "$OUT_DIR"/assets/img ]; then mkdir -p "$OUT_DIR"/assets/img; fi
 cp -r src/assets/img/* "$OUT_DIR"/assets/img
 mkdir -p "$OUT_DIR"/assets/whitepaper 2>/dev/null
 cp src/assets/whitepaper/whitepaper.pdf "$OUT_DIR"/assets/whitepaper/
+ln -s ./assets/whitepaper/whitepaper.pdf "$OUT_DIR"/whitepaper.pdf
 cat >> "$OUT_DIR"/version.html <<EOF
 <!DOCTYPE html>
 <html>
