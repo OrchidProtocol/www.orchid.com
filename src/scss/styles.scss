@@ -179,7 +179,7 @@ button:not(.phantom-btn) {
   $pad-h: 1em;
   $pad-v: $form-pad-v;
 
-  transition-property: background, border, box-shadow;
+  transition-property: background, color, border, box-shadow;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
   padding: $pad-v $pad-h;
@@ -198,25 +198,38 @@ button:not(.phantom-btn) {
     }
   }
 
-  &:hover {
-    box-shadow: mat-shadow(8px);
+  &:not(:disabled) {
+    &:hover {
+      box-shadow: mat-shadow(8px);
+    }
+
+    &:active {
+      transition-duration: 0s;
+      box-shadow: mat-shadow(2px);
+    }
   }
 
-  &:active {
-    transition-duration: 0s;
-    box-shadow: mat-shadow(2px);
+  &:disabled {
+    box-shadow: none;
   }
 
   &.btn-primary {
     background: $orc-purple;
     color: $orc-beige-light;
 
-    &:hover {
-      background: $orc-purple-hover;
+    &:not(:disabled) {
+      &:hover {
+        background: $orc-purple-hover;
+      }
+
+      &:active {
+        background: $orc-purple-active;
+      }
     }
 
-    &:active {
-      background: $orc-purple-active;
+    &:disabled {
+      background: $orc-rock-gray;
+      color: rgba($orc-beige-light, 0.5);
     }
   }
 
@@ -227,12 +240,18 @@ button:not(.phantom-btn) {
     padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
     color: $orc-rock-gray;
 
-    &:hover {
-      border-color: $orc-purple-hover;
+    &:not(:disabled) {
+      &:hover {
+        border-color: $orc-purple-hover;
+      }
+
+      &:active {
+        border-color: $orc-purple-active;
+      }
     }
 
-    &:active {
-      border-color: $orc-purple-active;
+    &:disabled {
+      border-color: $orc-rock-gray;
     }
   }
 

@@ -1,14 +1,12 @@
 @import 'misc_config';
 
 #error, #success {
-    margin: 0 auto 0 auto;
-    max-width: 50%;
-    padding: 3rem 1rem 0;
-    color: $color-error;
-    font-size: 1.25em;
+  margin: 0 auto 0 auto;
+  max-width: 50%;
+  padding: 3rem 1rem 0;
+  font-size: 1.25em;
 }
 
-#success {
-    color: inherit;
+#error {
+  color: $color-error;
 }
-
