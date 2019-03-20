@@ -3,7 +3,7 @@
 @import 'misc_config';
 @import 'orc_config';
 
-@include splash-columns(1fr, 2fr);
+@include splash-columns(5fr, 7fr);
 
 #splash-text {
   @include not-vert-splash {
@@ -52,9 +52,9 @@
 }
 
 .ev-event {
-  // NB: that 68rem is kinda arbitrary
+  // NB: that 60rem is kinda arbitrary
   //     this value should be maintained to fit exactly three items horizontally
-  flex: 0 1 (68rem / 3);
+  flex: 0 1 (60rem / 3);
   margin: 1rem;
 }
 

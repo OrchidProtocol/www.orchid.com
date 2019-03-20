@@ -11,6 +11,10 @@ $mobile-nav-height: 64px;
   padding-top: 1rem;
   padding-bottom: 1rem;
 
+  @include not-mobile {
+    padding-bottom: 4rem;
+  }
+
   @include size-body-sm;
 
   $ease-in: cubic-bezier(0.35, 0.25, 0.75, 0.5);
