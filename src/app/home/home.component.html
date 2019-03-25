@@ -78,8 +78,9 @@ Orchid is a suite of open source tools and cryptographic protocols developed and
     </header>
     <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events else loadingEvents">
       <li class="ev-event" *ngFor="let event of events">
-        <p class="ev-title">{{event.date}} | {{event.title}} | {{event.location}}</p>
-        <p class="ev-body">{{event.desc}}</p>
+        <p class="ev-title">{{event.date}} | {{event.title}}</p>
+	<p class="ev-title">{{event.location}}</p>
+        <p *ngIf="event.desc" class="ev-body">{{event.desc}}</p>
         <p class="ev-link" *ngIf="event.link as link">
           <a [href]="link" target="_blank" rel="noopener noreferrer">{{link}}</a>
         </p>
