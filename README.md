@@ -19,11 +19,8 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 This site has been configured to work with Angular Universal.  The Angular
 Universal server can be built with `yarn build:ssr` and run with
-`yarn serve:ssr`.  Additionally, `yarn build:static` (or `./static-render.sh`)
-can generate a static site tree in `dist/static` by running a recursive `wget`
-request over the server.
-
-For more information on the static build script, run `./static-render.sh -h`.
+`yarn serve:ssr`.  Additionally, `yarn render:ssr` can generate a static site
+tree in `dist/static`.
 
 ## Running unit tests
 

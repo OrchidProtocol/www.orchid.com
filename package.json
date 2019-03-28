@@ -8,11 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:ssr": "yarn run build:client-and-server-bundles && yarn run webpack:server",
+    "build:ssr": "yarn run build:client-and-server-bundles && yarn run webpack:universal",
     "serve:ssr": "node dist/server.js",
+    "render:ssr": "node dist/renderer.js",
     "build:client-and-server-bundles": "ng build --prod && ng run orchid-www:build-server:production",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
-    "build:static": "./static-render.sh"
+    "webpack:universal": "webpack --config webpack.universal.config.js --progress --colors",
+    "build:static": "yarn run build:ssr && yarn run render:ssr"
   },
   "private": true,
   "dependencies": {
@@ -39,10 +40,11 @@
     "@angular/cli": "~7.3.4",
     "@angular/compiler-cli": "~7.2.7",
     "@angular/language-service": "~7.2.7",
-    "@types/node": "~8.9.4",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
+    "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
+    "fs-extra": "^7.0.1",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
