@@ -62,11 +62,7 @@ const {AppServerModuleNgFactory,
 emptyDirSync(OUT_FOLDER);
 
 copySync(IN_FOLDER, OUT_FOLDER, {
-  filter(src: string, dest: string): boolean {
-    console.log(src);
-
-    return src != TEMPLATE_FILE;
-  }
+  filter(src: string, dest: string): boolean { return src != TEMPLATE_FILE; }
 })
 
 genRoutes(routes).forEach(url => {
