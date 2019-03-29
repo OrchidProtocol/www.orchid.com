@@ -5,9 +5,6 @@
 #  Author: Brian Fox (bfox@brianjfox.com)
 #  Birthdate: Mon Mar  4 14:03:59 2019.
 
-# This doesn't work -- the wget fails, getting a 500 error.  I don't care.
-# built_files=./dist/browser
-# Because this works, and I really, genuinely, honestly do not care.
 built_files=dist/static
 
 function usage () {
@@ -37,8 +34,8 @@ function copy-push () {
 # ng build --prod
 
 # Build the static site...
-DEF_OUT_DIR=${built_files} ./static-render.sh
-
+rm -rf ${built_files}
+yarn run build:static
 
 if [ "$1" == "--help" ]; then
     usage

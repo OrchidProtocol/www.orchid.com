@@ -17,10 +17,7 @@ component. You can also use `ng generate directive|pipe|service|class|guard|inte
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-This site has been configured to work with Angular Universal.  The Angular
-Universal server can be built with `yarn build:ssr` and run with
-`yarn serve:ssr`.  Additionally, `yarn render:ssr` can generate a static site
-tree in `dist/static`.
+To build a static version of the site, which will display most of everything even if javascript is turned off, use `yarn run build:static`.  This produces an error, but nobody cares about that, except for me, because I'm a shitty fucking perfectionist.  However, I won't put the time in to fix it, because it isn't my job to make websites.  (bfox is "me" in that rant.)
 
 ## Running unit tests
 
