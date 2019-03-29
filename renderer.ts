@@ -1,7 +1,6 @@
 import "zone.js/dist/zone-node";
 import "reflect-metadata";
 
-import {matchesElement} from "@angular/animations/browser/src/render/shared";
 import {enableProdMode} from "@angular/core";
 import {renderModuleFactory} from "@angular/platform-server";
 import {Routes} from "@angular/router";
@@ -17,10 +16,11 @@ function genRoutes(routes: Routes): string[] {
   function recurse(routes: Routes): string[] {
     return Array.prototype.concat.apply(
       [],
-      routes.map(
-        r => r.children
-               ? genRoutes(r.children).map(child => join(r.path, child))
-               : [r.path]));
+      routes
+        .filter(r => r.component) // Make sure this isn't a redirect route
+        .map(r => r.children
+                    ? genRoutes(r.children).map(child => join(r.path, child))
+                    : [r.path]));
   }
 
   return recurse(routes).map(r => join("/", r));
@@ -76,7 +76,10 @@ genRoutes(routes).forEach(url => {
     extraProviders: [
       provideModuleMap(LAZY_MODULE_MAP),
     ]
-  }).then(html => writeFileSync(outFile, html));
+  }).then(html => {
+    console.log(`Rendered '${url}' to '${outFile}'`);
+    writeFileSync(outFile, html)
+  });
 });
 
 writeFileSync(VERSION_FILE,

@@ -1,4 +1,4 @@
-import {Routes} from "@angular/router";
+import {Route, Routes} from "@angular/router";
 
 import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
@@ -12,17 +12,27 @@ import {
 import {ServiceTermsComponent} from "./service-terms/service-terms.component";
 import {WhyOrchidComponent} from "./why-orchid/why-orchid.component";
 
-export const routes: Routes = [{
-  path: "",
-  component: PageLayoutComponent,
-  children: [
-    {path: "", component: HomeComponent},
-    {path: "app", component: AboutAppComponent},
-    {path: "network", component: AboutNetworkComponent},
-    {path: "why-orchid", component: WhyOrchidComponent},
-    {path: "faq", component: FaqComponent},
-    {path: "events", component: EventsComponent},
-    {path: "privacy-policy", component: PrivacyPolicyComponent},
-    {path: "service-terms", component: ServiceTermsComponent}
-  ]
-}];
+export const routes: Routes = [
+  {
+    path: "",
+    component: PageLayoutComponent,
+    children: [
+      {path: "", component: HomeComponent},
+      {path: "app", component: AboutAppComponent},
+      {path: "app.html", redirectTo: "app"},
+      {path: "network", component: AboutNetworkComponent},
+      {path: "network.html", redirectTo: "network"},
+      {path: "why-orchid", component: WhyOrchidComponent},
+      {path: "why-orchid.html", redirectTo: "why-orchid"},
+      {path: "faq", component: FaqComponent},
+      {path: "faq.html", redirectTo: "faq"},
+      {path: "events", component: EventsComponent},
+      {path: "events.html", redirectTo: "events"},
+      {path: "privacy-policy", component: PrivacyPolicyComponent},
+      {path: "privacy-policy.html", redirectTo: "privacy-policy"},
+      {path: "service-terms", component: ServiceTermsComponent},
+      {path: "service-terms.html", redirectTo: "service-terms"},
+    ]
+  },
+  {path: "index.html", redirectTo: ""},
+];
