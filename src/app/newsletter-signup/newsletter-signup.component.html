@@ -7,9 +7,11 @@
       <p>Subscribe to our newsletter.</p>
       <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
         class="input-large center-block gap-top-wide gap-bot-wide" />
-      <strong>TODO: fix the consent checkbox</strong>
       <div class="gap-bot-wide" *ngIf="showFull">
-        <label><input type="checkbox" [(ngModel)]="consented">TODO: ADD PROPER CONSENT COPY</label>
+        <label class="gdpr-consent">
+	  <input type="checkbox" [(ngModel)]="consented">
+	  I consent to receiving further instructions at the email address I submitted above.
+	</label>
       </div>
       <button (click)="submit()" class="btn-primary btn-fixed center-block" [disabled]="!consented || submitted">Subscribe</button>
     </div>
