@@ -18,6 +18,7 @@ export class NewsletterSignupComponent implements OnInit {
   error: string      = "";
   success: string    = "";
   submitted: boolean = false;
+  blink_box: boolean = false;
   showFull: boolean  = false;
 
   get email() { return this._email; }
@@ -31,6 +32,14 @@ export class NewsletterSignupComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   submit() {
+
+    if (!this.consented) {
+      this.blink_box = true;
+      return false;
+    } else {
+      this.blink_box = false;
+    }
+
     const magic_value = "b_3f36871a1dd2e1f2f4dc2fa96_5445cd6980";
     const mailchimp_add =
       "https://orchid.us17.list-manage.com/subscribe/post-json?u=3f36871a1dd2e1f2f4dc2fa96&amp;id=5445cd6980&";

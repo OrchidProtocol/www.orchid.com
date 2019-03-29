@@ -16,4 +16,5 @@ label.gdpr-consent {
     input[type="checkbox"] {
 	margin-right: 8px;
     }
+    &.blink_box { padding: 4px; border: 2px solid red; }
 }
