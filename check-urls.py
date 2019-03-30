@@ -1,0 +1,54 @@
+#! /usr/bin/env python
+# check-urls.py: -*- Python -*-  Test the deployed website for correct operation sans javascript.
+# 
+#  Copyright (c) 2019 Nathan Handler.
+#  Author: Nathan Handler (nhandler@orchid.com)
+#  Birthdate: Sat Mar 30 11:52:18 2019.
+import requests
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+
+capabilities = DesiredCapabilities.CHROME
+capabilities['loggingPrefs'] = { 'browser':'ALL' }
+
+driver = webdriver.Chrome(options=options, desired_capabilities=capabilities)
+
+tests = {
+    'https://www.orchid.com': 'Humans naturally crave space to freely express their agency.',
+    'https://www.orchid.com/app': 'Harnessing the power of community creates a natural and truly next-generation VPN experience.',
+    'https://www.orchid.com/network': 'network design draws inspiration from parts of nature that demonstrate emergent self-organization and mutual exchange.',
+    'https://www.orchid.com/why-orchid': 'There is no division between the natural world and the digital one.',
+    'https://www.orchid.com/events': 'Find us IRL',
+    'https://www.orchid.com/privacy-policy': 'This privacy policy has been compiled to better serve those who are concerned with how their \'Personally identifiable information\' (PII) is being used online.',
+    'https://www.orchid.com/service-terms': 'We employ the use of cookies.',
+    'https://www.orchid.com/index.html': 'Humans naturally crave space to freely express their agency.',
+    'https://www.orchid.com/app.html': 'Harnessing the power of community creates a natural and truly next-generation VPN experience.',
+    'https://www.orchid.com/network.html': 'network design draws inspiration from parts of nature that demonstrate emergent self-organization and mutual exchange.',
+    'https://www.orchid.com/why-orchid.html': 'There is no division between the natural world and the digital one.',
+    'https://www.orchid.com/events.html': 'Find us IRL',
+    'https://www.orchid.com/privacy-policy.html': 'This privacy policy has been compiled to better serve those who are concerned with how their \'Personally identifiable information\' (PII) is being used online.',
+    'https://www.orchid.com/service-terms.html': 'We employ the use of cookies.',
+    'https://www.orchid.com/assets/whitepaper/whitepaper.pdf': '',
+}
+
+for url, string in tests.items():
+    print("Testing: {url}".format(url=url))
+
+    r = requests.get(url)
+    assert 200 == r.status_code, "{url} returned {status}".format(url=url, status=r.status_code)
+    if url.endswith('.html'):
+        assert string in r.text, "{string} not in {url}".format(string=string, url=url)
+
+    driver.get(url)
+    assert string in driver.page_source, "{string} not in {url}".format(string=string, url=url)
+    error_log = driver.get_log('browser')
+    assert 0 == len(error_log), "{count} Javascript errors on {url}:\n\t{errors}".format(url=url, count=len(error_log), errors=error_log)
+
+r = requests.get('http://orchid.com')
+assert 200 == r.status_code, "http://orchid.com returned {status}".format(status=r.status_code)
+assert 'https://www.orchid.com/' == r.url, "http://orchid.com ends up at {url} instead of https://www.orchid.com/".format(url=r.url)
+
+driver.quit()
