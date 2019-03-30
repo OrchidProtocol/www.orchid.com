@@ -36,6 +36,11 @@ function copy-push () {
 # Build the static site...
 rm -rf ${built_files}
 yarn run build:static
+(cd ${built_files};
+ for file in $(echo *.html); do
+     mkdir -p $(basename ${file} .html)
+     cp ${file} $(basename ${file} .html)/index.html
+ done)
 
 if [ "$1" == "--help" ]; then
     usage
