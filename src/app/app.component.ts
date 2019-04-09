@@ -18,10 +18,11 @@ export class AppComponent implements OnInit {
     ["/app", "App"],
     ["/network", "Network"],
     ["/why-orchid", "Why Orchid"],
+    ["/faq", "FAQ"],
     ["/events", "Events"],
-    ["/dev-resources", "Dev Resources"],
     ["/privacy-policy", "Privacy Policy"],
-    ["/service-terms", "Terms of Service"]
+    ["/service-terms", "Terms of Service"],
+    ["/company", "Company"],
   ]);
 
   public constructor(private router: Router, private titleService: Title) {}

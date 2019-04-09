@@ -56,6 +56,14 @@ h1 {
       font-size: $size-h1-big-mobile;
     }
   }
+
+  &.small {
+    font-size: $size-h1-small;
+
+    @include mobile {
+      font-size: $size-h1-small-mobile;
+    }
+  }
 }
 
 h2, h3 {
@@ -467,6 +475,13 @@ input, .required-input {
   }
 }
 
+.pad-bot-wide {
+  padding-bottom: $pad-wide;
+
+  @include mobile {
+    padding-bottom: $pad-wide-mobile;
+  }
+}
 
 .gap-bot-wide {
   margin-bottom: $pad-wide;
@@ -500,6 +515,15 @@ input, .required-input {
 
 .bk-white {
   background: $bkgd-white;
+}
+
+.bk-deep-purple {
+  background: $orc-deep-purple;
+  color: $color-bright-white;
+
+  h1 {
+    color: $color-dim-white;
+  }
 }
 
 @include mobile {

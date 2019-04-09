@@ -1,4 +1,5 @@
 import {Component, OnInit} from "@angular/core";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: "app-page-layout",
@@ -6,21 +7,25 @@ import {Component, OnInit} from "@angular/core";
   styleUrls: ["./page-layout.component.scss"]
 })
 export class PageLayoutComponent implements OnInit {
-  js: boolean;
-  isOpen: boolean;
-  noShadow: boolean;
+  js: boolean = false;
+  animateMenu: boolean = false;
+  isOpen: boolean = false;
+  noShadow: boolean = true;
+  purple: boolean;
 
-  constructor() {}
+  constructor(route: ActivatedRoute) {
+    route.data.subscribe(d => this.purple = !!d["purpleLayout"]);
+  }
 
   ngOnInit() {
-    this.js       = false;
-    this.isOpen   = false;
-    this.noShadow = true;
-
     const doc = typeof document !== "undefined" && document;
 
     if (doc) {
       this.js = true;
+
+      // This prevents an annoying bug with the stylesheets where the menu slides
+      // out of view immediately after loading
+      setTimeout(_ => this.animateMenu = true, 20);
 
       let nav   = doc.getElementById("nav") as HTMLElement;
       let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;

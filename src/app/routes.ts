@@ -1,6 +1,7 @@
-import {Route, Routes} from "@angular/router";
+import {Routes} from "@angular/router";
 
 import {AboutAppComponent} from "./about-app/about-app.component";
+import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
 import {EventsComponent} from "./events/events.component";
 import {FaqComponent} from "./faq/faq.component";
@@ -32,6 +33,19 @@ export const routes: Routes = [
       {path: "privacy-policy.html", redirectTo: "privacy-policy"},
       {path: "service-terms", component: ServiceTermsComponent},
       {path: "service-terms.html", redirectTo: "service-terms"},
+    ]
+  },
+  {
+    path: "",
+    component: PageLayoutComponent,
+    data: {purpleLayout: true},
+    children: [
+      {
+        path: "company",
+        component: AboutCompanyComponent,
+        data: {purpleLayout: true}
+      },
+      {path: "company.html", redirectTo: "company"},
     ]
   },
   {path: "index.html", redirectTo: ""},

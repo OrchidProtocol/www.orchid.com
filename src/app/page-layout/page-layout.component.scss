@@ -37,15 +37,22 @@ $mobile-nav-height: 64px;
       top: 0;
       box-sizing: border-box;
       height: $mobile-nav-height;
-      background: $orc-beige-light;
+      background: inherit;
       box-shadow: mat-shadow(8px, $alpha: 0.2);
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
 
+    #nav-root.bk-deep-purple > &.js {
+      box-shadow: mat-shadow(8px, $alpha: 0.4);
+    }
+
     &.no-shadow {
-      transition-duration: 0.07s;
-      transition-timing-function: $ease-in;
-      box-shadow: mat-shadow(0px, $alpha: 0.2);
+      // I hate CSS. (This deals with rule importance)
+      &, #nav-root.bk-deep-purple > & {
+        transition-duration: 0.07s;
+        transition-timing-function: $ease-in;
+        box-shadow: mat-shadow(0px, $alpha: 0.2);
+      }
     }
   }
 }
@@ -80,10 +87,13 @@ $flyout-gap: ($flyout-spacing / 2.0);
     margin: 0;
     padding: 0;
 
-    &.js {
+    &.animate {
       transition-property: transform;
       transition-duration: $flyout-time;
       transition-timing-function: $flyout-ease-in;
+    }
+
+    &.js {
       position: fixed;
       right: 0;
       top: 0;
@@ -91,6 +101,7 @@ $flyout-gap: ($flyout-spacing / 2.0);
       padding: 1rem 1rem $flyout-gap $flyout-gap;
       width: 10rem;
       background: $orc-beige-light;
+      color: $orc-rock-gray;
       box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
       transform: translate(100%, 0);
       z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
@@ -295,7 +306,8 @@ $flyout-gap: ($flyout-spacing / 2.0);
 
 #ft-nav-list {
   @include mobile {
-    > li {
+    > li > a {
+      display: block;
       padding: 0.5rem 0;
     }
   }

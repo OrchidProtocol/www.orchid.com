@@ -1,12 +1,12 @@
-<div id="nav-root" class="bk-beige-light">
-  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow">
+<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.bk-deep-purple]="this.purple">
+  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
-        <img src="/assets/img/shared/orchid-logo.svg" alt="Orchid logo" class="no-mobile">
-        <img src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
+        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'" alt="Orchid logo" class="no-mobile">
+        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'" alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div id="nav-menu" [class.js]="this.js" [class.open]="this.isOpen">
+    <div id="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img src="/assets/img/shared/close.svg">
@@ -20,7 +20,7 @@
       </ul>
     </div>
     <button id="nav-toggle" class="phantom-btn mobile-only">
-      <img src="/assets/img/shared/hamburger.svg">
+      <img [src]="this.purple ? '/assets/img/shared/hamburger-white.svg' : '/assets/img/shared/hamburger.svg'">
     </button>
     <div id="nav-flyout-bkgd" [class.open]="this.isOpen"></div>
   </nav>
@@ -45,11 +45,11 @@
       <div id="ft-pad-a" class="no-mobile"></div>
       <nav id="ft-nav">
         <ul id="ft-nav-list" class="phantom-list">
-          <!-- TODO: these are really hard to tap on mobile -->
           <li><a class="phantom-a" routerLink="/">Orchid</a></li>
           <li><a class="phantom-a" routerLink="/app">App</a></li>
           <li><a class="phantom-a" routerLink="/network">Network</a></li>
           <li><a class="phantom-a" routerLink="/why-orchid">Why Orchid</a></li>
+          <li><a class="phantom-a" routerLink="/company">Company</a></li>
           <!-- <li><a class="phantom-a" routerLink="/faq">FAQ</a></li>  -->
           <li><a class="phantom-a" routerLink="/events">Events</a></li>
         </ul>

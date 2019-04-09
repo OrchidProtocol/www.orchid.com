@@ -5,6 +5,9 @@ $bkgd-white:      #fff;
 $bkgd-lavender:   #f3f4f9;
 $bkgd-faint-gray: #fbfbf9;
 
+$color-bright-white: #fbfbfe;
+$color-dim-white:    #d8d8d8;
+
 // Arbitrary
 $color-error: #db5b4a;
 
@@ -16,10 +19,12 @@ $size-body-mobile: 14px;
 $size-btn-mobile: 18px;
 
 $size-h1: 64px;
+$size-h1-small: 54px;
 $size-h2: 40px;
 
 $size-h1-big-mobile: 38px;
 $size-h1-mobile: 32px;
+$size-h1-small-mobile: 28px;
 $size-h2-mobile: 26px;
 
 @function mat-shadow($size, $alpha: 0.4, $inset: false, $x: false) {
