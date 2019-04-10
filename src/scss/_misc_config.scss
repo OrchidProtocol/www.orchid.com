@@ -21,11 +21,13 @@ $size-btn-mobile: 18px;
 $size-h1: 64px;
 $size-h1-small: 54px;
 $size-h2: 40px;
+$size-h4: 32px;
 
 $size-h1-big-mobile: 38px;
 $size-h1-mobile: 32px;
 $size-h1-small-mobile: 28px;
 $size-h2-mobile: 26px;
+$size-h4-mobile: 20px;
 
 @function mat-shadow($size, $alpha: 0.4, $inset: false, $x: false) {
   $half: $size / 2.0;

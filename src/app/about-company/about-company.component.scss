@@ -1,0 +1,57 @@
+@import 'media_queries';
+
+.conv-2up {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2rem 1fr;
+  grid-template-areas: "left . right";
+
+  @include mobile {
+    grid-template-rows: auto 2rem auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left"
+      "."
+      "right";
+  }
+}
+
+.conv2-left {
+  grid-area: left;
+}
+
+.conv2-right {
+  grid-area: right;
+}
+
+// Look up "css constrain aspect ratio" if you want to know the reason why any of
+// this garbage works.
+
+.conv-169-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: (9.0 / 16.0 * 100%);
+  max-width: (16.0 / 9.0 * 20rem);
+  max-height: 20rem;
+}
+
+.conv-169 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  max-width: (16.0 / 9.0 * 20rem);
+  max-height: 20rem;
+}
+
+.conv-image {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: contain;
+  object-position: center;
+}

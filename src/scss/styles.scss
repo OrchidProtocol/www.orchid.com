@@ -33,12 +33,17 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0;
+strong {
   font-family: $orc-tf-primary;
   font-weight: 700;
   font-synthesis: none; // Prevent faux bold with Baloo
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @extend strong;
+
+  margin: 0;
+  padding: 0;
   line-height: 1.0;
 
   article > &:not(:last-child) {
@@ -76,6 +81,14 @@ h2, h3 {
 
 h3 {
   color: $orc-purple;
+}
+
+h4 {
+  font-size: $size-h4;
+
+  @include mobile {
+    font-size: $size-h4-mobile;
+  }
 }
 
 p {
@@ -366,6 +379,10 @@ input, .required-input {
 
 .pos-absolute {
   position: absolute;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .center-block {
