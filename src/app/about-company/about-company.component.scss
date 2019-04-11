@@ -24,7 +24,8 @@ header h1 { line-height: 67px; }
 }
 
 .conv2-right {
-  grid-area: right;
+    grid-area: right;
+    &.pull-up { margin-top: -8px; }
 }
 
 // Look up "css constrain aspect ratio" if you want to know the reason why any of
@@ -69,7 +70,7 @@ header h1 { line-height: 67px; }
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    margin: 2rem;
+    margin: 2rem 2rem 2rem 0rem;
   }
 }
 
@@ -93,16 +94,28 @@ header h1 { line-height: 67px; }
   }
 }
 
+ul.sale-icons {
+    display: flex;
+    align-items: baseline;
+}
+
 .sale-icons {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-content: center;
-  margin: -2rem;
+  justify-content: left;
+  align-content: left;
 
-  > li {
-    margin: 2rem;
+  &.saft-raise {
+      text-align: center;
+      justify-content: center;
+      align-content: center;
   }
+  
+  > li {
+    margin: 2rem 2rem 2rem 0rem;
+  }
+
+  img { max-width: 200px; }
 }
 
 #corporate-info {
