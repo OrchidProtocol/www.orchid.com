@@ -10,6 +10,11 @@
 <div class="bk-faint-gray">
   <section class="section-med hpad-wide vpad-wide">
     <h2 class="p-gap">Company</h2>
+    <div class="adorner" id="company-adorner-top">
+      <div class="pos-relative">
+        <img class="adorner-image" src="/assets/img/company/company-adorner-top.svg">
+      </div>
+    </div>
     <div class="z-index-1">
       <p>
         Orchid was founded in 2017, on the principle that the internet should be more open and more accessible, to
@@ -23,22 +28,31 @@
         management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
       </p>
     </div>
-    <!-- TODO: Put the adorners in. -->
+    <div class="adorner" id="company-adorner-bottom">
+      <div class="pos-relative">
+        <img class="adorner-image" src="/assets/img/company/company-adorner-bottom.svg">
+      </div>
+    </div>
   </section>
 </div>
 
 <div>
   <section class="section-wide hpad-wide vpad-wide">
-    <h1 class="p-gap">Convictions</h1>
+    <h1 class="p-gap">Values</h1>
     <!-- TODO: gap-bot-wide seems like the wrong class -->
     <div class="conv-2up gap-bot-wide">
       <div class="conv2-left">
         <div class="conv-169-wrapper">
           <iframe class="conv-169" src="https://www.youtube.com/embed/qo0R6ww4Hvc" frameborder="0"
-            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
       <div class="conv2-right pull-up">
+	<div  class="adorner" id="values-adorner">
+	  <div class="pos-relative">
+            <img class="adorner-image" src="/assets/img/company/values-adorner.svg">
+	  </div>
+	</div>
         <strong><time datetime="2018-07-25">Jul. 25, 2018</time></strong>
         <h4>Seven Waterhouse<br>Oslo Freedom Forum</h4>
         <p>
@@ -52,7 +66,7 @@
     <div class="conv-2up">
       <div class="conv2-left">
         <img src="/assets/img/company/token-sales-social-change.png" alt="How Token Sales Can Be an Instrument for Social Change"
-          class="conv-image">
+		class="conv-image">
         <strong><time datetime="2017-10-26">Oct. 26, 2017</time></strong>
         <h4>How Token Sales Can Be an Instrument for Social Change</h4>
         <p>
@@ -61,7 +75,7 @@
       </div>
       <div class="conv2-right">
         <img src="./assets/img/company/three-internets.png"
-          alt="There May Soon Be Three Internets. America’s Won’t Necessarily Be the Best." class="conv-image">
+		alt="There May Soon Be Three Internets. America’s Won’t Necessarily Be the Best." class="conv-image">
         <strong><time datetime="2018-10-15">Oct. 15, 2018</time></strong>
         <h4>There May Soon Be Three Internets. America’s Won’t Necessarily Be the Best.</h4>
         <p>
@@ -90,7 +104,7 @@
       </li>
       <li>
         <img class="founder-image" src="/assets/img/company/founders/gustav-simonsson.png" alt="Gustav Simonsson">
-      <h4 class="center-text">Gustav Simonsson</h4>
+	<h4 class="center-text">Gustav Simonsson</h4>
       </li>
     </ul>
   </section>
@@ -164,12 +178,16 @@
         10997 Berlin, Germany
       </address>
     </div>
-    <div id="corporate-buttons">
+    <div class="z-index-1" id="corporate-buttons">
       <button class="btn-primary btn-fixed">SEC Filing</button>
       <button class="btn-primary btn-fixed">Press Kit</button>
     </div>
+    <div  class="adorner" id="buttons-adorner">
+      <div class="pos-relative">
+        <img class="adorner-image" src="/assets/img/company/buttons-adorner.png">
+      </div>
+    </div>
   </section>
-  <!-- TODO: Put the adorners in. -->
 </div>
 
 <app-newsletter-signup></app-newsletter-signup>

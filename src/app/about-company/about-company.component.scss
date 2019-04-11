@@ -25,7 +25,7 @@ header h1 { line-height: 67px; }
 
 .conv2-right {
     grid-area: right;
-    &.pull-up { margin-top: -8px; }
+    &.pull-up { position: relative; margin-top: -8px; }
 }
 
 // Look up "css constrain aspect ratio" if you want to know the reason why any of
@@ -171,3 +171,27 @@ ul.sale-icons {
     margin: 1rem;
   }
 }
+
+.adorner {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include mobile {
+	justify-content: center;
+	margin: 1rem 0 1rem;
+    }
+
+    img.adorner-image {
+	position: absolute;
+	left: -6rem;
+	top: -6rem;
+	opacity: 1.0;
+    }
+}
+
+#company-adorner-top { justify-content: flex-start; }
+#company-adorner-bottom { img.adorner-image { top: -8rem; } }
+#values-adorner { img.adorner-image { top: -1rem; left: -15rem; } }
+#buttons-adorner { img.adorner-image { top: -2.5rem; left: -1.5rem; } }
