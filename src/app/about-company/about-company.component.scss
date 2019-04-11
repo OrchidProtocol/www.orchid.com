@@ -1,6 +1,8 @@
 @import 'media_queries';
 @import 'misc_config';
 
+header h1 { line-height: 67px; }
+
 .conv-2up {
   display: grid;
   grid-template-rows: auto;
