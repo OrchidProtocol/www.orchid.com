@@ -34,9 +34,11 @@ body {
 }
 
 strong {
-  font-family: $orc-tf-primary;
-  font-weight: 700;
-  font-synthesis: none; // Prevent faux bold with Baloo
+  &:not(.secondary) {
+    font-family: $orc-tf-primary;
+    font-weight: 700;
+    font-synthesis: none; // Prevent faux bold with Baloo
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,6 +96,14 @@ h4 {
 p {
   margin: 0;
   padding: 0;
+
+  &.big {
+    font-size: $size-body-big;
+
+    @include mobile {
+      font-size: $size-body-big-mobile;
+    }
+  }
 }
 
 button {

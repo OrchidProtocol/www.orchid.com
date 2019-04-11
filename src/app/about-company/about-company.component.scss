@@ -1,4 +1,5 @@
 @import 'media_queries';
+@import 'misc_config';
 
 .conv-2up {
   display: grid;
@@ -54,4 +55,104 @@
   height: 20rem;
   object-fit: contain;
   object-position: center;
+}
+
+#founder-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: -2rem;
+
+  > li {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    margin: 2rem;
+  }
+}
+
+.founder-image {
+  display: block;
+  width: 12rem;
+  height: 12rem;
+  margin-bottom: 2rem;
+  border-radius: 100vmax;
+  overflow: hidden;
+  box-shadow: mat-shadow(40px, $alpha: 0.2), 0 1px .5px rgba(white, 0.4) inset;
+}
+
+.sale-header {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: baseline;
+
+  > h2 {
+    margin-right: .5em;
+  }
+}
+
+.sale-icons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  margin: -2rem;
+
+  > li {
+    margin: 2rem;
+  }
+}
+
+#corporate-info {
+  display: grid;
+  grid-template-rows: auto 1rem auto;
+  // NB: 16.5rem taken from .btn-fixed
+  grid-template-columns: 3fr 1rem 16.5rem;
+  grid-template-areas:
+    "header  . buttons"
+    ".       . buttons"
+    "address . buttons";
+
+  @include mobile {
+    grid-template-rows: auto 1rem auto 1rem auto;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "header"
+      "."
+      "address"
+      "."
+      "buttons";
+  }
+}
+
+#corporate-header {
+  grid-area: header;
+}
+
+#corporate-address {
+  grid-area: address;
+  display: flex;
+  flex-flow: row wrap;
+  margin: -.5rem -1rem;
+
+  > address {
+    margin: .5rem 1rem;
+  }
+}
+
+#corporate-buttons {
+  grid-area: buttons;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  margin: -1rem;
+
+  @include mobile {
+    align-items: center;
+  }
+
+  > button {
+    display: block;
+    margin: 1rem;
+  }
 }
