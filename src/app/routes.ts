@@ -4,7 +4,7 @@ import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
 import {EventsComponent} from "./events/events.component";
-import {FaqComponent} from "./faq/faq.component";
+import {FaqsComponent} from "./faqs/faqs.component";
 import {HomeComponent} from "./home/home.component";
 import {PageLayoutComponent} from "./page-layout/page-layout.component";
 import {
@@ -25,8 +25,8 @@ export const routes: Routes = [
       {path: "network.html", redirectTo: "network"},
       {path: "why-orchid", component: WhyOrchidComponent},
       {path: "why-orchid.html", redirectTo: "why-orchid"},
-      {path: "faq", component: FaqComponent},
-      {path: "faq.html", redirectTo: "faq"},
+      {path: "faqs", component: FaqsComponent},
+      {path: "faqs.html", redirectTo: "faqs"},
       {path: "events", component: EventsComponent},
       {path: "events.html", redirectTo: "events"},
       {path: "privacy-policy", component: PrivacyPolicyComponent},

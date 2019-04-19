@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
     ["/app", "App"],
     ["/network", "Network"],
     ["/why-orchid", "Why Orchid"],
-    ["/faq", "FAQ"],
+    ["/faqs", "FAQs"],
     ["/events", "Events"],
     ["/privacy-policy", "Privacy Policy"],
     ["/service-terms", "Terms of Service"],

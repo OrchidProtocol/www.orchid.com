@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-md-8">
+      <h4 class="text-muted title">
+	<span (click)="faqs_clicked();" class="left">FAQs</span>
+      </h4>
+      <ul class="list-group" class="categories">
+        <li *ngFor="let cat of faqs" class="list-group-item">
+	  <span (click)="toggle_questions(cat)" class="name">{{cat.name}}</span>
+	  <span (click)="toggle_questions(cat)" class="count">({{cat.questions.length}} questions)</span>
+	  <ul *ngIf="cat.open" class="list-group">
+	    <li *ngFor="let q of cat.questions" class="list-group-item">
+
+	      <p class="question">
+		{{q.question}}
+	      </p>
+	      <p class="answer"> {{q.answer}} </p>
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+    </div>
+  </div>
+</div>
