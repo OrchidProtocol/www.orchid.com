@@ -5,8 +5,7 @@ export function downloadWhitepaper() {
       "pathname" in window.location && "host" in window.location) {
     whitepaper = window.location.protocol + "//" + window.location.host +
                  "/assets/whitepaper/whitepaper.pdf";
-  }
-  else {
+  } else {
     whitepaper = "https://github.com/orchidsource/whitepaper";
   }
 
