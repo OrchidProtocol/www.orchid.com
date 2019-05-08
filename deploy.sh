@@ -28,6 +28,7 @@ function copy-push () {
     git remote add aws "$gitdest"
     git push --force aws master
     popd
+    rm -rf "$tempdir"
 }
 
 # Build the angular site...
@@ -40,7 +41,8 @@ yarn run build:static
  for file in $(echo *.html); do
      mkdir -p $(basename ${file} .html)
      cp ${file} $(basename ${file} .html)/index.html
- done)
+ done;
+ ln -s whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
 if [ "$1" == "--help" ]; then
     usage
