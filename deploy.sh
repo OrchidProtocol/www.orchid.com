@@ -42,7 +42,7 @@ yarn run build:static
      mkdir -p $(basename ${file} .html)
      cp ${file} $(basename ${file} .html)/index.html
  done;
- ln -s whitepaper/whitepaper.pdf ./whitepaper.pdf)
+ ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
 if [ "$1" == "--help" ]; then
     usage
