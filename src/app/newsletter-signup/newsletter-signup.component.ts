@@ -40,12 +40,10 @@ export class NewsletterSignupComponent implements OnInit {
       this.blink_box = false;
     }
 
-    const magic_value = "b_3f36871a1dd2e1f2f4dc2fa96_5445cd6980";
     const mailchimp_add =
-      "https://orchid.us17.list-manage.com/subscribe/post-json?u=3f36871a1dd2e1f2f4dc2fa96&amp;id=5445cd6980&";
+      "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?";
     const params = new HttpParams()
-                     .set("EMAIL", this.email)
-                     .set(magic_value, "");
+                     .set("email", encodeURI(this.email));
     const mailchimp_url = mailchimp_add + params.toString();
 
     this.error = "";
