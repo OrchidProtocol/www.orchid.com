@@ -1,10 +1,5 @@
-import {HttpClient, HttpParams} from "@angular/common/http";
-import {Component, OnInit} from "@angular/core";
-
-interface MailChimpResponse {
-  result: string;
-  msg: string;
-}
+import { HttpClient } from "@angular/common/http";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-newsletter-signup",
@@ -32,6 +27,8 @@ export class NewsletterSignupComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   submit() {
+    const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
+    const mailchimp_url = mailchimp_add + encodeURIComponent(this.email || "");
 
     if (!this.consented) {
       this.blink_box = true;
@@ -39,30 +36,20 @@ export class NewsletterSignupComponent implements OnInit {
     } else {
       this.blink_box = false;
     }
-
-    const mailchimp_add =
-      "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?";
-    const params = new HttpParams()
-                     .set("email", encodeURI(this.email));
-    const mailchimp_url = mailchimp_add + params.toString();
-
+    
     this.error = "";
 
-    this.http.jsonp<MailChimpResponse>(mailchimp_url, "c")
+    this.http.get(mailchimp_url)
       .subscribe(
         response => {
-          if (response) {
-            if (response.result == "success") {
-              this.submitted = true;
-              this.success   = response.msg;
-            }
-            else if (response.result == "error") {
-              this.error = response.msg;
-            }
-          }
+	  if (response["status"] == "pending") {
+	    this.submitted = true;
+	    this.success = "Great! Now please check your email and confirm."
+	  } else if (response["detail"]) {
+	    this.error = response["detail"];
+	  }
         },
         error => {
-          console.error(error);
           this.error = "Sorry, an error occurred.";
         });
   }
