@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { WhyOrchidComponent } from './why-orchid/why-orchid.component';
 import { EventsComponent } from './events/events.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { MobilePrivacyPolicyComponent } from './mobile-privacy-policy/mobile-privacy-policy.component';
 import { ServiceTermsComponent } from './service-terms/service-terms.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     WhyOrchidComponent,
     EventsComponent,
     PrivacyPolicyComponent,
+    MobilePrivacyPolicyComponent,
     ServiceTermsComponent,
     HomeComponent,
     NewsletterSignupComponent,
