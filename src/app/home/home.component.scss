@@ -76,7 +76,10 @@
     &:active { color: $orc-purple-active; }
 }
 
-header h1.big { font-size: 330%; letter-spacing: 0.045em; }
+h1, h2, h3, h4 { letter-spacing: 0.035em; }
+
+/* Recent changes - many could be moved into a global sheet. */
+header h1.big { font-size: 330%; }
 h4.subtitle { color: $orc-rock-gray; margin: 0.5em 0 1.5rem 0; font-size: 145%; }
 
 #download-orchid, #download-newsletter {
@@ -87,7 +90,9 @@ h4.subtitle { color: $orc-rock-gray; margin: 0.5em 0 1.5rem 0; font-size: 145%; 
     }
     button.btn-secondary { color: $orc-purple; }
 }
+
 #download-orchid { margin: 4em 0 2.5em 0; }
+
 #splash-text {
     margin-left: 40px;
     p {	font-size: 90%; color: $orc-gray; }
@@ -95,3 +100,18 @@ h4.subtitle { color: $orc-rock-gray; margin: 0.5em 0 1.5rem 0; font-size: 145%; 
 	margin-left: 0px;
     }
 }
+
+div.our-approach {
+    margin-left: auto; margin-right: auto; margin-bottom: 3em; text-align: center; max-width: 80%; 
+    h2 { color: $orc-rock-gray; }
+}
+
+.background-white { background: white; }
+.background-gray { background: #f0f0f0; }
+
+ul.phantom-list {
+    li.ft-rtl { text-align: right; }
+}
+
+ul.smaller .ft-text h3 { font-size: 160%; padding-bottom: 0.5em; }
+

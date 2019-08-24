@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CalEvent } from '../events/event';
 import { EventsService } from '../events/events.service';
 import { Observable } from 'rxjs';
-import { downloadWhitepaper } from '../whitepaper';
+import { downloadWhitepaper, downloadOrchid } from '../whitepaper';
 
 @Component({
   selector: 'app-home',
@@ -20,4 +20,6 @@ export class HomeComponent implements OnInit {
   }
 
   downloadWhitepaper() { downloadWhitepaper(); }
+  downloadOrchid() { downloadOrchid(); }
+    downloadNewsletter() { document.getElementById("newsletter-signup").scrollIntoView(); }
 }
