@@ -79,8 +79,6 @@
 h1, h2, h3, h4 { letter-spacing: 0.035em; }
 
 /* Recent changes - many could be moved into a global sheet. */
-header h1.big { font-size: 330%; }
-h4.subtitle { color: $orc-rock-gray; margin: 0.5em 0 1.5rem 0; font-size: 145%; }
 
 #download-orchid, #download-newsletter {
     button {
@@ -115,3 +113,5 @@ ul.phantom-list {
 
 ul.smaller .ft-text h3 { font-size: 160%; padding-bottom: 0.5em; }
 
+// header h1.big { font-size: 330%; }
+h4.subtitle { color: $orc-rock-gray; margin: 0.5em 0 1.5rem 0; font-size: 145%; }

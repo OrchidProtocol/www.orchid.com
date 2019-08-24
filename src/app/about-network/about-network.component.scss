@@ -3,6 +3,20 @@
 
 @include h-feature-list("#features", "#feature-list", ".ft-image");
 
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
 #read-whitepaper {
   display: flex;
   flex-flow: row nowrap;
@@ -21,3 +35,11 @@
   left: -2rem;
   top: -5rem;
 }
+
+#how-it-works {
+    h3 { text-align: center; margin: 0 auto 1em auto; }
+    .column {
+	img { margin-left: auto; margin-right: auto; width: 50%; height: auto; }
+    }
+}
+
