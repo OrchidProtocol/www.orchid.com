@@ -2,19 +2,20 @@
   <section id="splash">
     <div id="splash-text" class="z-index-1">
       <header>
-        <h1 class="big">Orchid is the natural internet.</h1>
+        <h1 class="big">A place where users own the internet</h1>
       </header>
+      <h4 class="subtitle">Pre-network Orchid app now available</h4>
       <p>
-Humans naturally crave space to freely express their agency. Exploring a forest awakens these feelings, and so does exploring the wild internet. No other place on Earth has such amazing potential for humans to collaborate and access opportunities. It’s ours to protect &mdash; or lose.
+	Download the Orchid app today for a local traffic flow analysis of your phone's internet connection with no external servers and no third parties.
       </p>
       <p>
-Orchid is a suite of open source tools and cryptographic protocols developed and run by people who want the internet to extend our natural human freedom, not curtail it. Our initial focus is an open marketplace for bandwidth built on Ethereum, and a VPN client for all major operating systems.
+	As we build towards a decentralized, tokenized marketplace where users can construct their own custom VPN configurations and privacy services (as described in our <span class="whitepaper-link" (click)="downloadWhitepaper()">whitepaper</span>), the first feature of our Open Source app offers under-the-hood introspection into your internet connection.
       </p>
-      <p class="bold-links">
-	Learn more about our <a routerLink="/app">App</a>, <a routerLink="/network">Network</a> and <a routerLink="/why-orchid">Why</a> we built Orchid.
+      <p id="download-orchid">
+        <button (click)="downloadOrchid()" class="btn-primary">Download Orchid</button>
       </p>
-      <p id="splash-whitepaper">
-        <button (click)="downloadWhitepaper()" class="btn-primary">Read the Whitepaper</button>
+      <p id="download-newsletter">
+        <button (click)="downloadNewsletter()" class="btn-secondary">Get our newsletter</button>
       </p>
     </div>
     <div id="splash-image">
