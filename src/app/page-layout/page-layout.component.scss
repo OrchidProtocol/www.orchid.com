@@ -386,3 +386,13 @@ $flyout-gap: ($flyout-spacing / 2.0);
     max-width: 4rem;
   }
 }
+
+#nav-menu #nav-list {
+    li { padding-top: 10px; }
+    li.social-button { padding-top: 0; &.first { padding-left: 50px; } }
+
+    @media screen and (max-width: 800px) {
+	li.social-button { display: none; }
+	a.phantom-a { padding: 10px 0px; }
+    }
+}
