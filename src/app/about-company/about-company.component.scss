@@ -1,26 +1,28 @@
 @import 'media_queries';
 @import 'misc_config';
+@import 'orc_config';
+@import 'styles';
 
 header h1 { line-height: 67px; }
 
 .conv-2up {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr 2rem 1fr;
-  grid-template-areas: "left . right";
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 2rem 1fr;
+    grid-template-areas: "left . right";
 
-  @include mobile {
-    grid-template-rows: auto 2rem auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "left"
-      "."
-      "right";
-  }
+    @include mobile {
+	grid-template-rows: auto 2rem auto;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"left"
+	    "."
+	    "right";
+    }
 }
 
 .conv2-left {
-  grid-area: left;
+    grid-area: left;
 }
 
 .conv2-right {
@@ -32,144 +34,149 @@ header h1 { line-height: 67px; }
 // this garbage works.
 
 .conv-169-wrapper {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: (9.0 / 16.0 * 100%);
-  max-width: (16.0 / 9.0 * 20rem);
-  max-height: 20rem;
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: (9.0 / 16.0 * 100%);
+    max-width: (16.0 / 9.0 * 20rem);
+    max-height: 20rem;
 }
 
 .conv-169 {
-  position: absolute;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  max-width: (16.0 / 9.0 * 20rem);
-  max-height: 20rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    max-width: (16.0 / 9.0 * 20rem);
+    max-height: 20rem;
 }
 
 .conv-image {
-  display: block;
-  width: 100%;
-  height: 20rem;
-  object-fit: contain;
-  object-position: center;
+    display: block;
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+    object-position: center;
 }
 
 #founder-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin: -2rem;
-
-  > li {
     display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    margin: 2rem 2rem 2rem 0rem;
-  }
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: -2rem;
+
+    > li {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	margin: 2rem 2rem 2rem 0rem;
+    }
 }
 
 .founder-image {
-  display: block;
-  width: 12rem;
-  height: 12rem;
-  margin-bottom: 2rem;
-  border-radius: 100vmax;
-  overflow: hidden;
-  box-shadow: mat-shadow(40px, $alpha: 0.2), 0 1px .5px rgba(white, 0.4) inset;
+    display: block;
+    width: 12rem;
+    height: 12rem;
+    margin-bottom: 2rem;
+    border-radius: 100vmax;
+    overflow: hidden;
+    box-shadow: mat-shadow(40px, $alpha: 0.2), 0 1px .5px rgba(white, 0.4) inset;
 }
 
 .sale-header {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: baseline;
+    color: $orc-rock-gray;
+    margin-top: 1.5rem;
 
-  > h2 {
-    margin-right: .5em;
-  }
+    > h2 {
+	margin-right: .5em;
+	color: $orc-rock-gray;
+    }
 }
 
 ul.sale-icons {
     display: flex;
     align-items: baseline;
+    margin: 0;
 }
 
 .sale-icons {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: left;
-  align-content: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 
-  &.saft-raise {
-      text-align: center;
-      justify-content: center;
-      align-content: center;
-  }
-  
-  > li {
-    margin: 2rem 2rem 2rem 0rem;
-  }
+    &.saft-raise {
+	text-align: center;
+	justify-content: center;
+	align-content: center;
+    }
+    
+    > li {
+	margin: 0rem 2rem 2rem 2rem;
+	vertical-align: top;
+    }
 
-  img { max-width: 200px; }
+    img { max-width: 260px; &.relaxed { max-width: 300px; } }
 }
 
 #corporate-info {
-  display: grid;
-  grid-template-rows: auto 1rem auto;
-  // NB: 16.5rem taken from .btn-fixed
-  grid-template-columns: 3fr 1rem 16.5rem;
-  grid-template-areas:
-    "header  . buttons"
-    ".       . buttons"
-    "address . buttons";
-
-  @include mobile {
-    grid-template-rows: auto 1rem auto 1rem auto;
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-rows: auto 1rem auto;
+    // NB: 16.5rem taken from .btn-fixed
+	     grid-template-columns: 3fr 1rem 16.5rem;
     grid-template-areas:
-      "header"
-      "."
-      "address"
-      "."
-      "buttons";
-  }
+    "header  . buttons"
+	".       . buttons"
+	"address . buttons";
+
+    @include mobile {
+	grid-template-rows: auto 1rem auto 1rem auto;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"header"
+	    "."
+	    "address"
+	    "."
+	    "buttons";
+    }
 }
 
 #corporate-header {
-  grid-area: header;
+    grid-area: header;
 }
 
 #corporate-address {
-  grid-area: address;
-  display: flex;
-  flex-flow: row wrap;
-  margin: -.5rem -1rem;
+    grid-area: address;
+    display: flex;
+    flex-flow: row wrap;
+    margin: -.5rem -1rem;
 
-  > address {
-    margin: .5rem 1rem;
-  }
+    > address {
+	margin: .5rem 1rem;
+    }
 }
 
 #corporate-buttons {
-  grid-area: buttons;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  margin: -1rem;
+    grid-area: buttons;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: -1rem;
 
-  @include mobile {
-    align-items: center;
-  }
+    @include mobile {
+	align-items: center;
+    }
 
-  > button {
-    display: block;
-    margin: 1rem;
-  }
+    > button {
+	display: block;
+	margin: 1rem;
+    }
 }
 
 .adorner {
@@ -191,7 +198,42 @@ ul.sale-icons {
     }
 }
 
+a { color: $orc-rock-gray; text-decoration: none; }
+
+section h2:first-of-type { text-align: center; margin-bottom: 2.0rem; }
+
 #company-adorner-top { justify-content: flex-start; }
 #company-adorner-bottom { img.adorner-image { top: -8rem; } }
-#values-adorner { img.adorner-image { top: -1rem; left: -15rem; } }
+#values-adorner { img.adorner-image { top: -5rem; left: -15rem; } }
 #buttons-adorner { img.adorner-image { top: -2.5rem; left: -1.5rem; } }
+#values {
+    time { font-size: 100%; font-weight: 700; }
+    h4 { font-size: 180%; color: $orc-rock-gray; margin-bottom: 1.2rem; line-height: 2.0rem; }
+    .subtopic {
+	h4 { font-size: 130%; line-height: 1.22rem; margin-top: 0.5em; margin-bottom: 0.75rem; }
+    }
+}
+
+#founders {
+    .waterhouse img { filter: grayscale(100%); }
+}
+
+#funding {
+    .quote {
+	background: $bkgd-lavender;
+	border-radius: 10px;
+	max-width: 65%;
+	text-align: center; margin: auto;
+	padding: 1.2rem 3rem;
+	.what { @extend h4; color: $orc-purple; }
+	.who { color: $orc-purple; }
+    }
+}
+
+#corporate-info {
+    #corporate-header {
+	h2 { margin-left: 0; margin-bottom: 0; text-align: left; color: $orc-rock-gray; }
+	p { margin-top: 0; }
+    }
+    address { font-style: normal; }
+}

@@ -246,7 +246,7 @@ $flyout-gap: ($flyout-spacing / 2.0);
     flex-flow: row nowrap;
     justify-content: center;
     margin: 0 ($gap / -2.0);
-    z-index: 1;
+    z-index: 2;
 
     @include mobile {
 	flex-flow: column-reverse nowrap;
@@ -299,6 +299,7 @@ $flyout-gap: ($flyout-spacing / 2.0);
 }
 
 #ft-nav {
+    z-index: 2;
     @include mobile {
 	margin-bottom: 0;
     }
@@ -309,6 +310,7 @@ $flyout-gap: ($flyout-spacing / 2.0);
 	> li > a {
 	    display: block;
 	    padding: 0.5rem 0;
+	    &:hover { color: $orc-purple; }
 	}
     }
 }

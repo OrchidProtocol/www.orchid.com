@@ -11,8 +11,8 @@ $pad-wide-mobile: 3rem;
 // Element-specific config
 
 :root {
-  // NB: this controls the background color in the elastic scroll margins on iOS
-  //     (and probably other platforms, but I haven't tested for that)
+  /* NB: this controls the background color in the elastic scroll margins on iOS
+     (and probably other platforms, but I haven't tested for that) */
   background: $orc-beige-light;
   font-size: 20px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
@@ -565,3 +565,4 @@ input, .required-input {
     display: none;
   }
 }
+h1, h2, h3, h4 { letter-spacing: 0.035rem; }
