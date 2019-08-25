@@ -14,7 +14,7 @@ import {
   MobilePrivacyPolicyComponent
 } from "./mobile-privacy-policy/mobile-privacy-policy.component";
 import {ServiceTermsComponent} from "./service-terms/service-terms.component";
-import {WhyOrchidComponent} from "./why-orchid/why-orchid.component";
+import {VisionComponent} from "./vision/vision.component";
 
 export const routes: Routes = [
   {
@@ -26,8 +26,8 @@ export const routes: Routes = [
       {path: "app.html", redirectTo: "app"},
       {path: "network", component: AboutNetworkComponent},
       {path: "network.html", redirectTo: "network"},
-      {path: "why-orchid", component: WhyOrchidComponent},
-      {path: "why-orchid.html", redirectTo: "why-orchid"},
+      {path: "vision", component: VisionComponent},
+      {path: "vision.html", redirectTo: "vision"},
       {path: "faqs", component: FaqsComponent},
       {path: "faqs.html", redirectTo: "faqs"},
       {path: "events", component: EventsComponent},

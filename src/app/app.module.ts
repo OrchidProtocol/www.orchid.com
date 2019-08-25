@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { AboutAppComponent } from './about-app/about-app.component';
 import { AboutNetworkComponent } from './about-network/about-network.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { WhyOrchidComponent } from './why-orchid/why-orchid.component';
+import { VisionComponent } from './vision/vision.component';
 import { EventsComponent } from './events/events.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MobilePrivacyPolicyComponent } from './mobile-privacy-policy/mobile-privacy-policy.component';
@@ -25,7 +25,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     AboutAppComponent,
     AboutNetworkComponent,
-    WhyOrchidComponent,
+    VisionComponent,
     EventsComponent,
     PrivacyPolicyComponent,
     MobilePrivacyPolicyComponent,
