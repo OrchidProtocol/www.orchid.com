@@ -149,13 +149,13 @@ $flyout-gap: ($flyout-spacing / 2.0);
 	    }
 
 	    &.active-link > a::after {
-		$height: 3px;
-
+		$height: 4px;
 		content: " ";
 		position: absolute;
 		left: $a-pad;
 		right: $a-pad;
 		bottom: calc(#{$a-pad} - #{$height});
+		bottom: -3px;
 		height: $height;
 		background: $orc-purple;
 		border-radius: 100vmax;
