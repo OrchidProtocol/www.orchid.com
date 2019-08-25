@@ -1,4 +1,5 @@
 @import 'misc_config';
+@import 'orc_config';
 
 #error, #success {
   margin: 0 auto 0 auto;
@@ -10,6 +11,8 @@
 #error {
   color: $color-error;
 }
+
+header h2 { color: $orc-rock-gray; }
 
 label.gdpr-consent {
     margin-top: 0;
