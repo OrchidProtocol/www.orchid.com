@@ -16,7 +16,7 @@
   height: $clip-height;
   width: 100%;
 
-  position: relative; top: 11em; left: -4em; z-index: 2;
+  position: relative; top: 11rem; left: -4rem; z-index: 2;
 
   @include mobile {
     margin: 0 0 (4rem - $clip-height);
@@ -35,8 +35,8 @@
 }
 
 #adorn-right {
-  right: 5em;
-  top: 8.4rem;
+  right: 2.0rem;
+  top: 7.2rem;
   z-index: 2;
 
   @include mobile {
