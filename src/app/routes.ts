@@ -42,18 +42,5 @@ export const routes: Routes = [
 	    {path: "service-terms.html", redirectTo: "service-terms"},
 	]
     },
-    {
-	path: "ignore",
-	component: PageLayoutComponent,
-	data: {purpleLayout: true},
-	children: [
-	    {
-		path: "company",
-		component: AboutCompanyComponent,
-		data: {purpleLayout: true}
-	    },
-	    {path: "company.html", redirectTo: "company"},
-	]
-    },
     {path: "index.html", redirectTo: ""},
 ];
