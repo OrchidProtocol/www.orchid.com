@@ -391,7 +391,7 @@ $flyout-gap: ($flyout-spacing / 2.0);
 
 #nav-menu #nav-list {
     li { padding-top: 10px; }
-    li.social-button { padding-top: 0; &.first { padding-left: 50px; } }
+    li.social-button { padding-top: 0; filter: grayscale(100%); &.first { padding-left: 50px; } }
 
     @media screen and (max-width: 800px) {
 	li.social-button { display: none; }
