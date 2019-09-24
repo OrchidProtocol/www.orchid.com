@@ -7,7 +7,6 @@
 
 #splash-text {
   @include not-vert-splash {
-    margin: 0 -1rem 0 0;
     z-index: 1;
   }
 }

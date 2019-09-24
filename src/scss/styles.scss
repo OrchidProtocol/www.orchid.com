@@ -158,18 +158,6 @@ main {
       "text"
       "below-text";
   }
-
-  &::after {
-    content: " ";
-    display: block;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 2rem;
-    height: 30px;
-    background: url('/assets/img/shared/more.svg') center no-repeat;
-    background-size: contain;
-  }
 }
 
 #splash-image {
@@ -200,6 +188,10 @@ main {
   min-width: 0;
 
   @include size-body-sm;
+
+  @include not-vert-splash {
+    margin-right: 4rem;
+  }
 
   @include vert-splash {
     text-align: center;

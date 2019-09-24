@@ -16,7 +16,7 @@
   height: $clip-height;
   width: 100%;
 
-  position: relative; top: 11rem; left: -4rem; z-index: 2;
+  position: absolute; top: -2rem; left: -4rem; z-index: 2;
 
   @include mobile {
     margin: 0 0 (4rem - $clip-height);
