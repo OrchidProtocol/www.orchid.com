@@ -90,7 +90,7 @@
 
 #splash-text {
     margin-left: 40px;
-    p {	font-size: 90%; color: $orc-gray; }
+    p {	color: $orc-gray; }
     @media screen and (max-width: 800px) {
 	margin-left: 0px;
     }

@@ -187,7 +187,7 @@ main {
   grid-area: text;
   min-width: 0;
 
-  @include size-body-sm;
+  /* @include size-body-sm; */
 
   @include not-vert-splash {
     margin-right: 4rem;
