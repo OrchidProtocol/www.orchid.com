@@ -1,0 +1,22 @@
+@import 'feature_list';
+@import 'media_queries';
+@import 'misc_config';
+@import 'orc_config';
+
+@include splash-columns(5fr, 7fr);
+
+#splash-text {
+  @include not-vert-splash {
+    z-index: 1;
+  }
+}
+
+@include v-feature-list("#feature-list", ".ft-text", ".ft-image");
+
+#splash-text {
+    margin-left: 40px;
+    p {	color: $orc-gray; }
+    @media screen and (max-width: 800px) {
+	margin-left: 0px;
+    }
+}

@@ -13,5 +13,6 @@ export function downloadWhitepaper() {
 }
 
 export function downloadOrchid() {
-    window.location.href = "https://orchid.com/download";
+    window.location = "/download";
+    /* window.location.href = "https://orchid.com/download"; */
 }

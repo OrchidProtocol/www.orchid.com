@@ -11,6 +11,7 @@ import { EventsComponent } from './events/events.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { MobilePrivacyPolicyComponent } from './mobile-privacy-policy/mobile-privacy-policy.component';
 import { ServiceTermsComponent } from './service-terms/service-terms.component';
+import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
@@ -27,6 +28,7 @@ import { FormsModule } from '@angular/forms';
     AboutNetworkComponent,
     VisionComponent,
     EventsComponent,
+    DownloadComponent,
     PrivacyPolicyComponent,
     MobilePrivacyPolicyComponent,
     ServiceTermsComponent,
