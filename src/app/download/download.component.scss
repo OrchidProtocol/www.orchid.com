@@ -38,7 +38,8 @@
             // flex: 0 1 auto;
 	    flex: 1 0 0;
 	    min-width: 250px;
-	    max-width: calc(50% - 16px); 
+	    max-width: calc(50% - 16px);
+	    overflow: hidden;
 	    @include mobile { flex: 0 1 auto; }
              li { padding-left: 10px; }
              &.left { }
