@@ -9,10 +9,20 @@
 
     h3 { padding: 5vw; }
     .img-container {
-        margin: 0 auto; 
+        margin: 0 auto;
         width: 80%; max-width: 860px;
         img { width: 100%; height: auto; }
     }
+}
+
+#app-description {
+  padding-bottom: 0;
+  h3 { color: $orc-rock-gray; margin-bottom: 1rem; }
+  h3 > span {
+    @include mobile {
+      display: block; margin-top: 1em;
+    }
+  }
 }
 
 #instructions {
