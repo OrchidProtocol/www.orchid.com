@@ -57,6 +57,16 @@ $size-h4-mobile: 20px;
   }
 }
 
+@mixin columns2($left, $right) {
+  .columns2 {
+    grid-template-columns: $left $right;
+
+    @include vert-splash {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
 @mixin size-body-sm {
   font-size: $size-body-sm;
 

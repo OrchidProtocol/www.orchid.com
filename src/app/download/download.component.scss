@@ -3,20 +3,46 @@
 @import 'misc_config';
 @import 'orc_config';
 
-@include splash-columns(5fr, 7fr);
+#top {
+    width: 100%;
+    text-align: center; margin-left: auto; margin-right: auto;
 
-#splash-text {
-  @include not-vert-splash {
-    z-index: 1;
-  }
+    h3 { padding: 10vw; }
+    .img-container {
+        margin: 0 auto; 
+        width: 80%; max-width: 800px;
+        img { width: 100%; height: auto; }
+    }
 }
 
-@include v-feature-list("#feature-list", ".ft-text", ".ft-image");
+#instructions {
+    h4 { text-align: center; margin: 0 auto 0 auto; color: $orc-rock-gray; }
+    .row {
+        display: flex;
+        flex-flow: row wrap;
+	include mobile { flex-wrap: wrap; }
+        width: 100%;
+        justify-content: center;
+        align-items: stretch;
 
-#splash-text {
-    margin-left: 40px;
-    p {	color: $orc-gray; }
-    @media screen and (max-width: 800px) {
-	margin-left: 0px;
+        // > * { margin: auto 8px; }
+
+        .divider {
+	    width: 2px;
+	    background: rgba($orc-purple, 0.5);
+	    flex: 0 1 auto;
+	    margin: 0px 15px;
+	    @include mobile { display: none; }
+	}
+        .column {
+            // flex: 0 1 auto;
+	    flex: 1 0 0;
+	    min-width: 250px;
+	    max-width: calc(50% - 16px); 
+	    @include mobile { flex: 0 1 auto; }
+             li { padding-left: 10px; }
+             &.left { }
+             &.right { }
+        }
     }
 }
