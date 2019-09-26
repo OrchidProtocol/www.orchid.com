@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   title = "orchid-www";
 
   titleMap: Map<string, string> = new Map<string, string>([
-    ["/", "Orchid"],
+    ["/", "Orchid - Open Source VPN & Privacy Software"],
     ["/app", "App"],
     ["/network", "Network"],
     ["/vision", "Vision"],
