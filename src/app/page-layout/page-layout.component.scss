@@ -12,7 +12,7 @@ $mobile-nav-height: 64px;
     padding-bottom: 1rem;
 
     @include not-mobile {
-	padding-bottom: 4rem;
+	// padding-bottom: 4rem;
     }
 
     @include size-body-sm;
