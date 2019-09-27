@@ -6,7 +6,7 @@ export function downloadWhitepaper() {
     whitepaper = window.location.protocol + "//" + window.location.host +
                  "/assets/whitepaper/whitepaper.pdf";
   } else {
-    whitepaper = "https://github.com/orchidsource/whitepaper";
+    whitepaper = "https://github.com/orchidprotocol/whitepaper";
   }
 
   window.location.href = whitepaper;
