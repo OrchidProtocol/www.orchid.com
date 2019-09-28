@@ -22,7 +22,7 @@ export class AboutCompanyComponent implements OnInit {
 	    "pathname" in window.location && "host" in window.location) {
 	    kit = window.location.protocol + "//" + window.location.host + "/assets/press/OrchidPressKit.zip";
 	} else {
-	    kit = "https://github.com/orchidsource/presskit";
+	    kit = "https://github.com/orchidprotocol/presskit";
 	}
 
 	window.location.href = kit;
