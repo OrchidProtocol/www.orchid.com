@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+	<url>
+		<loc>https://www.orchid.com/</loc>
+		<priority>0.9</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/network/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/vision/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/about-us/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/download/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/events/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/privacy-policy/</loc>
+		<priority>0.1</priority>
+	</url>
+	<url>
+		<loc>https://www.orchid.com/service-terms/</loc>
+		<priority>0.1</priority>
+	</url>
+</urlset>
