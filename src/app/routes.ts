@@ -42,7 +42,8 @@ export const routes: Routes = [
 	    {path: "privacy-policy.html", redirectTo: "privacy-policy"},
 	    {path: "mobile-privacy-policy.html", redirectTo: "mobile-privacy-policy"},
 	    {path: "service-terms", component: ServiceTermsComponent},
-	    {path: "service-terms.html", redirectTo: "service-terms"},
+      {path: "service-terms.html", redirectTo: "service-terms"},
+      {path: "**", redirectTo: "" },
 	]
     },
     {path: "index.html", redirectTo: ""},
