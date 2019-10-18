@@ -38,7 +38,7 @@ import { FormsModule } from '@angular/forms';
     PageLayoutComponent,
     FaqsComponent,
     AboutCompanyComponent,
-    NotFoundComponent,
+    NotFoundComponent
   ],
   imports: [
     // TODO: how important is appId?
