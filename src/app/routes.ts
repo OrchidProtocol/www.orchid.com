@@ -45,7 +45,7 @@ export const routes: Routes = [
 	    {path: "mobile-privacy-policy.html", redirectTo: "mobile-privacy-policy"},
 	    {path: "service-terms", component: ServiceTermsComponent},
       {path: "service-terms.html", redirectTo: "service-terms"},
-      {path: "**", component: NotFoundComponent},
+      {path: "**", component: NotFoundComponent}
 	]
     },
     {path: "index.html", redirectTo: ""},
