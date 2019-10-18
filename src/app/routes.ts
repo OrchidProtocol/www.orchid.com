@@ -16,6 +16,8 @@ import {
 } from "./mobile-privacy-policy/mobile-privacy-policy.component";
 import {ServiceTermsComponent} from "./service-terms/service-terms.component";
 import {VisionComponent} from "./vision/vision.component";
+import {NotFoundComponent} from "./not-found/not-found.component";
+
 
 export const routes: Routes = [
     {
@@ -43,7 +45,7 @@ export const routes: Routes = [
 	    {path: "mobile-privacy-policy.html", redirectTo: "mobile-privacy-policy"},
 	    {path: "service-terms", component: ServiceTermsComponent},
       {path: "service-terms.html", redirectTo: "service-terms"},
-      {path: "**", redirectTo: "" },
+      {path: "**", component: NotFoundComponent}
 	]
     },
     {path: "index.html", redirectTo: ""},
