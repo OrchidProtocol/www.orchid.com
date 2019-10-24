@@ -17,7 +17,7 @@ export class FaqsComponent implements OnInit {
   }
 
   anchorParse (component: string):string {
-    return component.replace(/ /g, '-').replace(/[^0-9a-z-]/gi, '').toLowerCase();
+    return component.replace(/\?/gi, '').replace(/[^0-9a-z]/gi, '-').toLowerCase();
   }
 
   toggle_questions(cat) { cat.open = !!!cat.open; }
