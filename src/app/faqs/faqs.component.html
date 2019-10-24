@@ -6,6 +6,11 @@
         <li *ngFor="let cat of faqs" class="list-group-item">
           <a class="faq" href="/faqs/{{ '#'+anchorParse(cat.name) }}">{{cat.name}}</a>
           
+          <ul class="list-group">
+            <li *ngFor="let q of cat.questions" class="list-group-item">
+              {{q.question}}
+            </li>
+          </ul>
         </li>
       </ul>
     </div>
