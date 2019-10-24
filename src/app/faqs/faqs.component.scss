@@ -1,3 +1,6 @@
+@import 'media_queries';
+@import 'misc_config';
+
 h4.title {
     margin-left: 40px; margin-bottom: 0px;
     line-height: 40px;
@@ -5,7 +8,7 @@ h4.title {
     &:hover { background: rgba(thistle, 0.2); }
 }
 
-ul.categories {
+/*ul.categories {
     margin-top: 0px;
     li { position: relative; }
     span.name, span.count {
@@ -21,4 +24,20 @@ ul.categories {
 
     .question { padding: 8px; background: rgba(thistle, 0.2); }
     .answer { padding-left: 8px; }
+}*/
+
+.faq-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.faq-sidebar, .faq-main {
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.faq-sidebar {
+    width: 30%;
+}
+.faq-main {
+    width: 70%;
 }
