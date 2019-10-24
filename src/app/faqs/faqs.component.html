@@ -1,14 +1,30 @@
+<div class="bk-beige-light">
+  <section id="splash">
+    <div id="splash-text">
+      <header>
+        <h1>FAQs</h1>
+      </header>
+    </div>
+    <div id="splash-image">
+      <img src="/assets/img/vision/splash/1x.png"
+        srcset="/assets/img/vision/splash/1x.png, /assets/img/vision/splash/2x.png 2x, /assets/img/vision/splash/3x.png 3x">
+    </div>
+  </section>
+</div>
+
 <div class="background-white">
   <div class="section-med vpad-wide faq-section">
 
     <div class="faq-sidebar">
-      <ul class="list-group" class="faq-nav">
-        <li *ngFor="let cat of faqs" class="list-group-item">
-          <a class="faq" href="/faqs/{{ '#'+anchorParse(cat.name) }}">{{cat.name}}</a>
-          
-          <ul class="list-group">
-            <li *ngFor="let q of cat.questions" class="list-group-item">
-              {{q.question}}
+      <ul class="faq-nav">
+        <li *ngFor="let cat of faqs" class="faq-sidebar-category-active">
+          <a class="faq-category-heading-sidebar faq-link" href="/faqs#{{ anchorParse(cat.slug) }}">{{cat.name}}</a>
+          <img class="faq-category-expand" alt="Toggle" width="24" height="24" src="/assets/img/shared/more-orc-green.svg">
+          <ul class="faq-sidebar-questions">
+            <li *ngFor="let q of cat.questions">
+              <a class="faq-link" href="/faqs#{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+                {{q.question}}
+              </a>
             </li>
           </ul>
         </li>
@@ -16,24 +32,23 @@
     </div>
 
     <div class="faq-main">
-      <h4>
-        <span (click)="faqs_clicked();" class="left">FAQs</span>
-      </h4>
-      <ul class="list-group" class="categories">
-        <li *ngFor="let cat of faqs" class="list-group-item">
-          <a name="{{ anchorParse(cat.name) }}"></a>
-          <h4>{{cat.name}}</h4>
-          <!--<span (click)="toggle_questions(cat)" class="count">({{cat.questions.length}} questions)</span>-->
-          <ul class="list-group">
-            <li *ngFor="let q of cat.questions" class="list-group-item">
+      <ul class="categories">
+        <li *ngFor="let cat of faqs">
+          <a name="{{ anchorParse(cat.slug) }}"></a>
 
-              <p class="question">
+          <h2 class="faq-category-heading">{{cat.name}}</h2>
+
+          <ul class="faq-questions">
+            <li *ngFor="let q of cat.questions" id="{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+
+              <h4 class="faq-question">
                 {{q.question}}
-              </p>
+              </h4>
 
-              <p class="answer"> {{q.answer}} </p>
+              <p class="faq-answer"> {{q.answer}} </p>
             </li>
           </ul>
+
         </li>
       </ul>
     </div>
