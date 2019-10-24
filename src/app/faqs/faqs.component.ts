@@ -18,8 +18,8 @@ export class FaqsComponent implements OnInit {
     this.http.get(this.url).subscribe(response => this.faqs = response);
   }
 
-  encodeURIComponent (component: string):string {
-    return encodeURIComponent(component);
+  anchorParse (component: string):string {
+    return component.replace(/ /g, '-').replace(/[^0-9a-z-]/gi, '').toLowerCase();
   }
 
   toggle_questions(cat) { cat.open = !!!cat.open; }

@@ -4,7 +4,8 @@
     <div class="faq-sidebar">
       <ul class="list-group" class="faq-nav">
         <li *ngFor="let cat of faqs" class="list-group-item">
-          <a class="name" href="{{ '#'+(cat.name) }}">{{cat.name}}</a>
+          <a class="faq" href="/faqs/{{ '#'+anchorParse(cat.name) }}">{{cat.name}}</a>
+          
         </li>
       </ul>
     </div>
@@ -15,8 +16,8 @@
       </h4>
       <ul class="list-group" class="categories">
         <li *ngFor="let cat of faqs" class="list-group-item">
-          <a name="{{ (cat.name) }}"></a>
-          <h4 class="text-muted title">{{cat.name}}</h4>
+          <a name="{{ anchorParse(cat.name) }}"></a>
+          <h4>{{cat.name}}</h4>
           <!--<span (click)="toggle_questions(cat)" class="count">({{cat.questions.length}} questions)</span>-->
           <ul class="list-group">
             <li *ngFor="let q of cat.questions" class="list-group-item">
