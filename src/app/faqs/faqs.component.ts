@@ -8,14 +8,14 @@ import {HttpClient} from "@angular/common/http";
 })
 
 export class FaqsComponent implements OnInit {
-  url:string = '//' + window.location.host + "/assets/json/faqs.json";
+  url:string = "/assets/json/faqs.json";
   faqs:any = [];
 
   constructor(private http: HttpClient) {
-    this.http.get(this.url).subscribe(response => this.faqs = response);
   }
 
   ngOnInit() {
+    this.http.get(this.url).subscribe(response => this.faqs = response);
   }
 
   toggle_questions(cat) { cat.open = !!!cat.open; }
