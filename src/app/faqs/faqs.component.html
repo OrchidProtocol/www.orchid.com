@@ -39,7 +39,7 @@
           <h2 class="faq-category-heading">{{cat.name}}</h2>
 
           <ul class="faq-questions">
-            <li *ngFor="let q of cat.questions" id="{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+            <li *ngFor="let q of cat.questions" class="faq-question-container" id="{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
 
               <h4 class="faq-question">
                 {{q.question}}
