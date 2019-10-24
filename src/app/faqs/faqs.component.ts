@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
+import { faqs } from './faqs.js';
 @Component({
   selector: 'app-faqs',
   templateUrl: './faqs.component.html',
@@ -9,13 +8,12 @@ import {HttpClient} from "@angular/common/http";
 
 export class FaqsComponent implements OnInit {
   url:string = "/assets/json/faqs.json";
-  faqs:any = [];
+  faqs:any = faqs;
 
-  constructor(private http: HttpClient) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.http.get(this.url).subscribe(response => this.faqs = response);
   }
 
   anchorParse (component: string):string {
