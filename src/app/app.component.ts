@@ -19,7 +19,7 @@ export class AppComponent implements OnInit {
     ["/about-us", "About the Open Internet | Orchid"],
     ["/network", "Distributed VPN | Orchid"],
     ["/vision", "Our Vision | Orchid"],
-    ["/faqs", "FAQs | Orchid"],
+    ["/faq", "FAQs | Orchid"],
     ["/events", "Events | Orchid"],
     ["/privacy-policy", "Privacy Policy | Orchid"],
     ["/service-terms", "Terms of Service | Orchid"],

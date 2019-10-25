@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { faqs } from './faqs.js';
 @Component({
-  selector: 'app-faqs',
-  templateUrl: './faqs.component.html',
-  styleUrls: ['./faqs.component.scss']
+  selector: 'app-faq',
+  templateUrl: './faq.component.html',
+  styleUrls: ['./faq.component.scss']
 })
 
-export class FaqsComponent implements OnInit {
+export class FaqComponent implements OnInit {
   url:string = "/assets/json/faqs.json";
   faqs:any = faqs;
 

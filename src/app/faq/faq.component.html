@@ -18,11 +18,11 @@
     <div class="faq-sidebar">
       <ul class="faq-nav">
         <li *ngFor="let cat of faqs" class="faq-sidebar-category-active">
-          <a class="faq-category-heading-sidebar faq-link" href="/faqs#{{ anchorParse(cat.slug) }}">{{cat.name}}</a>
+          <a class="faq-category-heading-sidebar faq-link" href="/faq#{{ anchorParse(cat.slug) }}">{{cat.name}}</a>
           <img class="faq-category-expand" alt="Toggle" width="24" height="24" src="/assets/img/shared/more-orc-green.svg">
           <ul class="faq-sidebar-questions">
             <li *ngFor="let q of cat.questions">
-              <a class="faq-link" href="/faqs#{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+              <a class="faq-link" href="/faq#{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
                 {{q.question}}
               </a>
             </li>
