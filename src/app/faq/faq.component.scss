@@ -9,6 +9,14 @@ h4.title {
     &:hover { background: rgba(thistle, 0.2); }
 }
 
+#splash-text.faq-splash-text {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    width: 100%;
+    text-align: center;
+    grid-row-end: none;
+}
+
 /*ul.categories {
     margin-top: 0px;
     li { position: relative; }
