@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="aboutAppTitle" datatype="html">
+        <source>The natural VPN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="aboutAppSubTitle" datatype="html">
+        <source>
+        Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="5049d83d77650d036b49726719343060de0cc53c" datatype="html">
+        <source>Multi-hop security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="9d0fb6735e072f61cb2d31a89fed63809322313b" datatype="html">
+        <source>
+          Multi-hop routing connects multiple relays and adds security at each step.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit><trans-unit id="ca3b190e8bfbcfe0bac030ecfe62b4cf855ce940" datatype="html">
+        <source>Connect out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit><trans-unit id="bb99563cec0ec7096db1d00928be06a35764afe1" datatype="html">
+        <source>
+          Connect out of restricted zones. Works with existing VPN providers that are blocked.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit><trans-unit id="d9f81300c671ad3e410dd9836295ff3056447ef9" datatype="html">
+        <source>Low cost</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit><trans-unit id="0ed19c39284c27969db5c92605a6a87a2b5f203f" datatype="html">
+        <source>
+          No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
