@@ -4,7 +4,7 @@ import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
 import {EventsComponent} from "./events/events.component";
-import {FaqsComponent} from "./faqs/faqs.component";
+import {FaqComponent} from "./faq/faq.component";
 import {HomeComponent} from "./home/home.component";
 import {DownloadComponent} from "./download/download.component";
 import {PageLayoutComponent} from "./page-layout/page-layout.component";
@@ -33,8 +33,8 @@ export const routes: Routes = [
 	    {path: "vision.html", redirectTo: "vision"},
 	    {path: "about-us", component: AboutCompanyComponent},
 	    {path: "about-us.html", redirectTo: "about-us"},
-	    {path: "faqs", component: FaqsComponent},
-	    {path: "faqs.html", redirectTo: "faqs"},
+	    {path: "faq", component: FaqComponent},
+	    {path: "faq.html", redirectTo: "faq"},
 	    {path: "download", component: DownloadComponent},
 	    {path: "download.html", redirectTo: "download"},
 	    {path: "events", component: EventsComponent},

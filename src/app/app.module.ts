@@ -15,7 +15,7 @@ import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
-import { FaqsComponent } from './faqs/faqs.component';
+import { FaqComponent } from './faq/faq.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -37,7 +37,7 @@ import { I18nModule } from './i18n/i18n.module';
     HomeComponent,
     NewsletterSignupComponent,
     PageLayoutComponent,
-    FaqsComponent,
+    FaqComponent,
     AboutCompanyComponent,
     NotFoundComponent
   ],
