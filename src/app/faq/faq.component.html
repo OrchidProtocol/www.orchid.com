@@ -1,0 +1,117 @@
+<div class="bk-beige-light">
+  <section id="splash">
+    <div id="splash-text" class="faq-splash-text">
+      <header>
+        <h1>FAQ</h1>
+      </header>
+    </div>
+  </section>
+</div>
+
+<div class="background-white">
+  <div class="section-med vpad-wide faq-section">
+
+    <div class="faq-sidebar">
+      <ul class="faq-nav">
+        <!--<li *ngFor="let cat of faqs" class="faq-sidebar-category-active">
+          <a class="faq-category-heading-sidebar faq-link" href="/faq#{{ anchorParse(cat.slug) }}">{{cat.name}}</a>
+          <img class="faq-category-expand" alt="Toggle" width="24" height="24"
+            src="/assets/img/shared/more-orc-green.svg">
+          <ul class="faq-sidebar-questions">
+            <li *ngFor="let q of cat.questions">
+              <a class="faq-link" href="/faq#{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+                {{q.question}}
+              </a>
+            </li>
+          </ul>
+        </li>-->
+
+        <li class="faq-sidebar-category-active"><a class="faq-category-heading-sidebar faq-link"
+            href="/faq#about-orchid">About Orchid</a><img alt="Toggle" class="faq-category-expand" height="24"
+            src="/assets/img/shared/more-orc-green.svg" width="24">
+          <ul class="faq-sidebar-questions">
+            <li><a class="faq-link" href="/faq#about-orchid--what-is-orchid"> What is Orchid? </a></li>
+            <li><a class="faq-link" href="/faq#about-orchid--the-purpose"> What is the purpose of Orchid? </a></li>
+            <li><a class="faq-link" href="/faq#about-orchid--how-does-it-work"> How does it work?? </a></li>
+            <li><a class="faq-link" href="/faq#about-orchid--when-will-it-go-live"> When will it go live? </a></li>
+            <li><a class="faq-link" href="/faq#about-orchid--who-are-the-investors"> Who are the investors? </a></li>
+          </ul>
+        </li>
+        <li class="faq-sidebar-category-active"><a class="faq-category-heading-sidebar faq-link"
+            href="/faq#technology">On
+            Technology</a><img alt="Toggle" class="faq-category-expand" height="24"
+            src="/assets/img/shared/more-orc-green.svg" width="24">
+          <ul class="faq-sidebar-questions">
+            <li><a class="faq-link" href="/faq#technology--how-does-the-token-work"> How does the Orchid token (OXT)
+                work? </a></li>
+            <li><a class="faq-link" href="/faq#technology--how-is-it-different-from-vpns"> How does Orchid distinguish
+                itself from VPNs?
+              </a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <div class="faq-main">
+      <ul class="categories">
+        <!--<li *ngFor="let cat of faqs">
+          <a name="{{ anchorParse(cat.slug) }}"></a>
+
+          <h2 class="faq-category-heading">{{cat.name}}</h2>
+
+          <ul class="faq-questions">
+            <li *ngFor="let q of cat.questions" class="faq-question-container" id="{{ anchorParse(cat.slug)+'--'+anchorParse(q.slug) }}">
+
+              <h4 class="faq-question">
+                {{q.question}}
+              </h4>
+
+              <p class="faq-answer"> {{q.answer}} </p>
+            </li>
+          </ul>
+
+        </li>-->
+        <li><a name="about-orchid"></a>
+          <h2 class="faq-category-heading">About Orchid</h2>
+          <ul class="faq-questions">
+            <li class="faq-question-container" id="about-orchid--what-is-orchid">
+              <h4 class="faq-question"> What is Orchid? </h4>
+              <p class="faq-answer"> Orchid is a decentralized, market-based system for
+                anonymous communication and virtual private networking, including a bandwidth market where node
+                providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
+                OXT (Orchid’s native cryptocurrency) </p>
+            </li>
+            <li class="faq-question-container" id="about-orchid--the-purpose">
+              <h4 class="faq-question"> What is the purpose of Orchid? </h4>
+              <p class="faq-answer"> Orchid’s mission is to build Open Source software that
+                keeps the internet open and accessible — a natural resource for everyone, everywhere. </p>
+            </li>
+            <li class="faq-question-container" id="about-orchid--how-does-it-work">
+              <h4 class="faq-question"> How does it work?? </h4>
+              <p class="faq-answer"> In the Orchid marketplace, incentives are used to create
+                economic security and reliability between clients and servers in a permissionless way. This peer-to-peer
+                marketplace is dynamic; clients can select single- or multi-hop onion routed circuits by selecting nodes
+                randomly weighted on stake and filtered on secondary desiderata (price, location, etc.). A single hop
+                route has the benefits of a normal VPN connection, creating a tunnel to route your traffic over a public
+                network or your ISP, while a multi-hop connection provides additional privacy benefits by securing your
+                network data from any one provider. </p>
+            </li>
+            <li class="faq-question-container" id="about-orchid--when-will-it-go-live">
+              <h4 class="faq-question"> When will it go live? </h4>
+              <p class="faq-answer"> We anticipate to launch the Orchid network in Q4 of 2019.
+              </p>
+            </li>
+            <li class="faq-question-container" id="about-orchid--who-are-the-investors">
+              <h4 class="faq-question"> Who are the investors? </h4>
+              <p class="faq-answer"> To support Orchid Labs and its mission, the company has
+                raised $48M from investors including Sequoia, Andreessen Horowitz, DFJ, PolyChain Capital, Metastable,
+                Blockchain Capital, Crunchfund, Struck Capital, Compound VC, and several other funds and angel
+                investors. More information is available on the about us page. </p>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>

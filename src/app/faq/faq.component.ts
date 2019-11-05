@@ -1,21 +1,23 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
-
+import { faqs } from './faqs.js';
 @Component({
-  selector: 'app-faqs',
-  templateUrl: './faqs.component.html',
-  styleUrls: ['./faqs.component.scss']
+  selector: 'app-faq',
+  templateUrl: './faq.component.html',
+  styleUrls: ['./faq.component.scss']
 })
 
-export class FaqsComponent implements OnInit {
-  url:string = '//' + window.location.host + "/assets/json/faqs.json";
-  faqs:any = [];
+export class FaqComponent implements OnInit {
+  url:string = "/assets/json/faqs.json";
+  faqs:any = faqs;
 
-  constructor(private http: HttpClient) {
-    this.http.get(this.url).subscribe(response => this.faqs = response);
+  constructor() {
   }
 
   ngOnInit() {
+  }
+
+  anchorParse (component: string):string {
+    return component.replace(/\?/gi, '').replace(/[^0-9a-z]/gi, '-').toLowerCase();
   }
 
   toggle_questions(cat) { cat.open = !!!cat.open; }
