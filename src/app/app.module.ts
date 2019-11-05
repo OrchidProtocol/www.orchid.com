@@ -17,6 +17,7 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -36,7 +37,8 @@ import { FormsModule } from '@angular/forms';
     NewsletterSignupComponent,
     PageLayoutComponent,
     FaqComponent,
-    AboutCompanyComponent
+    AboutCompanyComponent,
+    NotFoundComponent
   ],
   imports: [
     // TODO: how important is appId?
