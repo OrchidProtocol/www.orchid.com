@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="aboutAppTitle" datatype="html">
+        <source>The natural VPN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="aboutAppSubTitle" datatype="html">
+        <source>
+        Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppFirstFeatureHeadline" datatype="html">
+        <source>Multi-hop security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppFirstFeatureParagraph" datatype="html">
+        <source>
+          Multi-hop routing connects multiple relays and adds security at each step.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppSecondFeatureHeadline" datatype="html">
+        <source>Connect out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppSecondFeatureParagraph" datatype="html">
+        <source>
+          Connect out of restricted zones. Works with existing VPN providers that are blocked.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppThirdFeatureHeadline" datatype="html">
+        <source>Low cost</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppThirdFeatureParagraph" datatype="html">
+        <source>
+          No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyHeadline" datatype="html">
+        <source>About us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyDecentralizedDemocracyHeadline" datatype="html">
+        <source>Can decentralized technologies preserve democracy? (Oslo Freedom Forum)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyDecentralizedDemocracyParagraph" datatype="html">
+        <source>
+          Dr. Seven Waterhouse, Orchid co-founder &amp; CEO discusses solutions to combat the global rise of centralized
+          surveillance states and how decentralization of the global internet architecture could be the key to
+          preserving democracy, privacy, and individual rights.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit><trans-unit id="WhyWeNeedABetterVPNTitle" datatype="html">
+        <source>
+	    Why We Need a Better VPN
+	  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit><trans-unit id="WhyWeNeedABetterVPNParagraph" datatype="html">
+        <source>
+          As dueling interests move to control the future of the internet, users around the globe are increasingly
+          turning to VPNs. But what users don&apos;t know is that many VPNs fail to provide the security and privacy that
+          they advertise.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit><trans-unit id="AccessDeniedHeadline" datatype="html">
+        <source>
+	    Access Denied: Restoring the Internet&apos;s Openness
+	  </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit><trans-unit id="AccessDeniedParagraph" datatype="html">
+        <source>
+          Governments and corporate interests are competing to own the future of the internet, and with it, control
+          information and personal data. As users, developers, and investors, how can we take back control?
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit><trans-unit id="TheCommodificationOfYouHeadline" datatype="html">
+        <source>
+	  The Commodification of You
+	</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit><trans-unit id="TheCommodificationOfYouParagraph" datatype="html">
+        <source>
+          How ISPs, apps, third parties, and websites are raking in the big bucks by tracking your clicks, emails, and
+          purchases—and what we can do to control our digital identities.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">76</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFoundersHeadline" datatype="html">
+        <source>Founders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">87</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFoundersParagraph" datatype="html">
+        <source>
+      Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
+      technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package
+      management (Cydia) and security (Wells Fargo’s 1st Online Banking, Ethereum core security team).
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyInvestorsHeadline" datatype="html">
+        <source>Backed by leading investors</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -21,6 +21,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { I18nModule } from './i18n/i18n.module';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    FormsModule
+    FormsModule,
+    I18nModule
   ],
   providers: [],
   bootstrap: [AppComponent]
