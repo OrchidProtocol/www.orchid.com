@@ -6,9 +6,9 @@ import { faqs } from './faqs.js';
   styleUrls: ['./faq.component.scss']
 })
 
-export class FaqsComponent implements OnInit {
-  url:string = (window !== undefined) ? '/assets/json/faqs.json' : '//' + window.location.host + "/assets/json/faqs.json";
-  faqs:any = [];
+export class FaqComponent implements OnInit {
+  url:string = "/assets/json/faqs.json";
+  faqs:any = faqs;
 
   constructor() {
   }

@@ -56,6 +56,18 @@ export const faqs = [
                 "visible": true,
                 "created_at": "2019-04-09T15:48:37.000Z",
                 "updated_at": "2019-04-09T15:48:37.000Z"
+            },
+            {
+                "id": 5,
+                "faq_category_id": 1,
+                "lang": "en",
+                "position": 1,
+                "question": "Who are the investors?",
+                "slug": "who are the investors",
+                "answer": "To support Orchid Labs and its mission, the company has raised $48M from investors including Sequoia, Andreessen Horowitz, DFJ, PolyChain Capital, Metastable, Blockchain Capital, Crunchfund, Struck Capital, Compound VC, and several other funds and angel investors. More information is available on the about us page.",
+                "visible": true,
+                "created_at": "2019-04-09T15:48:37.000Z",
+                "updated_at": "2019-04-09T15:48:37.000Z"
             }
         ]
     },
