@@ -1,0 +1,21 @@
+@import 'misc_config';
+@import 'orc_config';
+@import 'media_queries';
+
+#hero-error, #hero-success {
+  max-width: 60ch;
+  padding: 3rem 0 0;
+  font-size: 1.25em;
+}
+
+#hero-error {
+  color: $color-error;
+}
+
+label.gdpr-consent {
+    margin-top: 0;
+    input[type="checkbox"] {
+	margin-right: 8px;
+    }
+    &.blink_box { padding: 4px; border: 2px solid red; }
+}
