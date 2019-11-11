@@ -13,14 +13,8 @@
   color: $color-error;
 }
 
-// TODO: Create variables for these font sizes
 header h2 {
-  font-size: 40px;
   margin-bottom: 1rem;
-
-  @include mobile {
-    font-size: 30px;
-  }
 }
 
 label.gdpr-consent {
