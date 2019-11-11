@@ -14,6 +14,7 @@ import { ServiceTermsComponent } from './service-terms/service-terms.component';
 import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
@@ -35,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     ServiceTermsComponent,
     HomeComponent,
     NewsletterSignupComponent,
+    NewsletterSignupHeroComponent,
     PageLayoutComponent,
     FaqComponent,
     AboutCompanyComponent,
