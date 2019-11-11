@@ -3,7 +3,7 @@
 @import 'misc_config';
 @import 'orc_config';
 
-@include splash-columns(5fr, 7fr);
+@include splash-columns(7fr, 5fr);
 
 #splash-text {
   @include not-vert-splash {
@@ -11,18 +11,20 @@
   }
 }
 
-#splash-whitepaper {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  margin-top: 4rem;
+.title {
+  font-size: 80px;
 
-  @include mobile {
-    justify-content: center;
-    margin-top: 1rem;
+  & > span {
+    display: block;
   }
 }
+
+.subtitle {
+  color: $orc-rock-gray;
+  margin: 0.5rem 0 1.5rem 0;
+  font-size: 36px;
+}
+
 
 @include v-feature-list("#feature-list", ".ft-text", ".ft-image");
 
@@ -97,7 +99,7 @@
 }
 
 div.our-approach {
-    margin-left: auto; margin-right: auto; margin-bottom: 3em; text-align: center; max-width: 80%; 
+    margin-left: auto; margin-right: auto; margin-bottom: 3em; text-align: center; max-width: 80%;
     h2 { color: $orc-rock-gray; margin-bottom: 0.75rem; }
 }
 
@@ -110,7 +112,6 @@ ul.phantom-list {
 
 ul.smaller .ft-text h3 { font-size: 160%; }
 
-h4.subtitle { color: $orc-rock-gray; margin: 0.5rem 0 1.5rem 0; font-size: 145%; }
 .ft-text h3 { margin-bottom: 0.5rem; }
 
 section#as-seen-in {
