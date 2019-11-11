@@ -7,6 +7,7 @@ $pad-thin: 2rem;
 $pad-wide: 4rem;
 
 $pad-wide-mobile: 3rem;
+$pad-thin-mobile: 1rem;
 
 // Element-specific config
 
@@ -103,6 +104,14 @@ p {
 
     @include mobile {
       font-size: $size-body-big-mobile;
+    }
+  }
+
+  &.medium {
+    font-size: $size-body-md;
+
+    @include mobile {
+      font-size: $size-body-md-mobile;
     }
   }
 }
@@ -401,6 +410,10 @@ input, .required-input {
   text-align: right;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .phantom-a {
   &, &:active, &:visited {
     color: inherit;
@@ -495,6 +508,16 @@ input, .required-input {
   }
 }
 
+.vgap-thin {
+  margin-top: $pad-thin;
+  margin-bottom: $pad-thin;
+
+  @include mobile {
+    margin-top: $pad-thin-mobile;
+    margin-bottom: $pad-thin-mobile;
+  }
+}
+
 .pad-bot-wide {
   padding-bottom: $pad-wide;
 
@@ -518,6 +541,15 @@ input, .required-input {
     margin-top: $pad-wide-mobile;
   }
 }
+
+.gap-bot-thin {
+  margin-bottom: $pad-thin;
+
+  @include mobile {
+    margin-bottom: $pad-thin-mobile;
+  }
+}
+
 
 // Background colors
 

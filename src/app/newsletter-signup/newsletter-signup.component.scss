@@ -1,5 +1,6 @@
 @import 'misc_config';
 @import 'orc_config';
+@import 'media_queries';
 
 #error, #success {
   margin: 0 auto 0 auto;
@@ -12,7 +13,15 @@
   color: $color-error;
 }
 
-header h2 { color: $orc-rock-gray; }
+// TODO: Create variables for these font sizes
+header h2 {
+  font-size: 40px;
+  margin-bottom: 1rem;
+
+  @include mobile {
+    font-size: 30px;
+  }
+}
 
 label.gdpr-consent {
     margin-top: 0;

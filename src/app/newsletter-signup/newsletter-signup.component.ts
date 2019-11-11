@@ -36,7 +36,7 @@ export class NewsletterSignupComponent implements OnInit {
     } else {
       this.blink_box = false;
     }
-    
+
     this.error = "";
 
     this.http.get(mailchimp_url)
