@@ -122,6 +122,7 @@ button {
   padding: 0;
   background: initial;
   border: 0;
+  cursor: pointer;
   font: inherit;
   line-height: inherit;
 
@@ -225,7 +226,6 @@ button:not(.phantom-btn) {
   box-sizing: border-box;
   border-radius: 100vmax;
   font-size: $size-btn;
-  font-weight: 700;
   box-shadow: mat-shadow(6px);
 
   &.btn-fixed {
@@ -277,7 +277,7 @@ button:not(.phantom-btn) {
     background-color: inherit;
     border: solid $form-border-w $orc-purple;
     padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
-    color: $orc-rock-gray;
+    color: $orc-purple;
 
     &:not(:disabled) {
       &:hover {

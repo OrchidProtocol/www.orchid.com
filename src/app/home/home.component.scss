@@ -35,6 +35,13 @@
   }
 }
 
+.how-it-works {
+  p {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
 
 @include v-feature-list("#feature-list", ".ft-text", ".ft-image");
 
