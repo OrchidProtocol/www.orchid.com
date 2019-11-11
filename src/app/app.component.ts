@@ -35,9 +35,10 @@ export class AppComponent implements OnInit {
       this.titleService.setTitle(
           this.titleMap.get(this.router.routerState.snapshot.url));
 
-      const win = typeof window !== "undefined" && window;
+      // Scroll the user to the top of the page on load/refresh?
+      // const win = typeof window !== "undefined" && window;
+      // if (win) win.scrollTo(0, 0);
 
-      if (win) win.scrollTo(0, 0);
     }, (err) => {}, () => {});
   }
 }
