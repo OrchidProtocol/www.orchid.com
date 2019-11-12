@@ -92,8 +92,8 @@
 <div>
   <section class="section-wide hpad-wide vpad-wide">
     <header id="ev-header">
-      <h2 id="ev-h2">Meet the Orchid team</h2>
-      <a id="ev-more" class="phantom-a" routerLink="/events">See all events ></a>
+      <h2 id="ev-h2" class="color-gray">Meet us in person</h2>
+      <a id="ev-more" class="phantom-a" routerLink="/events"><span class="uppercase color-primary">See all events</span></a>
     </header>
     <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events else loadingEvents">
       <li class="ev-event" *ngFor="let event of events">
