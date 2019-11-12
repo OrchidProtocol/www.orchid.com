@@ -133,6 +133,33 @@ div.our-approach {
     }
 }
 
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+
+  h3 {
+    font-size: $size-body-md;
+
+    @include mobile {
+      font-size: $size-body-md-mobile;
+    }
+  }
+  img {
+    max-width: 100%;
+  }
+}
+
+
+
 .background-white { background: white; }
 .background-gray { background: #f0f0f0; }
 
