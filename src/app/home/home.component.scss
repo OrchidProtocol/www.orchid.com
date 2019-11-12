@@ -145,9 +145,12 @@ div.our-approach {
 .card {
   background: #fff;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 
   h3 {
     font-size: $size-body-md;
+    margin: 1rem 0;
 
     @include mobile {
       font-size: $size-body-md-mobile;
@@ -156,6 +159,20 @@ div.our-approach {
   img {
     max-width: 100%;
   }
+  p {
+    flex: 1;
+  }
+}
+
+.card__image > img {
+  height: 234px;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
 }
 
 
