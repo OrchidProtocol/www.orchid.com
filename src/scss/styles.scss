@@ -3,9 +3,9 @@
 @import 'orc_config';
 @import 'orc_fonts';
 
-$pad-xs: 1rem;
-$pad-thin: 2rem;
 $pad-wide: 4rem;
+$pad-thin: 2rem;
+$pad-xs: 1rem;
 
 $pad-wide-mobile: 3rem;
 $pad-thin-mobile: 1rem;
@@ -500,7 +500,7 @@ input, .required-input {
   }
 }
 
-.vpad-wide {
+.vpad-thin {
   padding-top: $pad-thin;
   padding-bottom: $pad-thin;
 
