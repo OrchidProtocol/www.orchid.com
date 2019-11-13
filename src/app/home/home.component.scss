@@ -198,8 +198,8 @@ ul.smaller .ft-text h3 { font-size: 160%; }
     grid-gap: 1rem;
   }
 
-  @include mobile {
-    grid-template-columns: minmax(300px, 620px);
+  @media(max-width: 1040px) {
+    grid-template-columns: minmax(300px, 420px);
   }
 }
 
