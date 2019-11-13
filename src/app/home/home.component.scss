@@ -3,11 +3,53 @@
 @import 'misc_config';
 @import 'orc_config';
 
-@include splash-columns(7fr, 5fr);
+$hero-bp-1: 1400px;
+$hero-bg-2: 1138px;
 
-#splash-text {
-  @include not-vert-splash {
-    z-index: 1;
+// HERO SECTION
+// This section is very fiddly. You have been warned.
+.home-hero {
+  position: relative;
+  background: $orc-beige-light;
+  height: 810px;
+
+  @media (max-width: $hero-bp-1) {
+    height: 56vw;
+  }
+}
+
+.home-hero__bg {
+  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat top right;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 72rem;
+  height: calc(100% + 30px);
+  margin: 0 auto;
+
+  @media (max-width: $hero-bp-1) {
+    background-size: 66%;
+    background-position: right center;
+    top: 0;
+  }
+}
+
+.home-hero__content {
+  width: 614px;
+}
+
+.home-hero__form {
+  margin-top: 143px;
+}
+
+.home-satellite-3 {
+  position: absolute;
+  transform: translate(-30px, 53px);
+
+  @media (max-width: $hero-bp-1) {
+    width: 66%;
   }
 }
 
@@ -35,6 +77,9 @@
   }
 }
 
+
+// HOW IT WORKS SECTION
+
 .how-it-works {
   p {
     margin-top: 1rem;
@@ -43,7 +88,7 @@
 }
 
 
-@include v-feature-list("#feature-list", ".ft-text", ".ft-image");
+// EVENTS SECTION
 
 #ev-header {
   display: flex;

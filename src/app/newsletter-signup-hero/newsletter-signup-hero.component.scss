@@ -12,6 +12,19 @@
   color: $color-error;
 }
 
+.newsletter-signup-hero {
+
+  // Putting this inside for specificity
+  .newsletter-signup-hero__input {
+    background: #fff;
+    max-width: 20rem;
+  }
+  .newsletter-signup-hero__button {
+    max-width: 15rem;
+  }
+
+}
+
 label.gdpr-consent {
     margin-top: 0;
     input[type="checkbox"] {

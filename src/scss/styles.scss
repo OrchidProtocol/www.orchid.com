@@ -3,10 +3,12 @@
 @import 'orc_config';
 @import 'orc_fonts';
 
+$pad-xl: 5rem;
 $pad-wide: 4rem;
 $pad-thin: 2rem;
 $pad-xs: 1rem;
 
+$pad-xl-mobile: 4rem;
 $pad-wide-mobile: 3rem;
 $pad-thin-mobile: 1rem;
 $pad-xs-mobile: 1rem;
@@ -547,8 +549,18 @@ input, .required-input {
   padding-right: $pad-wide;
 
   @include mobile {
-    padding-left: $pad-thin;
-    padding-right: $pad-thin;
+    padding-left: $pad-wide-mobile;
+    padding-right: $pad-wide-mobile;
+  }
+}
+
+.hpad-xl {
+  padding-left: $pad-xl;
+  padding-right: $pad-xl;
+
+  @include mobile {
+    padding-left: $pad-xl-mobile;
+    padding-right: $pad-xl-mobile;
   }
 }
 
@@ -562,6 +574,16 @@ input, .required-input {
   }
 }
 
+.vpad-thin {
+  padding-top: $pad-thin;
+  padding-bottom: $pad-thin;
+
+  @include mobile {
+    padding-top: $pad-thin-mobile;
+    padding-bottom: $pad-thin-mobile;
+  }
+}
+
 .vpad-wide {
   padding-top: $pad-wide;
   padding-bottom: $pad-wide;
@@ -572,13 +594,13 @@ input, .required-input {
   }
 }
 
-.vpad-thin {
-  padding-top: $pad-thin;
-  padding-bottom: $pad-thin;
+.vpad-xl {
+  padding-top: $pad-xl;
+  padding-bottom: $pad-xl;
 
   @include mobile {
-    padding-top: $pad-thin-mobile;
-    padding-bottom: $pad-thin-mobile;
+    padding-top: $pad-xl-mobile;
+    padding-bottom: $pad-xl-mobile;
   }
 }
 

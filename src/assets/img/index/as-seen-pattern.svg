@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1361px" height="892px" viewBox="0 0 1361 892" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Pattern</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="1.5 0.922975862 5.67755 0.922975862 5.67755 385.040028 1.5 385.040028"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Refresh" transform="translate(0.000000, -2176.000000)">
+            <g id="As-Seen" transform="translate(-248.000000, 2174.000000)">
+                <g id="Pattern" transform="translate(804.000000, 447.000000) scale(-1, -1) rotate(-90.000000) translate(-804.000000, -447.000000) translate(357.000000, -357.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 1222.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <line x1="2.42755" y1="0.922975862" x2="2.42755" y2="385.040028" id="Stroke-1" stroke="#BCA9FF" stroke-width="0.286" stroke-linecap="round" mask="url(#mask-2)"></line>
+                    </g>
+                    <line x1="190.5" y1="1035" x2="190.5" y2="1607" id="Stroke-4" stroke="#8C61E1" stroke-width="0.286" stroke-linecap="round"></line>
+                    <line x1="562.5" y1="1170" x2="562.5" y2="1607" id="Stroke-16" stroke="#8C61E1" stroke-width="0.286" stroke-linecap="round"></line>
+                    <polyline id="Stroke-18" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" points="16 1250 7 1241 16 1232"></polyline>
+                    <line x1="7" y1="1241.5" x2="186" y2="1241.5" id="Stroke-20" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <polyline id="Stroke-22" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" points="177 1232 186 1241 177 1250"></polyline>
+                    <polyline id="Stroke-24" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" points="204 1250 195 1241 204 1232"></polyline>
+                    <line x1="195" y1="1241.5" x2="554" y2="1241.5" id="Stroke-26" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></line>
+                    <polyline id="Stroke-28" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" points="548 1232 557 1241 548 1250"></polyline>
+                    <path d="M194,1306.0034 C194,1308.20561 192.210884,1310 190,1310 C187.795918,1310 186,1308.20561 186,1306.0034 C186,1303.79439 187.795918,1302 190,1302 C192.210884,1302 194,1303.79439 194,1306.0034" id="Fill-30" fill="#A29EC0"></path>
+                    <path d="M156,1306.0034 C156,1308.20561 154.210884,1310 152,1310 C149.789116,1310 148,1308.20561 148,1306.0034 C148,1303.79439 149.789116,1302 152,1302 C154.210884,1302 156,1303.79439 156,1306.0034 Z" id="Stroke-32" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M117,1306.0034 C117,1308.20561 115.204082,1310 113,1310 C110.789116,1310 109,1308.20561 109,1306.0034 C109,1303.79439 110.789116,1302 113,1302 C115.204082,1302 117,1303.79439 117,1306.0034 Z" id="Stroke-34" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M78,1306.0034 C78,1308.20561 76.2056075,1310 74.0033985,1310 C71.7943925,1310 70,1308.20561 70,1306.0034 C70,1303.79439 71.7943925,1302 74.0033985,1302 C76.2056075,1302 78,1303.79439 78,1306.0034 Z" id="Stroke-36" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M894,4.00339847 C894,6.20560748 892.210884,8 890,8 C887.795918,8 886,6.20560748 886,4.00339847 C886,1.79439252 887.795918,0 890,0 C892.210884,0 894,1.79439252 894,4.00339847" id="Fill-30-Copy" fill="#A29EC0" transform="translate(890.000000, 4.000000) scale(1, -1) translate(-890.000000, -4.000000) "></path>
+                    <path d="M856,4.00339847 C856,6.20560748 854.210884,8 852,8 C849.789116,8 848,6.20560748 848,4.00339847 C848,1.79439252 849.789116,0 852,0 C854.210884,0 856,1.79439252 856,4.00339847 Z" id="Stroke-32-Copy" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" transform="translate(852.000000, 4.000000) scale(1, -1) translate(-852.000000, -4.000000) "></path>
+                    <path d="M817,4.00339847 C817,6.20560748 815.204082,8 813,8 C810.789116,8 809,6.20560748 809,4.00339847 C809,1.79439252 810.789116,0 813,0 C815.204082,0 817,1.79439252 817,4.00339847 Z" id="Stroke-34-Copy" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" transform="translate(813.000000, 4.000000) scale(1, -1) translate(-813.000000, -4.000000) "></path>
+                    <path d="M778,4.00339847 C778,6.20560748 776.205607,8 774.003398,8 C771.794393,8 770,6.20560748 770,4.00339847 C770,1.79439252 771.794393,0 774.003398,0 C776.205607,0 778,1.79439252 778,4.00339847 Z" id="Stroke-36-Copy" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round" transform="translate(774.000000, 4.000000) scale(1, -1) translate(-774.000000, -4.000000) "></path>
+                    <path d="M566,1124.9966 C566,1127.20561 564.205607,1129 562.003398,1129 C559.794393,1129 558,1127.20561 558,1124.9966 C558,1122.79439 559.794393,1121 562.003398,1121 C564.205607,1121 566,1122.79439 566,1124.9966 Z" id="Stroke-38" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M605,1124.9966 C605,1127.20561 603.204082,1129 601,1129 C598.789116,1129 597,1127.20561 597,1124.9966 C597,1122.79439 598.789116,1121 601,1121 C603.204082,1121 605,1122.79439 605,1124.9966 Z" id="Stroke-40" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M682,1124.9966 C682,1127.20561 680.210884,1129 678,1129 C675.795918,1129 674,1127.20561 674,1124.9966 C674,1122.79439 675.795918,1121 678,1121 C680.210884,1121 682,1122.79439 682,1124.9966 Z" id="Stroke-42" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M767,1124.9966 C767,1127.20561 765.204082,1129 763,1129 C760.789116,1129 759,1127.20561 759,1124.9966 C759,1122.79439 760.789116,1121 763,1121 C765.204082,1121 767,1122.79439 767,1124.9966 Z" id="Stroke-44" stroke="#8C61E1" stroke-width="0.421" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M677,1226.5 C677,1302.99282 614.992821,1365 538.5,1365 C462.007179,1365 400,1302.99282 400,1226.5 C400,1150.00718 462.007179,1088 538.5,1088 C614.992821,1088 677,1150.00718 677,1226.5 Z" id="Stroke-46" stroke="#8C61E1" stroke-width="1.145" stroke-linecap="round" stroke-dasharray="0.422,2.109"></path>
+                    <path d="M252,1103.5 C252,1141.88635 221.104979,1173 183.003358,1173 C144.895021,1173 114,1141.88635 114,1103.5 C114,1065.11365 144.895021,1034 183.003358,1034 C221.104979,1034 252,1065.11365 252,1103.5 Z" id="Stroke-48" stroke="#8C61E1" stroke-width="1.145" stroke-linecap="round" stroke-dasharray="0.5760000000000001,1.729"></path>
+                    <path d="M330,145.50338 C330,167.874551 311.867791,186 289.49662,186 C267.125449,186 249,167.874551 249,145.50338 C249,123.132209 267.125449,105 289.49662,105 C311.867791,105 330,123.132209 330,145.50338 Z" id="Stroke-50" stroke="#8C61E1" stroke-width="1.145" stroke-linecap="round"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
