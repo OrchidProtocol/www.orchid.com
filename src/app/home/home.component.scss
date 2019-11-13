@@ -152,13 +152,8 @@ $hero-bg-2: 1138px;
 
 #download-orchid { margin: 4em 0 2.5em 0; }
 
-#splash-text {
-    margin-left: 40px;
-    p {	color: $orc-gray; }
-    @media screen and (max-width: 800px) {
-	margin-left: 0px;
-    }
-}
+
+// OUR APPROACH SECTION
 
 div.our-approach {
     margin-left: auto;
@@ -244,11 +239,22 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
 // PRESS SECTION
 
+.as-seen-in > section {
+  position: relative;
+}
+
+.as-seen-bg-1 {
+  position: absolute;
+  top: -163px;
+  left: -345px;
+}
+
 .press-cards {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
+  position: relative;
 
   @media(max-width: 1090px) {
     grid-gap: 1rem;
@@ -274,6 +280,7 @@ ul.smaller .ft-text h3 { font-size: 160%; }
     display: flex;
     flex-direction: column;
     height: 100%;
+    background: #fff;
 
     &::before {
       content: "";
