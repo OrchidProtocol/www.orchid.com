@@ -1,14 +1,14 @@
-<section id="newsletter-signup-hero" class="section-wide vpad-xs">
+<section class="newsletter-signup-hero section-wide vpad-xs">
   <div *ngIf="!submitted">
     <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
-      class="input-large vgap-xs" />
+      class="newsletter-signup-hero__input input-large vgap-xs" />
     <div class="gap-bot-thin" *ngIf="showFull">
       <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}">
         <input type="checkbox" [(ngModel)]="consented">
         I consent to receiving further instructions at the email address I submitted above.
       </label>
     </div>
-    <button (click)="submit()" class="btn-primary btn-fixed" [disabled]="!consented || submitted">Get notified</button>
+    <button (click)="submit()" class="btn-primary btn-fixed newsletter-signup-hero__button" [disabled]="!consented || submitted">Get notified</button>
   </div>
   <ng-container *ngIf="(error != '')">
     <p id="hero-error" [innerHTML]="error"></p>
