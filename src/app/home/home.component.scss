@@ -53,6 +53,22 @@ $hero-bg-2: 1138px;
   }
 }
 
+.home-satellite-4 {
+  position: absolute;
+  background: url(/assets/img/index/orchid-satellite-04-2.svg);
+  background-repeat: no-repeat;
+  background-position: 65vw top;
+  width: 100%;
+  height: 476px;
+  top: 155px;
+  right: 0;
+  z-index: 0;
+
+  @media (max-width: $hero-bp-1) {
+    width: 66%;
+  }
+}
+
 // TODO: use variables for font sizes
 .title {
   font-size: 72px;
@@ -81,6 +97,8 @@ $hero-bg-2: 1138px;
 // HOW IT WORKS SECTION
 
 .how-it-works {
+  position: relative;
+
   p {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
