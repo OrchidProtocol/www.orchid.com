@@ -241,6 +241,21 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
 .as-seen-in > section {
   position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('/assets/img/index/as-seen-4-circles.svg') no-repeat center center;
+    width: 10px;
+    height: 126px;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+
+    @media (max-width: 1300px) {
+      right: 1rem;
+    }
+  }
 }
 
 .as-seen-bg-1 {
