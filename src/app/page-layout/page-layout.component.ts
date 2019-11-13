@@ -38,7 +38,7 @@ export class PageLayoutComponent implements OnInit {
       bkgd.addEventListener("click", _ => this.isOpen = false);
 
       // NB: this is only necessary because of Angular
-      doc.querySelectorAll("#nav-list a").forEach(el => {
+      doc.querySelectorAll(".nav-list a").forEach(el => {
         let a = el as HTMLAnchorElement;
 
         a.addEventListener("click", _ => this.isOpen = false);

@@ -2,17 +2,22 @@
   <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
-        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'" alt="Orchid logo" class="no-mobile">
-        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'" alt="Orchid logo" class="mobile-only">
+        <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
+          alt="Orchid logo" class="no-mobile">-->
+          <img src="/assets/img/shared/orchid-logo-text.svg"
+          alt="Orchid logo" class="no-mobile">
+        <img
+          [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'"
+          alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div id="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
+    <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul id="nav-list" class="phantom-list">
+      <ul class="nav-list phantom-list">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/">Home</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/network">Network</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/vision">Vision</a></li>
