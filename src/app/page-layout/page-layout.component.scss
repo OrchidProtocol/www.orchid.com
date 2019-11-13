@@ -75,10 +75,10 @@ $flyout-ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
 $flyout-spacing: 2rem;
 $flyout-gap: ($flyout-spacing / 2.0);
 
-#nav-menu {
+.nav-menu {
     @include not-mobile {
 	flex: 0 0 auto;
-	margin: -1rem 0 1rem;
+    //margin: -1rem 0 1rem;
     }
 
     // TODO: the transition causes some weirdness when the media query is triggered
@@ -135,10 +135,11 @@ $flyout-gap: ($flyout-spacing / 2.0);
     cursor: pointer;
 }
 
-#nav-list {
+.nav-list {
     @include not-mobile {
 	display: flex;
 	flex-flow: row nowrap;
+	align-items: center;
 
 	> li {
 	    $a-pad: 0.5rem;
@@ -389,12 +390,139 @@ $flyout-gap: ($flyout-spacing / 2.0);
     }
 }
 
-#nav-menu #nav-list {
-    li { padding-top: 10px; }
-    li.social-button { padding-top: 0; &.first { padding-left: 50px; } }
+.nav-menu .nav-list {
+  li {
+	@include mobile {
+		padding-top: 10px;
+	}
+  }
+  li.social-button {
+    padding-top: 0;
+    &.first {
+      padding-left: 50px;
+    }
+  }
 
     @media screen and (max-width: 800px) {
-	li.social-button { display: none; }
-	a.phantom-a { padding: 10px 0px; }
+    li.social-button {
+      display: none;
     }
+    a.phantom-a {
+      padding: 10px 0px;
+    }
+  }
+}
+
+.navbar-language-selector {
+  cursor: pointer;
+  position: relative;
+  @include not-mobile {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+.navbar-language-selector-checkbox-label {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+#navbar-language-selector-checkbox {
+  display: none;
+}
+
+@keyframes navbar-language-selector-animation {
+  0% {
+    opacity: 0;
+    margin-top: -0.25rem;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0;
+  }
+}
+
+.navbar-language-selector-list {
+  padding: 0;
+
+  @include not-mobile {
+    display: none;
+    position: absolute;
+	top: 100%;
+	top: calc(100% + 0.5rem);
+    left: 0%;
+    z-index: 100;
+    padding: 0.5rem;
+    background: #fff;
+  }
+
+  width: auto;
+  min-width: 100%;
+  list-style: none;
+  margin: 0;
+
+  & > li:nth-child(1)#navbar-language-selector-list-item-first {
+    @include not-mobile {
+      padding-top: 0;
+    }
+  }
+}
+
+#navbar-language-selector-checkbox:checked ~ .navbar-language-selector-list {
+  @include not-mobile {
+    display: block;
+    animation-name: navbar-language-selector-animation;
+    animation-timing-function: ease-out;
+    animation-duration: 0.3s;
+  }
+}
+.navbar-language-selector-list > li {
+  position: relative;
+  display: block;
+  border-right: 1px $orc-gray solid;
+  padding-right: 0.25rem;
+
+  @include not-mobile {
+    padding-right: 0;
+    border-right: none;
+	text-align: center;
+	
+	a {
+		padding: 7px 0;
+		display: inline-block;
+		width: 100%;
+	}
+  }
+
+  /*&:after {
+		content: ' ';
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		background: $orc-purple;
+		border-radius: 1px;
+		position: absolute;
+		margin-left: 100%;
+		width: 0%;
+		@include not-mobile {
+			margin-left: 50%;
+			width: 0%;
+		}
+		transition: all 0.25s ease;
+	}
+	&:hover:after {
+		width: 50%;
+		margin-left: 50%;
+		@include not-mobile {
+			width: 50%;
+			margin-left: 25%;
+    }
+	}*/
 }

@@ -12,19 +12,33 @@
           alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div id="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
+    <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul id="nav-list" class="phantom-list">
+      <ul class="nav-list phantom-list">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/">Home</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/network">Network</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/vision">Vision</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us">About</a></li>
         <li><a class="phantom-a" href="https://blog.orchid.com/">Blog</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/download">Download</a></li>
+        <li><a class="phantom-a" routerLink="/download">Download</a></li>
+        <li routerLinkActive="active-link" class="navbar-language-selector">
+            <input type="checkbox" id="navbar-language-selector-checkbox">
+            <label for="navbar-language-selector-checkbox" class="navbar-language-selector-checkbox-label"></label>
+            <span class="phantom-a">
+              <img alt="" style="vertical-align: top;" width="20" height="20"src="/assets/img/shared/globe.svg">
+              English
+            </span>
+            <ul class="navbar-language-selector-list">
+              <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href="//www.ko.orchid.com">Korean</a></li>
+              <li><a class="phantom-a" href="//www.orchid.com">English</a></li>
+              <li><a class="phantom-a" href="//www.ja.orchid.com">Japanese</a></li>
+              <li><a class="phantom-a" href="//www.zh.orchid.com">Mandarin</a></li>
+            </ul>
+        </li>
         <li class="social-button first">
           <a class="inline-block" href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer"
             aria-label="Follow on Medium" title="Medium">
