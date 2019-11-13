@@ -247,6 +247,21 @@ ul.smaller .ft-text h3 { font-size: 160%; }
   position: absolute;
   top: -163px;
   left: -345px;
+
+  @include mobile {
+    left: unset;
+    right: 65vw;
+  }
+  @media (max-width: 475px) {
+    transform: scale(0.8);
+    right: 50vw;
+    top: -216px;
+  }
+  @media (max-width: 374px) {
+    right: 41vw;
+    transform: scale(0.7);
+    top: -238px;
+  }
 }
 
 .press-cards {
@@ -267,43 +282,29 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
 .press-card {
   padding: 1rem;
+  position: relative;
 
   &, & * {
     box-sizing: border-box;
   }
 
+  &::before {
+    content: "";
+    top: 56px;
+    height: calc(100% - 88px);
+    width: calc(100% - 2rem);
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+
   & > .wrapper {
-    --shadow-size: 16;
     padding: 0 2rem 2rem;
-    box-shadow: 0 0 calc(var(--shadow-size) * 1px) rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
     background: #fff;
-
-    &::before {
-      content: "";
-      background: linear-gradient(0deg, transparent, #fff 50%);
-      top: 0;
-      left: calc(var(--shadow-size) * -1px);
-      height: 100px;
-      width: calc(100% + calc(var(--shadow-size) * 2px));
-      position: absolute;
-      transform: translateY(calc(var(--shadow-size) * -1px));
-      z-index: 1;
-    }
-    &::after {
-      content: "";
-      background: linear-gradient(180deg, transparent, #fff 50%);
-      bottom: 0;
-      left: calc(var(--shadow-size) * -1px);
-      height: 50px;
-      width: calc(100% + calc(var(--shadow-size) * 2px));
-      position: absolute;
-      transform: translateY(calc(var(--shadow-size) * 1px));
-      z-index: 1;
-    }
   }
 }
 
