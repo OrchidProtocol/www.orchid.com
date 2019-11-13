@@ -137,9 +137,10 @@ div.our-approach {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
+  justify-content: center;
 
-  @include mobile {
-    grid-template-columns: 1fr;
+  @include vert-splash {
+    grid-template-columns: repeat(1, minmax(200px, 600px));
   }
 }
 .card {
@@ -165,7 +166,12 @@ div.our-approach {
 }
 
 .card__image > img {
-  height: 234px;
+  height: 16vw;
+  max-height: 234px;
+
+  @include vert-splash {
+    height: auto;
+  }
 }
 
 .card__text {
@@ -176,6 +182,7 @@ div.our-approach {
 }
 
 
+// TODO: Do we still need this stuff and can we move it elsewhere?
 
 .background-white { background: white; }
 .background-gray { background: #f0f0f0; }
@@ -187,6 +194,10 @@ ul.phantom-list {
 ul.smaller .ft-text h3 { font-size: 160%; }
 
 .ft-text h3 { margin-bottom: 0.5rem; }
+
+
+
+// PRESS SECTION
 
 .press-cards {
   display: grid;
