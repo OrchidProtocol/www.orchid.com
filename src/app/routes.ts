@@ -3,6 +3,7 @@ import {Routes} from "@angular/router";
 import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
+import {HowItWorksComponent} from "./how-it-works/how-it-works.component";
 import {EventsComponent} from "./events/events.component";
 import {FaqComponent} from "./faq/faq.component";
 import {ContactComponent} from "./contact/contact.component";
@@ -30,6 +31,8 @@ export const routes: Routes = [
 	    {path: "app.html", redirectTo: "app"},
 	    {path: "network", component: AboutNetworkComponent},
 	    {path: "network.html", redirectTo: "network"},
+	    {path: "how-it-works", component: HowItWorksComponent},
+	    {path: "how-it-works.html", redirectTo: "how-it-works"},
 	    {path: "vision", component: VisionComponent},
 	    {path: "vision.html", redirectTo: "vision"},
 	    {path: "about-us", component: AboutCompanyComponent},
