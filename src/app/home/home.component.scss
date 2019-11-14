@@ -22,7 +22,7 @@ $hero-bp-vert: 1150px;
 .home-hero__bg {
   background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat top right;
   position: absolute;
-  top: -30px;
+  top: 0;
   left: 0;
   right: 0;
   width: 100%;
@@ -37,13 +37,16 @@ $hero-bp-vert: 1150px;
   @media (max-width: $hero-bp-1) {
     background-size: 66%;
     background-position: right center;
-    top: 0;
   }
 }
 
 .home-hero__content {
   box-sizing: border-box;
   width: 642px;
+
+  @media(min-width: 1401px) {
+    padding-top: 3.5rem;
+  }
 }
 
 .home-hero__form {
