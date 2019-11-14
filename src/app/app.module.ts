@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutAppComponent } from './about-app/about-app.component';
 import { AboutNetworkComponent } from './about-network/about-network.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisionComponent } from './vision/vision.component';
 import { EventsComponent } from './events/events.component';
@@ -28,6 +29,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     AboutAppComponent,
     AboutNetworkComponent,
+    HowItWorksComponent,
     VisionComponent,
     EventsComponent,
     DownloadComponent,

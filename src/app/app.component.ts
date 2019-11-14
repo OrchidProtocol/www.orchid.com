@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
     ["/download", "Packet Analyzer App for iOS & Android | Orchid"],
     ["/about-us", "About the Open Internet | Orchid"],
     ["/network", "Distributed VPN | Orchid"],
+    ["/how-it-works", "How It Works | Orchid"],
     ["/vision", "Our Vision | Orchid"],
     ["/faq", "FAQs | Orchid"],
     ["/events", "Events | Orchid"],
