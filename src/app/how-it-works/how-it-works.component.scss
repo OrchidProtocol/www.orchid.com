@@ -1,22 +1,74 @@
 @import 'orc_config';
-@import 'feature_list';
 @import 'media_queries';
+@import 'misc_config';
 
-@include h-feature-list("#features", "#feature-list", ".ft-image");
+// HERO SECTION
 
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.how-hero {
+  .content {
+    max-width: 39rem;
+    padding-bottom: 200px;
+
+    & > p {
+      max-width: 30rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .satellite-1 {
+    background-image: url('/assets/img/how-it-works/satellite-1.svg');
+    background-repeat: no-repeat;
+    background-position: 72vw center;
     width: 100%;
+    height: 446px;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .satellite-2 {
+    background-image: url('/assets/img/how-it-works/satellite-2.svg');
+    background-repeat: no-repeat;
+    background-position: -21vw center;
+    width: 100%;
+    height: 674px;
+    position: absolute;
+    bottom: -199px;
+    left: 0;
+  }
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
+.core {
+  .content {
+    max-width: 54rem;
+  }
+  h2 > span {
+    display: block;
+  }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  .button {
+    text-decoration: none;
+    display: block;
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: $size-body-md;
+    color: $orc-rock-gray;
+
+    @include mobile {
+      font-size: $size-body-md-mobile;
+    }
+  }
 }
+
+
+
+
+// WHITE PAPER SECTION
 
 .whitepaper-section { padding: 3em 0; text-align: center; }
 #read-whitepaper {
@@ -37,28 +89,3 @@
     left: -2rem;
     top: -5rem;
 }
-
-#how-it-works {
-    h3 { text-align: center; margin: 0 auto 1em auto; color: $orc-rock-gray; }
-    h2 { margin-left: auto; margin-right: auto; text-align: center; }
-    .column {
-	&.left { padding-right: 2em; }
-	&.right { padding-left: 2em; }
-	.img-wrapper { text-align: center; min-height: 200px; margin-bottom: 3em; }
-	img { margin-left: auto; margin-right: auto; height: auto;  }
-    }
-
-    ul {
-	list-style: none;
-	
-	li::before {
-	    display: inline-block;
-	    content: " ";
-	    background: $orc-purple; width: 0.75em; height: 0.75em; border-radius: 50%;
-	    line-height: 1em; margin-right: 1em; margin-left: -2em;
-	    text-align: center; vertical-align: baseline;
-	}
-	li { padding-bottom: 2em; }
-    }
-}
-
