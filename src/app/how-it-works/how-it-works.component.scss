@@ -131,6 +131,7 @@ $section-sm: 54rem;
     padding-top: 2rem;
 
     .satellite-2 {
+      display: none;
       max-height: 50vh;
       position: relative;
       top: 0;
@@ -170,6 +171,8 @@ $exp-to-top-size: 30px;
 $exp-dot-size: 18px;
 $exp-start-height: 170px;
 
+$exp-vert-bp: 960px;
+
 .anchor {
   top: 60px;
   position: relative;
@@ -185,8 +188,7 @@ $exp-start-height: 170px;
 .explainer {
   --section-bg: #{$bkgd-faint-gray};
   --section-bg-alt: #fff;
-  min-height: 100vh;//800px;
-  // height: 100vh;
+  min-height: 800px;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -194,10 +196,6 @@ $exp-start-height: 170px;
   background-color: var(--section-bg);
   position: relative;
   counter-increment: section;
-
-  @media (orientation: landscape) {
-    // height: 100vh;
-  }
 }
 .explainer__container {
   max-width: $exp-outer-width;
@@ -245,7 +243,6 @@ $exp-start-height: 170px;
                          ". . . . connector .";
     grid-template-columns: $exp-progress-1-width $exp-progress-2-width 1fr $exp-image-delta $exp-progress-2-width $exp-progress-1-width;
     grid-template-rows: 100px 1fr $exp-bottom-1-height $exp-bottom-2-height;
-    //grid-template-rows: calc(50vh - #{$exp-start-height * 2}) 1fr $exp-bottom-1-height $exp-bottom-2-height;
   }
   .explainer__progress {
     justify-content: flex-start;
@@ -336,43 +333,40 @@ $exp-start-height: 170px;
     display: block;
   }
 }
-// Set the active section bullet
-@for $i from 1 through 6 {
-  .explainer:nth-child(#{$i}) .explainer__dot:nth-child(#{$i}) {
-    & > img {
-      display: none;
-    }
-    background-color: $orc-light-purple;
-    font-family: $orc-tf-primary;
-    font-size: 40px;
-    line-height: 60px;;
-    text-align: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 60px;
-    text-decoration: none;
-    color: #fff;
-    transform: translateX(calc(-50% + 2px));
-    position: relative;
-    border: 22px solid var(--section-bg);
-    z-index: 3;
-    &:nth-child(2n) {
-      transform: translateX(calc(50% - 2px));
-    }
-    &::before {
-      content: counter(section);
-    }
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url(/assets/img/how-it-works/shine.svg);
-      background-repeat: no-repeat;
-      background-position: center;
-      width: 104px;
-      height: 104px;
-      top: -22px;
-      left: -22px;
-    }
+.explainer__dot.active {
+  & > img {
+    display: none;
+  }
+  background-color: $orc-light-purple;
+  font-family: $orc-tf-primary;
+  font-size: 40px;
+  line-height: 60px;;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  text-decoration: none;
+  color: #fff;
+  transform: translateX(calc(-50% + 2px));
+  position: relative;
+  border: 22px solid var(--section-bg);
+  z-index: 3;
+  &:nth-child(2n) {
+    transform: translateX(calc(50% - 2px));
+  }
+  &::before {
+    content: counter(section);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url(/assets/img/how-it-works/shine.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 104px;
+    height: 104px;
+    top: -22px;
+    left: -22px;
   }
 }
 
@@ -382,6 +376,7 @@ $exp-start-height: 170px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 4rem 0;
 
   & > h3 {
     font-size: 34px;
@@ -434,6 +429,65 @@ $exp-start-height: 170px;
     z-index: 1;
     bottom: 0;
     left: -10px;
+  }
+}
+
+@media (max-width: $exp-vert-bp) {
+  .explainer {
+    overflow: visible;
+    padding: 1rem;
+    min-height: unset;
+  }
+  .explainer__container,
+  .explainer:first-child .explainer__container {
+    max-width: 100%;
+    grid-template-areas: "image"
+                         "text"
+                         "bottom";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    justify-content: center;
+    position: relative;
+  }
+  .explainer__text {
+    padding: 0;
+    justify-content: flex-start;
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .explainer .explainer__container .explainer__image { // Need the specificity
+    padding: 1rem;
+    justify-content: center;
+    max-height: 50vh;
+    & > img {
+      max-width: 100%;
+    }
+  }
+  .explainer__progress {
+    display: none;
+  }
+  .explainer__bottom {
+    background: none;
+    text-align: center;
+    padding: 1rem 0 0;
+  }
+  .explainer__to-top {
+    position: static;
+    transform: none;
+    display: inline-block;
+  }
+  .explainer__connector {
+    background: none;
+  }
+  .explainer:last-child {
+    .explainer__bottom::after {
+      display: none
+    }
+  }
+  .explainer__start-cap,
+  .explainer__finish {
+    display: none;
   }
 }
 
