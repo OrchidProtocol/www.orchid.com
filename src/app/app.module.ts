@@ -24,6 +24,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MetaService } from './MetaService';
 
 @NgModule({
   declarations: [
@@ -55,7 +56,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientJsonpModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MetaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
