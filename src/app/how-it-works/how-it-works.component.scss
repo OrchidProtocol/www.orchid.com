@@ -2,6 +2,9 @@
 @import 'media_queries';
 @import 'misc_config';
 
+// PAGE VARIABLES
+$section-sm: 54rem;
+
 // HERO SECTION
 
 .how-hero {
@@ -84,7 +87,7 @@
     }
   }
   .content {
-    max-width: 54rem;
+    max-width: $section-sm;
   }
   h2 > span {
     display: block;
@@ -149,6 +152,95 @@
   }
 }
 
+
+// EXPLAINER SECTIONS
+
+$exp-outer-width: 1440px;
+$exp-text-width: 750px;
+$exp-progress-1-width: 146px;
+$exp-progress-2-width: 130px;
+$exp-image-delta: 136px;
+$exp-image-width: 412px;
+$exp-image-gap: 30px;
+$exp-bottom-1-height: 4px;//64px;
+$exp-bottom-2-height: 60px;
+
+.explainer > * {
+  box-sizing: border-box;
+}
+.explainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  overflow-x: hidden;
+  background-color: $bkgd-faint-gray;
+}
+.explainer__container {
+  // background-color: rgba(0, 0, 0, 0.1); // tmp
+  max-width: $exp-outer-width;
+  display: grid;
+  grid-template-areas: ". progress-2 text image image image"
+                       ". bottom bottom bottom bottom .";
+  grid-template-columns: $exp-progress-1-width $exp-progress-2-width 1fr $exp-image-delta $exp-progress-2-width $exp-progress-1-width;
+  grid-template-rows: 1fr $exp-bottom-1-height;
+  justify-content: center;
+  position: relative;
+}
+
+// Even # rows
+.explainer:nth-child(2n) {
+  background-color: #fff;
+  .explainer__container {
+    direction: rtl;
+  }
+  .explainer__bg {
+    background-color: $bkgd-faint-gray;
+  }
+  .explainer__progress {
+    background-position: right;
+  }
+  .explainer__text {
+    direction: ltr;
+  }
+  .explainer__image {
+    padding-right: 60px;
+    padding-left: 0;
+  }
+}
+.explainer__bg {
+  background-color: #fff;
+  position: absolute;
+  width: 100%;
+  height: $exp-bottom-2-height;
+}
+.explainer__progress {
+  grid-area: progress-2;
+  // background-color: rgba(0, 0, 0, 0.03);
+  background-image: url('/assets/img/how-it-works/dash-y.svg');
+  background-repeat: repeat-y;
+  background-position: left;
+}
+.explainer__text {
+  grid-area: text;
+  max-width: $exp-text-width;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.explainer__image {
+  grid-area: image;
+  display: flex;
+  padding-left: $exp-image-gap;
+}
+.explainer__bottom {
+  grid-area: bottom;
+  background-color: rgba(255, 0, 255, 0.01);
+
+  background-image: url('/assets/img/how-it-works/dash-x.svg');
+  background-repeat: repeat-x;
+  background-position: top;
+}
 
 // WHITE PAPER SECTION
 
