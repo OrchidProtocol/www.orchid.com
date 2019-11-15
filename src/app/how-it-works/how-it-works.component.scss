@@ -324,7 +324,7 @@ $exp-vert-bp: 960px;
   background-color: var(--section-bg);
   width: $exp-dot-size;
   height: $exp-dot-size;
-  transform: translateX(calc(-50% + 0px));
+  transform: translateX(-50%);
   display: block;
   & + & {
     margin-top: 70px;
