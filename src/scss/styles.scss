@@ -214,6 +214,11 @@ main {
 
 .splash-circuit {
   padding-top: $pad-thin;
+  @include not-mobile {
+    h1 {
+      font-size: 60px;
+    }
+  }
 }
 
 .splash-circuit-image {
