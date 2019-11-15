@@ -167,6 +167,7 @@ $exp-bottom-1-height: $exp-dash-height;
 $exp-bottom-2-height: 60px;
 $exp-to-top-size: 30px;
 $exp-dot-size: 18px;
+$exp-start-height: 170px;
 
 .explainers {
   counter-reset: section;
@@ -177,8 +178,8 @@ $exp-dot-size: 18px;
 .explainer {
   --section-bg: #{$bkgd-faint-gray};
   --section-bg-alt: #fff;
-  min-height: 800px;
-  height: 100vh;
+  min-height: 100vh;//800px;
+  // height: 100vh;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -188,8 +189,7 @@ $exp-dot-size: 18px;
   counter-increment: section;
 
   @media (orientation: landscape) {
-    max-height: 900px;
-    height: 100vh;
+    // height: 100vh;
   }
 }
 .explainer__container {
@@ -226,6 +226,66 @@ $exp-dot-size: 18px;
   }
   .explainer__connector {
     background-position: left;
+  }
+}
+
+.explainer:first-child {
+  padding-top: 20px;
+  .explainer__container {
+    grid-template-areas: ". start start start start ."
+                         ". progress-2 text image image image"
+                         ". bottom bottom bottom bottom ."
+                         ". . . . connector .";
+    grid-template-columns: $exp-progress-1-width $exp-progress-2-width 1fr $exp-image-delta $exp-progress-2-width $exp-progress-1-width;
+    grid-template-rows: 100px 1fr $exp-bottom-1-height $exp-bottom-2-height;
+    //grid-template-rows: calc(50vh - #{$exp-start-height * 2}) 1fr $exp-bottom-1-height $exp-bottom-2-height;
+  }
+  .explainer__progress {
+    justify-content: flex-start;
+  }
+}
+.explainer__start {
+  grid-area: start;
+  background-image: url('/assets/img/how-it-works/dash-x.svg');
+  background-repeat: repeat-x;
+  background-position: bottom;
+  margin-bottom: -50px;
+  width: 50%;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background-image: url('/assets/img/how-it-works/dash-y.svg');
+    background-repeat: repeat-y;
+    right: 0;
+    top: 0;
+  }
+}
+.explainer__start-cap {
+  position: absolute;
+  z-index: 1;
+  left: calc(50% - 18px);
+  transform: translateY(20px);
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url('/assets/img/how-it-works/start-shine.svg');
+    background-repeat: no-repeat;
+    width: 148px;
+    height: 148px;
+    top: -58px;
+    left: -58px;
+  }
+
+  & > div {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    background: $orc-purple;
   }
 }
 
@@ -288,6 +348,7 @@ $exp-dot-size: 18px;
     transform: translateX(calc(-50% + 2px));
     position: relative;
     border: 22px solid var(--section-bg);
+    z-index: 3;
     &:nth-child(2n) {
       transform: translateX(calc(50% - 2px));
     }
