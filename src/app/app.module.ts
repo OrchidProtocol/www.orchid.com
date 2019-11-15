@@ -18,6 +18,7 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
@@ -41,6 +42,7 @@ import { FormsModule } from '@angular/forms';
     NewsletterSignupHeroComponent,
     PageLayoutComponent,
     FaqComponent,
+    ContactComponent,
     AboutCompanyComponent,
     NotFoundComponent
   ],

@@ -6,6 +6,7 @@ import {AboutNetworkComponent} from "./about-network/about-network.component";
 import {HowItWorksComponent} from "./how-it-works/how-it-works.component";
 import {EventsComponent} from "./events/events.component";
 import {FaqComponent} from "./faq/faq.component";
+import {ContactComponent} from "./contact/contact.component";
 import {HomeComponent} from "./home/home.component";
 import {DownloadComponent} from "./download/download.component";
 import {PageLayoutComponent} from "./page-layout/page-layout.component";
@@ -38,6 +39,7 @@ export const routes: Routes = [
 	    {path: "about-us.html", redirectTo: "about-us"},
 	    {path: "faq", component: FaqComponent},
 	    {path: "faq.html", redirectTo: "faq"},
+	    {path: "contact", component: ContactComponent},
 	    {path: "download", component: DownloadComponent},
 	    {path: "download.html", redirectTo: "download"},
 	    {path: "events", component: EventsComponent},
