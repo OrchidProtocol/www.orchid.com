@@ -166,6 +166,7 @@ $exp-dash-height: 4px;
 $exp-bottom-1-height: $exp-dash-height;
 $exp-bottom-2-height: 60px;
 $exp-to-top-size: 30px;
+$exp-dot-size: 18px;
 
 .explainer > * {
   box-sizing: border-box;
@@ -173,7 +174,8 @@ $exp-to-top-size: 30px;
 .explainer {
   --section-bg: #{$bkgd-faint-gray};
   --section-bg-alt: #fff;
-  min-height: 100vh;
+  min-height: 700px;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: stretch;
@@ -182,8 +184,7 @@ $exp-to-top-size: 30px;
   position: relative;
 
   @media (orientation: landscape) {
-    max-height: 800px;
-    min-height: unset;
+    max-height: 900px;
     height: 100vh;
   }
 }
@@ -209,6 +210,9 @@ $exp-to-top-size: 30px;
   }
   .explainer__progress {
     background-position: right 3px;
+  }
+  .explainer__dot {
+    transform: translateX(50%);
   }
   .explainer__text {
     direction: ltr;
@@ -241,6 +245,22 @@ $exp-to-top-size: 30px;
   background-image: url('/assets/img/how-it-works/dash-y.svg');
   background-repeat: repeat-y;
   background-position: left 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.explainer__dot {
+  background-color: var(--section-bg);
+  width: $exp-dot-size;
+  height: $exp-dot-size;
+  transform: translateX(-50%);
+  display: block;
+  & + & {
+    margin-top: 70px;
+  }
+  & > img {
+    display: block;
+  }
 }
 .explainer__text {
   grid-area: text;
