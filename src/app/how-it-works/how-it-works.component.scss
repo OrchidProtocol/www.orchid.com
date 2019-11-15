@@ -239,6 +239,10 @@ $exp-dot-size: 18px;
     transform: translate(100%);
     z-index: 0;
   }
+  &:nth-child(2n) .explainer__bottom::after {
+    transform: translate(0);
+    left: 0;
+  }
   .explainer__connector {
     background: transparent;
   }
@@ -310,6 +314,15 @@ $exp-dot-size: 18px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  & > h3 {
+    font-size: 34px;
+    color: $orc-rock-gray;
+    margin-bottom: 1rem;
+  }
+  & > h4 {
+    font-size: $size-body-md;
+  }
 }
 .explainer__image {
   grid-area: image;
