@@ -3,11 +3,169 @@
 @import 'misc_config';
 @import 'orc_config';
 
-@include splash-columns(7fr, 5fr);
+$hero-bp-1: 1400px;
+$hero-bp-vert: 1150px;
 
-#splash-text {
-  @include not-vert-splash {
-    z-index: 1;
+// HERO SECTION
+// It took a lot of magic numbers to make this work across all resolutions.
+// TODO: find a less fiddly way to manage the floating islands.
+.home-hero {
+  position: relative;
+  background: $orc-beige-light;
+  height: 810px;
+
+  @media (max-width: $hero-bp-1) {
+    height: 55vw;
+  }
+}
+
+.home-hero__bg {
+  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat top right;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 72rem;
+  height: calc(100% + 30px);
+  margin: 0 auto;
+
+  & > img {
+    display: none;
+  }
+
+  @media (max-width: $hero-bp-1) {
+    background-size: 66%;
+    background-position: right center;
+  }
+}
+
+.home-hero__content {
+  box-sizing: border-box;
+  width: 642px;
+
+  @media(min-width: 1401px) {
+    padding-top: 3.5rem;
+  }
+}
+
+.home-hero__form {
+  margin-top: 143px;
+
+  @media (max-width: $hero-bp-1) {
+    margin-top: 10vw;
+    transform: translateY(-2vw);
+  }
+}
+
+@media (max-width: $hero-bp-vert) {
+  .home-hero {
+    height: unset;
+  }
+  .home-hero__bg {
+    background: transparent;
+    position: relative;
+    max-height: 50vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+
+    & > img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  .home-hero__content {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  .home-hero__form {
+    margin-top: 1rem;
+  }
+}
+
+.home-satellite-3 {
+  position: absolute;
+  transform: translate(-30px, 53px);
+}
+
+.home-satellite-3a {
+  position: absolute;
+  background: url('/assets/img/index/orchid-satellite-03-2.svg');
+  background-repeat: no-repeat;
+  background-position: calc(50% - 444px);
+  width: 100%;
+  height: 390px;
+  left: 0;
+  top: -188px;
+  z-index: 0;
+  @media (max-width: $hero-bp-1) {
+    background-size: 30vw;
+    background-position: calc(50% - 30vw);
+  }
+  @media (max-width: 1330px) {
+    background-size: 26vw;
+    top: -11vw;
+    background-position: calc(50% - 33vw);
+  }
+  @media (max-width: $hero-bp-vert) {
+    background-size: 35vw;
+    background-position: calc(50% - 42vw);
+    top: -21vw;
+  }
+  @media (max-width: 790px) {
+    background-size: 303px;
+    background-position: calc(50% - 307px);
+    top: -156px;
+  }
+  @media (max-width: 580px) {
+    display: none;
+    // position: relative;
+    // height: 322px;
+    // top: 0;
+    // background-position: center;
+  }
+}
+
+.home-satellite-4 {
+  position: absolute;
+  background: url(/assets/img/index/orchid-satellite-04-2.svg);
+  background-repeat: no-repeat;
+  background-position: 65vw top;
+  width: 100%;
+  height: 476px;
+  top: 155px;
+  right: 0;
+  z-index: 0;
+
+  @media (max-width: 1550px) {
+    background-position: 69vw;
+  }
+  @media (max-width: 1194px) {
+    background-position: 71vw;
+  }
+  @media (max-width: 1092px) {
+    transform: scale(0.8);
+    transform-origin: right;
+    background-position: 68vw;
+  }
+  @media (max-width: 962px) {
+    transform: scale(0.6);
+    background-position: 52vw;
+    top: 133px;
+  }
+  @include mobile {
+    transform: scale(0.6);
+    background-position: 52vw;
+    top: 100px;
+  }
+  @media (max-width: 580px) {
+    display: none;
+    // position: relative;
+    // height: 322px;
+    // top: 0;
+    // background-position: center;
   }
 }
 
@@ -22,6 +180,12 @@
   @include mobile {
     font-size: 40px;
   }
+  @media (max-width: 413px) {
+    font-size: 37px;
+  }
+  @media (max-width: 374px) {
+    font-size: 30px;
+  }
 }
 
 // TODO: use variables for font sizes
@@ -33,9 +197,18 @@
   @include mobile {
     font-size: 30px;
   }
+  @media (max-width: 374px) {
+    font-size: 27px;
+    margin-bottom: 0.5rem;
+  }
 }
 
+
+// HOW IT WORKS SECTION
+
 .how-it-works {
+  position: relative;
+
   p {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
@@ -43,7 +216,7 @@
 }
 
 
-@include v-feature-list("#feature-list", ".ft-text", ".ft-image");
+// EVENTS SECTION
 
 #ev-header {
   display: flex;
@@ -107,13 +280,8 @@
 
 #download-orchid { margin: 4em 0 2.5em 0; }
 
-#splash-text {
-    margin-left: 40px;
-    p {	color: $orc-gray; }
-    @media screen and (max-width: 800px) {
-	margin-left: 0px;
-    }
-}
+
+// OUR APPROACH SECTION
 
 div.our-approach {
     margin-left: auto;
@@ -137,9 +305,10 @@ div.our-approach {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 2rem;
+  justify-content: center;
 
-  @include mobile {
-    grid-template-columns: 1fr;
+  @include vert-splash {
+    grid-template-columns: repeat(1, minmax(200px, 600px));
   }
 }
 .card {
@@ -165,7 +334,12 @@ div.our-approach {
 }
 
 .card__image > img {
-  height: 234px;
+  height: 16vw;
+  max-height: 234px;
+
+  @include vert-splash {
+    height: auto;
+  }
 }
 
 .card__text {
@@ -176,6 +350,7 @@ div.our-approach {
 }
 
 
+// TODO: Do we still need this stuff and can we move it elsewhere?
 
 .background-white { background: white; }
 .background-gray { background: #f0f0f0; }
@@ -188,59 +363,91 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
 .ft-text h3 { margin-bottom: 0.5rem; }
 
+
+
+// PRESS SECTION
+
+.as-seen-in > section {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background: url('/assets/img/index/as-seen-4-circles.svg') no-repeat center center;
+    width: 10px;
+    height: 126px;
+    bottom: 0;
+    right: 0;
+    transform: translateY(50%);
+
+    @media (max-width: 1300px) {
+      right: 1rem;
+    }
+  }
+}
+
+.as-seen-bg-1 {
+  position: absolute;
+  top: -163px;
+  left: -345px;
+
+  @include mobile {
+    left: unset;
+    right: 65vw;
+  }
+  @media (max-width: 475px) {
+    transform: scale(0.8);
+    right: 50vw;
+    top: -216px;
+  }
+  @media (max-width: 374px) {
+    right: 41vw;
+    transform: scale(0.7);
+    top: -238px;
+  }
+}
+
 .press-cards {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
+  position: relative;
 
   @media(max-width: 1090px) {
     grid-gap: 1rem;
   }
 
-  @include mobile {
-    grid-template-columns: minmax(300px, 620px);
+  @media(max-width: 1040px) {
+    grid-template-columns: minmax(300px, 420px);
   }
 }
 
 .press-card {
   padding: 1rem;
+  position: relative;
 
   &, & * {
     box-sizing: border-box;
   }
 
+  &::before {
+    content: "";
+    top: 56px;
+    height: calc(100% - 88px);
+    width: calc(100% - 2rem);
+    position: absolute;
+    z-index: 0;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+  }
+
   & > .wrapper {
-    --shadow-size: 16;
     padding: 0 2rem 2rem;
-    box-shadow: 0 0 calc(var(--shadow-size) * 1px) rgba(0, 0, 0, 0.1);
     position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
-
-    &::before {
-      content: "";
-      background: linear-gradient(0deg, transparent, #fff 50%);
-      top: 0;
-      left: calc(var(--shadow-size) * -1px);
-      height: 100px;
-      width: calc(100% + calc(var(--shadow-size) * 2px));
-      position: absolute;
-      transform: translateY(calc(var(--shadow-size) * -1px));
-      z-index: 1;
-    }
-    &::after {
-      content: "";
-      background: linear-gradient(180deg, transparent, #fff 50%);
-      bottom: 0;
-      left: calc(var(--shadow-size) * -1px);
-      height: 50px;
-      width: calc(100% + calc(var(--shadow-size) * 2px));
-      position: absolute;
-      transform: translateY(calc(var(--shadow-size) * 1px));
-      z-index: 1;
-    }
+    background: #fff;
   }
 }
 

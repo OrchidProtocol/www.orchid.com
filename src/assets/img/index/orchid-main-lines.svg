@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="989px" height="1085px" viewBox="0 0 989 1085" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60 (88103) - https://sketch.com -->
+    <title>Lines</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="Home-Refresh" transform="translate(-322.000000, -323.000000)" stroke="#FFFFFF" stroke-width="8">
+            <g id="Hero-section">
+                <g id="Group-4" transform="translate(54.000000, 120.000000)">
+                    <g id="Lines" transform="translate(272.000000, 207.000000)">
+                        <line x1="573.5" y1="348.5" x2="0" y2="700" id="Line"></line>
+                        <line x1="589" y1="316" x2="187" y2="158" id="Line-Copy"></line>
+                        <line x1="671" y1="316" x2="981" y2="0" id="Line-Copy-2"></line>
+                        <line x1="671" y1="348" x2="911" y2="1077" id="Line-Copy-3"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

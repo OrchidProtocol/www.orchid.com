@@ -1,70 +1,71 @@
-@import 'media_queries';
-@import 'misc_config';
-@import 'orc_config';
+@import "media_queries";
+@import "misc_config";
+@import "orc_config";
 
 $mobile-nav-height: 64px;
 
 #nav {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
-    @include not-mobile {
-	// padding-bottom: 4rem;
+  @include not-mobile {
+    // padding-bottom: 4rem;
+  }
+
+  @include size-body-sm;
+
+  $ease-in: cubic-bezier(0.35, 0.25, 0.75, 0.5);
+  $ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
+
+  @include mobile {
+    padding: 1rem;
+
+    &:not(.js) {
+      align-items: flex-start;
     }
 
-    @include size-body-sm;
-
-    $ease-in: cubic-bezier(0.35, 0.25, 0.75, 0.5);
-    $ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
-
-    @include mobile {
-	padding: 1rem;
-
-	&:not(.js) {
-	    align-items: flex-start;
-	}
-
-	&.js {
-	    transition-property: box-shadow;
-	    transition-duration: 0.2s;
-	    transition-timing-function: $ease-out;
-	    position: fixed;
-	    left: 0;
-	    right: 0;
-	    top: 0;
-	    box-sizing: border-box;
-	    height: $mobile-nav-height;
-	    background: inherit;
-	    box-shadow: mat-shadow(8px, $alpha: 0.2);
-	    z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
-	}
-
-	#nav-root.bk-deep-purple > &.js {
-	    box-shadow: mat-shadow(8px, $alpha: 0.4);
-	}
-
-	&.no-shadow {
-	    // I hate CSS. (This deals with rule importance)
-	    &, #nav-root.bk-deep-purple > & {
-		transition-duration: 0.07s;
-		transition-timing-function: $ease-in;
-		box-shadow: mat-shadow(0px, $alpha: 0.2);
-	    }
-	}
+    &.js {
+      transition-property: box-shadow;
+      transition-duration: 0.2s;
+      transition-timing-function: $ease-out;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      box-sizing: border-box;
+      height: $mobile-nav-height;
+      background: inherit;
+      box-shadow: mat-shadow(8px, $alpha: 0.2);
+      z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
+
+    #nav-root.bk-deep-purple > &.js {
+      box-shadow: mat-shadow(8px, $alpha: 0.4);
+    }
+
+    &.no-shadow {
+      // I hate CSS. (This deals with rule importance)
+      &,
+      #nav-root.bk-deep-purple > & {
+        transition-duration: 0.07s;
+        transition-timing-function: $ease-in;
+        box-shadow: mat-shadow(0px, $alpha: 0.2);
+      }
+    }
+  }
 }
 
 #nav-home {
-    flex: 1 0 auto;
-    line-height: 0px;
+  flex: 1 0 auto;
+  line-height: 0px;
 
-    > a {
-	margin: -1rem;
-	padding: 1rem;
-    }
+  > a {
+    margin: -1rem;
+    padding: 1rem;
+  }
 }
 
 $flyout-time: 0.3s;
@@ -73,328 +74,345 @@ $flyout-ease-in: cubic-bezier(0.45, 0.1, 0.75, 0.5);
 $flyout-ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
 
 $flyout-spacing: 2rem;
-$flyout-gap: ($flyout-spacing / 2.0);
+$flyout-gap: ($flyout-spacing / 2);
 
-#nav-menu {
-    @include not-mobile {
-	flex: 0 0 auto;
-	margin: -1rem 0 1rem;
+.nav-menu {
+  @include not-mobile {
+    flex: 0 0 auto;
+    //margin: -1rem 0 1rem;
+  }
+
+  // TODO: the transition causes some weirdness when the media query is triggered
+
+  @include mobile {
+    margin: 0;
+    padding: 0;
+
+    &.animate {
+      transition-property: transform;
+      transition-duration: $flyout-time;
+      transition-timing-function: $flyout-ease-in;
     }
 
-    // TODO: the transition causes some weirdness when the media query is triggered
-
-		 @include mobile {
-	margin: 0;
-	padding: 0;
-
-	&.animate {
-	    transition-property: transform;
-	    transition-duration: $flyout-time;
-	    transition-timing-function: $flyout-ease-in;
-	}
-
-	&.js {
-	    position: fixed;
-	    right: 0;
-	    top: 0;
-	    bottom: 0;
-	    padding: 1rem 1rem $flyout-gap $flyout-gap;
-	    width: 10rem;
-	    background: $orc-beige-light;
-	    color: $orc-rock-gray;
-	    box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
-	    transform: translate(100%, 0);
-	    z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
-	}
-
-	&.open {
-	    transition-duration: $flyout-time-open;
-	    transition-timing-function: $flyout-ease-out;
-	    transform: translate(0, 0);
-	}
+    &.js {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 1rem 1rem $flyout-gap $flyout-gap;
+      width: 10rem;
+      background: $orc-beige-light;
+      color: $orc-rock-gray;
+      box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
+      transform: translate(100%, 0);
+      z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
+
+    &.open {
+      transition-duration: $flyout-time-open;
+      transition-timing-function: $flyout-ease-out;
+      transform: translate(0, 0);
+    }
+  }
 }
 
 #nav-flyout-header {
-    margin: -1rem -1rem 0;
-    box-sizing: border-box;
-    height: $mobile-nav-height;
+  margin: -1rem -1rem 0;
+  box-sizing: border-box;
+  height: $mobile-nav-height;
 
-    :not(.js) > & {
-	display: none;
-    }
+  :not(.js) > & {
+    display: none;
+  }
 }
 
 #nav-flyout-close {
-    display: flex;
-    flex-flow: row-reverse nowrap;
-    margin: 0;
-    padding: 1rem;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  margin: 0;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
-#nav-list {
-    @include not-mobile {
-	display: flex;
-	flex-flow: row nowrap;
-
-	> li {
-	    $a-pad: 0.5rem;
-
-	    > a {
-		position: relative;
-		padding: $a-pad;
-	    }
-
-	    &.active-link > a::after {
-		$height: 4px;
-		content: " ";
-		position: absolute;
-		left: $a-pad;
-		right: $a-pad;
-		bottom: calc(#{$a-pad} - #{$height});
-		bottom: -3px;
-		height: $height;
-		background: $orc-purple;
-		border-radius: 100vmax;
-	    }
-	}
-    }
-
-    @include mobile {
-	text-align: right;
-
-	> li {
-	    > a {
-		display: block;
-		padding: $flyout-gap 0;
-		width: 100%;
-	    }
-	}
-    }
+.nav-list {
+  @include not-mobile {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
 
     > li {
-	font-weight: 700;
-	text-transform: uppercase;
+      $a-pad: 0.5rem;
+
+      > a {
+        position: relative;
+        padding: $a-pad;
+      }
+
+      &.active-link > a::after {
+        $height: 4px;
+        content: " ";
+        position: absolute;
+        left: $a-pad;
+        right: $a-pad;
+        bottom: calc(#{$a-pad} - #{$height});
+        bottom: -3px;
+        height: $height;
+        background: $orc-purple;
+        border-radius: 100vmax;
+      }
     }
+  }
+
+  @include mobile {
+    text-align: right;
+
+    > li {
+      > a {
+        display: block;
+        padding: $flyout-gap 0;
+        width: 100%;
+      }
+    }
+  }
+
+  > li {
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 #nav-toggle {
-    margin: -1rem;
-    padding: 1rem;
-    cursor: pointer;
+  margin: -1rem;
+  padding: 1rem;
+  cursor: pointer;
 
-    :not(.js) > & {
-	display: none;
-    }
+  :not(.js) > & {
+    display: none;
+  }
 }
 
 #nav-flyout-bkgd {
-    transition-property: opacity;
-    transition-duration: $flyout-time;
-    transition-timing-function: $flyout-ease-in;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: rgba(black, 0.4);
-    opacity: 0;
-    pointer-events: none;
-    z-index: 1000; // I hate CSS
+  transition-property: opacity;
+  transition-duration: $flyout-time;
+  transition-timing-function: $flyout-ease-in;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(black, 0.4);
+  opacity: 0;
+  pointer-events: none;
+  z-index: 1000; // I hate CSS
 
-		   &.open {
-	transition-duration: $flyout-time-open;
-	transition-timing-function: $flyout-ease-out;
-	pointer-events: all;
-	opacity: 1;
-    }
+  &.open {
+    transition-duration: $flyout-time-open;
+    transition-timing-function: $flyout-ease-out;
+    pointer-events: all;
+    opacity: 1;
+  }
 }
 
 #nav-pin {
-    height: $mobile-nav-height;
+  height: $mobile-nav-height;
 }
 
 #footer {
-    position: relative;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 
-    @include size-body-sm;
+  @include size-body-sm;
 
-    @include mobile {
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-    }
+  @include mobile {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 
-    p.privacy-terms-links {
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 8px;
-	text-align: center;
-	font-size: 80%;
-    }
+  p.privacy-terms-links {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    text-align: center;
+    font-size: 80%;
+  }
 }
 
 #ft-layout {
-    $gap: 2rem;
+  $gap: 2rem;
 
-    display: flex;
-    position: relative; /* boosts z-index, because CSS is horrible */
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: 0 ($gap / -2.0);
-    z-index: 2;
+  display: flex;
+  position: relative; /* boosts z-index, because CSS is horrible */
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0 ($gap / -2);
+  z-index: 2;
 
-    @include mobile {
-	flex-flow: column-reverse nowrap;
+  @include mobile {
+    flex-flow: column-reverse nowrap;
+  }
+
+  > {
+    section,
+    nav {
+      flex: 0 0 auto;
+      margin: 0 ($gap / 2);
+
+      @include mobile {
+        margin: 0;
+
+        // NB: on mobile this is flowed in column-reverse order
+        &:not(:first-child) {
+          margin-bottom: 1rem;
+        }
+      }
     }
-
-    > {
-	section, nav {
-	    flex: 0 0 auto;
-	    margin: 0 ($gap / 2.0);
-
-	    @include mobile {
-		margin: 0;
-
-		// NB: on mobile this is flowed in column-reverse order
-			  &:not(:first-child) {
-		    margin-bottom: 1rem;
-		}
-	    }
-	}
-    }
+  }
 }
 
 #ft-pad-a {
-    flex: 1 15rem;
+  flex: 1 15rem;
 }
 
 #ft-pad-b {
-    flex: 1 25rem;
+  flex: 1 25rem;
 }
 
 #ft-pad-c {
-    flex: 0 1 12rem;
+  flex: 0 1 12rem;
 }
 
 #ft-logo {
-    @include mobile {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	align-items: flex-end;
+  @include mobile {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
 
-	> img {
-	    max-width: 20vw;
-	}
-
-	> p {
-	    line-height: 1.0;
-	}
+    > img {
+      max-width: 20vw;
     }
+
+    > p {
+      line-height: 1;
+    }
+  }
 }
 
 #ft-nav {
-    z-index: 2;
-    @include mobile {
-	margin-bottom: 0;
-    }
+  z-index: 2;
+  @include mobile {
+    margin-bottom: 0;
+  }
 }
 
 #ft-nav-list {
-    @include mobile {
-	> li > a {
-	    display: block;
-	    padding: 0.5rem 0;
-	    &:hover { color: $orc-purple; }
-	}
+  @include mobile {
+    > li > a {
+      display: block;
+      padding: 0.5rem 0;
+      &:hover {
+        color: $orc-purple;
+      }
     }
+  }
 }
 
 #ft-social-list {
-    $gap: 0.5rem;
+  $gap: 0.5rem;
 
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    margin: ($gap / -2.0);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: ($gap / -2);
+
+  > li {
+    margin: ($gap / 2);
+  }
+
+  @include mobile {
+    flex-flow: row wrap;
+    justify-content: flex-start;
 
     > li {
-	margin: ($gap / 2.0);
+      &:not(:last-child) {
+        margin-right: 2rem;
+      }
     }
-
-    @include mobile {
-	flex-flow: row wrap;
-	justify-content: flex-start;
-
-	> li {
-	    &:not(:last-child) {
-		margin-right: 2rem;
-	    }
-	}
-    }
+  }
 }
 
 #ft-adorner {
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }
 
 #ft-adorn-layout {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 #ft-adorn-coral-elec {
-    left: -4rem;
-    bottom: 0;
-    height: 14.25rem;
+  left: -4rem;
+  bottom: 0;
+  height: 14.25rem;
 
-    @include mobile {
-	left: initial;
-	right: 1rem;
-	bottom: 0;
-	max-height: 8rem;
-	transform: scaleX(-1);
-    }
+  @include mobile {
+    left: initial;
+    right: 1rem;
+    bottom: 0;
+    max-height: 8rem;
+    transform: scaleX(-1);
+  }
 }
 
 #ft-adorn-coral-real {
-    left: 2rem;
-    bottom: 0;
+  left: 2rem;
+  bottom: 0;
 }
 
 #ft-adorn-coral-real-mobile {
-    right: 5rem;
-    bottom: 0;
-    max-width: 4rem;
+  right: 5rem;
+  bottom: 0;
+  max-width: 4rem;
 }
 
 #ft-adorn-fish {
-    right: 0rem;
-    top: 3rem;
+  right: 0rem;
+  top: 3rem;
 
-    @include mobile {
-	right: 2rem;
-	top: 2rem;
-	max-width: 4rem;
-    }
+  @include mobile {
+    right: 2rem;
+    top: 2rem;
+    max-width: 4rem;
+  }
 }
 
-#nav-menu #nav-list {
-    li { padding-top: 10px; }
-    li.social-button { padding-top: 0; &.first { padding-left: 50px; } }
-
-    @media screen and (max-width: 800px) {
-	li.social-button { display: none; }
-	a.phantom-a { padding: 10px 0px; }
+.nav-menu .nav-list {
+  li {
+    @include mobile {
+      padding-top: 10px;
     }
+  }
+  li.social-button {
+    padding-top: 0;
+    &.first {
+      padding-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    li.social-button {
+      display: none;
+    }
+    a.phantom-a {
+      padding: 10px 0px;
+    }
+  }
 }
