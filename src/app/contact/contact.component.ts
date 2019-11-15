@@ -64,21 +64,29 @@ export class ContactComponent implements OnInit {
     this.form_disabled = true;
 
     try {
-      const response = await fetch("https://evy3f9g1ki.execute-api.us-west-2.amazonaws.com/Production/contact",
-        {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          method: "POST",
-          body: JSON.stringify({
-            "name": this.name,
-            "email": this.email,
-            "subject": this.subject,
-            "message": this.message
+      let response = null;
+      let data = null;
+
+      if (window && window.location.host.match(/localhost/i) !== null) {
+        response = "Form disabled";
+        data = "form disabled";
+      } else {
+        let response = await fetch("https://evy3f9g1ki.execute-api.us-west-2.amazonaws.com/Production/contact",
+          {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify({
+              "name": this.name,
+              "email": this.email,
+              "subject": this.subject,
+              "message": this.message
+            })
           })
-        })
-      const data = await response.json();
+        let data = await response.json();
+      }
       this.form_disabled = false;
       this.clear();
       this.displaySuccess("Your message has been sent.")
