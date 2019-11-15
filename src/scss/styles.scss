@@ -22,6 +22,7 @@ $pad-xs-mobile: 1rem;
   font-size: 20px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
+  scroll-behavior: smooth;
 }
 
 :root, html, body {

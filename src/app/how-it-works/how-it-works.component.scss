@@ -153,6 +153,7 @@ $section-sm: 54rem;
 }
 
 
+
 // EXPLAINER SECTIONS
 
 $exp-outer-width: 1440px;
@@ -168,6 +169,12 @@ $exp-bottom-2-height: 60px;
 $exp-to-top-size: 30px;
 $exp-dot-size: 18px;
 $exp-start-height: 170px;
+
+.anchor {
+  top: 60px;
+  position: relative;
+  display: block;
+}
 
 .explainers {
   counter-reset: section;
