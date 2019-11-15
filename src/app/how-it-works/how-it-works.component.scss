@@ -168,13 +168,16 @@ $exp-bottom-2-height: 60px;
 $exp-to-top-size: 30px;
 $exp-dot-size: 18px;
 
+.explainers {
+  counter-reset: section;
+}
 .explainer > * {
   box-sizing: border-box;
 }
 .explainer {
   --section-bg: #{$bkgd-faint-gray};
   --section-bg-alt: #fff;
-  min-height: 700px;
+  min-height: 800px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -182,6 +185,7 @@ $exp-dot-size: 18px;
   overflow-x: hidden;
   background-color: var(--section-bg);
   position: relative;
+  counter-increment: section;
 
   @media (orientation: landscape) {
     max-height: 900px;
@@ -189,7 +193,6 @@ $exp-dot-size: 18px;
   }
 }
 .explainer__container {
-  // background-color: rgba(0, 0, 0, 0.1); // tmp
   max-width: $exp-outer-width;
   display: grid;
   grid-template-areas: ". progress-2 text image image image"
@@ -253,7 +256,7 @@ $exp-dot-size: 18px;
   background-color: var(--section-bg);
   width: $exp-dot-size;
   height: $exp-dot-size;
-  transform: translateX(-50%);
+  transform: translateX(calc(-50% + 0px));
   display: block;
   & + & {
     margin-top: 70px;
@@ -262,6 +265,45 @@ $exp-dot-size: 18px;
     display: block;
   }
 }
+// Set the active section bullet
+@for $i from 1 through 6 {
+  .explainer:nth-child(#{$i}) .explainer__dot:nth-child(#{$i}) {
+    & > img {
+      display: none;
+    }
+    background-color: $orc-light-purple;
+    font-family: $orc-tf-primary;
+    font-size: 40px;
+    line-height: 60px;;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    text-decoration: none;
+    color: #fff;
+    transform: translateX(calc(-50% + 2px));
+    position: relative;
+    border: 22px solid var(--section-bg);
+    &:nth-child(2n) {
+      transform: translateX(calc(50% - 2px));
+    }
+    &::before {
+      content: counter(section);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(/assets/img/how-it-works/shine.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 104px;
+      height: 104px;
+      top: -22px;
+      left: -22px;
+    }
+  }
+}
+
 .explainer__text {
   grid-area: text;
   max-width: $exp-text-width;
