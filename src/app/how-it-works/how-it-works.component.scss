@@ -169,12 +169,15 @@ $exp-bottom-2-height: 60px;
   box-sizing: border-box;
 }
 .explainer {
+  --section-bg: #{$bkgd-faint-gray};
+  --section-bg-alt: #fff;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: stretch;
   overflow-x: hidden;
-  background-color: $bkgd-faint-gray;
+  background-color: var(--section-bg);
+  position: relative;
 }
 .explainer__container {
   // background-color: rgba(0, 0, 0, 0.1); // tmp
@@ -190,12 +193,10 @@ $exp-bottom-2-height: 60px;
 
 // Even # rows
 .explainer:nth-child(2n) {
-  background-color: #fff;
+  --section-bg: #fff;
+  --section-bg-alt: #{$bkgd-faint-gray};
   .explainer__container {
     direction: rtl;
-  }
-  .explainer__bg {
-    background-color: $bkgd-faint-gray;
   }
   .explainer__progress {
     background-position: right;
@@ -209,14 +210,13 @@ $exp-bottom-2-height: 60px;
   }
 }
 .explainer__bg {
-  background-color: #fff;
+  background-color: var(--section-bg-alt);
   position: absolute;
   width: 100%;
   height: $exp-bottom-2-height;
 }
 .explainer__progress {
   grid-area: progress-2;
-  // background-color: rgba(0, 0, 0, 0.03);
   background-image: url('/assets/img/how-it-works/dash-y.svg');
   background-repeat: repeat-y;
   background-position: left;
@@ -240,6 +240,15 @@ $exp-bottom-2-height: 60px;
   background-image: url('/assets/img/how-it-works/dash-x.svg');
   background-repeat: repeat-x;
   background-position: top;
+  position: relative;
+}
+.explainer__to-top {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  // transform: translateY(calc(100vh - 50%));
+  // z-index: 1;
+  background-color: var(--section-bg);
 }
 
 // WHITE PAPER SECTION
