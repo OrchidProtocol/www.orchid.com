@@ -162,7 +162,8 @@ $exp-progress-2-width: 130px;
 $exp-image-delta: 136px;
 $exp-image-width: 412px;
 $exp-image-gap: 30px;
-$exp-bottom-1-height: 4px;
+$exp-dash-height: 4px;
+$exp-bottom-1-height: $exp-dash-height;
 $exp-bottom-2-height: 60px;
 $exp-to-top-size: 30px;
 
@@ -220,6 +221,21 @@ $exp-to-top-size: 30px;
     background-position: left;
   }
 }
+
+.explainer:last-child {
+  .explainer__bottom::after {
+    content: "";
+    position: absolute;
+    background: var(--section-bg);
+    width: 50%;
+    height: 100%;
+    transform: translate(100%);
+    z-index: 0;
+  }
+  .explainer__connector {
+    background: transparent;
+  }
+}
 .explainer__progress {
   grid-area: progress-2;
   background-image: url('/assets/img/how-it-works/dash-y.svg');
@@ -243,6 +259,7 @@ $exp-to-top-size: 30px;
   background-image: url('/assets/img/how-it-works/dash-x.svg');
   background-repeat: repeat-x;
   background-position: top;
+  position: relative;
 }
 .explainer__to-top {
   position: absolute;
@@ -250,6 +267,10 @@ $exp-to-top-size: 30px;
   transform: translateY(-50%);
   left: calc(50% - #{$exp-to-top-size});
   background-color: var(--section-bg);
+  z-index: 1;
+  & > img {
+    display: block;
+  }
 }
 .explainer__connector {
   grid-area: connector;
@@ -257,10 +278,29 @@ $exp-to-top-size: 30px;
   background-repeat: repeat-y;
   background-position: right;
 }
+.explainer__finish {
+  position: absolute;
+  background-image: url('/assets/img/how-it-works/dash-y.svg');
+  width: $exp-dash-height;
+  height: 110px;
+  left: calc(50% - 2px);
+  top: -60px;
+
+  & > img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    left: -10px;
+  }
+}
 
 // WHITE PAPER SECTION
 
-.whitepaper-section { padding: 3em 0; text-align: center; }
+.whitepaper-section {
+  position: relative;
+  padding: 3em 0;
+  text-align: center;
+}
 #read-whitepaper {
     display: flex;
     flex-flow: row nowrap;
