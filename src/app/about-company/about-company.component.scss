@@ -11,53 +11,44 @@
   @extend .section-wide;
   @extend .hpad-thin;
 
-  pointer-events: none;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-
-  display: grid;
-  grid-template-rows: 1fr auto 1fr;
-  grid-template-columns: 4fr 7fr;
-  grid-template-areas:
-    "above-text image"
-    "text       image"
-    "below-text image";
-  position: relative;
   padding-bottom: $pad-wide;
 
-  @include vert-splash {
-    grid-template-rows: auto 1rem auto auto auto;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "image"
-      "."
-      "above-text"
-      "text"
-      "below-text";
-  }
+  pointer-events: none;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
   @include mobile {
-    grid-template-rows: auto;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     padding-bottom: 2rem;
   }
 }
 
 .about-company__splash-text-container {
-  img {
-    max-width: 100%;
-    height: auto;
+  h1 {
+    font-size: 3rem;
+    @include mobile {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
-  @include not-mobile {
-    grid-row-start: 3;
+  .big {
+    font-size: 160%;
   }
 }
 
 .about-company__splash-image-container {
+  width: 100%;
+  max-width: 800px;
+  @include mobile {
+    max-width: 620px;
+  }
+
   img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
   }
   grid-area: image;
@@ -85,15 +76,6 @@
     @include mobile {
       //width: auto;
       max-width: 100%;
-    }
-  }
-}
-
-@media (min-width: 715px) {
-  @media (max-width: 960px) {
-    .about-company__splash-image-container {
-      width: 616px;
-      margin: auto;
     }
   }
 }
