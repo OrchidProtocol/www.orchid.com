@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '../MetaService';
 
 @Component({
   selector: 'app-service-terms',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceTermsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private meta: MetaService) { }
 
   ngOnInit() {
+    this.meta.setGlobalTitle('Terms of Service | Orchid');
   }
 
 }
