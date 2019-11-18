@@ -13,7 +13,7 @@ export class AboutCompanyComponent implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('About the Open Internet | Orchid');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/company/social.png');
-        this.meta.setGlobalDescription('Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4 2019.');
+        this.meta.setGlobalDescription('Orchid was founded in 2017 to help restore the open and accessible Internet for everyone.');
     }
 
     go_sec() {
