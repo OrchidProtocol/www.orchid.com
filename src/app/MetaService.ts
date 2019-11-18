@@ -13,7 +13,7 @@ export class MetaService {
         for (let i = 0; i < tags.length; i++) {
             this.meta.removeTagElement(tags[i])
         }
-        
+
         tags = this.meta.getTags('name^="twitter:"');
         for (let i = 0; i < tags.length; i++) {
             this.meta.removeTagElement(tags[i])
@@ -24,14 +24,14 @@ export class MetaService {
 
     update(name: string, value: string) {
         let tag = null;
-        
+
         // OG tags use the "property" attribute instead of "name"
         if (/^og:/.test(name)) {
             tag = this.meta.getTag(`property="${name}"`);
         } else {
             tag = this.meta.getTag(`name="${name}"`);
         }
-        
+
         if (name === 'title') {
             this.title.setTitle(value);
         } else if (tag) {
@@ -43,10 +43,10 @@ export class MetaService {
         } else {
             if (/^og:/.test(name)) {
                 this.meta.addTag({ property: name, content: value })
-        } else {
-            this.meta.addTag({ name: name, content: value })
+            } else {
+                this.meta.addTag({ name: name, content: value })
+            }
         }
-    }
     }
 
     remove(name: string, value: string) {
@@ -59,16 +59,16 @@ export class MetaService {
     }
 
     // The following "setGlobalX" functions refer to "global" as covering the three major meta schemas: w3c, OpenGraph, and Twitter.
-    setGlobalImage (image: string) {
+    setGlobalImage(image: string) {
         this.update('og:image', image);
         this.update('twitter:image', image);
     }
-    setGlobalDescription (description: string) {
+    setGlobalDescription(description: string) {
         this.update('description', description);
         this.update('og:description', description);
         this.update('twitter:description', description);
     }
-    setGlobalTitle (title: string) {
+    setGlobalTitle(title: string) {
         this.update('title', title);
         this.update('og:title', title);
         this.update('twitter:title', title);
