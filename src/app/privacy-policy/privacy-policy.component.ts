@@ -12,6 +12,7 @@ export class PrivacyPolicyComponent implements OnInit {
 
   ngOnInit() {
     this.meta.setGlobalTitle('Privacy Policy | Orchid');
+    this.meta.setGlobalDescription('The Orchid Privacy Policy explains how our site will collect, use, protect or otherwise handle your Personally Identifiable Information with our free private VPN service. ');
   }
 
 }

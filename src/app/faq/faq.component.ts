@@ -15,8 +15,8 @@ export class FaqComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.meta.setGlobalTitle('FAQs | Orchid');
-    this.meta.setGlobalDescription('What is Orchid? - Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency)');
+    this.meta.setGlobalTitle('FAQs and Customer Support | Orchid');
+    this.meta.setGlobalDescription('A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet.');
   }
 
   anchorParse (component: string):string {

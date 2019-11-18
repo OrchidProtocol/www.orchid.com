@@ -11,9 +11,9 @@ export class AboutCompanyComponent implements OnInit {
     constructor(private meta: MetaService) { }
 
     ngOnInit() {
-        this.meta.setGlobalTitle('About the Open Internet | Orchid');
+        this.meta.setGlobalTitle('About the Open Accessible Internet | Orchid');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/company/social.png');
-        this.meta.setGlobalDescription('Orchid was founded in 2017 to help restore the open and accessible Internet for everyone.');
+        this.meta.setGlobalDescription('We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN.');
     }
 
     go_sec() {

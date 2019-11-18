@@ -12,8 +12,8 @@ export class AboutNetworkComponent implements OnInit {
   constructor(private meta: MetaService) { }
 
   ngOnInit() {
-    this.meta.setGlobalTitle('Distributed VPN | Orchid');
-    this.meta.setGlobalDescription('The Orchid network—an overlay network that runs on the existing internet—is designed for a mutual exchange of benefit in a peer-to-peer marketplace.');
+    this.meta.setGlobalTitle('Our Vision for Restoring Privacy | Orchid');
+    this.meta.setGlobalDescription('Our vision is to restore user trust on the internet by creating our private internet access vpn, built as an open source app');
   }
 
   downloadWhitepaper() { downloadWhitepaper(); }

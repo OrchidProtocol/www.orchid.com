@@ -12,6 +12,6 @@ export class DownloadComponent implements OnInit {
   constructor(private meta: MetaService) { }
   ngOnInit() {
     this.meta.setGlobalTitle('Packet Analyzer App for iOS & Android | Orchid');
-    this.meta.setGlobalDescription('Try the pre-release Orchid app');
+    this.meta.setGlobalDescription('Your privacy is important to us, therefore no third parties will see your data after downloading our free VPN traffic analyzer app.');
   }
 }
