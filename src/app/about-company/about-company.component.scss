@@ -62,10 +62,6 @@
     margin-bottom: -100px;
   }
 
-  @include vert-splash {
-    max-height: 50vh;
-  }
-
   > img {
     width: 100%;
     height: auto;
