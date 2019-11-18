@@ -9,6 +9,9 @@ export class MetaService {
     constructor(private title: Title, private meta: Meta) { }
 
     clearAllTags() {
+
+        // Only remove og, twitter, and description meta tags to avoid removing things like the viewport tag.
+
         let tags = this.meta.getTags('property^="og:"');
         for (let i = 0; i < tags.length; i++) {
             this.meta.removeTagElement(tags[i])
@@ -60,6 +63,9 @@ export class MetaService {
 
     // The following "setGlobalX" functions refer to "global" as covering the three major meta schemas: w3c, OpenGraph, and Twitter.
     setGlobalImage(image: string) {
+        if (!/^https:\/\//.test(image)) {
+            image = `https://www.orchid.com${image}`;
+        }
         this.update('og:image', image);
         this.update('twitter:image', image);
     }

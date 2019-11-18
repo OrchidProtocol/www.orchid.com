@@ -17,6 +17,8 @@ export class HomeComponent implements OnInit {
   constructor(private events: EventsService, private meta: MetaService) { }
 
   ngOnInit() {
+    this.meta.setGlobalTitle('Orchid | Open Source VPN & Privacy Software');
+    this.meta.setGlobalDescription('Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.');
     this.meta.update('og:url', 'https://www.orchid.com/');
     
     this.events$ = this.events.getEvents();
