@@ -23,13 +23,24 @@ export class MetaService {
     }
 
     update(name: string, value: string) {
-        const tag = this.meta.getTag(name);
+        let tag = null;
+        
+        // OG tags use the "property" attribute instead of "name"
+        if (/^og:/.test(name)) {
+            tag = this.meta.getTag(`property="${name}"`);
+        } else {
+            tag = this.meta.getTag(`name="${name}"`);
+        }
         
         if (name === 'title') {
             this.title.setTitle(value);
         } else {
+            if (/^og:/.test(name)) {
+                this.meta.addTag({ property: name, content: value })
+        } else {
             this.meta.addTag({ name: name, content: value })
         }
+    }
     }
 
     setGlobalImage (image: string) {
