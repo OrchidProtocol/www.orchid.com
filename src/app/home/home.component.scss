@@ -98,15 +98,16 @@ $hero-bp-vert: 1150px;
   width: 100%;
   height: 390px;
   left: 0;
-  top: -188px;
+  top: -223px;
   z-index: 0;
   @media (max-width: $hero-bp-1) {
     background-size: 30vw;
-    background-position: calc(50% - 30vw);
+    background-position: calc(50% - 33vw);
+    top: -209px;
   }
   @media (max-width: 1330px) {
     background-size: 26vw;
-    top: -11vw;
+    top: -16vw;
     background-position: calc(50% - 33vw);
   }
   @media (max-width: $hero-bp-vert) {
@@ -117,7 +118,7 @@ $hero-bp-vert: 1150px;
   @media (max-width: 790px) {
     background-size: 303px;
     background-position: calc(50% - 307px);
-    top: -156px;
+    top: -206px;
   }
   @media (max-width: 580px) {
     display: none;
