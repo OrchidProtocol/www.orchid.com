@@ -352,7 +352,7 @@ button:not(.phantom-btn) {
   box-sizing: border-box;
   border-radius: 100vmax;
   font-size: $size-btn;
-  box-shadow: mat-shadow(6px);
+  box-shadow: mat-shadow(6px, $alpha: 0.2);
 
   &.btn-fixed {
     width: 100%;
