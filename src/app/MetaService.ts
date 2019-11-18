@@ -7,6 +7,21 @@ import { Meta, Title } from '@angular/platform-browser';
 
 export class MetaService {
     constructor(private title: Title, private meta: Meta) { }
+
+    clearAllTags() {
+        let tags = this.meta.getTags('property^="og:"');
+        for (let i = 0; i < tags.length; i++) {
+            this.meta.removeTagElement(tags[i])
+        }
+        
+        tags = this.meta.getTags('name^="twitter:"');
+        for (let i = 0; i < tags.length; i++) {
+            this.meta.removeTagElement(tags[i])
+        }
+
+        this.meta.removeTag('name="description"');
+    }
+
     update(name: string, value: string) {
         const tag = this.meta.getTag(name);
         
