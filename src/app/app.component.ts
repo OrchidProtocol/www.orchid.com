@@ -1,5 +1,5 @@
 import {Component, OnInit} from "@angular/core";
-import {Title} from "@angular/platform-browser";
+
 import {
   NavigationEnd,
   Router
@@ -13,20 +13,7 @@ import {
 export class AppComponent implements OnInit {
   title = "orchid-www";
 
-  titleMap: Map<string, string> = new Map<string, string>([
-    ["/", "Orchid | Open Source VPN & Privacy Software"],
-    ["/download", "Packet Analyzer App for iOS & Android | Orchid"],
-    ["/about-us", "About the Open Internet | Orchid"],
-    ["/network", "Distributed VPN | Orchid"],
-    ["/how-it-works", "How It Works | Orchid"],
-    ["/vision", "Our Vision | Orchid"],
-    ["/faq", "FAQs | Orchid"],
-    ["/events", "Events | Orchid"],
-    ["/privacy-policy", "Privacy Policy | Orchid"],
-    ["/service-terms", "Terms of Service | Orchid"],
-  ]);
-
-  public constructor(private router: Router, private titleService: Title) {}
+  public constructor(private router: Router) {}
 
   ngOnInit(): void {
     this.router.events.subscribe((evt) => {
