@@ -34,6 +34,12 @@ export class MetaService {
         
         if (name === 'title') {
             this.title.setTitle(value);
+        } else if (tag) {
+            if (/^og:/.test(name)) {
+                this.meta.updateTag({ name: name, content: value }, `property="${name}"`)
+            } else {
+                this.meta.updateTag({ name: name, content: value }, `name="${name}"`)
+            }
         } else {
             if (/^og:/.test(name)) {
                 this.meta.addTag({ property: name, content: value })
