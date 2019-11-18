@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '../MetaService';
 import { faqs } from './faqs.js';
 @Component({
   selector: 'app-faq',
@@ -10,10 +11,12 @@ export class FaqComponent implements OnInit {
   url:string = "/assets/json/faqs.json";
   faqs:any = faqs;
 
-  constructor() {
+  constructor(private meta: MetaService) {
   }
 
   ngOnInit() {
+    this.meta.setGlobalTitle('FAQs | Orchid');
+    this.meta.setGlobalDescription('What is Orchid? - Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency)');
   }
 
   anchorParse (component: string):string {
