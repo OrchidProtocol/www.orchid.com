@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { MetaService } from '../MetaService';
 
 @Component({
   selector: 'app-download',
@@ -8,6 +9,9 @@ import { Observable } from 'rxjs';
 })
 
 export class DownloadComponent implements OnInit {
-  constructor() { }
-  ngOnInit() { }
+  constructor(private meta: MetaService) { }
+  ngOnInit() {
+    this.meta.setGlobalTitle('Packet Analyzer App for iOS & Android | Orchid');
+    this.meta.setGlobalDescription('Try the pre-release Orchid app');
+  }
 }
