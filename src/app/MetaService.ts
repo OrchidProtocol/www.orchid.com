@@ -49,6 +49,7 @@ export class MetaService {
     }
     }
 
+    // The following "setGlobalX" functions refer to "global" as covering the three major meta schemas: w3c, OpenGraph, and Twitter.
     setGlobalImage (image: string) {
         this.update('og:image', image);
         this.update('twitter:image', image);
