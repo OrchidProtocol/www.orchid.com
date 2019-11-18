@@ -32,10 +32,6 @@ export class AppComponent implements OnInit {
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) return;
 
-      // TODO: this feels very bad
-      this.titleService.setTitle(
-          this.titleMap.get(this.router.routerState.snapshot.url));
-
       // Scroll the user to the top of the page on load/refresh?
       // const win = typeof window !== "undefined" && window;
       // if (win) win.scrollTo(0, 0);

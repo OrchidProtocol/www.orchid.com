@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '../MetaService';
 
 @Component({
   selector: 'app-contact',
@@ -28,8 +29,14 @@ export class ContactComponent implements OnInit {
   invalid_email: boolean = false;
   email_test: RegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-  constructor() { }
+  constructor ( private meta: MetaService ) { }
+
   ngOnInit() {
+    //this.meta.clearAllTags();
+    this.meta.setGlobalTitle('Get In Touch | Orchid');
+    this.meta.setGlobalImage('https://www.orchid.com/assets/img/contact/social.png');
+    this.meta.setGlobalDescription('Let\'s reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid.');
+    
     const doc = typeof document !== "undefined" && document;
 
     if (doc) {
