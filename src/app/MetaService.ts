@@ -49,6 +49,15 @@ export class MetaService {
     }
     }
 
+    remove(name: string, value: string) {
+        // OG tags use the "property" attribute instead of "name"
+        if (/^og:/.test(name)) {
+            this.meta.removeTag(`property="${name}"`);
+        } else {
+            this.meta.removeTag(`name="${name}"`);
+        }
+    }
+
     // The following "setGlobalX" functions refer to "global" as covering the three major meta schemas: w3c, OpenGraph, and Twitter.
     setGlobalImage (image: string) {
         this.update('og:image', image);
