@@ -2,7 +2,7 @@
   <div *ngIf="!submitted">
     <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
       class="newsletter-signup-hero__input input-large vgap-xs" />
-    <div class="gap-bot-thin" *ngIf="showFull">
+    <div class="gap-bot-thin gdpr-consent-wrap" *ngIf="showFull">
       <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}">
         <input type="checkbox" [(ngModel)]="consented">
         I consent to receiving further instructions at the email address I submitted above.

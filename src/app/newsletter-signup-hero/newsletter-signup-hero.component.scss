@@ -32,3 +32,11 @@ label.gdpr-consent {
     }
     &.blink_box { padding: 4px; border: 2px solid red; }
 }
+
+.gdpr-consent-wrap {
+  max-width: 20rem;
+  @media (max-width: 1150px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
