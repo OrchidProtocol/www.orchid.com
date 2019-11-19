@@ -28,11 +28,15 @@
 }
 
 label.gdpr-consent {
+  display: block;
+  padding: 4px;
   margin-top: 0;
   input[type="checkbox"] {
     margin-right: 8px;
   }
-    &.blink_box { padding: 4px; border: 2px solid red; }
+  &.blink_box {
+    box-shadow: 0px 0.25rem 0.5rem 0.1rem rgba(0,0,0,0.1), inset 0px 0rem 0.1rem 0.25rem rgba(255,0,0,0.2);
+  }
 }
 
 .gdpr-consent-wrap {
