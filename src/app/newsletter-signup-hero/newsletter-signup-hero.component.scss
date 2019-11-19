@@ -69,6 +69,9 @@ label.gdpr-consent {
 
 .gdpr-consent-wrap {
   max-width: 20rem;
+  @include not-mobile {
+    margin-bottom: 1rem;
+  }
   @media (max-width: 1150px) {
     margin-left: auto;
     margin-right: auto;
