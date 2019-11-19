@@ -425,7 +425,7 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 }
 
 .press-card {
-  padding: 1rem;
+  padding: 2rem 1rem 0rem;
   position: relative;
 
   &, & * {
@@ -434,8 +434,8 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
   &::before {
     content: "";
-    top: 56px;
-    height: calc(100% - 88px);
+    top: 0;
+    height: 100%;
     width: calc(100% - 2rem);
     position: absolute;
     z-index: 0;
