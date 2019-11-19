@@ -65,7 +65,7 @@ $hero-bp-vert: 1150px;
   .home-hero__bg {
     background: transparent;
     position: relative;
-    max-height: 50vh;
+    max-height: calc(50vh - 122px);
     max-width: 100%;
     display: flex;
     justify-content: center;
