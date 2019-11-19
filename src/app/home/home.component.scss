@@ -20,7 +20,7 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__bg {
-  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat top right;
+  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;;
   position: absolute;
   top: 0;
   left: 0;
@@ -95,13 +95,14 @@ $hero-bp-vert: 1150px;
   background: url('/assets/img/index/orchid-satellite-03-2.svg');
   background-repeat: no-repeat;
   background-position: calc(50% - 444px);
+  background-size: contain;
   width: 100%;
-  height: 390px;
+  height: 365px;
   left: 0;
-  top: -228px;
+  top: -212px;
   z-index: 0;
   @media (max-width: $hero-bp-1) {
-    background-size: 30vw;
+    background-size: contain;
     background-position: calc(50% - 33vw);
     top: -209px;
   }
