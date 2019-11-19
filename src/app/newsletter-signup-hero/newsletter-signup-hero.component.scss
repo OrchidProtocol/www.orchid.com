@@ -1,0 +1,42 @@
+@import 'misc_config';
+@import 'orc_config';
+@import 'media_queries';
+
+#hero-error, #hero-success {
+  max-width: 60ch;
+  padding: 3rem 0 0;
+  font-size: 1.25em;
+}
+
+#hero-error {
+  color: $color-error;
+}
+
+.newsletter-signup-hero {
+
+  // Putting this inside for specificity
+  .newsletter-signup-hero__input {
+    background: #fff;
+    max-width: 20rem;
+  }
+  .newsletter-signup-hero__button {
+    max-width: 15rem;
+  }
+
+}
+
+label.gdpr-consent {
+    margin-top: 0;
+    input[type="checkbox"] {
+	margin-right: 8px;
+    }
+    &.blink_box { padding: 4px; border: 2px solid red; }
+}
+
+.gdpr-consent-wrap {
+  max-width: 20rem;
+  @media (max-width: 1150px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

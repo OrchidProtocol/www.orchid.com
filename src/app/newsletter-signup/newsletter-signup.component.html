@@ -1,17 +1,17 @@
 <div class="bk-faint-gray">
   <section id="newsletter-signup" class="section-wide center-text hpad-wide vpad-wide">
     <header>
-      <h2>Stay connected as we grow Orchid.</h2>
+      <h2>Let's stay connected</h2>
     </header>
     <div *ngIf="!submitted">
-      <p>Subscribe to our newsletter.</p>
+      <p class="medium">Get the newsletter for updates and privacy news</p>
       <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
-        class="input-large center-block gap-top-wide gap-bot-wide" />
-      <div class="gap-bot-wide" *ngIf="showFull">
+        class="input-large center-block vgap-thin" />
+      <div class="gap-bot-thin" *ngIf="showFull">
         <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}">
-	  <input type="checkbox" [(ngModel)]="consented">
-	  I consent to receiving further instructions at the email address I submitted above.
-	</label>
+	        <input type="checkbox" [(ngModel)]="consented">
+	        I consent to receiving further instructions at the email address I submitted above.
+	      </label>
       </div>
       <button (click)="submit()" class="btn-primary btn-fixed center-block" [disabled]="!consented || submitted">Subscribe</button>
     </div>

@@ -3,8 +3,10 @@ import {Routes} from "@angular/router";
 import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
+import {HowItWorksComponent} from "./how-it-works/how-it-works.component";
 import {EventsComponent} from "./events/events.component";
 import {FaqComponent} from "./faq/faq.component";
+import {ContactComponent} from "./contact/contact.component";
 import {HomeComponent} from "./home/home.component";
 import {DownloadComponent} from "./download/download.component";
 import {PageLayoutComponent} from "./page-layout/page-layout.component";
@@ -29,12 +31,15 @@ export const routes: Routes = [
 	    {path: "app.html", redirectTo: "app"},
 	    {path: "network", component: AboutNetworkComponent},
 	    {path: "network.html", redirectTo: "network"},
+	    {path: "how-it-works", component: HowItWorksComponent},
+	    {path: "how-it-works.html", redirectTo: "how-it-works"},
 	    {path: "vision", component: VisionComponent},
 	    {path: "vision.html", redirectTo: "vision"},
 	    {path: "about-us", component: AboutCompanyComponent},
 	    {path: "about-us.html", redirectTo: "about-us"},
 	    {path: "faq", component: FaqComponent},
 	    {path: "faq.html", redirectTo: "faq"},
+	    {path: "contact", component: ContactComponent},
 	    {path: "download", component: DownloadComponent},
 	    {path: "download.html", redirectTo: "download"},
 	    {path: "events", component: EventsComponent},

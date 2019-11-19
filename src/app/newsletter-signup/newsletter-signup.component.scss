@@ -1,5 +1,6 @@
 @import 'misc_config';
 @import 'orc_config';
+@import 'media_queries';
 
 #error, #success {
   margin: 0 auto 0 auto;
@@ -12,7 +13,9 @@
   color: $color-error;
 }
 
-header h2 { color: $orc-rock-gray; }
+header h2 {
+  margin-bottom: 1rem;
+}
 
 label.gdpr-consent {
     margin-top: 0;
