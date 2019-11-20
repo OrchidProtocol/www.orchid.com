@@ -20,7 +20,8 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__bg {
-  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;;
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right top; // for Edge
+  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;
   position: absolute;
   top: 0;
   left: 0;
