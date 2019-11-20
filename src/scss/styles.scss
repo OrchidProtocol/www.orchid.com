@@ -13,6 +13,13 @@ $pad-wide-mobile: 3rem;
 $pad-thin-mobile: 1rem;
 $pad-xs-mobile: 1rem;
 
+app-root {
+  perspective: 1000px;
+  height: 100vh;
+  overflow-y: auto;
+  display: block;
+}
+
 // Element-specific config
 
 :root {

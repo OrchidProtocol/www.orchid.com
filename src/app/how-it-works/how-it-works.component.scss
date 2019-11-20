@@ -5,6 +5,9 @@
 // PAGE VARIABLES
 $section-sm: 54rem;
 
+// 3D STUFF
+
+
 // HERO SECTION
 
 .how-hero {
@@ -226,12 +229,15 @@ $exp-vert-bp: 960px;
     direction: ltr;
   }
   .explainer__image {
-    padding-right: 60px;
+    padding-right: 0;
     padding-left: 0;
     background-position-x: -150%;
 
     &::before {
       left: -35%;
+    }
+    & > img {
+      --offsetX: 0px;
     }
   }
   .explainer__connector {
@@ -397,7 +403,6 @@ $exp-vert-bp: 960px;
 .explainer__image {
   grid-area: image;
   display: flex;
-  padding-left: $exp-image-gap;
   position: relative;
   margin-bottom: 1rem;
   margin-top: 1rem;
@@ -412,7 +417,11 @@ $exp-vert-bp: 960px;
     left: 0;
   }
   & > img {
+    --scale: calc((1000 - 100) / 1000);
+    --offsetX: -30px;
     position: relative;
+    transform: translateZ(100px);
+    transform: translate3d(var(--offsetX), 0px, 100px) scale(var(--scale));
   }
 }
 .explainer__bottom {
@@ -489,6 +498,7 @@ $exp-vert-bp: 960px;
     }
     & > img {
       max-width: 100%;
+      transform: none;
     }
   }
   .explainer__progress {
