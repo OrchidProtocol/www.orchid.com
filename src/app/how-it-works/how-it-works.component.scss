@@ -228,6 +228,11 @@ $exp-vert-bp: 960px;
   .explainer__image {
     padding-right: 60px;
     padding-left: 0;
+    background-position-x: -150%;
+
+    &::before {
+      left: -35%;
+    }
   }
   .explainer__connector {
     background-position: left;
@@ -377,6 +382,8 @@ $exp-vert-bp: 960px;
   flex-direction: column;
   justify-content: center;
   padding: 4rem 0;
+  position: relative;
+  z-index: 1;
 
   & > h3 {
     font-size: 34px;
@@ -391,6 +398,22 @@ $exp-vert-bp: 960px;
   grid-area: image;
   display: flex;
   padding-left: $exp-image-gap;
+  position: relative;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/how-it-works/circuit.svg') no-repeat center center;
+    background-size: contain;
+    box-sizing: border-box;
+    left: 0;
+  }
+  & > img {
+    position: relative;
+  }
 }
 .explainer__bottom {
   grid-area: bottom;
@@ -460,6 +483,10 @@ $exp-vert-bp: 960px;
     padding: 1rem;
     justify-content: center;
     max-height: 50vh;
+    margin-top: 0;
+    &::before {
+      left: 0;
+    }
     & > img {
       max-width: 100%;
     }
