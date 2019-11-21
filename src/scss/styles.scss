@@ -42,14 +42,6 @@ body {
   }
 }
 
-// This allows translateZ-based parallax to work
-app-root {
-  perspective: 1000px;
-  height: 100vh;
-  overflow-y: auto;
-  display: block;
-}
-
 a {
   color: $orc-purple;
 }

@@ -229,15 +229,12 @@ $exp-vert-bp: 960px;
     direction: ltr;
   }
   .explainer__image {
-    padding-right: 0;
+    padding-right: 60px;
     padding-left: 0;
     background-position-x: -150%;
 
     &::before {
       left: -35%;
-    }
-    & > img {
-      --offsetX: 0px;
     }
   }
   .explainer__connector {
@@ -406,6 +403,7 @@ $exp-vert-bp: 960px;
   position: relative;
   margin-bottom: 1rem;
   margin-top: 1rem;
+  padding-left: 30px;
   &::before {
     content: "";
     position: absolute;
@@ -417,11 +415,7 @@ $exp-vert-bp: 960px;
     left: 0;
   }
   & > img {
-    --scale: calc((1000 - 100) / 1000);
-    --offsetX: -30px;
     position: relative;
-    transform: translateZ(100px);
-    transform: translate3d(var(--offsetX), 0px, 100px) scale(var(--scale));
   }
 }
 .explainer__bottom {
