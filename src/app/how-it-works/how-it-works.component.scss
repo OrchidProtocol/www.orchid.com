@@ -83,6 +83,7 @@ $section-sm: 54rem;
     position: absolute;
     top: -469px;
     left: 0;
+    pointer-events: none;
 
     & > img {
       display: none;
