@@ -14,7 +14,9 @@
 
 #hero-error {
   color: $color-error;
-  background-color: rgba($orc-beige-light, 0.5);
+  border: 1px solid $orc-gray;
+  background: $orc-beige-light;
+  margin-top: 1rem;
 }
 
 @keyframes newsletter-signup-hero__button-loading {
