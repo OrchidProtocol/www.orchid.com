@@ -13,6 +13,7 @@ $pad-wide-mobile: 3rem;
 $pad-thin-mobile: 1rem;
 $pad-xs-mobile: 1rem;
 
+
 // Element-specific config
 
 :root {
@@ -39,6 +40,10 @@ body {
   @include mobile {
     font-size: $size-body-mobile;
   }
+}
+
+a {
+  color: $orc-purple;
 }
 
 strong {

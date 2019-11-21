@@ -20,7 +20,8 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__bg {
-  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat top right;
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right top; // for Edge
+  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;
   position: absolute;
   top: 0;
   left: 0;
@@ -65,7 +66,7 @@ $hero-bp-vert: 1150px;
   .home-hero__bg {
     background: transparent;
     position: relative;
-    max-height: 50vh;
+    max-height: calc(50vh - 122px);
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -95,13 +96,14 @@ $hero-bp-vert: 1150px;
   background: url('/assets/img/index/orchid-satellite-03-2.svg');
   background-repeat: no-repeat;
   background-position: calc(50% - 444px);
+  background-size: contain;
   width: 100%;
-  height: 390px;
+  height: 365px;
   left: 0;
-  top: -223px;
+  top: -212px;
   z-index: 0;
   @media (max-width: $hero-bp-1) {
-    background-size: 30vw;
+    background-size: contain;
     background-position: calc(50% - 33vw);
     top: -209px;
   }
@@ -113,7 +115,7 @@ $hero-bp-vert: 1150px;
   @media (max-width: $hero-bp-vert) {
     background-size: 35vw;
     background-position: calc(50% - 42vw);
-    top: -21vw;
+    top: -23vw;
   }
   @media (max-width: 790px) {
     background-size: 303px;
@@ -425,7 +427,7 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 }
 
 .press-card {
-  padding: 1rem;
+  padding: 2rem 1rem 0rem;
   position: relative;
 
   &, & * {
@@ -434,8 +436,8 @@ ul.smaller .ft-text h3 { font-size: 160%; }
 
   &::before {
     content: "";
-    top: 56px;
-    height: calc(100% - 88px);
+    top: 0;
+    height: 100%;
     width: calc(100% - 2rem);
     position: absolute;
     z-index: 0;
