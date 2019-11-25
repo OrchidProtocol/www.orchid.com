@@ -85,41 +85,34 @@ $flyout-gap: ($flyout-spacing / 2);
 
   // TODO: the transition causes some weirdness when the media query is triggered
 
-  .nav-menu {
-    @include not-mobile {
-      flex: 0 0 auto;
-      //margin: -1rem 0 1rem;
+  @include mobile {
+    margin: 0;
+    padding: 0;
+
+    &.animate {
+      transition-property: transform;
+      transition-duration: $flyout-time;
+      transition-timing-function: $flyout-ease-in;
     }
 
-    @include mobile {
-      margin: 0;
-      padding: 0;
+    &.js {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding: 1rem 1rem $flyout-gap $flyout-gap;
+      width: 10rem;
+      background: $orc-beige-light;
+      color: $orc-rock-gray;
+      box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
+      transform: translate(100%, 0);
+      z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
 
-      &.animate {
-        transition-property: transform;
-        transition-duration: $flyout-time;
-        transition-timing-function: $flyout-ease-in;
-      }
-
-      &.js {
-        position: fixed;
-        right: 0;
-        top: 0;
-        bottom: 0;
-        padding: 1rem 1rem $flyout-gap $flyout-gap;
-        width: 10rem;
-        background: $orc-beige-light;
-        color: $orc-rock-gray;
-        box-shadow: mat-shadow(-8px, $alpha: 0.1, $x: true);
-        transform: translate(100%, 0);
-        z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
-      }
-
-      &.open {
-        transition-duration: $flyout-time-open;
-        transition-timing-function: $flyout-ease-out;
-        transform: translate(0, 0);
-      }
+    &.open {
+      transition-duration: $flyout-time-open;
+      transition-timing-function: $flyout-ease-out;
+      transform: translate(0, 0);
     }
   }
 }
@@ -150,43 +143,15 @@ $flyout-gap: ($flyout-spacing / 2);
     flex-flow: row nowrap;
     align-items: center;
 
-    >li {
+    > li {
       $a-pad: 0.5rem;
 
-      >a {
+      > a {
         position: relative;
         padding: $a-pad;
       }
 
-      &.active-link>a::after {
-        $height: 4px;
-        content: " ";
-        position: absolute;
-        left: $a-pad;
-        right: $a-pad;
-        bottom: calc(#{$a-pad} - #{$height});
-        bottom: -3px;
-        height: $height;
-        background: $orc-purple;
-        border-radius: 100vmax;
-      }
-    }
-  }
-
-  @include not-mobile {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-
-    >li {
-      $a-pad: 0.5rem;
-
-      >a {
-        position: relative;
-        padding: $a-pad;
-      }
-
-      &.active-link>a::after {
+      &.active-link > a::after {
         $height: 4px;
         content: " ";
         position: absolute;
