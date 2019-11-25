@@ -52,4 +52,6 @@ elif [ "$1" == "staging" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.dev'
 elif [ "$1" == "production" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com'
+elif [ "${#1}" == "2" ]; then
+    copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${1}.orchid.com"
 fi

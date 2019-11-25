@@ -1,84 +1,85 @@
-<div class="bk-beige-light">
-  <section id="splash">
-    <div id="splash-text" class="z-index-1">
-      <header>
+<section class="home-hero bk-beige-light">
+  <div class="home-hero__bg"><img src="/assets/img/index/orchid-main-combined-no-lines.svg" alt=""></div>
+  <div class="section-med z-index-1">
+    <div class="home-hero__content vpad-thin hpad-thin">
+      <div class="home-hero__headline">
         <h1 class="title big uppercase"><span>Stay Curious,</span> <span>Explore Freely</span></h1>
-      </header>
-      <h4 class="subtitle pad-bot-thin">Get digital privacy</h4>
-      <div class="pad-top-thin">
+        <h4 class="subtitle pad-bot-thin">Get digital privacy</h4>
+      </div>
+      <div class="home-hero__form">
         <h4>Don't miss the launch!</h4>
         <app-newsletter-signup-hero></app-newsletter-signup-hero>
       </div>
     </div>
-    <div id="splash-image">
-      <img src="/assets/img/index/splash/splash.svg" alt="splash">
-    </div>
-  </section>
-</div>
-
+    <!-- <img class="home-satellite-3" src="/assets/img/index/orchid-satellite-03-2.svg" alt=""> -->
+  </div>
+</section>
 <div class="how-it-works background-white">
-  <section class="section-med hpad-wide vpad-wide center-text">
-    <h3>Learn how it works</h3>
+  <div class="home-satellite-3a"></div>
+  <section class="section-med hpad-wide vpad-xl center-text z-index-1">
+    <h3>A next-level VPN & privacy tool</h3>
     <p class="medium">
       Read the whitepaper to see what we’re building.
     </p>
     <button (click)="downloadWhitepaper()" class="btn-secondary btn-fixed z-index-1">Whitepaper</button>
   </section>
+  <div class="home-satellite-4"></div>
 </div>
 
 <div class="bk-lavender">
-  <section class="section-med hpad-thin vpad-wide">
+  <section class="section-med hpad-thin vpad-xl z-index-1">
     <div class="our-approach">
       <h2>Our approach</h2>
-      <p class="medium">We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of
-        blockchain, we can preserve an open and accessible internet.</p>
+      <p class="medium">We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.</p>
     </div>
 
-    <ul class="phantom-list card-list smaller center-text">
+    <ul class="phantom-list card-list smaller center-text z-index-1">
       <li class="card hpad-thin vpad-thin">
         <div class="card__image">
-          <img src="/assets/img/index/decentralized/decentralized.svg" alt="decentralized">
+          <img src="/assets/img/index/decentralized.svg" alt="decentralized">
         </div>
         <div class="card__text">
           <h3 class="color-gray">Decentralized</h3>
           <p>
-            Ethereum allows Orchid to operate without a central authority. The app runs locally on your device, not through a server, and no data is ever stored.
+            Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
           </p>
-          <a routerLink="/network" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
+          <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
         </div>
       </li>
       <li class="card hpad-thin vpad-thin">
         <div class="card__image">
-          <img src="/assets/img/index/open-source/open-source.svg" alt="open source">
+          <img src="/assets/img/index/open-source.svg" alt="open source">
         </div>
         <div class="card__text">
           <h3 class="color-gray">Open Source</h3>
           <p>
             Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
           </p>
-          <a routerLink="/network" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
+          <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
         </div>
       </li>
       <li class="card hpad-thin vpad-thin">
         <div class="card__image">
-          <img src="/assets/img/index/no-middlemen/no-middlemen.svg" alt="peer to peer">
+          <img src="/assets/img/index/peer-to-peer.svg" alt="peer to peer">
         </div>
         <div class="card__text">
           <h3 class="color-gray">Peer to peer</h3>
           <p>
             Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
           </p>
-          <a routerLink="/network" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
+          <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
         </div>
       </li>
     </ul>
   </section>
 </div>
 
-<div class="background-white">
-  <section id="as-seen-in" class="section-med hpad-thin vpad-wide">
+<div class="as-seen-in background-white">
+  <section class="section-med hpad-thin vpad-wide">
+    <div class="as-seen-bg-1">
+      <img src="/assets/img/index/as-seen-pattern.svg" alt="">
+    </div>
     <h2 class="center-text vpad">As seen in</h2>
-
     <ul class="phantom-list press-cards gap-top-thin">
       <li class="press-card">
         <div class="wrapper">
@@ -88,7 +89,7 @@
           <p class="press-card__quote">
               In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
           </p>
-          <a class="press-card__more uppercase" href="">Read More</a>
+          <a class="press-card__more uppercase" href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/">Read More</a>
         </div>
       </li>
       <li class="press-card">
@@ -99,7 +100,7 @@
           <p class="press-card__quote">
               Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
           </p>
-          <a class="press-card__more uppercase" href="">Read More</a>
+          <a class="press-card__more uppercase" href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative">Read More</a>
         </div>
       </li>
       <li class="press-card">
@@ -110,7 +111,7 @@
           <p class="press-card__quote">
               Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
           </p>
-          <a class="press-card__more uppercase" href="">Read More</a>
+          <a class="press-card__more uppercase" href="https://cointelegraph.com/news/orchid-labs-secures-7-mln-towards-development-of-protocol-to-end-internet-surveillance">Read More</a>
         </div>
       </li>
     </ul>

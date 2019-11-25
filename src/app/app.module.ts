@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AboutAppComponent } from './about-app/about-app.component';
 import { AboutNetworkComponent } from './about-network/about-network.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisionComponent } from './vision/vision.component';
 import { EventsComponent } from './events/events.component';
@@ -17,17 +18,20 @@ import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
+import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { MetaService } from './MetaService';
 
 @NgModule({
   declarations: [
     AppComponent,
     AboutAppComponent,
     AboutNetworkComponent,
+    HowItWorksComponent,
     VisionComponent,
     EventsComponent,
     DownloadComponent,
@@ -39,6 +43,7 @@ import { FormsModule } from '@angular/forms';
     NewsletterSignupHeroComponent,
     PageLayoutComponent,
     FaqComponent,
+    ContactComponent,
     AboutCompanyComponent,
     NotFoundComponent
   ],
@@ -51,7 +56,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientJsonpModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MetaService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
