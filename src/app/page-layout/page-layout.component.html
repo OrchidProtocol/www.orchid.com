@@ -1,5 +1,6 @@
-<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.bk-deep-purple]="this.purple">
-  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
+<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.bk-deep-purple]="this.purple" i18n-data-locale="@@HTML_locale" data-locale="en">
+  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow"
+    [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
@@ -23,27 +24,42 @@
   <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us">About</a></li>
   <li><a class="phantom-a" href="https://blog.orchid.com/">Blog</a></li>
   <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact">Contact</a></li>
+  
+  <li routerLinkActive="active-link" class="navbar-language-selector">
+    <input type="checkbox" id="navbar-language-selector-checkbox">
+    <label for="navbar-language-selector-checkbox" class="navbar-language-selector-checkbox-label"></label>
+    <span class="phantom-a">
+      <img alt="" style="vertical-align: top;" width="20" height="20"src="/assets/img/shared/globe.svg">
+      English
+    </span>
+    <ul class="navbar-language-selector-list">
+      <li id="navbar-language-selector-list-item-first"><a class="phantom-a" href="//www.ko.orchid.com">Korean</a></li>
+      <li><a class="phantom-a" href="//www.orchid.com">English</a></li>
+      <li><a class="phantom-a" href="//www.ja.orchid.com">Japanese</a></li>
+      <li><a class="phantom-a" href="//www.zh.orchid.com">Mandarin</a></li>
+    </ul>
+</li>
         <li class="social-button first">
           <a class="inline-block" href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer"
-		  aria-label="Follow on Medium" title="Medium">
+            aria-label="Follow on Medium" title="Medium">
             <img src="/assets/img/shared/social-medium.svg" alt="Medium">
           </a>
         </li>
         <li class="social-button">
-	  <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
-		  aria-label="Follow on Twitter" title="Twitter">
+          <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
+            aria-label="Follow on Twitter" title="Twitter">
             <img src="/assets/img/shared/social-twitter.svg" alt="Twitter">
-        </a>
+          </a>
         </li>
         <li class="social-button">
           <a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer"
-		  aria-label="Join us on Telegram" title="Telegram">
+            aria-label="Join us on Telegram" title="Telegram">
             <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram">
           </a>
         </li>
         <li class="social-button">
           <a class="inline-block" href="https://github.com/orchidprotocol" target="_blank" rel="noopener noreferrer"
-		  aria-label="See the Source" title="Github">
+            aria-label="See the Source" title="Github">
             <img src="/assets/img/shared/social-github.svg" alt="Github">
           </a>
         </li>
@@ -57,20 +73,20 @@
   <div id="nav-pin" class="mobile-only"></div>
 </div>
 
-<main id="main" [class.purple]="this.purple">
+<main id="main" [class.purple]="this.purple" i18n-data-locale="@@HTML_locale" data-locale="en">
   <router-outlet></router-outlet>
 </main>
 
-<div id="ft-root" class="bk-beige-light pos-relative">
+<div id="ft-root" class="bk-beige-light pos-relative" i18n-data-locale="@@HTML_locale" data-locale="en">
   <footer id="footer" class="section-med hpad-wide">
     <div id="ft-layout">
       <section id="ft-logo">
         <img src="/assets/img/shared/orchid-logo-word.svg">
         <p>&copy; 2019 Orchid Labs Inc.</p>
-	<p class="privacy-terms-links">
+        <p class="privacy-terms-links">
           <a class="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
           <a class="phantom-a" routerLink="/service-terms">Terms of Service</a>
-	</p>
+        </p>
       </section>
       <div id="ft-pad-a" class="no-mobile"></div>
       <nav id="ft-nav">
@@ -97,31 +113,31 @@
         <ul id="ft-social-list" class="phantom-list">
           <li>
             <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
-		    aria-label="Follow on Twitter" title="Twitter">
+              aria-label="Follow on Twitter" title="Twitter">
               <img src="/assets/img/shared/social-twitter.svg" alt="Twitter">
             </a>
           </li>
           <li>
             <a class="inline-block" href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer"
-		    aria-label="Follow on Medium" title="Medium">
+              aria-label="Follow on Medium" title="Medium">
               <img src="/assets/img/shared/social-medium.svg" alt="Medium">
             </a>
           </li>
           <li>
             <a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer"
-		    aria-label="Join us on Telegram" title="Telegram">
+              aria-label="Join us on Telegram" title="Telegram">
               <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram">
             </a>
           </li>
           <li>
             <a class="inline-block" href="https://github.com/orchidprotocol" target="_blank" rel="noopener noreferrer"
-		    aria-label="See the Source" title="Github">
+              aria-label="See the Source" title="Github">
               <img src="/assets/img/shared/social-github.svg" alt="Github">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
-		    aria-label="Follow on Facebook" title="Facebook">
+            <a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank"
+              rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
               <img src="/assets/img/shared/social-facebook.svg" alt="Facebook">
             </a>
           </li>
@@ -135,7 +151,8 @@
     <div id="ft-adorn-layout" class="section-med">
       <img src="/assets/img/shared/coral-electric.svg" id="ft-adorn-coral-elec" class="pos-absolute">
       <img src="/assets/img/shared/coral-real.svg" id="ft-adorn-coral-real" class="pos-absolute no-mobile">
-      <img src="/assets/img/shared/coral-real-mobile.svg" id="ft-adorn-coral-real-mobile" class="pos-absolute mobile-only">
+      <img src="/assets/img/shared/coral-real-mobile.svg" id="ft-adorn-coral-real-mobile"
+        class="pos-absolute mobile-only">
       <img src="/assets/img/shared/footer-fish.svg" id="ft-adorn-fish" class="pos-absolute">
     </div>
   </div>

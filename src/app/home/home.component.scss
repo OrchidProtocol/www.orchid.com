@@ -83,6 +83,7 @@ $hero-bp-vert: 1150px;
   }
   .home-hero__form {
     margin-top: 1rem;
+    margin-bottom: 1.5rem;
   }
 }
 
@@ -175,11 +176,12 @@ $hero-bp-vert: 1150px;
 // TODO: use variables for font sizes
 .title {
   font-size: 72px;
-
-  & > span {
+    &[data-locale="ja"] {
+        font-size: 69px;
+    }
+    &>span {
     display: block;
   }
-
   @include mobile {
     font-size: 40px;
   }
@@ -196,7 +198,9 @@ $hero-bp-vert: 1150px;
   color: $orc-rock-gray;
   margin: 0.5rem 0 1.5rem 0;
   font-size: 36px;
-
+    &[data-locale="ja"] {
+        font-size: 28px;
+    }
   @include mobile {
     font-size: 30px;
   }
@@ -354,6 +358,15 @@ div.our-approach {
 
 
 // TODO: Do we still need this stuff and can we move it elsewhere?
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+
 
 .background-white { background: white; }
 .background-gray { background: #f0f0f0; }
