@@ -1,8 +1,9 @@
-import {Component, OnInit} from "@angular/core";
-import {Observable} from "rxjs";
+import { Component, OnInit } from "@angular/core";
+import { Observable } from "rxjs";
+import { MetaService } from '../MetaService';
 
-import {CalEvent} from "./event";
-import {EventsService} from "./events.service";
+import { CalEvent } from "./event";
+import { EventsService } from "./events.service";
 
 @Component({
   selector: "app-events",
@@ -12,7 +13,12 @@ import {EventsService} from "./events.service";
 export class EventsComponent implements OnInit {
   events$: Observable<CalEvent[]>;
 
-  constructor(private events: EventsService) {}
+  constructor(private events: EventsService, private meta: MetaService) { }
 
-  ngOnInit() { this.events$ = this.events.getEvents(); }
+  ngOnInit() {
+    this.meta.setGlobalTitle('Blockchain Industry Events | Orchid');
+    this.meta.setGlobalDescription('Come and meet the Orchid team in real life by attending one of our blockchain and crypto industry events around the globe.');
+
+    this.events$ = this.events.getEvents();
+  }
 }

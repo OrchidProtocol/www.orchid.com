@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MetaService } from '../MetaService';
 import { faqs } from './faqs.js';
 @Component({
   selector: 'app-faq',
@@ -10,10 +11,12 @@ export class FaqComponent implements OnInit {
   url:string = "/assets/json/faqs.json";
   faqs:any = faqs;
 
-  constructor() {
+  constructor(private meta: MetaService) {
   }
 
   ngOnInit() {
+    this.meta.setGlobalTitle('FAQs and Customer Support | Orchid');
+    this.meta.setGlobalDescription('A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet.');
   }
 
   anchorParse (component: string):string {

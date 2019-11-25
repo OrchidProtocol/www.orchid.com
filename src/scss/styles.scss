@@ -1,12 +1,18 @@
-@import 'media_queries';
-@import 'misc_config';
-@import 'orc_config';
-@import 'orc_fonts';
+@import "media_queries";
+@import "misc_config";
+@import "orc_config";
+@import "orc_fonts";
 
-$pad-thin: 2rem;
+$pad-xl: 5rem;
 $pad-wide: 4rem;
+$pad-thin: 2rem;
+$pad-xs: 1rem;
 
+$pad-xl-mobile: 4rem;
 $pad-wide-mobile: 3rem;
+$pad-thin-mobile: 1rem;
+$pad-xs-mobile: 1rem;
+
 
 // Element-specific config
 
@@ -17,9 +23,12 @@ $pad-wide-mobile: 3rem;
   font-size: 20px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
+  scroll-behavior: smooth;
 }
 
-:root, html, body {
+:root,
+html,
+body {
   margin: 0;
   padding: 0;
 }
@@ -33,6 +42,10 @@ body {
   }
 }
 
+a {
+  color: $orc-purple;
+}
+
 strong {
   &:not(.secondary) {
     font-family: $orc-tf-primary;
@@ -41,13 +54,18 @@ strong {
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   @extend strong;
   color: $orc-purple;
 
   margin: 0;
   padding: 0;
-  line-height: 1.0;
+  line-height: 1;
 
   article > &:not(:last-child) {
     margin-bottom: 1rem;
@@ -74,7 +92,8 @@ h1 {
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: $size-h2;
 
   @include mobile {
@@ -105,12 +124,21 @@ p {
       font-size: $size-body-big-mobile;
     }
   }
+
+  &.medium {
+    font-size: $size-body-md;
+
+    @include mobile {
+      font-size: $size-body-md-mobile;
+    }
+  }
 }
 
 button {
   padding: 0;
   background: initial;
   border: 0;
+  cursor: pointer;
   font: inherit;
   line-height: inherit;
 
@@ -122,7 +150,8 @@ button {
 main {
   background: $bkgd-white;
 
-  p, .p-gap {
+  p,
+  .p-gap {
     &:not(:last-child) {
       margin: 0 0 1rem;
     }
@@ -198,6 +227,120 @@ main {
   }
 }
 
+.splash-circuit {
+  padding-top: $pad-thin;
+  display: flex;
+  flex-direction: column-reverse;
+  @include not-mobile {
+    flex-direction: column;
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+
+.splash-circuit-image {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.splash-circuit-image:before {
+  pointer-events: none;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  bottom: 50px;
+  left: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 222px;
+  background-image: url("/assets/img/shared/circuit.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: auto 100%;
+  transform: translateZ(-1px);
+
+  @include not-mobile {
+    width: 900px;
+    height: 333px;
+    bottom: unset;
+    top: -10px;
+    left: -50px;
+    background-size: contain;
+  }
+}
+.splash-circuit-after,
+.splash-circuit-grid {
+  position: relative;
+  z-index: 1;
+}
+.splash-circuit-grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &.single {
+    grid-template-columns: 1fr;
+  }
+  grid-gap: $pad-thin;
+
+  @include mobile {
+    flex-direction: column-reverse;
+  }
+}
+.splash-circuit-grid-item + .splash-circuit-grid-item {
+  @include not-mobile {
+    margin-left: $pad-thin;
+  }
+}
+@include not-mobile {
+  .splash-circuit-grid-item:nth-child(1) {
+    width: 60%;
+    max-width: 600px;
+  }
+  .splash-circuit-grid-item:nth-child(2) {
+    width: 40%;
+  }
+}
+
+.splash-circuit-grid-item {
+  @include not-mobile {
+    padding-top: $pad-wide;
+  }
+  @include mobile {
+    padding-bottom: 0;
+  }
+}
+.splash-circuit-grid-text {
+  @include not-mobile {
+    margin-top: 4rem;
+  }
+}
+.splash-circuit-grid-text h3 {
+  color: $orc-rock-gray;
+  margin-bottom: $pad-thin;
+  font-size: 1.5rem;
+  @include mobile {
+    margin-top: $pad-thin;
+    font-size: 1rem;
+  }
+}
+.splash-circuit-grid-item:nth-child(2) {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.splash-circuit-feature {
+  @include mobile {
+    width: 44%;
+    display: block;
+    height: auto;
+    margin: auto;
+    margin-bottom: $pad-thin;
+  }
+}
+
 // Forms
 
 $form-border-w: 3px;
@@ -214,8 +357,7 @@ button:not(.phantom-btn) {
   box-sizing: border-box;
   border-radius: 100vmax;
   font-size: $size-btn;
-  font-weight: 700;
-  box-shadow: mat-shadow(6px);
+  box-shadow: mat-shadow(6px, $alpha: 0.2);
 
   &.btn-fixed {
     width: 100%;
@@ -266,7 +408,7 @@ button:not(.phantom-btn) {
     background-color: inherit;
     border: solid $form-border-w $orc-purple;
     padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
-    color: $orc-rock-gray;
+    color: $orc-purple;
 
     &:not(:disabled) {
       &:hover {
@@ -319,9 +461,9 @@ input {
   $pad-h: 1em;
   $pad-v: $form-pad-v;
 
-  &[type=email],
-  &[type=tel],
-  &[type=text] {
+  &[type="email"],
+  &[type="tel"],
+  &[type="text"] {
     padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
     box-sizing: border-box;
     width: 100%;
@@ -348,19 +490,20 @@ input {
 textarea {
   $min-height: 44px; // NB: hardcoded
 
-  @extend input[type=text];
+  @extend input[type="text"];
 
   min-height: $min-height;
-  border-radius: ($min-height / 2.0);
+  border-radius: ($min-height / 2);
   resize: vertical;
 
   @include mobile {
-    min-height: ($min-height * 2.0);
+    min-height: ($min-height * 2);
     resize: none;
   }
 }
 
-input, .required-input {
+input,
+.required-input {
   &.input-large {
     max-width: 28rem;
   }
@@ -401,8 +544,14 @@ input, .required-input {
   text-align: right;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .phantom-a {
-  &, &:active, &:visited {
+  &,
+  &:active,
+  &:visited {
     color: inherit;
     text-decoration: inherit;
   }
@@ -421,7 +570,9 @@ input, .required-input {
 
 // Layout elements
 
-.section-wide, .section-med, .section-narrow {
+.section-wide,
+.section-med,
+.section-narrow {
   margin: auto;
   box-sizing: border-box;
 }
@@ -460,8 +611,18 @@ input, .required-input {
   padding-right: $pad-wide;
 
   @include mobile {
-    padding-left: $pad-thin;
-    padding-right: $pad-thin;
+    padding-left: $pad-wide-mobile;
+    padding-right: $pad-wide-mobile;
+  }
+}
+
+.hpad-xl {
+  padding-left: $pad-xl;
+  padding-right: $pad-xl;
+
+  @include mobile {
+    padding-left: $pad-xl-mobile;
+    padding-right: $pad-xl-mobile;
   }
 }
 
@@ -475,6 +636,16 @@ input, .required-input {
   }
 }
 
+.vpad-thin {
+  padding-top: $pad-thin;
+  padding-bottom: $pad-thin;
+
+  @include mobile {
+    padding-top: $pad-thin-mobile;
+    padding-bottom: $pad-thin-mobile;
+  }
+}
+
 .vpad-wide {
   padding-top: $pad-wide;
   padding-bottom: $pad-wide;
@@ -482,6 +653,16 @@ input, .required-input {
   @include mobile {
     padding-top: $pad-wide-mobile;
     padding-bottom: $pad-wide-mobile;
+  }
+}
+
+.vpad-xl {
+  padding-top: $pad-xl;
+  padding-bottom: $pad-xl;
+
+  @include mobile {
+    padding-top: $pad-xl-mobile;
+    padding-bottom: $pad-xl-mobile;
   }
 }
 
@@ -495,11 +676,47 @@ input, .required-input {
   }
 }
 
+.vgap-thin {
+  margin-top: $pad-thin;
+  margin-bottom: $pad-thin;
+
+  @include mobile {
+    margin-top: $pad-thin-mobile;
+    margin-bottom: $pad-thin-mobile;
+  }
+}
+
+.vgap-xs {
+  margin-top: $pad-xs;
+  margin-bottom: $pad-xs;
+
+  @include mobile {
+    margin-top: $pad-xs-mobile;
+    margin-bottom: $pad-xs-mobile;
+  }
+}
+
 .pad-bot-wide {
   padding-bottom: $pad-wide;
 
   @include mobile {
     padding-bottom: $pad-wide-mobile;
+  }
+}
+
+.pad-top-wide {
+  padding-top: $pad-wide;
+
+  @include mobile {
+    padding-top: $pad-wide-mobile;
+  }
+}
+
+.pad-top-thin {
+  padding-top: $pad-thin;
+
+  @include mobile {
+    padding-top: $pad-thin-mobile;
   }
 }
 
@@ -517,6 +734,32 @@ input, .required-input {
   @include mobile {
     margin-top: $pad-wide-mobile;
   }
+}
+
+.gap-top-thin {
+  margin-top: $pad-thin;
+
+  @include mobile {
+    margin-top: $pad-thin-mobile;
+  }
+}
+
+.gap-bot-thin {
+  margin-bottom: $pad-thin;
+
+  @include mobile {
+    margin-bottom: $pad-thin-mobile;
+  }
+}
+
+// Color helpers
+
+.color-primary {
+  color: $orc-purple;
+}
+
+.color-gray {
+  color: $orc-rock-gray;
 }
 
 // Background colors
@@ -557,4 +800,9 @@ input, .required-input {
     display: none;
   }
 }
-h1, h2, h3, h4 { letter-spacing: 0.035rem; }
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.035rem;
+}

@@ -2,23 +2,27 @@
   <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
-        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'" alt="Orchid logo" class="no-mobile">
-        <img [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'" alt="Orchid logo" class="mobile-only">
+        <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
+          alt="Orchid logo" class="no-mobile">-->
+          <img src="/assets/img/shared/orchid-logo-text.svg"
+          alt="Orchid logo" class="no-mobile">
+        <img
+          [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'"
+          alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div id="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
+    <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul id="nav-list" class="phantom-list">
+      <ul class="nav-list phantom-list">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/">Home</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/network">Network</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/vision">Vision</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works">How It Works</a></li>
   <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us">About</a></li>
   <li><a class="phantom-a" href="https://blog.orchid.com/">Blog</a></li>
-	<li routerLinkActive="active-link"><a class="phantom-a" routerLink="/download">Download</a></li>
+  <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact">Contact</a></li>
         <li class="social-button first">
           <a class="inline-block" href="https://medium.com/orchid-labs" target="_blank" rel="noopener noreferrer"
 		  aria-label="Follow on Medium" title="Medium">
@@ -72,12 +76,17 @@
       <nav id="ft-nav">
         <ul id="ft-nav-list" class="phantom-list">
           <li><a class="phantom-a" routerLink="/">Orchid</a></li>
-          <li><a class="phantom-a" routerLink="/network">Network</a></li>
-          <li><a class="phantom-a" routerLink="/vision">Vision</a></li>
-          <li><a class="phantom-a" routerLink="/download">Download</a></li>
+          <li><a class="phantom-a" routerLink="/how-it-works">How it Works</a></li>
           <li><a class="phantom-a" routerLink="/about-us">About Us</a></li>
-          <!-- <li><a class="phantom-a" routerLink="/faq">FAQ</a></li>  -->
+          <li><a class="phantom-a" routerLink="/download">Download</a></li>
+        </ul>
+      </nav>
+      <nav id="ft-nav">
+        <ul id="ft-nav-list" class="phantom-list">
           <li><a class="phantom-a" routerLink="/events">Events</a></li>
+          <li><a class="phantom-a" href="https://blog.orchid.com/">Blog</a></li>
+          <li><a class="phantom-a" routerLink="/faq">FAQ</a></li>
+          <li><a class="phantom-a" routerLink="/contact">Contact</a></li>
         </ul>
       </nav>
       <div id="ft-pad-b" class="no-mobile"></div>
