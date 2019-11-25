@@ -139,7 +139,9 @@
               "defaultLanguage": "en",
               "languages": [
                 "en",
-                "ja"
+                "ja",
+                "ko",
+                "zh"
               ]
             }
           }
