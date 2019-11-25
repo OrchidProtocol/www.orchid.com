@@ -24,6 +24,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { I18nModule } from './i18n/i18n.module';
 import { MetaService } from './MetaService';
 
 @NgModule({
@@ -54,7 +55,8 @@ import { MetaService } from './MetaService';
     AppRoutingModule,
     HttpClientModule,
     HttpClientJsonpModule,
-    FormsModule
+    FormsModule,
+    I18nModule
   ],
   providers: [MetaService],
   bootstrap: [AppComponent]
