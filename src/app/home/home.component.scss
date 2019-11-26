@@ -502,6 +502,10 @@ ul.smaller .ft-text h3 { font-size: 160%; }
     height: 33px;
     left: calc(-37px - 1rem);
     top: -12px;
+    :host-context(.locale-ja) & {
+      left: -37px;
+      background-image: url('/assets/img/shared/quotes-ja.svg');
+    }
   }
 }
 
