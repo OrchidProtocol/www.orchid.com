@@ -16,6 +16,9 @@ $section-sm: 54rem;
     :host-context(.locale-ja) & {
       max-width: 44rem;
     }
+    :host-context(.locale-zh) & {
+      max-width: 41rem;
+    }
     padding-bottom: 200px;
 
     @include mobile {

@@ -134,8 +134,8 @@
 				<source>
 					How Orchid delivers digital privacy
 				</source>
-				<target state="new">
-					How Orchid delivers digital privacy
+				<target state="final">
+					Orchid 如何实现数字隐私
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -151,8 +151,9 @@
 					The Orchid network enables a decentralized virtual private network (VPN), allowing
 					users to buy bandwidth from a global pool of service providers.
 				</source>
-				<target state="new">
-					The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.
+				<target state="final">
+					Orchid 网络可实现去中心化虚拟专用网 (VPN)，允许用户从全球性的服务提供商池购
+					买带宽。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -170,8 +171,11 @@
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
-				<target state="new">
-					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.
+				<target state="final">
+					为此，Orchid 使用名为 OXT 的 ERC-20 实用代币、一种用于代币激励型带宽代理的新
+					VPN 协议，以及具有算法广告和支付功能的智能合约。Orchid 的用户使用提供商目录
+					与带宽销售商连接，并且，他们使用概率极微支付进行付款，因此数据包的以太坊交
+					易费处于可接受的低水平。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -186,8 +190,8 @@
 				<source>
 					Core components
 				</source>
-				<target state="new">
-					Core components
+				<target state="final">
+					Orchid 网络的核心组件
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -203,8 +207,7 @@
 					of
 					the Orchid network
 				</source>
-				<target state="new">
-					of the Orchid network
+				<target state="final">
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -219,8 +222,8 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="new">
-					The Orchid app
+				<target state="final">
+					Orchid 应用
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -235,8 +238,8 @@
 				<source>
 					OXT cryptocurrency
 				</source>
-				<target state="new">
-					OXT cryptocurrency
+				<target state="final">
+					OXT 加密货币
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -251,8 +254,8 @@
 				<source>
 					Orchid protocol
 				</source>
-				<target state="new">
-					Orchid protocol
+				<target state="final">
+					Orchid 协议
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -267,8 +270,8 @@
 				<source>
 					Nanopayments
 				</source>
-				<target state="new">
-					Nanopayments
+				<target state="final">
+					极微支付
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -283,8 +286,8 @@
 				<source>
 					Nodes
 				</source>
-				<target state="new">
-					Nodes
+				<target state="final">
+					节点
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -299,8 +302,8 @@
 				<source>
 					Staking
 				</source>
-				<target state="new">
-					Staking
+				<target state="final">
+					质押
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -315,8 +318,8 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="new">
-					The Orchid app
+				<target state="final">
+					Orchid 应用
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -334,8 +337,10 @@
 					offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
 					firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</source>
-				<target state="new">
-					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
+				<target state="final">
+					Orchid 的用户为诸如 OpenVPN 等协议运行类似于典型 VPN 客户端的客户端，但该客户端使用 Orchid
+					协议。Orchid 网络客户端的功能超越了大多数 VPN 客户端提供的基本功能，如能够穿过集成式个人防火
+					墙运行流量。Orchid 客户端可通过 iOS、Android、macOS、Linux 和（即将支持）Windows 访问。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -350,8 +355,8 @@
 				<source>
 					Get the pre-release version of the app today!
 				</source>
-				<target state="new">
-					Get the pre-release version of the app today!
+				<target state="final">
+					立即获取该应用的预发布版本！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -366,8 +371,8 @@
 				<source>
 					The Orchid cryptocurrency (OXT)
 				</source>
-				<target state="new">
-					The Orchid cryptocurrency (OXT)
+				<target state="final">
+					Orchid 加密货币 (OXT)
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -417,34 +422,39 @@
 					providers, as well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					OXT’s primary and fundamental purpose is to keep track of who has used computing services, who has provided computing services, and whether the average user is fairly compensating the average provider.
+					OXT 的首要及基本目的是跟踪记录谁使用了计算服务、谁提供了计算服务，以及普通用户是否公平地给予了
+					普通提供商报酬。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The OXT token provides value in the Orchid network in a number of ways:
+					OXT 代币可以在 Orchid 网络中带来多方面的价值：
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT that is staked, the greater the chances of reward in the Network.
+					带宽提供商 — 任何人都可以经营 Orchid 节点，但必须先质押 OXT，质押的 OXT 越多，在网络中获得
+					奖励的机会就越大。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can access the internet through a user-chosen path to ensure a secure connection anywhere in the world. Users only pay for the bandwidth they consume.
+					带宽用户 — 用户第一次可以即时付费以获得私有、安全的互联网连接。 要启动客户端，用户需要安装
+					Orchid VPN、将 OXT 添加到钱包，然后可以通过用户选择的路径访问互联网，确保在世界任意地方安
+					全连接。 用户只需为他们使用的带宽付费。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on any central party. The primary reasons for a native token are:
+					带宽市场是点对点市场，以完全去中心化的方式运行，不依赖任何中心实体。 使用原生代币的主要原因是：
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					To have a token that is specifically tied to consumption of bandwidth on the Orchid network
+					拥有专门与 Orchid 网络上的带宽使用相关联的代币
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					To align operator incentives towards the benefit of the Orchid Network.
+					使运营商的激励与 Orchid 网络的好处相一致。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid Token is used to prove a stake within the Orchid network that is intended to demonstrate a commitment for bandwidth providers, as well as to mitigate certain risks.
+					因此，除了促进网络上的带宽交易外，Orchid 代币还用于在 Orchid 网络中证明质押（这旨在证明对带宽提
+					供者的承诺），以及减轻某些风险。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -460,8 +470,8 @@
 				<source>
 					The Orchid Protocol
 				</source>
-				<target state="new">
-					The Orchid Protocol
+				<target state="final">
+					Orchid 协议
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -480,12 +490,10 @@
 					is intended to allow users to request access to remote network resources and pay for these resources using OXT
 					via a nanopayments system.
 				</source>
-				<target state="new">
-					The Orchid software is designed to use a custom VPN protocol, similar in
-					scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
-					of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
-					is intended to allow users to request access to remote network resources and pay for these resources using OXT
-					via a nanopayments system.
+				<target state="final">
+					Orchid 软件使用一种自定义 VPN 协议，在范围上类似于 OpenVPN 或 WireGuard。 Orchid 协议为高性
+					能网络连接而设计，并且基于 WebRTC 运行，这是一种通用 Web 标准，广泛用于从浏览器中传输视频和
+					音频。 我们的协议有意支持用户请求访问远程网络资源，并通过极微支付系统使用 OXT 为这些资源付费。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -501,7 +509,7 @@
 					Nanopayments
 				</source>
 				<target state="new">
-					Nanopayments
+					极微支付
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -528,15 +536,14 @@
 				</source>
 				<target state="new">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Orchid uses a new probabilistic nanopayment system to scale payment throughput.
+					Orchid 使用新的概率极微支付系统来扩展付款吞吐量。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients
-					pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees
-					on small payments by amortizing transaction fees across many transactions and even across multiple parties.
+					这种极微支付系统是 Orchid 点对点带宽市场的基础，在该市场中，客户端向节点运营商支付 OXT“彩币”
+					以购买代理带宽。 该系统旨在通过在多笔交易乃至多方之间分摊小额支付的交易费，从而降低交易费用。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					For more information, see our recent article: Introducing Nanopayments
+					有关更多信息，请参阅我们近期的文章：极微支付简介
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -552,8 +559,8 @@
 				<source>
 					Nodes
 				</source>
-				<target state="new">
-					Nodes
+				<target state="final">
+					节点
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -577,16 +584,15 @@
 					geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
-					which speaks the Orchid protocol.
+					Orchid 上的服务提供商为诸如 OpenVPN 等协议运行类似于典型 VPN 守护程序的软件，但该软件使用
+					Orchid 协议。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The
-					stake registry is optimized for enabling the Orchid app to automatically discover random servers in a
-					decentralized environment, while the provider directory allows Orchid nodes to register metadata such as
-					geolocation or additional services offered.
+					Orchid 节点在以太坊上的质押注册表和提供商目录中维护注册信息。 质押注册表经过优化，使 Orchid
+					应用能够在去中心化环境中自动发现随机服务器，而提供商目录则允许 Orchid 节点注册元数据，如地
+					理位置或提供的其他服务。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -602,8 +608,8 @@
 				<source>
 					Staking
 				</source>
-				<target state="new">
-					Staking
+				<target state="final">
+					质押
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -647,36 +653,33 @@
 					choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					A provider stakes some number of OXT tokens to create a stake deposit.
+					提供商质押一定数量的 OXT 代币以创建质押保证金。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Anyone can stake OXT on nodes using the smart contract.
+					任何人都可以使用智能合约在节点上质押 OXT。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Clients select new nodes in proportion to their relative OXT deposit size.
+					客户端根据节点的相对 OXT 保证金规模按比例选择新节点。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.
+					因此，更大的质押保证金将会成比例地带来更多用户、带宽和收入。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					If the node is already at max bandwidth capacity additional stake is effectively wasted.
+					如果节点已经达到最大带宽容量，则额外的质押实际上将会浪费。
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning.
-					If the provider wants to withdraw tokens from the staking contract, they have to start an ‘unlocking’
-					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
-					transferred elsewhere by the provider.
+					当代币被锁入质押保证金后，它们可以立即用于带宽供应。 如果提供方希望从质押合约中提取代币，则需
+要启动“解锁”办理期，该过程包括三个月的冷却期，在此期间，资金不能用作质押保证金，提供方也不能将
+其转移到其他地方。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake
-					amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow.
-					Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will
-					translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own
-					choices.
+					无论在 Orchid 生态系统中交易的价值是多少，给定卖方的相对质押金额（占总质押的百分比）都会为他们
+提供该相同百分比的用户流量和交易流。 假设销售行为典型且诚实（没有用户因劣质服务而放弃它们），
+此交易流将转化为占比类似的一部分总收入。 卖方的质押决策由他们自己选择。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -692,8 +695,8 @@
 				<source>
 					Read our Whitepaper
 				</source>
-				<target state="new">
-					Read our Whitepaper
+				<target state="final">
+					白皮书
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1091,8 +1094,8 @@
 				<source>
 					Let's stay connected
 				</source>
-				<target state="new">
-					Let's stay connected
+				<target state="final">
+					保持联系
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
