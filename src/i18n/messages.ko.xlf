@@ -1323,8 +1323,8 @@
 				<source>
 					English
 				</source>
-				<target state="new">
-					English
+				<target state="final">
+					영어
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
