@@ -262,8 +262,8 @@
 				<source>
 					Follow Us
 				</source>
-				<target state="new">
-					Follow Us
+				<target state="final">
+					フォローする
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
