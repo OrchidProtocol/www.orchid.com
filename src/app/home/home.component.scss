@@ -176,9 +176,9 @@ $hero-bp-vert: 1150px;
 // TODO: use variables for font sizes
 .title {
   font-size: 72px;
-    &[data-locale="ja"] {
-        font-size: 69px;
-    }
+  :host-context(.locale-ja) & {
+    font-size: 69px;
+  }
     &>span {
     display: block;
   }
@@ -198,9 +198,9 @@ $hero-bp-vert: 1150px;
   color: $orc-rock-gray;
   margin: 0.5rem 0 1.5rem 0;
   font-size: 36px;
-    &[data-locale="ja"] {
-        font-size: 28px;
-    }
+  :host-context(.locale-ja) & {
+    font-size: 28px;
+  }
   @include mobile {
     font-size: 30px;
   }

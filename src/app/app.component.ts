@@ -1,4 +1,5 @@
-import {Component, OnInit, LOCALE_ID, Inject} from "@angular/core";
+import {Component, OnInit, LOCALE_ID, Inject, Renderer2} from "@angular/core";
+import { DOCUMENT } from "@angular/common";
 
 import {
   NavigationEnd,
@@ -20,9 +21,12 @@ export class AppComponent implements OnInit {
     { code: 'ja', label: 'Japanese' }
   ];
 
-  public constructor(private router: Router) {}
+  public constructor(private router: Router, @Inject(LOCALE_ID) protected localeId: string, @Inject(DOCUMENT) document, r: Renderer2) {
+    r.addClass(document.body, `locale-${this.localeId}`);
+  }
 
   ngOnInit(): void {
+
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) return;
       
