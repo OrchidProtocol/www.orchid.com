@@ -77,78 +77,6 @@
                                 "maximumWarning": "2mb",
                                 "maximumError": "5mb"
                             }]
-                        },
-                        "production-ja": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "outputHashing": "all",
-                            "sourceMap": false,
-                            "extractCss": true,
-                            "namedChunks": false,
-                            "aot": true,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "buildOptimizer": true,
-                            "budgets": [{
-                                "type": "initial",
-                                "maximumWarning": "2mb",
-                                "maximumError": "5mb"
-                            }],
-                            "i18nFile": "src/i18n/messages.ja.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "ja",
-                            "i18nMissingTranslation": "warning"
-                        },
-                        "production-ko": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "outputHashing": "all",
-                            "sourceMap": false,
-                            "extractCss": true,
-                            "namedChunks": false,
-                            "aot": true,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "buildOptimizer": true,
-                            "budgets": [{
-                                "type": "initial",
-                                "maximumWarning": "2mb",
-                                "maximumError": "5mb"
-                            }],
-                            "i18nFile": "src/i18n/messages.ko.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "ko",
-                            "i18nMissingTranslation": "warning"
-                        },
-                        "production-zh": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "outputHashing": "all",
-                            "sourceMap": false,
-                            "extractCss": true,
-                            "namedChunks": false,
-                            "aot": true,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "buildOptimizer": true,
-                            "budgets": [{
-                                "type": "initial",
-                                "maximumWarning": "2mb",
-                                "maximumError": "5mb"
-                            }],
-                            "i18nFile": "src/i18n/messages.zh.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "zh",
-                            "i18nMissingTranslation": "warning"
                         }
                     }
                 },
@@ -238,51 +166,6 @@
                             "namedChunks": false,
                             "extractLicenses": true,
                             "vendorChunk": false
-                        },
-                        "production-ja": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "sourceMap": false,
-                            "namedChunks": false,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "i18nFile": "src/i18n/messages.ja.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "ja",
-                            "i18nMissingTranslation": "warning"
-                        },
-                        "production-ko": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "sourceMap": false,
-                            "namedChunks": false,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "i18nFile": "src/i18n/messages.ko.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "ko",
-                            "i18nMissingTranslation": "warning"
-                        },
-                        "production-zh": {
-                            "fileReplacements": [{
-                                "replace": "src/environments/environment.ts",
-                                "with": "src/environments/environment.prod.ts"
-                            }],
-                            "optimization": true,
-                            "sourceMap": false,
-                            "namedChunks": false,
-                            "extractLicenses": true,
-                            "vendorChunk": false,
-                            "i18nFile": "src/i18n/messages.zh.xlf",
-                            "i18nFormat": "xlf",
-                            "i18nLocale": "zh",
-                            "i18nMissingTranslation": "warning"
                         }
                     }
                 }
