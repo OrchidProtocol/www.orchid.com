@@ -9,8 +9,15 @@
 				<target state="final">
 					The natural VPN
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">5</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="aboutAppSubTitle" datatype="html">
 				<source>
 					Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
@@ -18,8 +25,15 @@
 				<target state="final">
 					Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppFirstFeatureHeadline" datatype="html">
 				<source>
 					Multi-hop security
@@ -27,8 +41,15 @@
 				<target state="final">
 					Multi-hop security
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">27</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						27
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppFirstFeatureParagraph" datatype="html">
 				<source>
 					Multi-hop routing connects multiple relays and adds security at each step.
@@ -36,8 +57,15 @@
 				<target state="final">
 					Multi-hop routing connects multiple relays and adds security at each step.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">29</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						29
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppSecondFeatureHeadline" datatype="html">
 				<source>
 					Connect out
@@ -45,8 +73,15 @@
 				<target state="final">
 					Connect out
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">38</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						38
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppSecondFeatureParagraph" datatype="html">
 				<source>
 					Connect out of restricted zones. Works with existing VPN providers that are blocked.
@@ -54,8 +89,15 @@
 				<target state="final">
 					Connect out of restricted zones. Works with existing VPN providers that are blocked.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">40</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						40
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppThirdFeatureHeadline" datatype="html">
 				<source>
 					Low cost
@@ -63,8 +105,15 @@
 				<target state="final">
 					Low cost
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">49</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						49
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutAppThirdFeatureParagraph" datatype="html">
 				<source>
 					No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
@@ -72,8 +121,15 @@
 				<target state="final">
 					No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/about-app/about-app.component.html</context><context context-type="linenumber">51</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						51
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					Stay Curious,
@@ -81,8 +137,15 @@
 				<target state="final">
 					Stay Curious,
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						6
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__Title2" datatype="html">
 				<source>
 					Explore Freely
@@ -90,8 +153,15 @@
 				<target state="final">
 					Explore Freely
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">6</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						6
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__Subtitle" datatype="html">
 				<source>
 					Get digital privacy
@@ -99,8 +169,15 @@
 				<target state="final">
 					Get digital privacy
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__FormTitle" datatype="html">
 				<source>
 					Don't miss the launch!
@@ -108,8 +185,15 @@
 				<target state="final">
 					Don't miss the launch!
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						10
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
 					A next-level VPN &amp; privacy tool
@@ -117,8 +201,15 @@
 				<target state="final">
 					A next-level VPN &amp; privacy tool
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">20</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						20
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Description" datatype="html">
 				<source>
 					Read the whitepaper to see what we’re building.
@@ -126,8 +217,15 @@
 				<target state="final">
 					Read the whitepaper to see what we’re building.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">21</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						21
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
 				<source>
 					Whitepaper
@@ -135,8 +233,15 @@
 				<target state="final">
 					Whitepaper
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproach__Title" datatype="html">
 				<source>
 					Our approach
@@ -144,8 +249,15 @@
 				<target state="final">
 					Our approach
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">32</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						32
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
 					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.
@@ -153,8 +265,15 @@
 				<target state="final">
 					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Title" datatype="html">
 				<source>
 					Decentralized
@@ -162,8 +281,15 @@
 				<target state="final">
 					Decentralized
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">42</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						42
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
 					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
@@ -171,8 +297,15 @@
 				<target state="final">
 					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">43</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						43
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Title" datatype="html">
 				<source>
 					Open Source
@@ -180,8 +313,15 @@
 				<target state="final">
 					Open Source
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">54</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						54
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
 					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
@@ -189,8 +329,15 @@
 				<target state="final">
 					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">55</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						55
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Title" datatype="html">
 				<source>
 					Peer to peer
@@ -198,8 +345,15 @@
 				<target state="final">
 					Peer to peer
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">66</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						66
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
 					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
@@ -207,8 +361,15 @@
 				<target state="final">
 					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">67</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						67
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__Title" datatype="html">
 				<source>
 					As seen in
@@ -216,8 +377,15 @@
 				<target state="final">
 					As seen in
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">82</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						82
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
 				<source>
 					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
@@ -225,8 +393,47 @@
 				<target state="final">
 					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">89</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						89
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ReadMore" datatype="html">
+				<source>
+					Read More
+				</source>
+				<target state="final">
+					Read More
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						92
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						114
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
 					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
@@ -234,8 +441,15 @@
 				<target state="final">
 					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">100</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						100
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
 					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
@@ -243,8 +457,15 @@
 				<target state="final">
 					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">111</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						111
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeEvents__Title" datatype="html">
 				<source>
 					Meet us in person
@@ -252,8 +473,15 @@
 				<target state="final">
 					Meet us in person
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">126</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						126
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeEvents__Link" datatype="html">
 				<source>
 					See all events
@@ -261,8 +489,15 @@
 				<target state="final">
 					See all events
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/home/home.component.html</context><context context-type="linenumber">127</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						127
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Newsletter__Title" datatype="html">
 				<source>
 					Get the newsletter for updates and privacy news
@@ -270,18 +505,39 @@
 				<target state="final">
 					Get the newsletter for updates and privacy news
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context><context context-type="linenumber">7</context></context-group></trans-unit><trans-unit id="EmailAddress" datatype="html">
-        <source>Email address</source><target state="final">Email address</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="EmailAddress" datatype="html">
+				<source>
+					Email address
+				</source>
+				<target state="final">
+					Email address
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						8
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						3
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Newsletter__Consent" datatype="html">
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
@@ -289,9 +545,23 @@
 				<target state="final">
 					I consent to receiving further instructions at the email address I submitted above.
 				</target>
-				
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context><context context-type="linenumber">14</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context><context context-type="linenumber">9</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						14
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						9
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Newsletter__Subscribe" datatype="html">
 				<source>
 					Subscribe
@@ -299,8 +569,15 @@
 				<target state="final">
 					Subscribe
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context><context context-type="linenumber">18</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						18
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Newsletter__GetNotified" datatype="html">
 				<source>
 					Get notified
@@ -308,8 +585,15 @@
 				<target state="final">
 					Get notified
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context><context context-type="linenumber">13</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						13
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Home" datatype="html">
 				<source>
 					Home
@@ -317,8 +601,15 @@
 				<target state="final">
 					Home
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">22</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						22
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-HowItWorks" datatype="html">
 				<source>
 					How It Works
@@ -326,8 +617,15 @@
 				<target state="final">
 					How It Works
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">23</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						23
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-About" datatype="html">
 				<source>
 					About
@@ -335,8 +633,15 @@
 				<target state="final">
 					About
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">24</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Blog" datatype="html">
 				<source>
 					Blog
@@ -344,9 +649,23 @@
 				<target state="final">
 					Blog
 				</target>
-				
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">25</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">103</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Contact" datatype="html">
 				<source>
 					Contact
@@ -354,9 +673,23 @@
 				<target state="final">
 					Contact
 				</target>
-				
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">26</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">105</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						26
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						105
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="NavigationCurrentLanguage" datatype="html">
 				<source>
 					English
@@ -364,8 +697,15 @@
 				<target state="final">
 					English
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">33</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HTML_locale" datatype="html">
 				<source>
 					en
@@ -373,10 +713,31 @@
 				<target state="final">
 					en
 				</target>
-				
-				
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">1</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">76</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">80</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						1
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						76
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						80
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Orchid" datatype="html">
 				<source>
 					Orchid
@@ -384,8 +745,15 @@
 				<target state="final">
 					Orchid
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">94</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						94
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-HowitWorks" datatype="html">
 				<source>
 					How it Works
@@ -393,8 +761,15 @@
 				<target state="final">
 					How it Works
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">95</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						95
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-AboutUs" datatype="html">
 				<source>
 					About Us
@@ -402,8 +777,15 @@
 				<target state="final">
 					About Us
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">96</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						96
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Download" datatype="html">
 				<source>
 					Download
@@ -411,8 +793,15 @@
 				<target state="final">
 					Download
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">97</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Events" datatype="html">
 				<source>
 					Events
@@ -420,8 +809,15 @@
 				<target state="final">
 					Events
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">102</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						102
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-FAQ" datatype="html">
 				<source>
 					FAQ
@@ -429,8 +825,15 @@
 				<target state="final">
 					FAQ
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">104</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						104
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="NavigationFollowUs" datatype="html">
 				<source>
 					Follow Us
@@ -438,8 +841,15 @@
 				<target state="final">
 					Follow Us
 				</target>
-				
-			<context-group purpose="location"><context context-type="sourcefile">app/page-layout/page-layout.component.html</context><context context-type="linenumber">111</context></context-group></trans-unit>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						111
+					</context>
+				</context-group>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
