@@ -1,40 +1,390 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template" target-language="zh">
-    <body>
-      <trans-unit id="HomeHero__Title" datatype="html">
-        <source>Stay Curious,</source><target state="new">Stay Curious,</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit><trans-unit id="HomeHero__Title2" datatype="html">
-        <source>Explore Freely</source><target state="new">Explore Freely</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">6</context>
-        </context-group>
-      </trans-unit><trans-unit id="HomeHero__Subtitle" datatype="html">
-        <source>Get digital privacy</source><target state="new">Get digital privacy</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit><trans-unit id="HTML_locale" datatype="html">
-        <source>en</source><target state="new">en</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">76</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">80</context>
-        </context-group>
-      </trans-unit>
-    </body>
-  </file>
+	<file source-language="en" datatype="plaintext" original="ng2.template" target-language="zh">
+		<body>
+			<trans-unit id="HomeHero__Title" datatype="html">
+				<source>
+					Stay Curious,
+				</source>
+				<target state="final">
+					永葆好奇，
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						6
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeHero__Title2" datatype="html">
+				<source>
+					Explore Freely
+				</source>
+				<target state="final">
+					自由探索
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						6
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeHero__Subtitle" datatype="html">
+				<source>
+					Get digital privacy
+				</source>
+				<target state="final">
+					获得数字隐私
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeHero__FormTitle" datatype="html">
+				<source>
+					Don't miss the launch!
+				</source>
+				<target state="final">
+					不要错过发布！
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						10
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeNextLevel__Title" datatype="html">
+				<source>
+					A next-level VPN &amp; privacy tool
+				</source>
+				<target state="final">
+					了解运作方式
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						20
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeNextLevel__Description" datatype="html">
+				<source>
+					Read the whitepaper to see what we’re building.
+				</source>
+				<target state="new">
+					请阅读此白皮书，了解我们正在构建的平台。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						21
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
+				<source>
+					Whitepaper
+				</source>
+				<target state="final">
+					白皮书
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproach__Title" datatype="html">
+				<source>
+					Our approach
+				</source>
+				<target state="final">
+					我们的方法
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						32
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproach__Subtitle" datatype="html">
+				<source>
+					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.
+				</source>
+				<target state="final">
+					我们相信，通过消除集中化、奖励网络提供者并利用
+					区块链的力量，我们可以更好地保护用户的隐私。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard1__Title" datatype="html">
+				<source>
+					Decentralized
+				</source>
+				<target state="final">
+					去中心化
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						42
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard1__Description" datatype="html">
+				<source>
+					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+				</source>
+				<target state="final">
+					借助以太坊，Orchid 可以在没有中央权
+					威机构的情况下运作。 应用程序在您的设
+					备本机上运行，而不通过服务器，因此不
+					会存储任何数据。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						43
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard2__Title" datatype="html">
+				<source>
+					Open Source
+				</source>
+				<target state="final">
+					开源
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						54
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard2__Description" datatype="html">
+				<source>
+					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+				</source>
+				<target state="final">
+					Orchid 软件采取开源形式，让整个社区
+					可以交流创意、审核和调试，更重要的
+					是对软件做出贡献。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						55
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard3__Title" datatype="html">
+				<source>
+					Peer to peer
+				</source>
+				<target state="final">
+					点对点
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						66
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeApproachCard3__Description" datatype="html">
+				<source>
+					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+				</source>
+				<target state="final">
+					客户和网络提供商无需中间商即可直
+					接进行交易，从而打造低成本的带宽
+					和 VPN 连接市场。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						67
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__Title" datatype="html">
+				<source>
+					As seen in
+				</source>
+				<target state="final">
+					英雄所见
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						82
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
+				<source>
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+				</source>
+				<target state="final">
+					与投入的资金、愿景和创始人相比，
+					这才是大事。 敬请关注。”
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						89
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
+				<source>
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+				</source>
+				<target state="final">
+					Orchid 的愿景是开发使 互联网 保
+					持开放和可访问的开源软件 — 让
+					互联网 成为任何地方、任何人都可
+					使用的自然资源。”
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						100
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
+				<source>
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+				</source>
+				<target state="final">
+					Orchid 正在开发开源、去中心化
+					且免受监视的 互联网 协议，旨在
+					为全球社区提供匿名化的 互联网
+					访问。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						111
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeEvents__Title" datatype="html">
+				<source>
+					Meet us in person
+				</source>
+				<target state="final">
+					欢迎亲临现场
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						126
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeEvents__Link" datatype="html">
+				<source>
+					See all events
+				</source>
+				<target state="final">
+					查看所有活动
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						127
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HTML_locale" datatype="html">
+				<source>
+					en
+				</source>
+				<target state="final">
+					zh
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						1
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						76
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						80
+					</context>
+				</context-group>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>
