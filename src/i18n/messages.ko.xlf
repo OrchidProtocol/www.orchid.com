@@ -491,6 +491,118 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="Navigation-Home" datatype="html">
+				<source>
+					Home
+				</source>
+				<target state="new">
+					Home
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						22
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-HowItWorks" datatype="html">
+				<source>
+					How It Works
+				</source>
+				<target state="new">
+					작동 방식
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						23
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-About" datatype="html">
+				<source>
+					About
+				</source>
+				<target state="final">
+					소개
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Blog" datatype="html">
+				<source>
+					Blog
+				</source>
+				<target state="final">
+					블로그
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Contact" datatype="html">
+				<source>
+					Contact
+				</source>
+				<target state="final">
+					연락처
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						26
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						105
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="NavigationCurrentLanguage" datatype="html">
+				<source>
+					English
+				</source>
+				<target state="new">
+					English
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HTML_locale" datatype="html">
 				<source>
 					en
@@ -520,6 +632,118 @@
 					</context>
 					<context context-type="linenumber">
 						80
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Orchid" datatype="html">
+				<source>
+					Orchid
+				</source>
+				<target state="new">
+					Orchid
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						94
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-HowitWorks" datatype="html">
+				<source>
+					How it Works
+				</source>
+				<target state="new">
+					How it Works
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						95
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-AboutUs" datatype="html">
+				<source>
+					About Us
+				</source>
+				<target state="new">
+					About Us
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						96
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Download" datatype="html">
+				<source>
+					Download
+				</source>
+				<target state="new">
+					Download
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Events" datatype="html">
+				<source>
+					Events
+				</source>
+				<target state="new">
+					Events
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						102
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-FAQ" datatype="html">
+				<source>
+					FAQ
+				</source>
+				<target state="new">
+					FAQ
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						104
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="NavigationFollowUs" datatype="html">
+				<source>
+					Follow Us
+				</source>
+				<target state="final">
+					팔로우 하기
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						111
 					</context>
 				</context-group>
 			</trans-unit>

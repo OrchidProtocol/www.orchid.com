@@ -2,6 +2,134 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
 	<file source-language="en" datatype="plaintext" original="ng2.template" target-language="zh">
 		<body>
+			<trans-unit id="aboutAppTitle" datatype="html">
+				<source>
+					The natural VPN
+				</source>
+				<target state="new">
+					The natural VPN
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="aboutAppSubTitle" datatype="html">
+				<source>
+					Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
+				</source>
+				<target state="new">
+					Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppFirstFeatureHeadline" datatype="html">
+				<source>
+					Multi-hop security
+				</source>
+				<target state="new">
+					Multi-hop security
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						27
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppFirstFeatureParagraph" datatype="html">
+				<source>
+					Multi-hop routing connects multiple relays and adds security at each step.
+				</source>
+				<target state="new">
+					Multi-hop routing connects multiple relays and adds security at each step.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						29
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppSecondFeatureHeadline" datatype="html">
+				<source>
+					Connect out
+				</source>
+				<target state="new">
+					Connect out
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						38
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppSecondFeatureParagraph" datatype="html">
+				<source>
+					Connect out of restricted zones. Works with existing VPN providers that are blocked.
+				</source>
+				<target state="new">
+					Connect out of restricted zones. Works with existing VPN providers that are blocked.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						40
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppThirdFeatureHeadline" datatype="html">
+				<source>
+					Low cost
+				</source>
+				<target state="new">
+					Low cost
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						49
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutAppThirdFeatureParagraph" datatype="html">
+				<source>
+					No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
+				</source>
+				<target state="new">
+					No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-app/about-app.component.html
+					</context>
+					<context context-type="linenumber">
+						51
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					Stay Curious,
@@ -353,6 +481,118 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="Navigation-Home" datatype="html">
+				<source>
+					Home
+				</source>
+				<target state="new">
+					Home
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						22
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-HowItWorks" datatype="html">
+				<source>
+					How It Works
+				</source>
+				<target state="final">
+					运作方式
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						23
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-About" datatype="html">
+				<source>
+					About
+				</source>
+				<target state="final">
+					关于
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Blog" datatype="html">
+				<source>
+					Blog
+				</source>
+				<target state="final">
+					博客
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Contact" datatype="html">
+				<source>
+					Contact
+				</source>
+				<target state="final">
+					联系
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						26
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						105
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="NavigationCurrentLanguage" datatype="html">
+				<source>
+					English
+				</source>
+				<target state="new">
+					中文
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HTML_locale" datatype="html">
 				<source>
 					en
@@ -382,6 +622,118 @@
 					</context>
 					<context context-type="linenumber">
 						80
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Orchid" datatype="html">
+				<source>
+					Orchid
+				</source>
+				<target state="new">
+					Orchid
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						94
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-HowitWorks" datatype="html">
+				<source>
+					How it Works
+				</source>
+				<target state="new">
+					How it Works
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						95
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-AboutUs" datatype="html">
+				<source>
+					About Us
+				</source>
+				<target state="final">
+					关于
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						96
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Download" datatype="html">
+				<source>
+					Download
+				</source>
+				<target state="new">
+					Download
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Events" datatype="html">
+				<source>
+					Events
+				</source>
+				<target state="new">
+					Events
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						102
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-FAQ" datatype="html">
+				<source>
+					FAQ
+				</source>
+				<target state="new">
+					FAQ
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						104
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="NavigationFollowUs" datatype="html">
+				<source>
+					Follow Us
+				</source>
+				<target state="final">
+					关注我们
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						111
 					</context>
 				</context-group>
 			</trans-unit>
