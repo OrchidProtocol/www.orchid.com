@@ -636,6 +636,102 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="Newsletter__Title" datatype="html">
+				<source>
+					Get the newsletter for updates and privacy news
+				</source>
+				<target state="final">
+					最新情報とプライバシー ニュースのニュースレターを受け取る
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="EmailAddress" datatype="html">
+				<source>
+					Email address
+				</source>
+				<target state="final">
+					メール アドレス
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						8
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						3
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Newsletter__Consent" datatype="html">
+				<source>
+					I consent to receiving further instructions at the email address I submitted above.
+				</source>
+				<target state="new">
+					I consent to receiving further instructions at the email address I submitted above.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						14
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						9
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Newsletter__Subscribe" datatype="html">
+				<source>
+					Subscribe
+				</source>
+				<target state="final">
+					お申し込み
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup/newsletter-signup.component.html
+					</context>
+					<context context-type="linenumber">
+						18
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Newsletter__GetNotified" datatype="html">
+				<source>
+					Get notified
+				</source>
+				<target state="final">
+					通知を受け取る
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-hero/newsletter-signup-hero.component.html
+					</context>
+					<context context-type="linenumber">
+						13
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-Home" datatype="html">
 				<source>
 					Home
