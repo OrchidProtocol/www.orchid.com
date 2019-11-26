@@ -13,6 +13,9 @@ $section-sm: 54rem;
 .how-hero {
   .content {
     max-width: 39rem;
+    :host-context(.locale-ja) & {
+      max-width: 44rem;
+    }
     padding-bottom: 200px;
 
     @include mobile {
@@ -92,6 +95,9 @@ $section-sm: 54rem;
   }
   .content {
     max-width: $section-sm;
+    :host-context(.locale-ja) & {
+      max-width: 55rem;
+    }
   }
   h2 > span {
     display: block;
