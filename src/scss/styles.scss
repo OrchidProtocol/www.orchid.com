@@ -483,6 +483,10 @@ input {
     &:focus {
       border-color: $orc-purple;
     }
+
+    &::placeholder {
+      white-space: inherit;
+    }
   }
 }
 
