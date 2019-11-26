@@ -1,10 +1,10 @@
 <div class="bk-faint-gray">
   <section id="newsletter-signup" class="section-wide center-text hpad-wide vpad-wide">
     <header>
-      <h2>Let's stay connected</h2>
+      <h2 i18n="@@Newsletter__Title">Let's stay connected</h2>
     </header>
     <div *ngIf="!submitted">
-      <p class="medium" i18n="@@Newsletter__Title">Get the newsletter for updates and privacy news</p>
+      <p class="medium" i18n="@@Newsletter__Description">Get the newsletter for updates and privacy news</p>
       <input type="email" [(ngModel)]="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" (keyup.enter)="submit()"
         class="input-large center-block vgap-thin newsletter-signup__input" [class.invalid]="this.invalid_email"
         (change)="inputListener()" (keydown)="inputListener()" />
