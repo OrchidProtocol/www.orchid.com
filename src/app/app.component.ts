@@ -1,5 +1,6 @@
-import {Component, OnInit, LOCALE_ID, Inject, Renderer2} from "@angular/core";
+import { Component, OnInit, LOCALE_ID, Inject, Renderer2 } from "@angular/core";
 import { DOCUMENT } from "@angular/common";
+import { MetaService } from './MetaService';
 
 import {
   NavigationEnd,
@@ -21,19 +22,20 @@ export class AppComponent implements OnInit {
     { code: 'ja', label: 'Japanese' }
   ];
 
-  public constructor(private router: Router, @Inject(LOCALE_ID) protected localeId: string, @Inject(DOCUMENT) document, r: Renderer2) {
+  public constructor(private router: Router, private meta: MetaService, @Inject(LOCALE_ID) protected localeId: string, @Inject(DOCUMENT) document, r: Renderer2) {
     r.addClass(document.body, `locale-${this.localeId}`);
+    if (this.localeId !== 'en-US') r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
   }
 
   ngOnInit(): void {
 
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) return;
-      
+
       // Scroll the user to the top of the page on load/refresh?
       // const win = typeof window !== "undefined" && window;
       // if (win) win.scrollTo(0, 0);
 
-    }, (err) => {}, () => {});
+    }, (err) => { }, () => { });
   }
 }
