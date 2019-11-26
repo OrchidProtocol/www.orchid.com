@@ -7,7 +7,7 @@
                 <h4 class="subtitle pad-bot-thin" i18n="@@HomeHero__Subtitle">Get digital privacy</h4>
             </div>
             <div class="home-hero__form">
-                <h4>Don't miss the launch!</h4>
+                <h4 i18n="@@HomeHero__FormTitle">Don't miss the launch!</h4>
                 <app-newsletter-signup-hero></app-newsletter-signup-hero>
             </div>
         </div>
@@ -17,11 +17,11 @@
 <div class="how-it-works background-white">
     <div class="home-satellite-3a"></div>
     <section class="section-med hpad-wide vpad-xl center-text z-index-1">
-        <h3>A next-level VPN & privacy tool</h3>
-        <p class="medium">
+        <h3 i18n="@@HomeNextLevel__Title">A next-level VPN & privacy tool</h3>
+        <p class="medium" i18n="@@HomeNextLevel__Description">
             Read the whitepaper to see what we’re building.
         </p>
-        <button (click)="downloadWhitepaper()" class="btn-secondary btn-fixed z-index-1">Whitepaper</button>
+        <button (click)="downloadWhitepaper()" class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">Whitepaper</button>
     </section>
     <div class="home-satellite-4"></div>
 </div>
@@ -29,8 +29,8 @@
 <div class="bk-lavender">
     <section class="section-med hpad-thin vpad-xl z-index-1">
         <div class="our-approach">
-            <h2>Our approach</h2>
-            <p class="medium">We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.</p>
+            <h2 i18n="@@HomeApproach__Title">Our approach</h2>
+            <p class="medium" i18n="@@HomeApproach__Subtitle">We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.</p>
         </div>
 
         <ul class="phantom-list card-list smaller center-text z-index-1">
@@ -39,8 +39,8 @@
                     <img src="/assets/img/index/decentralized.svg" alt="decentralized">
                 </div>
                 <div class="card__text">
-                    <h3 class="color-gray">Decentralized</h3>
-                    <p>
+                    <h3 class="color-gray" i18n="@@HomeApproachCard1__Title">Decentralized</h3>
+                    <p i18n="@@HomeApproachCard1__Description">
                         Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
                     </p>
                     <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
@@ -51,8 +51,8 @@
                     <img src="/assets/img/index/open-source.svg" alt="open source">
                 </div>
                 <div class="card__text">
-                    <h3 class="color-gray">Open Source</h3>
-                    <p>
+                    <h3 class="color-gray" i18n="@@HomeApproachCard2__Title">Open Source</h3>
+                    <p i18n="@@HomeApproachCard2__Description">
                         Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
                     </p>
                     <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
@@ -63,8 +63,8 @@
                     <img src="/assets/img/index/peer-to-peer.svg" alt="peer to peer">
                 </div>
                 <div class="card__text">
-                    <h3 class="color-gray">Peer to peer</h3>
-                    <p>
+                    <h3 class="color-gray" i18n="@@HomeApproachCard3__Title">Peer to peer</h3>
+                    <p i18n="@@HomeApproachCard3__Description">
                         Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
                     </p>
                     <a routerLink="/how-it-works" class="card__arrow"><img src="/assets/img/shared/button-angle-right.svg" alt=""></a>
@@ -79,14 +79,14 @@
         <div class="as-seen-bg-1">
             <img src="/assets/img/index/as-seen-pattern.svg" alt="">
         </div>
-        <h2 class="center-text vpad">As seen in</h2>
+        <h2 class="center-text vpad" i18n="@@HomeAsSeenIn__Title">As seen in</h2>
         <ul class="phantom-list press-cards gap-top-thin">
             <li class="press-card">
                 <div class="wrapper">
                     <a class="press-card__logo" href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/">
                         <img src="/assets/img/index/seen/techcrunch.png" alt="techcrunch" />
                     </a>
-                    <p class="press-card__quote">
+                    <p class="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
                         In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
                     </p>
                     <a class="press-card__more uppercase" href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/">Read More</a>
@@ -97,7 +97,7 @@
                     <a class="press-card__logo" href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative">
                         <img src="/assets/img/index/seen/coindesk.png" alt="coindesk" />
                     </a>
-                    <p class="press-card__quote">
+                    <p class="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
                         Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
                     </p>
                     <a class="press-card__more uppercase" href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative">Read More</a>
@@ -108,7 +108,7 @@
                     <a class="press-card__logo" href="https://cointelegraph.com/news/orchid-labs-secures-7-mln-towards-development-of-protocol-to-end-internet-surveillance">
                         <img src="/assets/img/index/seen/cointelegraph.png" alt="cointelegraph" />
                     </a>
-                    <p class="press-card__quote">
+                    <p class="press-card__quote" i18n="@@HomeAsSeenIn__CoinTelegraph">
                         Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
                     </p>
                     <a class="press-card__more uppercase" href="https://cointelegraph.com/news/orchid-labs-secures-7-mln-towards-development-of-protocol-to-end-internet-surveillance">Read More</a>
@@ -123,8 +123,8 @@
 <div>
     <section class="section-wide hpad-wide vpad-wide">
         <header id="ev-header">
-            <h2 id="ev-h2" class="color-gray">Meet us in person</h2>
-            <a id="ev-more" class="phantom-a" routerLink="/events"><span class="uppercase color-primary">See all events</span></a>
+            <h2 id="ev-h2" class="color-gray" i18n="@@HomeEvents__Title">Meet us in person</h2>
+            <a id="ev-more" class="phantom-a" routerLink="/events"><span class="uppercase color-primary" i18n="@@HomeEvents__Link">See all events</span></a>
         </header>
         <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events else loadingEvents">
             <li class="ev-event" *ngFor="let event of events">
