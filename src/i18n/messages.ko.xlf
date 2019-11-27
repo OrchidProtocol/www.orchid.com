@@ -152,7 +152,7 @@
 					The Orchid network enables a decentralized virtual private network (VPN), allowing
 					users to buy bandwidth from a global pool of service providers.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 네트워크는 분산 VPN(가상 사설망)을 활성화하여 사용자가 서비스 제공 업체의
 					글로벌 풀에서 대역폭을 구매할 수 있도록 허용합니다.
 				</target>
@@ -172,7 +172,7 @@
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
-				<target state="final">
+				<target state="translated">
 					이를 실시하려면 Orchid는 토큰 인센티브 대역폭 프록시를 위해 OXT라고 부르는 새로운
 					VPN 프로토콜, ERC-20 유틸리티 토큰과 알고리즘 광고 및 결제 기능을 갖춘 스마트
 					컨트랙트를 사용합니다. Orchid 사용자는 제공 업체 디렉토리를 사용하여 대역폭 판매자와
@@ -209,7 +209,7 @@
 					of
 					the Orchid network
 				</source>
-				<target state="final">
+				<target state="translated">
 					핵심 구성 요소
 				</target>
 				<context-group purpose="location">
@@ -340,7 +340,7 @@
 					offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
 					firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 사용자는 OpenVPN과 같은 프로토콜이지만 Orchid 프로토콜이라 일컫는 일반적인 VPN 클라이언트와
 					비슷한 클라이언트를 실행합니다. Orchid 네트워크 클라이언트는 통합된 개인 방화벽을 통해 트래픽을 실행할 수
 					있는 기능과 함께 대부분의 VPN 클라이언트가 제공하는 기본 기능을 능가합니다. Orchid 클라이언트는 iOS,
@@ -496,7 +496,7 @@
 					is intended to allow users to request access to remote network resources and pay for these resources using OXT
 					via a nanopayments system.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 소프트웨어는 OpenVPN 또는 WireGuard와 범위가 유사한 사용자 지정 VPN 프로토콜을 사용합니다.
 					Orchid 프로토콜은 고성능 네트워킹을 위해 설계되었으며, 일반 웹 표준인 WebRTC의 상위에서 실행되고
 					브라우저 내부에서 비디오 및 오디오를 전송하는 데 널리 사용됩니다. Orchid 프로토콜을 사용하면 사용자가
@@ -593,7 +593,7 @@
 					geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Orchid 서비스 공급자는 OpenVPN과 같은 프로토콜이지만 Orchid 프로토콜이라 일컫는 일반적인 VPN 데몬과
 					비슷한 소프트웨어를 실행합니다.
@@ -662,7 +662,7 @@
 					choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					제공 업체는 스테이크 예치금을 생성하기 위해 일부 OXT 토큰을 스테이크합니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -1444,6 +1444,283 @@
 					</context>
 					<context context-type="linenumber">
 						111
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyHero__Title" datatype="html">
+				<source>
+					We can
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					reclaim the
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					internet
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					together
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+				</source>
+				<target state="final">
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					함께
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					인터넷을 되찾을
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					수 있습니다
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompany__Description" datatype="html">
+				<source>
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
+					explore that world freely.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch
+					and track us and sell our data. And in some places, limits were placed on the information we can see.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
+					by its users.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we
+					can realize the promise of the Web 1.0 and explore freely again.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
+					grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
+					2019.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="final">
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					인터넷은 무한한 정보의 시대를 열었습니다. 크리에이터들 덕분에 우리는 호기심을 갖고 자유롭게 세상을 탐험할 수 있었습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					그러나 인터넷이 성장할수록 자유로운 탐색은 더 어려워졌습니다. Web 2.0 비즈니스 모델에 따라 기업들은 우리를 관찰, 추적하고 데이터를 팔아 넘겼습니다. 어떤 곳에서는 우리가 볼 수 있는 정보에 제한이 있었습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					그러나 이제는 변하고 있습니다. 이더리움 기반으로 구축되는 분산형 Web 3.0은 본래 주인인 사용자에게 인터넷을 되돌려 줍니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid 역시 이 임무에 동참합니다. Web 3.0 기술을 통해 오늘날 사용자에게 더 나은 디지털 개인 정보 보호를 보장하므로, Web 1.0의 약속을
+					실천하고 자유롭게 탐색할 수 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					2017년 설립된 Orchid는, 누구나 손쉽게 접근 가능한 개방적인 인터넷을 되찾기 위해 노력합니다. 설립 이후 샌프란시스코와 베를린을 기반으로 놀라운 성장을 보여준 우리 팀은 2019년 4분기 Orchid 토큰화된 VPN을 출시하게 되었습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
+				<source>
+					Founders
+				</source>
+				<target state="final">
+					설립자
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						56
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Description" datatype="html">
+				<source>
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
+					technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
+					(Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				</source>
+				<target state="final">
+					오픈 소스 소프트웨어 커뮤니티(BASH Shell, GNU Finger), 기술 관리(RPX IPO), 블록체인 투자(Bitstamp,
+					Pantera Capital), 탈옥 앱 패키지 관리(Cydia), 보안(Wells Fargo의 최초 온라인 뱅킹 직원, 이더리움 핵심 보안 팀)
+					분야에서 깊이 있는 경험을 쌓은 전문가들이 의기투합하여 Orchid의 창립 멤버가 되었습니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
+				<source>
+					Dr. Steven Waterhouse
+				</source>
+				<target state="final">
+					세븐 워터하우스
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						68
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameBrian" datatype="html">
+				<source>
+					Brian J. Fox
+				</source>
+				<target state="final">
+					브라이언 제이 폭스
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						77
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
+				<source>
+					Jay Freeman
+				</source>
+				<target state="final">
+					제이 프리먼
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						85
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Title" datatype="html">
+				<source>
+					Corporate info
+				</source>
+				<target state="final">
+					회사 정보
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
+				<source>
+					Orchid is a Delaware c-corp
+				</source>
+				<target state="final">
+					Orchid는 델라웨어 c-corp입니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						98
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address" datatype="html">
+				<source>
+					Headquarters:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</source>
+				<target state="final">
+					본사:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						101
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
+				<source>
+					Europe:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</source>
+				<target state="final">
+					유럽:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						106
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
+				<source>
+					SEC Filing
+				</source>
+				<target state="final">
+					SEC 제출
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						113
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
+				<source>
+					Press Kit
+				</source>
+				<target state="final">
+					프레스 키트
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						114
 					</context>
 				</context-group>
 			</trans-unit>
