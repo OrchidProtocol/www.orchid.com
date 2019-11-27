@@ -840,6 +840,288 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="AboutCompanyHero__Title" datatype="html">
+				<source>
+					We can
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					reclaim the
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					internet
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					together
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+				</source>
+				<target state="final">
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					一緒に
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					インターネッ
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					トを取り戻し
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					ましょう。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompany__Description" datatype="html">
+				<source>
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
+					explore that world freely.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch
+					and track us and sell our data. And in some places, limits were placed on the information we can see.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
+					by its users.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we
+					can realize the promise of the Web 1.0 and explore freely again.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
+					grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
+					2019.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="final">
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					インターネットによって制約のない情報の世界が開かれ、私たちは好奇心の赴くままにその世界を自由に探索するよう招待されました。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					ところが、インターネットの発達につれて、自由な探索は難しくなりました。Web 2.0 のビジネス モデルは、インターネットのユーザ
+					ーを監視して追跡し、データを販売するよう企業に奨励します。また、一部の国や地域では、表示できる情報に制限が設けられました。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					しかし、この状況は変化しています。イーサリアム上に構築される分散型 Web 3.0 を利用すれば、インターネットをユーザーの手に取り戻すことができま
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					オーキッドは、このミッションを共有しています。私たちは現在、Web 3.0 テクノロジーを使用して、より優れたデジタル プライバ
+					シーをユーザーに提供しています。これによって Web 1.0 の約束どおり、再び情報の世界を自由に探索することができます。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					オーキッドは、すべての人がオープンでアクセス可能なインターネットを取り戻すために 2017 年に設立されました。それ以来、サンフランシス
+					コとベルリンを拠点として素晴らしいチームを育成してきました。2019 年第4四半期にはオーキッドのトークン化 VPN をリリースします。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
+				<source>
+					Founders
+				</source>
+				<target state="final">
+					創業者
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						56
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Description" datatype="html">
+				<source>
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
+					technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
+					(Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				</source>
+				<target state="final">
+					オーキッドの創業者たちは、オープン ソース ソフトウェア コミュニティ (BASH Shell、GNU Finger)、
+					テクノロジー管理 (RPX IPO)、ブロックチェーン投資 (Bitstamp、Pantera Capital)、ジェイルブレイク
+					されたアプリパッケージ管理 (Cydia)、セキュリティ (Wells Fargo のファースト オンライン バンキング
+					の従業員、イーサリアムのコア セキュリティ チーム) に関する深い知識を一つにまとめました。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
+				<source>
+					Dr. Steven Waterhouse
+				</source>
+				<target state="final">
+					セブン・ウォーターハウス
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						68
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameBrian" datatype="html">
+				<source>
+					Brian J. Fox
+				</source>
+				<target state="final">
+					ブライアン・J・フォックス
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						77
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
+				<source>
+					Jay Freeman
+				</source>
+				<target state="final">
+					ジェイ・フリーマン
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						85
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Title" datatype="html">
+				<source>
+					Corporate info
+				</source>
+				<target state="final">
+					会社情報
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
+				<source>
+					Orchid is a Delaware c-corp
+				</source>
+				<target state="final">
+					オーキッドはデラウェア州の株式会社です
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						98
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address" datatype="html">
+				<source>
+					Headquarters:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</source>
+				<target state="final">
+					本社
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						101
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
+				<source>
+					Europe:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</source>
+				<target state="final">
+					ヨーロッパ
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						106
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
+				<source>
+					SEC Filing
+				</source>
+				<target state="final">
+					SEC への届け出
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						113
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
+				<source>
+					Press Kit
+				</source>
+				<target state="final">
+					プレスキット
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						114
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					Stay Curious,
