@@ -151,7 +151,7 @@
 					The Orchid network enables a decentralized virtual private network (VPN), allowing
 					users to buy bandwidth from a global pool of service providers.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 网络可实现去中心化虚拟专用网 (VPN)，允许用户从全球性的服务提供商池购
 					买带宽。
 				</target>
@@ -171,7 +171,7 @@
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
-				<target state="final">
+				<target state="translated">
 					为此，Orchid 使用名为 OXT 的 ERC-20 实用代币、一种用于代币激励型带宽代理的新
 					VPN 协议，以及具有算法广告和支付功能的智能合约。Orchid 的用户使用提供商目录
 					与带宽销售商连接，并且，他们使用概率极微支付进行付款，因此数据包的以太坊交
@@ -207,7 +207,7 @@
 					of
 					the Orchid network
 				</source>
-				<target state="final">
+				<target state="translated">
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -337,7 +337,7 @@
 					offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
 					firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 的用户为诸如 OpenVPN 等协议运行类似于典型 VPN 客户端的客户端，但该客户端使用 Orchid
 					协议。Orchid 网络客户端的功能超越了大多数 VPN 客户端提供的基本功能，如能够穿过集成式个人防火
 					墙运行流量。Orchid 客户端可通过 iOS、Android、macOS、Linux 和（即将支持）Windows 访问。
@@ -422,7 +422,7 @@
 					providers, as well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					OXT 的首要及基本目的是跟踪记录谁使用了计算服务、谁提供了计算服务，以及普通用户是否公平地给予了
 					普通提供商报酬。
@@ -490,7 +490,7 @@
 					is intended to allow users to request access to remote network resources and pay for these resources using OXT
 					via a nanopayments system.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 软件使用一种自定义 VPN 协议，在范围上类似于 OpenVPN 或 WireGuard。 Orchid 协议为高性
 					能网络连接而设计，并且基于 WebRTC 运行，这是一种通用 Web 标准，广泛用于从浏览器中传输视频和
 					音频。 我们的协议有意支持用户请求访问远程网络资源，并通过极微支付系统使用 OXT 为这些资源付费。
@@ -584,7 +584,7 @@
 					geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Orchid 上的服务提供商为诸如 OpenVPN 等协议运行类似于典型 VPN 守护程序的软件，但该软件使用
 					Orchid 协议。
@@ -653,7 +653,7 @@
 					choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					提供商质押一定数量的 OXT 代币以创建质押保证金。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -673,13 +673,13 @@
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					当代币被锁入质押保证金后，它们可以立即用于带宽供应。 如果提供方希望从质押合约中提取代币，则需
-要启动“解锁”办理期，该过程包括三个月的冷却期，在此期间，资金不能用作质押保证金，提供方也不能将
-其转移到其他地方。
+					要启动“解锁”办理期，该过程包括三个月的冷却期，在此期间，资金不能用作质押保证金，提供方也不能将
+					其转移到其他地方。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					无论在 Orchid 生态系统中交易的价值是多少，给定卖方的相对质押金额（占总质押的百分比）都会为他们
-提供该相同百分比的用户流量和交易流。 假设销售行为典型且诚实（没有用户因劣质服务而放弃它们），
-此交易流将转化为占比类似的一部分总收入。 卖方的质押决策由他们自己选择。
+					提供该相同百分比的用户流量和交易流。 假设销售行为典型且诚实（没有用户因劣质服务而放弃它们），
+					此交易流将转化为占比类似的一部分总收入。 卖方的质押决策由他们自己选择。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -1423,6 +1423,283 @@
 					</context>
 					<context context-type="linenumber">
 						111
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyHero__Title" datatype="html">
+				<source>
+					We can
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					reclaim the
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					internet
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					together
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+				</source>
+				<target state="final">
+					我们可以
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					团结协作，
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					重新掌控互联网
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompany__Description" datatype="html">
+				<source>
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
+					explore that world freely.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch
+					and track us and sell our data. And in some places, limits were placed on the information we can see.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
+					by its users.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we
+					can realize the promise of the Web 1.0 and explore freely again.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
+					grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
+					2019.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="final">
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					互联网开启了一个无限的信息世界。它的创造者邀请我们心怀好奇心去自由探索这个世界。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					随着互联网不断发展，自由探索变得日益困难。 Web 2.0 业务模式激励公司监视和跟踪我们的行为以及出售我们的数据。而且在有些地方，我们只能看到有限的信息。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					但情况正在改变。 借助基于以太坊构建的去中心化 Web 3.0，用户可以重新掌控互联网。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid 的所有人共同承担着这一使命。 如今，我们使用 Web 3.0 技术为用户提供更好的数字隐私，这样我们就可以实现 Web 1.0 的承诺并再次展开自由探索。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid 成立于 2017 年，旨在帮助恢复互联网面向所有人的开放性和可访问性。 自那时起，我们就已在旧金山和柏林组建了一支优秀的团队，他们将于 2019 年第四季度发布 Orchid 基于代币的 VPN。
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
+				<source>
+					Founders
+				</source>
+				<target state="final">
+					创始人
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						56
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__Description" datatype="html">
+				<source>
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
+					technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
+					(Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				</source>
+				<target state="final">
+					Orchid 的创始人集结多方面的丰富经验，包括开源软件社区（BASH Shell、GNU Finger）、技术管理
+					(RPX IPO)、区块链投资（Bitstamp、Pantera Capital）、越狱应用程序包管理 (Cydia) 和安全性（富国
+					银行以太坊核心安全团队的第一名网上银行员工）。
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
+				<source>
+					Dr. Steven Waterhouse
+				</source>
+				<target state="final">
+					Dr. Steven Waterhouse
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						68
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameBrian" datatype="html">
+				<source>
+					Brian J. Fox
+				</source>
+				<target state="final">
+					Brian J. Fox
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						77
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
+				<source>
+					Jay Freeman
+				</source>
+				<target state="final">
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Jay Freeman
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						85
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Title" datatype="html">
+				<source>
+					Corporate info
+				</source>
+				<target state="final">
+					公司信息
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
+				<source>
+					Orchid is a Delaware c-corp
+				</source>
+				<target state="final">
+					Orchid 是一家位于特拉华州的股份有限公司
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						98
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address" datatype="html">
+				<source>
+					Headquarters:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</source>
+				<target state="final">
+					总部：
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					1288 Columbus Ave. #122,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					San Francisco, CA 94133
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						101
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
+				<source>
+					Europe:
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</source>
+				<target state="final">
+					欧洲：
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Skalitzer Str. 85,
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					10997 Berlin, Germany
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						106
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
+				<source>
+					SEC Filing
+				</source>
+				<target state="final">
+					SEC 备案
+
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						113
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
+				<source>
+					Press Kit
+				</source>
+				<target state="final">
+					新闻资料
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						114
 					</context>
 				</context-group>
 			</trans-unit>
