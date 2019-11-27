@@ -179,6 +179,9 @@ $hero-bp-vert: 1150px;
   :host-context(.locale-ja) & {
     font-size: 69px;
   }
+  :host-context(.locale-ko) & {
+    font-size: 66px;
+  }
     &>span {
     display: block;
   }
