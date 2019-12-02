@@ -1590,8 +1590,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					常见问题解答
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
