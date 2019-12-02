@@ -1318,7 +1318,7 @@
 				<source>
 					Orchid
 				</source>
-				<target state="new">
+				<target state="final">
 					Orchid
 				</target>
 				<context-group purpose="location">
@@ -1334,8 +1334,8 @@
 				<source>
 					How it Works
 				</source>
-				<target state="new">
-					How it Works
+				<target state="final">
+					运作方式
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1366,8 +1366,8 @@
 				<source>
 					Download
 				</source>
-				<target state="new">
-					Download
+				<target state="final">
+					联系
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1382,8 +1382,8 @@
 				<source>
 					Events
 				</source>
-				<target state="new">
-					Events
+				<target state="final">
+					活动
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1398,8 +1398,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					常见问题解答
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
