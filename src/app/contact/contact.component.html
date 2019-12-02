@@ -2,9 +2,9 @@
   <div class="splash-circuit-image section-med"></div>
   <div class="splash-circuit-grid section-med">
     <div class="splash-circuit-grid-item hpad-thin">
-      <h1>Contact</h1>
+      <h1 i18n="@@ContactHero__Title">Contact</h1>
 
-      <div class="splash-circuit-grid-text">
+      <div class="splash-circuit-grid-text" i18n="@@ContactHero__Description">
         <h3>We want to hear from you</h3>
         <p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
           providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
@@ -22,39 +22,39 @@
 
     <div class="contact-sidebar">
       <div class="contact-page-card">
-        <span class="contact-page-card-header color-gray">Office Address</span>
+        <span class="contact-page-card-header color-gray" i18n="@@ContactOffice__Title">Office Address</span>
         <div class="contact-page-card-seperator"></div>
-        <div style="max-width: 11rem;">
+        <div style="max-width: 11rem;" i18n="@@ContactOffice__Address">
           1288 Columbus Ave. #122,
           San Francisco, CA 94133
         </div>
       </div>
       <div class="contact-page-card">
-        <span class="contact-page-card-header color-gray">Contact Info</span>
+        <span class="contact-page-card-header color-gray" i18n="@@ContactSidebar__Title">Contact Info</span>
         <div class="contact-page-card-seperator"></div>
         <ul class="contact-page-card-list">
           <li>
-            <a class="phantom-a" href="mailto:contact@orchid.com">
+            <a class="phantom-a" href="mailto:contact@orchid.com" i18n-href="@@ContactSidebar__EmailLink">
               <img src="/assets/img/contact/icon-email.svg" width="20" height="20">
-              contact@orchid.com
+              <span i18n="@@ContactSidebar__Email">contact@orchid.com</span>
             </a>
           </li>
           <li>
-            <a class="phantom-a" href="https://twitter.com/OrchidProtocol">
+            <a class="phantom-a" href="https://twitter.com/OrchidProtocol" i18n-href="@@ContactSidebar__TwitterLink">
               <img src="/assets/img/contact/icon-twitter.svg" width="20" height="20">
-              @OrchidProtocol
+              <span i18n="@@ContactSidebar__Twitter">@OrchidProtocol</span>
             </a>
           </li>
           <li>
-            <a class="phantom-a" href="https://www.t.me/OrchidOfficial">
+            <a class="phantom-a" href="https://www.t.me/OrchidOfficial" i18n-href="@@ContactSidebar__TelegramLink">
               <img src="/assets/img/contact/icon-telegram.svg" width="20" height="20">
-              @OrchidOfficial
+              <span i18n="@@ContactSidebar__Telegram">@OrchidOfficial</span>
             </a>
           </li>
           <li>
-            <a class="phantom-a" href="https://www.facebook.com/OrchidProtocol">
+            <a class="phantom-a" href="https://www.facebook.com/OrchidProtocol" i18n-href="@@ContactSidebar__FacebookLink">
               <img src="/assets/img/contact/icon-facebook.svg" width="20" height="20">
-              OrchidProtocol
+              <span i18n="@@ContactSidebar__Facebook">OrchidProtocol</span>
             </a>
           </li>
         </ul>
@@ -63,19 +63,62 @@
 
     <form class="contact-form-container" [class.js]="this.js" [class.contact-form-disabled]="this.form_disabled">
       <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_name">
-        <input [attr.disabled]="form_disabled ? '' : null" type="text" [(ngModel)]="name" (ngModelChange)="validateName()" name="name" placeholder="Your Name" [class.invalid]="this.invalid_name" required>
+        <input 
+          [attr.disabled]="form_disabled ? '' : null"
+          type="text" 
+          [(ngModel)]="name"
+          (ngModelChange)="validateName()"
+          name="name"
+          
+          placeholder="Your Name"
+          i18n-placeholder="@@ContactForm__NamePlaceholder"
+
+          [class.invalid]="this.invalid_name" 
+          required>
       </div>
 
       <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_email">
-        <input [attr.disabled]="form_disabled ? '' : null" type="email" [(ngModel)]="email" (ngModelChange)="validateEmail()" name="email" placeholder="Your Email" [class.invalid]="this.invalid_email" required>
+        <input 
+          [attr.disabled]="form_disabled ? '' : null"
+          type="email" 
+          [(ngModel)]="email"
+          (ngModelChange)="validateEmail()"
+          name="email"
+          
+          placeholder="Your Email"
+          i18n-placeholder="@@ContactForm__EmailPlaceholder"
+
+          [class.invalid]="this.invalid_email" 
+          required>
       </div>
 
       <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_subject">
-        <input [attr.disabled]="form_disabled ? '' : null" type="text" [(ngModel)]="subject" (ngModelChange)="validateSubject()" name="subject" placeholder="Subject" [class.invalid]="this.invalid_subject" required>
+        <input 
+          [attr.disabled]="form_disabled ? '' : null"
+          type="text" 
+          [(ngModel)]="subject"
+          (ngModelChange)="validateSubject()"
+          name="subject"
+          
+          placeholder="Subject"
+          i18n-placeholder="@@ContactForm__SubjectPlaceholder"
+
+          [class.invalid]="this.invalid_subject" 
+          required>
       </div>
       
       <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_message">
-        <textarea [attr.disabled]="form_disabled ? '' : null" [(ngModel)]="message" (ngModelChange)="validateMessage()" name="message" placeholder="Enter your message..." [class.invalid]="this.invalid_message" required></textarea>
+        <textarea 
+          [attr.disabled]="form_disabled ? '' : null"
+          [(ngModel)]="message"
+          (ngModelChange)="validateMessage()"
+          name="message"
+          
+          placeholder="Enter your message..."
+          i18n-placeholder="@@ContactForm__MessagePlaceholder"
+
+          [class.invalid]="this.invalid_message" 
+          required></textarea>
       </div>
       
       <div class="contact-form-error contact-form-message" [class.active]="this.error">
@@ -85,8 +128,8 @@
         {{successMessage}}
       </div>
 
-      <button (click)="onSubmit()" class="btn-primary">Submit</button>
-      <button (click)="clear()">Clear</button>
+      <button (click)="onSubmit()" class="btn-primary" i18n="@@ContactForm__SubmitButton">Submit</button>
+      <button (click)="clear()" i18n="@@ContactForm__ClearButton">Clear</button>
     </form>
 
   </div>
