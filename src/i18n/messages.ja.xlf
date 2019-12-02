@@ -972,8 +972,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					よくある質問
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1004,8 +1004,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					よくある質問
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
