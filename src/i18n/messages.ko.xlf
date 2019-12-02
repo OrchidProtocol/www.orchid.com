@@ -1607,6 +1607,336 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="FaqHero__Title" datatype="html">
+				<source>
+					FAQ
+				</source>
+				<target state="new">
+					FAQ
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-AboutOrchid__Title" datatype="html">
+				<source>
+					About Orchid
+				</source>
+				<target state="new">
+					About Orchid
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						29
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatIsOrchid__Title" datatype="html">
+				<source>
+					What is Orchid?
+				</source>
+				<target state="new">
+					What is Orchid?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						98
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatIsThePurposeOfOrchid__Title" datatype="html">
+				<source>
+					What is the purpose of Orchid?
+				</source>
+				<target state="new">
+					What is the purpose of Orchid?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						38
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						105
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesItWork__Title" datatype="html">
+				<source>
+					How does it work??
+				</source>
+				<target state="new">
+					How does it work??
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						43
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						110
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhenWillItGoLive__Title" datatype="html">
+				<source>
+					When will it go live?
+				</source>
+				<target state="new">
+					When will it go live?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						48
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						120
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-OnTechnology__Title" datatype="html">
+				<source>
+					On Technology
+				</source>
+				<target state="new">
+					On Technology
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						55
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesTheOrchidTokenWork__Title" datatype="html">
+				<source>
+					How does the Orchid token (OXT) work?
+				</source>
+				<target state="new">
+					How does the Orchid token (OXT) work?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						61
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						130
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Title" datatype="html">
+				<source>
+					How does Orchid distinguish itself from VPNs?
+				</source>
+				<target state="new">
+					How does Orchid distinguish itself from VPNs?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						66
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						138
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatIsOrchid__Body" datatype="html">
+				<source>
+					Orchid is a decentralized, market-based system for
+					anonymous communication and virtual private networking, including a bandwidth market where node
+					providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
+					OXT (Orchid’s native cryptocurrency)
+				</source>
+				<target state="new">
+					Orchid is a decentralized, market-based system for
+					anonymous communication and virtual private networking, including a bandwidth market where node
+					providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
+					OXT (Orchid’s native cryptocurrency)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						99
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatIsThePurposeOfOrchid__Body" datatype="html">
+				<source>
+					Orchid’s mission is to build Open Source software that
+					keeps the internet open and accessible — a natural resource for everyone, everywhere.
+				</source>
+				<target state="new">
+					Orchid’s mission is to build Open Source software that
+					keeps the internet open and accessible — a natural resource for everyone, everywhere.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						106
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesItWork__Body" datatype="html">
+				<source>
+					In the Orchid marketplace, incentives are used to
+					create economic security and reliability between clients and servers in a permissionless way. This
+					peer-to-peer marketplace is dynamic; clients can select single- or multi-hop onion routed circuits by
+					selecting nodes randomly weighted on stake and filtered on secondary desiderata (price, location, etc.).
+					A single hop route has the benefits of a normal VPN connection, creating a tunnel to route your traffic
+					over a public network or your ISP, while a multi-hop connection provides additional privacy benefits by
+					securing your network data from any one provider.
+				</source>
+				<target state="new">
+					In the Orchid marketplace, incentives are used to
+					create economic security and reliability between clients and servers in a permissionless way. This
+					peer-to-peer marketplace is dynamic; clients can select single- or multi-hop onion routed circuits by
+					selecting nodes randomly weighted on stake and filtered on secondary desiderata (price, location, etc.).
+					A single hop route has the benefits of a normal VPN connection, creating a tunnel to route your traffic
+					over a public network or your ISP, while a multi-hop connection provides additional privacy benefits by
+					securing your network data from any one provider.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						111
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhenWillItGoLive__Body" datatype="html">
+				<source>
+					We anticipate to launch the Orchid network in Q4 of
+					2019.
+				</source>
+				<target state="new">
+					We anticipate to launch the Orchid network in Q4 of
+					2019.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						121
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesTheOrchidTokenWork__Body" datatype="html">
+				<source>
+					OXT is a “pre-mined” cryptocurrency based on the ERC-20
+					standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.
+					It also functions as a tool to promote security and healthy market dynamics, as providers can adjust
+					their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion
+					(1,000,000,000). We do not intend ever to create any additional OXT.
+				</source>
+				<target state="new">
+					OXT is a “pre-mined” cryptocurrency based on the ERC-20
+					standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.
+					It also functions as a tool to promote security and healthy market dynamics, as providers can adjust
+					their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion
+					(1,000,000,000). We do not intend ever to create any additional OXT.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						131
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Body" datatype="html">
+				<source>
+					Traditional VPNs today are limited; the centralized
+					nature of their offering cannot compete with the distributed properties of combining multiple different
+					providers to offer multi-hop level security. And even if a single company offers multiple hop VPN
+					routes, there is still a single centralized entity you are placing your trust into. Using a distributed
+					system allows you, as a user, to distribute trust across multiple distinct VPN providers, thereby
+					breaking apart the flow of your information so no single entity can see the entire picture. Such a
+					system is not possible when purchasing a VPN service from a single provider.
+				</source>
+				<target state="new">
+					Traditional VPNs today are limited; the centralized
+					nature of their offering cannot compete with the distributed properties of combining multiple different
+					providers to offer multi-hop level security. And even if a single company offers multiple hop VPN
+					routes, there is still a single centralized entity you are placing your trust into. Using a distributed
+					system allows you, as a user, to distribute trust across multiple distinct VPN providers, thereby
+					breaking apart the flow of your information so no single entity can see the entire picture. Such a
+					system is not possible when purchasing a VPN service from a single provider.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						139
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="ContactHero__Title" datatype="html">
 				<source>
 					Contact
@@ -1634,7 +1964,7 @@
 					shortly.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
 					여러분의 의견을 기다립니다.
 					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
@@ -1673,7 +2003,7 @@
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</source>
-				<target state="final">
+				<target state="translated">
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</target>

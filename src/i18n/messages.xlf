@@ -1,1574 +1,1022 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file source-language="en" datatype="plaintext" original="ng2.template">
-		<body>
-			<trans-unit id="aboutAppTitle" datatype="html">
-				<source>
-					The natural VPN
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						5
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="aboutAppSubTitle" datatype="html">
-				<source>
-					Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppFirstFeatureHeadline" datatype="html">
-				<source>
-					Multi-hop security
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						27
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppFirstFeatureParagraph" datatype="html">
-				<source>
-					Multi-hop routing connects multiple relays and adds security at each step.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						29
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppSecondFeatureHeadline" datatype="html">
-				<source>
-					Connect out
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						38
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppSecondFeatureParagraph" datatype="html">
-				<source>
-					Connect out of restricted zones. Works with existing VPN providers that are blocked.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						40
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppThirdFeatureHeadline" datatype="html">
-				<source>
-					Low cost
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						49
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutAppThirdFeatureParagraph" datatype="html">
-				<source>
-					No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-app/about-app.component.html
-					</context>
-					<context context-type="linenumber">
-						51
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowHero__Title" datatype="html">
-				<source>
-					How Orchid delivers digital privacy
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						4
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowHero__Subtitle" datatype="html">
-				<source>
-					The Orchid network enables a decentralized virtual private network (VPN), allowing
-					users to buy bandwidth from a global pool of service providers.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						5
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowHero__Subtitle2" datatype="html">
-				<source>
-					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for
-					token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
-					Orchid&apos;s users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
-					nanopayments so Ethereum transaction fees on packets are acceptably low.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__Title" datatype="html">
-				<source>
-					Core components
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						18
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__Title2" datatype="html">
-				<source>
-					of
-					the Orchid network
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						18
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__TheOrchidApp" datatype="html">
-				<source>
-					The Orchid app
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						21
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__OXTCryptocurrency" datatype="html">
-				<source>
-					OXT cryptocurrency
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						22
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__OrchidProtocol" datatype="html">
-				<source>
-					Orchid protocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						23
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__Nanopayments" datatype="html">
-				<source>
-					Nanopayments
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						24
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__Nodes" datatype="html">
-				<source>
-					Nodes
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						25
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowIndex__Staking" datatype="html">
-				<source>
-					Staking
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						26
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowApp__Title" datatype="html">
-				<source>
-					The Orchid app
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						54
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowApp__Description" datatype="html">
-				<source>
-					Users of Orchid run a client similar to a typical VPN client for protocols such
-					as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality
-					offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
-					firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						55
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowApp__Link" datatype="html">
-				<source>
-					Get the pre-release version of the app today!
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						59
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowOxt__Title" datatype="html">
-				<source>
-					The Orchid cryptocurrency (OXT)
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						89
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowOxt__Content" datatype="html">
-				<source>
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					OXT’s primary and fundamental purpose is to keep track of who has used computing services, who has provided
-					computing services, and whether the average user is fairly compensating the average provider.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					The OXT token provides value in the Orchid network in a number of ways:
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT
-					that is staked, the greater the chances of reward in the Network.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet
-					connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can
-					access the internet through a user-chosen path to ensure a secure connection anywhere in the world. Users
-					only pay for the bandwidth they consume.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
-					any central party. The primary reasons for a native token are:
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					To have a token that is specifically tied to consumption of bandwidth on the Orchid network
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					To align operator incentives towards the benefit of the Orchid Network.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid Token is used to
-					prove a stake within the Orchid network that is intended to demonstrate a commitment for bandwidth
-					providers, as well as to mitigate certain risks.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						90
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowProtocol__Title" datatype="html">
-				<source>
-					The Orchid Protocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						141
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowProtocol__Description" datatype="html">
-				<source>
-					The Orchid software is designed to use a custom VPN protocol, similar in
-					scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
-					of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
-					is intended to allow users to request access to remote network resources and pay for these resources using OXT
-					via a nanopayments system.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						142
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowNano__Title" datatype="html">
-				<source>
-					Nanopayments
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						176
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowNano__Content" datatype="html">
-				<source>
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Orchid uses a new probabilistic nanopayment system to scale payment throughput.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients
-					pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees
-					on small payments by amortizing transaction fees across many transactions and even across multiple parties.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					For more information, see our recent article: Introducing Nanopayments
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						177
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowNodes__Title" datatype="html">
-				<source>
-					Nodes
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						214
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowNodes__Content" datatype="html">
-				<source>
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
-					which speaks the Orchid protocol.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The
-					stake registry is optimized for enabling the Orchid app to automatically discover random servers in a
-					decentralized environment, while the provider directory allows Orchid nodes to register metadata such as
-					geolocation or additional services offered.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						215
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowStaking__Title" datatype="html">
-				<source>
-					Staking
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						252
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowStaking__Content" datatype="html">
-				<source>
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					A provider stakes some number of OXT tokens to create a stake deposit.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					Anyone can stake OXT on nodes using the smart contract.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					Clients select new nodes in proportion to their relative OXT deposit size.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;" />
-					If the node is already at max bandwidth capacity additional stake is effectively wasted.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;" />
-					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning.
-					If the provider wants to withdraw tokens from the staking contract, they have to start an ‘unlocking’
-					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
-					transferred elsewhere by the provider.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake
-					amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow.
-					Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will
-					translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own
-					choices.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						253
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ReadOurWhitepaper" datatype="html">
-				<source>
-					Read our Whitepaper
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						295
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__Title" datatype="html">
-				<source>
-					Stay Curious,
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						6
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__Title2" datatype="html">
-				<source>
-					Explore Freely
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						6
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__Subtitle" datatype="html">
-				<source>
-					Get digital privacy
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__FormTitle" datatype="html">
-				<source>
-					Don&apos;t miss the launch!
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						10
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Title" datatype="html">
-				<source>
-					A next-level VPN &amp; privacy tool
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						20
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Description" datatype="html">
-				<source>
-					Read the whitepaper to see what we’re building.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						21
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
-				<source>
-					Whitepaper
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						24
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproach__Title" datatype="html">
-				<source>
-					Our approach
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						32
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproach__Subtitle" datatype="html">
-				<source>
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						33
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard1__Title" datatype="html">
-				<source>
-					Decentralized
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						42
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard1__Description" datatype="html">
-				<source>
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						43
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard2__Title" datatype="html">
-				<source>
-					Open Source
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						54
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard2__Description" datatype="html">
-				<source>
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						55
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard3__Title" datatype="html">
-				<source>
-					Peer to peer
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						66
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeApproachCard3__Description" datatype="html">
-				<source>
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						67
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__Title" datatype="html">
-				<source>
-					As seen in
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						82
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
-				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal.&quot;
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						89
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ReadMore" datatype="html">
-				<source>
-					Read More
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						92
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						103
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						114
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
-				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						100
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
-				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						111
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeEvents__Title" datatype="html">
-				<source>
-					Meet us in person
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						126
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeEvents__Link" datatype="html">
-				<source>
-					See all events
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						127
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Newsletter__Title" datatype="html">
-				<source>
-					Let&apos;s stay connected
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
-					</context>
-					<context context-type="linenumber">
-						4
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Newsletter__Description" datatype="html">
-				<source>
-					Get the newsletter for updates and privacy news
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="EmailAddress" datatype="html">
-				<source>
-					Email address
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
-					</context>
-					<context context-type="linenumber">
-						8
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup-hero/newsletter-signup-hero.component.html
-					</context>
-					<context context-type="linenumber">
-						3
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Newsletter__Consent" datatype="html">
-				<source>
-					I consent to receiving further instructions at the email address I submitted above.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
-					</context>
-					<context context-type="linenumber">
-						14
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup-hero/newsletter-signup-hero.component.html
-					</context>
-					<context context-type="linenumber">
-						9
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Newsletter__Subscribe" datatype="html">
-				<source>
-					Subscribe
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
-					</context>
-					<context context-type="linenumber">
-						18
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Newsletter__GetNotified" datatype="html">
-				<source>
-					Get notified
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/newsletter-signup-hero/newsletter-signup-hero.component.html
-					</context>
-					<context context-type="linenumber">
-						13
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Home" datatype="html">
-				<source>
-					Home
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						22
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-HowItWorks" datatype="html">
-				<source>
-					How It Works
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						23
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-About" datatype="html">
-				<source>
-					About
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						24
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Blog" datatype="html">
-				<source>
-					Blog
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						25
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						103
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Contact" datatype="html">
-				<source>
-					Contact
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						26
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						105
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="NavigationCurrentLanguage" datatype="html">
-				<source>
-					English
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						33
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Orchid" datatype="html">
-				<source>
-					Orchid
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						94
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-HowitWorks" datatype="html">
-				<source>
-					How it Works
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						95
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-AboutUs" datatype="html">
-				<source>
-					About Us
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						96
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Download" datatype="html">
-				<source>
-					Download
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						97
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Events" datatype="html">
-				<source>
-					Events
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						102
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-FAQ" datatype="html">
-				<source>
-					FAQ
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						104
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="NavigationFollowUs" datatype="html">
-				<source>
-					Follow Us
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						111
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactHero__Title" datatype="html">
-				<source>
-					Contact
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						5
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactHero__Description" datatype="html">
-				<source>
-					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3&gt;" />
-					We want to hear from you
-					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Let&apos;s reclaim the Internet together! We are looking for partnership opportunities with infrastructure
-					providers and integration partners that want to build with Orchid. Contact us and we&apos;ll get back to you
-					shortly.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactOffice__Title" datatype="html">
-				<source>
-					Office Address
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						25
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactOffice__Address" datatype="html">
-				<source>
-					1288 Columbus Ave. #122,
-					San Francisco, CA 94133
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						27
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__Title" datatype="html">
-				<source>
-					Contact Info
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						33
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__Email" datatype="html">
-				<source>
-					contact@orchid.com
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						39
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__EmailLink" datatype="html">
-				<source>
-					mailto:contact@orchid.com
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						37
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__Twitter" datatype="html">
-				<source>
-					@OrchidProtocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						45
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__TwitterLink" datatype="html">
-				<source>
-					https://twitter.com/OrchidProtocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						43
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__Telegram" datatype="html">
-				<source>
-					@OrchidOfficial
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						51
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__TelegramLink" datatype="html">
-				<source>
-					https://www.t.me/OrchidOfficial
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						49
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__Facebook" datatype="html">
-				<source>
-					OrchidProtocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						57
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactSidebar__FacebookLink" datatype="html">
-				<source>
-					https://www.facebook.com/OrchidProtocol
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						55
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__NamePlaceholder" datatype="html">
-				<source>
-					Your Name
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						73
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__EmailPlaceholder" datatype="html">
-				<source>
-					Your Email
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						88
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__SubjectPlaceholder" datatype="html">
-				<source>
-					Subject
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						103
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__MessagePlaceholder" datatype="html">
-				<source>
-					Enter your message...
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						117
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__SubmitButton" datatype="html">
-				<source>
-					Submit
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						131
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="ContactForm__ClearButton" datatype="html">
-				<source>
-					Clear
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/contact/contact.component.html
-					</context>
-					<context context-type="linenumber">
-						132
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyHero__Title" datatype="html">
-				<source>
-					We can
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					reclaim the
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					internet
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />
-					together
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						5
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompany__Description" datatype="html">
-				<source>
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
-					explore that world freely.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch
-					and track us and sell our data. And in some places, limits were placed on the information we can see.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
-					by its users.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we
-					can realize the promise of the Web 1.0 and explore freely again.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
-					grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
-					2019.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						25
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
-				<source>
-					Founders
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						56
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyFounders__Description" datatype="html">
-				<source>
-					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
-					technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
-					(Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						57
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
-				<source>
-					Dr. Steven Waterhouse
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						68
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyFounders__NameBrian" datatype="html">
-				<source>
-					Brian J. Fox
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						77
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
-				<source>
-					Jay Freeman
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						85
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__Title" datatype="html">
-				<source>
-					Corporate info
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						97
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
-				<source>
-					Orchid is a Delaware c-corp
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						98
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__Address" datatype="html">
-				<source>
-					Headquarters:
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					1288 Columbus Ave. #122,
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					San Francisco, CA 94133
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						101
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
-				<source>
-					Europe:
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					Skalitzer Str. 85,
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					10997 Berlin, Germany
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						106
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
-				<source>
-					SEC Filing
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						113
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
-				<source>
-					Press Kit
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						114
-					</context>
-				</context-group>
-			</trans-unit>
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="aboutAppTitle" datatype="html">
+        <source>The natural VPN</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="aboutAppSubTitle" datatype="html">
+        <source>
+        Harnessing the power of community creates a natural and truly next-generation VPN experience. Choose from a network of VPN providers with flexible, pay-as-you-go pricing so it’s easy to find service that works for you. Access the open internet from restricted zones, harden your security with multiple hops and choose where you want your traffic to exit. All open-source, secure and without any middlemen.
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppFirstFeatureHeadline" datatype="html">
+        <source>Multi-hop security</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppFirstFeatureParagraph" datatype="html">
+        <source>
+          Multi-hop routing connects multiple relays and adds security at each step.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppSecondFeatureHeadline" datatype="html">
+        <source>Connect out</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppSecondFeatureParagraph" datatype="html">
+        <source>
+          Connect out of restricted zones. Works with existing VPN providers that are blocked.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppThirdFeatureHeadline" datatype="html">
+        <source>Low cost</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutAppThirdFeatureParagraph" datatype="html">
+        <source>
+          No middleman or monthly contracts. Pay peer-to-peer, just for what you use.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-app/about-app.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowHero__Title" datatype="html">
+        <source>How Orchid delivers digital privacy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowHero__Subtitle" datatype="html">
+        <source>The Orchid network enables a decentralized virtual private network (VPN), allowing
+      users to buy bandwidth from a global pool of service providers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowHero__Subtitle2" datatype="html">
+        <source>To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for
+      token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
+      Orchid&apos;s users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
+      nanopayments so Ethereum transaction fees on packets are acceptably low.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__Title" datatype="html">
+        <source>Core components</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__Title2" datatype="html">
+        <source>of
+        the Orchid network</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__TheOrchidApp" datatype="html">
+        <source>The Orchid app</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__OXTCryptocurrency" datatype="html">
+        <source>OXT cryptocurrency</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__OrchidProtocol" datatype="html">
+        <source>Orchid protocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__Nanopayments" datatype="html">
+        <source>Nanopayments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__Nodes" datatype="html">
+        <source>Nodes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowIndex__Staking" datatype="html">
+        <source>Staking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowApp__Title" datatype="html">
+        <source>The Orchid app</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowApp__Description" datatype="html">
+        <source>Users of Orchid run a client similar to a typical VPN client for protocols such
+          as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality
+          offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
+          firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowApp__Link" datatype="html">
+        <source>Get the pre-release version of the app today!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowOxt__Title" datatype="html">
+        <source>The Orchid cryptocurrency (OXT)</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowOxt__Content" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>OXT’s primary and fundamental purpose is to keep track of who has used computing services, who has provided
+            computing services, and whether the average user is fairly compensating the average provider.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>The OXT token provides value in the Orchid network in a number of ways:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT
+              that is staked, the greater the chances of reward in the Network.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet
+              connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can
+              access the internet through a user-chosen path to ensure a secure connection anywhere in the world. Users
+              only pay for the bandwidth they consume.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
+            any central party. The primary reasons for a native token are:<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>To have a token that is specifically tied to consumption of bandwidth on the Orchid network<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>To align operator incentives towards the benefit of the Orchid Network.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid Token is used to
+            prove a stake within the Orchid network that is intended to demonstrate a commitment for bandwidth
+            providers, as well as to mitigate certain risks.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">90</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowProtocol__Title" datatype="html">
+        <source>The Orchid Protocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">141</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowProtocol__Description" datatype="html">
+        <source>The Orchid software is designed to use a custom VPN protocol, similar in
+          scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
+          of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
+          is intended to allow users to request access to remote network resources and pay for these resources using OXT
+          via a nanopayments system.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">142</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowNano__Title" datatype="html">
+        <source>Nanopayments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">176</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowNano__Content" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Orchid uses a new probabilistic nanopayment system to scale payment throughput.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients
+            pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees
+            on small payments by amortizing transaction fees across many transactions and even across multiple parties.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>For more information, see our recent article: Introducing Nanopayments<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">177</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowNodes__Title" datatype="html">
+        <source>Nodes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowNodes__Content" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
+            which speaks the Orchid protocol.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The
+            stake registry is optimized for enabling the Orchid app to automatically discover random servers in a
+            decentralized environment, while the provider directory allows Orchid nodes to register metadata such as
+            geolocation or additional services offered.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">215</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowStaking__Title" datatype="html">
+        <source>Staking</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit><trans-unit id="HowStaking__Content" datatype="html">
+        <source>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>A provider stakes some number of OXT tokens to create a stake deposit.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Anyone can stake OXT on nodes using the smart contract.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Clients select new nodes in proportion to their relative OXT deposit size.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+            <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>If the node is already at max bandwidth capacity additional stake is effectively wasted.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning.
+            If the provider wants to withdraw tokens from the staking contract, they have to start an ‘unlocking’
+            process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
+            transferred elsewhere by the provider.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+          <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+            Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake
+            amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow.
+            Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will
+            translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own
+            choices.
+          <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">253</context>
+        </context-group>
+      </trans-unit><trans-unit id="ReadOurWhitepaper" datatype="html">
+        <source>
+          Read our Whitepaper
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit><trans-unit id="EventsHero__Title" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/events/events.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="EventsFindUsIRL__Title" datatype="html">
+        <source>Find us IRL</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/events/events.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit><trans-unit id="DownloadHero__Title" datatype="html">
+        <source>Try the pre-release Orchid app</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/download/download.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="DownloadiOS__Title" datatype="html">
+        <source>iOS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/download/download.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit><trans-unit id="DownloadiOS__Body" datatype="html">
+        <source>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Tap the link below on your iOS device.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://www.orchid.com/ios-pre-release<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Follow the instruction to install TestFlight.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Install Orchid.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/download/download.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit><trans-unit id="DownloadAndroid__Title" datatype="html">
+        <source>Android</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/download/download.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="DownloadAndroid__Body" datatype="html">
+        <source>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Tap the link below on your Android device.<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+            <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>https://www.orchid.com/android-pre-release<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Accept the terms for early access.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/> Install Orchid using the link displayed.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/download/download.component.html</context>
+          <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeHero__Title" datatype="html">
+        <source>Stay Curious,</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeHero__Title2" datatype="html">
+        <source>Explore Freely</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeHero__Subtitle" datatype="html">
+        <source>Get digital privacy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeHero__FormTitle" datatype="html">
+        <source>Don&apos;t miss the launch!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeNextLevel__Title" datatype="html">
+        <source>A next-level VPN &amp; privacy tool</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeNextLevel__Description" datatype="html">
+        <source>
+            Read the whitepaper to see what we’re building.
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
+        <source>Whitepaper</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproach__Title" datatype="html">
+        <source>Our approach</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproach__Subtitle" datatype="html">
+        <source>We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard1__Title" datatype="html">
+        <source>Decentralized</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard1__Description" datatype="html">
+        <source>
+                        Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard2__Title" datatype="html">
+        <source>Open Source</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard2__Description" datatype="html">
+        <source>
+                        Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard3__Title" datatype="html">
+        <source>Peer to peer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeApproachCard3__Description" datatype="html">
+        <source>
+                        Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeAsSeenIn__Title" datatype="html">
+        <source>As seen in</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
+        <source>
+                        In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal.&quot;
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">89</context>
+        </context-group>
+      </trans-unit><trans-unit id="ReadMore" datatype="html">
+        <source>Read More</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">92</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
+        <source>
+                        Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">100</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
+        <source>
+                        Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+                    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeEvents__Title" datatype="html">
+        <source>Meet us in person</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">126</context>
+        </context-group>
+      </trans-unit><trans-unit id="HomeEvents__Link" datatype="html">
+        <source>See all events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit><trans-unit id="Newsletter__Title" datatype="html">
+        <source>Let&apos;s stay connected</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit><trans-unit id="Newsletter__Description" datatype="html">
+        <source>Get the newsletter for updates and privacy news</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="EmailAddress" datatype="html">
+        <source>Email address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit><trans-unit id="Newsletter__Consent" datatype="html">
+        <source>I consent to receiving further instructions at the email address I submitted above.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit><trans-unit id="Newsletter__Subscribe" datatype="html">
+        <source>Subscribe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup/newsletter-signup.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit><trans-unit id="Newsletter__GetNotified" datatype="html">
+        <source>Get notified</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/newsletter-signup-hero/newsletter-signup-hero.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Home" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-HowItWorks" datatype="html">
+        <source>How It Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-About" datatype="html">
+        <source>About</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Blog" datatype="html">
+        <source>Blog</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Contact" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit><trans-unit id="NavigationCurrentLanguage" datatype="html">
+        <source>English</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Orchid" datatype="html">
+        <source>Orchid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">94</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-HowitWorks" datatype="html">
+        <source>How it Works</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-AboutUs" datatype="html">
+        <source>About Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">96</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Download" datatype="html">
+        <source>Download</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-Events" datatype="html">
+        <source>Events</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit><trans-unit id="Navigation-FAQ" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">104</context>
+        </context-group>
+      </trans-unit><trans-unit id="NavigationFollowUs" datatype="html">
+        <source>Follow Us</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit><trans-unit id="FaqHero__Title" datatype="html">
+        <source>FAQ</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-AboutOrchid__Title" datatype="html">
+        <source>About Orchid</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhatIsOrchid__Title" datatype="html">
+        <source> 
+                What is Orchid? 
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhatIsThePurposeOfOrchid__Title" datatype="html">
+        <source>
+                What is the purpose of Orchid? 
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">105</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesItWork__Title" datatype="html">
+        <source> 
+                How does it work?? 
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">110</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhenWillItGoLive__Title" datatype="html">
+        <source>
+                When will it go live? 
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">120</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-OnTechnology__Title" datatype="html">
+        <source>
+            On Technology
+          </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesTheOrchidTokenWork__Title" datatype="html">
+        <source> 
+                How does the Orchid token (OXT) work? 
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">130</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Title" datatype="html">
+        <source> 
+                How does Orchid distinguish itself from VPNs?
+              </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">138</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhatIsOrchid__Body" datatype="html">
+        <source> Orchid is a decentralized, market-based system for
+                anonymous communication and virtual private networking, including a bandwidth market where node
+                providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
+                OXT (Orchid’s native cryptocurrency) </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhatIsThePurposeOfOrchid__Body" datatype="html">
+        <source> Orchid’s mission is to build Open Source software that
+                keeps the internet open and accessible — a natural resource for everyone, everywhere. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesItWork__Body" datatype="html">
+        <source> In the Orchid marketplace, incentives are used to
+                create economic security and reliability between clients and servers in a permissionless way. This
+                peer-to-peer marketplace is dynamic; clients can select single- or multi-hop onion routed circuits by
+                selecting nodes randomly weighted on stake and filtered on secondary desiderata (price, location, etc.).
+                A single hop route has the benefits of a normal VPN connection, creating a tunnel to route your traffic
+                over a public network or your ISP, while a multi-hop connection provides additional privacy benefits by
+                securing your network data from any one provider. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-WhenWillItGoLive__Body" datatype="html">
+        <source> We anticipate to launch the Orchid network in Q4 of
+                2019. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">121</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesTheOrchidTokenWork__Body" datatype="html">
+        <source> OXT is a “pre-mined” cryptocurrency based on the ERC-20
+                standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.
+                It also functions as a tool to promote security and healthy market dynamics, as providers can adjust
+                their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion
+                (1,000,000,000). We do not intend ever to create any additional OXT. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit><trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Body" datatype="html">
+        <source> Traditional VPNs today are limited; the centralized
+                nature of their offering cannot compete with the distributed properties of combining multiple different
+                providers to offer multi-hop level security. And even if a single company offers multiple hop VPN
+                routes, there is still a single centralized entity you are placing your trust into. Using a distributed
+                system allows you, as a user, to distribute trust across multiple distinct VPN providers, thereby
+                breaking apart the flow of your information so no single entity can see the entire picture. Such a
+                system is not possible when purchasing a VPN service from a single provider. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/faq/faq.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactHero__Title" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactHero__Description" datatype="html">
+        <source>
+        <x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3&gt;"/>We want to hear from you<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3&gt;"/>
+        <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>Let&apos;s reclaim the Internet together! We are looking for partnership opportunities with infrastructure
+          providers and integration partners that want to build with Orchid. Contact us and we&apos;ll get back to you
+          shortly.<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactOffice__Title" datatype="html">
+        <source>Office Address</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactOffice__Address" datatype="html">
+        <source>
+          1288 Columbus Ave. #122,
+          San Francisco, CA 94133
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__Title" datatype="html">
+        <source>Contact Info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__Email" datatype="html">
+        <source>contact@orchid.com</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__EmailLink" datatype="html">
+        <source>mailto:contact@orchid.com</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__Twitter" datatype="html">
+        <source>@OrchidProtocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__TwitterLink" datatype="html">
+        <source>https://twitter.com/OrchidProtocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__Telegram" datatype="html">
+        <source>@OrchidOfficial</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__TelegramLink" datatype="html">
+        <source>https://www.t.me/OrchidOfficial</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__Facebook" datatype="html">
+        <source>OrchidProtocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactSidebar__FacebookLink" datatype="html">
+        <source>https://www.facebook.com/OrchidProtocol</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__NamePlaceholder" datatype="html">
+        <source>Your Name</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__EmailPlaceholder" datatype="html">
+        <source>Your Email</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__SubjectPlaceholder" datatype="html">
+        <source>Subject</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__MessagePlaceholder" datatype="html">
+        <source>Enter your message...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">117</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__SubmitButton" datatype="html">
+        <source>Submit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit><trans-unit id="ContactForm__ClearButton" datatype="html">
+        <source>Clear</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/contact/contact.component.html</context>
+          <context context-type="linenumber">132</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyHero__Title" datatype="html">
+        <source>
+          We can <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          reclaim the <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          internet <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>
+            together
+          <x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/>
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompany__Description" datatype="html">
+        <source>
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+        The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
+        explore that world freely.
+      <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+        As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch
+        and track us and sell our data. And in some places, limits were placed on the information we can see.
+      <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+        But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
+        by its users.
+      <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+        At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we
+        can realize the promise of the Web 1.0 and explore freely again.
+      <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+
+      <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;"/>
+        Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
+        grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
+        2019.
+      <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;"/>
+    </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFounders__Title" datatype="html">
+        <source>Founders</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFounders__Description" datatype="html">
+        <source>
+        Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger),
+        technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
+        (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+      </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
+        <source>
+              Dr. Steven Waterhouse
+            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFounders__NameBrian" datatype="html">
+        <source>
+              Brian J. Fox
+            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
+        <source>
+              Jay Freeman
+            </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">85</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__Title" datatype="html">
+        <source>Corporate info</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">97</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
+        <source>Orchid is a Delaware c-corp</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">98</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__Address" datatype="html">
+        <source>
+          Headquarters:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          1288 Columbus Ave. #122,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          San Francisco, CA 94133
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">101</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
+        <source>
+          Europe:<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Skalitzer Str. 85,<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          10997 Berlin, Germany
+        </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">106</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
+        <source>SEC Filing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">113</context>
+        </context-group>
+      </trans-unit><trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
+        <source>Press Kit</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/about-company/about-company.component.html</context>
+          <context context-type="linenumber">114</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
