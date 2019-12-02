@@ -1430,8 +1430,8 @@
 				<source>
 					Contact
 				</source>
-				<target state="new">
-					Contact
+				<target state="final">
+					联系
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1453,14 +1453,14 @@
 					shortly.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="final">
 					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
-					We want to hear from you
+					衷心期待您的来信
 					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
-					providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
-					shortly.
+					让我们一起重新掌控互联网！我们期待能有机会展开多方合作，特别是想要与
+					Orchid 共同发展的基础架构提供商和集成合作伙伴。请与我们联系，我们会尽
+					快回复您。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -1476,8 +1476,8 @@
 				<source>
 					Office Address
 				</source>
-				<target state="new">
-					Office Address
+				<target state="final">
+					办公地址
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1493,7 +1493,7 @@
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</source>
-				<target state="new">
+				<target state="final">
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</target>
@@ -1510,8 +1510,8 @@
 				<source>
 					Contact Info
 				</source>
-				<target state="new">
-					Contact Info
+				<target state="final">
+					联系信息
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1526,7 +1526,7 @@
 				<source>
 					contact@orchid.com
 				</source>
-				<target state="new">
+				<target state="final">
 					contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1542,7 +1542,7 @@
 				<source>
 					mailto:contact@orchid.com
 				</source>
-				<target state="new">
+				<target state="final">
 					mailto:contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1558,7 +1558,7 @@
 				<source>
 					@OrchidProtocol
 				</source>
-				<target state="new">
+				<target state="final">
 					@OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1574,7 +1574,7 @@
 				<source>
 					https://twitter.com/OrchidProtocol
 				</source>
-				<target state="new">
+				<target state="final">
 					https://twitter.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1590,7 +1590,7 @@
 				<source>
 					@OrchidOfficial
 				</source>
-				<target state="new">
+				<target state="final">
 					@OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1606,7 +1606,7 @@
 				<source>
 					https://www.t.me/OrchidOfficial
 				</source>
-				<target state="new">
+				<target state="final">
 					https://www.t.me/OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1622,7 +1622,7 @@
 				<source>
 					OrchidProtocol
 				</source>
-				<target state="new">
+				<target state="final">
 					OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1638,7 +1638,7 @@
 				<source>
 					https://www.facebook.com/OrchidProtocol
 				</source>
-				<target state="new">
+				<target state="final">
 					https://www.facebook.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1654,8 +1654,8 @@
 				<source>
 					Your Name
 				</source>
-				<target state="new">
-					Your Name
+				<target state="final">
+					您的姓名
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1670,8 +1670,8 @@
 				<source>
 					Your Email
 				</source>
-				<target state="new">
-					Your Email
+				<target state="final">
+					您的电子邮件
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1686,8 +1686,8 @@
 				<source>
 					Subject
 				</source>
-				<target state="new">
-					Subject
+				<target state="final">
+					主题
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1702,8 +1702,8 @@
 				<source>
 					Enter your message...
 				</source>
-				<target state="new">
-					Enter your message...
+				<target state="final">
+					输入您的消息...
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1718,8 +1718,8 @@
 				<source>
 					Submit
 				</source>
-				<target state="new">
-					Submit
+				<target state="final">
+					发送
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1734,8 +1734,8 @@
 				<source>
 					Clear
 				</source>
-				<target state="new">
-					Clear
+				<target state="final">
+					清除
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
