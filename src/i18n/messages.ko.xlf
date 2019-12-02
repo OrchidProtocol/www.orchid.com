@@ -718,6 +718,38 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="EventsHero__Title" datatype="html">
+				<source>
+					Events
+				</source>
+				<target state="final">
+					이벤트
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/events/events.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="EventsFindUsIRL__Title" datatype="html">
+				<source>
+					Find us IRL
+				</source>
+				<target state="final">
+					오프라인 행사
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/events/events.component.html
+					</context>
+					<context context-type="linenumber">
+						13
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="DownloadHero__Title" datatype="html">
 				<source>
 					Try the pre-release Orchid app
