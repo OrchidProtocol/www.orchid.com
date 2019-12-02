@@ -114,6 +114,9 @@
     @include not-mobile {
         min-height: 12rem;
     }
+    &::placeholder {
+        white-space: normal;
+    }
 }
 
 .contact-form-message {
