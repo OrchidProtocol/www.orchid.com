@@ -1426,6 +1426,326 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="ContactHero__Title" datatype="html">
+				<source>
+					Contact
+				</source>
+				<target state="new">
+					Contact
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactHero__Description" datatype="html">
+				<source>
+					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
+					We want to hear from you
+					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
+					providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
+					shortly.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="new">
+					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
+					We want to hear from you
+					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
+					providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
+					shortly.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactOffice__Title" datatype="html">
+				<source>
+					Office Address
+				</source>
+				<target state="new">
+					Office Address
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactOffice__Address" datatype="html">
+				<source>
+					1288 Columbus Ave. #122,
+					San Francisco, CA 94133
+				</source>
+				<target state="new">
+					1288 Columbus Ave. #122,
+					San Francisco, CA 94133
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						27
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__Title" datatype="html">
+				<source>
+					Contact Info
+				</source>
+				<target state="new">
+					Contact Info
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						33
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__Email" datatype="html">
+				<source>
+					contact@orchid.com
+				</source>
+				<target state="new">
+					contact@orchid.com
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						39
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__EmailLink" datatype="html">
+				<source>
+					mailto:contact@orchid.com
+				</source>
+				<target state="new">
+					mailto:contact@orchid.com
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						37
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__Twitter" datatype="html">
+				<source>
+					@OrchidProtocol
+				</source>
+				<target state="new">
+					@OrchidProtocol
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						45
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__TwitterLink" datatype="html">
+				<source>
+					https://twitter.com/OrchidProtocol
+				</source>
+				<target state="new">
+					https://twitter.com/OrchidProtocol
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						43
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__Telegram" datatype="html">
+				<source>
+					@OrchidOfficial
+				</source>
+				<target state="new">
+					@OrchidOfficial
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						51
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__TelegramLink" datatype="html">
+				<source>
+					https://www.t.me/OrchidOfficial
+				</source>
+				<target state="new">
+					https://www.t.me/OrchidOfficial
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						49
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__Facebook" datatype="html">
+				<source>
+					OrchidProtocol
+				</source>
+				<target state="new">
+					OrchidProtocol
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactSidebar__FacebookLink" datatype="html">
+				<source>
+					https://www.facebook.com/OrchidProtocol
+				</source>
+				<target state="new">
+					https://www.facebook.com/OrchidProtocol
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						55
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__NamePlaceholder" datatype="html">
+				<source>
+					Your Name
+				</source>
+				<target state="new">
+					Your Name
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						73
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__EmailPlaceholder" datatype="html">
+				<source>
+					Your Email
+				</source>
+				<target state="new">
+					Your Email
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						88
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__SubjectPlaceholder" datatype="html">
+				<source>
+					Subject
+				</source>
+				<target state="new">
+					Subject
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__MessagePlaceholder" datatype="html">
+				<source>
+					Enter your message...
+				</source>
+				<target state="new">
+					Enter your message...
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						117
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__SubmitButton" datatype="html">
+				<source>
+					Submit
+				</source>
+				<target state="new">
+					Submit
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						131
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__ClearButton" datatype="html">
+				<source>
+					Clear
+				</source>
+				<target state="new">
+					Clear
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						132
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AboutCompanyHero__Title" datatype="html">
 				<source>
 					We can
@@ -1438,7 +1758,7 @@
 					together
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					我们可以
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					团结协作，
@@ -1478,7 +1798,7 @@
 					2019.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					互联网开启了一个无限的信息世界。它的创造者邀请我们心怀好奇心去自由探索这个世界。
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -1526,7 +1846,7 @@
 					technology management (RPX IPO), blockchain investment (Pantera Capital), jailbroken app package management
 					(Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 的创始人集结多方面的丰富经验，包括开源软件社区（BASH Shell、GNU Finger）、技术管理
 					(RPX IPO)、区块链投资（Bitstamp、Pantera Capital）、越狱应用程序包管理 (Cydia) 和安全性（富国
 					银行以太坊核心安全团队的第一名网上银行员工）。
@@ -1577,7 +1897,7 @@
 					Jay Freeman
 				</source>
 				<target state="final">
-          Jay Freeman
+					Jay Freeman
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1628,7 +1948,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					San Francisco, CA 94133
 				</source>
-				<target state="final">
+				<target state="translated">
 					总部：
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					1288 Columbus Ave. #122,
@@ -1652,7 +1972,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					10997 Berlin, Germany
 				</source>
-				<target state="final">
+				<target state="translated">
 					欧洲：
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Skalitzer Str. 85,
@@ -1674,7 +1994,6 @@
 				</source>
 				<target state="final">
 					SEC 备案
-
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
