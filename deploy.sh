@@ -9,7 +9,7 @@ built_files=dist/static
 
 function usage () {
     local exit_status="$1"
-    echo "Usage:  deploy [opus | staging | production]"
+    echo "Usage:  deploy [opuslogica | staging | production | {ja,ko,zh}]"
     echo "Deploys the built website to the specified destination."
     exit $exit_status
 }
@@ -36,7 +36,11 @@ function copy-push () {
 
 # Build the static site...
 rm -rf ${built_files}
-yarn run build:static
+if [ "${#1}" == "2" ]; then
+    yarn run build:static:${1}
+else
+    yarn run build:static
+fi
 (cd ${built_files};
  for file in $(echo *.html); do
      mkdir -p $(basename ${file} .html)
