@@ -32,8 +32,6 @@ export class AppComponent implements OnInit {
     r.addClass(document.body, `locale-${this.localeId}`);
     if (this.localeId !== 'en-US') r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
     
-    console.log('Current location', document.location.href);
-
     /*if (this.localeId !== 'en' && this.localeId !== 'en-US')*/ this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://orchid.com"+document.location.href, "hreflang": "x-default"})
     if (this.localeId !== 'ja') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ja.orchid.com"+document.location.href, "hreflang": "ja"})
     if (this.localeId !== 'ko') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ko.orchid.com"+document.location.href, "hreflang": "ko"})
