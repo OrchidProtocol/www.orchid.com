@@ -130,6 +130,38 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="WhitepaperLink" datatype="html">
+				<source>
+					/assets/whitepaper/whitepaper.pdf
+				</source>
+				<target state="new">
+					/assets/whitepaper/chinese.pdf
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-network/about-network.component.html
+					</context>
+					<context context-type="linenumber">
+						53
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/how-it-works/how-it-works.component.html
+					</context>
+					<context context-type="linenumber">
+						295
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HowHero__Title" datatype="html">
 				<source>
 					How Orchid delivers digital privacy
@@ -703,7 +735,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						295
+						296
 					</context>
 				</context-group>
 			</trans-unit>
@@ -787,7 +819,7 @@
 					Install Orchid.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					在 iOS 设备上点击以下链接：
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
@@ -843,7 +875,7 @@
 					Install Orchid using the link displayed.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					在 Android 设备上点击以下链接：
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />

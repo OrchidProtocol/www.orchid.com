@@ -292,9 +292,11 @@
     <div id="read-whitepaper">
       <div class="pos-relative">
         <img id="read-whitepaper-adorner" src="/assets/img/network/read-whitepaper.svg">
-        <button (click)="downloadWhitepaper()" class="btn-primary z-index-1" i18n="@@ReadOurWhitepaper">
-          Read our Whitepaper
-        </button>
+        <a i18n-href="@@WhitepaperLink" href="/assets/whitepaper/whitepaper.pdf">
+          <button class="btn-primary z-index-1" i18n="@@ReadOurWhitepaper">
+            Read our Whitepaper
+          </button>
+        </a>
       </div>
     </div>
   </section>
