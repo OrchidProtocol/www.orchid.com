@@ -14,7 +14,7 @@ function usage () {
     exit $exit_status
 }
 
-if [ "$1" == "" ]; then usage 3; fi
+if [ "$1" == "" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then usage 3; fi
 
 function copy-push () {
     local gitdest="$1"
@@ -48,9 +48,7 @@ fi
  done;
  ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
-if [ "$1" == "--help" ]; then
-    usage
-elif [ "$1" == "opuslogica" ]; then
+if [ "$1" == "opuslogica" ]; then
     scp -rp ${built_files}/* .htaccess opuslogica.com:/www/sites/orchid.opuslogica.com/
 elif [ "$1" == "staging" ] && [ "${#2}" == "2" ]; then
     copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${2}.orchid.dev"
