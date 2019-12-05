@@ -51,10 +51,10 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__form {
-  margin-top: 143px;
+  margin-top: 68px;
 
   @media (max-width: $hero-bp-1) {
-    margin-top: 10vw;
+    margin-top: 6vw;
     transform: translateY(-2vw);
   }
 }
@@ -182,7 +182,7 @@ $hero-bp-vert: 1150px;
   :host-context(.locale-ko) & {
     font-size: 66px;
   }
-    &>span {
+  & > span {
     display: block;
   }
   @include mobile {
@@ -201,6 +201,10 @@ $hero-bp-vert: 1150px;
   color: $orc-rock-gray;
   margin: 0.5rem 0 1.5rem 0;
   font-size: 36px;
+  & > span {
+    display: block;
+  }
+
   :host-context(.locale-ja) & {
     font-size: 28px;
   }
