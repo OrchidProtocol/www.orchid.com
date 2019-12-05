@@ -3,6 +3,100 @@
 @import "orc_config";
 @import "styles";
 
+.join__title {
+  margin-bottom: 0.5rem;
+}
+
+.join__img {
+  max-width: 100%;
+  position: relative;
+  top: -40px;
+  margin-bottom: -40px;
+}
+
+.join-steps {
+  overflow-x: hidden;
+}
+
+.join-step {
+  @extend .gap-bot-wide;
+  max-width: 85ch;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+
+  ol, ul {
+    text-align: left;
+    padding: 0 3rem 0 4rem;
+
+    @include mobile {
+      padding: 0 0 0 1.5rem;
+    }
+  }
+
+  &:first-of-type::before {
+    content: "";
+    width: 242px;
+    height: 260px;
+    background: url("/assets/img/join/step-bg-1.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(125%, 18%);
+  }
+  &:nth-of-type(2)::before {
+    content: "";
+    width: 460px;
+    height: 460px;
+    background: url("/assets/img/join/step-bg-2.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translate(-114%, 57%);
+  }
+  &:nth-of-type(4)::before {
+    content: "";
+    width: 80px;
+    height: 80px;
+    background: url("/assets/img/join/step-bg-3.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(289%, -65%);
+  }
+}
+
+.join-step__number {
+  background-color: $orc-purple;
+  font-family: $orc-tf-primary;
+  font-size: 40px;
+  line-height: 60px;;
+  text-align: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  border: 22px solid var(--section-bg);
+  z-index: 3;
+  margin: auto;
+}
+
+.join-step__title {
+  font-size: $size-body-md;
+  margin: 1rem 0;
+
+  @include mobile {
+    font-size: $size-body-md-mobile;
+  }
+}
+
+
 .more-questions {
   position: relative;
 
