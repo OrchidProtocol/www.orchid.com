@@ -34,4 +34,66 @@
   max-width: 82ch;
 }
 
+// WHY OXT SECTION
+.why-oxt > section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1.8rem;
 
+  @include mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.why-oxt__title {
+
+  margin-bottom: 1rem;
+
+  & > span {
+    display: block;
+
+    &:nth-of-type(1) {
+      font-size: 64px;
+
+      @include mobile {
+        font-size: 48px;
+      }
+    }
+    &:nth-of-type(2) {
+      font-size: 100px;
+
+      @include mobile {
+        font-size: 75px;
+      }
+    }
+  }
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.why-oxt__text {
+  min-width: 50ch;
+
+  @include mobile {
+    min-width: unset;
+    order: 2;
+  }
+}
+
+.why-oxt__img {
+  max-width: 100%;
+  transform: translate(65px, -98px);
+
+  @media (max-width: 1184px) {
+    transform: translate(0, 0);
+  }
+  @include mobile {
+    transform: translate(0, 0);
+    width: 300px;
+    order: 1;
+  }
+
+}
