@@ -15,7 +15,7 @@
     <div class="oxt-intro__text">
       <p class="medium"><a href="#">The Orchid Token (OXT)</a>, is a new ERC20 compliant token used to exchange value on the Orchid network. OXT is required for users to purchase VPN service and providers receive OXT in exchange for their bandwidth. On Orchid, both users and providers stake OXT.</p>
 
-      <p class="medium">The supply of OXT is fixed at one billion units. There is no inflation. The possibility of contractual penalty mechanisms that ‘burn’ OXT create the potential for some small deflationary pressure.</p>
+      <p class="medium">The supply of OXT is fixed at one billion units. There is no inflation. The possibility of contractual penalty mechanisms that “burn” OXT create the potential for some small deflationary pressure.</p>
     </div>
   </section>
 </div>
@@ -40,12 +40,13 @@
       <div class="tokenomics__columns">
         <div>
           <h4>User Deposits</h4>
-          <p>Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.</p>
+          <p>To use the Orchid app, users will need to acquire OXT and move the funds they want to use for service into Ethereum smart contracts using the Orchid account interface. The funds are split into two categories: a membership deposit and a balance. The deposit is a small amount of OXT that protects against clients misbehaving on the network. The majority of the funds go into the balance, which is the collateral that is used to issue nanopayments. When a winning ticket is issued, OXT is transferred from the balance to the provider.</p>
           <img src="/assets/img/oxt/tokenomics.svg" alt=""/>
         </div>
         <div>
           <h4>Node Stake Deposits</h4>
-          <p>Providers on Orchid stake OXT currency in time locked deposits to prove identity and receive traffic in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the OXT.  Clients select Orchid server nodes with probability proportional to relative stake, thus nodes receive traffic and payment flow from users proportional to the amount of tokens staked on Orchid.</p>
+          <p>Providers on Orchid stake OXT currency in time-locked deposits to prove identity and receive traffic in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the OXT.  Clients select Orchid server nodes with probability proportional to relative stake, thus nodes receive traffic and payment flow from users proportional to the amount of tokens staked on Orchid.</p>
+
           <p>Providers can withdraw stake from the registry contract, but withdrawals are subject to an intentional delay which currently defaults to three months.  Clients control this delay variable by ignoring nodes with delay periods that are too short.  This combination of linear stake weighted random selection and a withdrawal delay provides stronger economic security by creating a high cost barrier for takeover attacks and additionally helps align provider and user incentives.</p>
         </div>
       </div>
@@ -63,13 +64,13 @@
         <div>
           <img src="/assets/img/oxt/consensus-systems-logo.svg" alt="Consensys"/>
           <h4>Consensys Dilligence</h4>
-          <p class="oxt-audits__quote">“In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."</p>
+          <p class="oxt-audits__quote">“The usage of the Ethereum blockchain within the Orchid network protocol is an exceptional example of decentralized coordination with on-chain enforcement."</p>
           <a class="uppercase" href="#">Read More</a>
         </div>
         <div>
           <img class="certora-logo" src="/assets/img/oxt/CertoraLogo@3x.png" alt="Certora"/>
           <h4>Certora</h4>
-          <p class="oxt-audits__quote" style="color: red">“In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."</p>
+          <p class="oxt-audits__quote" style="display: none;color: red">“"</p>
           <a class="uppercase" href="#">Read More</a>
         </div>
       </div>
