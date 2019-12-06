@@ -3,6 +3,7 @@
 @import "orc_config";
 @import "styles";
 
+// HERO SECTION
 .oxt-hero > section {
   & > * + * {
     margin-top: 2rem;
@@ -16,3 +17,21 @@
 .oxt-hero__title {
   font-size: 100px;
 }
+
+// INTRO SECTION
+.oxt-intro > section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 3rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.oxt-intro__text {
+  max-width: 82ch;
+}
+
+
