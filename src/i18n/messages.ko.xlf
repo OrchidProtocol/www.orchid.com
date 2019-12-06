@@ -130,38 +130,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="WhitepaperLink" datatype="html">
-				<source>
-					/assets/whitepaper/whitepaper.pdf
-				</source>
-				<target state="new">
-					/assets/whitepaper/korean.pdf
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-network/about-network.component.html
-					</context>
-					<context context-type="linenumber">
-						53
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						295
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						24
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="HowHero__Title" datatype="html">
 				<source>
 					How Orchid delivers digital privacy
@@ -1318,6 +1286,14 @@
 						4
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-features/newsletter-signup-features.component.html
+					</context>
+					<context context-type="linenumber">
+						4
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="Newsletter__Description" datatype="html">
 				<source>
@@ -1332,6 +1308,14 @@
 					</context>
 					<context context-type="linenumber">
 						7
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-features/newsletter-signup-features.component.html
+					</context>
+					<context context-type="linenumber">
+						18
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1358,6 +1342,14 @@
 						3
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-features/newsletter-signup-features.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="Newsletter__Consent" datatype="html">
 				<source>
@@ -1382,6 +1374,14 @@
 						9
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-features/newsletter-signup-features.component.html
+					</context>
+					<context context-type="linenumber">
+						13
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="Newsletter__Subscribe" datatype="html">
 				<source>
@@ -1396,6 +1396,14 @@
 					</context>
 					<context context-type="linenumber">
 						18
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/newsletter-signup-features/newsletter-signup-features.component.html
+					</context>
+					<context context-type="linenumber">
+						17
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1431,6 +1439,22 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="Navigation-Join" datatype="html">
+				<source>
+					Join Now
+				</source>
+				<target state="new">
+					Join Now
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						23
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-HowItWorks" datatype="html">
 				<source>
 					How It Works
@@ -1443,7 +1467,23 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						24
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-OXT" datatype="html">
+				<source>
+					OXT
+				</source>
+				<target state="new">
+					OXT
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						25
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1459,7 +1499,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						26
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1475,7 +1515,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						27
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1483,7 +1523,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						103
+						81
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1499,7 +1539,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						28
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1507,7 +1547,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						105
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1516,14 +1556,78 @@
 					English
 				</source>
 				<target state="final">
-					영어
+					한국어
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						33
+						35
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="LanguageDropdown__Ko" datatype="html">
+				<source>
+					Korean
+				</source>
+				<target state="new">
+					Korean
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						38
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="LanguageDropdown__En" datatype="html">
+				<source>
+					English
+				</source>
+				<target state="new">
+					English
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						39
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="LanguageDropdown__Ja" datatype="html">
+				<source>
+					Japanese
+				</source>
+				<target state="new">
+					Japanese
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						40
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="LanguageDropdown__Zh" datatype="html">
+				<source>
+					Mandarin
+				</source>
+				<target state="new">
+					Mandarin
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						41
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1539,7 +1643,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						94
+						72
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1555,7 +1659,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						95
+						73
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1571,7 +1675,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						96
+						74
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1587,7 +1691,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						97
+						75
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1603,7 +1707,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						102
+						80
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1619,7 +1723,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						104
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1635,7 +1739,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						111
+						89
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2317,6 +2421,14 @@
 						5
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompany__Description" datatype="html">
 				<source>
@@ -2368,6 +2480,14 @@
 						25
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
 				<source>
@@ -2379,6 +2499,14 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						56
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						56
@@ -2404,6 +2532,14 @@
 						57
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
 				<source>
@@ -2415,6 +2551,14 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						68
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						68
@@ -2436,6 +2580,14 @@
 						77
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						77
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
 				<source>
@@ -2447,6 +2599,14 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						85
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						85
@@ -2468,6 +2628,14 @@
 						97
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						97
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
 				<source>
@@ -2479,6 +2647,14 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						98
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						98
@@ -2508,6 +2684,14 @@
 						101
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						101
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
 				<source>
@@ -2532,6 +2716,14 @@
 						106
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						106
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
 				<source>
@@ -2548,6 +2740,14 @@
 						113
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						113
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
 				<source>
@@ -2559,6 +2759,14 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						114
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						114
