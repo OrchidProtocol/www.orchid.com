@@ -3,6 +3,9 @@
 @import "orc_config";
 @import "styles";
 
+// Variables
+$containerWidth: 932px;
+
 // HERO SECTION
 .oxt-hero > section {
   & > * + * {
@@ -170,16 +173,59 @@
   margin-right: auto;
 }
 .tokenomics__columns {
-  max-width: 932px;
+  max-width: $containerWidth;
   margin-left: auto;
   margin-right: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 3rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tokenomics__chart-section {
-  max-width: 932px;
+  max-width: $containerWidth;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+// AUDITS SECTION
+.oxt-audits {
+  h4 {
+    font-size: $size-body-md;
+    color: $orc-gray;
+    margin-bottom: 1rem;
+  }
+}
+
+.oxt-audits__columns {
+  max-width: $containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+
+  & > div {
+    max-width: 46ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.certora-logo {
+  width: 160px;
+  height: 131px;
+}
+
+.oxt-audits__quote {
+  font-style: italic;
+  text-align: left;
 }
