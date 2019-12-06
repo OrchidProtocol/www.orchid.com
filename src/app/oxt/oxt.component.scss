@@ -23,6 +23,23 @@
   display: grid;
   grid-template-columns: auto 1fr;
   grid-gap: 3rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background: url('/assets/img/oxt/bg-circle-1.svg') no-repeat center center;
+    background-size: contain;
+    bottom: 0;
+    left: 36%;
+    transform: translateY(50%);
+
+    @include mobile {
+      display: none;
+    }
+  }
 
   @include mobile {
     grid-template-columns: 1fr;
@@ -35,7 +52,29 @@
 }
 
 // WHY OXT SECTION
-.why-oxt > section {
+.why-oxt > .overflow-wrapper {
+  position: relative;
+  max-width: 1685px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 337px;
+    height: 347px;
+    background: url('/assets/img/oxt/bg-circles-2.svg') no-repeat center center;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 67%);
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.why-oxt section {
   display: grid;
   grid-template-columns: 1fr auto;
   grid-gap: 1.8rem;
@@ -95,5 +134,52 @@
     width: 300px;
     order: 1;
   }
+}
 
+// TOKENOMICS SECTION
+.tokenomics {
+  h4 {
+    font-size: $size-body-md;
+    color: $orc-gray;
+    margin-bottom: 1rem;
+  }
+
+  & > section {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 168px;
+      height: 168px;
+      background: url('/assets/img/oxt/bg-circle-3.png') no-repeat center center;
+      background-size: contain;
+      top: 0;
+      left: 0;
+      transform: translate(10px, 104px);
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+}
+.tokenomics__subhead {
+  max-width: 735px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tokenomics__columns {
+  max-width: 932px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.tokenomics__chart-section {
+  max-width: 932px;
+  margin-left: auto;
+  margin-right: auto;
 }

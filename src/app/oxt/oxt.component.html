@@ -10,25 +10,50 @@
 </div>
 
 <div class="oxt-intro bk-white">
-  <section class="section-med hpad-wide vpad-xl z-index-1">
-    <img class="max-100" src="/assets/img/oxt/orchid-magnified.svg" alt=""/>
-    <div class="oxt-intro__text">
-      <p class="medium"><a href="#">The Orchid Token (OXT)</a>, is a new ERC20 compliant token used to exchange value on the Orchid network. OXT is required for users to purchase VPN service and providers receive OXT in exchange for their bandwidth. On Orchid, both users and providers stake OXT.</p>
+    <section class="section-med hpad-wide vpad-wide z-index-1">
+      <img class="max-100" src="/assets/img/oxt/orchid-magnified.svg" alt=""/>
+      <div class="oxt-intro__text">
+        <p class="medium"><a href="#">The Orchid Token (OXT)</a>, is a new ERC20 compliant token used to exchange value on the Orchid network. OXT is required for users to purchase VPN service and providers receive OXT in exchange for their bandwidth. On Orchid, both users and providers stake OXT.</p>
 
-      <p class="medium">The supply of OXT is fixed at one billion units. There is no inflation. The possibility of contractual penalty mechanisms that ‘burn’ OXT create the potential for some small deflationary pressure.</p>
-    </div>
-  </section>
+        <p class="medium">The supply of OXT is fixed at one billion units. There is no inflation. The possibility of contractual penalty mechanisms that ‘burn’ OXT create the potential for some small deflationary pressure.</p>
+      </div>
+    </section>
 </div>
 
 
 <div class="why-oxt bk-lavender">
-  <section class="section-med hpad-wide vpad-wide z-index-1">
-    <div class="why-oxt__text">
-      <h3 class="why-oxt__title"><span>Why</span> <span>OXT?</span></h3>
-      <p>Using a new custom token as the currency for the Orchid Market provides economic incentive benefits that would not be possible if we used generic currencies such as ETH.  More specifically, requiring that large providers stake large amounts of a custom utility currency specific to our market creates stronger incentive alignment effects than using a generic currency, as the provider’s behavior will more strongly affect the price of the custom market token and thus the value of their stake positions.  If we instead used a generic currency such as ETH, this correlation would be very weak, as the health of the Orchid market would have much less expected impact on the price of ETH. </p>
-    </div>
-    <img class="why-oxt__img" src="/assets/img/oxt/rabbit-pulls-token.svg" alt=""/>
-  </section>
+  <div class="overflow-wrapper">
+    <section class="section-med hpad-wide vpad-wide z-index-1">
+      <div class="why-oxt__text">
+        <h3 class="why-oxt__title"><span>Why</span> <span>OXT?</span></h3>
+        <p>Using a new custom token as the currency for the Orchid Market provides economic incentive benefits that would not be possible if we used generic currencies such as ETH.  More specifically, requiring that large providers stake large amounts of a custom utility currency specific to our market creates stronger incentive alignment effects than using a generic currency, as the provider’s behavior will more strongly affect the price of the custom market token and thus the value of their stake positions.  If we instead used a generic currency such as ETH, this correlation would be very weak, as the health of the Orchid market would have much less expected impact on the price of ETH. </p>
+      </div>
+      <img class="why-oxt__img" src="/assets/img/oxt/rabbit-pulls-token.svg" alt=""/>
+    </section>
+  </div>
+</div>
+
+<div class="tokenomics bk-white">
+    <section class="section-med hpad-wide vpad-wide z-index-1">
+      <h2 class="color-primary center-text vgap-xs">OXT Tokenomics</h2>
+      <p class="tokenomics__subhead medium center-text gap-bot-wide">Stake-weighting has the distinct advantage of greater value capture than competing mechanisms for utility token systems. Both users and providers stake during normal market operations.</p>
+      <div class="tokenomics__columns">
+        <div>
+          <h4>User Deposits</h4>
+          <p>Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.</p>
+          <img src="/assets/img/oxt/tokenomics.svg" alt=""/>
+        </div>
+        <div>
+          <h4>Node Stake Deposits</h4>
+          <p>Providers on Orchid stake OXT currency in time locked deposits to prove identity and receive traffic in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the OXT.  Clients select Orchid server nodes with probability proportional to relative stake, thus nodes receive traffic and payment flow from users proportional to the amount of tokens staked on Orchid.</p>
+          <p>Providers can withdraw stake from the registry contract, but withdrawals are subject to an intentional delay which currently defaults to three months.  Clients control this delay variable by ignoring nodes with delay periods that are too short.  This combination of linear stake weighted random selection and a withdrawal delay provides stronger economic security by creating a high cost barrier for takeover attacks and additionally helps align provider and user incentives.</p>
+        </div>
+      </div>
+      <div class="tokenomics__chart-section gap-top-wide center-text">
+        <h4>OXT Supply Over Time</h4>
+        <img class="vgap-xs" src="/assets/img/oxt/tokenomics-chart.svg" alt="% of total coins released over 15 years"/>
+      </div>
+    </section>
 </div>
 
 <app-newsletter-signup></app-newsletter-signup>
