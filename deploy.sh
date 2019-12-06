@@ -18,9 +18,8 @@ if [ "$1" == "" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then usage 3; fi
 
 function copy-push () {
     local gitdest="$1"
-    local tempdir="../orchid-www-deploy-$$"
-    rm -rf "$tempdir"
-    (cd ${built_files}; cp -a . ../../"$tempdir")
+    local tempdir=$(mktemp -d)
+    (cd ${built_files}; cp -a . "$tempdir")
     pushd "$tempdir"
     git init
     git add .
@@ -36,8 +35,8 @@ function copy-push () {
 
 # Build the static site...
 rm -rf ${built_files}
-if [ "${#1}" == "2" ]; then
-    yarn run build:static:${1}
+if [ "${#2}" == "2" ]; then
+    yarn run build:static:${2}
 else
     yarn run build:static
 fi
