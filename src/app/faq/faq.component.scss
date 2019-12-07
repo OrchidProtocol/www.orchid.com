@@ -25,7 +25,7 @@ h4.title {
 	cursor: pointer;
 	&:hover { background: rgba(thistle, 0.2); }
     }
-    
+
     span.name { width: 240px; }
     span.count {
 	// position: absolute; right: 0px; top: 4px; padding: 8px;
@@ -38,12 +38,15 @@ h4.title {
 .faq-section {
     display: flex;
     flex-wrap: wrap;
+    margin-top: -20px;
 }
 .faq-sidebar, .faq-main {
     box-sizing: border-box;
     padding-left: 2rem;
     padding-right: 2rem;
-    ul {
+    ul.categories,
+    ul.faq-questions,
+    ul.faq-nav {
         list-style: none;
     }
 }
@@ -87,9 +90,15 @@ h4.title {
     @include not-mobile {
         width: 70%;
     }
-    ul {
+    ul.categories,
+    ul.faq-questions,
+    ul.faq-nav {
         padding-left: 0;
     }
+}
+.faq-sidebar-questions {
+  padding-left: 2rem;
+  list-style-type: disc;
 }
 .faq-category-heading {
     border-bottom: 1px solid rgba($orc-rock-gray, 0.5);
@@ -104,6 +113,9 @@ h4.title {
     margin: 1rem 0;
     @include not-mobile {
         margin: 2rem 0;
+    }
+    & > ul {
+      margin-bottom: 1em;
     }
 }
 .faq-question-container:target {
