@@ -695,6 +695,19 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="HomeHero__JoinNow" datatype="html">
+				<source>
+					Join now
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						11
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
 					Welcome to the privacy network
