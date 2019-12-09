@@ -882,26 +882,26 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					Join
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					The Privacy
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					Network
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="final">
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					Join
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						6
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__Title2" datatype="html">
-				<source>
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					The Privacy
-				</source>
-				<target state="final">
-					The Privacy
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					Network
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

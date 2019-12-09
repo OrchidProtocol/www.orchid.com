@@ -880,26 +880,23 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					Join
-				</source>
-				<target state="translated">
-					호기심을 잃지 않고
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						6
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__Title2" datatype="html">
-				<source>
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					The Privacy
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					Network
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					호기심을 잃지 않고 
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					자유롭게 탐험
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2357,6 +2354,164 @@
 					</context>
 					<context context-type="linenumber">
 						192
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Body-4" datatype="html">
+				<source>
+					A multi-hop circuit affords greater network protections, but to setup a multi-hop Orchid circuit, it would be naive to pay for each hop from the same Ethereum wallet. In that configuration, each provider would be able to see that wallet’s address and potentially use that address to get information about the user. To mitigate that, a better way to setup multi-hop circuits would be to use different wallet addresses for each Orchid hop. If every wallet address is independently dissociated from the user, the full circuit might be quite difficult to link back to the user. Again, the multi-hop circuit feature in Orchid is advanced, and use it at your own risk.
+				</source>
+				<target state="new">
+					A multi-hop circuit affords greater network protections, but to setup a multi-hop Orchid circuit, it would be naive to pay for each hop from the same Ethereum wallet. In that configuration, each provider would be able to see that wallet’s address and potentially use that address to get information about the user. To mitigate that, a better way to setup multi-hop circuits would be to use different wallet addresses for each Orchid hop. If every wallet address is independently dissociated from the user, the full circuit might be quite difficult to link back to the user. Again, the multi-hop circuit feature in Orchid is advanced, and use it at your own risk.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						195
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Body-5" datatype="html">
+				<source>
+					Orchid is working on additional features to mitigate payment leakage, such as onion payment routing.  The idea of this technique is to help obfuscate payments by routing them through several layers of indirection (Alice paying Bob to pay Charlie to pay Debrah).  The payments then take a different random route than the traffic, preventing the rare occasional public payment records from indirectly revealing route information.
+				</source>
+				<target state="new">
+					Orchid is working on additional features to mitigate payment leakage, such as onion payment routing.  The idea of this technique is to help obfuscate payments by routing them through several layers of indirection (Alice paying Bob to pay Charlie to pay Debrah).  The payments then take a different random route than the traffic, preventing the rare occasional public payment records from indirectly revealing route information.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						198
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-CanNodesMonitorTraffic__Body" datatype="html">
+				<source>
+					Yes, providers on Orchid could monitor the bytes that come in and out of the Orchid node. However, all traffic carried over Orchid between hops from the user to the exit is encrypted at the Orchid protocol level, which is an additional layer of encryption. The final exit traffic is then decrypted by the exit node and sent to the destination. In many cases the underlying traffic will also be encrypted with protocols such as TLS, providing at least two layers of encryption.
+				</source>
+				<target state="new">
+					Yes, providers on Orchid could monitor the bytes that come in and out of the Orchid node. However, all traffic carried over Orchid between hops from the user to the exit is encrypted at the Orchid protocol level, which is an additional layer of encryption. The final exit traffic is then decrypted by the exit node and sent to the destination. In many cases the underlying traffic will also be encrypted with protocols such as TLS, providing at least two layers of encryption.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						204
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-CanNodesMonitorTraffic__Body-2" datatype="html">
+				<source>
+					However, not all traffic on the Internet is encrypted and Orchid doesn’t fix that problem. The last hop configured in the active circuit will need to send the user requests out onto the Internet. So if the user sends an HTTP request, which has no SSL/TLS encryption, Orchid will honor that request and cleartext information would be revealed to the Orchid node. For this reason, you should always use SSL/TLS for sensitive Internet connections, even on Orchid. And even SSL/TLS encryption leaves metadata that the Orchid node could monitor, including the destination address, hostname, packet sizes and the timing of packets.
+				</source>
+				<target state="new">
+					However, not all traffic on the Internet is encrypted and Orchid doesn’t fix that problem. The last hop configured in the active circuit will need to send the user requests out onto the Internet. So if the user sends an HTTP request, which has no SSL/TLS encryption, Orchid will honor that request and cleartext information would be revealed to the Orchid node. For this reason, you should always use SSL/TLS for sensitive Internet connections, even on Orchid. And even SSL/TLS encryption leaves metadata that the Orchid node could monitor, including the destination address, hostname, packet sizes and the timing of packets.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						207
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-CanNodesMonitorTraffic__Body-3" datatype="html">
+				<source>
+					Using Orchid’s multi-hop feature with a three hop circuit would compartmentalize the information any one provider could monitor. With a properly configured multi-hop circuit the origin and destination of the traffic would be anonymized from any one provider, however, that is an advanced feature which is certainly “use at your own risk”. The way the different Orchid hops are funded has an impact on information leakage that could potentially de-anonymize.
+				</source>
+				<target state="new">
+					Using Orchid’s multi-hop feature with a three hop circuit would compartmentalize the information any one provider could monitor. With a properly configured multi-hop circuit the origin and destination of the traffic would be anonymized from any one provider, however, that is an advanced feature which is certainly “use at your own risk”. The way the different Orchid hops are funded has an impact on information leakage that could potentially de-anonymize.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						210
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-CanNodesMonitorTraffic__Body-4" datatype="html">
+				<source>
+					Lastly, every Orchid user has a “curated list” of providers. This adds an additional layer of protection as users could pick or make their own curated list of providers that they trust or someone that they trust, trusts. Orchid has a default list of trusted providers that will ship with the Orchid app.
+				</source>
+				<target state="new">
+					Lastly, every Orchid user has a “curated list” of providers. This adds an additional layer of protection as users could pick or make their own curated list of providers that they trust or someone that they trust, trusts. Orchid has a default list of trusted providers that will ship with the Orchid app.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						213
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-AmITotallyPrivate__Body" datatype="html">
+				<source>
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
+					No.
+					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
+				</source>
+				<target state="new">
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
+					No.
+					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						219
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						222
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						225
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						228
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						231
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						234
 					</context>
 				</context-group>
 			</trans-unit>
