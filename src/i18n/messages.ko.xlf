@@ -1391,8 +1391,8 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="new">
-					I consent to receiving further instructions at the email address I submitted above.
+				<target state="final">
+					본인은 위에 제출한 이메일 주소로 추가 지침을 수신하는 데 동의합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

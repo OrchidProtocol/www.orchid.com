@@ -1370,8 +1370,8 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="new">
-					I consent to receiving further instructions at the email address I submitted above.
+				<target state="final">
+					我同意在我上面提交的电子邮件地址接收更多说明。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

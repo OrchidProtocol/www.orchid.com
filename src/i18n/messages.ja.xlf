@@ -2263,8 +2263,8 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="new">
-					I consent to receiving further instructions at the email address I submitted above.
+				<target state="final">
+					上で送信したメール アドレスで今後のインストラクションを受け取ることに同意します。"
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
