@@ -880,9 +880,9 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
-					Stay Curious,
+					Join
 				</source>
-				<target state="final">
+				<target state="translated">
 					호기심을 잃지 않고
 				</target>
 				<context-group purpose="location">
@@ -896,9 +896,9 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__Title2" datatype="html">
 				<source>
-					Explore Freely
+					The Privacy
 				</source>
-				<target state="final">
+				<target state="translated">
 					자유롭게 탐험
 				</target>
 				<context-group purpose="location">
@@ -912,9 +912,14 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__Subtitle" datatype="html">
 				<source>
-					Get digital privacy
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					Stay curious,
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
+					explore freely
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					디지털 개인 정보 보호
 				</target>
 				<context-group purpose="location">
@@ -928,9 +933,11 @@
 			</trans-unit>
 			<trans-unit id="HomeHero__FormTitle" datatype="html">
 				<source>
-					Don't miss the launch!
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Start private browsing today!
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					출시를 놓치지 마세요.
 				</target>
 				<context-group purpose="location">
@@ -944,9 +951,9 @@
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
-					A next-level VPN &amp; privacy tool
+					Welcome to the privacy network
 				</source>
-				<target state="final">
+				<target state="translated">
 					작동 방식 알아보기
 				</target>
 				<context-group purpose="location">
@@ -960,9 +967,9 @@
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Description" datatype="html">
 				<source>
-					Read the whitepaper to see what we’re building.
+					Read the whitepaper to learn about our next-level VPN.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid가 개발 중인 소프트웨어를 알아보려면
 					이 백서를 읽어보십시오.
 				</target>
@@ -990,6 +997,22 @@
 						24
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						78
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						7
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Title" datatype="html">
 				<source>
@@ -1009,9 +1032,9 @@
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can preserve an open and accessible internet.
+					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can offer users better privacy.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid는 중앙 집중화를 제거하고 네트워크 기여자에게
 					보상을 제공하며 블록 체인의 이점을 활용함으로써
 					사용자에게 더 나은 개인 정보 보호를 제공할 수 있다고
@@ -1795,7 +1818,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						98
+						131
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1819,13 +1842,13 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						105
+						135
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="Faq-HowDoesItWork__Title" datatype="html">
 				<source>
-					How does it work??
+					How does it work?
 				</source>
 				<target state="new">
 					How does it work??
@@ -1843,37 +1866,13 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						110
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Faq-WhenWillItGoLive__Title" datatype="html">
-				<source>
-					When will it go live?
-				</source>
-				<target state="new">
-					When will it go live?
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/faq/faq.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/faq/faq.component.html
-					</context>
-					<context context-type="linenumber">
-						120
+						139
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="Faq-OnTechnology__Title" datatype="html">
 				<source>
-					On Technology
+					Security and Privacy
 				</source>
 				<target state="new">
 					On Technology
@@ -1883,7 +1882,159 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						55
+						50
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						88
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhoIsThisFor__Title" datatype="html">
+				<source>
+					Who is this FAQ for and what can they get out of it?
+				</source>
+				<target state="new">
+					Who is this FAQ for and what can they get out of it?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						56
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						151
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatProtections__Title" datatype="html">
+				<source>
+					What protections does the Orchid app provide?
+				</source>
+				<target state="new">
+					What protections does the Orchid app provide?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						61
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						156
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowCanOrchidHelpToday__Title" datatype="html">
+				<source>
+					How can the Orchid app help me with privacy today?
+				</source>
+				<target state="new">
+					How can the Orchid app help me with privacy today?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						66
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						165
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Title" datatype="html">
+				<source>
+					How is Orchid private given that it has public payments on Ethereum?
+				</source>
+				<target state="new">
+					How is Orchid private given that it has public payments on Ethereum?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						71
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						185
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-CanNodesMonitorTraffic__Title" datatype="html">
+				<source>
+					Can Orchid nodes monitor network traffic?
+				</source>
+				<target state="new">
+					Can Orchid nodes monitor network traffic?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						76
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						203
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-AmITotallyPrivate__Title" datatype="html">
+				<source>
+					So I'm totally private and anonymous when I use a VPN like Orchid?
+				</source>
+				<target state="new">
+					So I'm totally private and anonymous when I use a VPN like Orchid?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						81
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						218
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1899,7 +2050,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						61
+						94
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1907,46 +2058,16 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						130
+						245
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Title" datatype="html">
+			<trans-unit id="Faq-HowDoCuratedListsWork__Title" datatype="html">
 				<source>
-					How does Orchid distinguish itself from VPNs?
+					How do curated lists work on Orchid?
 				</source>
 				<target state="new">
-					How does Orchid distinguish itself from VPNs?
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/faq/faq.component.html
-					</context>
-					<context context-type="linenumber">
-						66
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/faq/faq.component.html
-					</context>
-					<context context-type="linenumber">
-						138
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Faq-WhatIsOrchid__Body" datatype="html">
-				<source>
-					Orchid is a decentralized, market-based system for
-					anonymous communication and virtual private networking, including a bandwidth market where node
-					providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
-					OXT (Orchid’s native cryptocurrency)
-				</source>
-				<target state="new">
-					Orchid is a decentralized, market-based system for
-					anonymous communication and virtual private networking, including a bandwidth market where node
-					providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
-					OXT (Orchid’s native cryptocurrency)
+					How do curated lists work on Orchid?
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1956,11 +2077,37 @@
 						99
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						249
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatIsOrchid__Body" datatype="html">
+				<source>
+					Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency).
+				</source>
+				<target state="new">
+					Orchid is a decentralized, market-based system for
+					anonymous communication and virtual private networking, including a bandwidth market where node
+					providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in
+					OXT (Orchid’s native cryptocurrency)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						132
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="Faq-WhatIsThePurposeOfOrchid__Body" datatype="html">
 				<source>
-					Orchid’s mission is to build Open Source software that
-					keeps the internet open and accessible — a natural resource for everyone, everywhere.
+					Orchid’s mission is to build Open Source software that keeps the internet open and accessible — a natural resource for everyone, everywhere.
 				</source>
 				<target state="new">
 					Orchid’s mission is to build Open Source software that
@@ -1971,19 +2118,13 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						106
+						136
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="Faq-HowDoesItWork__Body" datatype="html">
 				<source>
-					In the Orchid marketplace, incentives are used to
-					create economic security and reliability between clients and servers in a permissionless way. This
-					peer-to-peer marketplace is dynamic; clients can select single- or multi-hop onion routed circuits by
-					selecting nodes randomly weighted on stake and filtered on secondary desiderata (price, location, etc.).
-					A single hop route has the benefits of a normal VPN connection, creating a tunnel to route your traffic
-					over a public network or your ISP, while a multi-hop connection provides additional privacy benefits by
-					securing your network data from any one provider.
+					The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.
 				</source>
 				<target state="new">
 					In the Orchid marketplace, incentives are used to
@@ -1999,35 +2140,229 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						111
+						140
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Faq-WhenWillItGoLive__Body" datatype="html">
+			<trans-unit id="Faq-WhoIsThisFor__Body" datatype="html">
 				<source>
-					We anticipate to launch the Orchid network in Q4 of
-					2019.
+					If you are a casual reader, a normal VPN user, or just exploring crypto applications, you can learn the basics about what Orchid is good for right now, and how to safely use it to get more online privacy than you had before.
 				</source>
 				<target state="new">
-					We anticipate to launch the Orchid network in Q4 of
-					2019.
+					If you are a casual reader, a normal VPN user, or just exploring crypto applications, you can learn the basics about what Orchid is good for right now, and how to safely use it to get more online privacy than you had before.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						121
+						152
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhoIsThisFor__Body-2" datatype="html">
+				<source>
+					If you are an open source security researcher, this works as an introduction to a system that exists (not vaporware) that uses financial incentives to reward the growth of the network and has numerous computational and networking primitives that really serious networking security might eventually be built out of.  Orchid Labs welcomes your interest.
+				</source>
+				<target state="new">
+					If you are an open source security researcher, this works as an introduction to a system that exists (not vaporware) that uses financial incentives to reward the growth of the network and has numerous computational and networking primitives that really serious networking security might eventually be built out of.  Orchid Labs welcomes your interest.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						153
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatProtections__Body" datatype="html">
+				<source>
+					Basic Internet connections function by transmitting packets of data between two hosts (computers). In order to find their way, packets contain both a source and destination IP address. As packets move from the destination to the source, different routers and physical infrastructure require both of these addresses for the two-way connection to be established and maintained. This means that instantly and over time, the owners of the physical infrastructure are in a position to build a profile of Internet usage on their paying user (you!) and also to block content as the owner sees fit.
+				</source>
+				<target state="new">
+					Basic Internet connections function by transmitting packets of data between two hosts (computers). In order to find their way, packets contain both a source and destination IP address. As packets move from the destination to the source, different routers and physical infrastructure require both of these addresses for the two-way connection to be established and maintained. This means that instantly and over time, the owners of the physical infrastructure are in a position to build a profile of Internet usage on their paying user (you!) and also to block content as the owner sees fit.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						157
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatProtections__Body-2" datatype="html">
+				<source>
+					Typically these infrastructure owners are ISPs — mobile carriers providing phone data connections, home cable Internet providers, WiFi hotspot operators, and any Internet backbone operators that have peering agreements with user-facing ISPs. In all these cases, the ISP is in an advantaged position to monitor and/or restrict Internet usage. It is common in many countries for ISPs to restrict content so that users cannot load certain websites.
+				</source>
+				<target state="new">
+					Typically these infrastructure owners are ISPs — mobile carriers providing phone data connections, home cable Internet providers, WiFi hotspot operators, and any Internet backbone operators that have peering agreements with user-facing ISPs. In all these cases, the ISP is in an advantaged position to monitor and/or restrict Internet usage. It is common in many countries for ISPs to restrict content so that users cannot load certain websites.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						159
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-WhatProtections__Body-3" datatype="html">
+				<source>
+					If you are not happy with or do not trust your existing ISP(s), by using Orchid you can currently limit their knowledge to knowing only that you are sending and receiving bytes through Orchid, and completely block their ability to mess with the details of your traffic, unblocking the previously blocked content. They either block all of Orchid or nothing, so if things continue to work after turning on Orchid, then your ISP has allowed “Orchid in general” and cannot manipulate the individual bytes between you and the rest of the Internet.
+				</source>
+				<target state="new">
+					If you are not happy with or do not trust your existing ISP(s), by using Orchid you can currently limit their knowledge to knowing only that you are sending and receiving bytes through Orchid, and completely block their ability to mess with the details of your traffic, unblocking the previously blocked content. They either block all of Orchid or nothing, so if things continue to work after turning on Orchid, then your ISP has allowed “Orchid in general” and cannot manipulate the individual bytes between you and the rest of the Internet.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						161
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowCanOrchidHelpToday__Body" datatype="html">
+				<source>
+					The goal with the Orchid app is to give users insight and control over the network connection of their device. To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT. Then the Orchid app connects to the Orchid network and selects a node using Orchid’s
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					linear stake-weighted algorithm
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					to serve as a VPN and pays for bandwidth via a continuous stream of tiny OXT
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					nanopayments
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					.
+				</source>
+				<target state="new">
+					The goal with the Orchid app is to give users insight and control over the network connection of their device. To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT. Then the Orchid app connects to the Orchid network and selects a node using Orchid’s
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					linear stake-weighted algorithm
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					to serve as a VPN and pays for bandwidth via a continuous stream of tiny OXT
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					nanopayments
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						166
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowCanOrchidHelpToday__Body-2" datatype="html">
+				<source>
+					In a single-hop circuit configuration, Orchid provides:
+				</source>
+				<target state="new">
+					In a single-hop circuit configuration, Orchid provides:
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						169
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowCanOrchidHelpToday__Body-3" datatype="html">
+				<source>
+					A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing. If the provider maintains logs, those logs could be sold to advertisers or otherwise used against you. In the current VPN marketplace, it is hard to know who is maintaining logs and who is not. For Orchid nodes, we have developed a flexible curation system that gives users a way to pick whom to trust. Read more here.
+				</source>
+				<target state="new">
+					A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing. If the provider maintains logs, those logs could be sold to advertisers or otherwise used against you. In the current VPN marketplace, it is hard to know who is maintaining logs and who is not. For Orchid nodes, we have developed a flexible curation system that gives users a way to pick whom to trust. Read more here.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						177
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowCanOrchidHelpToday__Body-4" datatype="html">
+				<source>
+					Another solution is to trust no single provider with enough information to know both who you are and what information you are accessing. To that end, Orchid supports an advanced feature that allows users to configure multi-hop routes of their own, by stringing together several Orchid nodes into a multi-hop circuit. Each hop may be constructed with any protocol supported by Orchid (initially just Orchid hops and OpenVPN). While the potential is there to protect the user from any one provider knowing enough information to reveal their circuit, this is an advanced feature that is currently “use at your own risk”.
+				</source>
+				<target state="new">
+					Another solution is to trust no single provider with enough information to know both who you are and what information you are accessing. To that end, Orchid supports an advanced feature that allows users to configure multi-hop routes of their own, by stringing together several Orchid nodes into a multi-hop circuit. Each hop may be constructed with any protocol supported by Orchid (initially just Orchid hops and OpenVPN). While the potential is there to protect the user from any one provider knowing enough information to reveal their circuit, this is an advanced feature that is currently “use at your own risk”.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						180
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Body" datatype="html">
+				<source>
+					When a user sets up an Orchid hop, the Orchid protocol requires an ERC-20 Ethereum token, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection. While the
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					nanopayment architecture
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain. When that happens,  the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain. Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node. Also, the frequency of how often on-chain payments occur is configurable.
+				</source>
+				<target state="new">
+					When a user sets up an Orchid hop, the Orchid protocol requires an ERC-20 Ethereum token, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection. While the
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					nanopayment architecture
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain. When that happens,  the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain. Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node. Also, the frequency of how often on-chain payments occur is configurable.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						186
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Body-2" datatype="html">
+				<source>
+					All information gained by a potential network attacker is an advantage. However, consider exactly what information is revealed. For an Orchid user running a single hop circuit: the provider sees the user’s payment address when it accepts service, along with the user’s real IP address and the destination addresses that the user is connecting to (if it maintains logs). Once a rare on-chain payment is made, the user’s payment address and provider’s payment address are stored on Ethereum with a timestamp available to the public.
+				</source>
+				<target state="new">
+					All information gained by a potential network attacker is an advantage. However, consider exactly what information is revealed. For an Orchid user running a single hop circuit: the provider sees the user’s payment address when it accepts service, along with the user’s real IP address and the destination addresses that the user is connecting to (if it maintains logs). Once a rare on-chain payment is made, the user’s payment address and provider’s payment address are stored on Ethereum with a timestamp available to the public.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						189
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Faq-HowIsOrchidPrivate__Body-3" datatype="html">
+				<source>
+					When considering anonymity, it is important to understand if the user is linked to the OXT used in their circuit. Worst case, if the user purchased OXT on an exchange with their real identity, AND the VPN provider used in the circuit maintained logs, then either of those two entities could be compelled to give information that could deanonymize the user. Similarly, a user who paid for a VPN service that maintained logs with a credit card could be deanonymized with just one entity being compelled.
+				</source>
+				<target state="new">
+					When considering anonymity, it is important to understand if the user is linked to the OXT used in their circuit. Worst case, if the user purchased OXT on an exchange with their real identity, AND the VPN provider used in the circuit maintained logs, then either of those two entities could be compelled to give information that could deanonymize the user. Similarly, a user who paid for a VPN service that maintained logs with a credit card could be deanonymized with just one entity being compelled.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						192
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="Faq-HowDoesTheOrchidTokenWork__Body" datatype="html">
 				<source>
-					OXT is a “pre-mined” cryptocurrency based on the ERC-20
-					standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.
-					It also functions as a tool to promote security and healthy market dynamics, as providers can adjust
-					their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion
-					(1,000,000,000). We do not intend ever to create any additional OXT.
+					OXT is a “pre-mined” cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace. It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion (1,000,000,000). We do not intend ever to create any additional OXT.
 				</source>
 				<target state="new">
 					OXT is a “pre-mined” cryptocurrency based on the ERC-20
@@ -2041,35 +2376,23 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						131
+						246
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Faq-HowDoesOrchidDistinguishIteslfFromVPNs__Body" datatype="html">
+			<trans-unit id="Faq-HowDoCuratedListsWork__Body" datatype="html">
 				<source>
-					Traditional VPNs today are limited; the centralized
-					nature of their offering cannot compete with the distributed properties of combining multiple different
-					providers to offer multi-hop level security. And even if a single company offers multiple hop VPN
-					routes, there is still a single centralized entity you are placing your trust into. Using a distributed
-					system allows you, as a user, to distribute trust across multiple distinct VPN providers, thereby
-					breaking apart the flow of your information so no single entity can see the entire picture. Such a
-					system is not possible when purchasing a VPN service from a single provider.
+					The Orchid client calls an on-chain ‘curated list’ function which filters the viable nodes on Orchid (that is, nodes that have properly staked) into a custom subset. Initial releases of the official Orchid client will use this feature to prevent certain kinds of attacks from malicious exit nodes (e.g. SSL downgrade attacks) by using a default list consisting of trusted VPN partners.
 				</source>
 				<target state="new">
-					Traditional VPNs today are limited; the centralized
-					nature of their offering cannot compete with the distributed properties of combining multiple different
-					providers to offer multi-hop level security. And even if a single company offers multiple hop VPN
-					routes, there is still a single centralized entity you are placing your trust into. Using a distributed
-					system allows you, as a user, to distribute trust across multiple distinct VPN providers, thereby
-					breaking apart the flow of your information so no single entity can see the entire picture. Such a
-					system is not possible when purchasing a VPN service from a single provider.
+					The Orchid client calls an on-chain ‘curated list’ function which filters the viable nodes on Orchid (that is, nodes that have properly staked) into a custom subset. Initial releases of the official Orchid client will use this feature to prevent certain kinds of attacks from malicious exit nodes (e.g. SSL downgrade attacks) by using a default list consisting of trusted VPN partners.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						139
+						250
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2360,6 +2683,54 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="ContactForm__RequiredFields" datatype="html">
+				<source>
+					Required fields are missing
+				</source>
+				<target state="final">
+					필수 필드 누락
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						127
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__UnknownError" datatype="html">
+				<source>
+					There was an unknown error, your message may not have been sent
+				</source>
+				<target state="final">
+					알 수 없는 오류가 있었습니다. 메시지가 전송되지 않았을 수 있습니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						130
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ContactForm__Success" datatype="html">
+				<source>
+					Your message has been sent
+				</source>
+				<target state="final">
+					메시지 전송 완료
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/contact/contact.component.html
+					</context>
+					<context context-type="linenumber">
+						133
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="ContactForm__SubmitButton" datatype="html">
 				<source>
 					Submit
@@ -2372,7 +2743,7 @@
 						app/contact/contact.component.html
 					</context>
 					<context context-type="linenumber">
-						131
+						137
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2388,7 +2759,7 @@
 						app/contact/contact.component.html
 					</context>
 					<context context-type="linenumber">
-						132
+						138
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2421,17 +2792,12 @@
 						5
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						5
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompany__Description" datatype="html">
 				<source>
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					Why build a privacy network?
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and
 					explore that world freely.
@@ -2450,8 +2816,7 @@
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
-					grown an incredible team based in San Francisco and Berlin that is releasing the Orchid tokenized VPN in Q4
-					2019.
+					grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="translated">
@@ -2480,14 +2845,6 @@
 						25
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						25
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__Title" datatype="html">
 				<source>
@@ -2499,14 +2856,6 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						56
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						56
@@ -2532,14 +2881,6 @@
 						57
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						57
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__NameSteven" datatype="html">
 				<source>
@@ -2551,14 +2892,6 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						68
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						68
@@ -2580,14 +2913,6 @@
 						77
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						77
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyFounders__NameJay" datatype="html">
 				<source>
@@ -2599,14 +2924,6 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						85
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						85
@@ -2628,14 +2945,6 @@
 						97
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						97
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__Subtitle" datatype="html">
 				<source>
@@ -2647,14 +2956,6 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						98
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						98
@@ -2684,14 +2985,6 @@
 						101
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						101
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__Address2" datatype="html">
 				<source>
@@ -2716,14 +3009,6 @@
 						106
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
-					</context>
-					<context context-type="linenumber">
-						106
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
 				<source>
@@ -2735,14 +3020,6 @@
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						113
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
 						113
@@ -2764,12 +3041,68 @@
 						114
 					</context>
 				</context-group>
+			</trans-unit>
+			<trans-unit id="Join__Title" datatype="html">
+				<source>
+					Join the privacy network
+				</source>
+				<target state="new">
+					Join the privacy network
+				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/oxt/oxt.component.html
+						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						114
+						3
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Join__Subhead" datatype="html">
+				<source>
+					Get started in 5 minutes
+				</source>
+				<target state="new">
+					Get started in 5 minutes
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						4
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="MoreQuestions__Heading" datatype="html">
+				<source>
+					Got more questions?
+				</source>
+				<target state="new">
+					Got more questions?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						74
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="MoreQuestions__Subhead" datatype="html">
+				<source>
+					Check out the FAQ
+				</source>
+				<target state="new">
+					Check out the FAQ
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						75
 					</context>
 				</context-group>
 			</trans-unit>

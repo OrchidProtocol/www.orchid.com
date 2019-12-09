@@ -124,8 +124,14 @@
       <div class="contact-form-error contact-form-message" [class.active]="this.error">
         {{errorMessage}}
       </div>
-      <div class="contact-form-success contact-form-message" [class.active]="this.success">
-        {{successMessage}}
+      <div class="contact-form-error contact-form-message" [class.active]="this.error_RequiredFields" i18n="@@ContactForm__RequiredFields">
+        Required fields are missing
+      </div>
+      <div class="contact-form-error contact-form-message" [class.active]="this.error_UnknownError" i18n="@@ContactForm__UnknownError">
+        There was an unknown error, your message may not have been sent
+      </div>
+      <div class="contact-form-success contact-form-message" [class.active]="this.success" i18n="@@ContactForm__Success">
+        Your message has been sent
       </div>
 
       <button (click)="onSubmit()" class="btn-primary" i18n="@@ContactForm__SubmitButton">Submit</button>
