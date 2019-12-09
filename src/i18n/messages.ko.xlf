@@ -1450,8 +1450,8 @@
 				<source>
 					Home
 				</source>
-				<target state="new">
-					Home
+				<target state="final">
+					홈
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
