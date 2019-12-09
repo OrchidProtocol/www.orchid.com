@@ -41,6 +41,31 @@ body {
   }
 }
 
+.locale-en-US {
+  .show-ja, .show-ko, .show-zh,
+  .hide-en {
+    display: none !important;
+  }
+}
+.locale-ja {
+  .show-ko, .show-zh, .show-en,
+  .hide-ja {
+    display: none !important;
+  }
+}
+.locale-ko {
+  .show-ja, .show-zh, .show-en,
+  .hide-ko {
+    display: none !important;
+  }
+}
+.locale-zh {
+  .show-ja, .show-ko, .show-en,
+  .hide-zh {
+    display: none !important;
+  }
+}
+
 a {
   color: $orc-purple;
 }
