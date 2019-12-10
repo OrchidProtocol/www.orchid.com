@@ -16,10 +16,12 @@ import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
+import { NewsletterSignupFeaturesComponent } from './newsletter-signup-features/newsletter-signup-features.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
+import { JoinComponent } from './join/join.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
@@ -41,10 +43,12 @@ import { MetaService } from './MetaService';
     HomeComponent,
     NewsletterSignupComponent,
     NewsletterSignupHeroComponent,
+    NewsletterSignupFeaturesComponent,
     PageLayoutComponent,
     FaqComponent,
     ContactComponent,
     AboutCompanyComponent,
+    JoinComponent,
     NotFoundComponent
   ],
   imports: [

@@ -19,6 +19,7 @@ import {
 import {ServiceTermsComponent} from "./service-terms/service-terms.component";
 import {VisionComponent} from "./vision/vision.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
+import { JoinComponent } from './join/join.component';
 
 
 export const routes: Routes = [
@@ -43,7 +44,9 @@ export const routes: Routes = [
 	    {path: "download", component: DownloadComponent},
 	    {path: "download.html", redirectTo: "download"},
 	    {path: "events", component: EventsComponent},
-	    {path: "events.html", redirectTo: "events"},
+      {path: "events.html", redirectTo: "events"},
+	    {path: "join", component: JoinComponent},
+	    {path: "join.html", redirectTo: "join"},
 	    {path: "privacy-policy", component: PrivacyPolicyComponent},
 	    {path: "mobile-privacy-policy", component: MobilePrivacyPolicyComponent},
 	    {path: "privacy-policy.html", redirectTo: "privacy-policy"},
