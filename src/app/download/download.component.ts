@@ -11,7 +11,7 @@ import { MetaService } from '../MetaService';
 export class DownloadComponent implements OnInit {
   constructor(private meta: MetaService) { }
   ngOnInit() {
-    this.meta.setGlobalTitle('Packet Analyzer App for iOS & Android | Orchid');
-    this.meta.setGlobalDescription('Your privacy is important to us, therefore no third parties will see your data after downloading our free VPN traffic analyzer app.');
+    this.meta.setGlobalTitle('VPN App for iOS & Android | Orchid');
+    this.meta.setGlobalDescription('Orchid is a VPN client, VPN service and advanced networking tool.');
   }
 }
