@@ -7,9 +7,16 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class VideoSectionComponent implements OnInit {
+  js: boolean = false;
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+    const doc = typeof document !== "undefined" && document;
+
+    if (doc) {
+      this.js = true;
+    }
+  }
 
 }

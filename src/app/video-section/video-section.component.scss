@@ -2,7 +2,12 @@
 @import "orc_config";
 @import "media_queries";
 
-.video-section {}
+.video-section {
+  display: none;
+  &.js {
+    display: block;
+  }
+}
 .video {
   position: relative;
   padding-bottom: 56.25%;
