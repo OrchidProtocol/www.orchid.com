@@ -12,6 +12,7 @@
   h3 {
     font-size: $size-body-md;
     margin-bottom: 1rem;
+    color: $orc-rock-gray;
 
     @include mobile {
       font-size: $size-body-md-mobile;
