@@ -130,6 +130,38 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="WhitepaperLink" datatype="html">
+				<source>
+					/assets/whitepaper/whitepaper.pdf
+				</source>
+				<target state="final">
+					/assets/whitepaper/japanese.pdf
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-network/about-network.component.html
+					</context>
+					<context context-type="linenumber">
+						53
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/how-it-works/how-it-works.component.html
+					</context>
+					<context context-type="linenumber">
+						292
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						24
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HowHero__Title" datatype="html">
 				<source>
 					How Orchid delivers digital privacy
@@ -336,10 +368,7 @@
 			</trans-unit>
 			<trans-unit id="HowApp__Description" datatype="html">
 				<source>
-					Users of Orchid run a client similar to a typical VPN client for protocols such
-					as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality
-					offered by most VPN clients, with features such as the ability to run traffic through an integrated personal
-					firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
+					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</source>
 				<target state="translated">
 					オーキッドのユーザーは、OpenVPNなどのプロトコル用の一般的な VPN クライアントと同様のクライア
@@ -359,9 +388,9 @@
 			</trans-unit>
 			<trans-unit id="HowApp__Link" datatype="html">
 				<source>
-					Get the pre-release version of the app today!
+					Get the the app today!
 				</source>
-				<target state="final">
+				<target state="translated">
 					アプリのプレリリース版は今すぐ入手できます。
 				</target>
 				<context-group purpose="location">
@@ -369,7 +398,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						59
+						56
 					</context>
 				</context-group>
 			</trans-unit>
@@ -385,7 +414,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						89
+						86
 					</context>
 				</context-group>
 			</trans-unit>
@@ -473,7 +502,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						87
 					</context>
 				</context-group>
 			</trans-unit>
@@ -489,7 +518,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						141
+						138
 					</context>
 				</context-group>
 			</trans-unit>
@@ -514,7 +543,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						142
+						139
 					</context>
 				</context-group>
 			</trans-unit>
@@ -530,7 +559,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						176
+						173
 					</context>
 				</context-group>
 			</trans-unit>
@@ -567,7 +596,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						177
+						174
 					</context>
 				</context-group>
 			</trans-unit>
@@ -583,7 +612,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						214
+						211
 					</context>
 				</context-group>
 			</trans-unit>
@@ -618,7 +647,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						215
+						212
 					</context>
 				</context-group>
 			</trans-unit>
@@ -634,7 +663,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						252
+						249
 					</context>
 				</context-group>
 			</trans-unit>
@@ -708,7 +737,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						253
+						250
 					</context>
 				</context-group>
 			</trans-unit>
@@ -724,7 +753,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						296
+						293
 					</context>
 				</context-group>
 			</trans-unit>
@@ -762,9 +791,9 @@
 			</trans-unit>
 			<trans-unit id="DownloadHero__Title" datatype="html">
 				<source>
-					Try the pre-release Orchid app
+					Try the Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					プレリリースのオーキッド アプリをお試しください
 				</target>
 				<context-group purpose="location">
@@ -788,7 +817,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						15
+						11
 					</context>
 				</context-group>
 			</trans-unit>
@@ -798,7 +827,7 @@
 					Tap the link below on your iOS device.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					https://www.orchid.com/ios-pre-release
+					https://www.orchid.com/download-ios
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -828,7 +857,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						16
+						12
 					</context>
 				</context-group>
 			</trans-unit>
@@ -844,7 +873,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						27
+						23
 					</context>
 				</context-group>
 			</trans-unit>
@@ -854,14 +883,8 @@
 					Tap the link below on your Android device.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					https://www.orchid.com/android-pre-release
+					https://www.orchid.com/download-android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Accept the terms for early access.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Install Orchid using the link displayed.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
 				<target state="translated">
@@ -884,7 +907,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						28
+						24
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1729,7 +1752,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1745,7 +1768,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						75
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1885,7 +1908,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						78
+						87
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2051,7 +2074,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2070,7 +2093,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						89
+						91
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2086,7 +2109,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						92
+						94
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2094,7 +2117,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						103
+						105
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2102,7 +2125,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						114
+						116
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2123,7 +2146,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						100
+						102
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2143,7 +2166,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						111
+						113
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2159,7 +2182,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						128
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2175,7 +2198,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						127
+						129
 					</context>
 				</context-group>
 			</trans-unit>
