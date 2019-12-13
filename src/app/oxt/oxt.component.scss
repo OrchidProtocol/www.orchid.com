@@ -123,6 +123,13 @@ $containerWidth: 932px;
     min-width: unset;
     order: 2;
   }
+
+  h2 {
+    font-size: $size-h1;
+    @include mobile {
+      font-size: $size-h1-small;
+    }
+  }
 }
 
 .why-oxt__img {
