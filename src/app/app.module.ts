@@ -23,6 +23,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
+import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
@@ -52,6 +53,7 @@ import { MetaService } from './MetaService';
     AboutCompanyComponent,
     JoinComponent,
     OxtComponent,
+    WhereOXTComponent,
     NotFoundComponent
   ],
   imports: [
