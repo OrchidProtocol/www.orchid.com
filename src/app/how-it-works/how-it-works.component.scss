@@ -13,12 +13,6 @@ $section-sm: 54rem;
 .how-hero {
   .content {
     max-width: 39rem;
-    :host-context(.locale-ja) & {
-      max-width: 44rem;
-    }
-    :host-context(.locale-zh) & {
-      max-width: 41rem;
-    }
     padding-bottom: 200px;
 
     @include mobile {
@@ -73,6 +67,21 @@ $section-sm: 54rem;
 
 }
 
+:host-context(.locale-ja) {
+  .how-hero {
+    .content {
+      max-width: 44rem;
+    }
+  }
+}
+:host-context(.locale-zh) {
+  .how-hero {
+    .content {
+      max-width: 41rem;
+    }
+  }
+}
+
 
 // CORE COMPONENTS SECTION
 
@@ -98,9 +107,6 @@ $section-sm: 54rem;
   }
   .content {
     max-width: $section-sm;
-    :host-context(.locale-ja) & {
-      max-width: 55rem;
-    }
   }
   h2 > span {
     display: block;
@@ -119,6 +125,15 @@ $section-sm: 54rem;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     font-size: $size-body-md;
     color: $orc-rock-gray;
+  }
+}
+
+
+:host-context(.locale-ja) {
+  .core {
+    .content {
+      max-width: 55rem;
+    }
   }
 }
 

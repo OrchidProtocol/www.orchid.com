@@ -39,7 +39,10 @@
     font-size: 160%;
   }
   
-  :host-context(.locale-zh) & {
+}
+
+:host-context(.locale-zh) {
+  .about-company__splash-text-container {
     .big {
       display: inline-block;
       width: 100%;
