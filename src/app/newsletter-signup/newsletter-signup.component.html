@@ -1,21 +1,21 @@
 <div class="bk-faint-gray">
   <section id="newsletter-signup" class="section-wide center-text hpad-wide vpad-wide">
     <header>
-      <h2>Let's stay connected</h2>
+      <h2 i18n="@@Newsletter__Title">Let's stay connected</h2>
     </header>
     <div *ngIf="!submitted">
-      <p class="medium">Get the newsletter for updates and privacy news</p>
-      <input type="email" [(ngModel)]="email" placeholder="Email address" (keyup.enter)="submit()"
+      <p class="medium" i18n="@@Newsletter__Description">Get the newsletter for updates and privacy news</p>
+      <input type="email" [(ngModel)]="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" (keyup.enter)="submit()"
         class="input-large center-block vgap-thin newsletter-signup__input" [class.invalid]="this.invalid_email"
         (change)="inputListener()" (keydown)="inputListener()" />
       <div class="gap-bot-thin" *ngIf="showFull">
         <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}" (click)="checkboxListener()">
           <input type="checkbox" [(ngModel)]="consented" (change)="checkboxListener()">
-          I consent to receiving further instructions at the email address I submitted above.
+          <span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
         </label>
       </div>
       <button (click)="submit()" class="btn-primary btn-fixed center-block newsletter-signup__button"
-        [class.loading]="this.in_progress">Subscribe</button>
+        [class.loading]="this.in_progress" i18n="@@Newsletter__Subscribe">Subscribe</button>
     </div>
     <ng-container *ngIf="(error != '')">
       <p id="error" [innerHTML]="error"></p>

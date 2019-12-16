@@ -38,6 +38,16 @@
   .big {
     font-size: 160%;
   }
+  
+}
+
+:host-context(.locale-zh) {
+  .about-company__splash-text-container {
+    .big {
+      display: inline-block;
+      width: 100%;
+    }
+  }
 }
 
 .about-company__splash-image-container {

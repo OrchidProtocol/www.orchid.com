@@ -1,0 +1,232 @@
+@import "media_queries";
+@import "misc_config";
+@import "orc_config";
+@import "styles";
+
+// Variables
+$containerWidth: 932px;
+
+// HERO SECTION
+.oxt-hero > section {
+  & > * + * {
+    margin-top: 2rem;
+    display: block;
+  }
+  & >.oxt-hero__subtitle {
+    margin-top: 1rem;
+  }
+}
+
+.oxt-hero__title {
+  font-size: 100px;
+}
+
+// INTRO SECTION
+.oxt-intro > section {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 3rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    background: url('/assets/img/oxt/bg-circle-1.svg') no-repeat center center;
+    background-size: contain;
+    bottom: 0;
+    left: 36%;
+    transform: translateY(50%);
+
+    @include mobile {
+      display: none;
+    }
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.oxt-intro__text {
+  max-width: 82ch;
+}
+
+// WHY OXT SECTION
+.why-oxt > .overflow-wrapper {
+  position: relative;
+  max-width: 1685px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 337px;
+    height: 347px;
+    background: url('/assets/img/oxt/bg-circles-2.svg') no-repeat center center;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+    transform: translate(0, 67%);
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.why-oxt section {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 1.8rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.why-oxt__title {
+
+  margin-bottom: 1rem;
+
+  & > span {
+    display: block;
+
+    &:nth-of-type(1) {
+      font-size: 64px;
+
+      @include mobile {
+        font-size: 48px;
+      }
+    }
+    &:nth-of-type(2) {
+      font-size: 100px;
+
+      @include mobile {
+        font-size: 75px;
+      }
+    }
+  }
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.why-oxt__text {
+  min-width: 50ch;
+
+  @include mobile {
+    min-width: unset;
+    order: 2;
+  }
+
+  h2 {
+    font-size: $size-h1;
+    @include mobile {
+      font-size: $size-h1-small;
+    }
+  }
+}
+
+.why-oxt__img {
+  max-width: 100%;
+  transform: translate(65px, -98px);
+
+  @media (max-width: 1184px) {
+    transform: translate(0, 0);
+  }
+  @include mobile {
+    transform: translate(0, 0);
+    width: 300px;
+    order: 1;
+  }
+}
+
+// TOKENOMICS SECTION
+.tokenomics {
+  h4 {
+    font-size: $size-body-md;
+    color: $orc-rock-gray;
+    margin-bottom: 1rem;
+  }
+
+  & > section {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 168px;
+      height: 168px;
+      background: url('/assets/img/oxt/bg-circle-3.png') no-repeat center center;
+      background-size: contain;
+      top: 0;
+      left: 0;
+      transform: translate(10px, 104px);
+
+      @media (max-width: 1100px) {
+        display: none;
+      }
+    }
+  }
+}
+.tokenomics__subhead {
+  max-width: 735px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.tokenomics__columns {
+  max-width: $containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+// AUDITS SECTION
+.oxt-audits {
+  h4 {
+    font-size: $size-body-md;
+    color: $orc-rock-gray;
+    margin-bottom: 1rem;
+  }
+}
+
+.oxt-audits__columns {
+  max-width: $containerWidth;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+
+  & > div {
+    max-width: 49ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include mobile {
+    grid-template-columns: 1fr;
+  }
+}
+
+.certora-logo {
+  width: 160px;
+  height: 131px;
+}
+
+.oxt-audits__quote {
+  font-style: italic;
+  text-align: left;
+}

@@ -2,7 +2,7 @@
   <div class="splash-circuit-image section-med hpad-wide"></div>
   <div class="splash-circuit-grid section-med hpad-wide">
     <div class="splash-circuit-grid-item vpad-wide">
-      <h1>Events</h1>
+      <h1 i18n="@@EventsHero__Title">Events</h1>
     </div>
   </div>
 </div>
@@ -10,7 +10,7 @@
 <div>
   <section class="events-page__section section-med hpad-wide vpad-wide">
     <header>
-      <h2>Find us IRL</h2>
+      <h2 i18n="@@EventsFindUsIRL__Title">Find us IRL</h2>
     </header>
     <ul id="ev-list" class="phantom-list" *ngIf="events$ | async as events else loadingEvents">
       <li class="ev-event" *ngFor="let event of events">

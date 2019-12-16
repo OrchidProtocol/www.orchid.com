@@ -1,0 +1,74 @@
+<div class="oxt-hero bk-beige-light">
+  <section class="section-med hpad-wide vpad-xl center-text z-index-1">
+    <img class="oxt-hero__logomark" src="/assets/img/oxt/orchid-logomark.svg" alt=""/>
+    <h1 class="oxt-hero__title">OXT</h1>
+    <h2 class="oxt-hero__subtitle color-gray">The Orchid Digital Currency</h2>
+    <a href="/assets/whitepaper/whitepaper.pdf">
+      <button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">Whitepaper</button>
+    </a>
+  </section>
+</div>
+
+<div class="oxt-intro bk-white">
+  <section class="section-med hpad-wide vpad-wide z-index-1">
+    <img class="max-100" src="/assets/img/oxt/orchid-magnified.svg" alt=""/>
+    <div class="oxt-intro__text">
+      <p class="medium">OXT is a new Ethereum (ERC20) compliant digital currency used to exchange value on the Orchid network. OXT is used by users to purchase VPN service. Orchid node providers receive OXT in exchange for their bandwidth. On Orchid, both users and providers stake OXT.</p>
+
+      <p class="medium">The supply of OXT is fixed at one billion units. There is no inflation. The possibility of contractual penalty mechanisms that “burn” OXT create the potential for some small deflationary pressure.</p>
+    </div>
+  </section>
+</div>
+
+
+<div class="why-oxt bk-lavender">
+  <div class="overflow-wrapper">
+    <section class="section-med hpad-wide vpad-wide z-index-1">
+      <div class="why-oxt__text center-text">
+        <h2 class="color-primary gap-bot-thin">Where to get OXT?</h2>
+        <where-oxt></where-oxt>
+      </div>
+      <img class="why-oxt__img" src="/assets/img/oxt/rabbit-pulls-token.svg" alt=""/>
+    </section>
+  </div>
+</div>
+
+<div class="tokenomics bk-white">
+    <section class="section-med hpad-wide vpad-wide z-index-1">
+      <h2 class="color-primary center-text vgap-xs">OXT User and Provider Staking</h2>
+      <p class="tokenomics__subhead medium center-text gap-bot-wide">During normal market operations on Orchid both users and providers stake OXT. Staking locks up OXT on the network to incentivize good behavior and network growth over the long term.</p>
+      <div class="tokenomics__columns">
+        <div>
+          <h4>User Deposits</h4>
+          <p>To use the Orchid app, users will need to acquire OXT and move the funds they want to use for service into Ethereum smart contracts using the Orchid account interface. The funds are split into two categories: a membership deposit and a balance. The deposit is a small amount of OXT that protects against clients misbehaving on the network. The majority of the funds go into the balance, which is the collateral that is used to issue nanopayments. When a winning ticket is issued, OXT is transferred from the balance to the provider.</p>
+          <img src="/assets/img/oxt/tokenomics.svg" alt=""/>
+        </div>
+        <div>
+          <h4>Node Stake Deposits</h4>
+          <p>Providers on Orchid stake OXT currency in time-locked deposits to prove identity and receive traffic in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the OXT. Clients select Orchid server nodes with probability proportional to relative stake, thus nodes receive traffic and payment flow from users proportional to the amount of digital currency staked on Orchid.</p>
+
+          <p>Providers can withdraw stake from the registry contract, but withdrawals are subject to an intentional delay which currently defaults to three months. Clients control this delay variable by ignoring nodes with delay periods that are too short. This combination of linear stake weighted random selection and a withdrawal delay provides stronger economic security by creating a high cost barrier for takeover attacks and additionally helps align provider and user incentives.</p>
+        </div>
+      </div>
+    </section>
+</div>
+
+<div class="oxt-audits bk-lavender">
+  <section class="section-med hpad-wide vpad-wide z-index-1">
+      <h2 class="color-primary center-text gap-bot-thin">OXT Audits</h2>
+      <div class="oxt-audits__columns center-text">
+        <div>
+          <img src="/assets/img/oxt/consensus-systems-logo.svg" alt="Consensys"/>
+          <h4>Consensys Dilligence</h4>
+          <p class="oxt-audits__quote">“The usage of the Ethereum blockchain within the Orchid network protocol is an exceptional example of decentralized coordination with on-chain enforcement."</p>
+          <a class="uppercase" href="https://diligence.consensys.net/audits/private/npawjrxb-orchid/">Read More</a>
+        </div>
+        <div>
+          <img class="certora-logo" src="/assets/img/oxt/CertoraLogo@3x.png" alt="Certora"/>
+          <h4>Certora</h4>
+        </div>
+      </div>
+  </section>
+</div>
+
+<app-newsletter-signup></app-newsletter-signup>

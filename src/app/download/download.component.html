@@ -1,6 +1,6 @@
 <div class="background-white">
   <section id="top">
-    <h3>Try the Orchid app</h3>
+    <h3 i18n="@@DownloadHero__Title">Try the Orchid app</h3>
   </section>
 </div>
 
@@ -8,28 +8,39 @@
   <section id="instructions" class="section-med hpad-wide vpad-wide">
     <div class="row">
       <div class="column left">
-        <h4>iOS</h4>
-        <ol>
-          <li>Tap the link below on your iOS device.<br />
-            <a href="https://www.orchid.com/download-ios">https://www.orchid.com/download-ios</a>
+        <h4 i18n="@@DownloadAndroid__Title">Android</h4>
+        <ol i18n="@@DownloadAndroid__Body">
+          <li>Tap the link below on your Android device.<br />
+            <a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US">
+              <img width="160" i18n-src="@@GooglePlayBadgeURL"
+                src="/assets/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt"
+                alt="Get it on Google Play" style="margin: 0.75rem 0;">
+            </a>
           </li>
-          <li>Follow the instruction to install TestFlight.</li>
-          <li>Install Orchid.</li>
         </ol>
       </div>
 
       <div class="divider"></div>
       <div class="column right">
-        <h4>Android</h4>
-        <ol>
-          <li>Tap the link below on your Android device.<br />
-            <a href="https://www.orchid.com/download-android">https://www.orchid.com/download-android</a>
+        <h4 i18n="@@DownloadiOS__Title">iOS (help us Beta test)</h4>
+        <ol i18n="@@DownloadiOS__Body">
+          <li>We have a beta version of our iOS app on Testflight. Please help us test the app by using the link
+            below:<br />
+            <a href="https://testflight.apple.com/join/BlkfHkHY">https://testflight.apple.com/join/BlkfHkHY</a>
           </li>
+          <li>Follow the instruction to install TestFlight.</li>
+          <li>Install Orchid.</li>
         </ol>
       </div>
     </div>
   </section>
 </div>
 
-<app-newsletter-signup></app-newsletter-signup>
+<div class="bk-lavender">
+  <section class="section-narrow hpad-wide vpad-wide z-index-1 center-text">
+    <h2 class="color-primary gap-bot-thin">Where to get OXT</h2>
+    <where-oxt></where-oxt>
+  </section>
+</div>
 
+<app-newsletter-signup></app-newsletter-signup>

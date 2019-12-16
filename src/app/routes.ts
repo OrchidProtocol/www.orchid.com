@@ -20,6 +20,7 @@ import {ServiceTermsComponent} from "./service-terms/service-terms.component";
 import {VisionComponent} from "./vision/vision.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
+import { OxtComponent } from './oxt/oxt.component';
 
 
 export const routes: Routes = [
@@ -53,6 +54,8 @@ export const routes: Routes = [
 	    {path: "mobile-privacy-policy.html", redirectTo: "mobile-privacy-policy"},
 	    {path: "service-terms", component: ServiceTermsComponent},
       {path: "service-terms.html", redirectTo: "service-terms"},
+	    {path: "oxt", component: OxtComponent},
+	    {path: "oxt.html", redirectTo: "oxt"},
       {path: "**", component: NotFoundComponent}
 	]
     },

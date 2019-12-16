@@ -13,6 +13,8 @@ export class ContactComponent implements OnInit {
   success: boolean = false;
   successMessage: string = '';
   error: boolean = false;
+  error_RequiredFields: boolean = false;
+  error_UnknownError: boolean = false;
   errorMessage: string = '';
   form_disabled: boolean = false;
 
@@ -45,16 +47,27 @@ export class ContactComponent implements OnInit {
   }
 
   displayError(message) {
-    this.error = true;
-    this.errorMessage = message;
+    switch (message) {
+      case 'UnkownError':
+        this.error_UnknownError = true;
+      break;
+      case 'RequiredFields':
+        this.error_RequiredFields = true;
+      break;
+      default: 
+        this.error = true;
+        this.errorMessage = message;
+      break;
+    }
   }
-  displaySuccess(message) {
+  displaySuccess() {
     this.success = true;
-    this.successMessage = message;
   }
   clear() {
     this.success = false;
     this.error = false;
+    this.error_RequiredFields = false;
+    this.error_UnknownError = false;
     this.invalid_name = false;
     this.invalid_subject = false;
     this.invalid_message = false;
@@ -96,11 +109,11 @@ export class ContactComponent implements OnInit {
       }
       this.form_disabled = false;
       this.clear();
-      this.displaySuccess("Your message has been sent.")
+      this.displaySuccess()
     } catch (e) {
       console.error(e);
       this.form_disabled = false;
-      this.displayError("There was an unknown error, your message may not have been sent");
+      this.displayError('UnknownError');
     }
 
   }
@@ -111,7 +124,7 @@ export class ContactComponent implements OnInit {
       this.success = false;
       this.submitForm();
     } else {
-      this.displayError('Required fields are missing');
+      this.displayError('RequiredFields');
     }
   }
 
