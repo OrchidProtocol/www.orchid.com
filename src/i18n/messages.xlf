@@ -131,7 +131,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						48
 					</context>
 				</context-group>
 			</trans-unit>
@@ -728,6 +728,58 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="GooglePlayBadgeURL" datatype="html">
+				<source>
+					/assets/img/shared/google-play-badge.svg
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						20
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="GooglePlayBadgeAlt" datatype="html">
+				<source>
+					Get it on Google Play
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						23
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeURL" datatype="html">
+				<source>
+					/assets/img/shared/app-store-badge.svg
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						31
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeAlt" datatype="html">
+				<source>
+					Get it on the App Store
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						34
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
 					Welcome to the privacy network
@@ -737,7 +789,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						20
+						44
 					</context>
 				</context-group>
 			</trans-unit>
@@ -750,7 +802,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						21
+						45
 					</context>
 				</context-group>
 			</trans-unit>
@@ -763,7 +815,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						48
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -792,7 +844,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						32
+						56
 					</context>
 				</context-group>
 			</trans-unit>
@@ -805,7 +857,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						33
+						57
 					</context>
 				</context-group>
 			</trans-unit>
@@ -818,7 +870,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						66
 					</context>
 				</context-group>
 			</trans-unit>
@@ -831,7 +883,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						67
 					</context>
 				</context-group>
 			</trans-unit>
@@ -844,7 +896,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						54
+						78
 					</context>
 				</context-group>
 			</trans-unit>
@@ -857,7 +909,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						55
+						79
 					</context>
 				</context-group>
 			</trans-unit>
@@ -870,7 +922,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						66
+						90
 					</context>
 				</context-group>
 			</trans-unit>
@@ -883,7 +935,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						91
 					</context>
 				</context-group>
 			</trans-unit>
@@ -896,7 +948,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						108
 					</context>
 				</context-group>
 			</trans-unit>
@@ -909,7 +961,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						115
 					</context>
 				</context-group>
 			</trans-unit>
@@ -922,7 +974,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						94
+						118
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -930,7 +982,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						105
+						129
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -938,7 +990,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						116
+						140
 					</context>
 				</context-group>
 			</trans-unit>
@@ -951,7 +1003,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						102
+						126
 					</context>
 				</context-group>
 			</trans-unit>
@@ -964,7 +1016,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						137
 					</context>
 				</context-group>
 			</trans-unit>
@@ -977,7 +1029,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						128
+						152
 					</context>
 				</context-group>
 			</trans-unit>
@@ -990,7 +1042,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						129
+						153
 					</context>
 				</context-group>
 			</trans-unit>
