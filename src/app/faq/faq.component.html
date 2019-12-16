@@ -86,8 +86,8 @@
           <img alt="Toggle" class="faq-category-expand" height="24" src="/assets/img/shared/more-orc-green.svg" width="24">
           <ul class="faq-sidebar-questions">
             <li>
-              <a class="faq-link" href="/faq#technology--how-does-the-token-work">
-                How does the Orchid token (OXT) work?
+              <a class="faq-link" href="/faq#technology--how-does-oxt-work">
+                How does (OXT) work?
               </a>
             </li>
             <li>
@@ -152,7 +152,7 @@
           <ul class="faq-questions">
             <li class="faq-question-container" id="about-orchid--what-is-orchid">
               <h4 class="faq-question">What is Orchid?</h4>
-              <p class="faq-answer">Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake tokens to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency).</p>
+              <p class="faq-answer">Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake digital currency to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency).</p>
             </li>
             <li class="faq-question-container" id="about-orchid--the-purpose">
               <h4 class="faq-question"> What is the purpose of Orchid? </h4>
@@ -162,7 +162,7 @@
               <h4 class="faq-question">How does it work?</h4>
               <p class="faq-answer">The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.</p>
 
-              <p class="faq-answer">To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</p>
+              <p class="faq-answer">To do this, Orchid uses a digital currency called OXT, a new VPN protocol for incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</p>
             </li>
           </ul>
         </li>
@@ -202,7 +202,7 @@
             <li class="faq-question-container" id="privacy--how-is-orchid-private">
               <h4 class="faq-question">How is Orchid private given that it has public payments on Ethereum?</h4>
               <p class="faq-answer">
-                When a user sets up an Orchid hop, the Orchid protocol requires an ERC-20 Ethereum token, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection. While the <a href="https://blog.orchid.com/introducing-nanopayments">nanopayment architecture</a> locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain. When that happens,  the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain. Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node. Also, the frequency of how often on-chain payments occur is configurable.
+                When a user sets up an Orchid hop, the Orchid protocol requires a digital currency, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection. While the <a href="https://blog.orchid.com/introducing-nanopayments">nanopayment architecture</a> locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain. When that happens,  the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain. Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node. Also, the frequency of how often on-chain payments occur is configurable.
               </p>
               <p class="faq-answer">
                 All information gained by a potential network attacker is an advantage. However, consider exactly what information is revealed. For an Orchid user running a single hop circuit: the provider sees the user’s payment address when it accepts service, along with the user’s real IP address and the destination addresses that the user is connecting to (if it maintains logs). Once a rare on-chain payment is made, the user’s payment address and provider’s payment address are stored on Ethereum with a timestamp available to the public.
@@ -259,8 +259,8 @@
         <li><a name="technology"></a>
           <h2 class="faq-category-heading">On Technology</h2>
           <ul class="faq-questions">
-            <li class="faq-question-container" id="technology--how-does-the-token-work">
-              <h4 class="faq-question">How does the Orchid token (OXT) work?</h4>
+            <li class="faq-question-container" id="technology--how-does-oxt-work">
+              <h4 class="faq-question">How does OXT work?</h4>
               <p class="faq-answer">OXT is a “pre-mined” cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace. It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive. At launch we intend there to be a limited supply of one billion (1,000,000,000). We do not intend ever to create any additional OXT.</p>
             </li>
             <li class="faq-question-container" id="technology--how-do-curated-lists-work">
@@ -287,8 +287,8 @@
           <ul class="faq-questions">
             <li class="faq-question-container" id="staking--what-is-staking-in-orchid">
               <h4 class="faq-question">What is Staking in Orchid?</h4>
-              <p class="faq-answer">Staking is a process where one deposits and locks up an asset into an illiquid contract or mechanism in exchange for revenue or rewards.  Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertize their services to clients.  Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.</p>
-              <p class="faq-answer">Anyone else can also stake on a provider’s address, allowing a form of “delegated staking”.  Any OXT holder can stake their OXT tokens on providers of their choosing.  There are no automatic benefits of staking on someone else’s behalf, but the staking mechanism could be combined with a revenue sharing contract between the staker and the stakee.</p>
+              <p class="faq-answer">Staking is a process where one deposits and locks up an asset into an illiquid contract or mechanism in exchange for revenue or rewards.  Orchid providers stake OXT in an Ethereum smart contract (the directory) to advertize their services to clients.  Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.</p>
+              <p class="faq-answer">Anyone else can also stake on a provider’s address, allowing a form of “delegated staking”.  Any OXT holder can stake their OXT on providers of their choosing.  There are no automatic benefits of staking on someone else’s behalf, but the staking mechanism could be combined with a revenue sharing contract between the staker and the stakee.</p>
             </li>
             <li class="faq-question-container" id="staking--is-orchid-staking-like-proof-of-stake">
               <h4 class="faq-question">Is Orchid Staking like Proof of Stake?</h4>

@@ -198,14 +198,14 @@
 			</trans-unit>
 			<trans-unit id="HowHero__Subtitle2" datatype="html">
 				<source>
-					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for
-					token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
+					To do this, Orchid uses a new digital currency called OXT, a new VPN protocol for
+					incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
 				<target state="final">
-					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for
-					token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
+					To do this, Orchid uses a new digital currency called OXT, a new VPN protocol for
+					incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</target>
@@ -366,10 +366,10 @@
 			</trans-unit>
 			<trans-unit id="HowApp__Description" datatype="html">
 				<source>
-					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
+					Orchid is a VPN client, VPN service powered by our own digital currency, and advanced networking tool designed to give you insight and control over your phone's network connection. The Orchid app goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing only), Android, macOS, Linux, and (soon) Windows.
 				</source>
 				<target state="final">
-					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall.  The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
+					Orchid is a VPN client, VPN service powered by our own digital currency, and advanced networking tool designed to give you insight and control over your phone's network connection. The Orchid app goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing only), Android, macOS, Linux, and (soon) Windows.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -419,7 +419,7 @@
 					computing services, and whether the average user is fairly compensating the average provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The OXT token provides value in the Orchid network in a number of ways:
+					The OXT digital currency provides value in the Orchid network in a number of ways:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -435,18 +435,18 @@
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
-					any central party. The primary reasons for a native token are:
+					any central party. The primary reasons for a new digital currency:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					To have a token that is specifically tied to consumption of bandwidth on the Orchid network
+					To have a digital currency that is specifically tied to consumption of bandwidth on the Orchid network
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					To align operator incentives towards the benefit of the Orchid Network.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid Token is used to
+					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency is used to
 					prove a stake within the Orchid network that is intended to demonstrate a commitment for bandwidth
 					providers, as well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -457,7 +457,7 @@
 					computing services, and whether the average user is fairly compensating the average provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The OXT token provides value in the Orchid network in a number of ways:
+					The OXT digital currency provides value in the Orchid network in a number of ways:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -473,18 +473,18 @@
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
-					any central party. The primary reasons for a native token are:
+					any central party. The primary reasons for a new digital currency:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					To have a token that is specifically tied to consumption of bandwidth on the Orchid network
+					To have a digital currency that is specifically tied to consumption of bandwidth on the Orchid network
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					To align operator incentives towards the benefit of the Orchid Network.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid Token is used to
+					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency is used to
 					prove a stake within the Orchid network that is intended to demonstrate a commitment for bandwidth
 					providers, as well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -659,7 +659,7 @@
 			<trans-unit id="HowStaking__Content" datatype="html">
 				<source>
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					A provider stakes some number of OXT tokens to create a stake deposit.
+					A provider stakes some number of OXT to create a stake deposit.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -676,8 +676,8 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning.
-					If the provider wants to withdraw tokens from the staking contract, they have to start an ‘unlocking’
+					Once digital currency has been locked into a stake deposit it can be used immediately for bandwidth provisioning.
+					If the provider wants to withdraw digital currency from the staking contract, they have to start an ‘unlocking’
 					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
 					transferred elsewhere by the provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -691,7 +691,7 @@
 				</source>
 				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					A provider stakes some number of OXT tokens to create a stake deposit.
+					A provider stakes some number of OXT to create a stake deposit.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -708,8 +708,8 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning.
-					If the provider wants to withdraw tokens from the staking contract, they have to start an ‘unlocking’
+					Once digital currency has been locked into a stake deposit it can be used immediately for bandwidth provisioning.
+					If the provider wants to withdraw digital currency from the staking contract, they have to start an ‘unlocking’
 					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
 					transferred elsewhere by the provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -872,7 +872,7 @@
 					Tap the link below on your Android device.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					https://www.orchid.com/download-android
+					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=en_US
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
@@ -881,7 +881,7 @@
 					Tap the link below on your Android device.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					https://www.orchid.com/download-android
+					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=en_US
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
@@ -988,38 +988,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="GooglePlayBadgeURL" datatype="html">
-				<source>
-					/assets/img/shared/google-play-badge.svg
-				</source>
-				<target state="final">
-					/assets/img/shared/google-play-badge.svg
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						20
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="GooglePlayBadgeAlt" datatype="html">
-				<source>
-					Get it on Google Play
-				</source>
-				<target state="final">
-					Get it on Google Play
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						23
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="AppStoreBadgeURL" datatype="html">
 				<source>
 					/assets/img/shared/app-store-badge.svg
@@ -1104,7 +1072,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						87
+						98
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2576,7 +2544,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						94
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2592,7 +2560,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						95
 					</context>
 				</context-group>
 			</trans-unit>
