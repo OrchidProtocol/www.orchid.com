@@ -53,11 +53,6 @@
           <img alt="Toggle" class="faq-category-expand" height="24" src="/assets/img/shared/more-orc-green.svg" width="24">
           <ul class="faq-sidebar-questions">
             <li>
-              <a class="faq-link" href="/faq#privacy--who-is-this-for">
-                Who is this FAQ for and what can they get out of it?
-              </a>
-            </li>
-            <li>
               <a class="faq-link" href="/faq#privacy--what-protections">
                 What protections does the Orchid app provide?
               </a>
@@ -98,6 +93,29 @@
             <li>
               <a class="faq-link" href="/faq#technology--how-do-curated-lists-work">
                 How do curated lists work on Orchid?
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="faq-sidebar-category-active">
+          <a class="faq-category-heading-sidebar faq-link" href="/faq#staking">
+            Staking
+          </a>
+          <img alt="Toggle" class="faq-category-expand" height="24" src="/assets/img/shared/more-orc-green.svg" width="24">
+          <ul class="faq-sidebar-questions">
+            <li>
+              <a class="faq-link" href="/faq#staking--what-is-staking-in-orchid">
+                What is Staking in Orchid?
+              </a>
+            </li>
+            <li>
+              <a class="faq-link" href="/faq#staking--is-orchid-staking-like-proof-of-stake">
+                Is Orchid Staking like Proof of Stake?
+              </a>
+            </li>
+            <li>
+              <a class="faq-link" href="/faq#staking--how-can-i-earn-passive-revenue-on-my-oxt">
+                How can I earn passive revenue on my OXT?
               </a>
             </li>
           </ul>
@@ -147,11 +165,6 @@
         <li><a name="security-privacy"></a>
           <h2 class="faq-category-heading">Security and Privacy</h2>
           <ul class="faq-questions">
-            <li class="faq-question-container" id="privacy--who-is-this-for">
-              <h4 class="faq-question">Who is this FAQ for and what can they get out of it?</h4>
-              <p class="faq-answer">If you are a casual reader, a normal VPN user, or just exploring crypto applications, you can learn the basics about what Orchid is good for right now, and how to safely use it to get more online privacy than you had before.</p>
-              <p class="faq-answer">If you are an open source security researcher, this works as an introduction to a system that exists (not vaporware) that uses financial incentives to reward the growth of the network and has numerous computational and networking primitives that really serious networking security might eventually be built out of.  Orchid Labs welcomes your interest.</p>
-            </li>
             <li class="faq-question-container" id="privacy--what-protections">
               <h4 class="faq-question">What protections does the Orchid app provide?</h4>
               <p class="faq-answer">
@@ -254,6 +267,32 @@
             </li>
           </ul>
         </li>
+
+
+        <li><a name="staking"></a>
+          <h2 class="faq-category-heading">On Technology</h2>
+          <ul class="faq-questions">
+            <li class="faq-question-container" id="staking--what-is-staking-in-orchid">
+              <h4 class="faq-question">What is Staking in Orchid?</h4>
+              <p class="faq-answer">Staking is a process where one deposits and locks up an asset into an illiquid contract or mechanism in exchange for revenue or rewards.  Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertize their services to clients.  Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.</p>
+              <p class="faq-answer">Anyone else can also stake on a provider’s address, allowing a form of “delegated staking”.  Any OXT holder can stake their OXT tokens on providers of their choosing.  There are no automatic benefits of staking on someone else’s behalf, but the staking mechanism could be combined with a revenue sharing contract between the staker and the stakee.</p>
+            </li>
+            <li class="faq-question-container" id="staking--is-orchid-staking-like-proof-of-stake">
+              <h4 class="faq-question">Is Orchid Staking like Proof of Stake?</h4>
+              <p class="faq-answer">Staking in Orchid is similar to proof of stake systems only in the sense of using stake as a linear weighting mechanism.  In most proof-of-stake systems stakeholders can automatically earn revenue just by running nodes with stake.  Orchid has no such automatic mechanism, and has no inflation to fund staking.  The only source of income on Orchid is customers paying for bandwidth.</p>
+            </li>
+            <li class="faq-question-container" id="staking--how-can-i-earn-passive-revenue-on-my-oxt">
+              <h4 class="faq-question">How can I earn passive revenue on my OXT?</h4>
+              <p class="faq-answer">You can find an Orchid bandwidth provider who is seeking staking partners in exchange for a share of revenue or recurring payments - using any on-chain or off-chain mechanism.</p>
+              <p class="faq-answer">An Ethereum smart contract can be used to help automatically split revenue between a staker and a provider. The staker would stake on the smart contract, and the provider would direct client payments to the smart contract, which would then allow each party to withdraw some parameterized fraction of the funds.</p>
+              <p class="faq-answer">Note that any such delegated staking arrangement (even using on-chain mechanisms) can not guarantee that the provider will actually honor the contract: the provider could easily direct clients to a different payment address. And even if the provider is perfectly honest, there is still ultimately uncertainty in revenue and consequent return on stake.</p>
+              <p class="faq-answer">As an alternative to revenue sharing, providers could send recurring payments to the staker - essentially a stake rental or leasing arrangement.  In this case the return is more predictable, but there is still no guarantee that the provider will make the scheduled payments.  Again a smart contract could be used to help automate the payments, but can not guarantee the provider will have the necessary funds. There is always risk.</p>
+              <p class="faq-answer">When a staker decides to repoint their stake to a different provider, there is a lengthy withdrawal delay (currently about 3 months).  So it is important for stakers to choose providers carefully. Stakers should start with small allocations and slowly increase them based on measured profitability.</p>
+              <p class="faq-answer">Eventually third party websites could provide an interface to help simplify and automate the process of finding, evaluating and staking on Orchid bandwidth providers.</p>
+            </li>
+          </ul>
+        </li>
+
       </ul>
     </div>
 
