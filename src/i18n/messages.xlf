@@ -328,6 +328,7 @@
               <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/&gt;"/>
             <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Build instructions on <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/download/download.component.html</context>
@@ -353,19 +354,11 @@
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">23</context>
         </context-group>
-      </trans-unit><trans-unit id="AndroidSource_Body" datatype="html">
-        <source>
-          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li&gt;"/>Build instructions on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li&gt;"/>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/download/download.component.html</context>
-          <context context-type="linenumber">21</context>
-        </context-group>
       </trans-unit><trans-unit id="DownloadiOS__Title" datatype="html">
         <source>iOS (help us Beta test)</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/download/download.component.html</context>
-          <context context-type="linenumber">28</context>
+          <context context-type="linenumber">26</context>
         </context-group>
       </trans-unit><trans-unit id="DownloadiOS__Body" datatype="html">
         <source>
@@ -378,7 +371,7 @@
         </source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/download/download.component.html</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">27</context>
         </context-group>
       </trans-unit><trans-unit id="HomeHero__Title" datatype="html">
         <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Join<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>The Privacy<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/>Network<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>

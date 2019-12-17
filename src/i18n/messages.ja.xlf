@@ -497,7 +497,7 @@
 					iOS
 				</target>
 				
-			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">28</context></context-group></trans-unit>
+			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">26</context></context-group></trans-unit>
 			<trans-unit id="DownloadiOS__Body" datatype="html">
 				<source>
           <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/>We have a beta version of our iOS app on Testflight. Please help us test the app by using the link
@@ -523,7 +523,7 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/>
 				</target>
 				
-			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">29</context></context-group></trans-unit>
+			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">27</context></context-group></trans-unit>
 			<trans-unit id="DownloadAndroid__Title" datatype="html">
 				<source>
 					Android
@@ -540,6 +540,7 @@
               <x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>"/>
             <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>
           <x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/>
+          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/>Build instructions on <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/>
         </source>
 				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/>
@@ -576,16 +577,6 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/home/home.component.html</context>
           <context context-type="linenumber">23</context>
-        </context-group>
-      </trans-unit><trans-unit id="AndroidSource_Body" datatype="html">
-        <source>
-          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/>Build instructions on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/>
-        </source><target state="new">
-          <x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>"/>Build instructions on <x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>GitHub<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/>.<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>"/>
-        </target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/download/download.component.html</context>
-          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
 			<trans-unit id="Navigation-Orchid" datatype="html">
