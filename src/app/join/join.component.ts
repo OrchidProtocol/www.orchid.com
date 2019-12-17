@@ -12,7 +12,7 @@ export class JoinComponent implements OnInit {
 
     ngOnInit() {
         this.meta.setGlobalTitle('Join Orchid | Orchid');
-        this.meta.setGlobalImage('https://www.orchid.com/assets/img/company/social.png');
+        this.meta.setGlobalImage('https://www.orchid.com/assets/img/join/social.jpg');
         this.meta.setGlobalDescription('We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN.');
     }
 
