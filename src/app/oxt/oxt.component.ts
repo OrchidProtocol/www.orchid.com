@@ -12,7 +12,6 @@ export class OxtComponent implements OnInit {
 
     ngOnInit() {
         this.meta.setGlobalTitle('About the OXT Digital Currency | Orchid');
-        this.meta.setGlobalImage('https://www.orchid.com/assets/img/company/social.png');
         this.meta.setGlobalDescription('We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN.');
     }
 
