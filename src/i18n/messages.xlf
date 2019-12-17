@@ -1961,7 +1961,7 @@
 			</trans-unit>
 			<trans-unit id="Join__Subhead" datatype="html">
 				<source>
-					Get started in 5 minutes
+					Get started in 15 minutes
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

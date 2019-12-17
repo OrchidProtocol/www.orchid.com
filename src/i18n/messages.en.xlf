@@ -2518,10 +2518,10 @@
 			</trans-unit>
 			<trans-unit id="Join__Subhead" datatype="html">
 				<source>
-					Get started in 5 minutes
+					Get started in 15 minutes
 				</source>
 				<target state="final">
-					Get started in 5 minutes
+					Get started in 15 minutes
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
