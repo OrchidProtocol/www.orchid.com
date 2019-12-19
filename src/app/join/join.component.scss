@@ -20,54 +20,50 @@
 
 .join-step {
   @extend .gap-bot-wide;
-  max-width: 85ch;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
 
   ol, ul {
     text-align: left;
-    padding: 0 3rem 0 4rem;
+    padding: 0 1rem;
 
     @include mobile {
       padding: 0 0 0 1.5rem;
     }
   }
 
-  &:first-of-type::before {
+  &.step-1::before {
+    content: "";
+    width: 349px;
+    height: 349px;
+    background: url("/assets/img/join/step-bg-2.svg") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(86%, 18%);
+  }
+  &.step-2::before {
     content: "";
     width: 242px;
     height: 260px;
     background: url("/assets/img/join/step-bg-1.svg") no-repeat center center;
     background-size: contain;
     position: absolute;
-    right: 0;
-    top: 0;
-    transform: translate(125%, 18%);
-  }
-  &:nth-of-type(2)::before {
-    content: "";
-    width: 460px;
-    height: 460px;
-    background: url("/assets/img/join/step-bg-2.svg") no-repeat center center;
-    background-size: contain;
-    position: absolute;
     left: 0;
     top: 0;
     transform: translate(-114%, 57%);
   }
-  &:nth-of-type(4)::before {
-    content: "";
-    width: 80px;
-    height: 80px;
-    background: url("/assets/img/join/step-bg-3.svg") no-repeat center center;
-    background-size: contain;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    transform: translate(289%, -65%);
-  }
+  // &.step-4::before {
+  //   content: "";
+  //   width: 80px;
+  //   height: 80px;
+  //   background: url("/assets/img/join/step-bg-3.svg") no-repeat center center;
+  //   background-size: contain;
+  //   position: absolute;
+  //   right: 0;
+  //   bottom: 0;
+  //   transform: translate(289%, -65%);
+  // }
 }
 
 .join-step__number {
@@ -84,7 +80,6 @@
   position: relative;
   border: 22px solid var(--section-bg);
   z-index: 3;
-  margin: auto;
 }
 
 .join-step__title {
@@ -107,5 +102,58 @@
   p {
     margin-top: 1rem;
     margin-bottom: 1.5rem;
+  }
+}
+
+.logo-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  & > * + * {
+    margin-left: 2rem;
+    @include mobile {
+      margin-left: 0;
+    }
+  }
+
+  @include mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app-store-badge {
+  display: block;
+}
+
+.with-screenshot {
+  display: flex;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  // .join-step {
+  //   margin-bottom: 1rem;
+  // }
+}
+
+.screenshot {
+  margin-top: 50px;
+  margin-left: 2rem;
+  min-width: 50%;
+  text-align: right;
+
+  @include mobile {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 }
