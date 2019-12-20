@@ -31,6 +31,14 @@
     }
   }
 
+  p, ol, ul {
+    max-width: 50%;
+
+    .with-screenshot & {
+      max-width: unset;
+    }
+  }
+
   &.step-1::before {
     content: "";
     width: 349px;
@@ -109,6 +117,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 
   & > * + * {
     margin-left: 2rem;
@@ -147,7 +156,7 @@
 .screenshot {
   margin-top: 50px;
   margin-left: 2rem;
-  min-width: 50%;
+  min-width: 46%;
   text-align: right;
 
   @include mobile {
