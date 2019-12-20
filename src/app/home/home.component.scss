@@ -51,7 +51,7 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__form {
-  margin-top: 68px;
+  margin-top: 43px;//68px;
 
   @media (max-width: $hero-bp-1) {
     margin-top: 6vw;
@@ -59,8 +59,47 @@ $hero-bp-vert: 1150px;
   }
 }
 
-.home-hero__appstore {
-  
+.instruction {
+  margin-bottom: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  li {
+    font-weight: bold;
+    & > img {
+      margin-right: 0.5rem;
+    }
+  }
+}
+.instruction__primary {
+  margin-bottom: 0;
+  color: $orc-purple-gray;
+}
+.instruction__form {
+
+  margin-top: 1rem;
+
+  input {
+    background: #fff;
+    max-width: 300px;
+    padding: 0.35rem 1rem;
+    margin-right: 0.5rem;
+  }
+
+  button {
+    --size: 44px;
+    background: $orc-gray;
+    padding: 0;
+    width: var(--size);
+    line-height: var(--size);
+    text-align: center;
+
+    & > img {
+      display: inline;
+    }
+  }
 }
 
 .home-hero__appstore-image {

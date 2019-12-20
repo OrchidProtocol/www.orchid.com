@@ -4,6 +4,7 @@ import { EventsService } from '../events/events.service';
 import { Observable } from 'rxjs';
 import { downloadWhitepaper, downloadOrchid } from '../whitepaper';
 import { MetaService } from '../MetaService';
+import { OrchidDappService } from '../orchid-dapp.service';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +14,16 @@ import { MetaService } from '../MetaService';
 
 export class HomeComponent implements OnInit {
   events$: Observable<CalEvent[]>;
+  hasWeb3Browser: boolean;
+  hasFundsAvailable: boolean;
+  hasAccountConfigured: boolean;
 
-  constructor(private events: EventsService, private meta: MetaService, @Inject(LOCALE_ID) protected localeId: string) { }
+  constructor(
+    private events: EventsService,
+    private meta: MetaService,
+    private orchidDappService: OrchidDappService,
+    @Inject(LOCALE_ID) protected localeId: string
+  ) { }
 
   ngOnInit() {
 
@@ -23,22 +32,34 @@ export class HomeComponent implements OnInit {
     this.meta.update('og:url', 'https://www.orchid.com/');
 
     switch (this.localeId) {
-      case 'ko': 
-        // define locale specific meta tags here 
+      case 'ko':
+        // define locale specific meta tags here
       break;
-      case 'ja': 
-        // define locale specific meta tags here 
+      case 'ja':
+        // define locale specific meta tags here
       break;
-      case 'zh': 
-        // define locale specific meta tags here 
+      case 'zh':
+        // define locale specific meta tags here
       break;
     }
-    
-    
+
     this.events$ = this.events.getEvents();
+    this.initOrchidDapp();
   }
 
   downloadWhitepaper() { downloadWhitepaper(); }
   downloadOrchid() { downloadOrchid(); }
     downloadNewsletter() { document.getElementById("newsletter-signup").scrollIntoView(); }
+
+  initOrchidDapp() {
+    this.orchidDappService.hasWeb3Browser().subscribe(
+      hasWeb3Browser => this.hasWeb3Browser = hasWeb3Browser
+    );
+    this.orchidDappService.hasFundsAvailable().subscribe(
+      hasFundsAvailable => this.hasFundsAvailable = hasFundsAvailable
+    );
+    this.orchidDappService.hasAccountConfigured().subscribe(
+      hasAccountConfigured => this.hasAccountConfigured = hasAccountConfigured
+    );
+  }
 }

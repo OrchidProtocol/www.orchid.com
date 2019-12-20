@@ -838,3 +838,15 @@ h3,
 h4 {
   letter-spacing: 0.035rem;
 }
+
+.checklist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  & > li {
+    // background: url("/assets/img/shared/check.svg") no-repeat center left;
+    // padding-left: 24px;
+    list-style-image: url("/assets/img/shared/check.svg");
+  }
+}
