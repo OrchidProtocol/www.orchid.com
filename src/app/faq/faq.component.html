@@ -124,6 +124,28 @@
               </a>
             </li>
           </ul>
+          <li class="faq-sidebar-category-active">
+              <a class="faq-category-heading-sidebar faq-link" href="/faq#staking">
+                Orchid App
+              </a>
+              <img alt="Toggle" class="faq-category-expand" height="24" src="/assets/img/shared/more-orc-green.svg" width="24">
+              <ul class="faq-sidebar-questions">
+                <li>
+                  <a class="faq-link" href="/faq#orchid-app--why-new-wallet">
+                    Why do I need a new Ethereum wallet? Why can’t I use my main wallet?
+                  </a>
+                </li>
+                <li>
+                  <a class="faq-link" href="/faq#orchid-app--why-big-exchange">
+                    Why should I trust a big exchange with my personal info? Would a decentralized exchange that doesn’t store my personal info be better?
+                  </a>
+                </li>
+                <li>
+                  <a class="faq-link" href="/faq#orchid-app--why-eth-and-oxt">
+                    Why do I need ETH and OXT?
+                  </a>
+                </li>
+              </ul>
         </li>
       </ul>
     </div>
@@ -274,9 +296,9 @@
               <h4 class="faq-question">What is the Orchid Protocol?</h4>
               <p class="faq-answer">The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol is intended to allow users to request access to remote network resources and pay for these resources using OXT via a nanopayments system.</p>
             </li>
-            
+
             <a class="faq-link" href="/faq#technology--what-is-the-orchid-protocol">
-              
+
             </a>
           </ul>
         </li>
@@ -302,6 +324,25 @@
               <p class="faq-answer">As an alternative to revenue sharing, providers could send recurring payments to the staker - essentially a stake rental or leasing arrangement.  In this case the return is more predictable, but there is still no guarantee that the provider will make the scheduled payments.  Again a smart contract could be used to help automate the payments, but can not guarantee the provider will have the necessary funds. There is always risk.</p>
               <p class="faq-answer">When a staker decides to repoint their stake to a different provider, there is a lengthy withdrawal delay (currently about 3 months).  So it is important for stakers to choose providers carefully. Stakers should start with small allocations and slowly increase them based on measured profitability.</p>
               <p class="faq-answer">Eventually third party websites could provide an interface to help simplify and automate the process of finding, evaluating and staking on Orchid bandwidth providers.</p>
+            </li>
+          </ul>
+        </li>
+
+        <li><a name="about-orchid"></a>
+          <h2 class="faq-category-heading">Orchid App</h2>
+          <ul class="faq-questions">
+            <li class="faq-question-container" id="orchid-app--why-new-wallet">
+              <h4 class="faq-question">Why do I need a new Ethereum wallet? Why can’t I use my main wallet?</h4>
+              <p class="faq-answer">While you could use your primary Ethereum wallet that you typically use for other Ethereum applications, we do not recommend it if you are seeking privacy with Orchid. The main reason is that using Orchid results in on chain payments flowing from your wallet to the Orchid nanopayment contract, and then on to VPN providers selling bandwidth. Ethereum on-chain analytics can easily link payments to/from the nanopayment smart contract and then to providers. If the source of the funds comes from your personal Ethereum wallet linked to other services, anyone using Etherscan would be able to see that you used Orchid and sent payments to VPN providers, when the occasional Orchid nanopayment system issues a winning ticket.</p>
+            </li>
+            <li class="faq-question-container" id="orchid-app--why-big-exchange">
+              <h4 class="faq-question">Why should I trust a big exchange with my personal info? Would a decentralized exchange that doesn’t store my personal info be better?</h4>
+              <p class="faq-answer">While a decentralized exchange does not store your personal information that could link your source of funds to your identity, a decentralized exchange does typically require an Ethereum account with some sort of crypto such as ETH, which has its own history of transactions. If that ETH or wallet is linked to your identity, then the source of funds could be linked through the DEX back to your originating Ethereum wallet.</p>
+              <p class="faq-answer">A large exchange typically has a ledger they use to keep track of ownership, with a hot wallet they use to send funds in and out of the exchange. While the exchange knows your identity, the movement of currency in and out of the exchange is anonymous, as the funds can’t be tracked to your identity on the blockchain without the exchange being hacked, subpoenaed or otherwise compromised.</p>
+            </li>
+            <li class="faq-question-container" id="orchid-app--why-eth-and-oxt">
+              <h4 class="faq-question">Why do I need ETH and OXT?</h4>
+              <p class="faq-answer">Orchid is a series of decentralized smart contracts and client software that uses Ethereum. Certain operations require the use of ETH for gas to power the smart contracts that run Orchid. For users who use the Orchid app, ETH is required when adding or removing funds from your Orchid account through the web3 browser interface.</p>
             </li>
           </ul>
         </li>
