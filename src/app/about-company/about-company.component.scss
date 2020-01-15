@@ -498,3 +498,73 @@ section h2:first-of-type {
     font-style: normal;
   }
 }
+
+.about-company__team-section {
+  text-align: center;
+}
+.about-company__team-text {
+  max-width: 1000px;
+  margin: auto;
+  font-weight: 500;
+  font-size: 21px;
+}
+.about-company__team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.about-company-team-member {
+  text-align: center;
+  max-width: 6rem;
+  margin: 1.5rem 2.25rem;
+  h5 {
+    margin: 0.5rem 0;
+    font-size: 19px;
+  }
+  p {
+    font-weight: 600;
+  }
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    background: linear-gradient(rgba(60, 60, 67, 0), rgba(60, 60, 67, 0.6));
+    box-shadow: 0px 6px 10px rgba(60, 60, 67, 0.6);
+    border-radius: 100%;
+  }
+}
+
+
+.about-company__team-big {
+    .about-company-team-member {
+      width: 100%;
+      max-width: 15rem;
+      margin-left: auto;
+      margin-right: auto;
+      .about-company-team-member {
+        max-width: 100%;
+      }
+    }
+}
+
+@include not-mobile {
+  .about-company__team-section {
+    hr {
+      display: none;
+    }
+  }
+  .about-company__team-big {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    .about-company-team-member {
+      margin: 1.5rem;
+      max-width: 10rem;
+      h5 {
+        font-size: 21px;
+      }
+    }
+  }
+}
