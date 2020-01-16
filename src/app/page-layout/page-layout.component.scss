@@ -304,7 +304,7 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-#ft-nav {
+#ft-nav, #ft-nav-2 {
   z-index: 2;
 
   @include mobile {
@@ -312,7 +312,7 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-#ft-nav-list {
+#ft-nav-list, #ft-nav-2-list {
   @include mobile {
     >li>a {
       display: block;
