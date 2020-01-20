@@ -87,17 +87,6 @@
     top: 0;
     transform: translate(-150%, 57%);
   }
-  // &.step-4::before {
-  //   content: "";
-  //   width: 80px;
-  //   height: 80px;
-  //   background: url("/assets/img/join/step-bg-3.svg") no-repeat center center;
-  //   background-size: contain;
-  //   position: absolute;
-  //   right: 0;
-  //   bottom: 0;
-  //   transform: translate(289%, -65%);
-  // }
 }
 
 .join-step__number {
@@ -168,6 +157,14 @@
   & > * + * {
     margin-left: 0.75rem;
   }
+
+  @include mobile {
+    flex-direction: column;
+    & > * + * {
+      margin-left: 0;
+      margin-top: 0.75rem;
+    }
+  }
 }
 
 .with-screenshot {
@@ -177,10 +174,6 @@
   @include mobile {
     flex-direction: column;
   }
-
-  // .join-step {
-  //   margin-bottom: 1rem;
-  // }
 }
 
 .screenshot {
