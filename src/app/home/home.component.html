@@ -7,37 +7,8 @@
                 <h4 class="subtitle pad-bot-thin" i18n="@@HomeHero__Subtitle"><span>Stay curious,</span> <span>explore freely</span></h4>
             </div>
             <div class="home-hero__form show-en">
-                <div class="instruction" *ngIf="!hasWeb3Browser">
-                  <p class="instruction__primary medium" i18n="@@HomeHero__FormTitle"><b>Load account.orchid.com in a Web3 browser</b></p>
-                  <p><b>(<a href="https://metamask.io/">Metamask</a>, <a href="https://trustwallet.com/">Trust</a>, <a href="https://wallet.coinbase.com/">Coinbase</a>, <a href="https://brd.com/">Bread</a>)</b></p>
-                </div>
-                <div class="instruction" *ngIf="hasWeb3Browser && !hasFundsAvailable">
-                  <ul class="phantom-list">
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Web3 browser</li>
-                  </ul>
-                  <p class="instruction__primary medium" i18n="@@HomeHero__FormTitle"><b>Add $4/OXT and $1/ETH to funds</b></p>
-                  <p><b>(Purchase now: <a href="https://www.coinbase.com/price/orchid">Coinbase</a>)</b></p>
-                </div>
-                <div class="instruction" *ngIf="hasFundsAvailable && !hasAccountConfigured">
-                  <ul class="phantom-list">
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Web3 browser</li>
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Funds available</li>
-                  </ul>
-                  <p class="instruction__primary medium" i18n="@@HomeHero__FormTitle"><b>Get a signer key from the Orchid app</b></p>
-                  <form class="instruction__form">
-                    <input type="text" name="signer-key" placeholder="Paste here" id="signer-key-input">
-                    <button type="submit"><img src="/assets/img/shared/check-white.svg" alt="submit"></button>
-                  </form>
-                </div>
-                <div class="instruction" *ngIf="hasFundsAvailable && hasAccountConfigured">
-                  <ul class="phantom-list">
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Web3 browser</li>
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Funds available</li>
-                    <li><img src="/assets/img/shared/check.svg" alt=""> Account configured</li>
-                  </ul>
-                  <p class="instruction__primary medium" i18n="@@HomeHero__FormTitle"><b>Your Orchid account is ready to go!</b></p>
-                </div>
-                <a href="/join/"><button class="btn-primary btn-fixed newsletter-signup__button gap-bot-thin" i18n="@@HomeHero__JoinNow">Learn more</button></a>
+                <p class="medium color-primary" i18n="@@HomeHero__FormTitle"><b>Start private browsing today!</b></p>
+                <a href="/join/"><button class="btn-primary btn-fixed newsletter-signup__button gap-bot-thin" i18n="@@HomeHero__JoinNow">Join now</button></a>
             </div>
             <div class="home-hero__appstore hide-en">
                 <a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US">
