@@ -19,7 +19,7 @@ if [ "$1" == "" ] || [ "$1" == "--help" ] || [ "$1" == "-h" ]; then usage 3; fi
 function copy-push () {
     local gitdest="$1"
     local tempdir=$(mktemp -d)
-    (cd ${built_files}; cp -a . "$tempdir")
+    rsync -av --progress . "$tempdir" --exclude .git --exclude .gitignore
     pushd "$tempdir"
     git init
     git add .
