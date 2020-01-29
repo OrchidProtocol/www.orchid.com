@@ -30,6 +30,8 @@ function copy-push () {
     rm -rf "$tempdir"
 }
 
+yarn
+
 # Build the angular site...
 # ng build --prod
 
