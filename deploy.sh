@@ -51,11 +51,11 @@ fi
  ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
 if [ "$1" == "staging" ] && [ "${#2}" == "2" ]; then
-    copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${2}.orchid.dev"
+    copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/www.${2}.orchid.dev"
 elif [ "$1" == "staging" ]; then
-    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.dev'
+    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/www.orchid.dev'
 elif [ "$1" == "production" ] && [ "${#2}" == "2" ]; then
-    copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${2}.orchid.com"
+    copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/www.${2}.orchid.com"
 elif [ "$1" == "production" ]; then
-    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com'
+    copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/www.orchid.com'
 fi
