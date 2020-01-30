@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/bin/bash -x
 # deploy.sh: -*- Shell-script -*-  Deploy this website to AWS S3 via CodeCommit.
-# 
+#
 #  Copyright (c) 2019 Brian Fox
 #  Author: Brian Fox (bfox@brianjfox.com)
 #  Birthdate: Mon Mar  4 14:03:59 2019.
@@ -21,37 +21,29 @@ function copy-push () {
     local tempdir=$(mktemp -d)
     rsync -av --progress . "$tempdir" --exclude .git --exclude .gitignore
     pushd "$tempdir"
-    git init
-    git add .
-    git commit -m "deployment"
-    git remote add aws "$gitdest"
-    git push --force aws master
+    #git init
+    #git add .
+    #git commit -m "deployment"
+    #git remote add aws "$gitdest"
+    #git push --force aws master
+    bucket=$(echo "$gitdest" | sed 's/.*\///')
+    aws s3 sync --acl public-read --delete . "s3://$bucket"
+    distribution=$(aws cloudfront list-distributions | jq -r --arg bucket "$bucket" '.DistributionList.Items[] | select(.Status=="Deployed") | select(.Aliases.Items[] | contains($bucket)) | .Id')
+    aws cloudfront create-invalidation --distribution-id "$distribution" --paths "/*"
     popd
     rm -rf "$tempdir"
 }
 
 yarn
 
-# Build the angular site...
-# ng build --prod
-
-# Build the static site...
-rm -rf ${built_files}
+Build the static site...
 if [ "${#2}" == "2" ]; then
     yarn run build:static:${2}
 else
     yarn run build:static
 fi
-(cd ${built_files};
- for file in $(echo *.html); do
-     mkdir -p $(basename ${file} .html)
-     cp ${file} $(basename ${file} .html)/index.html
- done;
- ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
-if [ "$1" == "opuslogica" ]; then
-    scp -rp ${built_files}/* .htaccess opuslogica.com:/www/sites/orchid.opuslogica.com/
-elif [ "$1" == "staging" ] && [ "${#2}" == "2" ]; then
+if [ "$1" == "staging" ] && [ "${#2}" == "2" ]; then
     copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${2}.orchid.dev"
 elif [ "$1" == "staging" ]; then
     copy-push 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.dev'

@@ -18,12 +18,5 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2
-    - name: Configure Git Credentials
-      run: |
-        mkdir -p $XDG_CONFIG_HOME/git
-        echo "https://${{ secrets.CODECOMMIT_GIT_USERNAME }}:${{ secrets.CODECOMMIT_GIT_PASSWORD }}@git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com/" >> $XDG_CONFIG_HOME/git/credentials
-        git config --global credential.helper store
     - name: Deploy to www.orchid.com
-      run: |
-        git config --global 'url.https://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com/.insteadOf' 'ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/orchid.com'
-        ./deploy.sh production
+      run: ./deploy.sh production
