@@ -36,12 +36,19 @@ function copy-push () {
 
 yarn
 
-Build the static site...
+# Build the static site...
+rm -rf ${built_files}
 if [ "${#2}" == "2" ]; then
     yarn run build:static:${2}
 else
     yarn run build:static
 fi
+(cd ${built_files};
+ for file in $(echo *.html); do
+     mkdir -p $(basename ${file} .html)
+     cp ${file} $(basename ${file} .html)/index.html
+ done;
+ ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
 
 if [ "$1" == "staging" ] && [ "${#2}" == "2" ]; then
     copy-push "ssh://git-codecommit.us-west-2.amazonaws.com/v1/repos/${2}.orchid.dev"
