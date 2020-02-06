@@ -27,7 +27,7 @@ function copy-push () {
     #git remote add aws "$gitdest"
     #git push --force aws master
     bucket=$(echo "$gitdest" | sed 's/.*\///')
-    aws s3 sync --acl public-read --delete . "s3://$bucket"
+    aws s3 sync --acl public-read --delete ./dist/static/ "s3://$bucket"
     distribution=$(aws cloudfront list-distributions | jq -r --arg bucket "$bucket" '.DistributionList.Items[] | select(.Status=="Deployed") | select(.Aliases.Items[] | contains($bucket)) | .Id')
     aws cloudfront create-invalidation --distribution-id "$distribution" --paths "/*"
     popd
