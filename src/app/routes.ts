@@ -21,7 +21,7 @@ import {VisionComponent} from "./vision/vision.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
-
+import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
 export const routes: Routes = [
     {
@@ -47,7 +47,8 @@ export const routes: Routes = [
 	    {path: "events", component: EventsComponent},
       {path: "events.html", redirectTo: "events"},
 	    {path: "join", component: JoinComponent},
-	    {path: "join.html", redirectTo: "join"},
+      {path: "join.html", redirectTo: "join"},
+	    {path: "webinar", component: WebinarLPComponent},
 	    {path: "privacy-policy", component: PrivacyPolicyComponent},
 	    {path: "mobile-privacy-policy", component: MobilePrivacyPolicyComponent},
 	    {path: "privacy-policy.html", redirectTo: "privacy-policy"},
