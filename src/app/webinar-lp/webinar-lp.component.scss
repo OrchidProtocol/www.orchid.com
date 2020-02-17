@@ -14,7 +14,7 @@
 
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
   @include mobile {
     flex-direction: column;
