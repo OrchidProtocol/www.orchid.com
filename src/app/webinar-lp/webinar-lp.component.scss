@@ -26,6 +26,8 @@
 }
 
 .webinar__splash-text-container {
+  flex-basis: 50%;
+
  h1 {
     font-size: 3rem;
     margin: 0.5rem 0 1rem 0;
@@ -43,6 +45,9 @@
       text-align: center;
     }
   }
+  p {
+    max-width: 480px;
+  }
   .medium {
     @include mobile {
       text-align: center;
@@ -54,12 +59,28 @@
   @include mobile {
     text-align: center;
   }
+  .webinar__buttons {
+    display: flex;
+    @media (max-width: 1166px) {
+      justify-content: center;
+    }
+    @media (max-width: 538px) {
+      flex-direction: column;
+    }
+    & > * + * {
+      margin-left: 1rem;
+    }
+  }
+  .webinar-signup__button {
+    font-size: 16px;
+  }
 
 }
 
 .webinar__splash-image-container {
   width: 100%;
   max-width: 800px;
+  flex-basis: 50%;
   @include mobile {
     max-width: 620px;
   }
