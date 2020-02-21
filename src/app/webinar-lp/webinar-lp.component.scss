@@ -63,14 +63,17 @@
   }
   .webinar__buttons {
     display: flex;
+    & > * + * {
+      margin-left: 1rem;
+    }
     @media (max-width: 1166px) {
       justify-content: center;
     }
     @media (max-width: 538px) {
       flex-direction: column;
-    }
-    & > * + * {
-      margin-left: 1rem;
+      & > * + * {
+        margin-left: 0;
+      }
     }
   }
   .webinar-signup__button {
