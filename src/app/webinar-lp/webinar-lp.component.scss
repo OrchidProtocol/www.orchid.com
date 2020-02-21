@@ -10,7 +10,7 @@
   padding-top: $pad-wide;
   padding-bottom: $pad-wide;
 
-  pointer-events: none;
+  // pointer-events: none;
 
   display: flex;
   justify-content: center;
@@ -27,6 +27,8 @@
 
 .webinar__splash-text-container {
   flex-basis: 50%;
+  position: relative;
+  z-index: 2;
 
  h1 {
     font-size: 3rem;
@@ -125,6 +127,6 @@
   background-repeat: no-repeat;
   background-position: top left;
   // background-image: url(/assets/img/company/splash/splash-background.svg);
-  pointer-events: none;
+  // pointer-events: none;
 }
 
