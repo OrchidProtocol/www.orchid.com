@@ -1,0 +1,35 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+X-WR-CALNAME:Webinar: Get Started with Orchid
+NAME:Webinar: Get Started with Orchid
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Los_Angeles
+TZURL:http://tzurl.org/zoneinfo-outlook/America/Los_Angeles
+X-LIC-LOCATION:America/Los_Angeles
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0800
+TZOFFSETTO:-0700
+TZNAME:PDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0700
+TZOFFSETTO:-0800
+TZNAME:PST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20200225T200044Z
+UID:20200225T200044Z-1608689942@marudot.com
+DTSTART;TZID=America/Los_Angeles:20200302T110000
+DTEND;TZID=America/Los_Angeles:20200302T120000
+SUMMARY:Webinar: Get Started with Orchid
+URL:https%3A%2F%2Fzoom.us%2Fj%2F151276295
+DESCRIPTION:Learn how to get Orchid set up and running. You will learn how to use Metamask to fund an Orchid account with OXT so that you can begin browsing privately.\n\nJoin us on Zoom here:\nhttps://zoom.us/j/151276295
+LOCATION:https://zoom.us/j/151276295
+END:VEVENT
+END:VCALENDAR
