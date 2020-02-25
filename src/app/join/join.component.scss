@@ -13,7 +13,11 @@
 //   top: -40px;
 //   margin-bottom: -40px;
 // }
-
+.join-video-container {
+  box-sizing: border-box;
+  max-width: 720px;
+  margin: auto;
+}
 .video {
   position: relative;
   padding-bottom: 56.25%;
