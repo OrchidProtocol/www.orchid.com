@@ -27,6 +27,7 @@ import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -58,7 +59,8 @@ import { MetaService } from './MetaService';
     WhereOXTComponent,
     VideoSectionComponent,
     SetupVideoSectionComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    WebinarLPComponent
   ],
   imports: [
     // TODO: how important is appId?
