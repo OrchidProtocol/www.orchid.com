@@ -32,10 +32,25 @@ export class PageLayoutComponent implements OnInit {
       let bkgd  = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
       let btn   = doc.getElementById("nav-toggle") as HTMLButtonElement;
       let pin   = doc.getElementById("nav-pin") as HTMLDivElement;
+      let body   = doc.body;
 
-      btn.addEventListener("click", _ => this.isOpen = !this.isOpen);
-      close.addEventListener("click", _ => this.isOpen = false);
-      bkgd.addEventListener("click", _ => this.isOpen = false);
+      const toggleMenuOpen = () => {
+        if (this.isOpen) body.classList.add("navigation-open");
+        else body.classList.remove("navigation-open");
+      }
+
+      btn.addEventListener("click", _ => {
+        this.isOpen = !this.isOpen;
+        toggleMenuOpen();
+      });
+      close.addEventListener("click", _ => {
+        this.isOpen = false;
+        toggleMenuOpen();
+      });
+      bkgd.addEventListener("click", _ => {
+        this.isOpen = false;
+        toggleMenuOpen();
+      });
 
       // NB: this is only necessary because of Angular
       doc.querySelectorAll(".nav-list a").forEach(el => {

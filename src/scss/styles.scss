@@ -38,6 +38,9 @@ body {
 
   @include mobile {
     font-size: $size-body-mobile;
+    &.navigation-open {
+      overflow: hidden;
+    }
   }
 }
 

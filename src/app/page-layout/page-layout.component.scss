@@ -86,6 +86,7 @@ $flyout-gap: ($flyout-spacing / 2);
   // TODO: the transition causes some weirdness when the media query is triggered
 
   @include mobile {
+    overflow-y: auto;
     margin: 0;
     padding: 0;
 
