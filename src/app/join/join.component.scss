@@ -175,6 +175,11 @@ $join-grid-breakpoint: 1114px;
   font-size: $size-body-md;
   margin: 0.6rem 0;
 
+  @media (min-width: 1441px) {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+
   @include mobile {
     font-size: $size-body-md-mobile;
   }
