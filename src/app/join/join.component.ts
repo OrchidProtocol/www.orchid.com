@@ -27,6 +27,7 @@ export class JoinComponent implements OnInit {
             for (let index = 0; index < buttons.length; index++) {
                 const element = buttons[index];
                 element.addEventListener('click', this.skipTo.bind(this));
+                element.lastChild.textContent = element.lastChild.textContent.replace('Play from', 'Skip to');
             }
         }
     }
