@@ -213,6 +213,9 @@ $join-grid-breakpoint: 1114px;
 }
 
 .join-step__play-skip {
+  @media (max-width: $join-grid-breakpoint) {
+    display: none !important;
+  }
 
   & > img {
     display: block;
