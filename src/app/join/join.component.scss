@@ -3,12 +3,18 @@
 @import "orc_config";
 @import "styles";
 
+$join-grid-breakpoint: 1114px;
+
 .join__intro {
   max-width: 834px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 5rem;
+
+  @media (max-width: $join-grid-breakpoint) {
+    margin-bottom: 3rem;
+  }
 }
 
 .join-video-container {
@@ -63,19 +69,36 @@
 }
 
 .join-steps__grid {
+  --gap: 30px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-gap: 30px;
+  grid-gap: var(--gap);
   justify-items: center;
-  padding-top: 30px;
+  padding-top: var(--gap);
+  padding-left: var(--gap);
+  padding-right: var(--gap);
+
+  @media (max-width: 1114px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .join-step__content {
+  --number-size: 140px;
   background: #fff;
   padding: 0 47px 30px;
   border-radius: 24px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  max-width: 525px;
+
+  @media (max-width: 1440px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media (max-width: $join-grid-breakpoint) {
+    margin-top: calc(var(--number-size) * 0.5);
+  }
 
   & > * + * {
     margin-bottom: 1.3rem;
@@ -91,11 +114,16 @@
     border-top: 1px solid #B88DFC;
     margin-left: 1rem;
     margin-right: 1rem;
+    max-width: 260px;
+
+    @media (max-width: $join-grid-breakpoint) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 }
 
 .join-number {
-  --size: 140px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -103,17 +131,17 @@
   background-color: $orc-purple;
   font-family: $orc-tf-primary;
   text-align: center;
-  width: var(--size);
-  height: var(--size);
+  width: var(--number-size);
+  height: var(--number-size);
   margin: 0 auto;
-  border-radius: var(--size);
+  border-radius: var(--number-size);
   text-decoration: none;
   color: #fff;
   position: relative;
   border: 22px solid var(--section-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-50%);
-  margin-bottom: -25%;
+  margin-bottom: calc(var(--number-size) * -0.4);
 }
 .join-number__numeral {
   font-size: 60px;
