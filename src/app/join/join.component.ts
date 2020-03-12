@@ -48,7 +48,7 @@ export class JoinComponent implements OnInit {
         this.player = new window['YT'].Player('youtube-embed', {
             height: '390',
             width: '640',
-            videoId: '5TIxoG4Bcz8',
+            videoId: 'ZS5aYBXAAyQ',
             events: {
                 'onReady': this.onPlayerReady.bind(this),
                 'onStateChange': this.onPlayerStateChange.bind(this)
