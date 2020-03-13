@@ -1589,7 +1589,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid について学びながら OXT を獲得する機会については、Coinbase の
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					獲得キャンペーン
@@ -1693,7 +1693,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="final">
+				<target state="translated">
 					イーサリアム ウォレットには
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
@@ -1725,7 +1725,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="final">
+				<target state="translated">
 					また、
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
@@ -1757,7 +1757,7 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					個人情報保護の注意事項：Orchid には、ご使用の他のイーサリアム製品またはサービスと接続されていない新しいイーサリアム ウォレット アドレスを使用することをお勧めします。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
@@ -1883,7 +1883,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="final">
+				<target state="translated">
 					個人情報保護の注意事項：取引の個人情報保護のため、大規模の取引所を使用してOXT をご購入なさることをお勧めします。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					詳細情報
@@ -1894,6 +1894,22 @@
 					</context>
 					<context context-type="linenumber">
 						58
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinStep2__p6" datatype="html">
+				<source>
+					Buy OXT and ETH right now on
+				</source>
+				<target state="new">
+					Buy OXT and ETH right now on
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						61
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1937,10 +1953,10 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="final">
-					ウォレットのブラウザで 
+				<target state="translated">
+					ウォレットのブラウザで
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					account.orchid.com 
+					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					を読み込みます。今後の仕様のため、このページをブックマークすることをお勧めします。
 				</target>
@@ -1979,9 +1995,9 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
-					[アカウントを作成] 
+					[アカウントを作成]
 					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
 					ボタンをタップし、ウォレットの 2 つの要請を確認して、OXT を Orchid アカウントに転送します。
 				</target>
@@ -2054,13 +2070,13 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					用 Orchid アプリをダウンロードして、 
+					用 Orchid アプリをダウンロードして、
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight 
+					iOS Testflight
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					で Orchid アプリのベータテストを行う手助けをしてください。
 				</target>
@@ -2144,7 +2160,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="final">
+				<target state="translated">
 					これで完了です！自由に検索を開始する準備ができました。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					お楽しみください！
