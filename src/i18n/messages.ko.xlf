@@ -1692,7 +1692,7 @@
 				<source>
 					Orchid
 				</source>
-				<target state="new">
+				<target state="final">
 					Orchid
 				</target>
 				<context-group purpose="location">
@@ -1708,8 +1708,8 @@
 				<source>
 					How it Works
 				</source>
-				<target state="new">
-					How it Works
+				<target state="final">
+					작동 방식
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1724,8 +1724,8 @@
 				<source>
 					About Us
 				</source>
-				<target state="new">
-					About Us
+				<target state="final">
+					회사 소개
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1740,8 +1740,8 @@
 				<source>
 					Download
 				</source>
-				<target state="new">
-					Download
+				<target state="final">
+					다운로드
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1756,8 +1756,8 @@
 				<source>
 					Events
 				</source>
-				<target state="new">
-					Events
+				<target state="final">
+					이벤트
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1772,8 +1772,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					자주 묻는 질문
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1804,8 +1804,8 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
-					FAQ
+				<target state="final">
+					자주 묻는 질문
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1820,8 +1820,8 @@
 				<source>
 					About Orchid
 				</source>
-				<target state="new">
-					About Orchid
+				<target state="final">
+					Orchid 정보
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2398,8 +2398,8 @@
 				<source>
 					Set-up Guide
 				</source>
-				<target state="new">
-					Set-up Guide
+				<target state="final">
+					설정 가이드
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2414,8 +2414,8 @@
 				<source>
 					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
 				</source>
-				<target state="new">
-					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
+				<target state="final">
+					Orchid를 사용하려면 Orchid 계정이 필요합니다. 이 설정 가이드는 Orchid 계정을 생성하고, 이더리움 지갑 및 Orchid의 디지털 통화 OXT를 사용하여 이 계정을 Orchid 앱에 연결하는 방법에 대하여 설명합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2430,8 +2430,8 @@
 				<source>
 					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
 				</source>
-				<target state="new">
-					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
+				<target state="final">
+					기존 Orchid 계정의 QR 코드가 있을 경우 단계 4부터 시작하여 앱을 열고 코드를 스캔하거나 붙여넣어서 해당 계정을 추가하시면 됩니다. 그러면, 해당 계정에서 VPN 서비스 요금이 결제됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2450,12 +2450,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
-				<target state="new">
-					Check out Coinbase’s
+				<target state="final">
+					Coinbase의
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Earn Campaign
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					for an opportunity to earn OXT while learning about Orchid!
+					을 참조하여 Orchid에 대해서 배우고 OXT를 적립할 수 있는 기회를 얻으십시오!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2470,8 +2470,8 @@
 				<source>
 					Step
 				</source>
-				<target state="new">
-					Step
+				<target state="final">
+					단계
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2518,8 +2518,8 @@
 				<source>
 					Create a new Ethereum wallet
 				</source>
-				<target state="new">
-					Create a new Ethereum wallet
+				<target state="final">
+					새 이더리움 지갑 생성
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2534,8 +2534,8 @@
 				<source>
 					Play from: 01:06
 				</source>
-				<target state="new">
-					Play from: 01:06
+				<target state="final">
+					01:06부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2554,12 +2554,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="new">
-					We recommend using
+				<target state="final">
+					이더리움 지갑에
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					for your Ethereum wallet.
+					를 사용하실 것을 권장합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2586,8 +2586,8 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="new">
-					Alternatively,
+				<target state="final">
+					또한, 
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -2595,11 +2595,11 @@
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					BRD Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and
+					및
 					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					are also compatible with Orchid.
+					도 Orchid와 호환됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2618,11 +2618,11 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="new">
-					Privacy note: We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
+				<target state="final">
+					개인 정보 보호 참고 사항: 사용하시는 다른 이더리움 제품 또는 서비스와 연결되지 않은 새로운 이더리움 지갑 주소를 Orchid용으로 사용하실 것을 권장합니다. 
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Learn more
+					자세히 보기
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</target>
 				<context-group purpose="location">
@@ -2638,8 +2638,8 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="new">
-					Add funds to your wallet
+				<target state="final">
+					지갑에 자금 추가하기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2654,8 +2654,8 @@
 				<source>
 					Play from: 04:19
 				</source>
-				<target state="new">
-					Play from: 04:19
+				<target state="final">
+					04:19부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2670,8 +2670,8 @@
 				<source>
 					We recommend adding at least these amounts to your Ethereum wallet:
 				</source>
-				<target state="new">
-					We recommend adding at least these amounts to your Ethereum wallet:
+				<target state="final">
+					이더리움 지갑에 적어도 다음 금액 이상을 추가하실 것을 권장합니다:
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2686,8 +2686,8 @@
 				<source>
 					$4 USD of OXT
 				</source>
-				<target state="new">
-					$4 USD of OXT
+				<target state="final">
+					$4 USD 상당의 OXT
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2702,8 +2702,8 @@
 				<source>
 					Estimated to provide ~60GBs of VPN service.
 				</source>
-				<target state="new">
-					Estimated to provide ~60GBs of VPN service.
+				<target state="final">
+					약 60GB의 VPN 서비스 제공 가능 예상.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2718,8 +2718,8 @@
 				<source>
 					$1 USD of ETH
 				</source>
-				<target state="new">
-					$1 USD of ETH
+				<target state="final">
+					$1 USD 상당의 ETH
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2744,10 +2744,10 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="new">
-					Privacy note: We recommend buying OXT using a large exchange for transaction privacy.
+				<target state="final">
+					개인 정보 보호 참고 사항: 거래 시 개인 정보 보호를 위해 규모가 큰 거래소에서 OXT를 구매하실 것을 권장합니다.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Learn more
+					자세히 보기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2778,8 +2778,8 @@
 				<source>
 					Create your Orchid Account
 				</source>
-				<target state="new">
-					Create your Orchid Account
+				<target state="final">
+					Orchid 계정 생성하기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2794,8 +2794,8 @@
 				<source>
 					Play from: 05:38
 				</source>
-				<target state="new">
-					Play from: 05:38
+				<target state="final">
+					05:38부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2814,12 +2814,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="new">
-					Load
+				<target state="final">
+					지갑의 브라우저로
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
+					을 불러옵니다. 이 페이지를 북마크에 추가해 두면 향후 사용 시 도움이 됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2834,8 +2834,8 @@
 				<source>
 					Read the directions on the screen and add the OXT or ETH needed to create the account.
 				</source>
-				<target state="new">
-					Read the directions on the screen and add the OXT or ETH needed to create the account.
+				<target state="final">
+					화면의 설명을 읽고, 필요한 OXT 또는 ETH를 추가하여 계정을 생성합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2856,14 +2856,12 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="new">
-					Tap the
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+				<target state="final">
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
-					Create Account
+					계정 생성을
 					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
+					탭한 후 지갑의 확인 요청 두 개를 확인하고 Orchid 계정으로 OXT를 이전합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2878,8 +2876,8 @@
 				<source>
 					Once complete, scan or copy your Orchid Account to your clipboard.
 				</source>
-				<target state="new">
-					Once complete, scan or copy your Orchid Account to your clipboard.
+				<target state="final">
+					완료되면 Orchid 계정을 스캔하거나 클립보드로 복사합니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2894,8 +2892,8 @@
 				<source>
 					Connect your Account and app
 				</source>
-				<target state="new">
-					Connect your Account and app
+				<target state="final">
+					계정과 앱 연결하기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2910,8 +2908,8 @@
 				<source>
 					Play from: 07:21
 				</source>
-				<target state="new">
-					Play from: 07:21
+				<target state="final">
+					07:21부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2934,16 +2932,15 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="new">
-					Download the Orchid app for
+				<target state="final">
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and help us Beta test our app on
+					용 Orchid 앱을 다운로드하시고, 
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					iOS Testflight
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
+					에서 저희 앱의 베타 테스트를 도와 주십시오.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2958,8 +2955,8 @@
 				<source>
 					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
 				</source>
-				<target state="new">
-					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
+				<target state="final">
+					앱을 열고 스캔하거나 Orchid 계정으로 붙여넣습니다. 앱이 자동으로 해당 계정을 사용하여 구성된 홉을 생성하면, 앱의 사용 준비가 완료됩니다!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2974,8 +2971,8 @@
 				<source>
 					Start exploring freely!
 				</source>
-				<target state="new">
-					Start exploring freely!
+				<target state="final">
+					자유롭게 검색을 시작하십시오!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2990,8 +2987,8 @@
 				<source>
 					Play from: 10:44
 				</source>
-				<target state="new">
-					Play from: 10:44
+				<target state="final">
+					10:44부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3006,8 +3003,8 @@
 				<source>
 					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
 				</source>
-				<target state="new">
-					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
+				<target state="final">
+					Orchid 앱의 기본 화면에서 우측 상단에 있는 토글 버튼을 '켬'으로 전환합니다. 그러면, 장치에서 Orchid 및 구성된 홉이 활성화됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3025,11 +3022,10 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="new">
-					That’s it!
-					You’re ready to start exploring freely.
+				<target state="final">
+					완료되었습니다! 자유롭게 검색을 시작할 준비가 되셨습니다. 
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Stay curious out there!
+					즐거운 서핑 되시길 바랍니다!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3044,8 +3040,8 @@
 				<source>
 					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
 				</source>
-				<target state="new">
-					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
+				<target state="final">
+					참고: Orchid를 켠 후 인터넷 연결이 끊길 경우 껐다가 다시 켜기만 하시면 연결이 갱신되어 다른 서버에 연결됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3060,8 +3056,8 @@
 				<source>
 					Where to get OXT?
 				</source>
-				<target state="new">
-					Where to get OXT?
+				<target state="final">
+					어디서 OXT를 얻을 수 있나요?
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3076,8 +3072,8 @@
 				<source>
 					More questions?
 				</source>
-				<target state="new">
-					Got more questions?
+				<target state="final">
+					다른 질문이 있으세요?
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3092,8 +3088,8 @@
 				<source>
 					Check out the FAQ
 				</source>
-				<target state="new">
-					Check out the FAQ
+				<target state="final">
+					자주 묻는 질문 보기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
