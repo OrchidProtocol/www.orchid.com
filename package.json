@@ -22,6 +22,8 @@
         "build:static:ja": "BUILD_LOCALE=ja yarn run build:ssr:locale",
         "build:static:ko": "BUILD_LOCALE=ko yarn run build:ssr:locale",
         "build:static:zh": "BUILD_LOCALE=zh yarn run build:ssr:locale",
+        "build:static:id": "BUILD_LOCALE=id yarn run build:ssr:locale",
+        "build:static:ru": "BUILD_LOCALE=ru yarn run build:ssr:locale",
         "ngx-extractor": "ngx-extractor"
     },
     "private": true,
