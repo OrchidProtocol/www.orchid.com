@@ -1,6 +1,5 @@
 import {Routes} from "@angular/router";
 
-import {AboutAppComponent} from "./about-app/about-app.component";
 import {AboutCompanyComponent} from "./about-company/about-company.component";
 import {AboutNetworkComponent} from "./about-network/about-network.component";
 import {HowItWorksComponent} from "./how-it-works/how-it-works.component";
@@ -29,8 +28,8 @@ export const routes: Routes = [
 	component: PageLayoutComponent,
 	children: [
 	    {path: "", component: HomeComponent},
-	    {path: "app", component: AboutAppComponent},
-	    {path: "app.html", redirectTo: "app"},
+	    {path: "app", redirectTo: "download"},
+	    {path: "app.html", redirectTo: "download"},
 	    {path: "network", component: AboutNetworkComponent},
 	    {path: "network.html", redirectTo: "network"},
 	    {path: "how-it-works", component: HowItWorksComponent},
