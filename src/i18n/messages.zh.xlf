@@ -1618,8 +1618,8 @@
 				<source>
 					Japanese
 				</source>
-				<target state="new">
-					Japanese
+				<target state="final">
+					日本語
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1634,8 +1634,8 @@
 				<source>
 					Mandarin
 				</source>
-				<target state="new">
-					Mandarin
+				<target state="final">
+					汉语
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1794,8 +1794,8 @@
 				<source>
 					About Orchid
 				</source>
-				<target state="new">
-					About Orchid
+				<target state="final">
+					关于 Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2370,8 +2370,8 @@
 				<source>
 					Set-up Guide
 				</source>
-				<target state="new">
-					Set-up Guide
+				<target state="final">
+					帐户创建指南
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2386,8 +2386,8 @@
 				<source>
 					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
 				</source>
-				<target state="new">
-					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
+				<target state="final">
+					使用 Orchid 之前，您需要一个 Orchid 帐户。本“帐户创建指南”将介绍如何创建 Orchid 帐户，及如何使用以太坊钱包和 Orchid 的数字货币 OXT 来绑定帐户与 Orchid 应用。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2402,8 +2402,8 @@
 				<source>
 					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
 				</source>
-				<target state="new">
-					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
+				<target state="final">
+					如果您的现有 Orchid 帐户已有二维码，可直接从第 4 步开始。只需打开应用，扫描/粘贴二维码并添加帐户。随后，即可使用该帐户为您的 VPN 服务付费。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2422,12 +2422,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
-				<target state="new">
-					Check out Coinbase’s
+				<target state="final">
+					了解 Coinbase 的
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Earn Campaign
+					Earn Campaign，
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					for an opportunity to earn OXT while learning about Orchid!
+					即有望在了解 Orchid 的同时赚取 OXT 币！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2442,8 +2442,8 @@
 				<source>
 					Step
 				</source>
-				<target state="new">
-					Step
+				<target state="final">
+					步骤
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2490,8 +2490,8 @@
 				<source>
 					Create a new Ethereum wallet
 				</source>
-				<target state="new">
-					Create a new Ethereum wallet
+				<target state="final">
+					创建新的以太坊钱包
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2506,8 +2506,8 @@
 				<source>
 					Play from: 01:06
 				</source>
-				<target state="new">
-					Play from: 01:06
+				<target state="final">
+					从 01:06 开始播放
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2526,12 +2526,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="new">
-					We recommend using
+				<target state="final">
+					我们推荐使用
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					for your Ethereum wallet.
+					作为您的以太坊钱包。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2558,20 +2558,20 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="new">
-					Alternatively,
+				<target state="final">
+					此外，
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					,
+					、
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					BRD Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and
+					和
 					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					are also compatible with Orchid.
+					也均与 Orchid 兼容。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2590,11 +2590,11 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="new">
-					Privacy note: We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
+				<target state="final">
+					隐私备注：我们建议您针对 Orchid 开设一个新的以太坊钱包地址。换言之，该地址应未与其它以太坊产品或服务绑定。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Learn more
+					了解更多详情
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</target>
 				<context-group purpose="location">
@@ -2610,8 +2610,8 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="new">
-					Add funds to your wallet
+				<target state="final">
+					为您的钱包充值
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2626,8 +2626,8 @@
 				<source>
 					Play from: 04:19
 				</source>
-				<target state="new">
-					Play from: 04:19
+				<target state="final">
+					从 04:19 开始播放
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2642,8 +2642,8 @@
 				<source>
 					We recommend adding at least these amounts to your Ethereum wallet:
 				</source>
-				<target state="new">
-					We recommend adding at least these amounts to your Ethereum wallet:
+				<target state="final">
+					我们建议，给以太坊钱包充值的金额应至少为：
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2658,8 +2658,8 @@
 				<source>
 					$4 USD of OXT
 				</source>
-				<target state="new">
-					$4 USD of OXT
+				<target state="final">
+					价值 4 美元的 OXT 币
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2674,8 +2674,8 @@
 				<source>
 					Estimated to provide ~60GBs of VPN service.
 				</source>
-				<target state="new">
-					Estimated to provide ~60GBs of VPN service.
+				<target state="final">
+					估计可提供约 60GB 的 VPN 服务。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2690,8 +2690,8 @@
 				<source>
 					$1 USD of ETH
 				</source>
-				<target state="new">
-					$1 USD of ETH
+				<target state="final">
+					价值 1 美元的以太币
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2716,10 +2716,10 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="new">
-					Privacy note: We recommend buying OXT using a large exchange for transaction privacy.
+				<target state="final">
+					隐私备注：出于交易隐私考虑，我们建议您使用大型交易所购买 OXT 币。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Learn more
+					了解更多详情
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2750,8 +2750,8 @@
 				<source>
 					Create your Orchid Account
 				</source>
-				<target state="new">
-					Create your Orchid Account
+				<target state="final">
+					创建 Orchid 帐户
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2766,8 +2766,8 @@
 				<source>
 					Play from: 05:38
 				</source>
-				<target state="new">
-					Play from: 05:38
+				<target state="final">
+					从 05:38 开始播放
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2786,12 +2786,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="new">
-					Load
+				<target state="final">
+					在您钱包的浏览器中加载
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					account.orchid.com
+					account.orchid.com。
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
+					建议将该网页加入书签，以便日后使用。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2806,8 +2806,8 @@
 				<source>
 					Read the directions on the screen and add the OXT or ETH needed to create the account.
 				</source>
-				<target state="new">
-					Read the directions on the screen and add the OXT or ETH needed to create the account.
+				<target state="final">
+					阅读此屏幕上的指引，充值所需数量的 OXT 币或以太币，以创建帐户。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2828,14 +2828,14 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="new">
-					Tap the
+				<target state="final">
+					点击
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
-					Create Account
+					Create Account（创建帐户）按钮，
 					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
+					然后对钱包发出的两条提示进行确认，以将 OXT 币转入您的 Orchid 帐户。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2850,8 +2850,8 @@
 				<source>
 					Once complete, scan or copy your Orchid Account to your clipboard.
 				</source>
-				<target state="new">
-					Once complete, scan or copy your Orchid Account to your clipboard.
+				<target state="final">
+					完成后，扫描或复制您的 Orchid 帐户至剪贴板。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2866,8 +2866,8 @@
 				<source>
 					Connect your Account and app
 				</source>
-				<target state="new">
-					Connect your Account and app
+				<target state="final">
+					将您的帐户和应用绑定起来
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2882,8 +2882,8 @@
 				<source>
 					Play from: 07:21
 				</source>
-				<target state="new">
-					Play from: 07:21
+				<target state="final">
+					从 07:21 开始播放
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2906,16 +2906,16 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="new">
-					Download the Orchid app for
+				<target state="final">
+					下载 
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and help us Beta test our app on
+					版本的 Orchid 应用，或帮助我们在
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS Testflight 上测试本应用的 Beta 版本
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
+					。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2930,8 +2930,8 @@
 				<source>
 					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
 				</source>
-				<target state="new">
-					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
+				<target state="final">
+					打开应用，扫描或粘贴您的 Orchid 帐户。本应用将自动使用该帐户创建一个已配置的跃点，然后您即可使用 Orchid 应用！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2946,8 +2946,8 @@
 				<source>
 					Start exploring freely!
 				</source>
-				<target state="new">
-					Start exploring freely!
+				<target state="final">
+					开始自由探索之旅！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2962,8 +2962,8 @@
 				<source>
 					Play from: 10:44
 				</source>
-				<target state="new">
-					Play from: 10:44
+				<target state="final">
+					从 10:44 开始播放
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2978,8 +2978,8 @@
 				<source>
 					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
 				</source>
-				<target state="new">
-					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
+				<target state="final">
+					在 Orchid 应用的主界面上，将顶部开关切换为“on”（开）。此操作将启用您设备上的 Orchid 并激活已配置的跃点。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2997,11 +2997,10 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="new">
-					That’s it!
-					You’re ready to start exploring freely.
+				<target state="final">
+					搞定！您可以开始自由探索啦。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Stay curious out there!
+					保持好奇心哦！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3016,8 +3015,8 @@
 				<source>
 					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
 				</source>
-				<target state="new">
-					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
+				<target state="final">
+					注意：打开 Orchid 后，如发现网络断开，只需将其关闭再重新打开即可刷新连接，以连接至另一个服务器。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3032,8 +3031,8 @@
 				<source>
 					Where to get OXT?
 				</source>
-				<target state="new">
-					Where to get OXT?
+				<target state="final">
+					从哪里获取 OXT 币呢？
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3048,8 +3047,8 @@
 				<source>
 					More questions?
 				</source>
-				<target state="new">
-					Got more questions?
+				<target state="final">
+					还有更多问题？
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3064,8 +3063,8 @@
 				<source>
 					Check out the FAQ
 				</source>
-				<target state="new">
-					Check out the FAQ
+				<target state="final">
+					请查阅 FAQ（常见问题）
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
