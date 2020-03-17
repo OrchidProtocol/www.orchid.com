@@ -6,7 +6,7 @@
 				<source>
 					/assets/whitepaper/whitepaper.pdf
 				</source>
-				<target state="final">
+				<target state="translated">
 					/assets/whitepaper/japanese.pdf
 				</target>
 				<context-group purpose="location">
@@ -38,7 +38,7 @@
 				<source>
 					How Orchid delivers digital privacy
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドがデジタル プラ
 					イバシーを提供する方法
 				</target>
@@ -97,7 +97,7 @@
 				<source>
 					Core components
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッド ネットワーク
 				</target>
 				<context-group purpose="location">
@@ -130,7 +130,7 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッド アプリ
 				</target>
 				<context-group purpose="location">
@@ -146,7 +146,7 @@
 				<source>
 					OXT cryptocurrency
 				</source>
-				<target state="final">
+				<target state="translated">
 					OXT 暗号通貨
 				</target>
 				<context-group purpose="location">
@@ -162,7 +162,7 @@
 				<source>
 					Orchid protocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッド プロトコル
 				</target>
 				<context-group purpose="location">
@@ -178,7 +178,7 @@
 				<source>
 					Nanopayments
 				</source>
-				<target state="final">
+				<target state="translated">
 					ナノペイメント
 				</target>
 				<context-group purpose="location">
@@ -194,7 +194,7 @@
 				<source>
 					Nodes
 				</source>
-				<target state="final">
+				<target state="translated">
 					ノード
 				</target>
 				<context-group purpose="location">
@@ -210,7 +210,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="final">
+				<target state="translated">
 					ステーキング
 				</target>
 				<context-group purpose="location">
@@ -226,7 +226,7 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッド アプリ
 				</target>
 				<context-group purpose="location">
@@ -386,7 +386,7 @@
 				<source>
 					The Orchid Protocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッド プロトコル
 				</target>
 				<context-group purpose="location">
@@ -483,7 +483,7 @@
 				<source>
 					Nodes
 				</source>
-				<target state="final">
+				<target state="translated">
 					ノード
 				</target>
 				<context-group purpose="location">
@@ -534,7 +534,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="final">
+				<target state="translated">
 					ステーキング
 				</target>
 				<context-group purpose="location">
@@ -599,7 +599,7 @@
 				<source>
 					Read our Whitepaper
 				</source>
-				<target state="final">
+				<target state="translated">
 					ホワイトペーパー
 				</target>
 				<context-group purpose="location">
@@ -615,7 +615,7 @@
 				<source>
 					Events
 				</source>
-				<target state="final">
+				<target state="translated">
 					イベント
 				</target>
 				<context-group purpose="location">
@@ -631,7 +631,7 @@
 				<source>
 					Find us IRL
 				</source>
-				<target state="final">
+				<target state="translated">
 					実際にお会いしましょう
 				</target>
 				<context-group purpose="location">
@@ -663,7 +663,7 @@
 				<source>
 					iOS (help us Beta test)
 				</source>
-				<target state="final">
+				<target state="translated">
 					iOS
 				</target>
 				<context-group purpose="location">
@@ -720,7 +720,7 @@
 				<source>
 					Android
 				</source>
-				<target state="final">
+				<target state="translated">
 					アンドロイド
 				</target>
 				<context-group purpose="location">
@@ -777,7 +777,7 @@
 				<source>
 					/assets/img/shared/google-play-badge.svg
 				</source>
-				<target state="final">
+				<target state="translated">
 					/assets/img/shared/google-play-badge.svg
 				</target>
 				<context-group purpose="location">
@@ -801,7 +801,7 @@
 				<source>
 					Get it on Google Play
 				</source>
-				<target state="final">
+				<target state="translated">
 					Google Play からダウンロード
 				</target>
 				<context-group purpose="location">
@@ -825,7 +825,7 @@
 				<source>
 					Orchid
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid
 				</target>
 				<context-group purpose="location">
@@ -841,7 +841,7 @@
 				<source>
 					How it Works
 				</source>
-				<target state="final">
+				<target state="translated">
 					仕組み
 				</target>
 				<context-group purpose="location">
@@ -857,7 +857,7 @@
 				<source>
 					About Us
 				</source>
-				<target state="final">
+				<target state="translated">
 					概要
 				</target>
 				<context-group purpose="location">
@@ -873,7 +873,7 @@
 				<source>
 					Download
 				</source>
-				<target state="final">
+				<target state="translated">
 					ダウンロード
 				</target>
 				<context-group purpose="location">
@@ -889,7 +889,7 @@
 				<source>
 					Events
 				</source>
-				<target state="final">
+				<target state="translated">
 					イベント
 				</target>
 				<context-group purpose="location">
@@ -905,7 +905,7 @@
 				<source>
 					FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					よくある質問
 				</target>
 				<context-group purpose="location">
@@ -921,7 +921,7 @@
 				<source>
 					Follow Us
 				</source>
-				<target state="final">
+				<target state="translated">
 					フォローする
 				</target>
 				<context-group purpose="location">
@@ -937,7 +937,7 @@
 				<source>
 					FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					よくある質問
 				</target>
 				<context-group purpose="location">
@@ -953,7 +953,7 @@
 				<source>
 					About Orchid
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid について
 				</target>
 				<context-group purpose="location">
@@ -969,7 +969,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="final">
+				<target state="translated">
 					お問い合わせ
 				</target>
 				<context-group purpose="location">
@@ -1016,7 +1016,7 @@
 				<source>
 					Office Address
 				</source>
-				<target state="final">
+				<target state="translated">
 					オフィスの住所
 				</target>
 				<context-group purpose="location">
@@ -1050,7 +1050,7 @@
 				<source>
 					Contact Info
 				</source>
-				<target state="final">
+				<target state="translated">
 					連絡先情報
 				</target>
 				<context-group purpose="location">
@@ -1066,7 +1066,7 @@
 				<source>
 					contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1082,7 +1082,7 @@
 				<source>
 					mailto:contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					mailto:contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1098,7 +1098,7 @@
 				<source>
 					@OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1114,7 +1114,7 @@
 				<source>
 					https://twitter.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://twitter.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1130,7 +1130,7 @@
 				<source>
 					@OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1146,7 +1146,7 @@
 				<source>
 					https://www.t.me/OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.t.me/OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1162,7 +1162,7 @@
 				<source>
 					OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1178,7 +1178,7 @@
 				<source>
 					https://www.facebook.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.facebook.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1194,7 +1194,7 @@
 				<source>
 					Your Name
 				</source>
-				<target state="final">
+				<target state="translated">
 					お名前
 				</target>
 				<context-group purpose="location">
@@ -1210,7 +1210,7 @@
 				<source>
 					Your Email
 				</source>
-				<target state="final">
+				<target state="translated">
 					メール アドレス
 				</target>
 				<context-group purpose="location">
@@ -1226,7 +1226,7 @@
 				<source>
 					Subject
 				</source>
-				<target state="final">
+				<target state="translated">
 					件名
 				</target>
 				<context-group purpose="location">
@@ -1242,7 +1242,7 @@
 				<source>
 					Enter your message...
 				</source>
-				<target state="final">
+				<target state="translated">
 					メッセージを入力してください…
 				</target>
 				<context-group purpose="location">
@@ -1258,7 +1258,7 @@
 				<source>
 					Required fields are missing
 				</source>
-				<target state="final">
+				<target state="translated">
 					必須フィールドが空白のままです
 				</target>
 				<context-group purpose="location">
@@ -1274,7 +1274,7 @@
 				<source>
 					There was an unknown error, your message may not have been sent
 				</source>
-				<target state="final">
+				<target state="translated">
 					不明なエラーが発生したため、メッセージが送信されなかった可能性があります
 				</target>
 				<context-group purpose="location">
@@ -1290,7 +1290,7 @@
 				<source>
 					Your message has been sent
 				</source>
-				<target state="final">
+				<target state="translated">
 					メッセージが送信されました
 				</target>
 				<context-group purpose="location">
@@ -1306,7 +1306,7 @@
 				<source>
 					Submit
 				</source>
-				<target state="final">
+				<target state="translated">
 					送る
 				</target>
 				<context-group purpose="location">
@@ -1322,7 +1322,7 @@
 				<source>
 					Clear
 				</source>
-				<target state="final">
+				<target state="translated">
 					取り消し
 				</target>
 				<context-group purpose="location">
@@ -1425,7 +1425,7 @@
 				<source>
 					Corporate info
 				</source>
-				<target state="final">
+				<target state="translated">
 					会社情報
 				</target>
 				<context-group purpose="location">
@@ -1441,7 +1441,7 @@
 				<source>
 					Orchid is a Delaware c-corp
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドはデラウェア州の株式会社です
 				</target>
 				<context-group purpose="location">
@@ -1505,7 +1505,7 @@
 				<source>
 					SEC Filing
 				</source>
-				<target state="final">
+				<target state="translated">
 					SEC への届け出
 				</target>
 				<context-group purpose="location">
@@ -1521,7 +1521,7 @@
 				<source>
 					Press Kit
 				</source>
-				<target state="final">
+				<target state="translated">
 					プレスキット
 				</target>
 				<context-group purpose="location">
@@ -1537,7 +1537,7 @@
 				<source>
 					Set-up Guide
 				</source>
-				<target state="final">
+				<target state="translated">
 					セットアップ ガイド
 				</target>
 				<context-group purpose="location">
@@ -1553,7 +1553,7 @@
 				<source>
 					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid を使い始めるには、Orchid アカウントが必要です。このセットアップ ガイドは、Orchid アカウントを作成して、イーサリアム ウォレットと Orchid のデジタル通貨 OXT を使用してそのアカウントを Orchid アプリに接続する方法を説明します。
 				</target>
 				<context-group purpose="location">
@@ -1569,7 +1569,7 @@
 				<source>
 					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					既存の Orchid アカウントのQRコードがすでにある場合は、手順 4 から再生し、アプリを開いてコードをスキャン/貼り付けてアカウントを追加するだけ設定が完了します。その後、そのアカウントから VPN サービスは支払われます。
 				</target>
 				<context-group purpose="location">
@@ -1609,7 +1609,7 @@
 				<source>
 					Step
 				</source>
-				<target state="final">
+				<target state="translated">
 					ステップ
 				</target>
 				<context-group purpose="location">
@@ -1657,7 +1657,7 @@
 				<source>
 					Create a new Ethereum wallet
 				</source>
-				<target state="final">
+				<target state="translated">
 					新しいイーサリアム ウォレットを作成する
 				</target>
 				<context-group purpose="location">
@@ -1673,7 +1673,7 @@
 				<source>
 					Play from: 01:06
 				</source>
-				<target state="final">
+				<target state="translated">
 					01:06 から再生
 				</target>
 				<context-group purpose="location">
@@ -1777,7 +1777,7 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="final">
+				<target state="translated">
 					ウォレットに資金を追加する
 				</target>
 				<context-group purpose="location">
@@ -1793,7 +1793,7 @@
 				<source>
 					Play from: 04:19
 				</source>
-				<target state="final">
+				<target state="translated">
 					04:19 から再生
 				</target>
 				<context-group purpose="location">
@@ -1809,7 +1809,7 @@
 				<source>
 					We recommend adding at least these amounts to your Ethereum wallet:
 				</source>
-				<target state="final">
+				<target state="translated">
 					イーサリアム ウォレットには少なくともこれらの金額を追加することをお勧めします。
 				</target>
 				<context-group purpose="location">
@@ -1825,7 +1825,7 @@
 				<source>
 					$4 USD of OXT
 				</source>
-				<target state="final">
+				<target state="translated">
 					$4 USD 相当の OXT
 				</target>
 				<context-group purpose="location">
@@ -1841,7 +1841,7 @@
 				<source>
 					Estimated to provide ~60GBs of VPN service.
 				</source>
-				<target state="final">
+				<target state="translated">
 					約 60 GB までの VPN サービスを提供可能と予想されます。
 				</target>
 				<context-group purpose="location">
@@ -1857,7 +1857,7 @@
 				<source>
 					$1 USD of ETH
 				</source>
-				<target state="final">
+				<target state="translated">
 					$1 USD 相当の ETH
 				</target>
 				<context-group purpose="location">
@@ -1917,7 +1917,7 @@
 				<source>
 					Create your Orchid Account
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid アカウントを作成する
 				</target>
 				<context-group purpose="location">
@@ -1933,7 +1933,7 @@
 				<source>
 					Play from: 05:38
 				</source>
-				<target state="final">
+				<target state="translated">
 					05:38 から再生
 				</target>
 				<context-group purpose="location">
@@ -1973,7 +1973,7 @@
 				<source>
 					Read the directions on the screen and add the OXT or ETH needed to create the account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					画面上の指示を読み、アカウントを作成するために必要な OXT または ETH を追加します。
 				</target>
 				<context-group purpose="location">
@@ -2014,7 +2014,7 @@
 				<source>
 					Once complete, scan or copy your Orchid Account to your clipboard.
 				</source>
-				<target state="final">
+				<target state="translated">
 					完了したら、Orchid アカウントをスキャンするか、クリップボードにコピーします。
 				</target>
 				<context-group purpose="location">
@@ -2030,7 +2030,7 @@
 				<source>
 					Connect your Account and app
 				</source>
-				<target state="final">
+				<target state="translated">
 					アカウントとアプリを接続する
 				</target>
 				<context-group purpose="location">
@@ -2046,7 +2046,7 @@
 				<source>
 					Play from: 07:21
 				</source>
-				<target state="final">
+				<target state="translated">
 					07:21 から再生
 				</target>
 				<context-group purpose="location">
@@ -2093,7 +2093,7 @@
 				<source>
 					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
 				</source>
-				<target state="final">
+				<target state="translated">
 					アプリを開き、スキャンするか、 Orchid アカウントに貼り付けます。アプリが自動的にそのアカウントを使用して構成されたホップを生成して、アプリの使用準備が完了します！
 				</target>
 				<context-group purpose="location">
@@ -2109,7 +2109,7 @@
 				<source>
 					Start exploring freely!
 				</source>
-				<target state="final">
+				<target state="translated">
 					自由に探索を始めてください！
 				</target>
 				<context-group purpose="location">
@@ -2125,7 +2125,7 @@
 				<source>
 					Play from: 10:44
 				</source>
-				<target state="final">
+				<target state="translated">
 					10:44 から再生
 				</target>
 				<context-group purpose="location">
@@ -2141,7 +2141,7 @@
 				<source>
 					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid アプリのメイン画面で、右上のトグルを [オン] に切り替えます。これにより、デバイスで Orchid が有効になり、構成されたホップがアクティブになります。
 				</target>
 				<context-group purpose="location">
@@ -2178,7 +2178,7 @@
 				<source>
 					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
 				</source>
-				<target state="final">
+				<target state="translated">
 					注：Orcid をオンにした後にインターネット接続が失われた場合は、オフにしてから再度オンにして接続を再使用し、別のサーバーに接続してください。
 				</target>
 				<context-group purpose="location">
@@ -2194,7 +2194,7 @@
 				<source>
 					Where to get OXT?
 				</source>
-				<target state="final">
+				<target state="translated">
 					どこで OXT を入手できますか？
 				</target>
 				<context-group purpose="location">
@@ -2210,7 +2210,7 @@
 				<source>
 					More questions?
 				</source>
-				<target state="final">
+				<target state="translated">
 					ご質問がおありですか？
 				</target>
 				<context-group purpose="location">
@@ -2226,7 +2226,7 @@
 				<source>
 					Check out the FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					よくある質問をご覧ください
 				</target>
 				<context-group purpose="location">
@@ -2310,7 +2310,7 @@
 				<source>
 					Join now
 				</source>
-				<target state="final">
+				<target state="translated">
 					Join now
 				</target>
 				<context-group purpose="location">
@@ -2358,7 +2358,7 @@
 				<source>
 					Whitepaper
 				</source>
-				<target state="final">
+				<target state="translated">
 					ホワイトペーパー
 				</target>
 				<context-group purpose="location">
@@ -2390,7 +2390,7 @@
 				<source>
 					Our approach
 				</source>
-				<target state="final">
+				<target state="translated">
 					私たちのアプローチ
 				</target>
 				<context-group purpose="location">
@@ -2425,7 +2425,7 @@
 				<source>
 					Decentralized
 				</source>
-				<target state="final">
+				<target state="translated">
 					分散型
 				</target>
 				<context-group purpose="location">
@@ -2441,7 +2441,7 @@
 				<source>
 					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドではイーサリアムを利用するこ
 					とで運営に中央化された権限を必要としま
 					せん。アプリはサーバー経由ではなくデバ
@@ -2461,7 +2461,7 @@
 				<source>
 					Open Source
 				</source>
-				<target state="final">
+				<target state="translated">
 					オープン ソース
 				</target>
 				<context-group purpose="location">
@@ -2477,7 +2477,7 @@
 				<source>
 					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドは、コミュニティによるア
 					イデアの共有、監査、デバッグ、そし
 					て貢献を可能にするオープン ソースの
@@ -2496,7 +2496,7 @@
 				<source>
 					Peer to peer
 				</source>
-				<target state="final">
+				<target state="translated">
 					ピア ツー ピア
 				</target>
 				<context-group purpose="location">
@@ -2512,7 +2512,7 @@
 				<source>
 					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
 				</source>
-				<target state="final">
+				<target state="translated">
 					クライアントとネットワーク プロバ
 					イダーが仲介者なしで直接取引を行
 					うため、帯域幅と VPN 接続を低コ
@@ -2532,7 +2532,7 @@
 				<source>
 					As seen in
 				</source>
-				<target state="final">
+				<target state="translated">
 					以下のメディアで取り上げられました
 				</target>
 				<context-group purpose="location">
@@ -2548,7 +2548,7 @@
 				<source>
 					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 				</source>
-				<target state="final">
+				<target state="translated">
 					関係予算と達成すべきミッション、そ
 					して私たちの創設者の熱意が絡み合い
 					、まさに一大事業となっています。今
@@ -2567,7 +2567,7 @@
 				<source>
 					Read More
 				</source>
-				<target state="final">
+				<target state="translated">
 					続きを読む
 				</target>
 				<context-group purpose="location">
@@ -2599,7 +2599,7 @@
 				<source>
 					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドのミッションは、インタ
 					ーネットを常にオープンでアクセス
 					可能な場にし、どこにいても誰にと
@@ -2620,7 +2620,7 @@
 				<source>
 					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
 				</source>
-				<target state="final">
+				<target state="translated">
 					オーキッドは、グローバル コミュニ
 					ティに匿名のインターネット アクセ
 					スを提供すべく、監視のないオープ
@@ -2640,7 +2640,7 @@
 				<source>
 					Meet us in person
 				</source>
-				<target state="final">
+				<target state="translated">
 					直接お会いする
 				</target>
 				<context-group purpose="location">
@@ -2656,7 +2656,7 @@
 				<source>
 					See all events
 				</source>
-				<target state="final">
+				<target state="translated">
 					すべてのイベントを見る
 				</target>
 				<context-group purpose="location">
@@ -2672,7 +2672,7 @@
 				<source>
 					Let's stay connected
 				</source>
-				<target state="final">
+				<target state="translated">
 					つながっていましょう
 				</target>
 				<context-group purpose="location">
@@ -2696,7 +2696,7 @@
 				<source>
 					Get the newsletter for updates and privacy news
 				</source>
-				<target state="final">
+				<target state="translated">
 					最新情報とプライバシー ニュースのニュースレターを受け取る
 				</target>
 				<context-group purpose="location">
@@ -2720,7 +2720,7 @@
 				<source>
 					Email address
 				</source>
-				<target state="final">
+				<target state="translated">
 					メール アドレス
 				</target>
 				<context-group purpose="location">
@@ -2752,7 +2752,7 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="final">
+				<target state="translated">
 					上で送信したメール アドレスで今後のインストラクションを受け取ることに同意します。"
 				</target>
 				<context-group purpose="location">
@@ -2784,7 +2784,7 @@
 				<source>
 					Subscribe
 				</source>
-				<target state="final">
+				<target state="translated">
 					お申し込み
 				</target>
 				<context-group purpose="location">
@@ -2808,7 +2808,7 @@
 				<source>
 					Get notified
 				</source>
-				<target state="final">
+				<target state="translated">
 					通知を受け取る
 				</target>
 				<context-group purpose="location">
@@ -2824,7 +2824,7 @@
 				<source>
 					Home
 				</source>
-				<target state="final">
+				<target state="translated">
 					ホーム
 				</target>
 				<context-group purpose="location">
@@ -2840,7 +2840,7 @@
 				<source>
 					Join Now
 				</source>
-				<target state="final">
+				<target state="translated">
 					Join Now
 				</target>
 				<context-group purpose="location">
@@ -2856,7 +2856,7 @@
 				<source>
 					How It Works
 				</source>
-				<target state="final">
+				<target state="translated">
 					仕組み
 				</target>
 				<context-group purpose="location">
@@ -2872,7 +2872,7 @@
 				<source>
 					OXT
 				</source>
-				<target state="final">
+				<target state="translated">
 					OXT
 				</target>
 				<context-group purpose="location">
@@ -2888,7 +2888,7 @@
 				<source>
 					About
 				</source>
-				<target state="final">
+				<target state="translated">
 					概要
 				</target>
 				<context-group purpose="location">
@@ -2904,7 +2904,7 @@
 				<source>
 					Blog
 				</source>
-				<target state="final">
+				<target state="translated">
 					ブログ
 				</target>
 				<context-group purpose="location">
@@ -2928,7 +2928,7 @@
 				<source>
 					https://blog.orchid.com/
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://blog.ja.orchid.com/
 				</target>
 				<context-group purpose="location">
@@ -2952,7 +2952,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="final">
+				<target state="translated">
 					お問い合わせ
 				</target>
 				<context-group purpose="location">
@@ -2976,7 +2976,7 @@
 				<source>
 					English
 				</source>
-				<target state="final">
+				<target state="translated">
 					日本語
 				</target>
 				<context-group purpose="location">
@@ -2992,7 +2992,7 @@
 				<source>
 					Korean
 				</source>
-				<target state="final">
+				<target state="translated">
 					한국어
 				</target>
 				<context-group purpose="location">
@@ -3008,7 +3008,7 @@
 				<source>
 					English
 				</source>
-				<target state="final">
+				<target state="translated">
 					English
 				</target>
 				<context-group purpose="location">
@@ -3040,7 +3040,7 @@
 				<source>
 					Japanese
 				</source>
-				<target state="final">
+				<target state="translated">
 					日本語
 				</target>
 				<context-group purpose="location">
@@ -3056,7 +3056,7 @@
 				<source>
 					Mandarin
 				</source>
-				<target state="final">
+				<target state="translated">
 					汉语
 				</target>
 				<context-group purpose="location">

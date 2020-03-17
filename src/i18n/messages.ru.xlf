@@ -38,7 +38,7 @@
 				<source>
 					How Orchid delivers digital privacy
 				</source>
-				<target state="final">
+				<target state="translated">
 					Как Orchid обеспечивает конфиденциальность онлайн
 				</target>
 				<context-group purpose="location">
@@ -389,7 +389,7 @@
 					allows users to request access to remote network resources and pay for these resources using OXT via the
 					Orchid nanopayments system.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Программное обеспечение Orchid предназначено для использования персонального VPN-протокола, аналогичного OpenVPN или WireGuard. Протокол Orchid разработан для высокопроизводительных сетей и показывает результаты сверх норм WebRTC, общепринятого веб-стандарта, широко используемого при передаче видео и аудио из браузеров. Наш протокол позволяет пользователям запрашивать доступ к ресурсам удаленных сетей и оплачивать эти ресурсы с помощью валюты OXT через систему наноплатежей Orchid.
 				</target>
 				<context-group purpose="location">
@@ -662,7 +662,7 @@
 				<source>
 					Android
 				</source>
-				<target state="final">
+				<target state="translated">
 					Android
 				</target>
 				<context-group purpose="location">
@@ -1860,7 +1860,7 @@
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</source>
-				<target state="final">
+				<target state="translated">
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</target>
@@ -1893,7 +1893,7 @@
 				<source>
 					contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1909,7 +1909,7 @@
 				<source>
 					mailto:contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					mailto:contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1925,7 +1925,7 @@
 				<source>
 					@OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1941,7 +1941,7 @@
 				<source>
 					https://twitter.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://twitter.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1957,7 +1957,7 @@
 				<source>
 					@OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1973,7 +1973,7 @@
 				<source>
 					https://www.t.me/OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.t.me/OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -1989,7 +1989,7 @@
 				<source>
 					OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -2005,7 +2005,7 @@
 				<source>
 					https://www.facebook.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.facebook.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">

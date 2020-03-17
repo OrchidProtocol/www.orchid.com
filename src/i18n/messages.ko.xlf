@@ -6,7 +6,7 @@
 				<source>
 					/assets/whitepaper/whitepaper.pdf
 				</source>
-				<target state="final">
+				<target state="translated">
 					/assets/whitepaper/korean.pdf
 				</target>
 				<context-group purpose="location">
@@ -38,7 +38,7 @@
 				<source>
 					How Orchid delivers digital privacy
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid가 디지털 개인
 					정보를 보호하는 방법
 				</target>
@@ -96,7 +96,7 @@
 				<source>
 					Core components
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 네트워크의
 				</target>
 				<context-group purpose="location">
@@ -129,7 +129,7 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 앱
 				</target>
 				<context-group purpose="location">
@@ -145,7 +145,7 @@
 				<source>
 					OXT cryptocurrency
 				</source>
-				<target state="final">
+				<target state="translated">
 					OXT 암호 화폐
 				</target>
 				<context-group purpose="location">
@@ -161,7 +161,7 @@
 				<source>
 					Orchid protocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 프로토콜
 				</target>
 				<context-group purpose="location">
@@ -177,7 +177,7 @@
 				<source>
 					Nanopayments
 				</source>
-				<target state="final">
+				<target state="translated">
 					나노 지불
 				</target>
 				<context-group purpose="location">
@@ -193,7 +193,7 @@
 				<source>
 					Nodes
 				</source>
-				<target state="final">
+				<target state="translated">
 					노드
 				</target>
 				<context-group purpose="location">
@@ -209,7 +209,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="final">
+				<target state="translated">
 					스테이킹
 				</target>
 				<context-group purpose="location">
@@ -225,7 +225,7 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 앱
 				</target>
 				<context-group purpose="location">
@@ -381,7 +381,7 @@
 				<source>
 					The Orchid Protocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 프로토콜
 				</target>
 				<context-group purpose="location">
@@ -476,7 +476,7 @@
 				<source>
 					Nodes
 				</source>
-				<target state="final">
+				<target state="translated">
 					노드
 				</target>
 				<context-group purpose="location">
@@ -525,7 +525,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="final">
+				<target state="translated">
 					스테이킹
 				</target>
 				<context-group purpose="location">
@@ -616,7 +616,7 @@
 				<source>
 					Read our Whitepaper
 				</source>
-				<target state="final">
+				<target state="translated">
 					백서
 				</target>
 				<context-group purpose="location">
@@ -632,7 +632,7 @@
 				<source>
 					Events
 				</source>
-				<target state="final">
+				<target state="translated">
 					이벤트
 				</target>
 				<context-group purpose="location">
@@ -648,7 +648,7 @@
 				<source>
 					Find us IRL
 				</source>
-				<target state="final">
+				<target state="translated">
 					오프라인 행사
 				</target>
 				<context-group purpose="location">
@@ -664,7 +664,7 @@
 				<source>
 					Try the Orchid app
 				</source>
-				<target state="final">
+				<target state="translated">
 					사전 출시 Orchid 앱 사용해보기
 				</target>
 				<context-group purpose="location">
@@ -680,7 +680,7 @@
 				<source>
 					iOS (help us Beta test)
 				</source>
-				<target state="final">
+				<target state="translated">
 					iOS
 				</target>
 				<context-group purpose="location">
@@ -737,7 +737,7 @@
 				<source>
 					Android
 				</source>
-				<target state="final">
+				<target state="translated">
 					Android
 				</target>
 				<context-group purpose="location">
@@ -799,7 +799,7 @@
 				<source>
 					/assets/img/shared/google-play-badge.svg
 				</source>
-				<target state="final">
+				<target state="translated">
 					/assets/img/shared/google-play-badge.svg
 				</target>
 				<context-group purpose="location">
@@ -823,7 +823,7 @@
 				<source>
 					Get it on Google Play
 				</source>
-				<target state="final">
+				<target state="translated">
 					Google Play에서 받기
 				</target>
 				<context-group purpose="location">
@@ -915,7 +915,7 @@
 				<source>
 					Join now
 				</source>
-				<target state="final">
+				<target state="translated">
 					지금 가입
 				</target>
 				<context-group purpose="location">
@@ -964,7 +964,7 @@
 				<source>
 					Whitepaper
 				</source>
-				<target state="final">
+				<target state="translated">
 					백서
 				</target>
 				<context-group purpose="location">
@@ -996,7 +996,7 @@
 				<source>
 					Our approach
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid의 접근 방식
 				</target>
 				<context-group purpose="location">
@@ -1031,7 +1031,7 @@
 				<source>
 					Decentralized
 				</source>
-				<target state="final">
+				<target state="translated">
 					분산형
 				</target>
 				<context-group purpose="location">
@@ -1047,7 +1047,7 @@
 				<source>
 					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
 				</source>
-				<target state="final">
+				<target state="translated">
 					이더리움 덕분에 Orchid는 중앙의 권위에
 					의지하지 않고도 거래를 수행할 수 있게
 					되었습니다. 앱은 서버를 통해서가 아니라
@@ -1067,7 +1067,7 @@
 				<source>
 					Open Source
 				</source>
-				<target state="final">
+				<target state="translated">
 					오픈 소스
 				</target>
 				<context-group purpose="location">
@@ -1083,7 +1083,7 @@
 				<source>
 					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 소프트웨어는 커뮤니티는 물론
 					기여자들이 아이디어를 공유하고 감사 및
 					디버깅을 수행할 수 있게 해주는 오픈 소스
@@ -1102,7 +1102,7 @@
 				<source>
 					Peer to peer
 				</source>
-				<target state="final">
+				<target state="translated">
 					피어 투 피어
 				</target>
 				<context-group purpose="location">
@@ -1118,7 +1118,7 @@
 				<source>
 					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
 				</source>
-				<target state="final">
+				<target state="translated">
 					클라이언트와 네트워크 공급자는
 					중개자 없이 직접 거래하여 대역폭 및
 					VPN 연결을 위한 저비용 시장을
@@ -1137,7 +1137,7 @@
 				<source>
 					As seen in
 				</source>
-				<target state="final">
+				<target state="translated">
 					참고
 				</target>
 				<context-group purpose="location">
@@ -1153,7 +1153,7 @@
 				<source>
 					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 				</source>
-				<target state="final">
+				<target state="translated">
 					투입된 비용과 사명, 설립자의 요구를
 					모두 고려하여 소프트웨어를 개발하는
 					것은 중요한 일입니다. 계속 지켜봐
@@ -1172,7 +1172,7 @@
 				<source>
 					Read More
 				</source>
-				<target state="final">
+				<target state="translated">
 					자세한 내용 읽기
 				</target>
 				<context-group purpose="location">
@@ -1204,7 +1204,7 @@
 				<source>
 					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid의 사명은 모든 사람이 어디서나
 					이용할 수 있는 천연 자원이 될 수 있도록
 					인터넷을 개방적이고 액세스 가능한
@@ -1224,7 +1224,7 @@
 				<source>
 					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid는 전 세계 커뮤니티에 익명의
 					인터넷 액세스를 제공하기 위해
 					감시가 필요 없는 오픈 소스 방식의
@@ -1244,7 +1244,7 @@
 				<source>
 					Meet us in person
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid와의 오프라인 만남
 				</target>
 				<context-group purpose="location">
@@ -1260,7 +1260,7 @@
 				<source>
 					See all events
 				</source>
-				<target state="final">
+				<target state="translated">
 					모든 이벤트 보기
 				</target>
 				<context-group purpose="location">
@@ -1276,7 +1276,7 @@
 				<source>
 					Let's stay connected
 				</source>
-				<target state="final">
+				<target state="translated">
 					새 소식을 놓치지 마세요
 				</target>
 				<context-group purpose="location">
@@ -1300,7 +1300,7 @@
 				<source>
 					Get the newsletter for updates and privacy news
 				</source>
-				<target state="final">
+				<target state="translated">
 					업데이트 및 개인 정보 보호 뉴스에 대한 뉴스 레터 받기
 				</target>
 				<context-group purpose="location">
@@ -1324,7 +1324,7 @@
 				<source>
 					Email address
 				</source>
-				<target state="final">
+				<target state="translated">
 					이메일 주소
 				</target>
 				<context-group purpose="location">
@@ -1356,7 +1356,7 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="final">
+				<target state="translated">
 					본인은 위에 제출한 이메일 주소로 추가 지침을 수신하는 데 동의합니다.
 				</target>
 				<context-group purpose="location">
@@ -1388,7 +1388,7 @@
 				<source>
 					Subscribe
 				</source>
-				<target state="final">
+				<target state="translated">
 					구독하기
 				</target>
 				<context-group purpose="location">
@@ -1412,7 +1412,7 @@
 				<source>
 					Get notified
 				</source>
-				<target state="final">
+				<target state="translated">
 					알림 받기
 				</target>
 				<context-group purpose="location">
@@ -1428,7 +1428,7 @@
 				<source>
 					Home
 				</source>
-				<target state="final">
+				<target state="translated">
 					홈
 				</target>
 				<context-group purpose="location">
@@ -1444,7 +1444,7 @@
 				<source>
 					Join Now
 				</source>
-				<target state="final">
+				<target state="translated">
 					지금 가입
 				</target>
 				<context-group purpose="location">
@@ -1460,7 +1460,7 @@
 				<source>
 					How It Works
 				</source>
-				<target state="final">
+				<target state="translated">
 					작동 방식
 				</target>
 				<context-group purpose="location">
@@ -1476,7 +1476,7 @@
 				<source>
 					OXT
 				</source>
-				<target state="final">
+				<target state="translated">
 					OXT
 				</target>
 				<context-group purpose="location">
@@ -1492,7 +1492,7 @@
 				<source>
 					About
 				</source>
-				<target state="final">
+				<target state="translated">
 					소개
 				</target>
 				<context-group purpose="location">
@@ -1508,7 +1508,7 @@
 				<source>
 					Blog
 				</source>
-				<target state="final">
+				<target state="translated">
 					블로그
 				</target>
 				<context-group purpose="location">
@@ -1532,7 +1532,7 @@
 				<source>
 					https://blog.orchid.com/
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://blog.ko.orchid.com/
 				</target>
 				<context-group purpose="location">
@@ -1556,7 +1556,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="final">
+				<target state="translated">
 					연락처
 				</target>
 				<context-group purpose="location">
@@ -1580,7 +1580,7 @@
 				<source>
 					English
 				</source>
-				<target state="final">
+				<target state="translated">
 					한국어
 				</target>
 				<context-group purpose="location">
@@ -1596,7 +1596,7 @@
 				<source>
 					Korean
 				</source>
-				<target state="final">
+				<target state="translated">
 					한국어
 				</target>
 				<context-group purpose="location">
@@ -1612,7 +1612,7 @@
 				<source>
 					English
 				</source>
-				<target state="final">
+				<target state="translated">
 					English
 				</target>
 				<context-group purpose="location">
@@ -1644,7 +1644,7 @@
 				<source>
 					Japanese
 				</source>
-				<target state="final">
+				<target state="translated">
 					日本語
 				</target>
 				<context-group purpose="location">
@@ -1660,7 +1660,7 @@
 				<source>
 					Mandarin
 				</source>
-				<target state="final">
+				<target state="translated">
 					汉语
 				</target>
 				<context-group purpose="location">
@@ -1692,7 +1692,7 @@
 				<source>
 					Orchid
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid
 				</target>
 				<context-group purpose="location">
@@ -1708,7 +1708,7 @@
 				<source>
 					How it Works
 				</source>
-				<target state="final">
+				<target state="translated">
 					작동 방식
 				</target>
 				<context-group purpose="location">
@@ -1724,7 +1724,7 @@
 				<source>
 					About Us
 				</source>
-				<target state="final">
+				<target state="translated">
 					회사 소개
 				</target>
 				<context-group purpose="location">
@@ -1740,7 +1740,7 @@
 				<source>
 					Download
 				</source>
-				<target state="final">
+				<target state="translated">
 					다운로드
 				</target>
 				<context-group purpose="location">
@@ -1756,7 +1756,7 @@
 				<source>
 					Events
 				</source>
-				<target state="final">
+				<target state="translated">
 					이벤트
 				</target>
 				<context-group purpose="location">
@@ -1772,7 +1772,7 @@
 				<source>
 					FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					자주 묻는 질문
 				</target>
 				<context-group purpose="location">
@@ -1788,7 +1788,7 @@
 				<source>
 					Follow Us
 				</source>
-				<target state="final">
+				<target state="translated">
 					팔로우 하기
 				</target>
 				<context-group purpose="location">
@@ -1804,7 +1804,7 @@
 				<source>
 					FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					자주 묻는 질문
 				</target>
 				<context-group purpose="location">
@@ -1820,7 +1820,7 @@
 				<source>
 					About Orchid
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 정보
 				</target>
 				<context-group purpose="location">
@@ -1836,7 +1836,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="final">
+				<target state="translated">
 					연락처
 				</target>
 				<context-group purpose="location">
@@ -1881,7 +1881,7 @@
 				<source>
 					Office Address
 				</source>
-				<target state="final">
+				<target state="translated">
 					직장 주소
 				</target>
 				<context-group purpose="location">
@@ -1915,7 +1915,7 @@
 				<source>
 					Contact Info
 				</source>
-				<target state="final">
+				<target state="translated">
 					연락처 정보
 				</target>
 				<context-group purpose="location">
@@ -1931,7 +1931,7 @@
 				<source>
 					contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1947,7 +1947,7 @@
 				<source>
 					mailto:contact@orchid.com
 				</source>
-				<target state="final">
+				<target state="translated">
 					mailto:contact@orchid.com
 				</target>
 				<context-group purpose="location">
@@ -1963,7 +1963,7 @@
 				<source>
 					@OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1979,7 +1979,7 @@
 				<source>
 					https://twitter.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://twitter.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -1995,7 +1995,7 @@
 				<source>
 					@OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					@OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -2011,7 +2011,7 @@
 				<source>
 					https://www.t.me/OrchidOfficial
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.t.me/OrchidOfficial
 				</target>
 				<context-group purpose="location">
@@ -2027,7 +2027,7 @@
 				<source>
 					OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -2043,7 +2043,7 @@
 				<source>
 					https://www.facebook.com/OrchidProtocol
 				</source>
-				<target state="final">
+				<target state="translated">
 					https://www.facebook.com/OrchidProtocol
 				</target>
 				<context-group purpose="location">
@@ -2059,7 +2059,7 @@
 				<source>
 					Your Name
 				</source>
-				<target state="final">
+				<target state="translated">
 					이름
 				</target>
 				<context-group purpose="location">
@@ -2075,7 +2075,7 @@
 				<source>
 					Your Email
 				</source>
-				<target state="final">
+				<target state="translated">
 					이메일
 				</target>
 				<context-group purpose="location">
@@ -2091,7 +2091,7 @@
 				<source>
 					Subject
 				</source>
-				<target state="final">
+				<target state="translated">
 					제목
 				</target>
 				<context-group purpose="location">
@@ -2107,7 +2107,7 @@
 				<source>
 					Enter your message...
 				</source>
-				<target state="final">
+				<target state="translated">
 					메시지를 입력하십시오…
 				</target>
 				<context-group purpose="location">
@@ -2123,7 +2123,7 @@
 				<source>
 					Required fields are missing
 				</source>
-				<target state="final">
+				<target state="translated">
 					필수 필드 누락
 				</target>
 				<context-group purpose="location">
@@ -2139,7 +2139,7 @@
 				<source>
 					There was an unknown error, your message may not have been sent
 				</source>
-				<target state="final">
+				<target state="translated">
 					알 수 없는 오류가 있었습니다. 메시지가 전송되지 않았을 수 있습니다.
 				</target>
 				<context-group purpose="location">
@@ -2155,7 +2155,7 @@
 				<source>
 					Your message has been sent
 				</source>
-				<target state="final">
+				<target state="translated">
 					메시지 전송 완료
 				</target>
 				<context-group purpose="location">
@@ -2171,7 +2171,7 @@
 				<source>
 					Submit
 				</source>
-				<target state="final">
+				<target state="translated">
 					전송
 				</target>
 				<context-group purpose="location">
@@ -2187,7 +2187,7 @@
 				<source>
 					Clear
 				</source>
-				<target state="final">
+				<target state="translated">
 					지우기
 				</target>
 				<context-group purpose="location">
@@ -2286,7 +2286,7 @@
 				<source>
 					Corporate info
 				</source>
-				<target state="final">
+				<target state="translated">
 					회사 정보
 				</target>
 				<context-group purpose="location">
@@ -2302,7 +2302,7 @@
 				<source>
 					Orchid is a Delaware c-corp
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid는 델라웨어 c-corp입니다.
 				</target>
 				<context-group purpose="location">
@@ -2366,7 +2366,7 @@
 				<source>
 					SEC Filing
 				</source>
-				<target state="final">
+				<target state="translated">
 					SEC 제출
 				</target>
 				<context-group purpose="location">
@@ -2382,7 +2382,7 @@
 				<source>
 					Press Kit
 				</source>
-				<target state="final">
+				<target state="translated">
 					프레스 키트
 				</target>
 				<context-group purpose="location">
@@ -2398,7 +2398,7 @@
 				<source>
 					Set-up Guide
 				</source>
-				<target state="final">
+				<target state="translated">
 					설정 가이드
 				</target>
 				<context-group purpose="location">
@@ -2414,7 +2414,7 @@
 				<source>
 					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid를 사용하려면 Orchid 계정이 필요합니다. 이 설정 가이드는 Orchid 계정을 생성하고, 이더리움 지갑 및 Orchid의 디지털 통화 OXT를 사용하여 이 계정을 Orchid 앱에 연결하는 방법에 대하여 설명합니다.
 				</target>
 				<context-group purpose="location">
@@ -2430,7 +2430,7 @@
 				<source>
 					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					기존 Orchid 계정의 QR 코드가 있을 경우 단계 4부터 시작하여 앱을 열고 코드를 스캔하거나 붙여넣어서 해당 계정을 추가하시면 됩니다. 그러면, 해당 계정에서 VPN 서비스 요금이 결제됩니다.
 				</target>
 				<context-group purpose="location">
@@ -2450,7 +2450,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
-				<target state="final">
+				<target state="translated">
 					Coinbase의
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Earn Campaign
@@ -2470,7 +2470,7 @@
 				<source>
 					Step
 				</source>
-				<target state="final">
+				<target state="translated">
 					단계
 				</target>
 				<context-group purpose="location">
@@ -2518,7 +2518,7 @@
 				<source>
 					Create a new Ethereum wallet
 				</source>
-				<target state="final">
+				<target state="translated">
 					새 이더리움 지갑 생성
 				</target>
 				<context-group purpose="location">
@@ -2534,7 +2534,7 @@
 				<source>
 					Play from: 01:06
 				</source>
-				<target state="final">
+				<target state="translated">
 					01:06부터 재생
 				</target>
 				<context-group purpose="location">
@@ -2554,7 +2554,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="final">
+				<target state="translated">
 					이더리움 지갑에
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
@@ -2586,7 +2586,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="final">
+				<target state="translated">
 					또한, 
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
@@ -2618,7 +2618,7 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="final">
+				<target state="translated">
 					개인 정보 보호 참고 사항: 사용하시는 다른 이더리움 제품 또는 서비스와 연결되지 않은 새로운 이더리움 지갑 주소를 Orchid용으로 사용하실 것을 권장합니다. 
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
@@ -2638,7 +2638,7 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="final">
+				<target state="translated">
 					지갑에 자금 추가하기
 				</target>
 				<context-group purpose="location">
@@ -2654,7 +2654,7 @@
 				<source>
 					Play from: 04:19
 				</source>
-				<target state="final">
+				<target state="translated">
 					04:19부터 재생
 				</target>
 				<context-group purpose="location">
@@ -2670,7 +2670,7 @@
 				<source>
 					We recommend adding at least these amounts to your Ethereum wallet:
 				</source>
-				<target state="final">
+				<target state="translated">
 					이더리움 지갑에 적어도 다음 금액 이상을 추가하실 것을 권장합니다:
 				</target>
 				<context-group purpose="location">
@@ -2686,7 +2686,7 @@
 				<source>
 					$4 USD of OXT
 				</source>
-				<target state="final">
+				<target state="translated">
 					$4 USD 상당의 OXT
 				</target>
 				<context-group purpose="location">
@@ -2702,7 +2702,7 @@
 				<source>
 					Estimated to provide ~60GBs of VPN service.
 				</source>
-				<target state="final">
+				<target state="translated">
 					약 60GB의 VPN 서비스 제공 가능 예상.
 				</target>
 				<context-group purpose="location">
@@ -2718,7 +2718,7 @@
 				<source>
 					$1 USD of ETH
 				</source>
-				<target state="final">
+				<target state="translated">
 					$1 USD 상당의 ETH
 				</target>
 				<context-group purpose="location">
@@ -2744,7 +2744,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="final">
+				<target state="translated">
 					개인 정보 보호 참고 사항: 거래 시 개인 정보 보호를 위해 규모가 큰 거래소에서 OXT를 구매하실 것을 권장합니다.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					자세히 보기
@@ -2778,7 +2778,7 @@
 				<source>
 					Create your Orchid Account
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 계정 생성하기
 				</target>
 				<context-group purpose="location">
@@ -2794,7 +2794,7 @@
 				<source>
 					Play from: 05:38
 				</source>
-				<target state="final">
+				<target state="translated">
 					05:38부터 재생
 				</target>
 				<context-group purpose="location">
@@ -2814,7 +2814,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="final">
+				<target state="translated">
 					지갑의 브라우저로
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
@@ -2834,7 +2834,7 @@
 				<source>
 					Read the directions on the screen and add the OXT or ETH needed to create the account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					화면의 설명을 읽고, 필요한 OXT 또는 ETH를 추가하여 계정을 생성합니다.
 				</target>
 				<context-group purpose="location">
@@ -2856,7 +2856,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
 					계정 생성을
 					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
@@ -2876,7 +2876,7 @@
 				<source>
 					Once complete, scan or copy your Orchid Account to your clipboard.
 				</source>
-				<target state="final">
+				<target state="translated">
 					완료되면 Orchid 계정을 스캔하거나 클립보드로 복사합니다.
 				</target>
 				<context-group purpose="location">
@@ -2892,7 +2892,7 @@
 				<source>
 					Connect your Account and app
 				</source>
-				<target state="final">
+				<target state="translated">
 					계정과 앱 연결하기
 				</target>
 				<context-group purpose="location">
@@ -2908,7 +2908,7 @@
 				<source>
 					Play from: 07:21
 				</source>
-				<target state="final">
+				<target state="translated">
 					07:21부터 재생
 				</target>
 				<context-group purpose="location">
@@ -2932,7 +2932,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="final">
+				<target state="translated">
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -2955,7 +2955,7 @@
 				<source>
 					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
 				</source>
-				<target state="final">
+				<target state="translated">
 					앱을 열고 스캔하거나 Orchid 계정으로 붙여넣습니다. 앱이 자동으로 해당 계정을 사용하여 구성된 홉을 생성하면, 앱의 사용 준비가 완료됩니다!
 				</target>
 				<context-group purpose="location">
@@ -2971,7 +2971,7 @@
 				<source>
 					Start exploring freely!
 				</source>
-				<target state="final">
+				<target state="translated">
 					자유롭게 검색을 시작하십시오!
 				</target>
 				<context-group purpose="location">
@@ -2987,7 +2987,7 @@
 				<source>
 					Play from: 10:44
 				</source>
-				<target state="final">
+				<target state="translated">
 					10:44부터 재생
 				</target>
 				<context-group purpose="location">
@@ -3003,7 +3003,7 @@
 				<source>
 					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
 				</source>
-				<target state="final">
+				<target state="translated">
 					Orchid 앱의 기본 화면에서 우측 상단에 있는 토글 버튼을 '켬'으로 전환합니다. 그러면, 장치에서 Orchid 및 구성된 홉이 활성화됩니다.
 				</target>
 				<context-group purpose="location">
@@ -3022,7 +3022,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="final">
+				<target state="translated">
 					완료되었습니다! 자유롭게 검색을 시작할 준비가 되셨습니다. 
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					즐거운 서핑 되시길 바랍니다!
@@ -3040,7 +3040,7 @@
 				<source>
 					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
 				</source>
-				<target state="final">
+				<target state="translated">
 					참고: Orchid를 켠 후 인터넷 연결이 끊길 경우 껐다가 다시 켜기만 하시면 연결이 갱신되어 다른 서버에 연결됩니다.
 				</target>
 				<context-group purpose="location">
@@ -3056,7 +3056,7 @@
 				<source>
 					Where to get OXT?
 				</source>
-				<target state="final">
+				<target state="translated">
 					어디서 OXT를 얻을 수 있나요?
 				</target>
 				<context-group purpose="location">
@@ -3072,7 +3072,7 @@
 				<source>
 					More questions?
 				</source>
-				<target state="final">
+				<target state="translated">
 					다른 질문이 있으세요?
 				</target>
 				<context-group purpose="location">
@@ -3088,7 +3088,7 @@
 				<source>
 					Check out the FAQ
 				</source>
-				<target state="final">
+				<target state="translated">
 					자주 묻는 질문 보기
 				</target>
 				<context-group purpose="location">
