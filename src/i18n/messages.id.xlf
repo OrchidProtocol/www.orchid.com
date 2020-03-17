@@ -6,7 +6,7 @@
 				<source>
 					/assets/whitepaper/whitepaper.pdf
 				</source>
-				<target state="new">
+				<target state="final">
 					/assets/whitepaper/whitepaper.pdf
 				</target>
 				<context-group purpose="location">

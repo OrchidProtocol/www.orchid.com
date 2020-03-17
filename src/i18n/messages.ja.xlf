@@ -1902,7 +1902,7 @@
 					Buy OXT and ETH right now on
 				</source>
 				<target state="new">
-					Buy OXT and ETH right now on
+					今すぐOXTとETHを購入する
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
