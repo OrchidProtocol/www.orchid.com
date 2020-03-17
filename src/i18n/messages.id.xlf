@@ -1459,7 +1459,7 @@
 			</trans-unit>
 			<trans-unit id="Navigation-Blog-Link" datatype="html">
 				<source>
-					https://blog.id.orchid.com/
+					https://blog.orchid.com/
 				</source>
 				<target state="new">
 					https://blog.id.orchid.com/

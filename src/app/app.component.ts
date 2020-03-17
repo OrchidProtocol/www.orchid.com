@@ -36,8 +36,8 @@ export class AppComponent implements OnInit {
     if (this.localeId !== 'ja') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ja.orchid.com"+document.location.href, "hreflang": "ja"})
     if (this.localeId !== 'ko') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ko.orchid.com"+document.location.href, "hreflang": "ko"})
     if (this.localeId !== 'zh') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://zh.orchid.com"+document.location.href, "hreflang": "zh"})
-    if (this.localeId !== 'ru') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ru.orchid.com"+document.location.href, "hreflang": "ru"})
-    if (this.localeId !== 'id') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://id.orchid.com"+document.location.href, "hreflang": "id"})
+    //if (this.localeId !== 'ru') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ru.orchid.com"+document.location.href, "hreflang": "ru"})
+    //if (this.localeId !== 'id') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://id.orchid.com"+document.location.href, "hreflang": "id"})
 
   }
 
