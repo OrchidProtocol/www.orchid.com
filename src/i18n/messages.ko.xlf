@@ -759,6 +759,7 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
 				<target state="translated">
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					얼리 액세스 약관에 동의합니다.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
