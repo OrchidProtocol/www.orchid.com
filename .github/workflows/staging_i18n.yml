@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        language: ['ja', 'ko', 'zh']
+        language: ['ja', 'ko', 'zh', 'id', 'ru']
 
     steps:
     - uses: actions/checkout@v2
