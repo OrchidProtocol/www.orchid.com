@@ -794,6 +794,14 @@
 						20
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						92
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="GooglePlayBadgeAlt" datatype="html">
 				<source>
@@ -835,12 +843,7 @@
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					永葆好奇，
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					自由探索
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					尝试由 Crypto 提供支持的 VPN
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -885,10 +888,10 @@
 			</trans-unit>
 			<trans-unit id="AppStoreBadgeURL" datatype="html">
 				<source>
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</source>
 				<target state="new">
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1058,7 +1061,7 @@
 					Pay-per-use
 				</source>
 				<target state="translated">
-					去中心化
+					按使用量付费
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1075,10 +1078,7 @@
 					charges. And no monthly fees!
 				</source>
 				<target state="translated">
-					借助以太坊，Orchid 可以在没有中央权
-					威机构的情况下运作。 应用程序在您的设
-					备本机上运行，而不通过服务器，因此不
-					会存储任何数据。
+					在 Orchid 上，您仅在使用 VPN 时才需要付费。如果将其关闭，则不会产生费用。而且，无每月固定费用！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1094,7 +1094,7 @@
 					Provider network
 				</source>
 				<target state="translated">
-					开源
+					轻松点击即可更改提供商
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1111,9 +1111,7 @@
 					reconnect and get randomly reassigned.
 				</source>
 				<target state="translated">
-					Orchid 软件采取开源形式，让整个社区
-					可以交流创意、审核和调试，更重要的
-					是对软件做出贡献。
+					Orchid 为您带来海量提供商。若不喜欢其中一个提供商，只需点击重新连接，即可重新随机分配。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1129,7 +1127,7 @@
 					Unlimited devices
 				</source>
 				<target state="translated">
-					点对点
+					设备数量不受限制，可随意分享
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1146,9 +1144,7 @@
 					for your friends, family and all their devices.
 				</source>
 				<target state="translated">
-					客户和网络提供商无需中间商即可直
-					接进行交易，从而打造低成本的带宽
-					和 VPN 连接市场。
+					一旦创建帐户，您即可将其分享给不限数量的设备和好友。所有亲朋好友及其所有设备均可使用一个帐户进行管理。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

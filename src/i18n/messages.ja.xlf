@@ -788,6 +788,14 @@
 						20
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						92
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="GooglePlayBadgeAlt" datatype="html">
 				<source>
@@ -2278,12 +2286,7 @@
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					好奇心を保ち、
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					自由に探索しよう
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					暗号通貨搭載の VPN をお試しください
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2328,10 +2331,10 @@
 			</trans-unit>
 			<trans-unit id="AppStoreBadgeURL" datatype="html">
 				<source>
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</source>
 				<target state="new">
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2503,7 +2506,7 @@
 					Pay-per-use
 				</source>
 				<target state="translated">
-					分散型
+					使用ごとのお支払い
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2520,11 +2523,7 @@
 					charges. And no monthly fees!
 				</source>
 				<target state="translated">
-					オーキッドではイーサリアムを利用するこ
-					とで運営に中央化された権限を必要としま
-					せん。アプリはサーバー経由ではなくデバ
-					イス上でローカルに実行され、データは保
-					存されません。
+					Orchid では、VPN の使用中にのみ料金が発生します。 オフにすると、無料です。 月額料金はありません！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2540,7 +2539,7 @@
 					Provider network
 				</source>
 				<target state="translated">
-					オープン ソース
+					ワンクリックでプロバイダーを変更
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2557,10 +2556,7 @@
 					reconnect and get randomly reassigned.
 				</source>
 				<target state="translated">
-					オーキッドは、コミュニティによるア
-					イデアの共有、監査、デバッグ、そし
-					て貢献を可能にするオープン ソースの
-					ソフトウェアです。
+					Orchid は、プロバイダーのネットワークへのアクセスを許可します。 気に入らない場合は、タップして再接続し、ランダムに再割り当てします。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2576,7 +2572,7 @@
 					Unlimited devices
 				</source>
 				<target state="translated">
-					ピア ツー ピア
+					無制限のデバイスと共有
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2593,11 +2589,7 @@
 					for your friends, family and all their devices.
 				</source>
 				<target state="translated">
-					クライアントとネットワーク プロバ
-					イダーが仲介者なしで直接取引を行
-					うため、帯域幅と VPN 接続を低コ
-					ストで提供するマーケットプレイス
-					が実現します。
+					アカウントが確立されると、無制限の数のデバイスおよびユーザーと共有できます。すべてのあなたの友人、家族、すべてのデバイスのための 1 つのアカウントを管理します。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

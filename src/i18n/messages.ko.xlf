@@ -811,6 +811,14 @@
 						20
 					</context>
 				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						92
+					</context>
+				</context-group>
 			</trans-unit>
 			<trans-unit id="GooglePlayBadgeAlt" datatype="html">
 				<source>
@@ -852,12 +860,7 @@
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					호기심을 잃지 않고
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					자유롭게 탐험
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					암호화 기반 VPN을 사용해 보십시오
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -902,10 +905,10 @@
 			</trans-unit>
 			<trans-unit id="AppStoreBadgeURL" datatype="html">
 				<source>
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</source>
 				<target state="translated">
-					/assets/img/shared/app-store-badge.svg
+					/assets/img/shared/testflight.png
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1077,7 +1080,7 @@
 					Pay-per-use
 				</source>
 				<target state="translated">
-					분산형
+					사용량에 따라 결제
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1094,11 +1097,7 @@
 					charges. And no monthly fees!
 				</source>
 				<target state="translated">
-					이더리움 덕분에 Orchid는 중앙의 권위에
-					의지하지 않고도 거래를 수행할 수 있게
-					되었습니다. 앱은 서버를 통해서가 아니라
-					기기 상에서 로컬로 실행되며 데이터가
-					저장되지 않습니다.
+					Orchid에서는 VPN을 사용할 때만 결제하시면 됩니다. VPN을 끄면 요금이 청구되지 않습니다. 월 사용료는 없습니다!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1114,7 +1113,7 @@
 					Provider network
 				</source>
 				<target state="translated">
-					오픈 소스
+					한 번 클릭하여 제공업체 변경
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1131,10 +1130,7 @@
 					reconnect and get randomly reassigned.
 				</source>
 				<target state="translated">
-					Orchid 소프트웨어는 커뮤니티는 물론
-					기여자들이 아이디어를 공유하고 감사 및
-					디버깅을 수행할 수 있게 해주는 오픈 소스
-					기술입니다.
+					Orchid에서는 다양한 제공업체를 선택하실 수 있습니다. 어떤 제공업체가 마음에 들지 않으시면 탭하여 다시 연결만 하시면 다른 제공업체가 무작위로 다시 배정됩니다.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1150,7 +1146,7 @@
 					Unlimited devices
 				</source>
 				<target state="translated">
-					피어 투 피어
+					무제한 장치 및 공유
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1167,10 +1163,7 @@
 					for your friends, family and all their devices.
 				</source>
 				<target state="translated">
-					클라이언트와 네트워크 공급자는
-					중개자 없이 직접 거래하여 대역폭 및
-					VPN 연결을 위한 저비용 시장을
-					형성합니다.
+					계정이 설정되면 장치와 사용자 수의 제한 없이 계정을 공유하실 수 있습니다. 친구와 가족의 모든 장치에서 하나의 계정만 관리하십시오.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
