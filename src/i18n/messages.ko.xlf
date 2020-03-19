@@ -971,6 +971,54 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="ReportExchangesOXT" datatype="html">
+				<source>
+					If you see OXT being traded on an exchange that isn’t listed here, please use the contact form to let us know, so that it can be added to our list.
+				</source>
+				<target state="new">
+					If you see OXT being traded on an exchange that isn’t listed here, please use the contact form to let us know, so that it can be added to our list.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/where-oxt/where-oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						3
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ExchangeListings" datatype="html">
+				<source>
+					Exchange Listings
+				</source>
+				<target state="new">
+					Exchange Listings
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/where-oxt/where-oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						4
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTContract" datatype="html">
+				<source>
+					OXT Contract on Ethereum
+				</source>
+				<target state="new">
+					OXT Contract on Ethereum
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/where-oxt/where-oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						10
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeApproach__Title" datatype="html">
 				<source>
 					Our approach
@@ -2233,6 +2281,38 @@
 					</context>
 					<context context-type="linenumber">
 						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeamTitle" datatype="html">
+				<source>
+					The Orchid Team
+				</source>
+				<target state="new">
+					The Orchid Team
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						57
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeamDescription" datatype="html">
+				<source>
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				</source>
+				<target state="new">
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						58
 					</context>
 				</context-group>
 			</trans-unit>
