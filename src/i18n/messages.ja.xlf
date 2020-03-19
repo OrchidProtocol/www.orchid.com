@@ -2299,7 +2299,7 @@
 					Get Started
 				</source>
 				<target state="translated">
-					Join now
+					今すぐ登録
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2924,7 +2924,7 @@
 					Join Now
 				</source>
 				<target state="translated">
-					Join Now
+					今すぐ登録
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
