@@ -713,7 +713,7 @@
 					/assets/img/shared/google-play-badge.svg
 				</source>
 				<target state="translated">
-					/assets/img/shared/google-play-badge.svg
+					/assets/img/shared/google-play-badge-ru.png
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -904,9 +904,25 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="LearnMore" datatype="html">
+				<source>
+					Learn More
+				</source>
+				<target state="new">
+					Learn More
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/video-section/video-section.component.html
+					</context>
+					<context context-type="linenumber">
+						12
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
 				<source>
-					Whitepaper
+					FAQ
 				</source>
 				<target state="translated">
 					Белая бумага
