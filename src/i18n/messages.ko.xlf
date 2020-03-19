@@ -952,8 +952,8 @@
 				<source>
 					Learn More
 				</source>
-				<target state="new">
-					Learn More
+				<target state="translated">
+					자세히 보기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

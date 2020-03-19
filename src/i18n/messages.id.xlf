@@ -933,8 +933,8 @@
 				<source>
 					Learn More
 				</source>
-				<target state="new">
-					Learn More
+				<target state="translated">
+					Pelajari lebih lanjut
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
