@@ -2043,7 +2043,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep2__timecode" datatype="html">
 				<source>
-					Play from: 04:19
+					Play from: 01:32
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2157,7 +2157,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep3__timecode" datatype="html">
 				<source>
-					Play from: 05:38
+					Play from: 04:28
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2245,7 +2245,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep4__timecode" datatype="html">
 				<source>
-					Play from: 07:21
+					Play from: 08:14
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

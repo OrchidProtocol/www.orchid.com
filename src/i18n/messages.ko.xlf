@@ -2728,10 +2728,10 @@
 			</trans-unit>
 			<trans-unit id="JoinStep2__timecode" datatype="html">
 				<source>
-					Play from: 04:19
+					Play from: 01:32
 				</source>
 				<target state="translated">
-					04:19부터 재생
+					01:32부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2868,10 +2868,10 @@
 			</trans-unit>
 			<trans-unit id="JoinStep3__timecode" datatype="html">
 				<source>
-					Play from: 05:38
+					Play from: 04:28
 				</source>
 				<target state="translated">
-					05:38부터 재생
+					04:28부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2982,10 +2982,10 @@
 			</trans-unit>
 			<trans-unit id="JoinStep4__timecode" datatype="html">
 				<source>
-					Play from: 07:21
+					Play from: 08:14
 				</source>
 				<target state="translated">
-					07:21부터 재생
+					08:14부터 재생
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
