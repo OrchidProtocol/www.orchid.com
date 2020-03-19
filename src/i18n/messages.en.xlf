@@ -25,14 +25,6 @@
 						300
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="HowHero__Title" datatype="html">
 				<source>
@@ -55,7 +47,7 @@
 					The Orchid network enables a decentralized virtual private network (VPN), allowing
 					users to buy bandwidth from a global pool of service providers.
 				</source>
-				<target state="translated">
+				<target state="final">
 					The Orchid network enables a decentralized virtual private network (VPN), allowing
 					users to buy bandwidth from a global pool of service providers.
 				</target>
@@ -75,7 +67,7 @@
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
 					nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
-				<target state="translated">
+				<target state="final">
 					To do this, Orchid uses a new digital currency called OXT, a new VPN protocol for
 					incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
 					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
@@ -111,7 +103,7 @@
 					of
 					the Orchid network
 				</source>
-				<target state="translated">
+				<target state="final">
 					of
 					the Orchid network
 				</target>
@@ -244,7 +236,7 @@
 					run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing
 					only), Android, macOS, Linux, and (soon) Windows.
 				</source>
-				<target state="translated">
+				<target state="final">
 					Orchid is a VPN client, VPN service powered by our own digital currency, and
 					advanced networking tool designed to give you insight and control over your phone's network connection. The
 					Orchid app goes past the basic functionality offered by most VPN clients, with features such as the ability to
@@ -331,7 +323,7 @@
 					well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					OXT’s primary and fundamental purpose is to allow users to purchase digital privacy services from the
 					Orchid network.
@@ -402,7 +394,7 @@
 					allows users to request access to remote network resources and pay for these resources using OXT via the
 					Orchid nanopayments system.
 				</source>
-				<target state="translated">
+				<target state="final">
 					The Orchid software is designed to use a custom VPN protocol, similar in
 					scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
 					of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
@@ -451,7 +443,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Orchid uses a new probabilistic nanopayment system to scale payment throughput.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -505,7 +497,7 @@
 					geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
 					which speaks the Orchid protocol.
@@ -577,7 +569,7 @@
 					choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					A provider stakes some number of OXT to create a stake deposit.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -717,7 +709,7 @@
 					Install Orchid.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					We have a beta version of our iOS app on Testflight. Please help us test the app by using the link
 					below:
@@ -775,7 +767,7 @@
 					.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					Tap the link below on your Android device.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
@@ -844,31 +836,37 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						21
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Join
+					The
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Crypto
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Powered
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					The Privacy
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Network
+					VPN
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Join
+					The
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Crypto
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Powered
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					The Privacy
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Network
+					VPN
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</target>
 				<context-group purpose="location">
@@ -880,115 +878,77 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeHero__Subtitle" datatype="html">
-				<source>
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Stay curious,
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					explore freely
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-				</source>
-				<target state="translated">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Stay curious,
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					explore freely
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__FormTitle" datatype="html">
-				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Start private browsing today!
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
-				</source>
-				<target state="translated">
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Start private browsing today!
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						10
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="HomeHero__JoinNow" datatype="html">
 				<source>
-					Join now
+					Get Started
 				</source>
-				<target state="translated">
-					Join now
+				<target state="final">
+					Get Started
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						15
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeURL" datatype="html">
+				<source>
+					/assets/img/shared/app-store-badge.svg
+				</source>
+				<target state="final">
+					/assets/img/shared/app-store-badge.svg
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeAlt" datatype="html">
+				<source>
+					Get it on the App Store
+				</source>
+				<target state="final">
+					Get it on the App Store
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						26
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
-					Welcome to the privacy network
+					Welcome to Orchid
 				</source>
-				<target state="translated">
-					Welcome to the privacy network
+				<target state="final">
+					Welcome to Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/home/home.component.html
+						app/video-section/video-section.component.html
 					</context>
 					<context context-type="linenumber">
-						44
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Description" datatype="html">
-				<source>
-					Read the whitepaper to learn about our next-level VPN.
-				</source>
-				<target state="translated">
-					Read the whitepaper to learn about our next-level VPN.
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						45
+						3
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
 				<source>
-					Whitepaper
+					FAQ
 				</source>
-				<target state="translated">
-					Whitepaper
+				<target state="final">
+					FAQ
 				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
@@ -1018,119 +978,127 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						56
+						43
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can offer users better privacy.
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</source>
-				<target state="translated">
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can offer users better privacy.
+				<target state="final">
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						57
+						44
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Title" datatype="html">
 				<source>
-					Decentralized
+					Pay-per-use
 				</source>
-				<target state="translated">
-					Decentralized
+				<target state="final">
+					Pay-per-use
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						66
+						54
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</source>
-				<target state="translated">
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+				<target state="final">
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						55
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Title" datatype="html">
 				<source>
-					Open Source
+					Provider network
 				</source>
-				<target state="translated">
-					Open Source
+				<target state="final">
+					Provider network
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						78
+						68
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</source>
-				<target state="translated">
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+				<target state="final">
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						79
+						69
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Title" datatype="html">
 				<source>
-					Peer to peer
+					Unlimited devices
 				</source>
-				<target state="translated">
-					Peer to peer
+				<target state="final">
+					Unlimited devices
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						82
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</source>
-				<target state="translated">
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+				<target state="final">
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1146,23 +1114,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						108
+						100
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
 				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
 				</source>
-				<target state="translated">
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+				<target state="final">
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						115
+						108
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1178,7 +1148,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						118
+						114
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1194,39 +1164,43 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						140
+						144
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</source>
-				<target state="translated">
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+				<target state="final">
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						123
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</source>
-				<target state="translated">
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+				<target state="final">
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						137
+						138
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1242,7 +1216,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						152
+						156
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1258,7 +1232,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						153
+						158
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1514,7 +1488,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1538,7 +1512,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1562,7 +1536,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						85
+						77
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1614,22 +1588,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="LanguageDropdown__Ru" datatype="html">
-				<source>
-					Russian
-				</source>
-				<target state="translated">
-					Russian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						40
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ja" datatype="html">
 				<source>
 					Japanese
@@ -1659,22 +1617,6 @@
 					</context>
 					<context context-type="linenumber">
 						42
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="LanguageDropdown__Id" datatype="html">
-				<source>
-					Indonesian
-				</source>
-				<target state="translated">
-					Indonesian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1726,19 +1668,19 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Navigation-Download" datatype="html">
+			<trans-unit id="Navigation-Whitepaper" datatype="html">
 				<source>
-					Download
+					Whitepaper
 				</source>
-				<target state="translated">
-					Download
+				<target state="final">
+					Whitepaper
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						77
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1754,7 +1696,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1770,7 +1712,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						85
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1849,7 +1791,7 @@
 					shortly.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
 					We want to hear from you
 					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
@@ -1889,7 +1831,7 @@
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</source>
-				<target state="translated">
+				<target state="final">
 					1288 Columbus Ave. #122,
 					San Francisco, CA 94133
 				</target>
@@ -2202,7 +2144,7 @@
 					together
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					We can
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					reclaim the
@@ -2248,7 +2190,7 @@
 					grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
 					Why build a privacy network?
 					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
@@ -2322,7 +2264,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					San Francisco, CA 94133
 				</source>
-				<target state="translated">
+				<target state="final">
 					Headquarters:
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					1288 Columbus Ave. #122,
@@ -2346,7 +2288,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					10997 Berlin, Germany
 				</source>
-				<target state="translated">
+				<target state="final">
 					Europe:
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Skalitzer Str. 85,
@@ -2450,7 +2392,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
-				<target state="translated">
+				<target state="final">
 					Check out Coinbase’s
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Earn Campaign
@@ -2554,7 +2496,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="translated">
+				<target state="final">
 					We recommend using
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
@@ -2586,7 +2528,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="translated">
+				<target state="final">
 					Alternatively,
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
@@ -2618,7 +2560,7 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="translated">
+				<target state="final">
 					Privacy note: We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
@@ -2744,7 +2686,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="translated">
+				<target state="final">
 					Privacy note: We recommend buying OXT using a large exchange for transaction privacy.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
@@ -2814,7 +2756,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="translated">
+				<target state="final">
 					Load
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
@@ -2856,7 +2798,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="translated">
+				<target state="final">
 					Tap the
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
@@ -2934,7 +2876,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="translated">
+				<target state="final">
 					Download the Orchid app for
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
@@ -3025,7 +2967,7 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="translated">
+				<target state="final">
 					That’s it!
 					You’re ready to start exploring freely.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />

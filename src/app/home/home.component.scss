@@ -19,6 +19,16 @@ $hero-bp-vert: 1150px;
   }
 }
 
+.home-hero__headline {
+  h1 {
+    .small {
+      @media (min-width: $hero-bp-1) {
+        font-size: 64px;
+      }
+    }
+  }
+}
+
 .home-hero__bg {
   background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right top; // for Edge
   background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;
@@ -51,7 +61,7 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__form {
-  margin-top: 43px;//68px;
+  margin-top: 43px; //68px;
 
   @media (max-width: $hero-bp-1) {
     margin-top: 6vw;
@@ -68,15 +78,18 @@ $hero-bp-vert: 1150px;
 
   li {
     font-weight: bold;
-    & > img {
+
+    &>img {
       margin-right: 0.5rem;
     }
   }
 }
+
 .instruction__primary {
   margin-bottom: 0;
   color: $orc-purple-gray;
 }
+
 .instruction__form {
 
   margin-top: 1rem;
@@ -96,7 +109,7 @@ $hero-bp-vert: 1150px;
     line-height: var(--size);
     text-align: center;
 
-    & > img {
+    &>img {
       display: inline;
     }
   }
@@ -110,7 +123,8 @@ $hero-bp-vert: 1150px;
 
 .home-hero__appstore-image-apple {
   max-width: 180px;
-  @media (min-width: $size-body-md) {
+
+  @media (min-width: 500px) {
     margin-left: 1rem;
   }
 }
@@ -301,15 +315,10 @@ $hero-bp-vert: 1150px;
   }
 }
 
-// HOW IT WORKS SECTION
+// VIDEO SECTION
 
-.how-it-works {
+.video-wrapper {
   position: relative;
-
-  p {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
 }
 
 

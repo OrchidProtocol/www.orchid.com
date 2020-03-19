@@ -6,7 +6,7 @@
 				<source>
 					/assets/whitepaper/whitepaper.pdf
 				</source>
-				<target state="new">
+				<target state="translated">
 					/assets/whitepaper/whitepaper.pdf
 				</target>
 				<context-group purpose="location">
@@ -23,14 +23,6 @@
 					</context>
 					<context context-type="linenumber">
 						300
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
 					</context>
 				</context-group>
 			</trans-unit>
@@ -90,7 +82,7 @@
 				<source>
 					Core components
 				</source>
-				<target state="new">
+				<target state="translated">
 					Основные компоненты
 				</target>
 				<context-group purpose="location">
@@ -107,7 +99,7 @@
 					of
 					the Orchid network
 				</source>
-				<target state="new">
+				<target state="translated">
 					сети Orchid
 				</target>
 				<context-group purpose="location">
@@ -123,7 +115,7 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="new">
+				<target state="translated">
 					Приложение Orchid
 				</target>
 				<context-group purpose="location">
@@ -139,7 +131,7 @@
 				<source>
 					OXT cryptocurrency
 				</source>
-				<target state="new">
+				<target state="translated">
 					Криптовалюта OXT
 				</target>
 				<context-group purpose="location">
@@ -155,7 +147,7 @@
 				<source>
 					Orchid protocol
 				</source>
-				<target state="new">
+				<target state="translated">
 					Протокол Orchid
 				</target>
 				<context-group purpose="location">
@@ -171,7 +163,7 @@
 				<source>
 					Nanopayments
 				</source>
-				<target state="new">
+				<target state="translated">
 					Наноплатежи
 				</target>
 				<context-group purpose="location">
@@ -187,7 +179,7 @@
 				<source>
 					Nodes
 				</source>
-				<target state="new">
+				<target state="translated">
 					Узлы
 				</target>
 				<context-group purpose="location">
@@ -203,7 +195,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="new">
+				<target state="translated">
 					Система ставок
 				</target>
 				<context-group purpose="location">
@@ -219,8 +211,8 @@
 				<source>
 					The Orchid app
 				</source>
-				<target state="new">
-					The Orchid app
+				<target state="translated">
+					Приложение Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -239,7 +231,7 @@
 					run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing
 					only), Android, macOS, Linux, and (soon) Windows.
 				</source>
-				<target state="new">
+				<target state="translated">
 					Orchid — это VPN-клиент, VPN-сервис на базе нашей собственной цифровой валюты и продвинутой сетевой технологии, позволяющей вам отслеживать и контролировать подключение вашего телефона к сети. Приложение Orchid — это не только базовый функционал, который предоставляют другие VPN-клиенты. Например, возможность многократного перенаправления трафика по нескольким узлам многоступенчатого маршрута. Клиент Orchid доступен через iOS (только в режиме бета-теста), Android, macOS, Linux, а также (скоро) на Windows.
 				</target>
 				<context-group purpose="location">
@@ -255,7 +247,7 @@
 				<source>
 					Get the the app today!
 				</source>
-				<target state="new">
+				<target state="translated">
 					Скачайте приложение прямо сейчас!
 				</target>
 				<context-group purpose="location">
@@ -271,7 +263,7 @@
 				<source>
 					The Orchid digital currency (OXT)
 				</source>
-				<target state="new">
+				<target state="translated">
 					Цифровая валюта Orchid (OXT)
 				</target>
 				<context-group purpose="location">
@@ -322,7 +314,7 @@
 					well as to mitigate certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					"Главное и основное назначение OXT — дать пользователям возможность приобретать услуги конфиденциальности онлайн с помощью сети Orchid.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -369,8 +361,8 @@
 				<source>
 					The Orchid Protocol
 				</source>
-				<target state="new">
-					The Orchid Protocol
+				<target state="translated">
+					Протокол Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -405,7 +397,7 @@
 				<source>
 					Orchid Nanopayments
 				</source>
-				<target state="new">
+				<target state="translated">
 					Наноплатежи Orchid
 				</target>
 				<context-group purpose="location">
@@ -434,15 +426,15 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					В Orchid используется новая вероятностная система наноплатежей для масштабирования скорости оплаты. 
+					В Orchid используется новая вероятностная система наноплатежей для масштабирования скорости оплаты.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Система наноплатежей лежит в основе P2P-рынка пропускных ресурсов, где клиенты платят операторам узлов OXT-«заявками» на прокси-ресурсы. 
+					Система наноплатежей лежит в основе P2P-рынка пропускных ресурсов, где клиенты платят операторам узлов OXT-«заявками» на прокси-ресурсы.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Система разработана таким образом, чтобы плата за транзакции при маленьких платежах снижалась, амортизируя общую сумму за несколько транзакций и даже за транзакции нескольких сторон. 
+					Система разработана таким образом, чтобы плата за транзакции при маленьких платежах снижалась, амортизируя общую сумму за несколько транзакций и даже за транзакции нескольких сторон.
 					Подробнее читайте в нашей недавней статье:
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					«Знакомство с наноплатежами».
@@ -462,8 +454,8 @@
 				<source>
 					Nodes
 				</source>
-				<target state="new">
-					Nodes
+				<target state="translated">
+					Узлы
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -487,12 +479,12 @@
 					geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Сервис-провайдеры в Orchid используют программное обеспечение, аналогичное типичному VPN-процессу для таких протоколов, как OpenVPN, однако использующее протокол Orchid. 
+					Сервис-провайдеры в Orchid используют программное обеспечение, аналогичное типичному VPN-процессу для таких протоколов, как OpenVPN, однако использующее протокол Orchid.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Узлы Orchid сохраняют регистрационную информацию в реестре ставок и каталоге провайдеров в Ethereum. 
+					Узлы Orchid сохраняют регистрационную информацию в реестре ставок и каталоге провайдеров в Ethereum.
 					Реестр ставок оптимизирован, позволяя приложению Orchid автоматически обнаруживать случайные серверы в децентрализованной среде, а каталог провайдеров позволяет узлам Orchid регистрировать метаданные, например геопозицию или предоставляемые дополнительные услуги.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
@@ -509,7 +501,7 @@
 				<source>
 					Staking
 				</source>
-				<target state="new">
+				<target state="translated">
 					Система ставок
 				</target>
 				<context-group purpose="location">
@@ -556,7 +548,7 @@
 					choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					"Провайдер задает определенную ставку в OXT, создавая депозит ставки.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
@@ -598,7 +590,7 @@
 				<source>
 					Read our Whitepaper
 				</source>
-				<target state="new">
+				<target state="translated">
 					Открыть белую бумагу
 				</target>
 				<context-group purpose="location">
@@ -614,7 +606,7 @@
 				<source>
 					Events
 				</source>
-				<target state="new">
+				<target state="translated">
 					События
 				</target>
 				<context-group purpose="location">
@@ -630,7 +622,7 @@
 				<source>
 					Find us IRL
 				</source>
-				<target state="new">
+				<target state="translated">
 					Ищите нас офлайн
 				</target>
 				<context-group purpose="location">
@@ -646,7 +638,7 @@
 				<source>
 					Try the Orchid app
 				</source>
-				<target state="new">
+				<target state="translated">
 					Попробуйте приложение Orchid
 				</target>
 				<context-group purpose="location">
@@ -691,7 +683,7 @@
 					.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					Нажмите на ссылку ниже на вашем устройстве Android.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
@@ -700,7 +692,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Инструкции по сборке на 
+					Инструкции по сборке на
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					GitHub
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -720,7 +712,7 @@
 				<source>
 					/assets/img/shared/google-play-badge.svg
 				</source>
-				<target state="new">
+				<target state="translated">
 					/assets/img/shared/google-play-badge.svg
 				</target>
 				<context-group purpose="location">
@@ -744,7 +736,7 @@
 				<source>
 					Get it on Google Play
 				</source>
-				<target state="new">
+				<target state="translated">
 					Скачать на Google Play
 				</target>
 				<context-group purpose="location">
@@ -760,7 +752,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						21
 					</context>
 				</context-group>
 			</trans-unit>
@@ -768,7 +760,7 @@
 				<source>
 					iOS (help us Beta test)
 				</source>
-				<target state="new">
+				<target state="translated">
 					iOS (поучаствуйте в бета-тесте)
 				</target>
 				<context-group purpose="location">
@@ -797,9 +789,9 @@
 					Install Orchid.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Бета-версия приложения для iOS размещена на Testflight. Помогите нам испытать ее, для этого перейдите по ссылке ниже: 
+					Бета-версия приложения для iOS размещена на Testflight. Помогите нам испытать ее, для этого перейдите по ссылке ниже:
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					https://testflight.apple.com/join/BlkfHkHY
@@ -824,25 +816,20 @@
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Join
+					The
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Crypto
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Powered
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					The Privacy
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Network
+					VPN
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
-				<target state="new">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Join
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					The Privacy
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Network
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+				<target state="translated">
+					Попробуйте VPN на базе криптотехнологий
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -853,57 +840,11 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeHero__Subtitle" datatype="html">
-				<source>
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Stay curious,
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					explore freely
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-				</source>
-				<target state="new">
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Будьте любознательны, 
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					исследуйте мир без границ
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__FormTitle" datatype="html">
-				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Start private browsing today!
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
-				</source>
-				<target state="new">
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Начните использовать приватную сеть прямо сейчас!
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						10
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="HomeHero__JoinNow" datatype="html">
 				<source>
-					Join now
+					Get Started
 				</source>
-				<target state="new">
+				<target state="translated">
 					Присоединиться
 				</target>
 				<context-group purpose="location">
@@ -911,39 +852,55 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						15
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeURL" datatype="html">
+				<source>
+					/assets/img/shared/app-store-badge.svg
+				</source>
+				<target state="translated">
+					/assets/img/shared/app-store-badge.svg
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeAlt" datatype="html">
+				<source>
+					Get it on the App Store
+				</source>
+				<target state="translated">
+					Get it on the App Store
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						26
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
-					Welcome to the privacy network
+					Welcome to Orchid
 				</source>
-				<target state="new">
-					Welcome to the privacy network
+				<target state="translated">
+					Добро пожаловать в Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/home/home.component.html
+						app/video-section/video-section.component.html
 					</context>
 					<context context-type="linenumber">
-						44
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Description" datatype="html">
-				<source>
-					Read the whitepaper to learn about our next-level VPN.
-				</source>
-				<target state="new">
-					Ознакомьтесь с белой бумагой (техническим описанием) нашей VPN-технологии нового поколения.
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						45
+						3
 					</context>
 				</context-group>
 			</trans-unit>
@@ -951,17 +908,9 @@
 				<source>
 					Whitepaper
 				</source>
-				<target state="new">
+				<target state="translated">
 					Белая бумага
 				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
@@ -983,7 +932,7 @@
 				<source>
 					Our approach
 				</source>
-				<target state="new">
+				<target state="translated">
 					Наш подход
 				</target>
 				<context-group purpose="location">
@@ -991,15 +940,16 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						56
+						43
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can offer users better privacy.
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</source>
-				<target state="new">
+				<target state="translated">
 					Мы уверены, что с помощью возможностей блокчейн мы можем предложить пользователям VPN-технологию нового уровня.
 				</target>
 				<context-group purpose="location">
@@ -1007,103 +957,106 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						57
+						44
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Title" datatype="html">
 				<source>
-					Decentralized
+					Pay-per-use
 				</source>
-				<target state="new">
-					Decentralized
+				<target state="translated">
+					Плата за использование
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						66
+						54
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</source>
-				<target state="new">
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+				<target state="translated">
+					В Orchid вы платите только при использовании VPN. Если сеть VPN выключена, плата не взимается. И никаких ежемесячных платежей!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						55
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Title" datatype="html">
 				<source>
-					Open Source
+					Provider network
 				</source>
-				<target state="new">
-					Open Source
+				<target state="translated">
+					Меняйте провайдеров одним кликом
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						78
+						68
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</source>
-				<target state="new">
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+				<target state="translated">
+					Orchid предоставляет вам доступ к сети провайдеров. Если текущий вам не понравился, вы можете переподключиться одним нажатием, и вам будет случайным образом назначен новый.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						79
+						69
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Title" datatype="html">
 				<source>
-					Peer to peer
+					Unlimited devices
 				</source>
-				<target state="new">
-					Peer to peer
+				<target state="translated">
+					Устройства и общий доступ без ограничений
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						82
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</source>
-				<target state="new">
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+				<target state="translated">
+					После настройки аккаунта вы сможете использовать его на любом количестве устройств и совместно с любым количеством пользователей, без ограничений. Один аккаунт — для всех друзей, близких и их устройств.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1111,8 +1064,25 @@
 				<source>
 					As seen in
 				</source>
-				<target state="new">
+				<target state="translated">
 					О нас пишут
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						100
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
+				<source>
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
+				</source>
+				<target state="translated">
+					В мире, где скандал с Cambridge Analytica — явно лишь вершина айсберга, а злоупотребление данных стало обыденностью, привлекательность подобного проекта не вызывает сомнений».
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1123,27 +1093,11 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
-				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
-				</source>
-				<target state="new">
-					В мире, где скандал с Cambridge Analytica — явно лишь вершина айсберга, а злоупотребление данных стало обыденностью, привлекательность подобного проекта не вызывает сомнений».
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						115
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="ReadMore" datatype="html">
 				<source>
 					Read More
 				</source>
-				<target state="new">
+				<target state="translated">
 					Читать целиком
 				</target>
 				<context-group purpose="location">
@@ -1151,7 +1105,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						118
+						114
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1167,15 +1121,16 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						140
+						144
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</source>
-				<target state="new">
+				<target state="translated">
 					Задача Orchid — создание ПО с открытым исходным кодом, чтобы Интернет оставался открыт и доступен — всем и везде, без ограничений».
 				</target>
 				<context-group purpose="location">
@@ -1183,15 +1138,16 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						123
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</source>
-				<target state="new">
+				<target state="translated">
 					Orchid разрабатывает открытый, децентрализованный и не отслеживаемый интернет-протокол для анонимного интернет-доступа широкого круга пользователей».
 				</target>
 				<context-group purpose="location">
@@ -1199,7 +1155,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						137
+						138
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1207,7 +1163,7 @@
 				<source>
 					Meet us in person
 				</source>
-				<target state="new">
+				<target state="translated">
 					Познакомьтесь с нами лично
 				</target>
 				<context-group purpose="location">
@@ -1215,7 +1171,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						152
+						156
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1223,7 +1179,7 @@
 				<source>
 					See all events
 				</source>
-				<target state="new">
+				<target state="translated">
 					Показать все события
 				</target>
 				<context-group purpose="location">
@@ -1231,7 +1187,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						153
+						158
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1239,7 +1195,7 @@
 				<source>
 					Let's stay connected
 				</source>
-				<target state="new">
+				<target state="translated">
 					Оставайтесь на связи
 				</target>
 				<context-group purpose="location">
@@ -1263,7 +1219,7 @@
 				<source>
 					Get the newsletter for updates and privacy news
 				</source>
-				<target state="new">
+				<target state="translated">
 					Подпишитесь на рассылку, чтобы получать новости о сервисе и сфере онлайн-конфиденциальности
 				</target>
 				<context-group purpose="location">
@@ -1287,7 +1243,7 @@
 				<source>
 					Email address
 				</source>
-				<target state="new">
+				<target state="translated">
 					Адрес эл. почты
 				</target>
 				<context-group purpose="location">
@@ -1319,7 +1275,7 @@
 				<source>
 					I consent to receiving further instructions at the email address I submitted above.
 				</source>
-				<target state="new">
+				<target state="translated">
 					Я соглашаюсь получать дальнейшие инструкции на указанный выше адрес эл. почты.
 				</target>
 				<context-group purpose="location">
@@ -1351,7 +1307,7 @@
 				<source>
 					Subscribe
 				</source>
-				<target state="new">
+				<target state="translated">
 					Подписаться
 				</target>
 				<context-group purpose="location">
@@ -1375,7 +1331,7 @@
 				<source>
 					Get notified
 				</source>
-				<target state="new">
+				<target state="translated">
 					Будьте в курсе
 				</target>
 				<context-group purpose="location">
@@ -1391,7 +1347,7 @@
 				<source>
 					Home
 				</source>
-				<target state="new">
+				<target state="translated">
 					Главная
 				</target>
 				<context-group purpose="location">
@@ -1407,7 +1363,7 @@
 				<source>
 					Join Now
 				</source>
-				<target state="new">
+				<target state="translated">
 					Присоединиться
 				</target>
 				<context-group purpose="location">
@@ -1423,7 +1379,7 @@
 				<source>
 					How It Works
 				</source>
-				<target state="new">
+				<target state="translated">
 					Как это работает
 				</target>
 				<context-group purpose="location">
@@ -1439,7 +1395,7 @@
 				<source>
 					OXT
 				</source>
-				<target state="new">
+				<target state="translated">
 					OXT
 				</target>
 				<context-group purpose="location">
@@ -1455,7 +1411,7 @@
 				<source>
 					About
 				</source>
-				<target state="new">
+				<target state="translated">
 					О сервисе
 				</target>
 				<context-group purpose="location">
@@ -1471,7 +1427,7 @@
 				<source>
 					Blog
 				</source>
-				<target state="new">
+				<target state="translated">
 					Блог
 				</target>
 				<context-group purpose="location">
@@ -1487,7 +1443,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1495,8 +1451,8 @@
 				<source>
 					https://blog.orchid.com/
 				</source>
-				<target state="new">
-					https://blog.orchid.com/
+				<target state="translated">
+					https://blog.ru.orchid.com/
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1511,7 +1467,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1519,7 +1475,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="new">
+				<target state="translated">
 					Контакты
 				</target>
 				<context-group purpose="location">
@@ -1535,7 +1491,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						85
+						77
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1559,7 +1515,7 @@
 				<source>
 					Korean
 				</source>
-				<target state="new">
+				<target state="translated">
 					한국어
 				</target>
 				<context-group purpose="location">
@@ -1575,7 +1531,7 @@
 				<source>
 					English
 				</source>
-				<target state="new">
+				<target state="translated">
 					English
 				</target>
 				<context-group purpose="location">
@@ -1587,27 +1543,11 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="LanguageDropdown__Ru" datatype="html">
-				<source>
-					Russian
-				</source>
-				<target state="new">
-					Russian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						40
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ja" datatype="html">
 				<source>
 					Japanese
 				</source>
-				<target state="new">
+				<target state="translated">
 					日本語
 				</target>
 				<context-group purpose="location">
@@ -1623,7 +1563,7 @@
 				<source>
 					Mandarin
 				</source>
-				<target state="new">
+				<target state="translated">
 					汉语
 				</target>
 				<context-group purpose="location">
@@ -1635,27 +1575,11 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="LanguageDropdown__Id" datatype="html">
-				<source>
-					Indonesian
-				</source>
-				<target state="new">
-					Indonesian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						43
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="Navigation-Orchid" datatype="html">
 				<source>
 					Orchid
 				</source>
-				<target state="new">
+				<target state="translated">
 					Orchid
 				</target>
 				<context-group purpose="location">
@@ -1671,7 +1595,7 @@
 				<source>
 					How it Works
 				</source>
-				<target state="new">
+				<target state="translated">
 					Как это работает
 				</target>
 				<context-group purpose="location">
@@ -1687,7 +1611,7 @@
 				<source>
 					About Us
 				</source>
-				<target state="new">
+				<target state="translated">
 					О компании
 				</target>
 				<context-group purpose="location">
@@ -1699,28 +1623,12 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Navigation-Download" datatype="html">
+			<trans-unit id="Navigation-Whitepaper" datatype="html">
 				<source>
-					Download
+					Whitepaper
 				</source>
-				<target state="new">
-					Скачать
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						77
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="Navigation-Events" datatype="html">
-				<source>
-					Events
-				</source>
-				<target state="new">
-					События
+				<target state="translated">
+					Белая бумага
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -1731,11 +1639,27 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="Navigation-Events" datatype="html">
+				<source>
+					Events
+				</source>
+				<target state="translated">
+					События
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						83
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="Navigation-FAQ" datatype="html">
 				<source>
 					FAQ
 				</source>
-				<target state="new">
+				<target state="translated">
 					Вопросы и ответы
 				</target>
 				<context-group purpose="location">
@@ -1743,7 +1667,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						85
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1751,7 +1675,7 @@
 				<source>
 					Follow Us
 				</source>
-				<target state="new">
+				<target state="translated">
 					Мы в социальных сетях
 				</target>
 				<context-group purpose="location">
@@ -1767,7 +1691,7 @@
 				<source>
 					FAQ
 				</source>
-				<target state="new">
+				<target state="translated">
 					Вопросы и ответы
 				</target>
 				<context-group purpose="location">
@@ -1783,7 +1707,7 @@
 				<source>
 					About Orchid
 				</source>
-				<target state="new">
+				<target state="translated">
 					О проекте Orchid
 				</target>
 				<context-group purpose="location">
@@ -1799,7 +1723,7 @@
 				<source>
 					Contact
 				</source>
-				<target state="new">
+				<target state="translated">
 					Контакты
 				</target>
 				<context-group purpose="location">
@@ -1822,7 +1746,7 @@
 					shortly.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;h3>" />
 					Напишите нам!
 					<x id="CLOSE_HEADING_LEVEL3" ctype="x-h3" equiv-text="&lt;/h3>" />
@@ -1843,7 +1767,7 @@
 				<source>
 					Office Address
 				</source>
-				<target state="new">
+				<target state="translated">
 					Адрес офиса
 				</target>
 				<context-group purpose="location">
@@ -2021,7 +1945,7 @@
 				<source>
 					Your Name
 				</source>
-				<target state="new">
+				<target state="translated">
 					Ваше имя
 				</target>
 				<context-group purpose="location">
@@ -2037,7 +1961,7 @@
 				<source>
 					Your Email
 				</source>
-				<target state="new">
+				<target state="translated">
 					Ваш адрес эл. почты
 				</target>
 				<context-group purpose="location">
@@ -2053,7 +1977,7 @@
 				<source>
 					Subject
 				</source>
-				<target state="new">
+				<target state="translated">
 					Тема
 				</target>
 				<context-group purpose="location">
@@ -2069,7 +1993,7 @@
 				<source>
 					Enter your message...
 				</source>
-				<target state="new">
+				<target state="translated">
 					Введите текст сообщения...
 				</target>
 				<context-group purpose="location">
@@ -2085,7 +2009,7 @@
 				<source>
 					Required fields are missing
 				</source>
-				<target state="new">
+				<target state="translated">
 					Не заполнены обязательные поля
 				</target>
 				<context-group purpose="location">
@@ -2101,7 +2025,7 @@
 				<source>
 					There was an unknown error, your message may not have been sent
 				</source>
-				<target state="new">
+				<target state="translated">
 					Произошла неизвестная ошибка. Возможно, сообщение не было отправлено
 				</target>
 				<context-group purpose="location">
@@ -2117,7 +2041,7 @@
 				<source>
 					Your message has been sent
 				</source>
-				<target state="new">
+				<target state="translated">
 					Сообщение отправлено
 				</target>
 				<context-group purpose="location">
@@ -2133,7 +2057,7 @@
 				<source>
 					Submit
 				</source>
-				<target state="new">
+				<target state="translated">
 					Отправить
 				</target>
 				<context-group purpose="location">
@@ -2149,7 +2073,7 @@
 				<source>
 					Clear
 				</source>
-				<target state="new">
+				<target state="translated">
 					Очистить
 				</target>
 				<context-group purpose="location">
@@ -2174,11 +2098,11 @@
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
-					Вместе 
+					Вместе
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					мы сделаем 
+					мы сделаем
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Интернет 
+					Интернет
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
 					свободным
@@ -2319,7 +2243,7 @@
 					10997 Berlin, Germany
 				</source>
 				<target state="translated">
-					Европа: 
+					Европа:
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Skalitzer Str. 85,
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
@@ -2338,7 +2262,7 @@
 				<source>
 					SEC Filing
 				</source>
-				<target state="new">
+				<target state="translated">
 					Документы КЦББ
 				</target>
 				<context-group purpose="location">
@@ -2354,7 +2278,7 @@
 				<source>
 					Press Kit
 				</source>
-				<target state="new">
+				<target state="translated">
 					Пресс-материалы
 				</target>
 				<context-group purpose="location">
@@ -2442,7 +2366,7 @@
 				<source>
 					Step
 				</source>
-				<target state="new">
+				<target state="translated">
 					Шаг
 				</target>
 				<context-group purpose="location">
@@ -2490,8 +2414,8 @@
 				<source>
 					Create a new Ethereum wallet
 				</source>
-				<target state="new">
-					Create a new Ethereum wallet
+				<target state="translated">
+					Создайте новый кошелек Ethereum
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2506,8 +2430,8 @@
 				<source>
 					Play from: 01:06
 				</source>
-				<target state="new">
-					Play from: 01:06
+				<target state="translated">
+					Включить с 01:06
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2526,12 +2450,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					for your Ethereum wallet.
 				</source>
-				<target state="new">
-					We recommend using
+				<target state="translated">
+					При создании кошелька Ethereum рекомендуем воспользоваться сервисом
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					for your Ethereum wallet.
+					.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2558,8 +2482,8 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
 				</source>
-				<target state="new">
-					Alternatively,
+				<target state="translated">
+					Также с Orchid совместимы
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -2567,11 +2491,11 @@
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					BRD Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and
+					и
 					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					are also compatible with Orchid.
+					.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2590,11 +2514,11 @@
 					Learn more
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
-				<target state="new">
-					Privacy note: We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
+				<target state="translation">
+					Примечание о конфиденциальности: рекомендуем использовать для Orchid кошелек Ethereum с новым адресом, не привязанный к другим используемым вами продуктам или услугам Ethereum.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Learn more
+					Подробнее
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</target>
 				<context-group purpose="location">
@@ -2610,8 +2534,8 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="new">
-					Add funds to your wallet
+				<target state="translated">
+					Пополните кошелек
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2626,8 +2550,8 @@
 				<source>
 					Play from: 04:19
 				</source>
-				<target state="new">
-					Play from: 04:19
+				<target state="translated">
+					Включить с 04:19
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2642,8 +2566,8 @@
 				<source>
 					We recommend adding at least these amounts to your Ethereum wallet:
 				</source>
-				<target state="new">
-					We recommend adding at least these amounts to your Ethereum wallet:
+				<target state="translated">
+					Рекомендуем следующие суммы минимального пополнения кошелька Ethereum:
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2658,8 +2582,8 @@
 				<source>
 					$4 USD of OXT
 				</source>
-				<target state="new">
-					$4 USD of OXT
+				<target state="translated">
+					$4 USD в OXT
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2674,8 +2598,8 @@
 				<source>
 					Estimated to provide ~60GBs of VPN service.
 				</source>
-				<target state="new">
-					Estimated to provide ~60GBs of VPN service.
+				<target state="translated">
+					Примерно 60 ГБ услуг VPN.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2690,8 +2614,8 @@
 				<source>
 					$1 USD of ETH
 				</source>
-				<target state="new">
-					$1 USD of ETH
+				<target state="translated">
+					$1 USD в ETH
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2716,10 +2640,10 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Learn more
 				</source>
-				<target state="new">
-					Privacy note: We recommend buying OXT using a large exchange for transaction privacy.
+				<target state="translated">
+					Примечание о конфиденциальности: для обеспечения конфиденциальности транзакции рекомендуем покупать OXT на крупной бирже.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Learn more
+					Подробнее
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2750,8 +2674,8 @@
 				<source>
 					Create your Orchid Account
 				</source>
-				<target state="new">
-					Create your Orchid Account
+				<target state="translated">
+					Создайте учетную запись Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2766,8 +2690,8 @@
 				<source>
 					Play from: 05:38
 				</source>
-				<target state="new">
-					Play from: 05:38
+				<target state="translated">
+					Включить с 05:38
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2786,12 +2710,12 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
 				</source>
-				<target state="new">
-					Load
+				<target state="translated">
+					Загрузите ссылку
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					in your wallet’s browser. It’s a good idea to bookmark this page for the future.
+					в браузер вашего кошелька. Рекомендуем добавить эту страницу в закладки.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2806,8 +2730,8 @@
 				<source>
 					Read the directions on the screen and add the OXT or ETH needed to create the account.
 				</source>
-				<target state="new">
-					Read the directions on the screen and add the OXT or ETH needed to create the account.
+				<target state="translated">
+					Следуйте инструкциям на экране и добавьте необходимую сумму OXT или ETH для создания учетной записи.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2828,14 +2752,14 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
 				</source>
-				<target state="new">
-					Tap the
+				<target state="translated">
+					Нажмите на кнопку
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong>" />
-					Create Account
+					«Создать учетную запись»
 					<x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong>" />
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					button and then confirm two prompts from your wallet to move the OXT into your Orchid account.
+					и подтвердите два запроса из кошелька, чтобы перевести OXT в вашу учетную запись Orchid.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2850,8 +2774,8 @@
 				<source>
 					Once complete, scan or copy your Orchid Account to your clipboard.
 				</source>
-				<target state="new">
-					Once complete, scan or copy your Orchid Account to your clipboard.
+				<target state="translated">
+					После этого отсканируйте или скопируйте в буфер обмена QR-код вашей учетной записи Orchid.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2866,8 +2790,8 @@
 				<source>
 					Connect your Account and app
 				</source>
-				<target state="new">
-					Connect your Account and app
+				<target state="translated">
+					Соедините учетную запись и приложение
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2882,8 +2806,8 @@
 				<source>
 					Play from: 07:21
 				</source>
-				<target state="new">
-					Play from: 07:21
+				<target state="translated">
+					Включить с 07:21
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2906,14 +2830,14 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
-				<target state="new">
-					Download the Orchid app for
+				<target state="translated">
+					Скачайте приложение Orchid для
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and help us Beta test our app on
+					и помогите нам с бета-тестированием приложения для
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS через Testflight
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</target>
@@ -2930,8 +2854,8 @@
 				<source>
 					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
 				</source>
-				<target state="new">
-					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
+				<target state="translated">
+					Откройте приложение и отсканируйте или скопируйте код в учетную запись Orchid. Приложение автоматически создаст и настроит подключение к учетной записи. После этого приложение будет готово к использованию!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2946,8 +2870,8 @@
 				<source>
 					Start exploring freely!
 				</source>
-				<target state="new">
-					Start exploring freely!
+				<target state="translated">
+					Работайте без ограничений!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2962,8 +2886,8 @@
 				<source>
 					Play from: 10:44
 				</source>
-				<target state="new">
-					Play from: 10:44
+				<target state="translated">
+					Включить с 10:44
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2978,8 +2902,8 @@
 				<source>
 					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
 				</source>
-				<target state="new">
-					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
+				<target state="translated">
+					На главном экране приложения Orchid переведите переключатель в правом верхнем углу в положение «ON» (ВКЛ.). После этого Orchid начнет работать на вашем устройстве, а настроенное подключение будет активировано.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2997,11 +2921,8 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Stay curious out there!
 				</source>
-				<target state="new">
-					That’s it!
-					You’re ready to start exploring freely.
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Stay curious out there!
+				<target state="translated">
+					Вот и всё! Можно дать волю своей любознательности и исследовать мир Интернета без границ!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3016,8 +2937,8 @@
 				<source>
 					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
 				</source>
-				<target state="new">
-					Note: If you notice your Internet connection stops after turning Orchid on, simply turn it off and back on again to recycle the connection and connect to a different server.
+				<target state="translated">
+					Примечание: если после включения Orchid у вас пропадет интернет-соединение, просто перезапустите его и подключитесь к другому серверу.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3032,8 +2953,8 @@
 				<source>
 					Where to get OXT?
 				</source>
-				<target state="new">
-					Where to get OXT?
+				<target state="translated">
+					Где приобрести OXT?
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3048,8 +2969,8 @@
 				<source>
 					More questions?
 				</source>
-				<target state="new">
-					Got more questions?
+				<target state="translated">
+					Остались вопросы?
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3064,8 +2985,8 @@
 				<source>
 					Check out the FAQ
 				</source>
-				<target state="new">
-					Check out the FAQ
+				<target state="translated">
+					Загляните в раздел вопросов и ответов
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

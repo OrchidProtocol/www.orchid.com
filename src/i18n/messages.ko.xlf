@@ -25,14 +25,6 @@
 						300
 					</context>
 				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
 			</trans-unit>
 			<trans-unit id="HowHero__Title" datatype="html">
 				<source>
@@ -839,20 +831,23 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						21
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Join
+					The
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Crypto
+					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
+					<x id="START_TAG_SPAN_1" ctype="x-span" equiv-text="&lt;span>" />
+					Powered
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					The Privacy
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Network
+					VPN
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
 				</source>
 				<target state="translated">
@@ -872,48 +867,9 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeHero__Subtitle" datatype="html">
-				<source>
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					Stay curious,
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
-					explore freely
-					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span>" />
-				</source>
-				<target state="translated">
-					디지털 개인 정보 보호
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						7
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeHero__FormTitle" datatype="html">
-				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Start private browsing today!
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
-				</source>
-				<target state="translated">
-					출시를 놓치지 마세요.
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						10
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="HomeHero__JoinNow" datatype="html">
 				<source>
-					Join now
+					Get Started
 				</source>
 				<target state="translated">
 					지금 가입
@@ -923,58 +879,65 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						15
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeURL" datatype="html">
+				<source>
+					/assets/img/shared/app-store-badge.svg
+				</source>
+				<target state="translated">
+					/assets/img/shared/app-store-badge.svg
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						25
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AppStoreBadgeAlt" datatype="html">
+				<source>
+					Get it on the App Store
+				</source>
+				<target state="new">
+					Get it on the App Store
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						26
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Title" datatype="html">
 				<source>
-					Welcome to the privacy network
+					Welcome to Orchid
 				</source>
 				<target state="translated">
 					작동 방식 알아보기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/home/home.component.html
+						app/video-section/video-section.component.html
 					</context>
 					<context context-type="linenumber">
-						44
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeNextLevel__Description" datatype="html">
-				<source>
-					Read the whitepaper to learn about our next-level VPN.
-				</source>
-				<target state="translated">
-					Orchid가 개발 중인 소프트웨어를 알아보려면
-					이 백서를 읽어보십시오.
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						45
+						3
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeNextLevel__Whitepaper" datatype="html">
 				<source>
-					Whitepaper
+					FAQ
 				</source>
 				<target state="translated">
 					백서
 				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						48
-					</context>
-				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
@@ -1004,13 +967,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						56
+						43
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by eliminating centralization, rewarding network contributors, and harnessing the power of blockchain, we can offer users better privacy.
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</source>
 				<target state="translated">
 					Orchid는 중앙 집중화를 제거하고 네트워크 기여자에게
@@ -1023,13 +987,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						57
+						44
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Title" datatype="html">
 				<source>
-					Decentralized
+					Pay-per-use
 				</source>
 				<target state="translated">
 					분산형
@@ -1039,13 +1003,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						66
+						54
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
-					Ethereum allows Orchid to operate without a central authority, and the network is completely permissionless.
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</source>
 				<target state="translated">
 					이더리움 덕분에 Orchid는 중앙의 권위에
@@ -1059,13 +1024,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						55
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Title" datatype="html">
 				<source>
-					Open Source
+					Provider network
 				</source>
 				<target state="translated">
 					오픈 소스
@@ -1075,13 +1040,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						78
+						68
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
-					Orchid software is Open Source to enable the sharing of ideas, auditing and debugging by the community, and of course, contributions.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</source>
 				<target state="translated">
 					Orchid 소프트웨어는 커뮤니티는 물론
@@ -1094,13 +1060,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						79
+						69
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Title" datatype="html">
 				<source>
-					Peer to peer
+					Unlimited devices
 				</source>
 				<target state="translated">
 					피어 투 피어
@@ -1110,13 +1076,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						82
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
-					Clients and network providers transact directly with no middlemen, creating a low-cost marketplace for bandwidth and VPN connectivity.
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</source>
 				<target state="translated">
 					클라이언트와 네트워크 공급자는
@@ -1129,7 +1096,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1145,13 +1112,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						108
+						100
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
 				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
 				</source>
 				<target state="translated">
 					투입된 비용과 사명, 설립자의 요구를
@@ -1164,7 +1132,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						115
+						108
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1180,7 +1148,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						118
+						114
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1196,13 +1164,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						140
+						144
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</source>
 				<target state="translated">
 					Orchid의 사명은 모든 사람이 어디서나
@@ -1216,13 +1185,14 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						123
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</source>
 				<target state="translated">
 					Orchid는 전 세계 커뮤니티에 익명의
@@ -1236,7 +1206,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						137
+						138
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1252,7 +1222,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						152
+						156
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1268,7 +1238,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						153
+						158
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1524,7 +1494,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1548,7 +1518,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1572,7 +1542,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						85
+						77
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1624,22 +1594,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="LanguageDropdown__Ru" datatype="html">
-				<source>
-					Russian
-				</source>
-				<target state="new">
-					Russian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						40
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ja" datatype="html">
 				<source>
 					Japanese
@@ -1669,22 +1623,6 @@
 					</context>
 					<context context-type="linenumber">
 						42
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="LanguageDropdown__Id" datatype="html">
-				<source>
-					Indonesian
-				</source>
-				<target state="new">
-					Indonesian
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1736,19 +1674,19 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Navigation-Download" datatype="html">
+			<trans-unit id="Navigation-Whitepaper" datatype="html">
 				<source>
-					Download
+					Whitepaper
 				</source>
 				<target state="translated">
-					다운로드
+					백서
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						77
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1764,7 +1702,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1780,7 +1718,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						85
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2587,7 +2525,7 @@
 					are also compatible with Orchid.
 				</source>
 				<target state="translated">
-					또한, 
+					또한,
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -2619,7 +2557,7 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
 				<target state="translated">
-					개인 정보 보호 참고 사항: 사용하시는 다른 이더리움 제품 또는 서비스와 연결되지 않은 새로운 이더리움 지갑 주소를 Orchid용으로 사용하실 것을 권장합니다. 
+					개인 정보 보호 참고 사항: 사용하시는 다른 이더리움 제품 또는 서비스와 연결되지 않은 새로운 이더리움 지갑 주소를 Orchid용으로 사용하실 것을 권장합니다.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					자세히 보기
@@ -2936,7 +2874,7 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					용 Orchid 앱을 다운로드하시고, 
+					용 Orchid 앱을 다운로드하시고,
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					iOS Testflight
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -3023,7 +2961,7 @@
 					Stay curious out there!
 				</source>
 				<target state="translated">
-					완료되었습니다! 자유롭게 검색을 시작할 준비가 되셨습니다. 
+					완료되었습니다! 자유롭게 검색을 시작할 준비가 되셨습니다.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					즐거운 서핑 되시길 바랍니다!
 				</target>
