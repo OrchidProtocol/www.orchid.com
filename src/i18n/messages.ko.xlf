@@ -884,6 +884,22 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="GooglePlayLink" datatype="html">
+				<source>
+					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=en_US
+				</source>
+				<target state="translated">
+					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=ko
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						18
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="AppStoreBadgeURL" datatype="html">
 				<source>
 					/assets/img/shared/app-store-badge.svg
@@ -1659,6 +1675,22 @@
 					</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="LanguageDropdown__Ru" datatype="html">
+				<source>
+					Russian
+				</source>
+				<target state="translated">
+					русский
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						40
+					</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ja" datatype="html">
 				<source>
 					Japanese
@@ -1688,6 +1720,22 @@
 					</context>
 					<context context-type="linenumber">
 						42
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="LanguageDropdown__Id" datatype="html">
+				<source>
+					Indonesian
+				</source>
+				<target state="translated">
+					bahasa Indonesia
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						43
 					</context>
 				</context-group>
 			</trans-unit>
