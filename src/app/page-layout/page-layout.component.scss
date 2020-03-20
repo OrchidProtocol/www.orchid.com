@@ -550,6 +550,7 @@ $flyout-gap: ($flyout-spacing / 2);
   text-align: center;
   padding: 10px 4px;
   font-size: 14px;
+  box-sizing: border-box;
 
   @media (max-width: 1150px) {
     margin-bottom: 2em;
