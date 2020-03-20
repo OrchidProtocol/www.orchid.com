@@ -20,6 +20,7 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__headline {
+  max-width: 400px;
   h1 {
     .small {
       @media (min-width: $hero-bp-1) {
