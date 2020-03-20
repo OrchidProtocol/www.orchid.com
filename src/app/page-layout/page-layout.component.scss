@@ -542,3 +542,16 @@ $flyout-gap: ($flyout-spacing / 2);
     }
 	}*/
 }
+
+.notification-bar-container {
+  width: 100%;
+  background: #E8DDFD;
+  color: #E8DDFD;
+  text-align: center;
+  padding: 10px 4px;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+  }
+}
