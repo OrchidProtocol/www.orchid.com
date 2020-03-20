@@ -154,6 +154,10 @@ $containerWidth: 932px;
     margin-bottom: 1rem;
   }
 
+  img {
+    max-width: 100%;
+  }
+
   & > section {
     position: relative;
 
