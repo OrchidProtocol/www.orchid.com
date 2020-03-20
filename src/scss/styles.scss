@@ -45,26 +45,38 @@ body {
 }
 
 .locale-en-US {
-  .show-ja, .show-ko, .show-zh,
+  .show-ja, .show-ko, .show-zh, .show-id, .show-ru,
   .hide-en {
     display: none !important;
   }
 }
 .locale-ja {
-  .show-ko, .show-zh, .show-en,
+  .show-ko, .show-zh, .show-en, .show-id, .show-ru,
   .hide-ja {
     display: none !important;
   }
 }
 .locale-ko {
-  .show-ja, .show-zh, .show-en,
+  .show-ja, .show-zh, .show-en, .show-id, .show-ru,
   .hide-ko {
     display: none !important;
   }
 }
 .locale-zh {
-  .show-ja, .show-ko, .show-en,
+  .show-ja, .show-ko, .show-en, .show-id, .show-ru,
   .hide-zh {
+    display: none !important;
+  }
+}
+.locale-id {
+  .show-ja, .show-ko, .show-en, .show-zh, .show-ru,
+  .hide-id {
+    display: none !important;
+  }
+}
+.locale-ru {
+  .show-ja, .show-ko, .show-en, .show-id, .show-zh,
+  .hide-ru {
     display: none !important;
   }
 }
