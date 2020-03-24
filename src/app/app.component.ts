@@ -19,7 +19,9 @@ export class AppComponent implements OnInit {
     { code: 'en', label: 'English' },
     { code: 'ko', label: 'Korean' },
     { code: 'zh', label: 'Mandarin' },
-    { code: 'ja', label: 'Japanese' }
+    { code: 'ja', label: 'Japanese' },
+    { code: 'id', label: 'Indonesian' },
+    { code: 'ru', label: 'Russian' },
   ];
 
   public constructor(
@@ -32,19 +34,19 @@ export class AppComponent implements OnInit {
     r.addClass(document.body, `locale-${this.localeId}`);
     if (this.localeId !== 'en-US') {
       r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
-      this.createMetaTag(document, r, 'meta', {"rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com`+document.location.href})
+      this.createMetaTag(document, r, 'meta', {"rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com`+document.location.pathname})
     } else {
-      this.createMetaTag(document, r, 'meta', {"rel": "canonical", "href": `https://www.orchid.com`+document.location.href})
+      this.createMetaTag(document, r, 'meta', {"rel": "canonical", "href": `https://www.orchid.com`+document.location.pathname})
     }
 
     
 
-    /*if (this.localeId !== 'en' && this.localeId !== 'en-US')*/ this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://orchid.com"+document.location.href, "hreflang": "x-default"})
-    if (this.localeId !== 'ja') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ja.orchid.com"+document.location.href, "hreflang": "ja"})
-    if (this.localeId !== 'ko') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ko.orchid.com"+document.location.href, "hreflang": "ko"})
-    if (this.localeId !== 'zh') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://zh.orchid.com"+document.location.href, "hreflang": "zh"})
-    //if (this.localeId !== 'ru') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ru.orchid.com"+document.location.href, "hreflang": "ru"})
-    //if (this.localeId !== 'id') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://id.orchid.com"+document.location.href, "hreflang": "id"})
+    /*if (this.localeId !== 'en' && this.localeId !== 'en-US')*/ this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://orchid.com"+document.location.pathname, "hreflang": "x-default"})
+    if (this.localeId !== 'ja') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ja.orchid.com"+document.location.pathname, "hreflang": "ja"})
+    if (this.localeId !== 'ko') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ko.orchid.com"+document.location.pathname, "hreflang": "ko"})
+    if (this.localeId !== 'zh') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://zh.orchid.com"+document.location.pathname, "hreflang": "zh"})
+    if (this.localeId !== 'ru') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://ru.orchid.com"+document.location.pathname, "hreflang": "ru"})
+    if (this.localeId !== 'id') this.createMetaTag(document, r, 'link', {"rel": "alternate", "href": "https://id.orchid.com"+document.location.pathname, "hreflang": "id"})
 
   }
 
