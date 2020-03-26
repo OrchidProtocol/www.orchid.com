@@ -1545,7 +1545,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						120
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1569,7 +1569,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						120
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1593,7 +1593,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						77
+						113
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1721,7 +1721,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						110
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1737,7 +1737,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						75
+						111
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1753,7 +1753,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						76
+						112
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1769,23 +1769,23 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						118
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Navigation-Events" datatype="html">
+			<trans-unit id="Navigation-Download" datatype="html">
 				<source>
-					Events
+					Download
 				</source>
 				<target state="translated">
-					活动
+					下载
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						119
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1801,7 +1801,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						85
+						121
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1817,7 +1817,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						127
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2345,7 +2345,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						378
+						368
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2361,7 +2361,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						379
+						369
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2385,7 +2385,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						382
+						372
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2409,7 +2409,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						387
+						377
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2425,7 +2425,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						394
+						384
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2441,7 +2441,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						395
+						385
 					</context>
 				</context-group>
 			</trans-unit>
