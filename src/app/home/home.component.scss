@@ -14,8 +14,12 @@ $hero-bp-vert: 1150px;
   background: $orc-beige-light;
   height: 810px;
 
+
   @media (max-width: $hero-bp-1) {
     height: 55vw;
+  }
+  @media (min-width: $hero-bp-vert) {
+    margin-top: 2em;
   }
 }
 
@@ -25,9 +29,16 @@ $hero-bp-vert: 1150px;
     max-width: none;
   }
   h1 {
-    .small {
-      @media (min-width: $hero-bp-1) {
-        font-size: 64px;
+    @media (min-width: $hero-bp-1) {
+      font-size: 103px;
+      .small {
+        font-size: 81px;
+      }
+    }
+    @media (min-width: $hero-bp-vert) {
+      font-size: 85px;
+      .small {
+        font-size: 68px;
       }
     }
   }
@@ -67,7 +78,16 @@ $hero-bp-vert: 1150px;
 .home-hero__form {
   margin-top: 43px; //68px;
 
+  max-width: 328px;
+  
+  @media (max-width: $hero-bp-vert) {
+    max-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   @media (max-width: $hero-bp-1) {
+    max-width: 296px;
     margin-top: 6vw;
     transform: translateY(-2vw);
   }
@@ -123,6 +143,15 @@ $hero-bp-vert: 1150px;
   max-width: 200px;
   width: 100%;
   height: auto;
+
+  @media (min-width: $hero-bp-vert) {
+    width: auto;
+    height: 43px;
+  }
+  @media (min-width: $hero-bp-1) {
+    width: auto;
+    height: 48px;
+  }
 }
 
 .home-hero__appstore-image-apple {
@@ -281,15 +310,22 @@ $hero-bp-vert: 1150px;
   }
 }
 
-:host-context(.locale-ja) {
+:host-context(.locale-ja), :host-context(.locale-ko), :host-context(.locale-zh) {
   .title {
-    font-size: 69px;
+    font-size: 65px;
+    
+    @include mobile {
+      font-size: 30px;
+    }
   }
 }
-
-:host-context(.locale-ko) {
+:host-context(.locale-ru) {
   .title {
-    font-size: 66px;
+    font-size: 60px;
+    
+    @include mobile {
+      font-size: 25px;
+    }
   }
 }
 
