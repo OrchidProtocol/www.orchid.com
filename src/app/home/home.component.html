@@ -149,26 +149,3 @@
 </div>
 
 <app-newsletter-signup></app-newsletter-signup>
-
-<div>
-    <section class="section-wide hpad-wide vpad-wide">
-        <header id="ev-header">
-            <h2 id="ev-h2" class="color-gray" i18n="@@HomeEvents__Title">Meet us in person</h2>
-            <a id="ev-more" class="phantom-a" routerLink="/events"><span class="uppercase color-primary"
-                    i18n="@@HomeEvents__Link">See all events</span></a>
-        </header>
-        <ul id="ev-list" class="phantom-list" *ngIf="events$ | async | slice:0:3 as events else loadingEvents">
-            <li class="ev-event" *ngFor="let event of events">
-                <p class="ev-title">{{event.date}} | {{event.title}}</p>
-                <p class="ev-title">{{event.location}}</p>
-                <p *ngIf="event.desc" class="ev-body">{{event.desc}}</p>
-                <p class="ev-link" *ngIf="event.link as link">
-                    <a [href]="link" target="_blank" rel="noopener noreferrer">{{link}}</a>
-                </p>
-            </li>
-        </ul>
-        <ng-template #loadingEvents>
-            <p class="center-text gap-top-wide">loading events...</p>
-        </ng-template>
-    </section>
-</div>
