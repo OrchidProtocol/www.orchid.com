@@ -66,6 +66,42 @@ $hero-bp-vert: 1150px;
   }
 }
 
+.home-hero__speech-bubble {
+  position: absolute;
+  left: 80%;
+  top: 28%;
+  z-index: 10;
+  background: #5f45ba;
+  padding: 1em;
+  border-radius: 1em;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  &:after {
+    content: ' ';
+    background-image: url('/assets/img/index/bubble-trail.svg');
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 8em;
+    height: 8em;
+    top: 100%;
+    left: -2em;
+  }
+  
+  @media (min-width: $hero-bp-1) {
+    left: 81.5%;
+    top: 31%;
+    &:after {
+      left: -4em;
+    }
+  }
+  @media (max-width: $hero-bp-vert) {
+    display: none;
+  }
+}
+
 .home-hero__content {
   box-sizing: border-box;
   width: 642px;
