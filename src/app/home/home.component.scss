@@ -100,6 +100,13 @@ $hero-bp-vert: 1150px;
     display: none;
   }
 }
+.home-hero__okex-mobile-link {
+  margin: 1em 0;
+  display: inline-block;
+  @media (min-width: $hero-bp-vert) {
+    display: none;
+  }
+}
 
 .home-hero__content {
   box-sizing: border-box;
