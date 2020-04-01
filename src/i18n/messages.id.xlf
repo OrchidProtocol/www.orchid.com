@@ -821,10 +821,10 @@
 			</trans-unit>
 			<trans-unit id="OKExBlogPostURL" datatype="html">
 				<source>
-					https://www.blog.orchid.com/oxt-now-live-on-okex/
+					https://blog.orchid.com/oxt-now-live-on-okex/
 				</source>
 				<target state="translated">
-					https://www.blog.id.orchid.com/oxt-now-live-on-okex/
+					https://blog.id.orchid.com/oxt-now-live-on-okex/
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
