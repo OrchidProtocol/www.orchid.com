@@ -88,7 +88,6 @@ $hero-bp-vert: 1150px;
     top: 100%;
     left: -2em;
   }
-  
   @media (min-width: $hero-bp-1) {
     left: 81.5%;
     top: 31%;
@@ -107,6 +106,10 @@ $hero-bp-vert: 1150px;
     display: none;
   }
 }
+:host-context(.locale-en-US) .home-hero__speech-bubble,
+:host-context(.locale-en-US) .home-hero__okex-mobile-link {
+  display: none;
+}
 
 .home-hero__content {
   box-sizing: border-box;
@@ -121,7 +124,7 @@ $hero-bp-vert: 1150px;
   margin-top: 43px; //68px;
 
   max-width: 328px;
-  
+
   @media (max-width: $hero-bp-vert) {
     max-width: 270px;
     margin-left: auto;
@@ -355,7 +358,7 @@ $hero-bp-vert: 1150px;
 :host-context(.locale-ja), :host-context(.locale-ko), :host-context(.locale-zh) {
   .title {
     font-size: 65px;
-    
+
     @include mobile {
       font-size: 30px;
     }
@@ -364,7 +367,7 @@ $hero-bp-vert: 1150px;
 :host-context(.locale-ru) {
   .title {
     font-size: 60px;
-    
+
     @include mobile {
       font-size: 25px;
     }
