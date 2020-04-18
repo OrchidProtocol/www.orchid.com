@@ -66,51 +66,6 @@ $hero-bp-vert: 1150px;
   }
 }
 
-.home-hero__speech-bubble {
-  position: absolute;
-  left: 80%;
-  top: 28%;
-  z-index: 10;
-  background: #5f45ba;
-  padding: 1em;
-  border-radius: 1em;
-  color: white;
-  display: inline-block;
-  &:after {
-    content: ' ';
-    background-image: url('/assets/img/index/bubble-trail.svg');
-    background-position: top left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 8em;
-    height: 8em;
-    top: 100%;
-    left: -2em;
-  }
-  @media (min-width: $hero-bp-1) {
-    left: 81.5%;
-    top: 31%;
-    &:after {
-      left: -4em;
-    }
-  }
-  @media (max-width: $hero-bp-vert) {
-    display: none;
-  }
-}
-.home-hero__okex-mobile-link {
-  margin: 1em 0;
-  display: inline-block;
-  @media (min-width: $hero-bp-vert) {
-    display: none;
-  }
-}
-:host-context(.locale-en-US) .home-hero__speech-bubble,
-:host-context(.locale-en-US) .home-hero__okex-mobile-link {
-  display: none;
-}
-
 .home-hero__content {
   box-sizing: border-box;
   width: 642px;
@@ -124,7 +79,7 @@ $hero-bp-vert: 1150px;
   margin-top: 43px; //68px;
 
   max-width: 328px;
-
+  
   @media (max-width: $hero-bp-vert) {
     max-width: 270px;
     margin-left: auto;
@@ -358,7 +313,7 @@ $hero-bp-vert: 1150px;
 :host-context(.locale-ja), :host-context(.locale-ko), :host-context(.locale-zh) {
   .title {
     font-size: 65px;
-
+    
     @include mobile {
       font-size: 30px;
     }
@@ -367,7 +322,7 @@ $hero-bp-vert: 1150px;
 :host-context(.locale-ru) {
   .title {
     font-size: 60px;
-
+    
     @include mobile {
       font-size: 25px;
     }
@@ -646,7 +601,7 @@ ul.smaller .ft-text h3 {
 .press-cards {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fill,minmax(368px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   justify-content: center;
   position: relative;
 

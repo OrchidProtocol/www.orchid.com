@@ -43,10 +43,6 @@ function getHead(): string {
   return spawnSync("git", ["rev-parse", "HEAD"]).stdout.toString().trim();
 }
 
-function getVersion(): string {
-  return spawnSync("./version.sh").stdout.toString().trim();
-}
-
 enableProdMode();
 
 const DIST_FOLDER   = join(process.cwd(), "dist");
@@ -57,7 +53,6 @@ const VERSION_FILE  = join(OUT_FOLDER, "version.html");
 
 const GIT_REPO = getRepo();
 const GIT_HEAD = getHead();
-const VERSION = getVersion();
 
 const template = readFileSync(TEMPLATE_FILE).toString();
 
@@ -95,10 +90,7 @@ writeFileSync(VERSION_FILE,
   <title>Orchid</title>
 </head>
 <body>
-  <pre>
-Git Repository: ${GIT_REPO}
-Deployed Hash: ${GIT_HEAD}
-Version: ${VERSION}
-  </pre>
+  <pre>Git Repository: ${GIT_REPO}
+Deployed Hash: ${GIT_HEAD}</pre>
 </body>
 </html>`);

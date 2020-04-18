@@ -19,6 +19,4 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-west-2
     - name: Deploy to www.orchid.dev
-      run: |
-        git fetch --prune --unshallow
-        ./deploy.sh -s staging
+      run: ./deploy.sh staging

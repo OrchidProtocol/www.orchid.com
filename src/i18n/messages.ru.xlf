@@ -728,7 +728,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						20
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -760,7 +760,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						21
 					</context>
 				</context-group>
 			</trans-unit>
@@ -821,22 +821,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="OKExBlogPostURL" datatype="html">
-				<source>
-					https://blog.orchid.com/oxt-now-live-on-okex/
-				</source>
-				<target state="translated">
-					https://blog.ru.orchid.com/oxt-now-live-on-okex/
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						4
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="HomeHero__Title" datatype="html">
 				<source>
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span>" />
@@ -860,7 +844,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						6
 					</context>
 				</context-group>
 			</trans-unit>
@@ -876,7 +860,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						20
+						15
 					</context>
 				</context-group>
 			</trans-unit>
@@ -892,7 +876,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						18
 					</context>
 				</context-group>
 			</trans-unit>
@@ -908,7 +892,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						30
+						25
 					</context>
 				</context-group>
 			</trans-unit>
@@ -924,7 +908,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						31
+						26
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1044,7 +1028,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						48
+						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1061,7 +1045,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						49
+						44
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1077,7 +1061,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						59
+						54
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1094,7 +1078,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						60
+						55
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1110,7 +1094,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						73
+						68
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1127,7 +1111,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						69
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1143,7 +1127,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						87
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1160,7 +1144,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1176,7 +1160,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						105
+						100
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1193,7 +1177,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						108
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1209,7 +1193,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						114
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1217,7 +1201,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						134
+						129
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1225,7 +1209,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						149
+						144
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1242,7 +1226,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						128
+						123
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1259,7 +1243,39 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						143
+						138
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeEvents__Title" datatype="html">
+				<source>
+					Meet us in person
+				</source>
+				<target state="translated">
+					Познакомьтесь с нами лично
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						156
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeEvents__Link" datatype="html">
+				<source>
+					See all events
+				</source>
+				<target state="translated">
+					Показать все события
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						158
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1668,7 +1684,7 @@
 					Indonesian
 				</source>
 				<target state="translated">
-					Indonesian
+					bahasa Indonesia
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
