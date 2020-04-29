@@ -124,17 +124,18 @@ function main() {
         fi
     fi
 
-    if [ -z ${version+x} ]; then  # If no version was specified with -v
-        version=$(./version.sh | cut -d' ' -f3)
-        echo "Version: $version"
-        build-site "$language"
-        upload-site "$bucket" "$version"
-    fi
     distribution=$(get-distribution-id "$bucket")
 
     if [ -z ${distribution+x} ]; then  # If no CloudFront distribution was acquired
         echo "Failed to determine CloudFront Distribution for bucket: ${bucket}"
         exit 1
+    fi
+
+    if [ -z ${version+x} ]; then  # If no version was specified with -v
+        version=$(./version.sh | cut -d' ' -f3)
+        echo "Version: $version"
+        build-site "$language"
+        upload-site "$bucket" "$version"
     fi
 
     update-distribution "$distribution" "$version"
