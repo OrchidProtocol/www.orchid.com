@@ -18,4 +18,11 @@
       font-size: $size-body-md-mobile;
     }
   }
+
+  img {
+    max-width: 200px;
+    &.margin {
+      margin: 10px 20px;
+    }
+  }
 }
