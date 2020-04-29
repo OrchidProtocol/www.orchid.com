@@ -126,7 +126,7 @@ function main() {
 
     distribution=$(get-distribution-id "$bucket")
 
-    if [ -z ${distribution+x} ]; then  # If no CloudFront distribution was acquired
+    if [ -z ${distribution} ]; then  # If no CloudFront distribution was acquired
         echo "Failed to determine CloudFront Distribution for bucket: ${bucket}"
         exit 1
     fi
