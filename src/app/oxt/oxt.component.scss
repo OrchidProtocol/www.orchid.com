@@ -6,6 +6,63 @@
 // Variables
 $containerWidth: 932px;
 
+.text-constrained {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.grey-heading {
+  color:#53686A;
+  font-size:24px;
+  &.small {
+    font-size: 20px;
+  }
+}
+
+.oxt-special-link {
+  font-weight: bold;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+.oxt-svg-charts {
+  img {
+    margin: auto;
+    max-width: 100%;
+    display: block;
+  }
+}
+a {
+  overflow-wrap: break-word;
+}
+.img-center {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  display: block;
+}
+.small-margin-top {
+  margin-top: 40px;
+}
+.supply-section {
+  overflow: hidden;
+}
+
+@media (max-width: 1100px) {
+  .oxt-responsive-table-container {
+    position: relative;
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
 // HERO SECTION
 .oxt-hero > section {
   & > * + * {
@@ -54,6 +111,29 @@ $containerWidth: 932px;
   max-width: 82ch;
 }
 
+.cost-to-use-oxt > .overflow-wrapper {
+  position: relative;
+  max-width: 1685px;
+  margin: auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 350px;
+    background: url('/assets/img/oxt/bg-circle-3.svg') no-repeat center center;
+    background-size: auto 100%;
+    background-position: top left;
+    bottom: 0;
+    right: 0;
+    transform: translate(0px, 123px);
+
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
 // WHY OXT SECTION
 .why-oxt > .overflow-wrapper {
   position: relative;
@@ -68,8 +148,8 @@ $containerWidth: 932px;
     background: url('/assets/img/oxt/bg-circles-2.svg') no-repeat center center;
     background-size: contain;
     bottom: 0;
-    right: 0;
-    transform: translate(0, 67%);
+    left: 0;
+    transform: translate(0, 67%) scale(0.75);
 
     @include mobile {
       display: none;
@@ -134,7 +214,7 @@ $containerWidth: 932px;
 
 .why-oxt__img {
   max-width: 100%;
-  transform: translate(65px, -98px);
+  transform: translate(23%, 1%) scale(1.5);
 
   @media (max-width: 1184px) {
     transform: translate(0, 0);
