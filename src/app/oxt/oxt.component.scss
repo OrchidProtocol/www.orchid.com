@@ -119,14 +119,13 @@ a {
   &::before {
     content: "";
     position: absolute;
-    width: 275px;
+    width: 350px;
     height: 350px;
     background: url('/assets/img/oxt/bg-circle-3.svg') no-repeat center center;
-    background-size: auto 100%;
-    background-position: top left;
+    background-size: contain;
     bottom: 0;
     right: 0;
-    transform: translate(0px, 123px);
+    transform: translate(75px, 123px);
 
     @include mobile {
       display: none;
