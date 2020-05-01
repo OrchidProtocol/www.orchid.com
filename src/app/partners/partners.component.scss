@@ -80,6 +80,12 @@
 	padding-right: 2.5em;
 }
 
+.partners-wrapper {
+	h2 {
+		margin-bottom: 2rem;
+	}
+}
+
 .cards-wrapper {
 	display: flex;
 	flex-wrap: wrap;
@@ -127,6 +133,17 @@
 		text-overflow: none;
 	}
 
+	&::before {
+		content: ' ';
+		position: absolute;
+		top: 1rem;
+		left: -1rem;
+		width: 2rem;
+		height: 2rem;
+		background-image: url(/assets/img/shared/quotes.svg);
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
 	&::after {
 		content: "LEARN MORE";
 		font-weight: bold;
