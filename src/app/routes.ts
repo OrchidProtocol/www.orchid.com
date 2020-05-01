@@ -20,7 +20,6 @@ import {VisionComponent} from "./vision/vision.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
-import { PartnersComponent } from './partners/partners.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
@@ -58,8 +57,6 @@ export const routes: Routes = [
       {path: "service-terms.html", redirectTo: "service-terms"},
 	    {path: "oxt", component: OxtComponent},
 		{path: "oxt.html", redirectTo: "oxt"},
-		{path: "partners", component: PartnersComponent},
-		{path: "partners.html", redirectTo: "partners"},
 		{path: "newsletter-signup", component: NewsletterSignupPage},
 		{path: "newsletter-signup.html", redirectTo: 'newsletter-signup'},
       {path: "**", component: NotFoundComponent}

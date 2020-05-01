@@ -22,7 +22,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
-import { PartnersComponent } from './partners/partners.component';
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
@@ -56,7 +55,6 @@ import { MetaService } from './MetaService';
     AboutCompanyComponent,
     JoinComponent,
     OxtComponent,
-    PartnersComponent,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
