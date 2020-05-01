@@ -41,6 +41,10 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>https://www.orchid.com/partners/</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>https://www.orchid.com/privacy-policy/</loc>
 		<priority>0.1</priority>
 	</url>

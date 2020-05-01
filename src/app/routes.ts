@@ -20,6 +20,7 @@ import {VisionComponent} from "./vision/vision.component";
 import {NotFoundComponent} from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
+import { PartnersComponent } from './partners/partners.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
 export const routes: Routes = [
@@ -55,7 +56,9 @@ export const routes: Routes = [
 	    {path: "service-terms", component: ServiceTermsComponent},
       {path: "service-terms.html", redirectTo: "service-terms"},
 	    {path: "oxt", component: OxtComponent},
-	    {path: "oxt.html", redirectTo: "oxt"},
+		{path: "oxt.html", redirectTo: "oxt"},
+		{path: "partners", component: PartnersComponent},
+		{path: "partners.html", redirectTo: "partners"},
       {path: "**", component: NotFoundComponent}
 	]
     },
