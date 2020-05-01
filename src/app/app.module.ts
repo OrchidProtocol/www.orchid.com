@@ -28,6 +28,7 @@ import { SetupVideoSectionComponent } from './setup-video-section/setup-video-se
 import { VideoSectionComponent } from './video-section/video-section.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
+import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -56,6 +57,7 @@ import { MetaService } from './MetaService';
     JoinComponent,
     OxtComponent,
     PartnersComponent,
+    NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
     SetupVideoSectionComponent,
