@@ -58,8 +58,8 @@ export const routes: Routes = [
       {path: "service-terms.html", redirectTo: "service-terms"},
 	    {path: "oxt", component: OxtComponent},
 		{path: "oxt.html", redirectTo: "oxt"},
-		{path: "partners", component: PartnersComponent},
-		{path: "partners.html", redirectTo: "partners"},
+		//{path: "partners", component: PartnersComponent},
+		//{path: "partners.html", redirectTo: "partners"},
 		{path: "newsletter-signup", component: NewsletterSignupPage},
 		{path: "newsletter-signup.html", redirectTo: 'newsletter-signup'},
       {path: "**", component: NotFoundComponent}
