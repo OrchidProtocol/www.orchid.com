@@ -56,7 +56,7 @@ import { MetaService } from './MetaService';
     AboutCompanyComponent,
     JoinComponent,
     OxtComponent,
-    PartnersComponent,
+    //PartnersComponent,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
