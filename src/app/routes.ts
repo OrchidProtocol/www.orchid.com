@@ -21,6 +21,7 @@ import { NotFoundComponent } from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
+import { PodcastComponent } from './podcast/podcast.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
@@ -60,6 +61,8 @@ export const routes: Routes = [
 			{ path: "oxt.html", redirectTo: "oxt" },
 			{ path: "partners", component: PartnersComponent },
 			{ path: "partners.html", redirectTo: "partners" },
+			{ path: "podcast", component: PodcastComponent },
+			{ path: "podcast.html", redirectTo: "podcast" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
