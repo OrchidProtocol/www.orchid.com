@@ -47,10 +47,16 @@
     margin: 0 auto 0 auto;
     color: $orc-rock-gray;
   }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
 
   .row {
     display: flex;
     flex-flow: row wrap;
+    margin: auto;
+    max-width: 950px;
 
     include mobile {
       flex-wrap: wrap;
@@ -165,5 +171,18 @@
     right: 50%;
     margin-bottom: -13rem;
     margin-right: 9rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul.download-instructions__list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  & > li {
+    padding-left: 0;
   }
 }
