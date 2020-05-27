@@ -1112,7 +1112,7 @@
 				</source>
 				<target state="new">
 					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
-					Cost to use Orchid VPN
+					오키드 VPN 사용 비용
 					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					오키드는 경쟁력 있는 가격으로 온라인 상에서 개인 정보를 보호할 수 있도록 설계되었습니다. 사용자와 대역폭 제공자 양쪽의 니즈를 충족할 수 있도록 대역폭의 가격이 고정되지 않고 동적으로 책정되며, 수많은 공급업체가 경쟁적으로 사용자에게 서비스를 제공하는 오키드만의 탈중앙형 대역폭 시장을 통해 이루어집니다.
@@ -1603,7 +1603,7 @@
 					오키드 앱을 사용하려면, 서비스 이용에 필요한 OXT를 확보한 뒤, 오키드 계정을 통하여 이를 이더리움 스마트컨트렉트로  전송해야 합니다.이동된 금액은, 맴버십 예치금과, 잔액 두 가지로 나뉘게 됩니다. 맴버십 예치금은 네트워크를 악의적인 유저로부터 보호하기 위한 소량의 보증금이며, 대부분의 금액은 잔액으로 편입되는데, 이는 나노페이먼트를 위한 담보물이 됩니다. 서비스를 사용하게 되면, 해당 OXT가 노드 제공자에게 이체 됩니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Read our blog about nanopayments here.
+					나노페이먼트에 관해 자세히 알아보기
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
@@ -1619,7 +1619,7 @@
 					클라이언트들은, 이 지연기간이 지나치게 짧게 설정된 노드들을 선택하지 않음으로써 이 기간을 조절하게 됩니다. 이러한 스테이킹 지분률에 따른 가중치를 적용과 출금 지연의 조합은 네트워크의 보안을 높여주고 해커의 공격 비용을 높이는 효과가 있으며 유저와 노드 제공자에게 인센티브를 제공합니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					Read more about provider staking here.
+					노드 제공자 스테이킹에 관해 자세히 알아보기
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
 				</target>
