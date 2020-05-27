@@ -61,8 +61,8 @@ export const routes: Routes = [
 			{ path: "oxt.html", redirectTo: "oxt" },
 			{ path: "partners", component: PartnersComponent },
 			{ path: "partners.html", redirectTo: "partners" },
-			{ path: "podcast", component: PodcastComponent },
-			{ path: "podcast.html", redirectTo: "podcast" },
+			//{ path: "podcast", component: PodcastComponent },
+			//{ path: "podcast.html", redirectTo: "podcast" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
