@@ -10,7 +10,10 @@
   margin-right: auto;
 
   h3 {
-    padding: 5vw;
+    padding: 3.5rem;
+    @media (max-width: 800px) {
+      padding: 2rem;
+    }
   }
 
   .img-container {
@@ -109,12 +112,17 @@
 
   .logo-image {
     max-width: 30%;
+    @media (min-width: 800px) {
+      margin-bottom: 200px;
+      width: 155px;
+    }
   }
 
   .phone-1,
   .phone-2 {
     filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
     max-width: 25%;
+    width: 255px;
     margin-top: -100px;
 
     @media (max-width: 800px) {
