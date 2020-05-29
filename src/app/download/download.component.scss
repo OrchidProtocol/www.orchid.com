@@ -109,6 +109,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (min-width: 800px) {
+    margin-bottom: -4rem;
+  }
 
   .logo-image {
     max-width: 30%;
