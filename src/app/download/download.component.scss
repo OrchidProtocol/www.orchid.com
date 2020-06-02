@@ -3,57 +3,201 @@
 @import 'misc_config';
 @import 'orc_config';
 
-#top {
-    width: 100%;
-    text-align: center; margin-left: auto; margin-right: auto;
+.background-gray {
+  background: #FBFBF9;
+}
 
-    h3 { padding: 5vw; }
-    .img-container {
-        margin: 0 auto;
-        width: 80%; max-width: 860px;
-        img { width: 100%; height: auto; }
+#top {
+  width: 100%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  h3 {
+    padding: 3.5rem;
+    @media (max-width: 800px) {
+      padding: 2rem;
     }
+  }
+
+  .img-container {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 860px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 #app-description {
   padding-bottom: 0;
-  h3 { color: $orc-rock-gray; margin-bottom: 1rem; }
-  h3 > span {
+
+  h3 {
+    color: $orc-rock-gray;
+    margin-bottom: 1rem;
+  }
+
+  h3>span {
     @include mobile {
-      display: block; margin-top: 1em;
+      display: block;
+      margin-top: 1em;
     }
   }
 }
 
 #instructions {
-    h4 { text-align: center; margin: 0 auto 0 auto; color: $orc-rock-gray; }
-    .row {
-        display: flex;
-        flex-flow: row wrap;
-	include mobile { flex-wrap: wrap; }
-        width: 100%;
-        justify-content: center;
-        align-items: stretch;
+  h4 {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    color: $orc-rock-gray;
+  }
+  a {
+    text-decoration: none;
+    font-weight: 700;
+  }
 
-        // > * { margin: auto 8px; }
+  .row {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    max-width: 950px;
 
-        .divider {
-	    width: 2px;
-	    background: rgba($orc-purple, 0.5);
-	    flex: 0 1 auto;
-	    margin: 0px 15px;
-	    @include mobile { display: none; }
-	}
-        .column {
-            // flex: 0 1 auto;
-	    flex: 1 0 0;
-	    min-width: 250px;
-	    max-width: calc(50% - 16px);
-	    overflow: hidden;
-	    @include mobile { flex: 0 1 auto; }
-             li { padding-left: 10px; }
-             &.left { }
-             &.right { }
-        }
+    include mobile {
+      flex-wrap: wrap;
     }
+
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+
+    // > * { margin: auto 8px; }
+
+    .divider {
+      width: 2px;
+      background: rgba($orc-purple, 0.5);
+      flex: 0 1 auto;
+      margin: 0px 15px;
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    .column {
+      // flex: 0 1 auto;
+      flex: 1 0 0;
+      min-width: 250px;
+      max-width: calc(50% - 16px);
+      overflow: hidden;
+
+      @include mobile {
+        flex: 0 1 auto;
+      }
+
+      li {
+        padding-left: 10px;
+      }
+
+      &.left {}
+
+      &.right {}
+    }
+  }
+}
+
+
+.download-images__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 800px) {
+    margin-bottom: -4rem;
+  }
+
+  .logo-image {
+    max-width: 30%;
+    @media (min-width: 800px) {
+      margin-bottom: 200px;
+      width: 155px;
+    }
+  }
+
+  .phone-1,
+  .phone-2 {
+    filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.3));
+    max-width: 25%;
+    width: 255px;
+    margin-top: -100px;
+
+    @media (max-width: 800px) {
+      margin-top: -25px;
+    }
+  }
+
+  .phone-1 {
+    transform: rotate(-15deg) scale(0.75) translateX(-25%);
+  }
+
+  .phone-2 {
+    transform: rotate(15deg) scale(0.75) translateX(25%);
+  }
+}
+
+.download-opensource__section {
+  position: relative;
+  @media (min-width: 1050px) {
+    padding: 5rem 0 8.75rem 0;
+  }
+}
+
+.download-opensource__text {
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  width: calc(100% - 4rem);
+  margin: auto;
+
+  &>a {
+    &>img {
+      margin-right: 0.5em;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+  }
+}
+
+.download-opensource__image {
+  margin: auto;
+  display: block;
+  @media (max-width: 1050px) {
+    margin-top: 2rem;
+    max-width: 90%;
+  }
+  @media (min-width: 1050px) {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    margin-bottom: -13rem;
+    margin-right: 9rem;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+ul.download-instructions__list {
+  text-align: center;
+  list-style: none;
+  padding-left: 0;
+  & > li {
+    padding-left: 0;
+  }
 }

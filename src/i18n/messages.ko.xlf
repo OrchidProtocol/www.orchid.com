@@ -680,18 +680,17 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						42
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="DownloadiOS__Body" datatype="html">
 				<source>
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					We have a beta version of our iOS app on Testflight. Please help us test the app by using the link
-					below:
+					We have a beta version of our iOS app on Testflight. Please help us test the app by using the link below:
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					https://testflight.apple.com/join/BlkfHkHY
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -721,13 +720,13 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						27
+						43
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="OKExBlogPostURL" datatype="html">
 				<source>
-					https://blog.orchid.com/oxt-now-live-on-okex/
+					https://www.okex.com/promotion/XTkOoB
 				</source>
 				<target state="translated">
 					https://blog.ko.orchid.com/oxt-now-live-on-okex/
@@ -737,7 +736,15 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						4
+						5
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						22
 					</context>
 				</context-group>
 			</trans-unit>
@@ -753,7 +760,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						19
 					</context>
 				</context-group>
 			</trans-unit>
@@ -767,11 +774,19 @@
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Build instructions on
+					- OR -
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					GitHub
+					Download the APK from GitHub
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					(You can follow our build instructions
+					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					here
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					)
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
 				<target state="translated">
@@ -800,7 +815,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						12
+						20
 					</context>
 				</context-group>
 			</trans-unit>
@@ -816,7 +831,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						16
+						23
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -824,7 +839,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						32
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -832,7 +847,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						92
+						95
 					</context>
 				</context-group>
 			</trans-unit>
@@ -848,7 +863,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						17
+						24
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -856,7 +871,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						33
 					</context>
 				</context-group>
 			</trans-unit>
@@ -883,7 +898,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						11
+						12
 					</context>
 				</context-group>
 			</trans-unit>
@@ -899,7 +914,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						20
+						26
 					</context>
 				</context-group>
 			</trans-unit>
@@ -915,7 +930,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						30
 					</context>
 				</context-group>
 			</trans-unit>
@@ -931,7 +946,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						30
+						37
 					</context>
 				</context-group>
 			</trans-unit>
@@ -947,7 +962,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						31
+						38
 					</context>
 				</context-group>
 			</trans-unit>
@@ -995,7 +1010,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						130
+						133
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1007,19 +1022,703 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="ReportExchangesOXT" datatype="html">
+			<trans-unit id="OXTHeroSubtitle" datatype="html">
 				<source>
-					If you see OXT being traded on an exchange that isn’t listed here, please use the contact form to let us know, so that it can be added to our list.
+					The Orchid Digital Currency
+				</source>
+				<target state="translated">
+					오키드의 디지털 화폐
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						5
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTIntroParagraph" datatype="html">
+				<source>
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					OXT
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					is an Ethereum (ERC-20) compliant
+					digital currency used to
+					exchange value on the Orchid network. Orchid users purchase bandwidth with OXT, and Orchid node providers
+					receive OXT in exchange for their bandwidth. Both users and providers stake OXT.
 				</source>
 				<target state="new">
-					If you see OXT being traded on an exchange that isn’t listed here, please use the contact form to let us know, so that it can be added to our list.
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					OXT
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					는 이더리움 (ERC20) 표준을 따르는 디지털 화폐로, 오키드 네트워크에서 사용 됩니다. 유저들은 OXT를 통해서, VPN 서비스를 구매하게 되며, 오키드 노드 제공자들은 대역폭(bandwidth)를 제공하는 대가로 OXT롤 받게 됩니다. 또한 오키드 상에서는 유저와 노드 제공자 모두 OXT를 스테이킹 하게 됩니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						16
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTWhereToBuy" datatype="html">
+				<source>
+					Where to buy OXT?
+				</source>
+				<target state="new">
+					OXT는 어디서 구매할 수 있나요?
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						29
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTHowToUse" datatype="html">
+				<source>
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					Cost to use Orchid VPN
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Orchid is uniquely designed to offer online privacy at a competitive cost. The design is intended to result in
+					bandwidth being priced dynamically to meet the needs of both users and providers. This is done through a
+					unique
+					decentralized bandwidth marketplace, where numerous providers can compete to offer their services to users.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The price of bandwidth on Orchid is designed to fluctuate with the market, so there is no set "price" of
+					bandwidth on the network. Bandwidth providers are free to set their own rates, and Orchid itself does not
+					mandate pricing. Nonetheless, we expect prices to remain competitive with existing VPNs and privacy solutions.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As of the date of this post, each OXT provides approximately 6 GBs of service on Orchid. A user can get
+					started
+					for as little as 5 OXT. An account with 30 OXT is expected to last for a sufficient period of time that users
+					won't have to go back into their accounts and add funds too regularly. For example, with 30 OXT, we estimate
+					you
+					would get approximately 250 GBs of service, which could last an entire year.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read our blog on bandwidth pricing here
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+				</source>
+				<target state="new">
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					오키드 VPN 사용 비용
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					오키드는 경쟁력 있는 가격으로 온라인 상에서 개인 정보를 보호할 수 있도록 설계되었습니다. 사용자와 대역폭 제공자 양쪽의 니즈를 충족할 수 있도록 대역폭의 가격이 고정되지 않고 동적으로 책정되며, 수많은 공급업체가 경쟁적으로 사용자에게 서비스를 제공하는 오키드만의 탈중앙형 대역폭 시장을 통해 이루어집니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					오키드상 대역폭의 가격은 시장에 따라 유동적으로 변하도록 설계되었기 때문에 네트워크상의 대역폭의 '가격'이 정해져 있지 않습니다. 대역폭 제공업체는 요금을 자유롭게 설정할 수 있으며, 오키드는 특정한 의무 가격 책정을 가지지 않습니다. 하지만 저희는 오키드가 여전히 기존 VPN 및 개인 정보 보호 솔루션에 비해 경쟁력있는 가격을 유지할 것으로 예상하고 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					해당 게시물을 업로드 하는 날짜를 기준으로, 1 OXT로 약 6GB의 오키드 서비스 사용이 가능합니다. 사용자는 최소수량인 5 OXT로 서비스 사용을 시작할 수 있습니다. 약 30 OXT를 보유하고 있으면, 정기적으로 추가 OXT를 전송 하지 않아도 될만큼 충분한 기간 동안 사용할 수 있을 것으로 예상 됩니다. 예를 들어, 30 OXT로 약 250GB의 서비스가 가능하며, 1년 정도는 무리없이 사용될 수 있는 양입니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					블로그에서 대역폭 가격에 관한 내용을 확인해보세요
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						40
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTSupplyParagraph1" datatype="html">
+				<source>
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					Supply
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As noted in the Orchid network whitepaper, the total supply of OXT is fixed at one billion units. There is no
+					inflation. The possibility of contractual penalty mechanisms that “burn” OXT create the potential for some small
+					deflationary pressure.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					There are different definitions used for circulating supply. All information about the supply of OXT and
+					addresses where OXT is located are publicly available on the Ethereum blockchain.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+				</source>
+				<target state="new">
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					발행량
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					오키드 네트워크 백서에 언급 되었듯이, OXT의 총 발행량은 10억개로 고정되어 있으며 추가 발행은 없습니다. 컨트렉트 상 OXT를 '소각' 시키는 패널티 매커니즘이 존재하며, 이로 인해 디플레이션이 발생할 수 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					유통량에 대한 정의는 여러가지로 내려질 수 있습니다. OXT의 공급량과 토큰을 가지고 있는 주소에 대한 정보는 이더리움 블록체인상에서 누구나 확인할 수 있도록 공개되어 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						74
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTSupplyParagraph2" datatype="html">
+				<source>
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Audit of Smart Contract for use with OXT Release Schedule
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					On March 21, 2020,
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Consensys Diligence
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					published a technical audit on Orchid’s
+					batch send smart contract, which
+					may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is
+					public and can be found here:
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					https://diligence.consensys.net/audits/2020/01/orchid-multisend/
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					For purposes of the audit, Orchid posted all the information needed to perform the audit in a technical
+					repository on GitHub that can be found here:
+					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Anyone can re-perform the smart contracts audit using the same information provided to Consensys Diligence.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The information posted to GitHub and provided to Consensys Diligence includes the OXT token contract, found
+					here:
+					<x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					It also includes the OXT release schedule, found here:
+					<x id="START_LINK_4" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					To make this information more accessible for smart contract technical reviews, and for network users and
+					bandwidth providers, below is a graphic representation showing some of the same information that can be found on
+					GitHub.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="translated">
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					OXT 릴리즈 스케쥴에 관한 스마트 컨트렉트 감사
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					"2020년 3월 21일,
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Consensys Diligence
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					는 단일 트랜잭션으로 이더리움이나 erc20 토큰들을 다중 전송할 수 있는 오키드의 일괄 전송 스마트 컨트렉트에 대한 기술 감사보고서를 발행했습니다. 감사 보고서는 아래 링크에서 누구나 확인 가능합니다.
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					https://diligence.consensys.net/audits/2020/01/orchid-multisend/
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					감사를 위해, 오키드는 감사 수행에 필요한 모든 정보를 GitHub에 저장해 놓았으며 아래 링크에서 확인 하실 수 있습니다.
+					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Consensys Diligence에 제공된 동일한 정보를 통해 누구나 스마트 컨트렉트 감사를 수행할 수 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Consensys Diligence에 제공된 정보에는 OXT 토큰의 컨트렉트도 포함되어 있으며, 아래에서 확인하실 수 있습니다.
+					<x id="START_LINK_3" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					OXT 릴리즈 일정 또한 포함되어 있으며, 아래에서 확인하실 수 있습니다
+					<x id="START_LINK_4" ctype="x-a" equiv-text="&lt;a>" />
+					https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					스마트 컨트렉트 기술 검토 및 네트워크 사용자와 대역폭 제공자의 경우, 해당 정보를 보다 쉽게 확인하실 수 있도록, GitHub상의 일부 정보를 하단에 그래픽으로 제공하고 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						88
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTSupplyParagraph3" datatype="html">
+				<source>
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					OXT Release Schedule Pie Chart*
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					OXT Release Schedule*
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+				</source>
+				<target state="translated">
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					OXT 릴리즈 일정 파이 차트*
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					OXT 릴리즈 일정 *
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						133
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTSupplySection2" datatype="html">
+				<source>
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					As noted, more information can be found in the Consensys Diligence Audit report, the OXT token contract, the OXT
+					release schedule and the Orchid network whitepaper.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The OXT release schedule provided to Consensys Diligence and posted to GitHub includes footnotes that provide
+					more
+					details. The footnotes are copied below, with minor formatting changes.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
+					* The release schedule was published on March 21,2020 in connection with the Consensys Dilligence audit and
+					the information is as of that date only.
+					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
+					** This section of the pie chart includes: the OXT listed in the Network Incentives/Other column; the OXT
+					noted in the Network Incentives/Other Footnote; and the OXT noted in the Treasury footnote. Accordingly, it
+					includes more OXT than are listed in the release schedule columns.
+					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Treasury
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					A maximum 1 billion OXT were eligible for creation, all of which has been created. Orchid Labs, Inc. holds
+					407,059,272 OXT in its treasury. Pursuant to Orchid Lab, Inc.'s treasury policy, it is anticipated that as to
+					400,579,272 OXT of the treasury OXT, starting as of December 9, 2019, no more than 10 million OXT per month
+					will be available to be released from the company's treasury. While such treasury OXT will become available
+					for potential release each month, Orchid may instead continue to hold such OXT in its treasury. The other
+					6,480,000 OXT in the company's treasury is not subject to the treasury policy and is available to be released
+					without restriction.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Network Incentives/Other
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					This group encompasses OXT that has been released to third parties (and 7,000,000 OXT of this group was valued
+					at
+					$.30 per OXT), including for the purpose of making OXT available to participants in educational programs on
+					using
+					the Orchid network, which program is run by a third party ("Educational Purposes"). An additional 52,500,000 OXT
+					will be released for Educational Purposes, in three tranches of 17,500,000 OXT every 6 months, beginning on June
+					23, 2020. 11,661,996 OXT will be distributed to node providers for staking purposes on the Orchid network, over
+					periods of up to 24 months from December 16, 2019, with all amounts distributed during the first 12 months
+					locked
+					up in a stake for that period, and subject to a 3-month withdrawal delay.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Seed SAFT
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Purchase price was $.03 per OXT (some in this group were awarded rights to OXT at that value).
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					SAFT 2a
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Purchase price was $.50 per OXT.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					SAFT 2b
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Purchase price was $.70 per OXT.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Orchid Team A
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Purchase price was less than $0.00001 per OXT.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Orchid Team B
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Purchase price was less than $0.00001 per OXT.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Orchid Team C
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					This group was awarded rights to OXT at a value of $.01 per OXT, subject to various timing conditions as well as
+					a
+					release schedule.
+					After December 6, 2020, the release schedule will end for this group’s remaining 7,311,021 OXT; however, certain
+					timing conditions will apply to spread the distribution of the remaining 7,311,021 OXT over a maximum period of
+					three years.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Orchid Team D
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					This group was awarded rights to OXT at a value of $.01 per OXT. After June 6, 2021, it is anticipated that
+					there
+					will be distributions to certain members of this group of 38,541 OXT on the 6th of each month, ending on June 6,
+					2023.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="translated">
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					언급된 것과 같이, Consensys Diligence 감사 보고서, OXT 토큰 컨트렉트, OXT 릴리즈 일정 및 오키드 네트워크 백서에서 더 많은 정보를 확인 하실 수 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					OXT 릴리즈 일정은 Consensys Diligence에게 제공되었으며 GitHub상에 추가 상세 내용과 함께 업로드 되어있습니다. 아래에서 몇몇 작은 변경점과 각주를 확인하실 수 있습니다
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
+					*릴리즈 일정은 2020년 3월 21일에 Consensys Diligence의 감사와 연계하여 발표 되었으며 정보는 해당 날짜를 기준으로만 제공됩니다.
+					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
+					** 파이 차트의 해당 섹션은 네트워크 인센티브/기타 열에 나열된 OXT, 네트워크 인센티브/기타 각주에 명시된 OXT, 비축분 각주에 명시된 OXT를 포함하고 있습니다. 따라서 릴리즈 일정에 나타난 것보다 많은 OXT를 포함하고 있습니다.
+					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					비축분
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					최대 10억개의 OXT가 생성가능하고, 전량이 이미 생성되었습니다. Orchid Labs, Inc.는 비축분으로 407,059,272 OXT를 보유하고 있습니다. 오키드랩의 재무정책에 따라 2019년 12월 9일 현재 400,579,272의 OXT가 비축분으로 저장되어 있으며, 매달 1000만개 이하의 OXT가 릴리즈 될 수 있습니다. 비축분으로 저장된 OXT는 매월 릴리즈 될 수도 있지만 재단에서 릴리즈 하지 않고 보유할 수도 있습니다. 회사의 보유분으로 책정되어 있는 나머지 6,480,000 OXT는 재무 정책의 대상이 아니며 어떠한 제한 없이 릴리즈 될 수 있습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					네트워크 인센티브/기타
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					해당 그룹은 제3자에게 릴리즈된 OXT를 포함하고 있으며(7,000,000 OXT가 해당 그룹에 할당되었으며, 개당 $0.3의 가치로 계산 되었습니다) 여기에는 오키드 네트워크 사용법에 관한 교육 프로그램으로 참여자들에게 제공하는 OXT가 포함됩니다. 추가로 2020년 6월 23일 부터 52,500,000 OXT가 교육 목적으로, 17,500,000개 씩 3번에 걸친 분할 발행으로 릴리즈될 예정입니다.
+					11,661,996 OXT가 2019년 12월 16일부터 최대 24개월에 걸쳐 노드 제공자에게 스테이킹 목적으로 배분될 예정이며, 첫 12개월 동안 배분된 물량은 해당 기간동안 스테이킹되고 락업되어 있으며, 3개월의 출금 기간을 가지게 됩니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					시드 SAFT
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					구매 가격은 OXT당 $0.03 이었으며 이 그룹의 일부는 해당 가격으로 OXT를 구매할 수 있는 권한을 부여받았습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					SAFT 2a
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					구매 가격은 OXT당 $0.5 였습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					SAFT 2b
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					구매 가격은 OXT당 $0.7 였습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					오키드 팀 A
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					구매 가격은 OXT당 $0.00001 미만 이었습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					오키드 팀 B
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					구매 가격은 OXT당 $0.00001 미만 이었습니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					오키드 팀 C
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					이 그룹은 릴리즈 일정을 포함한 여러가지 타이밍 조건에 따라 OXT당 $0.01의 가격으로 구매할 수 있는 권리를 받았습니다. 2020년 12월 6일 까지 해당 그룹의 잔여 OXT인 7,311,022 개가 릴리즈 되지만 나머지 7,311,021 OXT의 배포를 최대 3년에 걸쳐 분산 하기 위해 특정 타이밍 조건이 적용 됩니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					오키드 팀 D
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					이 그룹은 OXT당 $0.01의 가격으로 구매할 수 있는 권리를 받았습니다. 2021년 6월 6일부터 2023년 6월 6일까지 매달 6일 마다 해당 그룹의 특정 맴버들에게 38,541 OXT가 배포 됩니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						155
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTTokenomicsHeadline" datatype="html">
+				<source>
+					Staking
+				</source>
+				<target state="translated">
+					OXT 유저와 노드 제공자를 위한 스테이킹
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						272
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTTokenomicsDescription" datatype="html">
+				<source>
+					During normal market operations on Orchid both users
+					and providers stake OXT. Staking locks up OXT on the network to incentivize good behavior and network growth over
+					the long term.
+				</source>
+				<target state="translated">
+					오키드의 유저와, 노드 제공자는 모두 OXT를 스테이킹 하게 되며, 스테이킹 된 토큰은 락업 됩니다. 네트워크의 장기적인 성장을 위해, 긍정적인 활동을 하는 유저들에게는 보상을 제공합니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						273
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTTokenomicsBody" datatype="html">
+				<source>
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					User Deposits
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					To use the Orchid app, users will need to acquire OXT and move the funds they want to use for service into
+					Ethereum smart contracts using the Orchid account interface. The funds are split into two categories: a
+					membership deposit and a balance. The deposit is a small amount of OXT that protects against clients
+					misbehaving on the network. The majority of the funds go into the balance, which is the collateral that is
+					used to issue nanopayments. When a winning ticket is issued, OXT is transferred from the balance to the
+					provider.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read our blog about nanopayments here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Node Stake Deposits
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Bandwidth providers on Orchid stake OXT currency in time-locked deposits to prove identity and receive traffic
+					in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the
+					OXT. Users select Orchid server nodes with probability proportional to relative stake, thus nodes receive
+					traffic and payment flow from users proportional to the amount of digital currency staked on Orchid.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Providers can withdraw stake from the registry contract, but withdrawals are subject to an intentional delay
+					which currently defaults to three months. Users control this delay variable by ignoring nodes with delay
+					periods that are too short. This combination of linear stake weighted random selection and a withdrawal delay
+					provides stronger economic security by creating a high cost barrier for takeover attacks and additionally
+					helps align provider and user incentives.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					Read more about provider staking here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+				</source>
+				<target state="translated">
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					유저 예치금
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					오키드 앱을 사용하려면, 서비스 이용에 필요한 OXT를 확보한 뒤, 오키드 계정을 통하여 이를 이더리움 스마트컨트렉트로  전송해야 합니다.이동된 금액은, 맴버십 예치금과, 잔액 두 가지로 나뉘게 됩니다. 맴버십 예치금은 네트워크를 악의적인 유저로부터 보호하기 위한 소량의 보증금이며, 대부분의 금액은 잔액으로 편입되는데, 이는 나노페이먼트를 위한 담보물이 됩니다. 서비스를 사용하게 되면, 해당 OXT가 노드 제공자에게 이체 됩니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					나노페이먼트에 관해 자세히 알아보기
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					노드 스테이킹 예치금
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					오키드의 노드 제공자들은 아이덴티티 증명과 트래픽 수신을 위해, 스테이킹 규모에 비례한 OXT를 스테이킹 하고 있습니다. 지분 등록은 OXT가 보관되어 있는 이더리움의 스마트컨트렉트로 진행됩니다. 오키드 서버는 스테이킹 지분에 비례하여 확률적으로 노드를 선택하여 사용자에게 제공하고, 노드는 이에따른 트래픽과 대금을 받게 되기에 오키드상에 스테이킹 하고 있는 OXT의 양에 비례하여 노드가 선택 됩니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					노드 제공자들은 컨트렉트에서 스테이킹 자금을 출금할 수 있고, 현재 출금에는 3달의 기본 지연 기간이 설정되어 있습니다.
+					클라이언트들은, 이 지연기간이 지나치게 짧게 설정된 노드들을 선택하지 않음으로써 이 기간을 조절하게 됩니다. 이러한 스테이킹 지분률에 따른 가중치를 적용과 출금 지연의 조합은 네트워크의 보안을 높여주고 해커의 공격 비용을 높이는 효과가 있으며 유저와 노드 제공자에게 인센티브를 제공합니다.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					노드 제공자 스테이킹에 관해 자세히 알아보기
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						278
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTAuditsHeadline" datatype="html">
+				<source>
+					OXT Audits
+				</source>
+				<target state="translated">
+					OXT 감사 업체 (Audit)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						322
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTAudits__Consensys" datatype="html">
+				<source>
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Consensys Diligence
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read the full public ConsenSys Diligence Audit here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+				</source>
+				<target state="new">
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Consensys Diligence
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read the full public ConsenSys Diligence Audit here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						324
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OXTAudits__Certora" datatype="html">
+				<source>
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Certora
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read the full public Certora Audit here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+				</source>
+				<target state="new">
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>" />
+					Certora
+					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					Read the full public Certora Audit here.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/oxt/oxt.component.html
+					</context>
+					<context context-type="linenumber">
+						331
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ReportExchangesOXT" datatype="html">
+				<source>
+					When we learn of new listings, they will be publicly announced. If you see OXT being
+					traded on an exchange that isn’t listed here, please use the contact form to let us know, so that it can be added to
+					our list.
+				</source>
+				<target state="translated">
+					새로운 거래소에 신규 상장이 진행되면, 거래소에서 공지사항으로 안내됩니다. 하단에 나열되지 않은 거래소에서 OXT가 거래되는 것을 보셨다면, 문의하기를 통해 저희에게 알려주시면 상장 거래소 리스트에 추가하도록 하겠습니다
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/where-oxt/where-oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						3
+						2
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1027,15 +1726,15 @@
 				<source>
 					Exchange Listings
 				</source>
-				<target state="new">
-					Exchange Listings
+				<target state="translated">
+					상장된 거래소 목록
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/where-oxt/where-oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						4
+						7
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1043,15 +1742,15 @@
 				<source>
 					OXT Contract on Ethereum
 				</source>
-				<target state="new">
-					OXT Contract on Ethereum
+				<target state="translated">
+					이더리움상의 OXT 컨트렉트 확인하기
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/where-oxt/where-oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						10
+						24
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1067,7 +1766,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						48
+						55
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1087,7 +1786,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						49
+						56
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1103,7 +1802,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						59
+						66
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1120,7 +1819,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						60
+						67
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1136,7 +1835,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						73
+						80
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1153,7 +1852,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						81
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1169,7 +1868,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						87
+						94
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1186,7 +1885,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						95
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1202,7 +1901,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						105
+						112
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1222,7 +1921,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						120
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1238,7 +1937,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						126
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1246,7 +1945,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						134
+						141
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1254,7 +1953,15 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						149
+						156
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						171
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1275,7 +1982,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						128
+						135
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1296,7 +2003,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						143
+						150
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__CNET" datatype="html">
+				<source>
+					Combining faster, more private hops with system-wide encrypted protection? That could change not
+					just the game, but the entire playing field.”
+				</source>
+				<target state="new">
+					Combining faster, more private hops with system-wide encrypted protection? That could change not
+					just the game, but the entire playing field.”
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						165
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1552,7 +2277,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						120
+						119
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1576,7 +2301,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						120
+						119
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1600,7 +2325,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						124
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1622,7 +2347,7 @@
 			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ko" datatype="html">
 				<source>
-					Korean
+					한국어
 				</source>
 				<target state="translated">
 					한국어
@@ -1654,7 +2379,7 @@
 			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ru" datatype="html">
 				<source>
-					Russian
+					русский
 				</source>
 				<target state="translated">
 					русский
@@ -1670,7 +2395,7 @@
 			</trans-unit>
 			<trans-unit id="LanguageDropdown__Ja" datatype="html">
 				<source>
-					Japanese
+					日本
 				</source>
 				<target state="translated">
 					日本語
@@ -1686,7 +2411,7 @@
 			</trans-unit>
 			<trans-unit id="LanguageDropdown__Zh" datatype="html">
 				<source>
-					Mandarin
+					中文
 				</source>
 				<target state="translated">
 					汉语
@@ -1776,7 +2501,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						118
+						117
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1792,7 +2517,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						118
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1808,7 +2533,23 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						121
+						125
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Partners" datatype="html">
+				<source>
+					Partners
+				</source>
+				<target state="new">
+					Partners
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						126
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1824,7 +2565,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						127
+						132
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2354,7 +3095,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						368
+						348
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2370,7 +3111,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						369
+						349
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2394,7 +3135,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						372
+						352
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2418,7 +3159,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						377
+						357
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2434,7 +3175,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						384
+						364
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2450,7 +3191,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						385
+						365
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2554,7 +3295,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						70
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2562,7 +3303,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						87
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2570,7 +3311,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						100
+						103
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2728,7 +3469,13 @@
 			</trans-unit>
 			<trans-unit id="JoinStep2__p1" datatype="html">
 				<source>
-					We recommend adding at least these amounts to your Ethereum wallet:
+					We recommend adding
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
+					at least
+					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					these amounts to your Ethereum wallet:
 				</source>
 				<target state="translated">
 					이더리움 지갑에 적어도 다음 금액 이상을 추가하실 것을 권장합니다:
@@ -2744,7 +3491,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep2__p2" datatype="html">
 				<source>
-					$4 USD of OXT
+					38 OXT*
 				</source>
 				<target state="translated">
 					$4 USD 상당의 OXT
@@ -2760,7 +3507,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep2__p3" datatype="html">
 				<source>
-					Estimated to provide ~60GBs of VPN service.
+					Estimated to provide ~38GBs of VPN service at current prices.
 				</source>
 				<target state="translated">
 					약 60GB의 VPN 서비스 제공 가능 예상.
@@ -2802,7 +3549,9 @@
 				<source>
 					Privacy note: We recommend buying OXT using a large exchange for transaction privacy.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Learn more
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 				</source>
 				<target state="translated">
 					개인 정보 보호 참고 사항: 거래 시 개인 정보 보호를 위해 규모가 큰 거래소에서 OXT를 구매하실 것을 권장합니다.
@@ -2814,23 +3563,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						58
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep2__p6" datatype="html">
-				<source>
-					Buy OXT and ETH right now on
-				</source>
-				<target state="new">
-					Buy OXT and ETH right now on
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
-						61
+						63
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2846,7 +3579,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						68
+						71
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2862,7 +3595,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						71
+						74
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2886,7 +3619,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						73
+						76
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2902,7 +3635,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						75
+						78
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2928,7 +3661,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						76
+						79
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2944,7 +3677,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						79
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2960,7 +3693,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						85
+						88
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2976,7 +3709,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						91
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3007,7 +3740,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						93
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3023,7 +3756,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						95
+						98
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3039,7 +3772,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						101
+						104
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3055,7 +3788,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						104
+						107
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3071,7 +3804,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						106
+						109
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3092,7 +3825,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						107
+						110
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3108,7 +3841,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						111
+						114
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3124,7 +3857,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						122
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3140,7 +3873,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						129
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3156,7 +3889,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						127
+						130
 					</context>
 				</context-group>
 			</trans-unit>

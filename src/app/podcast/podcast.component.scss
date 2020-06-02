@@ -1,0 +1,253 @@
+@import "orc_config";
+$breakpoint: 1100px;
+$breakpoint2: 1450px;
+
+.podcast-hero {
+	background-image: url("/assets/img/podcast/hero-patterns.svg");
+	background-size: cover;
+	background-position: center;
+	color: white;
+
+	& > section {
+		position: relative;
+
+		@media (min-width: $breakpoint) {
+			padding-top: 8rem;
+			padding-bottom: 8rem;
+		}
+
+		@media (max-width: $breakpoint) {
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
+
+	.btn__hero {
+		background-color: $orc-beige-light;
+		color: $orc-purple;
+	}
+}
+
+.podcast-hero__flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (min-width: $breakpoint) {
+	.podcast-hero__flex {
+		flex-direction: row;
+		justify-content: center;
+
+		& > div {
+			width: 33.33333%;
+		}
+	}
+}
+
+.podcast-hero__text {
+	max-width: 40em;
+}
+
+.podcast-hero__title {
+	text-transform: uppercase;
+	color: white;
+	font-family: "Geometos Rounded";
+
+	&.second-title {
+		letter-spacing: 4px;
+	}
+}
+
+.podcast-hero__paragraph {
+	display: block;
+	margin: auto;
+	text-align: center;
+	max-width: 750px;
+	font-size: 1.25em;
+	margin-top: 1em;
+}
+
+h1.podcast-hero__title {
+	font-size: 44px;
+}
+
+h2.podcast-hero__title {
+	font-size: 34px;
+}
+
+.podcast-hero__subtitle {
+	font-size: 18px;
+}
+
+@media (min-width: $breakpoint) {
+	h1.podcast-hero__title {
+		font-size: 65px;
+	}
+
+	h2.podcast-hero__title {
+		font-size: 50px;
+	}
+
+	.podcast-hero__subtitle {
+		font-size: 21px;
+	}
+}
+
+@media (min-width: $breakpoint2) {
+	h1.podcast-hero__title {
+		font-size: 92px;
+	}
+
+	h2.podcast-hero__title {
+		font-size: 69px;
+	}
+
+	.podcast-hero__subtitle {
+		font-size: 21px;
+	}
+}
+
+.podcast-hero__image {
+	width: 300px;
+	height: 300px;
+	max-width: 70vw;
+	max-height: 70vw;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	background-image: url("/assets/img/podcast/hero-bunny.svg");
+}
+
+.podcast-hero__subscribe {
+	align-self: flex-start;
+
+	@media (max-width: $breakpoint) {
+		text-align: center;
+		align-self: unset;
+		margin-bottom: 1rem;
+	}
+}
+
+.cards-wrapper {
+	margin: 2rem 0;
+}
+
+.overflow-wrapper .card {
+	margin: 4rem 0;
+
+	@media (min-width: $breakpoint) {
+		.card-grid {
+			display: grid;
+			grid: auto-flow dense / 250px 1fr;
+		}
+	}
+
+	&.card--large {
+		@media (min-width: $breakpoint) {
+			.card-grid {
+				display: grid;
+				grid: auto-flow dense / 500px 1fr;
+			}
+		}
+	}
+
+	.card-image-wrap {
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		@media (max-width: $breakpoint) {
+			max-width: 75%;
+			margin: auto;
+		}
+
+		& > div {
+			padding: 50%;
+			border-radius: 1rem;
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: $orc-beige-light;
+		}
+	}
+
+	.card-body {
+		box-sizing: border-box;
+
+		padding: 1rem 0 0 0;
+
+		@media (min-width: $breakpoint) {
+			padding: 0 2rem;
+		}
+
+		& > a,
+		& > div {
+			text-decoration: none;
+			font-weight: 700;
+		}
+
+		& > h3 {
+			font-size: 2em;
+			color: $orc-rock-gray;
+			margin: 1rem 0;
+		}
+	}
+
+	.card-footer {
+		margin-top: 1rem;
+	}
+}
+
+.podcast__image-separator {
+	max-width: 90%;
+	margin: 3rem auto;
+	display: block;
+}
+
+.podcast-host__wrapper {
+	width: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	@media (min-width: $breakpoint) {
+		flex-direction: row;
+		justify-content: space-between;
+		background-color: $orc-purple;
+		min-height: 15rem;
+		border-radius: 7.5rem;
+		color: white;
+	}
+
+	& > img {
+		width: 90%;
+		margin: auto;
+		max-width: 288px;
+
+		@media (min-width: $breakpoint) {
+			height: 17rem;
+			width: auto;
+			max-width: none;
+			margin: -1rem 0 -1rem -1rem;
+		}
+
+		border-radius: 100%;
+		box-shadow: 0px 4px 10px rgba(#000, 0.3);
+	}
+
+	& > div {
+		text-align: center;
+
+		@media (min-width: $breakpoint) {
+			text-align: left;
+			padding: 0 2rem;
+
+			h2 {
+				color: white;
+			}
+		}
+	}
+}
