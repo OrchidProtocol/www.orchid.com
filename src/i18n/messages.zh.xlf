@@ -1797,7 +1797,7 @@
 						app/where-oxt/where-oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						27
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3416,12 +3416,8 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					,
+					, and
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					BRD Wallet
-					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and
-					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					are also compatible with Orchid.
@@ -3431,12 +3427,8 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Trust Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					、
-					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					BRD Wallet
-					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					和
-					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					也均与 Orchid 兼容。

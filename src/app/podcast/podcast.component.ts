@@ -13,6 +13,6 @@ export class PodcastComponent implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('Follow the White Rabbit | A Privacy & Technology Podcast');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/social.png');
-        this.meta.setGlobalDescription('FPlease listen to our podcast with top technology industry experts discussing surveillance and privacy, and its implications for human rights and democracy.');
+        this.meta.setGlobalDescription('Please listen to our podcast with top technology industry experts discussing surveillance and privacy, and its implications for human rights and democracy.');
     }
 }

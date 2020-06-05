@@ -24,6 +24,7 @@ import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { PodcastEp1Component } from './podcast-ep1/podcast.component';
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
@@ -59,6 +60,7 @@ import { MetaService } from './MetaService';
     OxtComponent,
     PartnersComponent,
     PodcastComponent,
+    PodcastEp1Component,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,

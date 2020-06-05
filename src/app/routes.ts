@@ -22,6 +22,7 @@ import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { PodcastEp1Component } from './podcast-ep1/podcast.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 
@@ -63,6 +64,8 @@ export const routes: Routes = [
 			{ path: "partners.html", redirectTo: "partners" },
 			//{ path: "podcast", component: PodcastComponent },
 			//{ path: "podcast.html", redirectTo: "podcast" },
+			//{ path: "podcast/episode-1-interview-with-rich-starpoli", component: PodcastEp1Component },
+			//{ path: "podcast/episode-1-interview-with-rich-starpoli.html", redirectTo: "podcast/episode-1-interview-with-rich-starpoli" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
