@@ -12,8 +12,8 @@ $breakpoint2: 1450px;
 		position: relative;
 
 		@media (min-width: $breakpoint) {
-			padding-top: 8rem;
-			padding-bottom: 8rem;
+			padding-top: 6rem;
+			padding-bottom: 6rem;
 		}
 
 		@media (max-width: $breakpoint) {
