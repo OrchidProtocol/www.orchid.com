@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { NewsletterSignupFeaturesComponent } from './newsletter-signup-features/newsletter-signup-features.component';
+import { PodcastHeroComponent } from './podcast-hero/podcast-hero.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
 import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
@@ -59,6 +60,7 @@ import { MetaService } from './MetaService';
     JoinComponent,
     OxtComponent,
     PartnersComponent,
+    PodcastHeroComponent,
     PodcastComponent,
     PodcastEp1Component,
     NewsletterSignupPage,
