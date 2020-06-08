@@ -23,6 +23,8 @@ import { AboutCompanyComponent } from './about-company/about-company.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
+import { PodcastHeroComponent } from './podcast-hero/podcast-hero.component';
+import { PodcastPlatformsComponent } from './podcast-platforms/podcast-platforms.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { PodcastEp1Component } from './podcast-ep1/podcast.component';
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
@@ -59,6 +61,8 @@ import { MetaService } from './MetaService';
     JoinComponent,
     OxtComponent,
     PartnersComponent,
+    PodcastHeroComponent,
+    PodcastPlatformsComponent,
     PodcastComponent,
     PodcastEp1Component,
     NewsletterSignupPage,
