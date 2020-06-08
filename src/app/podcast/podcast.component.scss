@@ -33,7 +33,7 @@ $breakpoint2: 1450px;
 
 .podcast-hero__flex {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column-reverse;
 	align-items: center;
 }
 
@@ -50,6 +50,11 @@ $breakpoint2: 1450px;
 				max-width: 40em;
 			}
 		}
+	}
+}
+@media (max-width: $breakpoint) {
+	.podcast-hero__subscribe > h3 {
+		display: none;
 	}
 }
 
