@@ -869,3 +869,9 @@ h4 {
     list-style-image: url("/assets/img/shared/check.svg");
   }
 }
+
+.no-banner {
+  .notification-bar-container {
+    display: none;
+  }
+}

@@ -19,10 +19,11 @@ $breakpoint2: 1450px;
 		@media (max-width: $breakpoint) {
 			padding-left: 1rem;
 			padding-right: 1rem;
+			padding-top: 0;
 		}
 	}
 
-	.btn__hero {
+	.btn__hero, .btn__hero:hover {
 		background-color: $orc-beige-light;
 		color: $orc-purple;
 	}
@@ -40,13 +41,22 @@ $breakpoint2: 1450px;
 		justify-content: center;
 
 		& > div {
-			width: 33.33333%;
+			width: 30%;
+
+			&.podcast-hero__text {
+				width: 40%;
+				max-width: 40em;
+			}
 		}
 	}
 }
 
 .podcast-hero__text {
-	max-width: 40em;
+	max-width: 21em;
+	& > img {
+		display: inline-block;
+		max-width: 100%;
+	}
 }
 
 .podcast-hero__title {
@@ -111,6 +121,11 @@ h2.podcast-hero__title {
 .podcast-hero__image {
 	width: 300px;
 	height: 300px;
+	
+	@media (max-width: $breakpoint) {
+		width: 200px;
+		height: 200px;
+	}
 	max-width: 70vw;
 	max-height: 70vw;
 	background-repeat: no-repeat;
@@ -250,4 +265,50 @@ h2.podcast-hero__title {
 			}
 		}
 	}
+}
+
+.podcast-button {
+	background: black;
+	border: 2px solid #8C8C8C;
+	max-width: 10rem;
+	width: 100%;
+	padding: 0.5rem 0.5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 0.5rem;
+	& > img {
+		width: 1.75rem;
+	}
+	text-decoration: none;
+}
+.podcast-button__text {
+	text-align: left;
+	margin-left: 0.5rem;
+	&:before {
+		font-size: 0.5rem;
+		content: 'Listen on';
+		color: #8C8C8C;
+		display: inline-block;
+		width: 100%;
+		font-weight: normal;
+	}
+	line-height: 1.25;
+	font-size: 0.75rem;
+	font-weight: bold;
+	color: white;
+}
+
+.podcast-subscribe__container {
+	& > section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.podcast-subscribe__heading {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 2rem;
 }
