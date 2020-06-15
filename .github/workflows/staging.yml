@@ -12,6 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - name: Configure AWS Credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -20,5 +22,4 @@ jobs:
         aws-region: us-west-2
     - name: Deploy to www.orchid.dev
       run: |
-        git fetch --prune --unshallow
         ./deploy.sh -s staging
