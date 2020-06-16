@@ -58,6 +58,7 @@ import { PodcastEp30Component } from './podcast-ep30/podcast.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { Priv8 } from './priv8/priv8.component';
 
 export const routes: Routes = [
 	{
@@ -163,6 +164,8 @@ export const routes: Routes = [
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
 			{ path: "quiz.html", redirectTo: 'quiz' },
+			{ path: "priv8", component: Priv8 },
+			{ path: "priv8.html", redirectTo: 'priv8' },
 			{ path: "**", component: NotFoundComponent }
 		]
 	},

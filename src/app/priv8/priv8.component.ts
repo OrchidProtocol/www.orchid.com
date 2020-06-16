@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { MetaService } from '../MetaService';
 
 @Component({
-    selector: 'app-podcast',
-    templateUrl: './podcast.component.html',
-    styleUrls: ['./podcast.component.scss']
+    selector: 'app-priv8',
+    templateUrl: './priv8.component.html',
+    styleUrls: ['./priv8.component.scss']
 })
-export class PodcastComponent implements OnInit {
+export class Priv8 implements OnInit {
 
     constructor(private meta: MetaService) { }
 
