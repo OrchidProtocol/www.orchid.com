@@ -1,1 +1,37 @@
 @import "orc_config";
+
+.hero__wrapper {
+	background: linear-gradient(to left, $orc-purple, $orc-deep-purple);
+	color: white;
+}
+
+.hero__container {
+	margin: auto;
+	width: 100%;
+	max-width: 650px;
+	text-align: center;
+}
+
+.hero__logo-wrapper {
+	display: block;
+	padding: 24.5% 50%;
+	background-image: url(/assets/img/priv8/logo-patterns.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.hero__logo-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& > img {
+		display: block;
+		width: 42%;
+	}
+}
