@@ -69,8 +69,8 @@ export const routes: Routes = [
 			{ path: "podcast.html", redirectTo: "podcast" },
 			{ path: "podcast/episode-1-interview-with-rich-starpoli", component: PodcastEp1Component },
 			{ path: "podcast/episode-1-interview-with-rich-starpoli.html", redirectTo: "podcast/episode-1-interview-with-rich-starpoli" },
-			{ path: "podcast/episode-2-the-new-future-of-digital-identity-and-crypto", component: PodcastEp2Component },
-			{ path: "podcast/episode-2-the-new-future-of-digital-identity-and-crypto.html", redirectTo: "podcast/episode-2-the-new-future-of-digital-identity-and-crypto" },
+			{ path: "podcast/episode-2-vinny-lingham", component: PodcastEp2Component },
+			{ path: "podcast/episode-2-vinny-lingham.html", redirectTo: "podcast/episode-2-vinny-lingham" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
