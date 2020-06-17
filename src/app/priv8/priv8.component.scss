@@ -6,6 +6,7 @@
 }
 
 .hero__container {
+	padding: 5rem 0;
 	margin: auto;
 	width: 100%;
 	max-width: 650px;
@@ -32,6 +33,21 @@
 	align-items: center;
 	& > img {
 		display: block;
-		width: 42%;
+		width: 37%;
 	}
+}
+
+.hero__orchid-logo {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 142px;
+}
+
+.hero__text-presents {
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	margin-top: 15px;
+	display: inline-block;
 }
