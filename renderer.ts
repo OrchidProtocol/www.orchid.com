@@ -6,7 +6,7 @@ import {renderModuleFactory} from "@angular/platform-server";
 import {Routes} from "@angular/router";
 import {provideModuleMap} from "@nguniversal/module-map-ngfactory-loader";
 import {spawnSync} from "child_process";
-import {readFileSync, writeFileSync, mkdirSync} from "fs";
+import {readFileSync, writeFileSync, mkdirSync, existsSync} from "fs";
 import {copySync, emptyDirSync} from "fs-extra";
 import {basename, join} from "path";
 
@@ -71,7 +71,8 @@ copySync(IN_FOLDER, OUT_FOLDER, {
 })
 
 //create the directory for podcast episodes, so that the build doesn't fail silently
-mkdirSync(join(OUT_FOLDER, 'podcast'))
+if (!existsSync(join(OUT_FOLDER, 'podcast')))
+  mkdirSync(join(OUT_FOLDER, 'podcast'))
 
 genRoutes(routes).forEach(url => {
   const outFile = join(
