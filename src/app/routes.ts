@@ -25,6 +25,7 @@ import { PartnersComponent } from './partners/partners.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { PodcastEp1Component } from './podcast-ep1/podcast.component';
 import { PodcastEp2Component } from './podcast-ep2/podcast.component';
+import { PodcastEp3Component } from './podcast-ep3/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -71,6 +72,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-1-interview-with-rich-starpoli.html", redirectTo: "podcast/episode-1-interview-with-rich-starpoli" },
 			{ path: "podcast/episode-2-vinny-lingham", component: PodcastEp2Component },
 			{ path: "podcast/episode-2-vinny-lingham.html", redirectTo: "podcast/episode-2-vinny-lingham" },
+			{ path: "podcast/episode-3-jyri-engestrom", component: PodcastEp3Component },
+			{ path: "podcast/episode-3-jyri-engestrom.html", redirectTo: "podcast/episode-3-jyri-engestrom" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
