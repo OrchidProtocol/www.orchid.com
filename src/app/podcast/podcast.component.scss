@@ -90,22 +90,26 @@ $breakpoint2: 1450px;
 	@media (min-width: $breakpoint) {
 		flex-direction: row;
 		justify-content: space-between;
-		background-color: $orc-purple;
+		border: 3px solid $orc-bright-purple;
 		min-height: 15rem;
-		border-radius: 7.5rem;
-		color: white;
+		margin-left: 3rem;
+		margin-right: 3rem;
+		border-radius: 1rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		width: auto;
 	}
 
 	& > img {
 		width: 90%;
-		margin: auto;
+		margin: auto auto 1rem;
 		max-width: 288px;
 
 		@media (min-width: $breakpoint) {
-			height: 17rem;
+			height: 12rem;
 			width: auto;
 			max-width: none;
-			margin: -1rem 0 -1rem -1rem;
+			margin: -1rem 0 -1rem -6rem;
 		}
 
 		border-radius: 100%;
@@ -118,10 +122,9 @@ $breakpoint2: 1450px;
 		@media (min-width: $breakpoint) {
 			text-align: left;
 			padding: 0 2rem;
-
-			h2 {
-				color: white;
-			}
+		}
+		h2 {
+			margin-bottom: 1rem;
 		}
 	}
 }
