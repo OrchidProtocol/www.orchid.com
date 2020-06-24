@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 import { downloadWhitepaper, downloadOrchid } from '../whitepaper';
 import { MetaService } from '../MetaService';
 import { OrchidDappService } from '../orchid-dapp.service';
+import { HttpClient } from "@angular/common/http";
 
 @Component({
   selector: 'app-home',
@@ -22,10 +23,25 @@ export class HomeComponent implements OnInit {
     private events: EventsService,
     private meta: MetaService,
     private orchidDappService: OrchidDappService,
-    @Inject(LOCALE_ID) protected localeId: string
+    @Inject(LOCALE_ID) protected localeId: string,
+    private http: HttpClient,
   ) { }
 
   ngOnInit() {
+
+    /*if (typeof fetch !== 'undefined') {
+      fetch("https://blog.orchid.com/rss.xml", { mode: 'no-cors' })
+        .then(response => response.text())
+        .then(response => {
+          console.log(response);
+        })
+        .catch(console.error)
+    } else {
+      this.http.get("https://blog.orchid.com/rss.xml")
+        .subscribe(response => {
+          console.log(response)
+        })
+    }*/
 
     this.meta.setGlobalTitle('Orchid | Open Source VPN & Privacy Software');
     this.meta.setGlobalDescription('Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.');
@@ -34,13 +50,13 @@ export class HomeComponent implements OnInit {
     switch (this.localeId) {
       case 'ko':
         // define locale specific meta tags here
-      break;
+        break;
       case 'ja':
         // define locale specific meta tags here
-      break;
+        break;
       case 'zh':
         // define locale specific meta tags here
-      break;
+        break;
     }
 
     this.events$ = this.events.getEvents();
@@ -49,7 +65,7 @@ export class HomeComponent implements OnInit {
 
   downloadWhitepaper() { downloadWhitepaper(); }
   downloadOrchid() { downloadOrchid(); }
-    downloadNewsletter() { document.getElementById("newsletter-signup").scrollIntoView(); }
+  downloadNewsletter() { document.getElementById("newsletter-signup").scrollIntoView(); }
 
   initOrchidDapp() {
     this.orchidDappService.hasWeb3Browser().subscribe(
