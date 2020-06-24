@@ -875,3 +875,14 @@ h4 {
     display: none;
   }
 }
+
+.maker-badge__content {
+  font-size: 0.7rem;
+}
+
+.maker-badge {
+  bottom: -136px !important;
+  &.isOpen {
+    bottom: 0px !important;
+  }
+}
