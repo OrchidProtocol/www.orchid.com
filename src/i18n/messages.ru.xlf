@@ -2674,7 +2674,7 @@
 			</trans-unit>
 			<trans-unit id="ContactOffice__Title" datatype="html">
 				<source>
-					Office Address
+					Mailing Address
 				</source>
 				<target state="translated">
 					Адрес офиса

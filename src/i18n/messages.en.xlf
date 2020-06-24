@@ -2730,10 +2730,10 @@
 			</trans-unit>
 			<trans-unit id="ContactOffice__Title" datatype="html">
 				<source>
-					Office Address
+					Mailing Address
 				</source>
 				<target state="translated">
-					Office Address
+					Mailing Address
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
