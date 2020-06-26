@@ -12,7 +12,7 @@ export class PodcastEp2Component implements OnInit {
 
     ngOnInit() {
         this.meta.setGlobalTitle('Episode 2: The New Future of Digital Identity and Crypto | Follow the White Rabbit');
-        this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_VLingham_Website.jpg');
+        this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_VLingham.png');
         this.meta.setGlobalDescription('In our second episode, we go down the rabbit hole with Vinny Lingham, South African entrepreneur and Co-founder & CEO of Civic Technologies, a company at the forefront of the digital identity revolution.');
     }
 }
