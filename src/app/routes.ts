@@ -74,6 +74,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-2-vinny-lingham.html", redirectTo: "podcast/episode-2-vinny-lingham" },
 			{ path: "podcast/episode-3-jyri-engestrom", component: PodcastEp3Component },
 			{ path: "podcast/episode-3-jyri-engestrom.html", redirectTo: "podcast/episode-3-jyri-engestrom" },
+			{ path: "podcast/episode-4-roger-ver", component: PodcastEp3Component },
+			{ path: "podcast/episode-4-roger-ver.html", redirectTo: "podcast/episode-4-roger-ver" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
