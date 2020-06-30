@@ -2277,7 +2277,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2301,7 +2301,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2325,7 +2325,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						124
+						76
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2441,22 +2441,6 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="Navigation-Orchid" datatype="html">
-				<source>
-					Orchid
-				</source>
-				<target state="translated">
-					Orchid
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/page-layout/page-layout.component.html
-					</context>
-					<context context-type="linenumber">
-						110
-					</context>
-				</context-group>
-			</trans-unit>
 			<trans-unit id="Navigation-HowitWorks" datatype="html">
 				<source>
 					How it Works
@@ -2469,7 +2453,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						111
+						74
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2485,7 +2469,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						112
+						75
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2501,7 +2485,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						117
+						88
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2517,7 +2501,23 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						118
+						81
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="Navigation-Podcast" datatype="html">
+				<source>
+					Podcast
+				</source>
+				<target state="new">
+					Podcast
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/page-layout/page-layout.component.html
+					</context>
+					<context context-type="linenumber">
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2533,7 +2533,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						125
+						90
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2549,7 +2549,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						89
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2565,7 +2565,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						132
+						96
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3021,7 +3021,8 @@
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have
-					grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
+					grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer
+					privacy network in December, 2019.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="translated">
@@ -3055,24 +3056,8 @@
 				<source>
 					The Orchid Team
 				</source>
-				<target state="new">
-					The Orchid Team
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/about-company/about-company.component.html
-					</context>
-					<context context-type="linenumber">
-						57
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="OrchidTeamDescription" datatype="html">
-				<source>
-					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
-				</source>
-				<target state="new">
-					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
+				<target state="translated">
+					오키드 구성원
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3080,6 +3065,809 @@
 					</context>
 					<context context-type="linenumber">
 						58
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeamDescription" datatype="html">
+				<source>
+					Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU
+					Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app
+					package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security
+					team).
+				</source>
+				<target state="translated">
+					오키드(Orchid)의 창립자들은 오픈소스 소프트웨어 커뮤니티(BASH Shell, GNU Finger), 기술 관리 (RPX IPO), 블록체인 투자 (Bitstamp, Pantera Capital), 탈옥 어플리케이션 패키지 관리 (Cydia)와 보안 (Wells Fargo의 첫번째 온라인 뱅킹 관리인력, 이더리움 코어 보안팀) 분야에서 많은 전문지식과 경험을 가지고 있습니다.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						59
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_DrStevenWaterhouse" datatype="html">
+				<source>
+					Dr. Steven Waterhouse
+				</source>
+				<target state="translated">
+					스티븐 워터하우스 (Dr. Steven Waterhouse)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						70
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_CoFounderCEO" datatype="html">
+				<source>
+					Co-Founder / CEO
+				</source>
+				<target state="translated">
+					공동창립자 / CEO
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						73
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_JayFreeman" datatype="html">
+				<source>
+					Jay Freeman
+				</source>
+				<target state="translated">
+					제이 프리먼(Jay Freeman)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						80
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_CoFounderCTO" datatype="html">
+				<source>
+					Co-Founder / CTO
+				</source>
+				<target state="translated">
+					공동창립자 / CTO
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						83
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_BrianJFox" datatype="html">
+				<source>
+					Brian J. Fox
+				</source>
+				<target state="translated">
+					브라이언 폭스 (Brian J. Fox)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						90
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_CoFounder" datatype="html">
+				<source>
+					Co-Founder
+				</source>
+				<target state="translated">
+					공동창립자
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						93
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_GustavSimonsson" datatype="html">
+				<source>
+					Gustav Simonsson
+				</source>
+				<target state="translated">
+					구스타프 시몬슨(Gustav Simonsson)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						100
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_CoFounderAdvisor" datatype="html">
+				<source>
+					Co-Founder / Advisor
+				</source>
+				<target state="translated">
+					공동창립자 / 어드바이저
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						103
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_AlexKehaya" datatype="html">
+				<source>
+					Alex Kehaya
+				</source>
+				<target state="translated">
+					알렉스 키하야 (Alex Kehaya)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						115
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_BusinessDevelopment" datatype="html">
+				<source>
+					Business Development
+				</source>
+				<target state="translated">
+					사업개발 (BD)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						118
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_DerekSilva" datatype="html">
+				<source>
+					Derek Silva
+				</source>
+				<target state="translated">
+					데릭 실바 (Derek Silva)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						125
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Community" datatype="html">
+				<source>
+					Community
+				</source>
+				<target state="translated">
+					커뮤니티
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						128
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						138
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						148
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_PaulaKanin" datatype="html">
+				<source>
+					Paula Kanin
+				</source>
+				<target state="translated">
+					폴라 카닌 (Paula Kanin)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						135
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_ShawneeNova" datatype="html">
+				<source>
+					Shawnee Nova
+				</source>
+				<target state="translated">
+					쇼니 노바 (Shawnee Nova)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						145
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_ChadHarper" datatype="html">
+				<source>
+					Chad Harper
+				</source>
+				<target state="translated">
+					채드 하퍼 (Chad Harper)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						155
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Design" datatype="html">
+				<source>
+					Design
+				</source>
+				<target state="translated">
+					디자이너
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						158
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						168
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						178
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_SaskiaEssex" datatype="html">
+				<source>
+					Saskia Essex
+				</source>
+				<target state="translated">
+					사키아 에섹 (Ssakia Essex)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						165
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_ThientamBach" datatype="html">
+				<source>
+					Thientam Bach
+				</source>
+				<target state="translated">
+					티엔탐 바흐 (Thientam Bach)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						175
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_AlexandraMcColgan" datatype="html">
+				<source>
+					Alexandra McColgan
+				</source>
+				<target state="translated">
+					알렉샅드라 맥콜건 (Alexandra McColgan)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						185
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_EA" datatype="html">
+				<source>
+					EA
+				</source>
+				<target state="translated">
+					EA
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						188
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						198
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_MichelleUnderwood" datatype="html">
+				<source>
+					Michelle Underwood
+				</source>
+				<target state="translated">
+					미셸 언더우드 (Michelle Underwood)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						195
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_DanMontgomery" datatype="html">
+				<source>
+					Dan Montgomery
+				</source>
+				<target state="translated">
+					단 몽고메리 (Dan Montgomery)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						205
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Engineering" datatype="html">
+				<source>
+					Engineering
+				</source>
+				<target state="translated">
+					엔지니어
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						208
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						218
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						228
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						238
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						248
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						258
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						268
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_GregHazel" datatype="html">
+				<source>
+					Greg Hazel
+				</source>
+				<target state="translated">
+					그렉 하젤 (Greg Hazel)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						215
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_JakeCannell" datatype="html">
+				<source>
+					Jake Cannell
+				</source>
+				<target state="translated">
+					제이크 칸넬 (Jake Cannell)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						225
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_JenniferRodriguez-Miller" datatype="html">
+				<source>
+					Jennifer Rodriguez-Miller
+				</source>
+				<target state="translated">
+					제니퍼 로드리게스 밀러 (Jennifer Rodriguez-Miller)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						235
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_JustinSheek" datatype="html">
+				<source>
+					Justin Sheek
+				</source>
+				<target state="translated">
+					저스틴 시크 (Justin Sheek)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						245
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_NathanHandler" datatype="html">
+				<source>
+					Nathan Handler
+				</source>
+				<target state="translated">
+					나탄 핸들러 (Nathan Handler)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						255
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_PatrickNiemeyer" datatype="html">
+				<source>
+					Patrick Niemeyer
+				</source>
+				<target state="translated">
+					패트릭 니에미어 (Patrick Niemeyer)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						265
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_SelinaCheng" datatype="html">
+				<source>
+					Selina Cheng
+				</source>
+				<target state="translated">
+					셀리나 쳉 (Selina Cheng)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						275
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Finance" datatype="html">
+				<source>
+					Finance
+				</source>
+				<target state="translated">
+					재무팀
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						278
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						288
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						298
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_JoyHu" datatype="html">
+				<source>
+					Joy Hu
+				</source>
+				<target state="translated">
+					조이 휴 (Joy Hu)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						285
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_PatrickJDietzen" datatype="html">
+				<source>
+					Patrick J. Dietzen
+				</source>
+				<target state="translated">
+					패트릭 다이엇젠 (Patrick J. Dietzen)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						295
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_AmandaGutterman" datatype="html">
+				<source>
+					Amanda Gutterman
+				</source>
+				<target state="translated">
+					아만다 구터만 (Amanda Gutterman)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						305
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Marketing" datatype="html">
+				<source>
+					Marketing
+				</source>
+				<target state="translated">
+					마케팅
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						308
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_MonicaPuchner" datatype="html">
+				<source>
+					Monica Puchner
+				</source>
+				<target state="translated">
+					모니타 퍼츠너 (Monica Puchner)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						315
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Operations" datatype="html">
+				<source>
+					Operations
+				</source>
+				<target state="translated">
+					운영팀
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						318
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_TravisCannell" datatype="html">
+				<source>
+					Travis Cannell
+				</source>
+				<target state="translated">
+					트래비스 칸넬 (Travis Cannell)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						325
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Product" datatype="html">
+				<source>
+					Product
+				</source>
+				<target state="translated">
+					프로덕트팀
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						328
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_MattRoszak" datatype="html">
+				<source>
+					Matt Roszak
+				</source>
+				<target state="translated">
+					매트 로작 (Matt Roszak)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						335
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_Advisor" datatype="html">
+				<source>
+					Advisor
+				</source>
+				<target state="translated">
+					고문
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						338
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						348
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="OrchidTeam_RichStaropoli" datatype="html">
+				<source>
+					Rich Staropoli
+				</source>
+				<target state="translated">
+					리치 스타로폴리 (Rich Staropoli)
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/about-company/about-company.component.html
+					</context>
+					<context context-type="linenumber">
+						345
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3095,7 +3883,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						348
+						360
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3111,7 +3899,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						349
+						361
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3135,7 +3923,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						352
+						364
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3159,13 +3947,14 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						357
+						369
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__SECFilingButton" datatype="html">
 				<source>
-					SEC Filing
+					SEC
+					Filing
 				</source>
 				<target state="translated">
 					SEC 제출
@@ -3175,13 +3964,14 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						364
+						376
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyCorporate__PressKitButton" datatype="html">
 				<source>
-					Press Kit
+					Press
+					Kit
 				</source>
 				<target state="translated">
 					프레스 키트
@@ -3191,7 +3981,7 @@
 						app/about-company/about-company.component.html
 					</context>
 					<context context-type="linenumber">
-						365
+						378
 					</context>
 				</context-group>
 			</trans-unit>
