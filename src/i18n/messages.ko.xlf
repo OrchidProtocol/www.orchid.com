@@ -2597,7 +2597,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						29
+						30
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2613,7 +2613,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						33
+						35
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2629,7 +2629,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						38
+						40
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2645,7 +2645,23 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						45
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="c18054ec22dba888c080791dcb895ff09d7ad2f6" datatype="html">
+				<source>
+					Security and Privacy
+				</source>
+				<target state="translated">
+					보안 및 프라이버시
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						52
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2661,7 +2677,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						57
+						59
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2677,7 +2693,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						62
+						64
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2693,7 +2709,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						69
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2709,7 +2725,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						72
+						74
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2725,7 +2741,23 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						77
+						79
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="2260a5e8732475fb1b5f69611ea9ca4bde91987b" datatype="html">
+				<source>
+					On Technology
+				</source>
+				<target state="translated">
+					기술 부문
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						86
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2741,7 +2773,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						93
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2757,7 +2789,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						96
+						98
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2773,7 +2805,23 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						101
+						103
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="d3722e4fde0f76c078757e6c947160705eb74e11" datatype="html">
+				<source>
+					Staking
+				</source>
+				<target state="translated">
+					스테이킹
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						110
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2789,7 +2837,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						115
+						117
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2805,7 +2853,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						120
+						122
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2821,7 +2869,23 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						125
+						127
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="84c2d0379e3260cbed65ce481857e08933be7ede" datatype="html">
+				<source>
+					Orchid App
+				</source>
+				<target state="translated">
+					오키드 어플리케이션
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/faq/faq.component.html
+					</context>
+					<context context-type="linenumber">
+						133
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2837,7 +2901,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						138
+						140
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2854,7 +2918,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						143
+						145
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2870,7 +2934,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						149
+						151
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2886,7 +2950,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						178
+						180
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2902,7 +2966,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						181
+						183
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2921,7 +2985,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						182
+						184
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2937,7 +3001,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						188
+						190
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2954,7 +3018,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						189
+						191
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2970,7 +3034,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						193
+						195
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2996,7 +3060,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						194
+						196
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3012,7 +3076,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						208
+						210
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3028,7 +3092,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						211
+						213
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3070,7 +3134,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						212
+						214
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3086,7 +3150,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						236
+						238
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3123,7 +3187,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						237
+						239
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3139,7 +3203,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						250
+						252
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3155,24 +3219,27 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						251
+						253
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="2d49ef6ef7fcb31c6ec51d2d49cc0744be8e16b7" datatype="html">
+			<trans-unit id="070289b6ab7f6feba16d51b82b19193b3dcc1656" datatype="html">
 				<source>
-					Access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP level
+					Access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP
+					level
 					firewalls and can browse the entire Internet freely
 				</source>
-				<target state="translated">
-					오픈 인터넷에 접속 - 유저가 오키드에 연결하면, ISP 레벨의 방화벽에 제약 받지 않고 인터넷 브라우징이 가능합니다
+				<target state="new">
+					Access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP
+					level
+					firewalls and can browse the entire Internet freely
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						252
+						254
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3211,7 +3278,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						255
+						258
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3227,7 +3294,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						275
+						278
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3302,7 +3369,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						276
+						279
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3318,7 +3385,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						324
+						327
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3368,7 +3435,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						325
+						328
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3384,7 +3451,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						358
+						361
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3460,7 +3527,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						359
+						362
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3476,7 +3543,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						411
+						414
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3492,7 +3559,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						414
+						417
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3512,7 +3579,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						415
+						418
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3528,7 +3595,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						422
+						425
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3571,7 +3638,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						423
+						426
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3587,7 +3654,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						441
+						444
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3607,7 +3674,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						442
+						445
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3621,7 +3688,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						449
+						452
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3637,7 +3704,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						457
+						460
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3653,7 +3720,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						460
+						463
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3682,7 +3749,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						461
+						464
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3698,7 +3765,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						473
+						476
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3717,7 +3784,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						474
+						477
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3733,7 +3800,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						481
+						484
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3794,7 +3861,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						482
+						485
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3810,7 +3877,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						513
+						516
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3826,7 +3893,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						516
+						519
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3849,7 +3916,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						517
+						520
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3866,7 +3933,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						527
+						530
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3896,7 +3963,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						529
+						532
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3912,7 +3979,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						542
+						545
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3931,7 +3998,7 @@
 						app/faq/faq.component.html
 					</context>
 					<context context-type="linenumber">
-						543
+						546
 					</context>
 				</context-group>
 			</trans-unit>
