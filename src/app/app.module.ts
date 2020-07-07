@@ -22,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
+import { PreferredProvidersComponent } from './preferredproviders/preferredproviders.component';
 import { PartnersComponent } from './partners/partners.component';
 import { PodcastHeroComponent } from './podcast-hero/podcast-hero.component';
 import { PodcastPlatformsComponent } from './podcast-platforms/podcast-platforms.component';
@@ -65,6 +66,7 @@ import { MetaService } from './MetaService';
     AboutCompanyComponent,
     JoinComponent,
     OxtComponent,
+    PreferredProvidersComponent,
     PartnersComponent,
     PodcastHeroComponent,
     PodcastPlatformsComponent,

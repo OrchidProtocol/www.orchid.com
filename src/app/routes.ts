@@ -19,6 +19,7 @@ import { ServiceTermsComponent } from "./service-terms/service-terms.component";
 import { VisionComponent } from "./vision/vision.component";
 import { NotFoundComponent } from "./not-found/not-found.component";
 import { JoinComponent } from './join/join.component';
+import { PreferredProvidersComponent } from './preferredproviders/preferredproviders.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PartnersComponent } from './partners/partners.component';
 
@@ -65,6 +66,8 @@ export const routes: Routes = [
 			{ path: "service-terms.html", redirectTo: "service-terms" },
 			{ path: "oxt", component: OxtComponent },
 			{ path: "oxt.html", redirectTo: "oxt" },
+			{ path: "preferredproviders", component: PreferredProvidersComponent },
+			{ path: "preferredproviders.html", redirectTo: "preferredproviders" },
 			{ path: "partners", component: PartnersComponent },
 			{ path: "partners.html", redirectTo: "partners" },
 			{ path: "podcast", component: PodcastComponent },
