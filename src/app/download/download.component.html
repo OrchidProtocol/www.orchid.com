@@ -5,10 +5,28 @@
 </div>
 
 <div class="background-white">
+  <section id="instructions" class="section-med hpad-wide ">
+    <div class="row">
+      <div class="column left">
+        <h4 i18n="@@DownloadAndroid__Title" class="download-instructions__desktop-only">Android</h4>
+      </div>
+      <div class="column right">
+        <h4 i18n="@@DownloadiOS__Title" class="download-instructions__desktop-only">iOS</h4>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="background-white">
   <section class="download-images__wrapper">
-    <img alt="" src="/assets/img/download/phone-2.png" class="phone-1">
-    <img alt="" src="/assets/img/download/orchid-logo-text.svg" class="logo-image">
-    <img alt="" src="/assets/img/download/phone-1.png" class="phone-2">
+    <div class="download-images__container">
+      <img src="/assets/img/download/android.png">
+      <img src="/assets/img/download/circle.svg" class="download-images__circle">
+    </div>
+    <div class="download-images__container">
+      <img src="/assets/img/download/ios.png">
+      <img src="/assets/img/download/circle.svg" class="download-images__circle">
+    </div>
   </section>
 </div>
 
@@ -16,9 +34,9 @@
   <section id="instructions" class="section-med hpad-wide vpad-wide">
     <div class="row">
       <div class="column left">
-        <h4 i18n="@@DownloadAndroid__Title">Android</h4>
+        <h4 i18n="@@DownloadAndroid__Title" class="download-instructions__mobile-only">Android</h4>
         <ul class="download-instructions__list" i18n="@@DownloadAndroid__Body" style="list-style:none;">
-          <li>Tap the link below on your Android device.<br />
+          <li>
             <a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US">
               <img width="160" i18n-src="@@GooglePlayBadgeURL" src="/assets/img/shared/google-play-badge.svg"
                 i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style="margin: 0.75rem 0;">
@@ -31,27 +49,23 @@
             <a href="https://github.com/OrchidTechnologies/orchid/releases">Download the APK from GitHub</a>
           </li>
           <li>
-            (You can follow our build instructions <a href="https://github.com/OrchidTechnologies/orchid/blob/master/app-android/README.md">
+            (You can follow our build instructions <a
+              href="https://github.com/OrchidTechnologies/orchid/blob/master/app-android/README.md">
               here</a>)
           </li>
         </ul>
       </div>
 
-      <div class="divider"></div>
       <div class="column right">
-        <h4 i18n="@@DownloadiOS__Title">iOS (help us Beta test)</h4>
-        <ol class="download-instructions__list" i18n="@@DownloadiOS__Body">
+        <h4 i18n="@@DownloadiOS__Title" class="download-instructions__mobile-only">iOS</h4>
+        <ul class="download-instructions__list" i18n="@@DownloadiOS__Body">
           <li>
-            We have a beta version of our iOS app on Testflight. Please help us test the app by using the link below:
-            <br />
             <a href="https://testflight.apple.com/join/BlkfHkHY">
               <img alt="Testflight" src="/assets/img/shared/testflight.png"
                 style="display: block;margin: 0.75rem auto;max-width: 160px;">
             </a>
           </li>
-          <li>Follow the instruction to install TestFlight.</li>
-          <li>Install Orchid.</li>
-        </ol>
+        </ul>
       </div>
     </div>
   </section>
