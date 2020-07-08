@@ -49,6 +49,9 @@
 }
 
 #instructions {
+  @media (max-width: 800px) {
+    padding-bottom: 1rem;
+  }
   h4 {
     text-align: center;
     margin: 0 auto 0 auto;
@@ -122,12 +125,12 @@
 }
 
 .download-instructions__mobile-only {
-  @media (min-width: 1050px) {
+  @media (min-width: 800px) {
     display: none;
   }
 }
 .download-instructions__desktop-only {
-  @media (max-width: 1049px) {
+  @media (max-width: 799px) {
     display: none;
   }
 }
@@ -146,6 +149,11 @@
     z-index: 2;
     max-width: 70%;
   }
+  &:last-child {
+    @media (max-width: 799px) {
+      display: none;
+    }
+  }
 }
 .download-images__circle {
   margin-top: -85%;
@@ -155,7 +163,8 @@
 
 .download-opensource__section {
   position: relative;
-  @media (min-width: 1050px) {
+  padding: 2rem 0 0 0;
+    @media (min-width: 1050px) {
     padding: 5rem 0 8.75rem 0;
   }
 }
@@ -186,6 +195,7 @@
   @media (max-width: 1050px) {
     margin-top: 2rem;
     max-width: 90%;
+    margin-bottom: -2rem;
   }
   @media (min-width: 1050px) {
     position: absolute;
