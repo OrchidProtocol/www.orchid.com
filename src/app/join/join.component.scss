@@ -12,6 +12,14 @@ $join-grid-breakpoint: 1114px;
   margin-right: auto;
   margin-bottom: 5rem;
 
+  ul {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+
   @media (max-width: $join-grid-breakpoint) {
     margin-bottom: 3rem;
   }

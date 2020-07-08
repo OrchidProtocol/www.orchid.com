@@ -22,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
+import { PreferredProvidersComponent } from './preferredproviders/preferredproviders.component';
 import { PartnersComponent } from './partners/partners.component';
 import { PodcastHeroComponent } from './podcast-hero/podcast-hero.component';
 import { PodcastPlatformsComponent } from './podcast-platforms/podcast-platforms.component';
@@ -31,6 +32,7 @@ import { PodcastEp1Component } from './podcast-ep1/podcast.component';
 import { PodcastEp2Component } from './podcast-ep2/podcast.component';
 import { PodcastEp3Component } from './podcast-ep3/podcast.component';
 import { PodcastEp4Component } from './podcast-ep4/podcast.component';
+import { PodcastEp5Component } from './podcast-ep5/podcast.component';
 
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
@@ -65,6 +67,7 @@ import { MetaService } from './MetaService';
     AboutCompanyComponent,
     JoinComponent,
     OxtComponent,
+    PreferredProvidersComponent,
     PartnersComponent,
     PodcastHeroComponent,
     PodcastPlatformsComponent,
@@ -73,6 +76,7 @@ import { MetaService } from './MetaService';
     PodcastEp2Component,
     PodcastEp3Component,
     PodcastEp4Component,
+    PodcastEp5Component,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
