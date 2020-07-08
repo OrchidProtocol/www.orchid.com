@@ -13,6 +13,6 @@ export class PodcastEp5Component implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('Episode 5: Jehan Chu | Follow the White Rabbit');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_JChu.jpg');
-        this.meta.setGlobalDescription('In our fourth episode, we go down the rabbit hole with Jehan Chu, the co-creator of Bitcoin Cash. He shares his incredible journey as an early investor in Bitcoin startups, his views on the role government should play in citizens’ lives, and the fundamentals of voluntaryism.');
+        this.meta.setGlobalDescription('In our fifth episode, we go down the rabbit hole with Jehan Chu, Co-founder & Managing Partner of Kenetic Capital.');
     }
 }
