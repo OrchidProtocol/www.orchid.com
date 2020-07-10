@@ -22,7 +22,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						300
+						292
 					</context>
 				</context-group>
 			</trans-unit>
@@ -44,12 +44,10 @@
 			</trans-unit>
 			<trans-unit id="HowHero__Subtitle" datatype="html">
 				<source>
-					The Orchid network enables a decentralized virtual private network (VPN), allowing
-					users to buy bandwidth from a global pool of service providers.
+					The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.
 				</source>
 				<target state="final">
-					The Orchid network enables a decentralized virtual private network (VPN), allowing
-					users to buy bandwidth from a global pool of service providers.
+					The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -62,23 +60,19 @@
 			</trans-unit>
 			<trans-unit id="HowHero__Subtitle2" datatype="html">
 				<source>
-					To do this, Orchid uses a new digital currency called OXT, a new VPN protocol for
-					incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
-					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
-					nanopayments so Ethereum transaction fees on packets are acceptably low.
+					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using
+					a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</source>
 				<target state="final">
-					To do this, Orchid uses a new digital currency called OXT, a new VPN protocol for
-					incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.
-					Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic
-					nanopayments so Ethereum transaction fees on packets are acceptably low.
+					To do this, Orchid uses an ERC-20 utility token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using
+					a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						7
+						6
 					</context>
 				</context-group>
 			</trans-unit>
@@ -94,7 +88,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						18
+						15
 					</context>
 				</context-group>
 			</trans-unit>
@@ -112,7 +106,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						18
+						15
 					</context>
 				</context-group>
 			</trans-unit>
@@ -128,7 +122,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						21
+						18
 					</context>
 				</context-group>
 			</trans-unit>
@@ -144,23 +138,39 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						22
+						19
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HowIndex__OrchidProtocol" datatype="html">
+			<trans-unit id="HowIndex__OrchidAccounts" datatype="html">
 				<source>
-					Orchid protocol
+					Orchid Accounts
 				</source>
-				<target state="translated">
-					Orchid protocol
+				<target state="final">
+					Orchid Accounts
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						20
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HowIndex__OrchidProtocol" datatype="html">
+				<source>
+					Orchid Protocol
+				</source>
+				<target state="final">
+					Orchid Protocol
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/how-it-works/how-it-works.component.html
+					</context>
+					<context context-type="linenumber">
+						21
 					</context>
 				</context-group>
 			</trans-unit>
@@ -176,7 +186,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						22
 					</context>
 				</context-group>
 			</trans-unit>
@@ -192,7 +202,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						23
 					</context>
 				</context-group>
 			</trans-unit>
@@ -208,7 +218,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						24
 					</context>
 				</context-group>
 			</trans-unit>
@@ -224,47 +234,25 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						54
+						47
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HowApp__Description" datatype="html">
 				<source>
-					Orchid is a VPN client, VPN service powered by our own digital currency, and
-					advanced networking tool designed to give you insight and control over your phone's network connection. The
-					Orchid app goes past the basic functionality offered by most VPN clients, with features such as the ability to
-					run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing
-					only), Android, macOS, Linux, and (soon) Windows.
+					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such
+					as the ability to run traffic through an integrated personal firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</source>
 				<target state="final">
-					Orchid is a VPN client, VPN service powered by our own digital currency, and
-					advanced networking tool designed to give you insight and control over your phone's network connection. The
-					Orchid app goes past the basic functionality offered by most VPN clients, with features such as the ability to
-					run traffic through multiple nodes in a multi-hop route. The Orchid client is accessible via iOS (beta testing
-					only), Android, macOS, Linux, and (soon) Windows.
+					Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such
+					as the ability to run traffic through an integrated personal firewall. The Orchid client is accessible via iOS, Android, macOS, Linux, and (soon) Windows.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						55
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HowApp__Link" datatype="html">
-				<source>
-					Get the the app today!
-				</source>
-				<target state="translated">
-					Get the the app today!
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/how-it-works/how-it-works.component.html
-					</context>
-					<context context-type="linenumber">
-						60
+						48
 					</context>
 				</context-group>
 			</trans-unit>
@@ -280,34 +268,29 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						73
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HowOxt__Content" datatype="html">
 				<source>
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					OXT’s primary and fundamental purpose is to allow users to purchase digital privacy services from the
-					Orchid network.
+					OXT’s primary and fundamental purpose is to keep track of who has used computing services, who has provided computing services, and whether the average user is fairly compensating the average provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					The OXT digital currency provides value in the Orchid network in a number of ways:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT
-					that is staked, the greater the chances of reward in the Network.
+					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT that is staked, the greater the chances of reward in the Network.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet
-					connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can
-					access the internet through a user-chosen path to ensure a secure connection anywhere in the world. Users
-					only pay for the bandwidth they consume.
+					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can access the internet through a
+					user-chosen path to ensure a secure connection anywhere in the world. Users only pay for the bandwidth they consume.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
-					any central party. The primary reasons for this new digital currency OXT are:
+					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on any central party. The primary reasons for this new digital currency OXT are:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -318,34 +301,28 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency
-					is used to prove a stake within the Orchid network that demonstrates a commitment by bandwidth providers, as
-					well as to mitigate certain risks.
+					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency is used to prove a stake within the Orchid network that demonstrates a commitment by bandwidth providers, as well as to mitigate
+					certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					OXT’s primary and fundamental purpose is to allow users to purchase digital privacy services from the
-					Orchid network.
+					OXT’s primary and fundamental purpose is to keep track of who has used computing services, who has provided computing services, and whether the average user is fairly compensating the average provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					The OXT digital currency provides value in the Orchid network in a number of ways:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT
-					that is staked, the greater the chances of reward in the Network.
+					A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT that is staked, the greater the chances of reward in the Network.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet
-					connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can
-					access the internet through a user-chosen path to ensure a secure connection anywhere in the world. Users
-					only pay for the bandwidth they consume.
+					A Bandwidth User- For the first time, users can pay-on-the-fly for a private, secure internet connection. To power up the client, a user installs the Orchid VPN, adds OXT to a wallet, and then can access the internet through a
+					user-chosen path to ensure a secure connection anywhere in the world. Users only pay for the bandwidth they consume.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on
-					any central party. The primary reasons for this new digital currency OXT are:
+					The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on any central party. The primary reasons for this new digital currency OXT are:
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;ol>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
@@ -356,9 +333,8 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_ORDERED_LIST" ctype="x-ol" equiv-text="&lt;/ol>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency
-					is used to prove a stake within the Orchid network that demonstrates a commitment by bandwidth providers, as
-					well as to mitigate certain risks.
+					Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency is used to prove a stake within the Orchid network that demonstrates a commitment by bandwidth providers, as well as to mitigate
+					certain risks.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -366,7 +342,143 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						74
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HowAccounts__Title" datatype="html">
+				<source>
+					Orchid Accounts
+				</source>
+				<target state="final">
+					Orchid Accounts
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/how-it-works/how-it-works.component.html
+					</context>
+					<context context-type="linenumber">
+						114
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HowAccounts__Description" datatype="html">
+				<source>
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Purchased accounts:
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native FIAT currency. “Orchid credits” are special accounts where the OXT is not able
+					to be withdrawn by the user, and must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared with an unlimited number of people or devices.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					What is being purchased when a user buys Orchid credits?
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Balance Based on the chosen pricing tier, the user will receive an Orchid account funded with a pre determined amount of OXT which can be used to purchase bandwidth on the Orchid network.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Deposit A portion of the purchase is invested as a deposit to the generated account. This is required for participation in the Orchid network as both a deterrent of client malfeasance as well as a determinant for ticket sizing
+					in our nanopayment system.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					ETH gas Transactions made on the Ethereum blockchain require small payments of ETH and a portion of the credits purchase goes to covering these costs for creating the Orchid account.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Fees Transaction fees for accepting FIAT.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The purpose of Orchid credits is to open up use of the Orchid network to a wider range of users, such as users who aren’t familiar with cryptocurrency or don’t want to deal with the intricacies themselves. No personal information is accessed or stored
+					by Orchid during the purchase process or in the use of the Orchid app, and Orchid credits are distributed from a prefabricated pool to ensure anonymity on the network.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Created accounts:
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Users looking to supply their own OXT holdings to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					account.orchid.com
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					.
+					The Orchid Account dapp can only be accessed using a web3 browser such as
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					Metamask
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					, and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can
+					fund an account with their own specified values as well as control the size of the associated deposit, determining ticket size in the nanopayment system which can influence efficiency experienced within the Orchid app. These accounts
+					can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					Learn more about creating an Orchid account.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="final">
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Purchased accounts:
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native FIAT currency. “Orchid credits” are special accounts where the OXT is not able
+					to be withdrawn by the user, and must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared with an unlimited number of people or devices.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					What is being purchased when a user buys Orchid credits?
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;ul>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Balance Based on the chosen pricing tier, the user will receive an Orchid account funded with a pre determined amount of OXT which can be used to purchase bandwidth on the Orchid network.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Deposit A portion of the purchase is invested as a deposit to the generated account. This is required for participation in the Orchid network as both a deterrent of client malfeasance as well as a determinant for ticket sizing
+					in our nanopayment system.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					ETH gas Transactions made on the Ethereum blockchain require small payments of ETH and a portion of the credits purchase goes to covering these costs for creating the Orchid account.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Fees Transaction fees for accepting FIAT.
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					The purpose of Orchid credits is to open up use of the Orchid network to a wider range of users, such as users who aren’t familiar with cryptocurrency or don’t want to deal with the intricacies themselves. No personal information is accessed or stored
+					by Orchid during the purchase process or in the use of the Orchid app, and Orchid credits are distributed from a prefabricated pool to ensure anonymity on the network.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Created accounts:
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Users looking to supply their own OXT holdings to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					account.orchid.com
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					.
+					The Orchid Account dapp can only be accessed using a web3 browser such as
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					Metamask
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					, and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can
+					fund an account with their own specified values as well as control the size of the associated deposit, determining ticket size in the nanopayment system which can influence efficiency experienced within the Orchid app. These accounts
+					can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a>" />
+					Learn more about creating an Orchid account.
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/how-it-works/how-it-works.component.html
+					</context>
+					<context context-type="linenumber">
+						115
 					</context>
 				</context-group>
 			</trans-unit>
@@ -382,47 +494,59 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						143
+						167
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HowProtocol__Description" datatype="html">
 				<source>
-					The Orchid software is designed to use a custom VPN protocol, similar in
-					scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
-					of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
-					allows users to request access to remote network resources and pay for these resources using OXT via the
-					Orchid nanopayments system.
+					The Orchid software is designed to use a custom VPN protocol, similar in scope to
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					OpenVPN
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					or
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					WireGuard
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					. The Orchid protocol is designed for high-performance networking
+					and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using OXT via the Orchid
+					nanopayments system.
 				</source>
 				<target state="final">
-					The Orchid software is designed to use a custom VPN protocol, similar in
-					scope to OpenVPN or WireGuard. The Orchid protocol is designed for high-performance networking and runs on top
-					of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol
-					allows users to request access to remote network resources and pay for these resources using OXT via the
-					Orchid nanopayments system.
+					The Orchid software is designed to use a custom VPN protocol, similar in scope to
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					OpenVPN
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					or
+					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
+					WireGuard
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					. The Orchid protocol is designed for high-performance networking
+					and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using OXT via the Orchid
+					nanopayments system.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						144
+						168
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HowNano__Title" datatype="html">
 				<source>
-					Orchid Nanopayments
+					Nanopayments
 				</source>
-				<target state="translated">
-					Orchid Nanopayments
+				<target state="final">
+					Nanopayments
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						178
+						194
 					</context>
 				</context-group>
 			</trans-unit>
@@ -432,9 +556,8 @@
 					Orchid uses a new probabilistic nanopayment system to scale payment throughput.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients
-					pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees
-					on small payments by amortizing transaction fees across many transactions and even across multiple parties.
+					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees on small payments by
+					amortizing transaction fees across many transactions and even across multiple parties.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					For more information, see our recent article:
@@ -448,9 +571,8 @@
 					Orchid uses a new probabilistic nanopayment system to scale payment throughput.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients
-					pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees
-					on small payments by amortizing transaction fees across many transactions and even across multiple parties.
+					This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients pay Node operators OXT “tickets” for proxy bandwidth. The system is designed to lower the transaction fees on small payments by
+					amortizing transaction fees across many transactions and even across multiple parties.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					For more information, see our recent article:
@@ -464,7 +586,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						179
+						195
 					</context>
 				</context-group>
 			</trans-unit>
@@ -480,33 +602,27 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						217
+						226
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HowNodes__Content" datatype="html">
 				<source>
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
-					which speaks the Orchid protocol.
+					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The
-					stake registry is optimized for enabling the Orchid app to automatically discover random servers in a
-					decentralized environment, while the provider directory allows Orchid nodes to register metadata such as
-					geolocation or additional services offered.
+					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment,
+					while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="final">
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but
-					which speaks the Orchid protocol.
+					Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The
-					stake registry is optimized for enabling the Orchid app to automatically discover random servers in a
-					decentralized environment, while the provider directory allows Orchid nodes to register metadata such as
-					geolocation or additional services offered.
+					Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment,
+					while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -514,7 +630,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						218
+						227
 					</context>
 				</context-group>
 			</trans-unit>
@@ -554,19 +670,12 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Once digital currency has been locked into a stake deposit it can be used immediately for bandwidth
-					provisioning.
-					If the provider wants to withdraw digital currency from the staking contract, they have to start an
-					‘unlocking’
-					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
-					transferred elsewhere by the provider.
+					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning. If the provider wants to withdraw tokens from the staking contract, they have to start an “unlocking” process period, which involves a three month
+					cooldown where their funds cannot be used as a stake deposit or transferred elsewhere by the provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake
-					amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow.
-					Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will
-					translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own
-					choices.
+					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow. Assuming typical and honest selling behavior
+					(no users drop them for bad service) this dealflow will translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="final">
@@ -588,19 +697,12 @@
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="CLOSE_UNORDERED_LIST" ctype="x-ul" equiv-text="&lt;/ul>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Once digital currency has been locked into a stake deposit it can be used immediately for bandwidth
-					provisioning.
-					If the provider wants to withdraw digital currency from the staking contract, they have to start an
-					‘unlocking’
-					process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or
-					transferred elsewhere by the provider.
+					Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning. If the provider wants to withdraw tokens from the staking contract, they have to start an “unlocking” process period, which involves a three month
+					cooldown where their funds cannot be used as a stake deposit or transferred elsewhere by the provider.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake
-					amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow.
-					Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will
-					translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own
-					choices.
+					Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow. Assuming typical and honest selling behavior
+					(no users drop them for bad service) this dealflow will translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own choices.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
@@ -624,7 +726,7 @@
 						app/how-it-works/how-it-works.component.html
 					</context>
 					<context context-type="linenumber">
-						301
+						293
 					</context>
 				</context-group>
 			</trans-unit>
@@ -662,10 +764,10 @@
 			</trans-unit>
 			<trans-unit id="DownloadHero__Title" datatype="html">
 				<source>
-					Try the Orchid app
+					Get the Orchid app
 				</source>
-				<target state="translated">
-					Try the Orchid app
+				<target state="final">
+					Get the Orchid app
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -678,49 +780,41 @@
 			</trans-unit>
 			<trans-unit id="DownloadiOS__Title" datatype="html">
 				<source>
-					iOS (help us Beta test)
+					iOS
 				</source>
-				<target state="translated">
-					iOS (help us Beta test)
+				<target state="final">
+					iOS
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						14
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/download/download.component.html
+					</context>
+					<context context-type="linenumber">
+						60
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="DownloadiOS__Body" datatype="html">
 				<source>
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					We have a beta version of our iOS app on Testflight. Please help us test the app by using the link below:
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Follow the instruction to install TestFlight.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Install Orchid.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
 				<target state="final">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					We have a beta version of our iOS app on Testflight. Please help us test the app by using the link below:
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Follow the instruction to install TestFlight.
-					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
-					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Install Orchid.
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
 				<context-group purpose="location">
@@ -728,7 +822,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						61
 					</context>
 				</context-group>
 			</trans-unit>
@@ -768,15 +862,21 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						19
+						11
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/download/download.component.html
+					</context>
+					<context context-type="linenumber">
+						37
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="DownloadAndroid__Body" datatype="html">
 				<source>
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Tap the link below on your Android device.
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -799,8 +899,6 @@
 				</source>
 				<target state="final">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Tap the link below on your Android device.
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -826,7 +924,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						20
+						38
 					</context>
 				</context-group>
 			</trans-unit>
@@ -842,15 +940,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						23
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						32
+						41
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -858,7 +948,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						95
+						102
 					</context>
 				</context-group>
 			</trans-unit>
@@ -874,15 +964,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						24
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						33
+						42
 					</context>
 				</context-group>
 			</trans-unit>
@@ -924,12 +1006,12 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeHero__JoinNow" datatype="html">
+			<trans-unit id="HomeHero__DownloadNow" datatype="html">
 				<source>
-					Get Started
+					Download Now
 				</source>
 				<target state="final">
-					Get Started
+					Download Now
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -937,54 +1019,6 @@
 					</context>
 					<context context-type="linenumber">
 						26
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="GooglePlayLink" datatype="html">
-				<source>
-					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=en_US
-				</source>
-				<target state="final">
-					https://play.google.com/store/apps/details?id=net.orchid.Orchid&amp;hl=en_US
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						30
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AppStoreBadgeURL" datatype="html">
-				<source>
-					/assets/img/shared/testflight.png
-				</source>
-				<target state="final">
-					/assets/img/shared/testflight.png
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						37
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="AppStoreBadgeAlt" datatype="html">
-				<source>
-					Get it on the App Store
-				</source>
-				<target state="final">
-					Get it on the App Store
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						38
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1032,7 +1066,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						133
+						141
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1854,7 +1888,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						55
+						42
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1872,7 +1906,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						56
+						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1888,7 +1922,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						66
+						53
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1906,7 +1940,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						54
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1922,7 +1956,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						80
+						67
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1940,7 +1974,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						81
+						68
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1956,7 +1990,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						94
+						81
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1974,7 +2008,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						95
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1990,7 +2024,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						112
+						99
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2008,7 +2042,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						120
+						107
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2024,7 +2058,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						126
+						113
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2032,7 +2066,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						141
+						128
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2040,15 +2074,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						156
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						171
+						143
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2066,7 +2092,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						135
+						122
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2084,25 +2110,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						150
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__CNET" datatype="html">
-				<source>
-					Combining faster, more private hops with system-wide encrypted protection? That could change not
-					just the game, but the entire playing field.”
-				</source>
-				<target state="final">
-					Combining faster, more private hops with system-wide encrypted protection? That could change not
-					just the game, but the entire playing field.”
-				</target>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
-						165
+						137
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2276,10 +2284,10 @@
 			</trans-unit>
 			<trans-unit id="Navigation-Join" datatype="html">
 				<source>
-					Join Now
+					Create Account
 				</source>
-				<target state="translated">
-					Join Now
+				<target state="final">
+					Create Account
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5652,10 +5660,10 @@
 			</trans-unit>
 			<trans-unit id="JoinHero__Title" datatype="html">
 				<source>
-					Set-up Guide
+					Orchid Account Set-up
 				</source>
-				<target state="translated">
-					Set-up Guide
+				<target state="final">
+					Orchid Account Set-up
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5668,10 +5676,10 @@
 			</trans-unit>
 			<trans-unit id="JoinHero__P1" datatype="html">
 				<source>
-					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
+					To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 				</source>
-				<target state="translated">
-					To start using Orchid, you need an Orchid Account. This set-up guide will show you how to create an Orchid Account and connect that account to the Orchid app using an Ethereum wallet and Orchid’s digital currency: OXT.
+				<target state="final">
+					To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5682,19 +5690,51 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="JoinHero__P2" datatype="html">
+			<trans-unit id="JoinHero__UL" datatype="html">
 				<source>
-					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Someone could share one with you
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					You can buy an account on iOS
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					You can create an account with OXT
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="translated">
-					If you already have a QR code for an existing Orchid account, Play from step 4 and simply open the app to scan/paste in the code and add the account. Your VPN service will then be paid for from that account.
+				<target state="final">
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					Someone could share one with you
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					You can buy an account on iOS
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					You can create an account with OXT
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						6
+						7
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinHero__P2" datatype="html">
+				<source>
+					This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.
+				</source>
+				<target state="final">
+					This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						13
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5718,7 +5758,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						7
+						14
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5734,7 +5774,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						32
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5742,7 +5782,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						41
+						48
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5750,7 +5790,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						70
+						77
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5758,7 +5798,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						87
+						94
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5766,7 +5806,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						103
+						111
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5782,7 +5822,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						33
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5798,7 +5838,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						29
+						36
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5822,7 +5862,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						31
+						38
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5854,7 +5894,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						33
+						40
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5878,7 +5918,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						35
+						42
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5894,7 +5934,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						49
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5910,7 +5950,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						45
+						52
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5938,7 +5978,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						47
+						54
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5954,7 +5994,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						49
+						56
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5970,23 +6010,23 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						50
+						57
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="JoinStep2__p4" datatype="html">
 				<source>
-					$1 USD of ETH
+					$2 USD of ETH
 				</source>
-				<target state="translated">
-					$1 USD of ETH
+				<target state="final">
+					$2 USD of ETH
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						53
+						60
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5994,7 +6034,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						54
+						61
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6018,7 +6058,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						63
+						70
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6034,7 +6074,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						71
+						78
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6050,7 +6090,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						81
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6074,7 +6114,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						76
+						83
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6090,7 +6130,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						78
+						85
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6118,23 +6158,23 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						79
+						86
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="JoinStep3__p4" datatype="html">
 				<source>
-					Once complete, scan or copy your Orchid Account to your clipboard.
+					Once complete, copy your Orchid Account code or save the QR for scanning in the next step.
 				</source>
-				<target state="translated">
-					Once complete, scan or copy your Orchid Account to your clipboard.
+				<target state="final">
+					Once complete, copy your Orchid Account code or save the QR for scanning in the next step.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						89
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6150,7 +6190,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						95
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6166,7 +6206,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						98
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6176,9 +6216,9 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and help us Beta test our app on
+					or
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</source>
@@ -6187,9 +6227,9 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					and help us Beta test our app on
+					or
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
 					.
 				</target>
@@ -6198,23 +6238,55 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						93
+						100
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="JoinStep4__p2" datatype="html">
+			<trans-unit id="JoinStep4__p3" datatype="html">
 				<source>
-					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
+					Open the app and tap
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Custom Setup
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					in the "New to Orchid" dialog. Choose
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Link Orchid Account
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					from the options shown and scan or paste in your Orchid Account code.
 				</source>
-				<target state="translated">
-					Open the app and scan or paste in your Orchid Account. The app will automatically use that Account to generate a configured  hop, and the app will be ready use!
+				<target state="final">
+					Open the app and tap
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Custom Setup
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					in the "New to Orchid" dialog. Choose
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Link Orchid Account
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					from the options shown and scan or paste in your Orchid Account code.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						98
+						105
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinStep4__p2" datatype="html">
+				<source>
+					The app will automatically use that account to generate a configured hop, and the app will be ready use!
+				</source>
+				<target state="final">
+					The app will automatically use that account to generate a configured hop, and the app will be ready use!
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						106
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6230,7 +6302,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						104
+						112
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6246,23 +6318,23 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						107
+						115
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="JoinStep5__p1" datatype="html">
 				<source>
-					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
+					On the Orchid app’s connect screen, tap “Connect.” This enables Orchid on your device, activates your configured hop and connects you to the Orchid network.
 				</source>
-				<target state="translated">
-					On the Orchid app’s main screen, switch the toggle in the top right to “on”. This  enables Orchid on your device and activates your configured hops.
+				<target state="final">
+					On the Orchid app’s connect screen, tap “Connect.” This enables Orchid on your device, activates your configured hop and connects you to the Orchid network.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						109
+						117
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6284,7 +6356,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						110
+						118
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6300,7 +6372,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						114
+						122
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6316,7 +6388,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						122
+						130
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6332,7 +6404,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						129
+						137
 					</context>
 				</context-group>
 			</trans-unit>
@@ -6348,7 +6420,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						130
+						138
 					</context>
 				</context-group>
 			</trans-unit>
