@@ -29,6 +29,7 @@ import { PodcastEp2Component } from './podcast-ep2/podcast.component';
 import { PodcastEp3Component } from './podcast-ep3/podcast.component';
 import { PodcastEp4Component } from './podcast-ep4/podcast.component';
 import { PodcastEp5Component } from './podcast-ep5/podcast.component';
+import { PodcastEp6Component } from './podcast-ep6/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -83,6 +84,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-4-roger-ver.html", redirectTo: "podcast/episode-4-roger-ver" },
 			{ path: "podcast/episode-5-jehan-chu", component: PodcastEp5Component },
 			{ path: "podcast/episode-5-jehan-chu.html", redirectTo: "podcast/episode-5-jehan-chu" },
+			{ path: "podcast/episode-6-paul-veradittakit", component: PodcastEp6Component },
+			{ path: "podcast/episode-6-paul-veradittakit.html", redirectTo: "podcast/episode-6-paul-veradittakit" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
