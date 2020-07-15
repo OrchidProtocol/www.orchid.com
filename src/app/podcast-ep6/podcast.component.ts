@@ -13,6 +13,6 @@ export class PodcastEp6Component implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('Episode 6: Paul Veradittakit | Follow the White Rabbit');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_PVer.jpg');
-        this.meta.setGlobalDescription('Go down the rabbit hole with Paul Veradittakit, a Partner at Pantera Capital.');
+        this.meta.setGlobalDescription('Go down the rabbit hole with Paul Veradittakit, a Partner at Pantera Capital, who’s executed some of the most deals in the blockchain and crypto space.');
     }
 }
