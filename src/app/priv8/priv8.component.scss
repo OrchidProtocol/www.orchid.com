@@ -1,7 +1,7 @@
 @import "orc_config";
 
 .hero__wrapper {
-	background: linear-gradient(to left, $orc-purple, $orc-deep-purple);
+	background: linear-gradient(to bottom left, $orc-purple, $orc-deep-purple);
 	color: white;
 }
 
@@ -11,11 +11,40 @@
 	width: 100%;
 	max-width: 650px;
 	text-align: center;
+	
+	h1, h2, h3 {
+		font-family: $orc-tf-secondary;
+		font-weight: lighter;
+	}
+	h1 {
+		font-size: 2rem;
+		color: white;
+		margin-bottom: 1rem;
+	}
+	h2 {
+		font-size: 1.25rem;
+		color: $orc-bright-purple;
+	}
+	h3 {
+		font-size: 1rem;
+		color: white;
+		margin: 1rem 0;
+	}
+
+	a {
+		display: block;
+		margin: 2rem 0;
+	}
+	button.btn-primary {
+		background-color: #4FE9FF;
+		color: $orc-deep-purple;
+	}
 }
 
 .hero__logo-wrapper {
 	display: block;
-	padding: 24.5% 50%;
+	padding: 21.5% 50%;
+	margin: 1rem 0;
 	background-image: url(/assets/img/priv8/logo-patterns.svg);
 	background-size: contain;
 	background-position: center;
@@ -50,4 +79,42 @@
 	letter-spacing: 3px;
 	margin-top: 15px;
 	display: inline-block;
+}
+
+.hero__featuring-container {
+	display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 205px);
+    margin-bottom: 3em;
+    gap: 1em;
+}
+.hero__featuring-item {
+	& > img {
+		width: 100%;
+	}
+}
+
+.hero__vector-container {
+	width: 100%;
+	position: relative;
+}
+.hero__vector {
+	display: block;
+	margin-top: -17vw;
+	margin-bottom: -1px;
+	position: relative;
+	z-index: 2;
+}
+.hero__vector-bunny {
+	display: block;
+	position: absolute;
+	width: 20vw;
+	height: auto;
+	top: calc(19% - 10vw);
+
+	&.bunny-right {
+		top: calc(23% - 10vw);
+		right: 0%;
+	}
 }
