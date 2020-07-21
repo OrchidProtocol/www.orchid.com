@@ -1,5 +1,18 @@
 @import "orc_config";
 
+.priv8__heading {
+	font-family: $orc-tf-secondary;
+}
+h3.priv8__heading {
+	color: $orc-deep-purple;
+	font-weight: lighter;
+	margin: 1rem 0 4rem 0;
+}
+h4.priv8__heading {
+	color: $orc-purple-gray;
+	margin: 1rem 0;
+}
+
 .hero__wrapper {
 	background: linear-gradient(to bottom left, $orc-purple, $orc-deep-purple);
 	color: white;
@@ -117,4 +130,61 @@
 		top: calc(23% - 10vw);
 		right: 0%;
 	}
+}
+
+.chev__separator {
+	max-width: 400px;
+	margin: auto;
+	width: 80%;
+	display: block;
+}
+.chev__separator-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.about__wrapper {
+	padding: 4rem 2rem;
+	text-align: center;
+
+	& > p {
+		max-width: 46rem;
+		margin: auto;
+	}
+}
+
+.common-section {
+	text-align: center;
+	position: relative;
+	padding: 8rem 2rem;
+}
+
+.speakers__wrapper {
+	@extend .common-section;
+	background-color: #E7EAF4;
+}
+
+.speakers__grid {
+	display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 11.5rem);
+	gap: 3.5em;
+	margin: auto;
+	max-width: 1100px;
+}
+.speakers__grid-item {
+	& > img {
+		width: 100%;
+	}
+	& > b {
+		display: block;
+		font-size: 125%;
+	}
+}
+
+.agenda__wrapper {
+	@extend .common-section;
 }
