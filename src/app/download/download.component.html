@@ -1,104 +1,84 @@
 <div class="background-white">
-  <section id="top">
-    <h3 i18n="@@DownloadHero__Title">Get the Orchid app</h3>
-  </section>
+    <section id="top">
+        <h3 i18n="@@DownloadHero__Title">Get the Orchid app</h3>
+    </section>
 </div>
 
-<div class="background-white">
-  <section id="instructions" class="section-med hpad-wide ">
-    <div class="row">
-      <div class="column left">
-        <h4 i18n="@@DownloadAndroid__Title" class="download-instructions__desktop-only">Android</h4>
-      </div>
-      <div class="column right">
-        <h4 i18n="@@DownloadiOS__Title" class="download-instructions__desktop-only">iOS</h4>
-      </div>
-    </div>
-  </section>
+<div id="instructions" class="background-white">
+    <section class="download-images__wrapper">
+        <div class="download-images__container">
+            <h4 i18n="@@DownloadAndroid__Title">Android</h4>
+            <img src="/assets/img/download/phone-1.png" class="download-images__device">
+            <img src="/assets/img/download/circle.svg" class="download-images__circle">
+            <ul class="download-instructions__list" i18n="@@DownloadAndroid__Body" style="list-style:none;">
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US">
+                        <img width="160" i18n-src="@@GooglePlayBadgeURL" src="/assets/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style="margin: 0.75rem 0;">
+                    </a>
+                </li>
+                <li>
+                    - OR -
+                </li>
+                <li>
+                    <a href="https://github.com/OrchidTechnologies/orchid/releases">Download the APK from GitHub</a>
+                </li>
+                <li>
+                    (You can follow our build instructions <a href="https://github.com/OrchidTechnologies/orchid/blob/master/app-android/README.md">here</a>)
+                </li>
+            </ul>
+        </div>
+        <div class="download-images__container">
+            <h4 i18n="@@DownloadiOS__Title">iOS</h4>
+            <img src="/assets/img/download/phone-2.png" class="download-images__device">
+            <img src="/assets/img/download/circle.svg" class="download-images__circle">
+            <ul class="download-instructions__list" i18n="@@DownloadiOS__Body">
+                <li>
+                    <a href="https://apps.apple.com/us/app/id1474884867">
+                        <img alt="iOS" src="/assets/img/shared/ios.png" style="margin: 0.65rem auto;max-width: 160px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="download-images__container">
+            <h4 i18n="@@DownloadMacOS__Title">macOS</h4>
+            <img src="/assets/img/download/macbook.png" class="download-images__device mac">
+            <img src="/assets/img/download/circle.svg" class="download-images__circle">
+            <ul class="download-instructions__list" i18n="@@DownloadMacOS__Body">
+                <li>
+                    <a href="https://apps.apple.com/us/app/orchid-secure-networking/id1474884867">
+                        <img alt="macOS" src="/assets/img/shared/ios.png" style="margin: 0.65rem auto;max-width: 160px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 </div>
 
-<div class="background-white">
-  <section class="download-images__wrapper">
-    <div class="download-images__container">
-      <img src="/assets/img/download/android.png">
-      <img src="/assets/img/download/circle.svg" class="download-images__circle">
-    </div>
-    <div class="download-images__container">
-      <img src="/assets/img/download/ios.png">
-      <img src="/assets/img/download/circle.svg" class="download-images__circle">
-    </div>
-  </section>
-</div>
-
-<div class="background-white">
-  <section id="instructions" class="section-med hpad-wide vpad-wide">
-    <div class="row">
-      <div class="column left">
-        <h4 i18n="@@DownloadAndroid__Title" class="download-instructions__mobile-only">Android</h4>
-        <ul class="download-instructions__list" i18n="@@DownloadAndroid__Body" style="list-style:none;">
-          <li>
-            <a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&hl=en_US">
-              <img width="160" i18n-src="@@GooglePlayBadgeURL" src="/assets/img/shared/google-play-badge.svg"
-                i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style="margin: 0.75rem 0;">
-            </a>
-          </li>
-          <li>
-            - OR -
-          </li>
-          <li>
-            <a href="https://github.com/OrchidTechnologies/orchid/releases">Download the APK from GitHub</a>
-          </li>
-          <li>
-            (You can follow our build instructions <a
-              href="https://github.com/OrchidTechnologies/orchid/blob/master/app-android/README.md">
-              here</a>)
-          </li>
-        </ul>
-      </div>
-
-      <div class="column right">
-        <h4 i18n="@@DownloadiOS__Title" class="download-instructions__mobile-only">iOS</h4>
-        <ul class="download-instructions__list" i18n="@@DownloadiOS__Body">
-          <li>
-            <a href="https://apps.apple.com/us/app/id1474884867">
-              <img alt="iOS" src="/assets/img/shared/ios.png"
-                style="margin: 0.75rem auto;max-width: 160px;">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-</div>
 
 <div class="background-gray">
-  <section class="download-opensource__section">
-    <div class="download-opensource__text">
-      <h2>Get Involved!</h2>
-      <br>
-      Orchid is proud to be an Open Source project, and as such, we invite all developers and curious investigators to
-      explore, review and build using the technologies that Orchid is developing.
-      <br>
-      <br>
-      Check out our up-to-date GitHub repository here:
-      <br>
-      <br>
-      <br>
-      <a href="https://github.com/OrchidTechnologies">
-        <img alt="" src="/assets/img/shared/social-github-purple.svg">
-        OrchidTechnologies
-      </a>
-    </div>
-    <img alt="" class="download-opensource__image" src="/assets/img/download/integrated-bunny.svg?v=2">
+    <section class="download-opensource__section">
+        <div class="download-opensource__text">
+            <h2>Get Involved!</h2>
+            <br> Orchid is proud to be an Open Source project, and as such, we invite all developers and curious investigators to explore, review and build using the technologies that Orchid is developing.
+            <br>
+            <br> Check out our up-to-date GitHub repository here:
+            <br>
+            <br>
+            <br>
+            <a href="https://github.com/OrchidTechnologies">
+                <img alt="" src="/assets/img/shared/social-github-purple.svg"> OrchidTechnologies
+            </a>
+        </div>
+        <img alt="" class="download-opensource__image" src="/assets/img/download/integrated-bunny.svg?v=2">
 
-  </section>
+    </section>
 </div>
 
 <div class="bk-lavender">
-  <section class="section-narrow hpad-wide vpad-wide z-index-1 center-text">
-    <h2 class="color-primary gap-bot-thin">Where to get OXT</h2>
-    <where-oxt></where-oxt>
-  </section>
+    <section class="section-narrow hpad-wide vpad-wide z-index-1 center-text">
+        <h2 class="color-primary gap-bot-thin">Where to get OXT</h2>
+        <where-oxt></where-oxt>
+    </section>
 </div>
 
 <app-newsletter-signup></app-newsletter-signup>

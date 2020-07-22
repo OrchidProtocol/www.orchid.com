@@ -15,6 +15,8 @@
 
   h3 {
     padding: 3.5rem;
+    padding-bottom: 1rem;
+
     @media (max-width: 800px) {
       padding: 2rem;
     }
@@ -49,14 +51,17 @@
 }
 
 #instructions {
+  overflow: hidden;
   @media (max-width: 800px) {
     padding-bottom: 1rem;
   }
+
   h4 {
     text-align: center;
     margin: 0 auto 0 auto;
     color: $orc-rock-gray;
   }
+
   a {
     text-decoration: none;
     font-weight: 700;
@@ -115,12 +120,17 @@
 .download-images__wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  max-width: 918px;
+  align-items: flex-start;
+  max-width: 1200px;
   margin: auto;
 
   @media (min-width: 800px) {
     margin-bottom: -4rem;
+  }
+  @media (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -129,6 +139,7 @@
     display: none;
   }
 }
+
 .download-instructions__desktop-only {
   @media (max-width: 799px) {
     display: none;
@@ -140,31 +151,41 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 50%;
-  & > img {
-    max-width: 100%;
-  }
-  & > :first-child {
-    position: relative;
-    z-index: 2;
-    max-width: 70%;
-  }
-  &:last-child {
-    @media (max-width: 799px) {
-      display: none;
-    }
-  }
+  width: 250px;
+  margin: 50px 70px 0;
 }
+
 .download-images__circle {
-  margin-top: -85%;
+  margin-top: -120%;
   position: relative;
   z-index: 0;
+  width: 130%;
+}
+
+.download-images__device {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  @media (max-width: 1100px) {
+    margin-top: -10%;
+  }
+
+  &.mac {
+    margin-top: 72.8%;
+    margin-bottom: 10%;
+    max-width: unset;
+    width: 175%;
+    @media (max-width: 1100px) {
+      margin-top: 10%;
+    }
+  }
 }
 
 .download-opensource__section {
   position: relative;
   padding: 2rem 0 0 0;
-    @media (min-width: 1050px) {
+
+  @media (min-width: 1050px) {
     padding: 5rem 0 8.75rem 0;
   }
 }
@@ -192,11 +213,13 @@
 .download-opensource__image {
   margin: auto;
   display: block;
+
   @media (max-width: 1050px) {
     margin-top: 2rem;
     max-width: 90%;
     margin-bottom: -2rem;
   }
+
   @media (min-width: 1050px) {
     position: absolute;
     bottom: 50%;
@@ -214,7 +237,8 @@ ul.download-instructions__list {
   text-align: center;
   list-style: none;
   padding-left: 0;
-  & > li {
+
+  &>li {
     padding-left: 0 !important;
   }
 }
