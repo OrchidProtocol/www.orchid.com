@@ -37,7 +37,7 @@ function build-site() {
 
 function get-distribution-id() {
     local bucket="$1"
-    distribution=$(aws cloudfront list-distributions | jq -r --arg bucket "$bucket" '.DistributionList.Items[] | select(.Status=="Deployed") | select(.Aliases.Items[] | contains($bucket)) | .Id')
+    distribution=$(aws cloudfront list-distributions | jq -r --arg bucket "$bucket" '.DistributionList.Items[] | select(.Aliases.Items[] | contains($bucket)) | .Id')
     echo "$distribution"
 }
 
