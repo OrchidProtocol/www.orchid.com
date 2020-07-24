@@ -7,6 +7,7 @@ import { MetaService } from '../MetaService';
 import { OrchidDappService } from '../orchid-dapp.service';
 import { HttpClient } from "@angular/common/http";
 
+import BlogJSON from "../../assets/blog.json"
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -18,6 +19,7 @@ export class HomeComponent implements OnInit {
   hasWeb3Browser: boolean;
   hasFundsAvailable: boolean;
   hasAccountConfigured: boolean;
+  blogPosts = [];
 
   constructor(
     private events: EventsService,
@@ -29,19 +31,28 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
 
-    /*if (typeof fetch !== 'undefined') {
-      fetch("https://blog.orchid.com/rss.xml", { mode: 'no-cors' })
-        .then(response => response.text())
-        .then(response => {
-          console.log(response);
-        })
-        .catch(console.error)
-    } else {
-      this.http.get("https://blog.orchid.com/rss.xml")
-        .subscribe(response => {
-          console.log(response)
-        })
-    }*/
+    const months = [
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ]
+    for (let index = 0; index < Math.min(BlogJSON.length, 6); index++) {
+      const element = BlogJSON[index];
+      //element.url = `https://blog.${this.localeId}.orchid.com/${element.url}`.replace('.en-US', '');
+      const date = new Date(element.date);
+      element.date = `${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`
+      this.blogPosts.push(element);
+    }
+    
 
     this.meta.setGlobalTitle('Orchid | Open Source VPN & Privacy Software');
     this.meta.setGlobalDescription('Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.');
