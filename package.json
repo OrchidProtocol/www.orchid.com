@@ -3,8 +3,8 @@
     "version": "0.0.0",
     "scripts": {
         "ng": "ng",
-        "start": "ng serve",
-        "build": "ng build",
+        "start": "node import-blog.js && ng serve",
+        "build": "node import-blog.js && ng build",
         "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e",
