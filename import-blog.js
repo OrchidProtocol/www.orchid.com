@@ -11,6 +11,7 @@ const ASSETS_FOLDER = join(SRC_FOLDER, "assets");
 const fallback = () => {
 	writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify([]));
 }
+fallback();
 
 if (!existsSync(join(ASSETS_FOLDER, '/img/blog-integration/')))
 	mkdirSync(join(ASSETS_FOLDER, '/img/blog-integration/'))
