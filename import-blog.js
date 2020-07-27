@@ -8,6 +8,10 @@ const fetch = require('node-fetch');
 const SRC_FOLDER = join(process.cwd(), "src");
 const ASSETS_FOLDER = join(SRC_FOLDER, "assets");
 
+const fallback = () => {
+	writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify([]));
+}
+
 if (!existsSync(join(ASSETS_FOLDER, '/img/blog-integration/')))
 	mkdirSync(join(ASSETS_FOLDER, '/img/blog-integration/'))
 
@@ -51,5 +55,6 @@ fetch(`https://${domain}/feed-1.json`)
 				output[output.length - 1].featuredimage = destination.substr(SRC_FOLDER.length);
 			}
 			writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify(output));
-		} catch (e) { console.error(e) }
+		} catch (e) { fallback() }
 	})
+	.catch(fallback);
