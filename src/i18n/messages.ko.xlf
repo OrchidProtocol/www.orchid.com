@@ -4446,21 +4446,23 @@
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="translated">
+					<x id="START_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;h2>" />
+					왜 프라이버시 네트워크를 만들어야 할까요?
+					<x id="CLOSE_HEADING_LEVEL2" ctype="x-h2" equiv-text="&lt;/h2>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					인터넷은 무한한 정보의 시대를 열었습니다. 크리에이터들 덕분에 우리는 호기심을 갖고 자유롭게 세상을 탐험할 수 있었습니다.
+					인터넷은 무한한 정보의 세계를 열었습니다. 인터넷의 개발자들 덕분에 우리는 전세계를 마음껏 탐험할 수 있게 되었습니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					그러나 인터넷이 성장할수록 자유로운 탐색은 더 어려워졌습니다. Web 2.0 비즈니스 모델에 따라 기업들은 우리를 관찰, 추적하고 데이터를 팔아 넘겼습니다. 어떤 곳에서는 우리가 볼 수 있는 정보에 제한이 있었습니다.
+					하지만 인터넷이 커질수록, 점점 제약사항이 많아지기 시작했습니다. Web 2.0 비지니스 모델이 기업들로 하여금 인터넷 사용자를 감시, 추적하며 데이터를 팔기 시작했고, 특정 사이트는 정보를 볼 수 없게 되었습니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					그러나 이제는 변하고 있습니다. 이더리움 기반으로 구축되는 분산형 Web 3.0은 본래 주인인 사용자에게 인터넷을 되돌려 줍니다.
+					이러한 시대도 이제 변하고 있습니다. 이더리움 기반으로 구축된 탈중앙형 Web 3.0 기술은, 인터넷을 본래 주인인 사용자들에게 되돌려 주고 있습니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Orchid 역시 이 임무에 동참합니다. Web 3.0 기술을 통해 오늘날 사용자에게 더 나은 디지털 개인 정보 보호를 보장하므로, Web 1.0의 약속을
-					실천하고 자유롭게 탐색할 수 있습니다.
+					Orchid도 이러한 움직임에 동참합니다. Web 3.0 기술 사용을 통해, 사용자들에게 디지털 개인정보 보호를 보장하여, Web 1.0 에서 약속했던 자유로운 인터넷 탐색을 지켜 나갑니다
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					2017년 설립된 Orchid는, 누구나 손쉽게 접근 가능한 개방적인 인터넷을 되찾기 위해 노력합니다. 설립 이후 샌프란시스코와 베를린을 기반으로 놀라운 성장을 보여준 우리 팀은 2019년 4분기 Orchid 토큰화된 VPN을 출시하게 되었습니다.
+					Orchid는 2017년에 설립되어, 누구나 손쉽게 사용 가능한 개방적인 인터넷을 되찾기 위해 노력하고 있습니다. 샌프란시스코와 베를린을 기반으로 놀라운 성장을 보여주고 있는 Orchid 팀은 2019년 12월, 첫번째 P2P 인센티브 프라이버시 네트워크를  출시하였습니다.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
 				<context-group purpose="location">
