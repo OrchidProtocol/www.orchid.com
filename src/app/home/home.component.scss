@@ -776,7 +776,13 @@ ul.smaller .ft-text h3 {
   background-repeat: no-repeat;
   background-position: center;*/
 }
-
+.blog-wrapper {
+  & > h3 {
+    text-align: center;
+    display: block;
+    margin: 0 auto 3rem auto;
+  }
+}
 .blog-container {
   max-width: 1140px;
   margin: auto;
