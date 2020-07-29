@@ -782,15 +782,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						14
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/download/download.component.html
-					</context>
-					<context context-type="linenumber">
-						60
+						31
 					</context>
 				</context-group>
 			</trans-unit>
@@ -814,7 +806,47 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						61
+						34
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="DownloadMacOS__Title" datatype="html">
+				<source>
+					macOS
+				</source>
+				<target state="new">
+					macOS
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/download/download.component.html
+					</context>
+					<context context-type="linenumber">
+						43
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="DownloadMacOS__Body" datatype="html">
+				<source>
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+				</source>
+				<target state="new">
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/download/download.component.html
+					</context>
+					<context context-type="linenumber">
+						46
 					</context>
 				</context-group>
 			</trans-unit>
@@ -830,7 +862,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						5
+						4
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -838,7 +870,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						22
+						20
 					</context>
 				</context-group>
 			</trans-unit>
@@ -854,15 +886,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						11
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/download/download.component.html
-					</context>
-					<context context-type="linenumber">
-						37
+						10
 					</context>
 				</context-group>
 			</trans-unit>
@@ -907,7 +931,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						38
+						13
 					</context>
 				</context-group>
 			</trans-unit>
@@ -923,7 +947,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						41
+						16
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -947,7 +971,7 @@
 						app/download/download.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						16
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4845,7 +4869,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						12
+						11
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4861,7 +4885,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						24
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5729,14 +5753,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						40
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by harnessing the power of blockchain, we
-					can offer users a better VPN experience.
+					We believe that by harnessing the power of blockchain, we can offer users a better VPN experience.
 				</source>
 				<target state="translated">
 					私たちは、中央集権化の排除、ネットワーク貢献者
@@ -5749,7 +5772,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						41
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5765,14 +5788,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						53
+						50
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
-					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
-					charges. And no monthly fees!
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no charges. And no monthly fees!
 				</source>
 				<target state="translated">
 					Orchid では、VPN の使用中にのみ料金が発生します。 オフにすると、無料です。 月額料金はありません！
@@ -5782,7 +5804,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						54
+						51
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5798,14 +5820,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						67
+						62
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
-					Change providers within the Orchid network with a click. If you don't like one, simply tap to
-					reconnect and get randomly reassigned.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to reconnect and get randomly reassigned.
 				</source>
 				<target state="translated">
 					Orchid は、プロバイダーのネットワークへのアクセスを許可します。 気に入らない場合は、タップして再接続し、ランダムに再割り当てします。
@@ -5815,7 +5836,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						68
+						63
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5831,14 +5852,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						81
+						74
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
-					You can share your account with an unlimited number of devices and people. Manage one account
-					for your friends, family and all their devices.
+					You can share your account with an unlimited number of devices and people. Manage one account for your friends, family and all their devices.
 				</source>
 				<target state="translated">
 					アカウントが確立されると、無制限の数のデバイスおよびユーザーと共有できます。すべてのあなたの友人、家族、すべてのデバイスのための 1 つのアカウントを管理します。
@@ -5848,7 +5868,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						75
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5864,14 +5884,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						99
+						90
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
 				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
-					when it comes to data abuse, it’s easy to see the project’s appeal."
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 				</source>
 				<target state="translated">
 					関係予算と達成すべきミッション、そ
@@ -5884,7 +5903,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						107
+						97
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5900,7 +5919,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						100
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5908,7 +5927,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						128
+						111
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -5916,14 +5935,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						143
+						122
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
-					a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
 				</source>
 				<target state="translated">
 					オーキッドのミッションは、インタ
@@ -5938,14 +5956,13 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						122
+						108
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol
-					intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
 				</source>
 				<target state="translated">
 					オーキッドは、グローバル コミュニ
@@ -5959,7 +5976,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						137
+						119
 					</context>
 				</context-group>
 			</trans-unit>
