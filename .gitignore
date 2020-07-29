@@ -48,3 +48,7 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Blog integration
+src/assets/blog.json
+src/assets/img/blog-integration/
