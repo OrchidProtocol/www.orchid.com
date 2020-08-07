@@ -5894,8 +5894,8 @@
 				<source>
 					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 				</source>
-				<target state="translated">
-					价值 4 美元的 OXT 币
+				<target state="new">
+					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
