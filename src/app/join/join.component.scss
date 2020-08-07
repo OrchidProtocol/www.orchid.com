@@ -217,16 +217,19 @@ $join-grid-breakpoint: 1114px;
   border: 22px solid var(--section-bg);
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-50%);
-  margin-bottom: calc(var(--number-size) * -0.4);
+  margin-bottom: calc(var(--number-size) * -0.2);
+
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .join-number__numeral {
-  font-size: 60px;
+  font-size: 48px;
   line-height: 1;
 }
 
 .join-number__label {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
   text-transform: uppercase;
   margin-top: 7px;
