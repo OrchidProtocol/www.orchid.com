@@ -4098,7 +4098,7 @@
 					Orchid Account Set-up
 				</source>
 				<target state="translated">
-					セットアップ ガイド
+					オーキッド アカウントの設定
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4114,7 +4114,7 @@
 					To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 				</source>
 				<target state="translated">
-					Orchid を使い始めるには、Orchid アカウントが必要です。このセットアップ ガイドは、Orchid アカウントを作成して、イーサリアム ウォレットと Orchid のデジタル通貨 OXT を使用してそのアカウントを Orchid アプリに接続する方法を説明します。
+					Orchid の使用を開始するには、Orchid アカウントが必要です。 現在、 Orchid アカウントにアクセスするには、次の 3 つの方法があります。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4137,15 +4137,15 @@
 					You can create an account with OXT
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Someone could share one with you
+					アカウントを誰かと共有できます
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can buy an account on iOS
+					iOS でアカウントを購入できます
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can create an account with OXT
+					OXT を使用してアカウントを作成できます
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
 				<context-group purpose="location">
@@ -4162,7 +4162,7 @@
 					This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.
 				</source>
 				<target state="translated">
-					既存の Orchid アカウントのQRコードがすでにある場合は、手順 4 から再生し、アプリを開いてコードをスキャン/貼り付けてアカウントを追加するだけ設定が完了します。その後、そのアカウントから VPN サービスは支払われます。
+					このセットアップ ガイドでは、当社の web3 ベースの dapp とあなたの OXT を使用してアカウントを作成するプロセスについて説明します。 既存の Orchid アカウントの QR コードを既にお持ちの場合は、このガイドのステップ 4 に進むことができます。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4182,11 +4182,10 @@
 					for an opportunity to earn OXT while learning about Orchid!
 				</source>
 				<target state="translated">
-					Orchid について学びながら OXT を獲得する機会については、Coinbase の
+					Orchid について学びながら OXT を獲得する機会については、
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					獲得キャンペーン
+					Coinbase の獲得キャンペーンをご覧ください！
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					をご覧ください！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4270,11 +4269,11 @@
 					.
 				</source>
 				<target state="translated">
-					イーサリアム ウォレットには
+					Orchid には、ご使用の他のイーサリアム製品またはサービスと接続されていない新しいイーサリアム ウォレット アドレスを使用することをお勧めします。
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					を使用することをお勧めします。
+					も推奨します。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4314,7 +4313,7 @@
 					Load the Orchid DApp
 				</source>
 				<target state="translated">
-					ウォレットに資金を追加する
+					Orchid DApp を読み込む
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4334,11 +4333,11 @@
 					in your wallet’s browser or your preferred browser with the wallet plugin enabled. It’s a good idea to bookmark this page for the future.
 				</source>
 				<target state="translated">
-					ウォレットのブラウザで
+					ウォレット プラグインを有効にして、ウォレットのブラウザまたはお好みのブラウザで
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					を読み込みます。今後の仕様のため、このページをブックマークすることをお勧めします。
+					を読み込みます。 今後使用するために、このページをブックマークすることをお勧めします。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4353,8 +4352,8 @@
 				<source>
 					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 				</source>
-				<target state="new">
-					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
+				<target state="translated">
+					ウォレット口座残高を読み取ることができるように、ウォレットを DApp DApp に「接続」するよう求められる場合があります。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4369,8 +4368,8 @@
 				<source>
 					Add funds to your wallet
 				</source>
-				<target state="new">
-					Orchid アカウントを作成する
+				<target state="translated">
+					ウォレットに資金を追加する
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4386,7 +4385,7 @@
 					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
 				</source>
 				<target state="translated">
-					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
+					Orchid アカウントに資金を供給するには、それに移動する OXT とトランザクション手数料の ETH が必要です。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4407,7 +4406,9 @@
 					or save the QR code for scanning.
 				</source>
 				<target state="translated">
-					画面上の指示を読み、アカウントを作成するために必要な OXT または ETH を追加します。
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					DApp は、必要な OXT と ETH の金額を表示します。 OXT と ETH をウォレットに送金し、[アカウントを作成] ボタンをタップします。 次に、2 つのイーサリアム トランザクションを承認します。 完了したら、Orchid のアカウントコードをコピーするか、QR コードを保存してスキャンします。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4450,11 +4451,11 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					用 Orchid アプリをダウンロードして、
+					または
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					で Orchid アプリのベータテストを行う手助けをしてください。
+					用の Orchid アプリをダウンロードしてください。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4469,8 +4470,8 @@
 				<source>
 					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
 				</source>
-				<target state="new">
-					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
+				<target state="translated">
+					アプリを開き、新しいホップを作成して、VPN サービスの支払いのために新しい Orchid アカウントをリンクします。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4487,9 +4488,9 @@
 					Manage Profile
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Manage Profile
+					プロファイルの管理
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -4507,9 +4508,9 @@
 					New Hop
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					New Hop
+					新しいホップ
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -4527,9 +4528,9 @@
 					Link Orchid Account
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Link Orchid Account
+					Orchid アカウントをリンク
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -4562,7 +4563,7 @@
 					On the Orchid app’s connect screen, tap Connect. This enables Orchid on your device, activates your configured hop(s) and sends your internet traffic through Orchid.
 				</source>
 				<target state="translated">
-					Orchid アプリのメイン画面で、右上のトグルを [オン] に切り替えます。これにより、デバイスで Orchid が有効になり、構成されたホップがアクティブになります。
+					Orchid アプリの接続画面で、「接続」をタップします。 これにより、デバイスで Orchid が有効になり、構成されたホップがアクティブになりインターネット トラフィックが Orchid を通じて送信されます。
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -4582,9 +4583,9 @@
 					Stay curious out there!
 				</source>
 				<target state="translated">
-					これで完了です！自由に検索を開始する準備ができました。
+					これで完了です！ 自由に探検を始める準備ができました。
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					お楽しみください！
+					好奇心旺盛でいましょう！
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
