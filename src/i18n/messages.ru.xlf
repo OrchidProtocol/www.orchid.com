@@ -5636,7 +5636,7 @@
 					Orchid Account Set-up
 				</source>
 				<target state="translated">
-					Руководство по настройке
+					Настройка учетной записи Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5652,7 +5652,7 @@
 					To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 				</source>
 				<target state="translated">
-					Чтобы начать использовать Orchid, вам понадобится учетная запись Orchid. Из этого руководства вы узнаете, как создать учетную запись и подключить ее к приложению Orchid, используя кошелек Ethereum и цифровую валюту Orchid — OXT.
+					Чтобы начать использовать Orchid, вам понадобится учетная запись Orchid. Есть три способа получить доступ к учетной записи Orchid прямо сейчас:
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5675,15 +5675,15 @@
 					You can create an account with OXT
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Someone could share one with you
+					Другой пользователь может открыть вам доступ к своей учетной записи
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can buy an account on iOS
+					Вы можете купить учетную запись через iOS
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can create an account with OXT
+					Вы можете сами создать ее с помощью OXT
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
 				<context-group purpose="location">
@@ -5700,7 +5700,7 @@
 					This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.
 				</source>
 				<target state="translated">
-					Если у вас уже есть QR-код для существующей учетной записи Orchid, переходите сразу к шагу 4, просто откройте приложение, отсканируйте или вставьте код и добавьте учетную запись. Используемые вами VPN-услуги будут оплачиваться с этой учетной записи.
+					В этом руководстве описано, как создать учетную запись с помощью нашего DApp (децентрализованного приложения) на базе web3 и приобретенной вами валюты OXT. Если у вас уже есть QR-код для существующей учетной записи Orchid, вы можете сразу перейти к шагу 4.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5740,7 +5740,7 @@
 					Step
 				</source>
 				<target state="translated">
-					Шаг
+					ШАГ
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5808,11 +5808,10 @@
 					.
 				</source>
 				<target state="translated">
-					При создании кошелька Ethereum рекомендуем воспользоваться сервисом
+					Рекомендуем использовать для Orchid кошелек Ethereum с новым адресом, не привязанный к другим используемым вами продуктам или услугам Ethereum. Также рекомендуем использовать
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Metamask
+					Metamask.
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5832,11 +5831,10 @@
 					is also compatible with Orchid.
 				</source>
 				<target state="translated">
-					Также с Orchid совместимы
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
+					также совместим с Orchid.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5852,7 +5850,7 @@
 					Load the Orchid DApp
 				</source>
 				<target state="translated">
-					Пополните кошелек
+					Загрузите Orchid DApp
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5872,11 +5870,11 @@
 					in your wallet’s browser or your preferred browser with the wallet plugin enabled. It’s a good idea to bookmark this page for the future.
 				</source>
 				<target state="translated">
-					Загрузите ссылку
+					Загрузите адрес
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					в браузер вашего кошелька. Рекомендуем добавить эту страницу в закладки.
+					в браузер вашего кошелька или в удобный вам браузер со включенным плагином кошелька.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5891,8 +5889,8 @@
 				<source>
 					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 				</source>
-				<target state="new">
-					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
+				<target state="translated">
+					Советуем добавить эту страницу в закладки на будущее. Возможно, вам будет предложено «подключить» свой кошелек к Orchid DApp для считывания баланса средств на кошельке.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5908,7 +5906,7 @@
 					Add funds to your wallet
 				</source>
 				<target state="translated">
-					Создайте учетную запись Orchid
+					Пополните кошелек
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5924,7 +5922,7 @@
 					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
 				</source>
 				<target state="translated">
-					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
+					Чтобы пополнить счет Orchid, вам потребуется валюта OXT для пополнения баланса, а также ETH для покрытия стоимость транзакции.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5945,7 +5943,9 @@
 					or save the QR code for scanning.
 				</source>
 				<target state="translated">
-					Следуйте инструкциям на экране и добавьте необходимую сумму OXT или ETH для создания учетной записи.
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					В DApp будут показаны необходимые суммы OXT и ETH. Переведите OXT и ETH в кошелек и нажмите на кнопку «Создать учетную запись». Далее вам будет необходимо подтвердить две транзакции в Ethereum. После этого скопируйте код своей учетной записи Orchid или сохраните QR-код для сканирования.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5989,11 +5989,10 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					и помогите нам с бета-тестированием приложения для
+					или
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS через Testflight
+					iOS.
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6008,8 +6007,8 @@
 				<source>
 					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
 				</source>
-				<target state="new">
-					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
+				<target state="translated">
+					Откройте приложение, создайте новое подключение и привяжите созданную учетную запись Orchid, чтобы оплачивать услуги VPN.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6026,9 +6025,9 @@
 					Manage Profile
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Manage Profile
+					Управление профилем
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6046,9 +6045,9 @@
 					New Hop
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					New Hop
+					Новое подключение
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6066,9 +6065,9 @@
 					Link Orchid Account
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Link Orchid Account
+					Привязать учетную запись Orchid
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6101,7 +6100,7 @@
 					On the Orchid app’s connect screen, tap Connect. This enables Orchid on your device, activates your configured hop(s) and sends your internet traffic through Orchid.
 				</source>
 				<target state="translated">
-					На главном экране приложения Orchid переведите переключатель в правом верхнем углу в положение «ON» (ВКЛ.). После этого Orchid начнет работать на вашем устройстве, а настроенное подключение будет активировано.
+					На экране подключения в приложении Orchid нажмите «Подключиться». После этого сервис Orchid на вашем устройстве включится, подключения будут активированы, а интернет-трафик будет отправляться через Orchid.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6121,7 +6120,9 @@
 					Stay curious out there!
 				</source>
 				<target state="translated">
-					Вот и всё! Можно дать волю своей любознательности и исследовать мир Интернета без границ!
+					Вот и всё! Теперь вы можете свободно исследовать мир Интернета.
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Будьте любознательны!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">

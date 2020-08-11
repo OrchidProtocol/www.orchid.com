@@ -5645,7 +5645,7 @@
 					Orchid Account Set-up
 				</source>
 				<target state="translated">
-					Panduan penyiapan
+					Penyiapan akun Orchid
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5661,7 +5661,7 @@
 					To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 				</source>
 				<target state="translated">
-					Untuk mulai menggunakan Orchid, Anda perlu akun Orchid. Panduan penyiapan ini akan menunjukkan cara membuat akun Orchid dan menghubungkan akun tersebut ke aplikasi Orchid menggunakan dompet Ethereum dan mata uang digital Orchid: OXT.
+					Untuk mulai menggunakan Orchid, Anda memerlukan akun Orchid. Ada tiga cara untuk mendapatkan akses ke akun Orchid saat ini:
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5684,15 +5684,15 @@
 					You can create an account with OXT
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					Someone could share one with you
+					Seseorang bisa berbagi akun dengan Anda
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can buy an account on iOS
+					Anda bisa membeli akun di iOS
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
-					You can create an account with OXT
+					Anda bisa membuat akun dengan OXT
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
 				<context-group purpose="location">
@@ -5709,7 +5709,7 @@
 					This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.
 				</source>
 				<target state="translated">
-					Jika Anda sudah memiliki kode QR untuk akun Orchid yang ada, mulailah dari langkah 4 dan cukup buka aplikasi untuk memindai/menempelkan kode dan menambahkan akun. Layanan VPN Anda akan dibayar dari akun tersebut.
+					Panduan penyiapan ini menjelaskan langkah-langkah untuk membuat akun menggunakan DApp berbasis Web3 kami dan OXT Anda sendiri. Jika Anda sudah memiliki kode QR untuk akun Orchid yang sudah ada, Anda bisa langsung lompat ke langkah 4 dari panduan ini.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5749,7 +5749,7 @@
 					Step
 				</source>
 				<target state="translated">
-					Langkah
+					LANGKAH
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5817,11 +5817,10 @@
 					.
 				</source>
 				<target state="translated">
-					Kami merekomendasikan menggunakan
+					Sebaiknya gunakan alamat dompet Ethereum baru untuk Orchid yang tidak terkait dengan produk atau layanan Ethereum lainnya yang Anda gunakan. Kami juga merekomendasikan
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
-					Metamask
+					Metamask.
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					untuk dompet Ethereum Anda.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5841,7 +5840,7 @@
 					is also compatible with Orchid.
 				</source>
 				<target state="translated">
-					Alternatifnya,
+					Selain itu,
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Coinbase Wallet
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
@@ -5861,7 +5860,7 @@
 					Load the Orchid DApp
 				</source>
 				<target state="translated">
-					Tambahkan dana ke dompet Anda
+					Buka Orchid DApp
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5885,7 +5884,7 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					di peramban dompet Anda. Ada baiknya jika halaman ini difavoritkan agar dapat cepat dibuka lain kali.
+					di peramban dompet atau peramban pilihan Anda dengan ekstensi dompet diaktifkan.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5900,8 +5899,8 @@
 				<source>
 					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 				</source>
-				<target state="new">
-					You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
+				<target state="translated">
+					Ada baiknya jika halaman ini difavoritkan agar dapat cepat dibuka lain kali. Anda mungkin diminta untuk “menghubungkan” dompet Anda ke Orchid DApp sehingga saldo akun dompet dapat dibaca.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5917,7 +5916,7 @@
 					Add funds to your wallet
 				</source>
 				<target state="translated">
-					Buat akun Orchid Anda
+					Tambahkan dana ke dompet Anda
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5933,7 +5932,7 @@
 					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
 				</source>
 				<target state="translated">
-					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
+					Untuk mendanai akun Orchid, Anda memerlukan OXT yang ingin Anda pindahkan ke akun dan ETH untuk biaya transaksi.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5954,7 +5953,9 @@
 					or save the QR code for scanning.
 				</source>
 				<target state="translated">
-					Baca petunjuk di layar dan tambahkan OXT atau ETH yang diperlukan untuk membuat akun.
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					DApp akan menunjukkan jumlah OXT dan ETH yang diperlukan. Transfer OXT dan ETH ke dalam dompet dan ketuk tombol “Buat akun”. Kemudian, setujui dua transaksi Ethereum. Setelah selesai, salin kode akun Orchid Anda atau simpan kode QR untuk pemindaian.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -5998,11 +5999,10 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a>" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					dan bantu kami menguji versi beta aplikasi kami di
+					atau
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>" />
-					iOS Testflight
+					iOS.
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>" />
-					.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6017,8 +6017,8 @@
 				<source>
 					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
 				</source>
-				<target state="new">
-					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
+				<target state="translated">
+					Buka aplikasi, buat lompatan baru dan hubungkan akun Orchid baru untuk membayar layanan VPN.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6035,9 +6035,9 @@
 					Manage Profile
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Manage Profile
+					Kelola profil
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6055,9 +6055,9 @@
 					New Hop
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					New Hop
+					Lompatan baru
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6075,9 +6075,9 @@
 					Link Orchid Account
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</source>
-				<target state="new">
+				<target state="translated">
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
-					Link Orchid Account
+					Hubungkan akun Orchid
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 				</target>
 				<context-group purpose="location">
@@ -6110,7 +6110,7 @@
 					On the Orchid app’s connect screen, tap Connect. This enables Orchid on your device, activates your configured hop(s) and sends your internet traffic through Orchid.
 				</source>
 				<target state="translated">
-					Pada layar utama aplikasi Orchid, alihkan tombol pada bagian kanan atas layar agar nyala. Tindakan ini mengaktifkan Orchid pada perangkat Anda dan mengaktifkan lompatan terkonfigurasi Anda.
+					Pada layar untuk menghubungkan aplikasi Orchid, ketuk “Hubungkan”. Tindakan ini memungkinkan Orchid pada perangkat Anda, mengaktifkan lompatan yang Anda konfigurasi, dan mengirim lalu lintas Internet Anda melalui Orchid.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -6130,7 +6130,7 @@
 					Stay curious out there!
 				</source>
 				<target state="translated">
-					Itu saja! Anda siap untuk mulai menjelajah dengan bebas.
+					Itu saja! Kini Anda siap untuk mulai menjelajah dengan bebas.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					Tetaplah penasaran!
 				</target>
