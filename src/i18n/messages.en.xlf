@@ -1444,7 +1444,7 @@
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
 					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
-					* The release schedule was published on March 21,2020 in connection with the Consensys Dilligence audit and
+					* The release schedule was published on March 21,2020 in connection with the Consensys Diligence audit and
 					the information is as of that date only.
 					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
@@ -1549,7 +1549,7 @@
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
 					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i>" />
-					* The release schedule was published on March 21,2020 in connection with the Consensys Dilligence audit and
+					* The release schedule was published on March 21,2020 in connection with the Consensys Diligence audit and
 					the information is as of that date only.
 					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i>" />
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
@@ -3950,7 +3950,7 @@
 				<source>
 					Staking is a process where one deposits and locks up an asset into an illiquid
 					contract or mechanism in exchange for revenue or rewards. Orchid providers stake OXT in an Ethereum
-					smart contract (the directory) to advertize their services to clients. Orchid clients then select
+					smart contract (the directory) to advertise their services to clients. Orchid clients then select
 					providers randomly, weighted by proportional stake, so that the probability of picking a particular
 					provider is equal to their fraction of the total stake.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
@@ -3963,7 +3963,7 @@
 				<target state="final">
 					Staking is a process where one deposits and locks up an asset into an illiquid
 					contract or mechanism in exchange for revenue or rewards. Orchid providers stake OXT in an Ethereum
-					smart contract (the directory) to advertize their services to clients. Orchid clients then select
+					smart contract (the directory) to advertise their services to clients. Orchid clients then select
 					providers randomly, weighted by proportional stake, so that the probability of picking a particular
 					provider is equal to their fraction of the total stake.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
