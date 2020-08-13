@@ -13,6 +13,6 @@ export class PodcastEp10Component implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('Episode 10: Ben Bartlett');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_BBartlett.jpg');
-        this.meta.setGlobalDescription('Go down the rabbit hole with a forefather of crypto, David Chaum, CEO of the xx Network.');
+        this.meta.setGlobalDescription('Go down the rabbit hole with Ben Bartlett, an environmental lawyer and a Berkeley City Council Member. The son of community activists he shares his family\'s rich history and personal fight for freedom. A timely discussion on the future of democracy, personal freedom, and defending our civil rights.');
     }
 }
