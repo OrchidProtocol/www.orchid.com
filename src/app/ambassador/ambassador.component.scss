@@ -1,0 +1,25 @@
+@import 'media_queries';
+@import 'misc_config';
+@import "orc_config";
+
+.hero__wrapper {
+	background: $orc-beige-light;
+}
+.hero__container {
+	max-width: 1200px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	padding: 3rem 1rem;
+}
+
+.hero__text {
+	max-width: 600px;
+}
+.hero__graphic {
+	& > img {
+		max-width: 90%;
+		margin: auto;
+		display: block;
+	}
+}
