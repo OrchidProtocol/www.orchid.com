@@ -34,6 +34,7 @@ import { PodcastEp7Component } from './podcast-ep7/podcast.component';
 import { PodcastEp8Component } from './podcast-ep8/podcast.component';
 import { PodcastEp9Component } from './podcast-ep9/podcast.component';
 import { PodcastEp10Component } from './podcast-ep10/podcast.component';
+import { PodcastEp11Component } from './podcast-ep11/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -98,6 +99,9 @@ export const routes: Routes = [
 			{ path: "podcast/episode-9-david-chaum.html", redirectTo: "podcast/episode-9-david-chaum" },
 			{ path: "podcast/episode-10-ben-bartlett", component: PodcastEp10Component },
 			{ path: "podcast/episode-10-ben-bartlett.html", redirectTo: "podcast/episode-10-ben-bartlett" },
+			{ path: "podcast/episode-11-richard-muirhead", component: PodcastEp11Component },
+			{ path: "podcast/episode-11-richard-muirhead.html", redirectTo: "podcast/episode-11-richard-muirhead" },
+			
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
