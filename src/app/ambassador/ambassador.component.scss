@@ -12,10 +12,25 @@
   display: flex;
   align-items: center;
   padding: 3rem 1rem;
+
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .hero__text {
   max-width: 600px;
+  h1, h2 {
+    font-weight: lighter;
+  }
+  h1 {
+    margin-bottom: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+    color: #53686A;
+    margin: 2rem 0 1rem 0;
+  }
 }
 
 .hero__graphic {
@@ -89,3 +104,49 @@
   position: relative;
 }
 
+.who__wrapper {
+  b {
+    font-family: $orc-tf-primary;
+  }
+}
+
+.benefits__row {
+  margin: 2rem 0;
+  @media (min-width: 1200px) {
+    .benefits__column {
+      max-width: 14rem;
+      width: 100%;
+      margin: 0 1rem;
+    }
+    .benefits__column:nth-child(1),
+    .benefits__column:nth-child(3) {
+      margin-top: 3rem;
+    }
+    display: flex;
+    justify-content: center;
+  }
+
+  b {
+    font-family: $orc-tf-primary;
+  }
+
+  svg {
+    display: block;
+    margin: auto;
+  }
+}
+.benefits__bunny {
+  width: 100%;
+  max-width: 420px;
+  margin: auto;
+  @media (min-width: 1200px) {
+    margin-top: -4rem;
+  }
+}
+.benefits__wrapper {
+  h4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+}
