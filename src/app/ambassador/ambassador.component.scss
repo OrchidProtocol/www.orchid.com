@@ -11,11 +11,12 @@
   margin: auto;
   display: flex;
   align-items: center;
-  padding: 3rem 1rem;
+  padding: 3rem 1rem 7rem;
 
   @media (max-width: 1200px) {
     flex-direction: column-reverse;
     text-align: center;
+    padding: 3rem 1rem;
   }
 }
 
