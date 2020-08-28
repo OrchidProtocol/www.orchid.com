@@ -12,7 +12,7 @@ export class PodcastEp9Component implements OnInit {
 
     ngOnInit() {
         this.meta.setGlobalTitle('Episode 9: David Chaum');
-        this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_DChaum.jpg');
+        this.meta.setGlobalImage('https://www.orchid.com/assets/img/podcast/EpisodeHeader_DChaum.png');
         this.meta.setGlobalDescription('Go down the rabbit hole with a forefather of crypto, David Chaum, CEO of the xx Network.');
     }
 }
