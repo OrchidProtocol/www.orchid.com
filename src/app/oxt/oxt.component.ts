@@ -11,9 +11,9 @@ export class OxtComponent implements OnInit {
     constructor(private meta: MetaService) { }
 
     ngOnInit() {
-        this.meta.setGlobalTitle('About the OXT Digital Currency | Orchid');
+        this.meta.setGlobalTitle('OXT Digital Currency | Orchid');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/oxt/social.png');
-        this.meta.setGlobalDescription('We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN.');
+        this.meta.setGlobalDescription('OXT is an Ethereum (ERC-20) digital currency used to exchange value on the Orchid network. Orchid offers VPN privacy tools at an affordable cost.');
     }
 
     go_sec() {

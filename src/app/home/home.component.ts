@@ -54,8 +54,8 @@ export class HomeComponent implements OnInit {
     }
     
 
-    this.meta.setGlobalTitle('Orchid | Open Source VPN & Privacy Software');
-    this.meta.setGlobalDescription('Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services.');
+    this.meta.setGlobalTitle('Crypto VPN App | Orchid');
+    this.meta.setGlobalDescription('Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.');
     this.meta.update('og:url', 'https://www.orchid.com/');
 
     switch (this.localeId) {
