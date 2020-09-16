@@ -38,6 +38,7 @@ import { PodcastEp11Component } from './podcast-ep11/podcast.component';
 import { PodcastEp12Component } from './podcast-ep12/podcast.component';
 import { PodcastEp13Component } from './podcast-ep13/podcast.component';
 import { PodcastEp14Component } from './podcast-ep14/podcast.component';
+import { PodcastEp15Component } from './podcast-ep15/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -110,6 +111,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-13-brian-j-fox.html", redirectTo: "podcast/episode-13-brian-j-fox" },
 			{ path: "podcast/episode-14-juan-gilbert", component: PodcastEp14Component },
 			{ path: "podcast/episode-14-juan-gilbert.html", redirectTo: "podcast/episode-14-juan-gilbert" },
+			{ path: "podcast/episode-15-val-mack", component: PodcastEp15Component },
+			{ path: "podcast/episode-15-val-mack.html", redirectTo: "podcast/episode-15-val-mack" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
