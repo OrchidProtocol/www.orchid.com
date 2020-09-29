@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   hasWeb3Browser: boolean;
   hasFundsAvailable: boolean;
   hasAccountConfigured: boolean;
+  blogLink: string;
   blogPosts = [];
 
   constructor(
@@ -68,6 +69,11 @@ export class HomeComponent implements OnInit {
       case 'zh':
         // define locale specific meta tags here
         break;
+    }
+
+    this.blogLink = "https://blog.orchid.com/";
+    if (this.localeId !== 'en-US') {
+      this.blogLink = `https://blog.${this.localeId}.orchid.com/`;
     }
 
     this.events$ = this.events.getEvents();
