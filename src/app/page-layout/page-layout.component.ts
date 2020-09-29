@@ -1,4 +1,4 @@
-import {Component, OnInit} from "@angular/core";
+import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 
 @Component({
@@ -12,13 +12,22 @@ export class PageLayoutComponent implements OnInit {
   isOpen: boolean = false;
   noShadow: boolean = true;
   purple: boolean;
+  blogLink: string;
 
-  constructor(route: ActivatedRoute) {
+  constructor(
+      route: ActivatedRoute,
+      @Inject(LOCALE_ID) protected localeId: string,
+    ) {
     route.data.subscribe(d => this.purple = !!d["purpleLayout"]);
   }
 
   ngOnInit() {
     const doc = typeof document !== "undefined" && document;
+    
+    this.blogLink = "https://blog.orchid.com/";
+    if (this.localeId !== 'en-US') {
+      this.blogLink = `https://blog.${this.localeId}.orchid.com/`;
+    }
 
     if (doc) {
       this.js = true;
