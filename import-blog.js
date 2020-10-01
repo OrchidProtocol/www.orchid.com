@@ -47,7 +47,7 @@ fetch(`https://${domain}/feed-1.json`)
 	.then(data => {
 		try {
 			const output = new Array();
-			for (let index = 0; index < data.items.length; index++) {
+			for (let index = 0; index < Math.min(7, data.items.length); index++) {
 				const string = `https://${domain}` + data.items[index].featuredimage;
 				const destination = downloadBlogImage(string, index);
 				data.items[index].url = `https://${domain}/${data.items[index].url}`;

@@ -4,6 +4,26 @@
 
 $mobile-nav-height: 64px;
 
+.nav-infobar {
+  background: $orc-purple;
+  color: #FFF;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+  
+  @include mobile {
+    &.js {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
+  }
+}
+
 #nav {
   display: flex;
   flex-flow: row nowrap;
@@ -34,7 +54,7 @@ $mobile-nav-height: 64px;
       position: fixed;
       left: 0;
       right: 0;
-      top: 0;
+      top: 1.9rem;
       box-sizing: border-box;
       height: $mobile-nav-height;
       background: inherit;
