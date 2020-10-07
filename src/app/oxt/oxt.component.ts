@@ -17,17 +17,12 @@ export class OxtComponent implements OnInit {
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/oxt/social.png');
         this.meta.setGlobalDescription('OXT is an Ethereum (ERC-20) digital currency used to exchange value on the Orchid network. Orchid offers VPN privacy tools at an affordable cost.');
 
-        let OXT_released = 367584352; // As of September 16th 2020
+        let OXT_released = 369853388; // As of Oct 1st 2020
         const date_array = [
-            {
-                //September 16th
-                date: 1600264800000,
-                count: 0, //already included in the base OXT_released number
-            },
             {
                 //October 1st
                 date: 1601560800000,
-                count: 11025000 + 9000000,
+                count: 0,
             },
             {
                 //October 6th
