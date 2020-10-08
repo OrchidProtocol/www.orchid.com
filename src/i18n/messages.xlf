@@ -611,7 +611,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						73
+						82
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1074,7 +1074,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						22
+						25
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1087,7 +1087,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						23
+						26
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1100,7 +1100,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						27
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1113,7 +1113,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						25
+						28
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1126,7 +1126,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						26
+						29
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1139,7 +1139,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						27
+						30
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1147,7 +1147,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						86
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1160,7 +1160,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						27
+						30
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1168,7 +1168,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						86
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1181,7 +1181,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						28
+						31
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -1189,7 +1189,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						76
+						79
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1202,7 +1202,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						35
+						38
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1215,7 +1215,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						38
+						41
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1228,7 +1228,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						39
+						42
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1241,7 +1241,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						40
+						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1254,7 +1254,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						41
+						44
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1267,7 +1267,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						45
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1280,7 +1280,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						46
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1293,7 +1293,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						77
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1306,7 +1306,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						75
+						78
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1319,7 +1319,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						81
+						84
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1332,7 +1332,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						85
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1345,7 +1345,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						91
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1358,7 +1358,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						89
+						92
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1371,7 +1371,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						93
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1384,7 +1384,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						96
+						99
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2302,7 +2302,7 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="a4f8097f0364383b988866ba4f3435fef8a11d6d" datatype="html">
+			<trans-unit id="17ac81d22438585dd07b42b37280f29bf1f63852" datatype="html">
 				<source>
 					Staking is a process where one deposits and locks up an asset into an illiquid
 					contract or mechanism in exchange for revenue or rewards. Orchid providers stake OXT in an Ethereum
@@ -3759,7 +3759,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						69
+						68
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -3767,7 +3767,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						96
+						77
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3786,11 +3786,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep1__p1" datatype="html">
 				<source>
-					We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use. We also recommend
-					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					Metamask
-					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					.
+					We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3803,18 +3799,18 @@
 			</trans-unit>
 			<trans-unit id="JoinStep1__p2" datatype="html">
 				<source>
-					Alternatively,
+					We test with
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					Coinbase Wallet
+					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					is also compatible with Orchid.
+					, which is a great choice for an Ethereum wallet.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						36
+						33
 					</context>
 				</context-group>
 			</trans-unit>
@@ -3837,7 +3833,7 @@
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					in your wallet’s browser or your preferred browser with the wallet plugin enabled. It’s a good idea to bookmark this page for the future.
+					in your wallet’s browser or your preferred browser with a wallet plugin enabled. It’s a good idea to bookmark this page for the future.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3876,7 +3872,7 @@
 			</trans-unit>
 			<trans-unit id="JoinStep3__p1" datatype="html">
 				<source>
-					To fund the Orchid account, you will need the OXT you want to move into it and ETH for the transaction cost.
+					Adjust your account to see how much OXT you need for the efficiency you want. Also note the amount of ETH needed for network fees.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3889,12 +3885,11 @@
 			</trans-unit>
 			<trans-unit id="JoinStep3__p2" datatype="html">
 				<source>
-					The DApp will show the amount of OXT and ETH needed. Transfer the OXT and ETH into your wallet and tap the
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
-					Create Account
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
-					button. You then approve two Ethereum transactions. Once those complete, copy your Orchid account code
-					or save the QR code for scanning.
+					You will need both of those amounts in your attached wallet in order to create and fund the account. See our
+					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
+					participating exchanges
+					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
+					for acquiring OXT.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3907,7 +3902,20 @@
 			</trans-unit>
 			<trans-unit id="JoinStep4__title" datatype="html">
 				<source>
-					Connect your Account and app
+					Create your account
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						69
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinStep4__p1" datatype="html">
+				<source>
+					A Signer address is needed to create the account. Generate a Signer in the DApp, or generate one in the app (Android only) and paste it in.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3918,7 +3926,37 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="JoinStep4__p1" datatype="html">
+			<trans-unit id="JoinStep4__p2" datatype="html">
+				<source>
+					Hit
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
+					Create account
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
+					to submit both transactions to your wallet for approval. Approve both transactions and then wait for them to complete on Ethereum.
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						72
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinStep5__title" datatype="html">
+				<source>
+					Connect your account and app
+				</source>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/join/join.component.html
+					</context>
+					<context context-type="linenumber">
+						78
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="JoinStep5__p1" datatype="html">
 				<source>
 					Download the Orchid app for
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
@@ -3935,58 +3973,26 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						71
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep4__p3" datatype="html">
-				<source>
-					Open the app, create a new hop and link the new Orchid account to pay for VPN service.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
-						76
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep4__p4" datatype="html">
-				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
-					Manage Profile
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
 						80
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="JoinStep4__p5" datatype="html">
+			<trans-unit id="JoinStep5__p3" datatype="html">
 				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
-					New Hop
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
+					Open the app, tap Manage Profile, create a New Hop and then Link Orchid Account to pay for VPN service.
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						85
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="JoinStep4__p6" datatype="html">
+			<trans-unit id="JoinStep5__p4" datatype="html">
 				<source>
-					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
-					Link Orchid Account
-					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
+					That’s it! You’re ready to start exploring freely. Stay curious out there!
 				</source>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -3994,49 +4000,6 @@
 					</context>
 					<context context-type="linenumber">
 						88
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep5__title" datatype="html">
-				<source>
-					Start exploring freely!
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
-						97
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep5__p1" datatype="html">
-				<source>
-					On the Orchid app’s connect screen, tap Connect. This enables Orchid on your device, activates your configured hop(s) and sends your internet traffic through Orchid.
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
-						98
-					</context>
-				</context-group>
-			</trans-unit>
-			<trans-unit id="JoinStep5__p2" datatype="html">
-				<source>
-					That’s it!
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					You’re ready to start exploring freely.
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					Stay curious out there!
-				</source>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/join/join.component.html
-					</context>
-					<context context-type="linenumber">
-						101
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4049,7 +4012,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						113
+						99
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4062,7 +4025,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						120
+						106
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4075,7 +4038,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						121
+						107
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4088,7 +4051,7 @@
 						app/join/join.component.html
 					</context>
 					<context context-type="linenumber">
-						124
+						110
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -4162,14 +4125,6 @@
 					mandate pricing. Nonetheless, we expect prices to remain competitive with existing VPNs and privacy solutions.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
-					As of the date of this post, each OXT provides approximately 6 GBs of service on Orchid. A user can get
-					started
-					for as little as 5 OXT. An account with 30 OXT is expected to last for a sufficient period of time that users
-					won&apos;t have to go back into their accounts and add funds too regularly. For example, with 30 OXT, we estimate
-					you
-					would get approximately 250 GBs of service, which could last an entire year.
-					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
-					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					Read our blog on bandwidth pricing here
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
@@ -4207,7 +4162,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						66
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4264,7 +4219,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						88
+						80
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4283,6 +4238,11 @@
 					<x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4&gt;" />
 					OXT Release Schedule*
 					<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4&gt;" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
+					<x id="INTERPOLATION" equiv-text="{{OXT_released_string}}" />
+					OXT released as of
+					<x id="INTERPOLATION_1" equiv-text="{{last_date_string}}" />
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
 					<x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div&gt;" />
 					<x id="TAG_IMG_1" ctype="image" equiv-text="&lt;img/&gt;" />
@@ -4295,7 +4255,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						133
+						125
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4313,8 +4273,7 @@
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p&gt;" />
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
 					<x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;" />
-					* The release schedule was published on March 21,2020 in connection with the Consensys Diligence audit and
-					the information is as of that date only.
+					* The release schedule was published on March 21,2020 in connection with the Consensys Diligence audit and the information is as of that date in the document. The total released according to the schedule is calculated for convenience as of the most recent date in the schedule.
 					<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;" />
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p&gt;" />
@@ -4410,7 +4369,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						155
+						148
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4423,7 +4382,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						272
+						264
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4438,7 +4397,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						273
+						265
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4488,7 +4447,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						278
+						270
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4501,7 +4460,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						322
+						314
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4520,7 +4479,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						324
+						316
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4539,7 +4498,7 @@
 						app/oxt/oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						331
+						323
 					</context>
 				</context-group>
 			</trans-unit>
@@ -4580,7 +4539,7 @@
 						app/where-oxt/where-oxt.component.html
 					</context>
 					<context context-type="linenumber">
-						30
+						33
 					</context>
 				</context-group>
 			</trans-unit>
