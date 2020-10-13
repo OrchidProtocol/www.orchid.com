@@ -17,6 +17,7 @@ $hero-bp-vert: 1150px;
 
   @media (max-width: $hero-bp-1) {
     height: 55vw;
+    padding-top: 2.5rem;
   }
 
   @media (min-width: $hero-bp-vert) {
