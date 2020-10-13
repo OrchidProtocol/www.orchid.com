@@ -12,7 +12,7 @@ $mobile-nav-height: 64px;
   text-align: center;
   padding: 0.3rem;
   font-size: 0.75rem;
-  
+
   @include mobile {
     &.js {
       position: fixed;
@@ -21,6 +21,12 @@ $mobile-nav-height: 64px;
       top: 0;
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
+  }
+}
+
+#nav-root {
+  @include mobile {
+    margin-bottom: 1.9rem;
   }
 }
 
@@ -164,15 +170,15 @@ $flyout-gap: ($flyout-spacing / 2);
     flex-flow: row nowrap;
     align-items: center;
 
-    > li {
+    >li {
       $a-pad: 0.5rem;
 
-      > a {
+      >a {
         position: relative;
         padding: $a-pad;
       }
 
-      &.active-link > a::after {
+      &.active-link>a::after {
         $height: 4px;
         content: " ";
         position: absolute;
@@ -325,7 +331,9 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-#ft-nav, #ft-nav-2, #ft-nav-3 {
+#ft-nav,
+#ft-nav-2,
+#ft-nav-3 {
   z-index: 2;
 
   @include mobile {
@@ -333,7 +341,9 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-#ft-nav-list, #ft-nav-2-list, #ft-nav-3-list {
+#ft-nav-list,
+#ft-nav-2-list,
+#ft-nav-3-list {
   @include mobile {
     >li>a {
       display: block;
