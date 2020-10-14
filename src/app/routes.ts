@@ -42,6 +42,7 @@ import { PodcastEp15Component } from './podcast-ep15/podcast.component';
 import { PodcastEp16Component } from './podcast-ep16/podcast.component';
 import { PodcastEp17Component } from './podcast-ep17/podcast.component';
 import { PodcastEp18Component } from './podcast-ep18/podcast.component';
+import { PodcastEp19Component } from './podcast-ep19/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -121,6 +122,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-17-dawn-song", component: PodcastEp17Component },
 			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },{ path: "podcast/episode-18-alex-gluchowski", component: PodcastEp18Component },
 			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },
+			{ path: "podcast/episode-19-david-pan.html", redirectTo: "podcast/episode-19-david-pan" },{ path: "podcast/episode-19-david-pan", component: PodcastEp19Component },
+			{ path: "podcast/episode-19-david-pan.html", redirectTo: "podcast/episode-19-david-pan" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
