@@ -45,6 +45,7 @@ import { PodcastEp18Component } from './podcast-ep18/podcast.component';
 import { PodcastEp19Component } from './podcast-ep19/podcast.component';
 import { PodcastEp20Component } from './podcast-ep20/podcast.component';
 import { PodcastEp21Component } from './podcast-ep21/podcast.component';
+import { PodcastEp22Component } from './podcast-ep22/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -130,6 +131,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-20-neeraj-khandelwal.html", redirectTo: "podcast/episode-20-neeraj-khandelwal" },
 			{ path: "podcast/episode-21-felipe-erazo.html", redirectTo: "podcast/episode-21-felipe-erazo" },{ path: "podcast/episode-21-felipe-erazo", component: PodcastEp21Component },
 			{ path: "podcast/episode-21-felipe-erazo.html", redirectTo: "podcast/episode-21-felipe-erazo" },
+			{ path: "podcast/episode-22-adriana-hamacher.html", redirectTo: "podcast/episode-22-adriana-hamacher" },{ path: "podcast/episode-22-adriana-hamacher", component: PodcastEp22Component },
+			{ path: "podcast/episode-22-adriana-hamacher.html", redirectTo: "podcast/episode-22-adriana-hamacher" },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
