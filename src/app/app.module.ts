@@ -49,6 +49,7 @@ import { PodcastEp18Component } from './podcast-ep18/podcast.component';
 import { PodcastEp19Component } from './podcast-ep19/podcast.component';
 import { PodcastEp20Component } from './podcast-ep20/podcast.component';
 import { PodcastEp21Component } from './podcast-ep21/podcast.component';
+import { PodcastEp22Component } from './podcast-ep22/podcast.component';
 
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
@@ -109,6 +110,7 @@ import { MetaService } from './MetaService';
     PodcastEp19Component,
     PodcastEp20Component,
     PodcastEp21Component,
+    PodcastEp22Component,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
@@ -118,7 +120,7 @@ import { MetaService } from './MetaService';
   ],
   imports: [
     // TODO: how important is appId?
-    BrowserModule.withServerTransition({appId: 'orchid-www'}),
+    BrowserModule.withServerTransition({ appId: 'orchid-www' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
