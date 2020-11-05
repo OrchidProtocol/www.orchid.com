@@ -1,4 +1,5 @@
 $mobile-width: 870px;
+$screen-large-width: 1200px;
 $vert-splash-width: 960px;
 
 @mixin mobile {
@@ -9,6 +10,18 @@ $vert-splash-width: 960px;
 
 @mixin not-mobile {
   @media screen and (min-width: $mobile-width + 1) {
+    @content;
+  }
+}
+
+@mixin not-large-screen {
+  @media screen and (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin large-screen {
+  @media screen and (min-width: $screen-large-width + 1) {
     @content;
   }
 }
