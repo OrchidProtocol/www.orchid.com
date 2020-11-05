@@ -94,7 +94,9 @@ $mobile-nav-height: 64px;
   @include large-screen {
     display: block;
     & > button {
-      font-size: 0.75rem;
+      font-size: 14px;
+      padding-left: 1rem;
+      padding-right: 1rem;
     }
   }
 }
