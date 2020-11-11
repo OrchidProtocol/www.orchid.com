@@ -83,10 +83,29 @@ $mobile-nav-height: 64px;
       }
     }
   }
+
+  @include large-screen {
+    justify-content: space-between;
+  }
+}
+.nav-download {
+  display: none;
+  
+  @include large-screen {
+    display: block;
+    & > button {
+      font-size: 14px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
 }
 
 #nav-home {
   flex: 1 0 auto;
+  @include large-screen {
+    flex: none;
+  }
   line-height: 0px;
 
   >a {
