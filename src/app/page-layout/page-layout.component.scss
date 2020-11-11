@@ -88,12 +88,14 @@ $mobile-nav-height: 64px;
     justify-content: space-between;
   }
 }
+
 .nav-download {
   display: none;
-  
+
   @include large-screen {
     display: block;
-    & > button {
+
+    &>button {
       font-size: 14px;
       padding-left: 1rem;
       padding-right: 1rem;
@@ -103,9 +105,11 @@ $mobile-nav-height: 64px;
 
 #nav-home {
   flex: 1 0 auto;
+
   @include large-screen {
     flex: none;
   }
+
   line-height: 0px;
 
   >a {
@@ -603,5 +607,45 @@ $flyout-gap: ($flyout-spacing / 2);
 
   @media (max-width: 1150px) {
     margin-bottom: 2em;
+  }
+}
+
+
+.maker-badge {
+  transition: top .3s ease;
+  z-index: 99;
+  max-width: 200px;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-family: helvetica;
+  text-align: right;
+  height: auto;
+  min-width: 160px;
+  position: fixed;
+  bottom: -100%;
+  right: 0;
+  border-top-left-radius: 6px;
+
+  .maker-badge__btn {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 .5rem;
+    cursor: pointer;
+    border: 1px solid #cbd5e0;
+    border-bottom: 0;
+    background: #fff;
+    border-top-left-radius: 6px;
+    color: #2d3748;
+  }
+
+  .maker-badge__content {
+    text-align: left;
+    font-size: .7rem;
+    border: 1px solid #cbd5e0;
+    padding: .5rem;
+    display: block;
+    background: #fff;
   }
 }
