@@ -41,9 +41,9 @@ export class PageLayoutComponent implements OnInit {
       let blmBadgeCtn = doc.getElementById('maker-badge__content');
       const computeBlm = () => {
         if (blmBadge.dataset.state === 'false') {
-          blmBadge.style.top = `calc(100% - ${blmBadgeBtn.offsetHeight + 2}px)`;
+          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
         } else {
-          blmBadge.style.top = `calc(100% - ${blmBadgeBtn.offsetHeight + blmBadgeCtn.offsetHeight}px)`;
+          blmBadge.style.bottom = `0px`;
         }
       }
 
