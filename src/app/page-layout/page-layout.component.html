@@ -8,8 +8,7 @@
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
           alt="Orchid logo" class="no-mobile">-->
-          <img src="/assets/img/shared/orchid-logo-text.svg"
-          alt="Orchid logo" class="no-mobile">
+        <img src="/assets/img/shared/orchid-logo-text.svg" alt="Orchid logo" class="no-mobile">
         <img
           [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'"
           alt="Orchid logo" class="mobile-only">
@@ -22,23 +21,30 @@
         </button>
       </div>
       <ul class="nav-list phantom-list">
-        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">Home</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create Account</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How It Works</a></li>
+        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/"
+            i18n="@@Navigation-Home">Home</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create
+            Account</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works"
+            i18n="@@Navigation-HowItWorks">How It Works</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/oxt" i18n="@@Navigation-OXT">OXT</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-About">About</a></li>
-        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us"
+            i18n="@@Navigation-About">About</a></li>
+        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"
+            i18n="@@Navigation-Blog">Blog</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact"
+            i18n="@@Navigation-Contact">Contact</a></li>
 
         <li routerLinkActive="active-link" class="navbar-language-selector">
           <input type="checkbox" id="navbar-language-selector-checkbox">
           <label for="navbar-language-selector-checkbox" class="navbar-language-selector-checkbox-label"></label>
           <span class="phantom-a">
-            <img alt="" style="vertical-align: top;" width="20" height="20"src="/assets/img/shared/globe.svg">
+            <img alt="" style="vertical-align: top;" width="20" height="20" src="/assets/img/shared/globe.svg">
             <span i18n="@@NavigationCurrentLanguage">English</span>
           </span>
           <ul class="navbar-language-selector-list">
-            <li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" class="phantom-a" href="//www.ko.orchid.com">한국어</a></li>
+            <li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" class="phantom-a"
+                href="//www.ko.orchid.com">한국어</a></li>
             <li><a i18n="@@LanguageDropdown__En" class="phantom-a" href="//www.orchid.com">English</a></li>
             <li><a i18n="@@LanguageDropdown__Ru" class="phantom-a" href="//www.ru.orchid.com">русский</a></li>
             <li><a i18n="@@LanguageDropdown__Ja" class="phantom-a" href="//www.ja.orchid.com">日本</a></li>
@@ -54,7 +60,8 @@
       </button>
     </a>
     <button id="nav-toggle" class="phantom-btn mobile-only">
-      <img alt="Toggle Navigation" [src]="this.purple ? '/assets/img/shared/hamburger-white.svg' : '/assets/img/shared/hamburger.svg'">
+      <img alt="Toggle Navigation"
+        [src]="this.purple ? '/assets/img/shared/hamburger-white.svg' : '/assets/img/shared/hamburger.svg'">
     </button>
     <div id="nav-flyout-bkgd" [class.open]="this.isOpen"></div>
   </nav>
@@ -88,7 +95,8 @@
         <ul id="ft-nav-2-list" class="phantom-list">
           <li><a class="phantom-a" routerLink="/download" i18n="@@Navigation-Download">Download</a></li>
           <li><a class="phantom-a" routerLink="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
-          <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
+          <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"
+              i18n="@@Navigation-Blog">Blog</a></li>
         </ul>
       </nav>
       <nav id="ft-nav-3">
@@ -119,12 +127,13 @@
           <li>
             <a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer"
               aria-label="Join us on Telegram" title="Telegram">
-              <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram" width="32" height="32">
+              <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram"
+                width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer"
-		    aria-label="See the Source" title="Github">
+            <a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank"
+              rel="noopener noreferrer" aria-label="See the Source" title="Github">
               <img src="/assets/img/shared/social-github.svg" alt="Github" width="32" height="32">
             </a>
           </li>
@@ -160,5 +169,20 @@
         class="pos-absolute mobile-only">
       <img alt="" src="/assets/img/shared/footer-fish.svg" id="ft-adorn-fish" class="pos-absolute">
     </div>
+  </div>
+</div>
+
+<div class="maker-badge transition" id="maker-badge" style="visibility: visible;">
+  <div class="maker-badge__btn" id="maker-badge__btn"><img alt="Black Lives Matter Badge" width="30" class="maker-badge__btn-img"
+      src="/assets/img/shared/blm-blue-round.png">&nbsp;&nbsp;#BlackLivesMatter</div>
+  <div class="maker-badge__content" id="maker-badge__content">
+    <div style="color:#4a5568;max-width:200px;padding:0.5rem 0px 0;line-height:1.2rem">To be silent is to be complicit.
+      Black lives matter.</div>
+    <div class="maker-badge__stats">
+      <div style="margin-top:0.5rem;"><a style="color:#2B6CB0;text-decoration:underline;font-weight: 600;"
+          target="_blank" href="https://secure.actblue.com/donate/ms_blm_homepage_2019">Send a donation →</a></div>
+    </div><a target="_blank" href="http://blmbadge.unicornplatform.com"
+      style="display: block; margin: 0.5rem 0px; font-size: 10px; color: rgb(113, 128, 150); text-decoration: none; font-weight: 400;">Add
+      this to your website</a>
   </div>
 </div>

@@ -1,5 +1,5 @@
 import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
+import { ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: "app-page-layout",
@@ -15,15 +15,15 @@ export class PageLayoutComponent implements OnInit {
   blogLink: string;
 
   constructor(
-      route: ActivatedRoute,
-      @Inject(LOCALE_ID) protected localeId: string,
-    ) {
+    route: ActivatedRoute,
+    @Inject(LOCALE_ID) protected localeId: string,
+  ) {
     route.data.subscribe(d => this.purple = !!d["purpleLayout"]);
   }
 
   ngOnInit() {
     const doc = typeof document !== "undefined" && document;
-    
+
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
       this.blogLink = `https://blog.${this.localeId}.orchid.com/`;
@@ -36,12 +36,37 @@ export class PageLayoutComponent implements OnInit {
       // out of view immediately after loading
       setTimeout(_ => this.animateMenu = true, 20);
 
-      let nav   = doc.getElementById("nav") as HTMLElement;
+      let blmBadge = doc.getElementById('maker-badge');
+      let blmBadgeBtn = doc.getElementById('maker-badge__btn');
+      let blmBadgeCtn = doc.getElementById('maker-badge__content');
+      const computeBlm = () => {
+        if (blmBadge.dataset.state === 'false') {
+          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
+        } else {
+          blmBadge.style.bottom = `0px`;
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        blmBadge.dataset.state = 'false';
+        computeBlm();
+      })
+      blmBadgeBtn.addEventListener('click', () => {
+        if (blmBadge.dataset.state === 'false') {
+          blmBadge.dataset.state = 'true';
+        } else {
+          blmBadge.dataset.state = 'false';
+        }
+        computeBlm();
+      })
+      window.addEventListener('resize', computeBlm);
+
+      let nav = doc.getElementById("nav") as HTMLElement;
       let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
-      let bkgd  = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
-      let btn   = doc.getElementById("nav-toggle") as HTMLButtonElement;
-      let pin   = doc.getElementById("nav-pin") as HTMLDivElement;
-      let body   = doc.body;
+      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
+      let btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
+      let pin = doc.getElementById("nav-pin") as HTMLDivElement;
+      let body = doc.body;
 
       const toggleMenuOpen = () => {
         if (this.isOpen) body.classList.add("navigation-open");
