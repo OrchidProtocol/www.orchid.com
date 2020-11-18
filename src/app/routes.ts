@@ -47,6 +47,7 @@ import { PodcastEp20Component } from './podcast-ep20/podcast.component';
 import { PodcastEp21Component } from './podcast-ep21/podcast.component';
 import { PodcastEp22Component } from './podcast-ep22/podcast.component';
 import { PodcastEp23Component } from './podcast-ep23/podcast.component';
+import { PodcastEp24Component } from './podcast-ep24/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -123,19 +124,22 @@ export const routes: Routes = [
 			{ path: "podcast/episode-15-val-mack.html", redirectTo: "podcast/episode-15-val-mack" },
 			{ path: "podcast/episode-16-jason-brett", component: PodcastEp16Component },
 			{ path: "podcast/episode-16-jason-brett.html", redirectTo: "podcast/episode-16-jason-brett" },
+			{ path: "podcast/episode-17-dawn-song.html",  redirectTo: "podcast/episode-17-dawn-song" },
 			{ path: "podcast/episode-17-dawn-song", component: PodcastEp17Component },
-			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },{ path: "podcast/episode-18-alex-gluchowski", component: PodcastEp18Component },
 			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },
-			{ path: "podcast/episode-19-david-pan.html", redirectTo: "podcast/episode-19-david-pan" },{ path: "podcast/episode-19-david-pan", component: PodcastEp19Component },
+			{ path: "podcast/episode-18-alex-gluchowski", component: PodcastEp18Component },
 			{ path: "podcast/episode-19-david-pan.html", redirectTo: "podcast/episode-19-david-pan" },
-			{ path: "podcast/episode-20-neeraj-khandelwal.html", redirectTo: "podcast/episode-20-neeraj-khandelwal" },{ path: "podcast/episode-20-neeraj-khandelwal", component: PodcastEp20Component },
+			{ path: "podcast/episode-19-david-pan", component: PodcastEp19Component },
 			{ path: "podcast/episode-20-neeraj-khandelwal.html", redirectTo: "podcast/episode-20-neeraj-khandelwal" },
-			{ path: "podcast/episode-21-felipe-erazo.html", redirectTo: "podcast/episode-21-felipe-erazo" },{ path: "podcast/episode-21-felipe-erazo", component: PodcastEp21Component },
+			{ path: "podcast/episode-20-neeraj-khandelwal", component: PodcastEp20Component },
 			{ path: "podcast/episode-21-felipe-erazo.html", redirectTo: "podcast/episode-21-felipe-erazo" },
-			{ path: "podcast/episode-22-adriana-hamacher.html", redirectTo: "podcast/episode-22-adriana-hamacher" },{ path: "podcast/episode-22-adriana-hamacher", component: PodcastEp22Component },
+			{ path: "podcast/episode-21-felipe-erazo", component: PodcastEp21Component },
 			{ path: "podcast/episode-22-adriana-hamacher.html", redirectTo: "podcast/episode-22-adriana-hamacher" },
-			{ path: "podcast/episode-23-roneil-rumburg.html", redirectTo: "podcast/episode-23-roneil-rumburg" },{ path: "podcast/episode-23-roneil-rumburg", component: PodcastEp23Component },
+			{ path: "podcast/episode-22-adriana-hamacher", component: PodcastEp22Component },
 			{ path: "podcast/episode-23-roneil-rumburg.html", redirectTo: "podcast/episode-23-roneil-rumburg" },
+			{ path: "podcast/episode-23-roneil-rumburg", component: PodcastEp23Component },
+			{ path: "podcast/episode-24-brad-kam.html", redirectTo: "podcast/episode-24-brad-kam" },
+			{ path: "podcast/episode-24-brad-kam", component: PodcastEp24Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
