@@ -141,8 +141,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-23-roneil-rumburg", component: PodcastEp23Component },
 			{ path: "podcast/episode-24-brad-kam.html", redirectTo: "podcast/episode-24-brad-kam" },
 			{ path: "podcast/episode-24-brad-kam", component: PodcastEp24Component },
-			{ path: "podcast/episode-25-[placeholder].html", redirectTo: "podcast/episode-25-[placeholder]" },
-			{ path: "podcast/episode-25-[placeholder]", component: PodcastEp25Component },
+			{ path: "podcast/episode-25-roger-huang.html", redirectTo: "podcast/episode-25-roger-huang" },
+			{ path: "podcast/episode-25-roger-huang", component: PodcastEp25Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
