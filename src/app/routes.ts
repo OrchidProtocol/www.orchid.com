@@ -48,6 +48,7 @@ import { PodcastEp21Component } from './podcast-ep21/podcast.component';
 import { PodcastEp22Component } from './podcast-ep22/podcast.component';
 import { PodcastEp23Component } from './podcast-ep23/podcast.component';
 import { PodcastEp24Component } from './podcast-ep24/podcast.component';
+import { PodcastEp25Component } from './podcast-ep25/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -140,6 +141,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-23-roneil-rumburg", component: PodcastEp23Component },
 			{ path: "podcast/episode-24-brad-kam.html", redirectTo: "podcast/episode-24-brad-kam" },
 			{ path: "podcast/episode-24-brad-kam", component: PodcastEp24Component },
+			{ path: "podcast/episode-25-[placeholder].html", redirectTo: "podcast/episode-25-[placeholder]" },
+			{ path: "podcast/episode-25-[placeholder]", component: PodcastEp25Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }
