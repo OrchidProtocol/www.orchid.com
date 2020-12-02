@@ -2,6 +2,8 @@
 
 Replace references to episode 0 with the episode that you are creating.
 
+You can check out an example of a podcast launch PR [here](https://github.com/OrchidProtocol/www.orchid.com/pull/111/files).
+
 ## Create a new component for the page
 
 Create the new directory for it
@@ -141,7 +143,7 @@ export const routes: Routes = [
     <div class="cards-wrapper">
 
         <!--
-            Remove the card--large class from the first item in the list, and paste in the <div class="card card--large"> from podcast.component.html above it
+            Remove the card--large class from the first item in the list, and paste in the <div class="card card--large"> element and it's children from podcast.component.html above it
         -->
         
         <div class="card card--large">
