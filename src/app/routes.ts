@@ -50,6 +50,7 @@ import { PodcastEp23Component } from './podcast-ep23/podcast.component';
 import { PodcastEp24Component } from './podcast-ep24/podcast.component';
 import { PodcastEp25Component } from './podcast-ep25/podcast.component';
 import { PodcastEp26Component } from './podcast-ep26/podcast.component';
+import { PodcastEp27Component } from './podcast-ep27/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -146,6 +147,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-25-roger-huang", component: PodcastEp25Component },
 			{ path: "podcast/episode-26-anne-ahola-ward.html", redirectTo: "podcast/episode-26-anne-ahola-ward" },
 			{ path: "podcast/episode-26-anne-ahola-ward", component: PodcastEp26Component },
+			{ path: "podcast/episode-27-kurt-rohloff.html", redirectTo: "podcast/episode-27-kurt-rohloff" },
+			{ path: "podcast/episode-27-kurt-rohloff", component: PodcastEp27Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "**", component: NotFoundComponent }

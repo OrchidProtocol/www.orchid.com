@@ -54,6 +54,7 @@ import { PodcastEp23Component } from './podcast-ep23/podcast.component';
 import { PodcastEp24Component } from './podcast-ep24/podcast.component';
 import { PodcastEp25Component } from './podcast-ep25/podcast.component';
 import { PodcastEp26Component } from './podcast-ep26/podcast.component';
+import { PodcastEp27Component } from './podcast-ep27/podcast.component';
 
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
@@ -119,6 +120,7 @@ import { MetaService } from './MetaService';
     PodcastEp24Component,
     PodcastEp25Component,
     PodcastEp26Component,
+    PodcastEp27Component,
     NewsletterSignupPage,
     WhereOXTComponent,
     VideoSectionComponent,
