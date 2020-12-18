@@ -1,7 +1,70 @@
+@import "misc_config";
+@import "orc_config";
+@import "media_queries";
+
 .newsletter-signup-page-wrapper {
-	min-height: 50vh;
-	min-height: calc(100vh - 366px);
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	@include not-mobile {
+		min-height: 50vh;
+		min-height: calc(100vh - 371px);
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		&::before,
+		&::after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 9rem;
+			height: 9rem;
+			content: "";
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+		}
+		&::before {
+			background-image: url(/assets/img/how-it-works/circuit.svg);
+			height: 25rem;
+			width: 15rem;
+			transform: translate(-400px, -350px);
+		}
+		&::after {
+			background-image: url(/assets/img/oxt/bg-circles-2.svg);
+			transform: translate(150px, 150px);
+		}
+	}
+}
+
+.newsletter-signup-page-container {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	overflow: hidden;
+	@include not-mobile {
+		background-color: white;
+		box-shadow: 0px 0px 1.5rem rgba($orc-purple-gray, 0.25);
+		border-radius: 1rem;
+		max-width: 26rem;
+		margin: 5rem auto;
+	}
+
+	& > img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+.newsletter-signup-page-inner {
+	padding: 1rem;
+	@include mobile {
+		padding-bottom: 5rem;
+	}
+	& > h2,
+	& > p {
+		text-align: center;
+		margin: 1rem auto;
+		max-width: 18rem;
+	}
 }
