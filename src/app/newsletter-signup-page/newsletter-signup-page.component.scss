@@ -17,8 +17,8 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 10rem;
-			height: 10rem;
+			width: 9rem;
+			height: 9rem;
 			content: "";
 			background-repeat: no-repeat;
 			background-position: center;
@@ -44,7 +44,7 @@
 	overflow: hidden;
 	@include not-mobile {
 		background-color: white;
-		box-shadow: 0px 0px 2rem 1rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0px 0px 1.5rem rgba($orc-purple-gray, 0.25);
 		border-radius: 1rem;
 		max-width: 26rem;
 		margin: 5rem auto;
