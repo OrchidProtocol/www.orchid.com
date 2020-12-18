@@ -14,6 +14,7 @@ import { ServiceTermsComponent } from './service-terms/service-terms.component';
 import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { NewsletterSignupCoreComponent } from './newsletter-signup-core/newsletter-signup-core.component';
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { NewsletterSignupFeaturesComponent } from './newsletter-signup-features/newsletter-signup-features.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
@@ -82,6 +83,7 @@ import { MetaService } from './MetaService';
     ServiceTermsComponent,
     HomeComponent,
     NewsletterSignupComponent,
+    NewsletterSignupCoreComponent,
     NewsletterSignupHeroComponent,
     NewsletterSignupFeaturesComponent,
     PageLayoutComponent,

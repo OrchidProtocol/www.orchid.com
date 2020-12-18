@@ -1,7 +1,43 @@
+@import "misc_config";
+@import "orc_config";
+@import "media_queries";
+
 .newsletter-signup-page-wrapper {
-	min-height: 50vh;
-	min-height: calc(100vh - 366px);
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
+	@include not-mobile {
+		min-height: 50vh;
+		min-height: calc(100vh - 371px);
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.newsletter-signup-page-container {
+	width: 100%;
+	overflow: hidden;
+	@include not-mobile {
+		background-color: white;
+		box-shadow: 0px 0px 2rem 1rem rgba(0, 0, 0, 0.1);
+		border-radius: 1rem;
+		max-width: 26rem;
+		margin: 5rem auto;
+	}
+
+	& > img {
+		display: block;
+		width: 100%;
+	}
+}
+.newsletter-signup-page-inner {
+	padding: 1rem;
+	@include mobile {
+		padding-bottom: 5rem;
+	}
+	& > h2,
+	& > p {
+		text-align: center;
+		margin: 1rem auto;
+		max-width: 18rem;
+	}
 }
