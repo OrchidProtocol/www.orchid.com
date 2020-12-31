@@ -36,7 +36,16 @@ export class QuizComponent implements OnInit {
     @ViewChild('questionContainer', { static: false }) domelement2: ElementRef;
     @ViewChild('progressBar', { static: false }) domelement3: ElementRef;
 
-
+    question: Question;
+    questionIndex: number = -1;
+    score: number = 0;
+    finalScore: number;
+    quizWrapper: any;
+    questionContainer: any;
+    progressBar: any;
+    resizeFunc: any;
+    progress: number = -1;
+    twitterShareLink: string = '';
     questions = [
         new Question('boolean', 'A VPN will completely protect your privacy online.', {
             answer: false,
@@ -76,15 +85,6 @@ export class QuizComponent implements OnInit {
             answer: false,
         }),
     ];
-    question: Question;
-    questionIndex: number = -1;
-    score: number = 0;
-    finalScore: number;
-    quizWrapper: any;
-    questionContainer: any;
-    progressBar: any;
-    resizeFunc: any;
-    progress: number = -1;
 
     constructor(
         private meta: MetaService,
@@ -99,6 +99,8 @@ export class QuizComponent implements OnInit {
         })
         this.question = undefined;
         this.finalScore = Math.round((this.score / this.questions.length) * 100);
+        const resultShareString = `I got ${this.finalScore} out of 100 on the online privacy quiz! https://www.orchid.com/quiz/`;
+        this.twitterShareLink = `https://twitter.com/intent/tweet?text=${encodeURIComponent(resultShareString)}`;
     }
 
     answer(answer) {
@@ -188,8 +190,6 @@ export class QuizComponent implements OnInit {
             childList: true,
             subtree: true,
         });
-
-        this.nextQuestion();
     }
 
     ngOnDestroy() {
