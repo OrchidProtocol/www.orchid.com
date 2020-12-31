@@ -10,7 +10,6 @@
     box-sizing: content-box;
     overflow-x: hidden;
     padding: 2rem 1rem;
-    padding-top: 15vh;
 
     display: flex;
     justify-content: center;
@@ -21,7 +20,7 @@
         &::before,
         &::after {
             position: absolute;
-            top: 50%;
+            top: 20vh;
             left: 50%;
             width: 9rem;
             height: 9rem;
@@ -153,5 +152,68 @@ button.correctAnswer {
     position: relative;
     &::before {
         box-shadow: 0px 0px 0px 0.5rem $orc-green-bright;
+    }
+}
+
+.quiz__progress {
+    width: 100%;
+    max-width: 26rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+    & > div {
+        display: block;
+        height: 100%;
+        transition: width 1s ease;
+        background: $orc-green-bright;
+        border-radius: 1rem;
+        position: relative;
+        min-width: 1rem;
+
+        &::after {
+            content: '';
+            width: 1.25rem;
+            height: 1.25rem;
+            border-radius: 100%;
+            position: absolute;
+            top: 50%;
+            right: 0.5rem;
+            margin: calc(-1.25rem / 2);
+            background: $orc-green-bright;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+.questionAutopsy {
+    margin: 1.5rem auto;
+    text-align: left;
+    max-width: 26rem;
+
+    box-sizing: border-box;
+    width: 100%;
+
+    border: 2px dotted $orc-green-bright;
+    &.wrong {
+        border-color: $orc-gray;
+    }
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    &::after {
+        position: absolute;
+        left: 2rem;
+        bottom: -0.5rem;
+        background: white;
+        line-height: 1rem;
+        padding: 0 0.2rem;
+    }
+    &.correct::after {
+        content: '✅';
+    }
+    &.wrong::after {
+        content: '❌';
     }
 }

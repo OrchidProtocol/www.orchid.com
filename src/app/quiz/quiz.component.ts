@@ -1,5 +1,5 @@
 import { element } from 'protractor';
-import { ElementRef, Component, OnInit, ViewChild } from '@angular/core';
+import { ElementRef, Component, OnInit, ViewChild, OnChanges } from '@angular/core';
 import { MetaService } from '../MetaService';
 
 interface questionConfig {
@@ -34,6 +34,8 @@ export class QuizComponent implements OnInit {
 
     @ViewChild('quizWrapper', { static: false }) domelement: ElementRef;
     @ViewChild('questionContainer', { static: false }) domelement2: ElementRef;
+    @ViewChild('progressBar', { static: false }) domelement3: ElementRef;
+
 
     questions = [
         new Question('boolean', 'A VPN will completely protect your privacy online.', {
@@ -80,7 +82,9 @@ export class QuizComponent implements OnInit {
     finalScore: number;
     quizWrapper: any;
     questionContainer: any;
+    progressBar: any;
     resizeFunc: any;
+    progress: number = -1;
 
     constructor(
         private meta: MetaService,
@@ -128,6 +132,8 @@ export class QuizComponent implements OnInit {
         }
 
         this.questionIndex++;
+        this.progress = this.questionIndex / this.questions.length;
+        this.progressBar.style.width = `${Math.round(this.progress * 100)}%`;
         if (this.questionIndex >= this.questions.length) {
             this.endQuiz();
         } else {
@@ -145,7 +151,7 @@ export class QuizComponent implements OnInit {
             //question.style.marginTop = `-${question.offsetHeight / 2}px`;
         }
 
-        this.quizWrapper.style.minHeight = `${maxHeight}px`;
+        this.quizWrapper.style.minHeight = `calc(${maxHeight}px + 2rem)`;
     }
 
     ngOnInit() {
@@ -156,6 +162,8 @@ export class QuizComponent implements OnInit {
     ngAfterViewInit() {
         this.quizWrapper = this.domelement.nativeElement;
         this.questionContainer = this.domelement2.nativeElement;
+        this.progressBar = this.domelement3.nativeElement;
+
 
         for (let index = 0; index < this.questionContainer.children.length; index++) {
             const element = this.questionContainer.children[index];
@@ -166,6 +174,15 @@ export class QuizComponent implements OnInit {
         this.resizeFunc = this.sizeQuestionContainer.bind(this);
         window.addEventListener('load', this.resizeFunc);
         window.addEventListener('resize', this.resizeFunc);
+
+        setTimeout(this.resizeFunc, 3000);
+
+        const observer = new MutationObserver(this.resizeFunc);
+        observer.observe(this.questionContainer, {
+            attributes: true,
+            childList: true,
+            subtree: true,
+        });
 
         this.nextQuestion();
     }
