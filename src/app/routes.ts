@@ -56,6 +56,7 @@ import { PodcastEp29Component } from './podcast-ep29/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 export const routes: Routes = [
 	{
@@ -157,6 +158,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-29-yaniv-tal", component: PodcastEp29Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
+			{ path: "quiz", component: QuizComponent },
+			{ path: "quiz.html", redirectTo: 'quiz' },
 			{ path: "**", component: NotFoundComponent }
 		]
 	},

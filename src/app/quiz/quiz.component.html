@@ -1,0 +1,37 @@
+<div #quizWrapper class="quiz__wrapper">
+    <div class="quiz__container">
+        <div #questionContainer class="question__container">
+            <div class="question" *ngFor="let q of questions">
+                <h3>{{q.question}}</h3>
+                <p class="questionDescription" *ngIf="q.config.description">{{q.config.description}}</p>
+
+                <div class="controlsContainer booleanControls" *ngIf="q.boolean">
+                    <button [class.correctAnswer]="q.config.answer === true && q.answered" class="btn-primary" (click)="answer(true)">True</button>
+                    <button [class.correctAnswer]="q.config.answer === false && q.answered" class="btn-secondary" (click)="answer(false)">False</button>
+                </div>
+
+                <div class="controlsContainer multiChoiceControls" *ngIf="q.multichoice">
+                    <div class="quiz__multichoice-button-container" *ngFor="let option of q.config.options">
+                        <button [class.correctAnswer]="option.answer === true && q.answered" (click)="answer(option)">{{option.text}}</button>
+                    </div>
+                </div>
+
+                <div *ngIf="q.config.note !== undefined" class="quiz__note-container" [class.active]="q.answered">
+                    <!--<span *ngIf="q.correct === true">✅</span>
+                    <span *ngIf="q.correct === false">❌</span>-->
+                    <p>{{q.config.note}}</p>
+                    <p><button (click)="answer({})">Next</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="results__container">
+            <h2 *ngIf="finalScore !== undefined">
+                Final score: {{finalScore}} out of 100
+            </h2>
+        </div>
+    </div>
+</div>
+
+<div class="patterning-instance-1"></div>
+
+<app-newsletter-signup></app-newsletter-signup>

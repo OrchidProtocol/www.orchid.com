@@ -65,6 +65,7 @@ import { VideoSectionComponent } from './video-section/video-section.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -132,7 +133,8 @@ import { MetaService } from './MetaService';
     VideoSectionComponent,
     SetupVideoSectionComponent,
     NotFoundComponent,
-    WebinarLPComponent
+    WebinarLPComponent,
+    QuizComponent
   ],
   imports: [
     // TODO: how important is appId?
