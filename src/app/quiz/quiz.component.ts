@@ -179,6 +179,7 @@ export class QuizComponent implements OnInit {
     ngOnInit() {
         this.meta.setGlobalTitle('Privacy Quiz | Orchid');
         this.meta.setGlobalDescription('Check to see how much you know about online privacy!');
+        this.meta.setGlobalImage('https://www.orchid.com/assets/img/quiz/social.png');
     }
 
     ngAfterViewInit() {
