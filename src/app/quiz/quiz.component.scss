@@ -266,12 +266,21 @@ button.wrongAnswer {
         background: white;
         line-height: 1rem;
         padding: 0 0.2rem;
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        box-sizing: content-box;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 50% auto;
     }
     &.correct::after {
-        content: "✅";
+        background-size: 64% auto;
+        background-image: url(/assets/img/shared/check.svg)
     }
     &.wrong::after {
-        content: "❌";
+        background-image: url(/assets/img/shared/close.svg)
     }
 }
 
