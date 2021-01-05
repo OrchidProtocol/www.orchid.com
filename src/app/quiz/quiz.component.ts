@@ -91,6 +91,16 @@ export class QuizComponent implements OnInit {
 
     }
 
+    scoreLow () {
+        return this.finalScore <= 33.3333;
+    }
+    scoreMid () {
+        return this.finalScore > 33.3333 && this.finalScore < 66.6666;
+    }
+    scoreHigh () {
+        return this.finalScore >= 66.6666;
+    }
+
     endQuiz() {
         this.quizWrapper.style.height = `${this.quizWrapper.offsetHeight}px`;
         window.requestAnimationFrame(() => {

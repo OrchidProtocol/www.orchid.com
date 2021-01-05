@@ -45,8 +45,7 @@
             <h2>
                 Final score: {{finalScore}} out of 100
             </h2>
-            <br>
-            <br>
+            <div class="scoreBunny" [class.low]="scoreLow()" [class.mid]="scoreMid()" [class.high]="scoreHigh()"></div>
             <b>Share your result</b>
             <br>
             <a [href]="twitterShareLink">
