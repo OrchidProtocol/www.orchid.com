@@ -1,5 +1,5 @@
 <div *ngIf="questionIndex !== -1" class="quiz__header">
-    <h2>The Orchid Online Privacy Quiz</h2>
+    <h2>The Online Privacy Quiz</h2>
     <p class="medium" *ngIf="finalScore === undefined">Question {{questionIndex+1}} / {{questions.length}}</p>
 </div>
 <div #quizWrapper class="quiz__wrapper">
@@ -35,7 +35,10 @@
                 <div *ngIf="q.config.note !== undefined" class="quiz__note-container" [class.active]="q.answered">
                     <!--<span *ngIf="q.correct === true">✅</span>
                     <span *ngIf="q.correct === false">❌</span>-->
-                    <p>{{q.config.note}}</p>
+                    <p>
+                        <b *ngIf="q.correct">Correct!</b>
+                        <b *ngIf="!q.correct">Incorrect.</b>
+                        {{q.config.note}}</p>
                     <p><button class="btn-primary" (click)="answer({})">Next &raquo;</button></p>
                 </div>
             </div>
