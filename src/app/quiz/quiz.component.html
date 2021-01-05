@@ -36,7 +36,7 @@
                     <!--<span *ngIf="q.correct === true">✅</span>
                     <span *ngIf="q.correct === false">❌</span>-->
                     <p>{{q.config.note}}</p>
-                    <p><button class="btn-primary" (click)="answer({})">Next</button></p>
+                    <p><button class="btn-primary" (click)="answer({})">Next &raquo;</button></p>
                 </div>
             </div>
         </div>
@@ -44,10 +44,11 @@
             <div #progressBar class="progressBar"></div>
         </div>
         <div class="results__container" *ngIf="finalScore !== undefined">
-            <h2>
+            <div class="scoreBunny" [class.low]="scoreLow()" [class.mid]="scoreMid()" [class.high]="scoreHigh()"></div>
+            <h2 class="finalScore">
                 Final score: {{finalScore}} out of 100
             </h2>
-            <div class="scoreBunny" [class.low]="scoreLow()" [class.mid]="scoreMid()" [class.high]="scoreHigh()"></div>
+
             <p *ngIf="scoreLow()">
                 Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
                 and improve your privacy today!
