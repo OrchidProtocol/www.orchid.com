@@ -1,15 +1,19 @@
+<div *ngIf="questionIndex !== -1" class="quiz__header">
+    <h2>The Orchid Online Privacy Quiz</h2>
+    <h3 *ngIf="finalScore === undefined">Question {{questionIndex+1}} / {{questions.length}}</h3>
+</div>
 <div #quizWrapper class="quiz__wrapper">
     <div class="quiz__container">
         <div [class.active]="questionIndex === -1" class="quiz__start">
-            <h2>Take the Online Privacy Quiz</h2>
-            <button (click)='nextQuestion()'>Start</button>
-        </div>
-        <div class="quiz__progress">
-            <div #progressBar class="progressBar"></div>
+            <img alt="Take the Online Privacy Quiz" title="Take the Online Privacy Quiz"
+                src="/assets/img/quiz/QuizLandingBunnyText.svg">
+            <br />
+            <p>Figure out how much you know about online privacy!</p>
+            <button class="btn-primary" (click)='nextQuestion()'>Start</button>
         </div>
         <div #questionContainer class="question__container">
             <div class="question" *ngFor="let q of questions">
-                <h3>{{q.question}}</h3>
+                <h4>{{q.question}}</h4>
                 <p class="questionDescription" *ngIf="q.config.description">{{q.config.description}}</p>
 
                 <div class="controlsContainer booleanControls" *ngIf="q.boolean">
@@ -30,9 +34,12 @@
                     <!--<span *ngIf="q.correct === true">✅</span>
                     <span *ngIf="q.correct === false">❌</span>-->
                     <p>{{q.config.note}}</p>
-                    <p><button (click)="answer({})">Next</button></p>
+                    <p><button class="btn-primary" (click)="answer({})">Next</button></p>
                 </div>
             </div>
+        </div>
+        <div [class.active]="questionIndex !== -1 && finalScore === undefined" class="quiz__progress">
+            <div #progressBar class="progressBar"></div>
         </div>
         <div class="results__container" *ngIf="finalScore !== undefined">
             <h2>
@@ -43,7 +50,7 @@
             <b>Share your result</b>
             <br>
             <a [href]="twitterShareLink">
-                <button>Twitter</button>
+                <img src="/assets/img/quiz/twitter.svg" alt="twitter">
             </a>
             <br />
             <br />

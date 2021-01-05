@@ -78,7 +78,6 @@ export class QuizComponent implements OnInit {
                 { text: 'Your credit score' },
                 { text: 'All of the above', answer: true },
             ],
-            note: '[insert note here]'
         }),
 
         new Question('boolean', 'When you browse the web in a private tab or incognito mode, companies will not be able to track your activity.', {
@@ -153,12 +152,18 @@ export class QuizComponent implements OnInit {
             //question.style.marginTop = `-${question.offsetHeight / 2}px`;
         }
         for (let index = 0; index < this.quizWrapper.children.length; index++) {
-            const question = this.quizWrapper.children[index];
-            maxHeight = Math.max(question.offsetHeight, maxHeight, question.clientHeight);
-            //question.style.marginTop = `-${question.offsetHeight / 2}px`;
+            const element = this.quizWrapper.children[index];
+            maxHeight = Math.max(element.offsetHeight, maxHeight, element.clientHeight);
+            //element.style.marginTop = `-${element.offsetHeight / 2}px`;
         }
 
         this.quizWrapper.style.minHeight = `calc(${maxHeight}px + 2rem)`;
+
+        if(this.questionContainer.children[this.questionIndex]) {
+            const currentQuestion = this.questionContainer.children[this.questionIndex];
+            this.progressBar.parentElement.style.bottom = 'unset';
+            this.progressBar.parentElement.style.top = 'calc(' + currentQuestion.offsetHeight + 'px + 3rem)';
+        }
     }
 
     ngOnInit() {
