@@ -94,13 +94,13 @@ export class QuizComponent implements OnInit {
 
     }
 
-    scoreLow () {
+    scoreLow() {
         return this.finalScore <= 33.3333;
     }
-    scoreMid () {
+    scoreMid() {
         return this.finalScore > 33.3333 && this.finalScore < 66.6666;
     }
-    scoreHigh () {
+    scoreHigh() {
         return this.finalScore >= 66.6666;
     }
 
@@ -176,7 +176,7 @@ export class QuizComponent implements OnInit {
 
         this.quizWrapper.style.minHeight = `calc(${maxHeight}px + 2rem)`;
 
-        if(this.questionContainer.children[this.questionIndex]) {
+        if (this.questionContainer.children[this.questionIndex]) {
             const currentQuestion = this.questionContainer.children[this.questionIndex];
             this.progressBar.parentElement.style.bottom = 'unset';
             this.progressBar.parentElement.style.top = 'calc(' + currentQuestion.offsetHeight + 'px + 3rem)';

@@ -17,9 +17,11 @@
                 <p class="questionDescription" *ngIf="q.config.description">{{q.config.description}}</p>
 
                 <div class="controlsContainer booleanControls" *ngIf="q.boolean">
-                    <button [class.correctAnswer]="q.config.answer === true && q.answered" [class.wrongAnswer]="q.config.answer !== true && q.wrong" class="btn-primary"
+                    <button [class.correctAnswer]="q.config.answer === true && q.answered"
+                        [class.wrongAnswer]="q.config.answer !== true && q.wrong" class="btn-primary"
                         (click)="answer(true)">True</button>
-                    <button [class.correctAnswer]="q.config.answer === false && q.answered" [class.wrongAnswer]="q.config.answer !== false && q.wrong" class="btn-secondary"
+                    <button [class.correctAnswer]="q.config.answer === false && q.answered"
+                        [class.wrongAnswer]="q.config.answer !== false && q.wrong" class="btn-secondary"
                         (click)="answer(false)">False</button>
                 </div>
 
