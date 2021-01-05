@@ -37,8 +37,9 @@
                     <span *ngIf="q.correct === false">❌</span>-->
                     <p>
                         <b *ngIf="q.correct">Correct!</b>
-                        <b *ngIf="!q.correct">Incorrect.</b>
-                        {{q.config.note}}</p>
+                        <b *ngIf="!q.correct">Incorrect.</b>&nbsp;
+                        <span [innerHTML]="q.config.note"></span>
+                    </p>
                     <p><button class="btn-primary" (click)="answer({})">Next &raquo;</button></p>
                 </div>
             </div>
@@ -56,10 +57,6 @@
                 Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
                 and improve your privacy today!
             </p>
-            <p *ngIf="scoreMid()">
-                Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
-                and improve your privacy today!
-            </p>
             <p *ngIf="scoreHigh()">
                 Wow! It’s clear that you understand the importance of privacy online. That means there’s a good chance
                 you’re already using Orchid! If not, you can download the Orchid App and start improving your privacy
@@ -74,17 +71,17 @@
                 <span><b>Question:</b> {{q.question}}</span>
                 <div class="booleanAnswer" *ngIf="q.boolean">
                     <span *ngIf="q.config.answer">
-                        <b>Answer:</b> True
+                        <b>Correct Answer:</b> True
                     </span>
                     <span *ngIf="!q.config.answer">
-                        <b>Answer:</b> False
+                        <b>Correct Answer:</b> False
                     </span>
                 </div>
 
                 <div class="multiChoiceAnswer" *ngIf="q.multichoice">
                     <div class="quiz__multichoice-button-container" *ngFor="let option of q.config.options">
                         <span *ngIf="option.answer">
-                            <b>Answer:</b> {{option.text}}
+                            <b>Correct Answer:</b> {{option.text}}
                         </span>
                     </div>
                 </div>

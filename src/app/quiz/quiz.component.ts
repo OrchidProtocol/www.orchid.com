@@ -60,7 +60,7 @@ export class QuizComponent implements OnInit {
                 { text: 'Advertising tracking companies' },
                 { text: 'The VPN itself' },
             ],
-            note: 'Your VPN encrypts data while it\'s being transferred between your device, and the VPN server.'
+            note: "Your VPN encrypts data while it's being transferred between your device and the VPN server. Therefore, your ISP cannot see which sites you visit, or what data is transferred."
         }),
 
         new Question('multichoice', 'When logging into a new website I should...', {
@@ -69,22 +69,60 @@ export class QuizComponent implements OnInit {
                 { text: 'Use oauth like FB or Twitter' },
                 { text: 'Create a new login with an email address', answer: true },
             ],
-            note: 'Using a "Sign in with ___" feature lets that connected service know every time you log in.'
+            note: 'Using a "Sign in with ___" feature lets that connected service know every time you log in, and in many cases, even what you do on that site.'
         }),
 
         new Question('multichoice', 'What type of information can the web browser collect about you?', {
             options: [
-                { text: 'Your physical location' },
+                { text: 'Your physical location', answer: true },
                 { text: 'What you’re wearing' },
                 { text: 'Your credit score' },
-                { text: 'All of the above', answer: true },
             ],
-            note: ' ',
+            note: 'Your physical location can be estimated based on your IP address. Using a VPN, you can browse the web as though you were in another city, state, or country.',
         }),
 
         new Question('boolean', 'When you browse the web in a private tab or incognito mode, companies will not be able to track your activity.', {
             answer: false,
-            note: ' ',
+            note: 'While incognito mode can block third-party cookies on some websites, there are many other ways for services to identify you.',
+        }),
+
+        new Question('multichoice', 'When using IoT connected devices in your home or office, you should not:', {
+            options: [
+                { text: 'Turn them off ever' },
+                { text: 'Put them on the same network as your computers', answer: true  },
+                { text: 'Deny them access to your location data' },
+            ],
+            note: 'IoT devices on the same network as your PC or phone can collect all sorts of information, including which websites you visit, and when you are at home.',
+        }),
+
+        new Question('multichoice', 'Which of the following are used to build your online digital fingerprint?', {
+            options: [
+                { text: 'Screen size' },
+                { text: 'Type of device I’m using' },
+                { text: 'The fonts installed on my system' },
+                { text: 'All of the above', answer: true },
+            ],
+            note: '<a target="_blank" href="https://blog.orchid.com/can-you-still-be-tracked-using-a-vpn/">All types of metrics are used to identify individual users.</a>',
+        }),
+
+        new Question('multichoice', 'What is the average number of trackers found on a typical news site?', {
+            options: [
+                { text: '1-3' },
+                { text: '3-5' },
+                { text: '5-10' },
+                { text: '30+', answer: true },
+            ],
+            note: 'Not only are these trackers numerous, but they even noticeably impact how <a target="_blank" href="https://www.pingdom.com/blog/trackers-impact-performance/">long it takes for most news sites to load</a>.',
+        }),
+
+        new Question('boolean', 'information about your browsing activity on websites is regularly sold to third parties.', {
+            answer: true,
+            note: ' Companies, large and small, regularly buy and sell the data they collect to data brokers. The data is then often combined to form larger profiles about your online behavior.',
+        }),
+
+        new Question('boolean', 'the General Data Protection Regulation (GDPR) prevents companies from retaining your personal data for more than 180 days.', {
+            answer: false,
+            note: 'Under GDPR, there is no strict upper limit to how long companies can retain your data. It is up to individual companies to set their own data retention deadlines.',
         }),
     ];
 
@@ -95,13 +133,13 @@ export class QuizComponent implements OnInit {
     }
 
     scoreLow() {
-        return this.finalScore <= 33.3333;
+        return this.finalScore <= 50;
     }
     scoreMid() {
         return this.finalScore > 33.3333 && this.finalScore < 66.6666;
     }
     scoreHigh() {
-        return this.finalScore >= 66.6666;
+        return this.finalScore > 50;
     }
 
     endQuiz() {
