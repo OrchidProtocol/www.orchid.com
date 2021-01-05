@@ -46,13 +46,25 @@
                 Final score: {{finalScore}} out of 100
             </h2>
             <div class="scoreBunny" [class.low]="scoreLow()" [class.mid]="scoreMid()" [class.high]="scoreHigh()"></div>
+            <p *ngIf="scoreLow()">
+                Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
+                and improve your privacy today!
+            </p>
+            <p *ngIf="scoreMid()">
+                Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
+                and improve your privacy today!
+            </p>
+            <p *ngIf="scoreHigh()">
+                Wow! It’s clear that you understand the importance of privacy online. That means there’s a good chance
+                you’re already using Orchid! If not, you can download the Orchid App and start improving your privacy
+                online!
+            </p>
             <b>Share your result</b>
+            <br>
             <br>
             <a [href]="twitterShareLink">
                 <img src="/assets/img/quiz/twitter.svg" alt="twitter">
             </a>
-            <br />
-            <br />
             <div class="questionAutopsy" [class.correct]="q.correct" [class.wrong]="!q.correct"
                 *ngFor="let q of questions">
                 <span><b>Question:</b> {{q.question}}</span>
