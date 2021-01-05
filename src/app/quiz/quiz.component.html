@@ -17,16 +17,16 @@
                 <p class="questionDescription" *ngIf="q.config.description">{{q.config.description}}</p>
 
                 <div class="controlsContainer booleanControls" *ngIf="q.boolean">
-                    <button [class.correctAnswer]="q.config.answer === true && q.answered" class="btn-primary"
+                    <button [class.correctAnswer]="q.config.answer === true && q.answered" [class.wrongAnswer]="q.config.answer !== true && q.wrong" class="btn-primary"
                         (click)="answer(true)">True</button>
-                    <button [class.correctAnswer]="q.config.answer === false && q.answered" class="btn-secondary"
+                    <button [class.correctAnswer]="q.config.answer === false && q.answered" [class.wrongAnswer]="q.config.answer !== false && q.wrong" class="btn-secondary"
                         (click)="answer(false)">False</button>
                 </div>
 
                 <div class="controlsContainer multiChoiceControls" *ngIf="q.multichoice">
                     <div class="quiz__multichoice-button-container" *ngFor="let option of q.config.options">
                         <button [class.correctAnswer]="option.answer === true && q.answered"
-                            (click)="answer(option)">{{option.text}}</button>
+                            [class.wrongAnswer]="option.wrong" (click)="answer(option)">{{option.text}}</button>
                     </div>
                 </div>
 

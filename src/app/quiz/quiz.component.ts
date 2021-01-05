@@ -16,6 +16,7 @@ class Question {
     element: any;
     answered: boolean = false;
     correct: boolean = undefined;
+    wrong: boolean = undefined;
 
     constructor(type: string, question: string, config: questionConfig) {
         this.type = type;
@@ -78,10 +79,12 @@ export class QuizComponent implements OnInit {
                 { text: 'Your credit score' },
                 { text: 'All of the above', answer: true },
             ],
+            note: ' ',
         }),
 
         new Question('boolean', 'When you browse the web in a private tab or incognito mode, companies will not be able to track your activity.', {
             answer: false,
+            note: ' ',
         }),
     ];
 
@@ -121,6 +124,9 @@ export class QuizComponent implements OnInit {
                 break;
             case 'multichoice':
                 this.question.correct = answer.answer === true;
+                if (!this.question.correct) {
+                    answer.wrong = true;
+                }
                 break;
             default:
                 alert(`Question type ${this.question.type} does not have an answer handler.`);
@@ -130,6 +136,7 @@ export class QuizComponent implements OnInit {
         if (this.question.correct) {
             this.score++;
         }
+        this.question.wrong = !this.question.correct;
         this.nextQuestion();
     }
 
