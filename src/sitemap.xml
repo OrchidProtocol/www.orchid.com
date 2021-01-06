@@ -17,6 +17,10 @@
 		<priority>0.8</priority>
 	</url>
 	<url>
+		<loc>https://www.orchid.com/quiz</loc>
+		<priority>0.8</priority>
+	</url>
+	<url>
 		<loc>https://www.orchid.com/oxt</loc>
 		<priority>0.8</priority>
 	</url>
