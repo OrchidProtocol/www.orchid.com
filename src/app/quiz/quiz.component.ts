@@ -230,6 +230,12 @@ export class QuizComponent implements OnInit {
     }
 
     ngAfterViewInit() {
+        const noJsElements = Array.from(document.getElementsByClassName('no-js') as HTMLCollectionOf<HTMLElement>);
+        for (let index = 0; index < noJsElements.length; index++) {
+            const element = noJsElements[index];
+            element.style.display = "none";
+        }
+
         this.quizWrapper = this.domelement.nativeElement;
         this.quizContainer = this.quizWrapper.querySelector('.quiz__container');
         this.quizStart = this.quizWrapper.querySelector('.quiz__start');
@@ -244,10 +250,12 @@ export class QuizComponent implements OnInit {
 
         this.sizeQuestionContainer();
         this.resizeFunc = this.sizeQuestionContainer.bind(this);
-        window.addEventListener('load', this.resizeFunc);
-        window.addEventListener('resize', this.resizeFunc);
+        try {
+            window.addEventListener('load', this.resizeFunc);
+            window.addEventListener('resize', this.resizeFunc);
+            setTimeout(this.resizeFunc, 3000);
+        } catch (e) {}
 
-        setTimeout(this.resizeFunc, 3000);
 
         const observer = new MutationObserver(this.resizeFunc);
         observer.observe(this.questionContainer, {
@@ -258,6 +266,8 @@ export class QuizComponent implements OnInit {
     }
 
     ngOnDestroy() {
-        window.removeEventListener('resize', this.resizeFunc);
+        try {
+            window.removeEventListener('resize', this.resizeFunc);
+        } catch (e) {}
     }
 }
