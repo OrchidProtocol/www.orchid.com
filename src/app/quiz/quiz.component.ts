@@ -208,13 +208,11 @@ export class QuizComponent implements OnInit {
             maxHeight = Math.max(question.offsetHeight, maxHeight, question.clientHeight);
             //question.style.marginTop = `-${question.offsetHeight / 2}px`;
         }
-        /*for (let index = 0; index < this.quizContainer.children.length; index++) {
+        for (let index = 0; index < this.quizContainer.children.length; index++) {
             const element = this.quizContainer.children[index];
             maxHeight = Math.max(element.offsetHeight, maxHeight, element.clientHeight);
             //element.style.marginTop = `-${element.offsetHeight / 2}px`;
-        }*/
-        console.log(this.quizStart.offsetHeight)
-        maxHeight = Math.max(maxHeight, this.quizStart.offsetHeight);
+        }
 
         this.quizWrapper.style.minHeight = `calc(${maxHeight}px + 2rem)`;
 
