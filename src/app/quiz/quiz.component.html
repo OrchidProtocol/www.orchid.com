@@ -1,15 +1,15 @@
 <div *ngIf="questionIndex !== -1" class="quiz__header">
-    <h2>The Online Privacy Quiz</h2>
+    <h2>The Orchid Online Privacy Quiz</h2>
     <p class="medium" *ngIf="finalScore === undefined">Question {{questionIndex+1}} / {{questions.length}}</p>
 </div>
 <div #quizWrapper class="quiz__wrapper">
     <div class="quiz__container">
         <div [class.active]="questionIndex === -1" class="quiz__start">
             <img alt="Take the Online Privacy Quiz" title="Take the Online Privacy Quiz"
-                src="/assets/img/quiz/QuizLandingBunnyText.svg">
+                src="/assets/img/quiz/QuizLandingBunnyText.svg" width="491" height="376">
             <br />
             <p>Figure out how much you know about online privacy!</p>
-            <button class="btn-primary" (click)='nextQuestion()'>Start</button>
+            <button class="btn-primary" (click)='nextQuestion()'>Get Quizzing</button>
         </div>
         <div #questionContainer class="question__container">
             <div class="question" *ngFor="let q of questions">
@@ -54,12 +54,12 @@
             </h2>
 
             <p *ngIf="scoreLow()">
-                Your privacy knowledge could use some work! Orchid is a great place to start. Download the Orchid App
+                Your privacy knowledge could use some work! Orchid is a great place to start. <a href="/download">Download the Orchid App</a>
                 and improve your privacy today!
             </p>
             <p *ngIf="scoreHigh()">
                 Wow! It’s clear that you understand the importance of privacy online. That means there’s a good chance
-                you’re already using Orchid! If not, you can download the Orchid App and start improving your privacy
+                you’re already using Orchid! If not, you can <a href="/download">download the Orchid App</a> and start improving your privacy
                 online!
             </p>
             <p><b>Share your result</b></p>

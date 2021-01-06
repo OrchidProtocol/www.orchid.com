@@ -42,6 +42,8 @@ export class QuizComponent implements OnInit {
     score: number = 0;
     finalScore: number;
     quizWrapper: any;
+    quizContainer: any;
+    quizStart: any;
     questionContainer: any;
     progressBar: any;
     resizeFunc: any;
@@ -206,11 +208,13 @@ export class QuizComponent implements OnInit {
             maxHeight = Math.max(question.offsetHeight, maxHeight, question.clientHeight);
             //question.style.marginTop = `-${question.offsetHeight / 2}px`;
         }
-        for (let index = 0; index < this.quizWrapper.children.length; index++) {
-            const element = this.quizWrapper.children[index];
+        /*for (let index = 0; index < this.quizContainer.children.length; index++) {
+            const element = this.quizContainer.children[index];
             maxHeight = Math.max(element.offsetHeight, maxHeight, element.clientHeight);
             //element.style.marginTop = `-${element.offsetHeight / 2}px`;
-        }
+        }*/
+        console.log(this.quizStart.offsetHeight)
+        maxHeight = Math.max(maxHeight, this.quizStart.offsetHeight);
 
         this.quizWrapper.style.minHeight = `calc(${maxHeight}px + 2rem)`;
 
@@ -229,6 +233,8 @@ export class QuizComponent implements OnInit {
 
     ngAfterViewInit() {
         this.quizWrapper = this.domelement.nativeElement;
+        this.quizContainer = this.quizWrapper.querySelector('.quiz__container');
+        this.quizStart = this.quizWrapper.querySelector('.quiz__start');
         this.questionContainer = this.domelement2.nativeElement;
         this.progressBar = this.domelement3.nativeElement;
 
