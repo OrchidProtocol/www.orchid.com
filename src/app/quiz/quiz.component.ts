@@ -89,7 +89,7 @@ export class QuizComponent implements OnInit {
         new Question('multichoice', 'When using IoT connected devices in your home or office, you should not:', {
             options: [
                 { text: 'Turn them off ever' },
-                { text: 'Put them on the same network as your computers', answer: true  },
+                { text: 'Put them on the same network as your computers', answer: true },
                 { text: 'Deny them access to your location data' },
             ],
             note: 'IoT devices on the same network as your PC or phone can collect all sorts of information, including which websites you visit, and when you are at home.',
@@ -115,12 +115,12 @@ export class QuizComponent implements OnInit {
             note: 'Not only are these trackers numerous, but they even noticeably impact how <a target="_blank" href="https://www.pingdom.com/blog/trackers-impact-performance/">long it takes for most news sites to load</a>.',
         }),
 
-        new Question('boolean', 'information about your browsing activity on websites is regularly sold to third parties.', {
+        new Question('boolean', 'Information about your browsing activity on websites is regularly sold to third parties.', {
             answer: true,
             note: ' Companies, large and small, regularly buy and sell the data they collect to data brokers. The data is then often combined to form larger profiles about your online behavior.',
         }),
 
-        new Question('boolean', 'the General Data Protection Regulation (GDPR) prevents companies from retaining your personal data for more than 180 days.', {
+        new Question('boolean', 'The General Data Protection Regulation (GDPR) prevents companies from retaining your personal data for more than 180 days.', {
             answer: false,
             note: 'Under GDPR, there is no strict upper limit to how long companies can retain your data. It is up to individual companies to set their own data retention deadlines.',
         }),
