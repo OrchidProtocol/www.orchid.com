@@ -254,7 +254,7 @@ button.wrongAnswer {
         border-style: solid;
     }
     &.wrong {
-        border-color: $orc-gray;
+        border-color: #E90B20;
     }
     padding: 1rem;
     border-radius: 1rem;
@@ -280,7 +280,7 @@ button.wrongAnswer {
         background-image: url(/assets/img/shared/check.svg)
     }
     &.wrong::after {
-        background-image: url(/assets/img/shared/close.svg)
+        background-image: url(/assets/img/shared/close-red.svg)
     }
 }
 
