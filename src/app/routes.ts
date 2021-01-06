@@ -57,6 +57,7 @@ import { PodcastEp30Component } from './podcast-ep30/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 export const routes: Routes = [
 	{
@@ -160,6 +161,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-30-franck-nouyrigat", component: PodcastEp30Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
+			{ path: "quiz", component: QuizComponent },
+			{ path: "quiz.html", redirectTo: 'quiz' },
 			{ path: "**", component: NotFoundComponent }
 		]
 	},

@@ -1,0 +1,98 @@
+<div *ngIf="questionIndex !== -1" class="quiz__header">
+    <h2>The Orchid Online Privacy Quiz</h2>
+    <p class="medium" *ngIf="finalScore === undefined">Question {{questionIndex+1}} / {{questions.length}}</p>
+</div>
+<div #quizWrapper class="quiz__wrapper">
+    <div class="quiz__container">
+        <div [class.active]="questionIndex === -1" class="quiz__start">
+            <img alt="Take the Online Privacy Quiz" title="Take the Online Privacy Quiz"
+                src="/assets/img/quiz/QuizLandingBunnyText.svg" width="491" height="376">
+            <br />
+            <p>Figure out how much you know about online privacy!</p>
+            <button class="btn-primary" (click)='nextQuestion()'>Get Quizzing</button>
+        </div>
+
+        <div class="no-js">You must have JavaScript enabled to take the privacy quiz.</div>
+
+        <div #questionContainer class="question__container">
+            <div class="question" *ngFor="let q of questions">
+                <h4>{{q.question}}</h4>
+                <p class="questionDescription" *ngIf="q.config.description">{{q.config.description}}</p>
+
+                <div class="controlsContainer booleanControls" *ngIf="q.boolean">
+                    <button [class.correctAnswer]="q.config.answer === true && q.answered"
+                        [class.wrongAnswer]="q.config.answer !== true && q.wrong" class="btn-primary"
+                        (click)="answer(true)">True</button>
+                    <button [class.correctAnswer]="q.config.answer === false && q.answered"
+                        [class.wrongAnswer]="q.config.answer !== false && q.wrong" class="btn-secondary"
+                        (click)="answer(false)">False</button>
+                </div>
+
+                <div class="controlsContainer multiChoiceControls" *ngIf="q.multichoice">
+                    <div class="quiz__multichoice-button-container" *ngFor="let option of q.config.options">
+                        <button [class.correctAnswer]="option.answer === true && q.answered"
+                            [class.wrongAnswer]="option.wrong" (click)="answer(option)">{{option.text}}</button>
+                    </div>
+                </div>
+
+                <div *ngIf="q.config.note !== undefined" class="quiz__note-container" [class.active]="q.answered">
+                    <!--<span *ngIf="q.correct === true">✅</span>
+                    <span *ngIf="q.correct === false">❌</span>-->
+                    <p>
+                        <b *ngIf="q.correct">Correct!</b>
+                        <b *ngIf="!q.correct">Incorrect.</b>&nbsp;
+                        <span [innerHTML]="q.config.note"></span>
+                    </p>
+                    <p><button class="btn-primary" (click)="answer({})">Next &raquo;</button></p>
+                </div>
+            </div>
+        </div>
+        <div [class.active]="questionIndex !== -1 && finalScore === undefined" class="quiz__progress">
+            <div #progressBar class="progressBar"></div>
+        </div>
+        <div class="results__container" *ngIf="finalScore !== undefined">
+            <div class="scoreBunny" [class.low]="scoreLow()" [class.mid]="scoreMid()" [class.high]="scoreHigh()"></div>
+            <h2 class="finalScore">
+                Final score: {{finalScore}} out of 100
+            </h2>
+
+            <p *ngIf="scoreLow()">
+                Your privacy knowledge could use some work! Orchid is a great place to start. <a href="/download">Download the Orchid App</a>
+                and improve your privacy today!
+            </p>
+            <p *ngIf="scoreHigh()">
+                Wow! It’s clear that you understand the importance of privacy online. That means there’s a good chance
+                you’re already using Orchid! If not, you can <a href="/download">download the Orchid App</a> and start improving your privacy
+                online!
+            </p>
+            <p><b>Share your result</b></p>
+            <a [href]="twitterShareLink">
+                <img src="/assets/img/quiz/twitter.svg" alt="twitter">
+            </a>
+            <div class="questionAutopsy" [class.correct]="q.correct" [class.wrong]="!q.correct"
+                *ngFor="let q of questions">
+                <span><b>Question:</b> {{q.question}}</span>
+                <div class="booleanAnswer" *ngIf="q.boolean">
+                    <span *ngIf="q.config.answer">
+                        <b>Correct Answer:</b> True
+                    </span>
+                    <span *ngIf="!q.config.answer">
+                        <b>Correct Answer:</b> False
+                    </span>
+                </div>
+
+                <div class="multiChoiceAnswer" *ngIf="q.multichoice">
+                    <div class="quiz__multichoice-button-container" *ngFor="let option of q.config.options">
+                        <span *ngIf="option.answer">
+                            <b>Correct Answer:</b> {{option.text}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="patterning-instance-1"></div>
+
+<app-newsletter-signup></app-newsletter-signup>
