@@ -878,7 +878,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						20
+						21
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1042,7 +1042,7 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						24
+						25
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1074,7 +1074,7 @@
 						app/video-section/video-section.component.html
 					</context>
 					<context context-type="linenumber">
-						12
+						10
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1904,23 +1904,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						40
+						41
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproach__Subtitle" datatype="html">
 				<source>
-					We believe that by harnessing the power of blockchain, we can offer users a better VPN experience.
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</source>
 				<target state="final">
-					We believe that by harnessing the power of blockchain, we can offer users a better VPN experience.
+					We believe that by harnessing the power of blockchain, we
+					can offer users a better VPN experience.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						41
+						42
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1936,23 +1938,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						50
+						52
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard1__Description" datatype="html">
 				<source>
-					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no charges. And no monthly fees!
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</source>
 				<target state="final">
-					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no charges. And no monthly fees!
+					On Orchid, you only pay for service while actually using the VPN. Turn it off, and there are no
+					charges. And no monthly fees!
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						51
+						53
 					</context>
 				</context-group>
 			</trans-unit>
@@ -1968,23 +1972,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						62
+						66
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard2__Description" datatype="html">
 				<source>
-					Change providers within the Orchid network with a click. If you don't like one, simply tap to reconnect and get randomly reassigned.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</source>
 				<target state="final">
-					Change providers within the Orchid network with a click. If you don't like one, simply tap to reconnect and get randomly reassigned.
+					Change providers within the Orchid network with a click. If you don't like one, simply tap to
+					reconnect and get randomly reassigned.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						63
+						67
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2000,23 +2006,25 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						74
+						80
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeApproachCard3__Description" datatype="html">
 				<source>
-					You can share your account with an unlimited number of devices and people. Manage one account for your friends, family and all their devices.
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</source>
 				<target state="final">
-					You can share your account with an unlimited number of devices and people. Manage one account for your friends, family and all their devices.
+					You can share your account with an unlimited number of devices and people. Manage one account
+					for your friends, family and all their devices.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						75
+						81
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2032,23 +2040,41 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						98
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
+			<trans-unit id="HomeAsSeenIn__CNET" datatype="html">
 				<source>
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+					This is what the future of VPN tech looks like. And you gotta see it.
 				</source>
 				<target state="final">
-					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+					This is what the future of VPN tech looks like. And you gotta see it.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						97
+						106
+					</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="HomeAsSeenIn__TechCrunch" datatype="html">
+				<source>
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
+				</source>
+				<target state="final">
+					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
+					when it comes to data abuse, it’s easy to see the project’s appeal."
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						120
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2064,14 +2090,6 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						100
-					</context>
-				</context-group>
-				<context-group purpose="location">
-					<context context-type="sourcefile">
-						app/home/home.component.html
-					</context>
-					<context context-type="linenumber">
 						111
 					</context>
 				</context-group>
@@ -2080,39 +2098,59 @@
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						122
+						126
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						141
+					</context>
+				</context-group>
+				<context-group purpose="location">
+					<context context-type="sourcefile">
+						app/home/home.component.html
+					</context>
+					<context context-type="linenumber">
+						156
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinDesk" datatype="html">
 				<source>
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</source>
 				<target state="final">
-					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —  a natural resource for everyone, everywhere.”
+					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
+					a natural resource for everyone, everywhere.”
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						108
+						135
 					</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="HomeAsSeenIn__CoinTelegraph" datatype="html">
 				<source>
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</source>
 				<target state="final">
-					Orchid is developing an open-source decentralized and surveillance-free internet protocol intending to provide anonymized internet access to the global community.”
+					Orchid is developing an open-source decentralized and surveillance-free internet protocol
+					intending to provide anonymized internet access to the global community.”
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
 						app/home/home.component.html
 					</context>
 					<context context-type="linenumber">
-						119
+						150
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2152,7 +2190,7 @@
 						app/newsletter-signup/newsletter-signup.component.html
 					</context>
 					<context context-type="linenumber">
-						7
+						6
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2173,10 +2211,10 @@
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
+						app/newsletter-signup-core/newsletter-signup-core.component.html
 					</context>
 					<context context-type="linenumber">
-						8
+						2
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2198,17 +2236,19 @@
 			</trans-unit>
 			<trans-unit id="Newsletter__Consent" datatype="html">
 				<source>
-					I consent to receiving further instructions at the email address I submitted above.
+					I consent to receiving further instructions at the email address I submitted
+					above.
 				</source>
-				<target state="translated">
-					I consent to receiving further instructions at the email address I submitted above.
+				<target state="final">
+					I consent to receiving further instructions at the email address I submitted
+					above.
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
+						app/newsletter-signup-core/newsletter-signup-core.component.html
 					</context>
 					<context context-type="linenumber">
-						14
+						8
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2237,10 +2277,10 @@
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
-						app/newsletter-signup/newsletter-signup.component.html
+						app/newsletter-signup-core/newsletter-signup-core.component.html
 					</context>
 					<context context-type="linenumber">
-						18
+						13
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2286,10 +2326,12 @@
 			</trans-unit>
 			<trans-unit id="Navigation-Join" datatype="html">
 				<source>
-					Create Account
+					Create
+					Account
 				</source>
 				<target state="final">
-					Create Account
+					Create
+					Account
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
@@ -2312,7 +2354,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						27
+						29
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2328,7 +2370,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						28
+						30
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2344,7 +2386,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						29
+						32
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2360,7 +2402,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						30
+						34
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2368,7 +2410,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						99
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2384,7 +2426,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						30
+						33
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2392,7 +2434,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						91
+						98
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2408,7 +2450,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						31
+						36
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2416,7 +2458,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						84
+						91
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2432,7 +2474,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						38
+						43
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2448,7 +2490,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						41
+						47
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2464,7 +2506,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						42
+						48
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2480,7 +2522,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						43
+						49
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2496,7 +2538,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						44
+						50
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2512,7 +2554,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						45
+						51
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2528,7 +2570,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						46
+						52
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2544,7 +2586,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						82
+						89
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2560,7 +2602,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						83
+						90
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2576,7 +2618,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						96
+						104
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2592,7 +2634,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						52
+						58
 					</context>
 				</context-group>
 				<context-group purpose="location">
@@ -2600,7 +2642,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						89
+						96
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2616,7 +2658,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						90
+						97
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2632,7 +2674,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						98
+						106
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2648,7 +2690,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						97
+						105
 					</context>
 				</context-group>
 			</trans-unit>
@@ -2664,7 +2706,7 @@
 						app/page-layout/page-layout.component.html
 					</context>
 					<context context-type="linenumber">
-						104
+						112
 					</context>
 				</context-group>
 			</trans-unit>
@@ -5288,12 +5330,12 @@
 					</context>
 				</context-group>
 			</trans-unit>
-			<trans-unit id="OrchidTeam_NathanHandler" datatype="html">
+			<trans-unit id="OrchidTeam_AnnaBare" datatype="html">
 				<source>
-					Nathan Handler
+					Anna Bare
 				</source>
 				<target state="final">
-					Nathan Handler
+					Anna Bare
 				</target>
 				<context-group purpose="location">
 					<context context-type="sourcefile">
