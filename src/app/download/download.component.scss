@@ -195,6 +195,10 @@
   width: calc(100% - 4rem);
   margin: auto;
 
+  & > p {
+    text-align: left;
+  }
+
   &>a {
     &>img {
       margin-right: 0.5em;
@@ -220,9 +224,8 @@
 
   @media (min-width: 1050px) {
     position: absolute;
-    bottom: 50%;
-    right: 50%;
-    margin-bottom: -13rem;
+    bottom: 10%;
+    right: 60%;
     margin-right: 9rem;
   }
 }
