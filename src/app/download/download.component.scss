@@ -195,8 +195,17 @@
   width: calc(100% - 4rem);
   margin: auto;
 
+  & > p {
+    text-align: left;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+  }
+
   &>a {
-    &>img {
+    img {
       margin-right: 0.5em;
     }
 
@@ -222,8 +231,8 @@
     position: absolute;
     bottom: 50%;
     right: 50%;
-    margin-bottom: -13rem;
-    margin-right: 9rem;
+    margin-right: 17rem;
+    margin-bottom: -4rem;
   }
 }
 
