@@ -199,8 +199,13 @@
     text-align: left;
   }
 
+  button {
+    display: flex;
+    align-items: center;
+  }
+
   &>a {
-    &>img {
+    img {
       margin-right: 0.5em;
     }
 
