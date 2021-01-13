@@ -54,6 +54,7 @@ import { PodcastEp27Component } from './podcast-ep27/podcast.component';
 import { PodcastEp28Component } from './podcast-ep28/podcast.component';
 import { PodcastEp29Component } from './podcast-ep29/podcast.component';
 import { PodcastEp30Component } from './podcast-ep30/podcast.component';
+import { PodcastEp31Component } from './podcast-ep31/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -159,6 +160,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-29-yaniv-tal", component: PodcastEp29Component },
 			{ path: "podcast/episode-30-franck-nouyrigat.html", redirectTo: "podcast/episode-30-franck-nouyrigat" },
 			{ path: "podcast/episode-30-franck-nouyrigat", component: PodcastEp30Component },
+			{ path: "podcast/episode-31-jamie-king.html", redirectTo: "podcast/episode-31-jamie-king" },
+			{ path: "podcast/episode-31-jamie-king", component: PodcastEp31Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
