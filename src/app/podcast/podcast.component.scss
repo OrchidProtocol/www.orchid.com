@@ -90,6 +90,10 @@ $breakpoint2: 1450px;
 				width: 1.5rem;
 			}
 			text-decoration: none;
+
+			&[href=""] {
+				display: none !important;
+			}
 		}
 		.podcast-button__text {
 			text-align: left;
