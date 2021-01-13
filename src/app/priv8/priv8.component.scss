@@ -1,5 +1,14 @@
 @import "orc_config";
 
+.common-grid {
+	display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 9rem);
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+
 .priv8__heading {
 	font-family: $orc-tf-secondary;
 }
@@ -22,17 +31,18 @@ h4.priv8__heading {
 	padding: 5rem 0;
 	margin: auto;
 	width: 100%;
-	max-width: 650px;
+	max-width: 40rem;
 	text-align: center;
 	
 	h1, h2, h3 {
 		font-family: $orc-tf-secondary;
-		font-weight: lighter;
+		font-weight: normal;
 	}
 	h1 {
 		font-size: 2rem;
 		color: white;
 		margin-bottom: 1rem;
+		font-weight: 300;
 	}
 	h2 {
 		font-size: 1.25rem;
@@ -42,6 +52,8 @@ h4.priv8__heading {
 		font-size: 1rem;
 		color: white;
 		margin: 1rem 0;
+		font-weight: 300;
+		letter-spacing: 2px;
 	}
 
 	a {
@@ -51,6 +63,7 @@ h4.priv8__heading {
 	button.btn-primary {
 		background-color: #4FE9FF;
 		color: $orc-deep-purple;
+		padding: 0.4rem 3.5rem;
 	}
 }
 
@@ -95,12 +108,7 @@ h4.priv8__heading {
 }
 
 .hero__featuring-container {
-	display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 205px);
-    margin-bottom: 3em;
-    gap: 1em;
+	@extend .common-grid;
 }
 .hero__featuring-item {
 	& > img {
@@ -116,6 +124,7 @@ h4.priv8__heading {
 	display: block;
 	margin-top: -17vw;
 	margin-bottom: -1px;
+	box-shadow: 0px -1px inset white;
 	position: relative;
 	z-index: 2;
 }
@@ -133,7 +142,7 @@ h4.priv8__heading {
 }
 
 .chev__separator {
-	max-width: 400px;
+	max-width: 30rem;
 	margin: auto;
 	width: 80%;
 	display: block;
@@ -158,20 +167,23 @@ h4.priv8__heading {
 .common-section {
 	text-align: center;
 	position: relative;
-	padding: 8rem 2rem;
+	padding: 10rem 2rem 8rem;
 }
 
 .speakers__wrapper {
 	@extend .common-section;
 	background-color: #E7EAF4;
+
+	background-image: url(/assets/img/priv8/fancy-polygons.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1800px auto;
 }
 
 .speakers__grid {
-	display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 11.5rem);
-	gap: 3.5em;
+	@extend .common-grid;
+	grid-template-columns: repeat(auto-fit, 9rem);
+    gap: 3rem;
 	margin: auto;
 	max-width: 1100px;
 }

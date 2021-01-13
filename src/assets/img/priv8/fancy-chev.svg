@@ -1,1 +1,12 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.74 22.2"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#a29ec0;}</style></defs><title>fancy-chev</title><polygon class="cls-1" points="0 0 41.37 18.67 82.74 0 0 0"/><polygon class="cls-2" points="41.2 15.87 0 0 41.2 22.2 82.74 0 41.2 15.87"/></svg>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 82.74 22.2">
+	<defs>
+		<style>
+			.cls-1{fill:#fff;}.cls-2{fill:#a29ec0;}
+		</style>
+	</defs>
+	<title>
+		fancy-chev
+	</title>
+	<polygon class="cls-1" points="0 0 41.37 18.67 82.74 0 0 0" />
+	<polygon class="cls-2" points="41.2 15.87 0 0 41.2 22.2 82.74 0 41.2 15.87" />
+</svg>
