@@ -2,11 +2,11 @@
 
 .common-grid {
 	display: grid;
-    align-items: center;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 9rem);
-    margin-bottom: 2rem;
-    gap: 2rem;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 9rem);
+	margin-bottom: 2rem;
+	gap: 2rem;
 }
 
 .priv8__heading {
@@ -33,8 +33,10 @@ h4.priv8__heading {
 	width: 100%;
 	max-width: 40rem;
 	text-align: center;
-	
-	h1, h2, h3 {
+
+	h1,
+	h2,
+	h3 {
 		font-family: $orc-tf-secondary;
 		font-weight: normal;
 	}
@@ -61,7 +63,7 @@ h4.priv8__heading {
 		margin: 2rem 0;
 	}
 	button.btn-primary {
-		background-color: #4FE9FF;
+		background-color: #4fe9ff;
 		color: $orc-deep-purple;
 		padding: 0.4rem 3.5rem;
 	}
@@ -172,7 +174,7 @@ h4.priv8__heading {
 
 .speakers__wrapper {
 	@extend .common-section;
-	background-color: #E7EAF4;
+	background-color: #e7eaf4;
 
 	background-image: url(/assets/img/priv8/fancy-polygons.svg);
 	background-repeat: no-repeat;
@@ -183,7 +185,7 @@ h4.priv8__heading {
 .speakers__grid {
 	@extend .common-grid;
 	grid-template-columns: repeat(auto-fit, 9rem);
-    gap: 3rem;
+	gap: 3rem;
 	margin: auto;
 	max-width: 1100px;
 }
@@ -199,4 +201,26 @@ h4.priv8__heading {
 
 .agenda__wrapper {
 	@extend .common-section;
+}
+.agenda__item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 24rem;
+	margin: 2rem auto;
+	.agenda__time {
+		font-weight: 800;
+		letter-spacing: 1px;
+		color: $orc-purple;
+		width: 10rem;
+		font-size: 1rem;
+	}
+	.agenda__description {
+		text-transform: uppercase;
+		b {
+			letter-spacing: 1px;
+		}
+		width: 100%;
+		text-align: left;
+	}
 }
