@@ -237,6 +237,18 @@ h4.priv8__heading {
 	@extend .common-section;
 	background-color: #E7EAF4;
 }
+.partners__grid {
+	@extend .common-grid;
+	grid-template-columns: repeat(auto-fit, 10rem);
+	max-width: 40rem;
+	margin: auto auto 2rem;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+	}
+}
 
 .contact__wrapper {
 	@extend .common-section;
