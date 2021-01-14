@@ -18,7 +18,10 @@ export class PageLayoutComponent implements OnInit {
     route: ActivatedRoute,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-    route.data.subscribe(d => this.purple = !!d["purpleLayout"]);
+    route.firstChild.data.subscribe(d => {
+      console.log(d);
+      this.purple = !!d["purpleLayout"];
+    });
   }
 
   ngOnInit() {

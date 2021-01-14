@@ -1,0 +1,277 @@
+@import "orc_config";
+
+.common-grid {
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, 9rem);
+	margin-bottom: 2rem;
+	gap: 2rem;
+}
+
+
+.common-section {
+	text-align: center;
+	position: relative;
+	padding: 10rem 2rem 4rem;
+
+	@media (max-width: 765px) {
+		padding-top: 20vw;
+	}
+}
+
+.priv8__heading {
+	font-family: $orc-tf-secondary;
+}
+h3.priv8__heading {
+	color: $orc-deep-purple;
+	font-weight: lighter;
+	margin: 1rem 0 4rem 0;
+}
+h4.priv8__heading {
+	color: $orc-purple-gray;
+	margin: 1rem 0;
+}
+
+.hero__wrapper {
+	background: linear-gradient(to bottom left, $orc-purple, $orc-deep-purple);
+	color: white;
+}
+
+.hero__container {
+	padding: 7rem 0 5rem;
+	margin: auto;
+	width: 100%;
+	max-width: 40rem;
+	text-align: center;
+
+	h1,
+	h2,
+	h3 {
+		font-family: $orc-tf-secondary;
+		font-weight: normal;
+	}
+	h1 {
+		font-size: 2rem;
+		color: white;
+		margin-bottom: 1rem;
+		font-weight: 300;
+	}
+	h2 {
+		font-size: 1.25rem;
+		color: $orc-bright-purple;
+	}
+	h3 {
+		font-size: 1rem;
+		color: white;
+		margin: 1rem 0;
+		font-weight: 300;
+		letter-spacing: 2px;
+	}
+
+	a {
+		display: block;
+		margin: 2rem 0;
+	}
+	button.btn-primary {
+		background-color: #4fe9ff;
+		color: $orc-deep-purple;
+		padding: 0.4rem 3.5rem;
+	}
+}
+
+.hero__logo-wrapper {
+	display: block;
+	padding: 15% 50%;
+	margin: 1rem 0;
+	background-image: url(/assets/img/priv8/logo-patterns.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.hero__logo-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	& > img {
+		display: block;
+		width: 23%;
+	}
+}
+
+.hero__orchid-logo {
+	display: block;
+	margin: auto;
+	width: 100%;
+	max-width: 142px;
+}
+
+.hero__text-presents {
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: 3px;
+	margin-top: 15px;
+	display: inline-block;
+}
+
+.hero__featuring-container {
+	@extend .common-grid;
+}
+.hero__featuring-item {
+	& > img {
+		width: 100%;
+	}
+}
+
+.hero__vector-container {
+	width: 100%;
+	position: relative;
+}
+.hero__vector {
+	display: block;
+	margin-top: -17vw;
+	margin-bottom: -1px;
+	box-shadow: 0px -1px inset white;
+	position: relative;
+	z-index: 2;
+}
+.hero__vector-bunny {
+	display: block;
+	position: absolute;
+	width: 20vw;
+	height: auto;
+	top: calc(19% - 10vw);
+
+	&.bunny-right {
+		top: calc(23% - 10vw);
+		right: 0%;
+	}
+}
+
+.chev__separator {
+	max-width: 30rem;
+	margin: auto;
+	width: 80%;
+	display: block;
+}
+.chev__separator-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.chev__dot {
+	max-width: 5vw;
+}
+
+.about__wrapper {
+	@extend .common-section;
+	padding-top: 1rem;
+
+	& > p {
+		max-width: 46rem;
+		margin: auto;
+	}
+}
+
+.speakers__wrapper {
+	@extend .common-section;
+	background-color: #e7eaf4;
+
+	background-image: url(/assets/img/priv8/fancy-polygons.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 1800px auto;
+}
+
+.speakers__grid {
+	@extend .common-grid;
+	grid-template-columns: repeat(auto-fit, 9rem);
+	gap: 3rem;
+	margin: auto;
+	max-width: 1100px;
+}
+.speakers__grid-item {
+	& > img {
+		width: 100%;
+	}
+	& > b {
+		display: block;
+		font-size: 125%;
+	}
+}
+
+.agenda__wrapper {
+	@extend .common-section;
+}
+.agenda__item {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 24rem;
+	margin: 2rem auto;
+	.agenda__time {
+		font-weight: 800;
+		letter-spacing: 1px;
+		color: $orc-purple;
+		width: 10rem;
+		font-size: 1rem;
+	}
+	.agenda__description {
+		text-transform: uppercase;
+		b {
+			letter-spacing: 1px;
+		}
+		width: 100%;
+		text-align: left;
+	}
+}
+
+.partners__wrapper {
+	@extend .common-section;
+	background-color: #E7EAF4;
+}
+.partners__grid {
+	@extend .common-grid;
+	grid-template-columns: repeat(auto-fit, 10rem);
+	max-width: 40rem;
+	margin: auto auto 2rem;
+
+	img {
+		max-width: 100%;
+		height: auto;
+		margin: auto;
+	}
+}
+
+.contact__wrapper {
+	@extend .common-section;
+	padding-bottom: 20vmin;
+	background-color: #52319C;
+	color: #ffffff;
+	.priv8__heading, h1, h2, h3, h4, p {
+		color: #ffffff;
+	}
+	a {
+		color: #4FE9FF;
+	}
+	p {
+		max-width: 30rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	background-repeat: no-repeat;
+	background-position: center 5rem;
+	background-image: url(/assets/img/priv8/fancy-polygons-contact.svg);
+	background-size: 800px auto;
+	@media (max-width: 800px) {
+		background-size: 90% auto;
+	}
+}
