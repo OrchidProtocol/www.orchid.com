@@ -252,7 +252,7 @@ h4.priv8__heading {
 
 .contact__wrapper {
 	@extend .common-section;
-	padding-bottom: 20vmin;
+	padding-bottom: 5vmin;
 	background-color: #52319C;
 	color: #ffffff;
 	.priv8__heading, h1, h2, h3, h4, p {
@@ -274,4 +274,16 @@ h4.priv8__heading {
 	@media (max-width: 800px) {
 		background-size: 90% auto;
 	}
+}
+
+.contact__social-list {
+	filter: brightness(100);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	& > li {
+		margin: 0.5rem;
+	}
+	margin-bottom: 2rem;
 }
