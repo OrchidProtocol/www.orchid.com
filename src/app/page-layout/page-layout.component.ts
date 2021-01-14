@@ -13,13 +13,14 @@ export class PageLayoutComponent implements OnInit {
   noShadow: boolean = true;
   purple: boolean;
   blogLink: string;
+  year: number;
 
   constructor(
     route: ActivatedRoute,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-    route.firstChild.data.subscribe(d => {
-      console.log(d);
+      this.year = new Date().getFullYear();
+      route.firstChild.data.subscribe(d => {
       this.purple = !!d["purpleLayout"];
     });
   }

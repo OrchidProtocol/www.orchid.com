@@ -7,8 +7,11 @@ import { MetaService } from '../MetaService';
     styleUrls: ['./priv8.component.scss']
 })
 export class Priv8 implements OnInit {
+    year: number;
 
-    constructor(private meta: MetaService) { }
+    constructor(private meta: MetaService) {
+        this.year = new Date().getFullYear();
+    }
 
     ngOnInit() {
         this.meta.setGlobalTitle('');
