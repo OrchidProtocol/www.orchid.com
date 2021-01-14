@@ -9,6 +9,17 @@
 	gap: 2rem;
 }
 
+
+.common-section {
+	text-align: center;
+	position: relative;
+	padding: 10rem 2rem 4rem;
+
+	@media (max-width: 765px) {
+		padding-top: 20vw;
+	}
+}
+
 .priv8__heading {
 	font-family: $orc-tf-secondary;
 }
@@ -28,7 +39,7 @@ h4.priv8__heading {
 }
 
 .hero__container {
-	padding: 5rem 0;
+	padding: 7rem 0 5rem;
 	margin: auto;
 	width: 100%;
 	max-width: 40rem;
@@ -71,7 +82,7 @@ h4.priv8__heading {
 
 .hero__logo-wrapper {
 	display: block;
-	padding: 21.5% 50%;
+	padding: 15% 50%;
 	margin: 1rem 0;
 	background-image: url(/assets/img/priv8/logo-patterns.svg);
 	background-size: contain;
@@ -90,7 +101,7 @@ h4.priv8__heading {
 	align-items: center;
 	& > img {
 		display: block;
-		width: 37%;
+		width: 23%;
 	}
 }
 
@@ -155,21 +166,18 @@ h4.priv8__heading {
 	top: 0;
 	left: 0;
 }
+.chev__dot {
+	max-width: 5vw;
+}
 
 .about__wrapper {
-	padding: 4rem 2rem;
-	text-align: center;
+	@extend .common-section;
+	padding-top: 1rem;
 
 	& > p {
 		max-width: 46rem;
 		margin: auto;
 	}
-}
-
-.common-section {
-	text-align: center;
-	position: relative;
-	padding: 10rem 2rem 8rem;
 }
 
 .speakers__wrapper {
@@ -222,5 +230,35 @@ h4.priv8__heading {
 		}
 		width: 100%;
 		text-align: left;
+	}
+}
+
+.partners__wrapper {
+	@extend .common-section;
+	background-color: #E7EAF4;
+}
+
+.contact__wrapper {
+	@extend .common-section;
+	background-color: #52319C;
+	color: #ffffff;
+	.priv8__heading, h1, h2, h3, h4, p {
+		color: #ffffff;
+	}
+	a {
+		color: #4FE9FF;
+	}
+	p {
+		max-width: 30rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	background-repeat: no-repeat;
+	background-position: center 5rem;
+	background-image: url(/assets/img/priv8/fancy-polygons-contact.svg);
+	background-size: 800px auto;
+	@media (max-width: 800px) {
+		background-size: 90% auto;
 	}
 }
