@@ -19,7 +19,6 @@ export class PageLayoutComponent implements OnInit {
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
     route.firstChild.data.subscribe(d => {
-      console.log(d);
       this.purple = !!d["purpleLayout"];
     });
   }
