@@ -164,7 +164,7 @@ export const routes: Routes = [
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
 			{ path: "quiz.html", redirectTo: 'quiz' },
-			{ path: "priv8", component: Priv8 },
+			{ path: "priv8", component: Priv8, data: { purpleLayout: true } },
 			{ path: "priv8.html", redirectTo: 'priv8' },
 			{ path: "**", component: NotFoundComponent }
 		]
