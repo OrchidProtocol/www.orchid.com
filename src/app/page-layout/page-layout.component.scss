@@ -28,6 +28,9 @@ $mobile-nav-height: 64px;
   @include mobile {
     margin-bottom: 1.9rem;
   }
+  &.purple {
+    background: #ffffff;
+  }
   @include not-mobile {
     &.purple {
       background: transparent;
