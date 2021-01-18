@@ -34,7 +34,7 @@ h4.priv8__heading {
 }
 
 .hero__wrapper {
-	background: linear-gradient(to bottom left, $orc-purple, $orc-deep-purple);
+	background: linear-gradient(to left, $orc-purple, $orc-deep-purple);
 	color: white;
 }
 
@@ -134,24 +134,14 @@ h4.priv8__heading {
 	position: relative;
 }
 .hero__vector {
+	width: 100%;
+	height: auto;
 	display: block;
 	margin-top: -17vw;
 	margin-bottom: -1px;
 	box-shadow: 0px -1px inset white;
 	position: relative;
 	z-index: 2;
-}
-.hero__vector-bunny {
-	display: block;
-	position: absolute;
-	width: 20vw;
-	height: auto;
-	top: calc(19% - 10vw);
-
-	&.bunny-right {
-		top: calc(23% - 10vw);
-		right: 0%;
-	}
 }
 
 .chev__separator {

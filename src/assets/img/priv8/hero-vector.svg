@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="395" viewBox="0 0 1440 395">
+	<defs>
+		<style>
+			.a{fill:#ffffff;}.b{fill:#e8ddfd;}
+		</style>
+	</defs>
+	<polygon class="a" points="0 395 1440 395 1440 0 719.31 390 0 0 0 395" />
+	<polygon class="b" points="719.31 395 1440 0 720 345 0 0 719.31 395" />
+</svg>
