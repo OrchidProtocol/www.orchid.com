@@ -36,13 +36,18 @@ h4.priv8__heading {
 .hero__wrapper {
 	background: linear-gradient(to left, $orc-purple, $orc-deep-purple);
 	color: white;
+	position: relative;
+	z-index: 0;
 }
 
 .hero__container {
 	padding: 7rem 0 5rem;
+	@media (max-width: 765px) {
+		padding-top: 1rem;
+	}
 	margin: auto;
 	width: 100%;
-	max-width: 40rem;
+	max-width: 50rem;
 	text-align: center;
 
 	h1,
@@ -56,9 +61,11 @@ h4.priv8__heading {
 		color: white;
 		margin-bottom: 1rem;
 		font-weight: 300;
+		text-transform: uppercase;
 	}
 	h2 {
 		font-size: 1.25rem;
+		line-height: 1.5;
 		color: $orc-bright-purple;
 	}
 	h3 {
@@ -82,8 +89,8 @@ h4.priv8__heading {
 
 .hero__logo-wrapper {
 	display: block;
-	padding: 15% 50%;
-	margin: 1rem 0;
+	padding: 15% 0;
+	margin: -0.5rem auto 0 auto;
 	background-image: url(/assets/img/priv8/logo-patterns.svg);
 	background-size: contain;
 	background-position: center;
@@ -116,33 +123,71 @@ h4.priv8__heading {
 	text-transform: uppercase;
 	font-weight: lighter;
 	letter-spacing: 3px;
-	margin-top: 15px;
+	margin-top: 0.25rem;
 	display: inline-block;
 }
 
 .hero__featuring-container {
-	@extend .common-grid;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
+	position: relative;
+	z-index: 10;
+	color: $orc-purple;
+	@media (max-width: 899px) {
+		color: white;
+		margin-bottom: 8vw;
+	}
 }
 .hero__featuring-item {
+	max-width: 12rem;
+	margin: 0.5rem;
 	& > img {
 		width: 100%;
 	}
+	@media (min-width: 900px) {
+		margin-bottom: -8rem;
+		&:nth-child(1), &:nth-child(3) {
+			margin-top: -7rem;
+		}
+	}
 }
 
+.hero__vector-wrapper {
+	width: 100%;
+    height: 100%;
+	top: 0;
+    left: 0;
+	position: absolute;
+	pointer-events: none;
+	overflow: hidden;
+}
 .hero__vector-container {
 	width: 100%;
-	position: relative;
-	pointer-events: none;
+	max-width: 1500px;
+	margin: auto;
+	bottom: 0;
+	position: absolute;
+
+	left: calc(50% - 1500px / 2);
+	@media (max-width: 1500px) {
+		left: 0;
+	}
 }
 .hero__vector {
-	width: 100%;
+	box-shadow: 0px -1px inset white;
+}
+.hero__vector, .hero__vector-sides {
 	height: auto;
 	display: block;
-	margin-top: -22vw;
-	margin-bottom: -1px;
-	box-shadow: 0px -1px inset white;
-	position: relative;
-	z-index: 2;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+.hero__vector-sides {
+	width: 300%;
+	margin-left: -100%;
 }
 
 .chev__separator {
@@ -163,7 +208,7 @@ h4.priv8__heading {
 
 .about__wrapper {
 	@extend .common-section;
-	padding-top: 1rem;
+	padding-top: 4rem;
 
 	& > p {
 		max-width: 46rem;
