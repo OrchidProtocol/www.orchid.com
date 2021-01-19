@@ -132,12 +132,13 @@ h4.priv8__heading {
 .hero__vector-container {
 	width: 100%;
 	position: relative;
+	pointer-events: none;
 }
 .hero__vector {
 	width: 100%;
 	height: auto;
 	display: block;
-	margin-top: -17vw;
+	margin-top: -22vw;
 	margin-bottom: -1px;
 	box-shadow: 0px -1px inset white;
 	position: relative;
