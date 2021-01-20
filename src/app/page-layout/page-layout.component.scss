@@ -125,7 +125,7 @@ $mobile-nav-height: 64px;
     transform: translateY(0.25rem);
   }
   @include mobile {
-    display: none;
+    display: none !important;
   }
 }
 
