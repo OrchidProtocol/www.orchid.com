@@ -174,6 +174,21 @@ h4.priv8__heading {
 	@media (max-width: 1500px) {
 		left: 0;
 	}
+
+	&:before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0%;
+		width: 100%;
+		box-sizing: border-box;
+		padding: 17% 0%;
+		background-image: url(/assets/img/priv8/hero-patterns.svg);
+		background-repeat: no-repeat;
+		background-size: 80% auto;
+		background-position: top center;
+	}
 }
 .hero__vector {
 	box-shadow: 0px -1px inset white;
