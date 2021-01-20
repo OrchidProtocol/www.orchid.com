@@ -30,6 +30,7 @@ $mobile-nav-height: 64px;
     margin-bottom: 1.9rem;
   }
   &.purple {
+    margin-bottom: 0;
     background: #ffffff;
   }
   @include not-mobile {
@@ -80,6 +81,9 @@ $mobile-nav-height: 64px;
       left: 0;
       right: 0;
       top: 1.9rem;
+      &.purple {
+        top: 0;
+      }
       box-sizing: border-box;
       height: $mobile-nav-height;
       background: inherit;
@@ -113,6 +117,15 @@ $mobile-nav-height: 64px;
       padding-left: 1rem;
       padding-right: 1rem;
     }
+  }
+}
+
+.nav-purple-icon {
+  @include not-mobile {
+    transform: translateY(0.25rem);
+  }
+  @include mobile {
+    display: none;
   }
 }
 

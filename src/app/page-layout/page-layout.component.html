@@ -18,7 +18,7 @@
           <img alt="Close" src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul class="nav-list phantom-list">
+      <ul *ngIf="!this.purple" class="nav-list phantom-list">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/"
             i18n="@@Navigation-Home">Home</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create
@@ -51,12 +51,69 @@
           </ul>
         </li>
       </ul>
+
+      <ul *ngIf="this.purple" class="nav-list phantom-list">
+        <li class="mobile-only">
+          <a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="#About">
+            About
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="#Speakers">
+            Speakers
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="#Learn">
+            Learn
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="#Participate">
+            Participate
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="#Contact">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a class="nav-download" href="">
+            <button class="btn-cyan">
+              Register
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+            <img width="30" height="30" src="/assets/img/shared/social-twitter-white.svg" />
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+            <img width="30" height="30" src="/assets/img/shared/social-telegram-white.svg"/>
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+          <img width="30" height="30" src="/assets/img/shared/social-facebook-white.svg"/>
+          </a>
+        </li>
+      </ul>
     </div>
-    <a class="nav-download" href="/download">
-      <button [class]="this.purple ? 'btn-cyan' : 'btn-primary'" i18n="@@Navigation-Download">
+
+    <a *ngIf="!this.purple" class="nav-download" href="/download">
+      <button class="btn-primary" i18n="@@Navigation-Download">
         Download
       </button>
     </a>
+
     <button id="nav-toggle" class="phantom-btn mobile-only">
       <img alt="Toggle Navigation" src="/assets/img/shared/hamburger.svg">
     </button>
