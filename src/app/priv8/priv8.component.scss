@@ -226,6 +226,11 @@ h4.priv8__heading {
 	@extend .common-section;
 	padding-top: 4rem;
 
+	background-image: url(/assets/img/priv8/about-patterns.svg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: 1502px auto;
+
 	& > p {
 		max-width: 46rem;
 		margin: auto;
@@ -268,6 +273,77 @@ h4.priv8__heading {
 
 .learn__wrapper {
 	@extend .common-section;
+	position: relative;
+	overflow: hidden;
+
+	&::before, &::after {
+		content: '';
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 250px;
+		height: 250px;
+	}
+	&::before {
+		left: 50%;
+		margin-left: 600px;
+		top: 100px;
+		background-image: url(/assets/img/priv8/learn-pattern-1.svg);
+	}
+	&::after {
+		right: 50%;
+		margin-right: 550px;
+		bottom: 100px;
+		background-image: url(/assets/img/priv8/learn-pattern-2.svg);
+	}
+}
+
+.learn_row-item {
+	position: relative;
+	margin: 1rem;
+	width: 100%;
+
+	a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+	img {
+		width: 100%;
+		height: auto;
+		border-radius: 1rem;
+	}
+}
+.learn__row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 2rem;
+	color: $orc-purple;
+	&.row--small {
+		.learn_row-item {
+			max-width: 12rem;
+		}
+	}
+	&.row--medium {
+		.learn_row-item {
+			max-width: 15rem;
+		}
+	}
+	&.row--large {
+		.learn_row-item {
+			max-width: 18rem;
+		}
+	}
+}
+.learn__title {
+	font-size: 24px;
+	display: block;
+	margin: 0rem auto 1rem auto;
 }
 
 .participate__wrapper {
@@ -277,6 +353,21 @@ h4.priv8__heading {
 	p {
 		max-width: 800px;
 		margin: 1rem auto;
+	}
+
+	
+	&::before {
+		content: '';
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		width: 250px;
+		height: 250px;
+		left: 50%;
+		margin-left: 450px;
+		top: 100px;
+		background-image: url(/assets/img/priv8/participate-pattern-1.svg);
 	}
 }
 
