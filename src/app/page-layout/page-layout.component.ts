@@ -1,6 +1,6 @@
 import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
-
+import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
+import { filter, tap } from 'rxjs/operators';
 @Component({
   selector: "app-page-layout",
   templateUrl: "./page-layout.component.html",
@@ -17,11 +17,16 @@ export class PageLayoutComponent implements OnInit {
 
   constructor(
     route: ActivatedRoute,
+    router: Router,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-      this.year = new Date().getFullYear();
+    this.year = new Date().getFullYear();
+    router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
       route.firstChild.data.subscribe(d => {
-      this.purple = !!d["purpleLayout"];
+        this.purple = !!d["purpleLayout"];
+      });
     });
   }
 
