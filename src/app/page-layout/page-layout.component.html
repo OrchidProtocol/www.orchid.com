@@ -226,7 +226,7 @@
   </div>
 </div>
 
-<div *ngIf="!this.purple" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
+<div [class.hidden]="this.purple" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
   <div class="maker-badge__btn" id="maker-badge__btn"><img alt="Black Lives Matter Badge" width="30"
       class="maker-badge__btn-img" src="/assets/img/shared/blm-blue-round.png">&nbsp;&nbsp;#BlackLivesMatter</div>
   <div class="maker-badge__content" id="maker-badge__content">
