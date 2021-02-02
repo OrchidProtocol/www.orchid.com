@@ -13,6 +13,9 @@ $mobile-nav-height: 64px;
   padding: 0.3rem;
   font-size: 0.75rem;
 
+  .mobile {
+    display: none;
+  }
   @include mobile {
     &.js {
       position: fixed;
@@ -20,6 +23,12 @@ $mobile-nav-height: 64px;
       right: 0;
       top: 0;
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: inline;
     }
   }
 }
