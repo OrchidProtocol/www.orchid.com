@@ -69,6 +69,7 @@ import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { QuizComponent } from './quiz/quiz.component';
 import { Priv8 } from './priv8/priv8.component';
+import { Priv8Signup } from './priv8-signup/priv8-signup.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -141,6 +142,7 @@ import { MetaService } from './MetaService';
     WebinarLPComponent,
     QuizComponent,
     Priv8,
+    Priv8Signup,
   ],
   imports: [
     // TODO: how important is appId?

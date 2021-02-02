@@ -42,7 +42,7 @@ export class NewsletterSignupCoreComponent implements OnInit {
 
   submit() {
     const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
-    const mailchimp_url = mailchimp_add + encodeURIComponent(this.email || "") + this.priv8 ? "&priv8=true" : "";
+    const mailchimp_url = mailchimp_add + encodeURIComponent(this.email || "") + (this.priv8 ? "&priv8=true" : "");
 
     if (this.in_progress) return;
 
