@@ -838,17 +838,16 @@ ul.smaller .ft-text h3 {
   & > img {
     width: 100%;
   }
-  &:after {
+  & > picture {
     position: absolute;
-    top: 0;
+    top: 10%;
     left: 32.5%;
     width: 35%;
     height: 100%;
-    content: " ";
-    background-image: url(/assets/img/priv8/priv8.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
   }
 }
 .priv8-light-text {

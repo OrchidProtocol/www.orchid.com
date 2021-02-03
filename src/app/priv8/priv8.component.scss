@@ -1,6 +1,13 @@
 @import "orc_config";
 @import "media_queries";
 
+img, picture {
+	height: auto;
+}
+picture > img {
+	width: 100%;
+}
+
 .common-grid {
 	display: grid;
 	align-items: center;
@@ -45,7 +52,7 @@ h4.priv8__heading {
 }
 
 .hero__container {
-	padding: 7rem 0 5rem;
+	padding: 6rem 0 5rem;
 	@media (max-width: 765px) {
 		padding-top: 1rem;
 	}
@@ -61,11 +68,18 @@ h4.priv8__heading {
 		font-weight: normal;
 	}
 	h1 {
-		font-size: 2rem;
+		font-size: 1.6rem;
 		color: white;
 		margin-bottom: 1rem;
 		font-weight: 300;
 		text-transform: uppercase;
+		@include mobile {
+			font-size: 1.3rem;
+			margin-left: auto;
+			margin-right: auto;
+			width: 90%;
+			display: block;
+		}
 	}
 	h2 {
 		font-size: 1.25rem;
@@ -83,11 +97,18 @@ h4.priv8__heading {
 	a {
 		display: block;
 		margin: 2rem 0;
+		@include mobile {
+			margin: 1rem 0;
+		}
 	}
 	button.btn-primary {
 		background-color: #4fe9ff;
 		color: $orc-deep-purple;
 		padding: 0.4rem 3.5rem;
+		font-size: 1rem;
+		@include mobile {
+			font-size: 0.75rem;
+		}
 	}
 }
 
@@ -110,7 +131,7 @@ h4.priv8__heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	& > img {
+	& > img, & > picture {
 		display: block;
 		width: 23%;
 	}
@@ -128,6 +149,7 @@ h4.priv8__heading {
 	font-weight: lighter;
 	letter-spacing: 3px;
 	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
 	display: inline-block;
 }
 
@@ -146,7 +168,7 @@ h4.priv8__heading {
 .hero__featuring-item {
 	max-width: 12rem;
 	margin: 0.5rem;
-	& > img {
+	& > img, & > picture {
 		width: 100%;
 	}
 	@media (min-width: 900px) {
@@ -275,7 +297,7 @@ h4.priv8__heading {
 	border-radius: 1rem;
 
 	margin-top: 5rem;
-	& > img {
+	& > img, & > picture {
 		width: 100%;
 		margin: -5.5rem auto 0 auto;
 		max-width: 9rem;
@@ -312,7 +334,6 @@ h4.priv8__heading {
 	position: relative;
 	overflow: hidden;
 
-	
 	p {
 		max-width: 800px;
 		margin-left: auto;
@@ -356,7 +377,7 @@ h4.priv8__heading {
 		width: 100%;
 		height: 100%;
 	}
-	img {
+	img, picture {
 		width: 100%;
 		height: auto;
 		border-radius: 1rem;
@@ -451,7 +472,7 @@ h4.priv8__heading {
 	max-width: 40rem;
 	margin: auto auto 2rem;
 
-	img {
+	img, picture {
 		max-width: 100%;
 		height: auto;
 		margin: auto;
