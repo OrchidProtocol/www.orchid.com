@@ -6,13 +6,16 @@ $mobile-nav-height: 64px;
 
 .nav-infobar {
   background: $orc-purple;
-  color: #FFF;
+  color: #fff;
   text-decoration: none;
   display: block;
   text-align: center;
   padding: 0.3rem;
   font-size: 0.75rem;
 
+  .mobile {
+    display: none;
+  }
   @include mobile {
     &.js {
       position: fixed;
@@ -21,12 +24,38 @@ $mobile-nav-height: 64px;
       top: 0;
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: inline;
+    }
   }
 }
 
 #nav-root {
+  z-index: 999;
   @include mobile {
     margin-bottom: 1.9rem;
+  }
+  &.purple {
+    margin-bottom: 0;
+    background: #ffffff;
+  }
+  @include not-mobile {
+    &.purple {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      .nav-menu > ul > li > span,
+      .nav-menu > ul > li > a {
+        color: #ffffff;
+      }
+
+      img {
+        filter: brightness(100);
+      }
+    }
   }
 }
 
@@ -61,6 +90,9 @@ $mobile-nav-height: 64px;
       left: 0;
       right: 0;
       top: 1.9rem;
+      &.purple {
+        top: 0;
+      }
       box-sizing: border-box;
       height: $mobile-nav-height;
       background: inherit;
@@ -68,15 +100,9 @@ $mobile-nav-height: 64px;
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
 
-    #nav-root.bk-deep-purple>&.js {
-      box-shadow: mat-shadow(8px, $alpha: 0.4);
-    }
-
     &.no-shadow {
-
       // I hate CSS. (This deals with rule importance)
-      &,
-      #nav-root.bk-deep-purple>& {
+      & {
         transition-duration: 0.07s;
         transition-timing-function: $ease-in;
         box-shadow: mat-shadow(0px, $alpha: 0.2);
@@ -95,11 +121,20 @@ $mobile-nav-height: 64px;
   @include large-screen {
     display: block;
 
-    &>button {
+    & > button {
       font-size: 14px;
       padding-left: 1rem;
       padding-right: 1rem;
     }
+  }
+}
+
+.nav-purple-icon {
+  @include not-mobile {
+    transform: translateY(0.25rem);
+  }
+  @include mobile {
+    display: none !important;
   }
 }
 
@@ -112,7 +147,7 @@ $mobile-nav-height: 64px;
 
   line-height: 0px;
 
-  >a {
+  > a {
     margin: -1rem;
     padding: 1rem;
   }
@@ -172,7 +207,7 @@ $flyout-gap: ($flyout-spacing / 2);
   box-sizing: border-box;
   height: $mobile-nav-height;
 
-  :not(.js)>& {
+  :not(.js) > & {
     display: none;
   }
 }
@@ -193,15 +228,15 @@ $flyout-gap: ($flyout-spacing / 2);
     flex-flow: row nowrap;
     align-items: center;
 
-    >li {
+    > li {
       $a-pad: 0.5rem;
 
-      >a {
+      > a {
         position: relative;
         padding: $a-pad;
       }
 
-      &.active-link>a::after {
+      &.active-link > a::after {
         $height: 4px;
         content: " ";
         position: absolute;
@@ -219,8 +254,8 @@ $flyout-gap: ($flyout-spacing / 2);
   @include mobile {
     text-align: right;
 
-    >li {
-      >a {
+    > li {
+      > a {
         display: block;
         padding: $flyout-gap 0;
         width: 100%;
@@ -228,7 +263,7 @@ $flyout-gap: ($flyout-spacing / 2);
     }
   }
 
-  >li {
+  > li {
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -239,7 +274,7 @@ $flyout-gap: ($flyout-spacing / 2);
   padding: 1rem;
   cursor: pointer;
 
-  :not(.js)>& {
+  :not(.js) > & {
     display: none;
   }
 }
@@ -307,7 +342,6 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 
   > {
-
     section,
     nav {
       flex: 0 0 auto;
@@ -344,11 +378,11 @@ $flyout-gap: ($flyout-spacing / 2);
     justify-content: space-between;
     align-items: flex-end;
 
-    >img {
+    > img {
       max-width: 20vw;
     }
 
-    >p {
+    > p {
       line-height: 1;
     }
   }
@@ -368,7 +402,7 @@ $flyout-gap: ($flyout-spacing / 2);
 #ft-nav-2-list,
 #ft-nav-3-list {
   @include mobile {
-    >li>a {
+    > li > a {
       display: block;
       padding: 0.5rem 0;
 
@@ -387,7 +421,7 @@ $flyout-gap: ($flyout-spacing / 2);
   justify-content: center;
   margin: ($gap / -2);
 
-  >li {
+  > li {
     margin: ($gap / 2);
   }
 
@@ -395,7 +429,7 @@ $flyout-gap: ($flyout-spacing / 2);
     flex-flow: row wrap;
     justify-content: flex-start;
 
-    >li {
+    > li {
       &:not(:last-child) {
         margin-right: 2rem;
       }
@@ -534,14 +568,14 @@ $flyout-gap: ($flyout-spacing / 2);
   list-style: none;
   margin: 0;
 
-  &>li:nth-child(1)#navbar-language-selector-list-item-first {
+  & > li:nth-child(1)#navbar-language-selector-list-item-first {
     @include not-mobile {
       padding-top: 0;
     }
   }
 }
 
-#navbar-language-selector-checkbox:checked~.navbar-language-selector-list {
+#navbar-language-selector-checkbox:checked ~ .navbar-language-selector-list {
   @include not-mobile {
     display: block;
     animation-name: navbar-language-selector-animation;
@@ -550,7 +584,7 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-.navbar-language-selector-list>li {
+.navbar-language-selector-list > li {
   position: relative;
   display: block;
   border-right: 1px $orc-gray solid;
@@ -598,8 +632,8 @@ $flyout-gap: ($flyout-spacing / 2);
 
 .notification-bar-container {
   width: 100%;
-  background: #E8DDFD;
-  color: #E8DDFD;
+  background: #e8ddfd;
+  color: #e8ddfd;
   text-align: center;
   padding: 10px 4px;
   font-size: 14px;
@@ -607,45 +641,5 @@ $flyout-gap: ($flyout-spacing / 2);
 
   @media (max-width: 1150px) {
     margin-bottom: 2em;
-  }
-}
-
-
-.maker-badge {
-  transition: bottom .3s ease;
-  z-index: 99;
-  max-width: 200px;
-  color: #2b2b2b;
-  font-size: 16px;
-  font-family: helvetica;
-  text-align: right;
-  height: auto;
-  min-width: 160px;
-  position: fixed;
-  bottom: -100%;
-  right: 0;
-  border-top-left-radius: 6px;
-
-  .maker-badge__btn {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 .5rem;
-    cursor: pointer;
-    border: 1px solid #cbd5e0;
-    border-bottom: 0;
-    background: #fff;
-    border-top-left-radius: 6px;
-    color: #2d3748;
-  }
-
-  .maker-badge__content {
-    text-align: left;
-    font-size: .7rem;
-    border: 1px solid #cbd5e0;
-    padding: .5rem;
-    display: block;
-    background: #fff;
   }
 }

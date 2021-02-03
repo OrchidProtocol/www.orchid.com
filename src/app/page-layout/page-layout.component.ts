@@ -1,6 +1,6 @@
 import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
-import { ActivatedRoute } from "@angular/router";
-
+import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
+import { filter, tap } from 'rxjs/operators';
 @Component({
   selector: "app-page-layout",
   templateUrl: "./page-layout.component.html",
@@ -13,12 +13,21 @@ export class PageLayoutComponent implements OnInit {
   noShadow: boolean = true;
   purple: boolean;
   blogLink: string;
+  year: number;
 
   constructor(
     route: ActivatedRoute,
+    router: Router,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-    route.data.subscribe(d => this.purple = !!d["purpleLayout"]);
+    this.year = new Date().getFullYear();
+    router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      route.firstChild.data.subscribe(d => {
+        this.purple = !!d["purpleLayout"];
+      });
+    });
   }
 
   ngOnInit() {
@@ -36,30 +45,7 @@ export class PageLayoutComponent implements OnInit {
       // out of view immediately after loading
       setTimeout(_ => this.animateMenu = true, 20);
 
-      let blmBadge = doc.getElementById('maker-badge');
-      let blmBadgeBtn = doc.getElementById('maker-badge__btn');
-      let blmBadgeCtn = doc.getElementById('maker-badge__content');
-      const computeBlm = () => {
-        if (blmBadge.dataset.state === 'false') {
-          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
-        } else {
-          blmBadge.style.bottom = `0px`;
-        }
-      }
-
-      window.addEventListener('DOMContentLoaded', () => {
-        blmBadge.dataset.state = 'false';
-        computeBlm();
-      })
-      blmBadgeBtn.addEventListener('click', () => {
-        if (blmBadge.dataset.state === 'false') {
-          blmBadge.dataset.state = 'true';
-        } else {
-          blmBadge.dataset.state = 'false';
-        }
-        computeBlm();
-      })
-      window.addEventListener('resize', computeBlm);
+      
 
       let nav = doc.getElementById("nav") as HTMLElement;
       let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
