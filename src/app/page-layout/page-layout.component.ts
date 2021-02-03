@@ -31,7 +31,6 @@ export class PageLayoutComponent implements OnInit {
     ).subscribe(() => {
       route.firstChild.data.subscribe(d => {
         this.purple = !!d["purpleLayout"];
-        console.log(this.purple)
       });
     });
     this.year = new Date().getFullYear();
