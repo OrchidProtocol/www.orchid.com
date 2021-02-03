@@ -181,6 +181,14 @@ h4.priv8__heading {
 			margin-top: -7rem;
 		}
 	}
+	@include not-mobile {
+		br {
+			display: none;
+		}
+	}
+	@include mobile {
+		line-height: 1.25;
+	}
 }
 
 .hero__vector-wrapper {
