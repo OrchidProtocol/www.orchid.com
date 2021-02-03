@@ -398,6 +398,9 @@ h4.priv8__heading {
 	justify-content: center;
 	align-items: flex-start;
 	margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+	max-width: 1200px;
 	@include mobile {
 		margin-bottom: 0;
 	}
