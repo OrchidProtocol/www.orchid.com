@@ -8,9 +8,14 @@ import { MetaService } from '../MetaService';
 })
 export class Priv8 implements OnInit {
     year: number;
+    expandParticipate: boolean = false;
 
     constructor(private meta: MetaService) {
         this.year = new Date().getFullYear();
+    }
+
+    onParticipateClick() {
+        this.expandParticipate = !this.expandParticipate;
     }
 
     ngOnInit() {

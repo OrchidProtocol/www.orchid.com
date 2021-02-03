@@ -480,7 +480,18 @@
     <h3 class="priv8__heading">PARTICIPATE</h3>
     <h3 class="priv8__subheading">Want to contribute?</h3>
     <br />
-    <a href="mailto:amanda@orchid.com"><button class="btn-secondary">Let us know!</button></a>
+    <div class="participate__special">
+        <a href="mailto:amanda@orchid.com" (click)="onParticipateClick()">
+            <button class="btn-secondary">Let us know!</button>
+        </a>
+        <div class="participate__email-wrap" [class.expanded]="this.expandParticipate">
+            <div class="participate__email-container">
+                <div class="participate__email">
+                    amanda@orchid.com
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!--<div class="partners__wrapper">
