@@ -58,6 +58,13 @@
 }
 
 @font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Noto Sans Light'), url(/assets/fonts/NotoSans/NotoSansJP-Thin.otf) format('OpenType');
+}
+
+@font-face {
     font-family:"Geometos Rounded";
     src:
         url(/assets/fonts/GeometosRounded/Geometos_Rounded.eot) format("eot"),

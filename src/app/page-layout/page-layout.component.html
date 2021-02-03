@@ -1,6 +1,7 @@
-<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.bk-deep-purple]="this.purple">
-  <a class="nav-infobar" [class.js]="this.js" href="/newsletter-signup">
-    Get privacy news delivered to your inbox &raquo;
+<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.purple]="this.purple">
+  <a *ngIf="!this.purple" class="nav-infobar" [class.js]="this.js" href="/priv8">
+    <span class="mobile">Register for Priv8, 3/23-25 with Ed Snowden</span>
+    <span class="desktop">Register for Priv8, March 23-25 with Edward Snowden</span> &raquo;
   </a>
   <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow"
     [class.purple]="this.purple">
@@ -9,9 +10,7 @@
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
           alt="Orchid logo" class="no-mobile">-->
         <img src="/assets/img/shared/orchid-logo-text.svg" alt="Orchid logo" class="no-mobile">
-        <img
-          [src]="this.purple ? '/assets/img/shared/orchid-logo-small-white.svg' : '/assets/img/shared/orchid-logo-small.svg'"
-          alt="Orchid logo" class="mobile-only">
+        <img src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
     <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
@@ -20,7 +19,7 @@
           <img alt="Close" src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul class="nav-list phantom-list">
+      <ul *ngIf="!this.purple" class="nav-list phantom-list">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/"
             i18n="@@Navigation-Home">Home</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create
@@ -53,15 +52,71 @@
           </ul>
         </li>
       </ul>
+
+      <ul *ngIf="this.purple" class="nav-list phantom-list">
+        <li class="mobile-only">
+          <a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">
+            Home
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="/priv8#About">
+            About
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="/priv8#Speakers">
+            Speakers
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="/priv8#Learn">
+            Learn
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="/priv8#Participate">
+            Participate
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a" href="/priv8#Contact">
+            Contact
+          </a>
+        </li>
+        <li>
+          <a class="nav-download" href="/priv8#register">
+            <button class="btn-cyan">
+              Register
+            </button>
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+            <img width="30" height="30" src="/assets/img/shared/social-twitter-white.svg" />
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+            <img width="30" height="30" src="/assets/img/shared/social-telegram-white.svg"/>
+          </a>
+        </li>
+        <li>
+          <a class="phantom-a nav-purple-icon" href="">
+          <img width="30" height="30" src="/assets/img/shared/social-facebook-white.svg"/>
+          </a>
+        </li>
+      </ul>
     </div>
-    <a class="nav-download" href="/download">
+
+    <a *ngIf="!this.purple" class="nav-download" href="/download">
       <button class="btn-primary" i18n="@@Navigation-Download">
         Download
       </button>
     </a>
+
     <button id="nav-toggle" class="phantom-btn mobile-only">
-      <img alt="Toggle Navigation"
-        [src]="this.purple ? '/assets/img/shared/hamburger-white.svg' : '/assets/img/shared/hamburger.svg'">
+      <img alt="Toggle Navigation" src="/assets/img/shared/hamburger.svg">
     </button>
     <div id="nav-flyout-bkgd" [class.open]="this.isOpen"></div>
   </nav>
@@ -72,12 +127,12 @@
   <router-outlet></router-outlet>
 </main>
 
-<div id="ft-root" class="bk-beige-light pos-relative">
+<div *ngIf="!this.purple" id="ft-root" class="bk-beige-light pos-relative">
   <footer id="footer" class="section-med hpad-wide">
     <div id="ft-layout">
       <section id="ft-logo">
         <img alt="" src="/assets/img/shared/orchid-logo-word.svg">
-        <p>&copy; 2020 Orchid Labs Inc.</p>
+        <p>&copy; {{year}} Orchid Labs Inc.</p>
         <p class="privacy-terms-links">
           <a class="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
           <a class="phantom-a" routerLink="/service-terms">Terms of Service</a>
@@ -169,20 +224,5 @@
         class="pos-absolute mobile-only">
       <img alt="" src="/assets/img/shared/footer-fish.svg" id="ft-adorn-fish" class="pos-absolute">
     </div>
-  </div>
-</div>
-
-<div class="maker-badge transition" id="maker-badge" style="visibility: visible;">
-  <div class="maker-badge__btn" id="maker-badge__btn"><img alt="Black Lives Matter Badge" width="30" class="maker-badge__btn-img"
-      src="/assets/img/shared/blm-blue-round.png">&nbsp;&nbsp;#BlackLivesMatter</div>
-  <div class="maker-badge__content" id="maker-badge__content">
-    <div style="color:#4a5568;max-width:200px;padding:0.5rem 0px 0;line-height:1.2rem">To be silent is to be complicit.
-      Black lives matter.</div>
-    <div class="maker-badge__stats">
-      <div style="margin-top:0.5rem;"><a style="color:#2B6CB0;text-decoration:underline;font-weight: 600;"
-          target="_blank" href="https://secure.actblue.com/donate/ms_blm_homepage_2019">Send a donation →</a></div>
-    </div><a target="_blank" href="http://blmbadge.unicornplatform.com"
-      style="display: block; margin: 0.5rem 0px; font-size: 10px; color: rgb(113, 128, 150); text-decoration: none; font-weight: 400;">Add
-      this to your website</a>
   </div>
 </div>

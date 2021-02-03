@@ -1,5 +1,5 @@
 import { HttpClient } from "@angular/common/http";
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
   selector: "app-newsletter-signup-core",
@@ -8,6 +8,8 @@ import { Component, OnInit } from "@angular/core";
 })
 
 export class NewsletterSignupCoreComponent implements OnInit {
+  @Input() priv8: Boolean;
+
   invalid: boolean = false;
   _email: string = "";
   invalid_email: boolean = false;
@@ -28,11 +30,11 @@ export class NewsletterSignupCoreComponent implements OnInit {
     if (!this.showFull) this.consented = false;
   }
 
-  inputListener () {
+  inputListener() {
     this.invalid_email = false;
     this.blink_box = false;
   }
-  checkboxListener () {
+  checkboxListener() {
     this.blink_box = false;
   }
 
@@ -40,7 +42,7 @@ export class NewsletterSignupCoreComponent implements OnInit {
 
   submit() {
     const mailchimp_add = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=";
-    const mailchimp_url = mailchimp_add + encodeURIComponent(this.email || "");
+    const mailchimp_url = mailchimp_add + encodeURIComponent(this.email || "") + (this.priv8 ? "&priv8=true" : "");
 
     if (this.in_progress) return;
 
@@ -52,7 +54,7 @@ export class NewsletterSignupCoreComponent implements OnInit {
     } else {
       this.invalid_email = false;
     }
-    
+
     if (!this.consented) {
       this.blink_box = true;
       this.invalid = true;

@@ -37,6 +37,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   font-size: $size-body;
   line-height: 1.75;
 
@@ -444,6 +445,10 @@ button:not(.phantom-btn) {
       background: $orc-rock-gray;
       color: rgba($orc-beige-light, 0.5);
     }
+  }
+  &.btn-cyan {
+    background: #4fe9ff;
+    color: $orc-purple;
   }
 
   &.btn-secondary {
