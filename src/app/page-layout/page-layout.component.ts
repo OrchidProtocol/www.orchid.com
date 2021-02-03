@@ -20,14 +20,21 @@ export class PageLayoutComponent implements OnInit {
     router: Router,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-    this.year = new Date().getFullYear();
+    const purpleURLs = [
+      '/priv8',
+    ]
+    if (purpleURLs.includes(router.url)) {
+      this.purple = true;
+    }
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
       route.firstChild.data.subscribe(d => {
         this.purple = !!d["purpleLayout"];
+        console.log(this.purple)
       });
     });
+    this.year = new Date().getFullYear();
   }
 
   ngOnInit() {
