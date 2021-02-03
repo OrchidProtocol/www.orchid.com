@@ -1,4 +1,5 @@
 @import "orc_config";
+@import "media_queries";
 
 .common-grid {
 	display: grid;
@@ -27,6 +28,9 @@ h3.priv8__heading {
 	color: $orc-deep-purple;
 	font-weight: lighter;
 	margin: 1rem 0 4rem 0;
+	@include mobile {
+		margin: 0 0 2rem 0;
+	}
 }
 h4.priv8__heading {
 	color: $orc-purple-gray;
@@ -198,7 +202,7 @@ h4.priv8__heading {
 	height: auto;
 	display: block;
 	position: absolute;
-	bottom: 0;
+	bottom: -1px;
 	left: 0;
 	width: 100%;
 }
@@ -258,7 +262,7 @@ h4.priv8__heading {
 	margin: auto;
 	max-width: 1100px;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 }
 .speakers__grid-item {
 	width: calc(50% - 2rem);
@@ -307,6 +311,14 @@ h4.priv8__heading {
 	@extend .common-section;
 	position: relative;
 	overflow: hidden;
+
+	
+	p {
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 
 	&::before,
 	&::after {
