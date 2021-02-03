@@ -22,6 +22,9 @@ picture > img {
 	text-align: center;
 	position: relative;
 	padding: 10rem 2rem 4rem;
+	@include mobile {
+		padding: 1rem 1rem 2rem;
+	}
 
 	@media (max-width: 765px) {
 		padding-top: 20vw;
@@ -252,6 +255,9 @@ h4.priv8__heading {
 .about__wrapper {
 	@extend .common-section;
 	padding-top: 4rem;
+	@include mobile {
+		padding-top: 1rem;
+	}
 
 	background-image: url(/assets/img/priv8/about-patterns.svg);
 	background-position: top center;
@@ -368,6 +374,9 @@ h4.priv8__heading {
 .learn_row-item {
 	position: relative;
 	margin: 1rem;
+	@include mobile {
+		margin: 0 0 1rem;
+	}
 	width: 100%;
 
 	a {
@@ -389,6 +398,9 @@ h4.priv8__heading {
 	justify-content: center;
 	align-items: flex-start;
 	margin-bottom: 2rem;
+	@include mobile {
+		margin-bottom: 0;
+	}
 	color: $orc-purple;
 	&.row--small {
 		.learn_row-item {
@@ -414,6 +426,9 @@ h4.priv8__heading {
 
 .participate__wrapper {
 	@extend .common-section;
+	@include not-mobile {
+		padding-bottom: 10rem;
+	}
 	background-color: #e7eaf4;
 
 	p {
@@ -482,6 +497,9 @@ h4.priv8__heading {
 .contact__wrapper {
 	@extend .common-section;
 	padding-bottom: 5vmin;
+	@include not-mobile {
+		padding-bottom: 5rem;
+	}
 	background-color: #52319c;
 	color: #ffffff;
 	.priv8__heading,
@@ -520,6 +538,9 @@ h4.priv8__heading {
 		margin: 0.5rem;
 	}
 	margin-bottom: 2rem;
+	@include not-mobile {
+		margin-top: 4rem;
+	}
 }
 
 .priv8__subheading {
