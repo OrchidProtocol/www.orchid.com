@@ -55,7 +55,7 @@ h4.priv8__heading {
 }
 
 .hero__container {
-	padding: 6rem 0 5rem;
+	padding: 6rem 0 4.5rem;
 	@media (max-width: 765px) {
 		padding-top: 1rem;
 	}
@@ -180,6 +180,14 @@ h4.priv8__heading {
 		&:nth-child(3) {
 			margin-top: -7rem;
 		}
+	}
+	@include not-mobile {
+		br {
+			display: none;
+		}
+	}
+	@include mobile {
+		line-height: 1.25;
 	}
 }
 
@@ -452,6 +460,37 @@ h4.priv8__heading {
 		top: 100px;
 		background-image: url(/assets/img/priv8/participate-pattern-1.svg);
 	}
+}
+.participate__email-wrap {
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	height: 0px;
+	position: relative;
+}
+.participate__email-container {
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	height: 0rem;
+	transition: height 1s ease;
+}
+.participate__email-wrap.expanded > .participate__email-container {
+	height: 4rem;
+}
+
+.participate__email {
+	display: inline-block;
+	font-size: 1rem;
+	margin-top: 1rem;
+	@include mobile {
+		margin-top: 0.5rem;
+	}
+	//border: 3px solid $orc-purple;
+	border-bottom: solid 3px #5f45ba;
 }
 
 .agenda__wrapper {
