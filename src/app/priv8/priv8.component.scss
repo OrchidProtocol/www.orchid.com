@@ -470,6 +470,7 @@ h4.priv8__heading {
 }
 .participate__email-container {
 	position: absolute;
+	z-index: 10;
 	top: 0;
 	width: 100%;
 	text-align: center;
@@ -485,6 +486,9 @@ h4.priv8__heading {
 	display: inline-block;
 	font-size: 1rem;
 	margin-top: 1rem;
+	@include mobile {
+		margin-top: 0.5rem;
+	}
 	//border: 3px solid $orc-purple;
 	border-bottom: solid 3px #5f45ba;
 }
