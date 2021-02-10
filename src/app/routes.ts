@@ -58,6 +58,7 @@ import { PodcastEp31Component } from './podcast-ep31/podcast.component';
 import { PodcastEp32Component } from './podcast-ep32/podcast.component';
 import { PodcastEp33Component } from './podcast-ep33/podcast.component';
 import { PodcastEp34Component } from './podcast-ep34/podcast.component';
+import { PodcastEp35Component } from './podcast-ep35/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -173,6 +174,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-33-john-redgrave", component: PodcastEp33Component },
 			{ path: "podcast/episode-34-joe-toscano.html", redirectTo: "podcast/episode-34-joe-toscano" },
 			{ path: "podcast/episode-34-joe-toscano", component: PodcastEp34Component },
+			{ path: "podcast/episode-35-leigh-honeywell.html", redirectTo: "podcast/episode-35-leigh-honeywell" },
+			{ path: "podcast/episode-35-leigh-honeywell", component: PodcastEp35Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
