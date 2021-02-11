@@ -13,7 +13,7 @@
     [class.loading]="this.in_progress" [class.btn-primary]="!this.priv8" [class.btn-secondary]="this.priv8"
     i18n="@@Newsletter__Subscribe">
     <span *ngIf="!this.priv8">Subscribe</span>
-    <span *ngIf="this.priv8">Sign Up</span>
+    <span *ngIf="this.priv8">Register</span>
   </button>
 </div>
 <ng-container *ngIf="(error != '')">
