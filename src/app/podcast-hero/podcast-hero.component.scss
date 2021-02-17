@@ -12,8 +12,8 @@ $breakpoint2: 1450px;
 		position: relative;
 
 		@media (min-width: $breakpoint) {
-			padding-top: 6rem;
-			padding-bottom: 6rem;
+			padding-top: 3rem;
+			padding-bottom: 3rem;
 		}
 
 		@media (max-width: $breakpoint) {
@@ -40,14 +40,13 @@ $breakpoint2: 1450px;
 @media (min-width: $breakpoint) {
 	.podcast-hero__flex {
 		flex-direction: row;
-		justify-content: center;
+		justify-content: space-between;
 
 		& > div {
-			width: 30%;
+			//width: 20%;
 
 			&.podcast-hero__text {
-				width: 40%;
-				max-width: 40em;
+				width: 60%;
 			}
 		}
 	}
@@ -59,17 +58,15 @@ $breakpoint2: 1450px;
 }
 
 .podcast-hero__text {
-	max-width: 21em;
 	& > img {
 		display: inline-block;
 		max-width: 100%;
+		width: 300px;
 	}
 }
 
 .podcast-hero__title {
-	text-transform: uppercase;
 	color: white;
-	font-family: "Geometos Rounded";
 
 	&.second-title {
 		letter-spacing: 4px;
@@ -81,8 +78,7 @@ $breakpoint2: 1450px;
 	margin: auto;
 	text-align: center;
 	max-width: 750px;
-	font-size: 1.25em;
-	margin-top: 1em;
+	font-size: 1rem;
 }
 
 h1.podcast-hero__title {
@@ -95,6 +91,7 @@ h2.podcast-hero__title {
 
 .podcast-hero__subtitle {
 	font-size: 18px;
+	color: #97E3EE;
 }
 
 @media (min-width: $breakpoint) {
@@ -107,7 +104,8 @@ h2.podcast-hero__title {
 	}
 
 	.podcast-hero__subtitle {
-		font-size: 21px;
+		font-size: 18px;
+		white-space: nowrap;
 	}
 }
 
@@ -118,10 +116,6 @@ h2.podcast-hero__title {
 
 	h2.podcast-hero__title {
 		font-size: 69px;
-	}
-
-	.podcast-hero__subtitle {
-		font-size: 21px;
 	}
 }
 
@@ -139,7 +133,7 @@ h2.podcast-hero__title {
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: center;
-	background-image: url("/assets/img/podcast/hero-bunny.svg");
+	background-image: url("/assets/img/podcast/hero-bunny-2.svg");
 }
 
 .podcast-hero__subscribe {
