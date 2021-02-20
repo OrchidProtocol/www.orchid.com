@@ -51,7 +51,30 @@ export class PageLayoutComponent implements OnInit {
       // out of view immediately after loading
       setTimeout(_ => this.animateMenu = true, 20);
 
-      
+      let blmBadge = doc.getElementById('maker-badge');
+      let blmBadgeBtn = doc.getElementById('maker-badge__btn');
+      let blmBadgeCtn = doc.getElementById('maker-badge__content');
+      const computeBlm = () => {
+        if (blmBadge.dataset.state === 'false') {
+          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
+        } else {
+          blmBadge.style.bottom = `0px`;
+        }
+      }
+
+      window.addEventListener('DOMContentLoaded', () => {
+        blmBadge.dataset.state = 'false';
+        computeBlm();
+      })
+      blmBadgeBtn.addEventListener('click', () => {
+        if (blmBadge.dataset.state === 'false') {
+          blmBadge.dataset.state = 'true';
+        } else {
+          blmBadge.dataset.state = 'false';
+        }
+        computeBlm();
+      })
+      window.addEventListener('resize', computeBlm);
 
       let nav = doc.getElementById("nav") as HTMLElement;
       let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
