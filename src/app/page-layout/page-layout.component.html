@@ -9,14 +9,14 @@
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
           alt="Orchid logo" class="no-mobile">-->
-        <img src="/assets/img/shared/orchid-logo-text.svg" alt="Orchid logo" class="no-mobile">
-        <img src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
+        <img width="93" height="24" src="/assets/img/shared/orchid-logo-text.svg" alt="Orchid logo" class="no-mobile">
+        <img width="35" height="30" src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
     <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
-          <img alt="Close" src="/assets/img/shared/close.svg">
+          <img width="22" height="24" alt="Close" src="/assets/img/shared/close.svg">
         </button>
       </div>
       <ul *ngIf="!this.purple" class="nav-list phantom-list">
@@ -116,7 +116,7 @@
     </a>
 
     <button id="nav-toggle" class="phantom-btn mobile-only">
-      <img alt="Toggle Navigation" src="/assets/img/shared/hamburger.svg">
+      <img width="25" height="22" alt="Toggle Navigation" src="/assets/img/shared/hamburger.svg">
     </button>
     <div id="nav-flyout-bkgd" [class.open]="this.isOpen"></div>
   </nav>
