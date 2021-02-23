@@ -1,6 +1,6 @@
 const { readFileSync, existsSync, writeFileSync, mkdirSync, createWriteStream, copyFileSync, unlink } = require("fs");
 const { join } = require("path");
-
+const sharp = require('sharp');
 const http = require('http');
 const fetch = require('node-fetch');
 
@@ -16,6 +16,10 @@ fallback();
 if (!existsSync(join(ASSETS_FOLDER, '/img/blog-integration/')))
 	mkdirSync(join(ASSETS_FOLDER, '/img/blog-integration/'))
 
+const getSmallURL = (url) => {
+	return url.replace(/.png|.jpg|.webp/, '-small.jpg');
+}
+
 const downloadBlogImage = (url, index = 0) => {
 	const output = join(ASSETS_FOLDER, '/img/blog-integration/', url.split('/')[url.split('/').length - 1]);
 
@@ -27,6 +31,12 @@ const downloadBlogImage = (url, index = 0) => {
 				res.body.pipe(stream);
 				stream.on('close', () => {
 					console.log('downloaded', url);
+					sharp(output)
+					.resize(670)
+					.jpeg({ quality: 70 })
+					.toFile(getSmallURL(output), (err, info) => { 
+						console.log(err, info);
+					});
 				})
 			})
 			.catch(e => {
@@ -34,7 +44,7 @@ const downloadBlogImage = (url, index = 0) => {
 			})
 	}, index * 100);
 
-	return output;
+	return getSmallURL(output);
 }
 
 let domain = 'blog.orchid.com';
