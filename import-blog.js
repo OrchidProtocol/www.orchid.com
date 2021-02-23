@@ -33,7 +33,7 @@ const downloadBlogImage = (url, index = 0) => {
 					console.log('downloaded', url);
 					sharp(output)
 					.resize(670)
-					.jpeg({ quality: 70 })
+					.jpeg({ quality: 60 })
 					.toFile(getSmallURL(output), (err, info) => { 
 						console.log(err, info);
 					});
