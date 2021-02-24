@@ -32,11 +32,11 @@ const downloadBlogImage = (url, index = 0) => {
 				stream.on('close', () => {
 					console.log('downloaded', url);
 					sharp(output)
-					.resize(670)
-					.jpeg({ quality: 60 })
-					.toFile(getSmallURL(output), (err, info) => { 
-						console.log(err, info);
-					});
+						.resize(670)
+						.jpeg({ quality: 60 })
+						.toFile(getSmallURL(output), (err, info) => {
+							if (err) console.log(err, info);
+						});
 				})
 			})
 			.catch(e => {
