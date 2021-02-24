@@ -5,22 +5,7 @@
     font-style: normal;
     font-weight: 400;
     src: local('Baloo Regular'), local('Baloo-Regular'), url(/assets/fonts/Baloo/Baloo-Regular.ttf) format('truetype');
-}
-
-//@import url('https://fonts.googleapis.com/css?family=Ubuntu:700,700i');
-
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: italic;
-    font-weight: 700;
-    src: local('Ubuntu Bold Italic'), local('Ubuntu-BoldItalic'), url(/assets/fonts/Ubuntu/Ubuntu-BoldItalic.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'Ubuntu';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(/assets/fonts/Ubuntu/Ubuntu-Bold.ttf) format('truetype');
+    font-display: swap;
 }
 
 //@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i');
@@ -31,6 +16,7 @@
     font-style: italic;
     font-weight: 400;
     src: local('Noto Sans Italic'), local('NotoSans-Italic'), url(/assets/fonts/NotoSans/NotoSans-BoldItalic.ttf) format('truetype');
+    font-display: swap;
 }
 
 /* cyrillic-ext */
@@ -39,6 +25,7 @@
     font-style: italic;
     font-weight: 700;
     src: local('Noto Sans Bold Italic'), local('NotoSans-BoldItalic'), url(/assets/fonts/NotoSans/NotoSans-BoldItalic.ttf) format('truetype');
+    font-display: swap;
 }
 
 /* cyrillic-ext */
@@ -47,6 +34,7 @@
     font-style: normal;
     font-weight: 400;
     src: local('Noto Sans'), local('NotoSans'), url(/assets/fonts/NotoSans/NotoSans-Regular.ttf) format('truetype');
+    font-display: swap;
 }
 
 /* cyrillic-ext */
@@ -55,6 +43,7 @@
     font-style: normal;
     font-weight: 700;
     src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(/assets/fonts/NotoSans/NotoSans-Bold.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -62,6 +51,7 @@
     font-style: normal;
     font-weight: 300;
     src: local('Noto Sans Light'), url(/assets/fonts/NotoSans/NotoSans-ExtraLight.ttf) format('truetype');
+    font-display: swap;
 }
 
 @font-face {
@@ -73,4 +63,5 @@
         url(/assets/fonts/GeometosRounded/Geometos_Rounded.svg#GeometosRounded) format("svg");
     font-weight:normal;
     font-style:normal;
+    font-display: swap;
 }
