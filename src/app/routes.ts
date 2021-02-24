@@ -60,6 +60,7 @@ import { PodcastEp33Component } from './podcast-ep33/podcast.component';
 import { PodcastEp34Component } from './podcast-ep34/podcast.component';
 import { PodcastEp35Component } from './podcast-ep35/podcast.component';
 import { PodcastEp36Component } from './podcast-ep36/podcast.component';
+import { PodcastEp37Component } from './podcast-ep37/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -179,6 +180,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-35-leigh-honeywell", component: PodcastEp35Component },
 			{ path: "podcast/episode-36-lance-vick.html", redirectTo: "podcast/episode-36-lance-vick" },
 			{ path: "podcast/episode-36-lance-vick", component: PodcastEp36Component },
+			{ path: "podcast/episode-37-david-henklel-wallace.html", redirectTo: "podcast/episode-37-david-henklel-wallace" },
+			{ path: "podcast/episode-37-david-henklel-wallace", component: PodcastEp37Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
