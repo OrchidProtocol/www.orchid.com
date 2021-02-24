@@ -57,8 +57,12 @@ export class PageLayoutComponent implements OnInit {
       const computeBlm = () => {
         if (blmBadge.dataset.state === 'false') {
           blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
+          if (window.innerWidth <= 870) {
+            blmBadge.style.right = `-150px`;
+          }
         } else {
           blmBadge.style.bottom = `0px`;
+          blmBadge.style.right = `0px`;
         }
       }
 
