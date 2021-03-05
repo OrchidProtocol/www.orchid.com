@@ -303,8 +303,13 @@ h4.priv8__heading {
 	justify-content: center;
 	align-items: stretch;
 }
+.speakers__half-grid {
+	@include not-mobile {
+		width: 50%;
+	}
+}
 .speakers__grid-item {
-	width: calc(50% - 2rem);
+	//width: calc(50% - 2rem);
 	margin: 1rem;
 	box-sizing: border-box;
 	padding: 1rem 2.5rem 5rem 2.5rem;
