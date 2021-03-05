@@ -3,12 +3,12 @@ import { MetaService } from '../MetaService';
 import BrellaJSON from "../../assets/brella-priv8.json"
 
 function nth(d) {
-    if (d > 3 && d < 21) return d+"th";
+    if (d > 3 && d < 21) return d + "th";
     switch (d % 10) {
-        case 1: return d+"st";
-        case 2: return d+"nd";
-        case 3: return d+"rd";
-        default: return d+"th";
+        case 1: return d + "st";
+        case 2: return d + "nd";
+        case 3: return d + "rd";
+        default: return d + "th";
     }
 }
 
@@ -67,7 +67,18 @@ export class Priv8 implements OnInit {
 
     constructor(private meta: MetaService) {
         this.year = new Date().getFullYear();
-        
+    }
+
+    onParticipateClick() {
+        this.expandParticipate = !this.expandParticipate;
+    }
+
+    ngOnInit() {
+        this.meta.setGlobalTitle('Priv8 | Orchid');
+        this.meta.setGlobalImage('https://www.orchid.com/assets/img/priv8/priv8_social.png');
+        this.meta.setGlobalDescription('Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders.');
+        document.body.classList.add('no-banner');
+
         /*const BrellaRelationships = {};
         for (let index = 0; index < BrellaJSON.included.length; index++) {
             const element = BrellaJSON.included[index];
@@ -108,17 +119,5 @@ export class Priv8 implements OnInit {
                 this.agenda.push(output);
             }
         }
-    }
-
-    onParticipateClick() {
-        this.expandParticipate = !this.expandParticipate;
-    }
-
-    ngOnInit() {
-
-        this.meta.setGlobalTitle('Priv8 | Orchid');
-        this.meta.setGlobalImage('https://www.orchid.com/assets/img/priv8/priv8_social.png');
-        this.meta.setGlobalDescription('Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders.');
-        document.body.classList.add('no-banner');
     }
 }
