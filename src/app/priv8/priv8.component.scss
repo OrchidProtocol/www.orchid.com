@@ -1,7 +1,8 @@
 @import "orc_config";
 @import "media_queries";
 
-img, picture {
+img,
+picture {
 	height: auto;
 }
 picture > img {
@@ -134,7 +135,8 @@ h4.priv8__heading {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	& > img, & > picture {
+	& > img,
+	& > picture {
 		display: block;
 		width: 23%;
 	}
@@ -171,7 +173,8 @@ h4.priv8__heading {
 .hero__featuring-item {
 	max-width: 12rem;
 	margin: 0.5rem;
-	& > img, & > picture {
+	& > img,
+	& > picture {
 		width: 100%;
 	}
 	@media (min-width: 900px) {
@@ -298,10 +301,15 @@ h4.priv8__heading {
 	margin: auto;
 	max-width: 1100px;
 	justify-content: center;
-	align-items: center;
+	align-items: stretch;
+}
+.speakers__half-grid {
+	@include not-mobile {
+		width: 50%;
+	}
 }
 .speakers__grid-item {
-	width: calc(50% - 2rem);
+	//width: calc(50% - 2rem);
 	margin: 1rem;
 	box-sizing: border-box;
 	padding: 1rem 2.5rem 5rem 2.5rem;
@@ -311,7 +319,8 @@ h4.priv8__heading {
 	border-radius: 1rem;
 
 	margin-top: 5rem;
-	& > img, & > picture {
+	& > img,
+	& > picture {
 		width: 100%;
 		margin: -5.5rem auto 0 auto;
 		max-width: 9rem;
@@ -345,6 +354,7 @@ h4.priv8__heading {
 
 .learn__wrapper {
 	@extend .common-section;
+	background-color: #e7eaf4;
 	position: relative;
 	overflow: hidden;
 
@@ -394,7 +404,8 @@ h4.priv8__heading {
 		width: 100%;
 		height: 100%;
 	}
-	img, picture {
+	img,
+	picture {
 		width: 100%;
 		height: auto;
 		border-radius: 1rem;
@@ -406,8 +417,8 @@ h4.priv8__heading {
 	justify-content: center;
 	align-items: flex-start;
 	margin-bottom: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 1200px;
 	@include mobile {
 		margin-bottom: 0;
@@ -440,7 +451,6 @@ h4.priv8__heading {
 	@include not-mobile {
 		padding-bottom: 10rem;
 	}
-	background-color: #e7eaf4;
 
 	p {
 		max-width: 800px;
@@ -495,6 +505,36 @@ h4.priv8__heading {
 
 .agenda__wrapper {
 	@extend .common-section;
+
+	.brella-container {
+		max-width: 800px;
+		margin: auto;
+
+		::ng-deep {
+			.brella-widget-root {
+				font-family: $orc-tf-secondary;
+			}
+			.schedule-slot-head {
+				color: $orc-purple !important;
+			}
+			.powered-by-brella {
+				display: none !important;
+			}
+
+			.schedule-day-name, .schedule-filters-header {
+				font-family: $orc-tf-primary;
+				color: $orc-purple;
+			}
+
+			.brella-widget-container {
+				@include mobile {
+					flex-direction: column-reverse;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+	}
 }
 .agenda__item {
 	display: flex;
@@ -529,7 +569,8 @@ h4.priv8__heading {
 	max-width: 40rem;
 	margin: auto auto 2rem;
 
-	img, picture {
+	img,
+	picture {
 		max-width: 100%;
 		height: auto;
 		margin: auto;
