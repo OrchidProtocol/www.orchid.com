@@ -521,7 +521,8 @@ h4.priv8__heading {
 				display: none !important;
 			}
 
-			.schedule-day-name, .schedule-filters-header {
+			.schedule-day-name,
+			.schedule-filters-header {
 				font-family: $orc-tf-primary;
 				color: $orc-purple;
 			}
@@ -536,23 +537,33 @@ h4.priv8__heading {
 		}
 	}
 }
+.agenda__day {
+	font-weight: 800;
+	letter-spacing: 1px;
+	color: $orc-purple;
+	font-size: 1rem;
+    margin: 4rem auto auto auto;
+    max-width: 18rem;
+    border-bottom: 2px solid $orc-purple;
+}
 .agenda__item {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
-	max-width: 24rem;
+	max-width: 26rem;
 	margin: 2rem auto;
 	.agenda__time {
-		font-weight: 800;
-		letter-spacing: 1px;
-		color: $orc-purple;
+		b {
+			font-weight: 800;
+			color: $orc-purple;
+			font-size: 1rem;
+		}
 		width: 10rem;
-		font-size: 1rem;
+		padding-right: 0.5rem;
 	}
 	.agenda__description {
-		text-transform: uppercase;
-		b {
-			letter-spacing: 1px;
+		.agenda__item-title {
+			font-weight: bold;
 		}
 		width: 100%;
 		text-align: left;
