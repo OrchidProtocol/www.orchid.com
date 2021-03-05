@@ -548,7 +548,7 @@ h4.priv8__heading {
 }
 .agenda__item {
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	width: 100%;
 	max-width: 26rem;
 	margin: 2rem auto;
