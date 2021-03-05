@@ -69,3 +69,13 @@ fetch(`https://${domain}/feed-1.json`)
 		} catch (e) { fallback() }
 	})
 	.catch(fallback);
+
+
+writeFileSync(join(ASSETS_FOLDER, 'brella-priv8.json'), JSON.stringify({}));
+fetch(`https://api.brella.io/api/aalto/events/priv8/time_slots`)
+.then(response => response.json())
+.then(data => {
+	try {
+		writeFileSync(join(ASSETS_FOLDER, 'brella-priv8.json'), JSON.stringify(data));
+	} catch (e) { }
+})
