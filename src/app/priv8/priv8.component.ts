@@ -67,20 +67,12 @@ export class Priv8 implements OnInit {
 
     constructor(private meta: MetaService) {
         this.year = new Date().getFullYear();
-    }
-
-    onParticipateClick() {
-        this.expandParticipate = !this.expandParticipate;
-    }
-
-    ngOnInit() {
-        console.log(BrellaJSON)
-
-        const BrellaRelationships = {};
+        
+        /*const BrellaRelationships = {};
         for (let index = 0; index < BrellaJSON.included.length; index++) {
             const element = BrellaJSON.included[index];
             console.log(element);
-        }
+        }*/
         for (let index = 0; index < BrellaJSON.data.length; index++) {
             const element = BrellaJSON.data[index];
 
@@ -116,6 +108,13 @@ export class Priv8 implements OnInit {
                 this.agenda.push(output);
             }
         }
+    }
+
+    onParticipateClick() {
+        this.expandParticipate = !this.expandParticipate;
+    }
+
+    ngOnInit() {
 
         this.meta.setGlobalTitle('Priv8 | Orchid');
         this.meta.setGlobalImage('https://www.orchid.com/assets/img/priv8/priv8_social.png');
