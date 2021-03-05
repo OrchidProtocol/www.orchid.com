@@ -24,7 +24,8 @@ function formatTime(input) {
     if (hours > 12) {
         hours -= 12;
     }
-    return `${hours}:${trailingZero(input.getMinutes())} ${AMPM} (${timeZones[input.getTimezoneOffset()]})`;
+    return `${hours}:${trailingZero(input.getMinutes())} ${AMPM} (ET)`;
+    // (${timeZones[input.getTimezoneOffset()]})
 }
 
 const days = [
