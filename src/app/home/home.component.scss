@@ -13,13 +13,16 @@ $hero-bp-vert: 1150px;
   position: relative;
   background: $orc-beige-light;
   height: 810px;
+  @media (max-width: $hero-bp-vert) {
+    padding-top: 1rem;
+  }
 
   @media (max-width: $hero-bp-1) {
     height: 55vw;
   }
 
   @media (min-width: $hero-bp-vert) {
-    margin-top: 2em;
+    padding-top: 2rem;
   }
 }
 
@@ -50,8 +53,8 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__bg {
-  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right top; // for Edge
-  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat calc(100% + 27px) 0%;
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right 1rem; // for Edge
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat calc(100% + 27px) 1rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -829,13 +832,45 @@ ul.smaller .ft-text h3 {
 
 .priv8-wrapper {
   position: relative;
+  background-color: #52319C;
+  padding: 0.5rem 0 1.5rem;
+  @include not-mobile {
+    padding: 2rem 0;
+  }
+  color: #FFFFFF;
+  & > a {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  button {
+    background-color: white;
+    color: $orc-purple;
+    &:hover {
+      background-color: white;
+    }
+  }
+  @include not-mobile {
+    & > a {
+      display: none;
+    }
+  }
+  @include mobile {
+    button {
+      display: none;
+    }
+  }
 }
 .priv8-section {
   text-align: center;
 }
 .priv8-logo {
-  width: 100%;
-  max-width: 500px;
+  width: 75%;
+  max-width: 350px;
   margin: auto;
   position: relative;
   & > img {
@@ -859,7 +894,6 @@ ul.smaller .ft-text h3 {
   letter-spacing: 3px;
   margin-top: 0.25rem;
   display: inline-block;
-  color: $orc-purple;
 }
 .priv8-orchid-logo {
   display: block;
@@ -868,9 +902,15 @@ ul.smaller .ft-text h3 {
   max-width: 140px;
 }
 .priv8-section {
+  h2, h3, p {
+    color: #FFFFFF;
+  }
   h2 {
     font-weight: 300;
     font-size: 28px;
+    @include mobile {
+      font-size: 20px;
+    }
     letter-spacing: 3px;
     font-family: $orc-tf-secondary;
     margin-bottom: 1rem;
@@ -880,6 +920,10 @@ ul.smaller .ft-text h3 {
     font-size: 21px;
     font-family: $orc-tf-secondary;
     margin-bottom: 1rem;
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
   }
   p {
     max-width: 750px;

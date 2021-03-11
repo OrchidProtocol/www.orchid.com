@@ -12,6 +12,7 @@ export class PageLayoutComponent implements OnInit {
   isOpen: boolean = false;
   noShadow: boolean = true;
   purple: boolean;
+  slim: boolean;
   blogLink: string;
   year: number;
 
@@ -22,9 +23,15 @@ export class PageLayoutComponent implements OnInit {
   ) {
     const purpleURLs = [
       '/priv8',
-    ]
+    ];
     if (purpleURLs.includes(router.url)) {
       this.purple = true;
+    }
+    const slimURLs = [
+      '/',
+    ];
+    if (slimURLs.includes(router.url)) {
+      this.slim = true;
     }
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)

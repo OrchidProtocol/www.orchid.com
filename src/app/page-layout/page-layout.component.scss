@@ -37,6 +37,9 @@ $mobile-nav-height: 64px;
   z-index: 999;
   @include mobile {
     margin-bottom: 1.9rem;
+    &.slim {
+      margin-bottom: 0;
+    }
   }
   &.purple {
     margin-bottom: 0;
@@ -55,6 +58,15 @@ $mobile-nav-height: 64px;
       img {
         filter: brightness(100);
       }
+    }
+  }
+  
+  &.slim {
+    .nav-infobar {
+      display: none;
+    }
+    #nav.js {
+      top: 0;
     }
   }
 }
