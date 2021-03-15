@@ -11,8 +11,8 @@ export class PageLayoutComponent implements OnInit {
   animateMenu: boolean = false;
   isOpen: boolean = false;
   noShadow: boolean = true;
-  purple: boolean;
-  slim: boolean;
+  purple: boolean = false;
+  slim: boolean = false;
   blogLink: string;
   year: number;
 
