@@ -1,6 +1,14 @@
 import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
 import { filter, tap } from 'rxjs/operators';
+
+const purpleURLs = [
+  '/priv8',
+];
+
+const slimURLs = [
+  '/',
+];
 @Component({
   selector: "app-page-layout",
   templateUrl: "./page-layout.component.html",
@@ -15,21 +23,17 @@ export class PageLayoutComponent implements OnInit {
   slim: boolean = false;
   blogLink: string;
   year: number;
+  router: Router;
 
   constructor(
     route: ActivatedRoute,
     router: Router,
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
-    const purpleURLs = [
-      '/priv8',
-    ];
+    this.router = router;
     if (purpleURLs.includes(router.url)) {
       this.purple = true;
     }
-    const slimURLs = [
-      '/',
-    ];
     if (slimURLs.includes(router.url)) {
       this.slim = true;
     }
@@ -44,13 +48,21 @@ export class PageLayoutComponent implements OnInit {
   }
 
   ngOnInit() {
-    const doc = typeof document !== "undefined" && document;
+    if (purpleURLs.includes(this.router.url)) {
+      this.purple = true;
+    }
+    if (slimURLs.includes(this.router.url)) {
+      this.slim = true;
+    }
+    console.log(this.router.url, this.purple, this.slim);
+
 
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
       this.blogLink = `https://blog.${this.localeId}.orchid.com/`;
     }
 
+    const doc = typeof document !== "undefined" && document;
     if (doc) {
       this.js = true;
 
