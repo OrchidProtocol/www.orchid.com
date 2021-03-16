@@ -568,6 +568,22 @@ h4.priv8__heading {
 		width: 100%;
 		text-align: left;
 	}
+	.agenda__item-speakers {
+		display: flex;
+		.agenda__item-speaker {
+			display: block;
+			width: 2rem;
+			margin-left: -0.5rem;
+			border: 3px solid white;
+			border-radius: 100%;
+			overflow: hidden;
+			& > img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+		}
+	}
 }
 
 .partners__wrapper {
