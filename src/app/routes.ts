@@ -63,6 +63,7 @@ import { PodcastEp36Component } from './podcast-ep36/podcast.component';
 import { PodcastEp37Component } from './podcast-ep37/podcast.component';
 import { PodcastEp38Component } from './podcast-ep38/podcast.component';
 import { PodcastEp39Component } from './podcast-ep39/podcast.component';
+import { PodcastEp40Component } from './podcast-ep40/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -188,6 +189,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-38-miko-matsumura", component: PodcastEp38Component },
 			{ path: "podcast/episode-39-gregory-landua.html", redirectTo: "podcast/episode-39-gregory-landua" },
 			{ path: "podcast/episode-39-gregory-landua", component: PodcastEp39Component },
+			{ path: "podcast/episode-40-marvin-tong.html", redirectTo: "podcast/episode-40-marvin-tong" },
+			{ path: "podcast/episode-40-marvin-tong", component: PodcastEp40Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
