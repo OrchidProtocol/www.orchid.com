@@ -1,3 +1,4 @@
+import { element } from 'protractor';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MetaService } from '../MetaService';
 import BrellaJSON from "../../assets/brella-priv8.json"
@@ -56,6 +57,54 @@ const timeZones = {
     360: 'CT',
 }
 
+const agenda = [];
+for (let index = 0; index < BrellaJSON.data.length; index++) {
+    const element = BrellaJSON.data[index];
+
+    const start = new Date(
+        new Date(element.attributes['start-time-in-time-zone']).toLocaleString("en-US", { timeZone: "America/New_York" })
+    );
+    const end = new Date(
+        new Date(element.attributes['end-time-in-time-zone']).toLocaleString("en-US", { timeZone: "America/New_York" })
+    );
+
+    let dayInfo = undefined;
+
+    if (
+        agenda.length === 0 ||
+        agenda[agenda.length - 1].raw_start.getDate() !== start.getDate()
+    ) {
+        dayInfo = `${days[start.getDay()]} ● ${nth(start.getDate())} of ${months[start.getMonth()]}`;
+    }
+
+    const output = {
+        title: element.attributes.title,
+        duration: element.attributes.duration,
+        raw_start: start,
+        raw_end: end,
+        start: formatTime(start),
+        end: formatTime(end),
+        speakers: [],
+        day: days[start.getDay()],
+        dayInfo,
+        content: [],
+    }
+    if (element.relationships && element.relationships['speaker-assignments']) {
+        for (let index = 0; index < element.relationships['speaker-assignments'].data.length; index++) {
+            const speakerAssignment = element.relationships['speaker-assignments'].data[index];
+            output.speakers.push(
+                BrellaJSON.speakers[Number(speakerAssignment.id)]
+            );
+        }
+    }
+    if (output.title) {
+        try {
+            output.content = element.attributes.content.blocks;
+        } catch(e) {}
+        agenda.push(output);
+    }
+}
+
 @Component({
     selector: 'app-priv8',
     templateUrl: './priv8.component.html',
@@ -73,40 +122,7 @@ export class Priv8 implements OnInit {
             const element = BrellaJSON.included[index];
             console.log(element);
         }*/
-        for (let index = 0; index < BrellaJSON.data.length; index++) {
-            const element = BrellaJSON.data[index];
-
-            const start = new Date(
-                new Date(element.attributes['start-time-in-time-zone']).toLocaleString("en-US", { timeZone: "America/New_York" })
-            );
-            const end = new Date(
-                new Date(element.attributes['end-time-in-time-zone']).toLocaleString("en-US", { timeZone: "America/New_York" })
-            );
-
-            let dayInfo = undefined;
-
-            if (
-                this.agenda.length === 0 ||
-                this.agenda[this.agenda.length - 1].raw_start.getDate() !== start.getDate()
-            ) {
-                dayInfo = `${days[start.getDay()]} ● ${nth(start.getDate())} of ${months[start.getMonth()]}`;
-            }
-
-            const output = {
-                title: element.attributes.title,
-                duration: element.attributes.duration,
-                raw_start: start,
-                raw_end: end,
-                start: formatTime(start),
-                end: formatTime(end),
-                speakers: [],
-                day: days[start.getDay()],
-                dayInfo,
-            }
-            if (output.title) {
-                this.agenda.push(output);
-            }
-        }
+        this.agenda = agenda;
     }
 
     onParticipateClick() {

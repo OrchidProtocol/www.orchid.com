@@ -22,7 +22,7 @@
 
         <a href="https://next.brella.io/join/priv8">
             <button class="btn-primary">
-                Register
+                Register For Free
             </button>
         </a>
 
@@ -465,13 +465,13 @@
                 <b>Anne Fauvre-Willis</b>
                 <span>COO, Oasis Labs</span>
                 <p>
-                    Anne Fauvre is the COO of Oasis Labs and an early contributor to the Oasis Network, a privacy-first blockchain platform for building a responsible data economy. 
+                    Anne Fauvre is the COO of Oasis Labs and an early contributor to the Oasis Network, a privacy-first blockchain platform for building a responsible data economy.
                 </p>
                 <p>
-                    Prior to Oasis Labs, Anne was as a Product Manager / Product Marketing Manager for the iPhone at Apple and worked for former US Secretary of State Madeleine Albright at the Albright Stonebridge Group, a global strategy firm. 
+                    Prior to Oasis Labs, Anne was as a Product Manager / Product Marketing Manager for the iPhone at Apple and worked for former US Secretary of State Madeleine Albright at the Albright Stonebridge Group, a global strategy firm.
                 </p>
                 <p>
-                    Anne has an MBA for Harvard Business School and a BA from Georgetown University. 
+                    Anne has an MBA for Harvard Business School and a BA from Georgetown University.
                 </p>
             </div>
         </div>
@@ -506,6 +506,19 @@
                     </div>
                     <div class="agenda__item-duration">
                         {{ event.duration }} Minutes
+                    </div>
+                    <p *ngFor="let block of event.content">
+                        {{ block.text }}
+                    </p>
+                    <div class="agenda__item-speakers" *ngIf="event.speakers.length > 0">
+                        <div class="agenda__item-speaker" *ngFor="let speaker of event.speakers">
+                            <img width="120" height="120" src="/assets/img/brella-integration/{{speaker.image}}" alt="{{speaker.name}}" />
+                            <div>
+                                <b>{{speaker.name}}</b>
+                                <br />
+                                {{speaker.role}}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
