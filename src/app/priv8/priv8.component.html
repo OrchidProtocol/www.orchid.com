@@ -507,6 +507,9 @@
                     <div class="agenda__item-duration">
                         {{ event.duration }} Minutes
                     </div>
+                    <p *ngFor="let block of event.content">
+                        {{ block.text }}
+                    </p>
                     <div class="agenda__item-speakers" *ngIf="event.speakers.length > 0">
                         <div class="agenda__item-speaker" *ngFor="let speaker of event.speakers">
                             <img width="120" height="120" src="/assets/img/brella-integration/{{speaker.image}}" alt="{{speaker.name}}" title="{{speaker.name}} // {{speaker.role}}" />

@@ -87,6 +87,7 @@ for (let index = 0; index < BrellaJSON.data.length; index++) {
         speakers: [],
         day: days[start.getDay()],
         dayInfo,
+        content: [],
     }
     if (element.relationships && element.relationships['speaker-assignments']) {
         for (let index = 0; index < element.relationships['speaker-assignments'].data.length; index++) {
@@ -97,6 +98,9 @@ for (let index = 0; index < BrellaJSON.data.length; index++) {
         }
     }
     if (output.title) {
+        try {
+            output.content = element.attributes.content.blocks;
+        } catch(e) {}
         agenda.push(output);
     }
 }
