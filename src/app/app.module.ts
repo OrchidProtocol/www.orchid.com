@@ -77,6 +77,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { Slides2021Component } from './slides-2021/slides.component';
 import { Priv8 } from './priv8/priv8.component';
 import { Priv8Signup } from './priv8-signup/priv8-signup.component';
 
@@ -159,6 +160,7 @@ import { MetaService } from './MetaService';
     NotFoundComponent,
     WebinarLPComponent,
     QuizComponent,
+    Slides2021Component,
     Priv8,
     Priv8Signup,
   ],
