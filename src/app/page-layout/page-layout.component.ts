@@ -24,6 +24,8 @@ export class PageLayoutComponent implements OnInit {
   blogLink: string;
   year: number;
   router: Router;
+  computeBadge: Function;
+  badgeActive: boolean = false;
 
   constructor(
     route: ActivatedRoute,
@@ -42,6 +44,13 @@ export class PageLayoutComponent implements OnInit {
     ).subscribe(() => {
       route.firstChild.data.subscribe(d => {
         this.purple = !!d["purpleLayout"];
+        if (this.computeBadge) {
+          this.badgeActive = false;
+          this.computeBadge();
+          window.requestAnimationFrame(()=>{
+            this.computeBadge();
+          })
+        }
       });
     });
     this.year = new Date().getFullYear();
@@ -79,11 +88,13 @@ export class PageLayoutComponent implements OnInit {
       let blmBadge = doc.getElementById('maker-badge');
       let blmBadgeBtn = doc.getElementById('maker-badge__btn');
       let blmBadgeCtn = doc.getElementById('maker-badge__content');
-      const computeBlm = () => {
-        if (blmBadge.dataset.state === 'false') {
+      this.computeBadge = () => {
+        if (!this.badgeActive) {
           blmBadge.style.top = `${-blmBadgeCtn.offsetHeight + 1 + nav.offsetHeight + banner.offsetHeight}px`;
           if (window.innerWidth <= 870) {
             blmBadge.style.left = `-150px`;
+          } else {
+            blmBadge.style.left = `0px`;
           }
         } else {
           blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight - 1}px`;
@@ -92,18 +103,19 @@ export class PageLayoutComponent implements OnInit {
       }
 
       window.addEventListener('DOMContentLoaded', () => {
-        blmBadge.dataset.state = 'false';
-        computeBlm();
+        this.badgeActive = false;
+        this.computeBadge();
+      })
+      window.addEventListener('load', () => {
+        this.computeBadge();
       })
       blmBadgeBtn.addEventListener('click', () => {
-        if (blmBadge.dataset.state === 'false') {
-          blmBadge.dataset.state = 'true';
-        } else {
-          blmBadge.dataset.state = 'false';
-        }
-        computeBlm();
+        this.badgeActive = !this.badgeActive
+        this.computeBadge();
       })
-      window.addEventListener('resize', computeBlm);
+      window.addEventListener('resize', () => {
+        this.computeBadge();
+      });
 
       const toggleMenuOpen = () => {
         if (this.isOpen) body.classList.add("navigation-open");
