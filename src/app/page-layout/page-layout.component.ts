@@ -9,6 +9,11 @@ const purpleURLs = [
 const slimURLs = [
   '/',
 ];
+
+const no_badgeURLs = [
+  '/about-us',
+  '/about-us#values',
+];
 @Component({
   selector: "app-page-layout",
   templateUrl: "./page-layout.component.html",
@@ -21,6 +26,7 @@ export class PageLayoutComponent implements OnInit {
   noShadow: boolean = true;
   purple: boolean = false;
   slim: boolean = false;
+  no_badge: boolean = false;
   blogLink: string;
   year: number;
   router: Router;
@@ -33,36 +39,44 @@ export class PageLayoutComponent implements OnInit {
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
     this.router = router;
-    if (purpleURLs.includes(router.url)) {
-      this.purple = true;
-    }
-    if (slimURLs.includes(router.url)) {
-      this.slim = true;
-    }
+    this.checkRouteRules();
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
+      this.checkRouteRules();
       route.firstChild.data.subscribe(d => {
         this.purple = !!d["purpleLayout"];
-        if (this.computeBadge) {
-          this.badgeActive = false;
-          this.computeBadge();
-          window.requestAnimationFrame(()=>{
-            this.computeBadge();
-          })
-        }
+        this.checkRouteRules();
       });
     });
     this.year = new Date().getFullYear();
   }
 
-  ngOnInit() {
-    if (purpleURLs.includes(this.router.url)) {
+  ngOnChanges() {
+    console.log('hi');
+    this.checkRouteRules();
+  }
+
+  checkRouteRules() {
+    const url = this.router.url.replace(/\/$/, '');
+    this.no_badge = false;
+    this.slim = false;
+    this.purple = false;
+    if (purpleURLs.includes(url)) {
       this.purple = true;
+      this.no_badge = true;
     }
-    if (slimURLs.includes(this.router.url)) {
+    if (slimURLs.includes(url)) {
       this.slim = true;
     }
+    if (no_badgeURLs.includes(url)) {
+      this.no_badge = true;
+    }
+    if (this.computeBadge && !this.no_badge) window.requestAnimationFrame(() => { this.computeBadge() });
+  }
+
+  ngOnInit() {
+    this.checkRouteRules();
 
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
@@ -87,34 +101,23 @@ export class PageLayoutComponent implements OnInit {
 
       let blmBadge = doc.getElementById('maker-badge');
       let blmBadgeBtn = doc.getElementById('maker-badge__btn');
-      let blmBadgeCtn = doc.getElementById('maker-badge__content');
       this.computeBadge = () => {
-        if (!this.badgeActive) {
-          blmBadge.style.top = `${-blmBadgeCtn.offsetHeight + 1 + nav.offsetHeight + banner.offsetHeight}px`;
-          if (window.innerWidth <= 870) {
-            blmBadge.style.left = `-150px`;
-          } else {
-            blmBadge.style.left = `0px`;
-          }
+        blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight}px`;
+        if (window.innerWidth <= 870) {
+          blmBadge.style.left = `-178px`;
         } else {
-          blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight - 1}px`;
           blmBadge.style.left = `0px`;
         }
       }
 
       window.addEventListener('DOMContentLoaded', () => {
-        this.badgeActive = false;
-        this.computeBadge();
+        this.checkRouteRules();
       })
       window.addEventListener('load', () => {
-        this.computeBadge();
-      })
-      blmBadgeBtn.addEventListener('click', () => {
-        this.badgeActive = !this.badgeActive
-        this.computeBadge();
+        this.checkRouteRules();
       })
       window.addEventListener('resize', () => {
-        this.computeBadge();
+        this.checkRouteRules();
       });
 
       const toggleMenuOpen = () => {
