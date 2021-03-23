@@ -71,6 +71,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { Slides2021Component } from './slides-2021/slides.component';
 import { Priv8 } from './priv8/priv8.component';
 import { Priv8Signup } from './priv8-signup/priv8-signup.component';
+import { Priv8PoapComponent } from './priv8poap/priv8poap.component';
 
 export const routes: Routes = [
 	{
@@ -202,6 +203,8 @@ export const routes: Routes = [
 			{ path: "priv8.html", redirectTo: 'priv8' },
 			{ path: "priv8-signup", component: Priv8Signup },
 			{ path: "priv8-signup.html", redirectTo: 'priv8-signup' },
+			{ path: "priv8poap", component: Priv8PoapComponent },
+			{ path: "priv8poap.html", redirectTo: 'priv8poap' },
 			{ path: "**", component: NotFoundComponent }
 		]
 	},

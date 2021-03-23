@@ -80,6 +80,7 @@ import { QuizComponent } from './quiz/quiz.component';
 import { Slides2021Component } from './slides-2021/slides.component';
 import { Priv8 } from './priv8/priv8.component';
 import { Priv8Signup } from './priv8-signup/priv8-signup.component';
+import { Priv8PoapComponent } from './priv8poap/priv8poap.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -163,6 +164,7 @@ import { MetaService } from './MetaService';
     Slides2021Component,
     Priv8,
     Priv8Signup,
+    Priv8PoapComponent,
   ],
   imports: [
     // TODO: how important is appId?
