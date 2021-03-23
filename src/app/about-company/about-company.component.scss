@@ -15,7 +15,7 @@
   padding-bottom: $pad-wide;
 
   pointer-events: none;
-  
+
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -39,7 +39,6 @@
   .big {
     font-size: 160%;
   }
-  
 }
 
 :host-context(.locale-zh) {
@@ -178,6 +177,29 @@
   }
   @include not-mobile {
     max-width: 58rem;
+  }
+}
+
+#values > section {
+  position: relative;
+  z-index: 1;
+}
+.about-us-split {
+  @include not-mobile {
+    display: flex;
+    & > .about-us-half {
+      width: 55%;
+      &:first-of-type(div) {
+        width: 45%;
+      }
+    }
+  }
+  picture,
+  img {
+    display: block;
+    max-width: 100%;
+    width: 420px;
+    margin: auto;
   }
 }
 
@@ -538,17 +560,16 @@ section h2:first-of-type {
   }
 }
 
-
 .about-company__team-big {
+  .about-company-team-member {
+    width: 100%;
+    max-width: 15rem;
+    margin-left: auto;
+    margin-right: auto;
     .about-company-team-member {
-      width: 100%;
-      max-width: 15rem;
-      margin-left: auto;
-      margin-right: auto;
-      .about-company-team-member {
-        max-width: 100%;
-      }
+      max-width: 100%;
     }
+  }
 }
 
 @include not-mobile {
