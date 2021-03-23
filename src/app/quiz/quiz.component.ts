@@ -230,7 +230,9 @@ export class QuizComponent implements OnInit {
     }
 
     ngAfterViewInit() {
-        const noJsElements = Array.from(document.getElementsByClassName('no-js') as HTMLCollectionOf<HTMLElement>);
+        const doc = typeof document !== "undefined" && document;
+        if (!doc) return;
+        const noJsElements = Array.from(doc.getElementsByClassName('no-js') as HTMLCollectionOf<HTMLElement>);
         for (let index = 0; index < noJsElements.length; index++) {
             const element = noJsElements[index];
             element.style.display = "none";
