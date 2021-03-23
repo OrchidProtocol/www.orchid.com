@@ -55,7 +55,6 @@ export class PageLayoutComponent implements OnInit {
       this.slim = true;
     }
 
-
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
       this.blogLink = `https://blog.${this.localeId}.orchid.com/`;
@@ -64,6 +63,14 @@ export class PageLayoutComponent implements OnInit {
     const doc = typeof document !== "undefined" && document;
     if (doc) {
       this.js = true;
+
+      let nav = doc.getElementById("nav") as HTMLElement;
+      let banner = doc.getElementById("nav-infobar") as HTMLElement;
+      let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
+      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
+      let btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
+      let pin = doc.getElementById("nav-pin") as HTMLDivElement;
+      let body = doc.body;
 
       // This prevents an annoying bug with the stylesheets where the menu slides
       // out of view immediately after loading
@@ -74,13 +81,13 @@ export class PageLayoutComponent implements OnInit {
       let blmBadgeCtn = doc.getElementById('maker-badge__content');
       const computeBlm = () => {
         if (blmBadge.dataset.state === 'false') {
-          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
+          blmBadge.style.top = `${-blmBadgeCtn.offsetHeight + 1 + nav.offsetHeight + banner.offsetHeight}px`;
           if (window.innerWidth <= 870) {
-            blmBadge.style.right = `-150px`;
+            blmBadge.style.left = `-150px`;
           }
         } else {
-          blmBadge.style.bottom = `0px`;
-          blmBadge.style.right = `0px`;
+          blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight - 1}px`;
+          blmBadge.style.left = `0px`;
         }
       }
 
@@ -97,13 +104,6 @@ export class PageLayoutComponent implements OnInit {
         computeBlm();
       })
       window.addEventListener('resize', computeBlm);
-
-      let nav = doc.getElementById("nav") as HTMLElement;
-      let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
-      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
-      let btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
-      let pin = doc.getElementById("nav-pin") as HTMLDivElement;
-      let body = doc.body;
 
       const toggleMenuOpen = () => {
         if (this.isOpen) body.classList.add("navigation-open");
