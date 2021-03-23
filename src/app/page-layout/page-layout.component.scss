@@ -679,6 +679,15 @@ $flyout-gap: ($flyout-spacing / 2);
   left: 0;
   border-bottom-right-radius: 6px;
 
+  @media screen and (min-width: 1500px) {
+    left: 50% !important;
+    margin-left: -735px;
+    border-bottom-left-radius: 6px;
+    .maker-badge__btn {
+      border-bottom-left-radius: 6px;
+    }
+  }
+
   .maker-badge__btn {
     display: flex;
     align-items: center;
