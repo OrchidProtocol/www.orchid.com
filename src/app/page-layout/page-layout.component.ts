@@ -53,7 +53,6 @@ export class PageLayoutComponent implements OnInit {
   }
 
   ngOnChanges() {
-    console.log('hi');
     this.checkRouteRules();
   }
 
