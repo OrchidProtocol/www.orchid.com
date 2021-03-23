@@ -1,5 +1,5 @@
 <div id="nav-root" [class.bk-beige-light]="!this.purple" [class.purple]="this.purple" [class.orange]="true" [class.slim]="this.slim">
-  <a [class.visible]="!this.purple" class="nav-infobar" id="nav-infobar" [class.js]="this.js" href="/priv8">
+  <a *ngIf="!this.purple" class="nav-infobar" [class.js]="this.js" href="/priv8">
     <span class="mobile">Register for Priv8, 3/23-25 with Ed Snowden</span>
     <span class="desktop">Register for Priv8, March 23-25 with Edward Snowden</span> &raquo;
   </a>
@@ -240,6 +240,8 @@
 </div>
 
 <div [class.hidden]="this.purple" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
+  <div class="maker-badge__btn" id="maker-badge__btn"><img alt="Black Lives Matter Badge" width="30"
+      class="maker-badge__btn-img" src="/assets/img/shared/blm-blue-round.png">&nbsp;&nbsp;#BlackLivesMatter</div>
   <div class="maker-badge__content" id="maker-badge__content">
     <div style="color:#4a5568;max-width:200px;padding:0.5rem 0px 0;line-height:1.2rem">To be silent is to be complicit.
       Black lives matter.</div>
@@ -249,9 +251,5 @@
     </div><a target="_blank" href="http://blmbadge.unicornplatform.com"
       style="display: block; margin: 0.5rem 0px; font-size: 10px; color: rgb(113, 128, 150); text-decoration: none; font-weight: 400;">Add
       this to your website</a>
-  </div>
-  <div class="maker-badge__btn" id="maker-badge__btn">
-    <img alt="Black Lives Matter Badge" width="30" class="maker-badge__btn-img" src="/assets/img/shared/blm-blue-round.png">
-    #BlackLivesMatter
   </div>
 </div>
