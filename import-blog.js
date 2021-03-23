@@ -149,6 +149,8 @@ fetch(`https://api.brella.io/api/aalto/events/priv8/time_slots`)
 
 	try {
 		data.speakers = output;
-		writeFileSync(join(ASSETS_FOLDER, 'brella-priv8.json'), JSON.stringify(data));
+		writeFileSync(join(ASSETS_FOLDER, 'brella-priv8.json'), JSON.stringify(data).replace(/\uFFFD|\u2028/g, ''), {
+			encoding: 'utf8',
+		});
 	} catch (e) { }
 })
