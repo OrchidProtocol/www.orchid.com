@@ -664,7 +664,6 @@ $flyout-gap: ($flyout-spacing / 2);
   &.hidden {
     display: none !important;
   }
-  transition: bottom 0.3s ease;
   z-index: 99;
   max-width: 250px;
   color: #2b2b2b;
@@ -674,8 +673,7 @@ $flyout-gap: ($flyout-spacing / 2);
   height: auto;
   min-width: 160px;
   position: absolute;
-  top: -150px;
-  transition: top 1s ease;
+  top: 0;
   left: 0;
   border-bottom-right-radius: 6px;
 
@@ -704,7 +702,6 @@ $flyout-gap: ($flyout-spacing / 2);
     padding: 0 0.5rem;
     cursor: pointer;
     border: 1px solid #cbd5e0;
-    border-top: 0;
     background: #fff;
     border-bottom-right-radius: 6px;
     color: #2d3748;
@@ -718,14 +715,5 @@ $flyout-gap: ($flyout-spacing / 2);
         margin-left: 10px;
       }
     }
-  }
-
-  .maker-badge__content {
-    text-align: left;
-    font-size: 0.7rem;
-    border: 1px solid #cbd5e0;
-    padding: 0.5rem;
-    display: block;
-    background: #fff;
   }
 }
