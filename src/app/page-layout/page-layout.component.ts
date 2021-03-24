@@ -11,8 +11,6 @@ const slimURLs = [
 ];
 
 const no_badgeURLs = [
-  '/about-us',
-  '/about-us#values',
 ];
 @Component({
   selector: "app-page-layout",
@@ -103,7 +101,7 @@ export class PageLayoutComponent implements OnInit {
       this.computeBadge = () => {
         blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight}px`;
         if (window.innerWidth <= 870) {
-          blmBadge.style.left = `-178px`;
+          blmBadge.style.left = `-40px`;
         } else {
           blmBadge.style.left = `0px`;
         }

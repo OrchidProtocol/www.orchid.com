@@ -12,6 +12,9 @@ $section-sm: 54rem;
 
 .how-hero {
   margin-top: 1em;
+  @include mobile {
+    padding-top: 2rem;
+  }
   
   .content {
     max-width: 39rem;
@@ -19,7 +22,7 @@ $section-sm: 54rem;
 
     @include mobile {
       padding-bottom: 2rem;
-      padding: 2rem
+      padding: 2rem;
     }
 
     & > p {
