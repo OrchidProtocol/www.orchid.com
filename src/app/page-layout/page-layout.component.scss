@@ -20,6 +20,8 @@ $mobile-nav-height: 64px;
     display: none;
   }
   @include mobile {
+    font-size: 0.7rem;
+    max-height: 1rem;
     &.js {
       position: fixed;
       left: 0;
