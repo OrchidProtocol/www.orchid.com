@@ -676,6 +676,7 @@ $flyout-gap: ($flyout-spacing / 2);
   top: 0;
   left: 0;
   border-bottom-right-radius: 6px;
+  
 
   @media screen and (min-width: 1500px) {
     left: 50% !important;
@@ -708,7 +709,20 @@ $flyout-gap: ($flyout-spacing / 2);
     & > img {
       margin-right: 10px;
     }
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
     @include mobile {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+      font-size: 13px;
       flex-direction: row-reverse;
       & > img {
         margin-right: 0;
