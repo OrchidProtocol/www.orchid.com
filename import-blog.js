@@ -102,6 +102,8 @@ fetch(`https://${domain}/feed-1.json`)
 	.catch(fallback);
 
 
+/*
+	// Brella API integration
 writeFileSync(join(ASSETS_FOLDER, 'brella-priv8.json'), JSON.stringify({}));
 fetch(`https://api.brella.io/api/aalto/events/priv8/time_slots`)
 .then(response => response.json())
@@ -153,4 +155,4 @@ fetch(`https://api.brella.io/api/aalto/events/priv8/time_slots`)
 			encoding: 'utf8',
 		});
 	} catch (e) { }
-})
+})*/

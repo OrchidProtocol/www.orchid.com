@@ -1,7 +1,7 @@
 import { element } from 'protractor';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { MetaService } from '../MetaService';
-import BrellaJSON from "../../assets/brella-priv8.json"
+import BrellaJSON from "../../assets/brella-priv8-backup.json"
 
 function nth(d) {
     if (d > 3 && d < 21) return d + "th";
