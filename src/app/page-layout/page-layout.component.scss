@@ -16,12 +16,13 @@ $mobile-nav-height: 64px;
   padding: 0.3rem;
   font-size: 0.75rem;
 
+  box-sizing: border-box;
+  height: 1.9rem;
+
   .mobile {
     display: none;
   }
   @include mobile {
-    font-size: 0.7rem;
-    max-height: 1rem;
     &.js {
       position: fixed;
       left: 0;
@@ -34,6 +35,12 @@ $mobile-nav-height: 64px;
     }
     .mobile {
       display: inline;
+    }
+    @media (max-width: 340px) {
+      font-size: 0.7rem;
+    }
+    @media (max-width: 319px) {
+      font-size: 0.6rem;
     }
   }
 }
