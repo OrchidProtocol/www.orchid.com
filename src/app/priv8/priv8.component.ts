@@ -1,5 +1,4 @@
-import { element } from 'protractor';
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { MetaService } from '../MetaService';
 import BrellaJSON from "../../assets/brella-priv8-backup.json"
 
