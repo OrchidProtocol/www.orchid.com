@@ -54,7 +54,6 @@ export class PageLayoutComponent implements OnInit {
     if (slimURLs.includes(this.router.url)) {
       this.slim = true;
     }
-    console.log(this.router.url, this.purple, this.slim);
 
 
     this.blogLink = "https://blog.orchid.com/";
