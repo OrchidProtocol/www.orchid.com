@@ -49,7 +49,7 @@ $mobile-nav-height: 64px;
   z-index: 999;
   position: relative;
   @include mobile {
-    margin-bottom: 1.9rem;
+    //margin-bottom: 1.9rem;
     &.slim {
       margin-bottom: 0;
     }
@@ -114,7 +114,7 @@ $mobile-nav-height: 64px;
       position: fixed;
       left: 0;
       right: 0;
-      top: 1.9rem;
+      //top: 1.9rem;
       &.purple {
         top: 0;
       }

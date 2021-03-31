@@ -70,7 +70,6 @@ export class PageLayoutComponent implements OnInit {
     if (badgeURLs.includes(url)) {
       this.badge = true;
     }
-    console.log(url, this.badge)
     if (this.computeBadge && this.badge) window.requestAnimationFrame(() => { this.computeBadge() });
   }
 
