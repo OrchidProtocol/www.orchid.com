@@ -7,10 +7,11 @@ const purpleURLs = [
 ];
 
 const slimURLs = [
-  '/',
 ];
 
-const no_badgeURLs = [
+const badgeURLs = [
+  '/',
+  '',
 ];
 @Component({
   selector: "app-page-layout",
@@ -24,12 +25,13 @@ export class PageLayoutComponent implements OnInit {
   noShadow: boolean = true;
   purple: boolean = false;
   slim: boolean = false;
-  no_badge: boolean = false;
+  badge: boolean = false;
   blogLink: string;
   year: number;
   router: Router;
   computeBadge: Function;
   badgeActive: boolean = false;
+  nav: HTMLElement;
 
   constructor(
     route: ActivatedRoute,
@@ -56,20 +58,20 @@ export class PageLayoutComponent implements OnInit {
 
   checkRouteRules() {
     const url = this.router.url.replace(/\/$/, '');
-    this.no_badge = false;
+    this.badge = false;
     this.slim = false;
     this.purple = false;
     if (purpleURLs.includes(url)) {
       this.purple = true;
-      this.no_badge = true;
     }
     if (slimURLs.includes(url)) {
       this.slim = true;
     }
-    if (no_badgeURLs.includes(url)) {
-      this.no_badge = true;
+    if (badgeURLs.includes(url)) {
+      this.badge = true;
     }
-    if (this.computeBadge && !this.no_badge) window.requestAnimationFrame(() => { this.computeBadge() });
+    console.log(url, this.badge)
+    if (this.computeBadge && this.badge) window.requestAnimationFrame(() => { this.computeBadge() });
   }
 
   ngOnInit() {
@@ -84,22 +86,21 @@ export class PageLayoutComponent implements OnInit {
     if (doc) {
       this.js = true;
 
-      let nav = doc.getElementById("nav") as HTMLElement;
-      let banner = doc.getElementById("nav-infobar") as HTMLElement;
-      let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
-      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
-      let btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
-      let pin = doc.getElementById("nav-pin") as HTMLDivElement;
-      let body = doc.body;
+      const nav = doc.getElementById("nav") as HTMLElement;
+      const banner = doc.getElementById("nav-infobar") as HTMLElement;
+      const close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
+      const bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
+      const btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
+      const pin = doc.getElementById("nav-pin") as HTMLDivElement;
+      const body = doc.body;
 
       // This prevents an annoying bug with the stylesheets where the menu slides
       // out of view immediately after loading
       setTimeout(_ => this.animateMenu = true, 20);
 
-      let blmBadge = doc.getElementById('maker-badge');
-      let blmBadgeBtn = doc.getElementById('maker-badge__btn');
+      const blmBadge = doc.getElementById('maker-badge') as HTMLElement;
       this.computeBadge = () => {
-        blmBadge.style.top = `${nav.offsetHeight + banner.offsetHeight}px`;
+        blmBadge.style.top = `${nav.offsetHeight + (banner ? banner.offsetHeight : 0)}px`;
         if (window.innerWidth <= 870) {
           blmBadge.style.left = `-40px`;
         } else {

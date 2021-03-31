@@ -670,8 +670,9 @@ $flyout-gap: ($flyout-spacing / 2);
 }
 
 .maker-badge {
-  &.hidden {
-    display: none !important;
+  display: none;
+  &.visible {
+    display: block;
   }
   z-index: 99;
   max-width: 250px;
