@@ -65,6 +65,7 @@ import { PodcastEp38Component } from './podcast-ep38/podcast.component';
 import { PodcastEp39Component } from './podcast-ep39/podcast.component';
 import { PodcastEp40Component } from './podcast-ep40/podcast.component';
 import { PodcastEp41Component } from './podcast-ep41/podcast.component';
+import { PodcastEp42Component } from './podcast-ep42/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -195,6 +196,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-40-marvin-tong", component: PodcastEp40Component },
 			{ path: "podcast/episode-41-aibek-esengulov.html", redirectTo: "podcast/episode-41-aibek-esengulov" },
 			{ path: "podcast/episode-41-aibek-esengulov", component: PodcastEp41Component },
+			{ path: "podcast/episode-42-tor-bair.html", redirectTo: "podcast/episode-42-tor-bair" },
+			{ path: "podcast/episode-42-tor-bair", component: PodcastEp42Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
