@@ -52,6 +52,6 @@ Thumbs.db
 # Blog integration
 src/assets/blog.json
 src/assets/brella-priv8.json
-src/assets/brella-priv8-backup.json
+# src/assets/brella-priv8-backup.json
 src/assets/img/blog-integration/
-src/assets/img/brella-integration/
+# src/assets/img/brella-integration/
