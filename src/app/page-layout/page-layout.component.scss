@@ -5,13 +5,19 @@
 $mobile-nav-height: 64px;
 
 .nav-infobar {
+  display: none;
+  &.visible {
+    display: block;
+  }
   background: $orc-purple;
   color: #fff;
   text-decoration: none;
-  display: block;
   text-align: center;
   padding: 0.3rem;
   font-size: 0.75rem;
+
+  box-sizing: border-box;
+  height: 1.9rem;
 
   .mobile {
     display: none;
@@ -30,11 +36,18 @@ $mobile-nav-height: 64px;
     .mobile {
       display: inline;
     }
+    @media (max-width: 340px) {
+      font-size: 0.7rem;
+    }
+    @media (max-width: 319px) {
+      font-size: 0.6rem;
+    }
   }
 }
 
 #nav-root {
   z-index: 999;
+  position: relative;
   @include mobile {
     margin-bottom: 1.9rem;
     &.slim {
@@ -60,7 +73,7 @@ $mobile-nav-height: 64px;
       }
     }
   }
-  
+
   &.slim {
     .nav-infobar {
       display: none;
@@ -657,24 +670,42 @@ $flyout-gap: ($flyout-spacing / 2);
 }
 
 .maker-badge {
-  &.hidden {
-    display: none !important;
+  display: none;
+  &.visible {
+    display: block;
   }
-  transition: bottom 0.3s ease;
   z-index: 99;
-  max-width: 200px;
+  max-width: 250px;
   color: #2b2b2b;
   font-size: 16px;
   font-family: helvetica;
   text-align: right;
   height: auto;
   min-width: 160px;
-  position: fixed;
-  bottom: -100%;
-  right: 0;
-  border-top-left-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 6px;
+  
+
+  @media screen and (min-width: 1500px) {
+    left: 50% !important;
+    margin-left: -746px;
+    border-bottom-left-radius: 6px;
+    .maker-badge__btn {
+      border-bottom-left-radius: 6px;
+    }
+  }
 
   .maker-badge__btn {
+    position: relative;
+    & > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
     display: flex;
     align-items: center;
     height: 50px;
@@ -682,18 +713,31 @@ $flyout-gap: ($flyout-spacing / 2);
     padding: 0 0.5rem;
     cursor: pointer;
     border: 1px solid #cbd5e0;
-    border-bottom: 0;
     background: #fff;
-    border-top-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     color: #2d3748;
-  }
-
-  .maker-badge__content {
-    text-align: left;
-    font-size: 0.7rem;
-    border: 1px solid #cbd5e0;
-    padding: 0.5rem;
-    display: block;
-    background: #fff;
+    & > img {
+      margin-right: 10px;
+    }
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+    @include mobile {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+      font-size: 13px;
+      flex-direction: row-reverse;
+      & > img {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
   }
 }

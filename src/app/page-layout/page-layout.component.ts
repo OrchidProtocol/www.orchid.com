@@ -7,7 +7,11 @@ const purpleURLs = [
 ];
 
 const slimURLs = [
+];
+
+const badgeURLs = [
   '/',
+  '',
 ];
 @Component({
   selector: "app-page-layout",
@@ -21,9 +25,13 @@ export class PageLayoutComponent implements OnInit {
   noShadow: boolean = true;
   purple: boolean = false;
   slim: boolean = false;
+  badge: boolean = false;
   blogLink: string;
   year: number;
   router: Router;
+  computeBadge: Function;
+  badgeActive: boolean = false;
+  nav: HTMLElement;
 
   constructor(
     route: ActivatedRoute,
@@ -31,31 +39,43 @@ export class PageLayoutComponent implements OnInit {
     @Inject(LOCALE_ID) protected localeId: string,
   ) {
     this.router = router;
-    if (purpleURLs.includes(router.url)) {
-      this.purple = true;
-    }
-    if (slimURLs.includes(router.url)) {
-      this.slim = true;
-    }
+    this.checkRouteRules();
     router.events.pipe(
       filter(event => event instanceof NavigationEnd)
     ).subscribe(() => {
+      this.checkRouteRules();
       route.firstChild.data.subscribe(d => {
         this.purple = !!d["purpleLayout"];
+        this.checkRouteRules();
       });
     });
     this.year = new Date().getFullYear();
   }
 
-  ngOnInit() {
-    if (purpleURLs.includes(this.router.url)) {
+  ngOnChanges() {
+    this.checkRouteRules();
+  }
+
+  checkRouteRules() {
+    const url = this.router.url.replace(/\/$/, '');
+    this.badge = false;
+    this.slim = false;
+    this.purple = false;
+    if (purpleURLs.includes(url)) {
       this.purple = true;
     }
-    if (slimURLs.includes(this.router.url)) {
+    if (slimURLs.includes(url)) {
       this.slim = true;
     }
-    console.log(this.router.url, this.purple, this.slim);
+    if (badgeURLs.includes(url)) {
+      this.badge = true;
+    }
+    console.log(url, this.badge)
+    if (this.computeBadge && this.badge) window.requestAnimationFrame(() => { this.computeBadge() });
+  }
 
+  ngOnInit() {
+    this.checkRouteRules();
 
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
@@ -66,45 +86,37 @@ export class PageLayoutComponent implements OnInit {
     if (doc) {
       this.js = true;
 
+      const nav = doc.getElementById("nav") as HTMLElement;
+      const banner = doc.getElementById("nav-infobar") as HTMLElement;
+      const close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
+      const bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
+      const btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
+      const pin = doc.getElementById("nav-pin") as HTMLDivElement;
+      const body = doc.body;
+
       // This prevents an annoying bug with the stylesheets where the menu slides
       // out of view immediately after loading
       setTimeout(_ => this.animateMenu = true, 20);
 
-      let blmBadge = doc.getElementById('maker-badge');
-      let blmBadgeBtn = doc.getElementById('maker-badge__btn');
-      let blmBadgeCtn = doc.getElementById('maker-badge__content');
-      const computeBlm = () => {
-        if (blmBadge.dataset.state === 'false') {
-          blmBadge.style.bottom = `${-blmBadgeCtn.offsetHeight + 2}px`;
-          if (window.innerWidth <= 870) {
-            blmBadge.style.right = `-150px`;
-          }
+      const blmBadge = doc.getElementById('maker-badge') as HTMLElement;
+      this.computeBadge = () => {
+        blmBadge.style.top = `${nav.offsetHeight + (banner ? banner.offsetHeight : 0)}px`;
+        if (window.innerWidth <= 870) {
+          blmBadge.style.left = `-40px`;
         } else {
-          blmBadge.style.bottom = `0px`;
-          blmBadge.style.right = `0px`;
+          blmBadge.style.left = `0px`;
         }
       }
 
       window.addEventListener('DOMContentLoaded', () => {
-        blmBadge.dataset.state = 'false';
-        computeBlm();
+        this.checkRouteRules();
       })
-      blmBadgeBtn.addEventListener('click', () => {
-        if (blmBadge.dataset.state === 'false') {
-          blmBadge.dataset.state = 'true';
-        } else {
-          blmBadge.dataset.state = 'false';
-        }
-        computeBlm();
+      window.addEventListener('load', () => {
+        this.checkRouteRules();
       })
-      window.addEventListener('resize', computeBlm);
-
-      let nav = doc.getElementById("nav") as HTMLElement;
-      let close = doc.getElementById("nav-flyout-close") as HTMLButtonElement;
-      let bkgd = doc.getElementById("nav-flyout-bkgd") as HTMLDivElement;
-      let btn = doc.getElementById("nav-toggle") as HTMLButtonElement;
-      let pin = doc.getElementById("nav-pin") as HTMLDivElement;
-      let body = doc.body;
+      window.addEventListener('resize', () => {
+        this.checkRouteRules();
+      });
 
       const toggleMenuOpen = () => {
         if (this.isOpen) body.classList.add("navigation-open");
