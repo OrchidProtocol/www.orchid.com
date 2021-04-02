@@ -75,6 +75,13 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.location.search && window.location.search.length > 0 && window.location.search.match(/(utm_source|utm_medium|utm_campaign|utm_term|utm_content)/i)) {
+      localStorage.queryParams = window.location.search;
+      localStorage.queryParamsDate = Date.now();
+    }
+    if (localStorage.queryParams) {
+      window['landingQueryParams'] = localStorage.queryParams;
+    }
 
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) return;

@@ -1,6 +1,6 @@
 import { Component, OnInit, LOCALE_ID, Inject } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from "@angular/router";
-import { filter, tap } from 'rxjs/operators';
+import { filter } from 'rxjs/operators';
 
 const purpleURLs = [
   '/priv8',
@@ -163,6 +163,16 @@ export class PageLayoutComponent implements OnInit {
 
       doc.addEventListener("scroll", checkShadow);
       window.addEventListener("resize", checkShadow);
+
+      if (window['landingQueryParams']) {
+        const appstore_links = doc.querySelectorAll('a[href^="https://apps.apple.com"], a[href^="https://play.google.com"]');
+        for (let index = 0; index < appstore_links.length; index++) {
+          const element = appstore_links[index];
+          let url = element.getAttribute('href');
+          url = url.split('?')[0] + window['landingQueryParams'];
+          element.setAttribute('href', url);
+        }
+      }
 
       // #endregion
     }
