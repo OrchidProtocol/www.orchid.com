@@ -39,12 +39,17 @@ export class AppComponent implements OnInit {
       element.parentNode.removeChild(element);
     }
 
-    const location = document.location._href ? document.location._href : document.location.pathname;
-    if (this.localeId !== 'en-US') {
-      r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
-      this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com` + location })
-    } else {
-      this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.orchid.com` + location })
+    let location = document.location._href ? document.location._href : document.location.pathname;
+    if (!location.match(/\/$/)) {
+        location += '/';
+    }
+    if (!location.match(/\*/)) {
+      if (this.localeId !== 'en-US') {
+        r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
+        this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com` + location })
+      } else {
+        this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.orchid.com` + location })
+      }
     }
 
 
