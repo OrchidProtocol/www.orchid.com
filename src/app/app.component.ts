@@ -80,7 +80,11 @@ export class AppComponent implements OnInit {
         localStorage.queryParams = window.location.search;
         localStorage.queryParamsDate = Date.now();
       } else if (localStorage.queryParamsDate) {
-        
+        const oneDay = 1000*60*60*24;
+        if (Number(localStorage.queryParamsDate) < Date.now() - oneDay*30) {
+          localStorage.removeItem('queryParamsDate');
+          localStorage.removeItem('queryParams');
+        } // Delete UTM parameters after 30 days
       }
       if (localStorage.queryParams) {
         window['landingQueryParams'] = localStorage.queryParams;
