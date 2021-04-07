@@ -164,6 +164,7 @@ export class PageLayoutComponent implements OnInit {
       doc.addEventListener("scroll", checkShadow);
       window.addEventListener("resize", checkShadow);
 
+      if (typeof window !== "undefined" && window['landingQueryParams']) {
       if (window['landingQueryParams']) {
         const appstore_links = doc.querySelectorAll('a[href^="https://apps.apple.com"], a[href^="https://play.google.com"]');
         for (let index = 0; index < appstore_links.length; index++) {

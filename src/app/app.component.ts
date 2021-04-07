@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
 
     let location = document.location._href ? document.location._href : document.location.pathname;
     if (!location.match(/\/$/)) {
-        location += '/';
+      location += '/';
     }
     if (!location.match(/\*/)) {
       if (this.localeId !== 'en-US') {
@@ -75,21 +75,25 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (window.location.search && window.location.search.length > 0 && window.location.search.match(/(utm_source|utm_medium|utm_campaign|utm_term|utm_content)/i)) {
-      localStorage.queryParams = window.location.search;
-      localStorage.queryParamsDate = Date.now();
+    if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
+      if (window.location.search && window.location.search.length > 0 && window.location.search.match(/(utm_source|utm_medium|utm_campaign|utm_term|utm_content)/i)) {
+        localStorage.queryParams = window.location.search;
+        localStorage.queryParamsDate = Date.now();
+      } else if (localStorage.queryParamsDate) {
+        
+      }
+      if (localStorage.queryParams) {
+        window['landingQueryParams'] = localStorage.queryParams;
+      }
+
+      this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) return;
+
+        // Scroll the user to the top of the page on load/refresh?
+        // const win = typeof window !== "undefined" && window;
+        // if (win) win.scrollTo(0, 0);
+
+      }, (err) => { }, () => { });
     }
-    if (localStorage.queryParams) {
-      window['landingQueryParams'] = localStorage.queryParams;
-    }
-
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) return;
-
-      // Scroll the user to the top of the page on load/refresh?
-      // const win = typeof window !== "undefined" && window;
-      // if (win) win.scrollTo(0, 0);
-
-    }, (err) => { }, () => { });
   }
 }
