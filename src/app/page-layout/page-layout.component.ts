@@ -165,12 +165,19 @@ export class PageLayoutComponent implements OnInit {
       window.addEventListener("resize", checkShadow);
 
       if (typeof window !== "undefined" && window['landingQueryParams']) {
-      if (window['landingQueryParams']) {
-        const appstore_links = doc.querySelectorAll('a[href^="https://apps.apple.com"], a[href^="https://play.google.com"]');
+        const appstore_links = doc.querySelectorAll('a[href^="https://apps.apple.com"]');
         for (let index = 0; index < appstore_links.length; index++) {
           const element = appstore_links[index];
           let url = element.getAttribute('href');
           url = url.split('?')[0] + window['landingQueryParams'];
+          element.setAttribute('href', url);
+        }
+
+        const googleplay_links = doc.querySelectorAll('a[href^="https://play.google.com"]');
+        for (let index = 0; index < googleplay_links.length; index++) {
+          const element = googleplay_links[index];
+          let url = element.getAttribute('href');
+          url = url.split('&')[0] + window['landingQueryParams'].replace('?', '&');
           element.setAttribute('href', url);
         }
       }
