@@ -1,0 +1,48 @@
+@import "misc_config";
+@import "orc_config";
+@import "media_queries";
+
+// TODO: Move this into a global sheet
+.where-oxt {
+  h3 {
+    font-size: $size-body-md;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    color: $orc-rock-gray;
+
+    @include mobile {
+      font-size: $size-body-md-mobile;
+    }
+  }
+
+  .listing-container > a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  img {
+    max-width: 120px;
+    &.margin {
+      margin: 10px 20px;
+    }
+  }
+}
+
+.oxt-row {
+  display: flex;
+  flex-wrap: wrap;
+  .oxt-column {
+    width: 33%;
+    max-width: 17rem;
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+
+.listing-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
