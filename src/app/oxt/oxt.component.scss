@@ -75,7 +75,7 @@ a {
 }
 
 .oxt-hero {
-  padding: 4rem 0;
+  padding: 1rem 0 4rem 0;
   @include mobile {
     background: white;
     padding: 1rem 0;
@@ -87,10 +87,10 @@ a {
       content: " ";
       display: block;
       position: absolute;
-      top: 50%;
+      top: 45%;
       left: 0;
       width: 100%;
-      height: 50%;
+      height: 55%;
       background: white;
     }
   }
