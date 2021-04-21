@@ -39,9 +39,9 @@
     width: 33%;
     max-width: 18rem;
     @include not-mobile {
-      max-width: 18rem;
+      max-width: 33%;
       &.slim {
-        max-width: 13rem;
+        max-width: 15rem;
         margin-right: 2rem;
       }
     }
@@ -56,7 +56,7 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   .listing-col {
-    width: 8rem;
+    width: 9rem;
     & > a {
       margin: 1.25rem 0;
     }
