@@ -11,6 +11,7 @@
     color: $orc-rock-gray;
 
     @include mobile {
+      margin-top: 1.5rem;
       font-size: $size-body-md-mobile;
     }
   }
@@ -34,7 +35,13 @@
   flex-wrap: wrap;
   .oxt-column {
     width: 33%;
-    max-width: 17rem;
+    @include not-mobile {
+      max-width: 17rem;
+      &.slim {
+        max-width: 13rem;
+        margin-right: 2rem;
+      }
+    }
     @include mobile {
       width: 100%;
     }
@@ -43,6 +50,6 @@
 
 .listing-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
