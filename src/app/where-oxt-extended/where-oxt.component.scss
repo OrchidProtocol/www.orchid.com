@@ -69,6 +69,12 @@
   }
   .listing-col {
     width: 8rem;
+    @media (max-width: 319px) {
+      width: 50vw;
+      img {
+        max-width: 80%;
+      }
+    }
     & > a {
       margin: 1.25rem 0;
     }
