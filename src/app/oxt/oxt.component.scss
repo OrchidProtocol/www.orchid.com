@@ -395,12 +395,17 @@ a {
 .supply-logos {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
+  text-align: center;
   & > a {
     margin: 1rem;
-    display: block;
+    @include mobile {
+      margin: 0.5rem auto;
+    }
     img {
       width: 160px;
       max-width: 100%;
+      margin: auto;
     }
   }
 }
