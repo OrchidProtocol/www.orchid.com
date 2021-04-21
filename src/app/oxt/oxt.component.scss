@@ -243,11 +243,12 @@ a {
     background: url("/assets/img/oxt/bg-circles-2.svg") no-repeat center center;
     background-size: contain;
     bottom: 0;
-    left: 0;
-    transform: translate(0, 67%) scale(0.75);
+    left: 50%;
+    transform: translate(51%, 20%) scale(0.75);
 
     @include mobile {
-      display: none;
+      right: 50%;
+      transform: translate(-20%, 38%) scale(0.5);
     }
   }
 }
