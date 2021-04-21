@@ -3871,7 +3871,7 @@
       <x id="START_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;h4>"/>Audit of Smart Contract for use with OXT Release Schedule<x id="CLOSE_HEADING_LEVEL4" ctype="x-h4" equiv-text="&lt;/h4>"/>
       <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>"/>
       <x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>"/>
-        Audit of Smart ContractOn March 21, 2020, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>Consensys Diligence<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> published a technical audit on Orchid’s batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here:
+        Audit of Smart Contract On March 21, 2020, <x id="START_LINK" ctype="x-a" equiv-text="&lt;a>"/>Consensys Diligence<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a>"/> published a technical audit on Orchid’s batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here:
       <x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>"/>
       <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a>"/>
         https://diligence.consensys.net/audits/2020/01/orchid-multisend/
