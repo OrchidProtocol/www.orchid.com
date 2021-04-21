@@ -178,6 +178,9 @@ a {
 .oxt-hero__title {
   font-size: 100px;
 }
+.oxt-hero__subtitle {
+  margin-bottom: 1rem;
+}
 @include not-mobile {
   .oxt-hero__title {
     margin-top: 3rem;
