@@ -6,7 +6,6 @@
 .where-oxt {
   h3 {
     font-size: $size-body-md;
-    padding-left: 1rem;
     margin-bottom: 1rem;
     color: $orc-rock-gray;
 
@@ -16,7 +15,7 @@
     }
   }
 
-  .listing-container > a {
+  .listing-container a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,17 +32,21 @@
 .oxt-row {
   display: flex;
   flex-wrap: wrap;
+  @include mobile {
+    justify-content: center;
+  }
   .oxt-column {
     width: 33%;
+    max-width: 18rem;
     @include not-mobile {
-      max-width: 17rem;
+      max-width: 18rem;
       &.slim {
         max-width: 13rem;
         margin-right: 2rem;
       }
     }
     @include mobile {
-      width: 100%;
+      width: 18rem;
     }
   }
 }
@@ -52,4 +55,10 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  .listing-col {
+    width: 8rem;
+    & > a {
+      margin: 1.25rem 0;
+    }
+  }
 }
