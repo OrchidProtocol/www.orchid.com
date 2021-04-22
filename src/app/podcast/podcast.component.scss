@@ -147,7 +147,13 @@ $breakpoint2: 1450px;
 		width: auto;
 	}
 
-	& > img {
+	& > picture {
+		& > img {
+			width: 100%;
+			height: auto;
+			box-shadow: 0px 4px 10px rgba(#000, 0.3);
+			border-radius: 100%;
+		}
 		width: 90%;
 		margin: auto auto 1rem;
 		max-width: 288px;
@@ -160,7 +166,6 @@ $breakpoint2: 1450px;
 		}
 
 		border-radius: 100%;
-		box-shadow: 0px 4px 10px rgba(#000, 0.3);
 	}
 
 	& > div {
