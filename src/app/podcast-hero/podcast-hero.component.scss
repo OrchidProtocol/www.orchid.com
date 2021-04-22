@@ -1,9 +1,11 @@
+@import "media_queries";
 @import "orc_config";
 $breakpoint: 1100px;
 $breakpoint2: 1450px;
 
 .podcast-hero {
-	background-image: url("/assets/img/podcast/hero-patterns.svg");
+	position: relative;
+	background-image: url("/assets/img/podcast/HeroBG.jpg");
 	background-size: cover;
 	background-position: center;
 	color: white;
@@ -17,9 +19,7 @@ $breakpoint2: 1450px;
 		}
 
 		@media (max-width: $breakpoint) {
-			padding-left: 1rem;
-			padding-right: 1rem;
-			padding-top: 0;
+			padding: 1rem;
 		}
 	}
 
@@ -35,25 +35,17 @@ $breakpoint2: 1450px;
 	display: flex;
 	flex-direction: column-reverse;
 	align-items: center;
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: 100%;
+	max-width: 1200px;
 }
 
 @media (min-width: $breakpoint) {
 	.podcast-hero__flex {
 		flex-direction: row;
-		justify-content: space-between;
-
-		& > div {
-			//width: 20%;
-
-			&.podcast-hero__text {
-				width: 60%;
-			}
-		}
-	}
-}
-@media (max-width: $breakpoint) {
-	.podcast-hero__subscribe > h3 {
-		display: none;
+		justify-content: center;
 	}
 }
 
@@ -62,6 +54,9 @@ $breakpoint2: 1450px;
 		display: inline-block;
 		max-width: 100%;
 		width: 300px;
+		margin-right: 5.65vw;
+		box-shadow: 0px 0px 50px rgba(0,0,0,0.75);
+		border-radius: 100%;
 	}
 }
 
@@ -120,28 +115,27 @@ h2.podcast-hero__title {
 }
 
 .podcast-hero__image {
-	width: 300px;
-	height: 300px;
-	
-	@media (max-width: $breakpoint) {
-		width: 200px;
-		height: 200px;
-		margin-top: 0.5rem;
-	}
-	max-width: 70vw;
-	max-height: 70vw;
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
-	background-image: url("/assets/img/podcast/hero-bunny-2.svg");
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 .podcast-hero__subscribe {
-	align-self: flex-start;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 999;
+}
+.podcast-hero__image, .podcast-hero__subscribe {
+	width: 20%;
+	max-width: 300px;
+}
 
-	@media (max-width: $breakpoint) {
-		text-align: center;
-		align-self: unset;
-		margin-bottom: 1rem;
+.podcast-hero__subscribe img, .podcast-hero__image img {
+	display: block;
+	width: 100%;
+	height: auto;
+	@include mobile {
+		display: none;
 	}
 }

@@ -68,6 +68,7 @@ import { PodcastEp41Component } from './podcast-ep41/podcast.component';
 import { PodcastEp42Component } from './podcast-ep42/podcast.component';
 import { PodcastEp43Component } from './podcast-ep43/podcast.component';
 import { PodcastEp44Component } from './podcast-ep44/podcast.component';
+import { PodcastEp45Component } from './podcast-ep45/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -204,6 +205,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-43-emin-gun-sirer", component: PodcastEp43Component },
 			{ path: "podcast/episode-44-bill-barhydt.html", redirectTo: "podcast/episode-44-bill-barhydt" },
 			{ path: "podcast/episode-44-bill-barhydt", component: PodcastEp44Component },
+			{ path: "podcast/episode-45-derek-e-silva.html", redirectTo: "podcast/episode-45-derek-e-silva" },
+			{ path: "podcast/episode-45-derek-e-silva", component: PodcastEp45Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
