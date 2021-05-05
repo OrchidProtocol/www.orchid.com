@@ -50,37 +50,61 @@ body {
 }
 
 .locale-en-US {
-  .show-ja, .show-ko, .show-zh, .show-id, .show-ru,
+  .show-ja,
+  .show-ko,
+  .show-zh,
+  .show-id,
+  .show-ru,
   .hide-en {
     display: none !important;
   }
 }
 .locale-ja {
-  .show-ko, .show-zh, .show-en, .show-id, .show-ru,
+  .show-ko,
+  .show-zh,
+  .show-en,
+  .show-id,
+  .show-ru,
   .hide-ja {
     display: none !important;
   }
 }
 .locale-ko {
-  .show-ja, .show-zh, .show-en, .show-id, .show-ru,
+  .show-ja,
+  .show-zh,
+  .show-en,
+  .show-id,
+  .show-ru,
   .hide-ko {
     display: none !important;
   }
 }
 .locale-zh {
-  .show-ja, .show-ko, .show-en, .show-id, .show-ru,
+  .show-ja,
+  .show-ko,
+  .show-en,
+  .show-id,
+  .show-ru,
   .hide-zh {
     display: none !important;
   }
 }
 .locale-id {
-  .show-ja, .show-ko, .show-en, .show-zh, .show-ru,
+  .show-ja,
+  .show-ko,
+  .show-en,
+  .show-zh,
+  .show-ru,
   .hide-id {
     display: none !important;
   }
 }
 .locale-ru {
-  .show-ja, .show-ko, .show-en, .show-id, .show-zh,
+  .show-ja,
+  .show-ko,
+  .show-en,
+  .show-id,
+  .show-zh,
   .hide-ru {
     display: none !important;
   }
@@ -116,7 +140,8 @@ h6 {
   }
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: $size-h1;
 
   @include mobile {
@@ -136,8 +161,10 @@ h1, .h1 {
   }
 }
 
-h2, .h2,
-h3, .h3 {
+h2,
+.h2,
+h3,
+.h3 {
   font-size: $size-h2;
 
   @include mobile {
@@ -145,11 +172,13 @@ h3, .h3 {
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   color: $orc-purple;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: $size-h4;
 
   @include mobile {
@@ -502,51 +531,58 @@ button:not(.phantom-btn) {
 }
 
 .required-input::after {
-  @extend .required-star::before;
+  content: "*"; // TODO: find a better character
+  color: $orc-purple;
+  font-size: $size-body;
+  font-weight: 700;
   position: absolute;
   right: 1rem;
   top: 8.82px; // NB: this is super hacky and arbitrary
   pointer-events: none;
 }
 
-input {
+.input-type-text {
   $pad-h: 1em;
   $pad-v: $form-pad-v;
+  padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
+  box-sizing: border-box;
+  width: 100%;
+  background: none;
+  background-color: inherit;
+  border: 3px solid $orc-gray;
+  border-radius: 100vmax;
+  font: inherit;
+  font-size: $size-body;
+  color: $orc-rock-gray;
+  line-height: inherit;
+
+  .required-input > & {
+    // Prevent the right edge of the input box overlapping the asterisk
+    padding-right: calc(#{$pad-h + 1em} - #{$form-border-w});
+  }
+
+  &:focus {
+    border-color: $orc-purple;
+  }
+
+  &::placeholder {
+    white-space: inherit;
+  }
+}
+
+input {
 
   &[type="email"],
   &[type="tel"],
   &[type="text"] {
-    padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
-    box-sizing: border-box;
-    width: 100%;
-    background: none;
-    background-color: inherit;
-    border: 3px solid $orc-gray;
-    border-radius: 100vmax;
-    font: inherit;
-    font-size: $size-body;
-    color: $orc-rock-gray;
-    line-height: inherit;
-
-    .required-input > & {
-      // Prevent the right edge of the input box overlapping the asterisk
-      padding-right: calc(#{$pad-h + 1em} - #{$form-border-w});
-    }
-
-    &:focus {
-      border-color: $orc-purple;
-    }
-
-    &::placeholder {
-      white-space: inherit;
-    }
+    @extend .input-type-text;
   }
 }
 
 textarea {
   $min-height: 44px; // NB: hardcoded
 
-  @extend input[type="text"];
+  @extend .input-type-text;
 
   min-height: $min-height;
   border-radius: ($min-height / 2);
