@@ -70,6 +70,7 @@ import { PodcastEp43Component } from './podcast-ep43/podcast.component';
 import { PodcastEp44Component } from './podcast-ep44/podcast.component';
 import { PodcastEp45Component } from './podcast-ep45/podcast.component';
 import { PodcastEp46Component } from './podcast-ep46/podcast.component';
+import { PodcastEp47Component } from './podcast-ep47/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -210,6 +211,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-45-derek-e-silva", component: PodcastEp45Component },
 			{ path: "podcast/episode-46-edward-snowden.html", redirectTo: "podcast/episode-46-edward-snowden" },
 			{ path: "podcast/episode-46-edward-snowden", component: PodcastEp46Component },
+			{ path: "podcast/episode-47-kara-swisher.html", redirectTo: "podcast/episode-47-kara-swisher" },
+			{ path: "podcast/episode-47-kara-swisher", component: PodcastEp47Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
