@@ -12,8 +12,8 @@ $containerWidth: 932px;
   margin-right: auto;
 }
 .grey-heading {
-  color:#53686A;
-  font-size:24px;
+  color: #53686a;
+  font-size: 24px;
   &.small {
     font-size: 20px;
   }
@@ -69,13 +69,125 @@ a {
     margin-top: 2rem;
     display: block;
   }
-  & >.oxt-hero__subtitle {
+  & > .oxt-hero__subtitle {
     margin-top: 1rem;
+  }
+}
+
+.oxt-hero {
+  padding: 1rem 0 6rem 0;
+  @include mobile {
+    background: white;
+    padding: 1rem 0;
+  }
+
+  @include not-mobile {
+    position: relative;
+    $top: 43%;
+    &::before {
+      content: " ";
+      display: block;
+      position: absolute;
+      top: $top;
+      left: 0;
+      width: 100%;
+      height: #{100% - $top};
+      background: white;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 175px;
+      height: 175px;
+      background: url("/assets/img/oxt/bg-circle-3.svg") no-repeat center center;
+      background-size: contain;
+      bottom: 0;
+      left: 0%;
+      transform: translate(-50%, 40%) rotate(180deg);
+    }
+  }
+}
+
+.oxt-hero__logomark {
+  width: 490px;
+  max-width: 100%;
+  @include mobile {
+    margin-top: 1rem;
+  }
+}
+
+.hero-flex__wrapper {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  @include mobile {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  & > .hero-flex__container {
+    @include not-mobile {
+      width: 60%;
+      padding: 0 1rem;
+      box-sizing: border-box;
+      &.logo {
+        width: 40%;
+      }
+    }
+    @include mobile {
+      &.logo {
+        width: 50%;
+      }
+    }
+  }
+  picture {
+    max-width: 100%;
+  }
+}
+
+.hero__buttons {
+  @include not-mobile {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  a {
+    width: 10rem;
+    max-width: 30%;
+  }
+  button {
+    width: 100%;
+    font-size: 18px;
+    @include not-mobile {
+      @media (max-width: 1185px) {
+        font-size: 16px;
+      }
+    }
+    @include mobile {
+      margin: 1rem auto;
+      display: block;
+    }
   }
 }
 
 .oxt-hero__title {
   font-size: 100px;
+}
+.oxt-hero__subtitle {
+  margin-bottom: 1rem;
+}
+@include not-mobile {
+  .oxt-hero__title {
+    margin-top: 3rem;
+  }
+  .oxt-hero__subtitle {
+    margin-bottom: 3rem;
+  }
 }
 
 // INTRO SECTION
@@ -90,7 +202,7 @@ a {
     position: absolute;
     width: 94px;
     height: 94px;
-    background: url('/assets/img/oxt/bg-circle-1.svg') no-repeat center center;
+    background: url("/assets/img/oxt/bg-circle-1.svg") no-repeat center center;
     background-size: contain;
     bottom: 0;
     left: 36%;
@@ -121,7 +233,7 @@ a {
     position: absolute;
     width: 350px;
     height: 350px;
-    background: url('/assets/img/oxt/bg-circle-3.svg') no-repeat center center;
+    background: url("/assets/img/oxt/bg-circle-3.svg") no-repeat center center;
     background-size: contain;
     bottom: 0;
     right: 0;
@@ -144,31 +256,20 @@ a {
     position: absolute;
     width: 337px;
     height: 347px;
-    background: url('/assets/img/oxt/bg-circles-2.svg') no-repeat center center;
+    background: url("/assets/img/oxt/bg-circles-2.svg") no-repeat center center;
     background-size: contain;
     bottom: 0;
-    left: 0;
-    transform: translate(0, 67%) scale(0.75);
+    left: 50%;
+    transform: translate(51%, 20%) scale(0.75);
 
     @include mobile {
-      display: none;
+      right: 50%;
+      transform: translate(-20%, 38%) scale(0.5);
     }
   }
 }
 
-.why-oxt section {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-gap: 1.8rem;
-
-  @include mobile {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
-
 .why-oxt__title {
-
   margin-bottom: 1rem;
 
   & > span {
@@ -202,26 +303,24 @@ a {
     min-width: unset;
     order: 2;
   }
-
-  h2 {
-    font-size: $size-h1;
-    @include mobile {
-      font-size: $size-h1-small;
-    }
-  }
 }
 
 .why-oxt__img {
-  max-width: 100%;
-  transform: translate(23%, 1%) scale(1.5);
-
-  @media (max-width: 1184px) {
-    transform: translate(0, 0);
+  pointer-events: none;
+  @include not-mobile {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 40vw;
+    max-width: 300px;
+    transform: translate(100%, -80%);
   }
   @include mobile {
     transform: translate(0, 0);
-    width: 300px;
+    width: 175px;
     order: 1;
+    margin-bottom: -4.5rem;
+    max-width: 100%;
   }
 }
 
@@ -243,13 +342,13 @@ a {
     &::before {
       content: "";
       position: absolute;
-      width: 168px;
-      height: 168px;
-      background: url('/assets/img/oxt/bg-circle-3.png') no-repeat center center;
+      width: 100px;
+      height: 100px;
+      background: url("/assets/img/oxt/bg-circle-1.svg") no-repeat center center;
       background-size: contain;
       top: 0;
-      left: 0;
-      transform: translate(10px, 104px);
+      left: 25%;
+      transform: translate(10px, -30px);
 
       @media (max-width: 1100px) {
         display: none;
@@ -258,9 +357,21 @@ a {
   }
 }
 .tokenomics__subhead {
-  max-width: 735px;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include not-mobile {
+    .tokenomics-column {
+      width: 60%;
+      padding-right: 1rem;
+      box-sizing: border-box;
+    }
+    img {
+      width: 40%;
+    }
+  }
+  @include mobile {
+    flex-direction: column-reverse;
+  }
 }
 .tokenomics__columns {
   max-width: $containerWidth;
@@ -275,13 +386,30 @@ a {
   }
 }
 
-
 // AUDITS SECTION
 .oxt-audits {
   h4 {
     font-size: $size-body-md;
     color: $orc-rock-gray;
     margin-bottom: 1rem;
+  }
+}
+
+.supply-logos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  text-align: center;
+  & > a {
+    margin: 1rem;
+    @include mobile {
+      margin: 0.5rem auto;
+    }
+    img {
+      width: 160px;
+      max-width: 100%;
+      margin: auto;
+    }
   }
 }
 
