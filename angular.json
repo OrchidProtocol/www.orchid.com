@@ -45,7 +45,8 @@
                             "src/favicon.ico",
                             "src/apple-touch-icon.png",
                             "src/assets",
-                            "src/sitemap.xml"
+                            "src/sitemap.xml",
+                            "src/robots.txt"
                         ],
                         "styles": [
                             "src/scss/styles.scss"

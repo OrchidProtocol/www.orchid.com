@@ -1,7 +1,7 @@
-@import 'feature_list';
-@import 'media_queries';
-@import 'misc_config';
-@import 'orc_config';
+@import "feature_list";
+@import "media_queries";
+@import "misc_config";
+@import "orc_config";
 
 $hero-bp-1: 1400px;
 $hero-bp-vert: 1150px;
@@ -13,14 +13,16 @@ $hero-bp-vert: 1150px;
   position: relative;
   background: $orc-beige-light;
   height: 810px;
-
+  @media (max-width: $hero-bp-vert) {
+    padding-top: 1rem;
+  }
 
   @media (max-width: $hero-bp-1) {
     height: 55vw;
   }
 
   @media (min-width: $hero-bp-vert) {
-    margin-top: 2em;
+    padding-top: 2rem;
   }
 }
 
@@ -51,8 +53,8 @@ $hero-bp-vert: 1150px;
 }
 
 .home-hero__bg {
-  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right top; // for Edge
-  background: url('/assets/img/index/orchid-main-combined-minus-3.svg') no-repeat calc(100% + 27px) 0%;
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right 1rem; // for Edge
+  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat calc(100% + 27px) 1rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -62,7 +64,7 @@ $hero-bp-vert: 1150px;
   height: calc(100% + 30px);
   margin: 0 auto;
 
-  &>img {
+  & > img {
     display: none;
   }
 
@@ -84,8 +86,8 @@ $hero-bp-vert: 1150px;
   display: inline-block;
 
   &:after {
-    content: ' ';
-    background-image: url('/assets/img/index/bubble-trail.svg');
+    content: " ";
+    background-image: url("/assets/img/index/bubble-trail.svg");
     background-position: top left;
     background-size: contain;
     background-repeat: no-repeat;
@@ -128,7 +130,7 @@ $hero-bp-vert: 1150px;
   box-sizing: border-box;
   width: 642px;
 
-  @media(min-width: 1401px) {
+  @media (min-width: 1401px) {
     padding-top: 3.5rem;
   }
 }
@@ -161,7 +163,7 @@ $hero-bp-vert: 1150px;
   li {
     font-weight: bold;
 
-    &>img {
+    & > img {
       margin-right: 0.5rem;
     }
   }
@@ -173,7 +175,6 @@ $hero-bp-vert: 1150px;
 }
 
 .instruction__form {
-
   margin-top: 1rem;
 
   input {
@@ -191,7 +192,7 @@ $hero-bp-vert: 1150px;
     line-height: var(--size);
     text-align: center;
 
-    &>img {
+    & > img {
       display: inline;
     }
   }
@@ -234,9 +235,10 @@ $hero-bp-vert: 1150px;
     display: flex;
     justify-content: center;
 
-    &>img {
+    & > img {
       display: block;
       max-width: 100%;
+      height: auto;
     }
   }
 
@@ -259,7 +261,7 @@ $hero-bp-vert: 1150px;
 
 .home-satellite-3a {
   position: absolute;
-  background: url('/assets/img/index/orchid-satellite-03-2.svg');
+  background: url("/assets/img/index/orchid-satellite-03-2.svg");
   background-repeat: no-repeat;
   background-position: calc(50% - 444px);
   background-size: contain;
@@ -268,6 +270,7 @@ $hero-bp-vert: 1150px;
   left: 0;
   top: -212px;
   z-index: 0;
+  pointer-events: none;
 
   @media (max-width: $hero-bp-1) {
     background-size: contain;
@@ -312,6 +315,7 @@ $hero-bp-vert: 1150px;
   top: 155px;
   right: 0;
   z-index: 0;
+  pointer-events: none;
 
   @media (max-width: 1550px) {
     background-position: 69vw;
@@ -352,7 +356,7 @@ $hero-bp-vert: 1150px;
 .title {
   font-size: 72px;
 
-  &>span {
+  & > span {
     display: block;
   }
 
@@ -397,7 +401,7 @@ $hero-bp-vert: 1150px;
   margin: 0.5rem 0 1.5rem 0;
   font-size: 36px;
 
-  &>span {
+  & > span {
     display: block;
   }
 
@@ -422,7 +426,6 @@ $hero-bp-vert: 1150px;
 .video-wrapper {
   position: relative;
 }
-
 
 // EVENTS SECTION
 
@@ -458,7 +461,7 @@ $hero-bp-vert: 1150px;
 }
 
 .ev-title {
-  margin: 0 0 .2rem;
+  margin: 0 0 0.2rem;
   font-weight: 700;
 }
 
@@ -508,7 +511,6 @@ $hero-bp-vert: 1150px;
   margin: 4em 0 2.5em 0;
 }
 
-
 // OUR APPROACH SECTION
 
 div.our-approach {
@@ -522,7 +524,7 @@ div.our-approach {
     margin-bottom: 0.75rem;
   }
 
-  &>p {
+  & > p {
     max-width: 60ch;
     margin-left: auto;
     margin-right: auto;
@@ -564,7 +566,7 @@ div.our-approach {
   }
 }
 
-.card__image>img {
+.card__image > img {
   height: 16vw;
   max-height: 234px;
 
@@ -580,7 +582,6 @@ div.our-approach {
   flex: 1;
 }
 
-
 // TODO: Do we still need this stuff and can we move it elsewhere?
 
 .card__text {
@@ -590,14 +591,16 @@ div.our-approach {
   flex: 1;
 }
 
-
-
 .background-white {
   background: white;
 }
 
 .background-gray {
   background: #f0f0f0;
+}
+
+.background-faint-gray {
+  background-color: $bkgd-faint-gray;
 }
 
 ul.phantom-list {
@@ -614,17 +617,15 @@ ul.smaller .ft-text h3 {
   margin-bottom: 0.5rem;
 }
 
-
-
 // PRESS SECTION
 
-.as-seen-in>section {
+.as-seen-in > section {
   position: relative;
 
   &::after {
     content: "";
     position: absolute;
-    background: url('/assets/img/index/as-seen-4-circles.svg') no-repeat center center;
+    background: url("/assets/img/index/as-seen-4-circles.svg") no-repeat center center;
     width: 10px;
     height: 126px;
     bottom: 0;
@@ -667,11 +668,15 @@ ul.smaller .ft-text h3 {
   justify-content: center;
   position: relative;
 
-  @media(max-width: 1090px) {
+  max-width: 875px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (max-width: 1090px) {
     grid-gap: 1rem;
   }
 
-  @media(max-width: 1040px) {
+  @media (max-width: 1040px) {
     grid-template-columns: minmax(300px, 420px);
   }
 }
@@ -695,7 +700,7 @@ ul.smaller .ft-text h3 {
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   }
 
-  &>.wrapper {
+  & > .wrapper {
     padding: 0 2rem 2rem;
     position: relative;
     display: flex;
@@ -718,14 +723,17 @@ ul.smaller .ft-text h3 {
   z-index: 1;
   margin: 0 auto;
 
-  &>img {
+  & > img {
     max-width: 100%;
     display: block;
+    height: auto;
+    &[alt="CNET"] {
+      max-width: 50%;
+    }
   }
 }
 
 .press-card__quote {
-
   position: relative;
   font-style: italic;
   margin-top: 1.5rem;
@@ -733,7 +741,7 @@ ul.smaller .ft-text h3 {
 
   &::before {
     content: "";
-    background: url('/assets/img/shared/quotes.svg');
+    background: url("/assets/img/shared/quotes.svg");
     position: absolute;
     z-index: 1;
     width: 35px;
@@ -747,7 +755,7 @@ ul.smaller .ft-text h3 {
   .press-card__quote {
     &::before {
       left: -37px;
-      background-image: url('/assets/img/shared/quotes-ja.svg');
+      background-image: url("/assets/img/shared/quotes-ja.svg");
     }
   }
 }
@@ -766,8 +774,9 @@ ul.smaller .ft-text h3 {
 }
 
 .blog-post-image {
-  &>img {
+  & > img {
     width: 100%;
+    height: auto;
     display: block;
     border-radius: 12px;
   }
@@ -796,6 +805,7 @@ ul.smaller .ft-text h3 {
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
   padding: 0.5rem;
   padding-bottom: 2rem;
+  max-width: 70vw;
 }
 
 .blog-post-info {
@@ -818,4 +828,106 @@ ul.smaller .ft-text h3 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.priv8-wrapper {
+  position: relative;
+  background-color: #52319C;
+  padding: 0.5rem 0 1.5rem;
+  @include not-mobile {
+    padding: 2rem 0;
+  }
+  color: #FFFFFF;
+  & > a {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  button {
+    background-color: white;
+    color: $orc-purple;
+    &:hover {
+      background-color: white;
+    }
+  }
+  @include not-mobile {
+    & > a {
+      display: none;
+    }
+  }
+  @include mobile {
+    button {
+      display: none;
+    }
+  }
+}
+.priv8-section {
+  text-align: center;
+}
+.priv8-logo {
+  width: 75%;
+  max-width: 350px;
+  margin: auto;
+  position: relative;
+  & > img {
+    width: 100%;
+  }
+  & > picture {
+    position: absolute;
+    top: 10%;
+    left: 32.5%;
+    width: 35%;
+    height: 100%;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.priv8-light-text {
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  margin-top: 0.25rem;
+  display: inline-block;
+}
+.priv8-orchid-logo {
+  display: block;
+  margin: auto;
+  width: 100%;
+  max-width: 140px;
+}
+.priv8-section {
+  h2, h3, p {
+    color: #FFFFFF;
+  }
+  h2 {
+    font-weight: 300;
+    font-size: 28px;
+    @include mobile {
+      font-size: 20px;
+    }
+    letter-spacing: 3px;
+    font-family: $orc-tf-secondary;
+    margin-bottom: 1rem;
+  }
+  h3 {
+    font-weight: 500;
+    font-size: 21px;
+    font-family: $orc-tf-secondary;
+    margin-bottom: 1rem;
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 0;
+    }
+  }
+  p {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

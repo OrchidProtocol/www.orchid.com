@@ -4,6 +4,86 @@
 
 $mobile-nav-height: 64px;
 
+.nav-infobar {
+  display: none;
+  &.visible {
+    display: block;
+  }
+  background: $orc-purple;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.3rem;
+  font-size: 0.75rem;
+
+  box-sizing: border-box;
+  height: 1.9rem;
+
+  .mobile {
+    display: none;
+  }
+  @include mobile {
+    &.js {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
+    }
+    .desktop {
+      display: none;
+    }
+    .mobile {
+      display: inline;
+    }
+    @media (max-width: 340px) {
+      font-size: 0.7rem;
+    }
+    @media (max-width: 319px) {
+      font-size: 0.6rem;
+    }
+  }
+}
+
+#nav-root {
+  z-index: 999;
+  position: relative;
+  @include mobile {
+    //margin-bottom: 1.9rem;
+    &.slim {
+      margin-bottom: 0;
+    }
+  }
+  &.purple {
+    margin-bottom: 0;
+    background: #ffffff;
+  }
+  @include not-mobile {
+    &.purple {
+      background: transparent;
+      position: absolute;
+      width: 100%;
+      .nav-menu > ul > li > span,
+      .nav-menu > ul > li > a {
+        color: #ffffff;
+      }
+
+      img {
+        filter: brightness(100);
+      }
+    }
+  }
+
+  &.slim {
+    .nav-infobar {
+      display: none;
+    }
+    #nav.js {
+      top: 0;
+    }
+  }
+}
+
 #nav {
   display: flex;
   flex-flow: row nowrap;
@@ -34,7 +114,10 @@ $mobile-nav-height: 64px;
       position: fixed;
       left: 0;
       right: 0;
-      top: 0;
+      //top: 1.9rem;
+      &.purple {
+        top: 0;
+      }
       box-sizing: border-box;
       height: $mobile-nav-height;
       background: inherit;
@@ -42,28 +125,54 @@ $mobile-nav-height: 64px;
       z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
     }
 
-    #nav-root.bk-deep-purple>&.js {
-      box-shadow: mat-shadow(8px, $alpha: 0.4);
-    }
-
     &.no-shadow {
-
       // I hate CSS. (This deals with rule importance)
-      &,
-      #nav-root.bk-deep-purple>& {
+      & {
         transition-duration: 0.07s;
         transition-timing-function: $ease-in;
         box-shadow: mat-shadow(0px, $alpha: 0.2);
       }
     }
   }
+
+  @include large-screen {
+    justify-content: space-between;
+  }
+}
+
+.nav-download {
+  display: none;
+
+  @include large-screen {
+    display: block;
+
+    & > button {
+      font-size: 14px;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+.nav-purple-icon {
+  @include not-mobile {
+    transform: translateY(0.25rem);
+  }
+  @include mobile {
+    display: none !important;
+  }
 }
 
 #nav-home {
   flex: 1 0 auto;
+
+  @include large-screen {
+    flex: none;
+  }
+
   line-height: 0px;
 
-  >a {
+  > a {
     margin: -1rem;
     padding: 1rem;
   }
@@ -123,7 +232,7 @@ $flyout-gap: ($flyout-spacing / 2);
   box-sizing: border-box;
   height: $mobile-nav-height;
 
-  :not(.js)>& {
+  :not(.js) > & {
     display: none;
   }
 }
@@ -170,8 +279,8 @@ $flyout-gap: ($flyout-spacing / 2);
   @include mobile {
     text-align: right;
 
-    >li {
-      >a {
+    > li {
+      > a {
         display: block;
         padding: $flyout-gap 0;
         width: 100%;
@@ -179,7 +288,7 @@ $flyout-gap: ($flyout-spacing / 2);
     }
   }
 
-  >li {
+  > li {
     font-weight: 700;
     text-transform: uppercase;
   }
@@ -190,7 +299,7 @@ $flyout-gap: ($flyout-spacing / 2);
   padding: 1rem;
   cursor: pointer;
 
-  :not(.js)>& {
+  :not(.js) > & {
     display: none;
   }
 }
@@ -258,7 +367,6 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 
   > {
-
     section,
     nav {
       flex: 0 0 auto;
@@ -295,17 +403,19 @@ $flyout-gap: ($flyout-spacing / 2);
     justify-content: space-between;
     align-items: flex-end;
 
-    >img {
+    > img {
       max-width: 20vw;
     }
 
-    >p {
+    > p {
       line-height: 1;
     }
   }
 }
 
-#ft-nav, #ft-nav-2, #ft-nav-3 {
+#ft-nav,
+#ft-nav-2,
+#ft-nav-3 {
   z-index: 2;
 
   @include mobile {
@@ -313,9 +423,11 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-#ft-nav-list, #ft-nav-2-list, #ft-nav-3-list {
+#ft-nav-list,
+#ft-nav-2-list,
+#ft-nav-3-list {
   @include mobile {
-    >li>a {
+    > li > a {
       display: block;
       padding: 0.5rem 0;
 
@@ -334,7 +446,7 @@ $flyout-gap: ($flyout-spacing / 2);
   justify-content: center;
   margin: ($gap / -2);
 
-  >li {
+  > li {
     margin: ($gap / 2);
   }
 
@@ -342,7 +454,7 @@ $flyout-gap: ($flyout-spacing / 2);
     flex-flow: row wrap;
     justify-content: flex-start;
 
-    >li {
+    > li {
       &:not(:last-child) {
         margin-right: 2rem;
       }
@@ -481,14 +593,14 @@ $flyout-gap: ($flyout-spacing / 2);
   list-style: none;
   margin: 0;
 
-  &>li:nth-child(1)#navbar-language-selector-list-item-first {
+  & > li:nth-child(1)#navbar-language-selector-list-item-first {
     @include not-mobile {
       padding-top: 0;
     }
   }
 }
 
-#navbar-language-selector-checkbox:checked~.navbar-language-selector-list {
+#navbar-language-selector-checkbox:checked ~ .navbar-language-selector-list {
   @include not-mobile {
     display: block;
     animation-name: navbar-language-selector-animation;
@@ -497,7 +609,7 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
-.navbar-language-selector-list>li {
+.navbar-language-selector-list > li {
   position: relative;
   display: block;
   border-right: 1px $orc-gray solid;
@@ -545,8 +657,8 @@ $flyout-gap: ($flyout-spacing / 2);
 
 .notification-bar-container {
   width: 100%;
-  background: #E8DDFD;
-  color: #E8DDFD;
+  background: #e8ddfd;
+  color: #e8ddfd;
   text-align: center;
   padding: 10px 4px;
   font-size: 14px;
@@ -554,5 +666,78 @@ $flyout-gap: ($flyout-spacing / 2);
 
   @media (max-width: 1150px) {
     margin-bottom: 2em;
+  }
+}
+
+.maker-badge {
+  display: none;
+  &.visible {
+    display: block;
+  }
+  z-index: 99;
+  max-width: 250px;
+  color: #2b2b2b;
+  font-size: 16px;
+  font-family: helvetica;
+  text-align: right;
+  height: auto;
+  min-width: 160px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-bottom-right-radius: 6px;
+  
+
+  @media screen and (min-width: 1500px) {
+    left: 50% !important;
+    margin-left: -746px;
+    border-bottom-left-radius: 6px;
+    .maker-badge__btn {
+      border-bottom-left-radius: 6px;
+    }
+  }
+
+  .maker-badge__btn {
+    position: relative;
+    & > a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    display: flex;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    border: 1px solid #cbd5e0;
+    background: #fff;
+    border-bottom-right-radius: 6px;
+    color: #2d3748;
+    & > img {
+      margin-right: 10px;
+    }
+    .desktop {
+      display: block;
+    }
+    .mobile {
+      display: none;
+    }
+    @include mobile {
+      .desktop {
+        display: none;
+      }
+      .mobile {
+        display: block;
+      }
+      font-size: 13px;
+      flex-direction: row-reverse;
+      & > img {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
   }
 }

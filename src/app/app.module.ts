@@ -14,6 +14,7 @@ import { ServiceTermsComponent } from './service-terms/service-terms.component';
 import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
+import { NewsletterSignupCoreComponent } from './newsletter-signup-core/newsletter-signup-core.component';
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
 import { NewsletterSignupFeaturesComponent } from './newsletter-signup-features/newsletter-signup-features.component';
 import { PageLayoutComponent } from './page-layout/page-layout.component';
@@ -41,13 +42,54 @@ import { PodcastEp8Component } from './podcast-ep8/podcast.component';
 import { PodcastEp9Component } from './podcast-ep9/podcast.component';
 import { PodcastEp10Component } from './podcast-ep10/podcast.component';
 import { PodcastEp11Component } from './podcast-ep11/podcast.component';
+import { PodcastEp12Component } from './podcast-ep12/podcast.component';
+import { PodcastEp13Component } from './podcast-ep13/podcast.component';
+import { PodcastEp14Component } from './podcast-ep14/podcast.component';
+import { PodcastEp15Component } from './podcast-ep15/podcast.component';
+import { PodcastEp16Component } from './podcast-ep16/podcast.component';
+import { PodcastEp17Component } from './podcast-ep17/podcast.component';
+import { PodcastEp18Component } from './podcast-ep18/podcast.component';
+import { PodcastEp19Component } from './podcast-ep19/podcast.component';
+import { PodcastEp20Component } from './podcast-ep20/podcast.component';
+import { PodcastEp21Component } from './podcast-ep21/podcast.component';
+import { PodcastEp22Component } from './podcast-ep22/podcast.component';
+import { PodcastEp23Component } from './podcast-ep23/podcast.component';
+import { PodcastEp24Component } from './podcast-ep24/podcast.component';
+import { PodcastEp25Component } from './podcast-ep25/podcast.component';
+import { PodcastEp26Component } from './podcast-ep26/podcast.component';
+import { PodcastEp27Component } from './podcast-ep27/podcast.component';
+import { PodcastEp28Component } from './podcast-ep28/podcast.component';
+import { PodcastEp29Component } from './podcast-ep29/podcast.component';
+import { PodcastEp30Component } from './podcast-ep30/podcast.component';
+import { PodcastEp31Component } from './podcast-ep31/podcast.component';
+import { PodcastEp32Component } from './podcast-ep32/podcast.component';
+import { PodcastEp33Component } from './podcast-ep33/podcast.component';
+import { PodcastEp34Component } from './podcast-ep34/podcast.component';
+import { PodcastEp35Component } from './podcast-ep35/podcast.component';
+import { PodcastEp36Component } from './podcast-ep36/podcast.component';
+import { PodcastEp37Component } from './podcast-ep37/podcast.component';
+import { PodcastEp38Component } from './podcast-ep38/podcast.component';
+import { PodcastEp39Component } from './podcast-ep39/podcast.component';
+import { PodcastEp40Component } from './podcast-ep40/podcast.component';
+import { PodcastEp41Component } from './podcast-ep41/podcast.component';
+import { PodcastEp42Component } from './podcast-ep42/podcast.component';
+import { PodcastEp43Component } from './podcast-ep43/podcast.component';
+import { PodcastEp44Component } from './podcast-ep44/podcast.component';
+import { PodcastEp45Component } from './podcast-ep45/podcast.component';
+import { PodcastEp46Component } from './podcast-ep46/podcast.component';
+import { PodcastEp47Component } from './podcast-ep47/podcast.component';
 
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
+import { WhereOXTExtendedComponent } from './where-oxt-extended/where-oxt.component';
 import { SetupVideoSectionComponent } from './setup-video-section/setup-video-section.component';
 import { VideoSectionComponent } from './video-section/video-section.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { Slides2021Component } from './slides-2021/slides.component';
+import { Priv8 } from './priv8/priv8.component';
+import { Priv8Signup } from './priv8-signup/priv8-signup.component';
 
 import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -67,6 +109,7 @@ import { MetaService } from './MetaService';
     ServiceTermsComponent,
     HomeComponent,
     NewsletterSignupComponent,
+    NewsletterSignupCoreComponent,
     NewsletterSignupHeroComponent,
     NewsletterSignupFeaturesComponent,
     PageLayoutComponent,
@@ -93,16 +136,57 @@ import { MetaService } from './MetaService';
     PodcastEp9Component,
     PodcastEp10Component,
     PodcastEp11Component,
+    PodcastEp12Component,
+    PodcastEp13Component,
+    PodcastEp14Component,
+    PodcastEp15Component,
+    PodcastEp16Component,
+    PodcastEp17Component,
+    PodcastEp18Component,
+    PodcastEp19Component,
+    PodcastEp20Component,
+    PodcastEp21Component,
+    PodcastEp22Component,
+    PodcastEp23Component,
+    PodcastEp24Component,
+    PodcastEp25Component,
+    PodcastEp26Component,
+    PodcastEp27Component,
+    PodcastEp28Component,
+    PodcastEp29Component,
+    PodcastEp30Component,
+    PodcastEp31Component,
+    PodcastEp32Component,
+    PodcastEp33Component,
+    PodcastEp34Component,
+    PodcastEp35Component,
+    PodcastEp36Component,
+    PodcastEp37Component,
+    PodcastEp38Component,
+    PodcastEp39Component,
+    PodcastEp40Component,
+    PodcastEp41Component,
+    PodcastEp42Component,
+    PodcastEp43Component,
+    PodcastEp44Component,
+    PodcastEp45Component,
+    PodcastEp46Component,
+    PodcastEp47Component,
     NewsletterSignupPage,
     WhereOXTComponent,
+    WhereOXTExtendedComponent,
     VideoSectionComponent,
     SetupVideoSectionComponent,
     NotFoundComponent,
-    WebinarLPComponent
+    WebinarLPComponent,
+    QuizComponent,
+    Slides2021Component,
+    Priv8,
+    Priv8Signup,
   ],
   imports: [
     // TODO: how important is appId?
-    BrowserModule.withServerTransition({appId: 'orchid-www'}),
+    BrowserModule.withServerTransition({ appId: 'orchid-www' }),
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,

@@ -12,7 +12,7 @@ export class MetaService {
 
         // Only remove og, twitter, and description meta tags to avoid removing things like the viewport tag.
 
-        let tags = this.meta.getTags('name^="og:"');
+        let tags = this.meta.getTags('property^="og:"');
         for (let i = 0; i < tags.length; i++) {
             this.meta.removeTagElement(tags[i])
         }
@@ -22,39 +22,39 @@ export class MetaService {
             this.meta.removeTagElement(tags[i])
         }
 
-        this.meta.removeTag('property="description"');
+        this.meta.removeTag('name="description"');
     }
 
     update(name: string, value: string) {
         let tag = null;
 
-        // OG tags use the "name" attribute instead of "property"
-        if (/^og:|^twitter:/.test(name)) {
-            tag = this.meta.getTag(`name="${name}"`);
-        } else {
+        // twitter tags use the "name" attribute instead of "property"
+        if (/^og:/.test(name)) {
             tag = this.meta.getTag(`property="${name}"`);
+        } else {
+            tag = this.meta.getTag(`name="${name}"`);
         }
 
         if (name === 'title') {
             this.title.setTitle(value);
         } else if (tag) {
-            if (/^og:|^twitter:/.test(name)) {
-                this.meta.updateTag({ name: name, content: value }, `name="${name}"`)
-            } else {
+            if (/^og:/.test(name)) {
                 this.meta.updateTag({ property: name, content: value }, `property="${name}"`)
+            } else {
+                this.meta.updateTag({ name: name, content: value }, `name="${name}"`)
             }
         } else {
-            if (/^og:|^twitter:/.test(name)) {
-                this.meta.addTag({ name: name, content: value })
-            } else {
+            if (/^og:/.test(name)) {
                 this.meta.addTag({ property: name, content: value })
+            } else {
+                this.meta.addTag({ name: name, content: value })
             }
         }
     }
 
     remove(name: string, value: string) {
         // OG tags use the "property" attribute instead of "name"
-        if (/^og:|^twitter:/.test(name)) {
+        if (/^og:/.test(name)) {
             this.meta.removeTag(`property="${name}"`);
         } else {
             this.meta.removeTag(`name="${name}"`);

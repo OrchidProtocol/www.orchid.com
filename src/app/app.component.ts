@@ -39,12 +39,17 @@ export class AppComponent implements OnInit {
       element.parentNode.removeChild(element);
     }
 
-    const location = document.location._href ? document.location._href : document.location.pathname;
-    if (this.localeId !== 'en-US') {
-      r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
-      this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com` + location })
-    } else {
-      this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.orchid.com` + location })
+    let location = document.location._href ? document.location._href : document.location.pathname;
+    if (!location.match(/\/$/)) {
+      location += '/';
+    }
+    if (!location.match(/\*/)) {
+      if (this.localeId !== 'en-US') {
+        r.setAttribute(document.querySelector('html'), 'lang', this.localeId);
+        this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.${this.localeId.replace(/en-us/i, 'en')}.orchid.com` + location })
+      } else {
+        this.createMetaTag(document, r, 'meta', { "rel": "canonical", "href": `https://www.orchid.com` + location })
+      }
     }
 
 
@@ -70,14 +75,29 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (typeof window !== "undefined" && typeof localStorage !== "undefined") {
+      if (window.location.search && window.location.search.length > 0 && window.location.search.match(/(utm_source|utm_medium|utm_campaign|utm_term|utm_content)/i)) {
+        localStorage.queryParams = window.location.search;
+        localStorage.queryParamsDate = Date.now();
+      } else if (localStorage.queryParamsDate) {
+        const oneDay = 1000*60*60*24;
+        if (Number(localStorage.queryParamsDate) < Date.now() - oneDay*30) {
+          localStorage.removeItem('queryParamsDate');
+          localStorage.removeItem('queryParams');
+        } // Delete UTM parameters after 30 days
+      }
+      if (localStorage.queryParams) {
+        window['landingQueryParams'] = localStorage.queryParams;
+      }
 
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) return;
+      this.router.events.subscribe((evt) => {
+        if (!(evt instanceof NavigationEnd)) return;
 
-      // Scroll the user to the top of the page on load/refresh?
-      // const win = typeof window !== "undefined" && window;
-      // if (win) win.scrollTo(0, 0);
+        // Scroll the user to the top of the page on load/refresh?
+        // const win = typeof window !== "undefined" && window;
+        // if (win) win.scrollTo(0, 0);
 
-    }, (err) => { }, () => { });
+      }, (err) => { }, () => { });
+    }
   }
 }

@@ -1,310 +1,153 @@
 <div class="oxt-hero bk-beige-light">
-  <section class="section-med hpad-wide vpad-xl center-text z-index-1">
-    <img class="oxt-hero__logomark" src="/assets/img/oxt/orchid-logomark.svg" alt="" />
-    <h1 class="oxt-hero__title">OXT</h1>
-    <h2 class="oxt-hero__subtitle color-gray" i18n="@@OXTHeroSubtitle">The Orchid Digital Currency</h2>
-    <a href="/assets/whitepaper/whitepaper.pdf">
-      <button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">Whitepaper</button>
-    </a>
-  </section>
-</div>
-
-<div class="oxt-intro bk-white">
-  <section class="section-med hpad-wide vpad-wide z-index-1">
-    <img class="max-100" src="/assets/img/oxt/orchid-magnified.svg" alt="" />
-    <div class="oxt-intro__text">
-      <p class="medium" i18n="@@OXTIntroParagraph"><b class="color-primary">OXT</b> is an Ethereum (ERC-20) compliant
-        digital currency used to
-        exchange value on the Orchid network. Orchid users purchase bandwidth with OXT, and Orchid node providers
-        receive OXT in exchange for their bandwidth. Both users and providers stake OXT.</p>
+  <section class="section-med hpad-thin z-index-1">
+    <div class="hero-flex__wrapper">
+      <div class="hero-flex__container">
+        <h1 class="oxt-hero__title">OXT</h1>
+        <h2 class="oxt-hero__subtitle" i18n="@@OXTHeroSubtitle">
+          The staking asset <br />
+          for the $35B* VPN market
+        </h2>
+        <p>
+          The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid's native ERC-20 digital asset that powers and secures a new approach to VPN service and providers compete for user payment flow by staking OXT. As more bandwidth is purchased on the Orchid network node providers can add and stake OXT in order to capture additional bandwidth sales on the network.
+        </p>
+        <div class="hero__buttons">
+          <a href="/download">
+            <button class="btn-primary btn-fixed z-index-1" i18n="@@HomeNextLevel__Download">Download Orchid</button>
+          </a>
+          <a href="https://github.com/OrchidTechnologies">
+            <button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__GitHub">GitHub</button>
+          </a>
+          <a href="/assets/whitepaper/whitepaper.pdf">
+            <button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">Whitepaper</button>
+          </a>
+        </div>
+      </div>
+      <div class="hero-flex__container logo">
+        <picture>
+          <source srcset="/assets/img/oxt/oxt_hero.webp" type="image/webp">
+          <img class="oxt-hero__logomark" src="/assets/img/oxt/oxt_hero.png" width="980" height="978">
+        </picture>
+      </div>
     </div>
   </section>
 </div>
-
 
 <div class="why-oxt bk-lavender">
   <div class="overflow-wrapper">
-    <section class="section-med hpad-wide vpad-wide z-index-1">
-      <div class="why-oxt__text center-text">
-        <h2 class="color-primary gap-bot-thin" i18n="@@OXTWhereToBuy">Where to buy OXT?</h2>
-        <where-oxt></where-oxt>
+    <section class="section-med hpad-thin vpad-wide z-index-1">
+      <div class="why-oxt__text">
+        <h2 class="color-primary gap-bot-thin" i18n="@@OXTWhereToBuy">Where to get OXT</h2>
+        <where-oxt-extended></where-oxt-extended>
       </div>
-      <img class="why-oxt__img" src="/assets/img/oxt/rabbit-pulls-token.svg" alt="" />
+      <img width="476" height="487" class="why-oxt__img" src="/assets/img/oxt/rabbit-pulls-token.svg" alt="" />
     </section>
   </div>
 </div>
 
-<div class="cost-to-use-oxt bk-white">
-  <div class="overflow-wrapper">
-    <section class="section-med hpad-wide vpad-wide z-index-1">
-      <div class="center-text" i18n="@@OXTHowToUse">
-        <h2 class="color-primary gap-bot-thin">Cost to use Orchid VPN</h2>
-        <p class="medium">
-          Orchid is uniquely designed to offer online privacy at a competitive cost. The design is intended to result in
-          bandwidth being priced dynamically to meet the needs of both users and providers. This is done through a
-          unique
-          decentralized bandwidth marketplace, where numerous providers can compete to offer their services to users.
-        </p>
-        <p class="medium">
-          The price of bandwidth on Orchid is designed to fluctuate with the market, so there is no set "price" of
-          bandwidth on the network. Bandwidth providers are free to set their own rates, and Orchid itself does not
-          mandate pricing. Nonetheless, we expect prices to remain competitive with existing VPNs and privacy solutions.
-        </p>
-        <p class="medium">
-          <a href="https://blog.orchid.com/how-much-does-bandwidth-cost-on-orchid/" class="oxt-special-link">
-            Read our blog on bandwidth pricing here
-          </a>
-        </p>
-        <img src="/assets/img/oxt/tokenomics.svg" class="small-margin-top" alt="" />
-      </div>
-    </section>
-  </div>
-</div>
-
-<div class="supply-section bk-lavender">
+<div class="supply-section bk-white">
   <section class="section-med hpad-wide vpad-wide z-index-1">
-    <div class="center-text" i18n="@@OXTSupplyParagraph1">
-      <h2 class="color-primary gap-bot-thin">Supply</h2>
-      <p class="medium">
-        As noted in the Orchid network whitepaper, the total supply of OXT is fixed at one billion units. There is no
-        inflation. The possibility of contractual penalty mechanisms that “burn” OXT create the potential for some small
-        deflationary pressure.
+    <div>
+      <h2 class="color-primary gap-bot-thin" i18n="@@OXTSupplyTitle">Supply</h2>
+      <p i18n="@@OXTSupplyDescription">
+        As noted in the Orchid network whitepaper, the total supply of OXT is fixed at one billion units. All information about the supply of OXT and addresses where OXT is located are publicly available on the Ethereum blockchain.
       </p>
-      <p class="medium">
-        There are different definitions used for circulating supply. All information about the supply of OXT and
-        addresses where OXT is located are publicly available on the Ethereum blockchain.
+      <div class="supply-logos">
+        <a href="https://messari.io/asset/orchid">
+          <img src="/assets/img/oxt/messari.png" alt="messari" />
+        </a>
+        <a href="https://www.coingecko.com/en/coins/orchid-protocol">
+          <img src="/assets/img/oxt/coingecko.png" alt="coingecko" />
+        </a>
+        <a href="https://coinmarketcap.com/currencies/orchid/">
+          <img src="/assets/img/oxt/coinmarketcap.png" alt="coinmarketcap" />
+        </a>
+        <a href="https://etherscan.io/token/0x4575f41308ec1483f3d399aa9a2826d74da13deb">
+          <img src="/assets/img/oxt/etherscan.png" alt="etherscan" />
+        </a>
+        <a href="https://xangle.io/project/OXT/profile/">
+          <img src="/assets/img/oxt/xangle.png" style="width: 120px;" alt="xangle" />
+        </a>
+      </div>
+      <h4 class="grey-heading small" i18n="@@OXTTreasuryTitle">
+        Treasury
+      </h4>
+      <br />
+      <p i18n="@@OXTTreasuryDescription">
+        A maximum 1 billion OXT were eligible for creation, all of which has been created. As of December 9 2019, Orchid Labs, Inc. held 400,579,272 OXT in its treasury that has been subject to its treasury policy. Pursuant to Orchid Labs, Inc.'s treasury policy, it is anticipated that as to 400,579,272 OXT of the treasury OXT, starting as of December 9, 2019, no more than 10 million OXT per month will be available to be released from the treasury.
       </p>
       <br />
       <br />
     </div>
-    <div class="text-constrained" i18n="@@OXTSupplyParagraph2">
+    <div i18n="@@OXTSupplyParagraph2">
       <h4 class="grey-heading small">Audit of Smart Contract for use with OXT Release Schedule</h4>
       <br />
       <p>
-        On March 21, 2020, <a class="oxt-special-link" href="https://diligence.consensys.net/">Consensys Diligence</a>
-        published a technical audit on Orchid’s
-        batch send smart contract, which
-        may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is
-        public and can be found here:
+        Audit of Smart Contract On March 21, 2020, <a class="oxt-special-link" href="https://diligence.consensys.net/">Consensys Diligence</a> published a technical audit on Orchid’s batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here:
+        <br />
         <a href="https://diligence.consensys.net/audits/2020/01/orchid-multisend/">
           https://diligence.consensys.net/audits/2020/01/orchid-multisend/
         </a>
       </p>
+
       <p>
-        For purposes of the audit, Orchid posted all the information needed to perform the audit in a technical
-        repository on GitHub that can be found here:
-        <a
-          href="https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor">
+        For purposes of the audit, Orchid posted all the information needed to perform the audit in a technical repository on GitHub that can be found here:
+        <br />
+        <a href="https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor">
           https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor
         </a>
+
       </p>
       <p>
         Anyone can re-perform the smart contracts audit using the same information provided to Consensys Diligence.
       </p>
+
       <p>
-        The information posted to GitHub and provided to Consensys Diligence includes the OXT token contract, found
-        here:
-        <a
-          href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol">
+        The information posted to GitHub and provided to Consensys Diligence includes the OXT token contract, found here:
+        <br />
+        <a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol">
           https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol
         </a>
       </p>
+
       <p>
         It also includes the OXT release schedule, found here:
-        <a
-          href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf">
+        <br />
+        <a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf">
           https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf
         </a>
       </p>
+
       <p>
-        To make this information more accessible for smart contract technical reviews, and for network users and
-        bandwidth providers, below is a graphic representation showing some of the same information that can be found on
-        GitHub.
+        In December 2020 Consensys Diligence published a technical audit on a new version of Orchid's batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/">https://consensys.net/diligence/audits/2020/12/orchid-multisend/</a>
       </p>
-    </div>
-    <div class="center-text oxt-svg-charts" i18n="@@OXTSupplyParagraph3">
-      <br />
-      <br />
-      <h4 class="grey-heading">OXT Release Schedule Pie Chart*</h4>
-      <br />
-      <img src="/assets/img/oxt/pi-chart.svg" alt="" />
-      <br />
-      <br />
-      <br />
-      <h4 class="grey-heading">OXT Release Schedule*</h4>
-      <p style="margin-bottom: 0;">313,629,352 OXT released as of 8/17/20</p>
-      <br />
-      <div class="oxt-responsive-table-container">
-        <img src="/assets/img/oxt/table.svg?v=2" alt="" />
-        <a href="/assets/img/oxt/table.svg?v=2"></a>
-      </div>
+      <p>
+        A link to the Additional Release Schedule that was also subject to Consensys Audit: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf">https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf</a>
+      </p>
+
     </div>
   </section>
 </div>
 
 
-<div class="supply-section bk-lavender">
+<div class="tokenomics bk-faint-gray">
   <section class="section-med hpad-wide vpad-wide z-index-1">
-    <div class="text-constrained" i18n="@@OXTSupplySection2">
-      <p>
-        As noted, more information can be found in the Consensys Diligence Audit report, the OXT token contract, the OXT
-        release schedule and the Orchid network whitepaper.
-      </p>
-
-      <p>
-        The OXT release schedule provided to Consensys Diligence and posted to GitHub includes footnotes that provide
-        more
-        details. The footnotes are copied below, with minor formatting changes.
-      </p>
-
-      <p>
-        <b>
-          <i>
-            * The release schedule was published on March 21,2020 in connection with the Consensys Diligence audit and the information is as of that date in the document. The total released according to the schedule is calculated for convenience as of the most recent date in the schedule.
-          </i>
-        </b>
-      </p>
-
-      <p>
-        <b>
-          <i>
-            ** This section of the pie chart includes: the OXT listed in the Network Incentives/Other column; the OXT
-            noted in the Network Incentives/Other Footnote; and the OXT noted in the Treasury footnote. Accordingly, it
-            includes more OXT than are listed in the release schedule columns.
-          </i>
-        </b>
-      </p>
-
-
-      <b>
-        Treasury
-      </b>
-      <p>
-        A maximum 1 billion OXT were eligible for creation, all of which has been created. Orchid Labs, Inc. holds
-        407,059,272 OXT in its treasury. Pursuant to Orchid Lab, Inc.'s treasury policy, it is anticipated that as to
-        400,579,272 OXT of the treasury OXT, starting as of December 9, 2019, no more than 10 million OXT per month
-        will be available to be released from the company's treasury. While such treasury OXT will become available
-        for potential release each month, Orchid may instead continue to hold such OXT in its treasury. The other
-        6,480,000 OXT in the company's treasury is not subject to the treasury policy and is available to be released
-        without restriction.
-      </p>
-
-      <b>
-        Network Incentives/Other
-      </b>
-
-      <p>
-        This group encompasses OXT that has been released to third parties (and 7,000,000 OXT of this group was valued
-        at
-        $.30 per OXT), including for the purpose of making OXT available to participants in educational programs on
-        using
-        the Orchid network, which program is run by a third party ("Educational Purposes"). An additional 52,500,000 OXT
-        will be released for Educational Purposes, in three tranches of 17,500,000 OXT every 6 months, beginning on June
-        23, 2020. 11,661,996 OXT will be distributed to node providers for staking purposes on the Orchid network, over
-        periods of up to 24 months from December 16, 2019, with all amounts distributed during the first 12 months
-        locked
-        up in a stake for that period, and subject to a 3-month withdrawal delay.
-      </p>
-
-      <b>Seed SAFT</b>
-      <p>
-        Purchase price was $.03 per OXT (some in this group were awarded rights to OXT at that value).
-      </p>
-
-      <b>SAFT 2a</b>
-      <p>
-        Purchase price was $.50 per OXT.
-      </p>
-
-      <b>SAFT 2b</b>
-      <p>
-        Purchase price was $.70 per OXT.
-      </p>
-
-      <b>Orchid Team A</b>
-      <p>
-        Purchase price was less than $0.00001 per OXT.
-      </p>
-
-      <b>Orchid Team B</b>
-      <p>
-        Purchase price was less than $0.00001 per OXT.
-      </p>
-
-      <b>Orchid Team C</b>
-      <p>
-        This group was awarded rights to OXT at a value of $.01 per OXT, subject to various timing conditions as well as
-        a
-        release schedule.
-        After December 6, 2020, the release schedule will end for this group’s remaining 7,311,021 OXT; however, certain
-        timing conditions will apply to spread the distribution of the remaining 7,311,021 OXT over a maximum period of
-        three years.
-      </p>
-
-      <b>Orchid Team D</b>
-      <p>
-        This group was awarded rights to OXT at a value of $.01 per OXT. After June 6, 2021, it is anticipated that
-        there
-        will be distributions to certain members of this group of 38,541 OXT on the 6th of each month, ending on June 6,
-        2023.
-      </p>
+    <div class="tokenomics__subhead">
+      <div class="tokenomics-column">
+        <h2 class="color-primary vgap-xs" i18n="@@OXTStakingHeadline">Staking</h2>
+        <p i18n="@@OXTStakingDescription">
+          Orchid's staking directory randomly connects users with providers based on the amount of OXT staked; providers that stake more are connected to more users. The more bandwidth that is purchased by users on the Orchid network, the more incentive that node providers have to stake OXT in order to sell bandwidth and meet the demand.
+        </p>
+      </div>
+      <img src="/assets/img/oxt/staking-2.svg" width="454" height="259" />
     </div>
-  </section>
-</div>
-
-
-
-
-
-
-
-
-<div class="tokenomics bk-white">
-  <section class="section-med hpad-wide vpad-wide z-index-1">
-    <h2 class="color-primary center-text vgap-xs" i18n="@@OXTTokenomicsHeadline">Staking</h2>
-    <p class="tokenomics__subhead medium center-text gap-bot-wide" i18n="@@OXTTokenomicsDescription">
-      During normal market operations on Orchid both users
-      and providers stake OXT. Staking locks up OXT on the network to incentivize good behavior and network growth over
-      the long term.
-    </p>
-    <div class="tokenomics__columns" i18n="@@OXTTokenomicsBody">
-      <div>
-        <h4 class="grey-heading small">User Deposits</h4>
-        <p>
-          To use the Orchid app, users will need to acquire OXT and move the funds they want to use for service into
-          Ethereum smart contracts using the Orchid account interface. The funds are split into two categories: a
-          membership deposit and a balance. The deposit is a small amount of OXT that protects against clients
-          misbehaving on the network. The majority of the funds go into the balance, which is the collateral that is
-          used to issue nanopayments. When a winning ticket is issued, OXT is transferred from the balance to the
-          provider.
-        </p>
-        <a class="oxt-special-link" href="https://blog.orchid.com/introducing-nanopayments/">
-          Read our blog about nanopayments here.
-        </a>
-
-        <img src="/assets/img/oxt/staking.svg" class="img-center small-margin-top" alt="" />
-      </div>
-      <div>
-        <h4 class="grey-heading small">Node Stake Deposits</h4>
-        <p>
-          Bandwidth providers on Orchid stake OXT currency in time-locked deposits to prove identity and receive traffic
-          in proportion to relative stake deposit size. The stake registry is the Ethereum smart contract that holds the
-          OXT. Users select Orchid server nodes with probability proportional to relative stake, thus nodes receive
-          traffic and payment flow from users proportional to the amount of digital currency staked on Orchid.
-        </p>
-
-        <p>
-          Providers can withdraw stake from the registry contract, but withdrawals are subject to an intentional delay
-          which currently defaults to three months. Users control this delay variable by ignoring nodes with delay
-          periods that are too short. This combination of linear stake weighted random selection and a withdrawal delay
-          provides stronger economic security by creating a high cost barrier for takeover attacks and additionally
-          helps align provider and user incentives.
-        </p>
-
-        <a class="oxt-special-link" href="https://blog.orchid.com/orchids-network-random-selection-stake-weighting/">
-          Read more about provider staking here.
-        </a>
-      </div>
+    <br />
+    <div i18n="@@OXTStakingBody">
+      <p>
+        Users need an Orchid account that holds funds to pay for VPN service. Orchid accounts can use OXT on Ethereum, or be homed on other EVM-compatible chains. The Orchid nanopayment system is chain-agnostic. While providers can receive payments from multiple blockchains, staking is always and only done with OXT on Ethereum.
+      </p>
+      <p>
+        <a href="/how-it-works">Read more about provider staking here.</a>
+      </p>
     </div>
   </section>
 </div>
@@ -314,20 +157,23 @@
     <h2 class="color-primary center-text gap-bot-thin" i18n="@@OXTAuditsHeadline">OXT Audits</h2>
     <div class="oxt-audits__columns center-text">
       <div i18n="@@OXTAudits__Consensys">
-        <img src="/assets/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
+        <img width="160" height="138" src="/assets/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
         <h4>Consensys Diligence</h4>
-        <a class="oxt-special-link" href="https://diligence.consensys.net/audits/2020/01/orchid-multisend/">
+        <a class="oxt-special-link" href="https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/">
           Read the full public ConsenSys Diligence Audit here.
         </a>
       </div>
       <div i18n="@@OXTAudits__Certora">
-        <img class="certora-logo" src="/assets/img/oxt/CertoraLogo@3x.png" alt="Certora" />
+        <img width="160" height="131" class="certora-logo" src="/assets/img/oxt/CertoraLogo@3x.png" alt="Certora" />
         <h4>Certora</h4>
         <a class="oxt-special-link" href="/assets/img/oxt/certora.pdf">
           Read the full public Certora Audit here.
         </a>
       </div>
     </div>
+    <br />
+    <br />
+    <p class="center-text">*Virtual Private Network (VPN) Market Report, <a href="https://www.gminsights.com/industry-analysis/virtual-private-network-vpn-market">Global Market Insights</a></p>
   </section>
 </div>
 

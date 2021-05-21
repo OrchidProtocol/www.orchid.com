@@ -12,6 +12,9 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  @include mobile {
+    padding-top: 1rem;
+  }
 
   h3 {
     padding: 3.5rem;
@@ -19,6 +22,7 @@
 
     @media (max-width: 800px) {
       padding: 2rem;
+      padding-bottom: 0;
     }
   }
 
@@ -195,8 +199,17 @@
   width: calc(100% - 4rem);
   margin: auto;
 
+  & > p {
+    text-align: left;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+  }
+
   &>a {
-    &>img {
+    img {
       margin-right: 0.5em;
     }
 
@@ -222,8 +235,8 @@
     position: absolute;
     bottom: 50%;
     right: 50%;
-    margin-bottom: -13rem;
-    margin-right: 9rem;
+    margin-right: 17rem;
+    margin-bottom: -4rem;
   }
 }
 

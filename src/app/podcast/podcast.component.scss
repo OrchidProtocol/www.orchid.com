@@ -2,7 +2,6 @@
 $breakpoint: 1100px;
 $breakpoint2: 1450px;
 
-
 .cards-wrapper {
 	margin: 2rem 0;
 }
@@ -70,6 +69,54 @@ $breakpoint2: 1450px;
 
 	.card-footer {
 		margin-top: 1rem;
+
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+
+		.podcast-button {
+			background: black;
+			border: 2px solid #8c8c8c;
+			max-width: 5rem;
+			min-height: 1.5rem;
+			width: auto;
+			padding: 0.5rem 0.5rem;
+			border-radius: 0.5rem;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			margin: 0.5rem;
+			& > img {
+				width: 1.5rem;
+			}
+			text-decoration: none;
+
+			&[href=""] {
+				display: none !important;
+			}
+		}
+		.podcast-button__text {
+			text-align: left;
+			margin-left: 0.5rem;
+			line-height: 1.25;
+			font-size: 0.6rem;
+			font-weight: bold;
+			color: white;
+			display: none;
+		}
+	}
+
+	&.card--large {
+		@media (min-width: $breakpoint) {
+			.card-footer {
+				.podcast-button {
+					width: 100%;
+				}
+				.podcast-button__text {
+					display: block;
+				}
+			}
+		}
 	}
 }
 
@@ -100,7 +147,13 @@ $breakpoint2: 1450px;
 		width: auto;
 	}
 
-	& > img {
+	& > picture {
+		& > img {
+			width: 100%;
+			height: auto;
+			box-shadow: 0px 4px 10px rgba(#000, 0.3);
+			border-radius: 100%;
+		}
 		width: 90%;
 		margin: auto auto 1rem;
 		max-width: 288px;
@@ -113,7 +166,6 @@ $breakpoint2: 1450px;
 		}
 
 		border-radius: 100%;
-		box-shadow: 0px 4px 10px rgba(#000, 0.3);
 	}
 
 	& > div {
