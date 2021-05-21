@@ -1,6 +1,8 @@
 import { Routes } from "@angular/router";
 
 import { AboutCompanyComponent } from "./about-company/about-company.component";
+import { AmbassadorComponent } from './ambassador/ambassador.component';
+import { AmbassadorFormComponent } from './ambassador-form/ambassador-form.component';
 import { AboutNetworkComponent } from "./about-network/about-network.component";
 import { HowItWorksComponent } from "./how-it-works/how-it-works.component";
 import { EventsComponent } from "./events/events.component";
@@ -95,6 +97,10 @@ export const routes: Routes = [
 			{ path: "vision.html", redirectTo: "vision" },
 			{ path: "about-us", component: AboutCompanyComponent },
 			{ path: "about-us.html", redirectTo: "about-us" },
+			{ path: "ambassador", component: AmbassadorComponent },
+			{ path: "ambassador.html", redirectTo: "ambassador" },
+			{ path: "ambassador-signup", component: AmbassadorFormComponent },
+			{ path: "ambassador-signup.html", redirectTo: "ambassador-signup" },
 			{ path: "faq", component: FaqComponent },
 			{ path: "faq.html", redirectTo: "faq" },
 			{ path: "contact", component: ContactComponent },

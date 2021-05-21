@@ -1,0 +1,100 @@
+<div class="splash-circuit">
+    <div class="splash-circuit-image section-med"></div>
+    <div class="splash-circuit-grid section-med">
+        <div class="splash-circuit-grid-item hpad-thin">
+            <h1 i18n="@@ContactHero__Title">
+                Orchid<br/> Ambassador
+                <br/> Program
+            </h1>
+
+            <div class="splash-circuit-grid-text" i18n="@@ContactHero__Description">
+                <p>
+                    An Orchid Ambassador is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Ambassadors run meetups, manage and grow online communities, and facilitate discussions about
+                    Internet censorship, decentralizing technologies, and other important topics.
+                    <br>
+                    <br>
+                    <a href="/ambassador">
+                        Learn More
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="splash-circuit-grid-item">
+            <img alt="" class="splash-circuit-feature" src="/assets/img/ambassador/bunny-mega.png">
+        </div>
+    </div>
+</div>
+
+<div class="background-white">
+    <div class="section-med vpad-wide contact-section" [class.js]="this.js">
+
+        <div class="contact-sidebar">
+            <div class="contact-page-card">
+                <span class="contact-page-card-header color-gray" i18n="@@ContactSidebar__Title">Contact Info</span>
+                <div class="contact-page-card-seperator"></div>
+                <ul class="contact-page-card-list">
+                    <li>
+                        <a class="phantom-a" href="mailto:contact@orchid.com" i18n-href="@@ContactSidebar__EmailLink">
+                            <img alt="Email" src="/assets/img/contact/icon-email.svg" width="20" height="20">
+                            <span i18n="@@ContactSidebar__Email">contact@orchid.com</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="phantom-a" href="https://twitter.com/OrchidProtocol" i18n-href="@@ContactSidebar__TwitterLink">
+                            <img alt="Twitter" src="/assets/img/contact/icon-twitter.svg" width="20" height="20">
+                            <span i18n="@@ContactSidebar__Twitter">@OrchidProtocol</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="phantom-a" href="https://www.t.me/OrchidOfficial" i18n-href="@@ContactSidebar__TelegramLink">
+                            <img alt="Telegram" src="/assets/img/contact/icon-telegram.svg" width="20" height="20">
+                            <span i18n="@@ContactSidebar__Telegram">@OrchidOfficial</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="phantom-a" href="https://www.facebook.com/OrchidProtocol" i18n-href="@@ContactSidebar__FacebookLink">
+                            <img alt="Facebook" src="/assets/img/contact/icon-facebook.svg" width="20" height="20">
+                            <span i18n="@@ContactSidebar__Facebook">OrchidProtocol</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <form class="contact-form-container" [class.js]="this.js" [class.contact-form-disabled]="this.form_disabled">
+            <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_name">
+                <input [attr.disabled]="form_disabled ? '' : null" type="text" [(ngModel)]="name" (ngModelChange)="validateName()" name="name" placeholder="Your Name" i18n-placeholder="@@ContactForm__NamePlaceholder" [class.invalid]="this.invalid_name" required>
+            </div>
+
+            <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_email">
+                <input [attr.disabled]="form_disabled ? '' : null" type="email" [(ngModel)]="email" (ngModelChange)="validateEmail()" name="email" placeholder="Your Email" i18n-placeholder="@@ContactForm__EmailPlaceholder" [class.invalid]="this.invalid_email" required>
+            </div>
+
+            <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_subject">
+                <input [attr.disabled]="form_disabled ? '' : null" type="text" [(ngModel)]="subject" (ngModelChange)="validateSubject()" name="subject" placeholder="Subject" i18n-placeholder="@@ContactForm__SubjectPlaceholder" [class.invalid]="this.invalid_subject" required>
+            </div>
+
+            <div class="contact-form-input-wrapper" [class.invalid]="this.invalid_message">
+                <textarea [attr.disabled]="form_disabled ? '' : null" [(ngModel)]="message" (ngModelChange)="validateMessage()" name="message" placeholder="Enter your message..." i18n-placeholder="@@ContactForm__MessagePlaceholder" [class.invalid]="this.invalid_message"
+                    required></textarea>
+            </div>
+
+            <div class="contact-form-error contact-form-message" [class.active]="this.error">
+                {{errorMessage}}
+            </div>
+            <div class="contact-form-error contact-form-message" [class.active]="this.error_RequiredFields" i18n="@@ContactForm__RequiredFields">
+                Required fields are missing
+            </div>
+            <div class="contact-form-error contact-form-message" [class.active]="this.error_UnknownError" i18n="@@ContactForm__UnknownError">
+                There was an unknown error, your message may not have been sent
+            </div>
+            <div class="contact-form-success contact-form-message" [class.active]="this.success" i18n="@@ContactForm__Success">
+                Your message has been sent
+            </div>
+
+            <button (click)="onSubmit()" class="btn-primary" i18n="@@ContactForm__SubmitButton">Submit</button>
+            <button (click)="clear()" i18n="@@ContactForm__ClearButton">Clear</button>
+        </form>
+
+    </div>
+</div>
