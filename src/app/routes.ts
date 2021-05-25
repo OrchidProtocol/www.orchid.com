@@ -72,6 +72,7 @@ import { PodcastEp45Component } from './podcast-ep45/podcast.component';
 import { PodcastEp46Component } from './podcast-ep46/podcast.component';
 import { PodcastEp47Component } from './podcast-ep47/podcast.component';
 import { PodcastEp48Component } from './podcast-ep48/podcast.component';
+import { PodcastEp49Component } from './podcast-ep49/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -216,6 +217,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-47-kara-swisher", component: PodcastEp47Component },
 			{ path: "podcast/episode-48-avichal-garg.html", redirectTo: "podcast/episode-48-avichal-garg" },
 			{ path: "podcast/episode-48-avichal-garg", component: PodcastEp48Component },
+			{ path: "podcast/episode-49-dragana-kaurin.html", redirectTo: "podcast/episode-49-dragana-kaurin" },
+			{ path: "podcast/episode-49-dragana-kaurin", component: PodcastEp49Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
