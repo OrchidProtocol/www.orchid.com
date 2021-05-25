@@ -4476,6 +4476,308 @@
 					<context context-type="linenumber">423</context>
 				</context-group>
 			</trans-unit>
+			<trans-unit id="AmbassadorHeroTitle" datatype="html">
+				<source>
+					Orchid
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Ambassador
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Program
+				</source>
+				<target state="new">
+					Orchid
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Ambassador
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					Program
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">4</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorHeroParagraph" datatype="html">
+				<source>
+                An Orchid Ambassador is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Ambassadors run meetups, manage and grow online communities, and facilitate discussions about
+                Internet censorship, decentralizing technologies, and other important topics.
+            </source>
+				<target state="new">
+                An Orchid Ambassador is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Ambassadors run meetups, manage and grow online communities, and facilitate discussions about
+                Internet censorship, decentralizing technologies, and other important topics.
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">8</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorHeroSubtitle" datatype="html">
+				<source>
+                Ready to get involved?
+            </source>
+				<target state="new">
+                Ready to get involved?
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">12</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="ApplyHere" datatype="html">
+				<source>
+					Apply Here!
+				</source>
+				<target state="new">
+					Apply Here!
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">16</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBecomeEducator" datatype="html">
+				<source>
+            Become a privacy educator
+        </source>
+				<target state="new">
+            Become a privacy educator
+        </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">48</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBuildCommunity" datatype="html">
+				<source>
+                Build Community
+            </source>
+				<target state="new">
+                Build Community
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">55</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBuildCommunityDescription" datatype="html">
+				<source>
+                Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
+            </source>
+				<target state="new">
+                Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">58</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorHostMeetups" datatype="html">
+				<source>
+                Host Meetups
+            </source>
+				<target state="new">
+                Host Meetups
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">65</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorHostMeetupsDescription" datatype="html">
+				<source>
+                Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
+            </source>
+				<target state="new">
+                Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">68</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorEducateAndHelp" datatype="html">
+				<source>
+					Educate
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					&amp; Help
+				</source>
+				<target state="new">
+					Educate
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
+					&amp; Help
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">75</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorEducateAndHelpDescription" datatype="html">
+				<source>
+                Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom.
+            </source>
+				<target state="new">
+                Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom.
+            </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">78</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorWhoCanApply" datatype="html">
+				<source>
+        Who can apply?
+    </source>
+				<target state="new">
+        Who can apply?
+    </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">111</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorWhoCanApplyList" datatype="html">
+				<source>
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					People who believe in the importance of digital freedom and privacy.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Individuals who are prepared to start and grow a community and educate the members.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Self-starters who can work on their own, but also enjoy working with a team.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+				</source>
+				<target state="new">
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					People who believe in the importance of digital freedom and privacy.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Individuals who are prepared to start and grow a community and educate the members.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+					<x id="START_LIST_ITEM" ctype="x-li" equiv-text="&lt;li>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Self-starters who can work on their own, but also enjoy working with a team.
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">115</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBenefits" datatype="html">
+				<source>
+            Ambassador Benefits
+        </source>
+				<target state="new">
+            Ambassador Benefits
+        </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">137</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBenefitsGetConnected" datatype="html">
+				<source>
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Get connected
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="new">
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Get connected
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">142</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBenefitsEarnRewards" datatype="html">
+				<source>
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Earn rewards
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Earn OXT for referring Orchid to your community.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="new">
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Earn rewards
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Earn OXT for referring Orchid to your community.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">150</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorBenefitsHelpFriends" datatype="html">
+				<source>
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Help friends &amp; family
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Teach them how to protect themselves online with privacy tools like VPNs.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</source>
+				<target state="new">
+					<x id="TAG_IMG" ctype="image" equiv-text="&lt;img/>" />
+					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b>" />
+					Help friends &amp; family
+					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
+					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
+					Teach them how to protect themselves online with privacy tools like VPNs.
+					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
+				</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">158</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorApplyToday" datatype="html">
+				<source>
+            Apply today to become an Orchid Ambassador!
+        </source>
+				<target state="new">
+            Apply today to become an Orchid Ambassador!
+        </target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">176</context>
+				</context-group>
+			</trans-unit>
+			<trans-unit id="AmbassadorLetsGo" datatype="html">
+				<source>Let’s go!</source>
+				<target state="new">Let’s go!</target>
+				<context-group purpose="location">
+					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
+					<context context-type="linenumber">179</context>
+				</context-group>
+			</trans-unit>
 			<trans-unit id="JoinHero__Title" datatype="html">
 				<source>
 					Orchid Account Set-up
