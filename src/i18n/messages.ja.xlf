@@ -2398,7 +2398,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">10</context>
+					<context context-type="linenumber">9</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactOffice__Title" datatype="html">
@@ -2444,7 +2444,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">33</context>
+					<context context-type="linenumber">32</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__Email" datatype="html">
@@ -2462,7 +2462,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">39</context>
+					<context context-type="linenumber">38</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__EmailLink" datatype="html">
@@ -2480,7 +2480,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">37</context>
+					<context context-type="linenumber">36</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__Twitter" datatype="html">
@@ -2498,7 +2498,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">45</context>
+					<context context-type="linenumber">44</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__TwitterLink" datatype="html">
@@ -2516,7 +2516,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">43</context>
+					<context context-type="linenumber">42</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__Discord" datatype="html">
@@ -2550,7 +2550,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">51</context>
+					<context context-type="linenumber">50</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__TelegramLink" datatype="html">
@@ -2568,7 +2568,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">49</context>
+					<context context-type="linenumber">48</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__Facebook" datatype="html">
@@ -2586,7 +2586,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">57</context>
+					<context context-type="linenumber">56</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__FacebookLink" datatype="html">
@@ -2604,7 +2604,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">55</context>
+					<context context-type="linenumber">54</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__NamePlaceholder" datatype="html">
@@ -2622,7 +2622,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">66</context>
+					<context context-type="linenumber">65</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__EmailPlaceholder" datatype="html">
@@ -2640,7 +2640,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">70</context>
+					<context context-type="linenumber">69</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__SubjectPlaceholder" datatype="html">
@@ -2658,7 +2658,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">74</context>
+					<context context-type="linenumber">73</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__MessagePlaceholder" datatype="html">
@@ -2676,7 +2676,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">78</context>
+					<context context-type="linenumber">77</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__RequiredFields" datatype="html">
@@ -2694,7 +2694,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">85</context>
+					<context context-type="linenumber">84</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__UnknownError" datatype="html">
@@ -2712,7 +2712,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">88</context>
+					<context context-type="linenumber">87</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__Success" datatype="html">
@@ -2730,7 +2730,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">91</context>
+					<context context-type="linenumber">90</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__SubmitButton" datatype="html">
@@ -2748,7 +2748,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">95</context>
+					<context context-type="linenumber">94</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ContactForm__ClearButton" datatype="html">
@@ -2766,7 +2766,7 @@
 				</context-group>
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador-form/ambassador-form.component.html</context>
-					<context context-type="linenumber">96</context>
+					<context context-type="linenumber">95</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AboutCompanyHero__Title" datatype="html">
@@ -3588,9 +3588,9 @@
 				<source>
 					Orchid
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Ambassador
+					Privacy
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
-					Program
+					Guardians
 				</source>
 				<target state="new">
 					Orchid
@@ -3606,16 +3606,17 @@
 			</trans-unit>
 			<trans-unit id="AmbassadorHeroParagraph" datatype="html">
 				<source>
-                An Orchid Ambassador is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Ambassadors run meetups, manage and grow online communities, and facilitate discussions about
+                An Orchid Privacy Guardian is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Privacy Guardians run meetups, manage and grow online communities, and facilitate discussions about
                 Internet censorship, decentralizing technologies, and other important topics.
             </source>
 				<target state="new">
                 An Orchid Ambassador is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Ambassadors run meetups, manage and grow online communities, and facilitate discussions about
                 Internet censorship, decentralizing technologies, and other important topics.
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">8</context>
+					<context context-type="linenumber">7</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorHeroSubtitle" datatype="html">
@@ -3625,21 +3626,23 @@
 				<target state="new">
                 Ready to get involved?
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">12</context>
+					<context context-type="linenumber">11</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="ApplyHere" datatype="html">
 				<source>
-					Apply Here!
+					Apply Now!
 				</source>
 				<target state="new">
 					Apply Here!
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">16</context>
+					<context context-type="linenumber">15</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBecomeEducator" datatype="html">
@@ -3649,9 +3652,10 @@
 				<target state="new">
             Become a privacy educator
         </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">48</context>
+					<context context-type="linenumber">47</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBuildCommunity" datatype="html">
@@ -3661,9 +3665,10 @@
 				<target state="new">
                 Build Community
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">55</context>
+					<context context-type="linenumber">54</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBuildCommunityDescription" datatype="html">
@@ -3673,9 +3678,10 @@
 				<target state="new">
                 Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">58</context>
+					<context context-type="linenumber">57</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorHostMeetups" datatype="html">
@@ -3685,9 +3691,10 @@
 				<target state="new">
                 Host Meetups
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">65</context>
+					<context context-type="linenumber">64</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorHostMeetupsDescription" datatype="html">
@@ -3697,9 +3704,10 @@
 				<target state="new">
                 Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">68</context>
+					<context context-type="linenumber">67</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorEducateAndHelp" datatype="html">
@@ -3713,21 +3721,23 @@
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/>" />
 					&amp; Help
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">75</context>
+					<context context-type="linenumber">74</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorEducateAndHelpDescription" datatype="html">
 				<source>
-                Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom.
+                Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom. Share and amplify content coming from Orchid.
             </source>
 				<target state="new">
                 Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom.
             </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">78</context>
+					<context context-type="linenumber">77</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorWhoCanApply" datatype="html">
@@ -3737,9 +3747,10 @@
 				<target state="new">
         Who can apply?
     </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">111</context>
+					<context context-type="linenumber">110</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorWhoCanApplyList" datatype="html">
@@ -3777,21 +3788,23 @@
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 					<x id="CLOSE_LIST_ITEM" ctype="x-li" equiv-text="&lt;/li>" />
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">115</context>
+					<context context-type="linenumber">114</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBenefits" datatype="html">
 				<source>
-            Ambassador Benefits
+            Privacy Guardian Benefits
         </source>
 				<target state="new">
             Ambassador Benefits
         </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">137</context>
+					<context context-type="linenumber">136</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBenefitsGetConnected" datatype="html">
@@ -3813,9 +3826,10 @@
 					Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">142</context>
+					<context context-type="linenumber">141</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBenefitsEarnRewards" datatype="html">
@@ -3825,7 +3839,7 @@
 					Earn rewards
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b>" />
 					<x id="START_PARAGRAPH" ctype="x-p" equiv-text="&lt;p>" />
-					Earn OXT for referring Orchid to your community.
+					Earn rewards for participating and educating others.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</source>
 				<target state="new">
@@ -3837,9 +3851,10 @@
 					Earn OXT for referring Orchid to your community.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">150</context>
+					<context context-type="linenumber">149</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorBenefitsHelpFriends" datatype="html">
@@ -3861,29 +3876,32 @@
 					Teach them how to protect themselves online with privacy tools like VPNs.
 					<x id="CLOSE_PARAGRAPH" ctype="x-p" equiv-text="&lt;/p>" />
 				</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">158</context>
+					<context context-type="linenumber">157</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorApplyToday" datatype="html">
 				<source>
-            Apply today to become an Orchid Ambassador!
+            Apply today to become an Orchid Privacy Guardian!
         </source>
 				<target state="new">
             Apply today to become an Orchid Ambassador!
         </target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">176</context>
+					<context context-type="linenumber">175</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="AmbassadorLetsGo" datatype="html">
 				<source>Let’s go!</source>
 				<target state="new">Let’s go!</target>
+
 				<context-group purpose="location">
 					<context context-type="sourcefile">app/ambassador/ambassador.component.html</context>
-					<context context-type="linenumber">179</context>
+					<context context-type="linenumber">178</context>
 				</context-group>
 			</trans-unit>
 			<trans-unit id="JoinHero__Title" datatype="html">
