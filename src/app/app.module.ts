@@ -22,7 +22,6 @@ import { FaqComponent } from './faq/faq.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutCompanyComponent } from './about-company/about-company.component';
 import { AmbassadorComponent } from './ambassador/ambassador.component';
-import { AmbassadorFormComponent } from './ambassador-form/ambassador-form.component';
 import { JoinComponent } from './join/join.component';
 import { OxtComponent } from './oxt/oxt.component';
 import { PreferredProvidersComponent } from './preferredproviders/preferredproviders.component';
@@ -121,7 +120,6 @@ import { MetaService } from './MetaService';
     ContactComponent,
     AboutCompanyComponent,
     AmbassadorComponent,
-    AmbassadorFormComponent,
     JoinComponent,
     OxtComponent,
     PreferredProvidersComponent,
