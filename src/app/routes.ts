@@ -76,6 +76,7 @@ import { PodcastEp48Component } from './podcast-ep48/podcast.component';
 import { PodcastEp49Component } from './podcast-ep49/podcast.component';
 import { PodcastEp50Component } from './podcast-ep50/podcast.component';
 import { PodcastEp51Component } from './podcast-ep51/podcast.component';
+import { PodcastEp52Component } from './podcast-ep52/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -158,7 +159,7 @@ export const routes: Routes = [
 			{ path: "podcast/episode-15-val-mack.html", redirectTo: "podcast/episode-15-val-mack" },
 			{ path: "podcast/episode-16-jason-brett", component: PodcastEp16Component },
 			{ path: "podcast/episode-16-jason-brett.html", redirectTo: "podcast/episode-16-jason-brett" },
-			{ path: "podcast/episode-17-dawn-song.html",  redirectTo: "podcast/episode-17-dawn-song" },
+			{ path: "podcast/episode-17-dawn-song.html", redirectTo: "podcast/episode-17-dawn-song" },
 			{ path: "podcast/episode-17-dawn-song", component: PodcastEp17Component },
 			{ path: "podcast/episode-18-alex-gluchowski.html", redirectTo: "podcast/episode-18-alex-gluchowski" },
 			{ path: "podcast/episode-18-alex-gluchowski", component: PodcastEp18Component },
@@ -228,6 +229,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-50-rebecca-wexler", component: PodcastEp50Component },
 			{ path: "podcast/episode-51-greg-osuri.html", redirectTo: "podcast/episode-51-greg-osuri" },
 			{ path: "podcast/episode-51-greg-osuri", component: PodcastEp51Component },
+			{ path: "podcast/episode-52-gbenga-sesan.html", redirectTo: "podcast/episode-52-gbenga-sesan" },
+			{ path: "podcast/episode-52-gbenga-sesan", component: PodcastEp52Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
