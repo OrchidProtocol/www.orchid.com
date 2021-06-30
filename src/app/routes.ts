@@ -78,6 +78,7 @@ import { PodcastEp50Component } from './podcast-ep50/podcast.component';
 import { PodcastEp51Component } from './podcast-ep51/podcast.component';
 import { PodcastEp52Component } from './podcast-ep52/podcast.component';
 import { PodcastEp53Component } from './podcast-ep53/podcast.component';
+import { PodcastEp54Component } from './podcast-ep54/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -234,6 +235,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-52-gbenga-sesan", component: PodcastEp52Component },
 			{ path: "podcast/episode-53-jason-pielemeier.html", redirectTo: "podcast/episode-53-jason-pielemeier" },
 			{ path: "podcast/episode-53-jason-pielemeier", component: PodcastEp53Component },
+			{ path: "podcast/episode-54-brittany-piovesan.html", redirectTo: "podcast/episode-54-brittany-piovesan" },
+			{ path: "podcast/episode-54-brittany-piovesan", component: PodcastEp54Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
