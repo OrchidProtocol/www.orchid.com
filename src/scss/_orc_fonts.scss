@@ -123,14 +123,3 @@
     src: local("Noto Sans Light"), url(/assets/fonts/NotoSans/NotoSans-ExtraLight.ttf) format("truetype");
     font-display: swap;
 }
-
-@font-face {
-    font-family: "Geometos Rounded";
-    src: url(/assets/fonts/GeometosRounded/Geometos_Rounded.eot) format("eot"),
-        url(/assets/fonts/GeometosRounded/Geometos_Rounded.woff) format("woff"),
-        url(/assets/fonts/GeometosRounded/Geometos_Rounded.ttf) format("truetype"),
-        url(/assets/fonts/GeometosRounded/Geometos_Rounded.svg#GeometosRounded) format("svg");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
