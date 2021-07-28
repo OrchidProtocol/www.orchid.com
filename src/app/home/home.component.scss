@@ -3,155 +3,76 @@
 @import "misc_config";
 @import "orc_config";
 
-$hero-bp-1: 1400px;
-$hero-bp-vert: 1150px;
-
-// HERO SECTION
-// It took a lot of magic numbers to make this work across all resolutions.
-// TODO: find a less fiddly way to manage the floating islands.
 .home-hero {
   position: relative;
-  background: $orc-beige-light;
-  height: 810px;
-  @media (max-width: $hero-bp-vert) {
-    padding-top: 1rem;
+  padding: 2rem 0;
+  @media (min-width: 768px) {
+    padding: 5rem 0;
   }
-
-  @media (max-width: $hero-bp-1) {
-    height: 55vw;
-  }
-
-  @media (min-width: $hero-bp-vert) {
-    padding-top: 2rem;
-  }
-}
-
-.home-hero__headline {
-  max-width: 400px;
-
-  @media (max-width: 1150px) {
-    max-width: none;
-  }
-
-  h1 {
-    @media (min-width: $hero-bp-1) {
-      font-size: 103px;
-
-      .small {
-        font-size: 81px;
-      }
-    }
-
-    @media (min-width: $hero-bp-vert) {
-      font-size: 85px;
-
-      .small {
-        font-size: 68px;
-      }
-    }
-  }
-}
-
-.home-hero__bg {
-  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat right 1rem; // for Edge
-  background: url("/assets/img/index/orchid-main-combined-minus-3.svg") no-repeat calc(100% + 27px) 1rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  max-width: 72rem;
-  height: calc(100% + 30px);
-  margin: 0 auto;
-
-  & > img {
-    display: none;
-  }
-
-  @media (max-width: $hero-bp-1) {
-    background-size: 66%;
-    background-position: right center;
-  }
-}
-
-.home-hero__speech-bubble {
-  position: absolute;
-  left: 80%;
-  top: 28%;
-  z-index: 10;
-  background: #5f45ba;
-  padding: 1em;
-  border-radius: 1em;
-  color: white;
-  display: inline-block;
-
-  &:after {
-    content: " ";
-    background-image: url("/assets/img/index/bubble-trail.svg");
-    background-position: top left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    width: 8em;
-    height: 8em;
-    top: 100%;
-    left: -2em;
-  }
-
-  @media (min-width: $hero-bp-1) {
-    left: 81.5%;
-    top: 31%;
-
-    &:after {
-      left: -4em;
-    }
-  }
-
-  @media (max-width: $hero-bp-vert) {
-    display: none;
-  }
-}
-
-.home-hero__okex-mobile-link {
-  margin: 1em 0;
-  display: inline-block;
-
-  @media (min-width: $hero-bp-vert) {
-    display: none;
-  }
-}
-
-:host-context(.locale-en-US) .home-hero__speech-bubble,
-:host-context(.locale-en-US) .home-hero__okex-mobile-link {
-  display: none;
+  display: flex;
+  justify-content: center;
 }
 
 .home-hero__content {
-  box-sizing: border-box;
-  width: 642px;
-
-  @media (min-width: 1401px) {
-    padding-top: 3.5rem;
+  text-align: center;
+  max-width: 40rem;
+  font-size: 1.5rem;
+  & > p {
+    font-family: $orc-tf-primary;
+  }
+  img {
+    max-width: 90%;
+    width: auto;
+  }
+  font-weight: 200;
+  @media (min-width: 60rem) {
+    margin-right: 20rem;
   }
 }
 
-.home-hero__form {
-  margin-top: 43px; //68px;
-
-  max-width: 328px;
-
-  @media (max-width: $hero-bp-vert) {
-    max-width: 270px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  @media (max-width: $hero-bp-1) {
-    max-width: 296px;
-    margin-top: 6vw;
-    transform: translateY(-2vw);
+.wavy-shared {
+  position: relative;
+  width: 100%;
+  display: block;
+  &::after {
+    content: "";
+    display: block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    height: 100vmin;
   }
 }
+.wavy-element-01 {
+  @extend .wavy-shared;
+  &::after {
+    background-image: url(/assets/img/index/wavy-lines-01.svg);
+    background-size: auto 100%;
+    background-position: top right;
+    left: 40%;
+    width: 60%;
+    height: 100vmin;
+  }
+}
+
+.marketplace__container, .features__container {
+  padding: 2rem;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+  max-width: 90%;
+  width: 40rem;
+  margin: auto;
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
 
 .instruction {
   margin-bottom: 1rem;
@@ -195,297 +116,6 @@ $hero-bp-vert: 1150px;
     & > img {
       display: inline;
     }
-  }
-}
-
-.home-hero__appstore-image {
-  max-width: 200px;
-  width: 100%;
-  height: auto;
-
-  @media (min-width: $hero-bp-vert) {
-    width: auto;
-    height: 43px;
-  }
-
-  @media (min-width: $hero-bp-1) {
-    width: auto;
-    height: 48px;
-  }
-}
-
-.home-hero__appstore-image-apple {
-  max-width: 180px;
-
-  @media (min-width: 500px) {
-    margin-left: 1rem;
-  }
-}
-
-@media (max-width: $hero-bp-vert) {
-  .home-hero {
-    height: unset;
-  }
-
-  .home-hero__bg {
-    background: transparent;
-    position: relative;
-    max-height: calc(50vh - 122px);
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-
-    & > img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
-  }
-
-  .home-hero__content {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-
-  .home-hero__form {
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.home-satellite-3 {
-  position: absolute;
-  transform: translate(-30px, 53px);
-}
-
-.home-satellite-3a {
-  position: absolute;
-  background: url("/assets/img/index/orchid-satellite-03-2.svg");
-  background-repeat: no-repeat;
-  background-position: calc(50% - 444px);
-  background-size: contain;
-  width: 100%;
-  height: 365px;
-  left: 0;
-  top: -212px;
-  z-index: 0;
-  pointer-events: none;
-
-  @media (max-width: $hero-bp-1) {
-    background-size: contain;
-    background-position: calc(50% - 33vw);
-    top: -209px;
-  }
-
-  @media (max-width: 1330px) {
-    background-size: 26vw;
-    top: -16vw;
-    background-position: calc(50% - 33vw);
-  }
-
-  @media (max-width: $hero-bp-vert) {
-    background-size: 35vw;
-    background-position: calc(50% - 42vw);
-    top: -23vw;
-  }
-
-  @media (max-width: 790px) {
-    background-size: 303px;
-    background-position: calc(50% - 307px);
-    top: -206px;
-  }
-
-  @media (max-width: 580px) {
-    display: none;
-    // position: relative;
-    // height: 322px;
-    // top: 0;
-    // background-position: center;
-  }
-}
-
-.home-satellite-4 {
-  position: absolute;
-  background: url(/assets/img/index/orchid-satellite-04-2.svg);
-  background-repeat: no-repeat;
-  background-position: 65vw top;
-  width: 100%;
-  height: 476px;
-  top: 155px;
-  right: 0;
-  z-index: 0;
-  pointer-events: none;
-
-  @media (max-width: 1550px) {
-    background-position: 69vw;
-  }
-
-  @media (max-width: 1194px) {
-    background-position: 71vw;
-  }
-
-  @media (max-width: 1092px) {
-    transform: scale(0.8);
-    transform-origin: right;
-    background-position: 68vw;
-  }
-
-  @media (max-width: 962px) {
-    transform: scale(0.6);
-    background-position: 52vw;
-    top: 133px;
-  }
-
-  @include mobile {
-    transform: scale(0.6);
-    background-position: 52vw;
-    top: 100px;
-  }
-
-  @media (max-width: 580px) {
-    display: none;
-    // position: relative;
-    // height: 322px;
-    // top: 0;
-    // background-position: center;
-  }
-}
-
-// TODO: use variables for font sizes
-.title {
-  font-size: 72px;
-
-  & > span {
-    display: block;
-  }
-
-  @include mobile {
-    font-size: 40px;
-  }
-
-  @media (max-width: 413px) {
-    font-size: 37px;
-  }
-
-  @media (max-width: 374px) {
-    font-size: 30px;
-  }
-}
-
-:host-context(.locale-ja),
-:host-context(.locale-ko),
-:host-context(.locale-zh) {
-  .title {
-    font-size: 65px;
-
-    @include mobile {
-      font-size: 30px;
-    }
-  }
-}
-
-:host-context(.locale-ru) {
-  .title {
-    font-size: 60px;
-
-    @include mobile {
-      font-size: 25px;
-    }
-  }
-}
-
-// TODO: use variables for font sizes
-.subtitle {
-  color: $orc-rock-gray;
-  margin: 0.5rem 0 1.5rem 0;
-  font-size: 36px;
-
-  & > span {
-    display: block;
-  }
-
-  @include mobile {
-    font-size: 30px;
-  }
-
-  @media (max-width: 374px) {
-    font-size: 27px;
-    margin-bottom: 0.5rem;
-  }
-}
-
-:host-context(.locale-ja) {
-  .subtitle {
-    font-size: 28px;
-  }
-}
-
-// VIDEO SECTION
-
-.video-wrapper {
-  position: relative;
-}
-
-// EVENTS SECTION
-
-#ev-header {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-#ev-h2 {
-  @include not-mobile {
-    padding-right: 2rem;
-  }
-}
-
-#ev-more {
-  font-weight: 700;
-}
-
-#ev-list {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  margin: 0 -1rem -1rem;
-}
-
-.ev-event {
-  // NB: that 60rem is kinda arbitrary
-  //     this value should be maintained to fit exactly three items horizontally
-  flex: 0 1 (60rem / 3);
-  margin: 1rem;
-}
-
-.ev-title {
-  margin: 0 0 0.2rem;
-  font-weight: 700;
-}
-
-.ev-body {
-  color: $orc-gray;
-  white-space: pre-line;
-}
-
-.bold-links a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.whitepaper-link {
-  cursor: pointer;
-  color: $orc-purple-hover;
-  font-weight: bold;
-
-  &:hover {
-    color: $orc-purple;
-  }
-
-  &:active {
-    color: $orc-purple-active;
   }
 }
 
@@ -828,106 +458,4 @@ ul.smaller .ft-text h3 {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-.priv8-wrapper {
-  position: relative;
-  background-color: #52319C;
-  padding: 0.5rem 0 1.5rem;
-  @include not-mobile {
-    padding: 2rem 0;
-  }
-  color: #FFFFFF;
-  & > a {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-  button {
-    background-color: white;
-    color: $orc-purple;
-    &:hover {
-      background-color: white;
-    }
-  }
-  @include not-mobile {
-    & > a {
-      display: none;
-    }
-  }
-  @include mobile {
-    button {
-      display: none;
-    }
-  }
-}
-.priv8-section {
-  text-align: center;
-}
-.priv8-logo {
-  width: 75%;
-  max-width: 350px;
-  margin: auto;
-  position: relative;
-  & > img {
-    width: 100%;
-  }
-  & > picture {
-    position: absolute;
-    top: 10%;
-    left: 32.5%;
-    width: 35%;
-    height: 100%;
-    & > img {
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-.priv8-light-text {
-  text-transform: uppercase;
-  font-weight: lighter;
-  letter-spacing: 3px;
-  margin-top: 0.25rem;
-  display: inline-block;
-}
-.priv8-orchid-logo {
-  display: block;
-  margin: auto;
-  width: 100%;
-  max-width: 140px;
-}
-.priv8-section {
-  h2, h3, p {
-    color: #FFFFFF;
-  }
-  h2 {
-    font-weight: 300;
-    font-size: 28px;
-    @include mobile {
-      font-size: 20px;
-    }
-    letter-spacing: 3px;
-    font-family: $orc-tf-secondary;
-    margin-bottom: 1rem;
-  }
-  h3 {
-    font-weight: 500;
-    font-size: 21px;
-    font-family: $orc-tf-secondary;
-    margin-bottom: 1rem;
-    @include mobile {
-      font-size: 18px;
-      margin-bottom: 0;
-    }
-  }
-  p {
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-  }
 }
