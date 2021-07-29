@@ -26,10 +26,20 @@
   }
   font-weight: 200;
   @media (min-width: 60rem) {
-    margin-right: 20rem;
+    margin-right: 5rem;
   }
 }
+.home-hero__picture {
+  width: 400px;
+  max-width: 100%;
+}
+.home-hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+$wavy-width: 40%;
 .wavy-shared {
   position: relative;
   width: 100%;
@@ -37,7 +47,7 @@
   &::after {
     content: "";
     display: block;
-    background-size: contain;
+    background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -45,23 +55,107 @@
     height: 100vmin;
   }
 }
+
+.decorative-island {
+  display: block;
+  margin: -2rem auto;
+  max-width: 90%;
+  width: 600px;
+  position: relative;
+  z-index: 3;
+}
+
+$wavy-bp: 80rem;
+$wavy-size: 50rem;
+$wavy-margin: 30rem;
+.wavy-right {
+  background-position: top left;
+  left: (100% - $wavy-width);
+  width: $wavy-width;
+
+  @media (min-width: $wavy-bp) {
+    left: 50%;
+    margin-left: $wavy-margin;
+    width: $wavy-size;
+    height: $wavy-size;
+    background-size: contain;
+  }
+}
+.wavy-left {
+  background-position: top right;
+  left: 0;
+  width: $wavy-width;
+
+  @media (min-width: $wavy-bp) {
+    left: unset;
+    right: 50%;
+    margin-right: $wavy-margin;
+    width: $wavy-size;
+    height: $wavy-size;
+    background-size: contain;
+  }
+}
 .wavy-element-01 {
   @extend .wavy-shared;
   &::after {
+    @extend .wavy-right;
     background-image: url(/assets/img/index/wavy-lines-01.svg);
-    background-size: auto 100%;
-    background-position: top right;
-    left: 40%;
-    width: 60%;
-    height: 100vmin;
+    @media (min-width: $wavy-bp) {
+      margin-left: 0;
+    }
+  }
+}
+.wavy-element-02 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-left;
+    background-image: url(/assets/img/index/wavy-lines-02.svg);
+  }
+}
+.wavy-element-03 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-right;
+    background-image: url(/assets/img/index/wavy-lines-03.svg);
+  }
+}
+.wavy-element-04 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-left;
+    background-image: url(/assets/img/index/wavy-lines-04.svg);
+  }
+}
+.wavy-element-05 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-right;
+    background-image: url(/assets/img/index/wavy-lines-05.svg);
+  }
+}
+.wavy-element-06 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-left;
+    background-image: url(/assets/img/index/wavy-lines-06.svg);
+  }
+}
+.wavy-element-07 {
+  @extend .wavy-shared;
+  &::after {
+    @extend .wavy-right;
+    background-image: url(/assets/img/index/wavy-lines-07.svg);
   }
 }
 
-.marketplace__container, .features__container {
+.marketplace__container,
+.features__container {
+  position: relative;
+  z-index: 1;
   padding: 2rem;
   border-radius: 1rem;
   background: white;
-  box-shadow: 0px 0px 1rem rgba(0,0,0,0.1);
+  box-shadow: 0px 0px 1rem rgba(0, 0, 0, 0.1);
   max-width: 90%;
   width: 40rem;
   margin: auto;
@@ -72,7 +166,6 @@
     height: auto;
   }
 }
-
 
 .instruction {
   margin-bottom: 1rem;
@@ -251,21 +344,6 @@ ul.smaller .ft-text h3 {
 
 .as-seen-in > section {
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    background: url("/assets/img/index/as-seen-4-circles.svg") no-repeat center center;
-    width: 10px;
-    height: 126px;
-    bottom: 0;
-    right: 0;
-    transform: translateY(50%);
-
-    @media (max-width: 1300px) {
-      right: 1rem;
-    }
-  }
 }
 
 .as-seen-bg-1 {
@@ -328,6 +406,7 @@ ul.smaller .ft-text h3 {
     position: absolute;
     z-index: 0;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.1);
+    background: #fff;
   }
 
   & > .wrapper {
