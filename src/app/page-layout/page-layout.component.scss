@@ -189,6 +189,9 @@ $flyout-gap: ($flyout-spacing / 2);
 .nav-menu {
   @include not-mobile {
     flex: 0 0 auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
     //margin: -1rem 0 1rem;
   }
 
@@ -541,6 +544,13 @@ $flyout-gap: ($flyout-spacing / 2);
 .navbar-language-selector {
   cursor: pointer;
   position: relative;
+
+  svg {
+    width: 0.75em;
+    padding: 0.125em;
+    margin-left: 0.25em;
+    height: auto;
+  }
 
   @include not-mobile {
     padding-left: 1rem;
