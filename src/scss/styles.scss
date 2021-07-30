@@ -418,8 +418,8 @@ $form-border-w: 3px;
 $form-pad-v: 0.35em;
 
 button:not(.phantom-btn) {
-  $pad-h: 1em;
-  $pad-v: $form-pad-v;
+  $pad-h: 3em;
+  $pad-v: 0.5em;
 
   transition-property: background, color, border, box-shadow;
   transition-duration: 0.2s;
