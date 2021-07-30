@@ -42,7 +42,6 @@ body {
   line-height: 1.75;
 
   @include mobile {
-    font-size: $size-body-mobile;
     &.navigation-open {
       overflow: hidden;
     }

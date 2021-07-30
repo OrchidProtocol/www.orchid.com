@@ -147,7 +147,7 @@ $mobile-nav-height: 64px;
     display: block;
 
     & > button {
-      font-size: 14px;
+      font-size: $size-body-sm;
       padding-left: 1rem;
       padding-right: 1rem;
     }
@@ -671,7 +671,7 @@ $flyout-gap: ($flyout-spacing / 2);
   color: #e8ddfd;
   text-align: center;
   padding: 10px 4px;
-  font-size: 14px;
+  font-size: $size-body-sm;
   box-sizing: border-box;
 
   @media (max-width: 1150px) {
