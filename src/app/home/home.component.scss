@@ -3,6 +3,9 @@
 @import "misc_config";
 @import "orc_config";
 
+.common-shadow-flat {
+  box-shadow: 0px 2px 10px 0px $orc-beige;
+}
 .common-shadow {
   box-shadow: 0px 4px 20px 0px $orc-beige;
   @include mobile {
@@ -215,26 +218,32 @@ $wavy-margin: 25rem;
   }
 }
 
-.marketplace__container,
-.features__container {
+.container-common {
   @extend .common-shadow;
-  text-align: center;
   position: relative;
   z-index: 1;
   padding: 1rem;
   border-radius: 1rem;
+  margin: 2rem auto;
   @include not-mobile {
     border-radius: 2rem;
     padding: 4rem 2rem;
+    margin: 3rem auto;
   }
   background: white;
   max-width: 90%;
   width: 60rem;
   box-sizing: border-box;
-  margin: auto;
+}
 
+.marketplace__container,
+.features__container {
+  & > p,
+  & > h3 {
+    text-align: center;
+  }
   & > p {
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 1rem auto;
   }
 
@@ -249,6 +258,15 @@ $wavy-margin: 25rem;
       max-width: unset;
     }
   }
+}
+
+.marketplace__container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features__container {
+  margin-top: 0;
 }
 
 .marketplace-steps,
@@ -267,6 +285,9 @@ $wavy-margin: 25rem;
       border-radius: 100%;
       max-width: 100%;
       width: 4rem;
+      @include mobile {
+        width: 3rem;
+      }
       display: block;
       margin: 0 auto 1rem;
     }
@@ -284,13 +305,13 @@ $wavy-margin: 25rem;
   $icon-size: 2.5rem;
   & > div {
     position: relative;
-    padding-left: 3.75rem;
+    padding-left: 3.5rem;
     @include mobile {
       padding-left: 0;
       padding-top: 3.25rem;
     }
     &::before {
-      @extend .common-shadow;
+      @extend .common-shadow-flat;
       content: "0";
       display: block;
       text-align: center;
@@ -299,7 +320,7 @@ $wavy-margin: 25rem;
       left: 0;
       @include mobile {
         left: 50%;
-        margin-left: calc($icon-size * -1 / 2);
+        margin-left: calc(2.5rem * -1 / 2);
       }
       width: $icon-size;
       height: $icon-size;
@@ -324,6 +345,47 @@ $wavy-margin: 25rem;
       &::before {
         content: "3";
       }
+    }
+  }
+}
+
+.why-orchid__container {
+  .why-orchid__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 82rem) {
+      justify-content: center;
+    }
+    picture {
+      max-width: 80%;
+      width: 30rem;
+
+      margin-left: -6rem;
+      @media (max-width: 82rem) {
+        margin: auto;
+        width: 20rem;
+      }
+    }
+    img {
+      width: 100%;
+      margin: auto;
+    }
+  }
+  .why-orchid__text {
+    max-width: 30rem;
+    h2 {
+      margin-bottom: 1rem;
+      @include not-mobile {
+        margin-bottom: 2rem;
+      }
+    }
+    h4 {
+      font-weight: 600;
+      color: inherit;
+      font-size: 24px;
+      margin-top: 2rem;
     }
   }
 }
