@@ -736,6 +736,7 @@ ul.smaller .ft-text h3 {
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  justify-items: center;
 }
 
 .blog-post {
@@ -745,6 +746,9 @@ ul.smaller .ft-text h3 {
   padding-bottom: 2rem;
   max-width: 70vw;
   border-radius: 1rem;
+  @include not-mobile {
+    min-height: 14rem;
+  }
 }
 
 .blog-post-info,
