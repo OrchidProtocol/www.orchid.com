@@ -246,23 +246,26 @@ $wavy-margin: 25rem;
     max-width: 40rem;
     margin: 1rem auto;
   }
-
-  & > img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 1rem 0 2rem;
-    @include mobile {
-      margin: 1rem -75%;
-      width: calc(250%);
-      max-width: unset;
-    }
-  }
 }
 
 .marketplace__container {
   margin-top: 0;
   margin-bottom: 0;
+
+  & > picture {
+    width: 100%;
+    & > img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0 2rem;
+      @include mobile {
+        margin: 1rem -75%;
+        width: calc(250%);
+        max-width: unset;
+      }
+    }
+  }
 }
 
 .features__container {
