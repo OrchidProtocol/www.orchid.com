@@ -713,7 +713,9 @@ ul.smaller .ft-text h3 {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 12px;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+    aspect-ratio: 1.9;
   }
 
   /*padding: 20% 50%;
@@ -721,15 +723,15 @@ ul.smaller .ft-text h3 {
   background-repeat: no-repeat;
   background-position: center;*/
 }
-.blog-wrapper {
+.blog-container {
   & > h3 {
     text-align: center;
     display: block;
     margin: 0 auto 3rem auto;
   }
 }
-.blog-container {
-  max-width: 1140px;
+
+.blog-grid {
   margin: auto;
   display: grid;
   grid-gap: 2rem;
@@ -738,22 +740,28 @@ ul.smaller .ft-text h3 {
 
 .blog-post {
   @extend .common-shadow;
-  padding: 0.5rem;
+  font-weight: 500;
+  padding: 0;
   padding-bottom: 2rem;
   max-width: 70vw;
+  border-radius: 1rem;
+}
+
+.blog-post-info,
+.blog-post-date {
+  padding: 0.5rem;
 }
 
 .blog-post-info {
-  padding: 0.5rem 0;
   font-family: $orc-tf-primary;
   line-height: 1.2;
 }
 
 .blog-post-date {
-  padding: 0.5rem;
   bottom: 0;
-  left: 0;
+  right: 0;
   position: absolute;
+  color: #a29ec0;
 }
 
 .blog-link {
