@@ -83,6 +83,7 @@ import { PodcastEp55Component } from './podcast-ep55/podcast.component';
 import { PodcastEp56Component } from './podcast-ep56/podcast.component';
 import { PodcastEp57Component } from './podcast-ep57/podcast.component';
 import { PodcastEp58Component } from './podcast-ep58/podcast.component';
+import { PodcastEp59Component } from './podcast-ep59/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -249,6 +250,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-57-kean-birch", component: PodcastEp57Component },
 			{ path: "podcast/episode-58-jim-harper.html", redirectTo: "podcast/episode-58-jim-harper" },
 			{ path: "podcast/episode-58-jim-harper", component: PodcastEp58Component },
+			{ path: "podcast/episode-59-raullen-chai.html", redirectTo: "podcast/episode-59-raullen-chai" },
+			{ path: "podcast/episode-59-raullen-chai", component: PodcastEp59Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
