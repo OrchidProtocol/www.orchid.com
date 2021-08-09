@@ -626,6 +626,11 @@ ul.smaller .ft-text h3 {
     box-sizing: border-box;
   }
 
+  & > .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .logo {
     border: 2px solid $orc-beige;
     border-radius: 100%;
@@ -636,10 +641,13 @@ ul.smaller .ft-text h3 {
     align-items: center;
 
     & > img {
+      width: 75%;
+      display: block;
+    }
+    &.offset > img {
       width: 100%;
       margin-right: -49%;
       margin-top: -10%;
-      display: block;
     }
   }
 }
