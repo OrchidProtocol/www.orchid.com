@@ -429,6 +429,11 @@ $flyout-gap: ($flyout-spacing / 2);
 #ft-nav-list,
 #ft-nav-2-list,
 #ft-nav-3-list {
+  b {
+    color: $orc-purple;
+  }
+  line-height: 1.45;
+  font-weight: 500;
   @include mobile {
     > li > a {
       display: block;
@@ -445,9 +450,14 @@ $flyout-gap: ($flyout-spacing / 2);
   $gap: 0.5rem;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin: ($gap / -2);
+
+  img {
+    width: 30px;
+    margin: 4px;
+  }
 
   > li {
     margin: ($gap / 2);
@@ -513,6 +523,9 @@ $flyout-gap: ($flyout-spacing / 2);
     top: 2rem;
     max-width: 4rem;
   }
+}
+.make-me-purple {
+  color: $orc-purple;
 }
 
 .nav-menu .nav-list {
@@ -696,7 +709,6 @@ $flyout-gap: ($flyout-spacing / 2);
   top: 0;
   left: 0;
   border-bottom-right-radius: 6px;
-  
 
   @media screen and (min-width: 1500px) {
     left: 50% !important;
