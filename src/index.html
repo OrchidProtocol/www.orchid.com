@@ -26,6 +26,14 @@
   <link rel="preload" href="/assets/fonts/NotoSans/NotoSans-ExtraLight.ttf" as="font">
   <link rel="preload" href="/assets/fonts/NotoSans/NotoSans-BoldItalic.ttf" as="font">
   <link rel="preload" href="/assets/fonts/Baloo/Baloo-Regular.ttf" as="font">
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const elements = document.getElementsByClassName("wants-js-class");
+      for (let index = 0; index < elements.length; index++) {
+        elements[index].classList.add("js");
+      }
+    })
+  </script>
 </head>
 <body>
   <app-root></app-root>
