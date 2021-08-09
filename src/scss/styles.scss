@@ -18,7 +18,7 @@ $pad-xs-mobile: 1rem;
 :root {
   /* NB: this controls the background color in the elastic scroll margins on iOS
      (and probably other platforms, but I haven't tested for that) */
-  background: $orc-beige-light;
+  background: #FFFFFF;
   font-size: 20px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
