@@ -83,7 +83,7 @@ a {
 
   @include not-mobile {
     position: relative;
-    $top: 43%;
+    $top: 40%;
     &::before {
       content: " ";
       display: block;
