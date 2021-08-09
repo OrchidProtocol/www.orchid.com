@@ -626,35 +626,20 @@ ul.smaller .ft-text h3 {
     box-sizing: border-box;
   }
 
-  & > .wrapper {
-    padding: 0 2rem 2rem;
-    position: relative;
+  .logo {
+    border: 2px solid $orc-beige;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-    background: #fff;
-  }
-}
+    justify-content: center;
+    align-items: center;
 
-.press-card__logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 90%;
-  height: 76px;
-  border: 1px solid $orc-beige;
-  border-radius: 3px;
-  padding: 0 1rem;
-  position: relative;
-  z-index: 1;
-  margin: 0 auto;
-
-  & > img {
-    max-width: 100%;
-    display: block;
-    height: auto;
-    &[alt="CNET"] {
-      max-width: 50%;
+    & > img {
+      width: 100%;
+      margin-right: -49%;
+      margin-top: -10%;
+      display: block;
     }
   }
 }
