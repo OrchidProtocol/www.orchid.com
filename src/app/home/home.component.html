@@ -62,38 +62,32 @@
 			<div>
 				<img src="/assets/img/index/icons/crypto.svg" alt="" width="100" height="100" />
 				<h3>Crypto-powered</h3>
-				<p>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a
-					pre-loaded account right in the app.</p>
+				<p>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.</p>
 			</div>
 			<div>
 				<img src="/assets/img/index/icons/nano.svg" alt="" width="100" height="100" />
 				<h3>Nanopayment Ecosystem</h3>
-				<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput via
-					cryptocurrency-backed “tickets”.</p>
+				<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.</p>
 			</div>
 			<div>
 				<img src="/assets/img/index/icons/traffic.svg" alt="" width="100" height="100" />
 				<h3>Traffic Analysis</h3>
-				<p>Peer into the details of your device’s connections by utilizing the built-in network protocol
-					analyzer powered by Wireshark.</p>
+				<p>Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.</p>
 			</div>
 			<div>
 				<img src="/assets/img/index/icons/multi-hop.svg" alt="" width="100" height="100" />
 				<h3>Multi-hop</h3>
-				<p>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased
-					privacy.</p>
+				<p>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.</p>
 			</div>
 			<div>
 				<img src="/assets/img/index/icons/servers.svg" alt="" width="100" height="100" />
 				<h3>Randomized Servers</h3>
-				<p>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the
-					VPN off and back on.</p>
+				<p>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.</p>
 			</div>
 			<div>
 				<img src="/assets/img/index/icons/sharing.svg" alt="" width="100" height="100" />
 				<h3>Unlimited Sharing</h3>
-				<p>Share a single account across multiple devices and/or users to help out friends and family, or
-					protect your online activity across all of your devices.</p>
+				<p>Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.</p>
 			</div>
 		</div>
 		<a href="/download/" class="section-button">
@@ -201,11 +195,11 @@
 </section>
 
 <div class="wavy-element-06"></div>
-<!--<div class="wavy-element-07"></div>-->
+<div class="wavy-element-07"></div>
 
 <section class="blog-wrapper">
 	<div class="blog-container container-common">
-		<h3><a href="{{blogLink}}">From the Orchid Blog</a></h3>
+		<h2><a href="{{blogLink}}">From the Orchid Blog</a></h2>
 		<div class="blog-grid">
 			<div class="blog-post" *ngFor="let blog of blogPosts">
 				<div class="blog-post-image">
@@ -220,7 +214,46 @@
 				<a href="{{ blog.url }}" class="blog-link"></a>
 			</div>
 		</div>
+		<div class="button-container">
+			<a href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
+				<button class="btn-primary">
+					Go to Blog
+				</button>
+			</a>
+		</div>
+
 	</div>
 </section>
 
-<app-newsletter-signup></app-newsletter-signup>
+<section class="newsletter-wrapper">
+	<div class="newsletter-container container-common">
+		<h2>Connect</h2>
+		<p>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</p>
+
+		<h3>Upcoming Events</h3>
+		<div class="events-row">
+			<div class="event">
+				<h3>ETHcc</h3>
+				<b>3-7 March | Paris, FR</b>
+				<p>Orchid is a proud sponsor of the Ethcc conference in Paris.</p>
+				<p class="right-text"><a href="#">Learn More ></a></p>
+			</div>
+			<div class="event">
+				<h3>Consensus</h3>
+				<b>3-7 March | Virtual</b>
+				<p>Orchid is a proud sponsor of the Ethcc conference in Paris.</p>
+				<p class="right-text"><a href="#">Learn More ></a></p>
+			</div>
+			<div class="event">
+				<h3>Blockchain Week</h3>
+				<b>3-7 March | Miami, FL</b>
+				<p>Orchid is a proud sponsor of the Ethcc conference in Paris.</p>
+				<p class="right-text"><a href="#">Learn More ></a></p>
+			</div>
+		</div>
+
+		<h3>Let’s stay connected</h3>
+		<p>Get the Orchid Onlooker newsletter for updates and privacy news</p>
+		<app-newsletter-signup-core></app-newsletter-signup-core>
+	</div>
+</section>

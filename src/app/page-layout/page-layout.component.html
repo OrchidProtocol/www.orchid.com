@@ -3,8 +3,7 @@
     <span class="mobile">Register for Priv8, 3/23-25 with Ed Snowden</span>
     <span class="desktop">Register for Priv8, March 23-25 with Edward Snowden</span> &raquo;
   </a>-->
-  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow"
-       [class.purple]="this.purple">
+  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
@@ -20,19 +19,13 @@
         </button>
       </div>
       <ul *ngIf="!this.purple" class="nav-list phantom-list">
-        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/"
-             i18n="@@Navigation-Home">Home</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create
-            Account</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works"
-             i18n="@@Navigation-HowItWorks">How It Works</a></li>
+        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">Home</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create Account</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How It Works</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/oxt" i18n="@@Navigation-OXT">OXT</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us"
-             i18n="@@Navigation-About">About</a></li>
-        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"
-             i18n="@@Navigation-Blog">Blog</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact"
-             i18n="@@Navigation-Contact">Contact</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-About">About</a></li>
+        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
 
         <li routerLinkActive="active-link" class="navbar-language-selector">
           <input type="checkbox" id="navbar-language-selector-checkbox">
@@ -223,7 +216,6 @@
               <img src="/assets/img/shared/social-linkedin.svg" alt="LinkedIn" width="32" height="32">
             </a>
           </li>
-
         </ul>
       </section>
       <div id="ft-pad-c" class="no-mobile"></div>
