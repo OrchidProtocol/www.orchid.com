@@ -357,6 +357,10 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
+#ft-root {
+  justify-self: flex-end;
+  margin-top: auto;
+}
 #ft-layout {
   $gap: 2rem;
 
