@@ -89,6 +89,7 @@ import { PodcastEp56Component } from './podcast-ep56/podcast.component';
 import { PodcastEp57Component } from './podcast-ep57/podcast.component';
 import { PodcastEp58Component } from './podcast-ep58/podcast.component';
 import { PodcastEp59Component } from './podcast-ep59/podcast.component';
+import { PodcastEp60Component } from './podcast-ep60/podcast.component';
 
 import { WhereOXTComponent } from './where-oxt/where-oxt.component';
 import { WhereOXTExtendedComponent } from './where-oxt-extended/where-oxt.component';
@@ -194,6 +195,7 @@ import { MetaService } from './MetaService';
     PodcastEp57Component,
     PodcastEp58Component,
     PodcastEp59Component,
+    PodcastEp60Component,
     NewsletterSignupPage,
     WhereOXTComponent,
     WhereOXTExtendedComponent,
