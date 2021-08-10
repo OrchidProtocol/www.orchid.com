@@ -302,6 +302,11 @@ $wavy-margin: 25rem;
     margin: 1rem;
     width: 13rem;
     max-width: 100%;
+    @include mobile {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
   }
 }
 .marketplace-steps {
@@ -619,6 +624,12 @@ ul.smaller .ft-text h3 {
   @media (min-width: 1400px) {
     max-width: 20rem;
   }
+
+  @include mobile {
+    margin: 1rem -1.5rem;
+    width: calc(100% + 3rem);
+    max-width: unset;
+  }
   text-align: left;
 
   &,
@@ -661,12 +672,18 @@ ul.smaller .ft-text h3 {
   &::before {
     content: "";
     background: url("/assets/img/shared/quotes.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
     position: absolute;
     z-index: 1;
-    width: 35px;
-    height: 33px;
-    left: calc(-37px - 1rem);
-    top: -12px;
+    width: 2rem;
+    height: 2rem;
+    left: -2rem;
+    top: -2rem;
+    @include mobile {
+      left: -1.8rem;
+      top: -3.5rem;
+    }
   }
 }
 
@@ -736,7 +753,7 @@ ul.smaller .ft-text h3 {
   font-weight: 500;
   padding: 0;
   padding-bottom: 2rem;
-  max-width: 70vw;
+  max-width: 400px;
   border-radius: 1rem;
   @include not-mobile {
     min-height: 14rem;
