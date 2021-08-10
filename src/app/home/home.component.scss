@@ -685,6 +685,12 @@ ul.smaller .ft-text h3 {
       top: -3.5rem;
     }
   }
+  &::after {
+    content: '"';
+    display: inline;
+    color: $orc-purple;
+    font-weight: 800;
+  }
 }
 
 :host-context(.locale-ja) {
