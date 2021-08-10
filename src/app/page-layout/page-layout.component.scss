@@ -333,6 +333,9 @@ $flyout-gap: ($flyout-spacing / 2);
   height: $mobile-nav-height;
 }
 
+.footer-wrapper {
+  overflow: hidden;
+}
 #footer {
   position: relative;
   padding-top: 4rem;
@@ -472,6 +475,43 @@ $flyout-gap: ($flyout-spacing / 2);
         margin-right: 2rem;
       }
     }
+  }
+}
+
+$wavy-width: 40%;
+$wavy-bp: 80rem;
+$wavy-size: 50rem;
+$wavy-margin: 25rem;
+.wavy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  &::after {
+    content: "";
+    display: block;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top right;
+    left: 0;
+    width: $wavy-width;
+
+    @media (min-width: $wavy-bp) {
+      left: unset;
+      right: 50%;
+      margin-right: $wavy-margin;
+      width: $wavy-size;
+      height: $wavy-size;
+      background-size: contain;
+    }
+    position: absolute;
+    top: 0;
+    height: 100vmin;
+    background-image: url(/assets/img/index/wavy-lines-07.svg);
   }
 }
 

@@ -128,7 +128,8 @@
   <router-outlet></router-outlet>
 </main>
 
-<div *ngIf="!this.purple" id="ft-root" class="bk-white pos-relative">
+<div *ngIf="!this.purple" id="ft-root" class="bk-white pos-relative overflow-hidden">
+  <div class="wavy"></div>
   <footer id="footer" class="section-med hpad-wide">
     <div id="ft-layout">
       <section id="ft-logo">
@@ -221,10 +222,6 @@
       <div id="ft-pad-c" class="no-mobile"></div>
     </div>
   </footer>
-  <div id="ft-adorner">
-    <div id="ft-adorn-layout" class="section-med">
-    </div>
-  </div>
 </div>
 
 <div [class.visible]="this.badge" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
