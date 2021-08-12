@@ -39,7 +39,7 @@ html {
 body {
   overflow-x: hidden;
   font-size: $size-body;
-  line-height: 1.75;
+  line-height: 1.5;
 
   @include mobile {
     &.navigation-open {
@@ -175,6 +175,10 @@ h3,
   @include mobile {
     font-size: $size-h2-mobile;
   }
+}
+
+h3, h4 {
+  margin-bottom: 0.5em;
 }
 
 h4,
@@ -434,7 +438,7 @@ button:not(.phantom-btn) {
   box-sizing: border-box;
   border-radius: 100vmax;
   font-size: $size-btn;
-  box-shadow: mat-shadow(6px, $alpha: 0.2);
+  //box-shadow: mat-shadow(6px, $alpha: 0.2);
 
   &.btn-fixed {
     width: 100%;
@@ -442,17 +446,6 @@ button:not(.phantom-btn) {
 
     @include mobile {
       max-width: 10rem;
-    }
-  }
-
-  &:not(:disabled) {
-    &:hover {
-      box-shadow: mat-shadow(8px);
-    }
-
-    &:active {
-      transition-duration: 0s;
-      box-shadow: mat-shadow(2px);
     }
   }
 
