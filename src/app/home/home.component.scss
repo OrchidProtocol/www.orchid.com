@@ -411,15 +411,20 @@ $wavy-margin: 25rem;
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 200px;
+    width: 150px;
     max-width: 10vw;
-    background: red;
+    background-image: url(/assets/img/index/bird.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    pointer-events: none;
   }
   &::before {
     right: 100%;
   }
   &::after {
     left: 100%;
+    transform: scaleX(-100%);
   }
 }
 
