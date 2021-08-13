@@ -879,11 +879,6 @@ ul.smaller .ft-text h3 {
 
 .newsletter-container {
   text-align: center;
-  h2 {
-    @include not-mobile {
-      margin-bottom: 1rem;
-    }
-  }
   & > p {
     display: block;
     margin: auto;
