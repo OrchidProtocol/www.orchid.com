@@ -160,38 +160,41 @@
 					In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
 					when it comes to data abuse, it’s easy to see the project’s appeal.
 				</p>
-				<div class="footer">
+				<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" class="footer">
 					<div class="logo">
 						<img width="360" height="51" src="/assets/img/index/seen/techcrunch.png" alt="techcrunch" />
 					</div>
-					<a class="press-card__more uppercase" href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" i18n="@@ReadMore">Read More</a>
-				</div>
+					<div class="uppercase">TECHCRUNCH</div>
+					<img src="/assets/img/index/read-more-arrow.svg">
+				</a>
 			</div>
 			<div class="press-card">
 				<p class="press-card__quote" i18n="@@HomeAsSeenIn__CNET">
 					This is what the future of VPN tech looks like. And you gotta see it.
 				</p>
-				<div class="footer">
+				<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" class="footer">
 					<div class="logo">
 						<img width="180" height="132" src="/assets/img/index/seen/cnet.svg" alt="CNET" />
 					</div>
-					<a class="press-card__more uppercase" href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" i18n="@@ReadMore">Read More</a>
-				</div>
+					<div class="uppercase">CNET</div>
+					<img src="/assets/img/index/read-more-arrow.svg">
+				</a>
 			</div>
 			<div class="press-card">
 				<p class="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
 					Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
 					 a natural resource for everyone, everywhere.
 				</p>
-				<div class="footer">
+				<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" class="footer">
 					<div class="logo">
 						<img width="360" height="70" src="/assets/img/index/seen/coindesk.png" alt="coindesk" />
 					</div>
-					<a class="press-card__more uppercase" href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" i18n="@@ReadMore">Read More</a>
-				</div>
+					<div class="uppercase">COINDESK</div>
+					<img src="/assets/img/index/read-more-arrow.svg">
+				</a>
 			</div>
 		</div>
-		<h3 class="center-text vpad-thin">The Orchid community has a lot to say as well!</h3>
+		<h3 class="center-text vpad-thin color-gray">The Orchid community has a lot to say as well!</h3>
 		<div class="press-list">
 			<div class="press-card">
 				<p class="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
@@ -201,7 +204,7 @@
 					<div class="logo offset">
 						<img src="/assets/img/index/TweetBunny.png" />
 					</div>
-					<a class="press-card__more uppercase" href="#">@TwitterHandle</a>
+					<a class="press-card__more uppercase color-gray" href="#">@TwitterHandle</a>
 				</div>
 			</div>
 			<div class="press-card">
@@ -212,7 +215,7 @@
 					<div class="logo offset">
 						<img src="/assets/img/index/TweetBunny.png" />
 					</div>
-					<a class="press-card__more uppercase" href="#">@TwitterHandle</a>
+					<a class="press-card__more uppercase color-gray" href="#">@TwitterHandle</a>
 				</div>
 			</div>
 		</div>
@@ -224,8 +227,8 @@
 
 <section class="blog-wrapper">
 	<div class="blog-container container-common">
-		<h2><a href="{{blogLink}}">From the Orchid Blog</a></h2>
-		<div class="blog-grid">
+		<h2 class="section-heading">From the Orchid Blog</h2>
+		<div class="blog-grid vpad-thin">
 			<div class="blog-post" *ngFor="let blog of blogPosts">
 				<div class="blog-post-image">
 					<img width="1200" height="720" src="{{ blog.featuredimage }}" alt="" loading="lazy">
@@ -239,14 +242,11 @@
 				<a href="{{ blog.url }}" class="blog-link"></a>
 			</div>
 		</div>
-		<div class="button-container">
-			<a href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
-				<button class="btn-primary">
-					Go to Blog
-				</button>
-			</a>
-		</div>
-
+		<a href="https://blog.orchid.com/" class="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
+			<button class="btn-primary">
+				Go to Blog
+			</button>
+		</a>
 	</div>
 </section>
 

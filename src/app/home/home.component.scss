@@ -406,8 +406,9 @@ $wavy-margin: 25rem;
   justify-content: center;
   align-items: center;
 
-  &::before, &::after {
-    content: '';
+  &::before,
+  &::after {
+    content: "";
     position: absolute;
     top: 0;
     bottom: 0;
@@ -711,13 +712,27 @@ ul.smaller .ft-text h3 {
   & > .footer {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
+    @include not-mobile {
+      margin: 0 0 -1rem -2rem;
+      width: calc(100% + 2rem);
+    }
+    text-decoration: none;
+    font-weight: 600;
+    color: inherit;
+    & > img {
+      max-width: 15vw;
+      max-height: 15vw;
+    }
   }
   .logo {
+    background: white;
     border: 2px solid $orc-beige;
     border-radius: 100%;
     width: 4rem;
     height: 4rem;
+    max-width: 15vw;
+    max-height: 15vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -800,21 +815,6 @@ ul.smaller .ft-text h3 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;*/
-}
-.blog-container {
-  & > h2 > a {
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    margin: 0 auto 3rem auto;
-  }
-  & > .button-container {
-    text-align: center;
-    margin-top: 1rem;
-    @include not-mobile {
-      margin-top: 2rem;
-    }
-  }
 }
 
 .blog-grid {
