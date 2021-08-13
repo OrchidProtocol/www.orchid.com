@@ -24,6 +24,16 @@ h3 {
   margin: 2rem auto;
   display: block;
   text-align: center;
+
+  @include not-mobile {
+    margin: 3.5rem auto;
+  }
+}
+.section-heading {
+  margin-top: 0;
+}
+.section-button {
+  margin-bottom: 0;
 }
 
 .home-hero {
@@ -244,8 +254,8 @@ $wavy-margin: 25rem;
   margin: 2rem auto;
   @include not-mobile {
     border-radius: 2rem;
-    padding: 4rem 2rem;
-    margin: 3rem auto;
+    padding: 3.5rem 2rem;
+    margin: 3.5rem auto;
   }
   background: white;
   max-width: 90%;
@@ -465,6 +475,8 @@ $wavy-margin: 25rem;
       font-weight: 600;
       color: inherit;
       font-size: 24px;
+    }
+    h4 + p {
       margin-top: 2rem;
     }
   }
