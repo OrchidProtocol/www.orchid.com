@@ -702,8 +702,8 @@ $wavy-margin: 25rem;
   width: 0;
   height: 0;
   color: #2b2b2b;
-  font-size: 16px;
-  font-family: helvetica;
+  font-size: 15px;
+  font-weight: 600;
   text-align: center;
   height: auto;
   position: absolute;
@@ -714,6 +714,7 @@ $wavy-margin: 25rem;
     right: 50%;
     margin-right: 34rem;
   }
+
 
   .maker-badge__btn {
     position: relative;
@@ -727,7 +728,7 @@ $wavy-margin: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     width: 5rem;
     height: 5rem;
     box-sizing: border-box;
