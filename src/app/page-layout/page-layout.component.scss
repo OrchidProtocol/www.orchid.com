@@ -367,11 +367,11 @@ $flyout-gap: ($flyout-spacing / 2);
   position: relative;
   /* boosts z-index, because CSS is horrible */
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 ($gap / -2);
   z-index: 2;
 
-  @include mobile {
+  @media (max-width: 1200px) {
     flex-flow: column-reverse nowrap;
   }
 
@@ -418,6 +418,7 @@ $flyout-gap: ($flyout-spacing / 2);
 
     > p {
       line-height: 1;
+      padding-left: 0.5rem;
     }
   }
 }
@@ -440,15 +441,12 @@ $flyout-gap: ($flyout-spacing / 2);
   }
   line-height: 1.45;
   font-weight: 500;
-  @include mobile {
+  @media (max-width: 1200px) {
     > li > a {
       display: block;
-      padding: 0.5rem 0;
-
-      &:hover {
-        color: $orc-purple;
-      }
+      padding: 0.25rem 0;
     }
+    margin-bottom: 1rem;
   }
 }
 
@@ -469,15 +467,9 @@ $flyout-gap: ($flyout-spacing / 2);
     margin: ($gap / 2);
   }
 
-  @include mobile {
+  @media (max-width: 1200px) {
     flex-flow: row wrap;
     justify-content: flex-start;
-
-    > li {
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
-    }
   }
 }
 
@@ -499,17 +491,18 @@ $wavy-margin: 25rem;
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-position: top right;
-    left: 0;
+    background-position: center left;
+    left: 60%;
     width: $wavy-width;
 
-    @media (min-width: $wavy-bp) {
+    @include not-mobile {
       left: unset;
       right: 50%;
-      margin-right: $wavy-margin;
+      margin-right: 26rem;
       width: $wavy-size;
       height: $wavy-size;
       background-size: contain;
+      background-position: top right;
     }
     position: absolute;
     top: 0;
