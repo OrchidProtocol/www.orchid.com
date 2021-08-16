@@ -890,6 +890,20 @@ ul.smaller .ft-text h3 {
     margin-bottom: 1rem;
   }
 
+  .social-icons {
+    margin-top: 1rem;
+    @include not-mobile {
+      margin-top: 2rem;
+    }
+    & > a {
+      margin: 0.5rem;
+      & > img {
+        width: 50px;
+        height: auto;
+      }
+    }
+  }
+
   .events-row {
     display: flex;
     flex-wrap: wrap;
