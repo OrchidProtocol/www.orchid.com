@@ -698,26 +698,21 @@ $wavy-margin: 25rem;
   &.visible {
     display: block;
   }
-  z-index: 99;
-  max-width: 250px;
+  z-index: 9999;
+  width: 0;
+  height: 0;
   color: #2b2b2b;
   font-size: 16px;
   font-family: helvetica;
-  text-align: right;
+  text-align: center;
   height: auto;
-  min-width: 160px;
   position: absolute;
   top: 0;
-  left: 0;
-  border-bottom-right-radius: 6px;
-
-  @media screen and (min-width: 1500px) {
-    left: 50% !important;
-    margin-left: -746px;
-    border-bottom-left-radius: 6px;
-    .maker-badge__btn {
-      border-bottom-left-radius: 6px;
-    }
+  left: 2.5rem;
+  @include not-mobile {
+    left: unset;
+    right: 50%;
+    margin-right: 34rem;
   }
 
   .maker-badge__btn {
@@ -730,37 +725,24 @@ $wavy-margin: 25rem;
       height: 100%;
     }
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 0.5rem;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
     cursor: pointer;
     border: 1px solid #cbd5e0;
     background: #fff;
-    border-bottom-right-radius: 6px;
+    border-radius: 100%;
+    box-shadow: 0px 4px 20px 0px $orc-beige;
     color: #2d3748;
-    & > img {
-      margin-right: 10px;
-    }
-    .desktop {
-      display: block;
-    }
-    .mobile {
-      display: none;
-    }
     @include mobile {
-      .desktop {
-        display: none;
-      }
-      .mobile {
-        display: block;
-      }
+      box-shadow: 0px 2px 10px 0px $orc-beige;
       font-size: 13px;
-      flex-direction: row-reverse;
-      & > img {
-        margin-right: 0;
-        margin-left: 10px;
-      }
+      width: 4rem;
+      height: 4rem;
     }
   }
 }

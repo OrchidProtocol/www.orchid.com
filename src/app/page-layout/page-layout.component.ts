@@ -99,11 +99,11 @@ export class PageLayoutComponent implements OnInit {
 
       const blmBadge = doc.getElementById('maker-badge') as HTMLElement;
       this.computeBadge = () => {
-        blmBadge.style.top = `${nav.offsetHeight + (banner ? banner.offsetHeight : 0)}px`;
+        blmBadge.style.marginTop = `${nav.offsetHeight + (banner ? banner.offsetHeight : 0)}px`;
         if (window.innerWidth <= 870) {
-          blmBadge.style.left = `-40px`;
+          blmBadge.style.marginLeft = `-40px`;
         } else {
-          blmBadge.style.left = `0px`;
+          blmBadge.style.marginLeft = `0px`;
         }
       }
 
