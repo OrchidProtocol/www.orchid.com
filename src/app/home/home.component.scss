@@ -928,4 +928,7 @@ ul.smaller .ft-text h3 {
       text-align: left;
     }
   }
+  .newsletter-signup__button {
+    @extend .section-button;
+  }
 }

@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from "@angular/core";
 
 export class NewsletterSignupCoreComponent implements OnInit {
   @Input() priv8: Boolean;
+  @Input() largePadding: Boolean;
 
   invalid: boolean = false;
   _email: string = "";

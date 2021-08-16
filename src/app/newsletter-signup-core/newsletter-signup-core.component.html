@@ -10,7 +10,7 @@
     </label>
   </div>
   <button (click)="submit()" class="btn-primary btn-fixed center-block newsletter-signup__button"
-    [class.loading]="this.in_progress" [class.btn-primary]="!this.priv8" [class.btn-secondary]="this.priv8"
+    [class.loading]="this.in_progress" [class.section-button]="this.largePadding" [class.btn-primary]="!this.priv8" [class.btn-secondary]="this.priv8"
     i18n="@@Newsletter__Subscribe">
     <span *ngIf="!this.priv8">Subscribe</span>
     <span *ngIf="this.priv8">Register</span>

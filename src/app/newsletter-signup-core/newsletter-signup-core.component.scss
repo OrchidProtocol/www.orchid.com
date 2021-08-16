@@ -61,3 +61,13 @@ label.gdpr-consent {
     box-shadow: 0px 0.25rem 0.5rem 0.1rem rgba(0, 0, 0, 0.1), inset 0px 0rem 0.1rem 0.25rem rgba(255, 0, 0, 0.2);
   }
 }
+
+.section-button {
+  margin-top: 2rem;
+  display: block;
+  text-align: center;
+
+  @include not-mobile {
+    margin-top: 3.5rem;
+  }
+}
