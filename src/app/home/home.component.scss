@@ -345,10 +345,11 @@ $wavy-margin: 25rem;
     display: flex;
     flex-direction: column;
     & > p {
-      flex-grow: 1;
+      margin-bottom: 0.1rem;
     }
     & > a {
-      justify-self: flex-end;
+      justify-self: flex-start;
+      text-decoration: none;
     }
   }
 }
