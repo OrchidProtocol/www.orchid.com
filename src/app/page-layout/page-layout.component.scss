@@ -718,7 +718,7 @@ $wavy-margin: 25rem;
   position: absolute;
   top: 0;
   left: 2.5rem;
-  @include not-mobile {
+  @media (min-width: 1440px) {
     left: unset;
     right: 50%;
     margin-right: 34rem;
