@@ -13,6 +13,7 @@ import { MobilePrivacyPolicyComponent } from './mobile-privacy-policy/mobile-pri
 import { ServiceTermsComponent } from './service-terms/service-terms.component';
 import { DownloadComponent } from './download/download.component';
 import { HomeComponent } from './home/home.component';
+import { GetStartedComponent } from './get-started/get-started.component';
 import { NewsletterSignupComponent } from './newsletter-signup/newsletter-signup.component';
 import { NewsletterSignupCoreComponent } from './newsletter-signup-core/newsletter-signup-core.component';
 import { NewsletterSignupHeroComponent } from './newsletter-signup-hero/newsletter-signup-hero.component';
@@ -118,6 +119,7 @@ import { MetaService } from './MetaService';
     MobilePrivacyPolicyComponent,
     ServiceTermsComponent,
     HomeComponent,
+    GetStartedComponent,
     NewsletterSignupComponent,
     NewsletterSignupCoreComponent,
     NewsletterSignupHeroComponent,

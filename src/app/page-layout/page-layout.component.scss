@@ -294,6 +294,15 @@ $flyout-gap: ($flyout-spacing / 2);
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  &.basic {
+    & > li {
+      display: none;
+      &.navbar-language-selector {
+        display: block;
+      }
+    }
+  }
 }
 
 #nav-toggle {

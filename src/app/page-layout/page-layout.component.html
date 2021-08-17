@@ -18,7 +18,7 @@
           <img width="22" height="24" alt="Close" src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul *ngIf="!this.purple" class="nav-list phantom-list">
+      <ul *ngIf="!this.purple" class="nav-list phantom-list" [class.basic]="this.basic">
         <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">Home</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create Account</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How It Works</a></li>

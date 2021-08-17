@@ -8,6 +8,7 @@ import { EventsComponent } from "./events/events.component";
 import { FaqComponent } from "./faq/faq.component";
 import { ContactComponent } from "./contact/contact.component";
 import { HomeComponent } from "./home/home.component";
+import { GetStartedComponent } from './get-started/get-started.component';
 import { DownloadComponent } from "./download/download.component";
 import { PageLayoutComponent } from "./page-layout/page-layout.component";
 import {
@@ -97,6 +98,8 @@ export const routes: Routes = [
 		component: PageLayoutComponent,
 		children: [
 			{ path: "", component: HomeComponent },
+			{ path: "get-started", component: GetStartedComponent, data: { basicLayout: true } },
+			{ path: "get-started.html", redirectTo: "get-started" },
 			{ path: "app", redirectTo: "download" },
 			{ path: "app.html", redirectTo: "download" },
 			{ path: "network", component: AboutNetworkComponent },
