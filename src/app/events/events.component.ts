@@ -17,7 +17,7 @@ export class EventsComponent implements OnInit {
 
   ngOnInit() {
     this.meta.setGlobalTitle('Blockchain Industry Events | Orchid');
-    this.meta.setGlobalDescription('Come and meet the Orchid team in real life by attending one of our blockchain and crypto industry events around the globe.');
+    this.meta.setGlobalDescription('Come and meet the Orchid community in real life by attending one of our blockchain and crypto industry events around the globe.');
 
     this.events$ = this.events.getEvents();
   }
