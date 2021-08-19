@@ -1,49 +1,44 @@
-<div id="nav-root" [class.bk-beige-light]="!this.purple" [class.purple]="this.purple" [class.orange]="true" [class.slim]="this.slim">
+<div id="nav-root" [class.bk-white]="!this.purple" [class.purple]="this.purple" [class.orange]="true" [class.slim]="this.slim">
   <!--<a [class.visible]="!this.purple" class="nav-infobar" id="nav-infobar" [class.js]="this.js" href="/priv8">
     <span class="mobile">Register for Priv8, 3/23-25 with Ed Snowden</span>
     <span class="desktop">Register for Priv8, March 23-25 with Edward Snowden</span> &raquo;
   </a>-->
-  <nav id="nav" class="section-wide hpad-thin" [class.js]="this.js" [class.no-shadow]="this.noShadow"
-    [class.purple]="this.purple">
+  <nav id="nav" class="section-wide hpad-thin wants-js-class" [class.js]="this.js" [class.no-shadow]="this.noShadow" [class.purple]="this.purple">
     <h1 id="nav-home">
       <a class="inline-block" routerLink="/" aria-label="Home" title="Home">
         <!--<img [src]="this.purple ? '/assets/img/shared/orchid-logo-white.svg' : '/assets/img/shared/orchid-logo.svg'"
           alt="Orchid logo" class="no-mobile">-->
-        <img width="93" height="24" src="/assets/img/shared/orchid-logo-text.svg" alt="Orchid logo" class="no-mobile">
+        <img width="93" height="24" src="/assets/img/shared/orchid-logo-text.svg?v=3" alt="Orchid logo" class="no-mobile">
         <img width="35" height="30" src="/assets/img/shared/orchid-logo-small.svg" alt="Orchid logo" class="mobile-only">
       </a>
     </h1>
-    <div class="nav-menu" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
+    <div class="nav-menu wants-js-class" [class.js]="this.js" [class.animate]="this.animateMenu" [class.open]="this.isOpen">
       <div id="nav-flyout-header" class="mobile-only">
         <button id="nav-flyout-close" class="phantom-btn">
           <img width="22" height="24" alt="Close" src="/assets/img/shared/close.svg">
         </button>
       </div>
-      <ul *ngIf="!this.purple" class="nav-list phantom-list">
-        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/"
-            i18n="@@Navigation-Home">Home</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create
-            Account</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works"
-            i18n="@@Navigation-HowItWorks">How It Works</a></li>
+      <ul *ngIf="!this.purple" class="nav-list phantom-list" [class.basic]="this.basic">
+        <li routerLinkActive="active-link" class="mobile-only"><a class="phantom-a" routerLink="/" i18n="@@Navigation-Home">Home</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/join" i18n="@@Navigation-Join">Create Account</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How It Works</a></li>
         <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/oxt" i18n="@@Navigation-OXT">OXT</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us"
-            i18n="@@Navigation-About">About</a></li>
-        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"
-            i18n="@@Navigation-Blog">Blog</a></li>
-        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact"
-            i18n="@@Navigation-Contact">Contact</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-About">About</a></li>
+        <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
+        <li routerLinkActive="active-link"><a class="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
 
         <li routerLinkActive="active-link" class="navbar-language-selector">
           <input type="checkbox" id="navbar-language-selector-checkbox">
           <label for="navbar-language-selector-checkbox" class="navbar-language-selector-checkbox-label"></label>
           <span class="phantom-a">
-            <img alt="" style="vertical-align: top;" width="20" height="20" src="/assets/img/shared/globe.svg">
-            <span i18n="@@NavigationCurrentLanguage">English</span>
+            <img alt="" style="vertical-align: middle; margin: 0 5px 3px 0;" width="20" height="20" src="/assets/img/shared/globe.svg">
+            <span i18n="@@NavigationCurrentLanguage">EN</span>
+            <svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0.657413 2.3158L3.67908 5.33747C4.13408 5.79247 4.86908 5.79247 5.32408 5.33747L8.34575 2.3158C9.08075 1.5808 8.55575 0.320801 7.51741 0.320801H1.47408C0.435747 0.320801 -0.0775865 1.5808 0.657413 2.3158Z" fill="#766D86" />
+            </svg>
           </span>
           <ul class="navbar-language-selector-list">
-            <li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" class="phantom-a"
-                href="//www.ko.orchid.com">한국어</a></li>
+            <li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" class="phantom-a" href="//www.ko.orchid.com">한국어</a></li>
             <li><a i18n="@@LanguageDropdown__En" class="phantom-a" href="//www.orchid.com">English</a></li>
             <li><a i18n="@@LanguageDropdown__Ru" class="phantom-a" href="//www.ru.orchid.com">русский</a></li>
             <li><a i18n="@@LanguageDropdown__Ja" class="phantom-a" href="//www.ja.orchid.com">日本</a></li>
@@ -103,20 +98,20 @@
         </li>
         <li>
           <a class="phantom-a nav-purple-icon" href="https://www.t.me/OrchidOfficial">
-            <img width="30" height="30" src="/assets/img/shared/social-telegram-white.svg"/>
+            <img width="30" height="30" src="/assets/img/shared/social-telegram-white.svg" />
           </a>
         </li>
         <li>
           <a class="phantom-a nav-purple-icon" href="https://www.facebook.com/OrchidProtocol">
-          <img width="30" height="30" src="/assets/img/shared/social-facebook-white.svg"/>
+            <img width="30" height="30" src="/assets/img/shared/social-facebook-white.svg" />
           </a>
         </li>
       </ul>
     </div>
 
-    <a *ngIf="!this.purple" class="nav-download" href="/download">
-      <button class="btn-primary" i18n="@@Navigation-Download">
-        Download
+    <a *ngIf="!this.purple" class="nav-download" routerLink="/get-orchid">
+      <button class="btn-secondary" i18n="@@Navigation-Download">
+        Get Orchid
       </button>
     </a>
 
@@ -132,118 +127,103 @@
   <router-outlet></router-outlet>
 </main>
 
-<div *ngIf="!this.purple" id="ft-root" class="bk-beige-light pos-relative">
+<div *ngIf="!this.purple" id="ft-root" class="bk-white pos-relative overflow-hidden">
+  <div class="wavy"></div>
   <footer id="footer" class="section-med hpad-wide">
     <div id="ft-layout">
       <section id="ft-logo">
-        <img width="149px" height="39px" alt="" src="/assets/img/shared/orchid-logo-word.svg">
+        <img width="149px" height="39px" alt="" src="/assets/img/shared/orchid-logo-text.svg?v=3">
         <p>&copy; {{year}} Orchid Labs Inc.</p>
         <p class="privacy-terms-links">
           <a class="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
           <a class="phantom-a" routerLink="/service-terms">Terms of Service</a>
         </p>
       </section>
-      <div id="ft-pad-a" class="no-mobile"></div>
       <nav id="ft-nav">
         <ul id="ft-nav-list" class="phantom-list">
-          <li><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowitWorks">How it Works</a></li>
-          <li><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
-          <li><a class="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+          <li><b i18n="@@Navigation-Title-Apps">Apps</b></li>
+          <li><a class="phantom-a" href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsitefooter" i18n="@@Navigation-Android">Android</a></li>
+          <li><a class="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-iOS">iOS</a></li>
+          <li><a class="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-macOS">macOS</a></li>
+          <li><a class="phantom-a" routerLink="/join" i18n="@@Navigation-OrchidAccount">Orchid Account</a></li>
+          <li><a class="phantom-a" routerLink="/download" i18n="@@Navigation-Download">Download</a></li>
         </ul>
       </nav>
       <nav id="ft-nav-2">
         <ul id="ft-nav-2-list" class="phantom-list">
-          <li><a class="phantom-a" routerLink="/download" i18n="@@Navigation-Download">Download</a></li>
-          <li><a class="phantom-a" routerLink="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
-          <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"
-              i18n="@@Navigation-Blog">Blog</a></li>
-        </ul>
-      </nav>
-      <nav id="ft-nav-3">
-        <ul id="ft-nav-3-list" class="phantom-list">
+          <li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
+          <li><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
+          <li><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
           <li><a class="phantom-a" href="/whitepaper.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
           <li><a class="phantom-a" routerLink="/partners" i18n="@@Navigation-Partners">Partners</a></li>
           <li><a class="phantom-a" routerLink="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
         </ul>
       </nav>
-      <div id="ft-pad-b" class="no-mobile"></div>
+      <nav id="ft-nav-3">
+        <ul id="ft-nav-3-list" class="phantom-list">
+          <li><b i18n="@@Navigation-Title-Engage">Engage</b></li>
+          <li><a class="phantom-a" routerLink="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
+          <li><a class="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link">Blog</a></li>
+          <li><a class="phantom-a" routerLink="/privacy-guardian" i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</a></li>
+          <li><a class="phantom-a" routerLink="/events" i18n="@@Navigation-Events">Events</a></li>
+          <li><a class="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+        </ul>
+      </nav>
       <section>
-        <header class="no-mobile">
+        <header class="no-mobile make-me-purple">
           <strong i18n="@@NavigationFollowUs">Follow Us</strong>
         </header>
         <ul id="ft-social-list" class="phantom-list">
           <li>
-            <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer"
-              aria-label="Follow on Twitter" title="Twitter">
+            <a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
               <img src="/assets/img/shared/social-twitter.svg" alt="Twitter" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer"
-              aria-label="Check out our Subreddit" title="Reddit">
+            <a class="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
               <img src="/assets/img/shared/social-reddit.svg" alt="Reddit" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer"
-              aria-label="Join us on Discord" title="Discord">
-              <img src="/assets/img/shared/social-discord.svg" style="width: 32px; height: auto;" alt="Discord"
-                width="32" height="32">
+            <a class="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
+              <img src="/assets/img/shared/social-discord.svg" style="width: 32px; height: auto;" alt="Discord" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer"
-              aria-label="Join us on Telegram" title="Telegram">
-              <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram"
-                width="32" height="32">
+            <a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
+              <img src="/assets/img/shared/social-telegram.svg" style="width: 32px; height: auto;" alt="Telegram" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank"
-              rel="noopener noreferrer" aria-label="See the Source" title="Github">
+            <a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
               <img src="/assets/img/shared/social-github.svg" alt="Github" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank"
-              rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
+            <a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
               <img src="/assets/img/shared/social-facebook.svg" alt="Facebook" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank"
-              rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+            <a class="inline-block" href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
               <img src="/assets/img/shared/social-youtube.svg" alt="YouTube" width="32" height="32">
             </a>
           </li>
           <li>
-            <a class="inline-block" href="https://www.linkedin.com/company/orchidprotocol" target="_blank"
-              rel="noopener noreferrer" aria-label="Follow on LinkedIn" title="LinkedIn">
+            <a class="inline-block" href="https://www.linkedin.com/company/orchidprotocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn" title="LinkedIn">
               <img src="/assets/img/shared/social-linkedin.svg" alt="LinkedIn" width="32" height="32">
             </a>
           </li>
-
         </ul>
       </section>
-      <div id="ft-pad-c" class="no-mobile"></div>
     </div>
   </footer>
-  <div id="ft-adorner">
-    <div id="ft-adorn-layout" class="section-med">
-      <img alt="" src="/assets/img/shared/coral-electric.svg" id="ft-adorn-coral-elec" class="pos-absolute">
-      <img alt="" src="/assets/img/shared/coral-real.svg" id="ft-adorn-coral-real" class="pos-absolute no-mobile">
-      <img alt="" src="/assets/img/shared/coral-real-mobile.svg" id="ft-adorn-coral-real-mobile"
-        class="pos-absolute mobile-only">
-      <img alt="" src="/assets/img/shared/footer-fish.svg" id="ft-adorn-fish" class="pos-absolute">
-    </div>
-  </div>
 </div>
 
 <div [class.visible]="this.badge" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
   <div class="maker-badge__btn" id="maker-badge__btn">
     <img alt="" width="27" height="29" class="maker-badge__btn-img" src="/assets/img/shared/our-values-icon.svg">
-    <span class="desktop">Learn about our values</span>
-    <span class="mobile">Our Values</span>
+    <span>Orchid's Values</span>
     <a routerLink="/about-us" fragment="values"></a>
   </div>
 </div>

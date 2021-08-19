@@ -59,18 +59,6 @@ export class HomeComponent implements OnInit {
     this.meta.setGlobalDescription('Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.');
     this.meta.update('og:url', 'https://www.orchid.com/');
 
-    switch (this.localeId) {
-      case 'ko':
-        // define locale specific meta tags here
-        break;
-      case 'ja':
-        // define locale specific meta tags here
-        break;
-      case 'zh':
-        // define locale specific meta tags here
-        break;
-    }
-
     this.blogLink = "https://blog.orchid.com/";
     if (this.localeId !== 'en-US') {
       this.blogLink = `https://blog.${this.localeId}.orchid.com/`;

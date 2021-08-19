@@ -147,9 +147,8 @@ $mobile-nav-height: 64px;
     display: block;
 
     & > button {
-      font-size: 14px;
-      padding-left: 1rem;
-      padding-right: 1rem;
+      font-size: $size-body-sm;
+      padding: 0.05rem 1.5rem;
     }
   }
 }
@@ -189,6 +188,9 @@ $flyout-gap: ($flyout-spacing / 2);
 .nav-menu {
   @include not-mobile {
     flex: 0 0 auto;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
     //margin: -1rem 0 1rem;
   }
 
@@ -292,6 +294,15 @@ $flyout-gap: ($flyout-spacing / 2);
     font-weight: 700;
     text-transform: uppercase;
   }
+
+  &.basic {
+    & > li {
+      display: none;
+      &.navbar-language-selector {
+        display: block;
+      }
+    }
+  }
 }
 
 #nav-toggle {
@@ -330,6 +341,9 @@ $flyout-gap: ($flyout-spacing / 2);
   height: $mobile-nav-height;
 }
 
+.footer-wrapper {
+  overflow: hidden;
+}
 #footer {
   position: relative;
   padding-top: 4rem;
@@ -351,6 +365,10 @@ $flyout-gap: ($flyout-spacing / 2);
   }
 }
 
+#ft-root {
+  justify-self: flex-end;
+  margin-top: auto;
+}
 #ft-layout {
   $gap: 2rem;
 
@@ -358,11 +376,11 @@ $flyout-gap: ($flyout-spacing / 2);
   position: relative;
   /* boosts z-index, because CSS is horrible */
   flex-flow: row nowrap;
-  justify-content: center;
+  justify-content: space-between;
   margin: 0 ($gap / -2);
   z-index: 2;
 
-  @include mobile {
+  @media (max-width: 1200px) {
     flex-flow: column-reverse nowrap;
   }
 
@@ -409,6 +427,7 @@ $flyout-gap: ($flyout-spacing / 2);
 
     > p {
       line-height: 1;
+      padding-left: 0.5rem;
     }
   }
 }
@@ -426,15 +445,17 @@ $flyout-gap: ($flyout-spacing / 2);
 #ft-nav-list,
 #ft-nav-2-list,
 #ft-nav-3-list {
-  @include mobile {
+  b {
+    color: $orc-purple;
+  }
+  line-height: 1.45;
+  font-weight: 500;
+  @media (max-width: 1200px) {
     > li > a {
       display: block;
-      padding: 0.5rem 0;
-
-      &:hover {
-        color: $orc-purple;
-      }
+      padding: 0.25rem 0;
     }
+    margin-bottom: 1rem;
   }
 }
 
@@ -442,23 +463,60 @@ $flyout-gap: ($flyout-spacing / 2);
   $gap: 0.5rem;
 
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
   margin: ($gap / -2);
+
+  img {
+    width: 30px;
+    margin: 4px;
+  }
 
   > li {
     margin: ($gap / 2);
   }
 
-  @include mobile {
+  @media (max-width: 1200px) {
     flex-flow: row wrap;
     justify-content: flex-start;
+  }
+}
 
-    > li {
-      &:not(:last-child) {
-        margin-right: 2rem;
-      }
+$wavy-width: 40%;
+$wavy-bp: 80rem;
+$wavy-size: 50rem;
+$wavy-margin: 25rem;
+.wavy {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  &::after {
+    content: "";
+    display: block;
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center left;
+    left: 60%;
+    width: $wavy-width;
+
+    @include not-mobile {
+      left: unset;
+      right: 50%;
+      margin-right: 26rem;
+      width: $wavy-size;
+      height: $wavy-size;
+      background-size: contain;
+      background-position: top right;
     }
+    position: absolute;
+    top: 0;
+    height: 100vmin;
+    background-image: url(/assets/img/index/wavy-lines-07.svg);
   }
 }
 
@@ -476,40 +534,8 @@ $flyout-gap: ($flyout-spacing / 2);
   height: 100%;
 }
 
-#ft-adorn-coral-elec {
-  left: -4rem;
-  bottom: 0;
-  height: 14.25rem;
-
-  @include mobile {
-    left: initial;
-    right: 1rem;
-    bottom: 0;
-    max-height: 8rem;
-    transform: scaleX(-1);
-  }
-}
-
-#ft-adorn-coral-real {
-  left: 2rem;
-  bottom: 0;
-}
-
-#ft-adorn-coral-real-mobile {
-  right: 5rem;
-  bottom: 0;
-  max-width: 4rem;
-}
-
-#ft-adorn-fish {
-  right: 0rem;
-  top: 3rem;
-
-  @include mobile {
-    right: 2rem;
-    top: 2rem;
-    max-width: 4rem;
-  }
+.make-me-purple {
+  color: $orc-purple;
 }
 
 .nav-menu .nav-list {
@@ -541,6 +567,13 @@ $flyout-gap: ($flyout-spacing / 2);
 .navbar-language-selector {
   cursor: pointer;
   position: relative;
+
+  svg {
+    width: 0.75em;
+    padding: 0.125em;
+    margin-left: 0.25em;
+    height: auto;
+  }
 
   @include not-mobile {
     padding-left: 1rem;
@@ -661,7 +694,7 @@ $flyout-gap: ($flyout-spacing / 2);
   color: #e8ddfd;
   text-align: center;
   padding: 10px 4px;
-  font-size: 14px;
+  font-size: $size-body-sm;
   box-sizing: border-box;
 
   @media (max-width: 1150px) {
@@ -674,28 +707,23 @@ $flyout-gap: ($flyout-spacing / 2);
   &.visible {
     display: block;
   }
-  z-index: 99;
-  max-width: 250px;
+  z-index: 9999;
+  width: 0;
+  height: 0;
   color: #2b2b2b;
-  font-size: 16px;
-  font-family: helvetica;
-  text-align: right;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
   height: auto;
-  min-width: 160px;
   position: absolute;
   top: 0;
-  left: 0;
-  border-bottom-right-radius: 6px;
-  
-
-  @media screen and (min-width: 1500px) {
-    left: 50% !important;
-    margin-left: -746px;
-    border-bottom-left-radius: 6px;
-    .maker-badge__btn {
-      border-bottom-left-radius: 6px;
-    }
+  left: 2.5rem;
+  @media (min-width: 1440px) {
+    left: unset;
+    right: 50%;
+    margin-right: 34rem;
   }
+
 
   .maker-badge__btn {
     position: relative;
@@ -707,37 +735,24 @@ $flyout-gap: ($flyout-spacing / 2);
       height: 100%;
     }
     display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 50px;
-    line-height: 50px;
-    padding: 0 0.5rem;
+    justify-content: space-around;
+    width: 5rem;
+    height: 5rem;
+    box-sizing: border-box;
+    padding: 0.5rem;
     cursor: pointer;
     border: 1px solid #cbd5e0;
     background: #fff;
-    border-bottom-right-radius: 6px;
+    border-radius: 100%;
+    box-shadow: 0px 4px 20px 0px $orc-beige;
     color: #2d3748;
-    & > img {
-      margin-right: 10px;
-    }
-    .desktop {
-      display: block;
-    }
-    .mobile {
-      display: none;
-    }
     @include mobile {
-      .desktop {
-        display: none;
-      }
-      .mobile {
-        display: block;
-      }
+      box-shadow: 0px 2px 10px 0px $orc-beige;
       font-size: 13px;
-      flex-direction: row-reverse;
-      & > img {
-        margin-right: 0;
-        margin-left: 10px;
-      }
+      width: 4rem;
+      height: 4rem;
     }
   }
 }

@@ -18,7 +18,7 @@ $pad-xs-mobile: 1rem;
 :root {
   /* NB: this controls the background color in the elastic scroll margins on iOS
      (and probably other platforms, but I haven't tested for that) */
-  background: $orc-beige-light;
+  background: #FFFFFF;
   font-size: 20px; // Used for all rem measurements.  DO NOT TOUCH
   font-family: $orc-tf-secondary;
   color: $orc-rock-gray;
@@ -39,14 +39,19 @@ html {
 body {
   overflow-x: hidden;
   font-size: $size-body;
-  line-height: 1.75;
+  line-height: 1.5;
 
   @include mobile {
-    font-size: $size-body-mobile;
     &.navigation-open {
       overflow: hidden;
     }
   }
+}
+
+app-page-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .locale-en-US {
@@ -172,9 +177,8 @@ h3,
   }
 }
 
-h3,
-.h3 {
-  color: $orc-purple;
+h3, h4 {
+  margin-bottom: 0.5em;
 }
 
 h4,
@@ -424,8 +428,8 @@ $form-border-w: 3px;
 $form-pad-v: 0.35em;
 
 button:not(.phantom-btn) {
-  $pad-h: 1em;
-  $pad-v: $form-pad-v;
+  $pad-h: 3em;
+  $pad-v: 0.5em;
 
   transition-property: background, color, border, box-shadow;
   transition-duration: 0.2s;
@@ -434,7 +438,7 @@ button:not(.phantom-btn) {
   box-sizing: border-box;
   border-radius: 100vmax;
   font-size: $size-btn;
-  box-shadow: mat-shadow(6px, $alpha: 0.2);
+  //box-shadow: mat-shadow(6px, $alpha: 0.2);
 
   &.btn-fixed {
     width: 100%;
@@ -442,17 +446,6 @@ button:not(.phantom-btn) {
 
     @include mobile {
       max-width: 10rem;
-    }
-  }
-
-  &:not(:disabled) {
-    &:hover {
-      box-shadow: mat-shadow(8px);
-    }
-
-    &:active {
-      transition-duration: 0s;
-      box-shadow: mat-shadow(2px);
     }
   }
 
