@@ -98,8 +98,9 @@ export const routes: Routes = [
 		component: PageLayoutComponent,
 		children: [
 			{ path: "", component: HomeComponent },
-			{ path: "get-started", component: GetStartedComponent, data: { basicLayout: true } },
-			{ path: "get-started.html", redirectTo: "get-started" },
+			{ path: "get-orchid", component: GetStartedComponent, data: { basicLayout: true } },
+			{ path: "get-orchid.html", redirectTo: "get-orchid" },
+			{ path: "get-started", redirectTo: "get-orchid" },
 			{ path: "app", redirectTo: "download" },
 			{ path: "app.html", redirectTo: "download" },
 			{ path: "network", component: AboutNetworkComponent },
