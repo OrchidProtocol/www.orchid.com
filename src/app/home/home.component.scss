@@ -769,6 +769,10 @@ ul.smaller .ft-text h3 {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 
+  a {
+    text-decoration: none;
+  }
+
   &::before {
     content: "";
     background: url("/assets/img/shared/quotes.svg");
