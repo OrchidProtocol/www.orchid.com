@@ -149,6 +149,12 @@ $wavy-margin: 25rem;
     text-align: center;
     max-width: 44rem;
   }
+  &.disclaimer {
+    & > p {
+      text-align: center;
+      font-size: 14px;
+    }
+  }
 }
 
 .hero__cards {
