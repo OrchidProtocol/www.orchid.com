@@ -87,6 +87,7 @@ import { PodcastEp58Component } from './podcast-ep58/podcast.component';
 import { PodcastEp59Component } from './podcast-ep59/podcast.component';
 import { PodcastEp60Component } from './podcast-ep60/podcast.component';
 import { PodcastEp61Component } from './podcast-ep61/podcast.component';
+import { PodcastEp62Component } from './podcast-ep62/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -262,6 +263,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-60-berhan-taye", component: PodcastEp60Component },
 			{ path: "podcast/episode-61-dr-gabriela-zanfir-fortuna.html", redirectTo: "podcast/episode-61-dr-gabriela-zanfir-fortuna" },
 			{ path: "podcast/episode-61-dr-gabriela-zanfir-fortuna", component: PodcastEp61Component },
+			{ path: "podcast/episode-62-leo-scwartz.html", redirectTo: "podcast/episode-62-leo-scwartz" },
+			{ path: "podcast/episode-62-leo-scwartz", component: PodcastEp62Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
