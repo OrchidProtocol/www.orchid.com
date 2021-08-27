@@ -1,0 +1,15 @@
+{
+	"name": "Orchid",
+	"short_name": "Orchid",
+	"start_url": "/",
+	"background_color": "#ffffff",
+	"theme_color": "#5f45ba",
+	"display": "standalone",
+	"icons": [
+		{
+			"src": "img/favicon.png",
+			"sizes": "256x256",
+			"type": "image/png"
+		}
+	]
+}
