@@ -348,7 +348,7 @@ export const BlogPostTemplate = ({
 								}
 							`}>
 								<a target="_blank" rel="noopener noreferrer"
-									href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("\"" + title + "\" by @OrchidProtocol https://blog.orchid.com/" + slug + "/")} `}>
+									href={`https://twitter.com/intent/tweet?text=${encodeURIComponent("\"" + title + "\" by @OrchidProtocol https://orchid.com/" + slug + "/")} `}>
 									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;
@@ -357,7 +357,7 @@ export const BlogPostTemplate = ({
 								</a>
 
 								<a target="_blank" rel="noopener noreferrer"
-									href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")} `}>
+									href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent("https://orchid.com/" + slug + "/")} `}>
 									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;
@@ -366,7 +366,7 @@ export const BlogPostTemplate = ({
 								</a>
 
 								<a target="_blank" rel="noopener noreferrer"
-									href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://blog.orchid.com/" + slug + "/")}`}>
+									href={`https://www.linkedin.com/shareArticle?url=${encodeURIComponent("https://orchid.com/" + slug + "/")}`}>
 									<FontAwesomeIcon css={css`
 										width: var(--social-icon-size) !important;
 										height: auto;

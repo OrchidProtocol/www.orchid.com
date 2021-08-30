@@ -39,34 +39,34 @@ const InfoBar = styled.a`
 `;
 
 function Navbar({ customText }) {
-    const [active, setActive] = useState(false);
+	const [active, setActive] = useState(false);
 
-    return <Container data-active={active}>
-        {/*<InfoBar href={`${config.main_site}newsletter-signup`}>
+	return <Container data-active={active}>
+		{/*<InfoBar href={`${config.main_site}newsletter-signup`}>
             Get privacy news delivered to your inbox &raquo;
         </InfoBar>*/}
-        {/* The main header section on top of the screen */}
-        <Header customText={customText}>
-            <a href="https://www.orchid.com/" css={css`
+		{/* The main header section on top of the screen */}
+		<Header customText={customText}>
+			<a href="https://www.orchid.com/" css={css`
                 @media (max-width: 871px) {
                     display: none;
                 }
             `}>
-                <img css={css`
+				<img css={css`
                     max-width: 100%;
                     margin: -1rem;
                     padding: 1rem;
                     box-sizing: content-box;
                     display: block;
                 `} width="93" height="24" src="/img/orchid-logo-text.svg" alt={config.title} />
-            </a>
+			</a>
 
-            <a href="https://www.orchid.com/" css={css`
+			<a href="https://www.orchid.com/" css={css`
                 @media (min-width: 870px) {
                     display: none;
                 }
             `}>
-                <img css={css`
+				<img css={css`
                         max-width: 100%;
                         margin: -1rem;
                         padding: 1rem;
@@ -74,9 +74,9 @@ function Navbar({ customText }) {
                         width: 35px;
                         height: auto;
                     `} width="35" height="30" src="/img/orchid-logo-small.svg" alt={config.title} />
-            </a>
+			</a>
 
-            <div role="button" css={css`
+			<div role="button" css={css`
                 padding: 1rem;
                 margin: -1rem;
                 cursor: pointer;
@@ -88,12 +88,12 @@ function Navbar({ customText }) {
                     display: none;
                 }
             `} onClick={() => {
-                    setActive(!active);
-                }}>
-                <img src={'/img/icons/hamburger.svg'} alt='Open Menu' />
-            </div>
+					setActive(!active);
+				}}>
+				<img src={'/img/icons/hamburger.svg'} alt='Open Menu' />
+			</div>
 
-            <div css={css`
+			<div css={css`
                 text-align: right;
                 @media screen and (max-width: 870px) {
                     position: fixed;
@@ -144,7 +144,7 @@ function Navbar({ customText }) {
                     }
                 }
             `}>
-                <div css={css`
+				<div css={css`
                     pointer-events: auto;
                     display: flex;
                     li a {
@@ -160,7 +160,7 @@ function Navbar({ customText }) {
                         }
                     }
                 `}>
-                    <div role="button" css={css`
+					<div role="button" css={css`
                         padding: 0 0 1rem 0;
                         width: 100%;
                         flex-flow: row-reverse nowrap;
@@ -172,12 +172,12 @@ function Navbar({ customText }) {
                             display: none;
                         }
                     `} onClick={() => {
-                            setActive(!active);
-                        }}>
-                        <img src={'/img/icons/close.svg'} alt='Close Menu' />
-                    </div>
-                    <NavbarNavigation data={config.navbar_navigation}>
-                        <li css={css`
+							setActive(!active);
+						}}>
+						<img src={'/img/icons/close.svg'} alt='Close Menu' />
+					</div>
+					<NavbarNavigation data={config.navbar_navigation}>
+						<li css={css`
                             cursor: pointer;
                             position: relative;
 
@@ -210,7 +210,7 @@ function Navbar({ customText }) {
                                 }
                             }
                         `}>
-                            <input type="checkbox" id="navbar-language-selector-checkbox" css={css`
+							<input type="checkbox" id="navbar-language-selector-checkbox" css={css`
                                 display: none;
                                 
                                 &:checked~.navbar-language-selector-list {
@@ -222,7 +222,7 @@ function Navbar({ customText }) {
                                     }
                                 }
                             `} />
-                            <label htmlFor="navbar-language-selector-checkbox" css={css`
+							<label htmlFor="navbar-language-selector-checkbox" css={css`
                                 position: absolute;
                                 display: block;
                                 top: 0;
@@ -232,32 +232,32 @@ function Navbar({ customText }) {
                                 cursor: pointer;
                             `}></label>
 
-                            <span className="phantom-a">
-                                <img alt="" css={css`
+							<span className="phantom-a">
+								<img alt="" css={css`
                                     vertical-align: top;
                                 `} width="20" height="20" src="/img/globe.svg" />
-                                <span>
-                                    {
-                                        (() => {
-                                            switch (process.env.GATSBY_TARGET_LANG) {
-                                                case "ko":
-                                                    return "한국어";
-                                                default:
-                                                    return "English";
-                                                case "ru":
-                                                    return "русский";
-                                                case "ja":
-                                                    return "日本";
-                                                case "zh":
-                                                    return "中文";
-                                                case "id":
-                                                    return "Indonesian";
-                                            }
-                                        })()
-                                    }
-                                </span>
-                            </span>
-                            <ul className="navbar-language-selector-list" css={css`
+								<span>
+									{
+										(() => {
+											switch (process.env.GATSBY_TARGET_LANG) {
+												case "ko":
+													return "한국어";
+												default:
+													return "English";
+												case "ru":
+													return "русский";
+												case "ja":
+													return "日本";
+												case "zh":
+													return "中文";
+												case "id":
+													return "Indonesian";
+											}
+										})()
+									}
+								</span>
+							</span>
+							<ul className="navbar-language-selector-list" css={css`
                                 padding: 0;
 
                                 @media ( min-width:871px ) {
@@ -283,42 +283,42 @@ function Navbar({ customText }) {
                                 }
                             `}>
 
-                                <Location>
-                                    {({ location }) => {
-                                        return <>
-                                            <li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//blog.ko.orchid.com${location.pathname}`}>한국어</a></li>
-                                            <li><a className="phantom-a" href={`//blog.orchid.com${location.pathname}`}>English</a></li>
-                                            <li><a className="phantom-a" href={`//blog.ja.orchid.com${location.pathname}`}>日本</a></li>
-                                            <li><a className="phantom-a" href={`//blog.zh.orchid.com${location.pathname}`}>中文</a></li>
-                                            <li><a className="phantom-a" href={`//blog.id.orchid.com${location.pathname}`}>Indonesian</a></li>
-                                            <li><a className="phantom-a" href={`//blog.ru.orchid.com${location.pathname}`}>русский</a></li>
-                                        </>
-                                    }}
-                                </Location>
-                            </ul>
-                        </li>
-                    </NavbarNavigation>
-                </div>
-            </div>
+								<Location>
+									{({ location }) => {
+										return <>
+											<li id="navbar-language-selector-list-item-first"><a className="phantom-a" href={`//ko.orchid.com${location.pathname}`}>한국어</a></li>
+											<li><a className="phantom-a" href={`//orchid.com${location.pathname}`}>English</a></li>
+											<li><a className="phantom-a" href={`//ja.orchid.com${location.pathname}`}>日本</a></li>
+											<li><a className="phantom-a" href={`//zh.orchid.com${location.pathname}`}>中文</a></li>
+											<li><a className="phantom-a" href={`//id.orchid.com${location.pathname}`}>Indonesian</a></li>
+											<li><a className="phantom-a" href={`//ru.orchid.com${location.pathname}`}>русский</a></li>
+										</>
+									}}
+								</Location>
+							</ul>
+						</li>
+					</NavbarNavigation>
+				</div>
+			</div>
 
-            <a href={
-                '//www.' + (() => {
-                    switch (process.env.GATSBY_TARGET_LANG) {
-                        default:
-                            return "";
-                        case "ko":
-                            return "ko.";
-                        case "ru":
-                            return "ru.";
-                        case "ja":
-                            return "ja.";
-                        case "zh":
-                            return "zh.";
-                        case "id":
-                            return "id.";
-                    }
-                })() + "orchid.com/download"
-            } css={css`
+			<a href={
+				'//www.' + (() => {
+					switch (process.env.GATSBY_TARGET_LANG) {
+						default:
+							return "";
+						case "ko":
+							return "ko.";
+						case "ru":
+							return "ru.";
+						case "ja":
+							return "ja.";
+						case "zh":
+							return "zh.";
+						case "id":
+							return "id.";
+					}
+				})() + "orchid.com/download"
+			} css={css`
                 display: none;
 
                 @media screen and (min-width: 1201px) {
@@ -331,7 +331,7 @@ function Navbar({ customText }) {
                     }
                 }
             `}>
-                <button css={css`
+				<button css={css`
                     font-size: 14px;
                     padding-left: 1rem;
                     padding-right: 1rem;
@@ -349,11 +349,11 @@ function Navbar({ customText }) {
                     font: inherit;
                     line-height: inherit;
                 `}>
-                    Download
-                </button>
-            </a>
-        </Header>
-    </Container>
+					Download
+				</button>
+			</a>
+		</Header>
+	</Container>
 }
 
 export default Navbar;

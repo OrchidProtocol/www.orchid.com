@@ -9,7 +9,7 @@ const SRC_FOLDER = join(process.cwd(), "src");
 const ASSETS_FOLDER = join(SRC_FOLDER, "assets");
 
 const fallback = () => {
-	writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify([]));
+	writeFileSync(join(ASSETS_FOLDER, 'json'), JSON.stringify([]));
 }
 fallback();
 
@@ -78,9 +78,9 @@ const downloadBrellaImage = (url) => {
 	return getSmallURL(output);
 }
 
-let domain = 'blog.orchid.com';
+let domain = 'orchid.com';
 if (process.env.BUILD_LOCALE) {
-	domain = domain.replace('blog.', `blog.${process.env.BUILD_LOCALE}.`);
+	domain = domain.replace('', `${process.env.BUILD_LOCALE}.`);
 }
 
 fetch(`https://${domain}/feed-1.json`)
@@ -96,7 +96,7 @@ fetch(`https://${domain}/feed-1.json`)
 
 				output[output.length - 1].featuredimage = destination.substr(SRC_FOLDER.length);
 			}
-			writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify(output));
+			writeFileSync(join(ASSETS_FOLDER, 'json'), JSON.stringify(output));
 		} catch (e) { fallback() }
 	})
 	.catch(fallback);

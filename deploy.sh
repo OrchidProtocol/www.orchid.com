@@ -112,15 +112,15 @@ function main() {
 
     if [ -z ${language+x} ]; then  # If a language was NOT specified with -l
         if [ "$stage" == "staging" ]; then
-            local bucket="blog.orchid.dev"
+            local bucket="orchid.dev"
         elif [ "$stage" == "production" ]; then
-            local bucket="blog.orchid.com"
+            local bucket="orchid.com"
         fi
     else  # A language was specified
         if [ "$stage" == "staging" ]; then
-            local bucket="blog.${language}.orchid.dev"
+            local bucket="${language}.orchid.dev"
         elif [ "$stage" == "production" ]; then
-            local bucket="blog.${language}.orchid.com"
+            local bucket="${language}.orchid.com"
         fi
     fi
 
