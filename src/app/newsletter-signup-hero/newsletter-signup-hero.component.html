@@ -6,11 +6,11 @@
     <div class="gap-bot-thin gdpr-consent-wrap" *ngIf="showFull">
       <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}" (click)="checkboxListener()">
         <input type="checkbox" [(ngModel)]="consented" (change)="checkboxListener()">
-        <span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
+        <span i18n>I consent to receiving further instructions at the email address I submitted above.</span>
       </label>
     </div>
     <button (click)="submit()" class="btn-primary btn-fixed newsletter-signup-hero__button"
-      [class.loading]="this.in_progress" i18n="@@Newsletter__GetNotified">Get notified</button>
+      [class.loading]="this.in_progress" i18n>Get notified</button>
   </div>
   <ng-container *ngIf="(error != '')">
     <p id="hero-error" [innerHTML]="error"></p>

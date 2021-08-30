@@ -2,11 +2,11 @@
   <div class="splash-circuit-image section-med"></div>
   <div class="splash-circuit-grid section-med">
     <div class="splash-circuit-grid-item hpad-thin">
-      <h1 i18n="@@ContactHero__Title">Contact</h1>
+      <h1 i18n>Contact</h1>
 
-      <div class="splash-circuit-grid-text" i18n="@@ContactHero__Description">
-        <h3>We want to hear from you</h3>
-        <p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
+      <div class="splash-circuit-grid-text">
+        <h3 i18n>We want to hear from you</h3>
+        <p i18n>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
           providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
           shortly.</p>
       </div>
@@ -22,45 +22,45 @@
 
     <div class="contact-sidebar">
       <div class="contact-page-card">
-        <span class="contact-page-card-header color-gray" i18n="@@ContactOffice__Title">Mailing Address</span>
+        <span class="contact-page-card-header color-gray" i18n>Mailing Address</span>
         <div class="contact-page-card-seperator"></div>
-        <div style="max-width: 11rem;" i18n="@@ContactOffice__Address">
+        <div style="max-width: 11rem;" i18n>
           1288 Columbus Ave. #122,
           San Francisco, CA 94133
         </div>
       </div>
       <div class="contact-page-card">
-        <span class="contact-page-card-header color-gray" i18n="@@ContactSidebar__Title">Contact Info</span>
+        <span class="contact-page-card-header color-gray" i18n>Contact Info</span>
         <div class="contact-page-card-seperator"></div>
         <ul class="contact-page-card-list">
           <li>
             <a class="phantom-a" href="mailto:contact@orchid.com" i18n-href="@@ContactSidebar__EmailLink">
               <img alt="Email" src="/assets/img/contact/icon-email.svg" width="20" height="20">
-              <span i18n="@@ContactSidebar__Email">contact@orchid.com</span>
+              <span>contact@orchid.com</span>
             </a>
           </li>
           <li>
             <a class="phantom-a" href="https://twitter.com/OrchidProtocol" i18n-href="@@ContactSidebar__TwitterLink">
               <img alt="Twitter" src="/assets/img/contact/icon-twitter.svg" width="20" height="20">
-              <span i18n="@@ContactSidebar__Twitter">@OrchidProtocol</span>
+              <span>@OrchidProtocol</span>
             </a>
           </li>
           <li>
             <a class="phantom-a" href="https://discord.gg/GDbxmjxX9F" i18n-href="@@ContactSidebar__DiscordLink">
               <img alt="Discord" src="/assets/img/contact/icon-discord.svg" width="20" height="20">
-              <span i18n="@@ContactSidebar__Discord">Discord Server</span>
+              <span>Discord Server</span>
             </a>
           </li>
           <li>
             <a class="phantom-a" href="https://www.t.me/OrchidOfficial" i18n-href="@@ContactSidebar__TelegramLink">
               <img alt="Telegram" src="/assets/img/contact/icon-telegram.svg" width="20" height="20">
-              <span i18n="@@ContactSidebar__Telegram">@OrchidOfficial</span>
+              <span>@OrchidOfficial</span>
             </a>
           </li>
           <li>
             <a class="phantom-a" href="https://www.facebook.com/OrchidProtocol" i18n-href="@@ContactSidebar__FacebookLink">
               <img alt="Facebook" src="/assets/img/contact/icon-facebook.svg" width="20" height="20">
-              <span i18n="@@ContactSidebar__Facebook">OrchidProtocol</span>
+              <span>OrchidProtocol</span>
             </a>
           </li>
         </ul>
@@ -130,18 +130,18 @@
       <div class="contact-form-error contact-form-message" [class.active]="this.error">
         {{errorMessage}}
       </div>
-      <div class="contact-form-error contact-form-message" [class.active]="this.error_RequiredFields" i18n="@@ContactForm__RequiredFields">
+      <div class="contact-form-error contact-form-message" [class.active]="this.error_RequiredFields" i18n>
         Required fields are missing
       </div>
-      <div class="contact-form-error contact-form-message" [class.active]="this.error_UnknownError" i18n="@@ContactForm__UnknownError">
+      <div class="contact-form-error contact-form-message" [class.active]="this.error_UnknownError" i18n>
         There was an unknown error, your message may not have been sent
       </div>
-      <div class="contact-form-success contact-form-message" [class.active]="this.success" i18n="@@ContactForm__Success">
+      <div class="contact-form-success contact-form-message" [class.active]="this.success" i18n>
         Your message has been sent
       </div>
 
-      <button (click)="onSubmit()" class="btn-primary" i18n="@@ContactForm__SubmitButton">Submit</button>
-      <button (click)="clear()" i18n="@@ContactForm__ClearButton">Clear</button>
+      <button (click)="onSubmit()" class="btn-primary" i18n>Submit</button>
+      <button (click)="clear()" i18n>Clear</button>
     </form>
 
   </div>

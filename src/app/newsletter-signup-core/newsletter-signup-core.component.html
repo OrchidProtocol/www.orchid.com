@@ -5,7 +5,7 @@
   <div class="gap-bot-thin" *ngIf="showFull">
     <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}" (click)="checkboxListener()">
       <input type="checkbox" [(ngModel)]="consented" (change)="checkboxListener()">
-      <span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted
+      <span i18n>I consent to receiving further instructions at the email address I submitted
         above.</span>
     </label>
   </div>
