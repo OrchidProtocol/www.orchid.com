@@ -271,7 +271,13 @@
 				</target>
 				
 				
-			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">81</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/oxt/oxt.component.html</context><context context-type="linenumber">39</context></context-group></trans-unit>
+			<context-group purpose="location"><context context-type="sourcefile">app/download/download.component.html</context><context context-type="linenumber">81</context></context-group><context-group purpose="location"><context context-type="sourcefile">app/oxt/oxt.component.html</context><context context-type="linenumber">39</context></context-group></trans-unit><trans-unit id="df34b8a29c57a30865be09621e4599f1929085d0" datatype="html">
+        <source>Don't be a product</source><target state="new">Don't be a product</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
 			<trans-unit id="e5f5e5d6b51bc98e7adf6ff0a502ba582d950dab" datatype="html">
 				<source>
 					No data collection.
