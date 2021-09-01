@@ -2,7 +2,6 @@ import { Routes } from "@angular/router";
 
 import { AboutCompanyComponent } from "./about-company/about-company.component";
 import { AmbassadorComponent } from './ambassador/ambassador.component';
-import { AboutNetworkComponent } from "./about-network/about-network.component";
 import { HowItWorksComponent } from "./how-it-works/how-it-works.component";
 import { EventsComponent } from "./events/events.component";
 import { FaqComponent } from "./faq/faq.component";
@@ -88,6 +87,7 @@ import { PodcastEp59Component } from './podcast-ep59/podcast.component';
 import { PodcastEp60Component } from './podcast-ep60/podcast.component';
 import { PodcastEp61Component } from './podcast-ep61/podcast.component';
 import { PodcastEp62Component } from './podcast-ep62/podcast.component';
+import { PodcastEp63Component } from './podcast-ep63/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -107,8 +107,6 @@ export const routes: Routes = [
 			{ path: "get-started", redirectTo: "get-orchid" },
 			{ path: "app", redirectTo: "download" },
 			{ path: "app.html", redirectTo: "download" },
-			{ path: "network", component: AboutNetworkComponent },
-			{ path: "network.html", redirectTo: "network" },
 			{ path: "how-it-works", component: HowItWorksComponent },
 			{ path: "how-it-works.html", redirectTo: "how-it-works" },
 			{ path: "vision", component: VisionComponent },
@@ -265,6 +263,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-61-dr-gabriela-zanfir-fortuna", component: PodcastEp61Component },
 			{ path: "podcast/episode-62-leo-scwartz.html", redirectTo: "podcast/episode-62-leo-scwartz" },
 			{ path: "podcast/episode-62-leo-scwartz", component: PodcastEp62Component },
+			{ path: "podcast/episode-63-julie-owono.html", redirectTo: "podcast/episode-63-julie-owono" },
+			{ path: "podcast/episode-63-julie-owono", component: PodcastEp63Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
