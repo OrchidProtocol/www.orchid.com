@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AboutNetworkComponent } from './about-network/about-network.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { VisionComponent } from './vision/vision.component';
@@ -114,7 +113,6 @@ import { MetaService } from './MetaService';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutNetworkComponent,
     HowItWorksComponent,
     VisionComponent,
     EventsComponent,

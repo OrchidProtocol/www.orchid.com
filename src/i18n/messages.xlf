@@ -2,91 +2,7 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="5180c0a4bee95def26eadbfa86050d236a8319dd" datatype="html">
-        <source>New ground to build on</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">5</context>
-        </context-group>
-      </trans-unit><trans-unit id="35a60fafacf9bef6b713f4a091d6545cab2dbc79" datatype="html">
-        <source>
-        Inspired by the parts of nature that demonstrate emergent self-organization, the Orchid network—an overlay network that runs on the existing internet—is designed for a mutual exchange of benefit in a peer-to-peer marketplace.
-      </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">7</context>
-        </context-group>
-      </trans-unit><trans-unit id="601360dcb0e46da6b619da435c7f569e9c4c7fde" datatype="html">
-        <source>How it works</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-      </trans-unit><trans-unit id="79205f76b374a738487ccebb66b2b4612e61b7bb" datatype="html">
-        <source>Contributors</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">25</context>
-        </context-group>
-      </trans-unit><trans-unit id="6dcbf1e8421f8d82a76b35da6e43a900dd71f49b" datatype="html">
-        <source>Relay and bridge nodes stake OXT to earn fees for bandwidth.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-      </trans-unit><trans-unit id="52cba457a7a643b7dfe7756b7a12d0aaff0a15b6" datatype="html">
-        <source>The stake keeps contributors honest by serving as a decentralized reputation system.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
-      </trans-unit><trans-unit id="4d2445c1e34b4a19947d19ea7a1f08aa2afafdfc" datatype="html">
-        <source>The list of nodes is stored in an Ethereum smart contract that is decentralized, accessible, and pen to participation</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">29</context>
-        </context-group>
-      </trans-unit><trans-unit id="697b88306da6fd4e99bda376dda65ce916dff353" datatype="html">
-        <source>VPN Users</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">37</context>
-        </context-group>
-      </trans-unit><trans-unit id="a234d8c9d68e7ddc0f5ea482ff7d3a3e76392200" datatype="html">
-        <source>Users connect and configure their VPN service through the app. Probabilistic nano-payments enable purchasing bandwidth on the fly.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">39</context>
-        </context-group>
-      </trans-unit><trans-unit id="4e1cb76b679704c4466194efe887bbf511a175d9" datatype="html">
-        <source>Orchid uses multi-layer encryption so the more hops you use, the more secure your connection.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">40</context>
-        </context-group>
-      </trans-unit><trans-unit id="80f67e6c23e1b854201aafe47d8c1e46d51aee39" datatype="html">
-        <source> Users can switch providers depending upon speed, price, location, and availability in the marketplace.</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">41</context>
-        </context-group>
-      </trans-unit><trans-unit id="06ec000961ef5323aa3d3da72425e3215e4798d5" datatype="html">
-        <source>Read our Whitepaper</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-      </trans-unit><trans-unit id="WhitepaperLink" datatype="html">
-        <source>/assets/whitepaper/whitepaper.pdf</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/about-network/about-network.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
-          <context context-type="linenumber">278</context>
-        </context-group>
-      </trans-unit><trans-unit id="ec48aef4bef88cedc053dfbc2b6def8081038a33" datatype="html">
+      <trans-unit id="ec48aef4bef88cedc053dfbc2b6def8081038a33" datatype="html">
         <source>How Orchid delivers digital privacy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
@@ -446,6 +362,12 @@
         <context-group purpose="location">
           <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
           <context context-type="linenumber">279</context>
+        </context-group>
+      </trans-unit><trans-unit id="WhitepaperLink" datatype="html">
+        <source>/assets/whitepaper/whitepaper.pdf</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/how-it-works/how-it-works.component.html</context>
+          <context context-type="linenumber">278</context>
         </context-group>
       </trans-unit><trans-unit id="6f1e476989c07ad26463350b72957f1f485e7149" datatype="html">
         <source>We built Orchid to restore the promise of the internet</source>
@@ -945,7 +867,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">166</context>
+          <context context-type="linenumber">167</context>
         </context-group>
       </trans-unit><trans-unit id="da6aa9950c74cadd85a3bf26272f34f28d8338c8" datatype="html">
         <source>Connect</source>
@@ -1283,7 +1205,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">169</context>
+          <context context-type="linenumber">170</context>
         </context-group>
       </trans-unit><trans-unit id="NavigationCurrentLanguage" datatype="html">
         <source>EN</source>
@@ -1413,65 +1335,71 @@
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
           <context context-type="linenumber">154</context>
         </context-group>
-      </trans-unit><trans-unit id="Navigation-AboutUs" datatype="html">
-        <source>About Us</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">156</context>
-        </context-group>
       </trans-unit><trans-unit id="Navigation-Whitepaper" datatype="html">
         <source>Whitepaper</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">157</context>
+          <context context-type="linenumber">156</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-Partners" datatype="html">
         <source>Partners</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">158</context>
+          <context context-type="linenumber">157</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-FAQ" datatype="html">
         <source>FAQ</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">158</context>
+        </context-group>
+      </trans-unit><trans-unit id="a7ecfd7757d04b019beaa2d7208c728387bfc7e8" datatype="html">
+        <source>Docs</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
           <context context-type="linenumber">159</context>
+        </context-group>
+      </trans-unit><trans-unit id="85b79c9064aed1ead31ace985f31aa1363f6bdaf" datatype="html">
+        <source>Help</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
+          <context context-type="linenumber">160</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-Title-Engage" datatype="html">
         <source>Engage</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">164</context>
+          <context context-type="linenumber">165</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-Podcast" datatype="html">
         <source>Podcast</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">165</context>
+          <context context-type="linenumber">166</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-PrivacyGuardians" datatype="html">
         <source>Privacy Guardians</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">167</context>
+          <context context-type="linenumber">168</context>
         </context-group>
       </trans-unit><trans-unit id="Navigation-Events" datatype="html">
         <source>Events</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">168</context>
+          <context context-type="linenumber">169</context>
         </context-group>
       </trans-unit><trans-unit id="NavigationFollowUs" datatype="html">
         <source>Follow Us</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">174</context>
+          <context context-type="linenumber">175</context>
         </context-group>
       </trans-unit><trans-unit id="41633c1f7759513e8cf9a306df18eaa04a5d79d0" datatype="html">
         <source>Orchid&apos;s Values</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/page-layout/page-layout.component.html</context>
-          <context context-type="linenumber">226</context>
+          <context context-type="linenumber">227</context>
         </context-group>
       </trans-unit><trans-unit id="4b6dbf2d92858e82bcf6ae5dbc8dfb4b29d82ad0" datatype="html">
         <source>FAQ</source>

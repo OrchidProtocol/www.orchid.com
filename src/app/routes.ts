@@ -2,7 +2,6 @@ import { Routes } from "@angular/router";
 
 import { AboutCompanyComponent } from "./about-company/about-company.component";
 import { AmbassadorComponent } from './ambassador/ambassador.component';
-import { AboutNetworkComponent } from "./about-network/about-network.component";
 import { HowItWorksComponent } from "./how-it-works/how-it-works.component";
 import { EventsComponent } from "./events/events.component";
 import { FaqComponent } from "./faq/faq.component";
@@ -107,8 +106,6 @@ export const routes: Routes = [
 			{ path: "get-started", redirectTo: "get-orchid" },
 			{ path: "app", redirectTo: "download" },
 			{ path: "app.html", redirectTo: "download" },
-			{ path: "network", component: AboutNetworkComponent },
-			{ path: "network.html", redirectTo: "network" },
 			{ path: "how-it-works", component: HowItWorksComponent },
 			{ path: "how-it-works.html", redirectTo: "how-it-works" },
 			{ path: "vision", component: VisionComponent },
