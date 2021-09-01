@@ -4225,7 +4225,21 @@
 					Orchid accounts include 24/7 customer support, unlimited devices and are backed by the xDai cryptocurrency.
 				</target>
 				
-			<context-group purpose="location"><context context-type="sourcefile">app/get-started/get-started.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit><trans-unit id="c2bae3bdcdfcf7ac8954ffddf9dcb0328475e64f" datatype="html">
+			<context-group purpose="location"><context context-type="sourcefile">app/get-started/get-started.component.html</context><context context-type="linenumber">10</context></context-group></trans-unit><trans-unit id="35c9e59c079a6595df28eeb35f662dcfa7f83663" datatype="html">
+        <source>~</source><target state="new">~</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/get-started/get-started.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/get-started/get-started.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/get-started/get-started.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit><trans-unit id="c2bae3bdcdfcf7ac8954ffddf9dcb0328475e64f" datatype="html">
         <source>GB</source><target state="new">GB</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/get-started/get-started.component.html</context>
