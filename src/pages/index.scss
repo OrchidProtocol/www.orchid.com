@@ -120,7 +120,7 @@ h3 {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		background-image: url(/assets/img/index/wavy-lines-01.svg);
+		background-image: url(/img/index/wavy-lines-01.svg);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -197,7 +197,7 @@ $wavy-margin: 25rem;
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-right;
-		background-image: url(/assets/img/index/wavy-lines-01.svg);
+		background-image: url(/img/index/wavy-lines-01.svg);
 		@media (min-width: $wavy-bp) {
 			margin-left: 0;
 		}
@@ -207,42 +207,42 @@ $wavy-margin: 25rem;
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-left;
-		background-image: url(/assets/img/index/wavy-lines-02.svg);
+		background-image: url(/img/index/wavy-lines-02.svg);
 	}
 }
 .wavy-element-03 {
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-right;
-		background-image: url(/assets/img/index/wavy-lines-03.svg);
+		background-image: url(/img/index/wavy-lines-03.svg);
 	}
 }
 .wavy-element-04 {
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-left;
-		background-image: url(/assets/img/index/wavy-lines-04.svg);
+		background-image: url(/img/index/wavy-lines-04.svg);
 	}
 }
 .wavy-element-05 {
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-right;
-		background-image: url(/assets/img/index/wavy-lines-05.svg);
+		background-image: url(/img/index/wavy-lines-05.svg);
 	}
 }
 .wavy-element-06 {
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-left;
-		background-image: url(/assets/img/index/wavy-lines-06.svg);
+		background-image: url(/img/index/wavy-lines-06.svg);
 	}
 }
 .wavy-element-07 {
 	@extend .wavy-shared;
 	&::after {
 		@extend .wavy-right;
-		background-image: url(/assets/img/index/wavy-lines-07.svg);
+		background-image: url(/img/index/wavy-lines-07.svg);
 	}
 }
 
@@ -426,7 +426,7 @@ $wavy-margin: 25rem;
 		bottom: 0;
 		width: 150px;
 		max-width: 10vw;
-		background-image: url(/assets/img/index/bird.svg);
+		background-image: url(/img/index/bird.svg);
 		background-size: contain;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -774,7 +774,7 @@ ul.smaller .ft-text h3 {
 
 	&::before {
 		content: "";
-		background: url("/assets/img/shared/quotes.svg");
+		background: url("/img/shared/quotes.svg");
 		background-size: contain;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -800,7 +800,7 @@ ul.smaller .ft-text h3 {
 	.press-card__quote {
 		&::before {
 			left: -37px;
-			background-image: url("/assets/img/shared/quotes-ja.svg");
+			background-image: url("/img/shared/quotes-ja.svg");
 		}
 	}
 }

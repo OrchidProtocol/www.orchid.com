@@ -1,0 +1,268 @@
+@import "_media_queries";
+@import "_misc_config";
+@import "_orc_config";
+
+.footer-wrapper {
+	overflow: hidden;
+}
+#footer {
+	position: relative;
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+
+	@include size-body-sm;
+
+	@include mobile {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	p.privacy-terms-links {
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 8px;
+		text-align: center;
+		font-size: 80%;
+	}
+}
+
+#ft-root {
+	justify-self: flex-end;
+	margin-top: auto;
+}
+#ft-layout {
+	$gap: 2rem;
+
+	display: flex;
+	position: relative;
+	/* boosts z-index, because CSS is horrible */
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	margin: 0 ($gap / -2);
+	z-index: 2;
+
+	@media (max-width: 1200px) {
+		flex-flow: column-reverse nowrap;
+	}
+
+	> {
+		section,
+		nav {
+			flex: 0 0 auto;
+			margin: 0 ($gap / 2);
+
+			@include mobile {
+				margin: 0;
+
+				// NB: on mobile this is flowed in column-reverse order
+				&:not(:first-child) {
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
+
+#ft-pad-a {
+	flex: 1 15rem;
+}
+
+#ft-pad-b {
+	flex: 1 25rem;
+}
+
+#ft-pad-c {
+	flex: 0 1 12rem;
+}
+
+#ft-logo {
+	@include mobile {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		> img {
+			max-width: 20vw;
+		}
+
+		> p {
+			line-height: 1;
+			padding-left: 0.5rem;
+		}
+	}
+}
+
+#ft-nav,
+#ft-nav-2,
+#ft-nav-3 {
+	z-index: 2;
+
+	@include mobile {
+		margin-bottom: 0;
+	}
+}
+
+#ft-nav-list,
+#ft-nav-2-list,
+#ft-nav-3-list {
+	b {
+		color: $orc-purple;
+	}
+	line-height: 1.45;
+	font-weight: 500;
+	@media (max-width: 1200px) {
+		> li > a {
+			display: block;
+			padding: 0.25rem 0;
+		}
+		margin-bottom: 1rem;
+	}
+}
+
+#ft-social-list {
+	$gap: 0.5rem;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: ($gap / -2);
+
+	img {
+		width: 30px;
+		margin: 4px;
+	}
+
+	> li {
+		margin: ($gap / 2);
+	}
+
+	@media (max-width: 1200px) {
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+}
+
+$wavy-width: 40%;
+$wavy-bp: 80rem;
+$wavy-size: 50rem;
+$wavy-margin: 25rem;
+.wavy {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	display: block;
+	&::after {
+		content: "";
+		display: block;
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-position: center left;
+		left: 60%;
+		width: $wavy-width;
+
+		@include not-mobile {
+			left: unset;
+			right: 50%;
+			margin-right: 26rem;
+			width: $wavy-size;
+			height: $wavy-size;
+			background-size: contain;
+			background-position: top right;
+		}
+		position: absolute;
+		top: 0;
+		height: 100vmin;
+		background-image: url(/assets/img/index/wavy-lines-07.svg);
+	}
+}
+
+#ft-adorner {
+	position: absolute;
+	overflow: hidden;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+#ft-adorn-layout {
+	position: relative;
+	height: 100%;
+}
+
+.make-me-purple {
+	color: $orc-purple;
+}
+
+.notification-bar-container {
+	width: 100%;
+	background: #e8ddfd;
+	color: #e8ddfd;
+	text-align: center;
+	padding: 10px 4px;
+	font-size: $size-body-sm;
+	box-sizing: border-box;
+
+	@media (max-width: 1150px) {
+		margin-bottom: 2em;
+	}
+}
+
+.maker-badge {
+	display: none;
+	&.visible {
+		display: block;
+	}
+	z-index: 9999;
+	width: 0;
+	height: 0;
+	color: #2b2b2b;
+	font-size: 15px;
+	font-weight: 600;
+	text-align: center;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 2.5rem;
+	@media (min-width: 1440px) {
+		left: unset;
+		right: 50%;
+		margin-right: 34rem;
+	}
+
+	.maker-badge__btn {
+		position: relative;
+		& > a {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		width: 5rem;
+		height: 5rem;
+		box-sizing: border-box;
+		padding: 0.5rem;
+		cursor: pointer;
+		border: 1px solid #cbd5e0;
+		background: #fff;
+		border-radius: 100%;
+		box-shadow: 0px 4px 20px 0px $orc-beige;
+		color: #2d3748;
+		@include mobile {
+			box-shadow: 0px 2px 10px 0px $orc-beige;
+			font-size: 13px;
+			width: 4rem;
+			height: 4rem;
+		}
+	}
+}

@@ -4,11 +4,9 @@ import { css } from '@emotion/core'
 import { Location } from '@reach/router'
 
 import Navbar from './Navbar.js'
-import Footer from './Footer.js'
-import Splash from './Splash.js'
-import '../all.css'
+import './Layout.scss'
 
-const TemplateWrapper = ({ children, bodyClass, customText }) => {
+const TemplateWrapper = ({ children, bodyClass }) => {
 
 	return (
 		<>
@@ -53,7 +51,6 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
 				}}></script>
 
 				<Navbar />
-				<Splash customText={customText} />
 
 				<main css={css`
                 font-size: 16px;
@@ -62,60 +59,105 @@ const TemplateWrapper = ({ children, bodyClass, customText }) => {
 					{children}
 				</main>
 
-				<div css={css`
-                background-color: var(--color-bg);
-                width: 100%;
-                position: relative;
-                overflow: hidden;
-            `}>
-					<div css={css`
-                    max-width: 63rem;
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    height: 100%;
-                    width: 100%;
-                    margin: auto;
-                    overflow: visible;
-                    @media (min-width: 871px) {
-                        left: calc(50% - 31.5rem);
-                    }
-                `}>
-						<img alt="" css={css`
-                        bottom: 0;
-                        left: -4rem;
-                        height: 14.25rem;
-                        width: auto;
-                        position: absolute;
-                        @media (max-width: 870px) {
-                            display: none;
-                        }
-                    `} src="/img/coral-electric.svg" />
-						<img alt="" css={css`
-                        bottom: 0;
-                        left: 2rem;
-                        position: absolute;
-                        @media (max-width: 870px) {
-                            display: none;
-                        }
-                    `} src="/img/coral-real.svg" />
-						<img alt="" css={css`
-                        right: 5rem;
-                        bottom: 0;
-                        max-width: 4rem;
-                        position: absolute;
-                        @media (min-width: 871px) {
-                            display: none;
-                        }
-                    `} src="/img/coral-real-mobile.svg" />
-						<img alt="" css={css`
-                        position: absolute;
-                        right: 0;
-                        top: 3rem;
-                    `} src="/img/footer-fish.svg" />
+				<div id="ft-root" className="bk-white pos-relative overflow-hidden">
+					<div className="wavy"></div>
+					<footer id="footer" className="section-med hpad-wide">
+						<div id="ft-layout">
+							<section id="ft-logo">
+								<img width="149px" height="39px" alt="" src="/img/shared/orchid-logo-text.svg?v=3" />
+								<p>&copy; {new Date().getFullYear()} Orchid Labs Inc.</p>
+								<p className="privacy-terms-links">
+									<a className="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
+									<a className="phantom-a" routerLink="/service-terms">Terms of Service</a>
+								</p>
+							</section>
+							<nav id="ft-nav">
+								<ul id="ft-nav-list" className="phantom-list">
+									<li><b i18n="@@Navigation-Title-Apps">Apps</b></li>
+									<li><a className="phantom-a" href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsitefooter" i18n="@@Navigation-Android">Android</a></li>
+									<li><a className="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-iOS">iOS</a></li>
+									<li><a className="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-macOS">macOS</a></li>
+									<li><a className="phantom-a" routerLink="/join" i18n="@@Navigation-OrchidAccount">Orchid Account</a></li>
+									<li><a className="phantom-a" routerLink="/download" i18n="@@Navigation-Download">Download</a></li>
+								</ul>
+							</nav>
+							<nav id="ft-nav-2">
+								<ul id="ft-nav-2-list" className="phantom-list">
+									<li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
+									<li><a className="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
+									<li><a className="phantom-a" routerLink="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
+									<li><a className="phantom-a" href="/whitepaper.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
+									<li><a className="phantom-a" routerLink="/partners" i18n="@@Navigation-Partners">Partners</a></li>
+									<li><a className="phantom-a" routerLink="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
+								</ul>
+							</nav>
+							<nav id="ft-nav-3">
+								<ul id="ft-nav-3-list" className="phantom-list">
+									<li><b i18n="@@Navigation-Title-Engage">Engage</b></li>
+									<li><a className="phantom-a" routerLink="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
+									<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link">Blog</a></li>
+									<li><a className="phantom-a" routerLink="/privacy-guardian" i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</a></li>
+									<li><a className="phantom-a" routerLink="/events" i18n="@@Navigation-Events">Events</a></li>
+									<li><a className="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+								</ul>
+							</nav>
+							<section>
+								<header className="no-mobile make-me-purple">
+									<strong i18n="@@NavigationFollowUs">Follow Us</strong>
+								</header>
+								<ul id="ft-social-list" className="phantom-list">
+									<li>
+										<a className="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+											<img src="/img/shared/social-twitter.svg" alt="Twitter" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
+											<img src="/img/shared/social-reddit.svg" alt="Reddit" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
+											<img src="/img/shared/social-discord.svg" style={{ width: "32px", height: "auto" }} alt="Discord" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
+											<img src="/img/shared/social-telegram.svg" style={{ width: "32px", height: "auto" }} alt="Telegram" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
+											<img src="/img/shared/social-github.svg" alt="Github" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
+											<img src="/img/shared/social-facebook.svg" alt="Facebook" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+											<img src="/img/shared/social-youtube.svg" alt="YouTube" width="32" height="32" />
+										</a>
+									</li>
+									<li>
+										<a className="inline-block" href="https://www.linkedin.com/company/orchidprotocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn" title="LinkedIn">
+											<img src="/img/shared/social-linkedin.svg" alt="LinkedIn" width="32" height="32" />
+										</a>
+									</li>
+								</ul>
+							</section>
+						</div>
+					</footer>
+				</div>
+
+				<div className="maker-badge transition" id="maker-badge" style={{ visibility: "visible" }}>
+					<div className="maker-badge__btn" id="maker-badge__btn">
+						<img alt="" width="27" height="29" className="maker-badge__btn-img" src="/img/shared/our-values-icon.svg" />
+						<span>Orchid's Values</span>
+						<a routerLink="/about-us" fragment="values"></a>
 					</div>
-					{/* The footer at the very bottom of the screen */}
-					<Footer />
 				</div>
 			</div>
 

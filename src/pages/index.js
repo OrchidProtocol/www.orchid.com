@@ -248,7 +248,7 @@ const NotFoundPage = () => (
 			</div>
 		</section>
 
-		<div class="wavy-element-07"></div>
+		{/*<div class="wavy-element-07"></div>*/}
 
 		<section class="newsletter-wrapper">
 			<div class="newsletter-container container-common">
