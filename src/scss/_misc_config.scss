@@ -1,0 +1,79 @@
+@use "sass:math";
+// This file is for config taken from the site design, not the playbook
+
+// NB: color-picked from site design
+$bkgd-white: #fff;
+$bkgd-lavender: #f3f4f9;
+$bkgd-faint-gray: #fbfbf9;
+
+$color-bright-white: #fbfbfe;
+$color-dim-white: #d8d8d8;
+
+// Arbitrary
+$color-error: #db5b4a;
+
+// $size-body-big: 32px;
+// $size-body: 18px;
+// $size-body-sm: 16px;
+$size-body-big: 32px;
+$size-body-md: 23px;
+$size-body: 18px;
+$size-body-sm: 16px;
+$size-btn: 24px;
+
+$size-body-big-mobile: 20px;
+$size-body-md-mobile: 16px;
+$size-body-mobile: 14px;
+$size-btn-mobile: 18px;
+
+$size-h1: 64px;
+$size-h1-small: ($size-h1 - math.div($size-h1, 6.25));
+// $size-h2: 40px;
+$size-h2: 40px;
+// $size-h4: 32px;
+$size-h4: math.div($size-h1, 2);
+
+$size-h1-big-mobile: 38px;
+$size-h1-mobile: 32px;
+$size-h1-small-mobile: 28px;
+$size-h2-mobile: 26px;
+$size-h4-mobile: 20px;
+
+@function mat-shadow($size, $alpha: 0.4, $inset: false, $x: false) {
+	$half: math.div($size, 2);
+	$asize: abs($size);
+	$ahalf: abs($half);
+	$inset-str: if($inset, " inset", "");
+	$offs-str: if($x, "#{$half} 0", "0 #{$half}");
+	@return unquote(
+		"#{$offs-str} #{$asize} #{rgba(black, $alpha)}#{$inset-str}, 0 0 #{$ahalf} #{rgba(black, math.div($alpha, 2.0))}#{$inset-str}"
+	);
+}
+
+@mixin splash-columns($left, $right) {
+	#splash {
+		grid-template-columns: $left $right;
+
+		@include vert-splash {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@mixin columns2($left, $right) {
+	.columns2 {
+		grid-template-columns: $left $right;
+
+		@include vert-splash {
+			grid-template-columns: 1fr;
+		}
+	}
+}
+
+@mixin size-body-sm {
+	font-size: $size-body-sm;
+
+	@include mobile {
+		font-size: $size-body-mobile;
+	}
+}
