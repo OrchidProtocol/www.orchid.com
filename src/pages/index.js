@@ -6,7 +6,7 @@ const NotFoundPage = () => (
 	<Layout>
 		<section class="home-hero">
 			<div class="home-hero__content">
-				<img alt="Don't be a product" src="/assets/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
+				<img alt="Don't be a product" src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
 				<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
 				<h3 class="color-primary"><span>A new model of VPN.</span></h3>
 				<a routerLink="/get-orchid" class="btn">
@@ -16,8 +16,8 @@ const NotFoundPage = () => (
 				<small>(starting at just $1)</small>
 			</div>
 			<picture class="home-hero__picture">
-				<source srcset="/assets/img/index/phone.webp" type="image/webp" />
-				<img src="/assets/img/index/phone.png" alt="" class="home-hero__image" width="491" height="765" />
+				<source srcset="/img/index/phone.webp" type="image/webp" />
+				<img src="/img/index/phone.png" alt="" class="home-hero__image" width="491" height="765" />
 			</picture>
 		</section>
 
@@ -32,7 +32,7 @@ const NotFoundPage = () => (
 					fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers
 					the entire ecosystem. Try it out!</p>
 				<picture>
-					<img src="/assets/img/index/marketplace.png" alt="" width="1921" height="442" />
+					<img src="/img/index/marketplace.png" alt="" width="1921" height="442" />
 				</picture>
 				<div class="marketplace-steps">
 					<div>
@@ -56,9 +56,9 @@ const NotFoundPage = () => (
 
 		<div class="wavy-element-03"></div>
 		<picture>
-			<source srcset="/assets/img/index/island-01.avif" type="image/avif" />
-			<source srcset="/assets/img/index/island-01.webp" type="image/webp" />
-			<img class="decorative-island" src="/assets/img/index/island-01.png" alt="" width="1056" height="628" />
+			<source srcset="/img/index/island-01.avif" type="image/avif" />
+			<source srcset="/img/index/island-01.webp" type="image/webp" />
+			<img class="decorative-island" src="/img/index/island-01.png" alt="" width="1056" height="628" />
 		</picture>
 
 		<section class="features__wrapper">
@@ -66,37 +66,37 @@ const NotFoundPage = () => (
 				<h2 class="section-heading">Key features</h2>
 				<div class="features-list">
 					<div>
-						<img src="/assets/img/index/icons/crypto.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/crypto.svg" alt="" width="100" height="100" />
 						<h3>Crypto-powered</h3>
 						<p>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.</p>
 						<a href="https://docs.orchid.com/en/latest/accounts/#how-to-get-an-orchid-account">Learn more.</a>
 					</div>
 					<div>
-						<img src="/assets/img/index/icons/nano.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/nano.svg" alt="" width="100" height="100" />
 						<h3>Nanopayment Ecosystem</h3>
 						<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.</p>
 						<a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency">Learn more.</a>
 					</div>
 					<div>
-						<img src="/assets/img/index/icons/traffic.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/traffic.svg" alt="" width="100" height="100" />
 						<h3>Traffic Analysis</h3>
 						<p>Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.</p>
 						<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-traffic-monitor">Learn more.</a>
 					</div>
 					<div>
-						<img src="/assets/img/index/icons/multi-hop.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/multi-hop.svg" alt="" width="100" height="100" />
 						<h3>Multi-hop</h3>
 						<p>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.</p>
 						<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-multi-hop-interface">Learn more.</a>
 					</div>
 					<div>
-						<img src="/assets/img/index/icons/servers.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/servers.svg" alt="" width="100" height="100" />
 						<h3>Randomized Servers</h3>
 						<p>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.</p>
 						<a href="https://docs.orchid.com/en/latest/faq/#technology">Learn more.</a>
 					</div>
 					<div>
-						<img src="/assets/img/index/icons/sharing.svg" alt="" width="100" height="100" />
+						<img src="/img/index/icons/sharing.svg" alt="" width="100" height="100" />
 						<h3>Unlimited Sharing</h3>
 						<p>Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.</p>
 						<a href="https://docs.orchid.com/en/latest/accounts/#sharing-orchid-accounts">Learn more.</a>
@@ -121,9 +121,9 @@ const NotFoundPage = () => (
 				<h2 class="section-heading">Why Orchid?</h2>
 				<div class="why-orchid__flex">
 					<picture>
-						<source srcset="/assets/img/index/why-orchid__phone.avif" type="image/avif" />
-						<source srcset="/assets/img/index/why-orchid__phone.webp" type="image/webp" />
-						<img src="/assets/img/index/why-orchid__phone.png" width="507" height="646" alt="" />
+						<source srcset="/img/index/why-orchid__phone.avif" type="image/avif" />
+						<source srcset="/img/index/why-orchid__phone.webp" type="image/webp" />
+						<img src="/img/index/why-orchid__phone.png" width="507" height="646" alt="" />
 					</picture>
 					<div class="why-orchid__text">
 
@@ -168,10 +168,10 @@ const NotFoundPage = () => (
 						</p>
 						<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" class="footer">
 							<div class="logo">
-								<img width="360" height="51" src="/assets/img/index/seen/techcrunch.png" alt="techcrunch" />
+								<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
 							</div>
 							<div class="uppercase">TECHCRUNCH</div>
-							<img src="/assets/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" />
 						</a>
 					</div>
 					<div class="press-card">
@@ -180,10 +180,10 @@ const NotFoundPage = () => (
 						</p>
 						<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" class="footer">
 							<div class="logo">
-								<img width="180" height="132" src="/assets/img/index/seen/cnet.svg" alt="CNET" />
+								<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
 							</div>
 							<div class="uppercase">CNET</div>
-							<img src="/assets/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" />
 						</a>
 					</div>
 					<div class="press-card">
@@ -193,10 +193,10 @@ const NotFoundPage = () => (
 						</p>
 						<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" class="footer">
 							<div class="logo">
-								<img width="360" height="70" src="/assets/img/index/seen/coindesk.png" alt="coindesk" />
+								<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
 							</div>
 							<div class="uppercase">COINDESK</div>
-							<img src="/assets/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" />
 						</a>
 					</div>
 				</div>
@@ -212,7 +212,7 @@ const NotFoundPage = () => (
 						</p>
 						<div class="footer">
 							<div class="logo offset">
-								<img src="/assets/img/index/TweetBunny.png" />
+								<img src="/img/index/TweetBunny.png" />
 							</div>
 							<a class="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 						</div>
@@ -223,7 +223,7 @@ const NotFoundPage = () => (
 						</p>
 						<div class="footer">
 							<div class="logo offset">
-								<img src="/assets/img/index/TweetBunny.png" />
+								<img src="/img/index/TweetBunny.png" />
 							</div>
 							<a class="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 						</div>
@@ -257,22 +257,22 @@ const NotFoundPage = () => (
 
 				<div class="social-icons">
 					<a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
-						<img src="/assets/img/shared/social-twitter-purple.svg" alt="Twitter" width="32" height="32" />
+						<img src="/img/shared/social-twitter-purple.svg" alt="Twitter" width="32" height="32" />
 					</a>
 					<a class="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
-						<img src="/assets/img/shared/social-discord-purple.svg" alt="Discord" width="32" height="32" />
+						<img src="/img/shared/social-discord-purple.svg" alt="Discord" width="32" height="32" />
 					</a>
 					<a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
-						<img src="/assets/img/shared/social-telegram-purple.svg" alt="Telegram" width="32" height="32" />
+						<img src="/img/shared/social-telegram-purple.svg" alt="Telegram" width="32" height="32" />
 					</a>
 					<a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
-						<img src="/assets/img/shared/social-github-purple.svg" alt="Github" width="32" height="32" />
+						<img src="/img/shared/social-github-purple.svg" alt="Github" width="32" height="32" />
 					</a>
 					<a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
-						<img src="/assets/img/shared/social-facebook-purple.svg" alt="Facebook" width="32" height="32" />
+						<img src="/img/shared/social-facebook-purple.svg" alt="Facebook" width="32" height="32" />
 					</a>
 					<a class="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
-						<img src="/assets/img/shared/social-reddit-purple.svg" alt="Reddit" width="32" height="32" />
+						<img src="/img/shared/social-reddit-purple.svg" alt="Reddit" width="32" height="32" />
 					</a>
 				</div>
 
