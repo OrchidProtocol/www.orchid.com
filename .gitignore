@@ -11,3 +11,7 @@ package-lock.json
 
 .env.production
 .env.development
+
+# blog integration
+static/img/blog-integration
+static/blog.json

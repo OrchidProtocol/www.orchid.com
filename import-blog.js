@@ -1,15 +1,16 @@
-const { readFileSync, existsSync, writeFileSync, mkdirSync, createWriteStream, copyFileSync, unlink } = require("fs");
+require('dotenv').config();
+
+const { existsSync, writeFileSync, mkdirSync, createWriteStream } = require("fs");
 const { join } = require("path");
 const sharp = require('sharp');
-const http = require('http');
 const fetch = require('node-fetch');
 
 
 const SRC_FOLDER = join(process.cwd(), "src");
-const ASSETS_FOLDER = join(SRC_FOLDER, "assets");
+const ASSETS_FOLDER = join(process.cwd(), "static");
 
 const fallback = () => {
-	writeFileSync(join(ASSETS_FOLDER, 'json'), JSON.stringify([]));
+	writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify([]));
 }
 fallback();
 
@@ -47,7 +48,7 @@ const downloadBlogImage = (url, index = 0) => {
 	return getSmallURL(output);
 }
 
-
+/*
 if (!existsSync(join(ASSETS_FOLDER, '/img/brella-integration/')))
 	mkdirSync(join(ASSETS_FOLDER, '/img/brella-integration/'))
 let brellaOffset = 0;
@@ -76,11 +77,11 @@ const downloadBrellaImage = (url) => {
 	}, brellaOffset++ * 100);
 
 	return getSmallURL(output);
-}
+}*/
 
-let domain = 'orchid.com';
+let domain = 'blog.orchid.com';
 if (process.env.BUILD_LOCALE) {
-	domain = domain.replace('', `${process.env.BUILD_LOCALE}.`);
+	domain = domain.replace('blog.', `blog.${process.env.BUILD_LOCALE}.`);
 }
 
 fetch(`https://${domain}/feed-1.json`)
@@ -94,9 +95,9 @@ fetch(`https://${domain}/feed-1.json`)
 				data.items[index].url = `https://${domain}/${data.items[index].url}`;
 				output.push(data.items[index]);
 
-				output[output.length - 1].featuredimage = destination.substr(SRC_FOLDER.length);
+				output[output.length - 1].featuredimage = destination.substr(ASSETS_FOLDER.length);
 			}
-			writeFileSync(join(ASSETS_FOLDER, 'json'), JSON.stringify(output));
+			writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify(output));
 		} catch (e) { fallback() }
 	})
 	.catch(fallback);
