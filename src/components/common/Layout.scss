@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "_media_queries";
 @import "_misc_config";
 @import "_orc_config";
@@ -38,7 +39,7 @@
 	/* boosts z-index, because CSS is horrible */
 	flex-flow: row nowrap;
 	justify-content: space-between;
-	margin: 0 ($gap / -2);
+	margin: 0 math.div($gap, -2);
 	z-index: 2;
 
 	@media (max-width: 1200px) {
@@ -49,7 +50,7 @@
 		section,
 		nav {
 			flex: 0 0 auto;
-			margin: 0 ($gap / 2);
+			margin: 0 math.div($gap, 2);
 
 			@include mobile {
 				margin: 0;
@@ -126,7 +127,7 @@
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
-	margin: ($gap / -2);
+	margin: math.div($gap, -2);
 
 	img {
 		width: 30px;
@@ -134,7 +135,7 @@
 	}
 
 	> li {
-		margin: ($gap / 2);
+		margin: math.div($gap, 2);
 	}
 
 	@media (max-width: 1200px) {

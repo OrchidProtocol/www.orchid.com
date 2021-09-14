@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "media_queries";
 @import "misc_config";
 @import "orc_config";
@@ -183,7 +184,7 @@ $flyout-ease-in: cubic-bezier(0.45, 0.1, 0.75, 0.5);
 $flyout-ease-out: cubic-bezier(0.25, 0.5, 0.5, 1);
 
 $flyout-spacing: 2rem;
-$flyout-gap: ($flyout-spacing / 2);
+$flyout-gap: math.div($flyout-spacing, 2);
 
 .nav-menu {
 	@include not-mobile {

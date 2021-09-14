@@ -22,17 +22,17 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 			<Location>
 				{({ location }) => {
 					return <Helmet>
-						<link rel="alternate" href={`https://ko.orchid.com${location.pathname}`} hreflang="ko" />
+						<link rel="alternate" href={`https://orchid.com/ko${location.pathname}`} hreflang="ko" />
 						<link rel="alternate" href={`https://orchid.com${location.pathname}`} hreflang="x-default" />
-						<link rel="alternate" href={`https://ja.orchid.com${location.pathname}`} hreflang="ja" />
-						<link rel="alternate" href={`https://zh.orchid.com${location.pathname}`} hreflang="zh" />
-						<link rel="alternate" href={`https://id.orchid.com${location.pathname}`} hreflang="id" />
-						<link rel="alternate" href={`https://ru.orchid.com${location.pathname}`} hreflang="ru" />
+						<link rel="alternate" href={`https://orchid.com/ja${location.pathname}`} hreflang="ja" />
+						<link rel="alternate" href={`https://orchid.com/zh${location.pathname}`} hreflang="zh" />
+						<link rel="alternate" href={`https://orchid.com/id${location.pathname}`} hreflang="id" />
+						<link rel="alternate" href={`https://orchid.com/ru${location.pathname}`} hreflang="ru" />
 
 						{
 							process.env.GATSBY_TARGET_LANG === "en" || !process.env.GATSBY_TARGET_LANG ?
 								<meta rel="canonical" href={`https://orchid.com${location.pathname}`} /> :
-								<meta rel="canonical" href={`https://${process.env.GATSBY_TARGET_LANG.toLowerCase()}.orchid.com${location.pathname}`} />
+								<meta rel="canonical" href={`https://orchid.com/${process.env.GATSBY_TARGET_LANG.toLowerCase()}${location.pathname}`} />
 						}
 					</Helmet>
 				}}
@@ -67,8 +67,8 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 								<img width="149px" height="39px" alt="" src="/img/shared/orchid-logo-text.svg?v=3" />
 								<p>&copy; {new Date().getFullYear()} Orchid Labs Inc.</p>
 								<p className="privacy-terms-links">
-									<a className="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
-									<a className="phantom-a" routerLink="/service-terms">Terms of Service</a>
+									<a className="phantom-a" href="/privacy-policy">Privacy Policy</a> |
+									<a className="phantom-a" href="/service-terms">Terms of Service</a>
 								</p>
 							</section>
 							<nav id="ft-nav">
@@ -77,28 +77,28 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 									<li><a className="phantom-a" href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Dwebsitefooter" i18n="@@Navigation-Android">Android</a></li>
 									<li><a className="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-iOS">iOS</a></li>
 									<li><a className="phantom-a" href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=websitefooter&mt=8" i18n="@@Navigation-macOS">macOS</a></li>
-									<li><a className="phantom-a" routerLink="/join" i18n="@@Navigation-OrchidAccount">Orchid Account</a></li>
-									<li><a className="phantom-a" routerLink="/download" i18n="@@Navigation-Download">Download</a></li>
+									<li><a className="phantom-a" href="/join" i18n="@@Navigation-OrchidAccount">Orchid Account</a></li>
+									<li><a className="phantom-a" href="/download" i18n="@@Navigation-Download">Download</a></li>
 								</ul>
 							</nav>
 							<nav id="ft-nav-2">
 								<ul id="ft-nav-2-list" className="phantom-list">
 									<li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
-									<li><a className="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
-									<li><a className="phantom-a" routerLink="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
+									<li><a className="phantom-a" href="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
+									<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
 									<li><a className="phantom-a" href="/whitepaper.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
-									<li><a className="phantom-a" routerLink="/partners" i18n="@@Navigation-Partners">Partners</a></li>
-									<li><a className="phantom-a" routerLink="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
+									<li><a className="phantom-a" href="/partners" i18n="@@Navigation-Partners">Partners</a></li>
+									<li><a className="phantom-a" href="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
 								</ul>
 							</nav>
 							<nav id="ft-nav-3">
 								<ul id="ft-nav-3-list" className="phantom-list">
 									<li><b i18n="@@Navigation-Title-Engage">Engage</b></li>
-									<li><a className="phantom-a" routerLink="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
+									<li><a className="phantom-a" href="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
 									<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link">Blog</a></li>
-									<li><a className="phantom-a" routerLink="/privacy-guardian" i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</a></li>
-									<li><a className="phantom-a" routerLink="/events" i18n="@@Navigation-Events">Events</a></li>
-									<li><a className="phantom-a" routerLink="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+									<li><a className="phantom-a" href="/privacy-guardian" i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</a></li>
+									<li><a className="phantom-a" href="/events" i18n="@@Navigation-Events">Events</a></li>
+									<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
 								</ul>
 							</nav>
 							<section>
@@ -156,7 +156,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 					<div className="maker-badge__btn" id="maker-badge__btn">
 						<img alt="" width="27" height="29" className="maker-badge__btn-img" src="/img/shared/our-values-icon.svg" />
 						<span>Orchid's Values</span>
-						<a routerLink="/about-us" fragment="values"></a>
+						<a href="/about-us#values">&nbsp;</a>
 					</div>
 				</div>
 			</div>

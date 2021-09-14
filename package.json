@@ -2,7 +2,7 @@
 	"name": "orchid-www",
 	"version": "0.0.0",
 	"scripts": {
-		"clean": "rm .env.production && rm .env.development && gatsby clean",
+		"clean": "gatsby clean",
 		"start": "TARGET_LANG=en node init-env.js && npm run develop",
 		"build": "npm run build:static:en",
 		"build:light": "TARGET_LANG=en node init-env.js && gatsby build && node post-build.js",

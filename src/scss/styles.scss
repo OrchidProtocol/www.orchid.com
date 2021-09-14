@@ -232,13 +232,6 @@ img {
 
 main {
 	background: $bkgd-white;
-
-	p,
-	.p-gap {
-		&:not(:last-child) {
-			margin: 0 0 1rem;
-		}
-	}
 }
 
 ::selection {

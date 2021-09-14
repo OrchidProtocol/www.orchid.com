@@ -6,10 +6,10 @@ const NotFoundPage = () => (
 	<Layout>
 		<section class="home-hero">
 			<div class="home-hero__content">
-				<img alt="Don't be a product" src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
+				<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
 				<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
 				<h3 class="color-primary"><span>A new model of VPN.</span></h3>
-				<a routerLink="/get-orchid" class="btn">
+				<a href="/get-orchid" class="btn">
 					<button class="btn-primary">Get Orchid</button>
 				</a>
 				<br />
@@ -134,7 +134,7 @@ const NotFoundPage = () => (
 						<p>Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you.Orchid also has no tracking systems in our applications.We absolutely do not track.</p>
 
 						<h4>Open Source</h4>
-						<p>All of Orchid's code is Open Source and freely available to download <a href="https://github.com/OrchidTechnologies/orchid" target="_blank">on GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license.The Orchid community develops code "in the open" by continually pushing changes that anyone can see on GitHub and <a href="https://github.com/OrchidTechnologies/orchid/releases/">tagging releases</a> as appropriate.</p>
+						<p>All of Orchid's code is Open Source and freely available to download <a href="https://github.com/OrchidTechnologies/orchid" target="_blank" rel="noreferrer">on GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license.The Orchid community develops code "in the open" by continually pushing changes that anyone can see on GitHub and <a href="https://github.com/OrchidTechnologies/orchid/releases/">tagging releases</a> as appropriate.</p>
 
 						<h4>Decentralized</h4>
 						<p>Orchid brings leading providers together through a unique, decentralized privacy marketplace.Because there are more (and more widely distributed) servers available, the user's data has more possible paths to choose from. This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient.</p>
@@ -149,7 +149,7 @@ const NotFoundPage = () => (
 
 				<video-section></video-section>
 
-				<a routerLink="/get-orchid" class="section-button">
+				<a href="/get-orchid" class="section-button">
 					<button class="btn-secondary">Get Orchid</button>
 				</a>
 			</div>
@@ -171,7 +171,7 @@ const NotFoundPage = () => (
 								<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
 							</div>
 							<div class="uppercase">TECHCRUNCH</div>
-							<img src="/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
 					<div class="press-card">
@@ -183,7 +183,7 @@ const NotFoundPage = () => (
 								<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
 							</div>
 							<div class="uppercase">CNET</div>
-							<img src="/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
 					<div class="press-card">
@@ -196,7 +196,7 @@ const NotFoundPage = () => (
 								<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
 							</div>
 							<div class="uppercase">COINDESK</div>
-							<img src="/img/index/read-more-arrow.svg" />
+							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
 				</div>
@@ -212,7 +212,7 @@ const NotFoundPage = () => (
 						</p>
 						<div class="footer">
 							<div class="logo offset">
-								<img src="/img/index/TweetBunny.png" />
+								<img src="/img/index/TweetBunny.png" alt="" />
 							</div>
 							<a class="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 						</div>
@@ -223,7 +223,7 @@ const NotFoundPage = () => (
 						</p>
 						<div class="footer">
 							<div class="logo offset">
-								<img src="/img/index/TweetBunny.png" />
+								<img src="/img/index/TweetBunny.png" alt="" />
 							</div>
 							<a class="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 						</div>
