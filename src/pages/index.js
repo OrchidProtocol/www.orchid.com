@@ -15,7 +15,7 @@ const NotFoundPage = () => (
 				<br />
 				<small>(starting at just $1)</small>
 			</div>
-			<picture class="home-hero__picture">
+			<picture class="home-hero__picture" width="491" height="765">
 				<source srcset="/img/index/phone.webp" type="image/webp" />
 				<img src="/img/index/phone.png" alt="" class="home-hero__image" width="491" height="765" />
 			</picture>
