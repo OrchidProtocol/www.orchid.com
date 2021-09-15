@@ -89,6 +89,7 @@ import { PodcastEp61Component } from './podcast-ep61/podcast.component';
 import { PodcastEp62Component } from './podcast-ep62/podcast.component';
 import { PodcastEp63Component } from './podcast-ep63/podcast.component';
 import { PodcastEp64Component } from './podcast-ep64/podcast.component';
+import { PodcastEp65Component } from './podcast-ep65/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -268,6 +269,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-63-julie-owono", component: PodcastEp63Component },
 			{ path: "podcast/episode-64-sonny-king.html", redirectTo: "podcast/episode-64-sonny-king" },
 			{ path: "podcast/episode-64-sonny-king", component: PodcastEp64Component },
+			{ path: "podcast/episode-65-alexander-klus.html", redirectTo: "podcast/episode-65-alexander-klus" },
+			{ path: "podcast/episode-65-alexander-klus", component: PodcastEp65Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
