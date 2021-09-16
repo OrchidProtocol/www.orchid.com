@@ -144,13 +144,13 @@ $mobile-nav-height: 64px;
 .nav-download {
 	display: none;
 
+	& > button.btn-secondary {
+		font-size: $size-body-sm;
+		padding: 0.05rem 1.5rem;
+	}
+
 	@include large-screen {
 		display: block;
-
-		& > button {
-			font-size: $size-body-sm;
-			padding: 0.05rem 1.5rem;
-		}
 	}
 }
 

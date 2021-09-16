@@ -5,7 +5,7 @@ import './Navbar.scss';
 class Navbar extends React.Component {
 
 	render() {
-		return (<div>
+		return (<div id="nav-root">
 			<nav id="nav" class="section-wide hpad-thin wants-js-class">
 				<h1 id="nav-home">
 					<a class="inline-block" href="/" aria-label="Home" title="Home">
@@ -48,12 +48,18 @@ class Navbar extends React.Component {
 					</ul>
 				</div>
 
+				<a class="nav-download" href="/get-orchid">
+					<button class="btn-secondary" i18n="@@Navigation-Download">
+						Get Orchid
+					</button>
+				</a>
+
 				<button id="nav-toggle" class="phantom-btn mobile-only">
 					<img width="25" height="22" alt="Toggle Navigation" src="/img/shared/hamburger.svg" />
 				</button>
 			</nav>
 			<div id="nav-pin" class="mobile-only"></div>
-		</div >)
+		</div>)
 	}
 }
 export default Navbar;
