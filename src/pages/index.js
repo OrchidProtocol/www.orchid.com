@@ -1,31 +1,36 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './index.scss'
 
-const NotFoundPage = () => (
+const Page = () => (
 	<Layout>
-		<section class="home-hero">
-			<div class="home-hero__content">
+		<Helmet>
+			<title>Crypto VPN App | Orchid</title>
+			<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />
+		</Helmet>
+		<section className="home-hero">
+			<div className="home-hero__content">
 				<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
 				<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
-				<h3 class="color-primary"><span>A new model of VPN.</span></h3>
-				<a href="/get-orchid" class="btn">
-					<button class="btn-primary">Get Orchid</button>
+				<h3 className="color-primary"><span>A new model of VPN.</span></h3>
+				<a href="/get-orchid" className="btn">
+					<button className="btn-primary">Get Orchid</button>
 				</a>
 				<br />
 				<small>(starting at just $1)</small>
 			</div>
-			<picture class="home-hero__picture" width="491" height="765">
-				<source srcset="/img/index/phone.webp" type="image/webp" />
-				<img src="/img/index/phone.png" alt="" class="home-hero__image" width="491" height="765" />
+			<picture className="home-hero__picture" width="491" height="765">
+				<source srcSet="/img/index/phone.webp" type="image/webp" />
+				<img src="/img/index/phone.png" alt="" className="home-hero__image" width="491" height="765" />
 			</picture>
 		</section>
 
-		<div class="wavy-element-02"></div>
+		<div className="wavy-element-02"></div>
 
-		<section class="marketplace__wrapper">
-			<div class="marketplace__container container-common">
-				<h2 class="section-heading">Orchid is a decentralized bandwidth marketplace</h2>
+		<section className="marketplace__wrapper">
+			<div className="marketplace__container container-common">
+				<h2 className="section-heading">Orchid is a decentralized bandwidth marketplace</h2>
 				<p>Buyers use the <a href="/download">Orchid app</a> to get protection from snooping ISP's, unblock websites
 					cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they
 					provide service and stake <a href="/oxt">OXT</a> to compete for service requests. Orchid Technologies charges no
@@ -34,7 +39,7 @@ const NotFoundPage = () => (
 				<picture>
 					<img src="/img/index/marketplace.png" alt="" width="1921" height="442" />
 				</picture>
-				<div class="marketplace-steps">
+				<div className="marketplace-steps">
 					<div>
 						<h3>Fund your Orchid account</h3>
 						<p>Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto.</p>
@@ -48,23 +53,23 @@ const NotFoundPage = () => (
 						<p>Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.</p>
 					</div>
 				</div>
-				<a href="/how-it-works/" class="section-button">
-					<button class="btn-secondary">Learn More</button>
+				<a href="/how-it-works/" className="section-button">
+					<button className="btn-secondary">Learn More</button>
 				</a>
 			</div>
 		</section>
 
-		<div class="wavy-element-03"></div>
+		<div className="wavy-element-03"></div>
 		<picture>
-			<source srcset="/img/index/island-01.avif" type="image/avif" />
-			<source srcset="/img/index/island-01.webp" type="image/webp" />
-			<img class="decorative-island" src="/img/index/island-01.png" alt="" width="1056" height="628" />
+			<source srcSet="/img/index/island-01.avif" type="image/avif" />
+			<source srcSet="/img/index/island-01.webp" type="image/webp" />
+			<img className="decorative-island" src="/img/index/island-01.png" alt="" width="1056" height="628" />
 		</picture>
 
-		<section class="features__wrapper">
-			<div class="features__container container-common">
-				<h2 class="section-heading">Key features</h2>
-				<div class="features-list">
+		<section className="features__wrapper">
+			<div className="features__container container-common">
+				<h2 className="section-heading">Key features</h2>
+				<div className="features-list">
 					<div>
 						<img src="/img/index/icons/crypto.svg" alt="" width="100" height="100" />
 						<h3>Crypto-powered</h3>
@@ -105,27 +110,27 @@ const NotFoundPage = () => (
 			</div>
 		</section>
 
-		<div class="dove-information">
+		<div className="dove-information">
 			<a href="https://docs.orchid.com/">
-				<button class="btn-primary">Read the Docs</button>
+				<button className="btn-primary">Read the Docs</button>
 			</a>
 			<a href="/assets/whitepaper/whitepaper.pdf">
-				<button class="btn-secondary">Whitepaper</button>
+				<button className="btn-secondary">Whitepaper</button>
 			</a>
 		</div>
 
-		<div class="wavy-element-04"></div>
+		<div className="wavy-element-04"></div>
 
-		<section class="why-orchid__wrapper">
-			<div class="why-orchid__container container-common">
-				<h2 class="section-heading">Why Orchid?</h2>
-				<div class="why-orchid__flex">
+		<section className="why-orchid__wrapper">
+			<div className="why-orchid__container container-common">
+				<h2 className="section-heading">Why Orchid?</h2>
+				<div className="why-orchid__flex">
 					<picture>
-						<source srcset="/img/index/why-orchid__phone.avif" type="image/avif" />
-						<source srcset="/img/index/why-orchid__phone.webp" type="image/webp" />
+						<source srcSet="/img/index/why-orchid__phone.avif" type="image/avif" />
+						<source srcSet="/img/index/why-orchid__phone.webp" type="image/webp" />
 						<img src="/img/index/why-orchid__phone.png" width="507" height="646" alt="" />
 					</picture>
-					<div class="why-orchid__text">
+					<div className="why-orchid__text">
 
 						<h4>No Subscriptions</h4>
 						<p>When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control.VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use</p>
@@ -149,129 +154,129 @@ const NotFoundPage = () => (
 
 				<video-section></video-section>
 
-				<a href="/get-orchid" class="section-button">
-					<button class="btn-secondary">Get Orchid</button>
+				<a href="/get-orchid" className="section-button">
+					<button className="btn-secondary">Get Orchid</button>
 				</a>
 			</div>
 		</section>
 
-		<div class="wavy-element-05"></div>
+		<div className="wavy-element-05"></div>
 
-		<section class="press-wrapper">
-			<div class="press-container container-common">
-				<h2 class="section-heading" i18n="@@HomeAsSeenIn__Title">Orchid News</h2>
-				<div class="press-list">
-					<div class="press-card">
-						<p class="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
+		<section className="press-wrapper">
+			<div className="press-container container-common">
+				<h2 className="section-heading" i18n="@@HomeAsSeenIn__Title">Orchid News</h2>
+				<div className="press-list">
+					<div className="press-card">
+						<p className="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
 							In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
 							when it comes to data abuse, it’s easy to see the project’s appeal.
 						</p>
-						<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" class="footer">
-							<div class="logo">
+						<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" className="footer">
+							<div className="logo">
 								<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
 							</div>
-							<div class="uppercase">TECHCRUNCH</div>
+							<div className="uppercase">TECHCRUNCH</div>
 							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
-					<div class="press-card">
-						<p class="press-card__quote" i18n="@@HomeAsSeenIn__CNET">
+					<div className="press-card">
+						<p className="press-card__quote" i18n="@@HomeAsSeenIn__CNET">
 							This is what the future of VPN tech looks like. And you gotta see it.
 						</p>
-						<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" class="footer">
-							<div class="logo">
+						<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
+							<div className="logo">
 								<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
 							</div>
-							<div class="uppercase">CNET</div>
+							<div className="uppercase">CNET</div>
 							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
-					<div class="press-card">
-						<p class="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
+					<div className="press-card">
+						<p className="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
 							Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
 							a natural resource for everyone, everywhere.
 						</p>
-						<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" class="footer">
-							<div class="logo">
+						<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" className="footer">
+							<div className="logo">
 								<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
 							</div>
-							<div class="uppercase">COINDESK</div>
+							<div className="uppercase">COINDESK</div>
 							<img src="/img/index/read-more-arrow.svg" alt="" />
 						</a>
 					</div>
 				</div>
-				<h3 class="center-text vpad-thin color-gray" style={{ marginBottom: "-0.5rem" }}>The Orchid community has a lot to say as well!</h3>
-				<div class="press-list">
-					<div class="press-card">
-						<p class="press-card__quote">
+				<h3 className="center-text vpad-thin color-gray" style={{ marginBottom: "-0.5rem" }}>The Orchid community has a lot to say as well!</h3>
+				<div className="press-list">
+					<div className="press-card">
+						<p className="press-card__quote">
 							"Orchid’s VPN could be very useful from a point of view of freedom."
 							<br /><br />
 							<a href="https://twitter.com/search?q=%24OXT&src=cashtag_click">$OXT</a>&nbsp;<a href="https://twitter.com/hashtag/OrchidProtocol?src=hashtag_click">#OrchidProtocol</a>
 							<br /><br />
 							Excellent read: <a href="https://beincrypto.com/everything-is-an-economy-orchid-ceo-steven-waterhouse/">Orchid CEO Steven Waterhouse on VPNs...</a>
 						</p>
-						<div class="footer">
-							<div class="logo offset">
+						<div className="footer">
+							<div className="logo offset">
 								<img src="/img/index/TweetBunny.png" alt="" />
 							</div>
-							<a class="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
+							<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 						</div>
 					</div>
-					<div class="press-card">
-						<p class="press-card__quote">
+					<div className="press-card">
+						<p className="press-card__quote">
 							So proud of <a href="https://twitter.com/OrchidProtocol">@OrchidProtocol</a> getting listed in the Apple app store! Privacy and internet access should be synonymous, and Orchid's decentralized VPN is a key step forward. I'm going to try a week of <a href="https://twitter.com/hashtag/OrchidAlwaysOn?src=hashtag_click">#OrchidAlwaysOn</a> and keep my VPN running in the background.
 						</p>
-						<div class="footer">
-							<div class="logo offset">
+						<div className="footer">
+							<div className="logo offset">
 								<img src="/img/index/TweetBunny.png" alt="" />
 							</div>
-							<a class="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
+							<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<div class="wavy-element-06"></div>
+		<div className="wavy-element-06"></div>
 
-		<section class="blog-wrapper">
-			<div class="blog-container container-common">
-				<h2 class="section-heading">From the Orchid Blog</h2>
-				<div class="blog-grid">
+		<section className="blog-wrapper">
+			<div className="blog-container container-common">
+				<h2 className="section-heading">From the Orchid Blog</h2>
+				<div className="blog-grid">
 
 				</div>
-				<a href="https://blog.orchid.com/" class="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
-					<button class="btn-secondary">
+				<a href="https://blog.orchid.com/" className="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
+					<button className="btn-secondary">
 						Go to Blog
 					</button>
 				</a>
 			</div>
 		</section>
 
-		{/*<div class="wavy-element-07"></div>*/}
+		{/*<div className="wavy-element-07"></div>*/}
 
-		<section class="newsletter-wrapper">
-			<div class="newsletter-container container-common">
-				<h2 class="section-heading">Connect</h2>
+		<section className="newsletter-wrapper">
+			<div className="newsletter-container container-common">
+				<h2 className="section-heading">Connect</h2>
 				<p>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</p>
 
-				<div class="social-icons">
-					<a class="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+				<div className="social-icons">
+					<a className="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
 						<img src="/img/shared/social-twitter-purple.svg" alt="Twitter" width="32" height="32" />
 					</a>
-					<a class="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
+					<a className="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
 						<img src="/img/shared/social-discord-purple.svg" alt="Discord" width="32" height="32" />
 					</a>
-					<a class="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
+					<a className="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
 						<img src="/img/shared/social-telegram-purple.svg" alt="Telegram" width="32" height="32" />
 					</a>
-					<a class="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
+					<a className="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
 						<img src="/img/shared/social-github-purple.svg" alt="Github" width="32" height="32" />
 					</a>
-					<a class="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
+					<a className="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
 						<img src="/img/shared/social-facebook-purple.svg" alt="Facebook" width="32" height="32" />
 					</a>
-					<a class="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
+					<a className="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
 						<img src="/img/shared/social-reddit-purple.svg" alt="Reddit" width="32" height="32" />
 					</a>
 				</div>
@@ -284,4 +289,4 @@ const NotFoundPage = () => (
 	</Layout>
 )
 
-export default NotFoundPage
+export default Page
