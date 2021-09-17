@@ -18,9 +18,7 @@ const Page = () => (
 
 					<div class="splash-circuit-grid-text" i18n="@@ContactHero__Description">
 						<h3>We want to hear from you</h3>
-						<p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure
-							providers and integration partners that want to build with Orchid. Contact us and we'll get back to you
-							shortly.</p>
+						<p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.</p>
 					</div>
 				</div>
 				<div class="splash-circuit-grid-item">
@@ -84,7 +82,6 @@ const Page = () => (
 						<input
 							type="text"
 							name="name"
-
 							placeholder="Your Name"
 							i18n-placeholder="@@ContactForm__NamePlaceholder"
 							required />
@@ -94,7 +91,6 @@ const Page = () => (
 						<input
 							type="email"
 							name="email"
-
 							placeholder="Your Email"
 							i18n-placeholder="@@ContactForm__EmailPlaceholder"
 
@@ -113,10 +109,8 @@ const Page = () => (
 					<div class="contact-form-input-wrapper">
 						<textarea
 							name="message"
-
 							placeholder="Enter your message..."
 							i18n-placeholder="@@ContactForm__MessagePlaceholder"
-
 							required></textarea>
 					</div>
 
