@@ -10,19 +10,19 @@ const Page = () => (
 			<meta name="description" content="Orchid is a VPN client, VPN service and advanced networking tool." />
 			<meta name="og:image" content="https://orchid.com/img/contact/social.png" />
 		</Helmet>
-		<div class="background-white">
+		<div className="background-white">
 			<section id="top">
 				<h3 i18n="@@DownloadHero__Title">Get the Orchid app</h3>
 			</section>
 		</div>
 
-		<div id="instructions" class="background-white">
-			<section class="download-images__wrapper">
-				<div class="download-images__container">
+		<div id="instructions" className="background-white">
+			<section className="download-images__wrapper">
+				<div className="download-images__container">
 					<h4 i18n="@@DownloadAndroid__Title">Android</h4>
-					<img src="/img/download/phone-1.png" class="download-images__device" alt="" />
-					<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
-					<ul class="download-instructions__list" i18n="@@DownloadAndroid__Body" style={{ listStyle: "none" }}>
+					<img src="/img/download/phone-1.png" className="download-images__device" alt="" />
+					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+					<ul className="download-instructions__list" i18n="@@DownloadAndroid__Body" style={{ listStyle: "none" }}>
 						<li>
 							<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage">
 								<img width="160" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0" }} />
@@ -39,11 +39,11 @@ const Page = () => (
 						</li>
 					</ul>
 				</div>
-				<div class="download-images__container">
+				<div className="download-images__container">
 					<h4 i18n="@@DownloadiOS__Title">iOS</h4>
-					<img src="/img/download/phone-2.png" class="download-images__device" alt="" />
-					<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
-					<ul class="download-instructions__list" i18n="@@DownloadiOS__Body">
+					<img src="/img/download/phone-2.png" className="download-images__device" alt="" />
+					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+					<ul className="download-instructions__list" i18n="@@DownloadiOS__Body">
 						<li>
 							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
 								<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
@@ -51,11 +51,11 @@ const Page = () => (
 						</li>
 					</ul>
 				</div>
-				<div class="download-images__container">
+				<div className="download-images__container">
 					<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
-					<img src="/img/download/macbook.png" class="download-images__device mac" alt="" />
-					<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
-					<ul class="download-instructions__list" i18n="@@DownloadMacOS__Body">
+					<img src="/img/download/macbook.png" className="download-images__device mac" alt="" />
+					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+					<ul className="download-instructions__list" i18n="@@DownloadMacOS__Body">
 						<li>
 							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
 								<img alt="macOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
@@ -67,9 +67,9 @@ const Page = () => (
 		</div>
 
 
-		<div class="background-gray">
-			<section class="download-opensource__section">
-				<div class="download-opensource__text">
+		<div className="background-gray">
+			<section className="download-opensource__section">
+				<div className="download-opensource__text">
 					<h2>Orchid is Open Source</h2>
 					<br />
 					<p>All of Orchid's code is Open Source and freely available to download on <a href="https://github.com/OrchidTechnologies">GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license.</p>
@@ -78,19 +78,19 @@ const Page = () => (
 					<br />
 					<br />
 					<a href="https://github.com/OrchidTechnologies">
-						<button class="btn-primary">
+						<button className="btn-primary">
 							<img alt="" src="/img/shared/social-github-white.svg" /> OrchidTechnologies
 						</button>
 					</a>
 				</div>
-				<img alt="" class="download-opensource__image" src="/img/download/integrated-bunny.svg" />
+				<img alt="" className="download-opensource__image" src="/img/download/integrated-bunny.svg" />
 
 			</section>
 		</div>
 
-		<div class="bk-lavender">
-			<section class="section-narrow hpad-wide vpad-wide z-index-1 center-text">
-				<h2 class="color-primary gap-bot-thin">Where to get OXT</h2>
+		<div className="bk-lavender">
+			<section className="section-narrow hpad-wide vpad-wide z-index-1 center-text">
+				<h2 className="color-primary gap-bot-thin">Where to get OXT</h2>
 				<where-oxt></where-oxt>
 			</section>
 		</div>

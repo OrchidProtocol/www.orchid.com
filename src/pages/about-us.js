@@ -10,28 +10,28 @@ const Page = () => (
 			<meta name="description" content="We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN." />
 			<meta name="og:image" content="https://www.orchid.com/img/company/splash/social.png" />
 		</Helmet>
-		<div class="about-company__page-container">
-			<div class="bk-beige-light about-company__splash-container">
-				<section class="about-company__splash">
-					<div class="about-company__splash-text-container">
+		<div className="about-company__page-container">
+			<div className="bk-beige-light about-company__splash-container">
+				<section className="about-company__splash">
+					<div className="about-company__splash-text-container">
 						<h1 i18n="@@AboutCompanyHero__Title">
 							We can <br /> reclaim the <br /> internet <br />
-							<span class="big">
+							<span className="big">
 								together
 							</span>
 						</h1>
 					</div>
-					<div class="about-company__splash-image-container">
+					<div className="about-company__splash-image-container">
 						<img src="/img/company/splash/splash-foreground.svg" width="868" height="706" alt="" />
 					</div>
 				</section>
 			</div>
 
-			<div class="about-company__centered-text-section-container">
-				<div class="about-company__centered-text-floating-circle-1"></div>
-				<div class="about-company__centered-text-floating-circle-2"></div>
+			<div className="about-company__centered-text-section-container">
+				<div className="about-company__centered-text-floating-circle-1"></div>
+				<div className="about-company__centered-text-floating-circle-2"></div>
 
-				<section class="about-company__centered-text-section section-med hpad-wide vpad-wide center-text" i18n="@@AboutCompany__Description">
+				<section className="about-company__centered-text-section section-med hpad-wide vpad-wide center-text" i18n="@@AboutCompany__Description">
 					<h2>Why build a privacy network?</h2>
 					<p>
 						The Internet opened up an unlimited world of information.Its creators invited us to bring our curiosity and explore that world freely.
@@ -55,11 +55,11 @@ const Page = () => (
 				</section>
 			</div>
 
-			<div class="bk-beige-light" id="values">
-				<section class="section-med hpad-wide vpad-wide">
+			<div className="bk-beige-light" id="values">
+				<section className="section-med hpad-wide vpad-wide">
 					<h2>Our Values</h2>
-					<div class="about-us-split">
-						<div class="about-us-half">
+					<div className="about-us-split">
+						<div className="about-us-half">
 							<p>
 								The Internet is as integral to modern life as writing was to the ancient Greeks.Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world.Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private , decentralized, and censorship-free.
 							</p>
@@ -72,7 +72,7 @@ const Page = () => (
 								Privacy is an easy target for those in power, who say “if you have nothing to hide, you have nothing to fear.” This is a lie.The truth is that the people in positions of power have the least to worry about being private.If a powerful dictator is caught doing something, they are beyond reproach.We should never forget the routine violations of privacy visited upon King, Gandhi, Ai Weiwei and many others in the name of “law enforcement” and “national security.”
 							</p>
 						</div>
-						<div class="about-us-half">
+						<div className="about-us-half">
 							<picture>
 								<source srcset="/img/company/ValuesBunny.webp" type="image/webp" />
 								<img src="/img/company/ValuesBunny.png" width="1000" height="1055" alt="" />
@@ -99,17 +99,17 @@ const Page = () => (
 
 			</div>
 
-			<div class="bk-lavender">
-				<section class="about-company__team-section hpad-wide vpad-wide">
-					<div class="about-company__team-text">
+			<div className="bk-lavender">
+				<section className="about-company__team-section hpad-wide vpad-wide">
+					<div className="about-company__team-text">
 						<h2 i18n="@@OrchidTeamTitle">The Orchid Team</h2>
 						<p i18n="@@OrchidTeamDescription">
 							Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
 						</p>
 					</div>
 
-					<div class="about-company__team about-company__team-big">
-						<div class="about-company-team-member">
+					<div className="about-company__team about-company__team-big">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/DrStevenWaterhouse.png" alt="Dr. Steven Waterhouse" />
 							<h5 i18n="@@OrchidTeam_DrStevenWaterhouse">
 								Dr.Steven Waterhouse
@@ -119,7 +119,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/JayFreeman.png" alt="Jay Freeman" />
 							<h5 i18n="@@OrchidTeam_JayFreeman">
 								Jay Freeman
@@ -129,7 +129,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/BrianJFox.png" alt="Brian J. Fox" />
 							<h5 i18n="@@OrchidTeam_BrianJFox">
 								Brian J.Fox
@@ -139,7 +139,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/GustavSimonsson.png" alt="Gustav Simonsson" />
 							<h5 i18n="@@OrchidTeam_GustavSimonsson">
 								Gustav Simonsson
@@ -152,9 +152,9 @@ const Page = () => (
 
 					<hr />
 
-					<div class="about-company__team about-company__team-small">
+					<div className="about-company__team about-company__team-small">
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/AlexKehaya.png" alt="Alex Kehaya" />
 							<h5 i18n="@@OrchidTeam_AlexKehaya">
 								Alex Kehaya
@@ -164,7 +164,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/DerekSilva.png" alt="Derek Silva" />
 							<h5 i18n="@@OrchidTeam_DerekSilva">
 								Derek Silva
@@ -174,7 +174,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/PaulaKanin.png" alt="Paula Kanin" />
 							<h5 i18n="@@OrchidTeam_PaulaKanin">
 								Paula Kanin
@@ -184,7 +184,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/ShawneeNova.png" alt="Shawnee Nova" />
 							<h5 i18n="@@OrchidTeam_ShawneeNova">
 								Shawnee Nova
@@ -194,7 +194,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/ChadHarper.png" alt="Chad Harper" />
 							<h5 i18n="@@OrchidTeam_ChadHarper">
 								Chad Harper
@@ -204,7 +204,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/SaskiaEssex.png" alt="Saskia Essex" />
 							<h5 i18n="@@OrchidTeam_SaskiaEssex">
 								Saskia Essex
@@ -214,7 +214,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/ThientamBach.png" alt="Thientam Bach" />
 							<h5 i18n="@@OrchidTeam_ThientamBach">
 								Thientam Bach
@@ -224,7 +224,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/AlexandraMcolgan.png" alt="Alexandra McColgan" />
 							<h5 i18n="@@OrchidTeam_AlexandraMcColgan">
 								Alexandra McColgan
@@ -234,7 +234,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/MichelleUnderwood.png" alt="Michelle Underwood" />
 							<h5 i18n="@@OrchidTeam_MichelleUnderwood">
 								Michelle Underwood
@@ -244,7 +244,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/DanMontgomery.png" alt="Dan Montgomery" />
 							<h5 i18n="@@OrchidTeam_DanMontgomery">
 								Dan Montgomery
@@ -254,7 +254,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/GregHazel.png" alt="Greg Hazel" />
 							<h5 i18n="@@OrchidTeam_GregHazel">
 								Greg Hazel
@@ -264,7 +264,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/JakeCannell.png" alt="Jake Cannell" />
 							<h5 i18n="@@OrchidTeam_JakeCannell">
 								Jake Cannell
@@ -274,7 +274,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/JenniferRodriguez-Miller.png" alt="Jennifer Rodriguez-Miller" />
 							<h5 i18n="@@OrchidTeam_JenniferRodriguez-Miller">
 								Jennifer Rodriguez-Miller
@@ -284,7 +284,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/JustinSheek.png" alt="Justin Sheek" />
 							<h5 i18n="@@OrchidTeam_JustinSheek">
 								Justin Sheek
@@ -294,7 +294,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/AnnaBare.png" alt="Anna Bare" />
 							<h5 i18n="@@OrchidTeam_AnnaBare">
 								Anna Bare
@@ -304,7 +304,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/PatrickNiemeyer.png" alt="Patrick Niemeyer" />
 							<h5 i18n="@@OrchidTeam_PatrickNiemeyer">
 								Patrick Niemeyer
@@ -314,7 +314,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/SelinaCheng.png" alt="Selina Cheng" />
 							<h5 i18n="@@OrchidTeam_SelinaCheng">
 								Selina Cheng
@@ -324,7 +324,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/JoyHu.png" alt="Joy Hu" />
 							<h5 i18n="@@OrchidTeam_JoyHu">
 								Joy Hu
@@ -334,7 +334,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/PatrickJDietzen.png" alt="Patrick J. Dietzen" />
 							<h5 i18n="@@OrchidTeam_PatrickJDietzen">
 								Patrick J.Dietzen
@@ -344,7 +344,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/AmandaGutterman.png" alt="Amanda Gutterman" />
 							<h5 i18n="@@OrchidTeam_AmandaGutterman">
 								Amanda Gutterman
@@ -354,7 +354,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/MonicaPuchner.png" alt="Monica Puchner" />
 							<h5 i18n="@@OrchidTeam_MonicaPuchner">
 								Monica Puchner
@@ -364,7 +364,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/TravisCanell.png" alt="Travis Cannell" />
 							<h5 i18n="@@OrchidTeam_TravisCannell">
 								Travis Cannell
@@ -374,7 +374,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/MattRoszak.png" alt="Matt Roszak" />
 							<h5 i18n="@@OrchidTeam_MattRoszak">
 								Matt Roszak
@@ -384,7 +384,7 @@ const Page = () => (
 							</p>
 						</div>
 
-						<div class="about-company-team-member">
+						<div className="about-company-team-member">
 							<img src="/img/company/staff/RichStarpoli.png" alt="Rich Staropoli" />
 							<h5 i18n="@@OrchidTeam_RichStaropoli">
 								Rich Staropoli
@@ -399,7 +399,7 @@ const Page = () => (
 			</div>
 
 			<div>
-				<section class="about-company__corporate-info-section section-med hpad-wide vpad-wide">
+				<section className="about-company__corporate-info-section section-med hpad-wide vpad-wide">
 					<div id="corporate-header">
 						<h2 i18n="@@AboutCompanyCorporate__Title">Corporate info</h2>
 						<p i18n="@@AboutCompanyCorporate__Subtitle">Orchid is a Delaware c-corp</p>
@@ -416,14 +416,14 @@ const Page = () => (
 							10997 Berlin, Germany
 						</address>
 					</div>
-					<div class="z-index-1" id="corporate-buttons">
-						<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer"><button class="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__SECFilingButton">SEC Filing</button></a>
+					<div className="z-index-1" id="corporate-buttons">
+						<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__SECFilingButton">SEC Filing</button></a>
 						<br />
-						<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button class="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></a>
+						<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></a>
 					</div>
-					<div class="adorner" id="buttons-adorner">
-						<div class="pos-relative">
-							<img alt="" class="adorner-image" src="/img/company/buttons-adorner.png" />
+					<div className="adorner" id="buttons-adorner">
+						<div className="pos-relative">
+							<img alt="" className="adorner-image" src="/img/company/buttons-adorner.png" />
 						</div>
 					</div>
 				</section>
