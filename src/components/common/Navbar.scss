@@ -144,7 +144,7 @@ $mobile-nav-height: 64px;
 .nav-download {
 	display: none;
 
-	& > button.btn-secondary {
+	& > button:not(.phantom-btn).btn-secondary {
 		font-size: $size-body-sm;
 		padding: 0.05rem 1.5rem;
 	}
