@@ -1,7 +1,6 @@
 @import "media_queries";
 @import "misc_config";
 @import "orc_config";
-@import "styles";
 
 // Variables
 $containerWidth: 932px;
@@ -99,7 +98,7 @@ a {
 			position: absolute;
 			width: 175px;
 			height: 175px;
-			background: url("/assets/img/oxt/bg-circle-3.svg") no-repeat center center;
+			background: url("/img/oxt/bg-circle-3.svg") no-repeat center center;
 			background-size: contain;
 			bottom: 0;
 			left: 0%;
@@ -202,7 +201,7 @@ a {
 		position: absolute;
 		width: 94px;
 		height: 94px;
-		background: url("/assets/img/oxt/bg-circle-1.svg") no-repeat center center;
+		background: url("/img/oxt/bg-circle-1.svg") no-repeat center center;
 		background-size: contain;
 		bottom: 0;
 		left: 36%;
@@ -233,7 +232,7 @@ a {
 		position: absolute;
 		width: 350px;
 		height: 350px;
-		background: url("/assets/img/oxt/bg-circle-3.svg") no-repeat center center;
+		background: url("/img/oxt/bg-circle-3.svg") no-repeat center center;
 		background-size: contain;
 		bottom: 0;
 		right: 0;
@@ -256,7 +255,7 @@ a {
 		position: absolute;
 		width: 337px;
 		height: 347px;
-		background: url("/assets/img/oxt/bg-circles-2.svg") no-repeat center center;
+		background: url("/img/oxt/bg-circles-2.svg") no-repeat center center;
 		background-size: contain;
 		bottom: 0;
 		left: 50%;
@@ -344,7 +343,7 @@ a {
 			position: absolute;
 			width: 100px;
 			height: 100px;
-			background: url("/assets/img/oxt/bg-circle-1.svg") no-repeat center center;
+			background: url("/img/oxt/bg-circle-1.svg") no-repeat center center;
 			background-size: contain;
 			top: 0;
 			left: 25%;
