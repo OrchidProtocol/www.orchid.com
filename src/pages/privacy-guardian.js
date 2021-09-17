@@ -30,7 +30,7 @@ const Page = () => (
 					</a>
 				</div>
 				<div class="hero__graphic">
-					<img src="/img/ambassador/hero-bunny.png" />
+					<img src="/img/ambassador/hero-bunny.png" alt="" />
 				</div>
 			</div>
 		</div>
@@ -151,7 +151,7 @@ const Page = () => (
 
 				<div class="benefits__row">
 					<div class="benefits__column" i18n="@@AmbassadorBenefitsGetConnected">
-						<img src="/img/ambassador/bunny-connected.svg" />
+						<img src="/img/ambassador/bunny-connected.svg" alt="" />
 						<b>Get connected</b>
 						<p>
 							Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
@@ -159,7 +159,7 @@ const Page = () => (
 					</div>
 
 					<div class="benefits__column" i18n="@@AmbassadorBenefitsEarnRewards">
-						<img src="/img/ambassador/bunny-rewards.svg" />
+						<img src="/img/ambassador/bunny-rewards.svg" alt="" />
 						<b>Earn rewards</b>
 						<p>
 							Earn rewards for participating and educating others.
@@ -167,7 +167,7 @@ const Page = () => (
 					</div>
 
 					<div class="benefits__column" i18n="@@AmbassadorBenefitsHelpFriends">
-						<img src="/img/ambassador/bunny-help.svg" />
+						<img src="/img/ambassador/bunny-help.svg" alt="" />
 						<b>Help friends &amp; family</b>
 						<p>
 							Teach them how to protect themselves online with privacy tools like VPNs.

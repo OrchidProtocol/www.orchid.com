@@ -24,7 +24,7 @@ const Page = () => (
 						</h1>
 					</div>
 					<div class="about-company__splash-image-container">
-						<img src="/img/company/splash/splash-foreground.svg" width="868" height="706" alt="splash image" />
+						<img src="/img/company/splash/splash-foreground.svg" width="868" height="706" alt="" />
 					</div>
 				</section>
 			</div>
@@ -83,7 +83,7 @@ const Page = () => (
 						<div class="about-us-half">
 							<picture>
 								<source srcset="/img/company/ValuesBunny.webp" type="image/webp" />
-								<img src="/img/company/ValuesBunny.png" width="1000" height="1055" />
+								<img src="/img/company/ValuesBunny.png" width="1000" height="1055" alt="" />
 							</picture>
 						</div>
 					</div>
