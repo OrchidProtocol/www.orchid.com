@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "media_queries";
 @import "misc_config";
 @import "orc_config";
@@ -255,8 +256,8 @@ header h1 {
 	position: relative;
 	width: 100%;
 	height: 0;
-	padding-bottom: (9 / 16 * 100%);
-	max-width: (16 / 9 * 20rem);
+	padding-bottom: (math.div(9, 16) * 100%);
+	max-width: (math.div(16, 9) * 20rem);
 	max-height: 20rem;
 }
 
@@ -268,14 +269,14 @@ header h1 {
 	bottom: 0;
 	width: 100%;
 	height: 100%;
-	max-width: (16 / 9 * 20rem);
+	max-width: (math.div(16, 9) * 20rem);
 	max-height: 20rem;
 }
 
 .conv-image {
 	display: block;
 	margin-bottom: 1rem;
-	width: (10rem * 16 / 9);
+	width: (10rem * math.div(16, 9));
 	height: 10rem;
 	object-fit: cover;
 	object-position: center;

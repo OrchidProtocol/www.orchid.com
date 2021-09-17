@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "_feature_list";
 @import "_media_queries";
 @import "_misc_config";
@@ -373,7 +374,7 @@ $wavy-margin: 25rem;
 			left: 0;
 			@include mobile {
 				left: 50%;
-				margin-left: calc(2.5rem * -1 / 2);
+				margin-left: calc(2.5rem * math.div(-1, 2));
 			}
 			width: $icon-size;
 			height: $icon-size;
