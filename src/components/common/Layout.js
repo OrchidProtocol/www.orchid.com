@@ -12,7 +12,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 		<>
 			<Helmet>
 				<html lang={process.env.GATSBY_TARGET_LANG} />
-				<body css={bodyClass} />
+				<body className={bodyClass} />
 				<link rel="icon" type="image/ico" href="/img/favicon.ico" />
 				<link rel="icon" type="image/png" href="/img/favicon.png" />
 				<link rel="manifest" href="/manifest.webmanifest" />
@@ -53,8 +53,8 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 				<Navbar />
 
 				<main css={css`
-                font-size: 16px;
-            `}>
+					font-size: 16px;
+				`}>
 					{/* All the main content gets inserted here, index.js, post.js */}
 					{children}
 				</main>

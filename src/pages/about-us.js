@@ -15,9 +15,7 @@ const Page = () => (
 				<section class="about-company__splash">
 					<div class="about-company__splash-text-container">
 						<h1 i18n="@@AboutCompanyHero__Title">
-							We can <br />
-							reclaim the <br />
-							internet <br />
+							We can <br /> reclaim the <br /> internet <br />
 							<span class="big">
 								together
 							</span>
@@ -36,29 +34,23 @@ const Page = () => (
 				<section class="about-company__centered-text-section section-med hpad-wide vpad-wide center-text" i18n="@@AboutCompany__Description">
 					<h2>Why build a privacy network?</h2>
 					<p>
-						The Internet opened up an unlimited world of information.Its creators invited us to bring our curiosity and
-						explore that world freely.
+						The Internet opened up an unlimited world of information.Its creators invited us to bring our curiosity and explore that world freely.
 					</p>
 
 					<p>
-						As the Internet grew, exploring freely became harder.Web 2.0 business models incentivized companies to watch
-						and track us and sell our data.And in some places, limits were placed on the information we can see.
+						As the Internet grew, exploring freely became harder.Web 2.0 business models incentivized companies to watch and track us and sell our data.And in some places, limits were placed on the information we can see.
 					</p>
 
 					<p>
-						But that is changing.The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed
-						by its users.
+						But that is changing.The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed by its users.
 					</p>
 
 					<p>
-						At Orchid we share in this mission.We use Web 3.0 technology to offer users better digital privacy today, so we
-						can realize the promise of the Web 1.0 and explore freely again.
+						At Orchid we share in this mission.We use Web 3.0 technology to offer users better digital privacy today, so we can realize the promise of the Web 1.0 and explore freely again.
 					</p>
 
 					<p>
-						Orchid was founded in 2017 to help restore the open and accessible Internet for everyone.Since then, we have
-						grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer
-						privacy network in December, 2019.
+						Orchid was founded in 2017 to help restore the open and accessible Internet for everyone.Since then, we have grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
 					</p>
 				</section>
 			</div>
@@ -88,8 +80,6 @@ const Page = () => (
 						</div>
 					</div>
 
-
-
 					<p>
 						Privacy and freedom are not in conflict; they are one and the same.
 					</p>
@@ -114,10 +104,7 @@ const Page = () => (
 					<div class="about-company__team-text">
 						<h2 i18n="@@OrchidTeamTitle">The Orchid Team</h2>
 						<p i18n="@@OrchidTeamDescription">
-							Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU
-							Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app
-							package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security
-							team).
+							Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
 						</p>
 					</div>
 

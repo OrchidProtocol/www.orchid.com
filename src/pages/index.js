@@ -4,7 +4,7 @@ import Layout from '../components/common/Layout'
 import './index.scss'
 
 const Page = () => (
-	<Layout>
+	<Layout bodyClass="index">
 		<Helmet>
 			<title>Crypto VPN App | Orchid</title>
 			<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />
