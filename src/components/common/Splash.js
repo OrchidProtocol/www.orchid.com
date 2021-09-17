@@ -5,9 +5,9 @@ import { css } from '@emotion/core'
 
 const Splash = (props) => {
 
-    const {customText} = props;
+	const { customText } = props;
 
-    return (<div className="splash-circuit" css={css`
+	return (<div className="splash-circuit" css={css`
         display: flex;
         flex-direction: column-reverse;
         @media (max-width: 870px) {
@@ -17,7 +17,7 @@ const Splash = (props) => {
             flex-direction: column;
         }
     `}>
-        <div className="splash-circuit-image" css={css`
+		<div className="splash-circuit-image" css={css`
             max-width: 63rem;
             box-sizing: border-box;
             
@@ -51,7 +51,7 @@ const Splash = (props) => {
                 }
             }
         `}></div>
-        <div className="splash-circuit-grid" css={css`
+		<div className="splash-circuit-grid" css={css`
             max-width: 63rem;
             margin: auto;
             box-sizing: border-box;
@@ -63,7 +63,7 @@ const Splash = (props) => {
             position: relative;
             z-index: 1;
         `}>
-            <div className="splash-circuit-grid-item" css={css`
+			<div className="splash-circuit-grid-item" css={css`
                 padding-left: 2rem;
                 padding-right: 2rem;
                 padding-top: 1rem;
@@ -76,10 +76,10 @@ const Splash = (props) => {
                     max-width: 700px;
                 }
             `}>
-                <h1 css={css`
+				<h1 css={css`
                     margin-bottom: 0;
                 `}>
-                    <Link to="/" css={css`
+					<Link to="/" css={css`
                         color: var(--color-primary);
                         &:visited {
                             color: var(--color-primary);
@@ -93,43 +93,43 @@ const Splash = (props) => {
                             text-decoration: none;
                         }
                     `}>
-                        {
-                            (()=>{
-                                let append = "";
-                                if (customText) {
-                                    append = ` - ${customText}`;
-                                }
-                                switch (process.env.GATSBY_TARGET_LANG) {
-                                    default:
-                                        return "Blog"+append;
-                                    case "ja":
-                                        return "ブログ"+append;
-                                    case "ko":
-                                        return "블로그"+append;
-                                    case "zh":
-                                        return "我们的博客"+append;
-                                    case "ru": 
-                                        return "Блог"+append;
-                                }
-                            })()
-                        }
-                    </Link>
-                </h1>
-                { (props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
+						{
+							(() => {
+								let append = "";
+								if (customText) {
+									append = ` - ${customText}`;
+								}
+								switch (process.env.GATSBY_TARGET_LANG) {
+									default:
+										return "Blog" + append;
+									case "ja":
+										return "ブログ" + append;
+									case "ko":
+										return "블로그" + append;
+									case "zh":
+										return "我们的博客" + append;
+									case "ru":
+										return "Блог" + append;
+								}
+							})()
+						}
+					</Link>
+				</h1>
+				{(props.subtitle || props.description) && <div className="splash-circuit-grid-text" css={css`
                     @media (min-width: 871px) {
                         margin-top: 4rem;
                     }
                 `}>
-                    { props.subtitle && <h3 css={css`
+					{props.subtitle && <h3 css={css`
                         color: #53696a;
                         margin-bottom: 2rem;
                         font-size: 1.5rem;
-                    `}>{props.subtitle}</h3> }
-                    { props.description && <p>{props.description}</p> }
-                </div> }
-            </div>
-            {props.image && 
-                <div className="splash-circuit-grid-item" css={css`
+                    `}>{props.subtitle}</h3>}
+					{props.description && <p>{props.description}</p>}
+				</div>}
+			</div>
+			{props.image &&
+				<div className="splash-circuit-grid-item" css={css`
                     justify-content: space-around;
                     -webkit-box-align: center;
                     align-items: center;
@@ -139,10 +139,10 @@ const Splash = (props) => {
                         padding-top: 4rem;
                     }
                 `}>
-                    <img className="splash-circuit-feature" alt="" src={props.image}/>
-                </div>}
-        </div>
-    </div>);
+					<img className="splash-circuit-feature" alt="" src={props.image} />
+				</div>}
+		</div>
+	</div>);
 }
 
 

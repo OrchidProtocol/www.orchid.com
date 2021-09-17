@@ -5,7 +5,7 @@ const dir = fs.readdirSync(`${__dirname}/src/pages/blog`);
 for (let index = 0; index < dir.length; index++) {
 	try {
 		const filename = dir[index];
-		const filecontents = fs.readFileSync(`${__dirname}/src/pages/blog/${filename}`, {encoding: 'utf-8'});
+		const filecontents = fs.readFileSync(`${__dirname}/src/pages/blog/${filename}`, { encoding: 'utf-8' });
 
 		const arr = filecontents.split('\n');
 		let original_date = null;
@@ -43,6 +43,6 @@ for (let index = 0; index < dir.length; index++) {
 			console.log(original_date);
 			console.log(date, date.getTime(), filename);
 		}
-	} catch(e) {
+	} catch (e) {
 	}
 }

@@ -34,34 +34,34 @@ let items = [];
 const lists = [];
 
 for (let i = 0; i < config.footer_navigation.length; i++) {
-    const navItem = config.footer_navigation[i];
+	const navItem = config.footer_navigation[i];
 
-    const internalLink = navItem.url.match(/^\s?http(s?)/gi) === null;
+	const internalLink = navItem.url.match(/^\s?http(s?)/gi) === null;
 
-    const output = <li key={items.length}>
-        {!internalLink ? (
-            <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
-                {navItem.label}
-            </a>
-        ) : (
-                <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
-            )}
-    </li>
+	const output = <li key={items.length}>
+		{!internalLink ? (
+			<a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
+				{navItem.label}
+			</a>
+		) : (
+			<Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
+		)}
+	</li>
 
-    items.push(output);
-    if (items.length >= 3) {
-        const arr = [...items]
-        lists.push(<ul key={lists.length} css={style}>
-            {arr}
-        </ul>)
-        items = [];
-    }
+	items.push(output);
+	if (items.length >= 3) {
+		const arr = [...items]
+		lists.push(<ul key={lists.length} css={style}>
+			{arr}
+		</ul>)
+		items = [];
+	}
 }
 
 const FooterNavigation = () => (
-    <>
-        {lists}
-    </>
+	<>
+		{lists}
+	</>
 );
 
 export default FooterNavigation;

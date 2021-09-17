@@ -21,28 +21,28 @@ const Tag = styled.span`
 *
 */
 const Navigation = ({ tags, linkTags }) => {
-    const items = [];
-    if (tags) {
-        for(let i = 0; i < Math.min(3, tags.length); i++) {
-            if (tags[i] !== 'homepage') {
-                if (linkTags)
-                    items.push(
-                        <li key={i}>
-                            <Link to={`/tag/${_.kebabCase(tags[i])}/`} css={css`
+	const items = [];
+	if (tags) {
+		for (let i = 0; i < Math.min(3, tags.length); i++) {
+			if (tags[i] !== 'homepage') {
+				if (linkTags)
+					items.push(
+						<li key={i}>
+							<Link to={`/tag/${_.kebabCase(tags[i])}/`} css={css`
                                     &:hover {
                                         text-decoration: none;
                                     }
                                 `}>
-                                <Tag>{tags[i]}</Tag>
-                            </Link>
-                        </li>
-                    )
-                else 
-                    items.push(<Tag key={i}>{/*(i !== 0) ? ', ' : ''*/}{tags[i]}</Tag>)
-            }
-        }
-    }
-    return (<ul css={css`
+								<Tag>{tags[i]}</Tag>
+							</Link>
+						</li>
+					)
+				else
+					items.push(<Tag key={i}>{/*(i !== 0) ? ', ' : ''*/}{tags[i]}</Tag>)
+			}
+		}
+	}
+	return (<ul css={css`
         list-style: none;
         margin: 0;
         padding: 0;
@@ -71,8 +71,8 @@ const Navigation = ({ tags, linkTags }) => {
             }
         }
     `}>
-        {items}
-    </ul>);
+		{items}
+	</ul>);
 }
 
 export default Navigation

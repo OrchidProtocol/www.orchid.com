@@ -100,31 +100,31 @@ const style = css`
 `;
 
 const Navigation = ({ data, children }) => {
-    const items = [];
+	const items = [];
 
-    for (let i = 0; i < data.length; i++) {
-        const navItem = data[i];
-        const internalLink = navItem.url.match(/^\s?http(s?)/gi);
+	for (let i = 0; i < data.length; i++) {
+		const navItem = data[i];
+		const internalLink = navItem.url.match(/^\s?http(s?)/gi);
 
-        //const className =
-        //    internalLink ? "active-link" : "";
-        items.push(
-            <li key={i}>
-                {internalLink ? (
-                    <a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
-                        {navItem.label}
-                    </a>
-                ) : (
-                        <Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
-                    )}
-            </li>
-        );
-    }
+		//const className =
+		//    internalLink ? "active-link" : "";
+		items.push(
+			<li key={i}>
+				{internalLink ? (
+					<a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
+						{navItem.label}
+					</a>
+				) : (
+					<Link css={css`display:block;`} to={navItem.url}>{navItem.label}</Link>
+				)}
+			</li>
+		);
+	}
 
-    return <ul css={style}>
-        {items}
-        {children}
-    </ul>
+	return <ul css={style}>
+		{items}
+		{children}
+	</ul>
 };
 
 
