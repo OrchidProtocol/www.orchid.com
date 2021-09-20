@@ -40,7 +40,7 @@ const Page = () => (
 					<div class="hero-flex__container logo">
 						<picture>
 							<source srcset="/img/oxt/oxt_hero.webp" type="image/webp" />
-							<img class="oxt-hero__logomark" src="/img/oxt/oxt_hero.png" width="980" height="978" />
+							<img class="oxt-hero__logomark" alt="" src="/img/oxt/oxt_hero.png" width="980" height="978" />
 						</picture>
 					</div>
 				</div>
@@ -153,7 +153,7 @@ const Page = () => (
 							Orchid's staking directory randomly connects users with providers based on the amount of OXT staked; providers that stake more are connected to more users. The more bandwidth that is purchased by users on the Orchid network, the more incentive that node providers have to stake OXT in order to sell bandwidth and meet the demand.
 						</p>
 					</div>
-					<img src="/img/oxt/staking-2.svg" width="454" height="259" />
+					<img src="/img/oxt/staking-2.svg" alt="" width="454" height="259" />
 				</div>
 				<br />
 				<div i18n="@@OXTStakingBody">
