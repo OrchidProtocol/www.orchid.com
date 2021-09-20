@@ -279,9 +279,6 @@
 			grid-template-columns: $exp-progress-1-width $exp-progress-2-width 1fr $exp-image-delta $exp-progress-2-width $exp-progress-1-width;
 			grid-template-rows: 100px 1fr $exp-bottom-1-height $exp-bottom-2-height;
 		}
-		.explainer__progress {
-			justify-content: flex-start;
-		}
 	}
 	.explainer__start {
 		grid-area: start;
