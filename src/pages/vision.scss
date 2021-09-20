@@ -1,0 +1,77 @@
+@import "media_queries";
+@import "misc_config";
+.vision-page {
+	#no-difference {
+		padding-bottom: 5em;
+		text-align: center;
+		h2 {
+			margin-bottom: 0.5em;
+			max-width: 20em;
+			margin-left: auto;
+			margin-right: auto;
+			z-index: 2;
+		}
+		p {
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 1rem;
+			max-width: 50em;
+			z-index: 1;
+		}
+	}
+
+	.z-index-1 {
+		z-index: 10;
+	}
+
+	#adorner {
+		$clip-height: 30rem;
+
+		overflow: hidden;
+		margin: 0 0 (8rem - $clip-height);
+		height: $clip-height;
+		width: 100%;
+
+		position: absolute;
+		top: -2rem;
+		left: -4rem;
+		z-index: 2;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	#adorn-left {
+		left: -8rem;
+		top: 3.5rem;
+
+		@include mobile {
+			max-width: 10rem;
+			left: 1rem;
+			top: 3rem;
+		}
+	}
+
+	#adorn-right {
+		right: 2rem;
+		top: 7.2rem;
+		z-index: 2;
+
+		@include mobile {
+			display: none;
+		}
+	}
+
+	#adorn-right-1 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+
+	#adorn-right-2 {
+		position: absolute;
+		left: 18px;
+		bottom: 6px;
+	}
+}
