@@ -353,7 +353,7 @@
 		background-position: left 3px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: space-around;
 	}
 	.explainer__dot {
 		background-color: var(--section-bg);
@@ -361,9 +361,6 @@
 		height: $exp-dot-size;
 		transform: translateX(-50%);
 		display: block;
-		& + & {
-			margin-top: 70px;
-		}
 		& > img {
 			display: block;
 		}
