@@ -4,590 +4,592 @@
 @import "orc_config";
 @import "styles";
 
-.about-company__page-container {
-	margin-top: 1em;
-	overflow-x: hidden;
-}
-
-.about-company__splash {
-	@extend .section-wide;
-	@extend .hpad-thin;
-
-	padding-bottom: $pad-wide;
-
-	pointer-events: none;
-
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-
-	@include mobile {
-		flex-direction: column-reverse;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: 2rem;
-		padding-top: 1.5rem;
-	}
-}
-
-.about-company__splash-text-container {
-	h1 {
-		font-size: 3rem;
-		@include mobile {
-			font-size: 2rem;
-			text-align: center;
-		}
-	}
-	.big {
-		font-size: 160%;
-	}
-}
-
-:host-context(.locale-zh) {
-	.about-company__splash-text-container {
-		.big {
-			display: inline-block;
-			width: 100%;
-		}
-	}
-}
-
-.about-company__splash-image-container {
-	width: 100%;
-	max-width: 800px;
-	@include mobile {
-		max-width: 620px;
+.about-us-page {
+	.about-company__page-container {
+		margin-top: 1em;
+		overflow-x: hidden;
 	}
 
-	img {
-		width: 100%;
-		height: auto;
-	}
-	grid-area: image;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	position: relative;
+	.about-company__splash {
+		@extend .section-wide;
+		@extend .hpad-thin;
 
-	@media (min-width: 1440px) {
-		margin-bottom: -100px;
-	}
+		padding-bottom: $pad-wide;
 
-	> img {
-		width: 100%;
-		height: auto;
-		position: relative;
-		z-index: 1;
-
-		@include mobile {
-			//width: auto;
-			max-width: 100%;
-		}
-	}
-}
-
-.about-company__splash-image-container:before {
-	content: " ";
-	display: block;
-	position: absolute;
-	top: 0;
-	left: -33.3333%;
-	height: 100%;
-	width: 205%;
-	background-size: auto 100%;
-	background-repeat: no-repeat;
-	background-position: top left;
-	background-image: url(/img/company/splash/splash-background.svg);
-	pointer-events: none;
-}
-
-.about-company__centered-text-floating-circle-1 {
-	position: absolute;
-	left: -5rem;
-	left: calc(50% - 38rem);
-	top: -5rem;
-	width: 10rem;
-	height: 10rem;
-	background-image: url(/img/company/dashed-circle.svg);
-	background-position: center;
-	background-size: contain;
-	background-repeat: no-repeat;
-	pointer-events: none;
-}
-.about-company__centered-text-floating-circle-2 {
-	position: absolute;
-	right: -2rem;
-	right: calc(50% - 38rem);
-	bottom: -2rem;
-	width: 4rem;
-	height: 4rem;
-	border-radius: 100%;
-	border: 1.33px solid #bca9ff;
-	pointer-events: none;
-}
-
-.about-company__centered-text-section-container {
-	position: relative;
-
-	& > p {
-		position: relative;
-		z-index: 2;
-	}
-	&:before {
-		content: "";
-		display: block;
-		position: absolute;
-		top: 0;
-		left: 50%;
-		height: 57%;
-		width: 50%;
-		max-width: 32.5rem;
-		background-image: url(/img/company/background-circuits.svg);
-		background-position: bottom right;
-		background-repeat: no-repeat;
 		pointer-events: none;
-		@include mobile {
-			background-position: bottom left;
-			opacity: 0.5;
-		}
-	}
 
-	&:after {
-		content: "";
-		display: block;
-		position: absolute;
-		top: calc(100% - 12.7rem);
-		right: 50%;
-		height: 26rem;
-		width: 50%;
-		max-width: 33.6rem;
-		background-image: url(/img/company/background-circuits-2.svg);
-		background-position: bottom left;
-		background-repeat: no-repeat;
-		pointer-events: none;
-		@include mobile {
-			opacity: 0.5;
-		}
-	}
-}
-
-.about-company__centered-text-section {
-	@include mobile {
-		padding: 2rem;
-		text-align: left;
-	}
-	@include not-mobile {
-		max-width: 58rem;
-	}
-}
-
-#values > section {
-	position: relative;
-	z-index: 1;
-}
-.about-us-split {
-	@include not-mobile {
 		display: flex;
-		& > .about-us-half {
-			width: 55%;
-			&:first-of-type(div) {
-				width: 45%;
+		justify-content: center;
+		align-items: flex-end;
+
+		@include mobile {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+			padding-bottom: 2rem;
+			padding-top: 1.5rem;
+		}
+	}
+
+	.about-company__splash-text-container {
+		h1 {
+			font-size: 3rem;
+			@include mobile {
+				font-size: 2rem;
+				text-align: center;
+			}
+		}
+		.big {
+			font-size: 160%;
+		}
+	}
+
+	:host-context(.locale-zh) {
+		.about-company__splash-text-container {
+			.big {
+				display: inline-block;
+				width: 100%;
 			}
 		}
 	}
-	picture,
-	img {
-		display: block;
-		max-width: 100%;
-		width: 420px;
-		margin: auto;
-	}
-}
 
-header h1 {
-	line-height: 67px;
-}
-
-#news-sep {
-	margin: 4rem 8rem;
-	border-bottom: 1px solid rgba($orc-rock-gray, 0.5);
-}
-
-.conv-2up {
-	display: grid;
-	grid-template-rows: auto;
-	grid-template-columns: auto 2rem 1fr;
-	grid-template-areas: "left . right";
-
-	&#news-feature {
-		grid-template-columns: 1fr 2rem 1fr;
-	}
-
-	@include mobile {
-		&,
-		&#news-feature {
-			grid-template-rows: auto 2rem auto;
-			grid-template-columns: 1fr;
-			grid-template-areas:
-				"left"
-				"."
-				"right";
+	.about-company__splash-image-container {
+		width: 100%;
+		max-width: 800px;
+		@include mobile {
+			max-width: 620px;
 		}
-	}
-}
 
-.conv2-left {
-	grid-area: left;
-}
-
-.conv2-right {
-	grid-area: right;
-	&.pull-up {
-		position: relative;
-		margin-top: -8px;
-	}
-}
-
-// Look up "css constrain aspect ratio" if you want to know the reason why any of
-// this garbage works.
-
-.conv-169-wrapper {
-	position: relative;
-	width: 100%;
-	height: 0;
-	padding-bottom: (math.div(9, 16) * 100%);
-	max-width: (math.div(16, 9) * 20rem);
-	max-height: 20rem;
-}
-
-.conv-169 {
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	height: 100%;
-	max-width: (math.div(16, 9) * 20rem);
-	max-height: 20rem;
-}
-
-.conv-image {
-	display: block;
-	margin-bottom: 1rem;
-	width: (10rem * math.div(16, 9));
-	height: 10rem;
-	object-fit: cover;
-	object-position: center;
-}
-
-#founder-list {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	margin: -1rem;
-
-	> li {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		grid-area: image;
 		display: flex;
 		flex-flow: column nowrap;
-		align-items: center;
-		margin: 1rem 1rem 1rem 1rem;
-		width: 12rem;
-	}
-}
-
-.founder-image {
-	display: block;
-	width: 12rem;
-	height: 12rem;
-	margin-bottom: 2rem;
-	border-radius: 100vmax;
-	overflow: hidden;
-	box-shadow: mat-shadow(40px, $alpha: 0.2), 0 1px 0.5px rgba(white, 0.4) inset;
-}
-
-ul.sale-icons {
-	display: flex;
-	align-items: baseline;
-	margin: 0;
-}
-
-.sale-icons {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-content: center;
-
-	&.saft-raise {
-		text-align: center;
 		justify-content: center;
-		align-content: center;
-	}
+		align-items: center;
+		position: relative;
 
-	> li {
-		margin: 0rem 2rem 2rem 2rem;
-		vertical-align: top;
-	}
+		@media (min-width: 1440px) {
+			margin-bottom: -100px;
+		}
 
-	img {
-		max-width: 260px;
-		&.relaxed {
-			max-width: 300px;
+		> img {
+			width: 100%;
+			height: auto;
+			position: relative;
+			z-index: 1;
+
+			@include mobile {
+				//width: auto;
+				max-width: 100%;
+			}
 		}
 	}
-}
 
-.about-company__corporate-info-section {
-	display: grid;
-	grid-template-rows: auto 1rem auto;
-	// NB: 16.5rem taken from .btn-fixed
-	grid-template-columns: 3fr 1rem 16.5rem;
-	grid-template-areas:
-		"header  . buttons"
-		".       . buttons"
-		"address . buttons";
-
-	font-size: 0.9rem;
-
-	@include mobile {
-		grid-template-rows: auto 1rem auto 1rem auto;
-		grid-template-columns: 1fr;
-		grid-template-areas:
-			"header"
-			"."
-			"address"
-			"."
-			"buttons";
-	}
-}
-
-#corporate-header {
-	grid-area: header;
-}
-
-#corporate-address {
-	grid-area: address;
-	display: flex;
-	flex-flow: row wrap;
-	margin: -0.5rem -1rem;
-
-	> address {
-		margin: 0.5rem 1rem;
-	}
-}
-
-#corporate-buttons {
-	grid-area: buttons;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	margin: -1rem;
-
-	@include mobile {
-		align-items: center;
-	}
-
-	> button {
+	.about-company__splash-image-container:before {
+		content: " ";
 		display: block;
-		margin: 1rem;
-	}
-}
-
-.adorner {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	align-items: center;
-
-	@include mobile {
-		justify-content: center;
-		margin: 1rem 0 1rem;
-	}
-
-	img.adorner-image {
 		position: absolute;
-		left: -6rem;
-		top: -6rem;
-		opacity: 1;
+		top: 0;
+		left: -33.3333%;
+		height: 100%;
+		width: 205%;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		background-position: top left;
+		background-image: url(/img/company/splash/splash-background.svg);
+		pointer-events: none;
 	}
-}
 
-a {
-	color: $orc-rock-gray;
-	text-decoration: none;
-}
-
-section h2:first-of-type {
-	text-align: center;
-	margin-bottom: 2rem;
-}
-
-#company-adorner-top {
-	justify-content: flex-start;
-}
-#company-adorner-bottom {
-	img.adorner-image {
-		top: -8rem;
-	}
-}
-#values-adorner {
-	img.adorner-image {
+	.about-company__centered-text-floating-circle-1 {
+		position: absolute;
+		left: -5rem;
+		left: calc(50% - 38rem);
 		top: -5rem;
-		left: -15rem;
+		width: 10rem;
+		height: 10rem;
+		background-image: url(/img/company/dashed-circle.svg);
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		pointer-events: none;
 	}
-}
-#buttons-adorner {
-	img.adorner-image {
-		top: -2.5rem;
-		left: -1.5rem;
+	.about-company__centered-text-floating-circle-2 {
+		position: absolute;
+		right: -2rem;
+		right: calc(50% - 38rem);
+		bottom: -2rem;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 100%;
+		border: 1.33px solid #bca9ff;
+		pointer-events: none;
 	}
-}
-#news {
-	time {
-		font-size: 100%;
-		font-weight: 700;
-	}
-	h4 {
-		font-size: 130%;
-		color: $orc-rock-gray;
-		line-height: 1.22rem;
-		margin-top: 0.5em;
-		margin-bottom: 0.75rem;
-	}
-	#news-feature h4 {
-		font-size: 180%;
-		color: $orc-rock-gray;
-		margin-bottom: 1.2rem;
-		line-height: 2rem;
-	}
-}
 
-.about-company__founders-section {
-	position: relative;
-	z-index: 1;
+	.about-company__centered-text-section-container {
+		position: relative;
 
-	background-image: url(/img/company/accent-circles.svg);
-	background-position: 80% 2%;
-	background-repeat: no-repeat;
-	pointer-events: none;
+		& > p {
+			position: relative;
+			z-index: 2;
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			height: 57%;
+			width: 50%;
+			max-width: 32.5rem;
+			background-image: url(/img/company/background-circuits.svg);
+			background-position: bottom right;
+			background-repeat: no-repeat;
+			pointer-events: none;
+			@include mobile {
+				background-position: bottom left;
+				opacity: 0.5;
+			}
+		}
 
-	@include mobile {
-		padding: 2rem;
-		& > .center-text {
+		&:after {
+			content: "";
+			display: block;
+			position: absolute;
+			top: calc(100% - 12.7rem);
+			right: 50%;
+			height: 26rem;
+			width: 50%;
+			max-width: 33.6rem;
+			background-image: url(/img/company/background-circuits-2.svg);
+			background-position: bottom left;
+			background-repeat: no-repeat;
+			pointer-events: none;
+			@include mobile {
+				opacity: 0.5;
+			}
+		}
+	}
+
+	.about-company__centered-text-section {
+		@include mobile {
+			padding: 2rem;
 			text-align: left;
 		}
-	}
-
-	.waterhouse img {
-		filter: grayscale(100%);
-	}
-}
-
-#funding {
-	.quote {
-		background: $bkgd-lavender;
-		border-radius: 10px;
-		max-width: 65%;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 1.2rem 3rem;
-		.what {
-			@extend h4;
-			color: $orc-purple;
-		}
-		.who {
-			color: $orc-purple;
+		@include not-mobile {
+			max-width: 58rem;
 		}
 	}
-}
 
-.about-company__corporate-info-section {
-	@include mobile {
-		padding: 2rem;
+	#values > section {
+		position: relative;
+		z-index: 1;
+	}
+	.about-us-split {
+		@include not-mobile {
+			display: flex;
+			& > .about-us-half {
+				width: 55%;
+				&:first-of-type(div) {
+					width: 45%;
+				}
+			}
+		}
+		picture,
+		img {
+			display: block;
+			max-width: 100%;
+			width: 420px;
+			margin: auto;
+		}
+	}
+
+	header h1 {
+		line-height: 67px;
+	}
+
+	#news-sep {
+		margin: 4rem 8rem;
+		border-bottom: 1px solid rgba($orc-rock-gray, 0.5);
+	}
+
+	.conv-2up {
+		display: grid;
+		grid-template-rows: auto;
+		grid-template-columns: auto 2rem 1fr;
+		grid-template-areas: "left . right";
+
+		&#news-feature {
+			grid-template-columns: 1fr 2rem 1fr;
+		}
+
+		@include mobile {
+			&,
+			&#news-feature {
+				grid-template-rows: auto 2rem auto;
+				grid-template-columns: 1fr;
+				grid-template-areas:
+					"left"
+					"."
+					"right";
+			}
+		}
+	}
+
+	.conv2-left {
+		grid-area: left;
+	}
+
+	.conv2-right {
+		grid-area: right;
+		&.pull-up {
+			position: relative;
+			margin-top: -8px;
+		}
+	}
+
+	// Look up "css constrain aspect ratio" if you want to know the reason why any of
+	// this garbage works.
+
+	.conv-169-wrapper {
+		position: relative;
+		width: 100%;
+		height: 0;
+		padding-bottom: (math.div(9, 16) * 100%);
+		max-width: (math.div(16, 9) * 20rem);
+		max-height: 20rem;
+	}
+
+	.conv-169 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		max-width: (math.div(16, 9) * 20rem);
+		max-height: 20rem;
+	}
+
+	.conv-image {
+		display: block;
+		margin-bottom: 1rem;
+		width: (10rem * math.div(16, 9));
+		height: 10rem;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	#founder-list {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		margin: -1rem;
+
+		> li {
+			display: flex;
+			flex-flow: column nowrap;
+			align-items: center;
+			margin: 1rem 1rem 1rem 1rem;
+			width: 12rem;
+		}
+	}
+
+	.founder-image {
+		display: block;
+		width: 12rem;
+		height: 12rem;
+		margin-bottom: 2rem;
+		border-radius: 100vmax;
+		overflow: hidden;
+		box-shadow: mat-shadow(40px, $alpha: 0.2), 0 1px 0.5px rgba(white, 0.4) inset;
+	}
+
+	ul.sale-icons {
+		display: flex;
+		align-items: baseline;
+		margin: 0;
+	}
+
+	.sale-icons {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		align-content: center;
+
+		&.saft-raise {
+			text-align: center;
+			justify-content: center;
+			align-content: center;
+		}
+
+		> li {
+			margin: 0rem 2rem 2rem 2rem;
+			vertical-align: top;
+		}
+
+		img {
+			max-width: 260px;
+			&.relaxed {
+				max-width: 300px;
+			}
+		}
+	}
+
+	.about-company__corporate-info-section {
+		display: grid;
+		grid-template-rows: auto 1rem auto;
+		// NB: 16.5rem taken from .btn-fixed
+		grid-template-columns: 3fr 1rem 16.5rem;
+		grid-template-areas:
+			"header  . buttons"
+			".       . buttons"
+			"address . buttons";
+
+		font-size: 0.9rem;
+
+		@include mobile {
+			grid-template-rows: auto 1rem auto 1rem auto;
+			grid-template-columns: 1fr;
+			grid-template-areas:
+				"header"
+				"."
+				"address"
+				"."
+				"buttons";
+		}
 	}
 
 	#corporate-header {
-		h2 {
-			margin-left: 0;
-			margin-bottom: 0;
-			text-align: left;
+		grid-area: header;
+	}
+
+	#corporate-address {
+		grid-area: address;
+		display: flex;
+		flex-flow: row wrap;
+		margin: -0.5rem -1rem;
+
+		> address {
+			margin: 0.5rem 1rem;
+		}
+	}
+
+	#corporate-buttons {
+		grid-area: buttons;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		margin: -1rem;
+
+		@include mobile {
+			align-items: center;
+		}
+
+		> button {
+			display: block;
+			margin: 1rem;
+		}
+	}
+
+	.adorner {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: flex-end;
+		align-items: center;
+
+		@include mobile {
+			justify-content: center;
+			margin: 1rem 0 1rem;
+		}
+
+		img.adorner-image {
+			position: absolute;
+			left: -6rem;
+			top: -6rem;
+			opacity: 1;
+		}
+	}
+
+	a {
+		color: $orc-rock-gray;
+		text-decoration: none;
+	}
+
+	section h2:first-of-type {
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	#company-adorner-top {
+		justify-content: flex-start;
+	}
+	#company-adorner-bottom {
+		img.adorner-image {
+			top: -8rem;
+		}
+	}
+	#values-adorner {
+		img.adorner-image {
+			top: -5rem;
+			left: -15rem;
+		}
+	}
+	#buttons-adorner {
+		img.adorner-image {
+			top: -2.5rem;
+			left: -1.5rem;
+		}
+	}
+	#news {
+		time {
+			font-size: 100%;
+			font-weight: 700;
+		}
+		h4 {
+			font-size: 130%;
 			color: $orc-rock-gray;
+			line-height: 1.22rem;
+			margin-top: 0.5em;
+			margin-bottom: 0.75rem;
 		}
-		p {
-			margin-top: 0;
+		#news-feature h4 {
+			font-size: 180%;
+			color: $orc-rock-gray;
+			margin-bottom: 1.2rem;
+			line-height: 2rem;
 		}
 	}
-	address {
-		font-style: normal;
-	}
-}
 
-.about-company__team-section {
-	text-align: center;
-}
-.about-company__team-text {
-	max-width: 1000px;
-	margin: auto;
-	font-weight: 500;
-	font-size: 21px;
-}
-.about-company__team {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	max-width: 1260px;
-	margin-left: auto;
-	margin-right: auto;
-}
-.about-company-team-member {
-	text-align: center;
-	max-width: 6rem;
-	margin: 1.5rem 2.25rem;
-	h5 {
-		margin: 0.5rem 0;
-		font-size: 19px;
-	}
-	p {
-		font-weight: 600;
-	}
-	img {
-		width: auto;
-		height: auto;
-		max-width: 100%;
-		background: linear-gradient(rgba(60, 60, 67, 0), rgba(60, 60, 67, 0.6));
-		box-shadow: 0px 6px 10px rgba(60, 60, 67, 0.6);
-		border-radius: 100%;
-	}
-}
+	.about-company__founders-section {
+		position: relative;
+		z-index: 1;
 
-.about-company__team-big {
-	.about-company-team-member {
-		width: 100%;
-		max-width: 15rem;
+		background-image: url(/img/company/accent-circles.svg);
+		background-position: 80% 2%;
+		background-repeat: no-repeat;
+		pointer-events: none;
+
+		@include mobile {
+			padding: 2rem;
+			& > .center-text {
+				text-align: left;
+			}
+		}
+
+		.waterhouse img {
+			filter: grayscale(100%);
+		}
+	}
+
+	#funding {
+		.quote {
+			background: $bkgd-lavender;
+			border-radius: 10px;
+			max-width: 65%;
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1.2rem 3rem;
+			.what {
+				@extend h4;
+				color: $orc-purple;
+			}
+			.who {
+				color: $orc-purple;
+			}
+		}
+	}
+
+	.about-company__corporate-info-section {
+		@include mobile {
+			padding: 2rem;
+		}
+
+		#corporate-header {
+			h2 {
+				margin-left: 0;
+				margin-bottom: 0;
+				text-align: left;
+				color: $orc-rock-gray;
+			}
+			p {
+				margin-top: 0;
+			}
+		}
+		address {
+			font-style: normal;
+		}
+	}
+
+	.about-company__team-section {
+		text-align: center;
+	}
+	.about-company__team-text {
+		max-width: 1000px;
+		margin: auto;
+		font-weight: 500;
+		font-size: 21px;
+	}
+	.about-company__team {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		max-width: 1260px;
 		margin-left: auto;
 		margin-right: auto;
-		.about-company-team-member {
+	}
+	.about-company-team-member {
+		text-align: center;
+		max-width: 6rem;
+		margin: 1.5rem 2.25rem;
+		h5 {
+			margin: 0.5rem 0;
+			font-size: 19px;
+		}
+		p {
+			font-weight: 600;
+		}
+		img {
+			width: auto;
+			height: auto;
 			max-width: 100%;
+			background: linear-gradient(rgba(60, 60, 67, 0), rgba(60, 60, 67, 0.6));
+			box-shadow: 0px 6px 10px rgba(60, 60, 67, 0.6);
+			border-radius: 100%;
 		}
 	}
-}
 
-@include not-mobile {
-	.about-company__team-section {
-		hr {
-			display: none;
+	.about-company__team-big {
+		.about-company-team-member {
+			width: 100%;
+			max-width: 15rem;
+			margin-left: auto;
+			margin-right: auto;
+			.about-company-team-member {
+				max-width: 100%;
+			}
 		}
 	}
-	.about-company__team-big {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-		.about-company-team-member {
-			margin: 1.5rem;
-			max-width: 10rem;
-			h5 {
-				font-size: 21px;
+
+	@include not-mobile {
+		.about-company__team-section {
+			hr {
+				display: none;
+			}
+		}
+		.about-company__team-big {
+			margin-top: 2rem;
+			margin-bottom: 2rem;
+			.about-company-team-member {
+				margin: 1.5rem;
+				max-width: 10rem;
+				h5 {
+					font-size: 21px;
+				}
 			}
 		}
 	}

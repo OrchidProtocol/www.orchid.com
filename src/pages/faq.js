@@ -8,6 +8,7 @@ const Page = () => (
 		<Helmet>
 			<title>FAQs and Customer Support | Orchid</title>
 			<meta name="description" content="A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet." />
+			<body className="faq-page" />
 		</Helmet>
 		<div className="splash-circuit">
 			<div className="splash-circuit-image section-med">

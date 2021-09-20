@@ -9,6 +9,7 @@ const Page = () => (
 			<title>OXT Digital Currency | Orchid</title>
 			<meta name="description" content="OXT is an Ethereum (ERC-20) digital currency used to exchange value on the Orchid network. Orchid offers VPN privacy tools at an affordable cost." />
 			<meta name="og:image" content="https://www.orchid.com/img/oxt/social.png" />
+			<body className="oxt-page" />
 		</Helmet>
 		<div className="about-company__page-container">
 			<div className="bk-beige-light about-company__splash-container">

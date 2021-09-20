@@ -9,6 +9,7 @@ const Page = () => (
 			<title>VPN App for iOS, Android &amp; macOS | Orchid</title>
 			<meta name="description" content="Orchid is a VPN client, VPN service and advanced networking tool." />
 			<meta name="og:image" content="https://orchid.com/img/contact/social.png" />
+			<body className="download-page" />
 		</Helmet>
 		<div className="background-white">
 			<section id="top">

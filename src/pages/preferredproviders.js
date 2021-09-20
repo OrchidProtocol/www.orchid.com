@@ -9,6 +9,7 @@ const Page = () => (
 			<title>Preferred Providers | Orchid</title>
 			<meta name="description" content="" />
 			<meta name="og:image" content="https://www.orchid.com/img/partners/social.png" />
+			<body className="preferredproviders-page" />
 		</Helmet>
 		<div class="preferred-hero__wrapper bk-beige-light">
 			<div class="preferred-hero__container vpad-wide hpad-thin center-text">

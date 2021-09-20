@@ -9,6 +9,7 @@ const Page = () => (
 			<title>How It Works | Orchid</title>
 			<meta name="description" content="The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers." />
 			<meta name="og:image" content="https://www.orchid.com/img/how-it-works/social.png" />
+			<body className="how-it-works-page" />
 		</Helmet>
 		<section class="bk-beige-light how-hero z-index-1">
 			<div class="satellite-1">

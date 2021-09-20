@@ -1,26 +1,26 @@
 @import "media_queries";
 @import "misc_config";
 @import "orc_config";
-
-h4.title {
-	margin-left: 40px;
-	margin-bottom: 0px;
-	line-height: 40px;
-	cursor: pointer;
-	&:hover {
-		background: rgba(thistle, 0.2);
+.faq-page {
+	h4.title {
+		margin-left: 40px;
+		margin-bottom: 0px;
+		line-height: 40px;
+		cursor: pointer;
+		&:hover {
+			background: rgba(thistle, 0.2);
+		}
 	}
-}
 
-#splash-text.faq-splash-text {
-	grid-column-end: 3;
-	grid-column-start: 1;
-	width: 100%;
-	text-align: center;
-	grid-row-end: none;
-}
+	#splash-text.faq-splash-text {
+		grid-column-end: 3;
+		grid-column-start: 1;
+		width: 100%;
+		text-align: center;
+		grid-row-end: none;
+	}
 
-/*ul.categories {
+	/*ul.categories {
     margin-top: 0px;
     li { position: relative; }
     span.name, span.count {
@@ -38,105 +38,106 @@ h4.title {
     .answer { padding-left: 8px; }
 }*/
 
-.faq-section {
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: -20px;
-}
-.faq-sidebar,
-.faq-main {
-	box-sizing: border-box;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	ul.categories,
-	ul.faq-questions,
-	ul.faq-nav {
-		list-style: none;
+	.faq-section {
+		display: flex;
+		flex-wrap: wrap;
+		margin-top: -20px;
 	}
-}
+	.faq-sidebar,
+	.faq-main {
+		box-sizing: border-box;
+		padding-left: 2rem;
+		padding-right: 2rem;
+		ul.categories,
+		ul.faq-questions,
+		ul.faq-nav {
+			list-style: none;
+		}
+	}
 
-.faq-sidebar {
-	@include not-mobile {
-		width: 30%;
-		padding-top: 2rem;
+	.faq-sidebar {
+		@include not-mobile {
+			width: 30%;
+			padding-top: 2rem;
+		}
 	}
-}
-.faq-category-heading-sidebar {
-	font-weight: bold;
-}
-.faq-nav {
-	padding: 0;
-	margin: 0;
-}
-.faq-category-expand {
-	width: 0.65rem;
-	height: 0.65rem;
-	padding: 0.25rem;
-	vertical-align: middle;
-	transform: rotate(180deg);
-}
-.faq-sidebar-category-active {
+	.faq-category-heading-sidebar {
+		font-weight: bold;
+	}
+	.faq-nav {
+		padding: 0;
+		margin: 0;
+	}
 	.faq-category-expand {
-		transform: rotate(0deg);
+		width: 0.65rem;
+		height: 0.65rem;
+		padding: 0.25rem;
+		vertical-align: middle;
+		transform: rotate(180deg);
 	}
-}
-.faq-link {
-	color: $orc-rock-gray;
-	text-decoration: none;
-}
-.faq-sidebar-questions {
-	padding-bottom: 1rem;
-}
+	.faq-sidebar-category-active {
+		.faq-category-expand {
+			transform: rotate(0deg);
+		}
+	}
+	.faq-link {
+		color: $orc-rock-gray;
+		text-decoration: none;
+	}
+	.faq-sidebar-questions {
+		padding-bottom: 1rem;
+	}
 
-.faq-main {
-	@include not-mobile {
-		width: 70%;
+	.faq-main {
+		@include not-mobile {
+			width: 70%;
+		}
+		ul.categories,
+		ul.faq-questions,
+		ul.faq-nav {
+			padding-left: 0;
+		}
 	}
-	ul.categories,
-	ul.faq-questions,
-	ul.faq-nav {
-		padding-left: 0;
+	.faq-sidebar-questions {
+		padding-left: 2rem;
+		list-style-type: disc;
 	}
-}
-.faq-sidebar-questions {
-	padding-left: 2rem;
-	list-style-type: disc;
-}
-.faq-category-heading {
-	border-bottom: 1px solid rgba($orc-rock-gray, 0.5);
-	padding: 1rem 0;
-	margin: 1rem 0;
-	line-height: 1rem;
-}
-.faq-question {
-	color: $orc-rock-gray;
-}
-.faq-question-container {
-	margin: 1rem 0;
-	@include not-mobile {
-		margin: 2rem 0;
+	.faq-category-heading {
+		border-bottom: 1px solid rgba($orc-rock-gray, 0.5);
+		padding: 1rem 0;
+		margin: 1rem 0;
+		line-height: 1rem;
 	}
-	& > ul {
-		margin-bottom: 1em;
+	.faq-question {
+		color: $orc-rock-gray;
 	}
-}
-.faq-question-container:target {
-	animation-duration: 4s;
-	animation-name: draw-attention;
-	animation-iteration-count: once;
-}
+	.faq-question-container {
+		margin: 1rem 0;
+		@include not-mobile {
+			margin: 2rem 0;
+		}
+		& > ul {
+			margin-bottom: 1em;
+		}
+	}
+	.faq-question-container:target {
+		animation-duration: 4s;
+		animation-name: draw-attention;
+		animation-iteration-count: once;
+	}
 
-@keyframes draw-attention {
-	0% {
-		background-color: rgba($orc-bright-purple, 0.25);
-		box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0.25);
-	}
-	50% {
-		background-color: rgba($orc-bright-purple, 0.15);
-		box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0.15);
-	}
-	100% {
-		background-color: rgba($orc-bright-purple, 0);
-		box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0);
+	@keyframes draw-attention {
+		0% {
+			background-color: rgba($orc-bright-purple, 0.25);
+			box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0.25);
+		}
+		50% {
+			background-color: rgba($orc-bright-purple, 0.15);
+			box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0.15);
+		}
+		100% {
+			background-color: rgba($orc-bright-purple, 0);
+			box-shadow: 0px 0px 0px 0.75rem rgba($orc-bright-purple, 0);
+		}
 	}
 }

@@ -9,6 +9,7 @@ const Page = () => (
 			<title>About the Open Accessible Internet | Orchid</title>
 			<meta name="description" content="We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN." />
 			<meta name="og:image" content="https://www.orchid.com/img/company/splash/social.png" />
+			<body className="about-us-page" />
 		</Helmet>
 		<div className="about-company__page-container">
 			<div className="bk-beige-light about-company__splash-container">

@@ -9,6 +9,7 @@ const Page = () => (
 			<title>Join Orchid | Orchid</title>
 			<meta name="description" content="We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN." />
 			<meta name="og:image" content="https://www.orchid.com/img/join/social.jpg" />
+			<body className="join-page" />
 		</Helmet>
 		<div className="join background-white">
 			<section className="section-med hpad-thin pad-top-wide z-index-1">

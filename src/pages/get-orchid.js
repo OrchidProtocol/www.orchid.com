@@ -8,6 +8,7 @@ const Page = () => (
 		<Helmet>
 			<title>VPN App | Orchid</title>
 			<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />
+			<body className="get-orchid-page" />
 		</Helmet>
 		<div class="wavy-element-03"></div>
 

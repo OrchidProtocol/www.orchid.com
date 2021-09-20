@@ -9,6 +9,7 @@ const Page = () => (
 			<title>Get In Touch | Orchid</title>
 			<meta name="description" content="Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid." />
 			<meta name="og:image" content="https://orchid.com/img/contact/social.png" />
+			<body className="contact-page" />
 		</Helmet>
 		<div className="splash-circuit">
 			<div className="splash-circuit-image section-med"></div>
