@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './join.scss'
+import WhereOXT from '../components/where-oxt';
 
 const Page = () => (
 	<Layout>
@@ -109,7 +110,7 @@ const Page = () => (
 		<div className="bk-faint-gray" id="get-oxt">
 			<section className="section-narrow hpad-wide vpad-wide z-index-1 center-text">
 				<h2 className="color-primary gap-bot-thin" i18n="@@WhereToGetOXT">Where to get OXT?</h2>
-				<where-oxt></where-oxt>
+				<WhereOXT />
 			</section>
 		</div>
 

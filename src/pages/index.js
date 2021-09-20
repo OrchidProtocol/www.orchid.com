@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './index.scss'
+import ExplainerVideo from '../components/explainerVideo';
 
 const Page = () => (
 	<Layout bodyClass="index">
@@ -153,7 +154,7 @@ const Page = () => (
 					</div>
 				</div>
 
-				<video-section></video-section>
+				<ExplainerVideo />
 
 				<a href="/get-orchid" className="section-button">
 					<button className="btn-secondary">Get Orchid</button>
