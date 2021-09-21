@@ -424,6 +424,8 @@ $flyout-gap: math.div($flyout-spacing, 2);
 		z-index: 100;
 		padding: 0.5rem;
 		background: #fff;
+		box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+		border-radius: 0.5rem;
 	}
 
 	width: auto;
