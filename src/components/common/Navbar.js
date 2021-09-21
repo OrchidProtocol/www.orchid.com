@@ -4,17 +4,45 @@ import './Navbar.scss';
 
 class Navbar extends React.Component {
 
+	constructor() {
+		super();
+
+		this.state = {
+			navigationCollapsed: true,
+			languageCollapsed: true,
+			js: false,
+		}
+	}
+
+	componentWillMount() {
+		this.setState({
+			js: true
+		})
+	}
+
+	navbarClickListener() {
+		this.setState({
+			navigationCollapsed: !this.state.navigationCollapsed
+		})
+	}
+
+	languageClickListener() {
+		this.setState({
+			languageCollapsed: !this.state.languageCollapsed
+		})
+	}
+
 	render() {
 		return (<div id="nav-root">
-			<nav id="nav" className="section-wide hpad-thin wants-js-class">
+			<nav id="nav" className={"section-wide hpad-thin" + (this.state.js ? " js" : "")}>
 				<h1 id="nav-home">
 					<a className="inline-block" href="/" aria-label="Home" title="Home">
-						<img width="93" height="24" src="/img/shared/orchid-logo-text.svg?v=3" alt="Orchid logo" className="no-mobile" />
+						<img width="93" height="24" src="/img/shared/orchid-logo-text.svg" alt="Orchid logo" className="no-mobile" />
 						<img width="35" height="30" src="/img/shared/orchid-logo-small.svg" alt="Orchid logo" className="mobile-only" />
 					</a>
 				</h1>
-				<div className="nav-menu wants-js-class">
-					<div id="nav-flyout-header" className="mobile-only">
+				<div className={"nav-menu" + (this.state.js ? " js" : "") + (this.state.navigationCollapsed ? "" : " open")}>
+					<div id="nav-flyout-header" className="mobile-only" onClick={this.navbarClickListener.bind(this)}>
 						<button id="nav-flyout-close" className="phantom-btn">
 							<img width="22" height="24" alt="Close" src="/img/shared/close.svg" />
 						</button>
@@ -27,7 +55,7 @@ class Navbar extends React.Component {
 						<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-About">About</a></li>
 						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
 						<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
-						<li className="navbar-language-selector">
+						<li className="navbar-language-selector" onClick={this.languageClickListener.bind(this)}>
 							<input type="checkbox" id="navbar-language-selector-checkbox" name="navbar-language-selector-checkbox" />
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
@@ -54,7 +82,7 @@ class Navbar extends React.Component {
 					</button>
 				</a>
 
-				<button id="nav-toggle" className="phantom-btn mobile-only">
+				<button id="nav-toggle" className="phantom-btn mobile-only" onClick={this.navbarClickListener.bind(this)}>
 					<img width="25" height="22" alt="Toggle Navigation" src="/img/shared/hamburger.svg" />
 				</button>
 			</nav>

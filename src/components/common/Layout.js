@@ -64,7 +64,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 					<footer id="footer" className="section-med hpad-wide">
 						<div id="ft-layout">
 							<section id="ft-logo">
-								<img width="149px" height="39px" alt="" src="/img/shared/orchid-logo-text.svg?v=3" />
+								<img width="149px" height="39px" alt="" src="/img/shared/orchid-logo-text.svg" />
 								<p>&copy; {new Date().getFullYear()} Orchid Labs Inc.</p>
 								<p className="privacy-terms-links">
 									<a className="phantom-a" href="/privacy-policy">Privacy Policy</a> |

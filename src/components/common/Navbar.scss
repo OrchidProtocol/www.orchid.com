@@ -49,6 +49,7 @@ $mobile-nav-height: 64px;
 #nav-root {
 	z-index: 999;
 	position: relative;
+	background: white;
 	@include mobile {
 		//margin-bottom: 1.9rem;
 		&.slim {
