@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './index.scss'
 import ExplainerVideo from '../components/explainerVideo';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 const Page = () => (
 	<Layout bodyClass="index">
@@ -285,7 +286,7 @@ const Page = () => (
 
 				<h3>Let’s stay connected</h3>
 				<p>Get the Orchid Onlooker newsletter for updates and privacy news</p>
-				<app-newsletter-signup-core largePadding="true"></app-newsletter-signup-core>
+				<NewsletterSignupCore largePadding="true" />
 			</div>
 		</section>
 	</Layout>
