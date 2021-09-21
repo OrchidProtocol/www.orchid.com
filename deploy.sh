@@ -31,8 +31,7 @@ function build-site() {
      for file in $(echo *.html); do
          mkdir -p $(basename ${file} .html)
          cp ${file} $(basename ${file} .html)/index.html
-     done;
-     ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
+     done;)
 }
 
 function get-distribution-id() {

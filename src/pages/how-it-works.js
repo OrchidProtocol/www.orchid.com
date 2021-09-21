@@ -404,7 +404,7 @@ const Page = () => (
 					<div class="pos-relative">
 
 						<img alt="" id="read-whitepaper-adorner" src="/img/network/read-whitepaper.svg" />
-						<a i18n-href="@@WhitepaperLink" href="/assets/whitepaper/whitepaper.pdf">
+						<a i18n-href="@@WhitepaperLink" href="/whitepaper/english.pdf">
 							<button class="btn-primary z-index-1" i18n="@@ReadOurWhitepaper">
 								Read our Whitepaper
 							</button>

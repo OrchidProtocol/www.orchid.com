@@ -68,7 +68,7 @@ module.exports = {
 			label: 'Blog'
 		},
 		{
-			url: "https://www.orchid.com/assets/whitepaper/whitepaper.pdf",
+			url: "https://www.orchid.com/whitepaper/english.pdf",
 			label: "Whitepaper",
 		},
 		{

@@ -86,7 +86,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 									<li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
 									<li><a className="phantom-a" href="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
 									<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
-									<li><a className="phantom-a" href="/whitepaper.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
+									<li><a className="phantom-a" href="/whitepaper/english.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
 									<li><a className="phantom-a" href="/partners" i18n="@@Navigation-Partners">Partners</a></li>
 									<li><a className="phantom-a" href="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
 								</ul>

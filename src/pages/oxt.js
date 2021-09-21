@@ -19,11 +19,10 @@ const Page = () => (
 					<div class="hero-flex__container">
 						<h1 class="oxt-hero__title">OXT</h1>
 						<h2 class="oxt-hero__subtitle" i18n="@@OXTHeroSubtitle">
-							The staking asset <br />
-							for the $35B* VPN market
+							The staking asset <br /> for the $35B* VPN market
 						</h2>
 						<p i18n="@@OXTHeroParagraph">
-							The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls.OXT is Orchid's native ERC-20 digital asset that powers and secures a new approach to VPN service and providers compete for user payment flow by staking OXT. As more bandwidth is purchased on the Orchid network node providers can add and stake OXT in order to capture additional bandwidth sales on the network.
+							The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid's native ERC-20 digital asset that powers and secures a new approach to VPN service and providers compete for user payment flow by staking OXT. As more bandwidth is purchased on the Orchid network node providers can add and stake OXT in order to capture additional bandwidth sales on the network.
 						</p>
 						<div class="hero__buttons">
 							<a href="/download">
@@ -32,7 +31,7 @@ const Page = () => (
 							<a href="https://github.com/OrchidTechnologies">
 								<button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__GitHub">GitHub</button>
 							</a>
-							<a href="/whitepaper/whitepaper.pdf">
+							<a href="/whitepaper/english.pdf">
 								<button class="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">Whitepaper</button>
 							</a>
 						</div>

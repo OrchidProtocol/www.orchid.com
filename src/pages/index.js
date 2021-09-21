@@ -116,7 +116,7 @@ const Page = () => (
 			<a href="https://docs.orchid.com/">
 				<button className="btn-primary">Read the Docs</button>
 			</a>
-			<a href="/assets/whitepaper/whitepaper.pdf">
+			<a href="/whitepaper/english.pdf">
 				<button className="btn-secondary">Whitepaper</button>
 			</a>
 		</div>
