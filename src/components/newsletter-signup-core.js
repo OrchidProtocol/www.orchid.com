@@ -1,5 +1,5 @@
 import React from 'react'
-import './where-oxt.scss'
+import './newsletter-signup-core.scss'
 
 class Component extends React.Component {
 	constructor(props) {
@@ -127,20 +127,20 @@ class Component extends React.Component {
 		return (
 			<div className="newsletter-core">
 				<div ngIf="!submitted">
-					<input type="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" onKeyUp={this.checkIfEnter.bind(this)} class={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} onChange={this.inputListener.bind(this)} onKeyDown={this.inputListener.bind(this)} />
-					<div class="gap-bot-thin" ngIf="showFull">
-						<label class={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')} onClick={this.checkboxListener.bind(this)}>
+					<input type="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" onKeyUp={this.checkIfEnter.bind(this)} className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} onChange={this.inputListener.bind(this)} onKeyDown={this.inputListener.bind(this)} />
+					<div className="gap-bot-thin" ngIf="showFull">
+						<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')} onClick={this.checkboxListener.bind(this)}>
 							<input type="checkbox" ngModel="consented" change="checkboxListener()" />
 							<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
 						</label>
 					</div>
-					<button click="submit()" class={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
+					<button onClick={this.submit.bind(this)} className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
 						<span>Subscribe</span>
 					</button>
 				</div>
-				<ng-container ngIf="(error != '')">
+				<div ngIf="(error != '')">
 					<p id="error" innerText={this.state.error} />
-				</ng-container>
+				</div>
 				<div ngIf="(success != '')">
 					<p id="success" innerText={this.state.success} />
 				</div>
