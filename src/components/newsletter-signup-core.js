@@ -22,24 +22,13 @@ class Component extends React.Component {
 			showFull: false,
 			in_progress: false,
 		}
-		this.email_test = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+		this.email_test = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	}
-
-	/* 
-	get email() { return this._email; }
-
-
-	*/
 	setEmail(val) {
 		this.setState({
 			_email: val,
 			showFull: !!this._email,
 		})
-		if (!this.showFull) {
-			this.setState({
-				consented: false,
-			})
-		}
 	}
 
 	inputListener() {
@@ -48,9 +37,10 @@ class Component extends React.Component {
 			blink_box: false
 		});
 	}
-	checkboxListener() {
+	checkboxListener(e) {
 		this.setState({
-			blink_box: false
+			consented: e.target.checked,
+			blink_box: false,
 		});
 	}
 
@@ -100,7 +90,7 @@ class Component extends React.Component {
 			.then(response => response.json())
 			.then(
 				response => {
-					if (response["status"] == "pending") {
+					if (response["status"] === "pending") {
 						this.setState({
 							in_progress: false,
 							submitted: true,
@@ -119,18 +109,18 @@ class Component extends React.Component {
 					in_progress: false,
 					error: "Sorry, an error occurred.",
 				})
-				console.log(error);
+				console.error(error);
 			});
 	}
 
 	render() {
 		return (
 			<div className="newsletter-core">
-				<div ngIf="!submitted">
+				<div style={{ display: this.state.submitted ? 'none' : '' }}>
 					<input type="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" onKeyUp={this.checkIfEnter.bind(this)} className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} onChange={this.inputListener.bind(this)} onKeyDown={this.inputListener.bind(this)} />
-					<div className="gap-bot-thin" ngIf="showFull">
-						<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')} onClick={this.checkboxListener.bind(this)}>
-							<input type="checkbox" ngModel="consented" change="checkboxListener()" />
+					<div className="gap-bot-thin" style={{ display: this.state.showFull ? '' : 'none' }}>
+						<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
+							<input type="checkbox" onChange={this.checkboxListener.bind(this)} />
 							<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
 						</label>
 					</div>
@@ -138,11 +128,11 @@ class Component extends React.Component {
 						<span>Subscribe</span>
 					</button>
 				</div>
-				<div ngIf="(error != '')">
-					<p id="error" innerText={this.state.error} />
+				<div style={{ display: this.state.error ? 'block' : 'none' }}>
+					<p id="error" innertext={this.state.error} />
 				</div>
-				<div ngIf="(success != '')">
-					<p id="success" innerText={this.state.success} />
+				<div style={{ display: this.state.success ? 'block' : 'none' }}>
+					<p id="success" innertext={this.state.success} />
 				</div>
 			</div>
 		)

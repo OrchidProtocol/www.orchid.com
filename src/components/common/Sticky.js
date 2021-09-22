@@ -152,22 +152,13 @@ class StickySidebar extends React.Component {
 			display: block;
 			max-width: 89%;
 			font-size: 99%;
-		`}>Download the app and join Orchid’s privacy network today!</span>
-
+		`}>Download the app and get Orchid’s privacy network today!</span>
 			<a href={`https://www.${(() => {
 				switch (process.env.GATSBY_TARGET_LANG) {
-					default:
+					case "en":
 						return "";
-					case "ko":
-						return "ko.";
-					case "ru":
-						return "ru.";
-					case "ja":
-						return "ja.";
-					case "zh":
-						return "zh.";
-					case "id":
-						return "id.";
+					default:
+						return process.env.GATSBY_TARGET_LANG.toLowerCase() + ".";
 				}
 			})()}orchid.com/join?utm_medium=website&utm_source=web&utm_campaign=blog-post-sticky&utm_content=${encodeURIComponent(this.state.location)}`}>
 				<button css={css`
@@ -177,8 +168,7 @@ class StickySidebar extends React.Component {
 				width: 100%;
 				display: block;
 				margin-top: 24px;
-				border-radius: 100vmax;
-			`}>
+				border-radius: 100vmax;`}>
 					Join Now
 				</button>
 			</a>

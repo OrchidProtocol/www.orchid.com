@@ -31,7 +31,7 @@ const Page = () => (
 			</ul>
 			<article class="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Cookies</h2>
-				<p>We employ the use of cookies. By using this website you consent to the use of cookies in accordance with <a title="Privacy Policy" routerLink="/privacy-policy">the privacy policy</a>.</p>
+				<p>We employ the use of cookies. By using this website you consent to the use of cookies in accordance with <a title="Privacy Policy" href="/privacy-policy">the privacy policy</a>.</p>
 				<p>Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>
 				<h2 id="sec2">License</h2>
 				<p>Unless otherwise stated, Orchid Labs Inc. and/or its licensors own the intellectual property rights for all material on this site. All intellectual property rights are reserved. You may view and/or print pages from this site for your own personal use subject to restrictions set in these terms and conditions.</p>

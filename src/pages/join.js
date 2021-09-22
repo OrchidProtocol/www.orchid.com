@@ -7,7 +7,7 @@ import WhereOXT from '../components/where-oxt';
 const Page = () => (
 	<Layout>
 		<Helmet>
-			<title>Join Orchid | Orchid</title>
+			<title>Get Orchid | Orchid</title>
 			<meta name="description" content="We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN." />
 			<meta name="og:image" content="https://www.orchid.com/img/join/social.jpg" />
 			<body className="join-page" />

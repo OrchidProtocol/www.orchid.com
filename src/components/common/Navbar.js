@@ -20,13 +20,17 @@ class Navbar extends React.Component {
 		})
 	}
 
-	navbarClickListener() {
+	navbarClickListener(e) {
+		if (e.type === 'keypress' && (e.key !== 'Enter' && e.key !== ' ')) return;
+
 		this.setState({
 			navigationCollapsed: !this.state.navigationCollapsed
 		})
 	}
 
-	languageClickListener() {
+	languageClickListener(e) {
+		if (e.type === 'keypress' && (e.key !== 'Enter' && e.key !== ' ')) return;
+
 		this.setState({
 			languageCollapsed: !this.state.languageCollapsed
 		})
@@ -42,8 +46,8 @@ class Navbar extends React.Component {
 					</a>
 				</h1>
 				<div className={"nav-menu" + (this.state.js ? " js" : "") + (this.state.navigationCollapsed ? "" : " open")}>
-					<div id="nav-flyout-header" className="mobile-only" onClick={this.navbarClickListener.bind(this)}>
-						<button id="nav-flyout-close" className="phantom-btn">
+					<div id="nav-flyout-header" className="mobile-only">
+						<button id="nav-flyout-close" className="phantom-btn" onKeyPress={this.navbarClickListener.bind(this)} onClick={this.navbarClickListener.bind(this)}>
 							<img width="22" height="24" alt="Close" src="/img/shared/close.svg" />
 						</button>
 					</div>
@@ -55,9 +59,8 @@ class Navbar extends React.Component {
 						<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-About">About</a></li>
 						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
 						<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
-						<li className="navbar-language-selector" onClick={this.languageClickListener.bind(this)}>
+						<li className="navbar-language-selector">
 							<input type="checkbox" id="navbar-language-selector-checkbox" name="navbar-language-selector-checkbox" />
-							<label for="navbar-language-selector-checkbox" class="navbar-language-selector-checkbox-label"></label>
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
 								<span i18n="@@NavigationCurrentLanguage">{process.env.GATSBY_TARGET_LANG}</span>
