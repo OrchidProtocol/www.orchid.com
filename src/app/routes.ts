@@ -90,6 +90,7 @@ import { PodcastEp62Component } from './podcast-ep62/podcast.component';
 import { PodcastEp63Component } from './podcast-ep63/podcast.component';
 import { PodcastEp64Component } from './podcast-ep64/podcast.component';
 import { PodcastEp65Component } from './podcast-ep65/podcast.component';
+import { PodcastEp66Component } from './podcast-ep66/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -271,6 +272,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-64-sonny-king", component: PodcastEp64Component },
 			{ path: "podcast/episode-65-alexander-klus.html", redirectTo: "podcast/episode-65-alexander-klus" },
 			{ path: "podcast/episode-65-alexander-klus", component: PodcastEp65Component },
+			{ path: "podcast/episode-66-jason-rieff.html", redirectTo: "podcast/episode-66-jason-rieff" },
+			{ path: "podcast/episode-66-jason-rieff", component: PodcastEp66Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
