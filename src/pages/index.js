@@ -6,7 +6,7 @@ import ExplainerVideo from '../components/explainerVideo';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 const Page = () => (
-	<Layout bodyClass="index">
+	<Layout bodyclassName="index">
 		<Helmet>
 			<title>Crypto VPN App | Orchid</title>
 			<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />

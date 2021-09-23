@@ -11,12 +11,12 @@ const Page = () => (
 			<body className="faq-page" />
 		</Helmet>
 		<section className="service-terms-page">
-			<div class="bk-beige-light">
-				<header class="section-wide hpad-wide vpad-wide">
+			<div className="bk-beige-light">
+				<header className="section-wide hpad-wide vpad-wide">
 					<h1>Terms of Service</h1>
 				</header>
 			</div>
-			<ul class="section-narrow hpad-wide gap-top-wide">
+			<ul className="section-narrow hpad-wide gap-top-wide">
 				{/*<!-- NB: these are absolute URLs because of the <base> tag-->*/}
 				{/*<!--TODO: the floating header breaks the anchor positions on mobile-->*/}
 				<li><a href="/service-terms#sec1" target="_self">Cookies</a></li>
@@ -29,7 +29,7 @@ const Page = () => (
 				<li><a href="/service-terms#sec8" target="_self">Removial of Links from our website</a></li>
 				<li><a href="/service-terms#sec9" target="_self">Disclaimer</a></li>
 			</ul>
-			<article class="section-narrow hpad-wide vpad-wide">
+			<article className="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Cookies</h2>
 				<p>We employ the use of cookies. By using this website you consent to the use of cookies in accordance with <a title="Privacy Policy" href="/privacy-policy">the privacy policy</a>.</p>
 				<p>Most of the modern day interactive web sites use cookies to enable us to retrieve user details for each visit. Cookies are used in some areas of our site to enable the functionality of this area and ease of use for those people visiting. Some of our affiliate / advertising partners may also use cookies.</p>

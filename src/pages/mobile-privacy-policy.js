@@ -11,12 +11,12 @@ const Page = () => (
 			<body className="faq-page" />
 		</Helmet>
 		<section className="mobile-privacy-policy-page">
-			<div class="bk-beige-light">
-				<header class="section-wide hpad-wide vpad-wide">
+			<div className="bk-beige-light">
+				<header className="section-wide hpad-wide vpad-wide">
 					<h1>Mobile Privacy Policy</h1>
 				</header>
 			</div>
-			<ul class="section-narrow hpad-wide gap-top-wide">
+			<ul className="section-narrow hpad-wide gap-top-wide">
 				{/*<!-- NB: these are absolute URLs because of the <base> tag-->*/}
 				{/*<!--TODO: the floating header breaks the anchor positions on mobile-->*/}
 				<li><a href="#sec1" target="_self">Introduction</a></li>
@@ -26,7 +26,7 @@ const Page = () => (
 				<li><a href="#sec5" target="_self">Update</a></li>
 				<li><a href="#sec6" target="_self">More Information</a></li>
 			</ul>
-			<article class="section-narrow hpad-wide vpad-wide">
+			<article className="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Introduction</h2>
 				<p>
 					Orchid considers the privacy of our visitors to be extremely important. This

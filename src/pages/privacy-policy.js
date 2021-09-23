@@ -11,12 +11,12 @@ const Page = () => (
 			<body className="faq-page" />
 		</Helmet>
 		<section className="privacy-policy-page">
-			<div class="bk-beige-light">
-				<header class="section-wide hpad-wide vpad-wide">
+			<div className="bk-beige-light">
+				<header className="section-wide hpad-wide vpad-wide">
 					<h1>Privacy Policy</h1>
 				</header>
 			</div>
-			<ul class="section-narrow hpad-wide gap-top-wide">
+			<ul className="section-narrow hpad-wide gap-top-wide">
 				{/*<!-- NB: these are absolute URLs because of the <base> tag-->*/}
 				{/*<!--TODO: the floating header breaks the anchor positions on mobile-->*/}
 				<li><a href="/privacy-policy#sec1" target="_self">Introduction</a></li>
@@ -28,7 +28,7 @@ const Page = () => (
 				<li><a href="/privacy-policy#sec7" target="_self">More Information</a></li>
 				<li><a href="/privacy-policy#sec8" target="_self">Orchid Website Privacy Policy Only</a></li>
 			</ul>
-			<article class="section-narrow hpad-wide vpad-wide">
+			<article className="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Introduction</h2>
 				<p>Orchid considers the privacy of our visitors to be extremely important. This privacy policy document describes in detail the types of personal information that is collected and recorded by www.orchid.com and how we use it.</p>
 				<p>Orchid is committed to user privacy and does not collect or store personal data. Orchid is committed to protecting user privacy and browsing history. The following document discloses our privacy policy and measures taken to protect users from data tracking and logging. The information included below is a detailed summary on what information is collected and where, through what partners, and how that information is being used. </p>
