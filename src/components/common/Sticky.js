@@ -169,7 +169,7 @@ class StickySidebar extends React.Component {
 				display: block;
 				margin-top: 24px;
 				border-radius: 100vmax;`}>
-					Join Now
+					Get Orchid
 				</button>
 			</a>
 		</div>);
