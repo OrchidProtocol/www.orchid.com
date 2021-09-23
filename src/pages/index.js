@@ -40,6 +40,8 @@ const Page = () => (
 					fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers
 					the entire ecosystem. Try it out!</p>
 				<picture>
+					<source srcSet="/img/index/marketplace.avif" type="image/avif" />
+					<source srcSet="/img/index/marketplace.webp" type="image/webp" />
 					<img src="/img/index/marketplace.png" alt="" width="1921" height="442" />
 				</picture>
 				<div className="marketplace-steps">
