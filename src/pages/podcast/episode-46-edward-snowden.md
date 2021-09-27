@@ -3,7 +3,7 @@ templateKey: podcast-episode
 public: true
 url: podcast/episode-46-edward-snowden
 title: " Episode 46: Edward Snowden "
-description:  “Don't stay safe, stay free." This week we feature a special episode: Edward Snowden’s talk from the Priv8 digital privacy summit. He shares his thoughts on the rise of surveillance capitalism, why online privacy matters, and how to fix a broken Internet. 
+description: "“Don't stay safe, stay free." This week we feature a special episode: Edward Snowden’s talk from the Priv8 digital privacy summit. He shares his thoughts on the rise of surveillance capitalism, why online privacy matters, and how to fix a broken Internet."
 date: 1620190800000
 featuredimage: /img/podcast/P8PGuestCard_Snowden.jpg
 socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_Snowden.png
