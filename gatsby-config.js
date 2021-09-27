@@ -47,6 +47,19 @@ module.exports = {
 		},
 		`gatsby-plugin-emotion`,
 		{
+			resolve: 'gatsby-transformer-remark',
+			options: {
+				plugins: [
+					{
+						resolve: 'gatsby-remark-copy-linked-files',
+						options: {
+							destinationDir: 'static',
+						},
+					},
+				],
+			},
+		},
+		{
 			resolve: `gatsby-plugin-advanced-sitemap`,
 			options: {
 				query: ``,

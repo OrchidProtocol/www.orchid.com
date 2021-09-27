@@ -10,24 +10,24 @@ const Page = () => (
 			<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />
 			<body className="get-orchid-page" />
 		</Helmet>
-		<div class="wavy-element-03"></div>
+		<div className="wavy-element-03"></div>
 
-		<section class="hero__wrapper">
-			<div class="hero__content center">
-				<h2 class="page__header">Get Orchid in 2 easy steps!</h2>
+		<section className="hero__wrapper">
+			<div className="hero__content center">
+				<h2 className="page__header">Get Orchid in 2 easy steps!</h2>
 				<p>All purchases are 100% covered by the in-app purchase refund policy. iOS/macOS purchases have 90 days to request a refund. For Google Play purchases, the refund window is 48 hours.</p>
 			</div>
-			<div class="hero__content">
+			<div className="hero__content">
 				<h3>Step 1: Choose a starting amount for your Orchid account</h3>
 				<p>Orchid accounts include 24/7 customer support, unlimited devices and are backed by the xDai cryptocurrency.</p>
 			</div>
-			<div class="wavy-element-02"></div>
-			<div class="hero__cards">
-				<div class="hero__card">
-					<div class="card__header">
+			<div className="wavy-element-02"></div>
+			<div className="hero__cards">
+				<div className="hero__card">
+					<div className="card__header">
 						~12GB
 					</div>
-					<div class="card__body">
+					<div className="card__body">
 						<h3>$0.99</h3>
 						<b>
 							One-time fee.
@@ -38,11 +38,11 @@ const Page = () => (
 						</p>
 					</div>
 				</div>
-				<div class="hero__card center">
-					<div class="card__header">
+				<div className="hero__card center">
+					<div className="card__header">
 						~60GB
 					</div>
-					<div class="card__body">
+					<div className="card__body">
 						<h3>$4.99</h3>
 						<b>
 							One-time fee.
@@ -52,11 +52,11 @@ const Page = () => (
 						</p>
 					</div>
 				</div>
-				<div class="hero__card">
-					<div class="card__header">
+				<div className="hero__card">
+					<div className="card__header">
 						~240GB
 					</div>
-					<div class="card__body">
+					<div className="card__body">
 						<h3>$19.99</h3>
 						<b>
 							One-time fee.
@@ -67,7 +67,7 @@ const Page = () => (
 					</div>
 				</div>
 			</div>
-			<div class="hero__content disclaimer">
+			<div className="hero__content disclaimer">
 				<p>
 					*Orchid is a bandwidth marketplace and the price per GB can fluctuate with market demands. Currently the price is $0.06/GB.
 					<br />
@@ -76,31 +76,31 @@ const Page = () => (
 					<a href="/oxt">Learn more</a>
 				</p>
 			</div>
-			<div class="hero__content">
+			<div className="hero__content">
 				<h3>Step 2: Pay in the Orchid app</h3>
 				<p>Download the Orchid app and fund an account using an in-app purchase. Once funded, you can connect to the Orchid network.</p>
 			</div>
-			<div class="hero__content">
-				<div class="platforms__container">
-					<div class="download-images__container">
-						<img src="/img/download/phone-1.png" class="download-images__device" alt="" />
-						<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
+			<div className="hero__content">
+				<div className="platforms__container">
+					<div className="download-images__container">
+						<img src="/img/download/phone-1.png" className="download-images__device" alt="" />
+						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadAndroid__Title">Android</h4>
 						<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage">
 							<img width="160" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0" }} />
 						</a>
 					</div>
-					<div class="download-images__container">
-						<img src="/img/download/macbook.png" class="download-images__device mac" alt="" />
-						<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
+					<div className="download-images__container">
+						<img src="/img/download/macbook.png" className="download-images__device mac" alt="" />
+						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
 						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
 							<img alt="macOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 						</a>
 					</div>
-					<div class="download-images__container">
-						<img src="/img/download/phone-2.png" class="download-images__device" alt="" />
-						<img src="/img/download/circle.svg" class="download-images__circle" alt="" />
+					<div className="download-images__container">
+						<img src="/img/download/phone-2.png" className="download-images__device" alt="" />
+						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadiOS__Title">iOS</h4>
 						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
 							<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
@@ -108,24 +108,24 @@ const Page = () => (
 					</div>
 				</div>
 			</div>
-			<div class="hero__content">
-				<div class="perks">
+			<div className="hero__content">
+				<div className="perks">
 					<h3>Purchasing an Orchid account includes</h3>
-					<div class="perks__row">
-						<div class="perks__column">
-							<div class="perks__item">24/7 customer support via email</div>
-							<div class="perks__item">Apps for iOS, macOS, and Android</div>
-							<div class="perks__item">Unlimited devices and sharing</div>
+					<div className="perks__row">
+						<div className="perks__column">
+							<div className="perks__item">24/7 customer support via email</div>
+							<div className="perks__item">Apps for iOS, macOS, and Android</div>
+							<div className="perks__item">Unlimited devices and sharing</div>
 						</div>
-						<div class="perks__column">
-							<div class="perks__item">Open Source code that is trusted and audited</div>
-							<div class="perks__item">No app tracking, website tracking or logging</div>
-							<div class="perks__item">Not satisfied? Get a refund through the App stores, no questions asked!</div>
+						<div className="perks__column">
+							<div className="perks__item">Open Source code that is trusted and audited</div>
+							<div className="perks__item">No app tracking, website tracking or logging</div>
+							<div className="perks__item">Not satisfied? Get a refund through the App stores, no questions asked!</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="hero__content center">
+			<div className="hero__content center">
 				<p>- OR -</p>
 				<p><a href="/join">Create a custom Orchid Account with your own crypto.</a></p>
 			</div>

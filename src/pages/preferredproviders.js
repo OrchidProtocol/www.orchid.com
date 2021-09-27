@@ -11,9 +11,9 @@ const Page = () => (
 			<meta name="og:image" content="https://www.orchid.com/img/partners/social.png" />
 			<body className="preferredproviders-page" />
 		</Helmet>
-		<div class="preferred-hero__wrapper bk-beige-light">
-			<div class="preferred-hero__container vpad-wide hpad-thin center-text">
-				<div class="preferred-hero__column">
+		<div className="preferred-hero__wrapper bk-beige-light">
+			<div className="preferred-hero__container vpad-wide hpad-thin center-text">
+				<div className="preferred-hero__column">
 					<svg width="347" height="338" viewBox="0 0 347 338" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<g clip-path="url(#clip0)">
 							<path
@@ -156,7 +156,7 @@ const Page = () => (
 						</defs>
 					</svg>
 				</div>
-				<div class="preferred-hero__column">
+				<div className="preferred-hero__column">
 					<h1>
 						Preferred Providers
 					</h1>
@@ -169,7 +169,7 @@ const Page = () => (
 		</div>
 
 
-		<div class="preferred-providers__wrapper vpad-xl hpad-thin center-text">
+		<div className="preferred-providers__wrapper vpad-xl hpad-thin center-text">
 			<h2>
 				List of preferred providers
 			</h2>
@@ -180,8 +180,8 @@ const Page = () => (
 			<a href="https://www.vpnsecure.me/"><img src="/img/partners/vpnsecure.png" alt="VPN Secure" /></a>
 		</div>
 
-		<div class="preferred-notice__wrapper bk-beige-light vpad-wide hpad-thin center-text">
-			<div class="preferred-notice__container">
+		<div className="preferred-notice__wrapper bk-beige-light vpad-wide hpad-thin center-text">
+			<div className="preferred-notice__container">
 				<b>Legal Notice</b>
 				<br />
 				<br />
@@ -196,7 +196,7 @@ const Page = () => (
 			</div>
 		</div>
 
-		<div class="patterning-instance-1"></div>
+		<div className="patterning-instance-1"></div>
 
 		<app-newsletter-signup></app-newsletter-signup>
 	</Layout >

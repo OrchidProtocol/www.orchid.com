@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { css } from '@emotion/core'
+import { css } from '@emotion/react'
 import { Location } from '@reach/router'
 
 import Navbar from './Navbar.js'
@@ -14,7 +14,6 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 				<html lang={process.env.GATSBY_TARGET_LANG} />
 				<body className={bodyClass} />
 				<link rel="icon" type="image/ico" href="/img/favicon.ico" />
-				<link rel="icon" type="image/png" href="/img/favicon.png" />
 				<link rel="manifest" href="/manifest.webmanifest" />
 				<meta name="theme-color" content="#5f45ba" />
 			</Helmet>

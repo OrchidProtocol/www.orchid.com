@@ -2,16 +2,16 @@ import React from 'react'
 import './where-oxt.scss'
 
 const Component = () => (
-	<div class="where-oxt">
+	<div className="where-oxt">
 		<p i18n="@@ReportExchangesOXT">
 			When the Orchid community learns of new listings, they are publicly announced. <br /><br />
 			If you see OXT being traded on an exchange that isn’t listed here, please use the <a href="/contact">contact form</a> so that it can be added to the list.
 		</p>
-		<div class="oxt-row">
-			<div class="oxt-column">
-				<h3 class="gap-top-thin" i18n="@@ExchangeListings">Exchange Listings</h3>
-				<div class="listing-container">
-					<div class="listing-col">
+		<div className="oxt-row">
+			<div className="oxt-column">
+				<h3 className="gap-top-thin" i18n="@@ExchangeListings">Exchange Listings</h3>
+				<div className="listing-container">
+					<div className="listing-col">
 						<a href="https://en.bithumb.com/trade/status/OXT_BTC">
 							<img src="/img/where-oxt/bithumb.png" alt="Bithumb" />
 						</a>
@@ -40,7 +40,7 @@ const Component = () => (
 							<img src="/img/where-oxt/bkex.png" alt="BKEX" />
 						</a>
 					</div>
-					<div class="listing-col">
+					<div className="listing-col">
 						<a href="https://www.kraken.com/">
 							<img src="/img/where-oxt/kraken.svg" alt="Kraken" />
 						</a>
@@ -76,10 +76,10 @@ const Component = () => (
 			</div>
 
 
-			<div class="oxt-column slim">
-				<h3 class="gap-top-thin" i18n="@@DecentralizedListings">Decentralized Listings</h3>
-				<div class="listing-container">
-					<div class="listing-col">
+			<div className="oxt-column slim">
+				<h3 className="gap-top-thin" i18n="@@DecentralizedListings">Decentralized Listings</h3>
+				<div className="listing-container">
+					<div className="listing-col">
 						<a href="https://info.uniswap.org/pair/0x9b533f1ceaa5ceb7e5b8994ef16499e47a66312d">
 							<img src="/img/where-oxt/uniswap.png" alt="UNISWAP" />
 						</a>
@@ -97,10 +97,10 @@ const Component = () => (
 			</div>
 
 
-			<div class="oxt-column">
-				<h3 class="gap-top-thin" i18n="@@WalletCustodyPartners">Wallet &amp; Custody Partners</h3>
-				<div class="listing-container">
-					<div class="listing-col">
+			<div className="oxt-column">
+				<h3 className="gap-top-thin" i18n="@@WalletCustodyPartners">Wallet &amp; Custody Partners</h3>
+				<div className="listing-container">
+					<div className="listing-col">
 						<a href="https://token.im/">
 							<img src="/img/where-oxt/imtoken.png" alt="imToken" />
 						</a>
@@ -123,7 +123,7 @@ const Component = () => (
 							<img alt="BitGo" src="/img/partners/bitgo.png" />
 						</a>
 					</div>
-					<div class="listing-col">
+					<div className="listing-col">
 						<a href="https://blog.orchid.com/brd-integrates-oxt/">
 							<img alt="BRD" src="/img/partners/brd.png" />
 						</a>

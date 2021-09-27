@@ -20,7 +20,8 @@ const PaginationContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto var(--margin) auto;
+	text-align: center;
+    margin: 0 auto;
     max-width: 400px;
 `;
 
@@ -28,14 +29,14 @@ const Pagination = ({ pageContext }) => {
 	const { currentPage, numPages } = pageContext;
 	const isFirst = currentPage === 1
 	const isLast = currentPage === numPages
-	const prevPage = currentPage - 1 <= 1 ? '/' : '/' + (currentPage - 1).toString()
-	const nextPage = '/' + (Math.min(numPages, currentPage + 1)).toString()
+	const prevPage = currentPage - 1 <= 1 ? '/podcast/' : '/podcast/' + (currentPage - 1).toString()
+	const nextPage = '/podcast/' + (Math.min(numPages, currentPage + 1)).toString()
 
 	const pageElements = [];
 	const pageStart = Math.max(1, currentPage - 2);
 	const pageEnd = Math.min(numPages + 1, pageStart + 5);
 	for (let page = pageStart; page < pageEnd; page++) {
-		pageElements.push(<Link to={page === 1 ? '/' : `/${page}/`}>
+		pageElements.push(<Link key={page} to={page === 1 ? '/podcast/' : `/podcast/${page}/`}>
 			<PaginationLink data-active={page === currentPage ? 'true' : 'false'}>
 				{page}
 			</PaginationLink>
@@ -54,7 +55,7 @@ const Pagination = ({ pageContext }) => {
 			)}
 
 			{pageStart > 1 && <>
-				<Link to="/">1</Link>
+				<Link to="/podcast/">1</Link>
 				<span>...</span>
 			</>}
 
@@ -62,7 +63,7 @@ const Pagination = ({ pageContext }) => {
 
 			{pageEnd <= numPages && <>
 				<span>...</span>
-				<Link to={`/${numPages}`}>{numPages}</Link>
+				<Link to={`/podcast/${numPages}`}>{numPages}</Link>
 			</>}
 
 			{nextPage && !isLast && (

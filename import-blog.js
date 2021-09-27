@@ -97,7 +97,7 @@ fetch(`https://${domain}/feed-1.json`)
 
 				output[output.length - 1].featuredimage = destination.substr(ASSETS_FOLDER.length);
 			}
-			writeFileSync(join(ASSETS_FOLDER, 'blog.json'), JSON.stringify(output));
+			writeFileSync(join(SRC_FOLDER, 'components/common/blog.json'), JSON.stringify(output));
 		} catch (e) { fallback() }
 	})
 	.catch(fallback);

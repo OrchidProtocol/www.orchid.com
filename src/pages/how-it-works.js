@@ -11,109 +11,109 @@ const Page = () => (
 			<meta name="og:image" content="https://www.orchid.com/img/how-it-works/social.png" />
 			<body className="how-it-works-page" />
 		</Helmet>
-		<section class="bk-beige-light how-hero z-index-1">
-			<div class="satellite-1">
+		<section className="bk-beige-light how-hero z-index-1">
+			<div className="satellite-1">
 				<img src="/img/how-it-works/satellite-1.svg" alt="" />
 			</div>
-			<div class="content section-narrow vpad-wide hpad-thin center-text z-index-1">
-				<h1 class="gap-bot-thin" i18n="@@HowHero__Title">How Orchid delivers digital privacy</h1>
+			<div className="content section-narrow vpad-wide hpad-thin center-text z-index-1">
+				<h1 className="gap-bot-thin" i18n="@@HowHero__Title">How Orchid delivers digital privacy</h1>
 				<p i18n="@@HowHero__Subtitle">The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.</p>
 				<p i18n="@@HowHero__Subtitle2">To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using
 					a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</p>
 			</div>
 		</section>
 
-		<section class="bk-white core z-index-1" id="top">
-			<div class="satellite-2">
+		<section className="bk-white core z-index-1" id="top">
+			<div className="satellite-2">
 				<img src="/img/how-it-works/satellite-2.svg" alt="" />
 			</div>
-			<div class="content section-narrow vpad-xl hpad-wide center-text">
-				<h2 class="gap-bot-thin"><span i18n="@@HowIndex__Title">Core components</span> <span i18n="@@HowIndex__Title2">of
+			<div className="content section-narrow vpad-xl hpad-wide center-text">
+				<h2 className="gap-bot-thin"><span i18n="@@HowIndex__Title">Core components</span> <span i18n="@@HowIndex__Title2">of
 					the Orchid network</span></h2>
-				<div class="buttons">
-					<a class="button" href="/how-it-works#app" i18n="@@HowIndex__TheOrchidApp">The Orchid app</a>
-					<a class="button" href="/how-it-works#oxt" i18n="@@HowIndex__OXTCryptocurrency">OXT cryptocurrency</a>
-					<a class="button" href="/how-it-works#accounts" i18n="@@HowIndex__OrchidAccounts">Orchid Accounts</a>
-					<a class="button" href="/how-it-works#protocol" i18n="@@HowIndex__OrchidProtocol">Orchid Protocol</a>
-					<a class="button" href="/how-it-works#nanopayments" i18n="@@HowIndex__Nanopayments">Nanopayments</a>
-					<a class="button" href="/how-it-works#nodes" i18n="@@HowIndex__Nodes">Nodes</a>
-					<a class="button" href="/how-it-works#staking" i18n="@@HowIndex__Staking">Staking</a>
+				<div className="buttons">
+					<a className="button" href="/how-it-works#app" i18n="@@HowIndex__TheOrchidApp">The Orchid app</a>
+					<a className="button" href="/how-it-works#oxt" i18n="@@HowIndex__OXTCryptocurrency">OXT cryptocurrency</a>
+					<a className="button" href="/how-it-works#accounts" i18n="@@HowIndex__OrchidAccounts">Orchid Accounts</a>
+					<a className="button" href="/how-it-works#protocol" i18n="@@HowIndex__OrchidProtocol">Orchid Protocol</a>
+					<a className="button" href="/how-it-works#nanopayments" i18n="@@HowIndex__Nanopayments">Nanopayments</a>
+					<a className="button" href="/how-it-works#nodes" i18n="@@HowIndex__Nodes">Nodes</a>
+					<a className="button" href="/how-it-works#staking" i18n="@@HowIndex__Staking">Staking</a>
 				</div>
 			</div>
-			<div class="explainer__start-cap">
+			<div className="explainer__start-cap">
 				<div></div>
 			</div>
 		</section>
 
-		<div class="explainers">
-			<section class="explainer" id="app">
-				<div class="explainer__container">
-					<div class="explainer__start"></div>
-					<div class="explainer__progress">
-						<a class="explainer__dot active" href="/how-it-works#app">
+		<div className="explainers">
+			<section className="explainer" id="app">
+				<div className="explainer__container">
+					<div className="explainer__start"></div>
+					<div className="explainer__progress">
+						<a className="explainer__dot active" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowApp__Title">The Orchid app</h3>
 						<p i18n="@@HowApp__Description">Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall. The Orchid client is accessible via iOS, Android, macOS, and Linux.</p>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 
 						<img src="/img/how-it-works/app.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="oxt">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="oxt">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#oxt">
+						<a className="explainer__dot active" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowOxt__Title">The Orchid digital currency (OXT)</h3>
 						<div i18n="@@HowOxt__Content">
 							<p>OXT’s primary purpose is to provide a staking-advertising mechanism that aligns operator incentives to the benefit of the Orchid network and mitigates certain risks.</p>
@@ -133,44 +133,44 @@ const Page = () => (
 								certain risks.</p>
 						</div>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 
 						<img src="/img/how-it-works/token.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="accounts">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="accounts">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#accounts">
+						<a className="explainer__dot active" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowAccounts__Title">Orchid Accounts</h3>
 						<div i18n="@@HowAccounts__Description">
 							<p>
@@ -196,85 +196,85 @@ const Page = () => (
 							</p>
 						</div>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 
 						<img src="/img/how-it-works/accounts.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="protocol">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="protocol">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#protocol">
+						<a className="explainer__dot active" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowProtocol__Title">The Orchid Protocol</h3>
 						<p i18n="@@HowProtocol__Description">The Orchid software is designed to use a custom VPN protocol, similar in scope to <a href="https://openvpn.net/">OpenVPN</a> or <a href="https://www.wireguard.com/">WireGuard</a>. The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.</p>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 
 						<img src="/img/how-it-works/protocol.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="nanopayments">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="nanopayments">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#nanopayments">
+						<a className="explainer__dot active" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowNano__Title">Nanopayments</h3>
 						<div i18n="@@HowNano__Content">
 							<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput.</p>
@@ -284,87 +284,87 @@ const Page = () => (
 							</p>
 						</div>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 						<img src="/img/how-it-works/nano.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="nodes">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="nodes">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#nodes">
+						<a className="explainer__dot active" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#staking">
+						<a className="explainer__dot" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowNodes__Title">Nodes</h3>
 						<div i18n="@@HowNodes__Content">
 							<p>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</p>
 							<p>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</p>
 						</div>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 
 						<img src="/img/how-it-works/node.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
-			<section class="explainer" id="staking">
-				<div class="explainer__container">
-					<div class="explainer__progress">
-						<a class="explainer__dot" href="/how-it-works#app">
+			<section className="explainer" id="staking">
+				<div className="explainer__container">
+					<div className="explainer__progress">
+						<a className="explainer__dot" href="/how-it-works#app">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#oxt">
+						<a className="explainer__dot" href="/how-it-works#oxt">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#accounts">
+						<a className="explainer__dot" href="/how-it-works#accounts">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#protocol">
+						<a className="explainer__dot" href="/how-it-works#protocol">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nanopayments">
+						<a className="explainer__dot" href="/how-it-works#nanopayments">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot" href="/how-it-works#nodes">
+						<a className="explainer__dot" href="/how-it-works#nodes">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
-						<a class="explainer__dot active" href="/how-it-works#staking">
+						<a className="explainer__dot active" href="/how-it-works#staking">
 							<img src="/img/how-it-works/progress-dot.svg" alt="" />
 						</a>
 					</div>
-					<div class="explainer__text">
+					<div className="explainer__text">
 						<h3 i18n="@@HowStaking__Title">Staking</h3>
 						<div i18n="@@HowStaking__Content">
 							<p>A provider stakes some number of OXT to create a stake deposit.</p>
@@ -382,30 +382,30 @@ const Page = () => (
 							</p>
 						</div>
 					</div>
-					<div class="explainer__image">
+					<div className="explainer__image">
 						<img src="/img/how-it-works/stake.svg" alt="" />
 					</div>
-					<div class="explainer__bottom">
-						<a class="explainer__to-top" href="/how-it-works#top">
+					<div className="explainer__bottom">
+						<a className="explainer__to-top" href="/how-it-works#top">
 							<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 						</a>
 					</div>
-					<div class="explainer__connector"></div>
+					<div className="explainer__connector"></div>
 				</div>
 			</section>
 		</div>
 
-		<div class="bk-lavender whitepaper-section">
-			<div class="explainer__finish">
+		<div className="bk-lavender whitepaper-section">
+			<div className="explainer__finish">
 				<img src="/img/how-it-works/dash-end-cap.svg" alt="" />
 			</div>
-			<section class="section-med hpad-wide vpad-wide overflow-hidden">
+			<section className="section-med hpad-wide vpad-wide overflow-hidden">
 				<div id="read-whitepaper">
-					<div class="pos-relative">
+					<div className="pos-relative">
 
 						<img alt="" id="read-whitepaper-adorner" src="/img/network/read-whitepaper.svg" />
 						<a i18n-href="@@WhitepaperLink" href="/whitepaper/english.pdf">
-							<button class="btn-primary z-index-1" i18n="@@ReadOurWhitepaper">
+							<button className="btn-primary z-index-1" i18n="@@ReadOurWhitepaper">
 								Read our Whitepaper
 							</button>
 						</a>

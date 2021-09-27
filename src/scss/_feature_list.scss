@@ -1,7 +1,7 @@
 @use "sass:math";
 // Expected structure for v-feature-list:
 
-//  <ul matching parent-sel class="phantom-list">
+//  <ul matching parent-sel className="phantom-list">
 //    <li> <!-- add the class ft-rtl here to flip direction -->
 //      <* matching image-sel>
 //        <img>
@@ -62,7 +62,7 @@
 
 //  <* matching parent-sel>
 //    . . .
-//    <ul matching list-sel class="phantom-list">
+//    <ul matching list-sel className="phantom-list">
 //      <li>
 //        <header>
 //          <img matching image-sel>

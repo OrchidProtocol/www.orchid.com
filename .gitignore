@@ -15,3 +15,5 @@ package-lock.json
 # blog integration
 static/img/blog-integration
 static/blog.json
+src/components/common/blog.json
+temp/
