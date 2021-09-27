@@ -3,7 +3,7 @@ templateKey: podcast-episode
 public: true
 url: podcast/episode-7-alexander-lloyd
 title: " Episode 7: Alexander Lloyd "
-description:  Go down the rabbit hole with Alexander Lloyd, Founder of Accelerator Ventures, who sits on the board of the Human Rights Foundation, and is one of the authors of “The Little Bitcoin Book: Why Bitcoin Matters for Your Freedom, Finances, and Future.”  A fascinating conversation on how crypto impacts human rights, the history of social activism, restoring Internet freedom, and startup opportunities coming out of the pandemic. 
+description: "Go down the rabbit hole with Alexander Lloyd, Founder of Accelerator Ventures, who sits on the board of the Human Rights Foundation, and is one of the authors of “The Little Bitcoin Book: Why Bitcoin Matters for Your Freedom, Finances, and Future.”  A fascinating conversation on how crypto impacts human rights, the history of social activism, restoring Internet freedom, and startup opportunities coming out of the pandemic."
 date: 1595394000000
 featuredimage: /img/podcast/EpisodeHeader_LAlexander_Website.jpg
 socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_LAlexander.jpg
