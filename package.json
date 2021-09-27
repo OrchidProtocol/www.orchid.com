@@ -4,7 +4,7 @@
 	"scripts": {
 		"clean": "gatsby clean",
 		"start": "TARGET_LANG=en node init-env.js && node import-blog.js && npm run develop",
-		"build": "npm run build:static:en",
+		"build": "npm run build:static",
 		"build:light": "TARGET_LANG=en node init-env.js && gatsby build && node post-build.js",
 		"build:static": "TARGET_LANG=en node init-env.js && node import-blog.js && gatsby clean && gatsby build && node post-build.js",
 		"develop": "npm run clean && gatsby develop",
