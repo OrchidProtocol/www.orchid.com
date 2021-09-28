@@ -4,6 +4,7 @@ import { graphql } from 'gatsby'
 
 import { Layout, PostCard } from '../components/common';
 import PodcastHero from '../components/common/PodcastHero';
+import PodcastFooter from '../components/common/PodcastFooter';
 
 import { generateDescription } from '../utils/generateDescription';
 
@@ -23,6 +24,7 @@ const PodcastEpisode = (props) => {
 		<Layout>
 			<PodcastHero />
 			<PostCard post={post} key={0} keyIndex={0} />
+			<PodcastFooter />
 		</Layout>
 	)
 }

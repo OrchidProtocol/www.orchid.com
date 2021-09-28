@@ -7,6 +7,7 @@ import { graphql } from 'gatsby'
 
 import { Layout, PostCard, Pagination } from '../components/common';
 import PodcastHero from '../components/common/PodcastHero';
+import PodcastFooter from '../components/common/PodcastFooter';
 
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
@@ -94,6 +95,7 @@ const podcastRoll = ({ data, pageContext }) => {
 					{postElements}
 					<Pagination pageContext={pageContext} />
 				</div>
+				<PodcastFooter />
 			</Layout>
 		</>
 	)
