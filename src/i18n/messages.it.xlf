@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
-	<file source-language="en" datatype="plaintext" original="ng2.template" target-language="ru">
+	<file source-language="en" datatype="plaintext" original="ng2.template" target-language="it">
 		<body>
 			<trans-unit id="ec48aef4bef88cedc053dfbc2b6def8081038a33" datatype="html">
 				<source>
@@ -15,7 +15,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Как Orchid обеспечивает конфиденциальность онлайн
+					In che modo Orchid garantisce la privacy digitale
 				</target>
 			</trans-unit>
 			<trans-unit id="e1d9fc2acb58d040ab3f72da0f18374f712f6f27" datatype="html">
@@ -31,7 +31,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В сети Orchid используется децентрализованная виртуальная частная сеть (VPN), позволяющая пользователям приобретать пропускные ресурсы у международного пула сервис-провайдеров.
+					La rete Orchid abilita una rete privata virtuale (VPN) decentralizzata, consentendo agli utenti di acquistare larghezza di banda da un pool di service provider globale.
 				</target>
 			</trans-unit>
 			<trans-unit id="9709e35476d5a52bd46cad24fd973cdbd36e98c5" datatype="html">
@@ -47,7 +47,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Для этого в Orchid используются новая цифровая валюта OXT, новый VPN-протокол оплачиваемых услуг прокси-сервера, а также смарт-контракты с функциями алгоритмического продвижения и оплаты. Пользователи Orchid подключаются к продавцам пропускных ресурсов через каталог провайдеров и оплачивают их услуги, используя технологию вероятностных наноплатежей, с приемлемо низкими расценками на транзакции пакетов Ethereum.
+					A tale scopo, Orchid utilizza un token di staking ERC-20 denominato OXT, un nuovo protocollo VPN per il proxy della larghezza di banda incentivato da token e contratti intelligenti con pubblicità algoritmica e funzioni di pagamento. Gli utenti di Orchid si connettono ai venditori di larghezza di banda utilizzando una directory di provider e pagano tramite nanopagamenti probabilistici; di conseguenza, le commissioni di transazione di Ethereum sui pacchetti non sono particolarmente elevate.
 				</target>
 			</trans-unit>
 			<trans-unit id="79eb2ade9abb7d0ab231572b08897dab1d4be598" datatype="html">
@@ -63,7 +63,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Основные компоненты сети Orchid
+					Componenti principali della rete Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="2aac5ad78da392edbf65828ee428aa11d4bc2359" datatype="html">
@@ -79,9 +79,9 @@
 						15
 					</context>
 				</context-group>
-				<target state="needs-translation">
-					of
-					the Orchid network
+				<target state="translated">
+					della
+					rete Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="c20050a8fb181dd9e504fa46b6a45104348e5a0f" datatype="html">
@@ -105,7 +105,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приложение Orchid
+					L'app Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="2a51d3fe51bb5e39c558baa4cb4ab7eb565aa57e" datatype="html">
@@ -121,7 +121,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Криптовалюта OXT
+					Criptovaluta OXT
 				</target>
 			</trans-unit>
 			<trans-unit id="6a416ad262f1bd25b9bff4fd5b093bf3384e3bc9" datatype="html">
@@ -145,7 +145,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аккаунты Orchid
+					Account Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="41c4819514912b0ca98dd02c8ab21eb16b90aebc" datatype="html">
@@ -161,7 +161,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Протокол Orchid
+					Protocollo Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="d7dcb77f8efb843fdeb5a7d6caaa542c2fc7da4b" datatype="html">
@@ -185,7 +185,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Наноплатежи
+					Nanopagamenti
 				</target>
 			</trans-unit>
 			<trans-unit id="6e2329529b1953198c7dfa0edb260554310bc636" datatype="html">
@@ -209,7 +209,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узлы
+					Nodi
 				</target>
 			</trans-unit>
 			<trans-unit id="21461d3d263ade3ee97ff256ca2c78a345dfaf9a" datatype="html">
@@ -249,7 +249,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Система ставок
+					Staking
 				</target>
 			</trans-unit>
 			<trans-unit id="7e09851abc046b0528c19138bed605a3fd35beed" datatype="html">
@@ -265,7 +265,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid работает на базе клиента, как и обычные VPN-сервисы, такие как OpenVPN, но при этом «говорит» он на языке протокола Orchid. Приложение Orchid — это не только базовый функционал, который предоставляют другие VPN-клиенты но и возможность перенаправления трафика по интегрированному персональному брандмауэру. Клиент Orchid доступен на платформах iOS, Android, macOS и Linux.
+					Gli utenti di Orchid eseguono un client simile a un tipico client VPN per protocolli come OpenVPN, ma basato sul protocollo Orchid. Il client di rete Orchid offre funzionalità più avanzate rispetto a quelle della maggior parte dei client VPN, con funzioni quali la capacità di eseguire il traffico tramite un firewall personale integrato. Il client Orchid è accessibile tramite iOS, Android, macOS e Linux.
 				</target>
 			</trans-unit>
 			<trans-unit id="1c68a8ee9be630922a9e898edac5254fb82a05a7" datatype="html">
@@ -281,7 +281,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Цифровая валюта Orchid (OXT)
+					La valuta digitale Orchid (OXT)
 				</target>
 			</trans-unit>
 			<trans-unit id="501a2e6f154222623347d23d738f2d1ecf9ada09" datatype="html">
@@ -297,7 +297,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Основное назначение OXT — обеспечить систему ставок и продвижения, синхронизируя компенсацию оператору и доход сети Orchid, и нейтрализуя определенные риски.
+					Lo scopo principale di OXT è fornire un meccanismo di staking-pubblicità che allinei gli incentivi degli operatori ai vantaggi della rete Orchid e attenui alcuni rischi.
 				</target>
 			</trans-unit>
 			<trans-unit id="a1e9e58fb1f8ed3cfea2dfcc47f91e94b811ae3f" datatype="html">
@@ -313,7 +313,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Цифровая валюта OXT используется в сети Orchid несколькими способами:
+					La valuta digitale OXT offre vantaggi alla rete Orchid in diversi modi:
 				</target>
 			</trans-unit>
 			<trans-unit id="6846b68abf66b64ac5acbbb8964425685dfc1713" datatype="html">
@@ -329,7 +329,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Поставщики (провайдеры) пропускных ресурсов — узлом Orchid может управлять любой пользователь, но сперва он должен сделать ставку в OXT. Чем выше ставка, тем больше шанс получить награду в сети.
+					Un provider di larghezza di banda: chiunque può gestire un nodo Orchid, ma deve prima eseguire lo staking su OXT: più OXT sono sottoposti a staking, maggiori sono le possibilità di ricompensa nella rete.
 				</target>
 			</trans-unit>
 			<trans-unit id="efdd3ad98fc59fadaf393498521bb2d0c55edb10" datatype="html">
@@ -345,7 +345,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пользователи пропускных ресурсов — у них впервые появилась возможность доступа к приватному и защищенному интернет-соединению с оплатой по ходу с помощью технологии наноплатежей. Пользователи пополняют свой аккаунт Orchid валютой OXT или любой другой поддерживаемой криптовалютой. Эти деньги используются для оплаты поставщикам услуг при использовании VPN.
+					Un utente con larghezza di banda: per la prima volta, gli utenti possono pagare al volo una connessione Internet privata e sicura tramite nanopagamenti. Gli utenti aggiungono OXT o una qualsiasi delle criptovalute supportate al proprio account Orchid, che viene quindi utilizzato per pagare il servizio ai provider mentre la VPN è connessa.
 				</target>
 			</trans-unit>
 			<trans-unit id="37bfa5d93a93dc4b160d7eb788f00e39783f7dcd" datatype="html">
@@ -361,7 +361,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подробнее об OXT.
+					Scopri di più su OXT.
 				</target>
 			</trans-unit>
 			<trans-unit id="d3e40e7fb44fd0f90fff2852c85bc1d652de850e" datatype="html">
@@ -377,7 +377,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рынок пропускных ресурсов имеет структуру P2P и работает полностью децентрализованно, без привязки к чему-либо. На сервисе используется новая цифровая валюта OXT, и вот почему:
+					Il marketplace della larghezza di banda è peer-to-peer e funziona in modo completamente decentralizzato, senza fare affidamento su parti centrali. Le ragioni principali di questa nuova valuta digitale OXT sono:
 				</target>
 			</trans-unit>
 			<trans-unit id="b5b1c1660e316c8afcb18343065a9211a2a6377f" datatype="html">
@@ -393,7 +393,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Эта цифровая валюта привязана непосредственно к потреблению пропускных ресурсов в сети Orchid.
+					Avere una valuta digitale specificamente legata al consumo di banda sulla rete Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="e2c1b45a8878c7f68269b934ddb41c7412ec81a7" datatype="html">
@@ -409,7 +409,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Она позволяет сбалансировать компенсацию оператором с доходностью сети Orchid.
+					Allineare gli incentivi agli operatori e i vantaggi della rete Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="02f02e3fdb040ca0f00b24a79fcf4d12af68c44f" datatype="html">
@@ -425,7 +425,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соответственно, помимо облегчения транзакций по покупке пропускных ресурсов в сети Orchid, цифровая валюта Orchid используется в ней же для размещения ставок. С помощью ставок поставщики пропускных ресурсов демонстрируют готовность оказывать услуги, а также они помогают снизить определенные риски.
+					Di conseguenza, oltre a facilitare le transazioni di larghezza di banda sulla rete, la valuta digitale Orchid viene utilizzata per dimostrare uno staking all'interno della rete Orchid, con il fine di dimostrare un impegno da parte dei provider di larghezza di banda e per attenuare alcuni rischi.
 				</target>
 			</trans-unit>
 			<trans-unit id="14f5fe718149d69a5945e523df4cfe092a19c71a" datatype="html">
@@ -441,7 +441,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приобретенные аккаунты:
+					Account acquistati:
 				</target>
 			</trans-unit>
 			<trans-unit id="9a815eea3a93fe8be6c7706c052a1875049afa7a" datatype="html">
@@ -457,7 +457,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пользователи Orchid могут приобрести уже пополненный средствами аккаунт Orchid через официальное приложение iOS за стандартную фиатную валюту. «Кредиты Orchid» — это особые аккаунты, где криптовалюта xDai используется только для работы с нашими избранными поставщиками. Как и все аккаунты Orchid, такие аккаунты могут использоваться на нескольких устройствах.
+					Orchid consente agli utenti di acquistare un account Orchid prefinanziato dall'app iOS ufficiale utilizzando la valuta fiat nativa. I "crediti Orchid" sono conti speciali in cui la criptovaluta, xDai, deve essere spesa solo con i nostri provider preferiti. Come tutti gli account Orchid, l'account può essere condiviso tra dispositivi.
 				</target>
 			</trans-unit>
 			<trans-unit id="d95edb5c1ee544662911e60cc73e6094a0772fb2" datatype="html">
@@ -473,7 +473,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Что я приобретаю при покупке кредитов Orchid?
+					Quali elementi sono contemplati in un acquisto di crediti Orchid?
 				</target>
 			</trans-unit>
 			<trans-unit id="7e69426bd97a606d8ae6026762858e6e7c86a1fd" datatype="html">
@@ -489,7 +489,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Баланс
+					Saldo
 				</target>
 			</trans-unit>
 			<trans-unit id="b88434c2d06e8a3123d767f42c0e3f69111921d4" datatype="html">
@@ -505,7 +505,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В зависимости от выбранного тарифа, пользователь получает аккаунт Orchid с определенным количеством xDai (зависит от рыночного курса). На эту сумму можно приобретать пропускные ресурсы в сети Orchid.
+					In base al livello di prezzo prescelto, l'utente riceverà un account Orchid finanziato con un importo di xDai, soggetto alle fluttuazioni di mercato, che può essere utilizzato per acquistare larghezza di banda sulla rete Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="cf06fa6d688bcb358f749f49f5f73deeb4be2a9c" datatype="html">
@@ -521,7 +521,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Депозит
+					Deposito
 				</target>
 			</trans-unit>
 			<trans-unit id="a27deb42b88e6fdd914c25b4ed36658d28ac3135" datatype="html">
@@ -537,7 +537,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Часть стоимости покупки инвестируется в качестве депозита на созданный аккаунт. Это требование к участию в сети Orchid служит как препятствием к злоупотреблению клиентом, так и определителем размера заявки в нашей системе наноплатежей.
+					Una parte dell'acquisto viene investita come deposito sul conto generato. Ciò è necessario per la partecipazione alla rete Orchid sia come deterrente contro gli illeciti dei clienti, sia come elemento determinante per il ridimensionamento dei ticket nel nostro sistema di nanopagamenti.
 				</target>
 			</trans-unit>
 			<trans-unit id="e4ef8de89ec37f583998cdc3af19f8d7d01d58b2" datatype="html">
@@ -553,7 +553,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Газ
+					Gas
 				</target>
 			</trans-unit>
 			<trans-unit id="eb9fe3704a915cada1e9474cf24e32c7871efd8e" datatype="html">
@@ -569,7 +569,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Транзакции в блокчейне имеют небольшую себестоимость, поэтому часть приобретенных при создании аккаунта Orchid кредитов уходит на покрытие этих расходов.
+					Le transazioni effettuate sulla blockchain richiedono pagamenti di piccoli importi e una parte dei crediti acquistati va a coprire questi costi per la creazione dell'account Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="c20172223f84462032664d717d739297e5a9e2fe" datatype="html">
@@ -585,7 +585,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Комиссии
+					Commissioni
 				</target>
 			</trans-unit>
 			<trans-unit id="5875c1574fb6f612ec2b00e79966ea5ae48f0e31" datatype="html">
@@ -601,7 +601,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Комиссии за транзакции с фиатной валютой.
+					Commissioni di transazione per l'accettazione di fiat.
 				</target>
 			</trans-unit>
 			<trans-unit id="aa65d9a9584754918623bc5c239461c567ec8520" datatype="html">
@@ -617,7 +617,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Кредиты Orchid нужны затем, чтобы сеть Orchid стала доступна большему числу пользователей, например тем, кто не умеет пользоваться криптовалютой или не хочет сам разбираться со всеми тонкостями системы. В процессе покупки или использования приложения Orchid мы не сохраняем личную информацию и не получаем к ней доступ.
+					Lo scopo dei crediti Orchid è favorire l'uso della rete Orchid da parte di una più vasta gamma di utenti, ad esempio quelli che non hanno familiarità con le criptovalute o non vogliono affrontare le complessità in autonomia. Nessuna informazione personale è accessibile o memorizzata da Orchid durante il processo di acquisto o durante l'utilizzo dell'app Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="2865935959ab5133d2cc3945444b46e3f4cb65ec" datatype="html">
@@ -633,7 +633,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Крипто-нативные аккаунты:
+					Account criptonativi:
 				</target>
 			</trans-unit>
 			<trans-unit id="91cd7fccfdc96e033a9e59c7eb61292499759726" datatype="html">
@@ -661,19 +661,19 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пользователи, которые хотят оплачивать участие в сети Orchid собственными OXT или другими поддерживаемыми криптовалютами, могут создать персональный аккаунт с помощью dapp-приложения Orchid на базе web3 (по ссылке
+					Gli utenti che desiderano fornire il proprio OXT o altre criptovalute supportate per finanziare la propria partecipazione alla rete Orchid possono creare un account personalizzato utilizzando la dApp basata su Web3 di Orchid all'indirizzo
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					). Пользоваться DApp-приложением для аккаунтов Orchid можно только в браузере с поддержкой web3, таком как
+					. È possibile accedere alla dApp dell'account Orchid solo tramite un browser Web3 come
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					. В нем можно привязывать кошельки с криптовалютой и тонко настраивать аккаунт под себя. Здесь пользователи могут пополнять аккаунт на любую сумму на свой выбор, а также управлять суммой сопутствующего депозита, определяя нужную
+					. La dApp consente il collegamento di portafogli crittografici per creare account personalizzati con controlli granulari. Qui, gli utenti possono finanziare un conto con i propri valori specificati e controllare la dimensione del deposito associato, influenzando l'
 					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;" />
-					эффективность
+					efficienza
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					в приложении Orchid. Такие аккаунты легко привязываются к приложению Orchid, как альтернатива приобретенным аккаунтам, и могут использоваться любым количеством пользователей и/или устройств.
+					sperimentata all'interno dell'app Orchid. Questi account possono essere facilmente collegati all'app Orchid in alternativa agli account acquistati e condivisi con un numero illimitato di persone e/o dispositivi.
 				</target>
 			</trans-unit>
 			<trans-unit id="5998d769eeae72ff157f1061a212d97e30a81213" datatype="html">
@@ -689,7 +689,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подробнее о создании аккаунта Orchid.
+					Scopri di più sulla creazione di un account Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="4cf0b9298572d8688a429bf6ab4c009cb7fc1857" datatype="html">
@@ -705,7 +705,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Протокол Orchid
+					Il protocollo Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="601d9bff001c0a4188014cfd9d818cd14d5d142f" datatype="html">
@@ -729,15 +729,15 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Программное обеспечение Orchid предназначено для использования уникального VPN-протокола, аналогичного
+					Il software Orchid è progettato per utilizzare un protocollo VPN personalizzato, simile nell'ambito a
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					OpenVPN
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					или
+					o
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
 					WireGuard
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					. Протокол Orchid разработан для высокопроизводительных сетей и функционирует на базе WebRTC, общепринятого веб-стандарта, широко используемого при передаче видео и аудио из браузеров. Наш протокол позволяет пользователям запрашивать доступ к ресурсам удаленных сетей и оплачивать эти ресурсы криптовалютами через систему наноплатежей Orchid.
+					. Il protocollo Orchid è progettato per reti a elevate prestazioni e funziona su WebRTC, uno standard web comune, ampiamente utilizzato per trasmettere video e audio dai browser interni. Il nostro protocollo consente agli utenti di richiedere l'accesso a risorse di rete remote e pagare queste risorse con criptovalute tramite il sistema di nanopagamenti Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="8bf61a06d9bd784365b10a7f4e5cc2a5dbc6bc6f" datatype="html">
@@ -753,7 +753,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В Orchid используется новая вероятностная система наноплатежей для масштабирования скорости оплаты.
+					Orchid utilizza un nuovo sistema di nanopagamenti probabilistico per aumentare la velocità dei pagamenti.
 				</target>
 			</trans-unit>
 			<trans-unit id="e33e49d739d34319035b6b8437de6e944dee740e" datatype="html">
@@ -769,7 +769,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Система наноплатежей лежит в основе P2P-рынка пропускных ресурсов, где клиенты платят операторам узлов криптовалютными «заявками» на прокси-ресурсы. Система разработана таким образом, чтобы плата за транзакции при маленьких платежах снижалась, амортизируя общую сумму за несколько транзакций и даже за транзакции нескольких сторон.
+					Questo sistema di nanopagamenti è la base del mercato della larghezza di banda peer-to-peer Orchid in cui i clienti pagano "ticket" supportati da criptovaluta agli operatori dei nodi per la larghezza di banda del proxy. Il sistema è progettato per ridurre le commissioni di transazione sui pagamenti di piccoli importi ammortizzando le commissioni di transazione su molte transazioni e anche su più parti.
 				</target>
 			</trans-unit>
 			<trans-unit id="6e847f7dba7db564bf72bc8fb71c70da754012a4" datatype="html">
@@ -788,9 +788,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подробную информацию вы найдете в нашей новой статье:
+					Per ulteriori informazioni, consulta il nostro recente articolo:
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					Система наноплатежей
+					Introduzione ai nanopagamenti
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
 				</target>
 			</trans-unit>
@@ -807,7 +807,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Сервис-провайдеры в Orchid используют программное обеспечение, аналогичное типичному VPN-процессу для таких протоколов, как OpenVPN, однако использующее протокол Orchid.
+					I service provider su Orchid eseguono un software simile a un tipico daemon VPN per protocolli come OpenVPN, ma basato sul protocollo Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="2d2c136e6f645866a728b41d2ba49e05d3bba831" datatype="html">
@@ -823,7 +823,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узлы Orchid сохраняют регистрационную информацию в реестре ставок и каталоге провайдеров в Ethereum. Реестр ставок оптимизирован, позволяя приложению Orchid автоматически обнаруживать случайные серверы в децентрализованной среде, а каталог провайдеров позволяет узлам Orchid регистрировать метаданные, например геопозицию или предоставляемые дополнительные услуги.
+					I nodi di Orchid conservano le informazioni di registrazione in un registro di staking e in una directory di provider su Ethereum. Il registro di staking è ottimizzato per consentire all'app Orchid di rilevare automaticamente server casuali in un ambiente decentralizzato, mentre la directory del provider consente ai nodi di Orchid di registrare metadati come la geolocalizzazione o ulteriori servizi offerti.
 				</target>
 			</trans-unit>
 			<trans-unit id="4cf8dd7859169c3ca36d4159f0c2240210578248" datatype="html">
@@ -839,7 +839,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Провайдер задает определенную ставку в OXT, создавая депозит ставки.
+					Un provider esegue lo staking di un certo numero di OXT per creare un deposito di staking.
 				</target>
 			</trans-unit>
 			<trans-unit id="7d0f3dfcf3bf23c6cef41a0981709ec0dad5716c" datatype="html">
@@ -855,7 +855,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Любой пользователь может задать ставку в OXT на узлах с помощью смарт-контракта.
+					Chiunque può eseguire lo staking di OXT sui nodi utilizzando il contratto intelligente.
 				</target>
 			</trans-unit>
 			<trans-unit id="c147871a0c943794de664aa04f86b800e31f3d67" datatype="html">
@@ -871,7 +871,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Клиенты выбирают новые узлы пропорционально относительной величине депозита в OXT.
+					I client selezionano nuovi nodi in proporzione alla dimensione relativa del deposito OXT.
 				</target>
 			</trans-unit>
 			<trans-unit id="7a0eb4ddc6d7e091d7507612087d228fa25ed9f3" datatype="html">
@@ -887,7 +887,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Таким образом, чем больше депозит ставки, тем (пропорционально) больше он привлекает пользователей, предоставляет пропускных ресурсов и приносит дохода.
+					Depositi di staking più grandi comportano quindi proporzionalmente un numero maggiore di utenti e larghezza di banda superiore.
 				</target>
 			</trans-unit>
 			<trans-unit id="b49aa85ea034d420d6fff1f449384986fc0ef57d" datatype="html">
@@ -903,7 +903,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Если максимум пропускного ресурса для узла уже превышен, остаток ставки по сути не приносит пользы.
+					Se il nodo è già alla massima capacità di larghezza di banda, la quota aggiuntiva viene effettivamente sprecata.
 				</target>
 			</trans-unit>
 			<trans-unit id="27bf16c19a71e2d5ad9fbcb7ecff02c12b03150e" datatype="html">
@@ -919,7 +919,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Как только цифровая валюта на депозите ставки будет заблокирована, провайдер сможет сразу начать предоставление пропускных ресурсов. Если провайдер хочет вывести токены с контракта ставки, ему придется выждать период «разблокировки» с трехмесячным ожиданием. В течение этого периода средства не смогут использоваться в качестве депозита ставки или куда-либо еще переводиться провайдером.
+					Una volta che i token vengono bloccati in un deposito di quote, possono essere utilizzati immediatamente per il provisioning della larghezza di banda. Se il provider desidera ritirare i token dal contratto di staking, deve avviare un periodo di processo di "sblocco", che comporta un cooldown di tre mesi in cui i suoi fondi non possono essere utilizzati come deposito di staking o trasferiti altrove dal provider.
 				</target>
 			</trans-unit>
 			<trans-unit id="42649ccec4ce9d7e37b972a96968142de8983b60" datatype="html">
@@ -935,7 +935,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вне зависимости от общей суммы транзакций в системе Orchid, относительное значение ставки каждого продавца (то есть процент от общей ставки) приносит ему аналогичную долю пользовательского трафика и сделок. При условии честного и порядочного поведения продавца (если пользователи не отказываются от его услуг из-за низкого качества), эти сделки будут преобразованы в аналогичную долю от общего дохода. Решение о том, какую задавать ставку, каждый продавец принимает сам для себя.
+					Qualunque sia la quantità di valore che viene scambiata nell'ecosistema Orchid, l'importo relativo dello staking di un dato venditore, come percentuale dello staking totale, fornisce a questo soggetto la stessa percentuale di traffico utente e flusso di operazioni. Supponendo un comportamento di vendita tipico e onesto (nessun utente abbandona il provider a causa di un pessimo servizio), questo flusso di operazioni si tradurrà in una parte simile delle entrate totali. Le decisioni di staking sono a discrezione dei venditori.
 				</target>
 			</trans-unit>
 			<trans-unit id="1003cffde5696d83eb3f1aadfeea131ef1535507" datatype="html">
@@ -951,7 +951,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Открыть белую бумагу
+					Leggi il nostro white paper
 				</target>
 			</trans-unit>
 			<trans-unit id="WhitepaperLink" datatype="html">
@@ -1079,7 +1079,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					События
+					Eventi
 				</target>
 			</trans-unit>
 			<trans-unit id="a713e79bead6650639a0828def4049a69026791f" datatype="html">
@@ -1095,7 +1095,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ищите нас офлайн
+					Incontraci di persona
 				</target>
 			</trans-unit>
 			<trans-unit id="439f511d2c7c9830260d653c072e0ba048dd765f" datatype="html">
@@ -1111,7 +1111,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Попробуйте приложение Orchid
+					Scarica l'app Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="ee831ffd5e2b8dd286b4696d2acbf105aabd049f" datatype="html">
@@ -1191,7 +1191,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачать на Google Play
+					Scaricala su Google Play
 				</target>
 			</trans-unit>
 			<trans-unit id="8547a8583bf87ee7be75d85864272a019f6ba20a" datatype="html">
@@ -1207,7 +1207,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					ИЛИ
+					O
 				</target>
 			</trans-unit>
 			<trans-unit id="d6e2654848e6c13d0e31d5c35a7880cd67761e59" datatype="html">
@@ -1223,7 +1223,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачать APK-файл с GitHub
+					Scarica l'APK da GitHub
 				</target>
 			</trans-unit>
 			<trans-unit id="d3193a501f0ab33633acfde13d3c62505e6155a9" datatype="html">
@@ -1243,11 +1243,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					(или
+					(Oppure
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					скачайте код
+					ottieni il codice
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					и скомпилируйте сами!)
+					e compilalo in autonomia).
 				</target>
 			</trans-unit>
 			<trans-unit id="71ee55d29ef4688ad52947ef59fd194f29223679" datatype="html">
@@ -1311,7 +1311,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid — приложение с открытым исходным кодом
+					Orchid è open source
 				</target>
 			</trans-unit>
 			<trans-unit id="fda10b246982d977e29d5435cbee1863c3f60813" datatype="html">
@@ -1331,11 +1331,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Исходный код Orchid полностью открытый. Вы можете скачать его с
+					Tutto il codice di Orchid è open source, ed è disponibile per il download gratuito su
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					GitHub
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					. Использование исходного кода Orchid регулируется AGPL-лицензией на открытый исходный код с сохранением прав копирования.
+					. L'uso del codice sorgente di Orchid è disciplinato dalla licenza open source di AGPL copyleft.
 				</target>
 			</trans-unit>
 			<trans-unit id="016259c68aa83e7078ffcfe5cf328a71c2c284d6" datatype="html">
@@ -1359,15 +1359,15 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Сообщество Orchid разрабатывает код «в открытую»,
+					La community di Orchid sviluppa codice "alla luce del Sole",
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					постоянно внося
+					promuovendo costantemente
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					изменения. Историю изменений можно просмотреть на GitHub и в соответствующей истории
+					modifiche che chiunque può vedere su GitHub e
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
-					устойчивых версий
+					contrassegnando le versioni
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					. В репозитории Orchid используется функция непрерывной интеграции с GitHub, а значит, разработчикам проще делать ветвления с репозитория, вносить изменения и объединять обратно без необходимости в локальной компиляции. Наконец, наши сборки воспроизводимы, поэтому кто угодно может сделать билд из исходника и убедиться, что он совпадает с теми, которые реализуем мы.
+					secondo necessità. Il repository di Orchid utilizza la funzionalità di integrazione continua di GitHub, consentendo agli sviluppatori di eseguire il fork del nostro repository, apportare modifiche e quindi recuperare i file binari senza necessità di compilazione locale, in tutta semplicità. Infine, le build sono riproducibili, quindi chiunque può produrre build dalla sorgente e verificare che siano le stesse build che rilasciamo.
 				</target>
 			</trans-unit>
 			<trans-unit id="1465d5b7bf835d33125f1a18984ea35899061654" datatype="html">
@@ -1383,7 +1383,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приглашаем всех разработчиков и энтузиастов к исследованию исходного кода Orchid.
+					Invitiamo tutti gli sviluppatori e tutti le persone interessate a scoprire in dettaglio il codice di Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="07067c6a37f5dfa842778483ba4000db52eb0169" datatype="html">
@@ -1407,7 +1407,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Где взять OXT
+					Dove trovare OXT
 				</target>
 			</trans-unit>
 			<trans-unit id="df34b8a29c57a30865be09621e4599f1929085d0" datatype="html">
@@ -1423,7 +1423,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мы создаем не товар
+					Non essere un prodotto
 				</target>
 			</trans-unit>
 			<trans-unit id="e5f5e5d6b51bc98e7adf6ff0a502ba582d950dab" datatype="html">
@@ -1439,7 +1439,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Не собираем данные.
+					Nessuna raccolta di dati.
 				</target>
 			</trans-unit>
 			<trans-unit id="0f49d6c46387eebc5090f705c5f4aa2f5941f734" datatype="html">
@@ -1455,7 +1455,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Не предоставляем данные третьим лицам.
+					Nessuna condivisione con terzi.
 				</target>
 			</trans-unit>
 			<trans-unit id="05da1b8dca7465460fc42107e051378fcd627043" datatype="html">
@@ -1471,7 +1471,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Без рекламного кода.
+					Nessun ricarico sui profitti.
 				</target>
 			</trans-unit>
 			<trans-unit id="fb14eabeb8194ef2a077a53d84df9d5f3864d75c" datatype="html">
@@ -1487,7 +1487,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					VPN по-новому.
+					Un nuovo modello di VPN.
 				</target>
 			</trans-unit>
 			<trans-unit id="eec884f84f400cc003e2539a859fd0e52eed3bfd" datatype="html">
@@ -1511,7 +1511,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачать Orchid
+					Scarica Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="1f0bafa68600cddd09c56d84b4b23250a51114f9" datatype="html">
@@ -1527,7 +1527,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					(всего от 1 доллара США)
+					(a partire da solo $ 1 USD)
 				</target>
 			</trans-unit>
 			<trans-unit id="c1a2a63aeb21c5b28e8ab7bcccdd79e60b49c132" datatype="html">
@@ -1543,7 +1543,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid — это децентрализованный рынок пропускных ресурсов
+					Orchid è un marketplace di larghezza di banda decentralizzato
 				</target>
 			</trans-unit>
 			<trans-unit id="59a062858522efed73d64a40753ba4fc279985ea" datatype="html">
@@ -1571,19 +1571,19 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Покупатели используют
+					Gli acquirenti utilizzano l'app
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					приложение Orchid
+					Orchid
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					, чтобы оградить себя от шпионажа сервис-провайдеров, просматривать заблокированные сайты, а также для защиты своей конфиденциальности онлайн. Продавцы получают платежи в реальном времени за предоставление услуг, а также делают ставки в валюте
+					per ottenere protezione dagli ISP ficcanaso, sbloccare i siti web esclusi dai firewall e per molti altri vantaggi in termini di privacy. I venditori ricevono i pagamenti in tempo reale mentre forniscono il servizio ed eseguono lo staking di
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
 					OXT
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					, конкурируя за запросы пользователей. Orchid Technologies не берет комиссий, а сообщество поддерживает
+					con l'obiettivo di competere per le richieste di servizio. Orchid Technologies non addebita commissioni e la community mantiene il
 					<x id="START_LINK_2" ctype="x-a" equiv-text="&lt;a&gt;" />
-					программу с открытым исходным кодом
+					software open source
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					, на которой работает вся эта экосистема. Попробуйте сами!
+					in modo da alimentare l'intero ecosistema. Provala!
 				</target>
 			</trans-unit>
 			<trans-unit id="13c196beceb34c50ab3a485dd0ab52df5af93f19" datatype="html">
@@ -1599,7 +1599,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пополните свой аккаунт Orchid
+					Finanzia il tuo account Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="24537048ab279de7228111dacb67b075f0311b9d" datatype="html">
@@ -1615,7 +1615,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пополняйте счет в приложении вашей фиатной валютой или воспользуйтесь DApp-приложением и расплачивайтесь удобную вам криптовалютой.
+					Finanzia in-app con la tua valuta fiat nativa o usa la dApp per finanziare un account con la tua criptovaluta.
 				</target>
 			</trans-unit>
 			<trans-unit id="3d2462d706dd9c462ab5e9c5d981d6dde7db05e2" datatype="html">
@@ -1631,7 +1631,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подключитесь к случайному провайдеру
+					Collegati a un provider casuale
 				</target>
 			</trans-unit>
 			<trans-unit id="09545f43542967c164652fe0ba7955ba8d554063" datatype="html">
@@ -1647,7 +1647,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Нажмите «Подключиться», чтобы соединиться с VPN-сервером, который зарезервировал OXT, чтобы получить ваш заказ.
+					Tocca "Connetti" per abbinare un server VPN che ha bloccato OXT per rendere concorrenziale la tua attività.
 				</target>
 			</trans-unit>
 			<trans-unit id="bae823bb240a47c800c7ae733ab54f089771a2af" datatype="html">
@@ -1663,7 +1663,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Оплачивайте только по факту использования
+					Paghi solo per quello che usi effettivamente
 				</target>
 			</trans-unit>
 			<trans-unit id="dc0e2ee12709048acac918a906e10c701061d404" datatype="html">
@@ -1679,7 +1679,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В системе используются наноплатежи Orchid. Вам больше не привязаны к подписке и оплачиваете только фактическое использование.
+					Grazie ai nanopagamenti Orchid, non dipenderai da un abbonamento e paghi solo per l'uso effettivo.
 				</target>
 			</trans-unit>
 			<trans-unit id="1801bfa6ba6eb7a02fd61bafb37e35f5d0aebfdc" datatype="html">
@@ -1695,7 +1695,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узнать подробнее
+					Scopri di più
 				</target>
 			</trans-unit>
 			<trans-unit id="345c313b47a3b001095777cca6fa0ba667f442fe" datatype="html">
@@ -1711,7 +1711,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					На базе криптовалюты
+					Criptovalute a portata di mano
 				</target>
 			</trans-unit>
 			<trans-unit id="fcaf5cf7c3ef72f5f2eb4545b42ebd899ed2b037" datatype="html">
@@ -1727,7 +1727,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Оплачивайте VPN с помощью одной из поддерживаемых криптовалют. Не разбираетесь в криптовалюте? Вы можете купить уже пополненный аккаунт прямо через приложение.
+					Paga il servizio VPN utilizzando una delle nostre criptovalute supportate. Non sai granché di criptovalute? Puoi acquistare un account precaricato direttamente nell'app.
 				</target>
 			</trans-unit>
 			<trans-unit id="3ab03872d30d5675e6a1d8f3c5888ec6705b1c5b" datatype="html">
@@ -1743,7 +1743,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Экосистема наноплатежей
+					Ecosistema di nanopagamenti
 				</target>
 			</trans-unit>
 			<trans-unit id="043c4a330971b40a4a6bd23f7887e8fff31dc2a9" datatype="html">
@@ -1759,7 +1759,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В Orchid используется новая вероятностная система наноплатежей, масштабирующая скорость оплаты через криптовалютные «заявки».
+					Orchid utilizza un nuovo sistema di nanopagamenti probabilistico per ridimensionare il throughput dei pagamenti tramite "ticket" supportati da criptovaluta.
 				</target>
 			</trans-unit>
 			<trans-unit id="6083cb579ca84b4f7720a2969eef5a1771cf1387" datatype="html">
@@ -1775,7 +1775,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Анализ трафика
+					Analisi del traffico
 				</target>
 			</trans-unit>
 			<trans-unit id="c4ee4adcc59c7d762085b91a153f9652c56fa2ad" datatype="html">
@@ -1791,7 +1791,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Изучите сведения о подключениях вашего устройства с помощью встроенного анализатора сетевых протоколов на базе Wireshark.
+					Scruta i dettagli delle connessioni del tuo dispositivo utilizzando l'analizzatore del protocollo di rete integrato basato su tecnologia Wireshark.
 				</target>
 			</trans-unit>
 			<trans-unit id="434cf9acae29fed83cd8f7a3da3355df37574fa6" datatype="html">
@@ -1807,7 +1807,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мультиподключение
+					Multi-hop
 				</target>
 			</trans-unit>
 			<trans-unit id="d0ab5f981a81da546b917f177d24be4ae920bf51" datatype="html">
@@ -1823,7 +1823,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Установите собственную VPN-цепочку с «луковой» маршрутизацией, соединив несколько «подключений» для повышения уровня защиты.
+					Componi il tuo circuito VPN con instradamento a cipolla unendo più "hop" per una maggiore privacy.
 				</target>
 			</trans-unit>
 			<trans-unit id="05d9aa5a4eebc99a9012119fa686634a36382755" datatype="html">
@@ -1839,7 +1839,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рандомизация серверов
+					Server casuali
 				</target>
 			</trans-unit>
 			<trans-unit id="7479f3c5dbc39b42a138280f226f2517f2d44296" datatype="html">
@@ -1855,7 +1855,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вы будете соединены со случайным VPN-сервером, провайдер которого сделал ставку в OXT. Чтобы сменить провайдера, просто выключите и снова включите VPN в любой момент.
+					Collegati in modo casuale a un server VPN basato su OXT. Passa a un nuovo provider in qualsiasi momento disattivando e riattivando la VPN.
 				</target>
 			</trans-unit>
 			<trans-unit id="4cbcec445f348a6582e5d3ba8ca4499f31c473d3" datatype="html">
@@ -1871,7 +1871,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Общий доступ без ограничений
+					Condivisione illimitata
 				</target>
 			</trans-unit>
 			<trans-unit id="8fc912965eabdec72036f84efd2296a70304f716" datatype="html">
@@ -1887,7 +1887,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Доступ к одному аккаунту может быть у нескольких устройств и/или пользователей. Пользуйтесь совместно с друзьями и близкими или обеспечьте защиту всех ваших личных устройств.
+					Condividi un unico account con più dispositivi e/o utenti per aiutare amici e familiari o proteggere la tua attività online su tutti i tuoi dispositivi.
 				</target>
 			</trans-unit>
 			<trans-unit id="c2636b714d44cc516604bc02d8ea915f530bebd7" datatype="html">
@@ -1903,7 +1903,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Читать документацию
+					Leggi i documenti
 				</target>
 			</trans-unit>
 			<trans-unit id="5c2acb9afc060dd7e3e0783eeb15d93601d99f37" datatype="html">
@@ -1927,7 +1927,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Белая бумага
+					White paper
 				</target>
 			</trans-unit>
 			<trans-unit id="7a37637f9bae8bb0def29111a5dcb6d41fa96093" datatype="html">
@@ -1943,7 +1943,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Почему стоит использовать Orchid?
+					Perché Orchid?
 				</target>
 			</trans-unit>
 			<trans-unit id="1c6dd89c6cf0104504adfb8970ef519c36b527cb" datatype="html">
@@ -1959,7 +1959,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Никакой платы за подписку
+					Nessun abbonamento
 				</target>
 			</trans-unit>
 			<trans-unit id="a88cb0e19a2bdedd7fa3a64a0b7c58128b626a70" datatype="html">
@@ -1975,7 +1975,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приобретая аккаунт Orchid через покупку в приложении, вы преобразуете средства в криптовалюту на счету своего аккаунта. VPN-сервис оплачивается по факту использования, а значит, вы платите лишь за те пропускные ресурсы, которые на самом деле использовали.
+					Quando compri un account Orchid tramite acquisto in-app, i tuoi fondi vengono convertiti in un account protetto da criptovalute controllato da te. Il servizio VPN viene pagato in base all'utilizzo, il che significa che paghi solo per la larghezza di banda effettivamente utilizzata
 				</target>
 			</trans-unit>
 			<trans-unit id="565663797aa965dc3c2e8434b7715f1a499d8db4" datatype="html">
@@ -1991,7 +1991,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Без отслеживания
+					Nessun tracciamento
 				</target>
 			</trans-unit>
 			<trans-unit id="7765cf6b5c142e9cddc62d885020c59c895672e1" datatype="html">
@@ -2007,7 +2007,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid не устанавливает на сайт Orchid.com следящих пикселей, сторонних Javascript-элементов или другого кода, собирающего информацию о вас. В приложениях Orchid также не содержится систем отслеживания. Мы вообще никак за вами не следим.
+					Orchid non è associato a pixel di tracciamento, JavaScript di terzi o ad altro codice su Orchid.com in grado di raccogliere informazioni su di te. Orchid inoltre non presenta sistemi di tracciamento nelle nostre applicazioni. Nessun tracciamento, garantito.
 				</target>
 			</trans-unit>
 			<trans-unit id="ebc1c2623f53ce48c714e00161a2f31f732c815b" datatype="html">
@@ -2023,7 +2023,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Открытый исходный код
+					Open source
 				</target>
 			</trans-unit>
 			<trans-unit id="59ca64262009eba9ca617dd51cf54aaeb0fd032b" datatype="html">
@@ -2047,15 +2047,15 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Исходный код Orchid полностью открытый. Вы можете скачать его с
+					Tutto il codice di Orchid è open source, ed è disponibile per il download gratuito
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					GitHub
+					su GitHub
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					. Использование исходного кода Orchid регулируется AGPL-лицензией на открытый исходный код с сохранением прав копирования. Сообщество Orchid разрабатывает код «в открытую», постоянно внося изменения. Историю изменений можно просмотреть на GitHub и в соответствующей истории
+					. L'uso del codice sorgente di Orchid è disciplinato dalla licenza open source di AGPL copyleft. La community di Orchid sviluppa il codice "alla luce del Sole", promuovendo costantemente modifiche che chiunque può vedere su GitHub e
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
-					устойчивых версий
+					contrassegnando le versioni
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					.
+					secondo necessità.
 				</target>
 			</trans-unit>
 			<trans-unit id="6e087831f39c544e4f186396bbd1de0afa5977a6" datatype="html">
@@ -2071,7 +2071,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Децентрализованный сервис
+					Decentralizzato
 				</target>
 			</trans-unit>
 			<trans-unit id="e393f6ddad3dea1fb559438bf7697b1257dbcd5e" datatype="html">
@@ -2087,7 +2087,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid объединяет ведущих сервис-провайдеров на уникальном и децентрализованном рынке конфиденциальности. Как следствие, пользователям доступно больше серверов (широко разнесенных по миру), а пользовательским данным — больше каналов передачи. Благодаря такому элементу случайности пользовательскую информацию сложнее отследить или использовать взломщикам, а устойчивость сервера к вмешательствам существенно повышается.
+					Orchid riunisce i principali provider in un marketplace della privacy esclusivo e decentralizzato. Poiché sono disponibili più server (che a loro volta sono più ampiamente distribuiti), i dati dell'utente possono scegliere tra più percorsi possibili. Questa casualità rende le informazioni dell'utente più difficili da sfruttare per gli aspiranti tracker e hacker, e il servizio è molto più resiliente.
 				</target>
 			</trans-unit>
 			<trans-unit id="42877fac5210ca7499f443d886d11eb58cd65939" datatype="html">
@@ -2103,7 +2103,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Разблокировка сайтов и приложений
+					Sblocca sito web e app
 				</target>
 			</trans-unit>
 			<trans-unit id="f810b8c6b073ad0b1eebb9ce3281e97b1465c135" datatype="html">
@@ -2119,7 +2119,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid VPN поможет вам пробить «фаерволы» и просматривать заблокированный контент. С помощью Orchid вы можете исследовать Интернет без огранчений, обходя запреты вашего интернет-провайдера или сетевого администратора.
+					Usa la VPN di Orchid per eludere i firewall e accedere ai contenuti bloccati. Grazie a Orchid, puoi accedere alla rete aperta e aggirare le restrizioni imposte dal tuo ISP o dall'amministratore di rete.
 				</target>
 			</trans-unit>
 			<trans-unit id="f5fa4e525a748b780a1612f91b76a852add8e481" datatype="html">
@@ -2135,7 +2135,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Гибкость
+					Flessibile
 				</target>
 			</trans-unit>
 			<trans-unit id="8922c26ef5917adae0b40bc44174ee43d1839dad" datatype="html">
@@ -2151,7 +2151,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В приложение Orchid встроены WireGuard и клиент Open VPN. Вы можете использовать Orchid и совместно с собственным VPN-сервером, например Streissand или другими домашними решениями, даже со сторонними платными VPN-сервисами. Кроме того, Orchid позволяет объединять несколько видов VPN-серверов, задавая необычные настройки защиты.
+					Orchid è dotato di un client WireGuard e Open VPN integrato nell'app. L'utilizzo di Orchid è possibile con la configurazione del proprio server VPN ala Streissand o altre soluzioni sviluppate in casa (e anche altri servizi VPN a pagamento). Inoltre, Orchid ti consente di fruire di più tipi di server VPN, con interessanti vantaggi sulla privacy.
 				</target>
 			</trans-unit>
 			<trans-unit id="755db5f6324386812bdf898256185dcf6041e761" datatype="html">
@@ -2167,7 +2167,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Новости Orchid
+					News da Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="56ae43651b5503c320aa2d118ef2d00d4dc05b6f" datatype="html">
@@ -2231,7 +2231,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пользователям Orchid тоже есть что сказать!
+					Anche la community di Orchid ha molto da dire!
 				</target>
 			</trans-unit>
 			<trans-unit id="96122fd739f4040f0df07c66286c9bbf3a05a8cb" datatype="html">
@@ -2247,7 +2247,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Из блога Orchid
+					Dal blog di Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="dc4470460fcf0e428a5b394e68cac44b625cf326" datatype="html">
@@ -2263,7 +2263,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Открыть блог
+					Vai al blog
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Blog-Link" datatype="html">
@@ -2311,7 +2311,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Будем на связи
+					Resta in contatto
 				</target>
 			</trans-unit>
 			<trans-unit id="a7e6cf5846ebbcb7f3909074b6d49edde2c1da3f" datatype="html">
@@ -2327,7 +2327,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Именно сообщество Orchid делает наш проект таким особенным. Следите за нами в своей любимой социальной сети, ищите нас на предстоящих мероприятиях и подпишитесь на рассылку, чтобы не упустить ни одну новость об Orchid!
+					La community di Orchid è uno degli elementi che rende questo progetto davvero speciale. Seguici su una delle nostre numerose piattaforme social, incontraci di persona in occasione di uno dei nostri prossimi eventi e iscriviti alla nostra newsletter per non perdere neanche un aggiornamento su tutto quello che riguarda Orchid!
 				</target>
 			</trans-unit>
 			<trans-unit id="0dea218922987f87434bec729a55dd84363b8247" datatype="html">
@@ -2343,7 +2343,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Будьте в курсе
+					Restiamo in contatto
 				</target>
 			</trans-unit>
 			<trans-unit id="0df4d4446848b4affb2d063939fbae217ac69a8e" datatype="html">
@@ -2359,7 +2359,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подпишитесь на рассылку Orchid Onlooker, чтобы получать новости о сервисе и сфере онлайн-конфиденциальности
+					Ricevi la newsletter Orchid Onlooker per aggiornamenti e notizie sulla privacy
 				</target>
 			</trans-unit>
 			<trans-unit id="a4316cb2d9e8503bfa85f6f6301ce13a3949b8a6" datatype="html">
@@ -2375,7 +2375,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Начните пользоваться Orchid за 2 простых шага!
+					Ottieni Orchid in due semplici passaggi!
 				</target>
 			</trans-unit>
 			<trans-unit id="f4b096532dcbe5c100aa51f084feb4b36279fe0c" datatype="html">
@@ -2391,7 +2391,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					На все покупки действует 100% гарантия возврата средств в приложении. Для покупок через iOS/macOS возврат средств возможен в течение 90 дней. Для покупок через Google Play срок возврата составляет 48 часов.
+					Tutti gli acquisti sono coperti al 100% dalla politica di rimborso degli acquisti in-app. Gli acquisti iOS/macOS prevedono un limite di 90 giorni per richiedere un rimborso. Per gli acquisti su Google Play, la finestra di rimborso è di 48 ore.
 				</target>
 			</trans-unit>
 			<trans-unit id="5d8e2d4b6d7d0b4680db821caa2964b38dab2c9d" datatype="html">
@@ -2407,7 +2407,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Шаг 1. Выберите стартовую сумму, которая появится у вас на счету Orchid
+					Passaggio 1: scegli un importo iniziale per il tuo account Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="a440c11b192dd8c2659eaf3988ac45d6300c5a2c" datatype="html">
@@ -2423,7 +2423,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аккаунты Orchid включают круглосуточную поддержку клиентов, неограниченное количество устройств и поддерживаются криптовалютой xDai.
+					Gli account Orchid includono assistenza clienti 24 x7, dispositivi illimitati e sono supportati dalla criptovaluta xDai.
 				</target>
 			</trans-unit>
 			<trans-unit id="35c9e59c079a6595df28eeb35f662dcfa7f83663" datatype="html">
@@ -2455,7 +2455,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Примерно
+					Circa
 				</target>
 			</trans-unit>
 			<trans-unit id="c2bae3bdcdfcf7ac8954ffddf9dcb0328475e64f" datatype="html">
@@ -2487,7 +2487,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					ГБ
+					GB
 				</target>
 			</trans-unit>
 			<trans-unit id="3ce93bfff98c62e85b41b8cdb798e99c09b0e899" datatype="html">
@@ -2535,7 +2535,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Разовый платеж.
+					Tariffa una tantum.
 				</target>
 			</trans-unit>
 			<trans-unit id="c0adbc192c1cfeb9efce3937d7ae22c35b0dac54" datatype="html">
@@ -2552,8 +2552,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Для просмотра сайтов с низким расходом трафика.
-					Политика возврата определяется магазинами приложений.
+					Ideale per la navigazione e uno scarso numero di attività.
+					Politica di rimborso coperta dagli app store.
 				</target>
 			</trans-unit>
 			<trans-unit id="8ca8977d9275cd12308ccbdce19d8eff4bfae641" datatype="html">
@@ -2585,7 +2585,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Идеальный объем для среднесрочного индивидуального пользования, включая просмотр сайтов и трансляции без повышенных нагрузок. Политика возврата средств определяется магазинами приложений.
+					Dimensioni ideali per un utilizzo individuale a medio termine che include la navigazione e una scarsa quantità di streaming. Politica di rimborso coperta dagli app store.
 				</target>
 			</trans-unit>
 			<trans-unit id="83ab33f8bc295c6747b578fe9c37b7717810cff9" datatype="html">
@@ -2617,7 +2617,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Долговременное использование или общие учетные записи с высоким расходом трафика. Политика возврата средств определяется магазинами приложений.
+					Utilizzo a lungo termine o account condivisi con larghezza di banda elevata. Politica di rimborso coperta dagli app store.
 				</target>
 			</trans-unit>
 			<trans-unit id="1a2b712bcf3535b72befad81b6aa42c15b0389f9" datatype="html">
@@ -2633,7 +2633,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					*Orchid — это рынок пропускных ресурсов, и цена за гигабайт может колебаться в зависимости от спроса. В данный момент она составляет $0,06/ГБ.
+					*Orchid è un marketplace per la larghezza di banda e il prezzo per GB può variare in base alle richieste di mercato. Attualmente il prezzo è $ 0,06/GB.
 				</target>
 			</trans-unit>
 			<trans-unit id="fc75e704d62ab68a3ca6ba51a20c6fa20dc503a2" datatype="html">
@@ -2649,7 +2649,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аккаунты Orchid, приобретенные через магазины приложений, обеспечиваются криптовалютой xDai.
+					Gli account Orchid acquistati tramite gli app store sono supportati dalla criptovaluta xDai.
 				</target>
 			</trans-unit>
 			<trans-unit id="e2dcf27db9c6a5e249960c576014aa40b3883360" datatype="html">
@@ -2665,7 +2665,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узнать подробнее
+					Scopri di più
 				</target>
 			</trans-unit>
 			<trans-unit id="514ea1431e3c8420950a4b4b5db11a5da5d1bb2a" datatype="html">
@@ -2681,7 +2681,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Шаг 2. Внесите оплату через приложение Orchid
+					Passaggio 2: paga nell'app Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="cbc333df883c032f294caef4ed8471d1494ee114" datatype="html">
@@ -2697,7 +2697,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачайте приложение Orchid и пополните аккаунт с помощью функции покупки в приложении. После этого вы сможете подключиться к сети Orchid.
+					Scarica l'app Orchid e finanzia un account tramite un acquisto in-app. Una volta finanziato, puoi collegarti alla rete Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="ea0f96ee382df0e22e326fff8bedf223124e8247" datatype="html">
@@ -2713,7 +2713,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Что вы получаете, приобретая аккаунт Orchid
+					L'acquisto di un account Orchid include
 				</target>
 			</trans-unit>
 			<trans-unit id="95b6a7d17471c1bdbac941035e5f28c6987993c0" datatype="html">
@@ -2729,7 +2729,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Круглосуточная поддержка по эл. почте
+					Assistenza clienti 24x7 tramite email
 				</target>
 			</trans-unit>
 			<trans-unit id="23ab3cebf586882a3c245d86a23a46c15ddc2168" datatype="html">
@@ -2745,7 +2745,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приложения для iOS, macOS и Android
+					App per iOS, macOS e Android
 				</target>
 			</trans-unit>
 			<trans-unit id="4dcea7062e26a547f5e90585a5271db499830286" datatype="html">
@@ -2761,7 +2761,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Неограниченное число устройств и пользователей
+					Dispositivi e condivisioni illimitati
 				</target>
 			</trans-unit>
 			<trans-unit id="4ed67f438336c53e2ab4be48a212808da3806bc4" datatype="html">
@@ -2777,7 +2777,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Открытый исходный код, проверенный и прошедший аудит
+					Codice open source attendibile e verificato
 				</target>
 			</trans-unit>
 			<trans-unit id="f0c5d7eaf02a1df758c0bdbd3c32a8881c9cdbd4" datatype="html">
@@ -2793,7 +2793,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Никакого отслеживания приложений, сайтов; без ведения журналов
+					Nessun tracciamento delle app, monitoraggio di siti web o registrazione
 				</target>
 			</trans-unit>
 			<trans-unit id="175490dbdba51cf63428011a5c9c4c8c41b2cc42" datatype="html">
@@ -2809,7 +2809,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Остались недовольны? Вернем вам средства через магазин приложений, без каких-либо вопросов!
+					L'app non ha soddisfatto le tue aspettative? Richiedi un rimborso tramite gli app store. Non ti verrà chiesto il motivo.
 				</target>
 			</trans-unit>
 			<trans-unit id="61953c0203fac94d60f04b603fe292b7c8d95931" datatype="html">
@@ -2825,7 +2825,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					ИЛИ
+					O
 				</target>
 			</trans-unit>
 			<trans-unit id="4219e14fb5a16353d78704af1e64ed38734f3b0c" datatype="html">
@@ -2841,7 +2841,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Создайте персональный аккаунт Orchid с удобной вам криптовалютой.
+					Crea un account Orchid personalizzato con la tua criptovaluta.
 				</target>
 			</trans-unit>
 			<trans-unit id="158795b6aa68558ad54de83543b45256189f401c" datatype="html">
@@ -2857,7 +2857,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Оставайтесь на связи
+					Restiamo in contatto
 				</target>
 			</trans-unit>
 			<trans-unit id="aaf5137b94fd1acfad12109ebd3ded604cc710f9" datatype="html">
@@ -2873,7 +2873,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подпишитесь на рассылку, чтобы получать новости о сервисе и сфере онлайн-конфиденциальности
+					Ricevi la newsletter per aggiornamenti e notizie sulla privacy
 				</target>
 			</trans-unit>
 			<trans-unit id="EmailAddress" datatype="html">
@@ -2905,7 +2905,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Адрес эл. почты
+					Indirizzo email
 				</target>
 			</trans-unit>
 			<trans-unit id="0e825448e456d00006810f9b74b47d1c09e7fc16" datatype="html">
@@ -2921,7 +2921,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Я соглашаюсь получать дальнейшие инструкции на указанный выше адрес эл. почты.
+					Acconsento a ricevere ulteriori istruzioni all'indirizzo email che ho indicato sopra.
 				</target>
 			</trans-unit>
 			<trans-unit id="d0336848b0c375a1c25ba369b3481ee383217a4f" datatype="html">
@@ -2937,7 +2937,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подписаться
+					Iscriviti
 				</target>
 			</trans-unit>
 			<trans-unit id="cfc2f436ec2beffb042e7511a73c89c372e86a6c" datatype="html">
@@ -2953,7 +2953,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Зарегистрироваться
+					Registrati
 				</target>
 			</trans-unit>
 			<trans-unit id="e93c6a011593b061daf39d0d4815cf3647c5f193" datatype="html">
@@ -2977,7 +2977,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Я соглашаюсь получать дальнейшие инструкции на указанный выше адрес эл. почты.
+					Acconsento a ricevere ulteriori istruzioni all'indirizzo email che ho indicato sopra.
 				</target>
 			</trans-unit>
 			<trans-unit id="5530e1643787e83a8623180c81e1f2a118354fee" datatype="html">
@@ -2993,7 +2993,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Будьте в курсе
+					Ricevi notifiche
 				</target>
 			</trans-unit>
 			<trans-unit id="7fdeacc17f9ec9a2f4ac8957c211b8252e39790a" datatype="html">
@@ -3009,7 +3009,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узнавайте о новых возможностях
+					Scopri le nuove funzionalità
 				</target>
 			</trans-unit>
 			<trans-unit id="28629af803ab8b5f6e995b17d486e6a1527e2a96" datatype="html">
@@ -3025,7 +3025,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подписаться
+					Iscriviti
 				</target>
 			</trans-unit>
 			<trans-unit id="648b5ac628bc2477e89dbc65cf23ea0bf0e34d77" datatype="html">
@@ -3044,7 +3044,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Оставляйте отзывы и помогайте в разработке на
+					Inviaci il tuo feedback e contribuisci su
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					GitHub
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
@@ -3071,7 +3071,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Главная
+					Home
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Join" datatype="html">
@@ -3087,7 +3087,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Создать аккаунт
+					Crea account
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-HowItWorks" datatype="html">
@@ -3111,7 +3111,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Как это работает
+					Come funziona
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-OXT" datatype="html">
@@ -3143,7 +3143,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					О сервисе
+					Info
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Blog" datatype="html">
@@ -3159,7 +3159,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Блог
+					Blog
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Contact" datatype="html">
@@ -3183,7 +3183,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Контакты
+					Contatti
 				</target>
 			</trans-unit>
 			<trans-unit id="NavigationCurrentLanguage" datatype="html">
@@ -3231,7 +3231,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					О нас
+					Info
 				</target>
 			</trans-unit>
 			<trans-unit id="f4ab3001add4d554dea2b9b81fc28bb4fd1d6157" datatype="html">
@@ -3247,7 +3247,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Спикеры
+					Relatori
 				</target>
 			</trans-unit>
 			<trans-unit id="b52c20debc13d4774cd112819b0d36b91be8cc4a" datatype="html">
@@ -3263,7 +3263,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					План
+					Programma
 				</target>
 			</trans-unit>
 			<trans-unit id="83025b4fcc56ed4c3501ccf7a66605ac519cbea9" datatype="html">
@@ -3279,7 +3279,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Обучение
+					Scopri
 				</target>
 			</trans-unit>
 			<trans-unit id="6267959fd9fb34247b7b8a219b7b342e5556e0e2" datatype="html">
@@ -3295,7 +3295,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Участвовать
+					Partecipa
 				</target>
 			</trans-unit>
 			<trans-unit id="d2ed74068a1e46d15d1dc3ff665f504f63d01224" datatype="html">
@@ -3311,7 +3311,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Контакты
+					Contatti
 				</target>
 			</trans-unit>
 			<trans-unit id="dce252d159dd8834ec9dcc79595a5c519673e50c" datatype="html">
@@ -3327,7 +3327,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рассылка
+					Newsletter
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Download" datatype="html">
@@ -3351,7 +3351,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачать Orchid
+					Scarica Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="b8d10cd55fae4e4ad4f87d28e18251694f159bf7" datatype="html">
@@ -3367,7 +3367,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Политика конфиденциальности
+					Informativa sulla privacy
 				</target>
 			</trans-unit>
 			<trans-unit id="aa4f4b7c81ae9cabfcebc2173f31e3f4bf08d833" datatype="html">
@@ -3383,7 +3383,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Условия использования
+					Condizioni d'uso
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Title-Apps" datatype="html">
@@ -3399,7 +3399,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Приложения
+					App
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Android" datatype="html">
@@ -3463,7 +3463,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аккаунт Orchid
+					Account Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Title-Learn" datatype="html">
@@ -3479,7 +3479,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Обучение
+					Scopri di più
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Whitepaper" datatype="html">
@@ -3495,7 +3495,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Белая бумага
+					White paper
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Partners" datatype="html">
@@ -3511,7 +3511,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Партнеры
+					Partner
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-FAQ" datatype="html">
@@ -3527,7 +3527,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вопросы и ответы
+					Domande frequenti
 				</target>
 			</trans-unit>
 			<trans-unit id="a7ecfd7757d04b019beaa2d7208c728387bfc7e8" datatype="html">
@@ -3543,7 +3543,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Документы
+					Documenti
 				</target>
 			</trans-unit>
 			<trans-unit id="85b79c9064aed1ead31ace985f31aa1363f6bdaf" datatype="html">
@@ -3559,7 +3559,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Справка
+					Aiuto
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Title-Engage" datatype="html">
@@ -3575,7 +3575,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Знакомство
+					Partecipa
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Podcast" datatype="html">
@@ -3591,7 +3591,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подкаст
+					Podcast
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-PrivacyGuardians" datatype="html">
@@ -3607,7 +3607,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Защитники приватности
+					Privacy Guardian
 				</target>
 			</trans-unit>
 			<trans-unit id="Navigation-Events" datatype="html">
@@ -3623,7 +3623,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					События
+					Eventi
 				</target>
 			</trans-unit>
 			<trans-unit id="NavigationFollowUs" datatype="html">
@@ -3639,7 +3639,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мы в социальных сетях
+					Seguici
 				</target>
 			</trans-unit>
 			<trans-unit id="41633c1f7759513e8cf9a306df18eaa04a5d79d0" datatype="html">
@@ -3655,7 +3655,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ценности Orchid
+					I valori di Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="4b6dbf2d92858e82bcf6ae5dbc8dfb4b29d82ad0" datatype="html">
@@ -3679,7 +3679,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вопросы и ответы
+					Domande frequenti
 				</target>
 			</trans-unit>
 			<trans-unit id="15412ab4cec5da0872efe4009996486108f6d12e" datatype="html">
@@ -5467,7 +5467,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Контакты
+					Contatti
 				</target>
 			</trans-unit>
 			<trans-unit id="b00b70a6512d93897d170e3864fb02f945b38646" datatype="html">
@@ -5483,7 +5483,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Нам важно ваше мнение
+					Vogliamo conoscere la tua opinione
 				</target>
 			</trans-unit>
 			<trans-unit id="e8ce6d67679260a5c0efe028ab6945a2aeddf347" datatype="html">
@@ -5501,8 +5501,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Давайте вместе сделаем Интернет свободным! Мы всегда рады сотрудничеству с поставщиками инфраструктур
-					и партнерами по интеграции, желающими работать с Orchid. Свяжитесь с нами, и мы вам ответим в кратчайшие сроки.
+					Riappropriamoci di Internet! Siamo alla ricerca di opportunità di partnership con provider di
+					infrastrutture e partner di integrazione che desiderano collaborare con Orchid. Contattaci e ti risponderemo
+					a breve.
 				</target>
 			</trans-unit>
 			<trans-unit id="6fe478884644f9d16d0e3ba98a7b3f92b9b68426" datatype="html">
@@ -5518,7 +5519,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Почтовый адрес
+					Indirizzo postale
 				</target>
 			</trans-unit>
 			<trans-unit id="99d16efbea3934d73e36ded6b2da713955bd1be6" datatype="html">
@@ -5552,7 +5553,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Контактная информация
+					Dati di contatto
 				</target>
 			</trans-unit>
 			<trans-unit id="ContactSidebar__EmailLink" datatype="html">
@@ -5648,7 +5649,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ваше имя
+					Il tuo nome
 				</target>
 			</trans-unit>
 			<trans-unit id="ContactForm__EmailPlaceholder" datatype="html">
@@ -5664,7 +5665,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ваш адрес эл. почты
+					Il tuo indirizzo email
 				</target>
 			</trans-unit>
 			<trans-unit id="ContactForm__SubjectPlaceholder" datatype="html">
@@ -5680,7 +5681,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Тема
+					Oggetto
 				</target>
 			</trans-unit>
 			<trans-unit id="ContactForm__MessagePlaceholder" datatype="html">
@@ -5696,7 +5697,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Введите текст сообщения...
+					Inserisci il tuo messaggio...
 				</target>
 			</trans-unit>
 			<trans-unit id="b420095c0e81e456392c136a5c9a6957fce4d8d7" datatype="html">
@@ -5712,7 +5713,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Заполните обязательные поля
+					Mancano i campi obbligatori
 				</target>
 			</trans-unit>
 			<trans-unit id="ce0a186040eb256c2ecc6c7758ed8b07dafd15e3" datatype="html">
@@ -5728,7 +5729,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Произошла неизвестная ошибка. Возможно, сообщение не было отправлено
+					Si è verificato un errore sconosciuto. Il tuo messaggio potrebbe non essere stato inviato
 				</target>
 			</trans-unit>
 			<trans-unit id="8795324609191a7049dc6084097e3437b595414f" datatype="html">
@@ -5744,7 +5745,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ваше сообщение отправлено
+					Il tuo messaggio è stato inviato
 				</target>
 			</trans-unit>
 			<trans-unit id="71c77bb8cecdf11ec3eead24dd1ba506573fa9cd" datatype="html">
@@ -5760,7 +5761,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Отправить
+					Invia
 				</target>
 			</trans-unit>
 			<trans-unit id="99ee4faa69cd2ea8e3678c1f557c0ff1f05aae46" datatype="html">
@@ -5776,7 +5777,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Очистить
+					Cancella
 				</target>
 			</trans-unit>
 			<trans-unit id="105703cae625c5c1a46e5a296961d2fcf7289b03" datatype="html">
@@ -5800,14 +5801,13 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вместе
+					Possiamo
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					мы сделаем
+					riappropriarci di
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					Интернет
+					Internet
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
 					<x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;" />
-					свободным
 					<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;" />
 				</target>
 			</trans-unit>
@@ -5824,7 +5824,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Зачем нужна сеть защиты конфиденциальности?
+					Perché costruire una rete di privacy?
 				</target>
 			</trans-unit>
 			<trans-unit id="5b77f4cce9341ae098f04147a445bc8d90c673ab" datatype="html">
@@ -5841,7 +5841,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Интернет открыл перед всеми нами безграничный мир информации. Создатели Всемирной сети подарили ее людям, чтобы те могли утолить свою любознательность и исследовать мир вокруг.
+					Internet ha dato vita a un mondo illimitato di informazioni. I suoi creatori ci hanno invitato a visitarlo con la nostra curiosità e
+					ad esplorare quel mondo liberamente.
 				</target>
 			</trans-unit>
 			<trans-unit id="70267970c81dbb5e88a17330ab49f1d4e36f59e5" datatype="html">
@@ -5858,7 +5859,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Но по мере развития Интернета делать это становилось все сложнее. Бизнес-модели эпохи Web 2.0 диктуют свои условия, и компании стали следить за нами, продавая наши данные. А кое-где даже были установлены ограничения на просмотр той или иной информации.
+					Con la crescita di Internet, l'esplorazione libera è diventata più difficile. I modelli di business Web 2.0 hanno incentivato le aziende a scrutarci,
+					monitorarci e vendere i nostri dati. E in alcuni luoghi, sono stati imposti dei limiti alle informazioni che possiamo vedere.
 				</target>
 			</trans-unit>
 			<trans-unit id="730aff0c62f55ae51a1c08e24582d8e8a610c2a7" datatype="html">
@@ -5875,7 +5877,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Но скоро все изменится. Децентрализованная Web 3.0 на базе Ethereum вернет Интернет пользователям.
+					Ma tutto questo sta cambiando. Il Web 3.0 decentralizzato in fase di sviluppo su Ethereum consente agli utenti di riappropriarsi
+					di Internet.
 				</target>
 			</trans-unit>
 			<trans-unit id="718d8c3f9473771c3b9531ebcf5cb4037d098cb8" datatype="html">
@@ -5892,7 +5895,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мы в Orchid разделяем эту важную миссию. С помощью технологии Web 3.0 мы предлагаем своим пользователям конфиденциальность онлайн уже сегодня, сохраняя наследие Web 1.0 и помогая исследовать Сеть без ограничений.
+					Noi di Orchid condividiamo questo approccio. Usiamo la tecnologia Web 3.0 per offrire agli utenti la migliore privacy digitale attualmente possibile, per
+					mantenere la promessa del Web 1.0 ed esplorare di nuovo la rete liberamente.
 				</target>
 			</trans-unit>
 			<trans-unit id="cedfb00b16ff2ef0c8fcc583a2b09403579ac6c2" datatype="html">
@@ -5910,7 +5914,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Компания Orchid была основана в 2017 году, и нашей целью стало вернуть открытую и доступную сеть для каждого. С тех пор у нас появились чудесные команды в Сан-Франциско и Берлине, а в декабре 2019 года мы запустили первую стимулируемую конфиденциальную P2P-сеть.
+					Orchid è stata fondata nel 2017 con l'obiettivo di rivendicare la rete aperta, in modo che sia accessibile a tutti. In questi anni, il
+					nostro team è cresciuto in modo incredibile. Le nostre sedi sono ubicate a San Francisco e Berlino, e abbiamo lanciato la prima rete privata peer-to-peer
+					incentivata nel dicembre del 2019.
 				</target>
 			</trans-unit>
 			<trans-unit id="fe95829cb724a9d30bd872b4adbd75441b0be7e8" datatype="html">
@@ -5926,7 +5932,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Наши ценности
+					I nostri valori
 				</target>
 			</trans-unit>
 			<trans-unit id="522b96a43b9003e2e7a42198c7ebead49db0a270" datatype="html">
@@ -5942,7 +5948,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Интернет — такая же неотъемлемая часть современной жизни, как искусство письма для древних греков. Наши жизни связаны с Интернетом, а слова и поступки в сети могут иметь не менее серьезные последствия, чем в реальной жизни. Orchid — воплощение мечты о том, что в будущем наша деятельность — как физическая, так и цифровая — может быть приватной, децентрализованной и неподверженной цензуре.
+					Internet è parte integrante della vita moderna come lo era la scrittura per gli antichi greci. Le nostre vite sono digitali e le ramificazioni di quello che facciamo e diciamo online sono reali quanto quelle nel mondo fisico. Orchid è nata dal sogno di un futuro in cui tutta la nostra vita, sia fisica che digitale, potrebbe essere privata, decentralizzata e priva di censure.
 				</target>
 			</trans-unit>
 			<trans-unit id="02ab6544c81d72770779a61ea88ae2a055a900df" datatype="html">
@@ -5958,7 +5964,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Миссия Orchid — конфиденциальность. Это одно из важнейших прав человека.
+					La mission di Orchid è la privacy, e la privacy è un diritto umano.
 				</target>
 			</trans-unit>
 			<trans-unit id="6405367a66a9feb5991644143002352164950506" datatype="html">
@@ -5974,7 +5980,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					На конфиденциальность часто покушаются власти, заявляя, что «если вам нечего скрывать, то нечего и бояться». Но это ложь. Правда состоит в том, что если кому-то и не стоит беспокоиться о приватности, то это власть имущим. Если могущественный диктатор попался на грязных делах, ему обычно легко уйти от ответственности. Не стоит забывать, сколько нарушений конфиденциальности совершала власть во времена Кинга, Ганди, Ай Вэйвэя и других деятелей, прикрываясь «защитой правопорядка» и «интересами национальной безопасности»
+					La privacy è un bersaglio facile per chi è al potere, che dice: "se non hai nulla da nascondere, non hai nulla da temere". Ma è una bugia. La verità è che le persone che occupano posizioni di potere hanno poco da preoccuparsi dei loro fatti privati. Se un potente dittatore viene sorpreso a compiere un atto eticamente discutibile, di certo non verrà perseguito penalmente. Non dovremmo mai dimenticare le violazioni della privacy subite da personaggi come Martin Luther King, Mahatma Gandhi, Ai Weiwei e tanti altri uomini e donne in nome della cosiddetta "sicurezza nazionale".
 				</target>
 			</trans-unit>
 			<trans-unit id="c848bb0269e07b61a983a60d4ddfd88517621477" datatype="html">
@@ -5990,7 +5996,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Конфиденциальность не противоречит свободе. Это одно и то же.
+					Privacy e libertà non sono in conflitto; sono la stessa cosa.
 				</target>
 			</trans-unit>
 			<trans-unit id="35274cc3e2819e2cc5471f5b7c94fb015fdd312b" datatype="html">
@@ -6006,7 +6012,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мы солидарны с инициативами по защите конфиденциальности и других фундаментальных прав человека. Мы поддерживаем движения борцов за свободу и равенство, против цензуры и угнетения, по созданию равных условий для всех.
+					Siamo solidali con le cause a favore della privacy e altri diritti umani fondamentali. Movimenti che lottano per la libertà e l'uguaglianza, che combattono contro l'oppressione e la censura, che fanno la loro parte creando gli strumenti per spianare la strada per tutti.
 				</target>
 			</trans-unit>
 			<trans-unit id="85fc0032a0719cde2d49c3e330c2f5b5e98ace37" datatype="html">
@@ -6022,7 +6028,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Такие движения, как Black Lives Matter, борьба за независимость уйгуров, политреформы в Гонконге и Мьянме, борьба за права ЛГБТК+ в России и многие другие, должны поддерживаться на базовом, человеческом уровне. К ним неприменимы политические, национальные и конфессиональные границы.
+					Cause come Black Lives Matter, la liberazione degli uiguri, la libertà politica a Hong Kong e in Myanmar, i diritti LGBTQ+ in Russia, solo per citare qualche esempio, devono essere sostenute a un livello umano radicale. Dovrebbero travalicare i confini della politica, della nazionalità o del settarismo.
 				</target>
 			</trans-unit>
 			<trans-unit id="2c3a77268b2c1476acbc83d0d0ca20ca5344aad0" datatype="html">
@@ -6038,7 +6044,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В прошлом году мы научились тому, что люди должны быть вместе, а не поодиночке; свободны, а не в заключении; сами себе хозяевами, а не под чьим-то контролем. Это и есть та простая истина, которая вдохновляет разработчиков Orchid.
+					L'anno scorso ci ha ricordato che gli esseri umani sono fatti per stare insieme agli altri, non da soli; liberi, non confinati; emancipati, non controllati. È proprio questa verità fondamentale a motivare le persone che hanno fondato Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="e55e03423c6b5dd6d732c850751c3bae3f087e23" datatype="html">
@@ -6054,7 +6060,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Команда Orchid
+					Il team di Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="866619dc966d9860c54e441031ac8c2a697a3ff1" datatype="html">
@@ -6073,7 +6079,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Основатели Orchid — это великолепные специалисты по ПО с открытым исходным кодом (BASH Shell, GNU Finger), управлению технологиями (RPX IPO), блокчейн-инвестициям (Bitstamp, Pantera Capital), управлению пакетами в приложениях с «джейлбрейк» (Cydia) и безопасности (сотрудник службы лидера в сфере онлайн-банкинга — Wells Fargo, участник команды безопасности Ethereum).
+					I fondatori di Orchid uniscono una profonda esperienza nella community del software open source (BASH Shell, GNU
+					Finger), nella gestione della tecnologia (RPX IPO), negli investimenti in blockchain (Bitstamp, Pantera Capital),
+					(Cydia) e sicurezza (primo dipendente di online banking di Wells Fargo, team di sicurezza core di Ethereum).
 				</target>
 			</trans-unit>
 			<trans-unit id="4360b962f7cc7cfd9265c2d9ff456c9d8916ef04" datatype="html">
@@ -6089,7 +6097,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соучредитель / генеральный директор
+					Co-fondatore/CEO
 				</target>
 			</trans-unit>
 			<trans-unit id="964ec4d631c06bc3ea1cec99a39e065163ce4fc3" datatype="html">
@@ -6105,7 +6113,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соучредитель / технический директор
+					Co-fondatore/CTO
 				</target>
 			</trans-unit>
 			<trans-unit id="9dd91559dbabf9c016e6e78723ab362d331f63b3" datatype="html">
@@ -6121,7 +6129,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соучредитель
+					Co-fondatore
 				</target>
 			</trans-unit>
 			<trans-unit id="1a95eab43ddb228bdec448a3713488cbb49d26b2" datatype="html">
@@ -6137,7 +6145,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соучредитель / консультант
+					Co-fondatore/consulente
 				</target>
 			</trans-unit>
 			<trans-unit id="d563aac89061340b0cbbd1d3e15675cbb7d8f478" datatype="html">
@@ -6153,7 +6161,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Бизнес-развитие
+					Sviluppo commerciale
 				</target>
 			</trans-unit>
 			<trans-unit id="9cdc4a11ab5e497f953d8a789049efad22406d3d" datatype="html">
@@ -6185,7 +6193,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Работа с сообществом
+					Community
 				</target>
 			</trans-unit>
 			<trans-unit id="b203e91a65309f0487359303448e2cbd5a87ab58" datatype="html">
@@ -6217,7 +6225,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Дизайн
+					Progettazione
 				</target>
 			</trans-unit>
 			<trans-unit id="9a47158208307f7cbdf38de6749f3a5b3f679162" datatype="html">
@@ -6241,7 +6249,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Помощник руководителя
+					Executive Assistant
 				</target>
 			</trans-unit>
 			<trans-unit id="d06b19b62b2aff221b29909b1534558e2abdc448" datatype="html">
@@ -6305,7 +6313,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Инженер
+					Engineering
 				</target>
 			</trans-unit>
 			<trans-unit id="3c42dfe46a9a09b119a97d7f6e628538168ce47e" datatype="html">
@@ -6337,7 +6345,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Специалист по финансам
+					Finanze
 				</target>
 			</trans-unit>
 			<trans-unit id="faed3fd6f6a1ec127c2b9f442c2f39f156e5bcac" datatype="html">
@@ -6353,7 +6361,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Маркетолог
+					Marketing
 				</target>
 			</trans-unit>
 			<trans-unit id="2b35268da3881e8e3a3e8cbbb9c0b20448d3d88d" datatype="html">
@@ -6369,7 +6377,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Операции
+					Operazioni
 				</target>
 			</trans-unit>
 			<trans-unit id="2bf0baf64d861603879c51bee0562bfe1c0bc19b" datatype="html">
@@ -6385,7 +6393,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Специалист по продукции
+					Prodotto
 				</target>
 			</trans-unit>
 			<trans-unit id="b9ef7f1873ffbb685b2ab446e30152c7d9179e8f" datatype="html">
@@ -6409,7 +6417,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Консультант
+					Consulente
 				</target>
 			</trans-unit>
 			<trans-unit id="32ac36e1393904395883623a0219cc4cef1779cf" datatype="html">
@@ -6425,7 +6433,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Сведения о корпорации
+					Informazioni aziendali
 				</target>
 			</trans-unit>
 			<trans-unit id="6dd158693d8a2096c6b4f54f4feeb3c4dbe53918" datatype="html">
@@ -6441,7 +6449,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Частная корпорация с ограниченной ответственностью Orchid зарегистрирована в штате Делавэр
+					Orchid è una c-corp del Delaware
 				</target>
 			</trans-unit>
 			<trans-unit id="92572f3676d90f40e2f808d122cff8b4830ad6c7" datatype="html">
@@ -6506,7 +6514,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Запись в комиссии SEC
+					Archiviazione SEC
 				</target>
 			</trans-unit>
 			<trans-unit id="0c11c81cf39a0fbe4fbbe94972e2f407c1ac7c30" datatype="html">
@@ -6523,7 +6531,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пресс-кит
+					Press
+					kit
 				</target>
 			</trans-unit>
 			<trans-unit id="6afd45f992eab22ecb5d9de67d23f9aa8a9b7638" datatype="html">
@@ -6543,11 +6552,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Защитники
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					приватности
-					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
 					Orchid
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
+					Privacy
+					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
+					Guardian
 				</target>
 			</trans-unit>
 			<trans-unit id="cbc436a9ca543b925b3ecc9357a4dd4eca8790b9" datatype="html">
@@ -6564,7 +6573,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Защитник приватности Orchid выступает за свободу Интернета, обучает сообщество, как пользоваться средствами защиты данных онлайн, и проводит ликбезы по безопасности. Защитники приватности организуют встречи, создают и взращивают онлайн-сообщества, а также проводят обсуждения на тему интернет-цензуры, технологий децентрализации и по другим важным вопросам.
+					Un Orchid Privacy Guardian è un sostenitore della libertà digitale, istruisce la community su come utilizzare gli strumenti per la privacy online e promuove le migliori prassi di sicurezza. I Privacy Guardian organizzano incontri di dibattito, gestiscono e promuovono la crescita delle community online, favoriscono le discussioni su
+					censura di Internet, decentralizzazione delle tecnologie e altri argomenti importanti.
 				</target>
 			</trans-unit>
 			<trans-unit id="d0f9fb4828b3845fefeb07ad64a902ab51c43e53" datatype="html">
@@ -6580,7 +6590,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Хотите делать с нами общее дело?
+					Vuoi dare anche tu il tuo contributo?
 				</target>
 			</trans-unit>
 			<trans-unit id="2074799ec3580964146cb498e11b154efd5ce6c9" datatype="html">
@@ -6596,7 +6606,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Отправьте заявку!
+					Candidati ora!
 				</target>
 			</trans-unit>
 			<trans-unit id="7ef4b933461dd9cd835671afa947a40b293950a8" datatype="html">
@@ -6612,7 +6622,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Станьте консультантом по конфиденциальности
+					Diventa un educatore o un'educatrice della privacy
 				</target>
 			</trans-unit>
 			<trans-unit id="e816aef6f0228497360d62c3c45469cb2cef4ecd" datatype="html">
@@ -6628,7 +6638,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Выстраивайте сообщество
+					Crea una community
 				</target>
 			</trans-unit>
 			<trans-unit id="bc916187fc6f7844242e8992f94e5045ca999524" datatype="html">
@@ -6644,7 +6654,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Организуйте официальное сообщество Orchid на платформе, популярной в вашем регионе. Команда Orchid поможет вам собрать и развивать его, проводить интересные мероприятия и конкурсы, а также обеспечит ранний доступ к новым функциям и материалам.
+					Avvia una community Orchid ufficiale utilizzando la piattaforma appropriata per la tua area geografica. Il team di Orchid è qui per aiutarti ad avviarla e a farla crescere, ospitare eventi divertenti, offrire omaggi, oltre a fornirti accesso e contenuti in anticipo.
 				</target>
 			</trans-unit>
 			<trans-unit id="f95fa5a1777ef5d208ef6b55afe949ba23c82347" datatype="html">
@@ -6660,7 +6670,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Собирайте встречи
+					Organizza incontri di dibattito
 				</target>
 			</trans-unit>
 			<trans-unit id="4b00f5c104d477dee3645f72d2e7b4bef11db691" datatype="html">
@@ -6676,7 +6686,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Проводите ежемесячные встречи, где вы сможете рассказать о свободном пользовании Интернетом, технологиях защиты конфиденциальности и других важных для вашего сообщества и региона темах. Находите единомышленников, приглашайте дружественные проекты, компании и интересных людей к участию.
+					Organizza un incontro mensile incentrato sulla libertà digitale, le tecnologie utilizzate per proteggere la privacy e altri argomenti pertinenti di interesse per la tua community e area geografica. Sviluppa relazioni e invita progetti, aziende e persone che la pensano come te a partecipare.
 				</target>
 			</trans-unit>
 			<trans-unit id="b18cbac4b05b3694d757c47674de05eea25ad1f4" datatype="html">
@@ -6694,9 +6704,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Обучайте
+					Educa
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					и помогайте
+					&amp; Aiuta
 				</target>
 			</trans-unit>
 			<trans-unit id="20385247ea864ff367658b5d8c36ab0693cf5dd9" datatype="html">
@@ -6712,7 +6722,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рассказывайте людям в вашем сообществе о свободном Интернете, конфиденциальности и безопасности онлайн. Помогайте им защитить свои данные, обучая пользованию новыми технологиями. Делитесь материалами Orchid и несите нашу идею в массы.
+					Educa le persone della tua community sulla libertà digitale, la privacy e la sicurezza. Aiutale ad assumere il controllo dei propri dati insegnando loro a utilizzare nuovi strumenti e tecnologie in grado di far accrescere le loro libertà individuali. Condividi e amplifica i contenuti provenienti da Orchid.
 				</target>
 			</trans-unit>
 			<trans-unit id="6a072258f887aeb50d0fc32f3b9240283e7185e0" datatype="html">
@@ -6728,7 +6738,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Кто может подать заявку?
+					Chi può candidarsi?
 				</target>
 			</trans-unit>
 			<trans-unit id="06d7401360913b97b4372bd4c0c389231b9b4a1d" datatype="html">
@@ -6744,7 +6754,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Люди, которые уверены, что онлайн-свобода и конфиденциальность — это важно.
+					Persone che credono nell'importanza della libertà digitale e della privacy.
 				</target>
 			</trans-unit>
 			<trans-unit id="56f569923973832f1feb4d4ed65574a0c0bc8d7a" datatype="html">
@@ -6760,7 +6770,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Энтузиасты, готовые собрать вокруг себя сообщество, развивать его и обучать людей.
+					Individui pronti a fondare e a far crescere una community ed educare i partecipanti.
 				</target>
 			</trans-unit>
 			<trans-unit id="940b05b9c2b7864005685ae9d275055bc3b8c3c3" datatype="html">
@@ -6776,7 +6786,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Инициативные пользователи, способные действовать самостоятельно, но готовые работать в команде.
+					Personalità intraprendenti in grado di lavorare in autonomia, ma che apprezzano anche la collaborazione in team.
 				</target>
 			</trans-unit>
 			<trans-unit id="31ab6556100c56190ad46c3e45f08ea1d5f558ce" datatype="html">
@@ -6792,7 +6802,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Преимущества Защитника приватности
+					Vantaggi del Privacy Guardian
 				</target>
 			</trans-unit>
 			<trans-unit id="f6a4437ead341ac707e4ff50d6a6057feff56056" datatype="html">
@@ -6808,7 +6818,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Всегда на связи
+					Nuovi contatti
 				</target>
 			</trans-unit>
 			<trans-unit id="32858b7ff1cbf5450eb95171ce7c7ab70037e6d2" datatype="html">
@@ -6824,7 +6834,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Находите единомышленников, обменивайтесь советами по защите конфиденциальности онлайн, обсуждайте вопросы и вместе преодолевайте проблемы.
+					Trova persone che la pensano come te, scambia suggerimenti e astuzie per proteggere la privacy digitale, discuti con gli altri di problemi e di come superarli.
 				</target>
 			</trans-unit>
 			<trans-unit id="c0d23e2b3b1ed482891e6312c9c1e58da2c87269" datatype="html">
@@ -6840,7 +6850,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Зарабатывайте награды
+					Guadagna ricompense
 				</target>
 			</trans-unit>
 			<trans-unit id="b658c6856db038d8788d7f6332d5a053382d1339" datatype="html">
@@ -6856,7 +6866,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Получайте награды за то, что участвуете в программе и обучаете других.
+					Guadagna ricompense per la partecipazione e l'educazione degli altri.
 				</target>
 			</trans-unit>
 			<trans-unit id="0bdea369f78f206a727d192e460ffb92067f9952" datatype="html">
@@ -6872,7 +6882,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Помогайте друзьям и близким
+					Aiuta amici e familiari
 				</target>
 			</trans-unit>
 			<trans-unit id="6b325b47ffa5a69af2e61964601281b4ef78d49e" datatype="html">
@@ -6888,7 +6898,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Научите их защищать свои данные онлайн с помощью таких технологий, как VPN.
+					Insegna loro come proteggersi online con strumenti per la privacy come le VPN.
 				</target>
 			</trans-unit>
 			<trans-unit id="2ed56eb2bd56b2e6a8b4478c96a77c82cbe634b5" datatype="html">
@@ -6904,7 +6914,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подайте заявку в Защитники приватности Orchid уже сегодня!
+					Candidati oggi stesso per diventare Orchid Privacy Guardian!
 				</target>
 			</trans-unit>
 			<trans-unit id="e7c699c99695bde29f13eb27d93cc43b67db7aaa" datatype="html">
@@ -6920,7 +6930,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вперед!
+					Iniziamo!
 				</target>
 			</trans-unit>
 			<trans-unit id="1a2d416117f59adbec729f47dc4ae532e7533fe6" datatype="html">
@@ -6936,7 +6946,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Настройка аккаунта Orchid
+					Configurazione dell'account Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="ba280829cd2565052641a630468ceb7a9904cc07" datatype="html">
@@ -6952,7 +6962,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Чтобы начать использовать Orchid, вам понадобится аккаунт Orchid. Есть три способа завести аккаунт Orchid прямо сейчас:
+					Per iniziare a utilizzare Orchid, è necessario un account Orchid. Puoi accedere subito a un account Orchid in tre modi:
 				</target>
 			</trans-unit>
 			<trans-unit id="56bf0c3ee24e3afa678d6a8714a061a9c754aa5d" datatype="html">
@@ -6968,7 +6978,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Другой пользователь может открыть вам доступ к своему аккаунту
+					Qualcuno potrebbe condividerne uno con te
 				</target>
 			</trans-unit>
 			<trans-unit id="2ee2a2ce727270be1d93ac8f158a23a32b75529c" datatype="html">
@@ -6984,7 +6994,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вы можете купить аккаунт через iOS
+					Puoi acquistare un account su iOS
 				</target>
 			</trans-unit>
 			<trans-unit id="118fb9a33d7bb96c9e4de041281c8c14408b7293" datatype="html">
@@ -7000,7 +7010,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вы можете сами создать его с помощью OXT
+					Puoi creare un account con OXT
 				</target>
 			</trans-unit>
 			<trans-unit id="9b29c9325353b8f506275cefcccd83f6aa62be12" datatype="html">
@@ -7016,7 +7026,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В этом руководстве описано, как создать аккаунт с помощью нашего DApp (децентрализованного приложения) на базе web3 и приобретенной вами валюты OXT. Если у вас уже есть QR-код для существующего аккаунта Orchid, вы можете сразу перейти к шагу 4.
+					Questa guida alla configurazione ti aiuterà a creare un account tramite la nostra dApp basata su web3 e i tuoi OXT. Se hai già un codice QR per un account Orchid esistente, puoi procedere direttamente con il passaggio 4 della guida.
 				</target>
 			</trans-unit>
 			<trans-unit id="2464347d211fe3ef3acbebc0d176e0f06a02ed15" datatype="html">
@@ -7036,11 +7046,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Узнайте о
+					Dai un'occhiata alla
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					программе заработка
+					Earn Campaign
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					от Coinbase и получите возможность заработать OXT, изучая Orchid!
+					di Coinbase per approfittare dell'opportunità di guadagnare OXT mentre impari a conoscere meglio Orchid!
 				</target>
 			</trans-unit>
 			<trans-unit id="041620337eaebda87971d345d05697639dfe78e4" datatype="html">
@@ -7088,7 +7098,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Шаг
+					Passaggio
 				</target>
 			</trans-unit>
 			<trans-unit id="a7d716ef387786f0b488f63e4e1c337c09061639" datatype="html">
@@ -7104,7 +7114,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Создайте новый кошелек Ethereum
+					Crea un nuovo wallet Ethereum
 				</target>
 			</trans-unit>
 			<trans-unit id="e1cf25d9eabd44df7d59012d1438c9ea7a5cf2b8" datatype="html">
@@ -7120,7 +7130,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рекомендуем использовать для Orchid кошелек Ethereum с новым адресом, не привязанный к другим используемым вами продуктам или услугам Ethereum.
+					Ti consigliamo di utilizzare l'indirizzo di un wallet Ethereum per Orchid che non sia collegato ad altri prodotti o servizi Ethereum che utilizzi.
 				</target>
 			</trans-unit>
 			<trans-unit id="1b90bdeaaf67d378f0e464df813df895169c337d" datatype="html">
@@ -7140,11 +7150,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Протестировано с
+					I nostri test vengono effettuati con
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					Metamask
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					— это отличный вариант для кошелька Ethereum.
+					, un'ottima scelta per un wallet Ethereum.
 				</target>
 			</trans-unit>
 			<trans-unit id="047d3adda06a78b3197eff9d047268de02418f9e" datatype="html">
@@ -7160,7 +7170,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Загрузите Orchid DApp
+					Scarica la dApp Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="30c8caa832a80ec03dc7c8441dc6df0d7a2ffedc" datatype="html">
@@ -7180,11 +7190,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Загрузите адрес
+					Carica
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					account.orchid.com
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					в браузер вашего кошелька или в удобный вам браузер со включенным плагином кошелька. Советуем добавить эту страницу в закладки на будущее.
+					nel browser del tuo wallet o nel tuo browser preferito con un plug-in del wallet abilitato. Ti suggeriamo di aggiungere questa pagina ai Preferiti per accedervi in futuro.
 				</target>
 			</trans-unit>
 			<trans-unit id="2290dffa6a135bdb9d66137191ee18f0ba67931d" datatype="html">
@@ -7200,7 +7210,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Возможно, вам будет предложено «подключить» свой кошелек к Orchid DApp для считывания баланса средств на кошельке.
+					Potrebbe esserti richiesto di "collegare" il tuo wallet alla dApp Orchid in modo che possa recuperare i saldi del conto del wallet.
 				</target>
 			</trans-unit>
 			<trans-unit id="0c1ec6fb5d8ea80ab67d84ecd1461f66462da971" datatype="html">
@@ -7216,7 +7226,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пополните кошелек
+					Aggiungi fondi al tuo wallet
 				</target>
 			</trans-unit>
 			<trans-unit id="a8d91b9814618047f2d21fd29eb4dbeeb87947a5" datatype="html">
@@ -7232,7 +7242,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Настройте аккаунт, чтобы узнать, сколько вам потребуется валюты OXT для пополнения баланса. Также вам понадобится ETH для покрытия стоимости транзакции.
+					Modifica il tuo account per vedere la quantità di OXT necessari per ottenere l'efficienza che desideri. Non dimenticare di controllare anche la quantità di ETH necessaria per le commissione di rete.
 				</target>
 			</trans-unit>
 			<trans-unit id="83000c01c7a459bb73970f48fd2987be3bd506c5" datatype="html">
@@ -7252,11 +7262,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Обе этих суммы вам нужно иметь на балансе привязанного кошелька, чтобы создать и пополнить аккаунт. Приобрести OXT можно
+					Per creare e finanziare il conto, avrai bisogno di entrambi gli importi nel wallet collegato. Vedi i nostri
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					на биржах из списка
+					cambi di partecipazione
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					.
+					per l'acquisizione di OXT.
 				</target>
 			</trans-unit>
 			<trans-unit id="fa56473c66da5baba33e3a1652dcaaa075ce245f" datatype="html">
@@ -7272,7 +7282,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Создайте аккаунт
+					Crea il tuo account
 				</target>
 			</trans-unit>
 			<trans-unit id="e999f19dd7123b1bfc9a0970f15f0e3d321ce518" datatype="html">
@@ -7288,7 +7298,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вам потребуется адрес подписанта (Signer) для создания аккаунта. Создайте подписанта в DApp или сгенерируйте его в приложении (только на Android) и скопируйте.
+					Per creare l'account, è necessario un indirizzo del firmatario. Genera un firmatario nella dApp o generane uno nell'app (solo Android) e incollalo.
 				</target>
 			</trans-unit>
 			<trans-unit id="7bb5acaca00d0b602472e067488f33633b0e45c0" datatype="html">
@@ -7308,11 +7318,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Нажмите
+					Premi
 					<x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;" />
-					Создать аккаунт
+					Crea account
 					<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;" />
-					, чтобы отправить обе транзакции в кошелек на утверждение. Утвердите обе транзакции и дождитесь, когда они будут выполнены в Ethereum.
+					per inviare entrambe le transazioni al tuo wallet per l'approvazione. Approva entrambe le transazioni e attendi che vengano completate su Ethereum.
 				</target>
 			</trans-unit>
 			<trans-unit id="47b9eb258b994b0bd0fca068741ff95772f925df" datatype="html">
@@ -7328,7 +7338,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соедините аккаунт с приложением
+					Collega il tuo account all'app
 				</target>
 			</trans-unit>
 			<trans-unit id="247726a78ba94ecb1f7d7fe4d2d2912ed2ce66b5" datatype="html">
@@ -7352,11 +7362,11 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачайте приложение Orchid для
+					Scarica l'app Orchid per
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					Android
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					или
+					o
 					<x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;" />
 					iOS
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
@@ -7376,7 +7386,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Откройте приложение, выберите «Управление профилем», создайте «Новое подключение», затем «Привязать аккаунт Orchid», чтобы оплатить VPN-сервис.
+					Apri l'app, tocca Gestisci profilo, crea un nuovo hop, quindi seleziona Collega account Orchid per pagare il servizio VPN.
 				</target>
 			</trans-unit>
 			<trans-unit id="5757785f60e8cfdc8e0c4bc97e87689752f5c9fa" datatype="html">
@@ -7392,7 +7402,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вот и всё! Можно дать волю своей любознательности и исследовать мир Интернета без границ!
+					È tutto. A questo punto, puoi iniziare a navigare liberamente. Lasciati tentare dalla curiosità!
 				</target>
 			</trans-unit>
 			<trans-unit id="050da7769fef20d5cf3cb9625c889e06ce7d211d" datatype="html">
@@ -7416,7 +7426,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Где приобрести OXT?
+					Dove trovare OXT?
 				</target>
 			</trans-unit>
 			<trans-unit id="c45a0de0355d87fab17d79225253f33eae0d9c36" datatype="html">
@@ -7432,7 +7442,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Остались вопросы?
+					Altre domande?
 				</target>
 			</trans-unit>
 			<trans-unit id="4f12c9c544332f22806843a8d2310879bdb80fae" datatype="html">
@@ -7448,7 +7458,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Загляните в раздел вопросов и ответов
+					Consulta le Domande frequenti
 				</target>
 			</trans-unit>
 			<trans-unit id="8130388387b87d36f147913027fe68cd1d0ca0e7" datatype="html">
@@ -7466,9 +7476,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Актив для размещения ставок
+					La risorsa di staking
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					на $35-миллиардном* VPN-рынке
+					per il mercato VPN da 35 miliardi di dollari*
 				</target>
 			</trans-unit>
 			<trans-unit id="d1aa9504e276f8ea51854799c3257b8aeea2b51e" datatype="html">
@@ -7484,7 +7494,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Рынок VPN стремительно растет по всему миру: пользователи стремятся вернуть себе приватность и пробиться через фаерволы, которые устанавливает государство. OXT — это нативный цифровой актив Orchid стандарта ERC-20. Он обеспечивает и защищает новый подход к VPN-сервисам и позволяет провайдерам конкурировать за оплату пользователей с помощью ставок в OXT. По мере того, как объем приобретаемых пропускных ресурсов в Orchid растет, провайдеры могут добавлять их и делать ставку в OXT, привлекая больше продаж ресурсов в сети.
+					Il mercato delle VPN sta sperimentando una crescita esplosiva a livello globale, mentre gli utenti lottano per riconquistare la privacy e aggirare i firewall controllati dallo Stato. OXT è la risorsa digitale ERC-20 nativa di Orchid che promuove e tutela un nuovo approccio al servizio VPN, e i provider competono per il flusso di pagamenti degli utenti grazie allo staking di OXT. Man mano che viene acquistata più larghezza di banda sul nodo di rete Orchid, i provider possono aggiungere ed eseguire lo staking di OXT per acquisire ulteriori vendite di larghezza di banda sulla rete.
 				</target>
 			</trans-unit>
 			<trans-unit id="dc75033a5238fdc4f462212c847a45ba8018a3fd" datatype="html">
@@ -7500,7 +7510,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Скачать
+					Download
 				</target>
 			</trans-unit>
 			<trans-unit id="355a222236bc01b9a8cd3cb9ecf76891125aed69" datatype="html">
@@ -7532,7 +7542,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Запас
+					Erogazione
 				</target>
 			</trans-unit>
 			<trans-unit id="26a162cf7595da16f272e411462498528fcfdff0" datatype="html">
@@ -7548,7 +7558,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Как было обозначено в белой бумаге сети Orchid, общий запас OXT фиксирован и составляет один миллиард единиц. Все сведения о запасах OXT и адресах его расположения доступны публично в блокчейне Ethereum.
+					Come indicato nel white paper della rete Orchid, l'erogazione totale di OXT è fissata a un miliardo di unità. Tutte le informazioni sull'erogazione di OXT e gli indirizzi in cui trovare OXT sono disponibili pubblicamente sulla blockchain di Ethereum.
 				</target>
 			</trans-unit>
 			<trans-unit id="f8f62e123b15629166fda71a4aa685e022ed4ff7" datatype="html">
@@ -7564,7 +7574,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Резерв
+					Fondi di cassa
 				</target>
 			</trans-unit>
 			<trans-unit id="685e16f81e0a7cb533f5e9061ee2857ff7ab6ad1" datatype="html">
@@ -7580,7 +7590,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					К созданию были допущены 1 миллиард единиц OXT, и все они были созданы. На момент 9 октября 2019 г. Orchid Labs сохраняли в своем резерве 400 579 272 OXT — на эту сумму действовала резервная политика компании. Согласно резервной политике Orchid Labs, Inc., ожидается, что при сумме 400 579 272 OXT, находящейся в резерве, к выпуску будет доступно не более 10 миллионов OXT в месяц.
+					Era possibile creare un massimo di 1 miliardo di OXT, e infatti sono stati creati. Al 9 dicembre 2019, Orchid Labs, Inc. deteneva 400.579.272 OXT nel suo fondo di cassa soggetto alla sua politica di tesoreria. Ai sensi della politica di tesoreria di Orchid Labs, Inc., si prevede che su 400.579.272 OXT del fondo di cassa di OXT, a partire dal 9 dicembre 2019, non saranno disponibili più di 10 milioni di OXT al mese per il rilascio dal fondo di cassa.
 				</target>
 			</trans-unit>
 			<trans-unit id="94f6aac82a6f485870f5aaec589e04e74c12275d" datatype="html">
@@ -7596,7 +7606,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аудит смарт-контракта, используемого с графиком выпуска OXT
+					Audit del contratto intelligente per l'utilizzo con il programma di rilascio di OXT
 				</target>
 			</trans-unit>
 			<trans-unit id="0c81ee9cd113823311ed2d8fff3bbd2e22e3a1d8" datatype="html">
@@ -7612,7 +7622,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аудит смарт-контракта. На момент 21 марта 2020 года Consensys Diligence опубликовали технический аудит смарт-контракта Orchid по отправке долей, которые могут использоваться для множественных выплат эфира и токенов ERC20 в одну транзакцию. Отчет об аудите является публичным; с ним можно ознакомиться здесь:
+					Audit del contratto intelligente del 21 marzo 2020: Consensys Diligence ha pubblicato un audit tecnico sul contratto intelligente con invio in batch di Orchid, che può essere utilizzato per più esborsi di token ether ed ERC20 in un'unica transazione. Il rapporto dell'audit è pubblico ed è disponibile qui:
 				</target>
 			</trans-unit>
 			<trans-unit id="1becf144dc0c6e8d44622d0f2605193881993e3e" datatype="html">
@@ -7628,7 +7638,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid опубликовали всю информацию, необходимую для выполнения аудитов, в техническом репозитории на GitHub. Его можно найти здесь:
+					Ai fini dell'audit, Orchid ha pubblicato tutte le informazioni necessarie per eseguire l'audit in un repository tecnico su GitHub, disponibile qui:
 				</target>
 			</trans-unit>
 			<trans-unit id="1855bc630880cad010f07a7931726502b191ecd2" datatype="html">
@@ -7644,7 +7654,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Любой желающий может повторить аудит смарт-контрактов, используя ту же информацию, что была предоставлена Consensys Diligence.
+					Chiunque può eseguire nuovamente l'audit dei contratti intelligenti utilizzando le stesse informazioni fornite a Consensys Diligence.
 				</target>
 			</trans-unit>
 			<trans-unit id="22e15fa88b1e783d04f093b6103958c330662d2e" datatype="html">
@@ -7660,7 +7670,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Информация, опубликованная на GitHub и предоставленная Consensys Diligence, включает контракт на токен OXT, который размещен здесь:
+					Le informazioni pubblicate su GitHub e fornite a Consensys Diligence includono il contratto dei token OXT, disponibile qui:
 				</target>
 			</trans-unit>
 			<trans-unit id="becfbefadecd75b4e29e6541c6780553c580e18f" datatype="html">
@@ -7676,7 +7686,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Также там присутствует график выпуска OXT. Его можно найти здесь:
+					Include anche il Programma di rilascio di OXT, disponibile qui:
 				</target>
 			</trans-unit>
 			<trans-unit id="53ea4af61b753c58a779575580f70e55a8defb44" datatype="html">
@@ -7692,7 +7702,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В декабре 2020 года Consensys Diligence опубликовали технический аудит новой версии смарт-контракта Orchid по отправке долей, которые могут использоваться для множественных выплат эфира и токенов ERC20 в одну транзакцию. Отчет об аудите является публичным; с ним можно ознакомиться здесь:
+					Nel dicembre del 2020, Consensys Diligence ha pubblicato un audit tecnico su una nuova versione del contratto intelligente con invio in batch di Orchid, che può essere utilizzato per più esborsi di token ether e ERC20 in un'unica transazione. Il rapporto dell'audit è pubblico ed è disponibile qui:
 				</target>
 			</trans-unit>
 			<trans-unit id="8c457a5e4cb856650c28c5ec15d0a3c78abfab24" datatype="html">
@@ -7708,7 +7718,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Ссылка на дополнительный график выпуска, который также был рассмотрен Consensys в ходе аудита:
+					Di seguito un link al Programma di rilascio aggiuntivo, anch'esso soggetto a audit da parte di Consensys:
 				</target>
 			</trans-unit>
 			<trans-unit id="3f7577a7af1071d7874153f557fd282dab2b0b06" datatype="html">
@@ -7724,7 +7734,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Каталог ставок Orchid случайным образом соединяет пользователей с провайдерами в зависимости от суммы ставки в OXT: провайдеры, поставившие больше, чаще соединяются с пользователями. Чем больше пропускных ресурсов приобретают пользователи сети Orchid, тем более мотивированы провайдеры узлов ставить OXT, чтобы и дальше продавать ресурсы, удовлетворяя растущий спрос.
+					La directory di staking di Orchid collega in modo casuale gli utenti con i provider in base alla quantità di OXT sottoposta a staking; i provider che eseguono più staking sono collegati a più utenti. Maggiore è la larghezza di banda acquistata dagli utenti sulla rete Orchid, maggiore è l'incentivo che i provider di nodi possano eseguire lo staking di OXT per vendere larghezza di banda e soddisfare la domanda.
 				</target>
 			</trans-unit>
 			<trans-unit id="dfbddb33e7ef3e5adef23039f8f72ede5ce8674c" datatype="html">
@@ -7740,7 +7750,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Пользователям требуется аккаунт Orchid, на котором находятся средства для оплаты VPN-сервиса. В аккаунтах Orchid может использоваться OXT на Ethereum либо другие EVM-совместимые цепочки. Система наноплатежей Orchid носит чейн-агностический характер. Провайдеры могут получать платежи из нескольких блокчейнов, однако ставки всегда производятся исключительно в OXT на Ethereum.
+					Gli utenti devono disporre di un account Orchid che contenga fondi per il pagamento del servizio VPN. Gli account Orchid possono utilizzare OXT su Ethereum o essere ospitati su altre catene compatibili con EVM. Il sistema di nanopagamenti di Orchid è indipendente dalla catena. Sebbene i provider possano ricevere pagamenti da più blockchain, lo staking viene sempre e solo eseguito con OXT su Ethereum.
 				</target>
 			</trans-unit>
 			<trans-unit id="af9127f5f06040da76fee791689f3dcb42cba2a1" datatype="html">
@@ -7756,7 +7766,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Подробнее о размещении ставок провайдерами.
+					Scopri di più sullo staking dei provider qui.
 				</target>
 			</trans-unit>
 			<trans-unit id="e07b67e89433cb371b8317f5b75abe79dd5a6d57" datatype="html">
@@ -7772,7 +7782,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аудиты OXT
+					Audit OXT
 				</target>
 			</trans-unit>
 			<trans-unit id="90b9dab99e7bd89256c4d2369b169bb5e923c63a" datatype="html">
@@ -7804,7 +7814,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Читайте полный текст публичного аудита ConsenSys Diligence здесь.
+					Leggi l'intero audit pubblico di ConsenSys Diligence qui.
 				</target>
 			</trans-unit>
 			<trans-unit id="b9c395066cfc0ba2bb8c85163c56f402d9164695" datatype="html">
@@ -7836,7 +7846,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Читайте полный текст публичного аудита Certora здесь.
+					Leggi l'intero audit pubblico completo di Certora qui.
 				</target>
 			</trans-unit>
 			<trans-unit id="b8d904d2fc33a589a5b5b09ff5376f1bfae30a08" datatype="html">
@@ -7855,7 +7865,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					*Отчет о рынке частных виртуальных сетей (VPN),
+					*Virtual Private Network (VPN) Market Report,
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
 					Global Market Insights
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
@@ -7874,7 +7884,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Избранные провайдеры
+					Provider preferiti
 				</target>
 			</trans-unit>
 			<trans-unit id="c4e48adbffb72c6f37984ab126e51fd65ec9a65e" datatype="html">
@@ -7891,7 +7901,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Аккаунты с кредитами Orchid, приобретенные в Orchid, входят в систему наших избранных провайдеров. Аккаунты с кредитами приобретают услуги исключительно у провайдеров, прошедших тщательный процесс KYC-отбора в Orchid Labs на предмет пригодности к приему кредитов. Если вы хотите стать избранным провайдером, свяжитесь с нами.
+					I conti di credito Orchid acquistati da Orchid fanno parte del nostro sistema di provider preferiti. Servizio di acquisto di conti di credito esclusivamente da provider che hanno seguito un processo KYC con Orchid Labs per essere ritenuti idonei ad accettare crediti. Contattaci
+					se desideri candidarti come fornitore preferito
 				</target>
 			</trans-unit>
 			<trans-unit id="fe7950bf471a78ceb726dd1bf2b2261943f8d925" datatype="html">
@@ -7907,7 +7918,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Список избранных провайдеров
+					Elenco dei provider preferiti
 				</target>
 			</trans-unit>
 			<trans-unit id="01dac0bf3d300f1a1556a5f312c5c69d06499aff" datatype="html">
@@ -7923,7 +7934,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Правовая информация
+					Avviso legale
 				</target>
 			</trans-unit>
 			<trans-unit id="94a1c0eea1a1239c55d0187811656963fd53b587" datatype="html">
@@ -7939,7 +7950,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Программа избранных провайдеров Orchid — это программа «замкнутой системы предоплаты», соответствующая нормам FinCEN, регулирующим продукцию с замкнутой системой предоплаты.
+					I provider preferiti di Orchid fanno parte di un programma di "accesso prepagato a circuito chiuso" conforme alle normative FinCEN che disciplinano i prodotti di accesso prepagato a circuito chiuso.
 				</target>
 			</trans-unit>
 			<trans-unit id="c3525f7472c9539e436a8a7e7506474f8e7a4904" datatype="html">
@@ -7955,7 +7966,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Соответственно, аккаунты с кредитами Orchid могут использоваться только в рамках списка «установленных продавцов» — поставщиков пропускных ресурсов VPN, указанных здесь. Кроме того, в рамках соответствия требованиям FinCEN, покупка и использование аккаунтов с кредитами Orchid ограничены суммой в $200 в сутки.
+					Di conseguenza, i conti di credito Orchid possono essere utilizzati solo con l'elenco "Defined Merchant" dei provider di larghezza di banda VPN indicati qui. Inoltre, al fine di rispettare le normative FinCEN, l'acquisto e l'utilizzo dei conti di credito Orchid sono limitati a $ 200 al giorno.
 				</target>
 			</trans-unit>
 			<trans-unit id="368f6955aee372579f803f75e630ab9796eb589e" datatype="html">
@@ -7971,7 +7982,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Партнеры Orchid
+					Partnership con Orchid
 				</target>
 			</trans-unit>
 			<trans-unit id="47a7cc89bfbc34747469a9a57c1f0280837fd8b0" datatype="html">
@@ -7988,7 +7999,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Orchid сотрудничает с множеством компаний по всему миру. Вместе мы следуем своей миссии — сделать Интернет безопаснее и защищеннее для всех.
+					Orchid ha stretto partneship con aziende in tutto il mondo per dare impulso alla nostra mission di rendere Internet un posto più sicuro
+					e più privato per tutti.
 				</target>
 			</trans-unit>
 			<trans-unit id="b1851bfb911f8368dd318a670bc7a49573b03b15" datatype="html">
@@ -8004,7 +8016,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Обсудить партнерство
+					Discuti di una partnership
 				</target>
 			</trans-unit>
 			<trans-unit id="2fcee1c65121667307ea4b51e3910dd7394df23e" datatype="html">
@@ -8020,7 +8032,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					VPN-партнеры
+					Partner VPN
 				</target>
 			</trans-unit>
 			<trans-unit id="d0c2f6ca1a6d8717cf3a3ae27a9ca73ee52443be" datatype="html">
@@ -8037,7 +8049,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Мы ценим стремление PIA поддерживать высочайшие стандарты конфиденциальности, при этом предоставляя один из самых надежных в мире VPN-сервисов.
+					Apprezziamo l'impegno profuso da PIA inteso a garantire i più elevati standard di privacy e fornire
+					al contempo uni dei servizi VPN più affidabili al mondo.
 				</target>
 			</trans-unit>
 			<trans-unit id="19c119db06c1d3113e947d186620e48d34f93b3a" datatype="html">
@@ -8054,7 +8067,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Наш союз с BolehVPN, одним из самых надежных поставщиков сервисов защиты онлайн, приближает нас к по-настоящему безопасному и конфиденциальному Интернету в будущем.
+					La partnership con BolehVPN, uno dei progetti più apprezzati in fatto di navigazione affidabile, ci permette
+					di realizzare il sogno di una rete realmente sicura e privata.
 				</target>
 			</trans-unit>
 			<trans-unit id="8af39e7b0a9b4ebc3bf0592366af70bb22e4ee2e" datatype="html">
@@ -8071,7 +8085,8 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В Orchid мы всегда рады сотрудничеству с единомышленниками — компаниями и одиночками. Уже много лет мы рады видеть, какую работу проделывают VPNSecure в сфере защиты данных и конфиденциальности.
+					Noi di Orchid siamo sempre entusiasti di collaborare con aziende e individui, e da
+					anni ammiriamo il lavoro svolto da VPNSecure in materia di privacy e sicurezza.
 				</target>
 			</trans-unit>
 			<trans-unit id="12fed5c0b9b55f742012c03dffb398ab5a926620" datatype="html">
@@ -8089,7 +8104,9 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Сеть Orchid растет с каждым днем, и все больше надежным провайдеров пропускных ресурсов присоединяются к нашей платформе. Сотрудничество с LiquidVPN — очередной шаг в сторону всеобщей приватности.
+					La rete per la privacy di Orchid è in continua crescita, e
+					un numero sempre maggiore di provider di larghezza di banda si unisce alla piattaforma. La nostra partnership con LiquidVPN è un altro passo avanti verso
+					l'obiettivo di rendere la privacy un'esperienza comunitaria.
 				</target>
 			</trans-unit>
 			<trans-unit id="d4a675bc15dbf277d1f7743bb6c9c8961d750ac7" datatype="html">
@@ -8105,7 +8122,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Следите за нами на любимых платформах
+					Collegati alle tue piattaforme preferite
 				</target>
 			</trans-unit>
 			<trans-unit id="aaf25276292235fc922d02e34d88e21d291f4baa" datatype="html">
@@ -8121,7 +8138,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Будьте в курсе!
+					Non farti sfuggire neanche una novità!
 				</target>
 			</trans-unit>
 			<trans-unit id="123011a29ca3f01719fd96cbc1110fc8dd923f5c" datatype="html">
@@ -8137,7 +8154,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					В нашей ежемесячной рассылке по эл. почте мы рассказываем о развитии Orchid, делимся новостями в сфере защиты данных, обсуждаем OOPSEC и другие сопутствующие темы.
+					Grazie alla nostra newsletter mensile via email, riceverai sempre informazioni sugli ultimi sviluppi di Orchid, notizie sulla privacy, OOPSEC e altri argomenti relativi alla privacy online.
 				</target>
 			</trans-unit>
 			<trans-unit id="32253e445ffc3e3c6ad38fcaf789d9c8b544050f" datatype="html">
@@ -8159,11 +8176,13 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					О новых размещениях мы объявляем публично. Если вы узнали, что валюта OXT торгуется на бирже, не указанной здесь, сообщите нам через
+					Quando veniamo a conoscenza di nuovi elenchi, verranno annunciati pubblicamente. Se vedi che OXT vengono
+					quotati in una piattaforma non indicata qui, usa il modulo di
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					форму
+					contatto
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					, и мы добавим эту биржу в список.
+					per comunicarcelo, in modo che possa essere aggiunta al
+					nostro elenco.
 				</target>
 			</trans-unit>
 			<trans-unit id="9bcac607ba4358f0b1b2e11ad2dc670e5c758636" datatype="html">
@@ -8187,7 +8206,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Размещение на биржах
+					Elenchi di quotazioni
 				</target>
 			</trans-unit>
 			<trans-unit id="4e14e20e4b236a008f9e4996dea90a080652de67" datatype="html">
@@ -8203,7 +8222,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Показать полный список
+					Visualizza l'elenco completo
 				</target>
 			</trans-unit>
 			<trans-unit id="4d8e0b7ebc86dee0ff6e06fad0bdab342aa71932" datatype="html">
@@ -8219,7 +8238,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					OXT-контракт на Ethereum
+					Contratto OXT su Ethereum
 				</target>
 			</trans-unit>
 			<trans-unit id="497b5899a8cc7b94c67710b1217187a7c3151894" datatype="html">
@@ -8242,14 +8261,14 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					О новых размещениях в сообществе Orchid объявляется публично.
+					Quando la community di Orchid viene a conoscenza di nuovi elenchi, questi vengono annunciati pubblicamente.
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
 					<x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;" />
-					Если вы узнали, что валюта OXT торгуется на бирже, не указанной здесь, сообщите нам через
+					Se vedi che OXT vengono quotati in piattaforme non indicate qui, usa il
 					<x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;" />
-					форму
+					modulo di contatto
 					<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;" />
-					, и мы добавим эту биржу в список.
+					in modo che possa essere aggiunta all'elenco.
 				</target>
 			</trans-unit>
 			<trans-unit id="0487354c5d5c8e9c9e511ac5cc73f312a9464226" datatype="html">
@@ -8265,7 +8284,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Децентрализованное размещение
+					Elenchi decentralizzati
 				</target>
 			</trans-unit>
 			<trans-unit id="085f4decc3f93f46c2121332a60b3ccc7fdb50c0" datatype="html">
@@ -8281,7 +8300,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Партнеры — кошельки и хранилища
+					Partner di wallet e custodia
 				</target>
 			</trans-unit>
 			<trans-unit id="d04a7bcd0c10157e6135e0230e30d3e6539655f3" datatype="html">
@@ -8297,7 +8316,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Не найдено
+					Non trovato
 				</target>
 			</trans-unit>
 			<trans-unit id="48d2be12357ef818864ba12d7c755080a4ed0d5d" datatype="html">
@@ -8313,7 +8332,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Не удалось найти страницу!
+					Impossibile trovare la pagina.
 				</target>
 			</trans-unit>
 			<trans-unit id="78748ad97d601d2d34784eca0d08451f8bc49749" datatype="html">
@@ -8329,7 +8348,7 @@
 					</context>
 				</context-group>
 				<target state="translated">
-					Вернуться на главную
+					Torna alla home page
 				</target>
 			</trans-unit>
 			<trans-unit id="7a7d6a14c23091cdb9368867417596c5ffc1fa14" datatype="html">
@@ -8465,7 +8484,7 @@
 					About Us
 				</source>
 				<target state="translated">
-					О нас
+					Chi siamo
 				</target>
 			</trans-unit>
 		</body>
