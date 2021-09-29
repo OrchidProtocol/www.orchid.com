@@ -50,40 +50,37 @@ class Component extends React.Component {
 		}
 	}
 
-	submit() {
-		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(this.email || "") + (this.priv8 ? "&priv8=true" : "");
+	submit(e) {
+		e.preventDefault();
+		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(e.target.email.value || "") + (this.priv8 ? "&priv8=true" : "");
 
 		if (this.in_progress) return;
 
-		let invalid = false;
-
-		if (!this.email_test.test(this.email)) {
-			this.setState({
-				invalid_email: true,
-			});
-			invalid = true;
-		} else {
-			this.setState({
-				invalid_email: false,
-			});
+		const tempState = {
+			invalid_email: false,
+			blink_box: false,
+			invalid: false,
 		}
 
-		if (!this.consented) {
-			this.setState({
-				blink_box: true,
-			});
-			invalid = true;
+		if (e.target.email.value === "" || !this.email_test.test(e.target.email.value)) {
+			tempState.invalid_email = true;
+			tempState.invalid = true;
 		} else {
-			this.setState({
-				blink_box: false,
-			});
+			tempState.invalid_email = false;
 		}
 
-		this.setState({
-			invalid,
-		});
+		if (e.target.consent.value !== "on") {
+			tempState.blink_box = true;
+			tempState.invalid = true;
+		} else {
+			tempState.blink_box = false;
+		}
 
-		if (this.invalid) return false;
+		if (tempState.invalid) {
+			this.setState(tempState);
+			this.in_progress = false;
+			return false;
+		}
 
 		this.in_progress = true;
 		fetch(mailchimp_url)
@@ -116,24 +113,26 @@ class Component extends React.Component {
 	render() {
 		return (
 			<div className="newsletter-core">
-				<div style={{ display: this.state.submitted ? 'none' : '' }}>
-					<input type="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" onKeyUp={this.checkIfEnter.bind(this)} className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} onChange={this.inputListener.bind(this)} onKeyDown={this.inputListener.bind(this)} />
-					<div className="gap-bot-thin" style={{ display: this.state.showFull ? '' : 'none' }}>
-						<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
-							<input type="checkbox" onChange={this.checkboxListener.bind(this)} />
-							<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
-						</label>
+				<form onSubmit={this.submit.bind(this)}>
+					<div style={{ display: this.state.submitted ? 'none' : '' }}>
+						<input type="email" name="email" required i18n-placeholder="@@EmailAddress" placeholder="Email address" className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
+						<div className="gap-bot-thin">
+							<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
+								<input name="consent" required type="checkbox" />
+								<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
+							</label>
+						</div>
+						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
+							<span>Subscribe</span>
+						</button>
 					</div>
-					<button onClick={this.submit.bind(this)} className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
-						<span>Subscribe</span>
-					</button>
-				</div>
-				<div style={{ display: this.state.error ? 'block' : 'none' }}>
-					<p id="error" innertext={this.state.error} />
-				</div>
-				<div style={{ display: this.state.success ? 'block' : 'none' }}>
-					<p id="success" innertext={this.state.success} />
-				</div>
+					<div style={{ display: this.state.error ? 'block' : 'none' }}>
+						<p id="error">{this.state.error}</p>
+					</div>
+					<div style={{ display: this.state.success ? 'block' : 'none' }}>
+						<p id="success">{this.state.success}</p>
+					</div>
+				</form>
 			</div>
 		)
 	}
