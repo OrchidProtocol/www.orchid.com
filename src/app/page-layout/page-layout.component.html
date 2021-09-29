@@ -39,11 +39,11 @@
           </span>
           <ul class="navbar-language-selector-list">
             <li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" class="phantom-a" href="//www.ko.orchid.com">한국어</a></li>
-            <li><a i18n="@@LanguageDropdown__En" class="phantom-a" href="//www.orchid.com">English</a></li>
-            <li><a i18n="@@LanguageDropdown__Ru" class="phantom-a" href="//www.ru.orchid.com">русский</a></li>
-            <li><a i18n="@@LanguageDropdown__Ja" class="phantom-a" href="//www.ja.orchid.com">日本</a></li>
-            <li><a i18n="@@LanguageDropdown__Zh" class="phantom-a" href="//www.zh.orchid.com">中文</a></li>
-            <li><a i18n="@@LanguageDropdown__Id" class="phantom-a" href="//www.id.orchid.com">Indonesian</a></li>
+            <li><a class="phantom-a" href="//www.orchid.com">English</a></li>
+            <li><a class="phantom-a" href="//www.ru.orchid.com">русский</a></li>
+            <li><a class="phantom-a" href="//www.ja.orchid.com">日本</a></li>
+            <li><a class="phantom-a" href="//www.zh.orchid.com">中文</a></li>
+            <li><a class="phantom-a" href="//www.id.orchid.com">Indonesian</a></li>
           </ul>
         </li>
       </ul>
@@ -55,38 +55,38 @@
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#About">
+          <a class="phantom-a" href="/priv8#About" i18n>
             About
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#Speakers">
+          <a class="phantom-a" href="/priv8#Speakers" i18n>
             Speakers
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#Agenda">
+          <a class="phantom-a" href="/priv8#Agenda" i18n>
             Agenda
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#Learn">
+          <a class="phantom-a" href="/priv8#Learn" i18n>
             Learn
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#Participate">
+          <a class="phantom-a" href="/priv8#Participate" i18n>
             Participate
           </a>
         </li>
         <li>
-          <a class="phantom-a" href="/priv8#Contact">
+          <a class="phantom-a" href="/priv8#Contact" i18n>
             Contact
           </a>
         </li>
         <li>
           <a class="nav-download" routerLink="/newsletter-signup">
-            <button class="btn-cyan">
+            <button class="btn-cyan" i18n>
               Newsletter
             </button>
           </a>
@@ -135,8 +135,8 @@
         <img width="149px" height="39px" alt="" src="/assets/img/shared/orchid-logo-text.svg?v=3">
         <p>&copy; {{year}} Orchid Labs Inc.</p>
         <p class="privacy-terms-links">
-          <a class="phantom-a" routerLink="/privacy-policy">Privacy Policy</a> |
-          <a class="phantom-a" routerLink="/service-terms">Terms of Service</a>
+          <a class="phantom-a" routerLink="/privacy-policy" i18n>Privacy Policy</a> |
+          <a class="phantom-a" routerLink="/service-terms" i18n>Terms of Service</a>
         </p>
       </section>
       <nav id="ft-nav">
@@ -153,10 +153,11 @@
         <ul id="ft-nav-2-list" class="phantom-list">
           <li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
           <li><a class="phantom-a" routerLink="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
-          <li><a class="phantom-a" routerLink="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
           <li><a class="phantom-a" href="/whitepaper.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
           <li><a class="phantom-a" routerLink="/partners" i18n="@@Navigation-Partners">Partners</a></li>
           <li><a class="phantom-a" routerLink="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
+          <li><a class="phantom-a" href="https://docs.orchid.com" i18n>Docs</a></li>
+          <li><a class="phantom-a" href="https://help.orchid.com" i18n>Help</a></li>
         </ul>
       </nav>
       <nav id="ft-nav-3">
@@ -223,7 +224,7 @@
 <div [class.visible]="this.badge" class="maker-badge transition" id="maker-badge" style="visibility: visible;">
   <div class="maker-badge__btn" id="maker-badge__btn">
     <img alt="" width="27" height="29" class="maker-badge__btn-img" src="/assets/img/shared/our-values-icon.svg">
-    <span>Orchid's Values</span>
+    <span i18n>Orchid's Values</span>
     <a routerLink="/about-us" fragment="values"></a>
   </div>
 </div>

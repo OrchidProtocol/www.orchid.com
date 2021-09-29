@@ -1,7 +1,7 @@
 <div class="bk-faint-gray">
   <section id="newsletter-signup" class="section-wide center-text hpad-wide vpad-wide">
     <header>
-      <h2 i18n="@@Newsletter__Title">Find out about new features</h2>
+      <h2 i18n>Find out about new features</h2>
     </header>
     <div *ngIf="!submitted">
       <input type="email" [(ngModel)]="email" i18n-placeholder="@@EmailAddress" placeholder="Email address" (keyup.enter)="submit()"
@@ -10,12 +10,12 @@
       <div class="gap-bot-thin" *ngIf="showFull">
         <label class="gdpr-consent {{ blink_box ? 'blink_box' : ''}}" (click)="checkboxListener()">
           <input type="checkbox" [(ngModel)]="consented" (change)="checkboxListener()">
-          <span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
+          <span i18n>I consent to receiving further instructions at the email address I submitted above.</span>
         </label>
       </div>
       <button (click)="submit()" class="btn-primary btn-fixed center-block newsletter-signup__button gap-bot-thin"
-        [class.loading]="this.in_progress" i18n="@@Newsletter__Subscribe">Sign Up</button>
-      <p class="medium" i18n="@@Newsletter__Description">Give feedback and contribute on <a href="https://github.com/OrchidTechnologies" target="_blank">GitHub</a></p>
+        [class.loading]="this.in_progress" i18n>Sign Up</button>
+      <p class="medium" i18n>Give feedback and contribute on <a href="https://github.com/OrchidTechnologies" target="_blank">GitHub</a></p>
     </div>
     <ng-container *ngIf="(error != '')">
       <p id="error" [innerHTML]="error"></p>

@@ -24,6 +24,13 @@
         "build:static:zh": "BUILD_LOCALE=zh node import-blog.js && BUILD_LOCALE=zh yarn run build:ssr:locale",
         "build:static:id": "BUILD_LOCALE=id node import-blog.js && BUILD_LOCALE=id yarn run build:ssr:locale",
         "build:static:ru": "BUILD_LOCALE=ru node import-blog.js && BUILD_LOCALE=ru yarn run build:ssr:locale",
+        "build:static:es": "BUILD_LOCALE=es node import-blog.js && BUILD_LOCALE=es yarn run build:ssr:locale",
+        "build:static:fr": "BUILD_LOCALE=fr node import-blog.js && BUILD_LOCALE=fr yarn run build:ssr:locale",
+        "build:static:hi": "BUILD_LOCALE=hi node import-blog.js && BUILD_LOCALE=hi yarn run build:ssr:locale",
+        "build:static:it": "BUILD_LOCALE=it node import-blog.js && BUILD_LOCALE=it yarn run build:ssr:locale",
+        "build:static:pt": "BUILD_LOCALE=pt node import-blog.js && BUILD_LOCALE=pt yarn run build:ssr:locale",
+        "build:static:tr": "BUILD_LOCALE=tr node import-blog.js && BUILD_LOCALE=tr yarn run build:ssr:locale",
+        "build:static:pt-BR": "BUILD_LOCALE=pt-BR node import-blog.js && BUILD_LOCALE=pt-BR yarn run build:ssr:locale",
         "ngx-extractor": "ngx-extractor"
     },
     "private": true,
