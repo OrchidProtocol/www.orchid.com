@@ -49,20 +49,20 @@ class Component extends React.Component {
 		})
 		try {
 
-			let response = await fetch("https://evy3f9g1ki.execute-api.us-west-2.amazonaws.com/Production/contact",
-				{
-					headers: {
-						'Accept': 'application/json',
-						'Content-Type': 'application/json',
-					},
-					method: "POST",
-					body: JSON.stringify({
-						"name": this.form.name.value,
-						"email": this.form.email.value,
-						"subject": this.form.subject.value,
-						"message": this.form.message.value,
-					})
+			/*let response =*/ await fetch("https://evy3f9g1ki.execute-api.us-west-2.amazonaws.com/Production/contact",
+			{
+				headers: {
+					'Accept': 'application/json',
+					'Content-Type': 'application/json',
+				},
+				method: "POST",
+				body: JSON.stringify({
+					"name": this.form.name.value,
+					"email": this.form.email.value,
+					"subject": this.form.subject.value,
+					"message": this.form.message.value,
 				})
+			})
 			//let data = await response.json();
 			this.in_progress = false;
 			this.setState({
