@@ -13,7 +13,7 @@ const TemplateWrapper = ({ children, bodyClass }) => {
 			<Helmet>
 				<html lang={process.env.GATSBY_TARGET_LANG} />
 				<body className={bodyClass} />
-				<link rel="icon" type="image/ico" href="/img/favicon.ico" />
+				<link rel="icon" type="image/ico" href="/favicon.ico" />
 				<link rel="manifest" href="/manifest.webmanifest" />
 				<meta name="theme-color" content="#5f45ba" />
 			</Helmet>
