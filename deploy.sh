@@ -26,8 +26,7 @@ function build-site() {
         yarn run build:static
     else
         yarn run build:static:${language}
-	fi
-		echo "Built Site."
+	done;
 }
 
 function get-distribution-id() {
@@ -107,15 +106,15 @@ function main() {
 
     if [ -z ${language+x} ]; then  # If a language was NOT specified with -l
         if [ "$stage" == "staging" ]; then
-            local bucket="orchid.dev"
+            local bucket="www.orchid.dev"
         elif [ "$stage" == "production" ]; then
-            local bucket="orchid.com"
+            local bucket="www.orchid.com"
         fi
     else  # A language was specified
         if [ "$stage" == "staging" ]; then
-            local bucket="${language}.orchid.dev"
+            local bucket="www.${language}.orchid.dev"
         elif [ "$stage" == "production" ]; then
-            local bucket="${language}.orchid.com"
+            local bucket="www.${language}.orchid.com"
         fi
     fi
 
