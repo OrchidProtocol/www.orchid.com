@@ -63,7 +63,7 @@ class Component extends React.Component {
 						"message": this.form.message.value,
 					})
 				})
-			let data = await response.json();
+			//let data = await response.json();
 			this.in_progress = false;
 			this.setState({
 				in_progress: false,
