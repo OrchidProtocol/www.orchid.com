@@ -4,6 +4,7 @@ import { css } from '@emotion/react'
 import { Location } from '@reach/router'
 
 import Navbar from './Navbar.js'
+import '../../scss/styles.scss';
 import './Layout.scss'
 
 const TemplateWrapper = ({ children, bodyClass }) => {
