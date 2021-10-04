@@ -19,7 +19,7 @@ function build-site() {
     echo "Building Site..."
     yarn
 
-    built_files=dist/static
+    built_files=public
     # Build the static site...
     rm -rf ${built_files}
     if [ -z "$language" ]; then
