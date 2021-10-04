@@ -50,6 +50,9 @@
 
 	.contact-form-container {
 		display: none;
+		&.in_progress {
+			opacity: 0.25;
+		}
 	}
 	.contact-form-disabled {
 		position: relative;

@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './contact.scss'
+import ContactForm from '../components/ContactForm';
 
 const Page = () => (
 	<Layout>
@@ -78,58 +79,7 @@ const Page = () => (
 					</div>
 				</div>
 
-				<form className="contact-form-container">
-					<div className="contact-form-input-wrapper">
-						<input
-							type="text"
-							name="name"
-							placeholder="Your Name"
-							i18n-placeholder="@@ContactForm__NamePlaceholder"
-							required />
-					</div>
-
-					<div className="contact-form-input-wrapper">
-						<input
-							type="email"
-							name="email"
-							placeholder="Your Email"
-							i18n-placeholder="@@ContactForm__EmailPlaceholder"
-
-							required />
-					</div>
-
-					<div className="contact-form-input-wrapper">
-						<input
-							type="text"
-							name="subject"
-							placeholder="Subject"
-							i18n-placeholder="@@ContactForm__SubjectPlaceholder"
-							required />
-					</div>
-
-					<div className="contact-form-input-wrapper">
-						<textarea
-							name="message"
-							placeholder="Enter your message..."
-							i18n-placeholder="@@ContactForm__MessagePlaceholder"
-							required></textarea>
-					</div>
-
-					<div className="contact-form-error contact-form-message">
-					</div>
-					<div className="contact-form-error contact-form-message" i18n="@@ContactForm__RequiredFields">
-						Required fields are missing
-					</div>
-					<div className="contact-form-error contact-form-message" i18n="@@ContactForm__UnknownError">
-						There was an unknown error, your message may not have been sent
-					</div>
-					<div className="contact-form-success contact-form-message" i18n="@@ContactForm__Success">
-						Your message has been sent
-					</div>
-
-					<button className="btn-primary" i18n="@@ContactForm__SubmitButton"> Submit</button>
-					<button i18n="@@ContactForm__ClearButton"> Clear</button>
-				</form>
+				<ContactForm />
 			</div>
 		</div>
 	</Layout>
