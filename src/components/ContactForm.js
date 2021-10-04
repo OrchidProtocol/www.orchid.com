@@ -29,8 +29,8 @@ class Component extends React.Component {
 		if (e) e.preventDefault();
 		this.setState({
 			in_progress: false,
-			error: false,
-			success: false,
+			error: e !== undefined ? false : this.state.error,
+			success: e !== undefined ? false : this.state.success,
 		})
 		this.form.name.value = '';
 		this.form.email.value = '';
@@ -57,14 +57,13 @@ class Component extends React.Component {
 					},
 					method: "POST",
 					body: JSON.stringify({
-						"name": this.name,
-						"email": this.email,
-						"subject": this.subject,
-						"message": this.message,
+						"name": this.form.name.value,
+						"email": this.form.email.value,
+						"subject": this.form.subject.value,
+						"message": this.form.message.value,
 					})
 				})
 			let data = await response.json();
-			console.log(data);
 			this.in_progress = false;
 			this.setState({
 				in_progress: false,
