@@ -7,6 +7,7 @@
 		"build": "npm run build:static",
 		"build:light": "TARGET_LANG=en node init-env.js && gatsby build && node post-build.js",
 		"build:static": "TARGET_LANG=en node init-env.js && node import-blog.js && gatsby clean && gatsby build && node post-build.js",
+		"build:static:en": "npm run built:static",
 		"develop": "npm run clean && gatsby develop",
 		"serve": "node server.js",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
