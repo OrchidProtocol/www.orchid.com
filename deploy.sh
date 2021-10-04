@@ -26,6 +26,8 @@ function build-site() {
         yarn run build:static
     else
         yarn run build:static:${language}
+	fi
+		echo "Built Site."
 }
 
 function get-distribution-id() {
