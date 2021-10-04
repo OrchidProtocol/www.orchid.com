@@ -26,12 +26,6 @@ function build-site() {
         yarn run build:static
     else
         yarn run build:static:${language}
-    fi
-    (cd ${built_files};
-     for file in $(echo *.html); do
-         mkdir -p $(basename ${file} .html)
-         cp ${file} $(basename ${file} .html)/index.html
-     done;)
 }
 
 function get-distribution-id() {
