@@ -165,7 +165,13 @@ const Page = () => (
 			<title>Priv8 | Orchid</title>
 			<meta name="description" content="Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders." />
 			<meta name="og:image" content="https://orchid.com/img/priv8/priv8_social.png" />
-			<body className="webinar-page" />
+			<body className="priv8-page" />
+			<style>{`
+				body {
+					margin: 0;
+					width: 100%;
+				}
+			`}</style>
 		</Helmet>
 		<div css={css`
 			position: absolute;
@@ -193,7 +199,7 @@ const Page = () => (
 					`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
 				</a>
 				<div css={css`
-					a {
+					& > a {
 						text-decoration: none;
 						color: #FFFFFF;
 						margin: 0 1rem;
