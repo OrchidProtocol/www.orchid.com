@@ -52,7 +52,7 @@ class Component extends React.Component {
 
 	submit(e) {
 		e.preventDefault();
-		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(e.target.email.value || "") + (this.priv8 ? "&priv8=true" : "");
+		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(e.target.email.value || "") + (this.props.priv8 ? "&priv8=true" : "");
 
 		if (this.in_progress) return;
 
@@ -91,7 +91,7 @@ class Component extends React.Component {
 						this.setState({
 							in_progress: false,
 							submitted: true,
-							success: "Great! Now please check your email and confirm.",
+							success: "Great! Now please check your email and confirm your subscription.",
 						})
 					} else if (response["detail"]) {
 						this.setState({
@@ -112,16 +112,16 @@ class Component extends React.Component {
 
 	render() {
 		return (
-			<div className="newsletter-core">
+			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '')}>
 				<form onSubmit={this.submit.bind(this)}>
 					<div style={{ display: this.state.submitted ? 'none' : '' }}>
 						<input type="email" name="email" required i18n-placeholder="@@EmailAddress" placeholder="Email address" className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
-						<div className="gap-bot-thin">
+						{!this.props.priv8 ? <div className="gap-bot-thin">
 							<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
 								<input name="consent" required type="checkbox" />
 								<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
 							</label>
-						</div>
+						</div> : <></>}
 						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
 							<span>Subscribe</span>
 						</button>
