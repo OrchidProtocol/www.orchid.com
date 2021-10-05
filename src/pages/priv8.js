@@ -16,16 +16,23 @@ const Container = styled.div`
 	flex-direction: row;
 
 	@media (max-width: 1200px) {
-		padding: 4rem 2rem;
+		padding: 2rem 2rem;
 		flex-direction: column;
 	}
 `;
 
 const Button = styled.a`
+	--height: 52px;
+	--font: 20px;
+
+	font-size: var(--font);
 	border: 2px solid #FFFFFF;
-	color: white;
-	border-radius: 1rem;
-	padding: 0.35rem 2.5rem;
+	color: #000000;
+	border-radius: var(--height);
+	padding: 0 var(--height);
+	line-height: var(--height);
+	display: inline-block;
+	vertical-align: middle;
 	box-sizing: box-border;
 	text-decoration: none;
 
@@ -154,9 +161,11 @@ const Page = () => (
 
 				h2 {
 					font-family: 'BonvenoCF', sans-serif !important;
-					font-size: 60px;
-					@media (max-width: 1200px) {
-						font-size: 24px;
+					font-size: 60px !important;
+				}
+				@media (max-width: 1200px) {
+					h2 {
+						font-size: 30px !important;
 					}
 				}
 
@@ -166,6 +175,7 @@ const Page = () => (
 
 				hr {
 					border-color: var(--purple);
+					width: 90%;
 				}
 
 				img {
@@ -245,8 +255,8 @@ const Page = () => (
 					<p>
 						Priv8 is the premier global forum dedicated to the future of digital privacy. <a href="/">Orchid</a> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
-					<p>
-						<Button href="#register" color="purple">Register</Button>
+					<p css={css`margin-top: 2rem;`}>
+						<Button href="#register" color="purple">Register Now!</Button>
 					</p>
 				</div>
 				<div css={css`
@@ -297,7 +307,11 @@ const Page = () => (
 				}
 			}
 		`}>
-			<Container>
+			<Container css={css`
+				@media (max-width: 1200px) {
+					padding: 4rem 2rem;
+				}
+			`}>
 				<div css={css`
 					transform: translateY(5.5rem);
 					@media (max-width: 1200px) {
@@ -333,13 +347,13 @@ const Page = () => (
 								height: auto;
 							}
 						`}>
-							<a href="">
+							<a href="https://twitter.com/OrchidProtocol">
 								<img src="/img/shared/social-twitter-white.svg" width="30" height="30" alt="Share on Twitter" />
 							</a>
-							<a href="">
+							<a href="https://www.t.me/OrchidOfficial">
 								<img src="/img/shared/social-telegram-white.svg" width="30" height="30" alt="Share on Telegram" />
 							</a>
-							<a href="">
+							<a href="https://www.facebook.com/OrchidProtocol">
 								<img src="/img/shared/social-facebook-white.svg" width="30" height="30" alt="Share on Facebook" />
 							</a>
 						</div>
@@ -374,23 +388,24 @@ const Page = () => (
 					<div css={css`
 						@media (min-width: 1200px) {
 							margin-top: 2rem;
-							display: flex;
-							p {
-								margin: 0;
-								padding-left: 1rem;
-								max-width: 15rem;
-								text-align: left;
-							}
 						}
 					`}>
 						<h2>REGISTER</h2>
-						<p>Get updates about this conference, and nothing else.</p>
+						<p>
+							Get email updates about the conference, instructions on how to watch.
+							<br />
+							And nothing else.
+						</p>
 					</div>
 					<NewsletterSignupCore priv8={true} />
 				</div>
 			</Container>
 		</div>
-		<Container>
+		<Container css={css`
+			@media (max-width: 1200px) {
+				padding: 0rem;
+			}
+		`}>
 			<div css={css`
 				text-align: center;
 				max-width: 100%;
