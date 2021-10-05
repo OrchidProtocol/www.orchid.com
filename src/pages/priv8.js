@@ -9,6 +9,8 @@ const Container = styled.div`
 	justify-content: center;
 	align-items: center;
 	padding: 2rem 4rem;
+	max-width: 1200px;
+	margin: auto;
 `;
 
 const Page = () => (
@@ -67,6 +69,51 @@ const Page = () => (
 			<meta name="og:image" content="https://orchid.com/img/priv8/priv8_social.png" />
 			<body className="webinar-page" />
 		</Helmet>
+		<div css={css`
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem;
+			max-width: 1440px;
+			margin: auto;
+		`}>
+			<a className="inline-block" href="/">
+				<img css={css`
+					@media (max-width: 760px) {
+						display: none;
+					}
+				`} width="93" height="24" src="/img/shared/orchid-logo-text-white.svg" alt="Home" className="no-mb" />
+				<img css={css`
+					display: none;
+					@media (max-width: 760px) {
+						display: block;
+					}
+				`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
+			</a>
+			<div css={css`
+				a {
+					text-decoration: none;
+					color: #FFFFFF;
+					margin: 0 1rem;
+					font-weight: 500;
+				}
+			`}>
+				<a href="#calendar">
+					ADD TO CALENDAR
+				</a>
+				<a href="/contact">
+					CONTACT
+				</a>
+				<a href="#register" css={css`
+					border: 2px solid #FFFFFF;
+					border-radius: 1rem;
+					padding: 0.35rem 2.5rem;
+					box-sizing: box-border;
+				`}>
+					Register
+				</a>
+			</div>
+		</div>
 
 		<div css={css`
 			background: black;
