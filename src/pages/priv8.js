@@ -156,6 +156,10 @@ const Page = () => (
 		img {
 			max-width: 100%;
 		}
+
+		a {
+			color: var(--purple);
+		}
 	`}>
 		<Helmet>
 			<title>Priv8 | Orchid</title>
@@ -227,7 +231,7 @@ const Page = () => (
 						<h3 css={css`font-size: 28px;`}>NOV 15, 2021</h3>
 					</BarContainer>
 					<p>
-						Priv8 is the premier global forum dedicated to the future of digital privacy. Orchid and Handshake have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
+						Priv8 is the premier global forum dedicated to the future of digital privacy. <a href="/">Orchid</a> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
 					<p>
 						<Button href="#register" color="purple">Register</Button>
@@ -359,7 +363,7 @@ const Page = () => (
 				`}>
 					<h2>PREVIOUSLY @ PRIV8</h2>
 					<p>
-						The first Priv8 Virtual Privacy Summit took place in March 2021. That event featured renowned whistleblower Edward Snowden, who left the audience with this exhortation: “Don’t stay safe, stay free.” He was joined by Taiwan’s Audrey Tang and the Electronic Frontier Foundation’s Cindy Cohn, among many others. Read the full recap or rewatch the live stream here.
+						The first Priv8 Virtual Privacy Summit took place in March 2021. That event featured renowned whistleblower Edward Snowden, who left the audience with this exhortation: “Don’t stay safe, stay free.” He was joined by Taiwan’s Audrey Tang and the Electronic Frontier Foundation’s Cindy Cohn, among many others. Read the <a href="https://blog.orchid.com/highlights-from-priv8-orchids-virtual-privacy-summit/">full recap</a> or <a href="https://www.youtube.com/watch?v=Y_mm01n4T9c&list=PLKT-Ti431yd5vlZkMV3cvOnxBeLl1w0jp">rewatch the live stream.</a>
 					</p>
 				</div>
 				<div css={css`
@@ -410,7 +414,7 @@ const Page = () => (
 					max-width: 960px;
 				`}>
 					<p>
-						If you are interested in attending as a member of the media, or for any other inquiries, please contact priv8@orchid.com
+						If you are interested in attending as a member of the media, or for any other inquiries, please contact <a href="mailto:priv8@orchid.com">priv8@orchid.com</a>
 					</p>
 				</div>
 			</Container>
