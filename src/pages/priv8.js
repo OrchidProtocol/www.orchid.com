@@ -4,6 +4,8 @@ import { Helmet } from 'react-helmet'
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
+import NewsletterSignupCore from '../components/newsletter-signup-core';
+
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
@@ -150,8 +152,12 @@ const Page = () => (
 					color: white;
 				}
 
-				h2, h2:not(.secondary) {
-					font-family: 'BonvenoCF', sans-serif;
+				h2 {
+					font-family: 'BonvenoCF', sans-serif !important;
+					font-size: 60px;
+					@media (max-width: 1200px) {
+						font-size: 24px;
+					}
 				}
 
 				p {
@@ -182,6 +188,7 @@ const Page = () => (
 				padding: 1rem;
 				max-width: 1440px;
 				margin: auto;
+				font-size: 16px;
 			`}>
 				<a className="inline-block" href="/">
 					<img css={css`
@@ -203,15 +210,16 @@ const Page = () => (
 						margin: 0 1rem;
 						font-weight: 500;
 					}
-					
-					@media (max-width: 1200px) {
-						display: none;
+					.no-mb {
+						@media (max-width: 760px) {
+							display: none;
+						}
 					}
 				`}>
-					<a href="#calendar">
+					<a href="#calendar" className="no-mb">
 						ADD TO CALENDAR
 					</a>
-					<a href="/contact">
+					<a href="/contact" className="no-mb">
 						CONTACT
 					</a>
 					<Button href="#register">
@@ -356,6 +364,41 @@ const Page = () => (
 				</div>
 			</Container>
 		</div>
+
+		<div css={css`
+			background: black;
+			text-align: center;
+		`} name="register" id="register">
+			<Container>
+				<div>
+					<div css={css`
+						@media (min-width: 1200px) {
+							margin-top: 2rem;
+							display: flex;
+							p {
+								margin: 0;
+								padding-left: 1rem;
+								max-width: 15rem;
+								text-align: left;
+							}
+						}
+					`}>
+						<h2>REGISTER</h2>
+						<p>Get updates about this conference, and nothing else.</p>
+					</div>
+					<NewsletterSignupCore priv8={true} />
+				</div>
+			</Container>
+		</div>
+		<Container>
+			<div css={css`
+				text-align: center;
+				max-width: 100%;
+				width: 960px;
+			`}>
+				<hr />
+			</div>
+		</Container>
 
 		<div css={css`
 			background: #000000;

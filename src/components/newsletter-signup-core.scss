@@ -25,7 +25,7 @@
 	.newsletter-signup__button {
 		&.btn-secondary {
 			font-size: 1rem;
-			max-width: 9.5rem;
+			max-width: 12rem;
 		}
 		&.loading {
 			&:after {
@@ -69,6 +69,30 @@
 
 		@include not-mobile {
 			margin-top: 3.5rem;
+		}
+	}
+
+	&.priv8 {
+		text-align: center;
+		input[type="email"] {
+			border-color: #60ebff;
+			color: #ffffff;
+		}
+		.newsletter-signup__button {
+			&.loading {
+				&:after {
+					border-top: 2px solid #60ebff;
+				}
+			}
+		}
+		.newsletter-signup__button.btn-secondary {
+			color: #ffffff;
+			border-color: #60ebff;
+			&:hover {
+				border-color: #60ebff;
+				background: #60ebff;
+				color: #000000;
+			}
 		}
 	}
 }
