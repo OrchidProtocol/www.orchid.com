@@ -2,6 +2,11 @@
 @import "orc_config";
 @import "media_queries";
 .newsletter-core {
+	&.in_progress {
+		filter: saturate(0);
+		opacity: 0.9;
+		cursor: wait;
+	}
 	#error,
 	#success {
 		margin: 0 auto 0 auto;
@@ -86,11 +91,12 @@
 			}
 		}
 		.newsletter-signup__button.btn-secondary {
-			color: #ffffff;
-			border-color: #60ebff;
+			border-color: #eb53e2;
+			background: #eb53e2;
+			color: #000000;
 			&:hover {
-				border-color: #60ebff;
-				background: #60ebff;
+				border-color: #eb53e2;
+				background: #eb53e2;
 				color: #000000;
 			}
 		}

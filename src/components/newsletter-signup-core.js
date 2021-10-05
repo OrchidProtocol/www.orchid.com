@@ -60,6 +60,7 @@ class Component extends React.Component {
 			invalid_email: false,
 			blink_box: false,
 			invalid: false,
+			in_progress: true,
 		}
 
 		if (e.target.email.value === "" || !this.email_test.test(e.target.email.value)) {
@@ -69,7 +70,7 @@ class Component extends React.Component {
 			tempState.invalid_email = false;
 		}
 
-		if (e.target.consent.value !== "on") {
+		if (e.target.consent && e.target.consent.value !== "on") {
 			tempState.blink_box = true;
 			tempState.invalid = true;
 		} else {
@@ -112,7 +113,7 @@ class Component extends React.Component {
 
 	render() {
 		return (
-			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '')}>
+			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '')}>
 				<form onSubmit={this.submit.bind(this)}>
 					<div style={{ display: this.state.submitted ? 'none' : '' }}>
 						<input type="email" name="email" required i18n-placeholder="@@EmailAddress" placeholder="Email address" className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
@@ -123,7 +124,7 @@ class Component extends React.Component {
 							</label>
 						</div> : <></>}
 						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
-							<span>Subscribe</span>
+							<span>{this.props.priv8 ? 'Register' : 'Subscribe'}</span>
 						</button>
 					</div>
 					<div style={{ display: this.state.error ? 'block' : 'none' }}>
