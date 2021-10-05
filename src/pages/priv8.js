@@ -11,10 +11,88 @@ const Container = styled.div`
 	padding: 2rem 4rem;
 	max-width: 1200px;
 	margin: auto;
+	flex-direction: row;
+
+	@media (max-width: 1200px) {
+		padding: 4rem 2rem;
+		flex-direction: column;
+	}
+`;
+
+const Button = styled.a`
+	border: 2px solid #FFFFFF;
+	color: white;
+	border-radius: 1rem;
+	padding: 0.35rem 2.5rem;
+	box-sizing: box-border;
+	text-decoration: none;
+
+	&[color="purple"] {
+		border-color: var(--purple);
+		background: var(--purple);
+	}
+`;
+
+const BarContainer = styled.div`
+	display: flex;
+	align-items: center;
+	margin: 1rem 0;
+	& > * {
+		margin: 0;
+	}
+	&:after {
+		content: "";
+		flex: 1;
+		height: 3px;
+		background-color: #FFFFFF;
+		margin-left: 1rem;
+	}
+`;
+
+const PreviousSpeakerRow = styled.div`
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	text-align: center;
+	max-width: 100%;
+	color: var(--teal);
+	width: 730px;
+	margin: auto;
+	@media (max-width: 1200px) {
+		justify-content: center;
+		& > div {
+			margin: auto;
+		}
+	}
+	& > div {
+		max-width: 12rem;
+		& > img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&[data-size="small"] {
+		width: 500px;
+		& > div {
+			max-width: 8rem;
+		}
+	}
 `;
 
 const Page = () => (
 	<div css={css`
+		--purple: #EB53E2;
+		--teal: #60EBFF;
+
+		@font-face {
+			font-family: 'BonvenoCF';
+			font-style: normal;
+			font-weight: 400;
+			font-display: swap;
+			src: url('/fonts/BonvenoCF/BonvenoCF-Light.otf');
+		}
+
 		/* latin-ext */
 		@font-face {
 			font-family: 'Maven Pro';
@@ -62,6 +140,22 @@ const Page = () => (
 			font-family: 'Maven Pro', sans-serif;
 			color: white;
 		}
+
+		h2, h2:not(.secondary) {
+			font-family: 'BonvenoCF', sans-serif;
+		}
+
+		p {
+			margin: 1rem 0;
+		}
+
+		hr {
+			border-color: var(--purple);
+		}
+
+		img {
+			max-width: 100%;
+		}
 	`}>
 		<Helmet>
 			<title>Priv8 | Orchid</title>
@@ -70,87 +164,187 @@ const Page = () => (
 			<body className="webinar-page" />
 		</Helmet>
 		<div css={css`
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			padding: 1rem;
-			max-width: 1440px;
-			margin: auto;
+			position: absolute;
+			width: 100%;
 		`}>
-			<a className="inline-block" href="/">
-				<img css={css`
-					@media (max-width: 760px) {
+			<div css={css`
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 1rem;
+				max-width: 1440px;
+				margin: auto;
+			`}>
+				<a className="inline-block" href="/">
+					<img css={css`
+						@media (max-width: 760px) {
+							display: none;
+						}
+					`} width="93" height="24" src="/img/shared/orchid-logo-text-white.svg" alt="Home" className="no-mb" />
+					<img css={css`
+						display: none;
+						@media (max-width: 760px) {
+							display: block;
+						}
+					`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
+				</a>
+				<div css={css`
+					a {
+						text-decoration: none;
+						color: #FFFFFF;
+						margin: 0 1rem;
+						font-weight: 500;
+					}
+					
+					@media (max-width: 1200px) {
 						display: none;
 					}
-				`} width="93" height="24" src="/img/shared/orchid-logo-text-white.svg" alt="Home" className="no-mb" />
-				<img css={css`
-					display: none;
-					@media (max-width: 760px) {
-						display: block;
-					}
-				`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
-			</a>
-			<div css={css`
-				a {
-					text-decoration: none;
-					color: #FFFFFF;
-					margin: 0 1rem;
-					font-weight: 500;
-				}
-			`}>
-				<a href="#calendar">
-					ADD TO CALENDAR
-				</a>
-				<a href="/contact">
-					CONTACT
-				</a>
-				<a href="#register" css={css`
-					border: 2px solid #FFFFFF;
-					border-radius: 1rem;
-					padding: 0.35rem 2.5rem;
-					box-sizing: box-border;
 				`}>
-					Register
-				</a>
+					<a href="#calendar">
+						ADD TO CALENDAR
+					</a>
+					<a href="/contact">
+						CONTACT
+					</a>
+					<Button href="#register">
+						Register
+					</Button>
+				</div>
 			</div>
 		</div>
 
 		<div css={css`
 			background: black;
+			background: linear-gradient(212.29deg, #000000 24.75%, #3B146A 93.66%);
+			padding-top: 4rem; /*Making space for the navbar*/
 		`}>
 			<Container>
-				<div>
+				<div css={css`
+					max-width: 600px;
+				`}>
 					<img src="/img/priv8/priv8-logo.svg" width="480" height="197" alt="Priv8 Online" />
-					<h3>NOV 15, 2021</h3>
-					<p>Priv8 is the premier global forum dedicated to the future of digital privacy. Orchid and Handshake have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.</p>
-				</div>
-				<div>
+					<BarContainer css={css`max-width: 480px;`}>
+						<h3 css={css`font-size: 28px;`}>NOV 15, 2021</h3>
+					</BarContainer>
 					<p>
-						Featuring:
-						Firstname Lastname
-						Dr. Speaker F. Longtitle
-						Stagetalker McMicrophone
+						Priv8 is the premier global forum dedicated to the future of digital privacy. Orchid and Handshake have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
+					<p>
+						<Button href="#register" color="purple">Register</Button>
+					</p>
+				</div>
+				<div css={css`
+					img {
+						width: 535px;
+						height: auto;
+						max-width: 100%;
+					}
+				`}>
+					<picture>
+						<source srcSet="/img/priv8/speaker-highlight.avif" type="image/avif" />
+						<source srcSet="/img/priv8/speaker-highlight.webp" type="image/webp" />
+						<img src="/img/priv8/speaker-highlight.png" width="1070" height="1457" alt="Featuring Keynote Speaker Glenn Greenwald" />
+					</picture>
 				</div>
 			</Container>
 		</div>
 
 		<div css={css`
-			background: #EB53E2;
+			position: relative;
+			background: var(--purple);
+			text-align: right;
 			color: #000000;
+			h2, h2:not(.secondary) {
+				color: #000000;
+			}
+
+			&:before, &:after {
+				background: var(--teal);
+				height: 2px;
+				width: 40%;
+				content: "";
+				position: absolute;
+				right: 0;
+				top: 4rem;
+			}
+			&:after {
+				top: unset;
+				width: 60%;
+				bottom: 4rem;
+			}
+			@media (max-width: 1200px) {
+				&:after {
+					bottom: 2rem;
+				}
+				&:before {
+					top: 2rem;
+				}
+			}
 		`}>
 			<Container>
-				<div>
+				<div css={css`
+					transform: translateY(5.5rem);
+					@media (max-width: 1200px) {
+						display: none;
+					}
+				`}>
 					<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
 				</div>
-				<div>
+				<div css={css`
+					padding: 4rem 0;
+					@media (max-width: 1200px) {
+						padding: 0;
+					}
+					flex-grow: 1;
+				`}>
 					<h2>THE FUTURE OF PRIVACY</h2>
-					<p>
-						Corporations and governments continue to test the limits of individual privacy, while powerful technology companies hold greater sway over global commerce, public policy, and media narratives than ever before.
-					</p>
-					<p>
-						Priv8 brings together leading thinkers across a series of keynotes and panels covering a full spectrum of privacy-related topics. Speakers will discuss issues including the rising tide of financial surveillance, privacy in public policy, corporate control over individual information, and tension between individual rights and public health.
-					</p>
+					<div css={css`
+						max-width: 640px;
+						margin-left: auto;
+					`}>
+						<p>
+							Corporations and governments continue to test the limits of individual privacy, while powerful technology companies hold greater sway over global commerce, public policy, and media narratives than ever before.
+						</p>
+						<p>
+							Priv8 brings together leading thinkers across a series of keynotes and panels covering a full spectrum of privacy-related topics. Speakers will discuss issues including the rising tide of financial surveillance, privacy in public policy, corporate control over individual information, and tension between individual rights and public health.
+						</p>
+						<div css={css`
+							a {
+								margin: 0 0.5rem;
+							}
+							img {
+								width: 2rem;
+								height: auto;
+							}
+						`}>
+							<a href="">
+								<img src="/img/shared/social-twitter-white.svg" width="30" height="30" alt="Share on Twitter" />
+							</a>
+							<a href="">
+								<img src="/img/shared/social-telegram-white.svg" width="30" height="30" alt="Share on Telegram" />
+							</a>
+							<a href="">
+								<img src="/img/shared/social-facebook-white.svg" width="30" height="30" alt="Share on Facebook" />
+							</a>
+						</div>
+					</div>
+
+					<div css={css`
+						display: none;
+						position: relative;
+						@media (max-width: 1200px) {
+							display: flex;
+							justify-content: space-between;
+						}
+						img {
+							position: absolute;
+							top: -3rem;
+							width: 5rem;
+							height: auto;
+						}
+					`}>
+						<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
+					</div>
 				</div>
 			</Container>
 		</div>
@@ -159,18 +353,72 @@ const Page = () => (
 			background: #000000;
 		`}>
 			<Container>
-				<div>
+				<div css={css`
+					width: 430px;
+					max-width: 100%;
+				`}>
 					<h2>PREVIOUSLY @ PRIV8</h2>
 					<p>
 						The first Priv8 Virtual Privacy Summit took place in March 2021. That event featured renowned whistleblower Edward Snowden, who left the audience with this exhortation: “Don’t stay safe, stay free.” He was joined by Taiwan’s Audrey Tang and the Electronic Frontier Foundation’s Cindy Cohn, among many others. Read the full recap or rewatch the live stream here.
 					</p>
 				</div>
+				<div css={css`
+					width: 100%;
+				`}>
+					<PreviousSpeakerRow data-size="big">
+						<div>
+							<img src="/img/priv8/previous/Snowden.png" width="488" height="488" alt="Edward Snowden" />
+							<p>Edward Snowden</p>
+						</div>
+						<div>
+							<img src="/img/priv8/previous/Audrey.png" width="488" height="488" alt="Audrey Tang" />
+							<p>Audrey Tang</p>
+						</div>
+						<div>
+							<img src="/img/priv8/previous/Zooko.png" width="488" height="488" alt="Zooko Wilcox" />
+							<p>Zooko Wilcox</p>
+						</div>
+					</PreviousSpeakerRow>
+					<PreviousSpeakerRow data-size="small">
+						<div>
+							<img src="/img/priv8/previous/Cindy.png" width="286" height="286" alt="Cindy Cohn" />
+							<p>Cindy Cohn</p>
+						</div>
+						<div>
+							<img src="/img/priv8/previous/Vinay.png" width="286" height="286" alt="Vinay Gupta" />
+							<p>Vinay Gupta</p>
+						</div>
+						<div>
+							<img src="/img/priv8/previous/Brian.png" width="286" height="286" alt="Brian Behlendorf" />
+							<p>Brian Behlendorf</p>
+						</div>
+					</PreviousSpeakerRow>
+				</div>
+			</Container>
+			<Container>
+				<div css={css`
+					text-align: center;
+					max-width: 100%;
+					width: 960px;
+				`}>
+					<hr />
+				</div>
+			</Container>
+			<Container>
+				<div css={css`
+					text-align: center;
+					max-width: 960px;
+				`}>
+					<p>
+						If you are interested in attending as a member of the media, or for any other inquiries, please contact priv8@orchid.com
+					</p>
+				</div>
 			</Container>
 			<Container>
 				<div>
-					<hr />
-					<p>If you are interested in attending as a member of the media, or for any other inquiries, please contact priv8@orchid.com</p>
-					<a href="#register">Register</a>
+					<p>
+						<Button href="#register" color="purple">Register</Button>
+					</p>
 				</div>
 			</Container>
 			<Container>
