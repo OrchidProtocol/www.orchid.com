@@ -84,82 +84,9 @@ const Page = () => (
 	<div css={css`
 		--purple: #EB53E2;
 		--teal: #60EBFF;
-
-		@font-face {
-			font-family: 'BonvenoCF';
-			font-style: normal;
-			font-weight: 400;
-			font-display: swap;
-			src: url('/fonts/BonvenoCF/BonvenoCF-Light.otf');
-		}
-
-		/* latin-ext */
-		@font-face {
-			font-family: 'Maven Pro';
-			font-style: normal;
-			font-weight: 400;
-			font-display: swap;
-			src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Maven Pro';
-			font-style: normal;
-			font-weight: 400;
-			font-display: swap;
-			src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-		/* latin-ext */
-		@font-face {
-			font-family: 'Maven Pro';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format('woff2');
-			unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-		}
-		/* latin */
-		@font-face {
-			font-family: 'Maven Pro';
-			font-style: normal;
-			font-weight: 500;
-			font-display: swap;
-			src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');
-			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-		}
-
-		font-family: 'Maven Pro', sans-serif;
-
 		background: #000000;
 		color: #FFFFFF;
 		min-height: 100vh;
-
-		h1, h2, h3, h4, h1:not(.secondary), h2:not(.secondary), h3:not(.secondary), h4:not(.secondary) {
-			font-family: 'Maven Pro', sans-serif;
-			color: white;
-		}
-
-		h2, h2:not(.secondary) {
-			font-family: 'BonvenoCF', sans-serif;
-		}
-
-		p {
-			margin: 1rem 0;
-		}
-
-		hr {
-			border-color: var(--purple);
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		a {
-			color: var(--purple);
-		}
 	`}>
 		<Helmet>
 			<title>Priv8 | Orchid</title>
@@ -167,9 +94,80 @@ const Page = () => (
 			<meta name="og:image" content="https://orchid.com/img/priv8/priv8_social.png" />
 			<body className="priv8-page" />
 			<style>{`
+				@font-face {
+					font-family: 'BonvenoCF';
+					font-style: normal;
+					font-weight: 400;
+					font-display: swap;
+					src: url('/fonts/BonvenoCF/BonvenoCF-Light.otf');
+				}
+
+				/* latin-ext */
+				@font-face {
+					font-family: 'Maven Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-display: swap;
+					src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format('woff2');
+					unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+				}
+				/* latin */
+				@font-face {
+					font-family: 'Maven Pro';
+					font-style: normal;
+					font-weight: 400;
+					font-display: swap;
+					src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');
+					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+				}
+				/* latin-ext */
+				@font-face {
+					font-family: 'Maven Pro';
+					font-style: normal;
+					font-weight: 500;
+					font-display: swap;
+					src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3Gw2QIAFg.woff2) format('woff2');
+					unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+				}
+				/* latin */
+				@font-face {
+					font-family: 'Maven Pro';
+					font-style: normal;
+					font-weight: 500;
+					font-display: swap;
+					src: url(/fonts/MavenPro/7Au9p_AqnyWWAxW2Wk3GzWQI.woff2) format('woff2');
+					unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+				}
+
 				body {
 					margin: 0;
 					width: 100%;
+					font-family: 'Maven Pro', sans-serif;
+				}
+
+				h1, h2, h3, h4, h1:not(.secondary), h2:not(.secondary), h3:not(.secondary), h4:not(.secondary) {
+					font-family: 'Maven Pro', sans-serif;
+					color: white;
+				}
+
+				h2, h2:not(.secondary) {
+					font-family: 'BonvenoCF', sans-serif;
+				}
+
+				p {
+					margin: 1rem 0;
+				}
+
+				hr {
+					border-color: var(--purple);
+				}
+
+				img {
+					max-width: 100%;
+				}
+
+				a {
+					color: var(--purple);
 				}
 			`}</style>
 		</Helmet>
