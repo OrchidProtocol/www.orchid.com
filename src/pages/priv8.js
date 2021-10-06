@@ -476,7 +476,7 @@ const Page = () => (
 					max-width: 960px;
 				`}>
 					<p>
-						If you are interested in attending as a member of the media, or for any other inquiries, please contact <a href="mailto:priv8@orchid.com">priv8@orchid.com</a>
+						For any inquiries, please contact <a href="mailto:priv8@orchid.com">priv8@orchid.com</a>
 					</p>
 				</div>
 			</Container>
