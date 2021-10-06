@@ -92,6 +92,7 @@ import { PodcastEp64Component } from './podcast-ep64/podcast.component';
 import { PodcastEp65Component } from './podcast-ep65/podcast.component';
 import { PodcastEp66Component } from './podcast-ep66/podcast.component';
 import { PodcastEp67Component } from './podcast-ep67/podcast.component';
+import { PodcastEp68Component } from './podcast-ep68/podcast.component';
 
 import { NewsletterSignupPage } from './newsletter-signup-page/newsletter-signup-page.component';
 import { WebinarLPComponent } from './webinar-lp/webinar-lp.component';
@@ -277,6 +278,8 @@ export const routes: Routes = [
 			{ path: "podcast/episode-66-jason-rieff", component: PodcastEp66Component },
 			{ path: "podcast/episode-67-brett-solomon.html", redirectTo: "podcast/episode-67-brett-solomon" },
 			{ path: "podcast/episode-67-brett-solomon", component: PodcastEp67Component },
+			{ path: "podcast/episode-68-julian-zawistowski.html", redirectTo: "podcast/episode-68-julian-zawistowski" },
+			{ path: "podcast/episode-68-julian-zawistowski", component: PodcastEp68Component },
 			{ path: "newsletter-signup", component: NewsletterSignupPage },
 			{ path: "newsletter-signup.html", redirectTo: 'newsletter-signup' },
 			{ path: "quiz", component: QuizComponent },
