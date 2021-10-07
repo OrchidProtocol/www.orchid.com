@@ -67,12 +67,6 @@ const PreviousSpeakerRow = styled.div`
 	color: var(--teal);
 	width: 730px;
 	margin: auto;
-	@media (max-width: 1200px) {
-		justify-content: center;
-		& > div {
-			margin: auto;
-		}
-	}
 	& > div {
 		max-width: 12rem;
 		img {
@@ -85,6 +79,24 @@ const PreviousSpeakerRow = styled.div`
 		width: 500px;
 		& > div {
 			max-width: 8rem;
+		}
+	}
+
+	@media (max-width: 1200px) {
+		font-size: 12px;
+		justify-content: center;
+		max-width: unset !important;
+		width: calc(100% + 3rem) !important;
+		margin: 1rem -1.5rem 0;
+		& > div {
+			justify-content: flex-start;
+			margin: 0;
+			max-width: 33%;
+		}
+		&[data-size="small"] {
+			& > div {
+				max-width: 28%;
+			}
 		}
 	}
 `;
@@ -454,12 +466,22 @@ const Page = () => (
 							Priv8 brings together leading thinkers across a series of keynotes and panels covering a full spectrum of privacy-related topics. Speakers will discuss issues including the rising tide of financial surveillance, privacy in public policy, corporate control over individual information, and tension between individual rights and public health.
 						</p>
 						<div css={css`
+							margin-top: 2rem;
 							a {
-								margin: 0 0.5rem;
+								margin: 1rem 0 1rem 1rem;
 							}
 							img {
-								width: 2rem;
+								width: 3rem;
 								height: auto;
+							}
+							@media (max-width: 1200px) {
+								margin-top: 1rem;
+								a {
+									margin: 0 0.5rem;
+								}
+								img {
+									width: 2rem;
+								}
 							}
 						`}>
 							<a href="https://twitter.com/OrchidProtocol">
