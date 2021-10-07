@@ -96,6 +96,9 @@ const HeadlineSpeakerContainer = styled.div`
 	text-align: center;
 	color: var(--teal);
 	font-size: 16px;
+	& > p {
+		margin: 0;
+	}
 	& > b {
 		font-size: 21px;
 	}
