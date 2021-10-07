@@ -75,7 +75,7 @@ const PreviousSpeakerRow = styled.div`
 	}
 	& > div {
 		max-width: 12rem;
-		& > img {
+		img {
 			width: 100%;
 			height: auto;
 		}
@@ -466,29 +466,53 @@ const Page = () => (
 				`}>
 					<PreviousSpeakerRow data-size="big">
 						<div>
-							<img src="/img/priv8/previous/Snowden.png" width="488" height="488" alt="Edward Snowden" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Snowden.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Snowden.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Snowden.png" width="488" height="488" alt="Edward Snowden" />
+							</picture>
 							<p>Edward Snowden</p>
 						</div>
 						<div>
-							<img src="/img/priv8/previous/Audrey.png" width="488" height="488" alt="Audrey Tang" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Audrey.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Audrey.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Audrey.png" width="488" height="488" alt="Audrey Tang" />
+							</picture>
 							<p>Audrey Tang</p>
 						</div>
 						<div>
-							<img src="/img/priv8/previous/Zooko.png" width="488" height="488" alt="Zooko Wilcox" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Zooko.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Zooko.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Zooko.png" width="488" height="488" alt="Zooko Wilcox" />
+							</picture>
 							<p>Zooko Wilcox</p>
 						</div>
 					</PreviousSpeakerRow>
 					<PreviousSpeakerRow data-size="small">
 						<div>
-							<img src="/img/priv8/previous/Cindy.png" width="286" height="286" alt="Cindy Cohn" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Cindy.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Cindy.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Cindy.png" width="286" height="286" alt="Cindy Cohn" />
+							</picture>
 							<p>Cindy Cohn</p>
 						</div>
 						<div>
-							<img src="/img/priv8/previous/Vinay.png" width="286" height="286" alt="Vinay Gupta" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Vinay.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Vinay.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Vinay.png" width="286" height="286" alt="Vinay Gupta" />
+							</picture>
 							<p>Vinay Gupta</p>
 						</div>
 						<div>
-							<img src="/img/priv8/previous/Brian.png" width="286" height="286" alt="Brian Behlendorf" />
+							<picture>
+								<source srcSet="/img/priv8/previous/Brian.avif" type="image/avif" />
+								<source srcSet="/img/priv8/previous/Brian.webp" type="image/webp" />
+								<img src="/img/priv8/previous/Brian.png" width="286" height="286" alt="Brian Behlendorf" />
+							</picture>
 							<p>Brian Behlendorf</p>
 						</div>
 					</PreviousSpeakerRow>
