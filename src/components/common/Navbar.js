@@ -60,7 +60,6 @@ class Navbar extends React.Component {
 						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
 						<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
 						<li className="navbar-language-selector">
-							<input type="checkbox" id="navbar-language-selector-checkbox" name="navbar-language-selector-checkbox" />
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
 								<span i18n="@@NavigationCurrentLanguage">{process.env.GATSBY_TARGET_LANG}</span>
