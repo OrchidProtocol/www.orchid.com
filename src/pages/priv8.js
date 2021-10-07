@@ -103,7 +103,9 @@ const HeadlineSpeakerContainer = styled.div`
 		font-size: 21px;
 	}
 
+	margin: 1rem 0;
 	@media (min-width: 1200px) {
+		margin: 0;
 		text-align: right;
 	}
 
