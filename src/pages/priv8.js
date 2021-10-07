@@ -101,7 +101,7 @@ const HeadlineSpeakerContainer = styled.div`
 			display: block;
 		}
 	}
-	
+
 	position: relative;
 	width: 535px;
 	max-width: 100%;
@@ -115,9 +115,9 @@ const HeadlineSpeakerContainer = styled.div`
 		font-size: 21px;
 	}
 
-	margin: 1rem 0;
+	margin: 1rem auto;
 	@media (min-width: 1200px) {
-		margin: 0;
+		margin: auto;
 		text-align: right;
 	}
 
@@ -129,10 +129,19 @@ const HeadlineSpeakerContainer = styled.div`
 		background-position: center;
 		background-repeat: no-repeat;
 		& > img {
-			width: 75%;
+			width: 90%;
 			height: auto;
 			margin: auto;
 			display: block;
+		}
+	}
+	&[data-role="desktop"] {
+		& > picture {
+			padding: 30% 0;
+			& > img {
+				margin-top: -2rem;
+				width: 90%;
+			}
 		}
 	}
 `;
@@ -312,14 +321,31 @@ const Page = () => (
 			`}>
 				<div css={css`
 					max-width: 100%;
-					width: 600px;
+					width: 680px;
+					margin-right: 2rem;
+					@media (max-width: 1200px) {
+						margin: auto;
+						text-align: center;
+					}
+					& > * {
+						margin-left: auto;
+						margin-right: auto;
+					}
 				`}>
 					<img src="/img/priv8/priv8-logo.svg" width="480" height="197" alt="Priv8 Online" />
 					<Speaker role="mobile" />
-					<BarContainer css={css`max-width: 480px;`}>
+					<BarContainer css={css`
+						max-width: 480px;
+						@media (max-width: 1200px) {
+							max-width: unset;
+						}
+						text-align: left;
+					`}>
 						<h3 css={css`font-size: 28px;`}>NOV 15, 2021</h3>
 					</BarContainer>
-					<p>
+					<p css={css`
+						text-align: left;
+					`}>
 						Priv8 is the premier global forum dedicated to the future of digital privacy. <a href="/">Orchid</a> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
 					<p css={css`
@@ -337,7 +363,7 @@ const Page = () => (
 					position: absolute;
 					bottom: 2rem;
 					left: 50%;
-					margin-left: -570px;
+					margin-left: -600px;
 					font-size: 16px;
 					img {
 						line-height: 28px;
