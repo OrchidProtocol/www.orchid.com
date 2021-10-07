@@ -40,6 +40,10 @@ const Button = styled.a`
 		border-color: var(--purple);
 		background: var(--purple);
 	}
+	@media (max-width: 1200px) {
+		--font: 18px;
+		--height: 40px;
+	}
 `;
 
 const BarContainer = styled.div`
