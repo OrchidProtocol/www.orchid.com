@@ -90,6 +90,18 @@ const PreviousSpeakerRow = styled.div`
 `;
 
 const HeadlineSpeakerContainer = styled.div`
+	&[data-role="mobile"] {
+		display: none;
+	}
+	
+	@media (max-width: 1200px) {
+		display: none;
+		
+		&[data-role="mobile"] {
+			display: block;
+		}
+	}
+	
 	position: relative;
 	width: 535px;
 	max-width: 100%;
@@ -110,7 +122,7 @@ const HeadlineSpeakerContainer = styled.div`
 	}
 
 	& > picture {
-		padding: 16% 0;
+		padding: 25% 0;
 		display: block;
 		background-image: url('/img/priv8/header-shapes.svg');
 		background-size: contain;
@@ -124,6 +136,21 @@ const HeadlineSpeakerContainer = styled.div`
 		}
 	}
 `;
+
+const Speaker = (props) => {
+	return (
+		<HeadlineSpeakerContainer data-role={props.role}>
+			<picture>
+				<source srcSet="/img/priv8/Headliner.avif" type="image/avif" />
+				<source srcSet="/img/priv8/Headliner.webp" type="image/webp" />
+				<img src="/img/priv8/Headliner.png" width="1000" height="1000" alt="Featuring Keynote Speaker Glenn Greenwald" />
+			</picture>
+			<p>Featuring:</p>
+			<p>Pulitzer-Prize winning journalist</p>
+			<b>Glenn Greenwald</b>
+		</HeadlineSpeakerContainer>
+	);
+}
 
 const Page = () => (
 	<div css={css`
@@ -280,31 +307,60 @@ const Page = () => (
 			background: linear-gradient(212.29deg, #000000 24.75%, #3B146A 93.66%);
 			padding-top: 4rem; /*Making space for the navbar*/
 		`}>
-			<Container>
+			<Container css={css`
+				position: relative;
+			`}>
 				<div css={css`
-					max-width: 600px;
+					max-width: 100%;
+					width: 600px;
 				`}>
 					<img src="/img/priv8/priv8-logo.svg" width="480" height="197" alt="Priv8 Online" />
+					<Speaker role="mobile" />
 					<BarContainer css={css`max-width: 480px;`}>
 						<h3 css={css`font-size: 28px;`}>NOV 15, 2021</h3>
 					</BarContainer>
 					<p>
 						Priv8 is the premier global forum dedicated to the future of digital privacy. <a href="/">Orchid</a> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
-					<p css={css`margin-top: 2rem;`}>
+					<p css={css`
+						margin-top: 2rem;
+						@media (max-width: 1200px) {
+							text-align: center;
+						}
+					`}>
 						<Button href="#register" color="purple">Register Now!</Button>
 					</p>
 				</div>
-				<HeadlineSpeakerContainer>
-					<picture>
-						<source srcSet="/img/priv8/Headliner.avif" type="image/avif" />
-						<source srcSet="/img/priv8/Headliner.webp" type="image/webp" />
-						<img src="/img/priv8/Headliner.png" width="1000" height="1000" alt="Featuring Keynote Speaker Glenn Greenwald" />
-					</picture>
-					<p>Featuring:</p>
-					<p>Pulitzer-Prize winning journalist</p>
-					<b>Glenn Greenwald</b>
-				</HeadlineSpeakerContainer>
+
+				<div css={css`
+					color: var(--teal);
+					position: absolute;
+					bottom: 2rem;
+					left: 50%;
+					margin-left: -570px;
+					font-size: 16px;
+					img {
+						line-height: 28px;
+						vertical-align: middle;
+					}
+					span {
+						margin: 0.5rem 1rem;
+						display: inline-block;
+					}
+					
+					@media (max-width: 1200px) {
+						margin: 1rem auto;
+						text-align: center;
+						position: static;
+					}
+				`}>
+					Presented by<br />
+					<a href="/"><img src="/img/priv8/orchid-logo-teal.svg" width="110" height="28" alt="Orchid" /></a>
+					<span>&amp;</span>
+					<a href="https://handshake.org/"><img src="/img/priv8/handshake-logo-teal.svg" width="85" height="27" alt="Orchid" /></a>
+				</div>
+
+				<Speaker role="desktop" />
 			</Container>
 		</div>
 
