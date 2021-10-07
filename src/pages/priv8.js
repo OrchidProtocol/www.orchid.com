@@ -89,6 +89,37 @@ const PreviousSpeakerRow = styled.div`
 	}
 `;
 
+const HeadlineSpeakerContainer = styled.div`
+	position: relative;
+	width: 535px;
+	max-width: 100%;
+	text-align: center;
+	color: var(--teal);
+	font-size: 16px;
+	& > b {
+		font-size: 21px;
+	}
+
+	@media (min-width: 1200px) {
+		text-align: right;
+	}
+
+	& > picture {
+		padding: 16% 0;
+		display: block;
+		background-image: url('/img/priv8/header-shapes.svg');
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		& > img {
+			width: 75%;
+			height: auto;
+			margin: auto;
+			display: block;
+		}
+	}
+`;
+
 const Page = () => (
 	<div css={css`
 		--purple: #EB53E2;
@@ -259,19 +290,16 @@ const Page = () => (
 						<Button href="#register" color="purple">Register Now!</Button>
 					</p>
 				</div>
-				<div css={css`
-					img {
-						width: 535px;
-						height: auto;
-						max-width: 100%;
-					}
-				`}>
+				<HeadlineSpeakerContainer>
 					<picture>
-						<source srcSet="/img/priv8/speaker-highlight.avif" type="image/avif" />
-						<source srcSet="/img/priv8/speaker-highlight.webp" type="image/webp" />
-						<img src="/img/priv8/speaker-highlight.png" width="1070" height="1457" alt="Featuring Keynote Speaker Glenn Greenwald" />
+						<source srcSet="/img/priv8/Headliner.avif" type="image/avif" />
+						<source srcSet="/img/priv8/Headliner.webp" type="image/webp" />
+						<img src="/img/priv8/Headliner.png" width="1000" height="1000" alt="Featuring Keynote Speaker Glenn Greenwald" />
 					</picture>
-				</div>
+					<p>Featuring:</p>
+					<p>Pulitzer-Prize winning journalist</p>
+					<b>Glenn Greenwald</b>
+				</HeadlineSpeakerContainer>
 			</Container>
 		</div>
 
