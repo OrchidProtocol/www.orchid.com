@@ -5,6 +5,8 @@ import './index.scss'
 import ExplainerVideo from '../components/explainerVideo';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 
+import BlogPosts from '../components/common/BlogPosts';
+
 const Page = () => (
 	<Layout bodyclassName="index">
 		<Helmet>
@@ -248,7 +250,7 @@ const Page = () => (
 			<div className="blog-container container-common">
 				<h2 className="section-heading">From the Orchid Blog</h2>
 				<div className="blog-grid">
-
+					<BlogPosts />
 				</div>
 				<a href="https://blog.orchid.com/" className="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
 					<button className="btn-secondary">
