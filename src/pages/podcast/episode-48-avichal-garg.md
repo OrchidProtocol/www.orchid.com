@@ -6,7 +6,7 @@ title: " Episode 48: Avichal Garg "
 description:  Listen to a new episode of Priv8 Podcast! Derek E. Silva joins Avichal Garg, Co-founder and Partner at Electric Capital, an early-stage venture firm. A great conversation on the rise of the creator economy, privacy-first technologies, and the future of programmable money. 
 date: 1621400400000
 featuredimage: /img/podcast/P8PGuestCard_AvichalGarg.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_AvichalGarg.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_AvichalGarg.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/creator-economy-future-programmable-money-avichal-garg/id1516705670?i=1000522371298
  - https://open.spotify.com/episode/178h7QoAA4v9QIP22gQNkW

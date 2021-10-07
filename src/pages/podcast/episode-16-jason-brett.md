@@ -6,7 +6,7 @@ title: " Episode 16: Jason Brett "
 description:  Go down the rabbit hole with Jason Brett, CEO of Value Technology, a D.C. think tank focused on blockchain. He shares his journey through the 2008 banking crisis, the rise of Bitcoin, and how crypto has impacted our democracy. 
 date: 1600837200000
 featuredimage: /img/podcast/EpisodeHeader_Website_JBrett.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_JBrett.jpg
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_JBrett.jpg
 platformurls:
  - https://podcasts.apple.com/us/podcast/how-bitcoin-will-restore-democracy-with-jason-brett/id1516705670?i=1000492271259
  - https://open.spotify.com/episode/33s1KLnCCjVyVoTaFx59uk

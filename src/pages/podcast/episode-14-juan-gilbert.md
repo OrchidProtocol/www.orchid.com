@@ -6,7 +6,7 @@ title: " Episode 14: Dr. Juan E. Gilbert "
 description:  Go down the rabbit hole with Dr. Juan E. Gilbert, Chair of the CISE Dept at the University of Florida. He shares how he’s pioneering the development in open source election systems, the virtual traffic stop, and how disinformation affects our democracy. 
 date: 1599627600000
 featuredimage: /img/podcast/EpisodeHeader_Website_JGilbert.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_JGilbert.jpg
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_JGilbert.jpg
 platformurls:
  - https://podcasts.apple.com/us/podcast/how-disinformation-affects-our-democracy-dr-juan-e/id1516705670?i=1000490655574
  - https://open.spotify.com/episode/60T4pi4x0HZsYq4D4c5YC9

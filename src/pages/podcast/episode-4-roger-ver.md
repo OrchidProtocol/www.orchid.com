@@ -6,7 +6,7 @@ title: " Episode 4: Roger Ver "
 description:  In our fourth episode, we go down the rabbit hole with Roger Ver, Executive Chairman of Bitcoin.com. He shares his incredible journey as an early investor in Bitcoin startups, his views on the role government should play in citizens’ lives, and the fundamentals of voluntaryism. 
 date: 1593579600000
 featuredimage: /img/podcast/EpisodeHeader_RVer_Website.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_RVer.jpg
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_RVer.jpg
 platformurls:
  - https://podcasts.apple.com/us/podcast/government-censorship-future-bitcoin-roger-ver/id1516705670?i=1000481064294
  - https://open.spotify.com/episode/08OPSLezWMgBipS6HTxnhN

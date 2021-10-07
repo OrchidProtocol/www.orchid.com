@@ -6,7 +6,7 @@ title: " Episode 59: Raullen Chai "
 description:  Host Derek E. Silva joins Raullen Chai, co-founder and CEO of IoTeX, a decentralized network for the Internet of Things. Raullen shares his vision of an open ecosystem where humans and machines can interact with guaranteed trust, free will, and privacy. 
 date: 1628053200000
 featuredimage: /img/podcast/P8PGuestCard_RaullenChai.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_RaullenChai.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_RaullenChai.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/connecting-the-human-and-machine-economy-with-raullen-chai/id1516705670?i=1000530994594
  - https://open.spotify.com/episode/5OFGMXggMiyTEGoM95ZpcV

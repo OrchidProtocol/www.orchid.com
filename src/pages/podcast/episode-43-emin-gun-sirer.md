@@ -6,7 +6,7 @@ title: " Episode 43: Emin Gün Sirer "
 description:  We go down the rabbit hole with Emin Gün Sirer, Founder and CEO of Ava Labs, the team behind the Avalanche blockchain platform. A leader in peer-to-peer systems, he shares his thoughts on how to build trust, transparency, and privacy with decentralizing technologies. 
 date: 1617685200000
 featuredimage: /img/podcast/EminGunSirer_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EminGunSirer_Social.png
+socialimage: https://www.orchid.com/img/podcast/EminGunSirer_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/blockchain-privacy-and-transparency-with-emin-g%C3%BCn-sirer/id1516705670
  - https://open.spotify.com/episode/4gBDbKvabkAO9h7JxWFHRk

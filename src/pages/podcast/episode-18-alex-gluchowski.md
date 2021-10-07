@@ -6,7 +6,7 @@ title: " Episode 18: Alex Gluchowski "
 description:  We go down the rabbit hole with Alex Gluchowski, CEO of Matter Labs that's unchaining #Ethereum. He shares his thoughts on preserving privacy, how tech is empowering human rights, and what social impact the public blockchain has on the world. 
 date: 1602046800000
 featuredimage: /img/podcast/EpisodeHeader_Website_AGluchowski.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_AGluchowski.jpg
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_AGluchowski.jpg
 platformurls:
  - https://podcasts.apple.com/us/podcast/blockchain-for-social-impact-with-alex-gluchowski/id1516705670?i=1000493935911
  - https://open.spotify.com/episode/1SRU8nsxmkIk7sfiyRXXpW

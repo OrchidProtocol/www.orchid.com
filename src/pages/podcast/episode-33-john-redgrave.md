@@ -6,7 +6,7 @@ title: " Episode 33: John Redgrave "
 description:  We go down the rabbit hole with Co-founder and CEO John Redgrave of Sentropy Technologies to keep users and brands safe from online abuse. We take a deep dive into content moderation challenges, how to build trust in digital communities, and the rise of the dark web. 
 date: 1611727200000
 featuredimage: /img/podcast/JohnRedgrave_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/JohnRedgrave_Social.png
+socialimage: https://www.orchid.com/img/podcast/JohnRedgrave_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/internet-safety-rise-dark-web-john-redgrave/id1516705670?i=1000506777592
  - https://open.spotify.com/episode/1SGFHHTFa4k4PjiqdjlAM4

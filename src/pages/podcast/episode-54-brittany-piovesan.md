@@ -6,7 +6,7 @@ title: " Episode 54: Brittany Piovesan "
 description:  Host Derek E. Silva joins Brittany Piovesan, Program Officer for the Internet Society Foundation focused on initiatives that strengthen the Internet. Brittany shares her thoughts on how to use the Internet to shape a better future for education, healthcare, and create more economic opportunities for us all. 
 date: 1625029200000
 featuredimage: /img/podcast/P8PGuestCard_BrittanyPiovesan.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_BrittanyPiovesan.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_BrittanyPiovesan.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/shaping-internets-future-social-benefits-brittany-piovesan/id1516705670?i=1000527388562
  - https://open.spotify.com/episode/3UhwULJBYflNgIFDC8PTuE

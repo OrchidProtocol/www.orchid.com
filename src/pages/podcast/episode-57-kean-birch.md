@@ -6,7 +6,7 @@ title: " Episode 57: Kean Birch "
 description:  Host Derek E. Silva joins Kean Birch, an expert in technoscience and professor at York University. They take a deep dive into the Facebook effect, the rise of the data economy, and how private data changes the game of capitalism. 
 date: 1626843600000
 featuredimage: /img/podcast/P8PGuestCard_KeanBirch.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_KeanBirch.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_KeanBirch.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/facebook-effect-rise-data-economy-kean-birch/id1516705670?i=1000529600581
  - https://open.spotify.com/episode/3fJDj7kLH5fm5c8AJTjMcQ

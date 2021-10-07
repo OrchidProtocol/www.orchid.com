@@ -6,7 +6,7 @@ title: " Episode 6: Paul Veradittakit "
 description:  Go down the rabbit hole with Paul Veradittakit, a Partner at Pantera Capital, who’s executed some of the most deals in the blockchain and crypto space. A great conversation on the new decentralized economy, prediction markets, and the evolution of privacy. 
 date: 1594702800000
 featuredimage: /img/podcast/EpisodeHeader_PVer_Website.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_PVer.jpg
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_PVer.jpg
 platformurls:
  - https://podcasts.apple.com/us/podcast/blockchain-investments-prediction-markets-paul-veradittakit/id1516705670?i=1000485096921
  - https://open.spotify.com/episode/3fCFNtOuurDIRhz0DNyXLY

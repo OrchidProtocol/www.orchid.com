@@ -6,7 +6,7 @@ title: " Episode 15: Val Mack "
 description:  Go down the rabbit hole with Val Mack, a Software Architect at Quant Five and a member of Women Who Code. A blockchain developer & entrepreneur, she shares her insights on compassionate technologies, data privacy, and how to navigate a career in tech. 
 date: 1600232400000
 featuredimage: /img/podcast/EpisodeHeader_Website_VMack.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_VMack.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_VMack.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/blockchain-and-the-great-privacy-debate-with-val-mack/id1516705670?i=1000491477702
  - https://open.spotify.com/episode/6o7Q5GiNj7CfHkBLZv426S

@@ -6,7 +6,7 @@ title: " Episode 50: Rebecca Wexler "
 description:  How does technology affect our democracy and government? Host Derek E. Silva joins Rebecca Wexler, Professor of Law at UC Berkeley, School of Law. They take a deep dive into the criminal justice system, the power imbalance caused by predictive technologies, and human rights in the digital age. 
 date: 1622610000000
 featuredimage: /img/podcast/P8PGuestCard_RebeccaWexler.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_RebeccaWexler.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_RebeccaWexler.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/how-technology-affects-criminal-justice-human-rights/id1516705670?i=1000523934626
  - https://open.spotify.com/episode/5LYJRzaqyiugHpgglpZQdt

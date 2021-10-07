@@ -6,7 +6,7 @@ title: " Episode 25: Roger Huang "
 description:  We go down the rabbit hole with Roger Huang, CEO of CyberSecure, a company that develops open-source cybersecurity tools. A deep dive into the Five Eyes alliance's complex history, China's digital yen, and best practices for protecting your privacy online. 
 date: 1606284000000
 featuredimage: /img/podcast/EpisodeHeader_Website_RHuang.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_RHuang.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_RHuang.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/cybersecurity-tips-best-privacy-practices-roger-huang/id1516705670?i=1000500242458
  - https://open.spotify.com/episode/1smZ8P0GiZfmMz5RnNLbEG

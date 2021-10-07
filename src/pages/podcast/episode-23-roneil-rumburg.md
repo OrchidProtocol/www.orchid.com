@@ -6,7 +6,7 @@ title: " Episode 23: Roneil Rumburg "
 description:  We go down the rabbit hole with Roneil Rumburg, CEO of Audius, a blockchain music platform that has been called the decentralized Spotify. He shares his thoughts on the struggle between surveillance and privacy, and how Audius has built a censorship-resistant platform for artists to share music with fans. 
 date: 1605074400000
 featuredimage: /img/podcast/EpisodeHeader_Website_RRumburg.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_RRumburg.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_RRumburg.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/how-blockchain-is-disrupting-music-industry-roneil/id1516705670?i=1000498193293
  - https://open.spotify.com/episode/3nE45V3GrRJNcD6HQVz5tW

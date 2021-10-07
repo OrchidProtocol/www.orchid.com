@@ -6,7 +6,7 @@ title: " Episode 22: Adriana Hamacher "
 description:  We go down the rabbit hole with Adriana Hamacher, a senior journalist at Decrypt Media. A fascinating conversation on the future of robotics, crypto’s social impact, and the man who saved Sushiswap. 
 date: 1604469600000
 featuredimage: /img/podcast/EpisodeHeader_Website_AHamacher.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_AHamacher.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_AHamacher.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/future-robotics-cryptos-social-impact-adriana-hamacher/id1516705670?i=1000497224870
  - https://open.spotify.com/episode/5LegMldka1uLHxQd6tCmF3

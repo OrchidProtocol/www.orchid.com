@@ -6,7 +6,7 @@ title: " Episode 10: Ben Bartlett "
 description:  Go down the rabbit hole with Ben Bartlett, an environmental lawyer and a Berkeley City Council Member. The son of community activists he shares his family's rich history and personal fight for freedom. A timely discussion on the future of democracy, personal freedom, and defending our civil rights. 
 date: 1597035600000
 featuredimage: /img/podcast/EpisodeHeader_BBartlett_Website.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_BBartlett.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_BBartlett.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/democracy-and-defending-our-civil-rights-with-ben-bartlett/id1516705670?i=1000487925584
  - https://open.spotify.com/episode/5HjQUwYj5Tj5glSd90qoGM

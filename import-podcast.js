@@ -69,6 +69,9 @@ const oldRoutes = [
 	"podcast/episode-63-julie-owono",
 	"podcast/episode-64-sonny-king",
 	"podcast/episode-65-alexander-klus",
+	"podcast/episode-66-jason-rieff",
+	"podcast/episode-67-brett-solomon",
+	"podcast/episode-68-julian-zawistowski",
 ]
 
 async function run() {

@@ -6,7 +6,7 @@ title: " Episode 45: New Priv8 Podcast with Derek E. Silva "
 description:  We are excited to share that Follow the White Rabbit is now the Priv8 Podcast with host Derek E. Silva. Join us for a weekly dose of commentary on privacy and technology. Tune in this May for our first episode featuring Edward Snowden's talk from the Priv8 digital privacy summit. 
 date: 1618981200000
 featuredimage: /img/podcast/P8P_DerekSilva.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/OrchidBlog_PodcastTransition.png
+socialimage: https://www.orchid.com/img/podcast/OrchidBlog_PodcastTransition.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/new-priv8-podcast-with-derek-e-silva/id1516705670?i=1000518106428
  - https://open.spotify.com/episode/2WgYzfV8K95YbSBqPpCICH

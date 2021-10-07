@@ -6,7 +6,7 @@ title: " Episode 35: Leigh Honeywell "
 description:  Go down the rabbit hole with Leigh Honeywell, Founder & CEO of Tall Poppy, which builds tools and services to help companies protect their employees from online harassment and abuse. We take a deep dive into the rise of cyberbullying, promoting psychological safety in the workplace, and how to defend yourself from online trolls. 
 date: 1612936800000
 featuredimage: /img/podcast/LeighHoneywell_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/LeighHoneywell_Social.png
+socialimage: https://www.orchid.com/img/podcast/LeighHoneywell_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/cyberbullying-how-to-protect-yourself-online-leigh/id1516705670?i=1000508482075
  - https://open.spotify.com/episode/4OoXnsnWaLaTRHOiy6IYqU

@@ -6,7 +6,7 @@ title: " Episode 29: Yaniv Tal "
 description:  Go down the rabbit hole with Yaniv Tal, Project Lead at Graph Protocol. We take a deep dive into the inspiration behind building the Graph Network and how they're helping the next generation of dApp developers create a decentralized future. 
 date: 1608703200000
 featuredimage: /img/podcast/EpisodeHeader_Website_YTal.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_YTal.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_YTal.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/graph-protocol-the-google-of-blockchain-with-yaniv-tal/id1516705670?i=1000503332104
  - https://open.spotify.com/episode/60oYvOnjp2szTTjKB7I0lQ

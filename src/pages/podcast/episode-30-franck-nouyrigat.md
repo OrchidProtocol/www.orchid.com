@@ -6,7 +6,7 @@ title: " Episode 30: Franck Nouyrigat "
 description:  We go down the rabbit hole with Franck Nouyrigat, Co-founder of Startup Weekend and Electis, a nonprofit focused on how technology can reshape democracy. We take a deep dive into the future of voting, what’s in the DNA of a great entrepreneur, and how to build a robust community online. 
 date: 1609912800000
 featuredimage: /img/podcast/FTWRWebsite_FranckNouyrigat.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/FTWRSocial_FranckNouyrigat.png
+socialimage: https://www.orchid.com/img/podcast/FTWRSocial_FranckNouyrigat.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/startup-advice-dna-entrepreneur-franck-nouyrigat/id1516705670?i=1000504532129
  - https://open.spotify.com/episode/5Pmen0SkgHfBPXzCklYh5q

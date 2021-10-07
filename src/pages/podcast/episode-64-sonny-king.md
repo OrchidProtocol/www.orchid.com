@@ -6,7 +6,7 @@ title: " Episode 64: Sonny King "
 description:  Host Derek E Silva joins Sonny King, Executive Technology Director for frog, an award-winning design studio. A great conversation on best practices for achieving privacy by design, the importance of building a more sustainable future, and how startups can make their mark in the world. 
 date: 1631077200000
 featuredimage: /img/podcast/P8PGuestCard_SonnyKing.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_SonnyKing.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_SonnyKing.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/privacy-by-design-and-making-your-mark-in-the-world/id1516705670?i=1000534707637
  - https://open.spotify.com/episode/1CSD17qIT4T2qYhjgGmpYG

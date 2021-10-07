@@ -6,7 +6,7 @@ title: " Episode 58: Jim Harper "
 description:  Host Derek E. Silva joins Jim Harper, a privacy expert and senior fellow at American Enterprise Institute, a Washington, D.C.-based think tank that researches government, economics, and social welfare. They take a deep dive into the changing definition of privacy, reforming Section 230, and why Bitcoin’s value is all in the eye of the ‘bithodler’. 
 date: 1627448400000
 featuredimage: /img/podcast/P8PGuestCard_JimHarper.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_JimHarper.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_JimHarper.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/the-philosophy-of-bitcoin-and-the-great-privacy-debate/id1516705670?i=1000530293096
  - https://open.spotify.com/episode/4ibvvTfzhwGnTVr2Syq8hl

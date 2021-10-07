@@ -6,7 +6,7 @@ title: " Episode 40: Marvin Tong "
 description:  We go down the rabbit hole with Marvin Tong, co-founder, and CEO of Phala Network. We take a deep dive into how companies can leverage big data, the role of confidential computing, and how Phala is bringing on-chain privacy to the Polkadot ecosystem. 
 date: 1615957200000
 featuredimage: /img/podcast/MarvinTong_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/MarvinTong_Social.png
+socialimage: https://www.orchid.com/img/podcast/MarvinTong_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/confidential-computing-future-security-marvin-tong/id1516705670?i=1000513437821
  - https://open.spotify.com/episode/307jMEW8HW8bujSexA2D3f

@@ -6,7 +6,7 @@ title: " Episode 32: Nathan Wilcox "
 description:  Go down the rabbit hole with Nathan Wilcox, CTO of Electric Coin Company, the inventors of Zcash, empowering people with economic freedom. We take a deep dive into the next wave of defi, why privacy is key to crypto adoption and the benefits & risks of decentralization. 
 date: 1611122400000
 featuredimage: /img/podcast/NathanWilcox_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/NathanWilcox_Social.png
+socialimage: https://www.orchid.com/img/podcast/NathanWilcox_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/why-privacy-crypto-is-key-to-economic-freedom-nathan/id1516705670?i=1000505952943
  - https://open.spotify.com/episode/1mQBUAXODA1lmIxGQeCwpv

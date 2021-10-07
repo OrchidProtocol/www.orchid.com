@@ -6,7 +6,7 @@ title: " Episode 62: Leo Schwartz "
 description:  Host Derek E. Silva joins Leo Schwartz, a reporter for Rest of the World, an international nonprofit media organization. We take a deep dive into press freedom around the world, the spyware threat to journalists, and how social media affects the news. 
 date: 1629867600000
 featuredimage: /img/podcast/P8PGuestCard_LeoSchwartz.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_LeoSchwartz.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_LeoSchwartz.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/freedom-of-the-press-and-censorship-around/id1516705670?i=1000533110774
  - 

@@ -6,7 +6,7 @@ title: " Episode 31: Jamie King "
 description:  Go down the rabbit hole with Jamie King, Host of Steal this Show and Director of Steal this Film, a documentary on the movement against intellectual property. We take a deep dive into cancel culture, ongoing reality wars, and the consequences of disinformation. 
 date: 1610517600000
 featuredimage: /img/podcast/FTWRWebsite_JamieKing.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/FTWRSocial_JamieKing.png
+socialimage: https://www.orchid.com/img/podcast/FTWRSocial_JamieKing.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/disinformation-and-the-cancel-culture-with-jamie-king/id1516705670?i=1000505237122
  - https://open.spotify.com/episode/7yWIi9CPblv08YEaaRBDO9

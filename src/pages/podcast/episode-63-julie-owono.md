@@ -6,7 +6,7 @@ title: " Episode 63: Julie Owono "
 description:  Host Derek E. Silva joins Julie Owono, Executive Director for Internet Without Borders, and an inaugural member of the Facebook Oversight Board. A great conversation on how we can work together to protect digital rights, the true power of social media restrictions, and why Facebook created its own Supreme Court. 
 date: 1630472400000
 featuredimage: /img/podcast/P8PGuestCard_JulieOwono.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/P8PEpisode_JulieOwono.png
+socialimage: https://www.orchid.com/img/podcast/P8PEpisode_JulieOwono.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/digital-rights-and-facebooks-supreme-court-with/id1516705670?i=1000534004546
  - https://open.spotify.com/episode/0qjGDIGM9VtlGIy7SLbBDQ

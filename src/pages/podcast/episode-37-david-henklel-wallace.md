@@ -6,7 +6,7 @@ title: " Episode 37: David Henkel-Wallace "
 description:  We go down the rabbit hole with David “Gumby” Henkel-Wallace, partner at Rodin AI, who founded the first open source company Cygnus that Red Hat acquired in 1999 to become a global powerhouse. The tech pioneer shares his thoughts on the democratization of encryption, how open source has become weaponized, and the future impact it has on data privacy. 
 date: 1614146400000
 featuredimage: /img/podcast/DavidHenkelWallace_Webpage.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/DavidHenkelWallace_Social.png
+socialimage: https://www.orchid.com/img/podcast/DavidHenkelWallace_Social.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/data-privacy-and-the-open-source-dilemma/id1516705670?i=1000510488757
  - https://open.spotify.com/episode/1qql8OTi55qNmGf4rYQcqe

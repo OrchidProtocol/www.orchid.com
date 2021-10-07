@@ -6,7 +6,7 @@ title: " Episode 26: Anne Ahola Ward "
 description:  Go down the rabbit hole with futurist and CEO of CircleClick, Anne Ahola Ward. She shares her thoughts on the fight for Section 230, why decentralization matters, and what tech trends to watch for in 2021. 
 date: 1606888800000
 featuredimage: /img/podcast/EpisodeHeader_Website_AWard.jpg
-socialimage: https://www.orchid.com/assets/img/podcast/EpisodeHeader_AWard.png
+socialimage: https://www.orchid.com/img/podcast/EpisodeHeader_AWard.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/why-decentralization-matters-tech-trends-for-2021-anne/id1516705670?i=1000501104624
  - https://open.spotify.com/episode/3PPpeOFMtB2vW5kJWniF2d
