@@ -298,11 +298,22 @@ const Page = () => (
 					`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
 				</a>
 				<div css={css`
-					& > a {
+					& > a, & > span {
 						text-decoration: none;
 						color: #FFFFFF;
 						margin: 0 1rem;
 						font-weight: 500;
+						text-align: center;
+
+						position: relative;
+						&:hover > div {
+							pointer-events: unset !important;
+							opacity: 1;
+							margin-top: 1rem;
+						}
+					}
+					& > span {
+						cursor: default;
 					}
 					.no-mb {
 						@media (max-width: 760px) {
@@ -310,10 +321,47 @@ const Page = () => (
 						}
 					}
 				`}>
-					<a href="#calendar" className="no-mb">
+					<span href="#calendar" className="no-mb">
 						ADD TO CALENDAR
-					</a>
-					<a href="/contact" className="no-mb">
+						<div css={css`
+							transition: opacity 0.5s ease, margin-top 0.5s ease;
+							pointer-events: none;
+							position: absolute;
+							top: 100%;
+							left: 50%;
+							opacity: 0;
+							margion-top: -20%;
+							width: 18rem;
+							margin-left: -9rem;
+							z-index: 999;
+
+							&::before {
+								content: '';
+								position: absolute;
+								top: -1rem;
+								left: 0%;
+								width: 100%;
+								height: 1rem;
+							}
+
+							background: #3B146A;
+							border-radius: 1rem;
+							& > a {
+								display: inline-block;
+								margin: 0.5rem;
+								color: #FFFFFF;
+								text-decoration: none;
+							}
+						`}>
+							<a href="/img/priv8/Priv8.ics">
+								ICS (Apple/Outlook)
+							</a>
+							<a href="http://www.google.com/calendar/event?action=TEMPLATE&dates=20211114T240000Z%2F20211115T240000Z&text=Priv8%20-%20virtual%20privacy%20conference&location=https%3A%2F%2Fwww.orchid.com%2Fpriv8%2F&details=Priv8%20is%20the%20premier%20global%20forum%20dedicated%20to%20the%20future%20of%20digital%20privacy.%20Orchid%20and%20Handshake%20have%20brought%20together%20a%20world-class%20group%20of%20experts%20and%20advocates%20from%20various%20business%2C%20government%2C%20academic%2C%20and%20nonprofit%20spheres%20to%20explore%20key%20issues%20around%20this%20important%20topic." target="_blank" rel="noopener noreferrer">
+								Google Calendar
+							</a>
+						</div>
+					</span>
+					<a href="mailto:priv8@orchid.com" className="no-mb">
 						CONTACT
 					</a>
 					<Button href="#register">
@@ -529,7 +577,7 @@ const Page = () => (
 					`}>
 						<h2>REGISTER</h2>
 						<p>
-							Get email updates about the conference, instructions on how to watch.
+							Get updates and viewing instructions for the conference.
 							<br />
 							And nothing else.
 						</p>
