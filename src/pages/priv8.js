@@ -315,9 +315,18 @@ const Page = () => (
 							opacity: 1;
 							margin-top: 1rem;
 						}
+						&:last-child {
+							margin-right: 0;
+						}
 					}
 					& > span {
 						cursor: default;
+					}
+					.mb-only {
+						display: none;
+						@media (max-width: 760px) {
+							display: inline-block;
+						}
 					}
 					.no-mb {
 						@media (max-width: 760px) {
@@ -325,8 +334,11 @@ const Page = () => (
 						}
 					}
 				`}>
-					<span href="#calendar" className="no-mb">
-						ADD TO CALENDAR
+					<span href="#calendar">
+						<span className="no-mb">ADD TO CALENDAR</span>
+						<span className="mb-only">
+							<img src="/img/priv8/calendar.svg" alt="Add to Calendar" width="512" height="512" css={css`width: 1.5rem; height: auto; margin-bottom: -0.5rem;`} />
+						</span>
 						<div css={css`
 							transition: opacity 0.5s ease, margin-top 0.5s ease;
 							pointer-events: none;
@@ -338,6 +350,15 @@ const Page = () => (
 							width: 18rem;
 							margin-left: -9rem;
 							z-index: 999;
+
+							@media (max-width: 760px) {
+								width: 11rem;
+								margin-left: -4rem;
+							}
+
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
 
 							&::before {
 								content: '';
@@ -358,7 +379,7 @@ const Page = () => (
 							}
 						`}>
 							<a href="/img/priv8/Priv8.ics">
-								ICS (Apple/Outlook)
+								ICS<span className="no-mb"> (Apple/Outlook)</span>
 							</a>
 							<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Priv8%20-%20virtual%20privacy%20conference&dates=20211115/20211116&details=Priv8%20is%20the%20premier%20global%20forum%20dedicated%20to%20the%20future%20of%20digital%20privacy.%20Orchid%20and%20Handshake%20have%20brought%20together%20a%20world-class%20group%20of%20experts%20and%20advocates%20from%20various%20business,%20government,%20academic,%20and%20nonprofit%20spheres%20to%20explore%20key%20issues%20around%20this%20important%20topic.&location=https://www.orchid.com/priv8/&trp=true" target="_blank" rel="noopener noreferrer">
 								Google Calendar
