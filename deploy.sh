@@ -19,20 +19,15 @@ function build-site() {
     echo "Building Site..."
     yarn
 
-    built_files=dist/static
+    built_files=public
     # Build the static site...
     rm -rf ${built_files}
     if [ -z "$language" ]; then
         yarn run build:static
     else
         yarn run build:static:${language}
-    fi
-    (cd ${built_files};
-     for file in $(echo *.html); do
-         mkdir -p $(basename ${file} .html)
-         cp ${file} $(basename ${file} .html)/index.html
-     done;
-     ln -s assets/whitepaper/whitepaper.pdf ./whitepaper.pdf)
+	fi
+		echo "Built Site."
 }
 
 function get-distribution-id() {
@@ -45,7 +40,7 @@ function upload-site() {
     local bucket="$1"
     local version="$2"
     echo "Uploading Website..."
-    aws s3 sync --acl public-read --delete ./dist/static/ "s3://$bucket/$version"
+    aws s3 sync --acl public-read --delete ./public/ "s3://$bucket/$version"
 }
 
 function update-distribution() {

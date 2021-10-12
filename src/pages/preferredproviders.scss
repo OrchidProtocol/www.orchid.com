@@ -1,0 +1,46 @@
+@import "media_queries";
+@import "misc_config";
+@import "orc_config";
+.preferredproviders-page {
+	.preferred-hero__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		max-width: 1200px;
+		margin: auto;
+		p {
+			font-size: 1rem;
+		}
+	}
+
+	.preferred-hero__column {
+		svg {
+			max-width: 100%;
+		}
+		@include not-mobile {
+			width: 35%;
+
+			&:nth-child(2) {
+				margin-left: 5%;
+				width: 60%;
+			}
+		}
+	}
+
+	.preferred-providers__wrapper {
+		img {
+			max-width: 250px;
+			width: 100%;
+			margin: 3rem auto;
+			display: block;
+		}
+	}
+
+	.preferred-notice__container {
+		max-width: 1000px;
+		margin: auto;
+		font-size: 1rem;
+	}
+}
