@@ -46,6 +46,7 @@ const PodcastFooter = () => {
 				justify-content: center;
 				padding: 4rem;
 				max-width: 72rem;
+				margin: auto;
 			`}>
 				<div css={css`
 					width: 100%;
