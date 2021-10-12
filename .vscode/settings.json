@@ -1,4 +1,6 @@
 {
-  "vsicons.presets.angular": true,
-  "editor.formatOnSave": false
+	"vsicons.presets.angular": true,
+	"editor.formatOnSave": true,
+	"editor.detectIndentation": false,
+	"editor.insertSpaces": false
 }

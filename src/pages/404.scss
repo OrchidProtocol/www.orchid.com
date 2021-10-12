@@ -1,0 +1,24 @@
+@use "sass:math";
+@import "_orc_config";
+@import "_media_queries";
+
+#not-found {
+	min-height: 43vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h1 {
+		@include not-mobile {
+			font-size: 100px;
+		}
+	}
+	h3 {
+		color: $orc-rock-gray;
+		text-align: center;
+	}
+	p {
+		margin-top: 2em;
+	}
+}
