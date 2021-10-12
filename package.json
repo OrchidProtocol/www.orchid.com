@@ -7,7 +7,7 @@
 		"build": "npm run build:static",
 		"build:light": "TARGET_LANG=en node init-env.js && gatsby build && node post-build.js",
 		"build:static": "TARGET_LANG=en node init-env.js && node import-blog.js && gatsby clean && gatsby build && node post-build.js",
-		"build:static:en": "npm run built:static",
+		"build:static:en": "npm run build:static",
 		"build:static:ja": "npm run get-legacy && npm run build:static:ja",
 		"build:static:ko": "npm run get-legacy && npm run build:static:ko",
 		"build:static:zh": "npm run get-legacy && npm run build:static:zh",
