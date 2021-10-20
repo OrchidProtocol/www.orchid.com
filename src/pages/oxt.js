@@ -38,7 +38,7 @@ const Page = () => (
 					</div>
 					<div className="hero-flex__container logo">
 						<picture>
-							<source srcset="/img/oxt/oxt_hero.webp" type="image/webp" />
+							<source srcSet="/img/oxt/oxt_hero.webp" type="image/webp" />
 							<img className="oxt-hero__logomark" alt="" src="/img/oxt/oxt_hero.png" width="980" height="978" />
 						</picture>
 					</div>

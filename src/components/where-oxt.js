@@ -8,7 +8,7 @@ const Component = () => (
 		</p>
 		<h3 className="gap-top-thin" i18n="@@ExchangeListings">Exchange Listings</h3>
 		<a href="https://www.coinbase.com/price/orchid">
-			<img className="margin" src="/img/where-oxt/coinbase.png" srcset="/img/where-oxt/coinbase.png, /img/where-oxt/coinbase@2x.png 2x, /img/where-oxt/coinbase@3x.png 3x" alt="Coinbase" />
+			<img className="margin" src="/img/where-oxt/coinbase.png" srcSet="/img/where-oxt/coinbase.png, /img/where-oxt/coinbase@2x.png 2x, /img/where-oxt/coinbase@3x.png 3x" alt="Coinbase" />
 		</a>
 		<a href="https://gemini.com/prices/orchid">
 			<img className="margin" src="/img/where-oxt/gemini.png" alt="Gemini" />
@@ -33,7 +33,7 @@ const Component = () => (
 		<a href="/oxt">View the full list</a>
 		<h3 className="gap-top-wide" i18n="@@OXTContract">OXT Contract on Ethereum</h3>
 		<a href="https://etherscan.io/token/0x4575f41308ec1483f3d399aa9a2826d74da13deb">
-			<img src="/img/where-oxt/etherscan.png" srcset="/img/where-oxt/etherscan.png, /img/where-oxt/etherscan@2x.png 2x, /img/where-oxt/etherscan@3x.png 3x" alt="Etherscan" />
+			<img src="/img/where-oxt/etherscan.png" srcSet="/img/where-oxt/etherscan.png, /img/where-oxt/etherscan@2x.png 2x, /img/where-oxt/etherscan@3x.png 3x" alt="Etherscan" />
 		</a>
 	</div>
 )

@@ -16,7 +16,7 @@ const Component = () => (
 							<img src="/img/where-oxt/bithumb.png" alt="Bithumb" />
 						</a>
 						<a href="https://www.coinbase.com/price/orchid">
-							<img src="/img/where-oxt/coinbase.png" srcset="/img/where-oxt/coinbase.png, /img/where-oxt/coinbase@2x.png 2x, /img/where-oxt/coinbase@3x.png 3x" alt="Coinbase" />
+							<img src="/img/where-oxt/coinbase.png" srcSet="/img/where-oxt/coinbase.png, /img/where-oxt/coinbase@2x.png 2x, /img/where-oxt/coinbase@3x.png 3x" alt="Coinbase" />
 						</a>
 						<a href="https://pro.coinbase.com/trade/OXT-USD">
 							<img src="/img/where-oxt/coinbase-pro.png" alt="Coinbase | Pro" />

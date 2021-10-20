@@ -75,7 +75,7 @@ const Page = () => (
 						</div>
 						<div className="about-us-half">
 							<picture>
-								<source srcset="/img/company/ValuesBunny.webp" type="image/webp" />
+								<source srcSet="/img/company/ValuesBunny.webp" type="image/webp" />
 								<img src="/img/company/ValuesBunny.png" width="1000" height="1055" alt="" />
 							</picture>
 						</div>

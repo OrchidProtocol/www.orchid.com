@@ -22,12 +22,12 @@ const Page = () => (
 			<section className="download-images__wrapper">
 				<div className="download-images__container">
 					<h4 i18n="@@DownloadAndroid__Title">Android</h4>
-					<img src="/img/download/phone-1.png" className="download-images__device" alt="" />
+					<img src="/img/download/phone-1.png" width="434" height="796" className="download-images__device" alt="" />
 					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 					<ul className="download-instructions__list" i18n="@@DownloadAndroid__Body" style={{ listStyle: "none" }}>
 						<li>
-							<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage">
-								<img width="160" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0" }} />
+							<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage" data-appstorelink>
+								<img width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0", height: "auto", maxWidth: "160px", }} />
 							</a>
 						</li>
 						<li>
@@ -43,24 +43,24 @@ const Page = () => (
 				</div>
 				<div className="download-images__container">
 					<h4 i18n="@@DownloadiOS__Title">iOS</h4>
-					<img src="/img/download/phone-2.png" className="download-images__device" alt="" />
+					<img src="/img/download/phone-2.png" width="432" height="796" className="download-images__device" alt="" />
 					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 					<ul className="download-instructions__list" i18n="@@DownloadiOS__Body">
 						<li>
-							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
-								<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
+							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8" data-appstorelink>
+								<img alt="iOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div className="download-images__container">
 					<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
-					<img src="/img/download/macbook.png" className="download-images__device mac" alt="" />
+					<img src="/img/download/macbook.png" width="802" height="466" className="download-images__device mac" alt="" />
 					<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
 					<ul className="download-instructions__list" i18n="@@DownloadMacOS__Body">
 						<li>
-							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
-								<img alt="macOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
+							<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8" data-appstorelink>
+								<img alt="macOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 							</a>
 						</li>
 					</ul>

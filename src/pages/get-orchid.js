@@ -83,26 +83,26 @@ const Page = () => (
 			<div className="hero__content">
 				<div className="platforms__container">
 					<div className="download-images__container">
-						<img src="/img/download/phone-1.png" className="download-images__device" alt="" />
-						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+						<img src="/img/download/phone-1.png" width="434" height="796" className="download-images__device" alt="" />
+						<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadAndroid__Title">Android</h4>
-						<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage">
+						<a href="https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source%3Dwebsite%26utm_campaign%3Ddownloadpage" data-appstorelink>
 							<img width="160" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0" }} />
 						</a>
 					</div>
 					<div className="download-images__container">
-						<img src="/img/download/macbook.png" className="download-images__device mac" alt="" />
-						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+						<img src="/img/download/macbook.png" width="802" height="466" className="download-images__device mac" alt="" />
+						<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
-						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
+						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8" data-appstorelink>
 							<img alt="macOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 						</a>
 					</div>
 					<div className="download-images__container">
-						<img src="/img/download/phone-2.png" className="download-images__device" alt="" />
-						<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+						<img src="/img/download/phone-2.png" width="432" height="796" className="download-images__device" alt="" />
+						<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
 						<h4 i18n="@@DownloadiOS__Title">iOS</h4>
-						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8">
+						<a href="https://apps.apple.com/app/apple-store/id1474884867?pt=120094961&ct=downloadpage&mt=8" data-appstorelink>
 							<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 						</a>
 					</div>
