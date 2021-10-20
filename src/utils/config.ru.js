@@ -5,62 +5,62 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.ru.orchid.com/',
+			url: '/',
 			label: 'Главная'
 		},
 		{
-			url: 'https://www.ru.orchid.com/join',
+			url: '/join',
 			label: 'Присоединиться'
 		},
 		{
-			url: 'https://www.ru.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: 'Как это работает'
 		},
 		{
-			url: 'https://www.ru.orchid.com/about-us',
+			url: '/about-us',
 			label: 'О сервисе'
 		},
 		{
-			url: '/',
+			url: 'https://blog.ru.orchid.com/',
 			label: 'Блог'
 		},
 		{
-			url: 'https://www.ru.orchid.com/contact',
+			url: '/contact',
 			label: 'Контакты'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.ru.orchid.com",
+			url: "/",
 			label: "Orchid",
 		},
 		{
-			url: "https://www.ru.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "Как это работает",
 		},
 		{
-			url: "https://www.ru.orchid.com/about-us",
+			url: "/about-us",
 			label: "О компании",
 		},
 		{
-			url: "https://www.ru.orchid.com/contact",
+			url: "/contact",
 			label: "Контакты",
 		},
 		{
-			url: "https://www.ru.orchid.com/whitepaper.pdf",
+			url: "/whitepaper.pdf",
 			label: "Белая бумага",
 		},
 		{
-			url: "https://www.ru.orchid.com/events",
+			url: "/events",
 			label: "События",
 		},
 		{
-			url: "/",
+			url: "https://blog.ru.orchid.com/",
 			label: 'Блог'
 		},
 		{
-			url: "https://www.ru.orchid.com/faq",
+			url: "/faq",
 			label: "Вопросы и ответы",
 		},
 	],

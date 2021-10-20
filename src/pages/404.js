@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Layout from '../components/common/Layout'
 import './404.scss'
 
@@ -8,7 +9,7 @@ const NotFoundPage = () => (
 			<section id="not-found" className="section-med hpad-wide vpad-wide">
 				<h1>Not Found</h1>
 				<h3>We couldn't find that page!</h3>
-				<p><a href="/">Go back home</a></p>
+				<p><Link to="/">Go back home</Link></p>
 			</section>
 		</div>
 	</Layout>

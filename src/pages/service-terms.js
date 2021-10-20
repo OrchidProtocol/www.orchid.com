@@ -19,15 +19,15 @@ const Page = () => (
 			<ul className="section-narrow hpad-wide gap-top-wide">
 				{/*<!-- NB: these are absolute URLs because of the <base> tag-->*/}
 				{/*<!--TODO: the floating header breaks the anchor positions on mobile-->*/}
-				<li><a href="/service-terms#sec1" target="_self">Cookies</a></li>
-				<li><a href="/service-terms#sec2" target="_self">License</a></li>
-				<li><a href="/service-terms#sec3" target="_self">User Comments</a></li>
-				<li><a href="/service-terms#sec4" target="_self">Hyperlinking to our Content</a></li>
-				<li><a href="/service-terms#sec5" target="_self">IFrames</a></li>
-				<li><a href="/service-terms#sec6" target="_self">Content Liability</a></li>
-				<li><a href="/service-terms#sec7" target="_self">Reservation of Rights</a></li>
-				<li><a href="/service-terms#sec8" target="_self">Removial of Links from our website</a></li>
-				<li><a href="/service-terms#sec9" target="_self">Disclaimer</a></li>
+				<li><a href="#sec1" target="_self">Cookies</a></li>
+				<li><a href="#sec2" target="_self">License</a></li>
+				<li><a href="#sec3" target="_self">User Comments</a></li>
+				<li><a href="#sec4" target="_self">Hyperlinking to our Content</a></li>
+				<li><a href="#sec5" target="_self">IFrames</a></li>
+				<li><a href="#sec6" target="_self">Content Liability</a></li>
+				<li><a href="#sec7" target="_self">Reservation of Rights</a></li>
+				<li><a href="#sec8" target="_self">Removial of Links from our website</a></li>
+				<li><a href="#sec9" target="_self">Disclaimer</a></li>
 			</ul>
 			<article className="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Cookies</h2>

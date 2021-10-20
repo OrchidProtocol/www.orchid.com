@@ -19,14 +19,14 @@ const Page = () => (
 			<ul className="section-narrow hpad-wide gap-top-wide">
 				{/*<!-- NB: these are absolute URLs because of the <base> tag-->*/}
 				{/*<!--TODO: the floating header breaks the anchor positions on mobile-->*/}
-				<li><a href="/privacy-policy#sec1" target="_self">Introduction</a></li>
-				<li><a href="/privacy-policy#sec2" target="_self">Traffic Activity</a></li>
-				<li><a href="/privacy-policy#sec3" target="_self">Cookies</a></li>
-				<li><a href="/privacy-policy#sec4" target="_self">Third Parties</a></li>
-				<li><a href="/privacy-policy#sec5" target="_self">Consent</a></li>
-				<li><a href="/privacy-policy#sec6" target="_self">Update</a></li>
-				<li><a href="/privacy-policy#sec7" target="_self">More Information</a></li>
-				<li><a href="/privacy-policy#sec8" target="_self">Orchid Website Privacy Policy Only</a></li>
+				<li><a href="#sec1" target="_self">Introduction</a></li>
+				<li><a href="#sec2" target="_self">Traffic Activity</a></li>
+				<li><a href="#sec3" target="_self">Cookies</a></li>
+				<li><a href="#sec4" target="_self">Third Parties</a></li>
+				<li><a href="#sec5" target="_self">Consent</a></li>
+				<li><a href="#sec6" target="_self">Update</a></li>
+				<li><a href="#sec7" target="_self">More Information</a></li>
+				<li><a href="#sec8" target="_self">Orchid Website Privacy Policy Only</a></li>
 			</ul>
 			<article className="section-narrow hpad-wide vpad-wide">
 				<h2 id="sec1">Introduction</h2>

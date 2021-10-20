@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
@@ -181,7 +182,7 @@ const Page = () => (
 										</li>
 									</ul>
 									<p i18n className="faq-answer">
-										A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing.If the provider maintains logs, those logs could be sold to advertisers or otherwise used against you.In the current VPN marketplace, it is hard to know who is maintaining logs and who is not.For Orchid nodes, we have developed a flexible curation system that gives users a way to pick whom to trust.<a href="/faq#technology--how-do-curated-lists-work">Read more here</a>.
+										A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing.If the provider maintains logs, those logs could be sold to advertisers or otherwise used against you.In the current VPN marketplace, it is hard to know who is maintaining logs and who is not.For Orchid nodes, we have developed a flexible curation system that gives users a way to pick whom to trust.<Link to="/faq#technology--how-do-curated-lists-work">Read more here</Link>.
 										<br />
 
 										<br />

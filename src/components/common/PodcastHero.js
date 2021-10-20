@@ -1,5 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/react'
+import { Link } from 'gatsby'
 
 const PodcastHero = () => {
 	return (
@@ -31,7 +32,7 @@ const PodcastHero = () => {
 				width: 20%;
 				max-width: 300px;
 			`}>
-				<a href="/podcast#subscribe">
+				<Link to="/podcast#subscribe">
 					<img css={css`
 						display: block;
 						width: 100%;
@@ -40,7 +41,7 @@ const PodcastHero = () => {
 							display: none;
 						}
 					`} src="/img/podcast/listen-now.svg" width="259" height="126" alt="Listen Now" />
-				</a>
+				</Link>
 			</div>
 			<section className="section-wide hpad-wide vpad-xl z-index-1">
 				<div css={css`

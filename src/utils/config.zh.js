@@ -5,58 +5,58 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.zh.orchid.com/',
+			url: '/',
 			label: '主页'
 		},
 		{
-			url: 'https://www.zh.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: '运作方式'
 		},
 		{
-			url: 'https://www.zh.orchid.com/about-us',
+			url: '/about-us',
 			label: '关于'
 		},
 		{
-			url: '/',
+			url: 'https://blog.zh.orchid.com/',
 			label: '博客'
 		},
 		{
-			url: 'https://www.zh.orchid.com/contact',
+			url: '/contact',
 			label: '联系'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.zh.orchid.com",
+			url: "/",
 			label: "Orchid",
 		},
 		{
-			url: "https://www.zh.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "运作方式",
 		},
 		{
-			url: "https://www.zh.orchid.com/about-us",
+			url: "/about-us",
 			label: "关于",
 		},
 		{
-			url: "https://www.zh.orchid.com/download",
+			url: "/download",
 			label: "联系",
 		},
 		{
-			url: "https://www.zh.orchid.com/events",
+			url: "/events",
 			label: "活动",
 		},
 		{
-			url: "/",
+			url: "https://blog.zh.orchid.com/",
 			label: '博客'
 		},
 		{
-			url: "https://www.zh.orchid.com/faq",
+			url: "/faq",
 			label: "常见问题解答",
 		},
 		{
-			url: "https://www.zh.orchid.com/contact",
+			url: "/contact",
 			label: "联系",
 		},
 	],

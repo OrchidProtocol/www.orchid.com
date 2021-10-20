@@ -73,7 +73,7 @@ const BlogPosts = (props) => {
 				</PostImage>
 				<PostTitle>{blog[i].title}</PostTitle>
 				<PostDate>{`${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</PostDate>
-				<PostLink href={blog[i].url} />
+				<PostLink to={blog[i].url} />
 			</PostContainer>
 		);
 	}

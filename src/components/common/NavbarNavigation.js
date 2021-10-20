@@ -104,13 +104,11 @@ const Navigation = ({ data, children }) => {
 
 	for (let i = 0; i < data.length; i++) {
 		const navItem = data[i];
-		const internalLink = navItem.url.match(/^\s?http(s?)/gi);
+		const externalLink = navItem.url.match(/^\s?http(s?)/gi);
 
-		//const className =
-		//    internalLink ? "active-link" : "";
 		items.push(
 			<li key={i}>
-				{internalLink ? (
+				{externalLink ? (
 					<a css={css`display:block;`} href={navItem.url} rel="noopener noreferrer">
 						{navItem.label}
 					</a>
