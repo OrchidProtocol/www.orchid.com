@@ -5,58 +5,58 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.ko.orchid.com/',
+			url: '/',
 			label: '홈'
 		},
 		{
-			url: 'https://www.ko.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: '작동 방식'
 		},
 		{
-			url: 'https://www.ko.orchid.com/about-us',
+			url: '/about-us',
 			label: '소개'
 		},
 		{
-			url: '/',
+			url: 'https://blog.ko.orchid.com/',
 			label: '블로그'
 		},
 		{
-			url: 'https://www.ko.orchid.com/contact',
+			url: '/contact',
 			label: '연락처'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.ko.orchid.com",
+			url: "/",
 			label: "Orchid",
 		},
 		{
-			url: "https://www.ko.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "작동 방식",
 		},
 		{
-			url: "https://www.ko.orchid.com/about-us",
+			url: "/about-us",
 			label: "소개",
 		},
 		{
-			url: "https://www.ko.orchid.com/download",
+			url: "/download",
 			label: "Download",
 		},
 		{
-			url: "https://www.ko.orchid.com/events",
+			url: "/events",
 			label: "活动",
 		},
 		{
-			url: "/",
+			url: "https://blog.ko.orchid.com/",
 			label: '블로그'
 		},
 		{
-			url: "https://www.ko.orchid.com/faq",
+			url: "/faq",
 			label: "常见问题解答",
 		},
 		{
-			url: "https://www.ko.orchid.com/contact",
+			url: "/contact",
 			label: "联系",
 		},
 	],

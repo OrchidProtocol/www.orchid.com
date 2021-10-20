@@ -5,58 +5,58 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.ja.orchid.com/',
+			url: '/',
 			label: 'ホーム'
 		},
 		{
-			url: 'https://www.ja.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: '仕組み'
 		},
 		{
-			url: 'https://www.ja.orchid.com/about-us',
+			url: '/about-us',
 			label: '概要'
 		},
 		{
-			url: '/',
+			url: 'https://blog.ja.orchid.com/',
 			label: 'ブログ'
 		},
 		{
-			url: 'https://www.ja.orchid.com/contact',
+			url: '/contact',
 			label: 'お問い合わせ'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.ja.orchid.com",
+			url: "/",
 			label: "Orchid",
 		},
 		{
-			url: "https://www.ja.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "仕組み",
 		},
 		{
-			url: "https://www.ja.orchid.com/about-us",
+			url: "/about-us",
 			label: "概要",
 		},
 		{
-			url: "https://www.ja.orchid.com/download",
+			url: "/download",
 			label: "Download",
 		},
 		{
-			url: "https://www.ja.orchid.com/events",
+			url: "/events",
 			label: "イベント",
 		},
 		{
-			url: "/",
+			url: "https://blog.ja.orchid.com/",
 			label: 'ブログ'
 		},
 		{
-			url: "https://www.ja.orchid.com/faq",
+			url: "/faq",
 			label: "よくある質問",
 		},
 		{
-			url: "https://www.ja.orchid.com/contact",
+			url: "/contact",
 			label: "お問い合わせ",
 		},
 	],

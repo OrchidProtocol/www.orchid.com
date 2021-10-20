@@ -13,70 +13,70 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.orchid.com/',
+			url: '/',
 			label: 'Home'
 		},
 		{
-			url: 'https://www.orchid.com/join',
+			url: '/join',
 			label: 'Create Account'
 		},
 		{
-			url: 'https://www.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: 'How It Works'
 		},
 		{
-			url: 'https://www.orchid.com/oxt',
+			url: '/oxt',
 			label: 'OXT'
 		},
 		{
-			url: 'https://www.orchid.com/about-us',
+			url: '/about-us',
 			label: 'About'
 		},
 		{
-			url: '/',
+			url: 'https://blog.orchid.com/',
 			label: 'Blog'
 		},
 		{
-			url: 'https://www.orchid.com/contact',
+			url: '/contact',
 			label: 'Contact'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "How it Works",
 		},
 		{
-			url: "https://www.orchid.com/about-us",
+			url: "/about-us",
 			label: "About Us",
 		},
 		{
-			url: "https://www.orchid.com/contact",
+			url: "/contact",
 			label: "Contact",
 		},
 		{
-			url: "https://www.orchid.com/download",
+			url: "/download",
 			label: "Download",
 		},
 		{
-			url: "https://www.orchid.com/podcast",
+			url: "/podcast",
 			label: "Podcast",
 		},
 		{
-			url: "/",
+			url: "https://blog.orchid.com/",
 			label: 'Blog'
 		},
 		{
-			url: "https://www.orchid.com/whitepaper/english.pdf",
+			url: "/whitepaper/english.pdf",
 			label: "Whitepaper",
 		},
 		{
-			url: "https://www.orchid.com/partners",
+			url: "/partners",
 			label: "Partners",
 		},
 		{
-			url: "https://www.orchid.com/faq",
+			url: "/faq",
 			label: "FAQ",
 		},
 	],

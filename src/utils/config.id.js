@@ -5,62 +5,62 @@ module.exports = {
 
 	navbar_navigation: [
 		{
-			url: 'https://www.id.orchid.com/',
+			url: '/',
 			label: 'Beranda'
 		},
 		{
-			url: 'https://www.id.orchid.com/join',
+			url: '/join',
 			label: 'Bergabung sekarang'
 		},
 		{
-			url: 'https://www.id.orchid.com/how-it-works',
+			url: '/how-it-works',
 			label: 'Cara kerjanya'
 		},
 		{
-			url: 'https://www.id.orchid.com/about-us',
+			url: '/about-us',
 			label: 'Perihal'
 		},
 		{
-			url: '/',
+			url: 'https://blog.id.orchid.com/',
 			label: 'Blog'
 		},
 		{
-			url: 'https://www.id.orchid.com/contact',
+			url: '/contact',
 			label: 'Hubungi'
 		}
 	],
 
 	footer_navigation: [
 		{
-			url: "https://www.id.orchid.com",
+			url: "/",
 			label: "Orchid",
 		},
 		{
-			url: "https://www.id.orchid.com/how-it-works",
+			url: "/how-it-works",
 			label: "Cara kerjanya",
 		},
 		{
-			url: "https://www.id.orchid.com/about-us",
+			url: "/about-us",
 			label: "Perihal",
 		},
 		{
-			url: "https://www.id.orchid.com/contact",
+			url: "/contact",
 			label: "Hubungi",
 		},
 		{
-			url: "https://www.id.orchid.com/whitepaper.pdf",
+			url: "/whitepaper.pdf",
 			label: "Laporan resmi",
 		},
 		{
-			url: "https://www.id.orchid.com/events",
+			url: "/events",
 			label: "Acara",
 		},
 		{
-			url: "/",
+			url: "https://blog.id.orchid.com/",
 			label: 'Blog'
 		},
 		{
-			url: "https://www.id.orchid.com/faq",
+			url: "/faq",
 			label: "Tanya Jawab",
 		},
 	],
