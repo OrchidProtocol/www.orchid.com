@@ -40,12 +40,12 @@ class TemplateWrapper extends React.Component {
 				<Location>
 					{({ location }) => {
 						return <Helmet>
-							<link rel="alternate" href={`https://orchid.com/ko${location.pathname}`} hreflang="ko" />
-							<link rel="alternate" href={`https://orchid.com${location.pathname}`} hreflang="x-default" />
-							<link rel="alternate" href={`https://orchid.com/ja${location.pathname}`} hreflang="ja" />
-							<link rel="alternate" href={`https://orchid.com/zh${location.pathname}`} hreflang="zh" />
-							<link rel="alternate" href={`https://orchid.com/id${location.pathname}`} hreflang="id" />
-							<link rel="alternate" href={`https://orchid.com/ru${location.pathname}`} hreflang="ru" />
+							<link rel="alternate" href={`https://orchid.com/ko${location.pathname}`} hrefLang="ko" />
+							<link rel="alternate" href={`https://orchid.com${location.pathname}`} hrefLang="x-default" />
+							<link rel="alternate" href={`https://orchid.com/ja${location.pathname}`} hrefLang="ja" />
+							<link rel="alternate" href={`https://orchid.com/zh${location.pathname}`} hrefLang="zh" />
+							<link rel="alternate" href={`https://orchid.com/id${location.pathname}`} hrefLang="id" />
+							<link rel="alternate" href={`https://orchid.com/ru${location.pathname}`} hrefLang="ru" />
 
 							{
 								process.env.GATSBY_TARGET_LANG === "en" || !process.env.GATSBY_TARGET_LANG ?
