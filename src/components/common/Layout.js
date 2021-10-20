@@ -2,6 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { css } from '@emotion/react'
 import { Location } from '@reach/router'
+import { Link } from 'gatsby'
 
 import Navbar from './Navbar.js'
 import '../../scss/styles.scss';
@@ -173,7 +174,7 @@ class TemplateWrapper extends React.Component {
 						<div className="maker-badge__btn" id="maker-badge__btn">
 							<img alt="" width="27" height="29" className="maker-badge__btn-img" src="/img/shared/our-values-icon.svg" />
 							<span>Orchid's Values</span>
-							<a href="/about-us#values">&nbsp;</a>
+							<Link href="/about-us#values">&nbsp;</Link>
 						</div>
 					</div>
 				</div>

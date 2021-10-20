@@ -1,3 +1,4 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
@@ -21,9 +22,9 @@ const Page = () => (
 						more private place for everyone.
 					</p>
 					<br />
-					<a href="/contact">
+					<Link href="/contact">
 						<button className="btn-primary btn__hero z-index-1">Discuss Partnership</button>
-					</a>
+					</Link>
 				</div>
 				<div className="hero__patterning"></div>
 				<div className="hero__image">

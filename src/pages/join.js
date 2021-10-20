@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './join.scss'
@@ -92,7 +93,7 @@ class Page extends React.Component {
 									Adjust your account to see how much OXT you need for the efficiency you want. Also note the amount of ETH needed for network fees.
 								</p>
 								<p i18n="@@JoinStep3__p2">
-									You will need both of those amounts in your attached wallet in order to create and fund the account. See our <a href="/join#get-oxt">participating exchanges</a> for acquiring OXT.
+									You will need both of those amounts in your attached wallet in order to create and fund the account. See our <Link href="/join#get-oxt">participating exchanges</Link> for acquiring OXT.
 								</p>
 							</div>
 						</div>
@@ -139,7 +140,7 @@ class Page extends React.Component {
 						<p className="medium" i18n="@@MoreQuestions__Subhead">
 							Check out the FAQ
 						</p>
-						<a href="/faq/"><button className="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">FAQ</button></a>
+						<Link href="/faq/"><button className="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">FAQ</button></Link>
 					</section>
 					<div className="home-satellite-4"></div>
 				</div>

@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import './where-oxt.scss'
 
 const Component = () => (
 	<div className="where-oxt">
 		<p i18n="@@ReportExchangesOXT">
 			When the Orchid community learns of new listings, they are publicly announced. <br /><br />
-			If you see OXT being traded on an exchange that isn’t listed here, please use the <a href="/contact">contact form</a> so that it can be added to the list.
+			If you see OXT being traded on an exchange that isn’t listed here, please use the <Link href="/contact">contact form</Link> so that it can be added to the list.
 		</p>
 		<div className="oxt-row">
 			<div className="oxt-column">

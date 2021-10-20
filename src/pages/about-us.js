@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 import Layout from '../components/common/Layout'
 import './about-us.scss'
 
@@ -420,7 +421,7 @@ const Page = () => (
 					<div className="z-index-1" id="corporate-buttons">
 						<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__SECFilingButton">SEC Filing</button></a>
 						<br />
-						<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></a>
+						<Link href="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></Link>
 					</div>
 					<div className="adorner" id="buttons-adorner">
 						<div className="pos-relative">

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Link } from 'gatsby'
 import Layout from '../components/common/Layout'
 import './how-it-works.scss'
 
@@ -122,7 +123,7 @@ const Page = () => (
 								<li>A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT that is staked, the greater the chances of reward in the Network.</li>
 								<li>A Bandwidth User - For the first time, users can pay-on-the-fly for a private, secure internet connection using nanopayments. Users add OXT or any of the supported cryptocurrencies to their Orchid account which is then used to pay providers for service while the VPN is connected.</li>
 							</ul>
-							<p><a href="/oxt">Learn more about OXT.</a></p>
+							<p><Link href="/oxt">Learn more about OXT.</Link></p>
 							<p>The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on any central party. The primary reasons for this new digital currency OXT are:</p>
 							<ol>
 								<li>To have a digital currency that is specifically tied to consumption of bandwidth on the Orchid network
@@ -192,7 +193,7 @@ const Page = () => (
 								<b>Crypto-native accounts:</b><br /> Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at <a href="https://account.orchid.com/">account.orchid.com</a>. The Orchid Account dapp can only be accessed using a web3 browser such as <a href="https://metamask.io/">Metamask</a>, and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing <a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency">efficiency</a> experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.
 							</p>
 							<p>
-								<a href="/join">Learn more about creating an Orchid account.</a>
+								<Link href="/join">Learn more about creating an Orchid account.</Link>
 							</p>
 						</div>
 					</div>
