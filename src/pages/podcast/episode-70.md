@@ -10,5 +10,6 @@ socialimage: https://www.orchid.com/img/podcast/P8PEpisode_JeremyGoldkorn.png
 platformurls:
  - https://podcasts.apple.com/us/podcast/chinas-social-credit-system-and-ban-on-crypto-with/id1516705670?i=1000539194304
  - https://open.spotify.com/episode/3GuG8O4MOESmwwzzTCUcNp
+ - https://podcasts.google.com/feed/aHR0cHM6Ly9mb2xsb3d0aGV3aGl0ZXJhYmJpdC5saWJzeW4uY29tL3Jzcw/episode/M2M5OTc4ZTktYTIxOS00MDlhLThhYmEtMjY4MTNlYzFiOTNh
  - https://castbox.fm/episode/China's-Social-Credit-System-and-Ban-on-Crypto-with-Jeremy-Goldkorn-id2954358-id434483706?country=us
 ---
