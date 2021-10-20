@@ -14,7 +14,7 @@ class Navbar extends React.Component {
 		}
 	}
 
-	componentWillMount() {
+	componentDidMount() {
 		this.setState({
 			js: true
 		})

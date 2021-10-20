@@ -8,7 +8,7 @@ class Component extends React.Component {
 			js: false,
 		};
 	}
-	componentWillMount() {
+	componentDidMount() {
 		this.setState({
 			js: true,
 		});
