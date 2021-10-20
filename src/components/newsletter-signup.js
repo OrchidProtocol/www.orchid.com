@@ -5,7 +5,7 @@ import './where-oxt.scss'
 const Component = () => (
 	<div className="where-oxt">
 		<p i18n="@@ReportExchangesOXT">
-			When we learn of new listings, they will be publicly announced. If you see OXT being traded on an exchange that isn’t listed here, please use the <Link href="/contact">contact</Link> form to let us know, so that it can be added to our list.
+			When we learn of new listings, they will be publicly announced. If you see OXT being traded on an exchange that isn’t listed here, please use the <Link to="/contact">contact</Link> form to let us know, so that it can be added to our list.
 		</p>
 		<h3 className="gap-top-thin" i18n="@@ExchangeListings">Exchange Listings</h3>
 		<a href="https://www.coinbase.com/price/orchid">
@@ -31,7 +31,7 @@ const Component = () => (
 		</a>
 		<br />
 		<br />
-		<Link href="/oxt">View the full list</Link>
+		<Link to="/oxt">View the full list</Link>
 		<h3 className="gap-top-wide" i18n="@@OXTContract">OXT Contract on Ethereum</h3>
 		<a href="https://etherscan.io/token/0x4575f41308ec1483f3d399aa9a2826d74da13deb">
 			<img src="/img/where-oxt/etherscan.png" srcSet="/img/where-oxt/etherscan.png, /img/where-oxt/etherscan@2x.png 2x, /img/where-oxt/etherscan@3x.png 3x" alt="Etherscan" />

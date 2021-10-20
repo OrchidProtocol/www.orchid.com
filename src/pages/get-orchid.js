@@ -93,7 +93,7 @@ class Page extends React.Component {
 							<br />
 							Orchid accounts purchased through the App stores are backed by the xDai crypto currency.
 							<br />
-							<Link href="/oxt">Learn more</Link>
+							<Link to="/oxt">Learn more</Link>
 						</p>
 					</div>
 					<div className="hero__content">
@@ -147,7 +147,7 @@ class Page extends React.Component {
 					</div>
 					<div className="hero__content center">
 						<p>- OR -</p>
-						<p><Link href="/join">Create a custom Orchid Account with your own crypto.</Link></p>
+						<p><Link to="/join">Create a custom Orchid Account with your own crypto.</Link></p>
 					</div>
 				</section>
 			</Layout>

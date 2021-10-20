@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby';
 
 import './Navbar.scss';
 
@@ -52,13 +53,13 @@ class Navbar extends React.Component {
 						</button>
 					</div>
 					<ul className="nav-list phantom-list">
-						<li className="mobile-only"><a className="phantom-a" href="/" i18n="@@Navigation-Home">Home</a></li>
-						<li><a className="phantom-a" href="/join" i18n="@@Navigation-Join">Create Account</a></li>
-						<li><a className="phantom-a" href="/how-it-works" i18n="@@Navigation-HowItWorks">How It Works</a></li>
-						<li><a className="phantom-a" href="/oxt" i18n="@@Navigation-OXT">OXT</a></li>
-						<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-About">About</a></li>
+						<li className="mobile-only"><Link to="/" className="phantom-a" i18n="@@Navigation-Home">Home</Link></li>
+						<li><Link to="/join" className="phantom-a" i18n="@@Navigation-Join">Create Account</Link></li>
+						<li><Link to="/how-it-works" className="phantom-a" i18n="@@Navigation-HowItWorks">How It Works</Link></li>
+						<li><Link to="/oxt" className="phantom-a" i18n="@@Navigation-OXT">OXT</Link></li>
+						<li><Link to="/about-us" className="phantom-a" i18n="@@Navigation-About">About</Link></li>
 						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
-						<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+						<li><Link to="/contact" className="phantom-a" i18n="@@Navigation-Contact">Contact</Link></li>
 						<li className="navbar-language-selector">
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />

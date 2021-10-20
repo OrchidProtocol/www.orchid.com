@@ -93,7 +93,7 @@ class Page extends React.Component {
 									Adjust your account to see how much OXT you need for the efficiency you want. Also note the amount of ETH needed for network fees.
 								</p>
 								<p i18n="@@JoinStep3__p2">
-									You will need both of those amounts in your attached wallet in order to create and fund the account. See our <Link href="/join#get-oxt">participating exchanges</Link> for acquiring OXT.
+									You will need both of those amounts in your attached wallet in order to create and fund the account. See our <Link to="/join#get-oxt">participating exchanges</Link> for acquiring OXT.
 								</p>
 							</div>
 						</div>
@@ -140,7 +140,7 @@ class Page extends React.Component {
 						<p className="medium" i18n="@@MoreQuestions__Subhead">
 							Check out the FAQ
 						</p>
-						<Link href="/faq/"><button className="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">FAQ</button></Link>
+						<Link to="/faq/"><button className="btn-secondary btn-fixed z-index-1" i18n="@@HomeNextLevel__Whitepaper">FAQ</button></Link>
 					</section>
 					<div className="home-satellite-4"></div>
 				</div>

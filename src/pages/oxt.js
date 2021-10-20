@@ -26,7 +26,7 @@ const Page = () => (
 							The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid's native ERC-20 digital asset that powers and secures a new approach to VPN service and providers compete for user payment flow by staking OXT. As more bandwidth is purchased on the Orchid network node providers can add and stake OXT in order to capture additional bandwidth sales on the network.
 						</p>
 						<div className="hero__buttons">
-							<Link href="/download">
+							<Link to="/download">
 								<button className="btn-primary btn-fixed z-index-1" i18n="@@HomeNextLevel__Download">Download</button>
 							</Link>
 							<a href="https://github.com/OrchidTechnologies">
@@ -161,7 +161,7 @@ const Page = () => (
 						Users need an Orchid account that holds funds to pay for VPN service. Orchid accounts can use OXT on Ethereum, or be homed on other EVM-compatible chains. The Orchid nanopayment system is chain-agnostic. While providers can receive payments from multiple blockchains, staking is always and only done with OXT on Ethereum.
 					</p>
 					<p>
-						<Link href="/how-it-works">Read more about provider staking here.</Link>
+						<Link to="/how-it-works">Read more about provider staking here.</Link>
 					</p>
 				</div>
 			</section>

@@ -20,7 +20,7 @@ const Page = () => (
 				<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
 				<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
 				<h3 className="color-primary"><span>A new model of VPN.</span></h3>
-				<Link href="/get-orchid" className="btn">
+				<Link to="/get-orchid" className="btn">
 					<button className="btn-primary">Get Orchid</button>
 				</Link>
 				<br />
@@ -37,9 +37,9 @@ const Page = () => (
 		<section className="marketplace__wrapper">
 			<div className="marketplace__container container-common">
 				<h2 className="section-heading">Orchid is a decentralized bandwidth marketplace</h2>
-				<p>Buyers use the <Link href="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites
+				<p>Buyers use the <Link to="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites
 					cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they
-					provide service and stake <Link href="/oxt">OXT</Link> to compete for service requests. Orchid Technologies charges no
+					provide service and stake <Link to="/oxt">OXT</Link> to compete for service requests. Orchid Technologies charges no
 					fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers
 					the entire ecosystem. Try it out!</p>
 				<picture>
@@ -61,7 +61,7 @@ const Page = () => (
 						<p>Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.</p>
 					</div>
 				</div>
-				<Link href="/how-it-works/" className="section-button">
+				<Link to="/how-it-works/" className="section-button">
 					<button className="btn-secondary">Learn More</button>
 				</Link>
 			</div>
@@ -162,7 +162,7 @@ const Page = () => (
 
 				<ExplainerVideo />
 
-				<Link href="/get-orchid" className="section-button">
+				<Link to="/get-orchid" className="section-button">
 					<button className="btn-secondary">Get Orchid</button>
 				</Link>
 			</div>

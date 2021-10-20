@@ -32,7 +32,7 @@ const PodcastHero = () => {
 				width: 20%;
 				max-width: 300px;
 			`}>
-				<Link href="/podcast#subscribe">
+				<Link to="/podcast#subscribe">
 					<img css={css`
 						display: block;
 						width: 100%;

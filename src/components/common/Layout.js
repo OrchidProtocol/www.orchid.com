@@ -174,7 +174,7 @@ class TemplateWrapper extends React.Component {
 						<div className="maker-badge__btn" id="maker-badge__btn">
 							<img alt="" width="27" height="29" className="maker-badge__btn-img" src="/img/shared/our-values-icon.svg" />
 							<span>Orchid's Values</span>
-							<Link href="/about-us#values">&nbsp;</Link>
+							<Link to="/about-us#values">&nbsp;</Link>
 						</div>
 					</div>
 				</div>

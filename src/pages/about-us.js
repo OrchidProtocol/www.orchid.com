@@ -421,7 +421,7 @@ const Page = () => (
 					<div className="z-index-1" id="corporate-buttons">
 						<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__SECFilingButton">SEC Filing</button></a>
 						<br />
-						<Link href="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></Link>
+						<Link to="/OrchidPressKit.zip" target="_blank" rel="noreferrer"><button className="btn-primary btn-fixed" i18n="@@AboutCompanyCorporate__PressKitButton">Press Kit</button></Link>
 					</div>
 					<div className="adorner" id="buttons-adorner">
 						<div className="pos-relative">

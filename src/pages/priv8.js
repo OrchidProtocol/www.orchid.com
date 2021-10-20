@@ -432,7 +432,7 @@ const Page = () => (
 					<p css={css`
 						text-align: left;
 					`}>
-						Priv8 is the premier global forum dedicated to the future of digital privacy. <Link href="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
+						Priv8 is the premier global forum dedicated to the future of digital privacy. <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
 					</p>
 					<p css={css`
 						margin-top: 2rem;
@@ -467,7 +467,7 @@ const Page = () => (
 					}
 				`}>
 					Presented by<br />
-					<Link href="/"><img src="/img/priv8/orchid-logo-teal.svg" width="110" height="28" alt="Orchid" /></Link>
+					<Link to="/"><img src="/img/priv8/orchid-logo-teal.svg" width="110" height="28" alt="Orchid" /></Link>
 					<span>&amp;</span>
 					<a href="https://handshake.org/"><img src="/img/priv8/handshake-logo-teal.svg" width="85" height="27" alt="Orchid" /></a>
 				</div>

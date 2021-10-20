@@ -22,7 +22,7 @@ const Page = () => (
 						more private place for everyone.
 					</p>
 					<br />
-					<Link href="/contact">
+					<Link to="/contact">
 						<button className="btn-primary btn__hero z-index-1">Discuss Partnership</button>
 					</Link>
 				</div>
