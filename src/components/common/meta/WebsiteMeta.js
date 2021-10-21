@@ -1,41 +1,48 @@
 import React from 'react'
 import Helmet from "react-helmet"
-import { StaticQuery } from 'gatsby'
 import url from 'url'
 
 import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
-const WebsiteMeta = ({ data, settings, canonical, title, description, image, type }) => {
-	if (canonical.substr(canonical.length - 1, 1) !== '/') {
-		canonical = canonical + '/';
+class WebsiteMeta extends React.Component {
+	constructor(props) {
+		super(props)
 	}
 
-	const publisherLogo = url.resolve(config.siteUrl, config.logo)
-	let shareImage = image || data.feature_image || config.image;
+	render() {
+		console.log(this.props)
+		let { data, title, description, image, type = "WebSite", location } = this.props;
+		let canonical = url.resolve(config.siteUrl, location.pathname)
+		if (canonical.substr(canonical.length - 1, 1) !== '/') {
+			canonical = canonical + '/';
+		}
 
-	shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null
+		const publisherLogo = url.resolve(config.siteUrl, config.logo)
+		let shareImage = image || data.feature_image || config.image;
 
-	description = description || data.meta_description || data.description || config.description
-	title = `${title || data.meta_title || data.name || data.title} - ${config.title}`
+		shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null
 
-	return (
-		<>
-			<Helmet>
-				<title>{title}</title>
-				<meta name="description" content={description} />
-				<link rel="canonical" href={canonical} />
-				<meta property="og:site_name" content={config.title} />
-				<meta property="og:type" content="website" />
-				<meta property="og:title" content={title} />
-				<meta property="og:description" content={description} />
-				<meta property="og:url" content={canonical} />
-				<meta name="twitter:title" content={title} />
-				<meta name="twitter:description" content={description} />
-				<meta name="twitter:url" content={canonical} />
-				{config.twitter && <meta name="twitter:site" content={`https://twitter.com/${config.twitter.replace(/^@/, ``)}/`} />}
-				{config.twitter && <meta name="twitter:creator" content={config.twitter} />}
-				<script type="application/ld+json">{`
+		description = description || data.meta_description || data.description || config.description
+		title = `${title || data.meta_title || data.name || data.title} - ${config.title}`
+
+		return (
+			<>
+				<Helmet>
+					<title>{title}</title>
+					<meta name="description" content={description} />
+					<link rel="canonical" href={canonical} />
+					<meta property="og:site_name" content={config.title} />
+					<meta property="og:type" content="website" />
+					<meta property="og:title" content={title} />
+					<meta property="og:description" content={description} />
+					<meta property="og:url" content={canonical} />
+					<meta name="twitter:title" content={title} />
+					<meta name="twitter:description" content={description} />
+					<meta name="twitter:url" content={canonical} />
+					{config.twitter && <meta name="twitter:site" content={`https://twitter.com/${config.twitter.replace(/^@/, ``)}/`} />}
+					{config.twitter && <meta name="twitter:creator" content={config.twitter} />}
+					<script type="application/ld+json">{`
                     {
                         "@context": "https://schema.org/",
                         "@type": "${type}",
@@ -63,10 +70,11 @@ const WebsiteMeta = ({ data, settings, canonical, title, description, image, typ
                         "description": "${description}"
                     }
                 `}</script>
-			</Helmet>
-			<ImageMeta image={shareImage} />
-		</>
-	)
+				</Helmet>
+				<ImageMeta image={shareImage} />
+			</>
+		)
+	}
 }
 
 export default WebsiteMeta
