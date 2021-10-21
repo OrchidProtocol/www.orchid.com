@@ -189,7 +189,7 @@ const Page = () => (
 		<Helmet>
 			<title>Priv8 | Orchid</title>
 			<meta name="description" content="Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders." />
-			<meta name="og:image" content="https://orchid.com/img/priv8/social.jpg" />
+			<meta name="og:image" content="https://www.orchid.com/img/priv8/social.jpg" />
 			<body className="priv8-page" />
 			<style>{`
 				@font-face {

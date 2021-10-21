@@ -8,7 +8,7 @@ const Page = () => (
 		<Helmet>
 			<title>Ambassador program | Orchid</title>
 			<meta name="description" content="Let's reclaim the Internet together!" />
-			<meta name="og:image" content="https://orchid.com/img/contact/social.png" />
+			<meta name="og:image" content="https://www.orchid.com/img/contact/social.png" />
 			<body className="privacy-guardian-page" />
 		</Helmet>
 		<div className="hero__wrapper">

@@ -9,7 +9,7 @@ const Page = () => (
 		<Helmet>
 			<title>Webinar: Creating an Orchid Account | Orchid</title>
 			<meta name="description" content="Join to learn how to get Orchid setup and running. You will learn how to use Metamask to fund an Orchid account with OXT." />
-			<meta name="og:image" content="https://orchid.com/img/how-it-works/social.png" />
+			<meta name="og:image" content="https://www.orchid.com/img/how-it-works/social.png" />
 			<body className="webinar-page" />
 		</Helmet>
 		<div className="webinar__page-container">

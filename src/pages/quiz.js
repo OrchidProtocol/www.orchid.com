@@ -8,7 +8,7 @@ const Page = () => (
 		<Helmet>
 			<title>Privacy Quiz | Orchid</title>
 			<meta name="description" content="Check to see how much you know about online privacy!" />
-			<meta name="og:image" content="https://orchid.com/img/quiz/social.png" />
+			<meta name="og:image" content="https://www.orchid.com/img/quiz/social.png" />
 			<body className="webinar-page" />
 		</Helmet>
 
