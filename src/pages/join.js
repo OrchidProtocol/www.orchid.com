@@ -4,6 +4,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './join.scss'
 import WhereOXT from '../components/where-oxt';
+import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 
 class Page extends React.Component {
 
@@ -26,10 +27,13 @@ class Page extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<WebsiteMeta
+					title="Get Orchid | Orchid"
+					description="We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN."
+					image="/img/join/social.jpg"
+					location={this.props.location}
+				/>
 				<Helmet>
-					<title>Get Orchid | Orchid</title>
-					<meta name="description" content="We believe the internet should be open and accessible to everyone, which is why we\'re building a truly open source network overlay VPN." />
-					<meta name="og:image" content="https://www.orchid.com/img/join/social.jpg" />
 					<body className="join-page" />
 				</Helmet>
 				<div className="join background-white">

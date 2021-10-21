@@ -6,25 +6,21 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 
 class WebsiteMeta extends React.Component {
-	constructor(props) {
-		super(props)
-	}
 
 	render() {
-		console.log(this.props)
-		let { data, title, description, image, type = "WebSite", location } = this.props;
+		let { title, description, image, type = "WebSite", location } = this.props;
 		let canonical = url.resolve(config.siteUrl, location.pathname)
 		if (canonical.substr(canonical.length - 1, 1) !== '/') {
 			canonical = canonical + '/';
 		}
 
-		const publisherLogo = url.resolve(config.siteUrl, config.logo)
-		let shareImage = image || data.feature_image || config.image;
+		const publisherLogo = url.resolve(config.siteUrl, config.logo);
+		let shareImage = image || config.image;
 
-		shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null
+		shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null;
 
-		description = description || data.meta_description || data.description || config.description
-		title = `${title || data.meta_title || data.name || data.title} - ${config.title}`
+		description = description || config.description;
+		title = `${title ? `${title} - ` : ''} ${config.title}`;
 
 		return (
 			<>
