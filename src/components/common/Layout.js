@@ -61,18 +61,18 @@ class TemplateWrapper extends React.Component {
 					<script dangerouslySetInnerHTML={{
 						/*Removes the 'no-js' class*/
 						__html: `
-                    document.addEventListener('DOMContentLoaded', ()=>{
-                        document.body.classList.remove('no-js');
-                    });
-                    document.body.classList.remove('no-js');
-                    `,
-					}}></script>
+						document.addEventListener('DOMContentLoaded', ()=>{
+							document.body.classList.remove('no-js');
+						});
+						document.body.classList.remove('no-js');
+						`,
+					}} />
 
 					<Navbar />
 
 					<main css={css`
-					font-size: 16px;
-				`}>
+						font-size: 16px;
+					`}>
 						{/* All the main content gets inserted here, index.js, post.js */}
 						{this.props.children}
 					</main>
