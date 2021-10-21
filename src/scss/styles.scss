@@ -347,7 +347,7 @@ main {
 	max-width: 100%;
 	width: 100%;
 	height: 222px;
-	background-image: url("/assets/img/shared/circuit.svg");
+	background-image: url("/img/shared/circuit.svg");
 	background-repeat: no-repeat;
 	background-position: top left;
 	background-size: auto 100%;
@@ -915,9 +915,9 @@ h4 {
 	padding: 0;
 
 	& > li {
-		// background: url("/assets/img/shared/check.svg") no-repeat center left;
+		// background: url("/img/shared/check.svg") no-repeat center left;
 		// padding-left: 24px;
-		list-style-image: url("/assets/img/shared/check.svg");
+		list-style-image: url("/img/shared/check.svg");
 	}
 }
 
