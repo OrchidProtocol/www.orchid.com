@@ -38,34 +38,34 @@ class WebsiteMeta extends React.Component {
 					<meta name="twitter:url" content={canonical} />
 					{config.twitter && <meta name="twitter:site" content={`https://twitter.com/${config.twitter.replace(/^@/, ``)}/`} />}
 					{config.twitter && <meta name="twitter:creator" content={config.twitter} />}
-					<script type="application/ld+json">{`
-                    {
-                        "@context": "https://schema.org/",
-                        "@type": "${type}",
-                        "url": "${canonical}",
-                        ${shareImage ? `"image": {
-                                "@type": "ImageObject",
-                                "url": "${shareImage}",
-                                "width": "${config.shareImageWidth}",
-                                "height": "${config.shareImageHeight}"
-                            },` : ``}
-                        "publisher": {
-                            "@type": "Organization",
-                            "name": "${config.title}",
-                            "logo": {
-                                "@type": "ImageObject",
-                                "url": "${publisherLogo}",
-                                "width": 60,
-                                "height": 60
-                            }
-                        },
-                        "mainEntityOfPage": {
-                            "@type": "WebPage",
-                            "@id": "${config.siteUrl}"
-                        },
-                        "description": "${description}"
-                    }
-                `}</script>
+					<script type="application/ld+json">{
+						JSON.stringify({
+							"@context": "https://schema.org/",
+							"@type": type,
+							"url": canonical,
+							"image": shareImage ? {
+								"@type": "ImageObject",
+								"url": shareImage,
+								"width": config.shareImageWidth,
+								"height": config.shareImageHeight
+							} : undefined,
+							"publisher": {
+								"@type": "Organization",
+								"name": config.title,
+								"logo": {
+									"@type": "ImageObject",
+									"url": publisherLogo,
+									"width": 60,
+									"height": 60
+								}
+							},
+							"mainEntityOfPage": {
+								"@type": "WebPage",
+								"@id": config.siteUrl
+							},
+							"description": description
+						})
+					}</script>
 				</Helmet>
 				<ImageMeta image={shareImage} />
 			</>
