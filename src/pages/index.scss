@@ -42,6 +42,7 @@
 		padding: 2rem 0;
 		padding-top: 3rem;
 		@media (min-width: 768px) {
+			margin-top: 1rem;
 			padding: 5rem 0;
 		}
 		display: flex;
@@ -126,6 +127,7 @@
 			background-repeat: no-repeat;
 			background-position: center;
 			transform: scale(2.5) translateX(5%) translateY(5%);
+			pointer-events: none;
 		}
 	}
 	.home-hero__image {

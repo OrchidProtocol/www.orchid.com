@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import styled from '@emotion/styled';
 import Layout from '../components/common/Layout'
 import './index.scss'
 import ExplainerVideo from '../components/explainerVideo';
@@ -8,6 +9,44 @@ import NewsletterSignupCore from '../components/newsletter-signup-core';
 import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import { css } from '@emotion/react';
+
+const Banner = styled.div`
+	z-index: 10;
+	background: linear-gradient(90deg, #EB53E2 0%, #5F45BA 100%);
+	padding: 0.4rem;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	width: 100%;
+	box-sizing: border-box;
+
+	@media (min-width: 768px) {
+		border-radius: 1rem 0 0 1rem;
+		max-width: 720px;
+		position: absolute;
+		right: calc(50% - 360px);
+		margin-top: -0.75rem;
+	}
+	@media (min-width: 1450px) {
+		right: calc(50% - 720px);
+	}
+`;
+const BannerTail = styled.div`
+	height: 100%;
+	display: none;
+	background: #5F45BA;
+	position: absolute;
+	top: 0;
+	@media (min-width: 768px) {
+		display: block;
+		left: 100%;
+		width: calc(50vw - 360px - 9px);
+	}
+	@media (min-width: 1450px) {
+		width: calc(50vw - 720px - 9px);
+	}
+`;
 
 class Page extends React.Component {
 
@@ -23,6 +62,16 @@ class Page extends React.Component {
 				<Helmet>
 					<body className="index-page" />
 				</Helmet>
+
+				<Link to="/priv8" css={css`
+					text-decoration: none;
+				`}>
+					<Banner>
+						Register for Priv8 Virtual Privacy Summit on Nov 15th
+						<BannerTail />
+					</Banner>
+				</Link>
+
 				<section className="home-hero">
 					<div className="home-hero__content">
 						<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
