@@ -135,7 +135,7 @@ class Page extends React.Component {
 								</Link>
 								<br />
 								<br />
-								<h3>Register now!</h3>
+								<h3 css={css`color:inherit;`}>Register now!</h3>
 								<br />
 								<p>
 									Get updates and viewing instructions for the conference.
