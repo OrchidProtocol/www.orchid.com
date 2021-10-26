@@ -84,6 +84,7 @@ class Component extends React.Component {
 		}
 
 		this.in_progress = true;
+		this.setState(tempState);
 		fetch(mailchimp_url)
 			.then(response => response.json())
 			.then(
