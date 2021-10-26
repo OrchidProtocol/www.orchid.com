@@ -48,6 +48,19 @@ const BannerTail = styled.div`
 	}
 `;
 
+const Priv8Hexes = styled.div`
+	width: 20%;
+	display: none;
+	img {
+		display: block;
+		margin: auto;
+		width: 70%;
+	}
+	@media (min-width: 768px) {
+		display: block;
+	}
+`;
+
 class Page extends React.Component {
 
 	render() {
@@ -91,6 +104,54 @@ class Page extends React.Component {
 				</section>
 
 				<div className="wavy-element-02"></div>
+
+				<section className="priv8__wrapper">
+					<div className="priv8__container container-common">
+						<div css={css`
+							display: flex;
+							justify-content: space-around;
+						`}>
+							<Priv8Hexes>
+								<img src="/img/index/priv8-hexes.svg" width="168" height="484" alt="" />
+							</Priv8Hexes>
+
+							<div css={css`
+								@media (min-width: 768px) {
+									width: 60%;
+									max-width: 514px;
+								}
+								img {
+									width: 100%;
+									max-width: 340px;
+								}
+								text-align: center;
+							`}>
+								<Link to="/priv8">
+									<picture width="1024" height="542">
+										<source srcSet="/img/index/priv8-logo.avif" type="image/avif" />
+										<source srcSet="/img/index/priv8-logo.webp" type="image/webp" />
+										<img src="/img/index/priv8-logo.png" alt="" width="1024" height="542" />
+									</picture>
+								</Link>
+								<br />
+								<br />
+								<h3>Register now!</h3>
+								<br />
+								<p>
+									Get updates and viewing instructions for the conference.
+									<br />
+									And nothing else.
+								</p>
+
+								<NewsletterSignupCore priv8={true} className="alternate" />
+							</div>
+
+							<Priv8Hexes>
+								<img src="/img/index/priv8-hexes.svg" width="168" height="484" css={css`transform: scaleX(-1);`} alt="" />
+							</Priv8Hexes>
+						</div>
+					</div>
+				</section>
 
 				<section className="marketplace__wrapper">
 					<div className="marketplace__container container-common">

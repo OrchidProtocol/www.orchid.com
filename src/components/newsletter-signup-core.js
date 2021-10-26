@@ -113,7 +113,7 @@ class Component extends React.Component {
 
 	render() {
 		return (
-			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '')}>
+			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '') + (this.props.className ? ' ' + this.props.className : '')}>
 				<form onSubmit={this.submit.bind(this)}>
 					<div style={{ display: this.state.submitted ? 'none' : '' }}>
 						<input type="email" name="email" required i18n-placeholder="@@EmailAddress" placeholder="Email address" className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
