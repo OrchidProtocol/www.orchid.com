@@ -84,6 +84,7 @@ class Page extends React.Component {
 						<small>(starting at just $1)</small>
 					</div>
 					<picture className="home-hero__picture" width="491" height="765">
+						<source srcSet="/img/index/phone.avif" type="image/avif" />
 						<source srcSet="/img/index/phone.webp" type="image/webp" />
 						<img src="/img/index/phone.png" alt="" className="home-hero__image" width="491" height="765" />
 					</picture>
