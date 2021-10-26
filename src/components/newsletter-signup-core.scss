@@ -100,5 +100,28 @@
 				color: #000000;
 			}
 		}
+		&.alternate {
+			input[type="email"] {
+				border-color: #eb53e2;
+				color: inherit;
+			}
+			.newsletter-signup__button {
+				&.loading {
+					&:after {
+						border-top: 2px solid #eb53e2;
+					}
+				}
+			}
+			.newsletter-signup__button.btn-secondary {
+				border-color: $orc-purple;
+				background: $orc-purple;
+				color: #ffffff;
+				&:hover {
+					border-color: $orc-purple;
+					background: $orc-purple;
+					color: #ffffff;
+				}
+			}
+		}
 	}
 }

@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './download.scss'
 import WhereOxt from '../components/where-oxt';
+import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 class Page extends React.Component {
 
@@ -25,10 +26,13 @@ class Page extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<WebsiteMeta
+					title="VPN App for iOS, Android &amp; macOS | Orchid"
+					description="Orchid is a VPN client, VPN service and advanced networking tool."
+					image="/img/contact/social.png"
+					location={this.props.location}
+				/>
 				<Helmet>
-					<title>VPN App for iOS, Android &amp; macOS | Orchid</title>
-					<meta name="description" content="Orchid is a VPN client, VPN service and advanced networking tool." />
-					<meta name="og:image" content="https://orchid.com/img/contact/social.png" />
 					<body className="download-page" />
 				</Helmet>
 				<div className="background-white">

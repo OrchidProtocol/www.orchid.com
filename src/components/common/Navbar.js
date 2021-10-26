@@ -41,10 +41,10 @@ class Navbar extends React.Component {
 		return (<div id="nav-root">
 			<nav id="nav" className={"section-wide hpad-thin" + (this.state.js ? " js" : "")}>
 				<h1 id="nav-home">
-					<a className="inline-block" href="/" aria-label="Home" title="Home">
+					<Link className="inline-block" to="/" aria-label="Home" title="Home">
 						<img width="93" height="24" src="/img/shared/orchid-logo-text.svg" alt="Orchid logo" className="no-mobile" />
 						<img width="35" height="30" src="/img/shared/orchid-logo-small.svg" alt="Orchid logo" className="mobile-only" />
-					</a>
+					</Link>
 				</h1>
 				<div className={"nav-menu" + (this.state.js ? " js" : "") + (this.state.navigationCollapsed ? "" : " open")}>
 					<div id="nav-flyout-header" className="mobile-only">

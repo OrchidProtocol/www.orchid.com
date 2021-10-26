@@ -2,6 +2,7 @@ import { Link } from 'gatsby'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
+import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './get-orchid.scss'
 
 class Page extends React.Component {
@@ -25,9 +26,12 @@ class Page extends React.Component {
 	render() {
 		return (
 			<Layout>
+				<WebsiteMeta
+					title="VPN App | Orchid"
+					description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
+					location={this.props.location}
+				/>
 				<Helmet>
-					<title>VPN App | Orchid</title>
-					<meta name="description" content="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy." />
 					<body className="get-orchid-page" />
 				</Helmet>
 				<div className="wavy-element-03"></div>

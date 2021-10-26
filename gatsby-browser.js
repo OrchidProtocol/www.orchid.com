@@ -20,6 +20,7 @@ const utm_holdovers = {
 	utm_source: localStorage["utm_source"],
 	utm_medium: localStorage["utm_medium"],
 	utm_campaign: localStorage["utm_campaign"],
+	ct: localStorage["utm_campaign"],
 	utm_term: localStorage["utm_term"],
 	utm_content: localStorage["utm_content"],
 }
@@ -28,7 +29,7 @@ const addUTMParameters = (link) => {
 	let urlParts = link.split("?");
 	const parameters = new URLSearchParams(urlParts[1]);
 	for (let param of parameters) {
-		if (parameters.has(param[0])) {
+		if (parameters.has(param[0]) && utm_holdovers[param[0]] !== undefined) {
 			const key = param[0];
 			let value = param[1];
 			if (key === "utm_campaign" || key === "ct") {

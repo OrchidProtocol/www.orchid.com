@@ -1,6 +1,6 @@
 module.exports = {
 	lang: 'en',
-	siteUrl: 'https://orchid.com/',
+	siteUrl: 'https://www.orchid.com/',
 	main_site: 'https://www.orchid.com/',
 
 	description: 'Stay up to date with Orchid, VPN, and online privacy issues.',

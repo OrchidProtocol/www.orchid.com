@@ -40,17 +40,17 @@ class TemplateWrapper extends React.Component {
 				<Location>
 					{({ location }) => {
 						return <Helmet>
-							<link rel="alternate" href={`https://orchid.com/ko${location.pathname}`} hrefLang="ko" />
-							<link rel="alternate" href={`https://orchid.com${location.pathname}`} hrefLang="x-default" />
-							<link rel="alternate" href={`https://orchid.com/ja${location.pathname}`} hrefLang="ja" />
-							<link rel="alternate" href={`https://orchid.com/zh${location.pathname}`} hrefLang="zh" />
-							<link rel="alternate" href={`https://orchid.com/id${location.pathname}`} hrefLang="id" />
-							<link rel="alternate" href={`https://orchid.com/ru${location.pathname}`} hrefLang="ru" />
+							<link rel="alternate" href={`https://www.ko.orchid.com${location.pathname}`} hrefLang="ko" />
+							<link rel="alternate" href={`https://www.orchid.com${location.pathname}`} hrefLang="x-default" />
+							<link rel="alternate" href={`https://www.ja.orchid.com${location.pathname}`} hrefLang="ja" />
+							<link rel="alternate" href={`https://www.zh.orchid.com${location.pathname}`} hrefLang="zh" />
+							<link rel="alternate" href={`https://www.id.orchid.com${location.pathname}`} hrefLang="id" />
+							<link rel="alternate" href={`https://www.ru.orchid.com${location.pathname}`} hrefLang="ru" />
 
 							{
 								process.env.GATSBY_TARGET_LANG === "en" || !process.env.GATSBY_TARGET_LANG ?
-									<meta rel="canonical" href={`https://orchid.com${location.pathname}`} /> :
-									<meta rel="canonical" href={`https://orchid.com/${process.env.GATSBY_TARGET_LANG.toLowerCase()}${location.pathname}`} />
+									<meta rel="canonical" href={`https://www.orchid.com${location.pathname}`} /> :
+									<meta rel="canonical" href={`https://www.orchid.com/${process.env.GATSBY_TARGET_LANG.toLowerCase()}${location.pathname}`} />
 							}
 						</Helmet>
 					}}
@@ -61,18 +61,18 @@ class TemplateWrapper extends React.Component {
 					<script dangerouslySetInnerHTML={{
 						/*Removes the 'no-js' class*/
 						__html: `
-                    document.addEventListener('DOMContentLoaded', ()=>{
-                        document.body.classList.remove('no-js');
-                    });
-                    document.body.classList.remove('no-js');
-                    `,
-					}}></script>
+						document.addEventListener('DOMContentLoaded', ()=>{
+							document.body.classList.remove('no-js');
+						});
+						document.body.classList.remove('no-js');
+						`,
+					}} />
 
 					<Navbar />
 
 					<main css={css`
-					font-size: 16px;
-				`}>
+						font-size: 16px;
+					`}>
 						{/* All the main content gets inserted here, index.js, post.js */}
 						{this.props.children}
 					</main>
