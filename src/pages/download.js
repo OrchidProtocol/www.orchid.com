@@ -4,6 +4,7 @@ import Layout from '../components/common/Layout'
 import './download.scss'
 import WhereOxt from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import { StaticImage } from "gatsby-plugin-image";
 
 class Page extends React.Component {
 
@@ -45,8 +46,8 @@ class Page extends React.Component {
 					<section className="download-images__wrapper">
 						<div className="download-images__container">
 							<h4 i18n="@@DownloadAndroid__Title">Android</h4>
-							<img src="/img/download/phone-1.png" width="434" height="796" className="download-images__device" alt="" />
-							<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
+							<StaticImage src="../../static/img/download/phone-android.png" width={450} height={913} className="download-images__device" alt="" />
+							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 							<ul className="download-instructions__list" i18n="@@DownloadAndroid__Body" style={{ listStyle: "none" }}>
 								<li>
 									<a href={this.state.androidLink} data-appstorelink>
@@ -65,25 +66,25 @@ class Page extends React.Component {
 							</ul>
 						</div>
 						<div className="download-images__container">
-							<h4 i18n="@@DownloadiOS__Title">iOS</h4>
-							<img src="/img/download/phone-2.png" width="432" height="796" className="download-images__device" alt="" />
-							<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
-							<ul className="download-instructions__list" i18n="@@DownloadiOS__Body">
+							<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
+							<StaticImage src="../../static/img/download/laptop.png" width={800} height={418} className="download-images__device mac" alt="" />
+							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
+							<ul className="download-instructions__list" i18n="@@DownloadMacOS__Body">
 								<li>
 									<a href={this.state.iOSLink} data-appstorelink>
-										<img alt="iOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
+										<img alt="macOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 									</a>
 								</li>
 							</ul>
 						</div>
 						<div className="download-images__container">
-							<h4 i18n="@@DownloadMacOS__Title">macOS</h4>
-							<img src="/img/download/macbook.png" width="802" height="466" className="download-images__device mac" alt="" />
-							<img src="/img/download/circle.svg" className="download-images__circle" alt="" />
-							<ul className="download-instructions__list" i18n="@@DownloadMacOS__Body">
+							<h4 i18n="@@DownloadiOS__Title">iOS</h4>
+							<StaticImage src="../../static/img/download/phone-ios.png" width={450} height={913} className="download-images__device" alt="" />
+							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
+							<ul className="download-instructions__list" i18n="@@DownloadiOS__Body">
 								<li>
 									<a href={this.state.iOSLink} data-appstorelink>
-										<img alt="macOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
+										<img alt="iOS" src="/img/shared/ios.png" width="1280" height="379" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 									</a>
 								</li>
 							</ul>

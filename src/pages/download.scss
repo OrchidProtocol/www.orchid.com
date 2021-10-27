@@ -169,18 +169,19 @@
 	.download-images__device {
 		position: relative;
 		z-index: 2;
-		max-width: 100%;
-		@media (max-width: 1100px) {
-			margin-top: -10%;
-		}
+		max-width: 80%;
+		margin: 10% auto;
 
 		&.mac {
-			margin-top: 72.8%;
 			margin-bottom: 10%;
 			max-width: unset;
-			width: 175%;
-			@media (max-width: 1100px) {
-				margin-top: 10%;
+			width: 120%;
+			margin: 0 -10%;
+			margin-top: 72.8%;
+
+			@media (min-width: 1100px) {
+				width: 190%;
+				margin: 72.8% -45% 10%;
 			}
 		}
 	}
