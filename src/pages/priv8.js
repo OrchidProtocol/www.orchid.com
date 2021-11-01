@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { css } from '@emotion/react';
@@ -236,7 +236,7 @@ const SpeakerItem = styled.div`
 		width: calc(100% + 1.5rem);
 	}
 
-	&:first-child {
+	&:first-of-type {
 		margin-top: 0;
 	}
 `;
@@ -326,11 +326,22 @@ const agendaList = [
 ];
 
 const AgendaSection = function () {
+	let [timezone, setTimezone] = useState('America/Los_Angeles');
+	let [hasJS, setHasJS] = useState(false);
 
-	let timezone = 'America/Los_Angeles';
+	useEffect(() => {
+		setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+		setHasJS(true);
+	}, []);
+
+	/*let timezone = 'America/Los_Angeles';
+	let hasJS = false;
 	try {
-		timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
-	} catch (e) { }
+		if (typeof window === 'object') {
+			timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+			hasJS = true;
+		}
+	} catch (e) { }*/
 
 	const items = [];
 	for (let index = 0; index < agendaList.length; index++) {
@@ -366,7 +377,7 @@ const AgendaSection = function () {
 				`}>
 					<h2>Agenda</h2>
 					<b>NOVEMBER 15, 2021</b>
-					<p>*All times listed are in PST</p>
+					{hasJS ? <></> : <p>*All times listed are in PST</p>}
 				</div>
 				<hr />
 				{items}
