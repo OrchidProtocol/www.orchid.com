@@ -269,6 +269,118 @@ const SpeakerImage = styled.div`
 		background-position: bottom center;
 	}
 `;
+
+const AgendaItem = styled.div`
+	display: flex;
+	padding: 1rem 0;
+`;
+const AgendaDescription = styled.div`
+	width: 80%;
+	padding-left: 1rem;
+	box-sizing: border-box;
+	& > p {
+		margin: 0;
+	}
+`;
+const AgendaDate = styled.div`
+	width: 20%;
+	text-align: right;
+`;
+
+const agendaList = [
+	{
+		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
+		title: 'Free Internet',
+		description: 'With Glenn Greenwald',
+	},
+	{
+		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
+		title: 'Free Money',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
+		title: 'Free Thought',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 14:00:00 GMT-0800'),
+		title: 'Free up privacy design space',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		title: 'Free fall or free for all?',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
+		title: 'Free fortune reading',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 17:00:00 GMT-0800'),
+		title: 'Live TLD & NFT Auction',
+		description: 'Hosted by Handshake',
+	},
+];
+
+const AgendaSection = function () {
+
+	let timezone = 'America/Los_Angeles';
+	try {
+		timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+	} catch (e) { }
+
+	const items = [];
+	for (let index = 0; index < agendaList.length; index++) {
+		const element = agendaList[index];
+		items.push(
+			<AgendaItem key={index}>
+				<AgendaDate>
+					{element.date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true, timeZone: timezone })}
+				</AgendaDate>
+				<AgendaDescription>
+					<b>{element.title.toUpperCase()}</b>
+					<p>{element.description}</p>
+				</AgendaDescription>
+			</AgendaItem>
+		)
+	}
+
+
+	return (<div css={css`
+				background: #000000;
+				hr {
+					border-color: var(--teal);
+					border-style: solid;
+				}
+			`} id="agenda">
+		<Container>
+			<div css={css`
+				width: 100%;
+				max-width: 490px;
+			`}>
+				<div css={css`
+					text-align: center;
+				`}>
+					<h2>Agenda</h2>
+					<b>NOVEMBER 15, 2021</b>
+					<p>*All times listed are in PST</p>
+				</div>
+				<hr />
+				{items}
+				<hr />
+				<img css={css`
+					width: 65%;
+					margin: 2rem auto 0;
+					display: block;
+				`} src="/img/priv8/agenda-hexes.svg" width="440" height="128" alt="" />
+			</div>
+		</Container>
+	</div>)
+}
+
 class Page extends React.Component {
 
 	render() {
@@ -800,6 +912,8 @@ class Page extends React.Component {
 						<hr />
 					</div>
 				</Container>
+
+				<AgendaSection />
 
 				<div css={css`
 					background: #000000;
