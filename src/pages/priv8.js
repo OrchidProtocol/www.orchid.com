@@ -472,11 +472,11 @@ class Page extends React.Component {
 						h2, h2:not(.secondary) {
 							font-family: 'BonvenoCF', sans-serif !important;
 							font-weight: 400;
-							font-size: 60px !important;
+							font-size: 60px;
 						}
 						@media (max-width: 1200px) {
-							h2 {
-								font-size: 30px !important;
+							h2, h2:not(.secondary) {
+								font-size: 30px;
 							}
 						}
 
@@ -996,6 +996,7 @@ class Page extends React.Component {
 							</PreviousSpeakerRow>
 						</div>
 					</Container>
+
 					<Container>
 						<div css={css`
 							text-align: center;
@@ -1005,6 +1006,68 @@ class Page extends React.Component {
 							<hr />
 						</div>
 					</Container>
+
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+							<h4 css={css`
+								font-family: 'BonvenoCF', sans-serif !important;
+								font-weight: 400;
+								font-size: 1.5rem;
+								@media (max-width: 768px) {
+									font-size: 1rem;
+								}
+							`}>PRIV8 ONLINE IS</h4>
+							<h3 css={css`
+								font-family: 'BonvenoCF', sans-serif !important;
+								font-weight: 400;
+								color: var(--purple) !important;
+								font-size: 3rem;
+								@media (max-width: 768px) {
+									font-size: 1.65rem;
+								}
+							`}>SPONSORED BY</h3>
+							<div css={css`
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+								flex-wrap: wrap;
+								margin-top: 2rem;
+								& > a {
+									display: block;
+									width: 40%;
+								}
+								@media (max-width: 768px) {
+									margin-top: 1rem;
+									& > a {
+										margin: 1rem auto;
+										width: 90%;
+									}
+								}
+							`}>
+								<a href="https://bobwallet.io/">
+									<img src="/img/priv8/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
+								</a>
+								<a href="https://www.decentralizedinter.net/">
+									<StaticImage src="../../static/img/priv8/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
+								</a>
+							</div>
+						</div>
+					</Container>
+
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+							<hr />
+						</div>
+					</Container>
+
 					<Container>
 						<div css={css`
 							text-align: center;
