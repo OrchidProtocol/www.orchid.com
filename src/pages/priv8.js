@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet'
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { StaticImage } from "gatsby-plugin-image";
 
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 import { Link } from 'gatsby';
@@ -164,14 +165,34 @@ const HeadlineSpeakerContainer = styled.div`
 	}
 `;
 
+const HeadlineSpeakerImage = styled.div`
+	padding: 25% 0;
+	display: block;
+	background-image: url('/img/priv8/header-shapes.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	picture {
+		width: 90%;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	&[data-role="desktop"] {
+			padding: 30% 0;
+			picture {
+				margin-top: -2rem;
+				width: 90%;
+			}
+	}
+`;
+
 const Speaker = (props) => {
 	return (
 		<HeadlineSpeakerContainer data-role={props.role}>
-			<picture>
-				<source srcSet="/img/priv8/Headliner.avif" type="image/avif" />
-				<source srcSet="/img/priv8/Headliner.webp" type="image/webp" />
-				<img src="/img/priv8/Headliner.png" width="1000" height="1000" alt="Featuring Keynote Speaker Glenn Greenwald" />
-			</picture>
+			<HeadlineSpeakerImage>
+				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" width={1000} height={1000} alt="" />
+			</HeadlineSpeakerImage>
 			<p>Featuring:</p>
 			<p>Pulitzer-Prize winning journalist</p>
 			<b>Glenn Greenwald</b>
@@ -179,6 +200,75 @@ const Speaker = (props) => {
 	);
 }
 
+
+const SpeakerItem = styled.div`
+	position: relative;
+	background: #000;
+	color: #fff;
+	text-align: left;
+	
+	& > h3 {
+		color: white;
+		margin: 0;
+		text-align: center;
+	}
+	& > b {
+		display: block;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	@media (min-width: 1200px) {
+		& > h3, & > b {
+			text-align: left;
+		}
+	}
+
+	border-radius: 0.75rem;
+	padding: 1rem;
+	margin: 2rem auto;
+	@media (min-width: 1200px) {
+		margin: 4rem auto;
+		padding: 2rem 4rem;
+	}
+	@media (max-width: 400px) {
+		margin-left: -1.75rem;
+		margin-right: -1.75rem;
+		width: calc(100% + 1.5rem);
+	}
+
+	&:first-child {
+		margin-top: 0;
+	}
+`;
+const SpeakerImage = styled.div`
+	margin: 0 auto 1rem auto;
+	position: relative;
+	width: 8rem;
+
+	@media (min-width: 1200px) {
+		position: absolute;
+		top: -2rem;
+		left: -4rem;
+		width: 8rem;
+		margin: 0;
+	}
+	& > div {
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 10%;
+		left: 15%;
+		width: 70%;
+		height: 100%;
+		background-image: url('/img/priv8/polygon.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+`;
 class Page extends React.Component {
 
 	render() {
@@ -252,12 +342,13 @@ class Page extends React.Component {
 						}
 
 						h1, h2, h3, h4, h1:not(.secondary), h2:not(.secondary), h3:not(.secondary), h4:not(.secondary) {
-							font-family: 'Maven Pro', sans-serif;
+							font-family: 'Maven Pro', sans-serif; 
 							color: white;
 						}
 
-						h2 {
+						h2, h2:not(.secondary) {
 							font-family: 'BonvenoCF', sans-serif !important;
+							font-weight: 400;
 							font-size: 60px !important;
 						}
 						@media (max-width: 1200px) {
@@ -620,6 +711,82 @@ class Page extends React.Component {
 						</div>
 					</Container>
 				</div>
+
+				<div css={css`
+					position: relative;
+					background: var(--purple);
+					text-align: right;
+					color: #000000;
+					h2, h2:not(.secondary) {
+						color: #000000;
+					}
+				`}>
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+							padding-top: 2rem;
+							& > hr {
+								border-color: var(--teal);
+								border-style: solid;
+							}
+							@media (max-width: 1200px) {
+								padding-top: 0rem;
+							}
+						`}>
+							<h2>SPEAKERS</h2>
+							<br />
+							<br />
+							<hr />
+						</div>
+					</Container>
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/GlennGreenwald.png" alt="Glenn Greenwald" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>GLENN GREENWALD</h3>
+								<b>Former Constitutional Lawyer &amp; Pulitzer-Prize Winning Journalist</b>
+								<p>
+									Glenn Greenwald is a former constitutional lawyer, a Pulitzer-Prize winning journalist, and the author of several bestsellers, including No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014) and Securing Democracy: My Fight for Press Freedom and Justice in Bolsonaro's Brazil (2021). Acclaimed as one of the 25 most influential political commentators by The Atlantic, one of America’s top 10 opinion writers by Newsweek, and one of the Top 100 Global Thinkers for 2013 by Foreign Policy, Greenwald is a former constitutional and civil rights litigator. He was a columnist for The Guardian until October 2013 and a co-founder and former editor at The Intercept, which he left in 2020. He is now an independent journalist writing at Substack. He has won numerous awards for his reporting, including the 2013 Polk Award for national security reporting, the top 2013 investigative journalism award from the Online News Association, the Esso Award for Excellence in Reporting (the Brazilian equivalent of the Pulitzer Prize), the 2013 Pioneer Award from Electronic Frontier Foundation and the Vladimir Herzog Special Prize in 2019 for his work in the Vaza Jato series. He also received the first annual I. F. Stone Award for Independent Journalism in 2009 and a 2010 Online Journalism Award. In 2013, Greenwald led the Guardian reporting that was awarded the Pulitzer Prize for public service, and his work was featured in the 2014 film Citizenfour, which won the Academy Award for Best Documentary.
+								</p>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/StevenWaterhouse.png" alt="Steven Waterhouse (Seven)" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>DR. STEVEN WATERHOUSE (SEVEN)</h3>
+								<b>CEO &amp; Co-founder, Orchid Labs</b>
+								<p>
+									Dr. Steven Waterhouse (“Seven”) is the CEO and Co-founder of Orchid, the blockchain-powered VPN marketplace. Waterhouse previously served as a partner at blockchain-focused venture Pantera Capital from its inception in 2013 through July 2016 and worked at Fortress Investment Group, where he founded the Digital Currency Fund with Mike Novogratz and Pete Briger.
+									<br />
+									<br />
+									Seven was a Co-founder and CTO of RPX (Nasdaq: RPXC) and served as Director of the Honeycomb product group at Sun Microsystems, one of the first computer and software technology companies to evolve during the dot com era. He holds a PhD in Engineering from the University of Cambridge.
+								</p>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/JoshuaGoldbard.png" alt="Joshua Goldbard" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>JOSHUA GOLDBARD</h3>
+								<b>CEO &amp; Founder, MobileCoin</b>
+								<p>
+									Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
+								</p>
+							</SpeakerItem>
+						</div>
+					</Container>
+				</div>
+
 				<Container css={css`
 					@media (max-width: 1200px) {
 						padding: 0rem;
