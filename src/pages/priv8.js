@@ -269,6 +269,22 @@ const SpeakerImage = styled.div`
 		background-position: bottom center;
 	}
 `;
+const SpeakerLink = styled.a`
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	margin-left: 2rem;
+	width: 2rem;
+	display: block;
+	& > img {
+		width: 100%;
+		height: auto;
+	}
+	@media (max-width: 1200px) {
+		position: static;
+		margin: 1rem auto;
+	}
+`;
 
 const AgendaItem = styled.div`
 	display: flex;
@@ -376,8 +392,15 @@ const AgendaSection = function () {
 					text-align: center;
 				`}>
 					<h2>Agenda</h2>
-					<b>NOVEMBER 15, 2021</b>
-					{hasJS ? <></> : <p>*All times listed are in PST</p>}
+					<br />
+					<b css={css`
+						font-weight: 400;
+						@media (min-width: 1200px) {
+							font-size: 28px;
+						}
+					`}>NOVEMBER 15, 2021</b>
+					<br />
+					{hasJS ? <small>Times have been converted to {timezone}</small> : <p>*All times listed are in PST</p>}
 				</div>
 				<hr />
 				{items}
@@ -843,7 +866,7 @@ class Page extends React.Component {
 					h2, h2:not(.secondary) {
 						color: #000000;
 					}
-				`}>
+				`} id="speakers">
 					<Container>
 						<div css={css`
 							text-align: center;
@@ -880,6 +903,9 @@ class Page extends React.Component {
 								<p>
 									Glenn Greenwald is a former constitutional lawyer, a Pulitzer-Prize winning journalist, and the author of several bestsellers, including No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014) and Securing Democracy: My Fight for Press Freedom and Justice in Bolsonaro's Brazil (2021). Acclaimed as one of the 25 most influential political commentators by The Atlantic, one of America’s top 10 opinion writers by Newsweek, and one of the Top 100 Global Thinkers for 2013 by Foreign Policy, Greenwald is a former constitutional and civil rights litigator. He was a columnist for The Guardian until October 2013 and a co-founder and former editor at The Intercept, which he left in 2020. He is now an independent journalist writing at Substack. He has won numerous awards for his reporting, including the 2013 Polk Award for national security reporting, the top 2013 investigative journalism award from the Online News Association, the Esso Award for Excellence in Reporting (the Brazilian equivalent of the Pulitzer Prize), the 2013 Pioneer Award from Electronic Frontier Foundation and the Vladimir Herzog Special Prize in 2019 for his work in the Vaza Jato series. He also received the first annual I. F. Stone Award for Independent Journalism in 2009 and a 2010 Online Journalism Award. In 2013, Greenwald led the Guardian reporting that was awarded the Pulitzer Prize for public service, and his work was featured in the 2014 film Citizenfour, which won the Academy Award for Best Documentary.
 								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
 							</SpeakerItem>
 
 							<SpeakerItem>
@@ -894,6 +920,9 @@ class Page extends React.Component {
 									<br />
 									Seven was a Co-founder and CTO of RPX (Nasdaq: RPXC) and served as Director of the Honeycomb product group at Sun Microsystems, one of the first computer and software technology companies to evolve during the dot com era. He holds a PhD in Engineering from the University of Cambridge.
 								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
 							</SpeakerItem>
 
 							<SpeakerItem>
@@ -905,6 +934,9 @@ class Page extends React.Component {
 								<p>
 									Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
 								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
 							</SpeakerItem>
 
 							<SpeakerItem>
@@ -916,6 +948,9 @@ class Page extends React.Component {
 								<p>
 									Ari Paul is co-founder and CIO of BlockTower Capital. He was previously a portfolio manager for the University of Chicago's $8 billion endowment, and a derivatives market maker and proprietary trader for Susquehanna International Group (SIG). He earned a BA in political science from the University of Pennsylvania, and an MBA from the University of Chicago with concentrations in economics, entrepreneurship, strategic management, and econometrics &amp; statistics. Mr. Paul is also a CFA charterholder.
 								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
 							</SpeakerItem>
 
 							<SpeakerItem>
@@ -933,6 +968,9 @@ class Page extends React.Component {
 									<br />
 									In June 2019, he resigned from Google. He took with him 950+ pages of Google's internal documents and delivered them to the Department of Justic, and through Project Veritas, to inform the public and Google's extensive censorship system.
 								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
 							</SpeakerItem>
 						</div>
 					</Container>
@@ -943,13 +981,6 @@ class Page extends React.Component {
 						padding: 0rem;
 					}
 				`}>
-					<div css={css`
-						text-align: center;
-						max-width: 100%;
-						width: 960px;
-					`}>
-						<hr />
-					</div>
 				</Container>
 
 				<AgendaSection />
