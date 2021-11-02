@@ -906,6 +906,34 @@ class Page extends React.Component {
 									Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
 								</p>
 							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/AriPaul.png" alt="Ari Paul" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>ARI PAUL</h3>
+								<b>CIO &amp; Co-founder, BlockTower</b>
+								<p>
+									Ari Paul is co-founder and CIO of BlockTower Capital. He was previously a portfolio manager for the University of Chicago's $8 billion endowment, and a derivatives market maker and proprietary trader for Susquehanna International Group (SIG). He earned a BA in political science from the University of Pennsylvania, and an MBA from the University of Chicago with concentrations in economics, entrepreneurship, strategic management, and econometrics &amp; statistics. Mr. Paul is also a CFA charterholder.
+								</p>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/ZachVorhies.png" alt="Zach Vorhies" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>ZACH VORHIES</h3>
+								<b>Google Whistleblower</b>
+								<p>
+									Zach Vorhies was a Senior Software Engineer at YouTube/Google for 8.5 years. He has been involved with the following software products: Google Earth, YouTube for PS4, Xbox, Nintendo Switch.
+									<br />
+									<br />
+									While working at YouTube, he learned that Google was censoring "fake news". and investigated further into the company, only to find that not only had Google defined "fake news" to mean actual events that had happened, but also had created an artificial intelligence system to classify all available data to Google Search. The reason Google wanted to classify data was so that this could be used by their artificial intelligence system to re-erank the entire internet according to Google's corporate cultural values.
+									<br />
+									<br />
+									In June 2019, he resigned from Google. He took with him 950+ pages of Google's internal documents and delivered them to the Department of Justic, and through Project Veritas, to inform the public and Google's extensive censorship system.
+								</p>
+							</SpeakerItem>
 						</div>
 					</Container>
 				</div>
