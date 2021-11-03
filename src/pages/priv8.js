@@ -977,6 +977,20 @@ class Page extends React.Component {
 									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
 								</SpeakerLink>
 							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/BenPowers.png" alt="Benjamin Powers" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>BENJAMIN POWERS</h3>
+								<b>Technology Journalist</b>
+								<p>
+									Ben is the technology reporter at a media start-up launching in early 2022. The DC-based outlet is focused on connecting stories together through collaborative reporting on today's biggest topics such as climate change, global security, misinformation and economic challenges.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
 						</div>
 					</Container>
 				</div>
