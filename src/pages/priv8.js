@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
 
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { StaticImage } from "gatsby-plugin-image";
 
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 import { Link } from 'gatsby';
@@ -63,6 +64,95 @@ const BarContainer = styled.div`
 		margin-left: 1rem;
 	}
 `;
+
+const AddToCalendar = (props) => {
+	return (<span css={css`
+		position: relative;
+		cursor: default;
+
+		.mb-only {
+			display: none;
+			@media (max-width: 760px) {
+				display: inline-block;
+			}
+		}
+		.no-mb {
+			@media (max-width: 760px) {
+				display: none;
+			}
+		}
+		&.text-only {
+			padding: 0 var(--height);
+			display: block;
+			margin: 0 calc(var(--height) * -1);
+			& > .mb-only {
+				display: none !important;
+			}
+			& > .no-mb {
+				display: block !important;
+			}
+		}
+
+		&:hover > div, &:focus-within > div, &:focus > div {
+			pointer-events: unset !important;
+			opacity: 1;
+			margin-top: 1rem;
+		}
+	`} className={props.className}>
+		<span className="no-mb">ADD TO CALENDAR</span>
+		<span className="mb-only">
+			<img src="/img/priv8/calendar.svg" alt="Add to Calendar" width="512" height="512" css={css`width: 1.5rem; height: auto; margin-bottom: -0.5rem;`} />
+		</span>
+		<div css={css`
+			transition: opacity 0.5s ease, margin-top 0.5s ease;
+			pointer-events: none;
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			opacity: 0;
+			margion-top: -20%;
+			width: 18rem;
+			margin-left: -9rem;
+			z-index: 999;
+			line-height: 1;
+
+
+			@media (max-width: 760px) {
+				width: 11rem;
+				margin-left: -4rem;
+			}
+
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: -1rem;
+				left: 0%;
+				width: 100%;
+				height: 1rem;
+			}
+
+			background: #3B146A;
+			border-radius: 1rem;
+			& > a {
+				display: inline-block;
+				margin: 0.5rem;
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+		`}>
+			<a href="/img/priv8/Priv8.ics">
+				ICS<span className="no-mb"> (Apple/Outlook)</span>
+			</a>
+			<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Priv8%20-%20virtual%20privacy%20conference&dates=20211115/20211116&details=Priv8%20is%20the%20premier%20global%20forum%20dedicated%20to%20the%20future%20of%20digital%20privacy.%20Orchid%20and%20Handshake%20have%20brought%20together%20a%20world-class%20group%20of%20experts%20and%20advocates%20from%20various%20business,%20government,%20academic,%20and%20nonprofit%20spheres%20to%20explore%20key%20issues%20around%20this%20important%20topic.&location=https://www.orchid.com/priv8/&trp=true" target="_blank" rel="noopener noreferrer">
+				Google Calendar
+			</a>
+		</div>
+	</span>)
+}
 
 const PreviousSpeakerRow = styled.div`
 	display: flex;
@@ -164,19 +254,263 @@ const HeadlineSpeakerContainer = styled.div`
 	}
 `;
 
+const HeadlineSpeakerImage = styled.div`
+	padding: 25% 0;
+	display: block;
+	background-image: url('/img/priv8/header-shapes.svg');
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	picture {
+		width: 90%;
+		height: auto;
+		margin: auto;
+		display: block;
+	}
+	&[data-role="desktop"] {
+			padding: 30% 0;
+			picture {
+				margin-top: -2rem;
+				width: 90%;
+			}
+	}
+`;
+
 const Speaker = (props) => {
 	return (
 		<HeadlineSpeakerContainer data-role={props.role}>
-			<picture>
-				<source srcSet="/img/priv8/Headliner.avif" type="image/avif" />
-				<source srcSet="/img/priv8/Headliner.webp" type="image/webp" />
-				<img src="/img/priv8/Headliner.png" width="1000" height="1000" alt="Featuring Keynote Speaker Glenn Greenwald" />
-			</picture>
+			<HeadlineSpeakerImage>
+				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" width={1000} height={1000} alt="" />
+			</HeadlineSpeakerImage>
 			<p>Featuring:</p>
 			<p>Pulitzer-Prize winning journalist</p>
 			<b>Glenn Greenwald</b>
 		</HeadlineSpeakerContainer>
 	);
+}
+
+
+const SpeakerItem = styled.div`
+	position: relative;
+	background: #000;
+	color: #fff;
+	text-align: left;
+	
+	& > h3 {
+		color: white;
+		margin: 0;
+		text-align: center;
+	}
+	& > b {
+		display: block;
+		margin-bottom: 1rem;
+		text-align: center;
+	}
+	@media (min-width: 1200px) {
+		& > h3, & > b {
+			text-align: left;
+		}
+	}
+
+	border-radius: 0.75rem;
+	padding: 1rem;
+	margin: 2rem auto;
+	@media (min-width: 1200px) {
+		margin: 4rem auto;
+		padding: 2rem 4rem;
+		padding-left: 6rem;
+	}
+	@media (max-width: 400px) {
+		margin-left: -1.75rem;
+		margin-right: -1.75rem;
+		width: calc(100% + 1.5rem);
+	}
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+`;
+const SpeakerImage = styled.div`
+	margin: 0 auto 1rem auto;
+	position: relative;
+	width: 8rem;
+
+	@media (min-width: 1200px) {
+		position: absolute;
+		top: -2rem;
+		left: -4rem;
+		width: 8rem;
+		margin: 0;
+	}
+	& > div {
+		position: relative;
+		z-index: 1;
+	}
+	&:after {
+		content: "";
+		position: absolute;
+		top: 10%;
+		left: 15%;
+		width: 70%;
+		height: 100%;
+		background-image: url('/img/priv8/polygon.svg');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+`;
+const SpeakerLink = styled.a`
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	margin-left: 2rem;
+	width: 2rem;
+	display: block;
+	& > img {
+		width: 100%;
+		height: auto;
+	}
+	@media (max-width: 1200px) {
+		position: static;
+		margin: 1rem auto;
+	}
+`;
+
+const AgendaItem = styled.div`
+	display: flex;
+	padding: 1rem 0;
+`;
+const AgendaDescription = styled.div`
+	width: 80%;
+	padding-left: 1rem;
+	box-sizing: border-box;
+	& > p {
+		margin: 0;
+	}
+`;
+const AgendaDate = styled.div`
+	width: 20%;
+	text-align: right;
+`;
+
+const agendaList = [
+	{
+		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
+		title: 'Free Internet',
+		description: 'With Glenn Greenwald',
+	},
+	{
+		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
+		title: 'Free Money',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
+		title: 'Free Thought',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 14:00:00 GMT-0800'),
+		title: 'Free up privacy design space',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		title: 'Free fall or free for all?',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
+		title: 'Free fortune reading',
+		description: 'Speakers TBA',
+	},
+	{
+		date: new Date('Nov 15 2021 17:00:00 GMT-0800'),
+		title: 'Live TLD & NFT Auction',
+		description: 'Hosted by Handshake',
+	},
+];
+
+const AgendaSection = function () {
+	let [timezone, setTimezone] = useState('America/Los_Angeles');
+	let [hasJS, setHasJS] = useState(false);
+
+	useEffect(() => {
+		setTimezone(Intl.DateTimeFormat().resolvedOptions().timeZone);
+		setHasJS(true);
+	}, []);
+
+	/*let timezone = 'America/Los_Angeles';
+	let hasJS = false;
+	try {
+		if (typeof window === 'object') {
+			timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+			hasJS = true;
+		}
+	} catch (e) { }*/
+
+	const items = [];
+	for (let index = 0; index < agendaList.length; index++) {
+		const element = agendaList[index];
+		items.push(
+			<AgendaItem key={index}>
+				<AgendaDate>
+					{element.date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true, timeZone: timezone })}
+				</AgendaDate>
+				<AgendaDescription>
+					<b>{element.title.toUpperCase()}</b>
+					<p>{element.description}</p>
+				</AgendaDescription>
+			</AgendaItem>
+		)
+	}
+
+
+	return (<div css={css`
+				background: #000000;
+				hr {
+					border-color: var(--teal);
+					border-style: solid;
+				}
+			`} id="agenda">
+		<Container>
+			<div css={css`
+				width: 100%;
+				max-width: 490px;
+				hr {
+					margin: 2rem auto;
+				}
+			`}>
+				<div css={css`
+					text-align: center;
+				`}>
+					<h2>AGENDA</h2>
+					<br />
+					<b css={css`
+						font-weight: 400;
+						@media (min-width: 1200px) {
+							font-size: 28px;
+						}
+					`}>NOVEMBER 15, 2021</b>
+					<br />
+					{hasJS ? <small>Times have been converted to {timezone}</small> : <p>*All times listed are in PST</p>}
+				</div>
+				<hr />
+				{items}
+
+				<br />
+				<div css={css`text-align: center;`}>
+					<Button color="purple"><AddToCalendar className="text-only" /></Button>
+				</div>
+				<hr />
+				<img css={css`
+					width: 65%;
+					margin: 2rem auto 0;
+					display: block;
+				`} src="/img/priv8/agenda-hexes.svg" width="440" height="128" alt="" />
+			</div>
+		</Container>
+	</div>)
 }
 
 class Page extends React.Component {
@@ -252,17 +586,18 @@ class Page extends React.Component {
 						}
 
 						h1, h2, h3, h4, h1:not(.secondary), h2:not(.secondary), h3:not(.secondary), h4:not(.secondary) {
-							font-family: 'Maven Pro', sans-serif;
+							font-family: 'Maven Pro', sans-serif; 
 							color: white;
 						}
 
-						h2 {
+						h2, h2:not(.secondary) {
 							font-family: 'BonvenoCF', sans-serif !important;
-							font-size: 60px !important;
+							font-weight: 400;
+							font-size: 60px;
 						}
 						@media (max-width: 1200px) {
-							h2 {
-								font-size: 30px !important;
+							h2, h2:not(.secondary) {
+								font-size: 30px;
 							}
 						}
 
@@ -317,84 +652,12 @@ class Page extends React.Component {
 								margin: 0 1rem;
 								font-weight: 500;
 								text-align: center;
-
-								position: relative;
-								&:hover > div {
-									pointer-events: unset !important;
-									opacity: 1;
-									margin-top: 1rem;
-								}
 								&:last-child {
 									margin-right: 0;
 								}
 							}
-							& > span {
-								cursor: default;
-							}
-							.mb-only {
-								display: none;
-								@media (max-width: 760px) {
-									display: inline-block;
-								}
-							}
-							.no-mb {
-								@media (max-width: 760px) {
-									display: none;
-								}
-							}
 						`}>
-							<span href="#calendar">
-								<span className="no-mb">ADD TO CALENDAR</span>
-								<span className="mb-only">
-									<img src="/img/priv8/calendar.svg" alt="Add to Calendar" width="512" height="512" css={css`width: 1.5rem; height: auto; margin-bottom: -0.5rem;`} />
-								</span>
-								<div css={css`
-									transition: opacity 0.5s ease, margin-top 0.5s ease;
-									pointer-events: none;
-									position: absolute;
-									top: 100%;
-									left: 50%;
-									opacity: 0;
-									margion-top: -20%;
-									width: 18rem;
-									margin-left: -9rem;
-									z-index: 999;
-
-									@media (max-width: 760px) {
-										width: 11rem;
-										margin-left: -4rem;
-									}
-
-									display: flex;
-									justify-content: space-around;
-									align-items: center;
-
-									&::before {
-										content: '';
-										position: absolute;
-										top: -1rem;
-										left: 0%;
-										width: 100%;
-										height: 1rem;
-									}
-
-									background: #3B146A;
-									border-radius: 1rem;
-									& > a {
-										display: inline-block;
-										margin: 0.5rem;
-										color: #FFFFFF;
-										text-decoration: none;
-									}
-								`}>
-									<a href="/img/priv8/Priv8.ics">
-										ICS<span className="no-mb"> (Apple/Outlook)</span>
-									</a>
-									<a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Priv8%20-%20virtual%20privacy%20conference&dates=20211115/20211116&details=Priv8%20is%20the%20premier%20global%20forum%20dedicated%20to%20the%20future%20of%20digital%20privacy.%20Orchid%20and%20Handshake%20have%20brought%20together%20a%20world-class%20group%20of%20experts%20and%20advocates%20from%20various%20business,%20government,%20academic,%20and%20nonprofit%20spheres%20to%20explore%20key%20issues%20around%20this%20important%20topic.&location=https://www.orchid.com/priv8/&trp=true" target="_blank" rel="noopener noreferrer">
-										Google Calendar
-									</a>
-								</div>
-							</span>
+							<AddToCalendar />
 							<a href="mailto:priv8@orchid.com" className="no-mb">
 								CONTACT
 							</a>
@@ -440,7 +703,8 @@ class Page extends React.Component {
 							<p css={css`
 								text-align: left;
 							`}>
-								Priv8 is the premier global forum dedicated to the future of digital privacy. <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
+								Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a>. Featuring Glenn Greenwald.
+
 							</p>
 							<p css={css`
 								margin-top: 2rem;
@@ -448,7 +712,7 @@ class Page extends React.Component {
 									text-align: center;
 								}
 							`}>
-								<Button href="#register" color="purple">Register Now!</Button>
+								<Button href="#register" color="purple">Register for free!</Button>
 							</p>
 						</div>
 
@@ -620,19 +884,147 @@ class Page extends React.Component {
 						</div>
 					</Container>
 				</div>
+
+				<div css={css`
+					position: relative;
+					background: var(--purple);
+					text-align: right;
+					color: #000000;
+					h2, h2:not(.secondary) {
+						color: #000000;
+					}
+				`} id="speakers">
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+							padding-top: 2rem;
+							& > hr {
+								border-color: var(--teal);
+								border-style: solid;
+							}
+							@media (max-width: 1200px) {
+								padding-top: 0rem;
+							}
+						`}>
+							<h2>SPEAKERS</h2>
+							<br />
+							<br />
+							<hr />
+						</div>
+					</Container>
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/GlennGreenwald.png" alt="Glenn Greenwald" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>GLENN GREENWALD</h3>
+								<b>Former Constitutional Lawyer &amp; Pulitzer-Prize Winning Journalist</b>
+								<p>
+									Glenn Greenwald is a former constitutional lawyer, a Pulitzer-Prize winning journalist, and the author of several bestsellers, including No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014) and Securing Democracy: My Fight for Press Freedom and Justice in Bolsonaro's Brazil (2021). Acclaimed as one of the 25 most influential political commentators by The Atlantic, one of America’s top 10 opinion writers by Newsweek, and one of the Top 100 Global Thinkers for 2013 by Foreign Policy, Greenwald is a former constitutional and civil rights litigator. He was a columnist for The Guardian until October 2013 and a co-founder and former editor at The Intercept, which he left in 2020. He is now an independent journalist writing at Substack. He has won numerous awards for his reporting, including the 2013 Polk Award for national security reporting, the top 2013 investigative journalism award from the Online News Association, the Esso Award for Excellence in Reporting (the Brazilian equivalent of the Pulitzer Prize), the 2013 Pioneer Award from Electronic Frontier Foundation and the Vladimir Herzog Special Prize in 2019 for his work in the Vaza Jato series. He also received the first annual I. F. Stone Award for Independent Journalism in 2009 and a 2010 Online Journalism Award. In 2013, Greenwald led the Guardian reporting that was awarded the Pulitzer Prize for public service, and his work was featured in the 2014 film Citizenfour, which won the Academy Award for Best Documentary.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/StevenWaterhouse.png" alt="Steven Waterhouse (Seven)" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>DR. STEVEN WATERHOUSE (SEVEN)</h3>
+								<b>CEO &amp; Co-founder, Orchid Labs</b>
+								<p>
+									Dr. Steven Waterhouse (“Seven”) is the CEO and Co-founder of Orchid, the blockchain-powered VPN marketplace. Waterhouse previously served as a partner at blockchain-focused venture Pantera Capital from its inception in 2013 through July 2016 and worked at Fortress Investment Group, where he founded the Digital Currency Fund with Mike Novogratz and Pete Briger.
+									<br />
+									<br />
+									Seven was a Co-founder and CTO of RPX (Nasdaq: RPXC) and served as Director of the Honeycomb product group at Sun Microsystems, one of the first computer and software technology companies to evolve during the dot com era. He holds a PhD in Engineering from the University of Cambridge.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/JoshuaGoldbard.png" alt="Joshua Goldbard" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>JOSHUA GOLDBARD</h3>
+								<b>CEO &amp; Founder, MobileCoin</b>
+								<p>
+									Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/AriPaul.png" alt="Ari Paul" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>ARI PAUL</h3>
+								<b>CIO &amp; Co-founder, BlockTower</b>
+								<p>
+									Ari Paul is co-founder and CIO of BlockTower Capital. He was previously a portfolio manager for the University of Chicago's $8 billion endowment, and a derivatives market maker and proprietary trader for Susquehanna International Group (SIG). He earned a BA in political science from the University of Pennsylvania, and an MBA from the University of Chicago with concentrations in economics, entrepreneurship, strategic management, and econometrics &amp; statistics. Mr. Paul is also a CFA charterholder.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/ZachVorhies.png" alt="Zach Vorhies" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>ZACH VORHIES</h3>
+								<b>Google Whistleblower</b>
+								<p>
+									Zach Vorhies was a Senior Software Engineer at YouTube/Google for 8.5 years. He has been involved with the following software products: Google Earth, YouTube for PS4, Xbox, Nintendo Switch.
+									<br />
+									<br />
+									While working at YouTube, he learned that Google was censoring "fake news". and investigated further into the company, only to find that not only had Google defined "fake news" to mean actual events that had happened, but also had created an artificial intelligence system to classify all available data to Google Search. The reason Google wanted to classify data was so that this could be used by their artificial intelligence system to re-erank the entire internet according to Google's corporate cultural values.
+									<br />
+									<br />
+									In June 2019, he resigned from Google. He took with him 950+ pages of Google's internal documents and delivered them to the Department of Justic, and through Project Veritas, to inform the public and Google's extensive censorship system.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+
+							<SpeakerItem>
+								<SpeakerImage>
+									<StaticImage src="../../static/img/priv8/speakers/BenPowers.png" alt="Benjamin Powers" width={160} height={160} loading="lazy" objectFit="contain" />
+								</SpeakerImage>
+								<h3>BENJAMIN POWERS</h3>
+								<b>Technology Journalist</b>
+								<p>
+									Ben is the technology reporter at a media start-up launching in early 2022. The DC-based outlet is focused on connecting stories together through collaborative reporting on today's biggest topics such as climate change, global security, misinformation and economic challenges.
+								</p>
+								<SpeakerLink href="#speakers">
+									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+								</SpeakerLink>
+							</SpeakerItem>
+						</div>
+					</Container>
+				</div>
+
 				<Container css={css`
 					@media (max-width: 1200px) {
 						padding: 0rem;
 					}
 				`}>
-					<div css={css`
-						text-align: center;
-						max-width: 100%;
-						width: 960px;
-					`}>
-						<hr />
-					</div>
 				</Container>
+
+				<AgendaSection />
 
 				<div css={css`
 					background: #000000;
@@ -704,6 +1096,7 @@ class Page extends React.Component {
 							</PreviousSpeakerRow>
 						</div>
 					</Container>
+
 					<Container>
 						<div css={css`
 							text-align: center;
@@ -713,6 +1106,68 @@ class Page extends React.Component {
 							<hr />
 						</div>
 					</Container>
+
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+							<h4 css={css`
+								font-family: 'BonvenoCF', sans-serif !important;
+								font-weight: 400;
+								font-size: 1.5rem;
+								@media (max-width: 768px) {
+									font-size: 1rem;
+								}
+							`}>PRIV8 ONLINE IS</h4>
+							<h3 css={css`
+								font-family: 'BonvenoCF', sans-serif !important;
+								font-weight: 400;
+								color: var(--purple) !important;
+								font-size: 3rem;
+								@media (max-width: 768px) {
+									font-size: 1.65rem;
+								}
+							`}>SPONSORED BY</h3>
+							<div css={css`
+								display: flex;
+								justify-content: space-around;
+								align-items: center;
+								flex-wrap: wrap;
+								margin-top: 2rem;
+								& > a {
+									display: block;
+									width: 40%;
+								}
+								@media (max-width: 768px) {
+									margin-top: 1rem;
+									& > a {
+										margin: 1rem auto;
+										width: 90%;
+									}
+								}
+							`}>
+								<a href="https://bobwallet.io/">
+									<img src="/img/priv8/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
+								</a>
+								<a href="https://www.decentralizedinter.net/">
+									<StaticImage src="../../static/img/priv8/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
+								</a>
+							</div>
+						</div>
+					</Container>
+
+					<Container>
+						<div css={css`
+							text-align: center;
+							max-width: 100%;
+							width: 960px;
+						`}>
+							<hr />
+						</div>
+					</Container>
+
 					<Container>
 						<div css={css`
 							text-align: center;

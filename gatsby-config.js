@@ -12,6 +12,25 @@ module.exports = {
 		siteUrl: `https://www.orchid.com/`,
 	},
 	plugins: [
+		`gatsby-plugin-image`,
+		{
+			resolve: `gatsby-plugin-sharp`,
+			options: {
+				defaults: {
+					formats: [`auto`, `webp`, `avif`],
+					placeholder: `dominantColor`,
+					quality: 80,
+					breakpoints: [750, 1080, 1366, 1920],
+					backgroundColor: `transparent`,
+					tracedSVGOptions: {},
+					blurredOptions: {},
+					jpgOptions: {},
+					pngOptions: {},
+					webpOptions: {},
+					avifOptions: {},
+				}
+			}
+		},
 		`gatsby-plugin-catch-links`,
 		'gatsby-plugin-react-helmet',
 		`gatsby-plugin-force-trailing-slashes`,
