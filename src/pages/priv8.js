@@ -229,6 +229,7 @@ const SpeakerItem = styled.div`
 	@media (min-width: 1200px) {
 		margin: 4rem auto;
 		padding: 2rem 4rem;
+		padding-left: 6rem;
 	}
 	@media (max-width: 400px) {
 		margin-left: -1.75rem;
@@ -387,11 +388,14 @@ const AgendaSection = function () {
 			<div css={css`
 				width: 100%;
 				max-width: 490px;
+				hr {
+					margin: 2rem auto;
+				}
 			`}>
 				<div css={css`
 					text-align: center;
 				`}>
-					<h2>Agenda</h2>
+					<h2>AGENDA</h2>
 					<br />
 					<b css={css`
 						font-weight: 400;
@@ -677,7 +681,8 @@ class Page extends React.Component {
 							<p css={css`
 								text-align: left;
 							`}>
-								Priv8 is the premier global forum dedicated to the future of digital privacy. <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a> have brought together a world-class group of experts and advocates from various business, government, academic, and nonprofit spheres to explore key issues around this important topic.
+								Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a> . Featuring Glenn Greenwald.
+
 							</p>
 							<p css={css`
 								margin-top: 2rem;
@@ -685,7 +690,7 @@ class Page extends React.Component {
 									text-align: center;
 								}
 							`}>
-								<Button href="#register" color="purple">Register Now!</Button>
+								<Button href="#register" color="purple">Register for free!</Button>
 							</p>
 						</div>
 
