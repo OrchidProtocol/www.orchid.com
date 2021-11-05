@@ -5,6 +5,10 @@
 @import "styles";
 
 .about-us-page {
+	p:not(:last-child) {
+		margin: 0 0 1rem;
+	}
+
 	.about-company__page-container {
 		margin-top: 1em;
 		overflow-x: hidden;
