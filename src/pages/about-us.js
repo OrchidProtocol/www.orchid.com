@@ -42,23 +42,23 @@ class Page extends React.Component {
 						<section className="about-company__centered-text-section section-med hpad-wide vpad-wide center-text" i18n="@@AboutCompany__Description">
 							<h2>Why build a privacy network?</h2>
 							<p>
-								The Internet opened up an unlimited world of information.Its creators invited us to bring our curiosity and explore that world freely.
+								The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and explore that world freely.
 							</p>
 
 							<p>
-								As the Internet grew, exploring freely became harder.Web 2.0 business models incentivized companies to watch and track us and sell our data.And in some places, limits were placed on the information we can see.
+								As the Internet grew, exploring freely became harder.Web 2.0 business models incentivized companies to watch and track us and sell our data. And in some places, limits were placed on the information we can see.
 							</p>
 
 							<p>
-								But that is changing.The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed by its users.
+								But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed by its users.
 							</p>
 
 							<p>
-								At Orchid we share in this mission.We use Web 3.0 technology to offer users better digital privacy today, so we can realize the promise of the Web 1.0 and explore freely again.
+								At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we can realize the promise of the Web 1.0 and explore freely again.
 							</p>
 
 							<p>
-								Orchid was founded in 2017 to help restore the open and accessible Internet for everyone.Since then, we have grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
+								Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
 							</p>
 						</section>
 					</div>
@@ -69,7 +69,7 @@ class Page extends React.Component {
 							<div className="about-us-split">
 								<div className="about-us-half">
 									<p>
-										The Internet is as integral to modern life as writing was to the ancient Greeks.Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world.Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private , decentralized, and censorship-free.
+										The Internet is as integral to modern life as writing was to the ancient Greeks. Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world. Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private , decentralized, and censorship-free.
 									</p>
 
 									<p>
@@ -77,7 +77,7 @@ class Page extends React.Component {
 									</p>
 
 									<p>
-										Privacy is an easy target for those in power, who say “if you have nothing to hide, you have nothing to fear.” This is a lie.The truth is that the people in positions of power have the least to worry about being private.If a powerful dictator is caught doing something, they are beyond reproach.We should never forget the routine violations of privacy visited upon King, Gandhi, Ai Weiwei and many others in the name of “law enforcement” and “national security.”
+										Privacy is an easy target for those in power, who say “if you have nothing to hide, you have nothing to fear.” This is a lie. The truth is that the people in positions of power have the least to worry about being private. If a powerful dictator is caught doing something, they are beyond reproach. We should never forget the routine violations of privacy visited upon King, Gandhi, Ai Weiwei and many others in the name of “law enforcement” and “national security.”
 									</p>
 								</div>
 								<div className="about-us-half">
@@ -93,15 +93,15 @@ class Page extends React.Component {
 							</p>
 
 							<p>
-								We stand in solidarity with causes dedicated to privacy and to other fundamental human rights.Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.
+								We stand in solidarity with causes dedicated to privacy and to other fundamental human rights. Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.
 							</p>
 
 							<p>
-								Causes such as Black Lives Matter; Uyghur liberation; political freedom in Hong Kong and Myanmar, LGBTQ+ rights in Russia and many others must be fought for at the fundamental, human level.They should cut across lines of politics, nationality, or sectarianism.
+								Causes such as Black Lives Matter; Uyghur liberation; political freedom in Hong Kong and Myanmar, LGBTQ+ rights in Russia and many others must be fought for at the fundamental, human level. They should cut across lines of politics, nationality, or sectarianism.
 							</p>
 
 							<p>
-								The past year has reminded us that humans are meant to be together, not alone; free, not confined; empowered, not controlled.It is this basic truth that motivates the people who built Orchid.
+								The past year has reminded us that humans are meant to be together, not alone; free, not confined; empowered, not controlled. It is this basic truth that motivates the people who built Orchid.
 							</p>
 						</section>
 
@@ -420,7 +420,7 @@ class Page extends React.Component {
 								</address>
 								<address i18n="@@AboutCompanyCorporate__Address2">
 									Europe: <br />
-									Skalitzer Str.85,<br />
+									Skalitzer Str. 85,<br />
 									10997 Berlin, Germany
 								</address>
 							</div>
