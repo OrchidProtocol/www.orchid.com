@@ -1138,20 +1138,26 @@ class Page extends React.Component {
 								& > a {
 									display: block;
 									width: 40%;
+									margin: 1rem auto;
 								}
 								@media (max-width: 768px) {
 									margin-top: 1rem;
 									& > a {
-										margin: 1rem auto;
 										width: 90%;
 									}
 								}
 							`}>
-								<a href="https://bobwallet.io/">
-									<img src="/img/priv8/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
+								<a href="https://bobwallet.io/" target="_blank">
+									<img src="/img/priv8/sponsors/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
 								</a>
-								<a href="https://www.decentralizedinter.net/">
-									<StaticImage src="../../static/img/priv8/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
+								<a href="https://www.decentralizedinter.net/" target="_blank">
+									<StaticImage src="../../static/img/priv8/sponsors/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
+								</a>
+								<a href="https://rivet.cloud/" target="_blank">
+									<img src="/img/priv8/sponsors/Rivet.svg" width={309} height={47} alt="Rivet" />
+								</a>
+								<a href="https://akash.network/" target="_blank">
+									<img src="/img/priv8/sponsors/Akash.svg" width={309} height={47} alt="Akash" />
 								</a>
 							</div>
 						</div>
