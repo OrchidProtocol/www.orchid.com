@@ -366,10 +366,20 @@ const SpeakerLink = styled.a`
 
 const AgendaItem = styled.div`
 	display: flex;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 	padding: 1rem 0;
+
+	&.indented {
+		padding-left: 2rem;
+	}
 `;
 const AgendaDescription = styled.div`
 	width: 80%;
+	@media (max-width: 768px) {
+		width: 100%;
+	}
 	padding-left: 1rem;
 	box-sizing: border-box;
 	& > p {
@@ -385,6 +395,10 @@ const AgendaDescription = styled.div`
 const AgendaDate = styled.div`
 	width: 20%;
 	text-align: right;
+	@media (max-width: 768px) {
+		width: 100%;
+		text-align: left;
+	}
 `;
 
 const agendaList = [
@@ -463,6 +477,7 @@ const agendaList = [
 	},
 	{
 		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		indented: true,
 		title: 'ON BUILDING HIGH PERFORMANCE BLOCKCHAINS',
 		description: <>
 			<p>with Christopher Jeffrey</p>
@@ -471,6 +486,7 @@ const agendaList = [
 	},
 	{
 		date: new Date('Nov 15 2021 15:20:00 GMT-0800'),
+		indented: true,
 		title: 'RIVET’S GREG LANG',
 		description: <>
 			<p>with Greg Lang</p>
@@ -478,6 +494,7 @@ const agendaList = [
 	},
 	{
 		date: new Date('Nov 15 2021 15:40:00 GMT-0800'),
+		indented: true,
 		title: 'STARLING LAB’S JONATHAN DOTAN',
 		description: <>
 			<p>with Jonathan Dotan</p>
@@ -525,7 +542,7 @@ const AgendaSection = function () {
 	for (let index = 0; index < agendaList.length; index++) {
 		const element = agendaList[index];
 		items.push(
-			<AgendaItem key={index}>
+			<AgendaItem key={index} className={element.indented ? "indented" : ""}>
 				<AgendaDate>
 					{element.date.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true, timeZone: timezone })}
 				</AgendaDate>
