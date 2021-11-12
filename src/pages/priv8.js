@@ -69,18 +69,6 @@ const AddToCalendar = (props) => {
 	return (<span css={css`
 		position: relative;
 		cursor: default;
-
-		.mb-only {
-			display: none;
-			@media (max-width: 760px) {
-				display: inline-block;
-			}
-		}
-		.no-mb {
-			@media (max-width: 760px) {
-				display: none;
-			}
-		}
 		&.text-only {
 			padding: 0 var(--height);
 			display: block;
@@ -654,6 +642,17 @@ class Page extends React.Component {
 								text-align: center;
 								&:last-child {
 									margin-right: 0;
+								}
+							}
+							.mb-only {
+								display: none;
+								@media (max-width: 760px) {
+									display: inline-block;
+								}
+							}
+							.no-mb {
+								@media (max-width: 760px) {
+									display: none;
 								}
 							}
 						`}>
