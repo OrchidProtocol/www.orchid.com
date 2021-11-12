@@ -374,6 +374,12 @@ const AgendaDescription = styled.div`
 	box-sizing: border-box;
 	& > p {
 		margin: 0;
+		&[color="purple"] {
+			color: var(--purple);
+		}
+		&[color="teal"] {
+			color: var(--teal);
+		}
 	}
 `;
 const AgendaDate = styled.div`
@@ -385,37 +391,115 @@ const agendaList = [
 	{
 		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
 		title: 'Free Internet',
-		description: 'With Glenn Greenwald',
+		description: <>
+			<p>with Glenn Greenwald, Dr. Steven Waterhouse (Seven), Willy Woo</p>
+			<p color="purple">Moderators: Derek E. Silva, Chjango, Naomi Brockwell</p>
+			<p color="teal">The cause of a free internet — one that allows communications free of centralized corporate and state control and that protects the right of privacy — remains one of Glenn's top priorities and he's excited to speak as conference keynote.</p>
+		</>,
 	},
 	{
 		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
-		title: 'Free Money',
-		description: 'Speakers TBA',
+		title: 'FREE MONEY: TAPROOT',
+		description: <>
+			<p>with Isaiah Jackson</p>
+			<p color="purple">Moderator: Naomi Brockwell</p>
+			<p color="teal">The IRS plan to monitor bank accounts for transactions of $600 or greater sparked attention towards overreach around financial surveillance. With the Taproot upgrade to Bitcoin live today, this session will focus on privacy preserving finance and the encroachment of surveillance capitalism.</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 12:20:00 GMT-0800'),
+		title: 'FREE MONEY: DEPLATFORMING',
+		description: <>
+			<p>with Aella &amp; Leigh Cuen</p>
+			<p color="purple">Moderator: Naomi Brockwell</p>
+			<p color="teal">Operation "Choke Point" launched by the U.S. Department of Justice in 2013 signaled a massive shift in the state's financial surveillance strategy. At the time, warnings of a slippery slope went unheeded. Today, deplatforming for financial reasons has become commonplace, from OnlyFans' aborted pivot to plain-vanilla crypto transactions. This session will talk about the fog of unaccountability that shrouds building businesses on these platforms.</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 12:40:00 GMT-0800'),
+		title: 'FREE MONEY: MOBILECOIN',
+		description: <>
+			<p>with Joshua Goldbard</p>
+			<p color="teal">MobileCoin and the future of payments.</p>
+		</>,
 	},
 	{
 		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
-		title: 'Free Thought',
-		description: 'Speakers TBA',
+		title: 'FREE THOUGHT: HOW DO WE FIX CENSORSHIP?',
+		description: <>
+			<p>with Zach Vorhies</p>
+			<p color="teal">A talk by Zach Vorhies.</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 13:30:00 GMT-0800'),
+		title: 'FREE THOUGHT: WHISTLEBLOWER PANEL',
+		description: <>
+			<p>with Zach Vorhies &amp; Shiv Malik</p>
+			<p color="purple">Moderator: Chjango</p>
+			<p color="teal">Vaccine mandates force an unpleasant truth into the open: enforcement is not necessarily leaders and governments, it's on everybody and their neighbors. Social coercion can infringe on  private psychological spaces. This session aims to share more insight into how whistleblowers all bring privacy focused incentives into the foreground.  </p>
+		</>,
 	},
 	{
 		date: new Date('Nov 15 2021 14:00:00 GMT-0800'),
-		title: 'Free up privacy design space',
-		description: 'Speakers TBA',
+		title: 'BREAK',
+		description: <hr />,
+	},
+	{
+		date: new Date('Nov 15 2021 14:15:00 GMT-0800'),
+		title: 'FREE FALL OR FREE FOR ALL?',
+		description: <>
+			<p>with Ari Paul, Tor Bair, Greg Osuri, Matthew Zipkin</p>
+			<p color="purple">Moderator: Benjamin Powers</p>
+			<p color="teal">Is the world stuck between embracing a CCP style social credit system or a decentralized crypto protocol system? How will incentives like UBI align with the market for privacy? Will our privacy be sold to the dopamine hawkers? Or will everyone get rich using privacy preserving techniques? Either way, economics will play a huge role. The speakers here can see answers to these questions and more.</p>
+		</>,
 	},
 	{
 		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
-		title: 'Free fall or free for all?',
-		description: 'Speakers TBA',
+		title: 'FREEDOM BY DESIGN',
+		description: <>
+			<p color="teal">Privacy by design remains the north star of cryptographic and privacy-first commercial work. The economics of privacy by design requires consumer choice to be engaged. This means strong incentives, attractive tooling, and suitable use-cases. This session looks beyond Taproot to the edge of privacy innovation in crypto.</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		title: 'ON BUILDING HIGH PERFORMANCE BLOCKCHAINS',
+		description: <>
+			<p>with Christopher Jeffrey</p>
+			<p color="teal">Lead Developer &amp; Architect of the Handshake protocol discusses privacy and blockchain design.</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 15:20:00 GMT-0800'),
+		title: 'RIVET’S GREG LANG',
+		description: <>
+			<p>with Greg Lang</p>
+		</>,
+	},
+	{
+		date: new Date('Nov 15 2021 15:40:00 GMT-0800'),
+		title: 'STARLING LAB’S JONATHAN DOTAN',
+		description: <>
+			<p>with Jonathan Dotan</p>
+			<p color="teal">Historians, lawyers, and journalists are poised to grasp new Web 3 technologies to address the current crisis of dis/misinformation on the internet.  These cryptographic and distributed systems require new technology designs and governance to preserve privacy. Each is filled with opportunities and risks. This talk looks to the edge of innovation in crypto to understand how we can all work together to rebuild trust in our digital era. </p>
+		</>,
 	},
 	{
 		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
-		title: 'Free fortune reading',
-		description: 'Speakers TBA',
+		title: 'FREE FORTUNE READING',
+		description: <>
+			<p>with Dr. Steven Waterhouse (Seven) &amp; Derek E. Silva</p>
+			<p color="teal">Some predictions on where privacy and pseudonymity are headed.</p>
+		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 17:00:00 GMT-0800'),
-		title: 'Live TLD & NFT Auction',
-		description: 'Hosted by Handshake',
+		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
+		title: 'LIVE AUCTION',
+		description: <>
+			<p>hosted by Handshake</p>
+			<p color="teal">Live bidding will be hosted in the Priv8 Auction Telegram Group. Items up for auction include a curated list of roughly 20 Handshake Top-Level Domains (HNS TLDs) including .x and single character emojis. Each TLD is a ​​secure, seizure-resistant domain name that people can use to host websites, receive crypto, and more. <br /> A number of Rare Pepe NFTs - digital collectible cards minted by blockchain pioneers in the mid-2010s - will also be on offer. 10% of the auction’s proceeds will be awarded to the auctioneer; 15% will be donated to a Handshake organization of the seller's choice. The remaining 75% will go directly to the seller.</p>
+			<p><b>** HAVE A TLD TO AUCTION? <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxfQ2BOmnytAz0VNXIzUvQYnb3cm7SqHvt4e_qNQzZwQVyw/viewform" target="_blank" rel="noreferrer">SUBMIT IT.</a> **</b></p>
+		</>,
 	},
 ];
 
@@ -447,7 +531,7 @@ const AgendaSection = function () {
 				</AgendaDate>
 				<AgendaDescription>
 					<b>{element.title.toUpperCase()}</b>
-					<p>{element.description}</p>
+					{element.description}
 				</AgendaDescription>
 			</AgendaItem>
 		)
@@ -464,7 +548,7 @@ const AgendaSection = function () {
 		<Container>
 			<div css={css`
 				width: 100%;
-				max-width: 490px;
+				max-width: 620px;
 				hr {
 					margin: 2rem auto;
 				}
@@ -1147,16 +1231,16 @@ class Page extends React.Component {
 									}
 								}
 							`}>
-								<a href="https://bobwallet.io/" target="_blank">
+								<a href="https://bobwallet.io/" target="_blank" rel="noreferrer">
 									<img src="/img/priv8/sponsors/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
 								</a>
-								<a href="https://www.decentralizedinter.net/" target="_blank">
+								<a href="https://www.decentralizedinter.net/" target="_blank" rel="noreferrer">
 									<StaticImage src="../../static/img/priv8/sponsors/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
 								</a>
-								<a href="https://rivet.cloud/" target="_blank">
+								<a href="https://rivet.cloud/" target="_blank" rel="noreferrer">
 									<img src="/img/priv8/sponsors/Rivet.svg" width={309} height={47} alt="Rivet" />
 								</a>
-								<a href="https://akash.network/" target="_blank">
+								<a href="https://akash.network/" target="_blank" rel="noreferrer">
 									<img src="/img/priv8/sponsors/Akash.svg" width={309} height={47} alt="Akash" />
 								</a>
 							</div>
