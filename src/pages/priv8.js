@@ -403,6 +403,11 @@ const AgendaDate = styled.div`
 
 const agendaList = [
 	{
+		date: new Date('Nov 15 2021 10:50:00 GMT-0800'),
+		title: 'Welcome to Priv8!',
+		description: <p>with Derek E. Silva &amp; Chjango</p>,
+	},
+	{
 		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
 		title: 'Free Internet',
 		description: <>
@@ -510,7 +515,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 16:30:00 GMT-0800'),
 		title: 'LIVE AUCTION',
 		description: <>
 			<p>hosted by Handshake</p>
