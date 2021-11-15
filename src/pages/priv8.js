@@ -403,12 +403,12 @@ const AgendaDate = styled.div`
 
 const agendaList = [
 	{
-		date: new Date('Nov 15 2021 10:50:00 GMT-0800'),
+		date: new Date('Nov 15 2021 07:50:00 GMT-0800'),
 		title: 'Welcome to Priv8!',
 		description: <p>with Derek E. Silva &amp; Chjango</p>,
 	},
 	{
-		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 08:00:00 GMT-0800'),
 		title: 'Free Internet',
 		description: <>
 			<p>with Glenn Greenwald, Dr. Steven Waterhouse (Seven), Willy Woo</p>
@@ -417,7 +417,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 09:00:00 GMT-0800'),
 		title: 'FREE MONEY: TAPROOT',
 		description: <>
 			<p>with Isaiah Jackson</p>
@@ -426,7 +426,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 12:20:00 GMT-0800'),
+		date: new Date('Nov 15 2021 09:20:00 GMT-0800'),
 		title: 'FREE MONEY: DEPLATFORMING',
 		description: <>
 			<p>with Aella &amp; Leigh Cuen</p>
@@ -435,7 +435,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 12:40:00 GMT-0800'),
+		date: new Date('Nov 15 2021 09:40:00 GMT-0800'),
 		title: 'FREE MONEY: MOBILECOIN',
 		description: <>
 			<p>with Joshua Goldbard</p>
@@ -443,7 +443,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 10:00:00 GMT-0800'),
 		title: 'FREE THOUGHT: HOW DO WE FIX CENSORSHIP?',
 		description: <>
 			<p>with Zach Vorhies</p>
@@ -451,7 +451,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 13:30:00 GMT-0800'),
+		date: new Date('Nov 15 2021 10:30:00 GMT-0800'),
 		title: 'FREE THOUGHT: WHISTLEBLOWER PANEL',
 		description: <>
 			<p>with Zach Vorhies &amp; Shiv Malik</p>
@@ -460,12 +460,12 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 14:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 11:00:00 GMT-0800'),
 		title: 'BREAK',
 		description: <hr />,
 	},
 	{
-		date: new Date('Nov 15 2021 14:15:00 GMT-0800'),
+		date: new Date('Nov 15 2021 11:15:00 GMT-0800'),
 		title: 'FREE FALL OR FREE FOR ALL?',
 		description: <>
 			<p>with Ari Paul, Tor Bair, Greg Osuri, Matthew Zipkin</p>
@@ -474,14 +474,14 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
 		title: 'FREEDOM BY DESIGN',
 		description: <>
 			<p color="teal">Privacy by design remains the north star of cryptographic and privacy-first commercial work. The economics of privacy by design requires consumer choice to be engaged. This means strong incentives, attractive tooling, and suitable use-cases. This session looks beyond Taproot to the edge of privacy innovation in crypto.</p>
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 15:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
 		indented: true,
 		title: 'ON BUILDING HIGH PERFORMANCE BLOCKCHAINS',
 		description: <>
@@ -490,7 +490,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 15:20:00 GMT-0800'),
+		date: new Date('Nov 15 2021 12:20:00 GMT-0800'),
 		indented: true,
 		title: 'RIVET’S GREG LANG',
 		description: <>
@@ -498,7 +498,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 15:40:00 GMT-0800'),
+		date: new Date('Nov 15 2021 12:40:00 GMT-0800'),
 		indented: true,
 		title: 'STARLING LAB’S JONATHAN DOTAN',
 		description: <>
@@ -507,7 +507,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 16:00:00 GMT-0800'),
+		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
 		title: 'FREE FORTUNE READING',
 		description: <>
 			<p>with Dr. Steven Waterhouse (Seven) &amp; Derek E. Silva</p>
@@ -515,7 +515,7 @@ const agendaList = [
 		</>,
 	},
 	{
-		date: new Date('Nov 15 2021 16:30:00 GMT-0800'),
+		date: new Date('Nov 15 2021 13:30:00 GMT-0800'),
 		title: 'LIVE AUCTION',
 		description: <>
 			<p>hosted by Handshake</p>
