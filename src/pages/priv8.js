@@ -17,9 +17,9 @@ const Embed = () => {
 			<h2 css={css`
 				text-align: center;
 			`}>
-				LIVE NOW <span css={css`
-					width: 0.75em;
-					height: 0.75em;
+				<span css={css`
+					width: 0.5em;
+					height: 0.5em;
 					display: inline-block;
 					background: var(--purple);
 					border-radius: 50%;
@@ -35,12 +35,12 @@ const Embed = () => {
 						background: var(--purple);
 						border-radius: 50%;
 					}
-				`} />
+				`} /> LIVE NOW
 			</h2>
 			<div css={css`
 				position: relative;
 				padding: 30% 50%;
-				margin-top: 4rem;
+				margin-top: 1rem;
 			`}>
 				<a css={css`
 					position: absolute;
