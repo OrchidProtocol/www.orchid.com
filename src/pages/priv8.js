@@ -468,7 +468,7 @@ const agendaList = [
 		date: new Date('Nov 15 2021 11:15:00 GMT-0800'),
 		title: 'FREE FALL OR FREE FOR ALL?',
 		description: <>
-			<p>with Ari Paul, Tor Bair, Greg Osuri, Matthew Zipkin</p>
+			<p>with Ari Paul, Tor Bair, Greg Osuri, Christopher Jeffrey</p>
 			<p color="purple">Moderator: Benjamin Powers</p>
 			<p color="teal">Is the world stuck between embracing a CCP style social credit system or a decentralized crypto protocol system? How will incentives like UBI align with the market for privacy? Will our privacy be sold to the dopamine hawkers? Or will everyone get rich using privacy preserving techniques? Either way, economics will play a huge role. The speakers here can see answers to these questions and more.</p>
 		</>,
@@ -483,10 +483,10 @@ const agendaList = [
 	{
 		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
 		indented: true,
-		title: 'ON BUILDING HIGH PERFORMANCE BLOCKCHAINS',
+		title: 'Handshake: Tools in Blockchain Built to Circumvent Monolithic Tech Oligarchs',
 		description: <>
-			<p>with Christopher Jeffrey</p>
-			<p color="teal">Lead Developer &amp; Architect of the Handshake protocol discusses privacy and blockchain design.</p>
+			<p>with Matthew Zipkin</p>
+			<p color="teal">Core Developer of Handshake protocol discusses privacy and blockchain design.</p>
 		</>,
 	},
 	{
@@ -508,10 +508,9 @@ const agendaList = [
 	},
 	{
 		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
-		title: 'FREE FORTUNE READING',
+		title: 'An Interview with Paul Syverson',
 		description: <>
-			<p>with Dr. Steven Waterhouse (Seven) &amp; Derek E. Silva</p>
-			<p color="teal">Some predictions on where privacy and pseudonymity are headed.</p>
+			<p>with Paul Syverson and Derek E. Silva</p>
 		</>,
 	},
 	{
@@ -825,6 +824,24 @@ class Page extends React.Component {
 							`}>
 								Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a>. Featuring Glenn Greenwald.
 
+							</p>
+
+							<p css={css`
+								margin-top: 1em;
+								& > a {
+									display: inline-block;
+									margin: 0 0.25em
+								}
+							`}>
+								<a className="inline-block" href="https://twitter.com/i/broadcasts/1mrxmaXvBkzxy" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+									<img src="/img/priv8/social/twitter.svg" alt="Twitter" width="32" height="32" />
+								</a>
+								<a className="inline-block" href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+									<img src="/img/priv8/social/youtube.svg" alt="YouTube" width="32" height="32" />
+								</a>
+								<a className="inline-block" href="https://www.twitch.tv/orchidprotocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+									<img src="/img/priv8/social/twitch.svg" alt="Twitch" width="32" height="32" />
+								</a>
 							</p>
 							<p css={css`
 								margin-top: 2rem;
