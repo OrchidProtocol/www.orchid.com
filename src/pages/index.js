@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import styled from '@emotion/styled';
 import Layout from '../components/common/Layout'
 import './index.scss'
 import ExplainerVideo from '../components/explainerVideo';
@@ -10,56 +9,6 @@ import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
-
-const Banner = styled.div`
-	z-index: 10;
-	background: linear-gradient(90deg, #EB53E2 0%, #5F45BA 100%);
-	padding: 0.4rem;
-	color: white;
-	font-weight: bold;
-	text-align: center;
-	width: 100%;
-	box-sizing: border-box;
-
-	@media (min-width: 768px) {
-		border-radius: 1rem 0 0 1rem;
-		max-width: 720px;
-		position: absolute;
-		right: calc(50% - 360px);
-		margin-top: -0.75rem;
-	}
-	@media (min-width: 1450px) {
-		right: calc(50% - 720px);
-	}
-`;
-const BannerTail = styled.div`
-	height: 100%;
-	display: none;
-	background: #5F45BA;
-	position: absolute;
-	top: 0;
-	@media (min-width: 768px) {
-		display: block;
-		left: 100%;
-		width: calc(50vw - 360px - 9px);
-	}
-	@media (min-width: 1450px) {
-		width: calc(50vw - 720px - 9px);
-	}
-`;
-
-const Priv8Hexes = styled.div`
-	width: 20%;
-	display: none;
-	img {
-		display: block;
-		margin: auto;
-		width: 70%;
-	}
-	@media (min-width: 768px) {
-		display: block;
-	}
-`;
 
 class Page extends React.Component {
 
@@ -75,15 +24,6 @@ class Page extends React.Component {
 				<Helmet>
 					<body className="index-page" />
 				</Helmet>
-
-				<Link to="/priv8" css={css`
-					text-decoration: none;
-				`}>
-					<Banner>
-						Register for Priv8 Virtual Privacy Summit on Nov 15th
-						<BannerTail />
-					</Banner>
-				</Link>
 
 				<section className="home-hero">
 					<div className="home-hero__content">
@@ -104,54 +44,6 @@ class Page extends React.Component {
 				</section>
 
 				<div className="wavy-element-02"></div>
-
-				<section className="priv8__wrapper">
-					<div className="priv8__container container-common">
-						<div css={css`
-							display: flex;
-							justify-content: space-around;
-						`}>
-							<Priv8Hexes>
-								<img src="/img/index/priv8-hexes.svg" width="168" height="484" alt="" />
-							</Priv8Hexes>
-
-							<div css={css`
-								@media (min-width: 768px) {
-									width: 60%;
-									max-width: 514px;
-								}
-								img {
-									width: 100%;
-									max-width: 340px;
-								}
-								text-align: center;
-							`}>
-								<Link to="/priv8">
-									<picture width="1024" height="542">
-										<source srcSet="/img/index/priv8-logo.avif" type="image/avif" />
-										<source srcSet="/img/index/priv8-logo.webp" type="image/webp" />
-										<img src="/img/index/priv8-logo.png" alt="" width="1024" height="542" />
-									</picture>
-								</Link>
-								<br />
-								<br />
-								<h3 css={css`color:inherit;`}>Register now!</h3>
-								<br />
-								<p>
-									Get updates and viewing instructions for the conference.
-									<br />
-									And nothing else.
-								</p>
-
-								<NewsletterSignupCore priv8={true} className="alternate" />
-							</div>
-
-							<Priv8Hexes>
-								<img src="/img/index/priv8-hexes.svg" width="168" height="484" css={css`transform: scaleX(-1);`} alt="" />
-							</Priv8Hexes>
-						</div>
-					</div>
-				</section>
 
 				<section className="marketplace__wrapper">
 					<div className="marketplace__container container-common">
