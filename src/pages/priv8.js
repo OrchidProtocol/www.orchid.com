@@ -268,7 +268,7 @@ const Speaker = (props) => {
 	return (
 		<HeadlineSpeakerContainer data-role={props.role}>
 			<HeadlineSpeakerImage>
-				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" width={1000} height={1000} alt="" />
+				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" placeholder="none" width={1000} height={1000} alt="" />
 			</HeadlineSpeakerImage>
 			<p>Featuring:</p>
 			<p>Pulitzer-Prize winning journalist</p>
@@ -468,7 +468,7 @@ const agendaList = [
 		date: new Date('Nov 15 2021 11:15:00 GMT-0800'),
 		title: 'FREE FALL OR FREE FOR ALL?',
 		description: <>
-			<p>with Ari Paul, Tor Bair, Greg Osuri, Matthew Zipkin</p>
+			<p>with Ari Paul, Tor Bair, Greg Osuri, Christopher Jeffrey</p>
 			<p color="purple">Moderator: Benjamin Powers</p>
 			<p color="teal">Is the world stuck between embracing a CCP style social credit system or a decentralized crypto protocol system? How will incentives like UBI align with the market for privacy? Will our privacy be sold to the dopamine hawkers? Or will everyone get rich using privacy preserving techniques? Either way, economics will play a huge role. The speakers here can see answers to these questions and more.</p>
 		</>,
@@ -483,10 +483,10 @@ const agendaList = [
 	{
 		date: new Date('Nov 15 2021 12:00:00 GMT-0800'),
 		indented: true,
-		title: 'ON BUILDING HIGH PERFORMANCE BLOCKCHAINS',
+		title: 'Handshake: Tools in Blockchain Built to Circumvent Monolithic Tech Oligarchs',
 		description: <>
-			<p>with Christopher Jeffrey</p>
-			<p color="teal">Lead Developer &amp; Architect of the Handshake protocol discusses privacy and blockchain design.</p>
+			<p>with Matthew Zipkin</p>
+			<p color="teal">Core Developer of Handshake protocol discusses privacy and blockchain design.</p>
 		</>,
 	},
 	{
@@ -508,10 +508,9 @@ const agendaList = [
 	},
 	{
 		date: new Date('Nov 15 2021 13:00:00 GMT-0800'),
-		title: 'FREE FORTUNE READING',
+		title: 'An Interview with Paul Syverson',
 		description: <>
-			<p>with Dr. Steven Waterhouse (Seven) &amp; Derek E. Silva</p>
-			<p color="teal">Some predictions on where privacy and pseudonymity are headed.</p>
+			<p>with Paul Syverson and Derek E. Silva</p>
 		</>,
 	},
 	{
@@ -519,7 +518,7 @@ const agendaList = [
 		title: 'LIVE AUCTION',
 		description: <>
 			<p>hosted by Handshake</p>
-			<p color="teal">Live bidding will be hosted in the Priv8 Auction Telegram Group. Items up for auction include a curated list of roughly 20 Handshake Top-Level Domains (HNS TLDs) including .x and single character emojis. Each TLD is a ​​secure, seizure-resistant domain name that people can use to host websites, receive crypto, and more. <br /> A number of Rare Pepe NFTs - digital collectible cards minted by blockchain pioneers in the mid-2010s - will also be on offer. 10% of the auction’s proceeds will be awarded to the auctioneer; 15% will be donated to a Handshake organization of the seller's choice. The remaining 75% will go directly to the seller.</p>
+			<p color="teal">Live bidding will be hosted in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSeeNZxhJ-ROhVcQ8H3CB1gmuOQC2d9dLkBnDscGLaPd689Iug/viewform" target="_blank" rel="noreferrer">Priv8 Auction Telegram Group</a>. Items up for auction include a curated list of roughly 20 Handshake Top-Level Domains (HNS TLDs) including .x and single character emojis. Each TLD is a ​​secure, seizure-resistant domain name that people can use to host websites, receive crypto, and more. <br /> A number of Rare Pepe NFTs - digital collectible cards minted by blockchain pioneers in the mid-2010s - will also be on offer. 10% of the auction’s proceeds will be awarded to the auctioneer; 15% will be donated to a Handshake organization of the seller's choice. The remaining 75% will go directly to the seller.</p>
 			<p><b>** HAVE A TLD TO AUCTION? <a href="https://docs.google.com/forms/d/e/1FAIpQLScJxfQ2BOmnytAz0VNXIzUvQYnb3cm7SqHvt4e_qNQzZwQVyw/viewform" target="_blank" rel="noreferrer">SUBMIT IT.</a> **</b></p>
 		</>,
 	},
@@ -711,6 +710,21 @@ class Page extends React.Component {
 						a {
 							color: var(--purple);
 						}
+
+						@keyframes pulse {
+							0% {
+								transform: scale(1);
+								opacity: 1;
+							}
+							75% {
+								transform: scale(2);
+								opacity: 0;
+							}
+							100% {
+								transform: scale(2);
+								opacity: 0;
+							}
+						}
 					`}</style>
 				</Helmet>
 				<div css={css`
@@ -810,6 +824,51 @@ class Page extends React.Component {
 							`}>
 								Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a>. Featuring Glenn Greenwald.
 
+							</p>
+
+							<p css={css`
+								margin-top: 1em;
+							`}>
+								Watch it here! Priv8 is streaming <b css={css`color: var(--purple);`}>LIVE</b> on:
+							</p>
+
+							<p css={css`
+								margin-top: 1em;
+								& > a {
+									display: inline-block;
+									margin: 0 0.25em
+								}
+							`}>
+								<span css={css`
+									width: 1rem;
+									height: 1rem;
+									display: inline-block;
+									margin-bottom: 0.25rem;
+									margin-right: 0.5rem;
+									background: #F00;
+									border-radius: 50%;
+									position: relative;
+									&:before {
+										animation: pulse 4s infinite;
+										content: '';
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										background: #F00;
+										border-radius: 50%;
+									}
+								`} />
+								<a className="inline-block" href="https://twitter.com/i/broadcasts/1mrxmaXvBkzxy" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+									<img src="/img/priv8/social/twitter.svg" alt="Twitter" width="32" height="32" />
+								</a>
+								<a className="inline-block" href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+									<img src="/img/priv8/social/youtube.svg" alt="YouTube" width="32" height="32" />
+								</a>
+								<a className="inline-block" href="https://www.twitch.tv/orchidprotocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+									<img src="/img/priv8/social/twitch.svg" alt="Twitch" width="32" height="32" />
+								</a>
 							</p>
 							<p css={css`
 								margin-top: 2rem;
