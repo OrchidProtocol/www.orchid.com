@@ -13,36 +13,60 @@ const Embed = () => {
 	const [showIframe, setShowIframe] = useState(false);
 
 	return (<Container>
-		<div css={css`
-			position: relative;
-			padding: 30% 50%;
-			margin-top: 4rem;
-		`}>
-			<a css={css`
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: #3B146A;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				border-radius: 1rem;
-			`} onClick={(e) => { e.preventDefault(); setShowIframe(true) }} href="https://www.youtube.com/watch?v=m6eqn72dqzs">
-				<span css={css`
-					color: white;
-					text-decoration: none;
-				`}>Click to load content from youtube.com</span>
-			</a>
-			{showIframe ? <iframe css={css`
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-			`}
-				width="560" height="315" src="https://www.youtube.com/embed/m6eqn72dqzs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /> : <></>}
+		<div css={css`width: 100%;`}>
+			<h2 css={css`
+				text-align: center;
+			`}>
+				LIVE NOW <span css={css`
+					width: 0.75em;
+					height: 0.75em;
+					display: inline-block;
+					background: var(--purple);
+					border-radius: 50%;
+					position: relative;
+					&:before {
+						animation: pulse 4s infinite;
+						content: '';
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						background: var(--purple);
+						border-radius: 50%;
+					}
+				`} />
+			</h2>
+			<div css={css`
+				position: relative;
+				padding: 30% 50%;
+				margin-top: 4rem;
+			`}>
+				<a css={css`
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: #3B146A;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border-radius: 1rem;
+				`} onClick={(e) => { e.preventDefault(); setShowIframe(true) }} href="https://www.youtube.com/watch?v=m6eqn72dqzs">
+					<span css={css`
+						color: white;
+						text-decoration: none;
+					`}>Click to load content from youtube.com</span>
+				</a>
+				{showIframe ? <iframe css={css`
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 0;
+					left: 0;
+				`} width="560" height="315" src="https://www.youtube.com/embed/m6eqn72dqzs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /> : <></>}
+			</div>
 		</div>
 	</Container>);
 }
@@ -748,6 +772,21 @@ class Page extends React.Component {
 
 						a {
 							color: var(--purple);
+						}
+
+						@keyframes pulse {
+							0% {
+								transform: scale(1);
+								opacity: 1;
+							}
+							75% {
+								transform: scale(2);
+								opacity: 0;
+							}
+							100% {
+								transform: scale(2);
+								opacity: 0;
+							}
 						}
 					`}</style>
 				</Helmet>
