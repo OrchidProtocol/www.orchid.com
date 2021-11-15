@@ -331,7 +331,7 @@ const Speaker = (props) => {
 	return (
 		<HeadlineSpeakerContainer data-role={props.role}>
 			<HeadlineSpeakerImage>
-				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" width={1000} height={1000} alt="" />
+				<StaticImage loading="eager" src="../../static/img/priv8/Headliner.png" placeholder="none" width={1000} height={1000} alt="" />
 			</HeadlineSpeakerImage>
 			<p>Featuring:</p>
 			<p>Pulitzer-Prize winning journalist</p>
