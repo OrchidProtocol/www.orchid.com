@@ -828,6 +828,12 @@ class Page extends React.Component {
 
 							<p css={css`
 								margin-top: 1em;
+							`}>
+								Watch it here! Priv8 is streaming <b css={css`color: var(--purple);`}>LIVE</b> on:
+							</p>
+
+							<p css={css`
+								margin-top: 1em;
 								& > a {
 									display: inline-block;
 									margin: 0 0.25em
