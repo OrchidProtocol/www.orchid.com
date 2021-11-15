@@ -35,15 +35,14 @@ const Embed = () => {
 					text-decoration: none;
 				`}>Click to load content from youtube.com</span>
 			</a>
-			<iframe css={css`
+			{showIframe ? <iframe css={css`
 				position: absolute;
 				width: 100%;
 				height: 100%;
 				top: 0;
 				left: 0;
 			`}
-				style={{ display: showIframe ? 'block' : 'none' }}
-				width="560" height="315" src="https://www.youtube.com/embed/m6eqn72dqzs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+				width="560" height="315" src="https://www.youtube.com/embed/m6eqn72dqzs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen /> : <></>}
 		</div>
 	</Container>);
 }
