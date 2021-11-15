@@ -8,7 +8,6 @@ import NewsletterSignupCore from '../components/newsletter-signup-core';
 import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
-import { css } from '@emotion/react';
 
 class Page extends React.Component {
 
