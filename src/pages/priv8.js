@@ -9,6 +9,45 @@ import NewsletterSignupCore from '../components/newsletter-signup-core';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
+const Embed = () => {
+	const [showIframe, setShowIframe] = useState(false);
+
+	return (<Container>
+		<div css={css`
+			position: relative;
+			padding: 30% 50%;
+			margin-top: 4rem;
+		`}>
+			<a css={css`
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #3B146A;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border-radius: 1rem;
+			`} onClick={(e) => { e.preventDefault(); setShowIframe(true) }} href="https://www.youtube.com/watch?v=m6eqn72dqzs">
+				<span css={css`
+					color: white;
+					text-decoration: none;
+				`}>Click to load content from youtube.com</span>
+			</a>
+			<iframe css={css`
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+			`}
+				style={{ display: showIframe ? 'block' : 'none' }}
+				width="560" height="315" src="https://www.youtube.com/embed/m6eqn72dqzs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+		</div>
+	</Container>);
+}
+
 const Container = styled.div`
 	display: flex;
 	justify-content: center;
@@ -778,6 +817,7 @@ class Page extends React.Component {
 					background: linear-gradient(212.29deg, #000000 24.75%, #3B146A 93.66%);
 					padding-top: 4rem; /*Making space for the navbar*/
 				`}>
+					<Embed />
 					<Container css={css`
 						position: relative;
 					`}>
