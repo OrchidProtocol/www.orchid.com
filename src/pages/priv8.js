@@ -839,6 +839,27 @@ class Page extends React.Component {
 									margin: 0 0.25em
 								}
 							`}>
+								<span css={css`
+									width: 1rem;
+									height: 1rem;
+									display: inline-block;
+									margin-bottom: 0.25rem;
+									margin-right: 0.5rem;
+									background: #F00;
+									border-radius: 50%;
+									position: relative;
+									&:before {
+										animation: pulse 4s infinite;
+										content: '';
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 100%;
+										height: 100%;
+										background: #F00;
+										border-radius: 50%;
+									}
+								`} />
 								<a className="inline-block" href="https://twitter.com/i/broadcasts/1mrxmaXvBkzxy" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
 									<img src="/img/priv8/social/twitter.svg" alt="Twitter" width="32" height="32" />
 								</a>
