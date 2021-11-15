@@ -57,6 +57,7 @@ const Embed = () => {
 					<span css={css`
 						color: white;
 						text-decoration: none;
+						text-align: center;
 					`}>Click to load content from youtube.com</span>
 				</a>
 				{showIframe ? <iframe css={css`
