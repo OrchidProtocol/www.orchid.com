@@ -52,7 +52,10 @@ class Component extends React.Component {
 
 	submit(e) {
 		e.preventDefault();
-		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(e.target.email.value || "") + (this.props.priv8 ? "&priv8=true" : "");
+
+		// temporarilly disable priv8 functionality, sign users up for the full newsletter but keep priv8 styling elsewhere
+		// add back the commented code below when the next conference is happening.
+		const mailchimp_url = "https://ik396c7x0k.execute-api.us-west-2.amazonaws.com/default/mailchimp?email=" + encodeURIComponent(e.target.email.value || ""); //+ (this.props.priv8 ? "&priv8=true" : "");
 
 		if (this.in_progress) return;
 
