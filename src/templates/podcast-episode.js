@@ -7,6 +7,7 @@ import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
 
 import { generateDescription } from '../utils/generateDescription';
+import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 
 const PodcastEpisode = (props) => {
@@ -21,11 +22,19 @@ const PodcastEpisode = (props) => {
 
 
 	return (
-		<Layout>
-			<PodcastHero />
-			<PostCard post={post} key={0} keyIndex={0} />
-			<PodcastFooter />
-		</Layout>
+		<>
+			<WebsiteMeta
+				title={post.frontmatter.title}
+				description={post.frontmatter.description}
+				image={post.frontmatter.featuredimage}
+				location={props.location}
+			/>
+			<Layout>
+				<PodcastHero />
+				<PostCard post={post} key={0} keyIndex={0} />
+				<PodcastFooter />
+			</Layout>
+		</>
 	)
 }
 

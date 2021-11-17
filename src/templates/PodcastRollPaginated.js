@@ -1,5 +1,4 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import config from '../utils/config';
 
 import { css } from '@emotion/react'
@@ -8,10 +7,11 @@ import { graphql } from 'gatsby'
 import { Layout, PostCard, Pagination } from '../components/common';
 import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
+import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
-const podcastRoll = ({ data, pageContext }) => {
+const podcastRoll = ({ data, pageContext, location }) => {
 	const posts = data.allPosts.edges
 
 	for (let index = posts.length - 1; index >= 0; index--) {
@@ -31,62 +31,12 @@ const podcastRoll = ({ data, pageContext }) => {
 
 	return (
 		<>
-			<Helmet>
-				<title>{config.title}</title>
-				<meta name="description" content="Your VPN should be secure, which is why Orchid is building with open source tools for custom VPN configurations and privacy services." />
-
-				<meta property="og:image" content={config.feature_image} />
-				<meta property="og:image:width" content="1688" />
-				<meta property="og:image:height" content="950" />
-				<meta name="twitter:image" content={config.feature_image} />
-				<meta name="twitter:card" content="summary_large_image" />
-
-
-				<script type="application/ld+json">{`
-					{
-						"@context": "https://schema.org/",
-						"@type": "podcast",
-						"name": "${config.title}",
-						"url": "${config.siteUrl}",
-						"image": {
-								"@type": "ImageObject",
-								"url": "${config.siteUrl}${config.feature_image}",
-								"width": "${config.feature_image_width}",
-								"height": "${config.feature_image_height}"
-							},
-						"publisher": {
-							"@type": "Organization",
-							"name": "${config.title}",
-							"logo": {
-								"@type": "ImageObject",
-								"url": "${config.siteUrl}${config.logo}",
-								"width": ${config.logoWidth},
-								"height": ${config.logoHeight}
-							}
-						},
-						"mainEntityOfPage": {
-							"@type": "WebPage",
-							"@id": "${config.siteUrl}"
-						},
-						"description": "${config.description}"
-					}
-				`}</script>
-
-				<script>
-					{`
-						if ('serviceWorker' in window.navigator) {
-							window.navigator.serviceWorker.getRegistrations().then((registrations) => {
-								for(let registration of registrations) {
-									registration.unregister();
-								}
-							}).catch((err) => {
-								console.log('Service Worker registration failed: ', err);
-							});
-						}
-					`}
-				</script>
-
-			</Helmet>
+			<WebsiteMeta
+				title={config.title}
+				description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
+				image={config.feature_image}
+				location={location}
+			/>
 			<Layout>
 				<PodcastHero />
 				<div className="container" css={css`
