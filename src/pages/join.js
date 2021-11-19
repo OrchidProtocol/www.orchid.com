@@ -5,6 +5,7 @@ import Layout from '../components/common/Layout'
 import './join.scss'
 import WhereOXT from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import { css } from '@emotion/react'
 
 class Page extends React.Component {
 
@@ -45,12 +46,36 @@ class Page extends React.Component {
 
 								<ul i18n="@@JoinHero__UL">
 									<li>Someone could share one with you</li>
-									<li>You can buy an account on iOS</li>
-									<li>You can create an account with OXT</li>
+									<li>You can buy an xDAI account with a $1 USD in-app purchase on iOS, macOS &amp; Android</li>
+									<li>You can create an account with OXT and ETH for network fees</li>
 								</ul>
 
-								<p i18n="@@JoinHero__P2">This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.</p>
-								<p i18n="@@JoinHero__P3">Check out Coinbase’s <a href="https://www.coinbase.com/earn">Earn Campaign</a> for an opportunity to earn OXT while learning about Orchid!</p>
+								<p i18n="@@JoinHero__P2">This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT and ETH. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.</p>
+								<br />
+								<p i18n="@@JoinHero__gasWarning"><b>*Ethereum gas notice*</b>: As of Q4 2021, Ethereum gas fees can be upwards of $90 USD to fund an Orchid account with OXT and a similar fee is required to unlock and withdraw unused OXT. This is the network cost paid in ETH. We recommend buying an account in the app using an in-app purchase which start at $1 USD. We are working on getting Orchid on chains with lower network fees for use with the dapp.</p>
+								<br />
+								<p>
+									Ethereum Gas Amounts (November 2021):
+								</p>
+								<ul css={css`
+									max-width: 200px !important;
+								`}>
+									<li><div css={css`
+										list-style: inside;
+										display: flex;
+										justify-content: space-between;
+									`}><span>Account Creation:</span> <span>225,000</span></div></li>
+									<li><div css={css`
+										list-style: inside;
+										display: flex;
+										justify-content: space-between;
+									`}><span>Unlock:</span> <span>50,000</span></div></li>
+									<li><div css={css`
+										list-style: inside;
+										display: flex;
+										justify-content: space-between;
+									`}><span>Withdraw:</span> <span>150,000</span></div></li>
+								</ul>
 							</div>
 							<div className="join__bunny-container">
 								<img src="/img/join/intro_bunny.svg" alt="" />
