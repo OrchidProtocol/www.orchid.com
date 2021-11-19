@@ -4,7 +4,7 @@ module.exports = {
 	main_site: 'https://www.orchid.com/',
 
 	description: 'Stay up to date with Orchid, VPN, and online privacy issues.',
-	title: 'Privacy & VPN Blog - Orchid',
+	title: 'Orchid',
 	twitter: '@OrchidProtocol',
 	feature_image: 'img/social.png',
 	logo: 'img/favicon.png',

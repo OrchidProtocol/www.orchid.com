@@ -20,7 +20,9 @@ class WebsiteMeta extends React.Component {
 		shareImage = shareImage ? url.resolve(config.siteUrl, shareImage) : null;
 
 		description = description || config.description;
-		title = `${title ? `${title} - ` : ''} ${config.title}`;
+		if (!title.match(/orchid/i)) {
+			title = `${title ? `${title} | ` : ''} ${config.title}`;
+		}
 
 		return (
 			<>
