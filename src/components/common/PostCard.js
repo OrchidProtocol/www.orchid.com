@@ -112,10 +112,12 @@ const PostCard = ({ post, keyIndex }) => {
 			width: 95%;
         `}>
 			<div css={css`
-				display: grid;
-				grid: auto-flow dense / 250px 1fr;
-				&.big {
-					grid: auto-flow dense / 500px 1fr;
+				@media (min-width: 768px) {
+					display: grid;
+					grid: auto-flow dense / 250px 1fr;
+					&.big {
+						grid: auto-flow dense / 500px 1fr;
+					}
 				}
 			`} className={keyIndex === 0 ? 'big' : 'small'}>
 				<div css={css`
