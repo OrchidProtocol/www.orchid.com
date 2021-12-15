@@ -1,8 +1,23 @@
 const _ = require('lodash')
 const path = require('path')
+const fs = require('fs');
 const { createFilePath } = require('gatsby-source-filesystem')
 
 const { buildTimestampUTC } = require('./src/utils/currentTimestamp');
+
+
+const locales = require('./locales.js');
+const localesNSContent = {};
+for (let index = 0; index < locales.array.length; index++) {
+	const locale = locales.array[index];
+	localesNSContent[locale] = [
+		{
+			content: fs.readFileSync(`src/locales/${locale}/translation.json`, "utf8"),
+			ns: "common"
+		}
+	];
+}
+
 
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions
@@ -90,3 +105,37 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 		})
 	}
 }
+
+exports.onCreatePage = async props => {
+	const {
+		page,
+		actions: { createPage, deletePage, createRedirect }
+	} = props;
+
+	if (/^\/dev-404-page\/?$/.test(page.path) || /^\/podcast/.test(page.path) || /^podcast/.test(page.path)) {
+		return;
+	}
+
+	deletePage(page);
+
+	for (let index = 0; index < locales.array.length; index++) {
+		const value = locales.array[index];
+		let newPath = `/${value}${page.path}`;
+		if (value === "en") {
+			newPath = page.path;
+		}
+		const localePage = {
+			...page,
+			originalPath: page.path,
+			path: newPath,
+			context: {
+				availableLocales: locales.names,
+				locale: value,
+				routed: true,
+				data: localesNSContent[value],
+				originalPath: page.path
+			}
+		};
+		createPage(localePage);
+	}
+};

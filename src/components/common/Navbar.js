@@ -69,12 +69,12 @@ class Navbar extends React.Component {
 								</svg>
 							</span>
 							<ul className="navbar-language-selector-list">
-								<li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" className="phantom-a" href="//www.ko.orchid.com">한국어</a></li>
-								<li><a i18n="@@LanguageDropdown__En" className="phantom-a" href="//www.orchid.com">English</a></li>
-								<li><a i18n="@@LanguageDropdown__Ru" className="phantom-a" href="//www.ru.orchid.com">русский</a></li>
-								<li><a i18n="@@LanguageDropdown__Ja" className="phantom-a" href="//www.ja.orchid.com">日本</a></li>
-								<li><a i18n="@@LanguageDropdown__Zh" className="phantom-a" href="//www.zh.orchid.com">中文</a></li>
-								<li><a i18n="@@LanguageDropdown__Id" className="phantom-a" href="//www.id.orchid.com">Indonesian</a></li>
+								<li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" className="phantom-a" href="/ko/">한국어</a></li>
+								<li><a i18n="@@LanguageDropdown__En" className="phantom-a" href="/">English</a></li>
+								<li><a i18n="@@LanguageDropdown__Ru" className="phantom-a" href="/ru/">русский</a></li>
+								<li><a i18n="@@LanguageDropdown__Ja" className="phantom-a" href="/ja/">日本</a></li>
+								<li><a i18n="@@LanguageDropdown__Zh" className="phantom-a" href="/zh/">中文</a></li>
+								<li><a i18n="@@LanguageDropdown__Id" className="phantom-a" href="/id/">Indonesian</a></li>
 							</ul>
 						</li>
 					</ul>

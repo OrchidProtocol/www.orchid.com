@@ -4,14 +4,15 @@ import Layout from '../components/common/Layout'
 import './index.scss'
 import ExplainerVideo from '../components/explainerVideo';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
+import withI18next from '../components/withI18next';
 
 import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 class Page extends React.Component {
-
 	render() {
+		const { t } = this.props;
 		return (
 			<Layout bodyclassName="index">
 				<WebsiteMeta
@@ -27,7 +28,7 @@ class Page extends React.Component {
 				<section className="home-hero">
 					<div className="home-hero__content">
 						<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
-						<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
+						<h3><span>{t('No data collection.')}</span> <span>{t('No 3rd-party sharing.')}</span> <span>{t('No profit markup.')}</span></h3>
 						<h3 className="color-primary"><span>A new model of VPN.</span></h3>
 						<Link to="/get-orchid" className="btn">
 							<button className="btn-primary">Get Orchid</button>
@@ -309,4 +310,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)
