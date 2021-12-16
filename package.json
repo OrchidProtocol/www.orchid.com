@@ -21,6 +21,7 @@
 		"build:static:tr": "npm run get-legacy && npm run build:static:tr",
 		"build:static:pt-BR": "npm run get-legacy && npm run build:static:pt-BR",
 		"get-legacy": "git fetch && git reset --hard origin/legacy && yarn install",
+		"extract": "yarn run babel -f babel.config.js 'src/**/*.{js,jsx}'",
 		"develop": "npm run clean && gatsby develop",
 		"serve": "node server.js",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
@@ -78,6 +79,10 @@
 		"xml2js": "^0.4.23"
 	},
 	"devDependencies": {
+		"@babel/cli": "^7.16.0",
+		"@babel/core": "^7.16.5",
+		"@babel/plugin-syntax-jsx": "^7.16.5",
+		"babel-plugin-i18next-extract": "^0.8.3",
 		"prettier": "^1.15.3"
 	}
 }

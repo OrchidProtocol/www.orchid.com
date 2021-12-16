@@ -1,0 +1,125 @@
+{
+  "(starting at just $1)": "(starting at just $1)",
+  "A new model of VPN": {
+    "": "A new model of VPN."
+  },
+  "All of Orchid's code is Open Source and freely available to download <1>on GitHub</1>": {
+    " Use of Orchid's source code is governed by the AGPL copyleft Open Source license": {
+      " The Orchid community develops code \"in the open\" by continually pushing changes that anyone can see on GitHub and <3>tagging releases</3> as appropriate": {
+        "": "All of Orchid's code is Open Source and freely available to download <1>on GitHub</1>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license. The Orchid community develops code \"in the open\" by continually pushing changes that anyone can see on GitHub and <3>tagging releases</3> as appropriate."
+      }
+    }
+  },
+  "Buyers use the <1>Orchid app</1> to get protection from snooping ISP's, unblock websites cutoff by firewalls, and for many other privacy benefits": {
+    " Sellers receive payments in real-time as they provide service and stake <3>OXT</3> to compete for service requests": {
+      " Orchid Technologies charges no fees, and the community maintains the <5>Open Source software</5> that powers the entire ecosystem": {
+        " Try it out!": "Buyers use the <1>Orchid app</1> to get protection from snooping ISP's, unblock websites cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they provide service and stake <3>OXT</3> to compete for service requests. Orchid Technologies charges no fees, and the community maintains the <5>Open Source software</5> that powers the entire ecosystem. Try it out!"
+      }
+    }
+  },
+  "Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy": {
+    "": "Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy."
+  },
+  "Connect": "Connect",
+  "Connect randomly to an OXT-staked VPN server": {
+    " Change to a new provider at any time by toggling the VPN off and back on": {
+      "": "Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on."
+    }
+  },
+  "Connect to a random provider": "Connect to a random provider",
+  "Crypto-powered": "Crypto-powered",
+  "Decentralized": "Decentralized",
+  "Flexible": "Flexible",
+  "From the Orchid Blog": "From the Orchid Blog",
+  "Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto": {
+    "": "Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto."
+  },
+  "Fund your Orchid account": "Fund your Orchid account",
+  "Get Orchid": "Get Orchid",
+  "Get the Orchid Onlooker newsletter for updates and privacy news": "Get the Orchid Onlooker newsletter for updates and privacy news",
+  "Go to Blog": "Go to Blog",
+  "Key features": "Key features",
+  "Learn More": "Learn More",
+  "Learn more": {
+    "": "Learn more."
+  },
+  "Let’s stay connected": "Let’s stay connected",
+  "Multi-hop": "Multi-hop",
+  "Nanopayment Ecosystem": "Nanopayment Ecosystem",
+  "No 3rd-party sharing": {
+    "": "No 3rd-party sharing."
+  },
+  "No Subscriptions": "No Subscriptions",
+  "No data collection": {
+    "": "No data collection."
+  },
+  "No profit markup": {
+    "": "No profit markup."
+  },
+  "Open Source": "Open Source",
+  "Orchid News": "Orchid News",
+  "Orchid brings leading providers together through a unique, decentralized privacy marketplace": {
+    " Because there are more (and more widely distributed) servers available, the user\\'s data has more possible paths to choose from": {
+      " This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient": {
+        "": "Orchid brings leading providers together through a unique, decentralized privacy marketplace. Because there are more (and more widely distributed) servers available, the user\\'s data has more possible paths to choose from. This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient."
+      }
+    }
+  },
+  "Orchid has a WireGuard and Open VPN client built into the app": {
+    " Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services": {
+      " Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties": {
+        "": "Orchid has a WireGuard and Open VPN client built into the app. Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services. Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties."
+      }
+    }
+  },
+  "Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid": {
+    "com that harvests information about you": {
+      " Orchid also has no tracking systems in our applications": {
+        " We absolutely do not track": {
+          "": "Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you. Orchid also has no tracking systems in our applications. We absolutely do not track."
+        }
+      }
+    }
+  },
+  "Orchid is a decentralized bandwidth marketplace": "Orchid is a decentralized bandwidth marketplace",
+  "Orchid nanopayments mean you are never locked into a subscription and pay only for actual use": {
+    "": "Orchid nanopayments mean you are never locked into a subscription and pay only for actual use."
+  },
+  "Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”": {
+    "": "Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”."
+  },
+  "Pay for VPN service using one of our supported cryptocurrencies": {
+    " Not crypto savvy? You can purchase a pre-loaded account right in the app": {
+      "": "Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app."
+    }
+  },
+  "Pay only for what you actually use": "Pay only for what you actually use",
+  "Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark": {
+    "": "Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark."
+  },
+  "Randomized Servers": "Randomized Servers",
+  "Read the Docs": "Read the Docs",
+  "Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices": {
+    "": "Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices."
+  },
+  "Tap \"Connect\" to match with a VPN server that has locked up OXT to compete for your business": {
+    "": "Tap \"Connect\" to match with a VPN server that has locked up OXT to compete for your business."
+  },
+  "The Orchid community is one of the things that makes this project truly special": {
+    " Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!": "The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!"
+  },
+  "Tracking-free": "Tracking-free",
+  "Traffic Analysis": "Traffic Analysis",
+  "Unblock Website & Apps": "Unblock Website & Apps",
+  "Unlimited Sharing": "Unlimited Sharing",
+  "Use the Orchid VPN to break through firewalls and access blocked content": {
+    " Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator": {
+      "": "Use the Orchid VPN to break through firewalls and access blocked content. Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator."
+    }
+  },
+  "When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control": {
+    " VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use": "When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control. VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use"
+  },
+  "Whitepaper": "Whitepaper",
+  "Why Orchid?": "Why Orchid?"
+}
