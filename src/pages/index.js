@@ -8,6 +8,7 @@ import NewsletterSignupCore from '../components/newsletter-signup-core';
 import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import { StaticImage } from "gatsby-plugin-image";
 
 class Page extends React.Component {
 
@@ -35,11 +36,9 @@ class Page extends React.Component {
 						<br />
 						<small>(starting at just $1)</small>
 					</div>
-					<picture className="home-hero__picture" width="491" height="765">
-						<source srcSet="/img/index/phone.avif" type="image/avif" />
-						<source srcSet="/img/index/phone.webp" type="image/webp" />
-						<img src="/img/index/phone.png" alt="" className="home-hero__image" width="491" height="765" />
-					</picture>
+					<div className="home-hero__picture">
+						<StaticImage loading="eager" src="../../static/img/index/phone.png" placeholder="none" width={491} height={765} alt="" />
+					</div>
 				</section>
 
 				<div className="wavy-element-02"></div>
@@ -47,16 +46,14 @@ class Page extends React.Component {
 				<section className="marketplace__wrapper">
 					<div className="marketplace__container container-common">
 						<h2 className="section-heading">Orchid is a decentralized bandwidth marketplace</h2>
-						<p>Buyers use the <Link to="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites
+						<p>
+							Buyers use the <Link to="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites
 							cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they
 							provide service and stake <Link to="/oxt">OXT</Link> to compete for service requests. Orchid Technologies charges no
 							fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers
-							the entire ecosystem. Try it out!</p>
-						<picture>
-							<source srcSet="/img/index/marketplace.avif" type="image/avif" />
-							<source srcSet="/img/index/marketplace.webp" type="image/webp" />
-							<img src="/img/index/marketplace.png" alt="" width="1921" height="442" />
-						</picture>
+							the entire ecosystem. Try it out!
+						</p>
+						<StaticImage loading="lazy" src="../../static/img/index/marketplace.png" placeholder="none" width={1600} height={368} alt="" />
 						<div className="marketplace-steps">
 							<div>
 								<h3>Fund your Orchid account</h3>
@@ -78,11 +75,9 @@ class Page extends React.Component {
 				</section>
 
 				<div className="wavy-element-03"></div>
-				<picture>
-					<source srcSet="/img/index/island-01.avif" type="image/avif" />
-					<source srcSet="/img/index/island-01.webp" type="image/webp" />
-					<img className="decorative-island" src="/img/index/island-01.png" alt="" width="1056" height="628" />
-				</picture>
+				<div className="decorative-island">
+					<StaticImage loading="lazy" src="../../static/img/index/island-01.png" placeholder="none" width={600} height={357} alt="" />
+				</div>
 
 				<section className="features__wrapper">
 					<div className="features__container container-common">
@@ -143,11 +138,7 @@ class Page extends React.Component {
 					<div className="why-orchid__container container-common">
 						<h2 className="section-heading">Why Orchid?</h2>
 						<div className="why-orchid__flex">
-							<picture>
-								<source srcSet="/img/index/why-orchid__phone.avif" type="image/avif" />
-								<source srcSet="/img/index/why-orchid__phone.webp" type="image/webp" />
-								<img src="/img/index/why-orchid__phone.png" width="507" height="646" alt="" />
-							</picture>
+							<StaticImage className="why-orchid__image" loading="lazy" src="../../static/img/index/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
 							<div className="why-orchid__text">
 
 								<h4>No Subscriptions</h4>
