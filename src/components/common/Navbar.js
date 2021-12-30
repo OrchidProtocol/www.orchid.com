@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby';
 
 import './Navbar.scss';
+import { t } from 'i18next';
 
 class Navbar extends React.Component {
 
@@ -53,36 +54,38 @@ class Navbar extends React.Component {
 						</button>
 					</div>
 					<ul className="nav-list phantom-list">
-						<li className="mobile-only"><Link to="/" className="phantom-a" i18n="@@Navigation-Home">Home</Link></li>
-						<li><Link to="/join" className="phantom-a" i18n="@@Navigation-Join">Create Account</Link></li>
-						<li><Link to="/how-it-works" className="phantom-a" i18n="@@Navigation-HowItWorks">How It Works</Link></li>
-						<li><Link to="/oxt" className="phantom-a" i18n="@@Navigation-OXT">OXT</Link></li>
-						<li><Link to="/about-us" className="phantom-a" i18n="@@Navigation-About">About</Link></li>
-						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">Blog</a></li>
-						<li><Link to="/contact" className="phantom-a" i18n="@@Navigation-Contact">Contact</Link></li>
+						<li className="mobile-only"><Link to="/" className="phantom-a"><Trans i18n="@@Navigation-Home">Home</Trans></Link></li>
+						<li><Link to="/join" className="phantom-a"><Trans i18n="@@Navigation-Join">Create Account</Trans></Link></li>
+						<li><Link to="/how-it-works" className="phantom-a"><Trans i18n="@@Navigation-HowItWorks">How It Works</Trans></Link></li>
+						<li><Link to="/oxt" className="phantom-a"><Trans i18n="@@Navigation-OXT">OXT</Trans></Link></li>
+						<li><Link to="/about-us" className="phantom-a"><Trans i18n="@@Navigation-About">About</Trans></Link></li>
+						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"><Trans i18n="@@Navigation-Blog">Blog</Trans></a></li>
+						<li><Link to="/contact" className="phantom-a"><Trans i18n="@@Navigation-Contact">Contact</Trans></Link></li>
 						<li className="navbar-language-selector">
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
-								<span i18n="@@NavigationCurrentLanguage">{process.env.GATSBY_TARGET_LANG}</span>
+								<span>{t('@@NavigationCurrentLanguage')}</span>
 								<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.657413 2.3158L3.67908 5.33747C4.13408 5.79247 4.86908 5.79247 5.32408 5.33747L8.34575 2.3158C9.08075 1.5808 8.55575 0.320801 7.51741 0.320801H1.47408C0.435747 0.320801 -0.0775865 1.5808 0.657413 2.3158Z" fill="#766D86" />
 								</svg>
 							</span>
 							<ul className="navbar-language-selector-list">
-								<li id="navbar-language-selector-list-item-first"><a i18n="@@LanguageDropdown__Ko" className="phantom-a" href="/ko/">한국어</a></li>
-								<li><a i18n="@@LanguageDropdown__En" className="phantom-a" href="/">English</a></li>
-								<li><a i18n="@@LanguageDropdown__Ru" className="phantom-a" href="/ru/">русский</a></li>
-								<li><a i18n="@@LanguageDropdown__Ja" className="phantom-a" href="/ja/">日本</a></li>
-								<li><a i18n="@@LanguageDropdown__Zh" className="phantom-a" href="/zh/">中文</a></li>
-								<li><a i18n="@@LanguageDropdown__Id" className="phantom-a" href="/id/">Indonesian</a></li>
+								<li id="navbar-language-selector-list-item-first"><a className="phantom-a" href="/ko/">한국어</a></li>
+								<li><a className="phantom-a" href="/">English</a></li>
+								<li><a className="phantom-a" href="/ru/">русский</a></li>
+								<li><a className="phantom-a" href="/ja/">日本</a></li>
+								<li><a className="phantom-a" href="/zh/">中文</a></li>
+								<li><a className="phantom-a" href="/id/">Indonesian</a></li>
 							</ul>
 						</li>
 					</ul>
 				</div>
 
 				<a className="nav-download" href="/get-orchid">
-					<button className="btn-secondary" i18n="@@Navigation-Download">
-						Get Orchid
+					<button className="btn-secondary">
+						<Trans i18n="@@Navigation-Download">
+							Get Orchid
+						</Trans>
 					</button>
 				</a>
 

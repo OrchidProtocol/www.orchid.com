@@ -4,6 +4,7 @@ import Layout from '../components/common/Layout'
 import './contact.scss'
 import ContactForm from '../components/ContactForm';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import { t } from 'i18next';
 
 class Page extends React.Component {
 
@@ -23,11 +24,17 @@ class Page extends React.Component {
 					<div className="splash-circuit-image section-med"></div>
 					<div className="splash-circuit-grid section-med">
 						<div className="splash-circuit-grid-item hpad-thin">
-							<h1 i18n="@@ContactHero__Title">Contact</h1>
+							<h1>
+								<Trans i18n="@@ContactHero__Title">
+									Contact
+								</Trans>
+							</h1>
 
-							<div className="splash-circuit-grid-text" i18n="@@ContactHero__Description">
-								<h3>We want to hear from you</h3>
-								<p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.</p>
+							<div className="splash-circuit-grid-text">
+								<Trans i18n="@@ContactHero__Description">
+									<h3>We want to hear from you</h3>
+									<p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.</p>
+								</Trans>
 							</div>
 						</div>
 						<div className="splash-circuit-grid-item">
@@ -41,45 +48,75 @@ class Page extends React.Component {
 
 						<div className="contact-sidebar">
 							<div className="contact-page-card">
-								<span className="contact-page-card-header color-gray" i18n="@@ContactOffice__Title">Mailing Address</span>
+								<span className="contact-page-card-header color-gray">
+									<Trans i18n="@@ContactOffice__Title">
+										Mailing Address
+									</Trans>
+								</span>
 								<div className="contact-page-card-seperator"></div>
-								<div style={{ maxWidth: "11rem" }} i18n="@@ContactOffice__Address">
-									1288 Columbus Ave. #122,
-									San Francisco, CA 94133
+								<div style={{ maxWidth: "11rem" }}>
+									<Trans i18n="@@ContactOffice__Address">
+										1288 Columbus Ave. #122,
+										San Francisco, CA 94133
+									</Trans>
 								</div>
 							</div>
 							<div className="contact-page-card">
-								<span className="contact-page-card-header color-gray" i18n="@@ContactSidebar__Title">Contact Info</span>
+								<span className="contact-page-card-header color-gray">
+									<Trans i18n="@@ContactSidebar__Title">
+										Contact Info
+									</Trans>
+								</span>
 								<div className="contact-page-card-seperator"></div>
 								<ul className="contact-page-card-list">
 									<li>
-										<a className="phantom-a" href="mailto:contact@orchid.com" i18n-href="@@ContactSidebar__EmailLink">
+										<a className="phantom-a" href={t("mailto:contact@orchid.com")}>
 											<img alt="Email" src="/img/contact/icon-email.svg" width="20" height="20" />
-											<span i18n="@@ContactSidebar__Email">contact@orchid.com</span>
+											<span>
+												<Trans i18n="@@ContactSidebar__Email">
+													contact@orchid.com
+												</Trans>
+											</span>
 										</a>
 									</li>
 									<li>
-										<a className="phantom-a" href="https://twitter.com/OrchidProtocol" i18n-href="@@ContactSidebar__TwitterLink">
+										<a className="phantom-a" href={t("https://twitter.com/OrchidProtocol")}>
 											<img alt="Twitter" src="/img/contact/icon-twitter.svg" width="20" height="20" />
-											<span i18n="@@ContactSidebar__Twitter">@OrchidProtocol</span>
+											<span>
+												<Trans i18n="@@ContactSidebar__Twitter">
+													@OrchidProtocol
+												</Trans>
+											</span>
 										</a>
 									</li>
 									<li>
-										<a className="phantom-a" href="https://discord.gg/GDbxmjxX9F" i18n-href="@@ContactSidebar__DiscordLink">
+										<a className="phantom-a" href={t("https://discord.gg/GDbxmjxX9F")}>
 											<img alt="Discord" src="/img/contact/icon-discord.svg" width="20" height="20" />
-											<span i18n="@@ContactSidebar__Discord">Discord Server</span>
+											<span>
+												<Trans i18n="@@ContactSidebar__Discord">
+													Discord Server
+												</Trans>
+											</span>
 										</a>
 									</li>
 									<li>
-										<a className="phantom-a" href="https://www.t.me/OrchidOfficial" i18n-href="@@ContactSidebar__TelegramLink">
+										<a className="phantom-a" href={t("https://www.t.me/OrchidOfficial")}>
 											<img alt="Telegram" src="/img/contact/icon-telegram.svg" width="20" height="20" />
-											<span i18n="@@ContactSidebar__Telegram">@OrchidOfficial</span>
+											<span>
+												<Trans i18n="@@ContactSidebar__Telegram">
+													@OrchidOfficial
+												</Trans>
+											</span>
 										</a>
 									</li>
 									<li>
-										<a className="phantom-a" href="https://www.facebook.com/OrchidProtocol" i18n-href="@@ContactSidebar__FacebookLink">
+										<a className="phantom-a" href={t("https://www.facebook.com/OrchidProtocol")}>
 											<img alt="Facebook" src="/img/contact/icon-facebook.svg" width="20" height="20" />
-											<span i18n="@@ContactSidebar__Facebook">OrchidProtocol</span>
+											<span>
+												<Trans i18n="@@ContactSidebar__Facebook">
+													OrchidProtocol
+												</Trans>
+											</span>
 										</a>
 									</li>
 								</ul>

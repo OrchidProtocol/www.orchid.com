@@ -7,6 +7,7 @@ import { Link } from 'gatsby'
 import Navbar from './Navbar.js'
 import '../../scss/styles.scss';
 import './Layout.scss'
+import { t } from 'i18next'
 
 class TemplateWrapper extends React.Component {
 
@@ -91,37 +92,37 @@ class TemplateWrapper extends React.Component {
 								</section>
 								<nav id="ft-nav">
 									<ul id="ft-nav-list" className="phantom-list">
-										<li><b i18n="@@Navigation-Title-Apps">Apps</b></li>
-										<li><a className="phantom-a" href={this.state.androidLink} i18n="@@Navigation-Android" data-appstorelink>Android</a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} i18n="@@Navigation-iOS" data-appstorelink>iOS</a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} i18n="@@Navigation-macOS" data-appstorelink>macOS</a></li>
-										<li><a className="phantom-a" href="/join" i18n="@@Navigation-OrchidAccount">Orchid Account</a></li>
-										<li><a className="phantom-a" href="/download" i18n="@@Navigation-Download">Download</a></li>
+										<li><b><Trans i18n="@@Navigation-Title-Apps">Apps</Trans></b></li>
+										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans i18n="@@Navigation-Android">Android</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18n="@@Navigation-iOS">iOS</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18n="@@Navigation-macOS">macOS</Trans></a></li>
+										<li><a className="phantom-a" href="/join"><Trans i18n="@@Navigation-OrchidAccount">Orchid Account</Trans></a></li>
+										<li><a className="phantom-a" href="/download"><Trans i18n="@@Navigation-Download">Download</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-2">
 									<ul id="ft-nav-2-list" className="phantom-list">
-										<li><b i18n="@@Navigation-Title-Learn">Learn</b></li>
-										<li><a className="phantom-a" href="/how-it-works" i18n="@@Navigation-HowItWorks">How it Works</a></li>
-										<li><a className="phantom-a" href="/about-us" i18n="@@Navigation-AboutUs">About Us</a></li>
-										<li><a className="phantom-a" href="/whitepaper/english.pdf" i18n="@@Navigation-Whitepaper">Whitepaper</a></li>
-										<li><a className="phantom-a" href="/partners" i18n="@@Navigation-Partners">Partners</a></li>
-										<li><a className="phantom-a" href="/faq" i18n="@@Navigation-FAQ">FAQ</a></li>
+										<li><b><Trans i18n="@@Navigation-Title-Learn">Learn</Trans></b></li>
+										<li><a className="phantom-a" href="/how-it-works"><Trans i18n="@@Navigation-HowItWorks">How it Works</Trans></a></li>
+										<li><a className="phantom-a" href="/about-us"><Trans i18n="@@Navigation-AboutUs">About Us</Trans></a></li>
+										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans i18n="@@Navigation-Whitepaper">Whitepaper</Trans></a></li>
+										<li><a className="phantom-a" href="/partners"><Trans i18n="@@Navigation-Partners">Partners</Trans></a></li>
+										<li><a className="phantom-a" href="/faq"><Trans i18n="@@Navigation-FAQ">FAQ</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-3">
 									<ul id="ft-nav-3-list" className="phantom-list">
-										<li><b i18n="@@Navigation-Title-Engage">Engage</b></li>
-										<li><a className="phantom-a" href="/podcast" i18n="@@Navigation-Podcast">Podcast</a></li>
-										<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link">Blog</a></li>
-										<li><a className="phantom-a" href="/privacy-guardian" i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</a></li>
-										<li><a className="phantom-a" href="/events" i18n="@@Navigation-Events">Events</a></li>
-										<li><a className="phantom-a" href="/contact" i18n="@@Navigation-Contact">Contact</a></li>
+										<li><b><Trans i18n="@@Navigation-Title-Engage">Engage</Trans></b></li>
+										<li><a className="phantom-a" href="/podcast"><Trans i18n="@@Navigation-Podcast">Podcast</Trans></a></li>
+										<li><a className="phantom-a" href="https://blog.orchid.com/" href={t("@@Navigation-Blog-Link")}>Blog</a></li>
+										<li><a className="phantom-a" href="/privacy-guardian"><Trans i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</Trans></a></li>
+										<li><a className="phantom-a" href="/events"><Trans i18n="@@Navigation-Events">Events</Trans></a></li>
+										<li><a className="phantom-a" href="/contact"><Trans i18n="@@Navigation-Contact">Contact</Trans></a></li>
 									</ul>
 								</nav>
 								<section>
 									<header className="no-mobile make-me-purple">
-										<strong i18n="@@NavigationFollowUs">Follow Us</strong>
+										<strong><Trans i18n="@@NavigationFollowUs">Follow Us</Trans></strong>
 									</header>
 									<ul id="ft-social-list" className="phantom-list">
 										<li>
@@ -173,7 +174,7 @@ class TemplateWrapper extends React.Component {
 					<div className="maker-badge transition" id="maker-badge" style={{ visibility: "visible" }}>
 						<div className="maker-badge__btn" id="maker-badge__btn">
 							<img alt="" width="27" height="29" className="maker-badge__btn-img" src="/img/shared/our-values-icon.svg" />
-							<span>Orchid's Values</span>
+							<span><Trans>Orchid's Values</Trans></span>
 							<Link to="/about-us#values">&nbsp;</Link>
 						</div>
 					</div>

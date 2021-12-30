@@ -184,10 +184,10 @@ class Page extends React.Component {
 
 				<section className="press-wrapper">
 					<div className="press-container container-common">
-						<h2 className="section-heading" i18n="@@HomeAsSeenIn__Title"><Trans>Orchid News</Trans></h2>
+						<h2 className="section-heading"><Trans>Orchid News</Trans></h2>
 						<div className="press-list">
 							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
+								<p className="press-card__quote">
 									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
 									when it comes to data abuse, it’s easy to see the project’s appeal.
 								</p>
@@ -200,7 +200,7 @@ class Page extends React.Component {
 								</a>
 							</div>
 							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__CNET">
+								<p className="press-card__quote">
 									This is what the future of VPN tech looks like. And you gotta see it.
 								</p>
 								<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
@@ -212,7 +212,7 @@ class Page extends React.Component {
 								</a>
 							</div>
 							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
+								<p className="press-card__quote">
 									Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
 									a natural resource for everyone, everywhere.
 								</p>
@@ -265,7 +265,7 @@ class Page extends React.Component {
 						<div className="blog-grid">
 							<BlogPosts />
 						</div>
-						<a href="https://blog.orchid.com/" className="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
+						<a href={t("https://blog.orchid.com/")} className="section-button">
 							<button className="btn-secondary">
 								<Trans>Go to Blog</Trans>
 							</button>

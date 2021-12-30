@@ -4,13 +4,15 @@ import './where-oxt.scss'
 
 const Component = () => (
 	<div className="where-oxt">
-		<p i18n="@@ReportExchangesOXT">
-			When the Orchid community learns of new listings, they are publicly announced. <br /><br />
-			If you see OXT being traded on an exchange that isn’t listed here, please use the <Link to="/contact">contact form</Link> so that it can be added to the list.
+		<p>
+			<Trans i18n="@@ReportExchangesOXT">
+				When the Orchid community learns of new listings, they are publicly announced. <br /><br />
+				If you see OXT being traded on an exchange that isn’t listed here, please use the <Link to="/contact">contact form</Link> so that it can be added to the list.
+			</Trans>
 		</p>
 		<div className="oxt-row">
 			<div className="oxt-column">
-				<h3 className="gap-top-thin" i18n="@@ExchangeListings">Exchange Listings</h3>
+				<h3 className="gap-top-thin"><Trans i18n="@@ExchangeListings">Exchange Listings</Trans></h3>
 				<div className="listing-container">
 					<div className="listing-col">
 						<a href="https://en.bithumb.com/trade/status/OXT_BTC">
@@ -78,7 +80,7 @@ const Component = () => (
 
 
 			<div className="oxt-column slim">
-				<h3 className="gap-top-thin" i18n="@@DecentralizedListings">Decentralized Listings</h3>
+				<h3 className="gap-top-thin"><Trans i18n="@@DecentralizedListings">Decentralized Listings</Trans></h3>
 				<div className="listing-container">
 					<div className="listing-col">
 						<a href="https://info.uniswap.org/pair/0x9b533f1ceaa5ceb7e5b8994ef16499e47a66312d">
@@ -99,7 +101,7 @@ const Component = () => (
 
 
 			<div className="oxt-column">
-				<h3 className="gap-top-thin" i18n="@@WalletCustodyPartners">Wallet &amp; Custody Partners</h3>
+				<h3 className="gap-top-thin"><Trans i18n="@@WalletCustodyPartners">Wallet &amp; Custody Partners</Trans></h3>
 				<div className="listing-container">
 					<div className="listing-col">
 						<a href="https://token.im/">

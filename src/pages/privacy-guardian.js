@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Trans } from 'react-i18next'
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './privacy-guardian.scss'
@@ -21,19 +22,26 @@ class Page extends React.Component {
 				<div className="hero__wrapper">
 					<div className="hero__container">
 						<div className="hero__text">
-							<h1 i18n="@@AmbassadorHeroTitle">
-								Orchid<br /> Privacy<br /> Guardians
+							<h1>
+								<Trans i18n="@@AmbassadorHeroTitle">
+									Orchid<br /> Privacy<br /> Guardians
+								</Trans>
 							</h1>
-							<p i18n="@@AmbassadorHeroParagraph">
-								An Orchid Privacy Guardian is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Privacy Guardians run meetups, manage and grow online communities, and facilitate discussions about
-								Internet censorship, decentralizing technologies, and other important topics.
+							<p>
+								<Trans i18n="@@AmbassadorHeroParagraph">
+									An Orchid Privacy Guardian is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Privacy Guardians run meetups, manage and grow online communities, and facilitate discussions about Internet censorship, decentralizing technologies, and other important topics.
+								</Trans>
 							</p>
-							<h2 i18n="@@AmbassadorHeroSubtitle">
-								Ready to get involved?
+							<h2>
+								<Trans i18n="@@AmbassadorHeroSubtitle">
+									Ready to get involved?
+								</Trans>
 							</h2>
 							<a href="https://orchid.brandchamp.io/apply">
-								<button className="btn btn-primary btn-lg" i18n="@@ApplyHere">
-									Apply Now!
+								<button className="btn btn-primary btn-lg">
+									<Trans i18n="@@ApplyHere">
+										Apply Now!
+									</Trans>
 								</button>
 							</a>
 						</div>
@@ -64,38 +72,52 @@ class Page extends React.Component {
 
 				<div className="educator__wrapper">
 					<div className="educator__container vpad-xl hpad-thin">
-						<h2 i18n="@@AmbassadorBecomeEducator">
-							Become a privacy educator
+						<h2>
+							<Trans i18n="@@AmbassadorBecomeEducator">
+								Become a privacy educator
+							</Trans>
 						</h2>
 
 						<div className="educator__card">
 							<img alt="" className="educator__card-hand" src="/img/ambassador/hand_1.png" />
 							<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
-							<h4 i18n="@@AmbassadorBuildCommunity">
-								Build Community
+							<h4>
+								<Trans i18n="@@AmbassadorBuildCommunity">
+									Build Community
+								</Trans>
 							</h4>
-							<p i18n="@@AmbassadorBuildCommunityDescription">
-								Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
+							<p>
+								<Trans i18n="@@AmbassadorBuildCommunityDescription">
+									Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
+								</Trans>
 							</p>
 						</div>
 						<div className="educator__card">
 							<img alt="" className="educator__card-hand" src="/img/ambassador/hand_2.png" />
 							<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
-							<h4 i18n="@@AmbassadorHostMeetups">
-								Host Meetups
+							<h4>
+								<Trans i18n="@@AmbassadorHostMeetups">
+									Host Meetups
+								</Trans>
 							</h4>
-							<p i18n="@@AmbassadorHostMeetupsDescription">
-								Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
+							<p>
+								<Trans i18n="@@AmbassadorHostMeetupsDescription">
+									Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
+								</Trans>
 							</p>
 						</div>
 						<div className="educator__card">
 							<img alt="" className="educator__card-hand" src="/img/ambassador/hand_3.png" />
 							<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
-							<h4 i18n="@@AmbassadorEducateAndHelp">
-								Educate<br /> &amp; Help
+							<h4>
+								<Trans i18n="@@AmbassadorEducateAndHelp">
+									Educate<br /> &amp; Help
+								</Trans>
 							</h4>
-							<p i18n="@@AmbassadorEducateAndHelpDescription">
-								Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom. Share and amplify content coming from Orchid.
+							<p>
+								<Trans i18n="@@AmbassadorEducateAndHelpDescription">
+									Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom. Share and amplify content coming from Orchid.
+								</Trans>
 							</p>
 						</div>
 					</div>
@@ -127,20 +149,24 @@ class Page extends React.Component {
 						</svg>
 					</div>
 
-					<h3 i18n="@@AmbassadorWhoCanApply">
-						Who can apply?
+					<h3>
+						<Trans i18n="@@AmbassadorWhoCanApply">
+							Who can apply?
+						</Trans>
 					</h3>
 					<br />
-					<ul i18n="@@AmbassadorWhoCanApplyList">
-						<li>
-							<b>People who believe in the importance of digital freedom and privacy.</b>
-						</li>
-						<li>
-							<b>Individuals who are prepared to start and grow a community and educate the members.</b>
-						</li>
-						<li>
-							<b>Self-starters who can work on their own, but also enjoy working with a team.</b>
-						</li>
+					<ul>
+						<Trans i18n="@@AmbassadorWhoCanApplyList">
+							<li>
+								<b>People who believe in the importance of digital freedom and privacy.</b>
+							</li>
+							<li>
+								<b>Individuals who are prepared to start and grow a community and educate the members.</b>
+							</li>
+							<li>
+								<b>Self-starters who can work on their own, but also enjoy working with a team.</b>
+							</li>
+						</Trans>
 					</ul>
 				</div>
 
@@ -153,33 +179,41 @@ class Page extends React.Component {
 				<div className="center-text vpad-xl hpad-thin benefits__wrapper">
 					<div className="benefits__container">
 
-						<h3 i18n="@@AmbassadorBenefits">
-							Privacy Guardian Benefits
+						<h3>
+							<Trans i18n="@@AmbassadorBenefits">
+								Privacy Guardian Benefits
+							</Trans>
 						</h3>
 
 						<div className="benefits__row">
-							<div className="benefits__column" i18n="@@AmbassadorBenefitsGetConnected">
-								<img src="/img/ambassador/bunny-connected.svg" alt="" />
-								<b>Get connected</b>
-								<p>
-									Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
-								</p>
+							<div className="benefits__column">
+								<Trans i18n="@@AmbassadorBenefitsGetConnected">
+									<img src="/img/ambassador/bunny-connected.svg" alt="" />
+									<b>Get connected</b>
+									<p>
+										Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
+									</p>
+								</Trans>
 							</div>
 
-							<div className="benefits__column" i18n="@@AmbassadorBenefitsEarnRewards">
-								<img src="/img/ambassador/bunny-rewards.svg" alt="" />
-								<b>Earn rewards</b>
-								<p>
-									Earn rewards for participating and educating others.
-								</p>
+							<div className="benefits__column">
+								<Trans i18n="@@AmbassadorBenefitsEarnRewards">
+									<img src="/img/ambassador/bunny-rewards.svg" alt="" />
+									<b>Earn rewards</b>
+									<p>
+										Earn rewards for participating and educating others.
+									</p>
+								</Trans>
 							</div>
 
-							<div className="benefits__column" i18n="@@AmbassadorBenefitsHelpFriends">
-								<img src="/img/ambassador/bunny-help.svg" alt="" />
-								<b>Help friends &amp; family</b>
-								<p>
-									Teach them how to protect themselves online with privacy tools like VPNs.
-								</p>
+							<div className="benefits__column">
+								<Trans i18n="@@AmbassadorBenefitsHelpFriends">
+									<img src="/img/ambassador/bunny-help.svg" alt="" />
+									<b>Help friends &amp; family</b>
+									<p>
+										Teach them how to protect themselves online with privacy tools like VPNs.
+									</p>
+								</Trans>
 							</div>
 						</div>
 
@@ -192,10 +226,16 @@ class Page extends React.Component {
 
 						<img alt="" className="benefits__bunny" src="/img/ambassador/bunny-mega.png" />
 
-						<h4 i18n="@@AmbassadorApplyToday">
-							Apply today to become an Orchid Privacy Guardian!
+						<h4>
+							<Trans i18n="@@AmbassadorApplyToday">
+								Apply today to become an Orchid Privacy Guardian!
+							</Trans>
 						</h4>
-						<a href="https://orchid.brandchamp.io/apply" rel="noreferrer"><button className="btn-primary" style={{ width: "100%", maxWidth: "330px" }} i18n="@@AmbassadorLetsGo">Let’s go!</button></a>
+						<a href="https://orchid.brandchamp.io/apply" rel="noreferrer">
+							<button className="btn-primary" style={{ width: "100%", maxWidth: "330px" }}>
+								<Trans i18n="@@AmbassadorLetsGo">Let’s go!</Trans>
+							</button>
+						</a>
 					</div>
 				</div>
 

@@ -24,7 +24,8 @@ class Page extends React.Component {
 					</div>
 					<div className="splash-circuit-grid section-med">
 						<div className="splash-circuit-grid-item hpad-thin vpad-wide">
-							<h1 i18n="@@FaqHero__Title">FAQ
+							<h1>
+								<Trans i18n="@@FaqHero__Title">FAQ</Trans>
 							</h1>
 						</div>
 					</div>
@@ -34,7 +35,11 @@ class Page extends React.Component {
 						<div className="faq-sidebar">
 							<ul className="faq-nav">
 								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#about-orchid" i18n="@@Faq-AboutOrchid__Title">About Orchid</a>
+									<a className="faq-category-heading-sidebar faq-link" href="/faq#about-orchid">
+										<Trans i18n="@@Faq-AboutOrchid__Title">
+											About Orchid
+										</Trans>
+									</a>
 									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 									<ul className="faq-sidebar-questions">
 										<li>
