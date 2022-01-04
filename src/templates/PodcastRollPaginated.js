@@ -29,6 +29,8 @@ const podcastRoll = ({ data, pageContext, location }) => {
 		postElements.push(<PostCard number={currentPost++} key={index} keyIndex={index} post={posts[index].node} />);
 	}
 
+	const { t } = props;
+
 	return (
 		<>
 			<WebsiteMeta
