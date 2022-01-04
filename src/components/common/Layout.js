@@ -37,6 +37,20 @@ class TemplateWrapper extends React.Component {
 					<link rel="icon" type="image/ico" href="/favicon.ico" />
 					<link rel="manifest" href="/manifest.webmanifest" />
 					<meta name="theme-color" content="#5f45ba" />
+
+					{/* prefetch fonts */}
+					<link rel="prefetch" href="/fonts/Baloo/wXKrE3kTposypRyd51ncANwr.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKrE3kTposypRyd51fcANwr.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKrE3kTposypRyd51bcANwr.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKrE3kTposypRyd51jcAA.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd76v_FeIKmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd76v_FewKmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd76v_Fe0KmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd76v_FeMKmA.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd74f4FeIKmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd74f4FewKmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd74f4Fe0KmE8y.woff2" />
+					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd74f4FeMKmA.woff2" />
 				</Helmet>
 
 				<Location>

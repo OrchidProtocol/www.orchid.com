@@ -453,7 +453,7 @@
 			@media (max-width: 82rem) {
 				justify-content: center;
 			}
-			picture {
+			.why-orchid__image {
 				max-width: 80%;
 				width: 30rem;
 
@@ -462,10 +462,6 @@
 					margin: auto;
 					width: 20rem;
 				}
-			}
-			img {
-				width: 100%;
-				margin: auto;
 			}
 		}
 		.why-orchid__text {
