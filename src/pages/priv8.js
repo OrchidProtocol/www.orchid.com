@@ -8,6 +8,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import withI18next from '../components/withI18next';
 
 const Container = styled.div`
 	display: flex;
@@ -536,6 +537,7 @@ const AgendaSection = function () {
 class Page extends React.Component {
 
 	render() {
+		const { t } = this.props;
 		return (
 			<div css={css`
 				--purple: #EB53E2;
@@ -938,7 +940,7 @@ class Page extends React.Component {
 									Sign up for the monthyl Orchid Onlooker newsletter and stay in the loop about the next Priv8, Orchid news, privacy topics and more!
 								</p>
 							</div>
-							<NewsletterSignupCore priv8={true} />
+							<NewsletterSignupCore t={t} priv8={true} />
 						</div>
 					</Container>
 				</div>
@@ -1260,4 +1262,4 @@ class Page extends React.Component {
 		)
 	}
 }
-export default Page
+export default withI18next({ ns: "common" })(Page)

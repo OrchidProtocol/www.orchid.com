@@ -4,12 +4,15 @@ import { Link } from 'gatsby'
 import Layout from '../components/common/Layout'
 import './how-it-works.scss'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import withI18next from '../components/withI18next'
+import { Trans } from 'react-i18next'
 
 class Page extends React.Component {
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="How It Works | Orchid"
 					description="The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers."
@@ -24,9 +27,9 @@ class Page extends React.Component {
 						<img src="/img/how-it-works/satellite-1.svg" alt="" />
 					</div>
 					<div className="content section-narrow vpad-wide hpad-thin center-text z-index-1">
-						<h1 className="gap-bot-thin"><Trans i18n="@@HowHero__Title">How Orchid delivers digital privacy</Trans></h1>
-						<p><Trans i18n="@@HowHero__Subtitle">The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.</Trans></p>
-						<p><Trans i18n="@@HowHero__Subtitle2">To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</Trans></p>
+						<h1 className="gap-bot-thin"><Trans i18nKey="@@HowHero__Title">How Orchid delivers digital privacy</Trans></h1>
+						<p><Trans i18nKey="@@HowHero__Subtitle">The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.</Trans></p>
+						<p><Trans i18nKey="@@HowHero__Subtitle2">To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</Trans></p>
 					</div>
 				</section>
 
@@ -36,7 +39,7 @@ class Page extends React.Component {
 					</div>
 					<div className="content section-narrow vpad-xl hpad-wide center-text">
 						<h2 className="gap-bot-thin">
-							<Trans i18n="@@HowIndex__Title">
+							<Trans i18nKey="@@HowIndex__Title">
 								<span>Core components</span>
 								<span>of the Orchid network</span></Trans>
 						</h2>
@@ -130,7 +133,7 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>The Orchid digital currency (OXT)</Trans></h3>
 								<div>
-									<Trans i18n="@@HowOxt__Content">
+									<Trans i18nKey="@@HowOxt__Content">
 										<p>OXT’s primary purpose is to provide a staking-advertising mechanism that aligns operator incentives to the benefit of the Orchid network and mitigates certain risks.</p>
 										<p>The OXT digital currency provides value in the Orchid network in a number of ways:</p>
 										<ul>
@@ -188,7 +191,7 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Orchid Accounts</Trans></h3>
 								<div>
-									<Trans i18n="@@HowAccounts__Description">
+									<Trans i18nKey="@@HowAccounts__Description">
 										<p>
 											<b>Purchased accounts:</b><br /> Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native FIAT currency. “Orchid credits” are special accounts where the cryptocurrency, xDai, must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared among devices.
 										</p>
@@ -252,7 +255,7 @@ class Page extends React.Component {
 							</div>
 							<div className="explainer__text">
 								<h3><Trans>The Orchid Protocol</Trans></h3>
-								<p><Trans i18n="@@HowProtocol__Description">The Orchid software is designed to use a custom VPN protocol, similar in scope to <a href="https://openvpn.net/">OpenVPN</a> or <a href="https://www.wireguard.com/">WireGuard</a>. The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.</Trans></p>
+								<p><Trans i18nKey="@@HowProtocol__Description">The Orchid software is designed to use a custom VPN protocol, similar in scope to <a href="https://openvpn.net/">OpenVPN</a> or <a href="https://www.wireguard.com/">WireGuard</a>. The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.</Trans></p>
 							</div>
 							<div className="explainer__image">
 
@@ -294,7 +297,7 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Nanopayments</Trans></h3>
 								<div>
-									<Trans i18n="@@HowNano__Content">
+									<Trans i18nKey="@@HowNano__Content">
 										<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput.</p>
 										<p>This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients pay Node operators cryptocurrency-backed “tickets” for proxy bandwidth. The system is designed to lower the transaction fees on small payments by amortizing transaction fees across many transactions and even across multiple parties.</p>
 										<p>For more information, see our recent article:
@@ -342,7 +345,7 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Nodes</Trans></h3>
 								<div>
-									<Trans i18n="@@HowNodes__Content">
+									<Trans i18nKey="@@HowNodes__Content">
 										<p>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</p>
 										<p>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</p>
 									</Trans>
@@ -388,7 +391,7 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Staking</Trans></h3>
 								<div>
-									<Trans i18n="@@HowStaking__Content">
+									<Trans i18nKey="@@HowStaking__Content">
 										<p>A provider stakes some number of OXT to create a stake deposit.</p>
 										<ul>
 											<li>Anyone can stake OXT on nodes using the smart contract.</li>
@@ -427,9 +430,9 @@ class Page extends React.Component {
 							<div className="pos-relative">
 
 								<img alt="" id="read-whitepaper-adorner" src="/img/network/read-whitepaper.svg" />
-								<a i18n-href="@@WhitepaperLink" href="/whitepaper/english.pdf">
+								<a href={t("/whitepaper/english.pdf")}>
 									<button className="btn-primary z-index-1">
-										<Trans i18n="@@ReadOurWhitepaper">
+										<Trans i18nKey="@@ReadOurWhitepaper">
 											Read our Whitepaper
 										</Trans>
 									</button>
@@ -445,4 +448,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

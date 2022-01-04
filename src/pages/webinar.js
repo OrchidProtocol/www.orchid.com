@@ -4,12 +4,14 @@ import Layout from '../components/common/Layout'
 import './webinar.scss'
 import WhereOXT from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import withI18next from '../components/withI18next';
 
 class Page extends React.Component {
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="Webinar: Creating an Orchid Account | Orchid"
 					description="Join to learn how to get Orchid setup and running. You will learn how to use Metamask to fund an Orchid account with OXT."
@@ -49,4 +51,5 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+
+export default withI18next({ ns: "common" })(Page)

@@ -37,7 +37,7 @@ const podcastRoll = ({ data, pageContext, location }) => {
 				image={config.feature_image}
 				location={location}
 			/>
-			<Layout>
+			<Layout t={t ? t : (string) => { return string }}>
 				<PodcastHero />
 				<div className="container" css={css`
 					margin: 2rem 0;

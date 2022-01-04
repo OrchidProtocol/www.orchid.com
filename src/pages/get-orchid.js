@@ -1,9 +1,10 @@
 import { Link } from 'gatsby'
-import { t } from 'i18next'
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Trans } from 'react-i18next'
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import withI18next from '../components/withI18next'
 import './get-orchid.scss'
 
 class Page extends React.Component {
@@ -25,8 +26,9 @@ class Page extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title={t("VPN App | Orchid")}
 					description={t("Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.")}
@@ -111,7 +113,7 @@ class Page extends React.Component {
 								<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
 								<h4><Trans>Android</Trans></h4>
 								<a href={this.state.androidLink} data-appstorelink>
-									<img width="160" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ margin: "0.75rem 0" }} />
+									<img width="160" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem 0" }} />
 								</a>
 							</div>
 							<div className="download-images__container">
@@ -125,7 +127,7 @@ class Page extends React.Component {
 							<div className="download-images__container">
 								<img src="/img/download/phone-2.png" width="432" height="796" className="download-images__device" alt="" />
 								<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
-								<h4><Trans i18n="@@DownloadiOS__Title">iOS</Trans></h4>
+								<h4><Trans i18nKey="@@DownloadiOS__Title">iOS</Trans></h4>
 								<a href={this.state.iOSLink} data-appstorelink>
 									<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 								</a>
@@ -159,4 +161,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

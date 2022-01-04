@@ -1,14 +1,17 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { Trans } from 'react-i18next'
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import withI18next from '../components/withI18next'
 import './about-us.scss'
 
 class Page extends React.Component {
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="About the Open Accessible Internet | Orchid"
 					description="We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN."
@@ -23,7 +26,7 @@ class Page extends React.Component {
 						<section className="about-company__splash">
 							<div className="about-company__splash-text-container">
 								<h1>
-									<Trans i18n="@@AboutCompanyHero__Title">
+									<Trans i18nKey="@@AboutCompanyHero__Title">
 										We can <br /> reclaim the <br /> internet <br />
 										<span className="big">
 											together
@@ -42,7 +45,7 @@ class Page extends React.Component {
 						<div className="about-company__centered-text-floating-circle-2"></div>
 
 						<section className="about-company__centered-text-section section-med hpad-wide vpad-wide center-text">
-							<Trans i18n="@@AboutCompany__Description">
+							<Trans i18nKey="@@AboutCompany__Description">
 								<h2>Why build a privacy network?</h2>
 								<p>
 									The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and explore that world freely.
@@ -117,9 +120,9 @@ class Page extends React.Component {
 					<div className="bk-lavender">
 						<section className="about-company__team-section hpad-wide vpad-wide">
 							<div className="about-company__team-text">
-								<h2><Trans i18n="@@OrchidTeamTitle">The Orchid Team</Trans></h2>
+								<h2><Trans i18nKey="@@OrchidTeamTitle">The Orchid Team</Trans></h2>
 								<p>
-									<Trans i18n="@@OrchidTeamDescription">
+									<Trans i18nKey="@@OrchidTeamDescription">
 										Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
 									</Trans>
 								</p>
@@ -132,7 +135,7 @@ class Page extends React.Component {
 										Dr.Steven Waterhouse
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_CoFounderCEO">
+										<Trans i18nKey="@@OrchidTeam_CoFounderCEO">
 											Co-Founder / CEO
 										</Trans>
 									</p>
@@ -144,7 +147,7 @@ class Page extends React.Component {
 										Jay Freeman
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_CoFounderCTO">
+										<Trans i18nKey="@@OrchidTeam_CoFounderCTO">
 											Co-Founder / CTO
 										</Trans>
 									</p>
@@ -156,7 +159,7 @@ class Page extends React.Component {
 										Brian J.Fox
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_CoFounder">
+										<Trans i18nKey="@@OrchidTeam_CoFounder">
 											Co-Founder
 										</Trans>
 									</p>
@@ -168,7 +171,7 @@ class Page extends React.Component {
 										Gustav Simonsson
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_CoFounderAdvisor">
+										<Trans i18nKey="@@OrchidTeam_CoFounderAdvisor">
 											Co-Founder / Advisor
 										</Trans>
 									</p>
@@ -185,7 +188,7 @@ class Page extends React.Component {
 										Alex Kehaya
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_BusinessDevelopment">
+										<Trans i18nKey="@@OrchidTeam_BusinessDevelopment">
 											Business Development
 										</Trans>
 									</p>
@@ -197,7 +200,7 @@ class Page extends React.Component {
 										Derek Silva
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Community">
+										<Trans i18nKey="@@OrchidTeam_Community">
 											Community
 										</Trans>
 									</p>
@@ -209,7 +212,7 @@ class Page extends React.Component {
 										Paula Kanin
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Community">
+										<Trans i18nKey="@@OrchidTeam_Community">
 											Community
 										</Trans>
 									</p>
@@ -221,7 +224,7 @@ class Page extends React.Component {
 										Shawnee Nova
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Community">
+										<Trans i18nKey="@@OrchidTeam_Community">
 											Community
 										</Trans>
 									</p>
@@ -233,7 +236,7 @@ class Page extends React.Component {
 										Chad Harper
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Design">
+										<Trans i18nKey="@@OrchidTeam_Design">
 											Design
 										</Trans>
 									</p>
@@ -245,7 +248,7 @@ class Page extends React.Component {
 										Saskia Essex
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Design">
+										<Trans i18nKey="@@OrchidTeam_Design">
 											Design
 										</Trans>
 									</p>
@@ -257,7 +260,7 @@ class Page extends React.Component {
 										Thientam Bach
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Design">
+										<Trans i18nKey="@@OrchidTeam_Design">
 											Design
 										</Trans>
 									</p>
@@ -269,7 +272,7 @@ class Page extends React.Component {
 										Alexandra McColgan
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_EA">
+										<Trans i18nKey="@@OrchidTeam_EA">
 											EA
 										</Trans>
 									</p>
@@ -281,7 +284,7 @@ class Page extends React.Component {
 										Michelle Underwood
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_EA">
+										<Trans i18nKey="@@OrchidTeam_EA">
 											EA
 										</Trans>
 									</p>
@@ -293,7 +296,7 @@ class Page extends React.Component {
 										Dan Montgomery
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -305,7 +308,7 @@ class Page extends React.Component {
 										Greg Hazel
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -317,7 +320,7 @@ class Page extends React.Component {
 										Jake Cannell
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -329,7 +332,7 @@ class Page extends React.Component {
 										Jennifer Rodriguez-Miller
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -341,7 +344,7 @@ class Page extends React.Component {
 										Justin Sheek
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -353,7 +356,7 @@ class Page extends React.Component {
 										Anna Bare
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -365,7 +368,7 @@ class Page extends React.Component {
 										Patrick Niemeyer
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Engineering">
+										<Trans i18nKey="@@OrchidTeam_Engineering">
 											Engineering
 										</Trans>
 									</p>
@@ -377,7 +380,7 @@ class Page extends React.Component {
 										Selina Cheng
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Finance">
+										<Trans i18nKey="@@OrchidTeam_Finance">
 											Finance
 										</Trans>
 									</p>
@@ -389,7 +392,7 @@ class Page extends React.Component {
 										Joy Hu
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Finance">
+										<Trans i18nKey="@@OrchidTeam_Finance">
 											Finance
 										</Trans>
 									</p>
@@ -401,7 +404,7 @@ class Page extends React.Component {
 										Patrick J.Dietzen
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Finance">
+										<Trans i18nKey="@@OrchidTeam_Finance">
 											Finance
 										</Trans>
 									</p>
@@ -413,7 +416,7 @@ class Page extends React.Component {
 										Amanda Gutterman
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Marketing">
+										<Trans i18nKey="@@OrchidTeam_Marketing">
 											Marketing
 										</Trans>
 									</p>
@@ -425,7 +428,7 @@ class Page extends React.Component {
 										Monica Puchner
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Operations">
+										<Trans i18nKey="@@OrchidTeam_Operations">
 											Operations
 										</Trans>
 									</p>
@@ -437,7 +440,7 @@ class Page extends React.Component {
 										Travis Cannell
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Product">
+										<Trans i18nKey="@@OrchidTeam_Product">
 											Product
 										</Trans>
 									</p>
@@ -449,7 +452,7 @@ class Page extends React.Component {
 										Matt Roszak
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Advisor">
+										<Trans i18nKey="@@OrchidTeam_Advisor">
 											Advisor
 										</Trans>
 									</p>
@@ -461,7 +464,7 @@ class Page extends React.Component {
 										Rich Staropoli
 									</h5>
 									<p>
-										<Trans i18n="@@OrchidTeam_Advisor">
+										<Trans i18nKey="@@OrchidTeam_Advisor">
 											Advisor
 										</Trans>
 									</p>
@@ -474,19 +477,19 @@ class Page extends React.Component {
 					<div>
 						<section className="about-company__corporate-info-section section-med hpad-wide vpad-wide">
 							<div id="corporate-header">
-								<h2><Trans i18n="@@AboutCompanyCorporate__Title">Corporate info</Trans></h2>
-								<p><Trans i18n="@@AboutCompanyCorporate__Subtitle">Orchid is a Delaware c-corp</Trans></p>
+								<h2><Trans i18nKey="@@AboutCompanyCorporate__Title">Corporate info</Trans></h2>
+								<p><Trans i18nKey="@@AboutCompanyCorporate__Subtitle">Orchid is a Delaware c-corp</Trans></p>
 							</div>
 							<div id="corporate-address">
 								<address>
-									<Trans i18n="@@AboutCompanyCorporate__Address">
+									<Trans i18nKey="@@AboutCompanyCorporate__Address">
 										Headquarters: <br />
 										1288 Columbus Ave.#122,<br />
 										San Francisco, CA 94133
 									</Trans>
 								</address>
 								<address>
-									<Trans i18n="@@AboutCompanyCorporate__Address2">
+									<Trans i18nKey="@@AboutCompanyCorporate__Address2">
 										Europe: <br />
 										Skalitzer Str. 85,<br />
 										10997 Berlin, Germany
@@ -496,7 +499,7 @@ class Page extends React.Component {
 							<div className="z-index-1" id="corporate-buttons">
 								<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer">
 									<button className="btn-primary btn-fixed">
-										<Trans i18n="@@AboutCompanyCorporate__SECFilingButton">
+										<Trans i18nKey="@@AboutCompanyCorporate__SECFilingButton">
 											SEC Filing
 										</Trans>
 									</button>
@@ -504,7 +507,7 @@ class Page extends React.Component {
 								<br />
 								<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer">
 									<button className="btn-primary btn-fixed">
-										<Trans i18n="@@AboutCompanyCorporate__PressKitButton">
+										<Trans i18nKey="@@AboutCompanyCorporate__PressKitButton">
 											Press Kit
 										</Trans>
 									</button>
@@ -526,4 +529,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

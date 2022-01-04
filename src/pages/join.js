@@ -6,6 +6,8 @@ import './join.scss'
 import WhereOXT from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import { css } from '@emotion/react'
+import withI18next from '../components/withI18next'
+import { Trans } from 'react-i18next'
 
 class Page extends React.Component {
 
@@ -26,8 +28,9 @@ class Page extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="Get Orchid | Orchid"
 					description="We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN."
@@ -43,22 +46,22 @@ class Page extends React.Component {
 							<div className="join__intro">
 								<h3 className="gap-bot-thin"><Trans>Orchid Account Set-up</Trans></h3>
 								<p>
-									<Trans i18n="@@JoinHero__P1">
+									<Trans i18nKey="@@JoinHero__P1">
 										To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:
 									</Trans>
 								</p>
 
 								<ul>
-									<Trans i18n="@@JoinHero__UL">
+									<Trans i18nKey="@@JoinHero__UL">
 										<li>Someone could share one with you</li>
 										<li>You can buy an xDAI account with a $1 USD in-app purchase on iOS, macOS &amp; Android</li>
 										<li>You can create an account with OXT and ETH for network fees</li>
 									</Trans>
 								</ul>
 
-								<p><Trans i18n="@@JoinHero__P2">This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT and ETH. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.</Trans></p>
+								<p><Trans i18nKey="@@JoinHero__P2">This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT and ETH. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.</Trans></p>
 								<br />
-								<p><Trans i18n="@@JoinHero__gasWarning"><b>*Ethereum gas notice*</b>: As of Q4 2021, Ethereum gas fees can be upwards of $90 USD to fund an Orchid account with OXT and a similar fee is required to unlock and withdraw unused OXT. This is the network cost paid in ETH. We recommend buying an account in the app using an in-app purchase which start at $1 USD. We are working on getting Orchid on chains with lower network fees for use with the dapp.</Trans></p>
+								<p><Trans i18nKey="@@JoinHero__gasWarning"><b>*Ethereum gas notice*</b>: As of Q4 2021, Ethereum gas fees can be upwards of $90 USD to fund an Orchid account with OXT and a similar fee is required to unlock and withdraw unused OXT. This is the network cost paid in ETH. We recommend buying an account in the app using an in-app purchase which start at $1 USD. We are working on getting Orchid on chains with lower network fees for use with the dapp.</Trans></p>
 								<br />
 								<p>
 									Ethereum Gas Amounts (November 2021):
@@ -96,20 +99,20 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<div className="join-number">
 									<span className="join-number__label">
-										<Trans i18n="@@Join__Step">Step</Trans>
+										<Trans i18nKey="@@Join__Step">Step</Trans>
 									</span>
 									<span className="join-number__numeral">
 										1
 									</span>
 								</div>
-								<h3 className="join-step__title color-gray"><Trans i18n="@@JoinStep1__title">Create a new Ethereum wallet</Trans></h3>
+								<h3 className="join-step__title color-gray"><Trans i18nKey="@@JoinStep1__title">Create a new Ethereum wallet</Trans></h3>
 								<p>
-									<Trans i18n="@@JoinStep1__p1">
+									<Trans i18nKey="@@JoinStep1__p1">
 										We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
 									</Trans>
 								</p>
 								<p>
-									<Trans i18n="@@JoinStep1__p2">
+									<Trans i18nKey="@@JoinStep1__p2">
 										We test with <a href="https://metamask.io">Metamask</a>, which is a great choice for an Ethereum wallet.
 									</Trans>
 								</p>
@@ -122,7 +125,7 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<div className="join-number">
 									<span className="join-number__label">
-										<Trans i18n="@@Join__Step">Step</Trans>
+										<Trans i18nKey="@@Join__Step">Step</Trans>
 									</span>
 									<span className="join-number__numeral">
 										2
@@ -130,13 +133,13 @@ class Page extends React.Component {
 								</div>
 								<h3 className="join-step__title color-gray"><Trans>Load the Orchid DApp</Trans></h3>
 								<p>
-									<Trans i18n="@@JoinStep2__p1">
+									<Trans i18nKey="@@JoinStep2__p1">
 										Load <a href="https://account.orchid.com/">account.orchid.com</a> in your wallet’s browser or your preferred browser with a wallet plugin enabled. It’s a good idea to bookmark this page for the future.
 									</Trans>
 								</p>
 								<br />
 								<p>
-									<Trans i18n="@@JoinStep2__p2">
+									<Trans i18nKey="@@JoinStep2__p2">
 										You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
 									</Trans>
 								</p>
@@ -146,7 +149,7 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<div className="join-number">
 									<span className="join-number__label">
-										<Trans i18n="@@Join__Step">Step</Trans>
+										<Trans i18nKey="@@Join__Step">Step</Trans>
 									</span>
 									<span className="join-number__numeral">
 										3
@@ -154,12 +157,12 @@ class Page extends React.Component {
 								</div>
 								<h3 className="join-step__title color-gray"><Trans>Add funds to your wallet</Trans></h3>
 								<p>
-									<Trans i18n="@@JoinStep3__p1">
+									<Trans i18nKey="@@JoinStep3__p1">
 										Adjust your account to see how much OXT you need for the efficiency you want. Also note the amount of ETH needed for network fees.
 									</Trans>
 								</p>
 								<p>
-									<Trans i18n="@@JoinStep3__p2">
+									<Trans i18nKey="@@JoinStep3__p2">
 										You will need both of those amounts in your attached wallet in order to create and fund the account. See our <Link to="/join#get-oxt">participating exchanges</Link> for acquiring OXT.
 									</Trans>
 								</p>
@@ -169,7 +172,7 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<div className="join-number">
 									<span className="join-number__label">
-										<Trans i18n="@@Join__Step">Step</Trans>
+										<Trans i18nKey="@@Join__Step">Step</Trans>
 									</span>
 									<span className="join-number__numeral">
 										4
@@ -177,13 +180,13 @@ class Page extends React.Component {
 								</div>
 								<h3 className="join-step__title color-gray"><Trans>Create your account</Trans></h3>
 								<p>
-									<Trans i18n="@@JoinStep4__p1">
+									<Trans i18nKey="@@JoinStep4__p1">
 										A Signer address is needed to create the account. Generate a Signer in the DApp, or generate one in the app (Android only) and paste it in.
 									</Trans>
 								</p>
 
 								<p>
-									<Trans i18n="@@JoinStep4__p2">
+									<Trans i18nKey="@@JoinStep4__p2">
 										Hit <b>Create account</b> to submit both transactions to your wallet for approval. Approve both transactions and then wait for them to complete on Ethereum.
 									</Trans>
 								</p>
@@ -193,7 +196,7 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<div className="join-number">
 									<span className="join-number__label">
-										<Trans i18n="@@Join__Step">Step</Trans>
+										<Trans i18nKey="@@Join__Step">Step</Trans>
 									</span>
 									<span className="join-number__numeral">
 										5
@@ -201,18 +204,18 @@ class Page extends React.Component {
 								</div>
 								<h3 className="join-step__title color-gray"><Trans>Connect your account and app</Trans></h3>
 
-								<p><Trans i18n="@@JoinStep5__p1">Download the Orchid app for <a href={this.state.androidLink} data-appstorelink>Android</a> or <a href={this.state.iOSLink} data-appstorelink>iOS</a>.</Trans></p>
+								<p><Trans i18nKey="@@JoinStep5__p1">Download the Orchid app for <a href={this.state.androidLink} data-appstorelink>Android</a> or <a href={this.state.iOSLink} data-appstorelink>iOS</a>.</Trans></p>
 								<div className="app-store-badges vgap-thin">
-									<a className="app-store-badge" href={this.state.androidLink} data-appstorelink><img width="200px" src="/img/shared/google-play-badge.svg" i18n-src="@@GooglePlayBadgeURL" alt="Google Play" /></a>
+									<a className="app-store-badge" href={this.state.androidLink} data-appstorelink><img width="200px" src={t("/img/shared/google-play-badge.svg")} alt="Google Play" /></a>
 									<a className="app-store-badge" href={this.state.iOSLink} data-appstorelink><img src="/img/shared/ios.png" alt="iOS" /></a>
 								</div>
 								<p>
-									<Trans i18n="@@JoinStep5__p3">
+									<Trans i18nKey="@@JoinStep5__p3">
 										Open the app, tap Manage Profile, create a New Hop and then Link Orchid Account to pay for VPN service.
 									</Trans>
 								</p>
 								<p>
-									<Trans i18n="@@JoinStep5__p4">
+									<Trans i18nKey="@@JoinStep5__p4">
 										That’s it! You’re ready to start exploring freely. Stay curious out there!
 									</Trans>
 								</p>
@@ -223,7 +226,7 @@ class Page extends React.Component {
 
 				<div className="bk-faint-gray" id="get-oxt">
 					<section className="section-narrow hpad-wide vpad-wide z-index-1 center-text">
-						<h2 className="color-primary gap-bot-thin"><Trans i18n="@@WhereToGetOXT">Where to get OXT?</Trans></h2>
+						<h2 className="color-primary gap-bot-thin"><Trans i18nKey="@@WhereToGetOXT">Where to get OXT?</Trans></h2>
 						<WhereOXT />
 					</section>
 				</div>
@@ -247,4 +250,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

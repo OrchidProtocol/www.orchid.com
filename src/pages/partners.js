@@ -3,13 +3,15 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import withI18next from '../components/withI18next'
 import './partners.scss'
 
 class Page extends React.Component {
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="Our Partners | Orchid"
 					description="We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN."
@@ -364,4 +366,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

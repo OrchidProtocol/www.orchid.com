@@ -7,7 +7,7 @@ import { Link } from 'gatsby'
 import Navbar from './Navbar.js'
 import '../../scss/styles.scss';
 import './Layout.scss'
-import { t } from 'i18next'
+import { Trans } from 'react-i18next'
 
 class TemplateWrapper extends React.Component {
 
@@ -28,6 +28,7 @@ class TemplateWrapper extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 			<>
 				<Helmet>
@@ -69,7 +70,7 @@ class TemplateWrapper extends React.Component {
 						`,
 					}} />
 
-					<Navbar />
+					<Navbar t={t} />
 
 					<main css={css`
 						font-size: 16px;
@@ -92,37 +93,37 @@ class TemplateWrapper extends React.Component {
 								</section>
 								<nav id="ft-nav">
 									<ul id="ft-nav-list" className="phantom-list">
-										<li><b><Trans i18n="@@Navigation-Title-Apps">Apps</Trans></b></li>
-										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans i18n="@@Navigation-Android">Android</Trans></a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18n="@@Navigation-iOS">iOS</Trans></a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18n="@@Navigation-macOS">macOS</Trans></a></li>
-										<li><a className="phantom-a" href="/join"><Trans i18n="@@Navigation-OrchidAccount">Orchid Account</Trans></a></li>
-										<li><a className="phantom-a" href="/download"><Trans i18n="@@Navigation-Download">Download</Trans></a></li>
+										<li><b><Trans i18nKey="@@Navigation-Title-Apps">Apps</Trans></b></li>
+										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans i18nKey="@@Navigation-Android">Android</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18nKey="@@Navigation-iOS">iOS</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18nKey="@@Navigation-macOS">macOS</Trans></a></li>
+										<li><a className="phantom-a" href="/join"><Trans i18nKey="@@Navigation-OrchidAccount">Orchid Account</Trans></a></li>
+										<li><a className="phantom-a" href="/download"><Trans i18nKey="@@Navigation-Download">Download</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-2">
 									<ul id="ft-nav-2-list" className="phantom-list">
-										<li><b><Trans i18n="@@Navigation-Title-Learn">Learn</Trans></b></li>
-										<li><a className="phantom-a" href="/how-it-works"><Trans i18n="@@Navigation-HowItWorks">How it Works</Trans></a></li>
-										<li><a className="phantom-a" href="/about-us"><Trans i18n="@@Navigation-AboutUs">About Us</Trans></a></li>
-										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans i18n="@@Navigation-Whitepaper">Whitepaper</Trans></a></li>
-										<li><a className="phantom-a" href="/partners"><Trans i18n="@@Navigation-Partners">Partners</Trans></a></li>
-										<li><a className="phantom-a" href="/faq"><Trans i18n="@@Navigation-FAQ">FAQ</Trans></a></li>
+										<li><b><Trans i18nKey="@@Navigation-Title-Learn">Learn</Trans></b></li>
+										<li><a className="phantom-a" href="/how-it-works"><Trans i18nKey="@@Navigation-HowItWorks">How it Works</Trans></a></li>
+										<li><a className="phantom-a" href="/about-us"><Trans i18nKey="@@Navigation-AboutUs">About Us</Trans></a></li>
+										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans i18nKey="@@Navigation-Whitepaper">Whitepaper</Trans></a></li>
+										<li><a className="phantom-a" href="/partners"><Trans i18nKey="@@Navigation-Partners">Partners</Trans></a></li>
+										<li><a className="phantom-a" href="/faq"><Trans i18nKey="@@Navigation-FAQ">FAQ</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-3">
 									<ul id="ft-nav-3-list" className="phantom-list">
-										<li><b><Trans i18n="@@Navigation-Title-Engage">Engage</Trans></b></li>
-										<li><a className="phantom-a" href="/podcast"><Trans i18n="@@Navigation-Podcast">Podcast</Trans></a></li>
-										<li><a className="phantom-a" href="https://blog.orchid.com/" href={t("@@Navigation-Blog-Link")}>Blog</a></li>
-										<li><a className="phantom-a" href="/privacy-guardian"><Trans i18n="@@Navigation-PrivacyGuardians">Privacy Guardians</Trans></a></li>
-										<li><a className="phantom-a" href="/events"><Trans i18n="@@Navigation-Events">Events</Trans></a></li>
-										<li><a className="phantom-a" href="/contact"><Trans i18n="@@Navigation-Contact">Contact</Trans></a></li>
+										<li><b><Trans i18nKey="@@Navigation-Title-Engage">Engage</Trans></b></li>
+										<li><a className="phantom-a" href="/podcast"><Trans i18nKey="@@Navigation-Podcast">Podcast</Trans></a></li>
+										<li><a className="phantom-a" href={t("https://blog.orchid.com/")}>Blog</a></li>
+										<li><a className="phantom-a" href="/privacy-guardian"><Trans i18nKey="@@Navigation-PrivacyGuardians">Privacy Guardians</Trans></a></li>
+										<li><a className="phantom-a" href="/events"><Trans i18nKey="@@Navigation-Events">Events</Trans></a></li>
+										<li><a className="phantom-a" href="/contact"><Trans i18nKey="@@Navigation-Contact">Contact</Trans></a></li>
 									</ul>
 								</nav>
 								<section>
 									<header className="no-mobile make-me-purple">
-										<strong><Trans i18n="@@NavigationFollowUs">Follow Us</Trans></strong>
+										<strong><Trans i18nKey="@@NavigationFollowUs">Follow Us</Trans></strong>
 									</header>
 									<ul id="ft-social-list" className="phantom-list">
 										<li>

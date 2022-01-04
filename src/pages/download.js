@@ -5,7 +5,8 @@ import './download.scss'
 import WhereOxt from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
-import { t } from 'i18next';
+import { Trans } from 'react-i18next';
+import withI18next from '../components/withI18next';
 
 class Page extends React.Component {
 
@@ -26,8 +27,9 @@ class Page extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
-			<Layout>
+			<Layout t={t}>
 				<WebsiteMeta
 					title="VPN App for iOS, Android &amp; macOS | Orchid"
 					description="Orchid is a VPN client, VPN service and advanced networking tool."
@@ -39,18 +41,18 @@ class Page extends React.Component {
 				</Helmet>
 				<div className="background-white">
 					<section id="top">
-						<h3><Trans i18n="@@DownloadHero__Title">Get the Orchid app</Trans></h3>
+						<h3><Trans i18nKey="@@DownloadHero__Title">Get the Orchid app</Trans></h3>
 					</section>
 				</div>
 
 				<div id="instructions" className="background-white">
 					<section className="download-images__wrapper">
 						<div className="download-images__container">
-							<h4><Trans i18n="@@DownloadAndroid__Title">Android</Trans></h4>
+							<h4><Trans i18nKey="@@DownloadAndroid__Title">Android</Trans></h4>
 							<StaticImage src="../../static/img/download/phone-android.png" width={450} height={913} className="download-images__device" alt="" />
 							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 							<ul className="download-instructions__list" style={{ listStyle: "none" }}>
-								<Trans i18n="@@DownloadAndroid__Body">
+								<Trans i18nKey="@@DownloadAndroid__Body">
 									<li>
 										<a href={this.state.androidLink} data-appstorelink>
 											<img width="300" height="89" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem 0", height: "auto", maxWidth: "160px", }} />
@@ -69,7 +71,7 @@ class Page extends React.Component {
 							</ul>
 						</div>
 						<div className="download-images__container">
-							<h4><Trans i18n="@@DownloadMacOS__Title">macOS</Trans></h4>
+							<h4><Trans i18nKey="@@DownloadMacOS__Title">macOS</Trans></h4>
 							<StaticImage src="../../static/img/download/laptop.png" width={800} height={418} className="download-images__device mac" alt="" />
 							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 							<ul className="download-instructions__list">
@@ -81,7 +83,7 @@ class Page extends React.Component {
 							</ul>
 						</div>
 						<div className="download-images__container">
-							<h4><Trans i18n="@@DownloadiOS__Title">iOS</Trans></h4>
+							<h4><Trans i18nKey="@@DownloadiOS__Title">iOS</Trans></h4>
 							<StaticImage src="../../static/img/download/phone-ios.png" width={450} height={913} className="download-images__device" alt="" />
 							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 							<ul className="download-instructions__list">
@@ -131,4 +133,4 @@ class Page extends React.Component {
 	}
 }
 
-export default Page
+export default withI18next({ ns: "common" })(Page)

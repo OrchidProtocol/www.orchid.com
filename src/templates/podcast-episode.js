@@ -8,6 +8,7 @@ import PodcastFooter from '../components/common/PodcastFooter';
 
 import { generateDescription } from '../utils/generateDescription';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
+import withI18next from '../components/withI18next';
 
 
 const PodcastEpisode = (props) => {
@@ -20,6 +21,7 @@ const PodcastEpisode = (props) => {
 		post.frontmatter.featuredimage = ftImage.publicURL;
 	}
 
+	const { t } = props;
 
 	return (
 		<>
@@ -29,7 +31,7 @@ const PodcastEpisode = (props) => {
 				image={post.frontmatter.featuredimage}
 				location={props.location}
 			/>
-			<Layout>
+			<Layout t={t ? t : (string) => { return string }}>
 				<PodcastHero />
 				<PostCard post={post} key={0} keyIndex={0} />
 				<PodcastFooter />

@@ -1,4 +1,3 @@
-import { t } from 'i18next';
 import React from 'react'
 import { Trans } from 'react-i18next';
 import './newsletter-signup-core.scss'
@@ -53,6 +52,7 @@ class Component extends React.Component {
 	}
 
 	submit(e) {
+		const { t } = this.props;
 		e.preventDefault();
 
 		// temporarilly disable priv8 functionality, sign users up for the full newsletter but keep priv8 styling elsewhere
@@ -118,6 +118,7 @@ class Component extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '') + (this.props.className ? ' ' + this.props.className : '')}>
 				<form onSubmit={this.submit.bind(this)}>
@@ -126,7 +127,7 @@ class Component extends React.Component {
 						{!this.props.priv8 ? <div className="gap-bot-thin">
 							<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
 								<input name="consent" required type="checkbox" />
-								<span><Trans i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</Trans></span>
+								<span><Trans i18nKey="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</Trans></span>
 							</label>
 						</div> : <></>}
 						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")}>
@@ -145,4 +146,4 @@ class Component extends React.Component {
 	}
 }
 
-export default withI18next({ ns: "common" })(Component);
+export default Component;

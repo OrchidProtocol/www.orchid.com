@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby';
 
 import './Navbar.scss';
-import { t } from 'i18next';
+import { Trans } from 'react-i18next';
 
 class Navbar extends React.Component {
 
@@ -39,6 +39,8 @@ class Navbar extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props;
+
 		return (<div id="nav-root">
 			<nav id="nav" className={"section-wide hpad-thin" + (this.state.js ? " js" : "")}>
 				<h1 id="nav-home">
@@ -54,13 +56,13 @@ class Navbar extends React.Component {
 						</button>
 					</div>
 					<ul className="nav-list phantom-list">
-						<li className="mobile-only"><Link to="/" className="phantom-a"><Trans i18n="@@Navigation-Home">Home</Trans></Link></li>
-						<li><Link to="/join" className="phantom-a"><Trans i18n="@@Navigation-Join">Create Account</Trans></Link></li>
-						<li><Link to="/how-it-works" className="phantom-a"><Trans i18n="@@Navigation-HowItWorks">How It Works</Trans></Link></li>
-						<li><Link to="/oxt" className="phantom-a"><Trans i18n="@@Navigation-OXT">OXT</Trans></Link></li>
-						<li><Link to="/about-us" className="phantom-a"><Trans i18n="@@Navigation-About">About</Trans></Link></li>
-						<li><a className="phantom-a" href="https://blog.orchid.com/" i18n-href="@@Navigation-Blog-Link"><Trans i18n="@@Navigation-Blog">Blog</Trans></a></li>
-						<li><Link to="/contact" className="phantom-a"><Trans i18n="@@Navigation-Contact">Contact</Trans></Link></li>
+						<li className="mobile-only"><Link to="/" className="phantom-a"><Trans i18nKey="@@Navigation-Home">Home</Trans></Link></li>
+						<li><Link to="/join" className="phantom-a"><Trans i18nKey="@@Navigation-Join">Create Account</Trans></Link></li>
+						<li><Link to="/how-it-works" className="phantom-a"><Trans i18nKey="@@Navigation-HowItWorks">How It Works</Trans></Link></li>
+						<li><Link to="/oxt" className="phantom-a"><Trans i18nKey="@@Navigation-OXT">OXT</Trans></Link></li>
+						<li><Link to="/about-us" className="phantom-a"><Trans i18nKey="@@Navigation-About">About</Trans></Link></li>
+						<li><a className="phantom-a" href={t("https://blog.orchid.com/")}><Trans i18nKey="@@Navigation-Blog">Blog</Trans></a></li>
+						<li><Link to="/contact" className="phantom-a"><Trans i18nKey="@@Navigation-Contact">Contact</Trans></Link></li>
 						<li className="navbar-language-selector">
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
@@ -83,7 +85,7 @@ class Navbar extends React.Component {
 
 				<a className="nav-download" href="/get-orchid">
 					<button className="btn-secondary">
-						<Trans i18n="@@Navigation-Download">
+						<Trans i18nKey="@@Navigation-Download">
 							Get Orchid
 						</Trans>
 					</button>
@@ -97,4 +99,5 @@ class Navbar extends React.Component {
 		</div>)
 	}
 }
-export default Navbar;
+
+export default Navbar

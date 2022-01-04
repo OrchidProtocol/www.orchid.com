@@ -15,7 +15,7 @@ class Page extends React.Component {
 	render() {
 		const { t } = this.props;
 		return (
-			<Layout bodyclassName="index">
+			<Layout t={t} bodyclassName="index">
 				<WebsiteMeta
 					title="Crypto VPN App | Orchid"
 					description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
@@ -303,7 +303,7 @@ class Page extends React.Component {
 
 						<h3><Trans>Let’s stay connected</Trans></h3>
 						<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
-						<NewsletterSignupCore largePadding="true" />
+						<NewsletterSignupCore t={t} largePadding="true" />
 					</div>
 				</section>
 			</Layout>

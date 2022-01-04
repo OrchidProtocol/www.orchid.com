@@ -3,6 +3,9 @@ module.exports = {
 	],
 	plugins: [
 		"@babel/plugin-syntax-jsx",
-		"i18next-extract",
+		["i18next-extract", {
+			defaultNS: 'common',
+			nsSeparator: ':',
+		}],
 	]
 }
