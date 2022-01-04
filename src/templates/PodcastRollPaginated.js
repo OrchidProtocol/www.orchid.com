@@ -11,7 +11,7 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
-const podcastRoll = ({ data, pageContext, location }) => {
+const podcastRoll = ({ data, pageContext, location, t }) => {
 	const posts = data.allPosts.edges
 
 	for (let index = posts.length - 1; index >= 0; index--) {
@@ -28,8 +28,6 @@ const podcastRoll = ({ data, pageContext, location }) => {
 		// The tag below includes the markup for each post - components/common/PostCard.js
 		postElements.push(<PostCard number={currentPost++} key={index} keyIndex={index} post={posts[index].node} />);
 	}
-
-	const { t } = props;
 
 	return (
 		<>
