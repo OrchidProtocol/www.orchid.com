@@ -1,125 +1,120 @@
 {
-	"(starting at just $1)": "",
-	"A new model of VPN": {
-		"": ""
-	},
-	"All of Orchid's code is Open Source and freely available to download <1>on GitHub</1>": {
-		" Use of Orchid's source code is governed by the AGPL copyleft Open Source license": {
-			" The Orchid community develops code \"in the open\" by continually pushing changes that anyone can see on GitHub and <3>tagging releases</3> as appropriate": {
-				"": "All of Orchid's code is Open Source and freely available to download <1>on GitHub</1>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license. The Orchid community develops code \"in the open\" by continually pushing changes that anyone can see on GitHub and <3>tagging releases</3> as appropriate."
-			}
-		}
-	},
-	"Buyers use the <1>Orchid app</1> to get protection from snooping ISP's, unblock websites cutoff by firewalls, and for many other privacy benefits": {
-		" Sellers receive payments in real-time as they provide service and stake <3>OXT</3> to compete for service requests": {
-			" Orchid Technologies charges no fees, and the community maintains the <5>Open Source software</5> that powers the entire ecosystem": {
-				" Try it out!": "Buyers use the <1>Orchid app</1> to get protection from snooping ISP's, unblock websites cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they provide service and stake <3>OXT</3> to compete for service requests. Orchid Technologies charges no fees, and the community maintains the <5>Open Source software</5> that powers the entire ecosystem. Try it out!"
-			}
-		}
-	},
-	"Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy": {
-		"": ""
-	},
-	"Connect": "",
-	"Connect randomly to an OXT-staked VPN server": {
-		" Change to a new provider at any time by toggling the VPN off and back on": {
-			"": ""
-		}
-	},
-	"Connect to a random provider": "",
-	"Crypto-powered": "",
-	"Decentralized": "",
-	"Flexible": "",
-	"From the Orchid Blog": "",
-	"Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto": {
-		"": ""
-	},
-	"Fund your Orchid account": "",
-	"Get Orchid": "",
-	"Get the Orchid Onlooker newsletter for updates and privacy news": "",
-	"Go to Blog": "",
-	"Key features": "",
-	"Learn More": "",
-	"Learn more": {
-		"": ""
-	},
-	"Let’s stay connected": "",
-	"Multi-hop": "",
-	"Nanopayment Ecosystem": "",
-	"No 3rd-party sharing": {
-		"": ""
-	},
-	"No Subscriptions": "",
-	"No data collection": {
-		"": ""
-	},
-	"No profit markup": {
-		"": ""
-	},
-	"Open Source": "",
-	"Orchid News": "",
-	"Orchid brings leading providers together through a unique, decentralized privacy marketplace": {
-		" Because there are more (and more widely distributed) servers available, the user's data has more possible paths to choose from": {
-			" This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient": {
-				"": ""
-			}
-		}
-	},
-	"Orchid has a WireGuard and Open VPN client built into the app": {
-		" Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services": {
-			" Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties": {
-				"": ""
-			}
-		}
-	},
-	"Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid": {
-		"com that harvests information about you": {
-			" Orchid also has no tracking systems in our applications": {
-				" We absolutely do not track": {
-					"": ""
-				}
-			}
-		}
-	},
-	"Orchid is a decentralized bandwidth marketplace": "",
-	"Orchid nanopayments mean you are never locked into a subscription and pay only for actual use": {
-		"": ""
-	},
-	"Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”": {
-		"": ""
-	},
-	"Pay for VPN service using one of our supported cryptocurrencies": {
-		" Not crypto savvy? You can purchase a pre-loaded account right in the app": {
-			"": ""
-		}
-	},
-	"Pay only for what you actually use": "",
-	"Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark": {
-		"": ""
-	},
-	"Randomized Servers": "",
-	"Read the Docs": "",
-	"Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices": {
-		"": ""
-	},
-	"Tap \"Connect\" to match with a VPN server that has locked up OXT to compete for your business": {
-		"": ""
-	},
-	"The Orchid community is one of the things that makes this project truly special": {
-		" Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!": ""
-	},
-	"Tracking-free": "",
-	"Traffic Analysis": "",
-	"Unblock Website & Apps": "",
-	"Unlimited Sharing": "",
-	"Use the Orchid VPN to break through firewalls and access blocked content": {
-		" Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator": {
-			"": ""
-		}
-	},
-	"When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control": {
-		" VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use": ""
-	},
-	"Whitepaper": "",
-	"Why Orchid?": ""
+    "The Orchid app": "Orchid 앱",
+    "OXT cryptocurrency": "OXT 암호화폐",
+    "Orchid Accounts": "Orchid 계정",
+    "Orchid Protocol": "Orchid 프로토콜",
+    "Nanopayments": "나노페이먼트",
+    "Nodes": "노드",
+    "Staking": "Staking",
+    "Users of Orchid run a client similar to a typical VPN client for protocols such as OpenVPN, but which speaks the Orchid protocol. The Orchid network client goes past the basic functionality offered by most VPN clients, with features such as the ability to run traffic through an integrated personal firewall. The Orchid client is accessible via iOS, Android, macOS, and Linux.": "Orchid 사용자는 OpenVPN 등의 프로토콜에 일반적으로 사용되는 VPN 클라이언트와 비슷한, Orchid 프로토콜 전용 클라이언트를 실행합니다. Orchid 네트워크 클라이언트는 대부분의 VPN 클라이언트가 제공하는 기본 기능 이상을 제공하며, 통합된 개인 방화벽을 통해 트래픽을 운영하는 기능 등을 갖추고 있습니다. Orchid 클라이언트는 iOS, Android, macOS, Linux를 통해 액세스할 수 있습니다.",
+    "The Orchid digital currency (OXT)": "Orchid 디지털 통화 (OXT)",
+    "The Orchid Protocol": "Orchid 프로토콜",
+    "Android": "Android",
+    "macOS": "macOS",
+    "Orchid is Open Source": "Orchid는 오픈 소스입니다",
+    "We invite all developers and any curious parties to explore Orchid's code.": "개발자 및 궁금하신 분들은 Orchid의 코드를 살펴보시기 바랍니다.",
+    "Where to get OXT": "OXT를 얻을 수 있는 곳",
+    "No data collection.": "데이터 수집 없음.",
+    "No 3rd-party sharing.": "제3자 공유 없음.",
+    "No profit markup.": "이익 마크업 없음.",
+    "A new model of VPN.": "VPN의 새로운 모델.",
+    "Get Orchid": "Orchid 다운로드",
+    "Orchid is a decentralized bandwidth marketplace": "Orchid는 분산식 대역폭 마켓플레이스입니다.",
+    "Fund your Orchid account": "Orchid 계정에 자금을 제공합니다",
+    "Connect to a random provider": "임의의 공급자와 연결됩니다",
+    "Tap \"Connect\" to match with a VPN server that has locked up OXT to compete for your business.": "'연결'을 탭하면 OXT를 동결시키고 귀하의 비즈니스를 획득하기 위해 경쟁하는 VPN 서버와 매칭됩니다.",
+    "Pay only for what you actually use": "실제로 사용한 만큼만 지불합니다",
+    "Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.": "Orchid 나노페이먼트는 구독에 얽매이지 않고 실제 사용한 양에 대해서만 비용을 지불한다는 것을 의미합니다.",
+    "Learn more": "자세히 보기",
+    "Crypto-powered": "암호화폐 기반",
+    "Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.": "지원되는 암호화폐 중 하나를 사용하여 VPN 서비스 비용을 결제하세요. 암호화폐에 익숙하지 않습니까? 앱에서 직접 선불 계정을 구입할 수 있습니다.",
+    "Nanopayment Ecosystem": "나노페이먼트 에코시스템",
+    "Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.": "Orchid는 새로운 확률적 나노페이먼트 시스템을 사용하여 암호화폐 기반 '티켓'을 통해 결제 처리량을 확장합니다.",
+    "Traffic Analysis": "트래픽 분석",
+    "Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.": "Wireshark에서 제공하는 내장 네트워크 프로토콜 분석기를 활용하여 기기 연결의 세부 사항을 살펴보세요.",
+    "Multi-hop": "멀티-홉",
+    "Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.": "개인 정보 보호 강화를 위해 여러 개의 '홉'을 함께 연결하여 어니언 라우팅 VPN 회로를 구성합니다.",
+    "Randomized Servers": "무작위 서버",
+    "Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.": "OXT를 스테이킹한 VPN 서버에 무작위로 연결됩니다. VPN을 껐다가 다시 켜면 언제든지 새로운 공급자로 변경됩니다.",
+    "Unlimited Sharing": "무제한 공유",
+    "Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.": "여러 기기 또는 사용자와 단일 계정을 공유하여 친구와 가족을 돕거나 모든 기기에서 온라인 활동을 보호하세요.",
+    "Read the Docs": "문서 읽기",
+    "Whitepaper": "백서",
+    "Why Orchid?": "Orchid를 왜 사용하나요?",
+    "No Subscriptions": "구독 불필요",
+    "When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control. VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use": "앱 내 구입을 통해 Orchid 계정을 구매하면 귀하가 관리하는 암호화폐 기반 계정으로 자금이 변환됩니다. VPN 서비스 요금은 사용량 기준으로 결제됩니다. 즉, 귀하는 실제로 사용한 대역폭에 대해서만 비용을 지불하면 됩니다.",
+    "Tracking-free": "추적 없음",
+    "Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you. Orchid also has no tracking systems in our applications. We absolutely do not track.": "Orchid는 Orchid.com에서 귀하에 대한 정보를 수집하는 추적 픽셀, 타사 JavaScript 또는 코드를 사용하지 않습니다. 또한, Orchid는 당사의 애플리케이션에서 추적 시스템을 사용하지 않습니다. 저희는 절대로 사용자를 추적하지 않습니다.",
+    "Open Source": "오픈 소스",
+    "Decentralized": "탈중앙화",
+    "Unblock Website & Apps": "웹사이트 및 앱 차단 해제",
+    "Use the Orchid VPN to break through firewalls and access blocked content. Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator.": "Orchid VPN을 사용하여 방화벽을 뚫고, 차단된 콘텐츠에 액세스하세요. Orchid를 사용하면 자유롭게 인터넷에 액세스하고, ISP 또는 네트워크 관리자가 설정한 제한을 우회할 수 있습니다.",
+    "Flexible": "유연성",
+    "Orchid has a WireGuard and Open VPN client built into the app. Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services. Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties.": "Orchid 앱에는 WireGuard 및 Open VPN 클라이언트가 내장되어 있습니다. Streisand 또는 다른 자체 개발 솔루션을 사용해 설정한 자신만의 VPN 서버에서 Orchid를 사용할 수 있습니다. 심지어, 다른 유료 VPN 서비스도 가능합니다. 또한, Orchid를 통하여 흥미로운 프라이버시 속성을 지닌 여러 유형의 VPN 서버를 함께 연결할 수도 있습니다.",
+    "Orchid News": "Orchid 뉴스",
+    "From the Orchid Blog": "Orchid 블로그의 게시글",
+    "Go to Blog": "블로그로 이동",
+    "Connect": "연결",
+    "The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!": "Orchid 커뮤니티는 이 프로젝트를 진정으로 특별하게 만드는 것 중 하나입니다. 많은 소셜 플랫폼 중 하나를 통해 저희를 팔로우하고, 예정된 이벤트 중 하나에서 저희와 직접 만나며, 뉴스레터를 구독하여 Orchid에 대한 모든 최신 정보를 얻으세요!",
+    "Let’s stay connected": "새 소식을 놓치지 마세요",
+    "Get the Orchid Onlooker newsletter for updates and privacy news": "업데이트 및 개인 정보 보호 뉴스에 대한 Orchid Onlooker 뉴스레터 받기",
+    "Get Orchid in 2 easy steps!": "간단한 2단계로 Orchid 받기!",
+    "All purchases are 100% covered by the in-app purchase refund policy. iOS/macOS purchases have 90 days to request a refund. For Google Play purchases, the refund window is 48 hours.": "모든 구매에는 앱 내 구입 환불 정책이 100% 적용됩니다. iOS/macOS 구매의 경우, 90일 이내에 환불을 요청할 수 있습니다. Google Play 구매의 경우, 환불 기간은 48시간입니다.",
+    "Step 1: Choose a starting amount for your Orchid account": "1단계: Orchid 계정의 시작 금액을 선택합니다",
+    "Orchid accounts include 24/7 customer support, unlimited devices and are backed by the xDai cryptocurrency.": "Orchid 계정에는 연중무휴 고객 지원, 무제한 기기가 포함되며, xDai 암호화폐가 지원됩니다.",
+    "One-time fee.": "일시불 요금.",
+    "Good for browsing and light activity. Refund policy covered by app stores.": "브라우징 및 가벼운 활동에 적합. 앱 스토어의 환불 정책이 적용됨.",
+    "Ideal size for medium-term, individual usage that includes browsing and light streaming. Refund policy covered by app stores.": "브라우징 및 가벼운 스트리밍이 포함된 중단기, 개인적 사용에 이상적. 앱 스토어의 환불 정책이 적용됨.",
+    "Bandwidth-heavy, long-term usage or shared accounts. Refund policy covered by app stores.": "많은 대역폭이 요구되는 장기간 사용 또는 공유 계정에 적합. 앱 스토어의 환불 정책이 적용됨.",
+    "*Orchid is a bandwidth marketplace and the price per GB can fluctuate with market demands. Currently the price is $0.06/GB.": "*Orchid는 대역폭 마켓플레이스이며 GB당 가격은 시장 수요에 따라 변동될 수 있습니다. 현재 가격은 $0.06/GB입니다.",
+    "Step 2: Pay in the Orchid app": "2단계: Orchid 앱에서 결제합니다",
+    "Download the Orchid app and fund an account using an in-app purchase. Once funded, you can connect to the Orchid network.": "Orchid 앱을 다운로드하고 앱 내 구입을 사용하여 계정에 자금을 제공합니다. 자금이 제공되면 Orchid 네트워크에 연결할 수 있습니다.",
+    "Purchasing an Orchid account includes": "Orchid 계정 구매 시 다음 항목이 포함됩니다",
+    "24/7 customer support via email": "이메일을 통한 연중무휴 고객 지원",
+    "Apps for iOS, macOS, and Android": "iOS, macOS 및 Android용 앱",
+    "Unlimited devices and sharing": "무제한 기기 및 공유",
+    "Open Source code that is trusted and audited": "신뢰할 수 있고 보안 감사를 받는 오픈 소스 코드",
+    "No app tracking, website tracking or logging": "앱 추적, 웹사이트 추적 또는 로깅 없음",
+    "Not satisfied? Get a refund through the App stores, no questions asked!": "만족하지 못하셨나요? 앱 스토어를 통해 환불을 받으세요! 이유는 묻지 않습니다!",
+    "@@Navigation-Home": "홈",
+    "@@Navigation-Join": "계정 생성하기",
+    "@@Navigation-HowItWorks": "작동 방법",
+    "@@Navigation-OXT": "OXT",
+    "@@Navigation-About": "소개",
+    "@@Navigation-Blog": "블로그",
+    "@@Navigation-Contact": "연락처",
+    "@@Navigation-Download": "Orchid 받기",
+    "@@Navigation-Title-Apps": "앱",
+    "@@Navigation-Android": "Android",
+    "@@Navigation-iOS": "iOS",
+    "@@Navigation-macOS": "macOS",
+    "@@Navigation-OrchidAccount": "Orchid 계정",
+    "@@Navigation-Title-Learn": "학습",
+    "@@Navigation-Whitepaper": "백서",
+    "@@Navigation-Partners": "파트너",
+    "@@Navigation-FAQ": "자주 묻는 질문",
+    "@@Navigation-Title-Engage": "참여",
+    "@@Navigation-Podcast": "팟캐스트",
+    "@@Navigation-PrivacyGuardians": "프라이버시 가디언",
+    "@@Navigation-Events": "이벤트",
+    "@@NavigationFollowUs": "팔로우하기",
+    "Orchid's Values": "Orchid의 가치관",
+    "FAQ": "자주 묻는 질문",
+    "Our Values": "우리의 가치관",
+    "Orchid Account Set-up": "Orchid 계정 설정",
+    "Load the Orchid DApp": "Orchid DApp 불러오기",
+    "Add funds to your wallet": "지갑에 자금 추가하기",
+    "Create your account": "계정 생성하기",
+    "Connect your account and app": "계정과 앱 연결하기",
+    "More questions?": "다른 질문이 있으세요?",
+    "Check out the FAQ": "자주 묻는 질문 보기",
+    "Download": "다운로드",
+    "GitHub": "GitHub",
+    "Supply": "공급",
+    "Treasury": "금고 (Treasury)",
+    "OXT Audits": "OXT 감사",
+    "View the full list": "전체 목록 보기",
+    "Not Found": "찾을 수 없음",
+    "We couldn't find that page!": "해당 페이지를 찾을 수 없습니다!",
+    "Go back home": "홈으로 돌아가기"
 }
