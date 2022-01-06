@@ -16,7 +16,7 @@ class Page extends React.Component {
 			<Layout t={t}>
 				<WebsiteMeta
 					title="Get In Touch | Orchid"
-					description="Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid."
+					description={t("Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid.")}
 					image="/img/contact/social.png"
 					location={this.props.location}
 				/>
@@ -34,10 +34,10 @@ class Page extends React.Component {
 							</h1>
 
 							<div className="splash-circuit-grid-text">
-								<Trans i18nKey="@@ContactHero__Description">
-									<h3>We want to hear from you</h3>
-									<p>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.</p>
-								</Trans>
+
+								<h3><Trans>We want to hear from you</Trans></h3>
+								<p><Trans>Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.</Trans></p>
+
 							</div>
 						</div>
 						<div className="splash-circuit-grid-item">

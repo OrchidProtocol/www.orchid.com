@@ -40,15 +40,17 @@ async function run() {
 		for (let index = 0; index < units.length; index++) {
 			const unit = units[index];
 			let id = unit.attributes[0].value;
-			if (id.length === 40) {
-				id = cleanup($(unit).find('source').text());
-			} else {
-				id = `@@${id}`;
-			}
-			if (baseJSON.common[id]) {
-				localeKeys[id] = cleanup($(unit).find('target').text());
-			} else {
-				missingKeys[id] = cleanup($(unit).find('target').text());
+			if (cleanup($(unit).find('target').text()) !== cleanup($(unit).find('source').text())) {
+				if (id.length === 40) {
+					id = cleanup($(unit).find('source').text());
+				} else {
+					id = `@@${id}`;
+				}
+				if (baseJSON.common[id]) {
+					localeKeys[id] = cleanup($(unit).find('target').text());
+				} else {
+					missingKeys[id] = cleanup($(unit).find('target').text());
+				}
 			}
 		}
 		fs.writeFileSync(`./src/locales/${locales[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));

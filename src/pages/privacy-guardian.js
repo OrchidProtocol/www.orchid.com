@@ -13,8 +13,8 @@ class Page extends React.Component {
 		return (
 			<Layout t={t}>
 				<WebsiteMeta
-					title="Ambassador program | Orchid"
-					description="Let's reclaim the Internet together!"
+					title={t("Ambassador program | Orchid")}
+					description={t("Let's reclaim the Internet together!")}
 					image="/img/contact/social.png"
 					location={this.props.location}
 				/>
