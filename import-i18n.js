@@ -35,6 +35,7 @@ async function run() {
 		});
 
 		const localeKeys = {};
+		const missingKeys = {};
 		const units = $('body').find('trans-unit');
 		for (let index = 0; index < units.length; index++) {
 			const unit = units[index];
@@ -47,10 +48,12 @@ async function run() {
 			if (baseJSON.common[id]) {
 				localeKeys[id] = cleanup($(unit).find('target').text());
 			} else {
-				console.log(`Missing: ${id}`);
+				missingKeys[id] = cleanup($(unit).find('target').text());
 			}
 		}
 		fs.writeFileSync(`./src/locales/${locales[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));
+		fs.writeFileSync(`./src/locales/${locales[i]}/missing.json`, JSON.stringify(missingKeys, null, 4));
+
 	}
 }
 
