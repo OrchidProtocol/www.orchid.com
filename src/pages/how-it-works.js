@@ -14,8 +14,8 @@ class Page extends React.Component {
 		return (
 			<Layout t={t}>
 				<WebsiteMeta
-					title="How It Works | Orchid"
-					description="The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers."
+					title={t("How It Works | Orchid")}
+					description={t("The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.")}
 					image="/img/how-it-works/social.png"
 					location={this.props.location}
 				/>
@@ -27,9 +27,8 @@ class Page extends React.Component {
 						<img src="/img/how-it-works/satellite-1.svg" alt="" />
 					</div>
 					<div className="content section-narrow vpad-wide hpad-thin center-text z-index-1">
-						<h1 className="gap-bot-thin"><Trans i18nKey="@@HowHero__Title">How Orchid delivers digital privacy</Trans></h1>
-						<p><Trans i18nKey="@@HowHero__Subtitle">The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.</Trans></p>
-						<p><Trans i18nKey="@@HowHero__Subtitle2">To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</Trans></p>
+						<h1 className="gap-bot-thin"><Trans>How Orchid delivers digital privacy</Trans></h1>
+						<p><Trans>The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers. To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.</Trans></p>
 					</div>
 				</section>
 
@@ -41,7 +40,8 @@ class Page extends React.Component {
 						<h2 className="gap-bot-thin">
 							<Trans i18nKey="@@HowIndex__Title">
 								<span>Core components</span>
-								<span>of the Orchid network</span></Trans>
+								<span>of the Orchid network</span>
+							</Trans>
 						</h2>
 						<div className="buttons">
 							<a className="button" href="/how-it-works#app"><Trans>The Orchid app</Trans></a>
@@ -345,10 +345,8 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Nodes</Trans></h3>
 								<div>
-									<Trans i18nKey="@@HowNodes__Content">
-										<p>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</p>
-										<p>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</p>
-									</Trans>
+									<p><Trans>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</Trans></p>
+									<p><Trans>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</Trans></p>
 								</div>
 							</div>
 							<div className="explainer__image">
@@ -391,21 +389,19 @@ class Page extends React.Component {
 							<div className="explainer__text">
 								<h3><Trans>Staking</Trans></h3>
 								<div>
-									<Trans i18nKey="@@HowStaking__Content">
-										<p>A provider stakes some number of OXT to create a stake deposit.</p>
-										<ul>
-											<li>Anyone can stake OXT on nodes using the smart contract.</li>
-											<li>Clients select new nodes in proportion to their relative OXT deposit size.</li>
-											<li>Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.</li>
-											<li>If the node is already at max bandwidth capacity additional stake is effectively wasted.</li>
-										</ul>
-										<p>
-											Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning. If the provider wants to withdraw tokens from the staking contract, they have to start an “unlocking” process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or transferred elsewhere by the provider.
-										</p>
-										<p>
-											Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow. Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own choices.
-										</p>
-									</Trans>
+									<p><Trans>A provider stakes some number of OXT to create a stake deposit.</Trans></p>
+									<ul>
+										<li><Trans>Anyone can stake OXT on nodes using the smart contract.</Trans></li>
+										<li><Trans>Clients select new nodes in proportion to their relative OXT deposit size.</Trans></li>
+										<li><Trans>Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.</Trans></li>
+										<li><Trans>If the node is already at max bandwidth capacity additional stake is effectively wasted.</Trans></li>
+									</ul>
+									<p>
+										<Trans>Once tokens have been locked into a stake deposit they can be used immediately for bandwidth provisioning. If the provider wants to withdraw tokens from the staking contract, they have to start an “unlocking” process period, which involves a three month cooldown where their funds cannot be used as a stake deposit or transferred elsewhere by the provider.</Trans>
+									</p>
+									<p>
+										<Trans>Whatever the amount of value that is exchanged in the Orchid ecosystem, a given seller’s relative stake amount, as a percentage of the total stake, provides them that same percentage of user traffic and dealflow. Assuming typical and honest selling behavior (no users drop them for bad service) this dealflow will translate into a similar portion of the total revenue. The staking decisions of sellers is left to their own choices.</Trans>
+									</p>
 								</div>
 							</div>
 							<div className="explainer__image">
@@ -432,7 +428,7 @@ class Page extends React.Component {
 								<img alt="" id="read-whitepaper-adorner" src="/img/network/read-whitepaper.svg" />
 								<a href={t("/whitepaper/english.pdf")}>
 									<button className="btn-primary z-index-1">
-										<Trans i18nKey="@@ReadOurWhitepaper">
+										<Trans>
 											Read our Whitepaper
 										</Trans>
 									</button>
