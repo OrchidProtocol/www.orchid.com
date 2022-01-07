@@ -107,6 +107,9 @@
     "FAQ": "よくある質問",
     "We want to hear from you": "ご連絡をお待ちしております",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "一緒にインターネットを取り戻しましょう！私どもは Orchid を利用した構築をお考えのインフラストラクチャ プロバイダーや統合パートナーの皆様とのパートナーシップの機会を求めています。お問い合わせいただければ、すぐにご連絡いたします。",
+    "Required fields are missing": "必須フィールドが空白のままです",
+    "There was an unknown error, your message may not have been sent": "不明なエラーが発生したため、メッセージが送信されなかった可能性があります",
+    "Your message has been sent": "メッセージが送信されました",
     "Our Values": "私どもの価値感",
     "Orchid Account Set-up": "Orchid アカウントの設定",
     "Load the Orchid DApp": "Orchid DApp を読み込む",
@@ -122,5 +125,11 @@
     "View the full list": "全リストを見る",
     "Not Found": "見つかりません",
     "We couldn't find that page!": "そのページが見つかりませんでした。",
-    "Go back home": "ホームに戻る"
+    "Go back home": "ホームに戻る",
+    "Contact": "お問い合わせ",
+    "Contact Info": "連絡先情報",
+    "Events": "イベント",
+    "Learn": "学ぶ",
+    "About Us": "企業情報",
+    "About": "情報"
 }

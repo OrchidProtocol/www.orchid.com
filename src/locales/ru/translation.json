@@ -107,6 +107,9 @@
     "FAQ": "Вопросы и ответы",
     "We want to hear from you": "Нам важно ваше мнение",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Давайте вместе сделаем Интернет свободным! Мы всегда рады сотрудничеству с поставщиками инфраструктур и партнерами по интеграции, желающими работать с Orchid. Свяжитесь с нами, и мы вам ответим в кратчайшие сроки.",
+    "Required fields are missing": "Заполните обязательные поля",
+    "There was an unknown error, your message may not have been sent": "Произошла неизвестная ошибка. Возможно, сообщение не было отправлено",
+    "Your message has been sent": "Ваше сообщение отправлено",
     "Our Values": "Наши ценности",
     "Orchid Account Set-up": "Настройка аккаунта Orchid",
     "Load the Orchid DApp": "Загрузите Orchid DApp",
@@ -122,5 +125,11 @@
     "View the full list": "Показать полный список",
     "Not Found": "Не найдено",
     "We couldn't find that page!": "Не удалось найти страницу!",
-    "Go back home": "Вернуться на главную"
+    "Go back home": "Вернуться на главную",
+    "Contact": "Контакты",
+    "Contact Info": "Контактная информация",
+    "Events": "События",
+    "Learn": "Обучение",
+    "About Us": "О нас",
+    "About": "О нас"
 }

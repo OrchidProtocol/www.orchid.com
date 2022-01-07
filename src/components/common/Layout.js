@@ -107,32 +107,32 @@ class TemplateWrapper extends React.Component {
 								</section>
 								<nav id="ft-nav">
 									<ul id="ft-nav-list" className="phantom-list">
-										<li><b><Trans i18nKey="@@Navigation-Title-Apps">Apps</Trans></b></li>
-										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans i18nKey="@@Navigation-Android">Android</Trans></a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18nKey="@@Navigation-iOS">iOS</Trans></a></li>
-										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans i18nKey="@@Navigation-macOS">macOS</Trans></a></li>
-										<li><a className="phantom-a" href="/join"><Trans i18nKey="@@Navigation-OrchidAccount">Orchid Account</Trans></a></li>
-										<li><a className="phantom-a" href="/download"><Trans i18nKey="@@Navigation-Download">Download</Trans></a></li>
+										<li><b><Trans>Apps</Trans></b></li>
+										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans>Android</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans>iOS</Trans></a></li>
+										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans>macOS</Trans></a></li>
+										<li><a className="phantom-a" href="/join"><Trans>Orchid Account</Trans></a></li>
+										<li><a className="phantom-a" href="/download"><Trans>Download</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-2">
 									<ul id="ft-nav-2-list" className="phantom-list">
-										<li><b><Trans i18nKey="@@Navigation-Title-Learn">Learn</Trans></b></li>
-										<li><a className="phantom-a" href="/how-it-works"><Trans i18nKey="@@Navigation-HowItWorks">How it Works</Trans></a></li>
-										<li><a className="phantom-a" href="/about-us"><Trans i18nKey="@@Navigation-AboutUs">About Us</Trans></a></li>
-										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans i18nKey="@@Navigation-Whitepaper">Whitepaper</Trans></a></li>
-										<li><a className="phantom-a" href="/partners"><Trans i18nKey="@@Navigation-Partners">Partners</Trans></a></li>
-										<li><a className="phantom-a" href="/faq"><Trans i18nKey="@@Navigation-FAQ">FAQ</Trans></a></li>
+										<li><b><Trans>Learn</Trans></b></li>
+										<li><a className="phantom-a" href="/how-it-works"><Trans>How it Works</Trans></a></li>
+										<li><a className="phantom-a" href="/about-us"><Trans>About Us</Trans></a></li>
+										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans>Whitepaper</Trans></a></li>
+										<li><a className="phantom-a" href="/partners"><Trans>Partners</Trans></a></li>
+										<li><a className="phantom-a" href="/faq"><Trans>FAQ</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-3">
 									<ul id="ft-nav-3-list" className="phantom-list">
-										<li><b><Trans i18nKey="@@Navigation-Title-Engage">Engage</Trans></b></li>
-										<li><a className="phantom-a" href="/podcast"><Trans i18nKey="@@Navigation-Podcast">Podcast</Trans></a></li>
+										<li><b><Trans>Engage</Trans></b></li>
+										<li><a className="phantom-a" href="/podcast"><Trans>Podcast</Trans></a></li>
 										<li><a className="phantom-a" href={t("https://blog.orchid.com/")}>Blog</a></li>
-										<li><a className="phantom-a" href="/privacy-guardian"><Trans i18nKey="@@Navigation-PrivacyGuardians">Privacy Guardians</Trans></a></li>
-										<li><a className="phantom-a" href="/events"><Trans i18nKey="@@Navigation-Events">Events</Trans></a></li>
-										<li><a className="phantom-a" href="/contact"><Trans i18nKey="@@Navigation-Contact">Contact</Trans></a></li>
+										<li><a className="phantom-a" href="/privacy-guardian"><Trans>Privacy Guardians</Trans></a></li>
+										<li><a className="phantom-a" href="/events"><Trans>Events</Trans></a></li>
+										<li><a className="phantom-a" href="/contact"><Trans>Contact</Trans></a></li>
 									</ul>
 								</nav>
 								<section>

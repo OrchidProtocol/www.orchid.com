@@ -56,17 +56,17 @@ class Navbar extends React.Component {
 						</button>
 					</div>
 					<ul className="nav-list phantom-list">
-						<li className="mobile-only"><Link to="/" className="phantom-a"><Trans i18nKey="@@Navigation-Home">Home</Trans></Link></li>
-						<li><Link to="/join" className="phantom-a"><Trans i18nKey="@@Navigation-Join">Create Account</Trans></Link></li>
-						<li><Link to="/how-it-works" className="phantom-a"><Trans i18nKey="@@Navigation-HowItWorks">How It Works</Trans></Link></li>
-						<li><Link to="/oxt" className="phantom-a"><Trans i18nKey="@@Navigation-OXT">OXT</Trans></Link></li>
-						<li><Link to="/about-us" className="phantom-a"><Trans i18nKey="@@Navigation-About">About</Trans></Link></li>
-						<li><a className="phantom-a" href={t("https://blog.orchid.com/")}><Trans i18nKey="@@Navigation-Blog">Blog</Trans></a></li>
-						<li><Link to="/contact" className="phantom-a"><Trans i18nKey="@@Navigation-Contact">Contact</Trans></Link></li>
+						<li className="mobile-only"><Link to="/" className="phantom-a"><Trans>Home</Trans></Link></li>
+						<li><Link to="/join" className="phantom-a"><Trans>Create Account</Trans></Link></li>
+						<li><Link to="/how-it-works" className="phantom-a"><Trans>How It Works</Trans></Link></li>
+						<li><Link to="/oxt" className="phantom-a"><Trans>OXT</Trans></Link></li>
+						<li><Link to="/about-us" className="phantom-a"><Trans>About</Trans></Link></li>
+						<li><a className="phantom-a" href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
+						<li><Link to="/contact" className="phantom-a"><Trans>Contact</Trans></Link></li>
 						<li className="navbar-language-selector">
 							<span className="phantom-a">
 								<img alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
-								<span>{t('@@NavigationCurrentLanguage')}</span>
+								<span>{t('EN')}</span>
 								<svg width="9" height="6" viewBox="0 0 9 6" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0.657413 2.3158L3.67908 5.33747C4.13408 5.79247 4.86908 5.79247 5.32408 5.33747L8.34575 2.3158C9.08075 1.5808 8.55575 0.320801 7.51741 0.320801H1.47408C0.435747 0.320801 -0.0775865 1.5808 0.657413 2.3158Z" fill="#766D86" />
 								</svg>
@@ -85,7 +85,7 @@ class Navbar extends React.Component {
 
 				<a className="nav-download" href="/get-orchid">
 					<button className="btn-secondary">
-						<Trans i18nKey="@@Navigation-Download">
+						<Trans>
 							Get Orchid
 						</Trans>
 					</button>

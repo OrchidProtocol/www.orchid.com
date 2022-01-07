@@ -1,4 +1,5 @@
 import React from 'react'
+import { Trans } from 'react-i18next';
 
 class Component extends React.Component {
 	constructor(props) {
@@ -80,32 +81,33 @@ class Component extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props
 		return (
 			<form className={"contact-form-container" + (this.state.js ? " js" : "") + (this.state.in_progress ? " in_progress" : "")} onSubmit={this.submit.bind(this)} ref={this.setFormRef.bind(this)}>
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="name" placeholder="Your Name" required />
+					<input type="text" name="name" placeholder={t("@@ContactForm__NamePlaceholder")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="email" name="email" placeholder="Your Email" required />
+					<input type="email" name="email" placeholder={t("@@ContactForm__EmailPlaceholder")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="subject" placeholder="Subject" required />
+					<input type="text" name="subject" placeholder={t("@@ContactForm__SubjectPlaceholder")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<textarea name="message" placeholder="Enter your message..." required />
+					<textarea name="message" placeholder={t("@@ContactForm__MessagePlaceholder")} required />
 				</div>
 
 				<div className="contact-form-error contact-form-message">
-					Required fields are missing
+					<Trans>Required fields are missing</Trans>
 				</div>
 				<div className={"contact-form-error contact-form-message" + (this.state.error ? ' active' : '')}>
-					There was an unknown error, your message may not have been sent
+					<Trans>There was an unknown error, your message may not have been sent</Trans>
 				</div>
 				<div className={"contact-form-success contact-form-message" + (this.state.success ? ' active' : '')}>
-					Your message has been sent
+					<Trans>Your message has been sent</Trans>
 				</div>
 
 				<button className="btn-primary">Submit</button>

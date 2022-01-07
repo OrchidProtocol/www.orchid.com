@@ -99,6 +99,9 @@
     "Orchid's Values": "Les valeurs d'Orchid",
     "We want to hear from you": "Nous voulons connaître votre avis",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Reprenons possession de l'Internet ensemble ! Nous sommes à la recherche d'opportunités de partenariat avec des fournisseurs d'infrastructure et des partenaires d'intégration qui souhaitent construire avec Orchid. Contactez-nous et nous vous recontacterons sous peu.",
+    "Required fields are missing": "Les champs obligatoires sont manquants",
+    "There was an unknown error, your message may not have been sent": "Une erreur inconnue s'est produite, votre message n'a peut-être pas été envoyé",
+    "Your message has been sent": "Votre message a été envoyé",
     "Our Values": "Nos valeurs",
     "Orchid Account Set-up": "Configuration du compte Orchid",
     "Load the Orchid DApp": "Chargez le DApp Orchid",
@@ -114,5 +117,10 @@
     "View the full list": "Voir la liste complète",
     "Not Found": "Introuvable",
     "We couldn't find that page!": "Nous n'avons pas pu trouver cette page !",
-    "Go back home": "Revenir à l'accueil"
+    "Go back home": "Revenir à l'accueil",
+    "Contact Info": "Infos de contact",
+    "Events": "Événements",
+    "Learn": "Apprendre",
+    "About Us": "À propos de nous",
+    "About": "À propos"
 }

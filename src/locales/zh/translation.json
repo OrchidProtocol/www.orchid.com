@@ -107,6 +107,9 @@
     "FAQ": "常见问题解答",
     "We want to hear from you": "我们希望听到您的意见",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "让我们一起重新掌控互联网！我们期待能有机会展开多方合作，特别是想要与 Orchid 共同发展的基础架构提供商和集成合作伙伴。请与我们联系，我们会尽快回复您。",
+    "Required fields are missing": "必填字段缺少内容",
+    "There was an unknown error, your message may not have been sent": "发生未知错误，您的消息可能未发送",
+    "Your message has been sent": "消息已发送",
     "Our Values": "我们的价值观",
     "Orchid Account Set-up": "Orchid 帐户设置",
     "Load the Orchid DApp": "加载 Orchid DApp",
@@ -122,5 +125,11 @@
     "View the full list": "查看完整列表",
     "Not Found": "未找到",
     "We couldn't find that page!": "我们找不到那个页面！",
-    "Go back home": "返回主页"
+    "Go back home": "返回主页",
+    "Contact": "联系",
+    "Contact Info": "联系信息",
+    "Events": "活动",
+    "Learn": "了解",
+    "About Us": "关于我们",
+    "About": "关于"
 }

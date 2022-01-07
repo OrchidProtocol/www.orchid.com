@@ -28,7 +28,7 @@ class Page extends React.Component {
 					<div className="splash-circuit-grid section-med">
 						<div className="splash-circuit-grid-item hpad-thin">
 							<h1>
-								<Trans i18nKey="@@ContactHero__Title">
+								<Trans>
 									Contact
 								</Trans>
 							</h1>
@@ -58,15 +58,13 @@ class Page extends React.Component {
 								</span>
 								<div className="contact-page-card-seperator"></div>
 								<div style={{ maxWidth: "11rem" }}>
-									<Trans i18nKey="@@ContactOffice__Address">
-										1288 Columbus Ave. #122,
-										San Francisco, CA 94133
-									</Trans>
+									1288 Columbus Ave. #122,
+									San Francisco, CA 94133
 								</div>
 							</div>
 							<div className="contact-page-card">
 								<span className="contact-page-card-header color-gray">
-									<Trans i18nKey="@@ContactSidebar__Title">
+									<Trans>
 										Contact Info
 									</Trans>
 								</span>
@@ -126,7 +124,7 @@ class Page extends React.Component {
 							</div>
 						</div>
 
-						<ContactForm />
+						<ContactForm t={t} />
 					</div>
 				</div>
 			</Layout>

@@ -104,6 +104,9 @@
     "FAQ": "Perguntas Frequentes",
     "We want to hear from you": "Queremos ouvir de si",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Vamos recuperar a Internet juntos! Estamos à procura de oportunidades de parcerias com fornecedores de infraestruturas e parceiros de integração que querem criar no Orchid. Contacte-nos e nós entramos em contacto com brevidade.",
+    "Required fields are missing": "Os campos necessários estão em falta",
+    "There was an unknown error, your message may not have been sent": "Houve um erro desconhecido, a mensagem pode não ter sido enviada",
+    "Your message has been sent": "A sua mensagem foi enviada",
     "Our Values": "Os Nossos Valores",
     "Orchid Account Set-up": "Configuração de Conta do Orchid",
     "Load the Orchid DApp": "Carregue a DApp do Orchid",
@@ -119,5 +122,11 @@
     "View the full list": "Ver a lista completa",
     "Not Found": "Não Encontrado",
     "We couldn't find that page!": "Não conseguimos encontrar essa página!",
-    "Go back home": "Voltar ao início"
+    "Go back home": "Voltar ao início",
+    "Contact": "Contacto",
+    "Contact Info": "Informações de Contacto",
+    "Events": "Eventos",
+    "Learn": "Aprender",
+    "About Us": "Sobre nós",
+    "About": "Sobre"
 }

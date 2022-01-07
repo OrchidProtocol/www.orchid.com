@@ -8,7 +8,6 @@ import PodcastFooter from '../components/common/PodcastFooter';
 
 import { generateDescription } from '../utils/generateDescription';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
-import withI18next from '../components/withI18next';
 
 
 const PodcastEpisode = (props) => {

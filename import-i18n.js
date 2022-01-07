@@ -34,22 +34,27 @@ async function run() {
 			xmlMode: true,
 		});
 
-		const localeKeys = {};
+		const localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'));
 		const missingKeys = {};
 		const units = $('body').find('trans-unit');
 		for (let index = 0; index < units.length; index++) {
 			const unit = units[index];
+			const target = cleanup($(unit).find('target').text());
+			const source = cleanup($(unit).find('source').text());
 			let id = unit.attributes[0].value;
-			if (cleanup($(unit).find('target').text()) !== cleanup($(unit).find('source').text())) {
+
+			if (target !== source) {
 				if (id.length === 40) {
-					id = cleanup($(unit).find('source').text());
+					id = source;
 				} else {
 					id = `@@${id}`;
 				}
 				if (baseJSON.common[id]) {
-					localeKeys[id] = cleanup($(unit).find('target').text());
+					localeKeys[id] = target;
+				} else if (baseJSON.common[source]) {
+					localeKeys[source] = target;
 				} else {
-					missingKeys[id] = cleanup($(unit).find('target').text());
+					missingKeys[id] = target;
 				}
 			}
 		}

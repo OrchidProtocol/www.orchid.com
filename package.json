@@ -21,7 +21,7 @@
 		"build:static:tr": "npm run get-legacy && npm run build:static:tr",
 		"build:static:pt-BR": "npm run get-legacy && npm run build:static:pt-BR",
 		"get-legacy": "git fetch && git reset --hard origin/legacy && yarn install",
-		"extract": "yarn run babel -f babel.config.js 'src/**/*.{js,jsx}'",
+		"extract": "yarn run babel -f babel.config.js 'src/**/*.{js,jsx}' && node import-i18n.js",
 		"develop": "npm run clean && gatsby develop",
 		"serve": "node server.js",
 		"format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",

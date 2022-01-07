@@ -112,6 +112,9 @@
     "FAQ": "बारबार पूछे जाने वाले प्रश्न",
     "We want to hear from you": "हम आपकी बात सुनना चाहते हैं",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "आइए, साथ मिलकर इंटरनेट को पुनर्प्राप्त करें! हम अधिसंरचना प्रदाताओं और समेकन साझेदारों के साथ मिलकर काम करने के अवसर खोज रहे हैं, जो ऑर्किड का उपयोग करके निर्माण करना चाहते हैं। हमसे संपर्क करें और हम शीघ्र ही आपसे मिलने आएँगे।",
+    "Required fields are missing": "आवश्यक फील्ड अनुपस्थित हैं",
+    "There was an unknown error, your message may not have been sent": "एक अज्ञात त्रुटि हुई। शायद आपका संदेश नहीं भेजा गया है",
+    "Your message has been sent": "आपका संदेश भेजा गया",
     "Our Values": "हमारे मूल्य",
     "Orchid Account Set-up": "ऑर्किड खाता सेटअप",
     "Load the Orchid DApp": "ऑर्किड डीऐप को लोड करें",
@@ -128,5 +131,12 @@
     "View the full list": "पूरी सूची देखें",
     "Not Found": "नहीं मिला",
     "We couldn't find that page!": "हमें वह पृष्ठ नहीं मिला!",
-    "Go back home": "मुख्य पृष्ठ पर वापस जाएँ"
+    "Go back home": "मुख्य पृष्ठ पर वापस जाएँ",
+    "Contact": "संपर्क",
+    "Contact Info": "संपर्क जानकारी",
+    "Events": "घटनाएँ",
+    "iOS": "आईओएस",
+    "Learn": "सीखें",
+    "About Us": "हमारे बारे में",
+    "About": "इसके बारे में"
 }

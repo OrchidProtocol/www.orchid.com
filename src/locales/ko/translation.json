@@ -107,6 +107,9 @@
     "FAQ": "자주 묻는 질문",
     "We want to hear from you": "귀하의 의견을 듣고 싶습니다",
     "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "우리 함께 인터넷을 되찾읍시다! Orchid와 함께 일할 인프라 제공업체 및 통합 파트너를 찾고 있습니다. 연락하여 주시면 곧 회신해 드리겠습니다.",
+    "Required fields are missing": "필수 필드가 누락되었습니다",
+    "There was an unknown error, your message may not have been sent": "알 수 없는 오류가 발생했습니다. 메시지가 전송되지 않았을 수 있습니다",
+    "Your message has been sent": "메시지가 전송되었습니다",
     "Our Values": "우리의 가치관",
     "Orchid Account Set-up": "Orchid 계정 설정",
     "Load the Orchid DApp": "Orchid DApp 불러오기",
@@ -122,5 +125,11 @@
     "View the full list": "전체 목록 보기",
     "Not Found": "찾을 수 없음",
     "We couldn't find that page!": "해당 페이지를 찾을 수 없습니다!",
-    "Go back home": "홈으로 돌아가기"
+    "Go back home": "홈으로 돌아가기",
+    "Contact": "연락처",
+    "Contact Info": "연락처 정보",
+    "Events": "이벤트",
+    "Learn": "학습",
+    "About Us": "회사 소개",
+    "About": "소개"
 }
