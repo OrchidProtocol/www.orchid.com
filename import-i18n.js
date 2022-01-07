@@ -34,7 +34,10 @@ async function run() {
 			xmlMode: true,
 		});
 
-		const localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'));
+		let localeKeys = {};
+		try {
+			JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
+		} catch (e) { }
 		const missingKeys = {};
 		const units = $('body').find('trans-unit');
 		for (let index = 0; index < units.length; index++) {
