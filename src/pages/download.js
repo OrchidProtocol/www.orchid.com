@@ -52,22 +52,26 @@ class Page extends React.Component {
 							<StaticImage src="../../static/img/download/phone-android.png" width={450} height={913} className="download-images__device" alt="" />
 							<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 							<ul className="download-instructions__list" style={{ listStyle: "none" }}>
-								<Trans i18nKey="@@DownloadAndroid__Body">
-									<li>
-										<a href={this.state.androidLink} data-appstorelink>
-											<img width="300" height="89" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem 0", height: "auto", maxWidth: "160px", }} />
-										</a>
-									</li>
-									<li>
+								<li>
+									<a href={this.state.androidLink} data-appstorelink>
+										<img width="300" height="89" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem 0", height: "auto", maxWidth: "160px", }} />
+									</a>
+								</li>
+								<li>
+									<Trans>
 										- OR -
-									</li>
-									<li>
+									</Trans>
+								</li>
+								<li>
+									<Trans>
 										<a href="https://github.com/OrchidTechnologies/orchid/releases">Download the APK from GitHub</a>
-									</li>
-									<li>
+									</Trans>
+								</li>
+								<li>
+									<Trans>
 										(Or <a href="https://github.com/OrchidTechnologies/orchid/blob/master/app-android/">get the code</a> and compile it yourself!)
-									</li>
-								</Trans>
+									</Trans>
+								</li>
 							</ul>
 						</div>
 						<div className="download-images__container">

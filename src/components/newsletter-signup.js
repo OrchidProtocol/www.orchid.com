@@ -6,7 +6,7 @@ import { Trans } from 'react-i18next'
 const Component = () => (
 	<div className="where-oxt">
 		<p>
-			<Trans i18nKey="@@ReportExchangesOXT">
+			<Trans>
 				When we learn of new listings, they will be publicly announced. If you see OXT being traded on an exchange that isn’t listed here, please use the <Link to="/contact">contact</Link> form to let us know, so that it can be added to our list.
 			</Trans>
 		</p>

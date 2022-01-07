@@ -27,6 +27,15 @@ function cleanup(str) {
 	return str.replace(/\t/g, '').replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
+function searchForNoHTML(string, object) {
+	for (let key in object) {
+		if (object[key].replace(/(<([^>]+)>)/ig, '') === string) {
+			return key;
+		}
+	}
+	return null;
+}
+
 async function run() {
 	for (let i = 0; i < locales.length; i++) {
 		const pageText = await fetch(urlStruct.replace('{locale}', locales[i])).then(res => res.text());
@@ -56,6 +65,8 @@ async function run() {
 					localeKeys[id] = target;
 				} else if (baseJSON.common[source]) {
 					localeKeys[source] = target;
+				} else if (searchForNoHTML(source, baseJSON.common) !== null) {
+					localeKeys[searchForNoHTML(source, baseJSON.common)] = target;
 				} else {
 					missingKeys[id] = target;
 				}
