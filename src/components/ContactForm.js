@@ -110,8 +110,8 @@ class Component extends React.Component {
 					<Trans>Your message has been sent</Trans>
 				</div>
 
-				<button className="btn-primary">Submit</button>
-				<button onClick={this.clearForm.bind(this)}>Clear</button>
+				<button className="btn-primary"><Trans>Submit</Trans></button>
+				<button onClick={this.clearForm.bind(this)}><Trans>Clear</Trans></button>
 			</form>
 		)
 	}

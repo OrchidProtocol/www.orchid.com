@@ -38,7 +38,8 @@ function searchForNoHTML(string, object) {
 
 async function run() {
 	for (let i = 0; i < locales.length; i++) {
-		const pageText = await fetch(urlStruct.replace('{locale}', locales[i])).then(res => res.text());
+		let pageText = await fetch(urlStruct.replace('{locale}', locales[i])).then(res => res.text());
+		pageText = pageText.replace(/WireGuard \./g, 'WireGuard.');
 		const $ = cheerio.load(pageText, {
 			xmlMode: true,
 		});
