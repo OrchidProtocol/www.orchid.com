@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import './where-oxt.scss'
 import { Trans } from 'react-i18next'
 

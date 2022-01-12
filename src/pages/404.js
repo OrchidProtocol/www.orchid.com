@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import Layout from '../components/common/Layout'
 import './404.scss'
 import { Trans } from 'react-i18next'

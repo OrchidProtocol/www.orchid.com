@@ -6,7 +6,7 @@ import styled from '@emotion/styled';
 import { StaticImage } from "gatsby-plugin-image";
 
 import NewsletterSignupCore from '../components/newsletter-signup-core';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-i18n';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import withI18next from '../components/withI18next';
 

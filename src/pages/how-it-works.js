@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import Layout from '../components/common/Layout'
 import './how-it-works.scss'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'

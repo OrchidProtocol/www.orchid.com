@@ -8,7 +8,7 @@ import withI18next from '../components/withI18next';
 import { Trans } from 'react-i18next';
 
 import BlogPosts from '../components/common/BlogPosts';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-i18n';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
 

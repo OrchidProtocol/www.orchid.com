@@ -4,7 +4,7 @@ import Layout from '../components/common/Layout'
 import './oxt.scss'
 
 import WhereOXTExtended from '../components/where-oxt-extended';
-import { Link } from 'gatsby';
+import { Link } from 'gatsby-i18n';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { Trans } from 'react-i18next';
 import withI18next from '../components/withI18next';

@@ -5,7 +5,10 @@ export const defaultNamespace = "common";
 export const options = {
 	fallbackLng: defaultLocale,
 	ns: [defaultNamespace],
+	supportedLngs: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'pt-BR', 'ru', 'tr', 'zh'],
+	load: "currentOnly",
 	defaultNS: defaultNamespace,
+	keySeparator: false,
 
 	debug: false,
 

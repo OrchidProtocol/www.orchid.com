@@ -1,4 +1,4 @@
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import styled from '@emotion/styled'
 
 const PaginationLink = styled.div`

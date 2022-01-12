@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { css } from '@emotion/react'
 import { Location } from '@reach/router'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 
 import Navbar from './Navbar.js'
 import '../../scss/styles.scss';

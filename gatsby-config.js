@@ -93,6 +93,28 @@ module.exports = {
 				addUncaughtPages: true,
 			},
 		},
+		{
+			resolve: `gatsby-plugin-react-i18next`,
+			options: {
+				localeJsonSourceName: 'common',
+				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'pt-BR', 'ru', 'tr', 'zh'],
+				defaultLanguage: 'en',
+				siteUrl: 'http://localhost:8000/',
+				i18nextOptions: {
+					interpolation: {
+						escapeValue: false
+					},
+					keySeparator: false,
+					nsSeparator: false
+				},
+				pages: [
+					{
+						matchPath: '/:lang?/:path*',
+						getLanguageFromPath: true,
+					},
+				]
+			}
+		},
 
 		'gatsby-plugin-netlify', // make sure to keep it last in the array
 	],

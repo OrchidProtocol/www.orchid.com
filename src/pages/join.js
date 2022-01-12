@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-i18n';
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './join.scss'
