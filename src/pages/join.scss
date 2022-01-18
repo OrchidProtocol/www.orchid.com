@@ -13,17 +13,11 @@
 		font-size: 40px;
 	}
 	h3 {
-		font-size: $size-body-md;
+		font-size: 24px;
 		margin: 2rem 0 1rem 0;
 		color: var(--orc-rock-gray);
 
-		@media (min-width: 1441px) {
-			margin-left: -10px;
-			margin-right: -10px;
-		}
-
 		@include mobile {
-			font-size: $size-body-md-mobile;
 		}
 	}
 
