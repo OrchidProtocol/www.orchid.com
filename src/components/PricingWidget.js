@@ -18,8 +18,21 @@ const PricingWidget = () => (
 		overflow: auto;
 		box-shadow: 0px 4px 24px 0px #00000026;
 	`}>
+		<div css={css`
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			color: white;
+			text-align: center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			`}>Widget loading... (May not work on some mobile devices)</div>
 		<iframe css={css`
 			display: block;
+			position: relative;
 			width: 100%;
 			height: 100%;
 			min-height: var(--height);
