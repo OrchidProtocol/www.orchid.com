@@ -43,7 +43,7 @@ const PricingWidget = () => (
 			@media (max-width: 1000px) {
 				pointer-events: none;
 			}
-		`} src="https://pat.net/orchid/widget/" />
+		`} title="Deposit Size Chart" src="https://pat.net/orchid/widget/" />
 	</div>
 )
 
