@@ -48,11 +48,11 @@ class Page extends React.Component {
 								</p>
 								<br />
 								<p>
-									Accounts require a funder wallet and Orchid Identity pair that is managed between the <a href="#">Orchid app</a> and the user’s Ethereum wallet. Funds are moved in and out of the account using the Ethereum wallet and funds are spent using the Orchid Identity in the Orchid app.
+									Accounts require a funder wallet and Orchid Identity pair that is managed between the <Link to="/download">Orchid app</Link> and the user’s Ethereum wallet. Funds are moved in and out of the account using the Ethereum wallet and funds are spent using the Orchid Identity in the Orchid app.
 								</p>
 								<br />
 								<p>
-									Orchid supports users self-funding accounts with their own cryptocurrency through the <a href="#">Orchid DApp</a> and also has a simplified fiat on-ramp within the Orchid app called Prepaid Access Credits, which uses a wallet controlled by Orchid Labs.
+									Orchid supports users self-funding accounts with their own cryptocurrency through the <a href="https://account.orchid.com/">Orchid DApp</a> and also has a simplified fiat on-ramp within the Orchid app called Prepaid Access Credits, which uses a wallet controlled by Orchid Labs.
 								</p>
 							</div>
 							<div className="join__bunny-container">
@@ -66,11 +66,11 @@ class Page extends React.Component {
 							</p>
 							<h3>Self-funded Crypto Accounts</h3>
 							<p>
-								To add your own crypto to an Orchid account that you manage yourself, you can move funds into an Orchid Identity using the Orchid DApp. You will need to move enough funds to accommodate both a balance and deposit for the account. The balance is the spendable amount that can be sent to providers. The deposit size determines the overall amount paid in L1 network fees while sending nanopayments and scales up and down with network gas fees. The deposit is also “locked” and requires a 24 hour wait period for these funds to be withdrawn.
+								To add your own crypto to an Orchid account that you manage yourself, you can move funds into an Orchid Identity using the <a href="https://account.orchid.com/">Orchid DApp</a>. You will need to move enough funds to accommodate both a balance and deposit for the account. The balance is the spendable amount that can be sent to providers. The deposit size determines the overall amount paid in L1 network fees while sending nanopayments and scales up and down with network gas fees. The deposit is also “locked” and requires a 24 hour wait period for these funds to be withdrawn.
 							</p>
 							<br />
 							<p>
-								Official latest contract address on all chains: OrchidLotteryV1
+								Official latest contract address on all chains: <a href="https://blockscan.com/address/0x6db8381b2b41b74e17f5d4eb82e8d5b04dda0a82">OrchidLotteryV1</a>
 							</p>
 							<br />
 							<p>
@@ -93,7 +93,7 @@ class Page extends React.Component {
 							<div className="join-step__content">
 								<h3>Create a new Ethereum wallet</h3>
 								<p>
-									We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use. We test with <a href="https://metamask.io/">Metamask</a>.
+									We recommend using a <a href="https://docs.orchid.com/en/latest/orchid-dapp/#why-do-i-need-a-new-ethereum-wallet-why-cant-i-use-my-main-wallet">new Ethereum wallet address</a> for Orchid that is not linked to other Ethereum products or services you use. We test with <a href="https://metamask.io/">Metamask</a>.
 								</p>
 							</div>
 						</div>
