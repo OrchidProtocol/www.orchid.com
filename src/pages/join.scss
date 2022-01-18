@@ -6,9 +6,30 @@
 .join-page {
 	$join-grid-breakpoint: 1114px;
 
+	font-size: 18px;
+	font-weight: 600;
+
+	h1 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: $size-body-md;
+		margin: 2rem 0 1rem 0;
+		color: var(--orc-rock-gray);
+
+		@media (min-width: 1441px) {
+			margin-left: -10px;
+			margin-right: -10px;
+		}
+
+		@include mobile {
+			font-size: $size-body-md-mobile;
+		}
+	}
+
 	.join__grid {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		flex-direction: column;
 
@@ -35,7 +56,7 @@
 	}
 
 	.join__intro {
-		max-width: 834px;
+		max-width: 630px;
 		margin-bottom: 5rem;
 
 		ul {
@@ -103,66 +124,54 @@
 	}
 
 	.join-steps {
-		// overflow-x: hidden;
+		padding: 3rem 5rem;
+		border-radius: 2rem;
+		@media (max-width: ($join-grid-breakpoint - 1px)) {
+			border-radius: 1rem;
+			padding: 2rem;
+		}
+		box-shadow: 0px 4px 24px 0px #00000026;
+		max-width: 1170px;
+		width: 95%;
+		width: calc(100% - 2rem);
+		box-sizing: border-box;
+		margin: 2rem auto;
 	}
 
 	.join-step {
-		// &.step-1::before {
-		//   content: "";
-		//   width: 349px;
-		//   height: 349px;
-		//   background: url("/img/join/step-bg-2.svg") no-repeat center center;
-		//   background-size: contain;
-		//   position: absolute;
-		//   right: 0;
-		//   top: 0;
-		//   transform: translate(86%, 18%);
-		// }
-		// &.step-2::before {
-		//   content: "";
-		//   width: 242px;
-		//   height: 260px;
-		//   background: url("/img/join/step-bg-1.svg") no-repeat center center;
-		//   background-size: contain;
-		//   position: absolute;
-		//   left: 0;
-		//   top: 0;
-		//   transform: translate(-150%, 57%);
-		// }
+		display: flex;
+		--number-size: 90px;
+		@media (max-width: ($join-grid-breakpoint - 1px)) {
+			--number-size: 70px;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding-top: 10px;
+		}
+		@media (min-width: $join-grid-breakpoint) {
+			align-items: flex-start;
+			justify-content: space-between;
+			.join-step__content {
+				width: calc(100% - (var(--number-size) + 2rem));
+				text-align: left;
+			}
+		}
 	}
 
 	.join-steps__grid {
-		--gap: 30px;
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		grid-gap: var(--gap);
-		justify-items: center;
-		padding-top: var(--gap);
-		padding-left: var(--gap);
-		padding-right: var(--gap);
-
-		@media (max-width: 1114px) {
-			grid-template-columns: 1fr;
+		display: block;
+		@media (max-width: ($join-grid-breakpoint - 1px)) {
+			--number-size: 70px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
 	.join-step__content {
-		--number-size: 140px;
 		background: #fff;
-		padding: 0 47px 30px;
-		border-radius: 24px;
-		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 		text-align: center;
-		max-width: 525px;
-
-		@media (max-width: 1440px) {
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-
-		@media (max-width: $join-grid-breakpoint) {
-			margin-top: calc(var(--number-size) * 0.5);
-		}
 
 		& > * + * {
 			margin-bottom: 1.3rem;
@@ -192,23 +201,20 @@
 
 	.join-number {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
+		align-items: center;
 		z-index: 3;
 		background-color: $orc-purple;
 		font-family: $orc-tf-primary;
 		text-align: center;
 		width: var(--number-size);
 		height: var(--number-size);
-		margin: 0 auto;
 		border-radius: var(--number-size);
 		text-decoration: none;
 		color: #fff;
 		position: relative;
 		border: 22px solid var(--section-bg);
 		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-		transform: translateY(-50%);
-		margin-bottom: calc(var(--number-size) * -0.2);
 
 		max-width: 100px;
 		max-height: 100px;
@@ -231,36 +237,6 @@
 		color: $orc-purple-gray;
 	}
 
-	.step-1 .join-number {
-		background-color: #b88dfc;
-	}
-
-	.step-2 .join-number {
-		background-color: #a177f3;
-	}
-
-	.step-3 .join-number {
-		background-color: #8c61e1;
-	}
-
-	.step-4 .join-number {
-		background-color: #7450cc;
-	}
-
-	.join-step__title {
-		font-size: $size-body-md;
-		margin: 0.6rem 0;
-
-		@media (min-width: 1441px) {
-			margin-left: -10px;
-			margin-right: -10px;
-		}
-
-		@include mobile {
-			font-size: $size-body-md-mobile;
-		}
-	}
-
 	.join-step__play-skip {
 		@media (max-width: $join-grid-breakpoint) {
 			display: none !important;
@@ -269,6 +245,21 @@
 		& > img {
 			display: block;
 			margin: auto;
+		}
+	}
+	.join-apps {
+		a {
+			margin: auto;
+			display: block;
+		}
+		@media (min-width: $join-grid-breakpoint) {
+			a {
+				margin: 0;
+				display: unset;
+			}
+			a + a {
+				margin-left: 0.5rem;
+			}
 		}
 	}
 
