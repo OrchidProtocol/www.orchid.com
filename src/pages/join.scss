@@ -51,16 +51,11 @@
 
 	.join__intro {
 		max-width: 630px;
-		margin-bottom: 5rem;
 
 		ul {
 			display: block;
 			text-align: left;
 			margin-bottom: 1rem;
-		}
-
-		@media (max-width: $join-grid-breakpoint) {
-			margin-bottom: 3rem;
 		}
 	}
 
