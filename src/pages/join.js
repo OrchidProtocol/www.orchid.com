@@ -82,6 +82,8 @@ class Page extends React.Component {
 							</p>
 							<br />
 							<PricingWidget />
+							<br />
+							<h3>Step-by-step Orchid Account Creation</h3>
 						</div>
 					</section>
 				</div>
