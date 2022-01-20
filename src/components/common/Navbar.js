@@ -14,7 +14,7 @@ class Navbar extends React.Component {
 			js: false,
 		}
 
-		if (window) setTimeout(() => this.setState({ js: true }), 0);
+		if (typeof window !== 'undefined') setTimeout(() => this.setState({ js: true }), 0);
 	}
 
 	navbarClickListener(e) {
