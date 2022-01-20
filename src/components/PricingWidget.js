@@ -36,14 +36,9 @@ const PricingWidget = () => (
 			width: 100%;
 			height: 100%;
 			min-height: var(--height);
-			min-width: 700px;
 			border: 0;
 			margin: 0;
-
-			@media (max-width: 1000px) {
-				pointer-events: none;
-			}
-		`} title="Deposit Size Chart" src="https://pat.net/orchid/widget/" />
+		`} title="Deposit Size Chart" src="https://account.orchid.com/widget/" />
 	</div>
 )
 
