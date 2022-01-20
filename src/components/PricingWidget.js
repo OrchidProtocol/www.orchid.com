@@ -6,9 +6,9 @@ const PricingWidget = () => (
 		position: relative;
 		background: var(--orc-deep-purple);
 
-		--height: 445px;
+		--height: 470px;
 		@media (max-width: 1000px) {
-			--height: 390px;
+			--height: 470px;
 		}
 
 		border-radius: 2rem;
