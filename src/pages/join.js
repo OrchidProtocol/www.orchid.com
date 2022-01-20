@@ -3,8 +3,9 @@ import { Link } from 'gatsby'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './join.scss'
-import WhereOXT from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
+import PricingWidget from '../components/PricingWidget'
+import NewsletterSignup from '../components/newsletter-signup-core';
 import { css } from '@emotion/react'
 
 class Page extends React.Component {
@@ -41,131 +42,140 @@ class Page extends React.Component {
 					<section className="section-med hpad-thin pad-top-wide z-index-1">
 						<div className="join__grid">
 							<div className="join__intro">
-								<h3 className="gap-bot-thin" i18n="@@JoinHero__Title">Orchid Account Set-up</h3>
-								<p i18n="@@JoinHero__P1">To start using Orchid, you need an Orchid account. There are three ways to get access to an Orchid account right now:</p>
-
-								<ul i18n="@@JoinHero__UL">
-									<li>Someone could share one with you</li>
-									<li>You can buy an xDAI account with a $1 USD in-app purchase on iOS, macOS &amp; Android</li>
-									<li>You can create an account with OXT and ETH for network fees</li>
-								</ul>
-
-								<p i18n="@@JoinHero__P2">This set-up guide will cover the process to create an account using our web3-based dapp and your own OXT and ETH. If you already have a QR code for an existing Orchid account, you can skip to step 4 of this guide.</p>
-								<br />
-								<p i18n="@@JoinHero__gasWarning"><b>*Ethereum gas notice*</b>: As of Q4 2021, Ethereum gas fees can be upwards of $90 USD to fund an Orchid account with OXT and a similar fee is required to unlock and withdraw unused OXT. This is the network cost paid in ETH. We recommend buying an account in the app using an in-app purchase which start at $1 USD. We are working on getting Orchid on chains with lower network fees for use with the dapp.</p>
+								<h1 className="gap-bot-thin">Orchid Accounts</h1>
+								<p>
+									To start using Orchid, you will need a funded account. Orchid accounts are governed by a smart contract that holds funds for users and sends payments as necessary to providers for service.
+								</p>
 								<br />
 								<p>
-									Ethereum Gas Amounts (November 2021):
+									Accounts require a funder wallet and Orchid Identity pair that is managed between the <Link to="/download">Orchid app</Link> and the user’s Ethereum wallet. Funds are moved in and out of the account using the Ethereum wallet and funds are spent using the Orchid Identity in the Orchid app.
 								</p>
-								<ul css={css`
-									max-width: 200px !important;
-								`}>
-									<li><div css={css`
-										list-style: inside;
-										display: flex;
-										justify-content: space-between;
-									`}><span>Account Creation:</span> <span>225,000</span></div></li>
-									<li><div css={css`
-										list-style: inside;
-										display: flex;
-										justify-content: space-between;
-									`}><span>Unlock:</span> <span>50,000</span></div></li>
-									<li><div css={css`
-										list-style: inside;
-										display: flex;
-										justify-content: space-between;
-									`}><span>Withdraw:</span> <span>150,000</span></div></li>
-								</ul>
+								<br />
+								<p>
+									Orchid supports users self-funding accounts with their own cryptocurrency through the <a href="https://account.orchid.com/">Orchid DApp</a> and also has a simplified fiat on-ramp within the Orchid app called Prepaid Access Credits, which uses a wallet controlled by Orchid Labs.
+								</p>
 							</div>
 							<div className="join__bunny-container">
 								<img src="/img/join/intro_bunny.svg" alt="" />
 							</div>
 						</div>
+						<div>
+							<h3>Prepaid Access Credits</h3>
+							<p>
+								Users can add funds to an Orchid Identity in the Orchid app with a simple in-app purchase using their native fiat currency which is then converted to on-chain funds. These accounts can only spend funds with Orchid’s preferred providers. Orchid Labs custodies the funding Ethereum wallet, so the funds can never be withdrawn by the user.
+							</p>
+							<h3>Self-funded Crypto Accounts</h3>
+							<p>
+								To add your own crypto to an Orchid account that you manage yourself, you can move funds into an Orchid Identity using the <a href="https://account.orchid.com/">Orchid DApp</a>. You will need to move enough funds to accommodate both a balance and deposit for the account. The balance is the spendable amount that can be sent to providers. The deposit size determines the overall amount paid in L1 network fees while sending nanopayments and scales up and down with network gas fees. The deposit is also “locked” and requires a 24 hour wait period for these funds to be withdrawn.
+							</p>
+							<br />
+							<p>
+								Official latest contract address on all chains: <a href="https://blockscan.com/address/0x6db8381b2b41b74e17f5d4eb82e8d5b04dda0a82">OrchidLotteryV1</a>
+							</p>
+							<br />
+							<p>
+								Official hosted Orchid dapp: <a href="https://account.orchid.com/">account.orchid.com</a>
+							</p>
+							<h3>L1 Fees and Deposit Size Chart</h3>
+							<p>
+								The network that houses the Orchid account charges fees to interface with the smart contract. There is a one-time gas fee for adding/moving/withdrawing funds as well as an ongoing L1 fee which is determined by the account’s deposit size.
+							</p>
+							<br />
+							<PricingWidget />
+							<br />
+							<h3>Step-by-step Orchid Account Creation</h3>
+						</div>
 					</section>
 				</div>
 
-				<div className="join-steps bk-lavender pad-bot-wide">
+				<div className="join-steps">
 					<section className="join-steps__grid section-wide">
 						<div className="join-step step-1">
+							<div className="join-number"><span className="join-number__numeral">1</span></div>
 							<div className="join-step__content">
-								<div className="join-number"><span className="join-number__label" i18n="@@Join__Step">Step</span> <span className="join-number__numeral">1</span></div>
-								<h3 className="join-step__title color-gray" i18n="@@JoinStep1__title">Create a new Ethereum wallet</h3>
-								<p i18n="@@JoinStep1__p1">
-									We recommend using a new Ethereum wallet address for Orchid that is not linked to other Ethereum products or services you use.
+								<h3>Create a new Ethereum wallet</h3>
+								<p>
+									We recommend using a <a href="https://docs.orchid.com/en/latest/orchid-dapp/#why-do-i-need-a-new-ethereum-wallet-why-cant-i-use-my-main-wallet">new Ethereum wallet address</a> for Orchid that is not linked to other Ethereum products or services you use. We test with <a href="https://metamask.io/">Metamask</a>.
 								</p>
-								<p i18n="@@JoinStep1__p2">
-									We test with <a href="https://metamask.io">Metamask</a>, which is a great choice for an Ethereum wallet.
-								</p>
-								<a href="https://metamask.io">
-									<img src="/img/join/metamask.svg" alt="" />
-								</a>
 							</div>
 						</div>
 						<div className="join-step step-2">
+							<div className="join-number"><span className="join-number__numeral">2</span></div>
 							<div className="join-step__content">
-								<div className="join-number"><span className="join-number__label" i18n="@@Join__Step">Step</span> <span className="join-number__numeral">2</span></div>
-								<h3 className="join-step__title color-gray" i18n="@@JoinStep2__title">Load the Orchid DApp</h3>
-								<p i18n="@@JoinStep2__p1">
-									Load <a href="https://account.orchid.com/">account.orchid.com</a> in your wallet’s browser or your preferred browser with a wallet plugin enabled. It’s a good idea to bookmark this page for the future.
+								<h3>Select a chain and add funds</h3>
+								<p>
+									Refer to the deposit size chart above to compare the different supported blockchains and pick one. Add that network to your Metamask wallet by visiting <a href="https://chainlist.org/">ChainList.org</a>, searching for that chain, connecting your wallet and then adding the network details.
 								</p>
-								<br />
-								<p i18n="@@JoinStep2__p2">
-									You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
+
+								<p>
+									Acquire enough funds for the recommended deposit, account creation L1 fee, and balance. The balance should be at least as large as the deposit. Note that it is best to use an exchange that allows withdraws directly to that chain or else you will have to bridge funds and incur excessive Ethereum gas fees.
+								</p>
+
+								<p>
+									You should now have your wallet connected to the chain you want to use and enough funds in that wallet. Copy your wallet address down as the app portion of the set-up will require it.
 								</p>
 							</div>
 						</div>
 						<div className="join-step step-3">
+							<div className="join-number"><span className="join-number__numeral">3</span></div>
 							<div className="join-step__content">
-								<div className="join-number"><span className="join-number__label" i18n="@@Join__Step">Step</span> <span className="join-number__numeral">3</span></div>
-								<h3 className="join-step__title color-gray" i18n="@@JoinStep3__title">Add funds to your wallet</h3>
-								<p i18n="@@JoinStep3__p1">
-									Adjust your account to see how much OXT you need for the efficiency you want. Also note the amount of ETH needed for network fees.
+								<h3>Create an account in the Orchid App</h3>
+								<p>
+									Download the Orchid app for <a href={this.state.androidLink} data-appstorelink>Android</a>, <a href={this.state.iOSLink} data-appstorelink>iOS</a> or <a href={this.state.iOSLink} data-appstorelink>macOS</a>
 								</p>
-								<p i18n="@@JoinStep3__p2">
-									You will need both of those amounts in your attached wallet in order to create and fund the account. See our <Link to="/join#get-oxt">participating exchanges</Link> for acquiring OXT.
+								<div class="join-apps">
+									<a href={this.state.androidLink} data-appstorelink>
+										<img width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px", width: "auto", }} />
+									</a>
+									<a href={this.state.iOSLink} data-appstorelink>
+										<img alt="iOS" src="/img/shared/ios.png" style={{ height: "40px", width: "auto" }} />
+									</a>
+									<a href={this.state.iOSLink} data-appstorelink>
+										<img alt="macOS" src="/img/shared/macos.svg" style={{ height: "40px", width: "auto" }} />
+									</a>
+								</div>
+								<p>
+									Open the app, tap “I’ll do this later” to minimize the quick fund screen. Tap the “Circuit” card in the lower right to bring up the circuit builder. Tap “Add Hop”, then “Orchid Account”, and then select an Orchid Identity. Paste in your Ethereum wallet address from Step 2 and select the appropriate chain. Tap “Save”.
+								</p>
+								<p>
+									Now you will have an empty Orchid account that is paying for a single hop circuit. Tap the hop to enter the hop details screen. Tap “Copy” to copy the Orchid Identity which you need for the dapp.
+								</p>
+								<p>
+									Tap back twice to get to the homescreen. You should have an empty account displayed and the Orchid Identity copied to your clipboard.
 								</p>
 							</div>
 						</div>
 						<div className="join-step step-4">
+							<div className="join-number"><span className="join-number__numeral">4</span></div>
 							<div className="join-step__content">
-								<div className="join-number"><span className="join-number__label" i18n="@@Join__Step">Step</span> <span className="join-number__numeral">4</span></div>
-								<h3 className="join-step__title color-gray" i18n="@@JoinStep4__title">Create your account</h3>
-								<p i18n="@@JoinStep4__p1">A Signer address is needed to create the account. Generate a Signer in the DApp, or generate one in the app (Android only) and paste it in.</p>
-
-								<p i18n="@@JoinStep4__p2">Hit <b>Create account</b> to submit both transactions to your wallet for approval. Approve both transactions and then wait for them to complete on Ethereum.</p>
-							</div>
-						</div>
-						<div className="join-step step-5">
-							<div className="join-step__content">
-								<div className="join-number"><span className="join-number__label" i18n="@@Join__Step">Step</span> <span className="join-number__numeral">5</span></div>
-								<h3 className="join-step__title color-gray" i18n="@@JoinStep5__title">Connect your account and app</h3>
-
-								<p i18n="@@JoinStep5__p1">Download the Orchid app for <a href={this.state.androidLink} data-appstorelink>Android</a> or <a href={this.state.iOSLink} data-appstorelink>iOS</a>.</p>
-								<div className="app-store-badges vgap-thin">
-									<a className="app-store-badge" href={this.state.androidLink} data-appstorelink><img width="200px" src="/img/shared/google-play-badge.svg" i18n-src="@@GooglePlayBadgeURL" alt="Google Play" /></a>
-									<a className="app-store-badge" href={this.state.iOSLink} data-appstorelink><img src="/img/shared/ios.png" alt="iOS" /></a>
-								</div>
-								<p i18n="@@JoinStep5__p3">
-									Open the app, tap Manage Profile, create a New Hop and then Link Orchid Account to pay for VPN service.
+								<h3>Connect your wallet and fund the account</h3>
+								<p>
+									Load <a href="https://account.orchid.com/">account.orchid.com</a> in your wallet’s browser or your preferred browser with a wallet plugin enabled. It’s a good idea to bookmark this page for the future.
 								</p>
-								<p i18n="@@JoinStep5__p4">
-									That’s it! You’re ready to start exploring freely. Stay curious out there!
+
+								<p>
+									You might be prompted to “connect” your wallet to the Orchid DApp so it can read the wallet account balances.
+								</p>
+
+								<p>
+									Input the desired amount of funds for the balance and deposit. Tap “Add Funds”.
+								</p>
+
+								<p>
+									Approve the transaction and wait for it to be confirmed.
+								</p>
+
+								<p>
+									That’s it! You can now see in the app that the funds have moved into your account. You can hit the connect button to use the Orchid app!
 								</p>
 							</div>
 						</div>
 					</section>
 				</div>
 
-				<div className="bk-faint-gray" id="get-oxt">
-					<section className="section-narrow hpad-wide vpad-wide z-index-1 center-text">
-						<h2 className="color-primary gap-bot-thin" i18n="@@WhereToGetOXT">Where to get OXT?</h2>
-						<WhereOXT />
-					</section>
-				</div>
-
-				<div className="more-questions background-white">
+				<div className="more-questions">
 					<section className="section-med hpad-wide vpad-xl center-text z-index-1">
-						<h3 i18n="@@MoreQuestions__Heading">More questions?</h3>
+						<h2>Questions?</h2>
 						<p className="medium" i18n="@@MoreQuestions__Subhead">
 							Check out the FAQ
 						</p>
@@ -174,7 +184,24 @@ class Page extends React.Component {
 					<div className="home-satellite-4"></div>
 				</div>
 
-				<app-newsletter-signup-features></app-newsletter-signup-features>
+				<div css={css`
+					text-align: center;
+					box-shadow: 0px 4px 24px 0px #00000026;
+					padding: 2rem;
+					border-radius: 2rem;
+					@media (max-width: 1000px) {
+						border-radius: 1rem;
+						padding: 1rem;
+					}
+					margin: 2rem auto;
+					max-width: 750px;
+					width: 95%;
+					box-sizing: border-box;
+				`}>
+					<h3>Let's Stay Connected</h3>
+					<p>Get the Orchid Onlooker newsletter for updates and privacy news</p>
+					<NewsletterSignup />
+				</div>
 			</Layout>
 		)
 	}
