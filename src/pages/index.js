@@ -185,7 +185,7 @@ class Page extends React.Component {
 										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
 									</div>
 									<div className="uppercase">TECHCRUNCH</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -197,7 +197,7 @@ class Page extends React.Component {
 										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
 									</div>
 									<div className="uppercase">CNET</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -210,7 +210,7 @@ class Page extends React.Component {
 										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
 									</div>
 									<div className="uppercase">COINDESK</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
 								</a>
 							</div>
 						</div>
@@ -226,7 +226,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" alt="" />
+										<img src="/img/index/TweetBunny.png" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 								</div>
@@ -237,7 +237,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" alt="" />
+										<img src="/img/index/TweetBunny.png" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 								</div>
