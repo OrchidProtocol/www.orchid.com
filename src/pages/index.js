@@ -182,10 +182,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" className="footer">
 									<div className="logo">
-										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
+										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" loading="lazy" />
 									</div>
 									<div className="uppercase">TECHCRUNCH</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -194,10 +194,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
 									<div className="logo">
-										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
+										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" loading="lazy" />
 									</div>
 									<div className="uppercase">CNET</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -207,10 +207,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" className="footer">
 									<div className="logo">
-										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
+										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" loading="lazy" />
 									</div>
 									<div className="uppercase">COINDESK</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 						</div>
@@ -226,7 +226,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" width="273" height="201" alt="" />
+										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 								</div>
@@ -237,7 +237,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" width="273" height="201" alt="" />
+										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 								</div>
