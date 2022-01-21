@@ -51,25 +51,6 @@ class TemplateWrapper extends React.Component {
 					<link rel="prefetch" href="/fonts/Baloo/wXKuE3kTposypRyd74f4FeMKmA.woff2" />
 				</Helmet>
 
-				<Location>
-					{({ location }) => {
-						return <Helmet>
-							<link rel="alternate" href={`https://www.ko.orchid.com${location.pathname}`} hrefLang="ko" />
-							<link rel="alternate" href={`https://www.orchid.com${location.pathname}`} hrefLang="x-default" />
-							<link rel="alternate" href={`https://www.ja.orchid.com${location.pathname}`} hrefLang="ja" />
-							<link rel="alternate" href={`https://www.zh.orchid.com${location.pathname}`} hrefLang="zh" />
-							<link rel="alternate" href={`https://www.id.orchid.com${location.pathname}`} hrefLang="id" />
-							<link rel="alternate" href={`https://www.ru.orchid.com${location.pathname}`} hrefLang="ru" />
-
-							{
-								process.env.GATSBY_TARGET_LANG === "en" || !process.env.GATSBY_TARGET_LANG ?
-									<meta rel="canonical" href={`https://www.orchid.com${location.pathname}`} /> :
-									<meta rel="canonical" href={`https://www.orchid.com/${process.env.GATSBY_TARGET_LANG.toLowerCase()}${location.pathname}`} />
-							}
-						</Helmet>
-					}}
-				</Location>
-
 				<div className="viewport">
 
 					<script dangerouslySetInnerHTML={{
