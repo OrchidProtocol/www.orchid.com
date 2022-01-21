@@ -7,6 +7,7 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import PricingWidget from '../components/PricingWidget'
 import NewsletterSignup from '../components/newsletter-signup-core';
 import { css } from '@emotion/react'
+import YouTubeEmbed from '../components/YouTubeEmbed';
 
 class Page extends React.Component {
 
@@ -84,6 +85,7 @@ class Page extends React.Component {
 							<PricingWidget />
 							<br />
 							<h3>Step-by-step Orchid Account Creation</h3>
+							<YouTubeEmbed id="WLKjCaX6X_E" />
 						</div>
 					</section>
 				</div>
@@ -123,7 +125,7 @@ class Page extends React.Component {
 								<p>
 									Download the Orchid app for <a href={this.state.androidLink} data-appstorelink>Android</a>, <a href={this.state.iOSLink} data-appstorelink>iOS</a> or <a href={this.state.iOSLink} data-appstorelink>macOS</a>
 								</p>
-								<div class="join-apps">
+								<div className="join-apps">
 									<a href={this.state.androidLink} data-appstorelink>
 										<img width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px", width: "auto", }} />
 									</a>

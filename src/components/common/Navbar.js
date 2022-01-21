@@ -13,12 +13,8 @@ class Navbar extends React.Component {
 			languageCollapsed: true,
 			js: false,
 		}
-	}
 
-	componentDidMount() {
-		this.setState({
-			js: true
-		})
+		if (typeof window !== 'undefined') setTimeout(() => this.setState({ js: true }), 0);
 	}
 
 	navbarClickListener(e) {

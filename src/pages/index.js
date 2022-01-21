@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
 import './index.scss'
-import ExplainerVideo from '../components/explainerVideo';
+import YouTubeEmbed from '../components/YouTubeEmbed';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 import BlogPosts from '../components/common/BlogPosts';
@@ -161,7 +161,7 @@ class Page extends React.Component {
 							</div>
 						</div>
 
-						<ExplainerVideo />
+						<YouTubeEmbed id="zJHFMxGAqyw" defaultThumbnail={true} />
 
 						<Link to="/get-orchid" className="section-button">
 							<button className="btn-secondary">Get Orchid</button>
