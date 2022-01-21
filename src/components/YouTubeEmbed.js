@@ -1,21 +1,12 @@
 import React from 'react'
 import styled from '@emotion/styled';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const VideoContainer = styled.div`
 	& > section {
 		box-sizing: border-box;
 		max-width: 720px;
 	}
-
-	//&[data-defaultthumb] {
-		a {
-			background-color: #000;
-			background-image: url(/img/index/video-thumbnail.jpg);
-			background-size: cover;
-			background-position: center;
-			background-repeat: no-repeat;
-		}
-	//}
 	.video {
 		position: relative;
 		padding-bottom: 56.25%;
@@ -99,7 +90,9 @@ class Component extends React.Component {
 					<div className="video">
 						{this.state.showVideo ?
 							<iframe allowFullScreen title={"YouTube video embed " + this.props.id} src={"https://www.youtube-nocookie.com/embed/" + this.props.id + "?autoplay=true"} /> :
-							<a onClick={this.revealVideo.bind(this)} href={"https://www.youtube.com/watch?v=" + this.props.id}>Watch a video about Orchid on YouTube</a>}
+							<a onClick={this.revealVideo.bind(this)} href={"https://www.youtube.com/watch?v=" + this.props.id}>
+								<StaticImage src="../../static/img/index/video-thumbnail.jpg" width={720} height={405} loading="lazy" placeholder="none" alt="Video thumbnail" />
+							</a>}
 					</div>
 				</section>
 			</VideoContainer>
