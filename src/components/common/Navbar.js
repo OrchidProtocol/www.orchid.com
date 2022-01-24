@@ -18,15 +18,13 @@ const NavbarContent = styled.nav`
 
 	@media (max-width: 870px) {
 		font-size: 14px;
-		&.js {
-			position: fixed;
-			left: 0;
-			right: 0;
-			box-sizing: border-box;
-			height: 64px;
-			background: inherit;
-			z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
-		}
+		position: fixed;
+		left: 0;
+		right: 0;
+		box-sizing: border-box;
+		height: 64px;
+		background: inherit;
+		z-index: 999; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
 	}
 	@media (min-width: (1200px + 1px)) {
 		justify-content: space-between;
@@ -37,10 +35,6 @@ const CloseButtonHeader = styled.div`
 	margin: -1rem -1rem 0;
 	box-sizing: border-box;
 	height: 64px;
-
-	&.js {
-		display: block;
-	}
 
 	& > button {
 		margin: 0;
@@ -236,8 +230,17 @@ class Navbar extends React.Component {
 	}
 
 	render() {
+
+		const NavButton = <button css={css`
+			margin: -1rem;
+			padding: 1rem;
+			cursor: pointer;
+		`} className="phantom-btn mobile-only" onClick={this.navbarClickListener.bind(this)}>
+			<img width="25" height="22" alt="Toggle Navigation" src="/img/shared/hamburger.svg" />
+		</button>
+
 		return (<NavbarWrapper>
-			<NavbarContent className={"section-wide hpad-thin" + (this.state.js ? " js" : "")}>
+			<NavbarContent className={"section-wide hpad-thin"}>
 
 				{/* Logo */}
 				<h1 css={css`
@@ -279,18 +282,16 @@ class Navbar extends React.Component {
 							transition-timing-function: cubic-bezier(0.45, 0.1, 0.75, 0.5);
 						}
 
-						&.js {
-							position: fixed;
-							right: 0;
-							top: 0;
-							bottom: 0;
-							padding: 1rem 1rem 1rem 1rem;
-							width: 10rem;
-							background: var(--orc-beige-light);
-							color: var(--orc-rock-gray);
-							transform: translate(100%, 0);
-							z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
-						}
+						position: fixed;
+						right: 0;
+						top: 0;
+						bottom: 0;
+						padding: 1rem 1rem 1rem 1rem;
+						width: 10rem;
+						background: var(--orc-beige-light);
+						color: var(--orc-rock-gray);
+						transform: translate(100%, 0);
+						z-index: 1001; // NB: this is because the z-index for #nav-flyout-bkgd is 1000
 
 						&.open {
 							transition-duration: 0.4s;
@@ -298,7 +299,7 @@ class Navbar extends React.Component {
 							transform: translate(0, 0);
 						}
 					}
-				`} className={(this.state.js ? "js" : "") + (this.state.navigationCollapsed ? "" : " open")}>
+				`} className={(this.state.navigationCollapsed ? "" : "open")}>
 					<CloseButtonHeader className="mobile-only">
 						<button className="phantom-btn" onKeyPress={this.navbarClickListener.bind(this)} onClick={this.navbarClickListener.bind(this)}>
 							<img width="22" height="24" alt="Close" src="/img/shared/close.svg" />
@@ -334,7 +335,7 @@ class Navbar extends React.Component {
 
 				<a css={css`
 					display: none;
-					& > button:not(.phantom-btn).btn-secondary {
+					button.btn-secondary {
 						font-size: 16px;
 						padding: 0.05rem 1.5rem;
 					}
@@ -347,16 +348,7 @@ class Navbar extends React.Component {
 					</button>
 				</a>
 
-				<button css={css`
-					margin: -1rem;
-					padding: 1rem;
-					cursor: pointer;
-					:not(.js) > & {
-						display: none;
-					}
-				`} className="phantom-btn mobile-only" onClick={this.navbarClickListener.bind(this)}>
-					<img width="25" height="22" alt="Toggle Navigation" src="/img/shared/hamburger.svg" />
-				</button>
+				{this.state.js ? NavButton : <a href="#footer">{NavButton}</a>}
 			</NavbarContent>
 			<div css={css`
 				height: 64px;
