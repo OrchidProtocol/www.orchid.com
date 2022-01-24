@@ -9,6 +9,7 @@ import BlogPosts from '../components/common/BlogPosts';
 import { Link } from 'gatsby';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
+import { css } from '@emotion/react';
 
 class Page extends React.Component {
 
@@ -25,8 +26,71 @@ class Page extends React.Component {
 					<body className="index-page" />
 				</Helmet>
 
-				<section className="home-hero">
-					<div className="home-hero__content">
+				<section css={css`
+					position: relative;
+					padding: 2rem 0;
+					padding-top: 3rem;
+					@media (min-width: 768px) {
+						margin-top: 1rem;
+						padding: 5rem 0;
+					}
+					display: flex;
+					justify-content: center;
+					flex-wrap: wrap;
+					@media (max-width: 870px) {
+						align-items: center;
+						flex-direction: column-reverse;
+						padding-top: 9vw;
+					}
+				`}>
+					<div css={css`
+						position: relative;
+						z-index: 1;
+						text-align: center;
+						max-width: 40rem;
+						width: 95%;
+						font-size: 1.5rem;
+						& > h3 {
+							color: inherit;
+							&.color-primary {
+								color: var(--orc-purple);
+							}
+							line-height: 1;
+							& > span {
+								display: inline-block;
+								margin: 0.5em 0.2em;
+								@media (max-width: 870px) {
+									margin: 0.2em 0;
+								}
+							}
+						}
+						small,
+						button {
+							font-family: var(--font-family-heading);
+						}
+						small {
+							font-weight: 400;
+							font-size: 70%;
+						}
+						button {
+							margin-top: 1rem;
+							padding: 0.4rem 3rem;
+						}
+						img {
+							max-width: 100%;
+							width: 616px;
+							@media screen and (min-width: (870px + 1px)) {
+								margin-bottom: 1rem;
+							}
+							@media (max-width: 870px) {
+								max-width: 300px;
+							}
+						}
+						font-weight: 200;
+						@media (min-width: 60rem) {
+							margin-right: 5rem;
+						}
+					`}>
 						<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
 						<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
 						<h3 className="color-primary"><span>A new model of VPN.</span></h3>
@@ -36,7 +100,33 @@ class Page extends React.Component {
 						<br />
 						<small>(starting at just $1)</small>
 					</div>
-					<div className="home-hero__picture">
+					<div css={css`
+						width: 400px;
+						max-width: 60%;
+						@media (max-width: 870px) {
+							max-width: 30%;
+							margin-bottom: 1rem;
+						}
+						position: relative;
+						& > img {
+							position: relative;
+							z-index: 1;
+						}
+						&::before {
+							content: "";
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							background-image: url(/img/index/wavy-lines-01.svg);
+							background-size: contain;
+							background-repeat: no-repeat;
+							background-position: center;
+							transform: scale(2.5) translateX(5%) translateY(5%);
+							pointer-events: none;
+						}
+					`}>
 						<StaticImage loading="eager" src="../../static/img/index/phone.png" placeholder="none" width={491} height={765} alt="" />
 					</div>
 				</section>
@@ -182,10 +272,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" className="footer">
 									<div className="logo">
-										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" />
+										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" loading="lazy" />
 									</div>
 									<div className="uppercase">TECHCRUNCH</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -194,10 +284,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
 									<div className="logo">
-										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" />
+										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" loading="lazy" />
 									</div>
 									<div className="uppercase">CNET</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 							<div className="press-card">
@@ -207,10 +297,10 @@ class Page extends React.Component {
 								</p>
 								<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" className="footer">
 									<div className="logo">
-										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" />
+										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" loading="lazy" />
 									</div>
 									<div className="uppercase">COINDESK</div>
-									<img src="/img/index/read-more-arrow.svg" alt="" />
+									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 								</a>
 							</div>
 						</div>
@@ -226,7 +316,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" alt="" />
+										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 								</div>
@@ -237,7 +327,7 @@ class Page extends React.Component {
 								</p>
 								<div className="footer">
 									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" alt="" />
+										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 									</div>
 									<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 								</div>

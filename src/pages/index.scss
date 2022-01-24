@@ -37,105 +37,6 @@
 		margin-bottom: 0;
 	}
 
-	.home-hero {
-		position: relative;
-		padding: 2rem 0;
-		padding-top: 3rem;
-		@media (min-width: 768px) {
-			margin-top: 1rem;
-			padding: 5rem 0;
-		}
-		display: flex;
-		justify-content: center;
-		flex-wrap: wrap;
-		@include mobile {
-			align-items: center;
-			flex-direction: column-reverse;
-			padding-top: 9vw;
-		}
-	}
-
-	.home-hero__content {
-		position: relative;
-		z-index: 1;
-		text-align: center;
-		max-width: 40rem;
-		width: 95%;
-		font-size: 1.5rem;
-		& > h3 {
-			color: inherit;
-			&.color-primary {
-				color: $orc-purple;
-			}
-			line-height: 1;
-			& > span {
-				display: inline-block;
-				margin: 0.5em 0.2em;
-				@include mobile {
-					margin: 0.2em 0;
-				}
-			}
-		}
-		small,
-		button {
-			font-family: $orc-tf-primary;
-		}
-		small {
-			font-weight: 400;
-			font-size: 70%;
-		}
-		button {
-			margin-top: 1rem;
-			padding: 0.4rem 3rem;
-		}
-		img {
-			max-width: 100%;
-			width: 616px;
-			@include not-mobile {
-				margin-bottom: 1rem;
-			}
-			@include mobile {
-				max-width: 300px;
-			}
-		}
-		font-weight: 200;
-		@media (min-width: 60rem) {
-			margin-right: 5rem;
-		}
-	}
-	.home-hero__picture {
-		width: 400px;
-		max-width: 60%;
-		@include mobile {
-			max-width: 30%;
-			margin-bottom: 1rem;
-		}
-		position: relative;
-		& > img {
-			position: relative;
-			z-index: 1;
-		}
-		&::before {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-			background-image: url(/img/index/wavy-lines-01.svg);
-			background-size: contain;
-			background-repeat: no-repeat;
-			background-position: center;
-			transform: scale(2.5) translateX(5%) translateY(5%);
-			pointer-events: none;
-		}
-	}
-	.home-hero__image {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
-
 	$wavy-width: 40%;
 	.wavy-shared {
 		position: relative;
@@ -570,76 +471,12 @@
 		}
 	}
 
-	.card-list {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2rem;
-		justify-content: center;
-
-		@include vert-splash {
-			grid-template-columns: repeat(1, minmax(200px, 600px));
-		}
-	}
-
-	.card {
-		background: #fff;
-		border-radius: 12px;
-		display: flex;
-		flex-direction: column;
-
-		h3 {
-			font-size: $size-body-md;
-			margin: 1rem 0;
-
-			@include mobile {
-				font-size: $size-body-md-mobile;
-			}
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		p {
-			flex: 1;
-		}
-	}
-
-	.card__image > img {
-		height: 16vw;
-		max-height: 234px;
-
-		@include vert-splash {
-			height: auto;
-		}
-	}
-
-	.card__text {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-	}
-
-	// TODO: Do we still need this stuff and can we move it elsewhere?
-
-	.card__text {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-	}
-
 	.background-white {
 		background: white;
 	}
 
 	.background-gray {
 		background: #f0f0f0;
-	}
-
-	.background-faint-gray {
-		background-color: $bkgd-faint-gray;
 	}
 
 	ul.phantom-list {
