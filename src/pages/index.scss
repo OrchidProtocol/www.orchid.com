@@ -471,76 +471,12 @@
 		}
 	}
 
-	.card-list {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 2rem;
-		justify-content: center;
-
-		@include vert-splash {
-			grid-template-columns: repeat(1, minmax(200px, 600px));
-		}
-	}
-
-	.card {
-		background: #fff;
-		border-radius: 12px;
-		display: flex;
-		flex-direction: column;
-
-		h3 {
-			font-size: $size-body-md;
-			margin: 1rem 0;
-
-			@include mobile {
-				font-size: $size-body-md-mobile;
-			}
-		}
-
-		img {
-			max-width: 100%;
-		}
-
-		p {
-			flex: 1;
-		}
-	}
-
-	.card__image > img {
-		height: 16vw;
-		max-height: 234px;
-
-		@include vert-splash {
-			height: auto;
-		}
-	}
-
-	.card__text {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-	}
-
-	// TODO: Do we still need this stuff and can we move it elsewhere?
-
-	.card__text {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		flex: 1;
-	}
-
 	.background-white {
 		background: white;
 	}
 
 	.background-gray {
 		background: #f0f0f0;
-	}
-
-	.background-faint-gray {
-		background-color: $bkgd-faint-gray;
 	}
 
 	ul.phantom-list {
