@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet'
 import { css } from '@emotion/react'
 import { Link } from 'gatsby'
 import Navbar from './Navbar.js'
-import '../../scss/styles.scss';
 import './Layout.scss'
 
 class TemplateWrapper extends React.Component {
