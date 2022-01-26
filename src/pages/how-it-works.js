@@ -35,11 +35,8 @@ function Page(props) {
 					<img src="/img/how-it-works/satellite-2.svg" alt="" />
 				</div>
 				<div className="content section-narrow vpad-xl hpad-wide center-text">
-					<h2 className="gap-bot-thin">
-						<Trans>
-							<span>Core components</span>
-							<span>of the Orchid network</span>
-						</Trans>
+					<h2 className="gap-bot-thin" style="max-width: 22rem;margin-left: auto;margin-right: auto;">
+						<Trans>Core components of the Orchid network</Trans>
 					</h2>
 					<div className="buttons">
 						<a className="button" href="/how-it-works#app"><Trans>The Orchid app</Trans></a>
@@ -191,14 +188,14 @@ function Page(props) {
 								<p><Trans><b>Purchased accounts:</b><br /> Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native FIAT currency. “Orchid credits” are special accounts where the cryptocurrency, xDai, must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared among devices.</Trans></p>
 								<p><Trans>What is being purchased when a user buys Orchid credits?</Trans></p>
 								<ul>
-									<li><Trans><b>Balance</b> Based on the chosen pricing tier, the user will receive an Orchid account funded with an amount of xDai, subject to market fluctuations, which can be used to purchase bandwidth on the Orchid network.</Trans></li>
-									<li><Trans><b>Deposit</b> A portion of the purchase is invested as a deposit to the generated account. This is required for participation in the Orchid network as both a deterrent of client malfeasance as well as a determinant for ticket sizing in our nanopayment system.</Trans></li>
-									<li><Trans><b>Gas</b> Transactions made on the blockchain require small payments and a portion of the credits purchase goes to covering these costs for creating the Orchid account.</Trans></li>
-									<li><Trans><b>Fees</b> Transaction fees for accepting FIAT.</Trans></li>
+									<li><b><Trans>Balance</Trans></b> <Trans>Based on the chosen pricing tier, the user will receive an Orchid account funded with an amount of xDai, subject to market fluctuations, which can be used to purchase bandwidth on the Orchid network.</Trans></li>
+									<li><b><Trans>Deposit</Trans></b> <Trans>A portion of the purchase is invested as a deposit to the generated account. This is required for participation in the Orchid network as both a deterrent of client malfeasance as well as a determinant for ticket sizing in our nanopayment system.</Trans></li>
+									<li><b><Trans>Gas</Trans></b> <Trans>Transactions made on the blockchain require small payments and a portion of the credits purchase goes to covering these costs for creating the Orchid account.</Trans></li>
+									<li><b><Trans>Fees</Trans></b> <Trans>Transaction fees for accepting FIAT.</Trans></li>
 								</ul>
 								<p><Trans>The purpose of Orchid credits is to open up use of the Orchid network to a wider range of users, such as users who aren’t familiar with cryptocurrency or don’t want to deal with the intricacies themselves. No personal information is accessed or stored by Orchid during the purchase process or in the use of the Orchid app.</Trans></p>
-								<p><Trans><b>Crypto-native accounts:</b><br /> Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at <a href="https://account.orchid.com/">account.orchid.com</a>. The Orchid Account dapp can only be accessed using a web3 browser such as <a href="https://metamask.io/">Metamask</a>, and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing <a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency">efficiency</a> experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.</Trans></p>
-								<p><Trans><Link to="/join">Learn more about creating an Orchid account.</Link></Trans></p>
+								<p><b><Trans>Crypto-native accounts:</Trans></b><br /> <Trans>Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at <a href="https://account.orchid.com/">account.orchid.com</a>. The Orchid Account dapp can only be accessed using a web3 browser such as <a href="https://metamask.io/">Metamask</a>, and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing <a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency">efficiency</a> experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.</Trans></p>
+								<p><Link to="/join"><Trans>Learn more about creating an Orchid account.</Trans></Link></p>
 							</div>
 						</div>
 						<div className="explainer__image">

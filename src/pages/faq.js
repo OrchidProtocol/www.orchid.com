@@ -26,7 +26,7 @@ function Page(props) {
 				<div className="splash-circuit-grid section-med">
 					<div className="splash-circuit-grid-item hpad-thin vpad-wide">
 						<h1>
-							<span i18nKey="@@FaqHero__Title">FAQ</span>
+							<span>FAQ</span>
 						</h1>
 					</div>
 				</div>
@@ -37,7 +37,7 @@ function Page(props) {
 						<ul className="faq-nav">
 							<li className="faq-sidebar-category-active">
 								<a className="faq-category-heading-sidebar faq-link" href="/faq#about-orchid">
-									<span i18nKey="@@Faq-AboutOrchid__Title">
+									<span>
 										About Orchid
 									</span>
 								</a>
