@@ -1,3 +1,4 @@
+import { graphql } from 'gatsby';
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -6,9 +7,10 @@ import styled from '@emotion/styled';
 import { StaticImage } from "gatsby-plugin-image";
 
 import NewsletterSignupCore from '../components/newsletter-signup-core';
-import { Link } from 'gatsby-i18n';
+import { Link } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
-import withI18next from '../components/withI18next';
+import { useTranslation } from 'gatsby-plugin-react-i18next';
+
 
 const Container = styled.div`
 	display: flex;
@@ -292,12 +294,10 @@ const SpeakerLink = styled.a`
 	}
 `;
 
-class Page extends React.Component {
-
-	render() {
-		const { t } = this.props;
-		return (
-			<div css={css`
+function Page(props) {
+	const { t } = useTranslation();
+	return (
+		<div css={css`
 				--purple: #EB53E2;
 				--teal: #60EBFF;
 				background: #000000;
@@ -305,15 +305,15 @@ class Page extends React.Component {
 				min-height: 100vh;
 			`}>
 
-				<WebsiteMeta
-					title="Priv8 | Orchid"
-					description="Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders."
-					image="/img/priv8/social.jpg"
-					location={this.props.location}
-				/>
-				<Helmet>
-					<body className="priv8-page" />
-					<style>{`
+			<WebsiteMeta
+				title="Priv8 | Orchid"
+				description="Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders."
+				image="/img/priv8/social.jpg"
+				location={props.location}
+			/>
+			<Helmet>
+				<body className="priv8-page" />
+				<style>{`
 						@font-face {
 							font-family: 'BonvenoCF';
 							font-style: normal;
@@ -413,12 +413,12 @@ class Page extends React.Component {
 							}
 						}
 					`}</style>
-				</Helmet>
-				<div css={css`
+			</Helmet>
+			<div css={css`
 					position: absolute;
 					width: 100%;
 				`}>
-					<div css={css`
+				<div css={css`
 						display: flex;
 						justify-content: space-between;
 						align-items: center;
@@ -427,20 +427,20 @@ class Page extends React.Component {
 						margin: auto;
 						font-size: 16px;
 					`}>
-						<a className="inline-block" href="/">
-							<img css={css`
+					<a className="inline-block" href="/">
+						<img css={css`
 								@media (max-width: 760px) {
 									display: none;
 								}
 							`} width="93" height="24" src="/img/shared/orchid-logo-text-white.svg" alt="Home" className="no-mb" />
-							<img css={css`
+						<img css={css`
 								display: none;
 								@media (max-width: 760px) {
 									display: block;
 								}
 							`} width="35" height="30" src="/img/shared/orchid-logo-small-white.svg" alt="Home" className="mb" />
-						</a>
-						<div css={css`
+					</a>
+					<div css={css`
 							& > a, & > span {
 								text-decoration: none;
 								color: #FFFFFF;
@@ -463,26 +463,26 @@ class Page extends React.Component {
 								}
 							}
 						`}>
-							<AddToCalendar />
-							<a href="mailto:priv8@orchid.com" className="no-mb">
-								CONTACT
-							</a>
-							<Button href="#register">
-								Register
-							</Button>
-						</div>
+						<AddToCalendar />
+						<a href="mailto:priv8@orchid.com" className="no-mb">
+							CONTACT
+						</a>
+						<Button href="#register">
+							Register
+						</Button>
 					</div>
 				</div>
+			</div>
 
-				<div css={css`
+			<div css={css`
 					background: black;
 					background: linear-gradient(212.29deg, #000000 24.75%, #3B146A 93.66%);
 					padding-top: 4rem; /*Making space for the navbar*/
 				`}>
-					<Container css={css`
+				<Container css={css`
 						position: relative;
 					`}>
-						<div css={css`
+					<div css={css`
 							max-width: 100%;
 							width: 680px;
 							margin-right: 2rem;
@@ -495,46 +495,46 @@ class Page extends React.Component {
 								margin-right: auto;
 							}
 						`}>
-							<img src="/img/priv8/priv8-logo.svg" width="480" height="197" alt="Priv8 Online" />
-							<Speaker role="mobile" />
-							<BarContainer css={css`
+						<img src="/img/priv8/priv8-logo.svg" width="480" height="197" alt="Priv8 Online" />
+						<Speaker role="mobile" />
+						<BarContainer css={css`
 								max-width: 480px;
 								@media (max-width: 1200px) {
 									max-width: unset;
 								}
 								text-align: left;
 							`}>
-								<h3 css={css`font-size: 28px;`}>Thank you for attending!</h3>
-							</BarContainer>
-							<p css={css`
+							<h3 css={css`font-size: 28px;`}>Thank you for attending!</h3>
+						</BarContainer>
+						<p css={css`
 								text-align: left;
 							`}>
-								Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a>. Featuring Glenn Greenwald.
-							</p>
+							Priv8 is the premier global forum dedicated to the future of digital privacy, brought to you by <Link to="/">Orchid</Link> and <a href="https://handshake.org/">Handshake</a>. Featuring Glenn Greenwald.
+						</p>
 
-							<p css={css`
+						<p css={css`
 								margin-top: 1em;
 							`}>
-								Watch the recorded livestream on <a href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" title="YouTube">YouTube</a>!
-							</p>
+							Watch the recorded livestream on <a href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" title="YouTube">YouTube</a>!
+						</p>
 
-							<p css={css`
+						<p css={css`
 								margin-top: 1em;
 								& > a {
 									display: inline-block;
 									margin: 0 0.25em
 								}
 							`}>
-								<a className="inline-block" href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
-									<img src="/img/priv8/social/youtube.svg" alt="YouTube" width="32" height="32" />
-								</a>
-								<a className="inline-block" href="https://twitter.com/i/broadcasts/1mrxmaXvBkzxy" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
-									<img src="/img/priv8/social/twitter.svg" alt="Twitter" width="32" height="32" />
-								</a>
-							</p>
-						</div>
+							<a className="inline-block" href="https://www.youtube.com/watch?v=m6eqn72dqzs" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+								<img src="/img/priv8/social/youtube.svg" alt="YouTube" width="32" height="32" />
+							</a>
+							<a className="inline-block" href="https://twitter.com/i/broadcasts/1mrxmaXvBkzxy" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+								<img src="/img/priv8/social/twitter.svg" alt="Twitter" width="32" height="32" />
+							</a>
+						</p>
+					</div>
 
-						<div css={css`
+					<div css={css`
 							color: var(--teal);
 							position: absolute;
 							bottom: 2rem;
@@ -556,17 +556,17 @@ class Page extends React.Component {
 								position: static;
 							}
 						`}>
-							Presented by<br />
-							<Link to="/"><img src="/img/priv8/orchid-logo-teal.svg" width="110" height="28" alt="Orchid" /></Link>
-							<span>&amp;</span>
-							<a href="https://handshake.org/"><img src="/img/priv8/handshake-logo-teal.svg" width="85" height="27" alt="Orchid" /></a>
-						</div>
+						Presented by<br />
+						<Link to="/"><img src="/img/priv8/orchid-logo-teal.svg" width="110" height="28" alt="Orchid" /></Link>
+						<span>&amp;</span>
+						<a href="https://handshake.org/"><img src="/img/priv8/handshake-logo-teal.svg" width="85" height="27" alt="Orchid" /></a>
+					</div>
 
-						<Speaker role="desktop" />
-					</Container>
-				</div>
+					<Speaker role="desktop" />
+				</Container>
+			</div>
 
-				<div css={css`
+			<div css={css`
 					position: relative;
 					background: var(--purple);
 					text-align: right;
@@ -598,38 +598,38 @@ class Page extends React.Component {
 						}
 					}
 				`}>
-					<Container css={css`
+				<Container css={css`
 						@media (max-width: 1200px) {
 							padding: 4rem 2rem;
 						}
 					`}>
-						<div css={css`
+					<div css={css`
 							transform: translateY(5.5rem);
 							@media (max-width: 1200px) {
 								display: none;
 							}
 						`}>
-							<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
-						</div>
-						<div css={css`
+						<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
+					</div>
+					<div css={css`
 							padding: 4rem 0;
 							@media (max-width: 1200px) {
 								padding: 0;
 							}
 							flex-grow: 1;
 						`}>
-							<h2>THE FUTURE OF PRIVACY</h2>
-							<div css={css`
+						<h2>THE FUTURE OF PRIVACY</h2>
+						<div css={css`
 								max-width: 640px;
 								margin-left: auto;
 							`}>
-								<p>
-									Corporations and governments continue to test the limits of individual privacy, while powerful technology companies hold greater sway over global commerce, public policy, and media narratives than ever before.
-								</p>
-								<p>
-									Priv8 brings together leading thinkers across a series of keynotes and panels covering a full spectrum of privacy-related topics. Speakers will discuss issues including the rising tide of financial surveillance, privacy in public policy, corporate control over individual information, and tension between individual rights and public health.
-								</p>
-								<div css={css`
+							<p>
+								Corporations and governments continue to test the limits of individual privacy, while powerful technology companies hold greater sway over global commerce, public policy, and media narratives than ever before.
+							</p>
+							<p>
+								Priv8 brings together leading thinkers across a series of keynotes and panels covering a full spectrum of privacy-related topics. Speakers will discuss issues including the rising tide of financial surveillance, privacy in public policy, corporate control over individual information, and tension between individual rights and public health.
+							</p>
+							<div css={css`
 									margin-top: 2rem;
 									a {
 										margin: 1rem 0 1rem 1rem;
@@ -648,19 +648,19 @@ class Page extends React.Component {
 										}
 									}
 								`}>
-									<a href="https://twitter.com/OrchidProtocol">
-										<img src="/img/shared/social-twitter-white.svg" width="30" height="30" alt="Share on Twitter" />
-									</a>
-									<a href="https://www.t.me/OrchidOfficial">
-										<img src="/img/shared/social-telegram-white.svg" width="30" height="30" alt="Share on Telegram" />
-									</a>
-									<a href="https://www.facebook.com/OrchidProtocol">
-										<img src="/img/shared/social-facebook-white.svg" width="30" height="30" alt="Share on Facebook" />
-									</a>
-								</div>
+								<a href="https://twitter.com/OrchidProtocol">
+									<img src="/img/shared/social-twitter-white.svg" width="30" height="30" alt="Share on Twitter" />
+								</a>
+								<a href="https://www.t.me/OrchidOfficial">
+									<img src="/img/shared/social-telegram-white.svg" width="30" height="30" alt="Share on Telegram" />
+								</a>
+								<a href="https://www.facebook.com/OrchidProtocol">
+									<img src="/img/shared/social-facebook-white.svg" width="30" height="30" alt="Share on Facebook" />
+								</a>
 							</div>
+						</div>
 
-							<div css={css`
+						<div css={css`
 								display: none;
 								position: relative;
 								@media (max-width: 1200px) {
@@ -674,36 +674,36 @@ class Page extends React.Component {
 									height: auto;
 								}
 							`}>
-								<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
-							</div>
+							<img src="/img/priv8/section-shapes.svg" width="385" height="687" alt="" />
 						</div>
-					</Container>
-				</div>
+					</div>
+				</Container>
+			</div>
 
-				<div css={css`
+			<div css={css`
 					background: black;
 					text-align: center;
 				`} name="register" id="register">
-					<Container>
-						<div>
-							<div css={css`
+				<Container>
+					<div>
+						<div css={css`
 								max-width: 700px;
 								margin: auto;
 								@media (min-width: 1200px) {
 									margin-top: 2rem;
 								}
 							`}>
-								<h2>STAY IN TOUCH</h2>
-								<p>
-									Sign up for the monthyl Orchid Onlooker newsletter and stay in the loop about the next Priv8, Orchid news, privacy topics and more!
-								</p>
-							</div>
-							<NewsletterSignupCore t={t} priv8={true} />
+							<h2>STAY IN TOUCH</h2>
+							<p>
+								Sign up for the monthyl Orchid Onlooker newsletter and stay in the loop about the next Priv8, Orchid news, privacy topics and more!
+							</p>
 						</div>
-					</Container>
-				</div>
+						<NewsletterSignupCore t={t} priv8={true} />
+					</div>
+				</Container>
+			</div>
 
-				<div css={css`
+			<div css={css`
 					position: relative;
 					background: var(--purple);
 					text-align: right;
@@ -712,8 +712,8 @@ class Page extends React.Component {
 						color: #000000;
 					}
 				`} id="speakers">
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 100%;
 							width: 960px;
@@ -726,210 +726,210 @@ class Page extends React.Component {
 								padding-top: 0rem;
 							}
 						`}>
-							<h2>SPEAKERS</h2>
-							<br />
-							<br />
-							<hr />
-						</div>
-					</Container>
-					<Container>
-						<div css={css`
+						<h2>SPEAKERS</h2>
+						<br />
+						<br />
+						<hr />
+					</div>
+				</Container>
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 100%;
 							width: 960px;
 						`}>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/GlennGreenwald.png" alt="Glenn Greenwald" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>GLENN GREENWALD</h3>
-								<b>Former Constitutional Lawyer &amp; Pulitzer-Prize Winning Journalist</b>
-								<p>
-									Glenn Greenwald is a former constitutional lawyer, a Pulitzer-Prize winning journalist, and the author of several bestsellers, including No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014) and Securing Democracy: My Fight for Press Freedom and Justice in Bolsonaro's Brazil (2021). Acclaimed as one of the 25 most influential political commentators by The Atlantic, one of America’s top 10 opinion writers by Newsweek, and one of the Top 100 Global Thinkers for 2013 by Foreign Policy, Greenwald is a former constitutional and civil rights litigator. He was a columnist for The Guardian until October 2013 and a co-founder and former editor at The Intercept, which he left in 2020. He is now an independent journalist writing at Substack. He has won numerous awards for his reporting, including the 2013 Polk Award for national security reporting, the top 2013 investigative journalism award from the Online News Association, the Esso Award for Excellence in Reporting (the Brazilian equivalent of the Pulitzer Prize), the 2013 Pioneer Award from Electronic Frontier Foundation and the Vladimir Herzog Special Prize in 2019 for his work in the Vaza Jato series. He also received the first annual I. F. Stone Award for Independent Journalism in 2009 and a 2010 Online Journalism Award. In 2013, Greenwald led the Guardian reporting that was awarded the Pulitzer Prize for public service, and his work was featured in the 2014 film Citizenfour, which won the Academy Award for Best Documentary.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/GlennGreenwald.png" alt="Glenn Greenwald" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>GLENN GREENWALD</h3>
+							<b>Former Constitutional Lawyer &amp; Pulitzer-Prize Winning Journalist</b>
+							<p>
+								Glenn Greenwald is a former constitutional lawyer, a Pulitzer-Prize winning journalist, and the author of several bestsellers, including No Place to Hide: Edward Snowden, the NSA, and the U.S. Surveillance State (2014) and Securing Democracy: My Fight for Press Freedom and Justice in Bolsonaro's Brazil (2021). Acclaimed as one of the 25 most influential political commentators by The Atlantic, one of America’s top 10 opinion writers by Newsweek, and one of the Top 100 Global Thinkers for 2013 by Foreign Policy, Greenwald is a former constitutional and civil rights litigator. He was a columnist for The Guardian until October 2013 and a co-founder and former editor at The Intercept, which he left in 2020. He is now an independent journalist writing at Substack. He has won numerous awards for his reporting, including the 2013 Polk Award for national security reporting, the top 2013 investigative journalism award from the Online News Association, the Esso Award for Excellence in Reporting (the Brazilian equivalent of the Pulitzer Prize), the 2013 Pioneer Award from Electronic Frontier Foundation and the Vladimir Herzog Special Prize in 2019 for his work in the Vaza Jato series. He also received the first annual I. F. Stone Award for Independent Journalism in 2009 and a 2010 Online Journalism Award. In 2013, Greenwald led the Guardian reporting that was awarded the Pulitzer Prize for public service, and his work was featured in the 2014 film Citizenfour, which won the Academy Award for Best Documentary.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/StevenWaterhouse.png" alt="Steven Waterhouse (Seven)" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>DR. STEVEN WATERHOUSE (SEVEN)</h3>
-								<b>CEO &amp; Co-founder, Orchid Labs</b>
-								<p>
-									Dr. Steven Waterhouse (“Seven”) is the CEO and Co-founder of Orchid, the blockchain-powered VPN marketplace. Waterhouse previously served as a partner at blockchain-focused venture Pantera Capital from its inception in 2013 through July 2016 and worked at Fortress Investment Group, where he founded the Digital Currency Fund with Mike Novogratz and Pete Briger.
-									<br />
-									<br />
-									Seven was a Co-founder and CTO of RPX (Nasdaq: RPXC) and served as Director of the Honeycomb product group at Sun Microsystems, one of the first computer and software technology companies to evolve during the dot com era. He holds a PhD in Engineering from the University of Cambridge.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/StevenWaterhouse.png" alt="Steven Waterhouse (Seven)" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>DR. STEVEN WATERHOUSE (SEVEN)</h3>
+							<b>CEO &amp; Co-founder, Orchid Labs</b>
+							<p>
+								Dr. Steven Waterhouse (“Seven”) is the CEO and Co-founder of Orchid, the blockchain-powered VPN marketplace. Waterhouse previously served as a partner at blockchain-focused venture Pantera Capital from its inception in 2013 through July 2016 and worked at Fortress Investment Group, where he founded the Digital Currency Fund with Mike Novogratz and Pete Briger.
+								<br />
+								<br />
+								Seven was a Co-founder and CTO of RPX (Nasdaq: RPXC) and served as Director of the Honeycomb product group at Sun Microsystems, one of the first computer and software technology companies to evolve during the dot com era. He holds a PhD in Engineering from the University of Cambridge.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/JoshuaGoldbard.png" alt="Joshua Goldbard" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>JOSHUA GOLDBARD</h3>
-								<b>CEO &amp; Founder, MobileCoin</b>
-								<p>
-									Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/JoshuaGoldbard.png" alt="Joshua Goldbard" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>JOSHUA GOLDBARD</h3>
+							<b>CEO &amp; Founder, MobileCoin</b>
+							<p>
+								Joshua Goldbard is founder and CEO at MobileCoin, a cryptocurrency technology company, and a founding partner at Crypto Lotus, a cryptocurrency-focused hedge fund. He really likes sound amplification devices.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/AriPaul.png" alt="Ari Paul" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>ARI PAUL</h3>
-								<b>CIO &amp; Co-founder, BlockTower</b>
-								<p>
-									Ari Paul is co-founder and CIO of BlockTower Capital. He was previously a portfolio manager for the University of Chicago's $8 billion endowment, and a derivatives market maker and proprietary trader for Susquehanna International Group (SIG). He earned a BA in political science from the University of Pennsylvania, and an MBA from the University of Chicago with concentrations in economics, entrepreneurship, strategic management, and econometrics &amp; statistics. Mr. Paul is also a CFA charterholder.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/AriPaul.png" alt="Ari Paul" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>ARI PAUL</h3>
+							<b>CIO &amp; Co-founder, BlockTower</b>
+							<p>
+								Ari Paul is co-founder and CIO of BlockTower Capital. He was previously a portfolio manager for the University of Chicago's $8 billion endowment, and a derivatives market maker and proprietary trader for Susquehanna International Group (SIG). He earned a BA in political science from the University of Pennsylvania, and an MBA from the University of Chicago with concentrations in economics, entrepreneurship, strategic management, and econometrics &amp; statistics. Mr. Paul is also a CFA charterholder.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/ZachVorhies.png" alt="Zach Vorhies" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>ZACH VORHIES</h3>
-								<b>Google Whistleblower</b>
-								<p>
-									Zach Vorhies was a Senior Software Engineer at YouTube/Google for 8.5 years. He has been involved with the following software products: Google Earth, YouTube for PS4, Xbox, Nintendo Switch.
-									<br />
-									<br />
-									While working at YouTube, he learned that Google was censoring "fake news". and investigated further into the company, only to find that not only had Google defined "fake news" to mean actual events that had happened, but also had created an artificial intelligence system to classify all available data to Google Search. The reason Google wanted to classify data was so that this could be used by their artificial intelligence system to re-erank the entire internet according to Google's corporate cultural values.
-									<br />
-									<br />
-									In June 2019, he resigned from Google. He took with him 950+ pages of Google's internal documents and delivered them to the Department of Justic, and through Project Veritas, to inform the public and Google's extensive censorship system.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/ZachVorhies.png" alt="Zach Vorhies" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>ZACH VORHIES</h3>
+							<b>Google Whistleblower</b>
+							<p>
+								Zach Vorhies was a Senior Software Engineer at YouTube/Google for 8.5 years. He has been involved with the following software products: Google Earth, YouTube for PS4, Xbox, Nintendo Switch.
+								<br />
+								<br />
+								While working at YouTube, he learned that Google was censoring "fake news". and investigated further into the company, only to find that not only had Google defined "fake news" to mean actual events that had happened, but also had created an artificial intelligence system to classify all available data to Google Search. The reason Google wanted to classify data was so that this could be used by their artificial intelligence system to re-erank the entire internet according to Google's corporate cultural values.
+								<br />
+								<br />
+								In June 2019, he resigned from Google. He took with him 950+ pages of Google's internal documents and delivered them to the Department of Justic, and through Project Veritas, to inform the public and Google's extensive censorship system.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
 
-							<SpeakerItem>
-								<SpeakerImage>
-									<StaticImage src="../../static/img/priv8/speakers/BenPowers.png" alt="Benjamin Powers" width={160} height={160} loading="lazy" objectFit="contain" />
-								</SpeakerImage>
-								<h3>BENJAMIN POWERS</h3>
-								<b>Technology Journalist</b>
-								<p>
-									Ben is the technology reporter at a media start-up launching in early 2022. The DC-based outlet is focused on connecting stories together through collaborative reporting on today's biggest topics such as climate change, global security, misinformation and economic challenges.
-								</p>
-								<SpeakerLink href="#speakers">
-									<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
-								</SpeakerLink>
-							</SpeakerItem>
-						</div>
-					</Container>
-				</div>
+						<SpeakerItem>
+							<SpeakerImage>
+								<StaticImage src="../../static/img/priv8/speakers/BenPowers.png" alt="Benjamin Powers" width={160} height={160} loading="lazy" objectFit="contain" />
+							</SpeakerImage>
+							<h3>BENJAMIN POWERS</h3>
+							<b>Technology Journalist</b>
+							<p>
+								Ben is the technology reporter at a media start-up launching in early 2022. The DC-based outlet is focused on connecting stories together through collaborative reporting on today's biggest topics such as climate change, global security, misinformation and economic challenges.
+							</p>
+							<SpeakerLink href="#speakers">
+								<img src="/img/priv8/go-up.svg" width="40" height="40" alt="Return to the top of the list." />
+							</SpeakerLink>
+						</SpeakerItem>
+					</div>
+				</Container>
+			</div>
 
-				<Container css={css`
+			<Container css={css`
 					@media (max-width: 1200px) {
 						padding: 0rem;
 					}
 				`}>
-				</Container>
+			</Container>
 
-				<div css={css`
+			<div css={css`
 					background: #000000;
 				`}>
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							width: 430px;
 							max-width: 100%;
 						`}>
-							<h2>PREVIOUSLY @ PRIV8</h2>
-							<p>
-								The first Priv8 Virtual Privacy Summit took place in March 2021. That event featured renowned whistleblower Edward Snowden, who left the audience with this exhortation: “Don’t stay safe, stay free.” He was joined by Taiwan’s Audrey Tang and the Electronic Frontier Foundation’s Cindy Cohn, among many others. Read the <a href="https://blog.orchid.com/highlights-from-priv8-orchids-virtual-privacy-summit/">full recap</a> or <a href="https://www.youtube.com/watch?v=Y_mm01n4T9c&list=PLKT-Ti431yd5vlZkMV3cvOnxBeLl1w0jp">rewatch the live stream.</a>
-							</p>
-						</div>
-						<div css={css`
+						<h2>PREVIOUSLY @ PRIV8</h2>
+						<p>
+							The first Priv8 Virtual Privacy Summit took place in March 2021. That event featured renowned whistleblower Edward Snowden, who left the audience with this exhortation: “Don’t stay safe, stay free.” He was joined by Taiwan’s Audrey Tang and the Electronic Frontier Foundation’s Cindy Cohn, among many others. Read the <a href="https://blog.orchid.com/highlights-from-priv8-orchids-virtual-privacy-summit/">full recap</a> or <a href="https://www.youtube.com/watch?v=Y_mm01n4T9c&list=PLKT-Ti431yd5vlZkMV3cvOnxBeLl1w0jp">rewatch the live stream.</a>
+						</p>
+					</div>
+					<div css={css`
 							width: 100%;
 						`}>
-							<PreviousSpeakerRow data-size="big">
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Snowden.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Snowden.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Snowden.png" width="488" height="488" alt="Edward Snowden" />
-									</picture>
-									<p>Edward Snowden</p>
-								</div>
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Audrey.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Audrey.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Audrey.png" width="488" height="488" alt="Audrey Tang" />
-									</picture>
-									<p>Audrey Tang</p>
-								</div>
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Zooko.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Zooko.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Zooko.png" width="488" height="488" alt="Zooko Wilcox" />
-									</picture>
-									<p>Zooko Wilcox</p>
-								</div>
-							</PreviousSpeakerRow>
-							<PreviousSpeakerRow data-size="small">
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Cindy.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Cindy.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Cindy.png" width="286" height="286" alt="Cindy Cohn" />
-									</picture>
-									<p>Cindy Cohn</p>
-								</div>
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Vinay.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Vinay.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Vinay.png" width="286" height="286" alt="Vinay Gupta" />
-									</picture>
-									<p>Vinay Gupta</p>
-								</div>
-								<div>
-									<picture>
-										<source srcSet="/img/priv8/previous/Brian.avif" type="image/avif" />
-										<source srcSet="/img/priv8/previous/Brian.webp" type="image/webp" />
-										<img src="/img/priv8/previous/Brian.png" width="286" height="286" alt="Brian Behlendorf" />
-									</picture>
-									<p>Brian Behlendorf</p>
-								</div>
-							</PreviousSpeakerRow>
-						</div>
-					</Container>
+						<PreviousSpeakerRow data-size="big">
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Snowden.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Snowden.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Snowden.png" width="488" height="488" alt="Edward Snowden" />
+								</picture>
+								<p>Edward Snowden</p>
+							</div>
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Audrey.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Audrey.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Audrey.png" width="488" height="488" alt="Audrey Tang" />
+								</picture>
+								<p>Audrey Tang</p>
+							</div>
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Zooko.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Zooko.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Zooko.png" width="488" height="488" alt="Zooko Wilcox" />
+								</picture>
+								<p>Zooko Wilcox</p>
+							</div>
+						</PreviousSpeakerRow>
+						<PreviousSpeakerRow data-size="small">
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Cindy.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Cindy.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Cindy.png" width="286" height="286" alt="Cindy Cohn" />
+								</picture>
+								<p>Cindy Cohn</p>
+							</div>
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Vinay.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Vinay.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Vinay.png" width="286" height="286" alt="Vinay Gupta" />
+								</picture>
+								<p>Vinay Gupta</p>
+							</div>
+							<div>
+								<picture>
+									<source srcSet="/img/priv8/previous/Brian.avif" type="image/avif" />
+									<source srcSet="/img/priv8/previous/Brian.webp" type="image/webp" />
+									<img src="/img/priv8/previous/Brian.png" width="286" height="286" alt="Brian Behlendorf" />
+								</picture>
+								<p>Brian Behlendorf</p>
+							</div>
+						</PreviousSpeakerRow>
+					</div>
+				</Container>
 
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 100%;
 							width: 960px;
 						`}>
-							<hr />
-						</div>
-					</Container>
+						<hr />
+					</div>
+				</Container>
 
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 100%;
 							width: 960px;
 						`}>
-							<h4 css={css`
+						<h4 css={css`
 								font-family: 'BonvenoCF', sans-serif !important;
 								font-weight: 400;
 								font-size: 1.5rem;
@@ -937,7 +937,7 @@ class Page extends React.Component {
 									font-size: 1rem;
 								}
 							`}>PRIV8 ONLINE IS</h4>
-							<h3 css={css`
+						<h3 css={css`
 								font-family: 'BonvenoCF', sans-serif !important;
 								font-weight: 400;
 								color: var(--purple) !important;
@@ -946,7 +946,7 @@ class Page extends React.Component {
 									font-size: 1.65rem;
 								}
 							`}>SPONSORED BY</h3>
-							<div css={css`
+						<div css={css`
 								display: flex;
 								justify-content: space-around;
 								align-items: center;
@@ -964,58 +964,72 @@ class Page extends React.Component {
 									}
 								}
 							`}>
-								<a href="https://bobwallet.io/" target="_blank" rel="noreferrer">
-									<img src="/img/priv8/sponsors/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
-								</a>
-								<a href="https://www.decentralizedinter.net/" target="_blank" rel="noreferrer">
-									<StaticImage src="../../static/img/priv8/sponsors/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
-								</a>
-								<a href="https://rivet.cloud/" target="_blank" rel="noreferrer">
-									<img src="/img/priv8/sponsors/Rivet.svg" width={309} height={47} alt="Rivet" />
-								</a>
-								<a href="https://akash.network/" target="_blank" rel="noreferrer">
-									<img src="/img/priv8/sponsors/Akash.svg" width={309} height={47} alt="Akash" />
-								</a>
-							</div>
+							<a href="https://bobwallet.io/" target="_blank" rel="noreferrer">
+								<img src="/img/priv8/sponsors/bobwallet.svg" width={309} height={47} alt="Bob Wallet" />
+							</a>
+							<a href="https://www.decentralizedinter.net/" target="_blank" rel="noreferrer">
+								<StaticImage src="../../static/img/priv8/sponsors/dweb.png" width={1264} height={322} alt="dWeb Foundation" />
+							</a>
+							<a href="https://rivet.cloud/" target="_blank" rel="noreferrer">
+								<img src="/img/priv8/sponsors/Rivet.svg" width={309} height={47} alt="Rivet" />
+							</a>
+							<a href="https://akash.network/" target="_blank" rel="noreferrer">
+								<img src="/img/priv8/sponsors/Akash.svg" width={309} height={47} alt="Akash" />
+							</a>
 						</div>
-					</Container>
+					</div>
+				</Container>
 
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 100%;
 							width: 960px;
 						`}>
-							<hr />
-						</div>
-					</Container>
+						<hr />
+					</div>
+				</Container>
 
-					<Container>
-						<div css={css`
+				<Container>
+					<div css={css`
 							text-align: center;
 							max-width: 960px;
 						`}>
-							<p>
-								For any inquiries, please contact <a href="mailto:priv8@orchid.com">priv8@orchid.com</a>
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div>
-							<p>
-								<Button href="#register" color="purple">Register</Button>
-							</p>
-						</div>
-					</Container>
-					<Container>
-						<div>
-							<p>© {new Date().getFullYear()} Orchid Labs, Inc.</p>
-						</div>
-					</Container>
-				</div>
-
+						<p>
+							For any inquiries, please contact <a href="mailto:priv8@orchid.com">priv8@orchid.com</a>
+						</p>
+					</div>
+				</Container>
+				<Container>
+					<div>
+						<p>
+							<Button href="#register" color="purple">Register</Button>
+						</p>
+					</div>
+				</Container>
+				<Container>
+					<div>
+						<p>© {new Date().getFullYear()} Orchid Labs, Inc.</p>
+					</div>
+				</Container>
 			</div>
-		)
-	}
+
+		</div>
+	)
 }
-export default withI18next({ ns: "common" })(Page)
+
+export default Page
+
+export const query = graphql`
+	query ($language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
+	}
+`;

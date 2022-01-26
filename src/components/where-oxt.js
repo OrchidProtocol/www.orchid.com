@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby-i18n';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import './where-oxt.scss'
-import { Trans } from 'react-i18next'
 
 const Component = () => (
 	<div className="where-oxt">
@@ -42,4 +41,4 @@ const Component = () => (
 	</div>
 )
 
-export default Component
+export default Component;

@@ -1,10 +1,9 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { css } from '@emotion/react'
-import { Link } from 'gatsby-i18n'
 import Navbar from './Navbar.js'
 import './Layout.scss'
-import { Trans } from 'react-i18next'
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 
 class TemplateWrapper extends React.Component {
 

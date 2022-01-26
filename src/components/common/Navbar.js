@@ -1,8 +1,7 @@
 import React from 'react'
-import { Link } from 'gatsby-i18n';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Trans } from 'react-i18next';
 
 const NavbarWrapper = styled.div`
 	z-index: 999;

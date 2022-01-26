@@ -64,6 +64,13 @@ module.exports = {
 				name: 'images',
 			},
 		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/locales`,
+				name: `locale`
+			}
+		},
 		`gatsby-plugin-emotion`,
 		{
 			resolve: 'gatsby-transformer-remark',
@@ -96,23 +103,18 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-react-i18next`,
 			options: {
-				localeJsonSourceName: 'common',
 				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'pt-BR', 'ru', 'tr', 'zh'],
 				defaultLanguage: 'en',
+				defaultNS: 'common',
 				siteUrl: 'http://localhost:8000/',
 				i18nextOptions: {
+					lowerCaseLng: true,
 					interpolation: {
 						escapeValue: false
 					},
 					keySeparator: false,
 					nsSeparator: false
-				},
-				pages: [
-					{
-						matchPath: '/:lang?/:path*',
-						getLanguageFromPath: true,
-					},
-				]
+				}
 			}
 		},
 		{

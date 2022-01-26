@@ -1,5 +1,5 @@
 import React from 'react'
-import { Trans } from 'react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 class Component extends React.Component {
 	constructor(props) {
