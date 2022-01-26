@@ -85,19 +85,19 @@ class Component extends React.Component {
 		return (
 			<form className={"contact-form-container" + (this.state.js ? " js" : "") + (this.state.in_progress ? " in_progress" : "")} onSubmit={this.submit.bind(this)} ref={this.setFormRef.bind(this)}>
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="name" placeholder={t("@@ContactForm__NamePlaceholder")} required />
+					<input type="text" name="name" placeholder={t("Your Name")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="email" name="email" placeholder={t("@@ContactForm__EmailPlaceholder")} required />
+					<input type="email" name="email" placeholder={t("Your Email")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="subject" placeholder={t("@@ContactForm__SubjectPlaceholder")} required />
+					<input type="text" name="subject" placeholder={t("Subject")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<textarea name="message" placeholder={t("@@ContactForm__MessagePlaceholder")} required />
+					<textarea name="message" placeholder={t("Enter your message...")} required />
 				</div>
 
 				<div className="contact-form-error contact-form-message">

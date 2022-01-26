@@ -50,7 +50,7 @@ function Page(props) {
 					<div className="contact-sidebar">
 						<div className="contact-page-card">
 							<span className="contact-page-card-header color-gray">
-								<Trans i18nKey="@@ContactOffice__Title">
+								<Trans>
 									Mailing Address
 								</Trans>
 							</span>
@@ -72,9 +72,7 @@ function Page(props) {
 									<a className="phantom-a" href={t("mailto:contact@orchid.com")}>
 										<img alt="Email" src="/img/contact/icon-email.svg" width="20" height="20" />
 										<span>
-											<Trans i18nKey="@@ContactSidebar__Email">
-												contact@orchid.com
-											</Trans>
+											contact@orchid.com
 										</span>
 									</a>
 								</li>
@@ -82,9 +80,7 @@ function Page(props) {
 									<a className="phantom-a" href={t("https://twitter.com/OrchidProtocol")}>
 										<img alt="Twitter" src="/img/contact/icon-twitter.svg" width="20" height="20" />
 										<span>
-											<Trans i18nKey="@@ContactSidebar__Twitter">
-												@OrchidProtocol
-											</Trans>
+											@OrchidProtocol
 										</span>
 									</a>
 								</li>
@@ -92,9 +88,7 @@ function Page(props) {
 									<a className="phantom-a" href={t("https://discord.gg/GDbxmjxX9F")}>
 										<img alt="Discord" src="/img/contact/icon-discord.svg" width="20" height="20" />
 										<span>
-											<Trans i18nKey="@@ContactSidebar__Discord">
-												Discord Server
-											</Trans>
+											Discord Server
 										</span>
 									</a>
 								</li>
@@ -102,9 +96,7 @@ function Page(props) {
 									<a className="phantom-a" href={t("https://www.t.me/OrchidOfficial")}>
 										<img alt="Telegram" src="/img/contact/icon-telegram.svg" width="20" height="20" />
 										<span>
-											<Trans i18nKey="@@ContactSidebar__Telegram">
-												@OrchidOfficial
-											</Trans>
+											@OrchidOfficial
 										</span>
 									</a>
 								</li>
@@ -112,9 +104,7 @@ function Page(props) {
 									<a className="phantom-a" href={t("https://www.facebook.com/OrchidProtocol")}>
 										<img alt="Facebook" src="/img/contact/icon-facebook.svg" width="20" height="20" />
 										<span>
-											<Trans i18nKey="@@ContactSidebar__Facebook">
-												OrchidProtocol
-											</Trans>
+											OrchidProtocol
 										</span>
 									</a>
 								</li>

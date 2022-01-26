@@ -24,23 +24,23 @@ function Page(props) {
 				<div className="hero__container">
 					<div className="hero__text">
 						<h1>
-							<Trans i18nKey="@@AmbassadorHeroTitle">
+							<Trans>
 								Orchid<br /> Privacy<br /> Guardians
 							</Trans>
 						</h1>
 						<p>
-							<Trans i18nKey="@@AmbassadorHeroParagraph">
+							<Trans>
 								An Orchid Privacy Guardian is an advocate for digital freedom, educates the community about how to use privacy tools online, and promotes security best practices. Privacy Guardians run meetups, manage and grow online communities, and facilitate discussions about Internet censorship, decentralizing technologies, and other important topics.
 							</Trans>
 						</p>
 						<h2>
-							<Trans i18nKey="@@AmbassadorHeroSubtitle">
+							<Trans>
 								Ready to get involved?
 							</Trans>
 						</h2>
 						<a href="https://orchid.brandchamp.io/apply">
 							<button className="btn btn-primary btn-lg">
-								<Trans i18nKey="@@ApplyHere">
+								<Trans>
 									Apply Now!
 								</Trans>
 							</button>
@@ -74,7 +74,7 @@ function Page(props) {
 			<div className="educator__wrapper">
 				<div className="educator__container vpad-xl hpad-thin">
 					<h2>
-						<Trans i18nKey="@@AmbassadorBecomeEducator">
+						<Trans>
 							Become a privacy educator
 						</Trans>
 					</h2>
@@ -83,12 +83,12 @@ function Page(props) {
 						<img alt="" className="educator__card-hand" src="/img/ambassador/hand_1.png" />
 						<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
 						<h4>
-							<Trans i18nKey="@@AmbassadorBuildCommunity">
+							<Trans>
 								Build Community
 							</Trans>
 						</h4>
 						<p>
-							<Trans i18nKey="@@AmbassadorBuildCommunityDescription">
+							<Trans>
 								Launch an official Orchid community using the appropriate platform for your region. The Orchid team is here to help you start and grow it, host fun events and giveaways, and offer early access and content.
 							</Trans>
 						</p>
@@ -97,12 +97,12 @@ function Page(props) {
 						<img alt="" className="educator__card-hand" src="/img/ambassador/hand_2.png" />
 						<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
 						<h4>
-							<Trans i18nKey="@@AmbassadorHostMeetups">
+							<Trans>
 								Host Meetups
 							</Trans>
 						</h4>
 						<p>
-							<Trans i18nKey="@@AmbassadorHostMeetupsDescription">
+							<Trans>
 								Run a monthly meetup focused on digital freedom, technologies being used to protect privacy, and other relevant topics of interest to your community and region. Build relationships and invite like-minded projects, companies, and individuals to participate.
 							</Trans>
 						</p>
@@ -111,12 +111,12 @@ function Page(props) {
 						<img alt="" className="educator__card-hand" src="/img/ambassador/hand_3.png" />
 						<img alt="" className="educator__card-circle" src="/img/ambassador/circle.svg" />
 						<h4>
-							<Trans i18nKey="@@AmbassadorEducateAndHelp">
+							<Trans>
 								Educate<br /> &amp; Help
 							</Trans>
 						</h4>
 						<p>
-							<Trans i18nKey="@@AmbassadorEducateAndHelpDescription">
+							<Trans>
 								Teach people in your community about digital freedom, privacy and security. Help them take control of their data by educating them to use new tools and technology that increase their freedom. Share and amplify content coming from Orchid.
 							</Trans>
 						</p>
@@ -151,13 +151,13 @@ function Page(props) {
 				</div>
 
 				<h3>
-					<Trans i18nKey="@@AmbassadorWhoCanApply">
+					<Trans>
 						Who can apply?
 					</Trans>
 				</h3>
 				<br />
 				<ul>
-					<Trans i18nKey="@@AmbassadorWhoCanApplyList">
+					<Trans>
 						<li>
 							<b>People who believe in the importance of digital freedom and privacy.</b>
 						</li>
@@ -181,40 +181,34 @@ function Page(props) {
 				<div className="benefits__container">
 
 					<h3>
-						<Trans i18nKey="@@AmbassadorBenefits">
+						<Trans>
 							Privacy Guardian Benefits
 						</Trans>
 					</h3>
 
 					<div className="benefits__row">
 						<div className="benefits__column">
-							<Trans i18nKey="@@AmbassadorBenefitsGetConnected">
-								<img src="/img/ambassador/bunny-connected.svg" alt="" />
-								<b>Get connected</b>
-								<p>
-									Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.
-								</p>
-							</Trans>
+							<img src="/img/ambassador/bunny-connected.svg" alt="" />
+							<b><Trans>Get connected</Trans></b>
+							<p>
+								<Trans>Find like-minded individuals, trade tips and tricks to protect digital privacy, discuss problems and how to overcome them together.</Trans>
+							</p>
 						</div>
 
 						<div className="benefits__column">
-							<Trans i18nKey="@@AmbassadorBenefitsEarnRewards">
-								<img src="/img/ambassador/bunny-rewards.svg" alt="" />
-								<b>Earn rewards</b>
-								<p>
-									Earn rewards for participating and educating others.
-								</p>
-							</Trans>
+							<img src="/img/ambassador/bunny-rewards.svg" alt="" />
+							<b><Trans>Earn rewards</Trans></b>
+							<p>
+								<Trans>Earn rewards for participating and educating others.</Trans>
+							</p>
 						</div>
 
 						<div className="benefits__column">
-							<Trans i18nKey="@@AmbassadorBenefitsHelpFriends">
-								<img src="/img/ambassador/bunny-help.svg" alt="" />
-								<b>Help friends &amp; family</b>
-								<p>
-									Teach them how to protect themselves online with privacy tools like VPNs.
-								</p>
-							</Trans>
+							<img src="/img/ambassador/bunny-help.svg" alt="" />
+							<b><Trans>Help friends &amp; family</Trans></b>
+							<p>
+								<Trans>Teach them how to protect themselves online with privacy tools like VPNs.</Trans>
+							</p>
 						</div>
 					</div>
 
@@ -228,13 +222,13 @@ function Page(props) {
 					<img alt="" className="benefits__bunny" src="/img/ambassador/bunny-mega.png" />
 
 					<h4>
-						<Trans i18nKey="@@AmbassadorApplyToday">
+						<Trans>
 							Apply today to become an Orchid Privacy Guardian!
 						</Trans>
 					</h4>
 					<a href="https://orchid.brandchamp.io/apply" rel="noreferrer">
 						<button className="btn-primary" style={{ width: "100%", maxWidth: "330px" }}>
-							<Trans i18nKey="@@AmbassadorLetsGo">Let’s go!</Trans>
+							<Trans>Let’s go!</Trans>
 						</button>
 					</a>
 				</div>

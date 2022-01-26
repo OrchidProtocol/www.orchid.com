@@ -117,7 +117,7 @@ function Page(props) {
 						<div className="download-images__container">
 							<img src="/img/download/phone-2.png" width="432" height="796" className="download-images__device" alt="" />
 							<img src="/img/download/circle.svg" width="387" height="387" className="download-images__circle" alt="" />
-							<h4><Trans i18nKey="@@DownloadiOS__Title">iOS</Trans></h4>
+							<h4><Trans>iOS</Trans></h4>
 							<a href={iOSLink} data-appstorelink>
 								<img alt="iOS" src="/img/shared/ios.png" style={{ margin: "0.65rem auto", maxWidth: "160px" }} />
 							</a>
@@ -142,7 +142,7 @@ function Page(props) {
 					</div>
 				</div>
 				<div className="hero__content center">
-					<p><Trans>- OR -</Trans></p>
+					<p>- <Trans>OR</Trans> -</p>
 					<p><Link to="/join"><Trans>Create a custom Orchid Account with your own crypto.</Trans></Link></p>
 				</div>
 			</section>

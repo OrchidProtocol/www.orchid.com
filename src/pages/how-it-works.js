@@ -36,7 +36,7 @@ function Page(props) {
 				</div>
 				<div className="content section-narrow vpad-xl hpad-wide center-text">
 					<h2 className="gap-bot-thin">
-						<Trans i18nKey="@@HowIndex__Title">
+						<Trans>
 							<span>Core components</span>
 							<span>of the Orchid network</span>
 						</Trans>
@@ -282,13 +282,9 @@ function Page(props) {
 						<div className="explainer__text">
 							<h3><Trans>Nanopayments</Trans></h3>
 							<div>
-								<Trans i18nKey="@@HowNano__Content">
-									<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput.</p>
-									<p>This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients pay Node operators cryptocurrency-backed “tickets” for proxy bandwidth. The system is designed to lower the transaction fees on small payments by amortizing transaction fees across many transactions and even across multiple parties.</p>
-									<p>For more information, see our recent article:
-										<a href="https://blog.orchid.com/introducing-nanopayments/">Introducing Nanopayments</a>
-									</p>
-								</Trans>
+								<p><Trans>Orchid uses a new probabilistic nanopayment system to scale payment throughput.</Trans></p>
+								<p><Trans>This nanopayment system is the foundation of the Orchid peer to peer bandwidth marketplace where clients pay Node operators cryptocurrency-backed “tickets” for proxy bandwidth. The system is designed to lower the transaction fees on small payments by amortizing transaction fees across many transactions and even across multiple parties.</Trans></p>
+								<p><Trans>For more information, see our recent article: <a href="https://blog.orchid.com/introducing-nanopayments/">Introducing Nanopayments</a></Trans></p>
 							</div>
 						</div>
 						<div className="explainer__image">

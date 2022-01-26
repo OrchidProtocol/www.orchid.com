@@ -114,7 +114,7 @@ class TemplateWrapper extends React.Component {
 								</nav>
 								<section>
 									<header className="no-mobile make-me-purple">
-										<strong><Trans i18nKey="@@NavigationFollowUs">Follow Us</Trans></strong>
+										<strong><Trans>Follow Us</Trans></strong>
 									</header>
 									<ul id="ft-social-list" className="phantom-list">
 										<li>

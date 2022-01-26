@@ -28,12 +28,12 @@ function Page(props) {
 						<div className="hero-flex__container">
 							<h1 className="oxt-hero__title">OXT</h1>
 							<h2 className="oxt-hero__subtitle">
-								<Trans i18nKey="@@OXTHeroSubtitle">
+								<Trans>
 									The staking asset <br /> for the $35B* VPN market
 								</Trans>
 							</h2>
 							<p>
-								<Trans i18nKey="@@OXTHeroParagraph">
+								<Trans>
 									The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid's native ERC-20 digital asset that powers and secures a new approach to VPN service and providers compete for user payment flow by staking OXT. As more bandwidth is purchased on the Orchid network node providers can add and stake OXT in order to capture additional bandwidth sales on the network.
 								</Trans>
 							</p>
@@ -76,7 +76,7 @@ function Page(props) {
 					<div>
 						<h2 className="color-primary gap-bot-thin"><Trans>Supply</Trans></h2>
 						<p>
-							<Trans i18nKey="@@OXTSupplyDescription">
+							<Trans>
 								As noted in the Orchid network whitepaper, the total supply of OXT is fixed at one billion units. All information about the supply of OXT and addresses where OXT is located are publicly available on the Ethereum blockchain.
 							</Trans>
 						</p>
@@ -104,7 +104,7 @@ function Page(props) {
 						</h4>
 						<br />
 						<p>
-							<Trans i18nKey="@@OXTTreasuryDescription">
+							<Trans>
 								A maximum 1 billion OXT were eligible for creation, all of which has been created. As of December 9 2019, Orchid Labs, Inc. held 400,579,272 OXT in its treasury that has been subject to its treasury policy. Pursuant to Orchid Labs, Inc.'s treasury policy, it is anticipated that as to 400,579,272 OXT of the treasury OXT, starting as of December 9, 2019, no more than 10 million OXT per month will be available to be released from the treasury.
 							</Trans>
 						</p>
@@ -112,52 +112,50 @@ function Page(props) {
 						<br />
 					</div>
 					<div>
-						<Trans i18nKey="@@OXTSupplyParagraph2">
-							<h4 className="grey-heading small">Audit of Smart Contract for use with OXT Release Schedule</h4>
+						<h4 className="grey-heading small"><Trans>Audit of Smart Contract for use with OXT Release Schedule</Trans></h4>
+						<br />
+						<p>
+							<Trans>Audit of Smart Contract On March 21, 2020, <a className="oxt-special-link" href="https://diligence.consensys.net/">Consensys Diligence</a> published a technical audit on Orchid’s batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here:</Trans>
 							<br />
-							<p>
-								Audit of Smart Contract On March 21, 2020, <a className="oxt-special-link" href="https://diligence.consensys.net/">Consensys Diligence</a> published a technical audit on Orchid’s batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here:
-								<br />
-								<a href="https://diligence.consensys.net/audits/2020/01/orchid-multisend/">
-									https://diligence.consensys.net/audits/2020/01/orchid-multisend/
-								</a>
-							</p>
+							<a href="https://diligence.consensys.net/audits/2020/01/orchid-multisend/">
+								https://diligence.consensys.net/audits/2020/01/orchid-multisend/
+							</a>
+						</p>
 
-							<p>
-								For purposes of the audit, Orchid posted all the information needed to perform the audit in a technical repository on GitHub that can be found here:
-								<br />
-								<a href="https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor">
-									https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor
-								</a>
+						<p>
+							<Trans>For purposes of the audit, Orchid posted all the information needed to perform the audit in a technical repository on GitHub that can be found here:</Trans>
+							<br />
+							<a href="https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor">
+								https://github.com/OrchidTechnologies/orchid/tree/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor
+							</a>
 
-							</p>
-							<p>
-								Anyone can re-perform the smart contracts audit using the same information provided to Consensys Diligence.
-							</p>
+						</p>
+						<p>
+							<Trans>Anyone can re-perform the smart contracts audit using the same information provided to Consensys Diligence.</Trans>
+						</p>
 
-							<p>
-								The information posted to GitHub and provided to Consensys Diligence includes the OXT token contract, found here:
-								<br />
-								<a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol">
-									https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol
-								</a>
-							</p>
+						<p>
+							<Trans>The information posted to GitHub and provided to Consensys Diligence includes the OXT token contract, found here:</Trans>
+							<br />
+							<a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol">
+								https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tok-ethereum/token.sol
+							</a>
+						</p>
 
-							<p>
-								It also includes the OXT release schedule, found here:
-								<br />
-								<a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf">
-									https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf
-								</a>
-							</p>
+						<p>
+							<Trans>It also includes the OXT release schedule, found here:</Trans>
+							<br />
+							<a href="https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf">
+								https://github.com/OrchidTechnologies/orchid/blob/3187d0716f16eeb59552d2c103c02efd5a530a76/tst-ethereum/distributor/release_schedule.pdf
+							</a>
+						</p>
 
-							<p>
-								In December 2020 Consensys Diligence published a technical audit on a new version of Orchid's batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/">https://consensys.net/diligence/audits/2020/12/orchid-multisend/</a>
-							</p>
-							<p>
-								A link to the Additional Release Schedule that was also subject to Consensys Audit: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf">https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf</a>
-							</p>
-						</Trans>
+						<p>
+							<Trans>In December 2020 Consensys Diligence published a technical audit on a new version of Orchid's batch send smart contract, which may be used for multiple disbursements of ether and ERC20 tokens in a single transaction. The audit report is public and can be found here: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/">https://consensys.net/diligence/audits/2020/12/orchid-multisend/</a></Trans>
+						</p>
+						<p>
+							<Trans>A link to the Additional Release Schedule that was also subject to Consensys Audit: <a href="https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf">https://consensys.net/diligence/audits/2020/12/orchid-multisend/Deferred-Comp-Release-Schedule.pdf</a></Trans>
+						</p>
 					</div>
 				</section>
 			</div>
@@ -169,7 +167,7 @@ function Page(props) {
 						<div className="tokenomics-column">
 							<h2 className="color-primary vgap-xs"><Trans>Staking</Trans></h2>
 							<p>
-								<Trans i18nKey="@@OXTStakingDescription">
+								<Trans>
 									Orchid's staking directory randomly connects users with providers based on the amount of OXT staked; providers that stake more are connected to more users. The more bandwidth that is purchased by users on the Orchid network, the more incentive that node providers have to stake OXT in order to sell bandwidth and meet the demand.
 								</Trans>
 							</p>
@@ -178,14 +176,12 @@ function Page(props) {
 					</div>
 					<br />
 					<div>
-						<Trans i18nKey="@@OXTStakingBody">
-							<p>
-								Users need an Orchid account that holds funds to pay for VPN service. Orchid accounts can use OXT on Ethereum, or be homed on other EVM-compatible chains. The Orchid nanopayment system is chain-agnostic. While providers can receive payments from multiple blockchains, staking is always and only done with OXT on Ethereum.
-							</p>
-							<p>
-								<Link to="/how-it-works">Read more about provider staking here.</Link>
-							</p>
-						</Trans>
+						<p>
+							<Trans>Users need an Orchid account that holds funds to pay for VPN service. Orchid accounts can use OXT on Ethereum, or be homed on other EVM-compatible chains. The Orchid nanopayment system is chain-agnostic. While providers can receive payments from multiple blockchains, staking is always and only done with OXT on Ethereum.</Trans>
+						</p>
+						<p>
+							<Link to="/how-it-works"><Trans>Read more about provider staking here.</Trans></Link>
+						</p>
 					</div>
 				</section>
 			</div>
@@ -195,28 +191,24 @@ function Page(props) {
 					<h2 className="color-primary center-text gap-bot-thin"><Trans>OXT Audits</Trans></h2>
 					<div className="oxt-audits__columns center-text">
 						<div>
-							<Trans i18nKey="@@OXTAudits__Consensys">
-								<img width="160" height="138" src="/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
-								<h4>Consensys Diligence</h4>
-								<a className="oxt-special-link" href="https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/">
-									Read the full public ConsenSys Diligence Audit here.
-								</a>
-							</Trans>
+							<img width="160" height="138" src="/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
+							<h4>Consensys Diligence</h4>
+							<a className="oxt-special-link" href="https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/">
+								<Trans>Read the full public ConsenSys Diligence Audit here.</Trans>
+							</a>
 						</div>
 						<div>
-							<Trans i18nKey="@@OXTAudits__Certora">
-								<img width="160" height="131" className="certora-logo" src="/img/oxt/CertoraLogo@3x.png" alt="Certora" />
-								<h4>Certora</h4>
-								<a className="oxt-special-link" href="/img/oxt/certora.pdf">
-									Read the full public Certora Audit here.
-								</a>
-							</Trans>
+							<img width="160" height="131" className="certora-logo" src="/img/oxt/CertoraLogo@3x.png" alt="Certora" />
+							<h4>Certora</h4>
+							<a className="oxt-special-link" href="/img/oxt/certora.pdf">
+								<Trans>Read the full public Certora Audit here.</Trans>
+							</a>
 						</div>
 					</div>
 					<br />
 					<br />
 					<p className="center-text">
-						<Trans i18nKey="OXTAuditsFootnote">
+						<Trans>
 							*Virtual Private Network (VPN) Market Report, <a href="https://www.gminsights.com/industry-analysis/virtual-private-network-vpn-market">Global Market Insights</a>
 						</Trans>
 					</p>

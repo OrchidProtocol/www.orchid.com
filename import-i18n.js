@@ -21,7 +21,11 @@ const locales = [
 ]
 
 const baseJSON = {};
-baseJSON.common = JSON.parse(fs.readFileSync('./extractedTranslations/en/common.json', 'utf8'))
+try {
+	baseJSON.common = JSON.parse(fs.readFileSync('./extractedTranslations/en/common.json', 'utf8'))
+} catch (e) {
+	console.log('No common.json found');
+}
 
 function cleanup(str) {
 	return str.replace(/\t/g, '').replace(/\n/g, ' ').replace(/\s+/g, ' ').trim();
@@ -48,7 +52,7 @@ async function run() {
 		try {
 			JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
 		} catch (e) { }
-		const missingKeys = {};
+		const legacyMissingKeys = {};
 		const units = $('body').find('trans-unit');
 		for (let index = 0; index < units.length; index++) {
 			const unit = units[index];
@@ -69,13 +73,24 @@ async function run() {
 				} else if (searchForNoHTML(source, baseJSON.common) !== null) {
 					localeKeys[searchForNoHTML(source, baseJSON.common)] = target;
 				} else {
-					missingKeys[id] = target;
+					legacyMissingKeys[id] = target;
 				}
 			}
 		}
 		fs.writeFileSync(`./src/locales/${locales[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));
-		fs.writeFileSync(`./src/locales/${locales[i]}/missing.json`, JSON.stringify(missingKeys, null, 4));
+		fs.writeFileSync(`./src/locales/${locales[i]}/legacy-not-imported.json`, JSON.stringify(legacyMissingKeys, null, 4));
 
+		const modernMissingKeys = {};
+		for (const key in baseJSON.common) {
+			if (Object.hasOwnProperty.call(baseJSON.common, key)) {
+				const text = baseJSON.common[key];
+				if (!localeKeys[key]) {
+					modernMissingKeys[key] = text;
+				}
+			}
+		}
+		console.log(`${locales[i]} missing: ${Object.keys(modernMissingKeys).length}`, modernMissingKeys);
+		fs.writeFileSync(`./src/locales/${locales[i]}/not-translated.json`, JSON.stringify(modernMissingKeys, null, 4));
 	}
 }
 

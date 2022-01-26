@@ -33,14 +33,14 @@ function Page(props) {
 			</Helmet>
 			<div className="background-white">
 				<section id="top">
-					<h3><Trans i18nKey="@@DownloadHero__Title">Get the Orchid app</Trans></h3>
+					<h3><Trans>Get the Orchid app</Trans></h3>
 				</section>
 			</div>
 
 			<div id="instructions" className="background-white">
 				<section className="download-images__wrapper">
 					<div className="download-images__container">
-						<h4><Trans i18nKey="@@DownloadAndroid__Title">Android</Trans></h4>
+						<h4><Trans>Android</Trans></h4>
 						<StaticImage src="../../static/img/download/phone-android.png" width={450} height={913} className="download-images__device" alt="" />
 						<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 						<ul className="download-instructions__list" style={{ listStyle: "none" }}>
@@ -50,9 +50,7 @@ function Page(props) {
 								</a>
 							</li>
 							<li>
-								<Trans>
-									- OR -
-								</Trans>
+								- <Trans>OR</Trans> -
 							</li>
 							<li>
 								<Trans>
@@ -67,7 +65,7 @@ function Page(props) {
 						</ul>
 					</div>
 					<div className="download-images__container">
-						<h4><Trans i18nKey="@@DownloadMacOS__Title">macOS</Trans></h4>
+						<h4><Trans>macOS</Trans></h4>
 						<StaticImage src="../../static/img/download/laptop.png" width={800} height={418} className="download-images__device mac" alt="" />
 						<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 						<ul className="download-instructions__list">
@@ -79,7 +77,7 @@ function Page(props) {
 						</ul>
 					</div>
 					<div className="download-images__container">
-						<h4><Trans i18nKey="@@DownloadiOS__Title">iOS</Trans></h4>
+						<h4><Trans>iOS</Trans></h4>
 						<StaticImage src="../../static/img/download/phone-ios.png" width={450} height={913} className="download-images__device" alt="" />
 						<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
 						<ul className="download-instructions__list">

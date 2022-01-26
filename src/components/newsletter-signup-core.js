@@ -127,7 +127,7 @@ class Component extends React.Component {
 						{!this.props.priv8 ? <div className="gap-bot-thin">
 							<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
 								<input name="consent" required type="checkbox" />
-								<span><Trans i18nKey="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</Trans></span>
+								<span><Trans>I consent to receiving further instructions at the email address I submitted above.</Trans></span>
 							</label>
 						</div> : <></>}
 						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")}>

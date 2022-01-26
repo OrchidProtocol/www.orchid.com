@@ -25,7 +25,7 @@ function Page(props) {
 					<section className="about-company__splash">
 						<div className="about-company__splash-text-container">
 							<h1>
-								<Trans i18nKey="@@AboutCompanyHero__Title">
+								<Trans>
 									We can <br /> reclaim the <br /> internet <br />
 									<span className="big">
 										together
@@ -44,7 +44,7 @@ function Page(props) {
 					<div className="about-company__centered-text-floating-circle-2"></div>
 
 					<section className="about-company__centered-text-section section-med hpad-wide vpad-wide center-text">
-						<Trans i18nKey="@@AboutCompany__Description">
+						<Trans>
 							<h2>Why build a privacy network?</h2>
 							<p>
 								The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and explore that world freely.
@@ -119,9 +119,9 @@ function Page(props) {
 				<div className="bk-lavender">
 					<section className="about-company__team-section hpad-wide vpad-wide">
 						<div className="about-company__team-text">
-							<h2><Trans i18nKey="@@OrchidTeamTitle">The Orchid Team</Trans></h2>
+							<h2><Trans>The Orchid Team</Trans></h2>
 							<p>
-								<Trans i18nKey="@@OrchidTeamDescription">
+								<Trans>
 									Orchid’s founders bring together deep experience in the open source software community (BASH Shell, GNU Finger), technology management (RPX IPO), blockchain investment (Bitstamp, Pantera Capital), jailbroken app package management (Cydia) and security (Wells Fargo’s 1st Online Banking employee, Ethereum core security team).
 								</Trans>
 							</p>
@@ -134,7 +134,7 @@ function Page(props) {
 									Dr.Steven Waterhouse
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_CoFounderCEO">
+									<Trans>
 										Co-Founder / CEO
 									</Trans>
 								</p>
@@ -146,7 +146,7 @@ function Page(props) {
 									Jay Freeman
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_CoFounderCTO">
+									<Trans>
 										Co-Founder / CTO
 									</Trans>
 								</p>
@@ -158,7 +158,7 @@ function Page(props) {
 									Brian J.Fox
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_CoFounder">
+									<Trans>
 										Co-Founder
 									</Trans>
 								</p>
@@ -170,7 +170,7 @@ function Page(props) {
 									Gustav Simonsson
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_CoFounderAdvisor">
+									<Trans>
 										Co-Founder / Advisor
 									</Trans>
 								</p>
@@ -187,7 +187,7 @@ function Page(props) {
 									Alex Kehaya
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_BusinessDevelopment">
+									<Trans>
 										Business Development
 									</Trans>
 								</p>
@@ -199,7 +199,7 @@ function Page(props) {
 									Derek Silva
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Community">
+									<Trans>
 										Community
 									</Trans>
 								</p>
@@ -211,7 +211,7 @@ function Page(props) {
 									Paula Kanin
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Community">
+									<Trans>
 										Community
 									</Trans>
 								</p>
@@ -223,7 +223,7 @@ function Page(props) {
 									Shawnee Nova
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Community">
+									<Trans>
 										Community
 									</Trans>
 								</p>
@@ -235,7 +235,7 @@ function Page(props) {
 									Chad Harper
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Design">
+									<Trans>
 										Design
 									</Trans>
 								</p>
@@ -247,7 +247,7 @@ function Page(props) {
 									Saskia Essex
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Design">
+									<Trans>
 										Design
 									</Trans>
 								</p>
@@ -259,7 +259,7 @@ function Page(props) {
 									Thientam Bach
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Design">
+									<Trans>
 										Design
 									</Trans>
 								</p>
@@ -271,7 +271,7 @@ function Page(props) {
 									Alexandra McColgan
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_EA">
+									<Trans>
 										EA
 									</Trans>
 								</p>
@@ -283,7 +283,7 @@ function Page(props) {
 									Michelle Underwood
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_EA">
+									<Trans>
 										EA
 									</Trans>
 								</p>
@@ -295,7 +295,7 @@ function Page(props) {
 									Dan Montgomery
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -307,7 +307,7 @@ function Page(props) {
 									Greg Hazel
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -319,7 +319,7 @@ function Page(props) {
 									Jake Cannell
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -331,7 +331,7 @@ function Page(props) {
 									Jennifer Rodriguez-Miller
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -343,7 +343,7 @@ function Page(props) {
 									Justin Sheek
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -355,7 +355,7 @@ function Page(props) {
 									Anna Bare
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -367,7 +367,7 @@ function Page(props) {
 									Patrick Niemeyer
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Engineering">
+									<Trans>
 										Engineering
 									</Trans>
 								</p>
@@ -379,7 +379,7 @@ function Page(props) {
 									Selina Cheng
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Finance">
+									<Trans>
 										Finance
 									</Trans>
 								</p>
@@ -391,7 +391,7 @@ function Page(props) {
 									Joy Hu
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Finance">
+									<Trans>
 										Finance
 									</Trans>
 								</p>
@@ -403,7 +403,7 @@ function Page(props) {
 									Patrick J.Dietzen
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Finance">
+									<Trans>
 										Finance
 									</Trans>
 								</p>
@@ -415,7 +415,7 @@ function Page(props) {
 									Amanda Gutterman
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Marketing">
+									<Trans>
 										Marketing
 									</Trans>
 								</p>
@@ -427,7 +427,7 @@ function Page(props) {
 									Monica Puchner
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Operations">
+									<Trans>
 										Operations
 									</Trans>
 								</p>
@@ -439,7 +439,7 @@ function Page(props) {
 									Travis Cannell
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Product">
+									<Trans>
 										Product
 									</Trans>
 								</p>
@@ -451,7 +451,7 @@ function Page(props) {
 									Matt Roszak
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Advisor">
+									<Trans>
 										Advisor
 									</Trans>
 								</p>
@@ -463,7 +463,7 @@ function Page(props) {
 									Rich Staropoli
 								</h5>
 								<p>
-									<Trans i18nKey="@@OrchidTeam_Advisor">
+									<Trans>
 										Advisor
 									</Trans>
 								</p>
@@ -476,19 +476,19 @@ function Page(props) {
 				<div>
 					<section className="about-company__corporate-info-section section-med hpad-wide vpad-wide">
 						<div id="corporate-header">
-							<h2><Trans i18nKey="@@AboutCompanyCorporate__Title">Corporate info</Trans></h2>
-							<p><Trans i18nKey="@@AboutCompanyCorporate__Subtitle">Orchid is a Delaware c-corp</Trans></p>
+							<h2><Trans>Corporate info</Trans></h2>
+							<p><Trans>Orchid is a Delaware c-corp</Trans></p>
 						</div>
 						<div id="corporate-address">
 							<address>
-								<Trans i18nKey="@@AboutCompanyCorporate__Address">
+								<Trans>
 									Headquarters: <br />
 									1288 Columbus Ave.#122,<br />
 									San Francisco, CA 94133
 								</Trans>
 							</address>
 							<address>
-								<Trans i18nKey="@@AboutCompanyCorporate__Address2">
+								<Trans>
 									Europe: <br />
 									Skalitzer Str. 85,<br />
 									10997 Berlin, Germany
@@ -498,7 +498,7 @@ function Page(props) {
 						<div className="z-index-1" id="corporate-buttons">
 							<a href="https://www.sec.gov/Archives/edgar/data/1721086/000172108618000001/xslFormDX01/primary_doc.xml" target="_blank" rel="noreferrer">
 								<button className="btn-primary btn-fixed">
-									<Trans i18nKey="@@AboutCompanyCorporate__SECFilingButton">
+									<Trans>
 										SEC Filing
 									</Trans>
 								</button>
@@ -506,7 +506,7 @@ function Page(props) {
 							<br />
 							<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer">
 								<button className="btn-primary btn-fixed">
-									<Trans i18nKey="@@AboutCompanyCorporate__PressKitButton">
+									<Trans>
 										Press Kit
 									</Trans>
 								</button>
