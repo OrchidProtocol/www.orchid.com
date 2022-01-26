@@ -1,3 +1,5 @@
+import './src/scss/styles.scss';
+
 /*
 	Record UTM parameters in localstorage, and pass them to app store links to track which ads and events are effective without using privacy intrusive methods such as cookies.
 

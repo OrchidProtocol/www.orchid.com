@@ -64,18 +64,6 @@
 	}
 }
 
-#ft-pad-a {
-	flex: 1 15rem;
-}
-
-#ft-pad-b {
-	flex: 1 25rem;
-}
-
-#ft-pad-c {
-	flex: 0 1 12rem;
-}
-
 #ft-logo {
 	@include mobile {
 		display: flex;

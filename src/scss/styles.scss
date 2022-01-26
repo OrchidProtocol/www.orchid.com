@@ -56,18 +56,6 @@ body {
 	overflow-x: hidden;
 	font-size: $size-body;
 	line-height: 1.5;
-
-	@include mobile {
-		&.navigation-open {
-			overflow: hidden;
-		}
-	}
-}
-
-app-page-layout {
-	min-height: 100vh;
-	display: flex;
-	flex-direction: column;
 }
 
 .locale-en-US {
@@ -280,44 +268,6 @@ main {
 	}
 }
 
-#splash-image {
-	grid-area: image;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-	max-height: 75vh;
-
-	@include vert-splash {
-		max-height: 50vh;
-	}
-
-	> img {
-		width: 100%;
-		max-height: 100%;
-
-		@include mobile {
-			//width: auto;
-			max-width: 100%;
-		}
-	}
-}
-
-#splash-text {
-	grid-area: text;
-	min-width: 0;
-
-	/* @include size-body-sm; */
-
-	@include not-vert-splash {
-		margin-right: 4rem;
-	}
-
-	@include vert-splash {
-		text-align: center;
-	}
-}
-
 .splash-circuit {
 	padding-top: $pad-thin;
 	display: flex;
@@ -482,16 +432,13 @@ button:not(.phantom-btn) {
 			color: rgba($orc-beige-light, 0.5);
 		}
 	}
-	&.btn-cyan {
-		background: #4fe9ff;
-		color: $orc-purple;
-	}
 
 	&.btn-secondary {
 		background: none;
 		background-color: inherit;
 		border: solid $form-border-w $orc-purple;
-		padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
+		padding: calc(#{$pad-v} - #{$form-border-w})
+			calc(#{$pad-h} - #{$form-border-w});
 		color: $orc-purple;
 
 		&:not(:disabled) {
@@ -514,40 +461,11 @@ button:not(.phantom-btn) {
 	}
 }
 
-.required-star::before {
-	content: "*"; // TODO: find a better character
-	color: $orc-purple;
-	font-size: $size-body;
-	font-weight: 700;
-}
-
-.required-star::after {
-	content: "required fields";
-	color: $orc-gray;
-	font-weight: 700;
-	font-style: italic;
-}
-
-.required-input {
-	display: inline-block;
-	position: relative;
-}
-
-.required-input::after {
-	content: "*"; // TODO: find a better character
-	color: $orc-purple;
-	font-size: $size-body;
-	font-weight: 700;
-	position: absolute;
-	right: 1rem;
-	top: 8.82px; // NB: this is super hacky and arbitrary
-	pointer-events: none;
-}
-
 .input-type-text {
 	$pad-h: 1em;
 	$pad-v: $form-pad-v;
-	padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
+	padding: calc(#{$pad-v} - #{$form-border-w})
+		calc(#{$pad-h} - #{$form-border-w});
 	box-sizing: border-box;
 	width: 100%;
 	background: none;
@@ -617,10 +535,6 @@ input,
 	position: relative;
 }
 
-.pos-absolute {
-	position: absolute;
-}
-
 .overflow-hidden {
 	overflow: hidden;
 }
@@ -634,16 +548,8 @@ input,
 	text-align: center;
 }
 
-.right-text {
-	text-align: right;
-}
-
 .uppercase {
 	text-transform: uppercase;
-}
-
-.max-100 {
-	max-width: 100%;
 }
 
 .phantom-a {
@@ -685,18 +591,6 @@ input,
 
 .section-narrow {
 	max-width: 45rem;
-}
-
-.mini-outset {
-	$outset: 4px;
-	margin: (-$outset);
-	padding: $outset;
-
-	@include mobile {
-		$outset: 2px;
-		margin: (-$outset);
-		padding: $outset;
-	}
 }
 
 .hpad-thin {
@@ -794,14 +688,6 @@ input,
 	}
 }
 
-.pad-bot-wide {
-	padding-bottom: $pad-wide;
-
-	@include mobile {
-		padding-bottom: $pad-wide-mobile;
-	}
-}
-
 .pad-top-wide {
 	padding-top: $pad-wide;
 
@@ -860,10 +746,6 @@ input,
 	color: $orc-rock-gray;
 }
 
-.font-body {
-	font-family: $orc-tf-secondary !important;
-}
-
 // Background colors
 
 .bk-beige-light {
@@ -882,15 +764,6 @@ input,
 	background: $bkgd-white;
 }
 
-.bk-deep-purple {
-	background: $orc-deep-purple;
-	color: $color-bright-white;
-
-	h1 {
-		color: $color-dim-white;
-	}
-}
-
 @include mobile {
 	.no-mobile {
 		display: none;
@@ -907,22 +780,4 @@ h2,
 h3,
 h4 {
 	letter-spacing: 0.035rem;
-}
-
-.checklist {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-
-	& > li {
-		// background: url("/img/shared/check.svg") no-repeat center left;
-		// padding-left: 24px;
-		list-style-image: url("/img/shared/check.svg");
-	}
-}
-
-.no-banner {
-	.notification-bar-container {
-		display: none;
-	}
 }
