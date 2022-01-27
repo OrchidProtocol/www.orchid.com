@@ -121,6 +121,12 @@ function main() {
 
     distribution=$(get-distribution-id "$bucket")
 
+	FILE=./public/index.html
+	if !test -f "$FILE"; then
+		echo "No index.html file found! Site may not have failed build."
+        exit 1
+	fi
+
     if [ -z ${distribution} ]; then  # If no CloudFront distribution was acquired
         echo "Failed to determine CloudFront Distribution for bucket: ${bucket}"
         exit 1
