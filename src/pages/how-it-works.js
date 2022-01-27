@@ -44,7 +44,7 @@ class Page extends React.Component {
 							<a className="button" href="/how-it-works#accounts" i18n="@@HowIndex__OrchidAccounts">Orchid Accounts</a>
 							<a className="button" href="/how-it-works#protocol" i18n="@@HowIndex__OrchidProtocol">Orchid Protocol</a>
 							<a className="button" href="/how-it-works#nanopayments" i18n="@@HowIndex__Nanopayments">Nanopayments</a>
-							<a className="button" href="/how-it-works#nodes" i18n="@@HowIndex__Nodes">Nodes</a>
+							<a className="button" href="/how-it-works#ProgrammableNetwork" i18n="@@HowIndex__ProgrammableNetwork">Programmable Network</a>
 							<a className="button" href="/how-it-works#staking" i18n="@@HowIndex__Staking">Staking</a>
 						</div>
 					</div>
@@ -73,7 +73,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -114,7 +114,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -171,7 +171,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -234,7 +234,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -275,7 +275,7 @@ class Page extends React.Component {
 								<a className="explainer__dot active" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -303,7 +303,7 @@ class Page extends React.Component {
 							<div className="explainer__connector"></div>
 						</div>
 					</section>
-					<section className="explainer" id="nodes">
+					<section className="explainer" id="ProgrammableNetwork">
 						<div className="explainer__container">
 							<div className="explainer__progress">
 								<a className="explainer__dot" href="/how-it-works#app">
@@ -321,7 +321,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot active" href="/how-it-works#nodes">
+								<a className="explainer__dot active" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot" href="/how-it-works#staking">
@@ -329,8 +329,8 @@ class Page extends React.Component {
 								</a>
 							</div>
 							<div className="explainer__text">
-								<h3 i18n="@@HowNodes__Title">Nodes</h3>
-								<div i18n="@@HowNodes__Content">
+								<h3 i18n="@@HowProgrammableNetwork__Title">Programmable Network</h3>
+								<div i18n="@@HowProgrammableNetwork__Content">
 									<p>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</p>
 									<p>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</p>
 								</div>
@@ -365,7 +365,7 @@ class Page extends React.Component {
 								<a className="explainer__dot" href="/how-it-works#nanopayments">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
-								<a className="explainer__dot" href="/how-it-works#nodes">
+								<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 									<img src="/img/how-it-works/progress-dot.svg" alt="" />
 								</a>
 								<a className="explainer__dot active" href="/how-it-works#staking">
