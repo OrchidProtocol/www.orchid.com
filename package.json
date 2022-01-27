@@ -69,8 +69,7 @@
 		"remark": "^11.0.2",
 		"remark-html": "^10.0.0",
 		"sass": "^1.40.1",
-		"sharp": "^0.29.1",
-		"xml2js": "^0.4.23"
+		"sharp": "^0.29.1"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.16.0",
