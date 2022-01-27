@@ -44,28 +44,36 @@ function Page(props) {
 					<div className="about-company__centered-text-floating-circle-2"></div>
 
 					<section className="about-company__centered-text-section section-med hpad-wide vpad-wide center-text">
-						<Trans>
-							<h2>Why build a privacy network?</h2>
-							<p>
+						<h2><Trans>Why build a privacy network?</Trans></h2>
+						<p>
+							<Trans>
 								The Internet opened up an unlimited world of information. Its creators invited us to bring our curiosity and explore that world freely.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
-								As the Internet grew, exploring freely became harder.Web 2.0 business models incentivized companies to watch and track us and sell our data. And in some places, limits were placed on the information we can see.
-							</p>
+						<p>
+							<Trans>
+								As the Internet grew, exploring freely became harder. Web 2.0 business models incentivized companies to watch and track us and sell our data. And in some places, limits were placed on the information we can see.
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								But that is changing. The decentralized Web 3.0 being built on Ethereum is allowing the Internet to be reclaimed by its users.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								At Orchid we share in this mission. We use Web 3.0 technology to offer users better digital privacy today, so we can realize the promise of the Web 1.0 and explore freely again.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								Orchid was founded in 2017 to help restore the open and accessible Internet for everyone. Since then, we have grown an incredible team based in San Francisco and Berlin and launched the first incentivized, peer-to-peer privacy network in December, 2019.
-							</p>
-						</Trans>
+							</Trans>
+						</p>
 					</section>
 				</div>
 
@@ -74,19 +82,23 @@ function Page(props) {
 						<h2><Trans>Our Values</Trans></h2>
 						<div className="about-us-split">
 							<div className="about-us-half">
-								<Trans>
-									<p>
+								<p>
+									<Trans>
 										The Internet is as integral to modern life as writing was to the ancient Greeks. Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world. Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private , decentralized, and censorship-free.
-									</p>
+									</Trans>
+								</p>
 
-									<p>
+								<p>
+									<Trans>
 										Orchid’s mission is privacy, and privacy is a human right.
-									</p>
+									</Trans>
+								</p>
 
-									<p>
+								<p>
+									<Trans>
 										Privacy is an easy target for those in power, who say “if you have nothing to hide, you have nothing to fear.” This is a lie. The truth is that the people in positions of power have the least to worry about being private. If a powerful dictator is caught doing something, they are beyond reproach. We should never forget the routine violations of privacy visited upon King, Gandhi, Ai Weiwei and many others in the name of “law enforcement” and “national security.”
-									</p>
-								</Trans>
+									</Trans>
+								</p>
 							</div>
 							<div className="about-us-half">
 								<picture>
@@ -95,23 +107,29 @@ function Page(props) {
 								</picture>
 							</div>
 						</div>
-						<Trans>
-							<p>
+						<p>
+							<Trans>
 								Privacy and freedom are not in conflict; they are one and the same.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								We stand in solidarity with causes dedicated to privacy and to other fundamental human rights. Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								Causes such as Black Lives Matter; Uyghur liberation; political freedom in Hong Kong and Myanmar, LGBTQ+ rights in Russia and many others must be fought for at the fundamental, human level. They should cut across lines of politics, nationality, or sectarianism.
-							</p>
+							</Trans>
+						</p>
 
-							<p>
+						<p>
+							<Trans>
 								The past year has reminded us that humans are meant to be together, not alone; free, not confined; empowered, not controlled. It is this basic truth that motivates the people who built Orchid.
-							</p>
-						</Trans>
+							</Trans>
+						</p>
 					</section>
 
 				</div>

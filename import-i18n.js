@@ -98,7 +98,7 @@ async function run() {
 			try {
 				const pendingKeys = JSON.parse(fs.readFileSync(`./pendingTranslations/${locales[i]}/needsupdate.json`, 'utf8'));
 				for (const key in pendingKeys) {
-					if (pendingKeys[key] !== needsUpdate[key]) {
+					if (pendingKeys[key] !== needsUpdate[key] && pendingKeys.hasOwnProperty(key) && needsUpdate.hasOwnProperty(key)) {
 						localeKeys[key] = pendingKeys[key];
 						delete needsUpdate[key];
 					}
