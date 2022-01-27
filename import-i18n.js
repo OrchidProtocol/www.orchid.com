@@ -52,7 +52,7 @@ async function run() {
 			const needsUpdate = {};
 			let localeKeys = {};
 			try {
-				JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
+				localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
 			} catch (e) { }
 			const legacyMissingKeys = {};
 			const units = $('body').find('trans-unit');
