@@ -35,7 +35,7 @@ function Page(props) {
 					<img src="/img/how-it-works/satellite-2.svg" alt="" />
 				</div>
 				<div className="content section-narrow vpad-xl hpad-wide center-text">
-					<h2 className="gap-bot-thin" style="max-width: 22rem;margin-left: auto;margin-right: auto;">
+					<h2 className="gap-bot-thin" style={{ maxWidth: "22rem", marginLeft: "auto", marginRight: "auto" }}>
 						<Trans>Core components of the Orchid network</Trans>
 					</h2>
 					<div className="buttons">
@@ -296,7 +296,6 @@ function Page(props) {
 					</div>
 				</section>
 				<section className="explainer" id="ProgrammableNetwork">
-					<span id="nodes" />
 					<div className="explainer__container">
 						<div className="explainer__progress">
 							<a className="explainer__dot" href="/how-it-works#app">
