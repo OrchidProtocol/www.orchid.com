@@ -30,7 +30,7 @@ function Page(props) {
 				</div>
 			</section>
 
-			<section className="bk-white core z-index-1" id="top">
+			<section className="bk-white core z-index-1" id="top" style="Oops">
 				<div className="satellite-2">
 					<img src="/img/how-it-works/satellite-2.svg" alt="" />
 				</div>
