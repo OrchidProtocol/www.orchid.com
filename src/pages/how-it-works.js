@@ -39,13 +39,13 @@ function Page(props) {
 						<Trans>Core components of the Orchid network</Trans>
 					</h2>
 					<div className="buttons">
-						<a className="button" href="/how-it-works#app"><Trans>The Orchid app</Trans></a>
-						<a className="button" href="/how-it-works#oxt"><Trans>OXT cryptocurrency</Trans></a>
-						<a className="button" href="/how-it-works#accounts"><Trans>Orchid Accounts</Trans></a>
-						<a className="button" href="/how-it-works#protocol"><Trans>Orchid Protocol</Trans></a>
-						<a className="button" href="/how-it-works#nanopayments"><Trans>Nanopayments</Trans></a>
-						<a className="button" href="/how-it-works#ProgrammableNetwork"><Trans>Programmable Network</Trans></a>
-						<a className="button" href="/how-it-works#staking"><Trans>Staking</Trans></a>
+						<a className="button" href="/how-it-works/#app"><Trans>The Orchid app</Trans></a>
+						<a className="button" href="/how-it-works/#oxt"><Trans>OXT cryptocurrency</Trans></a>
+						<a className="button" href="/how-it-works/#accounts"><Trans>Orchid Accounts</Trans></a>
+						<a className="button" href="/how-it-works/#protocol"><Trans>Orchid Protocol</Trans></a>
+						<a className="button" href="/how-it-works/#nanopayments"><Trans>Nanopayments</Trans></a>
+						<a className="button" href="/how-it-works/#ProgrammableNetwork"><Trans>Programmable Network</Trans></a>
+						<a className="button" href="/how-it-works/#staking"><Trans>Staking</Trans></a>
 					</div>
 				</div>
 				<div className="explainer__start-cap">
@@ -58,25 +58,25 @@ function Page(props) {
 					<div className="explainer__container">
 						<div className="explainer__start"></div>
 						<div className="explainer__progress">
-							<a className="explainer__dot active" href="/how-it-works#app">
+							<a className="explainer__dot active" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -93,7 +93,7 @@ function Page(props) {
 							<img src="/img/how-it-works/app.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -103,25 +103,25 @@ function Page(props) {
 				<section className="explainer" id="oxt">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#oxt">
+							<a className="explainer__dot active" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -149,7 +149,7 @@ function Page(props) {
 							<img src="/img/how-it-works/token.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -159,25 +159,25 @@ function Page(props) {
 				<section className="explainer" id="accounts">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#accounts">
+							<a className="explainer__dot active" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -203,7 +203,7 @@ function Page(props) {
 							<img src="/img/how-it-works/accounts.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -213,25 +213,25 @@ function Page(props) {
 				<section className="explainer" id="protocol">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#protocol">
+							<a className="explainer__dot active" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -244,7 +244,7 @@ function Page(props) {
 							<img src="/img/how-it-works/protocol.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -254,25 +254,25 @@ function Page(props) {
 				<section className="explainer" id="nanopayments">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#nanopayments">
+							<a className="explainer__dot active" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -288,7 +288,7 @@ function Page(props) {
 							<img src="/img/how-it-works/nano.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -298,25 +298,25 @@ function Page(props) {
 				<section className="explainer" id="ProgrammableNetwork">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot active" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#staking">
+							<a className="explainer__dot" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -332,7 +332,7 @@ function Page(props) {
 							<img src="/img/how-it-works/node.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>
@@ -342,25 +342,25 @@ function Page(props) {
 				<section className="explainer" id="staking">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works#app">
+							<a className="explainer__dot" href="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#oxt">
+							<a className="explainer__dot" href="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#accounts">
+							<a className="explainer__dot" href="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#protocol">
+							<a className="explainer__dot" href="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nanopayments">
+							<a className="explainer__dot" href="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
+							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#staking">
+							<a className="explainer__dot active" href="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 						</div>
@@ -386,7 +386,7 @@ function Page(props) {
 							<img src="/img/how-it-works/stake.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works#top">
+							<a className="explainer__to-top" href="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
 							</a>
 						</div>

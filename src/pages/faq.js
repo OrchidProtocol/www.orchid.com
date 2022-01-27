@@ -36,7 +36,7 @@ function Page(props) {
 					<div className="faq-sidebar">
 						<ul className="faq-nav">
 							<li className="faq-sidebar-category-active">
-								<a className="faq-category-heading-sidebar faq-link" href="/faq#about-orchid">
+								<a className="faq-category-heading-sidebar faq-link" href="/faq/#about-orchid">
 									<span>
 										About Orchid
 									</span>
@@ -44,21 +44,21 @@ function Page(props) {
 								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 								<ul className="faq-sidebar-questions">
 									<li>
-										<a className="faq-link" href="/faq#about-orchid--what-is-orchid">
+										<a className="faq-link" href="/faq/#about-orchid--what-is-orchid">
 											<span>
 												What is Orchid?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#about-orchid--the-purpose">
+										<a className="faq-link" href="/faq/#about-orchid--the-purpose">
 											<span>
 												What is the purpose of Orchid?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#about-orchid--how-does-it-work">
+										<a className="faq-link" href="/faq/#about-orchid--how-does-it-work">
 											<span>
 												How does it work?
 											</span>
@@ -67,39 +67,39 @@ function Page(props) {
 								</ul>
 							</li>
 							<li className="faq-sidebar-category-active">
-								<a className="faq-category-heading-sidebar faq-link" href="/faq#security-privacy"><span>Security and Privacy</span></a>
+								<a className="faq-category-heading-sidebar faq-link" href="/faq/#security-privacy"><span>Security and Privacy</span></a>
 								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 								<ul className="faq-sidebar-questions">
 									<li>
-										<a className="faq-link" href="/faq#privacy--what-protections">
+										<a className="faq-link" href="/faq/#privacy--what-protections">
 											<span>
 												What protections does the Orchid app provide?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#privacy--how-can-orchid-help-today">
+										<a className="faq-link" href="/faq/#privacy--how-can-orchid-help-today">
 											<span>
 												How can the Orchid app help me with privacy today?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#privacy--how-is-orchid-private">
+										<a className="faq-link" href="/faq/#privacy--how-is-orchid-private">
 											<span>
 												How is Orchid private given that it has public payments on Ethereum?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#privacy--can-nodes-monitor-traffic">
+										<a className="faq-link" href="/faq/#privacy--can-nodes-monitor-traffic">
 											<span>
 												Can Orchid nodes monitor network traffic?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#privacy--am-i-totally-private">
+										<a className="faq-link" href="/faq/#privacy--am-i-totally-private">
 											<span>
 												So I'm totally private and anonymous when I use a VPN like Orchid?
 											</span>
@@ -108,25 +108,25 @@ function Page(props) {
 								</ul>
 							</li>
 							<li className="faq-sidebar-category-active">
-								<a className="faq-category-heading-sidebar faq-link" href="/faq#technology"><span>On Technology</span></a>
+								<a className="faq-category-heading-sidebar faq-link" href="/faq/#technology"><span>On Technology</span></a>
 								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 								<ul className="faq-sidebar-questions">
 									<li>
-										<a className="faq-link" href="/faq#technology--how-does-oxt-work">
+										<a className="faq-link" href="/faq/#technology--how-does-oxt-work">
 											<span>
 												How does (OXT) work?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#technology--how-do-curated-lists-work">
+										<a className="faq-link" href="/faq/#technology--how-do-curated-lists-work">
 											<span>
 												How do curated lists work on Orchid?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#technology--what-is-the-orchid-protocol">
+										<a className="faq-link" href="/faq/#technology--what-is-the-orchid-protocol">
 											<span>
 												What is the Orchid Protocol?
 											</span>
@@ -135,26 +135,26 @@ function Page(props) {
 								</ul>
 							</li>
 							<li className="faq-sidebar-category-active">
-								<a className="faq-category-heading-sidebar faq-link" href="/faq#staking"><span>Staking</span></a>
+								<a className="faq-category-heading-sidebar faq-link" href="/faq/#staking"><span>Staking</span></a>
 								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 							</li>
 							<ul className="faq-sidebar-questions">
 								<li>
-									<a className="faq-link" href="/faq#staking--what-is-staking-in-orchid">
+									<a className="faq-link" href="/faq/#staking--what-is-staking-in-orchid">
 										<span>
 											What is Staking in Orchid?
 										</span>
 									</a>
 								</li>
 								<li>
-									<a className="faq-link" href="/faq#staking--is-orchid-staking-like-proof-of-stake">
+									<a className="faq-link" href="/faq/#staking--is-orchid-staking-like-proof-of-stake">
 										<span>
 											Is Orchid Staking like Proof of Stake?
 										</span>
 									</a>
 								</li>
 								<li>
-									<a className="faq-link" href="/faq#staking--how-can-i-earn-passive-revenue-on-my-oxt">
+									<a className="faq-link" href="/faq/#staking--how-can-i-earn-passive-revenue-on-my-oxt">
 										<span>
 											How can I earn passive revenue on my OXT?
 										</span>
@@ -162,25 +162,25 @@ function Page(props) {
 								</li>
 							</ul>
 							<li className="faq-sidebar-category-active">
-								<a className="faq-category-heading-sidebar faq-link" href="/faq#staking"><span>Orchid App</span></a>
+								<a className="faq-category-heading-sidebar faq-link" href="/faq/#staking"><span>Orchid App</span></a>
 								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 								<ul className="faq-sidebar-questions">
 									<li>
-										<a className="faq-link" href="/faq#orchid-app--why-new-wallet">
+										<a className="faq-link" href="/faq/#orchid-app--why-new-wallet">
 											<span>
 												Why do I need a new Ethereum wallet?Why can’t I use my main wallet?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#orchid-app--why-big-exchange">
+										<a className="faq-link" href="/faq/#orchid-app--why-big-exchange">
 											<span>
 												Why should I trust a big exchange with my personal info?Would a decentralized exchange that doesn’t store my personal info be better?
 											</span>
 										</a>
 									</li>
 									<li>
-										<a className="faq-link" href="/faq#orchid-app--why-eth-and-oxt">
+										<a className="faq-link" href="/faq/#orchid-app--why-eth-and-oxt">
 											<span>
 												Why do I need ETH and OXT?
 											</span>
