@@ -1,6 +1,7 @@
 {
     "The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.": "Orchid 网络可实现去中心化虚拟专用网 (VPN)，允许用户从全球性的服务提供商池购买带宽。",
     "To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.": "为此，Orchid 使用名为 OXT 的 ERC-20 实用通证、一种使用通证激励的带宽代理的新 VPN 协议，以及具有算法广告和支付功能的智能合约。Orchid 的用户使用提供商目录与带宽卖家连接，并且，他们使用概率极微支付进行付款，因此数据包的以太坊交易费处于可接受的低水平。",
+    "Nodes": "节点",
     "Purchased accounts:": "已购帐户：",
     "Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native fiat currency. “Orchid credits” are special accounts where the cryptocurrency, xDai, must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared among devices.": "Orchid 支持用户使用本地法定货币从官方 iOS 应用中购买预充值的 Orchid 帐户。 “Orchid 积分”是一种特殊帐户，其中加密货币 xDai 必须仅在我们首选的提供商处使用。与所有 Orchid 帐户一样，该帐户也可以在不同设备之间共享。",
     "Transaction fees for accepting fiat.": "接受法币的交易费用。",

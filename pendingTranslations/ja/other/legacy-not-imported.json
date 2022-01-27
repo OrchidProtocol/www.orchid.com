@@ -2,6 +2,7 @@
     "The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.": "Orchid ネットワークは、分散型仮想プライベート ネットワーク (VPN) を使用可能にし、ユーザーがサービス プロバイダーのグローバル プールから帯域幅を購入できるようにします。",
     "To do this, Orchid uses an ERC-20 staking token called OXT, a new VPN protocol for token-incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions. Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.": "これを行うために、Orchid は OXT と呼ばれる ERC-20 ステーキング トークンを使用します。これは、トークンに基づく帯域幅プロキシ用の新しい VPN プロトコルであり、アルゴリズムによる広告および支払い機能を備えたスマート コントラクトです。Orchid のユーザーは、プロバイダー ディレクトリを使用して帯域幅の売り手に接続し、確率的なナノペイメントを使用して支払いを行うため、パケットのイーサリアム トランザクション料金は許容範囲内で低くなります。",
     "of the Orchid network": "のコア コンポーネント",
+    "Nodes": "ノード",
     "Purchased accounts:": "購入したアカウント：",
     "Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native fiat currency. “Orchid credits” are special accounts where the cryptocurrency, xDai, must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared among devices.": "Orchid は、ユーザーがネイティブの法定通貨を使用して、公式iOS アプリ内から事前に資金提供された Orchid アカウントを購入する機能をサポートしています。「 Orchid クレジット」は、暗号通貨 xDai を優先プロバイダーとのみ使用する必要がある特別なアカウントです。すべての Orchid アカウントと同様に、アカウントはデバイス間で共有できます。",
     "Transaction fees for accepting fiat.": "法定通貨を受け入れるための取引手数料。",
