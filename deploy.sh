@@ -121,8 +121,8 @@ function main() {
 
     distribution=$(get-distribution-id "$bucket")
 
-	FILE=./public/index.html
-	if !test -f "$FILE"; then
+	IndexFile=./public/index.html
+	if ! test -f "$IndexFile"; then
 		echo "No index.html file found! Site may not have failed build."
         exit 1
 	fi
