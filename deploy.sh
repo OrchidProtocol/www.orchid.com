@@ -121,12 +121,6 @@ function main() {
 
     distribution=$(get-distribution-id "$bucket")
 
-	IndexFile=./public/index.html
-	if ! test -f "$IndexFile"; then
-		echo "No index.html file found! Site may not have failed build."
-        exit 1
-	fi
-
     if [ -z ${distribution} ]; then  # If no CloudFront distribution was acquired
         echo "Failed to determine CloudFront Distribution for bucket: ${bucket}"
         exit 1
@@ -136,6 +130,13 @@ function main() {
         version=$(./version.sh | cut -d' ' -f3)
         echo "Version: $version"
         build-site "$language"
+
+		IndexFile=./public/index.html
+		if ! test -f "$IndexFile"; then
+			echo "No index.html file found! Site may not have failed build."
+			exit 1
+		fi
+
         upload-site "$bucket" "$version"
     fi
 
