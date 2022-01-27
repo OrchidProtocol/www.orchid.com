@@ -84,7 +84,7 @@ function Page(props) {
 							<div className="about-us-half">
 								<p>
 									<Trans>
-										The Internet is as integral to modern life as writing was to the ancient Greeks. Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world. Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private , decentralized, and censorship-free.
+										The Internet is as integral to modern life as writing was to the ancient Greeks. Our lives are digital, and the ramifications of the things we do and say online are as real as those in the physical world. Orchid grew from the dream of a future in which our whole lives--both the physical and the digital--could be private, decentralized, and censorship-free.
 									</Trans>
 								</p>
 
