@@ -43,7 +43,7 @@
 	z-index: 2;
 
 	@media (max-width: 1200px) {
-		flex-flow: column-reverse nowrap;
+		flex-flow: column nowrap;
 	}
 
 	> {
@@ -66,6 +66,7 @@
 
 #ft-logo {
 	@include mobile {
+		order: 10;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
