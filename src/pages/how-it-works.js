@@ -44,7 +44,7 @@ function Page(props) {
 						<a className="button" href="/how-it-works#accounts"><Trans>Orchid Accounts</Trans></a>
 						<a className="button" href="/how-it-works#protocol"><Trans>Orchid Protocol</Trans></a>
 						<a className="button" href="/how-it-works#nanopayments"><Trans>Nanopayments</Trans></a>
-						<a className="button" href="/how-it-works#nodes"><Trans>Nodes</Trans></a>
+						<a className="button" href="/how-it-works#ProgrammableNetwork"><Trans>Programmable Network</Trans></a>
 						<a className="button" href="/how-it-works#staking"><Trans>Staking</Trans></a>
 					</div>
 				</div>
@@ -73,7 +73,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -118,7 +118,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -174,7 +174,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -228,7 +228,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -269,7 +269,7 @@ function Page(props) {
 							<a className="explainer__dot active" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -295,7 +295,8 @@ function Page(props) {
 						<div className="explainer__connector"></div>
 					</div>
 				</section>
-				<section className="explainer" id="nodes">
+				<section className="explainer" id="ProgrammableNetwork">
+					<span id="nodes" />
 					<div className="explainer__container">
 						<div className="explainer__progress">
 							<a className="explainer__dot" href="/how-it-works#app">
@@ -313,7 +314,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot active" href="/how-it-works#nodes">
+							<a className="explainer__dot active" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot" href="/how-it-works#staking">
@@ -321,7 +322,7 @@ function Page(props) {
 							</a>
 						</div>
 						<div className="explainer__text">
-							<h3><Trans>Nodes</Trans></h3>
+							<h3><Trans>Orchid Programmable Network</Trans></h3>
 							<div>
 								<p><Trans>Service providers on Orchid run software similar to a typical VPN daemon for protocols such as OpenVPN, but which speaks the Orchid protocol.</Trans></p>
 								<p><Trans>Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.</Trans></p>
@@ -357,7 +358,7 @@ function Page(props) {
 							<a className="explainer__dot" href="/how-it-works#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
-							<a className="explainer__dot" href="/how-it-works#nodes">
+							<a className="explainer__dot" href="/how-it-works#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
 							</a>
 							<a className="explainer__dot active" href="/how-it-works#staking">
