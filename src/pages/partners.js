@@ -1,5 +1,5 @@
 import { graphql } from 'gatsby';
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -23,15 +23,16 @@ function Page(props) {
 			<div className="partners-hero bk-beige-light">
 				<section className="section-med hpad-wide vpad-xl center-text z-index-1">
 					<div className="hero__text">
-						<h1 className="partners-hero__title">Orchid Partnerships</h1>
+						<h1 className="partners-hero__title"><Trans>Orchid Partnerships</Trans></h1>
 						<br />
 						<p className="partners-hero__subtitle">
-							Orchid partners with companies around the world to advance our mission of making the internet a safer,
-							more private place for everyone.
+							<Trans>
+								Orchid partners with companies around the world to advance our mission of making the internet a safer, more private place for everyone.
+							</Trans>
 						</p>
 						<br />
 						<Link to="/contact">
-							<button className="btn-primary btn__hero z-index-1">Discuss Partnership</button>
+							<button className="btn-primary btn__hero z-index-1"><Trans>Discuss Partnership</Trans></button>
 						</Link>
 					</div>
 					<div className="hero__patterning"></div>
@@ -55,8 +56,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											We value PIA's commitment to maintaining the highest standards of privacy, while
-											simultaneously providing one of the most reliable VPN services in the world.
+											<Trans>
+												We value PIA's commitment to maintaining the highest standards of privacy, while simultaneously providing one of the most reliable VPN services in the world.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -69,8 +71,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											The alliance with BolehVPN, one of the most trusted names in trusted browsing, brings
-											the dream of a genuinely secure and private internet closer to fruition.
+											<Trans>
+												The alliance with BolehVPN, one of the most trusted names in trusted browsing, brings the dream of a genuinely secure and private internet closer to fruition.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -83,8 +86,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											At Orchid, we’re always happy to partner with like-minded firms and individuals, and for
-											years we’ve admired the work that VPNSecure has done in the privacy and security space.
+											<Trans>
+												At Orchid, we’re always happy to partner with like-minded firms and individuals, and for years we’ve admired the work that VPNSecure has done in the privacy and security space.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -97,9 +101,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Orchid’s privacy network is growing every day, with more and more reliable bandwidth
-											providers joining the platform. Our partnership with LiquidVPN is another step toward
-											making privacy a community experience.
+											<Trans>
+												Orchid’s privacy network is growing every day, with more and more reliable bandwidth providers joining the platform. Our partnership with LiquidVPN is another step toward making privacy a community experience.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -116,7 +120,7 @@ function Page(props) {
 				<div className="overflow-wrapper">
 					<section className="section-med hpad-thin vpad-wide z-index-1" id="wallet">
 						<div className="center-text">
-							<h2>Wallet Partners</h2>
+							<h2><Trans>Wallet Partners</Trans></h2>
 						</div>
 
 						<div className="cards-wrapper">
@@ -127,8 +131,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Available as a browser extension and as a mobile app, MetaMask equips you with a key
-											vault, secure login, and token wallet—everything you need to manage your digital assets.
+											<Trans>
+												Available as a browser extension and as a mobile app, MetaMask equips you with a key vault, secure login, and token wallet—everything you need to manage your digital assets.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -141,8 +146,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											imToken has done great work in building a secure and user-friendly product… users will
-											now have an easy way to hold their OXT and use it to buy private bandwidth.
+											<Trans>
+												imToken has done great work in building a secure and user-friendly product… users will now have an easy way to hold their OXT and use it to buy private bandwidth.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -155,8 +161,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											TrustWallet is a leader in cryptocurrency wallets; integration with the app means that
-											many more users will have an easy way to hold, trade, and transfer OXT.
+											<Trans>
+												TrustWallet is a leader in cryptocurrency wallets; integration with the app means that many more users will have an easy way to hold, trade, and transfer OXT.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -169,8 +176,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Our goal is to make the internet a safer, more free place. BitGo provides that same
-											sense of security to our institutional partners, in a streamlined experience.
+											<Trans>
+												Our goal is to make the internet a safer, more free place. BitGo provides that same sense of security to our institutional partners, in a streamlined experience.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -183,8 +191,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											BRD has built a huge community of crypto enthusiasts, many of whom are committed to
-											taking control of their privacy. Now, they can access OXT and do exactly that.
+											<Trans>
+												BRD has built a huge community of crypto enthusiasts, many of whom are committed to taking control of their privacy. Now, they can access OXT and do exactly that.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -197,8 +206,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Ledger wallets have earned their incredible popularity, and we’re very excited that our
-											community will be able to store their OXT on a trusted Ledger device.
+											<Trans>
+												Ledger wallets have earned their incredible popularity, and we’re very excited that our community will be able to store their OXT on a trusted Ledger device.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -213,7 +223,7 @@ function Page(props) {
 				<div className="overflow-wrapper">
 					<section className="section-med hpad-thin vpad-wide z-index-1" id="exchange">
 						<div className="center-text">
-							<h2>Exchange Partners</h2>
+							<h2><Trans>Exchange Partners</Trans></h2>
 						</div>
 
 						<div className="cards-wrapper">
@@ -225,9 +235,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Opening our privacy network to the people of New York
-											is an important step in solidifying our global community. We look forward to making the
-											internet open for everyone.
+											<Trans>
+												Opening our privacy network to the people of New York is an important step in solidifying our global community. We look forward to making the internet open for everyone.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -240,8 +250,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Making OXT widely available for our users in Europe and around the world is an important
-											step in making it easy for anyone to start using it to pay for private bandwidth.
+											<Trans>
+												Making OXT widely available for our users in Europe and around the world is an important step in making it easy for anyone to start using it to pay for private bandwidth.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -255,8 +266,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Gemini's established history as a globally licensed, trusted name in crypto markets make
-											them a perfect partner for Orchid as we continue making OXT widely available.
+											<Trans>
+												Gemini's established history as a globally licensed, trusted name in crypto markets make them a perfect partner for Orchid as we continue making OXT widely available.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -269,9 +281,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											OKEx listing Orchid makes it easier for international users to acquire OXT and start
-											using it to access private bandwidth; this is an important day for the growth of
-											internet freedom.
+											<Trans>
+												OKEx listing Orchid makes it easier for international users to acquire OXT and start using it to access private bandwidth; this is an important day for the growth of internet freedom.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -284,8 +296,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Our community can feel confident when purchasing OXT on a platform with a proven track
-											record of regulatory compliance and security best practices.
+											<Trans>
+												Our community can feel confident when purchasing OXT on a platform with a proven track record of regulatory compliance and security best practices.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -313,8 +326,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											Bloq is a key partner in our goal of creating a community that makes the Internet a more
-											free and private place.
+											<Trans>
+												Bloq is a key partner in our goal of creating a community that makes the Internet a more free and private place.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -326,8 +340,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											The Blockchain Association comprises many of the most visionary projects, firms, and
-											institutions in blockchain.
+											<Trans>
+												The Blockchain Association comprises many of the most visionary projects, firms, and institutions in blockchain.
+											</Trans>
 										</p>
 									</div>
 								</a>
@@ -340,8 +355,9 @@ function Page(props) {
 									</div>
 									<div className="card-body">
 										<p>
-											We’re thrilled to work with some of the most forward-thinking minds in tech policy to
-											make the decentralized web a reality.
+											<Trans>
+												We’re thrilled to work with some of the most forward-thinking minds in tech policy to make the decentralized web a reality.
+											</Trans>
 										</p>
 									</div>
 								</a>
