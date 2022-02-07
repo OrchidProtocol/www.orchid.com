@@ -56,7 +56,7 @@ function Page(props) {
 							&.color-primary {
 								color: var(--orc-purple);
 							}
-							line-height: 1;
+							line-height: 1rem;
 							& > span {
 								display: inline-block;
 								margin: 0.5em 0.2em;
