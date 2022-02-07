@@ -154,7 +154,7 @@ function Page(props) {
 							pointer-events: none;
 						}
 					`}>
-					<StaticImage loading="eager" src="../../static/img/index/phone.png" placeholder="none" width={491} height={765} alt="" />
+					<StaticImage loading="eager" src="../../static/img/index/phone.png" placeholder="tracedSVG" width={491} height={765} alt="" />
 				</div>
 			</section>
 
