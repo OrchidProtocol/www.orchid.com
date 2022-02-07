@@ -104,7 +104,6 @@ function Page(props) {
 								<feFlood floodOpacity="0" result="BackgroundImageFix" />
 								<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
 								<feOffset dy="4" />
-								<feGaussianBlur stdDeviation="8" />
 								<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0" />
 								<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow" />
 								<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape" />
@@ -116,7 +115,11 @@ function Page(props) {
 						</defs>
 					</svg>
 
-					<h3><span><Trans>No data collection.</Trans></span> <span><Trans>No 3rd-party sharing.</Trans></span> <span><Trans>No profit markup.</Trans></span></h3>
+					<h3>
+						<span style={{ display: "inline-block" }}><Trans>No data collection.</Trans></span>
+						<span style={{ display: "inline-block" }}><Trans>No 3rd-party sharing.</Trans></span>
+						<span style={{ display: "inline-block" }}><Trans>No profit markup.</Trans></span>
+					</h3>
 					<h3 className="color-primary"><span><Trans>A new model of VPN.</Trans></span></h3>
 					<Link to="/get-orchid" className="btn">
 						<button className="btn-primary"><Trans>Get Orchid</Trans></button>
