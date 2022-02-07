@@ -69,7 +69,7 @@ const BlogPosts = (props) => {
 		posts.push(
 			<PostContainer key={i}>
 				<PostImage>
-					<img src={blog[i].featuredimage} alt="" width="1200" height="720" />
+					<img src={blog[i].featuredimage} loading="lazy" alt="" width="1200" height="720" />
 				</PostImage>
 				<PostTitle>{blog[i].title}</PostTitle>
 				<PostDate>{`${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</PostDate>
