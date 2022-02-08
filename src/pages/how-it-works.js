@@ -32,7 +32,7 @@ function Page(props) {
 
 			<section className="bk-white core z-index-1" id="top">
 				<div className="satellite-2">
-					<img src="/img/how-it-works/satellite-2.svg" alt="" />
+					<img src="/img/how-it-works/satellite-2.svg" width="680" height="445" alt="" />
 				</div>
 				<div className="content section-narrow vpad-xl hpad-wide center-text">
 					<h2 className="gap-bot-thin" style={{ maxWidth: "22rem", marginLeft: "auto", marginRight: "auto" }}>
@@ -90,7 +90,7 @@ function Page(props) {
 						</div>
 						<div className="explainer__image">
 
-							<img src="/img/how-it-works/app.svg" alt="" />
+							<img src="/img/how-it-works/app.svg" width="531" height="530" alt="" />
 						</div>
 						<div className="explainer__bottom">
 							<a className="explainer__to-top" href="/how-it-works/#top">
