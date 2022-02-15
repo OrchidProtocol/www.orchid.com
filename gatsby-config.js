@@ -22,7 +22,9 @@ module.exports = {
 					quality: 80,
 					breakpoints: [750, 1080, 1366, 1920],
 					backgroundColor: `transparent`,
-					tracedSVGOptions: {},
+					tracedSVGOptions: {
+						color: '#5f45ba',
+					},
 					blurredOptions: {},
 					jpgOptions: {},
 					pngOptions: {},
@@ -106,7 +108,7 @@ module.exports = {
 				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'pt-BR', 'ru', 'tr', 'zh'],
 				defaultLanguage: 'en',
 				defaultNS: 'common',
-				siteUrl: 'http://localhost:8000/',
+				siteUrl: 'https://www.orchid.com/',
 				i18nextOptions: {
 					lowerCaseLng: true,
 					interpolation: {
