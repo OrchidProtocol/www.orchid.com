@@ -1,4 +1,7 @@
 @use "sass:math";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "_media_queries";
 @import "_misc_config";
 @import "_orc_config";
