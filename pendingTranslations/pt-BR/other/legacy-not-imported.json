@@ -8,6 +8,7 @@
     "Transaction fees for accepting fiat.": "Taxas transacionais para aceitar moedas fiduciárias.",
     "Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at account.orchid.com . The Orchid Account DApp can only be accessed using a web3 browser such as Metamask , and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing efficiency experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.": "Usuários que procuram fornecer seu próprio OXT ou outras criptomoedas compatíveis para financiar sua participação na rede Orchid podem criar uma conta personalizada usando o dapp Orchid baseado em web3 em account.orchid.com . O DApp de Conta Orchid só pode ser acessado usando um navegador de web3 como Metamask e permite a ligação de carteiras cripto para construir contas personalizadas com controles granulares. Aqui, os usuários podem financiar uma conta com seus próprios valores especificados, assim como controlar o tamanho do depósito associado, influenciando a eficiência experimentada dentro do aplicativo Orchid. Essas contas podem facilmente ser ligadas ao aplicativo Orchid como uma alternativa às contas compradas, assim como compartilhadas com um número ilimitado de pessoas e/ou dispositivos.",
     "The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard . The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.": "O software Orchid é projetado para usar um protocolo VPN personalizado, semelhante em escopo ao OpenVPN ou WireGuard . O protocolo Orchid foi projetado para oferecer rede de alto desempenho e executa sobre o WebRTC, um padrão web comum, usado amplamente para transmitir vídeo e áudio de dentro de navegadores. Nosso protocolo permite que os usuários solicitem acesso a recursos da rede remota e paguem por eles usando criptomoedas por meio do sistema de nanopagamentos Orchid.",
+    "Events": "Eventos",
     "Find us IRL": "Encontre-nos no mundo real",
     "@@GooglePlayBadgeAlt": "Baixe no Google Play",
     "All of Orchid's code is Open Source and freely available to download on GitHub . Use of Orchid's source code is governed by the AGPL copyleft Open Source license.": "Todo o código Orchid é Open Source e está disponível gratuitamente para download no GitHub . O uso do código fonte da Orchid é regido pela licença AGPL copyleft Open Source.",
@@ -31,10 +32,9 @@
     "Give feedback and contribute on GitHub": "Dê feedback e contribua no GitHub",
     "Speakers": "Palestrantes",
     "Participate": "Participe",
-    "Privacy Policy": "Política de privacidade",
-    "Terms of Service": "Termos de serviço",
     "Docs": "Documentos",
     "Help": "Ajuda",
+    "@@Navigation-Events": "Eventos",
     "@@ContactForm__NamePlaceholder": "Seu nome",
     "@@ContactForm__EmailPlaceholder": "Seu e-mail",
     "@@ContactForm__SubjectPlaceholder": "Assunto",
@@ -77,8 +77,6 @@
     "Legal Notice": "Aviso legal",
     "The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.": "O programa de provedores preferenciais da Orchid é um programa de \"acesso pré-pago de circuito fechado\" que atende às regulamentações da FinCEN que regem produtos de acesso pré-pago de circuito fechado.",
     "Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.": "Da mesma forma, as contas de crédito Orchid podem ser usadas somente com a lista de \"comerciantes definidos\" de provedores de largura de banda de VPN fornecidos aqui. Além disso, para atender às regulamentações da FinCEN, a compra e uso de contas de crédito Orchid são limitadas a US$200 por dia.",
-    "VPN Partners": "Parceiros VPN",
-    "Tune in on your favorite platforms": "Sintonize com suas plataformas preferidas",
     "Stay in the know!": "Fique por dentro!",
     "Our monthly email newsletter covers Orchid developments, privacy news, OOPSEC, and other topics relevant to online privacy.": "Nossa newsletter mensal cobre os desenvolvimentos da Orchid, notícias sobre privacidade, OOPSEC e outros temas relevantes à privacidade online."
 }

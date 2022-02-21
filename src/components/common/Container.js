@@ -1,0 +1,34 @@
+import React from 'react'
+import styled from "@emotion/styled";
+import { break_mobile, shadow } from "./styles";
+
+const Element = styled.div`
+		${shadow}
+		position: relative;
+		z-index: 1;
+		padding: 2.5rem 4rem;
+		border-radius: 1rem;
+		margin: 2rem auto;
+		${break_mobile} {
+			border-radius: 2rem;
+			padding: 3.5rem 2rem;
+			margin: 3.5rem auto;
+		}
+		background: white;
+		max-width: 90%;
+		width: 60rem;
+		box-sizing: border-box;
+
+		&.phantom {
+			background: transparent;
+			box-shadow: none;
+		}
+`;
+
+const Container = (props) => {
+	return <Element {...props}>
+		{props.children}
+	</Element>
+}
+
+export default Container;

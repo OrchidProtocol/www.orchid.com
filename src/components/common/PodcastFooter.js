@@ -1,6 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
+import { Trans } from 'react-i18next';
 
 const PodcastButton = styled.a`
 	background: black;
@@ -54,7 +55,7 @@ const PodcastFooter = () => {
 					margin-bottom: 2rem;
 				`}>
 					<h2>
-						Tune in on your favorite platforms
+						<Trans>Tune in on your favorite platforms</Trans>
 					</h2>
 				</div>
 				<PodcastButton href="https://podcasts.apple.com/us/podcast/follow-the-white-rabbit/id1516705670">

@@ -4,7 +4,9 @@ import config from '../utils/config';
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 
-import { Layout, PostCard, Pagination } from '../components/common';
+import Layout from '../components/common/Layout';
+import PostCard from '../components/common/PostCard';
+import Pagination from '../components/common/Pagination';
 import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';

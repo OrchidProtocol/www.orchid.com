@@ -67,13 +67,13 @@ const BlogPosts = (props) => {
 	for (let i = 0; i < Math.min(blog.length, 6); i++) {
 		const date = new Date(blog[i].date);
 		posts.push(
-			<PostContainer key={i}>
+			<PostContainer className="blog-post" key={i}>
 				<PostImage>
 					<img src={blog[i].featuredimage} loading="lazy" alt="" width="1200" height="720" />
 				</PostImage>
 				<PostTitle>{blog[i].title}</PostTitle>
 				<PostDate>{`${months[date.getMonth()]} ${date.getDate()}, ${date.getFullYear()}`}</PostDate>
-				<PostLink to={blog[i].url} />
+				<PostLink href={blog[i].url} />
 			</PostContainer>
 		);
 	}

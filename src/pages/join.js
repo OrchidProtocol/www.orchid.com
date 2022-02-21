@@ -169,7 +169,7 @@ function Page(props) {
 
 			<div className="more-questions">
 				<section className="section-med hpad-wide vpad-xl center-text z-index-1">
-					<h2>Questions?</h2>
+					<h2><Trans>Questions?</Trans></h2>
 					<p className="medium">
 						<Trans>Check out the FAQ</Trans>
 					</p>

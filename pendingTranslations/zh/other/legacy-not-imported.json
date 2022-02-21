@@ -7,6 +7,7 @@
     "Transaction fees for accepting fiat.": "接受法币的交易费用。",
     "Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at account.orchid.com . The Orchid Account DApp can only be accessed using a web3 browser such as Metamask , and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing efficiency experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.": "用户如果希望使用自己的 OXT 币或其他受支持的加密货币进行充值以便加入 Orchid 网络，可以使用 Orchid 基于 web3 的 DApp 在 account.orchid.com 上创建一个自定义帐户。 Orchid 帐户 DApp 只能使用 web3 浏览器（例如 Metamask ），并允许链接加密钱包，以便构建具有精细控制功能的自定义帐户。在这里，用户可以自己指定的数值为帐户充值，并控制相关存款的大小，因而会影响在 Orchid 应用中体验到的 效率 。这些帐户可以轻松链接到 Orchid 应用，作为购买帐户的替代方案，也可以与无限数量的人和/或设备共享。",
     "The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard . The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.": "Orchid 软件使用一种自定义 VPN 协议，在范围上类似于 OpenVPN 或 WireGuard 。 Orchid 协议为高性能网络连接而设计，并且基于 WebRTC 运行，这是一种通用 Web 标准，广泛用于从浏览器中传输视频和音频。 我们的协议支持用户请求访问远程网络资源，并通过 Orchid 极微支付系统使用加密货币为这些资源付费。",
+    "Events": "活动",
     "Find us IRL": "敬请亲临现场",
     "@@GooglePlayBadgeAlt": "从 Google Play 上获取",
     "All of Orchid's code is Open Source and freely available to download on GitHub . Use of Orchid's source code is governed by the AGPL copyleft Open Source license.": "Orchid 的所有代码均为开源，且可以在 GitHub 上免费下载。Orchid 源代码的使用受 AGPL Copyleft 开源许可的约束。",
@@ -32,10 +33,9 @@
     "Agenda": "议程",
     "Participate": "参加",
     "Newsletter": "新闻通讯",
-    "Privacy Policy": "隐私政策",
-    "Terms of Service": "服务条款",
     "Docs": "文档",
     "Help": "帮助",
+    "@@Navigation-Events": "活动",
     "@@ContactForm__NamePlaceholder": "您的姓名",
     "@@ContactForm__EmailPlaceholder": "您的电子邮箱",
     "@@ContactForm__SubjectPlaceholder": "主题",
@@ -78,8 +78,6 @@
     "Legal Notice": "法律声明",
     "The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.": "Orchid 首选提供商计划是一项“闭环预付费接入”计划，符合 FinCEN 管理闭环预付费接入产品的规定。",
     "Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.": "因此，Orchid 积分帐户只能用于此处提供的“指定商户”列表中的 VPN 带宽提供商。此外，为了遵守 FinCEN 的规定，Orchid 积分帐户的购买和使用限制为每天 200 美元。",
-    "VPN Partners": "VPN 合作伙伴",
-    "Tune in on your favorite platforms": "选择您喜爱的平台",
     "Stay in the know!": "及时了解最新动态！",
     "Our monthly email newsletter covers Orchid developments, privacy news, OOPSEC, and other topics relevant to online privacy.": "我们每个月通过电子邮件发送的新闻通讯涵盖 Orchid 发展、隐私新闻、OOPSEC 和其他与在线隐私相关的主题。"
 }

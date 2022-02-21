@@ -663,33 +663,6 @@
 			object-fit: cover;
 			aspect-ratio: 1.9;
 		}
-
-		/*padding: 20% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;*/
-	}
-
-	.blog-grid {
-		margin: auto;
-		display: grid;
-		grid-gap: 2rem;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		@include mobile {
-			grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-		}
-		justify-items: center;
-	}
-
-	.blog-post {
-		@extend .common-shadow;
-		font-weight: 500;
-		padding: 0;
-		padding-bottom: 2rem;
-		border-radius: 1rem;
-		@include not-mobile {
-			min-height: 14rem;
-		}
 	}
 
 	.blog-post-info,

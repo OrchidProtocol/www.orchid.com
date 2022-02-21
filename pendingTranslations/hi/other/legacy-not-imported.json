@@ -14,6 +14,7 @@
     "Because people continue to perceive this false divide, the internet has become depleted of its promise. What began as an open platform full of potential has grown into a series of walled gardens where people are tracked, controlled, and censored. People depend on the internet for all aspects of their lives yet increasingly feel as if they are compromising their values when using it. Products are useful — but no one wants to be one.": "क्योंकि लोग इस झूठे विभाजन को नही भुला पाते हैं, इंटरनेट अपने वायदे को ठीक से पूरा नहीं कर पा रहा है। जिसकी शुरुआत एक खुले मंच के रूप में शुरू हुआ जिसमें भरपूर संभावनाएँ थीं, वह एक कई घेराबंद उद्यानों में बदल गया है जहाँ लोगों पर नजर रखा जाता है, उन्हें नियंत्रित और सेंसर किया जाता है। लोग अपने जीवन के सभी पहलुओं के लिए इंटरनेट पर निर्भर हैं, फिर भी उन्हें अब अधिकाधिक लगता जा रहा है कि उसके उपयोग करते हुए वे अपने मूल्यों के साथ समझौता कर रहे हैं। उत्पाद उपयोगी हैं — लेकिन कोई भी एक होना नहीं चाह रहा है।",
     "With Orchid, the promise of the internet can finally be restored. Nature is the best problem-solver. Understanding that the internet is a natural system begins with a fundamental shift in the dynamic between developers and users. Mutually beneficial relationships and shared network resources create an adaptable, harmonious, and resilient internet for all.": "ऑर्किड के साथ, इंटरनेट का वायदा आखिरकार पूरी तरह साकार किया जा सकता है। प्रकृति समस्याओं का समाधान निकालने में सबसे अधिक कुशल होतहै। इंटरनेट एक प्राकृतिक प्रणाली है, इस समझ की शुरुआत डेवलपरों और उपयोगकर्ताओं के बीच की गतिशीलता में एक मौलिक बदलाव आने के साथ होती है। परस्पर लाभकारी संबंध और साझा नेटवर्क संसाधन सभी के लिए एक अनुकूलनीय, सामंजस्यपूर्ण और लचीला इंटरनेट का निर्माण हैं।",
     "The natural internet is a collective effort. Contact us to make it possible.": "प्राकृतिक इंटरनेट एक सामूहिक प्रयास है। इसे संभव बनाने के लिए संपर्क करें।",
+    "Events": "घटनाएँ",
     "Find us IRL": "हमें खोजें आईआरएल",
     "@@GooglePlayBadgeAlt": "गूगल प्ले से इसे प्राप्त करें",
     "All of Orchid's code is Open Source and freely available to download on GitHub . Use of Orchid's source code is governed by the AGPL copyleft Open Source license.": "ऑर्किड का पूरा कोड खुला स्रोत वाला है और वह बिना किसी रोक-टोक के गिटहब से डाउनलोड करने के लिए उपलब्ध है। ऑर्किड के स्रोत कोड का उपयोग एजीपीएल कॉपीलेफ्ट खुला स्रोत लाइसेंस द्वारा शासित है।",
@@ -40,10 +41,9 @@
     "Agenda": "कार्यसूची",
     "Participate": "भाग लें",
     "Newsletter": "सूचनापत्र",
-    "Privacy Policy": "गोपनीयता नीति",
-    "Terms of Service": "सेवा की शर्तें",
     "Docs": "दस्तावेज",
     "Help": "मदद",
+    "@@Navigation-Events": "घटनाएँ",
     "@@ContactForm__NamePlaceholder": "आपका नाम",
     "@@ContactForm__EmailPlaceholder": "आपका ईमेल",
     "@@ContactForm__SubjectPlaceholder": "विषय",
@@ -86,8 +86,6 @@
     "Legal Notice": "कानूनी नोटिस",
     "The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.": "ऑर्किड पसंदीदा प्रदाता कार्यक्रम एक \"क्लोज्ड लूप प्रीपेड एक्सेस\" प्रोग्राम है जो क्लोज्ड लूप प्रीपेड एक्सेस उत्पादों को नियंत्रित करने वाले फिन-सेन विनियमों के अनुरूप है।",
     "Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.": "तदनुसार, ऑर्किड क्रेडिट खातों का उपयोग केवल यहाँ उपलब्ध कराई गई वीपीएन बैंडविड्थ प्रदाताओं की \"परिभाषित व्यापारी\" सूची के साथ किया जा सकता है। इसके अतिरिक्त, फिन-सेन विनियमों का पालन करने के लिए, ऑर्किड क्रेडिट खातों की खरीद और उपयोग प्रति दिन $200 तक सीमित है।",
-    "VPN Partners": "वीपीएन साझेदार",
-    "Tune in on your favorite platforms": "अपने पसंदीदा मंचों में ट्यून इन करें",
     "Stay in the know!": "जानकार बने रहें",
     "Our monthly email newsletter covers Orchid developments, privacy news, OOPSEC, and other topics relevant to online privacy.": "हमारा मासिक ईमेल सूचनापत्र आर्किड विकास की खबरें, गोपनीयता समाचार, ओओपीएसईसी, और ऑनलाइन गोपनीयता से संबंधित अन्य विषयों को प्रकाशित करता है।"
 }

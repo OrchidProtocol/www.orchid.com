@@ -45,7 +45,7 @@ function Page(props) {
 				<div className="overflow-wrapper">
 					<section className="section-med hpad-thin vpad-wide z-index-1" id="vpn">
 						<div className="center-text">
-							<h2>VPN Partners</h2>
+							<h2><Trans>VPN Partners</Trans></h2>
 						</div>
 
 						<div className="cards-wrapper">
@@ -314,7 +314,7 @@ function Page(props) {
 				<div className="overflow-wrapper">
 					<section className="section-med hpad-thin vpad-wide z-index-1" id="other">
 						<div className="center-text">
-							<h2>Other Partners</h2>
+							<h2><Trans>Other Partners</Trans></h2>
 						</div>
 
 						<div className="cards-wrapper">

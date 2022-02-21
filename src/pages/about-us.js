@@ -499,18 +499,15 @@ function Page(props) {
 						</div>
 						<div id="corporate-address">
 							<address>
-								<Trans>
-									Headquarters: <br />
-									1288 Columbus Ave.#122,<br />
-									San Francisco, CA 94133
-								</Trans>
+								<Trans>Headquarters</Trans>: <br />
+								1288 Columbus Ave.#122,<br />
+								San Francisco, CA 94133
+
 							</address>
 							<address>
-								<Trans>
-									Europe: <br />
-									Skalitzer Str. 85,<br />
-									10997 Berlin, Germany
-								</Trans>
+								<Trans>Europe</Trans>: <br />
+								Skalitzer Str. 85,<br />
+								10997 Berlin, Germany
 							</address>
 						</div>
 						<div className="z-index-1" id="corporate-buttons">

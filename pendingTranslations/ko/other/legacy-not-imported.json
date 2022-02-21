@@ -8,6 +8,7 @@
     "Transaction fees for accepting fiat.": "명목화폐를 받기 위한 거래 수수료.",
     "Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at account.orchid.com . The Orchid Account DApp can only be accessed using a web3 browser such as Metamask , and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing efficiency experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.": "Orchid 네트워크에 참여하기 위하여 OXT 또는 지원되는 다른 암호화폐를 자금으로 제공하려는 사용자는 account.orchid.com 에서 Orchid의 web3 기반 DApp을 사용하여 맞춤형 계정을 만들 수 있습니다. Orchid 계정 DApp은 Metamask 같은 web3 브라우저를 통해서만 액세스할 수 있으며, 세분화된 제어를 통해 맞춤형 계정을 생성할 수 있도록 암호화폐 지갑의 연결을 지원합니다. 여기서 사용자는 직접 값을 지정하여 계정에 자금을 제공하고, 관련된 예치금의 규모를 제어할 수 있으므로, Orchid 앱 안에서 경험하는 효율 에도 영향을 미칠 수 있습니다. 이 계정은 구매한 계정의 대안으로 Orchid 앱에 쉽게 연결할 수 있을 뿐만 아니라 수많은 사람 또는 기기와 제한 없이 공유할 수 있습니다.",
     "The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard . The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.": "Orchid 소프트웨어는 OpenVPN 또는 WireGuard 와 범위가 유사한 사용자 지정 VPN 프로토콜을 사용합니다. Orchid 프로토콜은 고성능 네트워킹용으로 설계되었으며, 브라우저 내부에서 비디오 및 오디오를 전송하는 데 널리 사용되는 일반 웹 표준인 WebRTC에 기반하여 실행됩니다. Orchid 프로토콜을 통해서 사용자는 원격 네트워크 리소스에 대한 액세스를 요청하고, Orchid 나노페이먼트 시스템을 통해 암호화폐를 사용하여 이러한 리소스에 대한 비용을 지불할 수 있습니다.",
+    "Events": "이벤트",
     "Find us IRL": "오프라인 행사",
     "@@GooglePlayBadgeAlt": "Google Play에서 받기",
     "All of Orchid's code is Open Source and freely available to download on GitHub . Use of Orchid's source code is governed by the AGPL copyleft Open Source license.": "Orchid의 모든 코드는 오픈 소스이며, GitHub 에서 무료로 다운로드할 수 있습니다. Orchid의 소스 코드 사용 시 AGPL 카피레프트 오픈 소스 라이선스가 적용됩니다.",
@@ -33,10 +34,9 @@
     "Agenda": "의제",
     "Participate": "참가",
     "Newsletter": "뉴스레터",
-    "Privacy Policy": "개인정보 보호정책",
-    "Terms of Service": "서비스 약관",
     "Docs": "문서",
     "Help": "도움말",
+    "@@Navigation-Events": "이벤트",
     "@@ContactForm__NamePlaceholder": "이름",
     "@@ContactForm__EmailPlaceholder": "이메일",
     "@@ContactForm__SubjectPlaceholder": "제목",
@@ -79,8 +79,6 @@
     "Legal Notice": "법적 고지",
     "The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.": "Orchid 우선 제공업체 프로그램은 “폐쇄형 선불 액세스” 프로그램으로 폐쇄형 선불 액세스 제품에 적용되는 FinCEN 규정을 준수합니다.",
     "Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.": "따라서, Orchid 크레딧 계정은 여기에 기재된 목록에서 VPN 대역폭 공급자로 \"정의된 판매자\"를 대상으로만 사용할 수 있습니다. 또한, FinCEN 규정을 준수하기 위해 Orchid 크레딧 계정의 구매 및 사용은 하루 $200로 제한됩니다.",
-    "VPN Partners": "VPN 파트너",
-    "Tune in on your favorite platforms": "원하는 플랫폼에 대한 최신 정보를 확인하세요",
     "Stay in the know!": "최신 정보를 받으세요!",
     "Our monthly email newsletter covers Orchid developments, privacy news, OOPSEC, and other topics relevant to online privacy.": "월간 이메일 뉴스레터는 Orchid 개발 소식, 개인 정보 보호 관련 뉴스, OOPSEC 및 온라인 프라이버시와 관련된 기타 주제를 다룹니다."
 }

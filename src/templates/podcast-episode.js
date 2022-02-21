@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Layout, PostCard } from '../components/common';
+import Layout from '../components/common/Layout';
+import PostCard from '../components/common/PostCard';
 import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
 

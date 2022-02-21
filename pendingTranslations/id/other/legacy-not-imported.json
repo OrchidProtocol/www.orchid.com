@@ -8,6 +8,7 @@
     "Transaction fees for accepting fiat.": "Biaya transaksi untuk menerima fiat.",
     "Users looking to supply their own OXT or other supported cryptocurrencies to fund their participation in the Orchid network can create a custom account using Orchid’s web3 based dapp at account.orchid.com . The Orchid Account DApp can only be accessed using a web3 browser such as Metamask , and allows linking of crypto wallets in order to build custom accounts with granular controls. Here, users can fund an account with their own specified values as well as control the size of the associated deposit, influencing efficiency experienced within the Orchid app. These accounts can be easily linked to the Orchid app as an alternative to purchased accounts as well as shared with an unlimited number of people and/or devices.": "Pengguna yang ingin memasok OXT mereka sendiri atau mata uang kripto lain yang didukung untuk mendanai partisipasi mereka dalam jaringan Orchid dapat membuat akun khusus menggunakan DApp berbasis Web3 oleh Orchid di account.orchid.com . DApp akun Orchid hanya dapat diakses menggunakan browser Web3 seperti Metamask , dan memungkinkan penautan dompet kripto untuk membuat akun khusus dengan kontrol granular. Di sini, pengguna dapat mendanai akun dengan nilai yang mereka tentukan sendiri serta mengontrol ukuran deposito terkait, yang memengaruhi efisiensi yang dialami dalam aplikasi Orchid. Akun ini dapat dengan mudah ditautkan ke aplikasi Orchid sebagai alternatif dari akun yang dibeli serta dibagikan dengan orang dan/atau perangkat dalam jumlah tak terbatas.",
     "The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard . The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers. Our protocol allows users to request access to remote network resources and pay for these resources using cryptocurrencies via the Orchid nanopayments system.": "Perangkat lunak Orchid dirancang untuk menggunakan protokol VPN khusus, mirip dengan OpenVPN atau WireGuard . Protokol Orchid dirancang untuk jaringan berkinerja tinggi yang berjalan di atas WebRTC, standar web umum, banyak digunakan untuk mentransmisikan video dan audio dari dalam browser. Protokol kami memungkinkan pengguna untuk meminta akses ke sumber daya jaringan jarak jauh dan membayar untuk sumber daya ini menggunakan mata uang kripto melalui sistem nano-pembayaran Orchid.",
+    "Events": "Acara",
     "Find us IRL": "Temui kami di dunia nyata",
     "@@GooglePlayBadgeAlt": "Dapatkan di Google Play",
     "All of Orchid's code is Open Source and freely available to download on GitHub . Use of Orchid's source code is governed by the AGPL copyleft Open Source license.": "Semua kode Orchid bersumber terbuka dan tersedia secara gratis untuk diunduh di GitHub . Penggunaan kode sumber Orchid diatur oleh lisensi Open Source AGPL copyleft.",
@@ -32,10 +33,9 @@
     "Speakers": "Pembicara",
     "Participate": "Berpartisipasi",
     "Newsletter": "Nawala",
-    "Privacy Policy": "Kebijakan Privasi",
-    "Terms of Service": "Persyaratan Layanan",
     "Docs": "Dokumentasi",
     "Help": "Bantuan",
+    "@@Navigation-Events": "Acara",
     "@@ContactForm__NamePlaceholder": "Nama Anda",
     "@@ContactForm__EmailPlaceholder": "Email Anda",
     "@@ContactForm__SubjectPlaceholder": "Subjek",
@@ -78,8 +78,6 @@
     "Legal Notice": "Pemberitahuan hukum",
     "The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.": "Program penyedia pilihan Orchid adalah program “akses prabayar dengan putaran tertutup” yang sesuai dengan peraturan FinCEN yang mengatur produk akses prabayar dengan putaran tertutup.",
     "Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.": "Karena itu, akun kredit Orchid hanya dapat digunakan dengan daftar “pedagang yang ditentukan” dari penyedia bandwidth VPN yang disediakan di sini. Selain itu, untuk mematuhi peraturan FinCEN, pembelian dan penggunaan akun kredit Orchid dibatasi hingga AS$200 per hari.",
-    "VPN Partners": "Mitra VPN",
-    "Tune in on your favorite platforms": "Dengarkan di platform kesukaan Anda",
     "Stay in the know!": "Tetap tahu!",
     "Our monthly email newsletter covers Orchid developments, privacy news, OOPSEC, and other topics relevant to online privacy.": "Nawala email bulanan kami mencakup perkembangan Orchid, berita privasi, OOPSEC, dan topik lain yang relevan dengan privasi online."
 }
