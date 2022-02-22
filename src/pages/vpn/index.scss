@@ -101,7 +101,7 @@
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-right;
-			background-image: url(/img/index/wavy-lines-01.svg);
+			background-image: url(/img/vpn/wavy-lines-01.svg);
 			@media (min-width: $wavy-bp) {
 				margin-left: 0;
 			}
@@ -111,42 +111,42 @@
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-left;
-			background-image: url(/img/index/wavy-lines-02.svg);
+			background-image: url(/img/vpn/wavy-lines-02.svg);
 		}
 	}
 	.wavy-element-03 {
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-right;
-			background-image: url(/img/index/wavy-lines-03.svg);
+			background-image: url(/img/vpn/wavy-lines-03.svg);
 		}
 	}
 	.wavy-element-04 {
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-left;
-			background-image: url(/img/index/wavy-lines-04.svg);
+			background-image: url(/img/vpn/wavy-lines-04.svg);
 		}
 	}
 	.wavy-element-05 {
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-right;
-			background-image: url(/img/index/wavy-lines-05.svg);
+			background-image: url(/img/vpn/wavy-lines-05.svg);
 		}
 	}
 	.wavy-element-06 {
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-left;
-			background-image: url(/img/index/wavy-lines-06.svg);
+			background-image: url(/img/vpn/wavy-lines-06.svg);
 		}
 	}
 	.wavy-element-07 {
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-right;
-			background-image: url(/img/index/wavy-lines-07.svg);
+			background-image: url(/img/vpn/wavy-lines-07.svg);
 		}
 	}
 
@@ -330,7 +330,7 @@
 			bottom: 0;
 			width: 150px;
 			max-width: 10vw;
-			background-image: url(/img/index/bird.svg);
+			background-image: url(/img/vpn/bird.svg);
 			background-size: contain;
 			background-position: center;
 			background-repeat: no-repeat;

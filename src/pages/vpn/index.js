@@ -19,7 +19,7 @@ function Page(props) {
 			<WebsiteMeta
 				title="Crypto VPN App | Orchid"
 				description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
-				image="/img/index/social.png"
+				image="/img/vpn/social.png"
 				location={props.location}
 			/>
 			<Helmet>
@@ -138,7 +138,7 @@ function Page(props) {
 							left: 0;
 							right: 0;
 							bottom: 0;
-							background-image: url(/img/index/wavy-lines-01.svg);
+							background-image: url(/img/vpn/wavy-lines-01.svg);
 							background-size: contain;
 							background-repeat: no-repeat;
 							background-position: center;
@@ -146,7 +146,7 @@ function Page(props) {
 							pointer-events: none;
 						}
 					`}>
-					<StaticImage loading="eager" src="../../../static/img/index/phone.png" placeholder="tracedSVG" width={491} height={765} alt="" />
+					<StaticImage loading="eager" src="../../../static/img/vpn/phone.png" placeholder="tracedSVG" width={491} height={765} alt="" />
 				</div>
 			</section>
 
@@ -160,7 +160,7 @@ function Page(props) {
 							Buyers use the <Link to="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they provide service and stake <Link to="/oxt">OXT</Link> to compete for service requests. Orchid Technologies charges no fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers the entire ecosystem. Try it out!
 						</Trans>
 					</p>
-					<StaticImage loading="lazy" src="../../../static/img/index/marketplace.png" placeholder="none" width={1600} height={368} alt="" />
+					<StaticImage loading="lazy" src="../../../static/img/vpn/marketplace.png" placeholder="none" width={1600} height={368} alt="" />
 					<div className="marketplace-steps">
 						<div>
 							<h3><Trans>Fund your Orchid account</Trans></h3>
@@ -183,7 +183,7 @@ function Page(props) {
 
 			<div className="wavy-element-03"></div>
 			<div className="decorative-island">
-				<StaticImage loading="lazy" src="../../../static/img/index/island-01.png" placeholder="none" width={600} height={357} alt="" />
+				<StaticImage loading="lazy" src="../../../static/img/vpn/island-01.png" placeholder="none" width={600} height={357} alt="" />
 			</div>
 
 			<section className="features__wrapper">
@@ -191,37 +191,37 @@ function Page(props) {
 					<h2 className="section-heading"><Trans>Key features</Trans></h2>
 					<div className="features-list">
 						<div>
-							<img src="/img/index/icons/crypto.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/crypto.svg" alt="" width="100" height="100" />
 							<h3><Trans>Crypto-powered</Trans></h3>
 							<p><Trans>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#how-to-get-an-orchid-account"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
-							<img src="/img/index/icons/nano.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/nano.svg" alt="" width="100" height="100" />
 							<h3><Trans>Nanopayment Ecosystem</Trans></h3>
 							<p><Trans>Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
-							<img src="/img/index/icons/traffic.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/traffic.svg" alt="" width="100" height="100" />
 							<h3><Trans>Traffic Analysis</Trans></h3>
 							<p><Trans>Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-traffic-monitor"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
-							<img src="/img/index/icons/multi-hop.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/multi-hop.svg" alt="" width="100" height="100" />
 							<h3><Trans>Multi-hop</Trans></h3>
 							<p><Trans>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-multi-hop-interface"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
-							<img src="/img/index/icons/servers.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/servers.svg" alt="" width="100" height="100" />
 							<h3><Trans>Randomized Servers</Trans></h3>
 							<p><Trans>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/faq/#technology"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
-							<img src="/img/index/icons/sharing.svg" alt="" width="100" height="100" />
+							<img src="/img/vpn/icons/sharing.svg" alt="" width="100" height="100" />
 							<h3><Trans>Unlimited Sharing</Trans></h3>
 							<p><Trans>Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#sharing-orchid-accounts"><Trans>Learn more.</Trans></a>
@@ -245,7 +245,7 @@ function Page(props) {
 				<div className="why-orchid__container container-common">
 					<h2 className="section-heading"><Trans>Why Orchid?</Trans></h2>
 					<div className="why-orchid__flex">
-						<StaticImage className="why-orchid__image" loading="lazy" src="../../../static/img/index/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
+						<StaticImage className="why-orchid__image" loading="lazy" src="../../../static/img/vpn/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
 						<div className="why-orchid__text">
 
 							<h4><Trans>No Subscriptions</Trans></h4>
@@ -289,10 +289,10 @@ function Page(props) {
 							</p>
 							<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" className="footer">
 								<div className="logo">
-									<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" loading="lazy" />
+									<img width="360" height="51" src="/img/vpn/seen/techcrunch.png" alt="techcrunch" loading="lazy" />
 								</div>
 								<div className="uppercase">TECHCRUNCH</div>
-								<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+								<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 							</a>
 						</div>
 						<div className="press-card">
@@ -301,10 +301,10 @@ function Page(props) {
 							</p>
 							<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
 								<div className="logo">
-									<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" loading="lazy" />
+									<img width="180" height="132" src="/img/vpn/seen/cnet.svg" alt="CNET" loading="lazy" />
 								</div>
 								<div className="uppercase">CNET</div>
-								<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+								<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 							</a>
 						</div>
 						<div className="press-card">
@@ -314,10 +314,10 @@ function Page(props) {
 							</p>
 							<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" className="footer">
 								<div className="logo">
-									<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" loading="lazy" />
+									<img width="360" height="70" src="/img/vpn/seen/coindesk.png" alt="coindesk" loading="lazy" />
 								</div>
 								<div className="uppercase">COINDESK</div>
-								<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+								<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 							</a>
 						</div>
 					</div>
@@ -333,7 +333,7 @@ function Page(props) {
 							</p>
 							<div className="footer">
 								<div className="logo offset">
-									<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 								</div>
 								<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
 							</div>
@@ -344,7 +344,7 @@ function Page(props) {
 							</p>
 							<div className="footer">
 								<div className="logo offset">
-									<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
 								</div>
 								<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
 							</div>

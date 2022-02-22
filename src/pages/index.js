@@ -21,7 +21,7 @@ function Page(props) {
 			<WebsiteMeta
 				title='Crypto VPN App | Orchid'
 				description='Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.'
-				image='/img/index/social.png'
+				image='/img/vpn/social.png'
 				location={props.location}
 			/>
 
@@ -156,6 +156,11 @@ function Page(props) {
 							<Trans>Go to Blog</Trans>
 						</button>
 					</a>
+				</Container>
+			</Wrapper>
+			<Wrapper>
+				<Container>
+
 				</Container>
 			</Wrapper>
 		</Layout>
