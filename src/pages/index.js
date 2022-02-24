@@ -8,7 +8,7 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
-import { break_largeScreen, break_mobile, break_notLargeScreen } from '../components/common/styles';
+import { break_largeScreen, break_mobile, break_notLargeScreen, break_notMobile } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -208,7 +208,44 @@ function Page(props) {
 
 			<Wrapper className='relative z-10'>
 				<Container className='phantom text-center'>
-					<div className='w-96 max-w-full mx-auto'>
+					<div css={css`
+						margin: 1rem auto;
+						& > a {
+							margin: 1rem 0;
+						}
+						${break_notMobile} {
+							margin: 3rem auto;
+						}
+						width: 80%;
+						max-width: 400px;
+						position: relative;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+
+						&::before,
+						&::after {
+							content: "";
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							width: 150px;
+							max-width: 10vw;
+							background-image: url(/img/vpn/bird.svg);
+							background-size: contain;
+							background-position: center;
+							background-repeat: no-repeat;
+							pointer-events: none;
+						}
+						&::before {
+							right: 100%;
+						}
+						&::after {
+							left: 100%;
+							transform: scaleX(-100%);
+						}
+					`}>
 						<h2><Trans>Orchid is Open Source</Trans></h2>
 						<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
 						<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
