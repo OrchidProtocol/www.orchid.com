@@ -38,12 +38,6 @@ class TemplateWrapper extends React.Component {
 					{/* prefetch fonts */}
 					<style>{`
 					@font-face {
-						font-family: "Headline One";
-						font-display: optional;
-						src: url("/fonts/HeadlineOne.ttf") format("truetype");
-					}
-
-					@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 400;
@@ -70,7 +64,13 @@ class TemplateWrapper extends React.Component {
 						font-weight: 900;
 						font-display: optional;
 						src: url(/fonts/Baloo/Baloo2-ExtraBold.ttf) format("truetype");
-					}*/`.replace('\t', '').replace('\n', '')}</style>
+					}*/
+
+					@font-face {
+						font-family: "Headline One";
+						font-display: optional;
+						src: url("/fonts/HeadlineOne.ttf") format("truetype");
+					}`.replace('\t', '').replace('\n', '')}</style>
 				</Helmet>
 
 				<div className="viewport">
