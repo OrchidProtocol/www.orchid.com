@@ -12,6 +12,7 @@ import { break_largeScreen, break_mobile, break_notLargeScreen } from '../compon
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -173,7 +174,7 @@ function Page(props) {
 			</Wrapper>
 
 			<Wrapper className='relative z-10'>
-				<Container className='text-right'>
+				<Container className='lg:text-right'>
 					<div className='flex lg:flex-row flex-col items-center'>
 						<div className='relative mb-4' css={css`
 								${break_notLargeScreen} {
@@ -207,11 +208,13 @@ function Page(props) {
 
 			<Wrapper className='relative z-10'>
 				<Container className='phantom text-center'>
-					<h2><Trans>Orchid is Open Source</Trans></h2>
-					<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
-					<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
-					<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
-					<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+					<div className='w-96 max-w-full mx-auto'>
+						<h2><Trans>Orchid is Open Source</Trans></h2>
+						<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
+						<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
+						<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
+						<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+					</div>
 				</Container>
 			</Wrapper>
 
@@ -239,9 +242,12 @@ function Page(props) {
 					</a>
 				</Container>
 			</Wrapper>
-			<Wrapper>
-				<Container>
 
+			<Wrapper>
+				<Container className="text-center">
+					<h3><Trans>Let’s stay connected</Trans></h3>
+					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
+					<NewsletterSignupCore t={t} largePadding="true" />
 				</Container>
 			</Wrapper>
 		</Layout>
