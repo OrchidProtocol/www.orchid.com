@@ -31,9 +31,7 @@ const DiagramArrow = styled.img`
 		margin-left: -2%;
 	}
 	${break_notLargeScreen} {
-		&.first, &.last {
-			display: none;
-		}
+		display: none;
 	}
 `;
 
@@ -84,7 +82,13 @@ function Page(props) {
 				<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
 				<Container>
 					<div className="relative">
-						<img alt='How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.' src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full block m-0" />
+						<img alt='How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.' src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full block m-0" css={css`
+							${break_notLargeScreen} {
+								width: calc(100% + 3rem);
+								margin: 0 -1.5rem;
+								max-width: unset;
+							}
+						`} />
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='first' width={36} height={187} />
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow2.svg' className='middle' width={36} height={650} />
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />

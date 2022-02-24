@@ -11,8 +11,8 @@ const Element = styled.div`
 		margin: 2rem auto;
 		${break_mobile} {
 			border-radius: 2rem;
-			padding: 3.5rem 2rem;
-			margin: 3.5rem auto;
+			padding: 2rem 2rem;
+			margin: 1rem auto;
 		}
 		background: white;
 		max-width: 90%;
