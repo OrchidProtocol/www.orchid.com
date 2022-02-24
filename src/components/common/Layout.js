@@ -43,8 +43,6 @@ class TemplateWrapper extends React.Component {
 						src: url("/fonts/HeadlineOne.ttf") format("truetype");
 					}
 
-					//@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600&display=swap');
-
 					/* devanagari */
 					@font-face {
 						font-family: "Baloo 2";
