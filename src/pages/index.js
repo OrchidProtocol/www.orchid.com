@@ -208,6 +208,9 @@ function Page(props) {
 
 			<Wrapper className='relative z-10'>
 				<Container className='phantom text-center'>
+					<h2><Trans>Orchid is Open Source</Trans></h2>
+					<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
+					<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
 					<div css={css`
 						margin: 1rem auto;
 						& > a {
@@ -246,9 +249,6 @@ function Page(props) {
 							transform: scaleX(-100%);
 						}
 					`}>
-						<h2><Trans>Orchid is Open Source</Trans></h2>
-						<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
-						<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
 						<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
 						<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
 					</div>
