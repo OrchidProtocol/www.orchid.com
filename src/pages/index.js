@@ -167,7 +167,9 @@ function Page(props) {
 									margin-right: -20%;
 								}
 							`}>
-							<StaticImage alt='' className='lg:absolute lg:top-0 lg:left-0' src='../../static/img/home/token_hifi.png' objectFit='contain' width={1680 * 0.25} height={1816 * 0.25} loading="lazy" placeholder='blurred' />
+							<div className='lg:absolute lg:top-0 lg:left-0'>
+								<StaticImage alt='' className='w-full h-full' src='../../static/img/home/token_hifi.png' objectFit='contain' width={1680 * 0.25} height={1816 * 0.25} loading="lazy" placeholder='blurred' />
+							</div>
 						</div>
 					</div>
 				</Container>
@@ -186,7 +188,9 @@ function Page(props) {
 									margin-left: -20%;
 								}
 							`}>
-							<StaticImage alt='' className='lg:absolute lg:top-0 lg:left-0' src='../../static/img/home/deviceTrio.png' objectFit='contain' width={1680 * 0.25} height={1904 * 0.25} loading="lazy" placeholder='blurred' />
+							<div className='lg:absolute lg:top-0 lg:right-0'>
+								<StaticImage alt='' className='w-full h-full' src='../../static/img/home/deviceTrio.png' objectFit='contain' width={1680 * 0.25} height={1904 * 0.25} loading="lazy" placeholder='blurred' />
+							</div>
 						</div>
 						<div>
 							<h2 className='my-4'><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
