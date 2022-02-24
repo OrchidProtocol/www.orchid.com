@@ -64,13 +64,13 @@ class TemplateWrapper extends React.Component {
 						font-display: block;
 						src: url(/fonts/Baloo/Baloo2-Bold.ttf) format("truetype");
 					}
-					@font-face {
+					/*@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 900;
 						font-display: block;
 						src: url(/fonts/Baloo/Baloo2-ExtraBold.ttf) format("truetype");
-					}`.replace('\t', '').replace('\n', '')}</style>
+					}*/`.replace('\t', '').replace('\n', '')}</style>
 				</Helmet>
 
 				<div className="viewport">
