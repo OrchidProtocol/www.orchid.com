@@ -10,8 +10,32 @@ import { StaticImage } from 'gatsby-plugin-image';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
-import { break_mobile } from '../components/common/styles';
+import { break_largeScreen, break_mobile, break_notLargeScreen } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
+import styled from '@emotion/styled';
+
+const DiagramArrow = styled.img`
+	display: block;
+	position: absolute;
+	top: 80.5%;
+	width: 4%;
+	left: 7.8%;
+	pointer-events: none;
+	&.last {
+		left: unset;
+		right: 7.8%;
+	}
+	&.middle {
+		left: 50%;
+		top: 92.55%;
+		margin-left: -2%;
+	}
+	${break_notLargeScreen} {
+		&.first, &.last {
+			display: none;
+		}
+	}
+`;
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -25,24 +49,29 @@ function Page(props) {
 				location={props.location}
 			/>
 
-			<Wrapper className='relative z-10'>
-				<Container className='phantom lg:p-0'>
-					<div className='lg:w-1/2'>
-						<h1><StaticImage alt='A Decentralized Marketplace' src='../../static/img/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
-						<p><Trans>Orchid is a Web3 platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
-						<p><FooterSocialIcons /></p>
+			<Wrapper className='relative z-10 flex items-center' css={css`
+				${break_largeScreen} {
+					min-height: 600px;
+				}
+			`}>
+				<Container className='phantom lg:p-0 relative'>
+					<div className='lg:w-1/2 h-auto'>
+						<h1><img alt='A Decentralized Marketplace' src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
+						<p className='my-2'><Trans>Orchid is a Web3 platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
+						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
 				</Container>
+				<img className='absolute right-0 top-0 h-auto w-1/4' alt='A Decentralized Marketplace' src='/img/home/logo.svg' width={613} height={875} />
 			</Wrapper>
 
 
 			<Wrapper className='relative z-10'>
-				<Container className='phantom flex flex-wrap'>
-					<div className='lg:w-1/2 flex flex-col justify-between items-start'>
+				<Container className='phantom flex flex-wrap justify-around'>
+					<div className='lg:w-5/12 flex flex-col justify-between items-start py-4'>
 						<h2><Trans>Orchid’s mission is privacy, and privacy is a human right.</Trans></h2>
 						<button className='btn btn-primary lg:mt-4'><Trans>About Orchid</Trans></button>
 					</div>
-					<div className='lg:w-1/2'>
+					<div className='lg:w-5/12'>
 						<p className='my-4'><Trans>Privacy and freedom are not in conflict; they are one and the same.</Trans></p>
 						<p className='my-4'><Trans>Privacy is an easy target for those in power who say, “if you have nothing to hide, you have nothing to fear.” This is a lie. The truth is that the people in positions of power have the least to worry about being private.</Trans></p>
 						<p className='my-4'><Trans>We stand in solidarity with causes dedicated to privacy and to other fundamental human rights. Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.</Trans></p>
@@ -54,15 +83,20 @@ function Page(props) {
 				<h4 className='text-gray'><Trans>Components of the Marketplace</Trans></h4>
 				<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
 				<Container>
-					Buyers Payments Orchid Marketplace Service Sellers
+					<div className="relative">
+						<img alt='How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.' src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full block m-0" />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='first' width={36} height={187} />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow2.svg' className='middle' width={36} height={650} />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
+					</div>
 				</Container>
-				<div className='flex flex-wrap justify-around text-left' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
-					<Container className='w-96'>
+				<div className='flex flex-wrap justify-around text-left relative z-20' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
+					<Container className='w-96 lg:m-w-1/3'>
 						<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
 						<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
 						<a href='#'><Trans>Learn more</Trans></a>
 					</Container>
-					<Container className='w-96'>
+					<Container className='w-96 lg:m-w-1/3'>
 						<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
 						<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
 						<a href='#'><Trans>Learn more</Trans></a>

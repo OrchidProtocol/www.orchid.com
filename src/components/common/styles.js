@@ -5,7 +5,7 @@ export const break_mobile = `@media screen and (max-width: ${mobileWidth}px)`;
 
 export const break_notMobile = `@media screen and (min-width: ${mobileWidth + 1}px)`;
 
-export const break_notLargeScreen = `@media screen and (max-width: ${mobileWidth}px)`;
+export const break_notLargeScreen = `@media screen and (max-width: ${screenLargeWidth}px)`;
 
 export const break_largeScreen = `@media screen and (min-width: ${screenLargeWidth + 1}px)`;
 
