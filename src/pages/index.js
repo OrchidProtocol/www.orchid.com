@@ -99,14 +99,14 @@ function Page(props) {
 						<Container>
 							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
 							<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
-							<a href='#'><Trans>Learn more</Trans></a>
+							<a href='#' className='underline'><Trans>Learn more</Trans></a>
 						</Container>
 					</div>
 					<div className='w-full lg:w-1/2 lg:text-right'>
 						<Container>
 							<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
 							<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
-							<a href='#'><Trans>Learn more</Trans></a>
+							<a href='#' className='underline'><Trans>Learn more</Trans></a>
 						</Container>
 					</div>
 				</div>
@@ -137,7 +137,7 @@ function Page(props) {
 							</p>
 						</div>
 					</div>
-					<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+					<a href='#'><button className='btn btn-primary m-4'><Trans>Learn more</Trans></button></a>
 				</Container>
 			</Wrapper>
 
@@ -145,14 +145,16 @@ function Page(props) {
 				<Container>
 					<div className='flex lg:flex-row flex-col-reverse items-center'>
 						<div>
-							<h2><Trans>OXT: The staking asset for the VPN market</Trans></h2>
+							<h2 className='my-4'><Trans>OXT: The staking asset for the VPN market</Trans></h2>
 							<p className='text-xl font-bold'><Trans>Decentralizing trust between buyers and sellers</Trans></p>
 							<p><Trans>The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid’s native ERC-20 digital asset that providers use to compete for user payment flow.</Trans></p>
 							<p className='font-bold mt-4'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
 							<p>
 								<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
 							</p>
-							<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+							<p className='my-4'>
+								<a href='#'><button className='btn btn-primary'><Trans>Learn more</Trans></button></a>
+							</p>
 						</div>
 						<div className='relative mb-4' css={css`
 								${break_notLargeScreen} {
@@ -186,7 +188,7 @@ function Page(props) {
 							<StaticImage alt='' className='lg:absolute lg:top-0 lg:left-0' src='../../static/img/home/deviceTrio.png' objectFit='contain' width={1680 * 0.25} height={1904 * 0.25} loading="lazy" placeholder='blurred' />
 						</div>
 						<div>
-							<h2><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
+							<h2 className='my-4'><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
 							<p className='text-xl font-bold'><Trans>An advanced VPN client built on the Orchid platform</Trans></p>
 							<p><Trans>The Orchid VPN app is a demonstrated use-case of Orchid’s decentralized marketplace, tunneling protocol, and the networks other interconnected components. The client provides protection from snooping ISP's, unblocks websites cutoff by firewalls, and many other privacy benefits. Bandwidth sellers receive payments in real-time as they provide service and stake OXT to compete for service requests. Buyers use customized or pre-paid cryptocurrency accounts to purchase bandwidth from stakeweighted providers using Orchid’s probabilistic nanopayment system.</Trans></p>
 							<p><Trans>Available on Android, iOS and macOS.</Trans></p>
@@ -194,8 +196,10 @@ function Page(props) {
 							<p>
 								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
 							</p>
-							<a className='btn btn-primary' href='#'><Trans>Get Orchid VPN</Trans></a>
-							<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+							<p className='my-4'>
+								<a href='#'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></a>
+								<a href='#'><button className='btn-secondary m-2'><Trans>Learn more</Trans></button></a>
+							</p>
 						</div>
 					</div>
 				</Container>
@@ -206,8 +210,8 @@ function Page(props) {
 					<h2><Trans>Orchid is Open Source</Trans></h2>
 					<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
 					<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
-					<a className='btn btn-primary' href='#'><Trans>Get Orchid VPN</Trans></a>
-					<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+					<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
+					<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
 				</Container>
 			</Wrapper>
 
