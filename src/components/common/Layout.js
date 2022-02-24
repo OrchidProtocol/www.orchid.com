@@ -39,7 +39,7 @@ class TemplateWrapper extends React.Component {
 					<style>{`
 					@font-face {
 						font-family: "Headline One";
-						font-display: block;
+						font-display: optional;
 						src: url("/fonts/HeadlineOne.ttf") format("truetype");
 					}
 
@@ -47,28 +47,28 @@ class TemplateWrapper extends React.Component {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 400;
-						font-display: block;
+						font-display: optional;
 						src: url(/fonts/Baloo/Baloo2-Regular.ttf) format("truetype");
 					}
 					@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 700;
-						font-display: block;
+						font-display: optional;
 						src: url(/fonts/Baloo/Baloo2-SemiBold.ttf) format("truetype");
 					}
 					/*@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 800;
-						font-display: block;
+						font-display: optional;
 						src: url(/fonts/Baloo/Baloo2-Bold.ttf) format("truetype");
 					}
 					@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 900;
-						font-display: block;
+						font-display: optional;
 						src: url(/fonts/Baloo/Baloo2-ExtraBold.ttf) format("truetype");
 					}*/`.replace('\t', '').replace('\n', '')}</style>
 				</Helmet>
