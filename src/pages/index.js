@@ -92,17 +92,21 @@ function Page(props) {
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
 					</div>
 				</Container>
-				<div className='flex flex-wrap justify-around text-left relative z-20' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
-					<Container className='w-96 lg:m-w-1/3'>
-						<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
-						<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
-						<a href='#'><Trans>Learn more</Trans></a>
-					</Container>
-					<Container className='w-96 lg:m-w-1/3'>
-						<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
-						<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
-						<a href='#'><Trans>Learn more</Trans></a>
-					</Container>
+				<div className='flex flex-wrap justify-between text-left relative z-20' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
+					<div className='w-full lg:w-1/2'>
+						<Container>
+							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
+							<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
+							<a href='#'><Trans>Learn more</Trans></a>
+						</Container>
+					</div>
+					<div className='w-full lg:w-1/2 lg:text-right'>
+						<Container>
+							<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
+							<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
+							<a href='#'><Trans>Learn more</Trans></a>
+						</Container>
+					</div>
 				</div>
 				<Container>
 					<h2><Trans>Orchid Accounts</Trans></h2>
