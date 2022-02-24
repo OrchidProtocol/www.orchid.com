@@ -41,28 +41,28 @@ class TemplateWrapper extends React.Component {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 400;
-						font-display: optional;
+						font-display: swap;
 						src: url(/fonts/Baloo/Baloo2-Regular.ttf) format("truetype");
 					}
 					@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 700;
-						font-display: optional;
+						font-display: swap;
 						src: url(/fonts/Baloo/Baloo2-SemiBold.ttf) format("truetype");
 					}
 					/*@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 800;
-						font-display: optional;
+						font-display: swap;
 						src: url(/fonts/Baloo/Baloo2-Bold.ttf) format("truetype");
 					}
 					@font-face {
 						font-family: "Baloo 2";
 						font-style: normal;
 						font-weight: 900;
-						font-display: optional;
+						font-display: swap;
 						src: url(/fonts/Baloo/Baloo2-ExtraBold.ttf) format("truetype");
 					}*/
 
@@ -88,7 +88,7 @@ class TemplateWrapper extends React.Component {
 					<Navbar t={t} />
 
 					<main css={css`
-						font-size: 16px;
+						font-size: 18px;
 					`}>
 						{/* All the main content gets inserted here, index.js, post.js */}
 						{this.props.children}

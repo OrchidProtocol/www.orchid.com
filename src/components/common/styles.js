@@ -1,5 +1,5 @@
-const mobileWidth = '870';
-const screenLargeWidth = '1200';
+const mobileWidth = 870;
+const screenLargeWidth = 1200;
 
 export const break_mobile = `@media screen and (max-width: ${mobileWidth}px)`;
 

@@ -11,6 +11,7 @@ import Container from '../components/common/Container';
 import { break_largeScreen, break_mobile, break_notLargeScreen } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -36,6 +37,7 @@ const DiagramArrow = styled.img`
 function Page(props) {
 	const { t } = useTranslation();
 
+	console.log(break_largeScreen);
 	return (
 		<Layout t={t} bodyclassName='index'>
 			<WebsiteMeta
@@ -45,7 +47,7 @@ function Page(props) {
 				location={props.location}
 			/>
 
-			<Wrapper className='relative z-10 flex items-center' css={css`
+			<div className='relative z-10 flex items-center' css={css`
 				${break_largeScreen} {
 					min-height: 600px;
 				}
@@ -58,7 +60,7 @@ function Page(props) {
 					</div>
 				</Container>
 				<img className='absolute right-0 top-0 h-auto w-1/4' alt='A Decentralized Marketplace' src='/img/home/logo.svg' width={613} height={875} />
-			</Wrapper>
+			</div>
 
 
 			<Wrapper className='relative z-10'>
@@ -141,36 +143,68 @@ function Page(props) {
 
 			<Wrapper className='relative z-10'>
 				<Container>
-					<h2><Trans>OXT: The staking asset for the VPN market</Trans></h2>
-					<p className='text-xl text-bold'><Trans>Decentralizing trust between buyers and sellers</Trans></p>
-					<p><Trans>The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid’s native ERC-20 digital asset that providers use to compete for user payment flow.</Trans></p>
-					<p className='text-bold mt-4'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
-					<p>
-						<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
-					</p>
-					<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+					<div className='flex lg:flex-row flex-col-reverse items-center'>
+						<div>
+							<h2><Trans>OXT: The staking asset for the VPN market</Trans></h2>
+							<p className='text-xl font-bold'><Trans>Decentralizing trust between buyers and sellers</Trans></p>
+							<p><Trans>The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid’s native ERC-20 digital asset that providers use to compete for user payment flow.</Trans></p>
+							<p className='font-bold mt-4'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
+							<p>
+								<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
+							</p>
+							<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+						</div>
+						<div className='relative mb-4' css={css`
+								${break_notLargeScreen} {
+									width: 90%;
+									max-width: 12rem;
+								}
+								${break_largeScreen} {
+									padding: 20%;
+									margin-right: -20%;
+								}
+							`}>
+							<StaticImage alt='' className='lg:absolute lg:top-0 lg:left-0' src='../../static/img/home/token_hifi.png' objectFit='contain' width={1680 * 0.25} height={1816 * 0.25} loading="lazy" placeholder='blurred' />
+						</div>
+					</div>
 				</Container>
 			</Wrapper>
 
 			<Wrapper className='relative z-10'>
 				<Container className='text-right'>
-					<h2><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
-					<p className='text-xl text-bold'><Trans>An advanced VPN client built on the Orchid platform</Trans></p>
-					<p><Trans>The Orchid VPN app is a demonstrated use-case of Orchid’s decentralized marketplace, tunneling protocol, and the networks other interconnected components. The client provides protection from snooping ISP's, unblocks websites cutoff by firewalls, and many other privacy benefits. Bandwidth sellers receive payments in real-time as they provide service and stake OXT to compete for service requests. Buyers use customized or pre-paid cryptocurrency accounts to purchase bandwidth from stakeweighted providers using Orchid’s probabilistic nanopayment system.</Trans></p>
-					<p><Trans>Available on Android, iOS and macOS.</Trans></p>
-					<p className='text-bold mt-4'><Trans>PREPAID ACCESS CREDITS: A frictionless payment system</Trans></p>
-					<p>
-						<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
-					</p>
-					<a className='btn btn-primary' href='#'><Trans>Get Orchid VPN</Trans></a>
-					<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+					<div className='flex lg:flex-row flex-col items-center'>
+						<div className='relative mb-4' css={css`
+								${break_notLargeScreen} {
+									width: 90%;
+									max-width: 12rem;
+								}
+								${break_largeScreen} {
+									padding: 20%;
+									margin-left: -20%;
+								}
+							`}>
+							<StaticImage alt='' className='lg:absolute lg:top-0 lg:left-0' src='../../static/img/home/deviceTrio.png' objectFit='contain' width={1680 * 0.25} height={1904 * 0.25} loading="lazy" placeholder='blurred' />
+						</div>
+						<div>
+							<h2><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
+							<p className='text-xl font-bold'><Trans>An advanced VPN client built on the Orchid platform</Trans></p>
+							<p><Trans>The Orchid VPN app is a demonstrated use-case of Orchid’s decentralized marketplace, tunneling protocol, and the networks other interconnected components. The client provides protection from snooping ISP's, unblocks websites cutoff by firewalls, and many other privacy benefits. Bandwidth sellers receive payments in real-time as they provide service and stake OXT to compete for service requests. Buyers use customized or pre-paid cryptocurrency accounts to purchase bandwidth from stakeweighted providers using Orchid’s probabilistic nanopayment system.</Trans></p>
+							<p><Trans>Available on Android, iOS and macOS.</Trans></p>
+							<p className='font-bold mt-4'><Trans>PREPAID ACCESS CREDITS: A frictionless payment system</Trans></p>
+							<p>
+								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
+							</p>
+							<a className='btn btn-primary' href='#'><Trans>Get Orchid VPN</Trans></a>
+							<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
+						</div>
+					</div>
 				</Container>
 			</Wrapper>
 
 			<Wrapper className='relative z-10'>
 				<Container className='phantom text-center'>
 					<h2><Trans>Orchid is Open Source</Trans></h2>
-					<p className='text-xl text-bold my-4'><Trans>Explore our code</Trans></p>
+					<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
 					<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
 					<a className='btn btn-primary' href='#'><Trans>Get Orchid VPN</Trans></a>
 					<a className='btn btn-primary' href='#'><Trans>Learn more</Trans></a>
