@@ -68,7 +68,7 @@ class TemplateWrapper extends React.Component {
 
 					@font-face {
 						font-family: "Headline One";
-						font-display: optional;
+						font-display: swap;
 						src: url("/fonts/HeadlineOne.ttf") format("truetype");
 					}`.replace('\t', '').replace('\n', '')}</style>
 				</Helmet>
