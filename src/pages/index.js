@@ -1,12 +1,10 @@
 import React from 'react'
 import Layout from '../components/common/Layout'
-import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 import BlogPosts from '../components/common/BlogPosts';
 import { graphql } from 'gatsby';
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
-import { StaticImage } from 'gatsby-plugin-image';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
