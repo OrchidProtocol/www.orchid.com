@@ -108,21 +108,24 @@ function Page(props) {
 					<h2><Trans>Orchid Accounts</Trans></h2>
 					<p className='text-xl font-bold mb-2'><Trans>The cornerstone of the nanopayment system</Trans></p>
 					<p><Trans>Orchid Accounts hold the funds that are sent through Orchid’s scaling nanopayment system. Users are responsible for managing their accounts on the blockchain within the Orchid DApp. Alternatively, fiat users can utilize a Prepaid Access Credits Account managed by Orchid. Each account is composed of a public/private keypair, a special funder wallet that controls the account, and the account makeup (deposit & balance), which determines how efficient the account is at transmitting payments.</Trans></p>
-					<div className='flex flex-wrap justify-center'>
+					<div className='flex flex-wrap justify-center mt-4'>
 						<div className='lg:p-2 w-60 max-w-full'>
-							<p className='text-xl font-bold'><Trans>Nanopayments:<br />Layer 2 scaling that enables high-frequency, trustless interactions</Trans></p>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-nanopayment.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Nanopayments:<br />Layer 2 scaling that enables high-frequency, trustless interactions</Trans></p>
 							<p>
 								<Trans>Orchid uses off-chain probabilistic payments to create a highly liquid marketplace for buying and selling bandwidth. Payments at packet scale allow for trustless interactions by reducing implicit floated balances between buyers and sellers. Marketplace participants can send &amp; receive payments at networking speeds.</Trans>
 							</p>
 						</div>
 						<div className='lg:p-2 w-60 max-w-full'>
-							<p className='text-xl font-bold'><Trans>Efficiency controls:<br />Fully customize Account payment parameters and composition.</Trans></p>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-efficiency.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Efficiency controls:<br />Fully customize Account payment parameters and composition.</Trans></p>
 							<p>
 								<Trans>The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.</Trans>
 							</p>
 						</div>
 						<div className='lg:p-2 w-60 max-w-full'>
-							<p className='text-xl font-bold'><Trans>Multichain support:<br />Make payments on an expanding list of EVM-compatible blockchains</Trans></p>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-multichain.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Multichain support:<br />Make payments on an expanding list of EVM-compatible blockchains</Trans></p>
 							<p>
 								<Trans>Multi-chain compatibility gives users an alternative to high gas prices on Ethereum by allowing them to pay for service on other chains. A system for multiple chains allows users and providers options to find lower transaction fees, and helps provide the most competitive network fee pricing to users everywhere.</Trans>
 							</p>
