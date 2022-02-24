@@ -308,12 +308,12 @@ class Navbar extends React.Component {
 					</CloseButtonHeader>
 					<NavbarItems>
 						<li className="mobile-only"><Link to="/"><Trans>Home</Trans></Link></li>
-						<li><Link to="/join"><Trans>Create Account</Trans></Link></li>
-						<li><Link to="/how-it-works"><Trans>How It Works</Trans></Link></li>
-						<li><Link to="/oxt"><Trans>OXT</Trans></Link></li>
-						<li><Link to="/about-us"><Trans>About</Trans></Link></li>
+						<li><Link to="/join/"><Trans>Create Account</Trans></Link></li>
+						<li><Link to="/how-it-works/"><Trans>How It Works</Trans></Link></li>
+						<li><Link to="/oxt/"><Trans>OXT</Trans></Link></li>
+						<li><Link to="/about-us/"><Trans>About</Trans></Link></li>
 						<li><a href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
-						<li><Link to="/contact"><Trans>Contact</Trans></Link></li>
+						<li><Link to="/contact/"><Trans>Contact</Trans></Link></li>
 						<LanguageSelector>
 							<span className="phantom-a">
 								<img className='inline-block' alt="" style={{ verticalAlign: "middle", margin: "0 5px 3px 0" }} width="20" height="20" src="/img/shared/globe.svg" />
