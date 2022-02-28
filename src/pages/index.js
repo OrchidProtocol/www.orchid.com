@@ -51,7 +51,7 @@ const IndexCard = styled.div`
 		content: "";
 		position: absolute;
 		top: 1rem;
-		left: -1rem;
+		left: -1.25rem;
 		width: 2rem;
 		height: 2rem;
 		background-size: contain;
@@ -288,7 +288,7 @@ function Page(props) {
 
 				<Container className='phantom'>
 					<ContainerOverflow className="-mt-16 lg:-mt-32 flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+						<IndexCard className='my-4 p-4 pl-5 bg-white'>
 							<p>
 								In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 							</p>
@@ -299,7 +299,7 @@ function Page(props) {
 								<a href="#" target="_blank" rel="noreferrer">TECHCRUNCH</a>
 							</div>
 						</IndexCard>
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+						<IndexCard className='my-4 p-4 pl-5 bg-white'>
 							<p>
 								This is what the future of VPN tech looks like. And you gotta see it.”
 							</p>
@@ -310,7 +310,7 @@ function Page(props) {
 								<a href="#" target="_blank" rel="noreferrer">CNET</a>
 							</div>
 						</IndexCard>
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+						<IndexCard className='my-4 p-4 pl-5 bg-white'>
 							<p>
 								Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
 							</p>
