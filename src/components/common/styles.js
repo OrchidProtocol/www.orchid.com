@@ -15,3 +15,9 @@ export const shadow = `
 		box-shadow: 0px 2px 10px 0px var(--orc-beige);
 	}
 `;
+export const flatShadow = `
+	box-shadow: 0px 2px 10px 0px var(--orc-beige);
+	${break_mobile} {
+		box-shadow: 0px 2px 8px 0px var(--orc-beige);
+	}
+`

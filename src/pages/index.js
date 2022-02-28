@@ -8,7 +8,7 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
-import { break_largeScreen, break_mobile, break_notLargeScreen, break_notMobile } from '../components/common/styles';
+import { break_largeScreen, break_mobile, break_notLargeScreen, break_notMobile, flatShadow, shadow } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -33,6 +33,33 @@ const DiagramArrow = styled.img`
 	}
 	${break_notLargeScreen} {
 		display: none;
+	}
+`;
+
+const IndexCard = styled.div`
+	${flatShadow}
+	position: relative;
+	width: 17rem;
+	max-width: 100%;
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	&::before {
+		pointer-events: none;
+		content: "";
+		position: absolute;
+		top: 1rem;
+		left: -1rem;
+		width: 2rem;
+		height: 2rem;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-image: url(/img/shared/quotes.svg);
+	}
+	&.twitter::before {
+		background-image: url(/img/shared/double-arrow.svg);
 	}
 `;
 
@@ -258,6 +285,44 @@ function Page(props) {
 						<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
 					</div>
 				</Container>
+
+				<Container className='phantom'>
+					<ContainerOverflow className="-mt-16 lg:-mt-32 flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+							<p>
+								In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="#" target="_blank" rel="noreferrer">TECHCRUNCH</a>
+							</div>
+						</IndexCard>
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+							<p>
+								This is what the future of VPN tech looks like. And you gotta see it.”
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="#" target="_blank" rel="noreferrer">CNET</a>
+							</div>
+						</IndexCard>
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white'>
+							<p>
+								Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="#" target="_blank" rel="noreferrer">COINDESK</a>
+							</div>
+						</IndexCard>
+					</ContainerOverflow>
+				</Container>
 			</Wrapper>
 
 			<Wrapper className='relative z-10'>
@@ -290,8 +355,42 @@ function Page(props) {
 					<h2 className='my-4'><Trans>Connect</Trans></h2>
 					<p><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
 
-					<ContainerOverflow>
-
+					<ContainerOverflow className="flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
+							<p>
+								Orchid just might be the best thing to ever explode into the world on a widely recognized list of things that are awesome - narrowly overtaking the Big Mac...
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
+							</div>
+						</IndexCard>
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
+							<p>
+								Orchid just might be the best thing to ever explode into the world on a widely recognized list of things that are awesome - narrowly overtaking the Big Mac...
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
+							</div>
+						</IndexCard>
+						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
+							<p>
+								This is a sample supportive tweet!
+								<br />
+								#twitter #faketweet
+							</p>
+							<div div className='flex items-center mt-4'>
+								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+								</div>
+								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
+							</div>
+						</IndexCard>
 					</ContainerOverflow>
 					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
