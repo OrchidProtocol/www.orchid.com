@@ -13,6 +13,7 @@ import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
+import ContainerOverflow from '../components/common/ContainerOverflow';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -115,22 +116,22 @@ function Page(props) {
 					<h2><Trans>Orchid Accounts</Trans></h2>
 					<p className='text-xl font-bold mb-2'><Trans>The cornerstone of the nanopayment system</Trans></p>
 					<p><Trans>Orchid Accounts hold the funds that are sent through Orchid’s scaling nanopayment system. Users are responsible for managing their accounts on the blockchain within the Orchid DApp. Alternatively, fiat users can utilize a Prepaid Access Credits Account managed by Orchid. Each account is composed of a public/private keypair, a special funder wallet that controls the account, and the account makeup (deposit & balance), which determines how efficient the account is at transmitting payments.</Trans></p>
-					<div className='flex flex-wrap justify-center mt-4'>
-						<div className='lg:p-2 w-60 max-w-full'>
+					<div className='flex flex-wrap justify-around mt-4'>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
 							<img className='mx-auto max-w-10/12' src='/img/home/icon-nanopayment.svg' alt='' width={80} height={80} />
 							<p className='text-xl font-bold my-2'><Trans>Nanopayments:<br />Layer 2 scaling that enables high-frequency, trustless interactions</Trans></p>
 							<p>
 								<Trans>Orchid uses off-chain probabilistic payments to create a highly liquid marketplace for buying and selling bandwidth. Payments at packet scale allow for trustless interactions by reducing implicit floated balances between buyers and sellers. Marketplace participants can send &amp; receive payments at networking speeds.</Trans>
 							</p>
 						</div>
-						<div className='lg:p-2 w-60 max-w-full'>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
 							<img className='mx-auto max-w-10/12' src='/img/home/icon-efficiency.svg' alt='' width={80} height={80} />
 							<p className='text-xl font-bold my-2'><Trans>Efficiency controls:<br />Fully customize Account payment parameters and composition.</Trans></p>
 							<p>
 								<Trans>The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.</Trans>
 							</p>
 						</div>
-						<div className='lg:p-2 w-60 max-w-full'>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
 							<img className='mx-auto max-w-10/12' src='/img/home/icon-multichain.svg' alt='' width={80} height={80} />
 							<p className='text-xl font-bold my-2'><Trans>Multichain support:<br />Make payments on an expanding list of EVM-compatible blockchains</Trans></p>
 							<p>
@@ -286,7 +287,13 @@ function Page(props) {
 
 			<Wrapper>
 				<Container className="text-center">
-					<h3><Trans>Let’s stay connected</Trans></h3>
+					<h2 className='my-4'><Trans>Connect</Trans></h2>
+					<p><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
+
+					<ContainerOverflow>
+
+					</ContainerOverflow>
+					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
 					<NewsletterSignupCore t={t} largePadding="true" />
 				</Container>
