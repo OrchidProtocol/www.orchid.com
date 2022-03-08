@@ -70,8 +70,8 @@ function Page(props) {
 	return (
 		<Layout t={t} bodyclassName='index'>
 			<WebsiteMeta
-				title='Crypto VPN App | Orchid'
-				description='Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.'
+				title={t('Crypto VPN App | Orchid')}
+				description={t('Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.')}
 				image='/img/vpn/social.png'
 				location={props.location}
 			/>
@@ -83,12 +83,12 @@ function Page(props) {
 			`}>
 				<Container className='phantom lg:p-0 relative'>
 					<div className='lg:w-1/2 h-auto'>
-						<h1><img alt='A Decentralized Marketplace' src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
+						<h1><img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
 						<p className='my-2'><Trans>Orchid is a Web3 platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
 						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
 				</Container>
-				<img className='absolute right-0 top-0 h-auto w-1/4' alt='A Decentralized Marketplace' src='/img/home/logo.svg' width={613} height={875} />
+				<img className='absolute right-0 top-0 h-auto w-1/4' alt={t('A Decentralized Marketplace')} src='/img/home/logo.svg' width={613} height={875} />
 			</div>
 
 
