@@ -330,7 +330,7 @@ function Page(props) {
 							<p><Trans>Available on <Link to='/download/'>Android</Link>, <Link to='/download/'>iOS</Link> and <Link to='/download/'>macOS</Link>.</Trans></p>
 							<p className='font-bold mt-4'><Trans>PREPAID ACCESS CREDITS: A frictionless payment system</Trans></p>
 							<p>
-								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
+								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s <Link to="/preferredproviders/">preferred providers</Link> for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
 							</p>
 							<p className='my-4 text-center md:text-left'>
 								<Link to='/get-orchid'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></Link>
