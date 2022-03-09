@@ -53,7 +53,7 @@ const NavbarItems = styled.ul`
 	padding: 0;
 	list-style: none;
 	a {
-		color: inherit;
+		color: #766D86;
 		text-decoration: none;
 	}
 	@media (min-width: 871px) {
@@ -124,6 +124,7 @@ const NavbarItems = styled.ul`
 const LanguageSelector = styled.li`
 	cursor: pointer;
 	position: relative;
+	color: #766D86;
 
 	svg {
 		width: 0.75em;
