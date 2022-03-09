@@ -89,15 +89,15 @@ const linkLengthLimit = 15;
 const cleanLink = (link) => {
 	return link.replace('https://', '').replace('www.', '').replace(/\/$/, '');
 };
-const addLinks = txt => txt.split(" ").map(part => {
+const addLinks = txt => txt.split(" ").map((part, index) => {
 	if (URL_REGEX.test(part)) {
-		return <a className='mr-1' href={part} target="_blank" rel="noreferrer">{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)}</a>;
+		return <a key={index} className='mr-1' href={part} target="_blank" rel="noreferrer">{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)}</a>;
 	} else if (part.startsWith('@')) {
-		return <a className='mr-1' href={`https://twitter.com/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
+		return <a key={index} className='mr-1' href={`https://twitter.com/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	} else if (part.startsWith('#')) {
-		return <a className='mr-1' href={`https://twitter.com/hashtag/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
+		return <a key={index} className='mr-1' href={`https://twitter.com/hashtag/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	} else if (part.startsWith('$') && part.length > 1) {
-		return <a className='mr-1' href={`https://twitter.com/search?q=%24${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
+		return <a key={index} className='mr-1' href={`https://twitter.com/search?q=%24${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	}
 	return part + " ";
 });
