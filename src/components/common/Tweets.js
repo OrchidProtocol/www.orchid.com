@@ -89,9 +89,18 @@ const linkLengthLimit = 15;
 const cleanLink = (link) => {
 	return link.replace('https://', '').replace('www.', '').replace(/\/$/, '');
 };
-const addLinks = txt => txt.split(" ").map(part =>
-	URL_REGEX.test(part) ? <a href={part}>{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)} </a> : part + " "
-);
+const addLinks = txt => txt.split(" ").map(part => {
+	if (URL_REGEX.test(part)) {
+		return <><a href={part} target="_blank" rel="noreferrer">{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)}</a> </>;
+	} else if (part.startsWith('@')) {
+		return <><a href={`https://twitter.com/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+	} else if (part.startsWith('#')) {
+		return <><a href={`https://twitter.com/hashtag/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+	} else if (part.startsWith('$') && part.length > 1) {
+		return <><a href={`https://twitter.com/search?q=%24${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+	}
+	return part + " ";
+});
 
 const FeaturedTweets = () => {
 	const tweets = shuffle(tweetPool).splice(0, 3);
