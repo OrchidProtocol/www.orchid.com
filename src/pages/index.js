@@ -8,12 +8,14 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
-import { break_largeScreen, break_mobile, break_notLargeScreen, break_notMobile, flatShadow, shadow } from '../components/common/styles';
+import { break_largeScreen, break_xlargeScreen, break_mobile, break_notLargeScreen, break_notMobile, flatShadow, shadow } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
 import NewsletterSignupCore from '../components/newsletter-signup-core';
 import ContainerOverflow from '../components/common/ContainerOverflow';
+import Circle from '../components/common/Circle';
+import Divider from '../components/common/Divider';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -66,7 +68,6 @@ const IndexCard = styled.div`
 function Page(props) {
 	const { t } = useTranslation();
 
-	console.log(break_largeScreen);
 	return (
 		<Layout t={t} bodyclassName='index'>
 			<WebsiteMeta
@@ -78,19 +79,63 @@ function Page(props) {
 
 			<div className='relative z-10 flex items-center' css={css`
 				${break_largeScreen} {
-					min-height: 600px;
+					min-height: 700px;
+				}
+				${break_xlargeScreen} {
+					min-height: 800px;
 				}
 			`}>
 				<Container className='phantom lg:p-0 relative'>
-					<div className='lg:w-1/2 h-auto'>
+
+					<Circle css={css`
+						top: 0%;
+						right: 75%;
+						width: 46%;
+						max-width: 700px;
+						${break_largeScreen} {
+							top: -15%;
+							right: 75%;
+						}
+						${break_xlargeScreen} {
+							top: -22%;
+							right: 75%;
+						}
+					`} />
+					<Circle css={css`
+						top: 0%;
+						right: 50%;
+						width: 11%;
+						max-width: 180px;
+						${break_largeScreen} {
+							top: -5%;
+							right: 50%;
+						}
+						${break_xlargeScreen} {
+							top: -20%;
+							right: 45%;
+						}
+					`} />
+					<Circle css={css`
+						top: 60%;
+						right: 52%;
+						width: 23%;
+						max-width: 280px;
+						${break_xlargeScreen} {
+							top: 70%;
+							right: 52%;
+						}
+					`} />
+
+					<div className='lg:w-1/2 h-auto relative z-10'>
 						<h1><img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
 						<p className='my-2'><Trans>Orchid is a Web3 platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
 						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
 				</Container>
-				<img className='absolute right-0 top-0 h-auto w-1/4' alt={t('A Decentralized Marketplace')} src='/img/home/logo.svg' width={613} height={875} />
+				<img className='absolute right-0 top-0 h-auto w-1/4 lg:w-1/3' alt={t('A Decentralized Marketplace')} src='/img/home/logo.svg' width={613} height={875} />
 			</div>
 
+			<Divider className='bg-purple-500' />
 
 			<Wrapper className='relative z-10'>
 				<Container className='phantom flex flex-wrap justify-around'>

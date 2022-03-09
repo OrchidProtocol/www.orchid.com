@@ -8,6 +8,7 @@ export const break_notMobile = `@media screen and (min-width: ${mobileWidth + 1}
 export const break_notLargeScreen = `@media screen and (max-width: ${screenLargeWidth}px)`;
 
 export const break_largeScreen = `@media screen and (min-width: ${screenLargeWidth + 1}px)`;
+export const break_xlargeScreen = `@media screen and (min-width: ${Math.round(screenLargeWidth * 1.5) + 1}px)`;
 
 export const shadow = `
 	box-shadow: 0px 4px 20px 0px var(--orc-beige);
