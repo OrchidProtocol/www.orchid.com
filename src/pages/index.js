@@ -8,7 +8,7 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
 import Container from '../components/common/Container';
-import { break_largeScreen, break_xlargeScreen, break_mobile, break_notLargeScreen, break_notMobile, flatShadow, shadow } from '../components/common/styles';
+import { break_largeScreen, break_xlargeScreen, break_mobile, break_notLargeScreen, break_notMobile } from '../components/common/styles';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
@@ -17,6 +17,7 @@ import ContainerOverflow from '../components/common/ContainerOverflow';
 import Circle from '../components/common/Circle';
 import Divider from '../components/common/Divider';
 import FeaturedTweets from '../components/common/Tweets';
+import IndexCard from '../components/common/IndexCard';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -36,33 +37,6 @@ const DiagramArrow = styled.img`
 	}
 	${break_notLargeScreen} {
 		display: none;
-	}
-`;
-
-export const IndexCard = styled.div`
-	${flatShadow}
-	position: relative;
-	width: 17rem;
-	max-width: 100%;
-	border-radius: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
-	&::before {
-		pointer-events: none;
-		content: "";
-		position: absolute;
-		top: 1rem;
-		left: -1.25rem;
-		width: 2rem;
-		height: 2rem;
-		background-size: contain;
-		background-repeat: no-repeat;
-		background-image: url(/img/shared/quotes.svg);
-	}
-	&.twitter::before {
-		background-image: url(/img/shared/double-arrow.svg);
 	}
 `;
 
@@ -412,40 +386,43 @@ function Page(props) {
 								<p>
 									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 								</p>
-								<div div className='flex items-center mt-4 relative justify-between'>
-									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
-										<img width="360" height="51" src="/img/vpn/seen/techcrunch.png" alt="techcrunch" loading="lazy" className='w-11/12' />
+								<a className='inset-0 absolute' href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" target="_blank" rel='noreferrer'>
+									<div div className='flex items-center mt-4 relative justify-between'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="360" height="51" src="/img/vpn/seen/techcrunch.png" alt="techcrunch" loading="lazy" className='w-11/12' />
+										</div>
+										<div className="uppercase">TECHCRUNCH</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 									</div>
-									<div className="uppercase">TECHCRUNCH</div>
-									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-									<a className='inset-0 absolute' href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" target="_blank" rel='noreferrer' />
-								</div>
+								</a>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
 								<p>
 									This is what the future of VPN tech looks like. And you gotta see it.”
 								</p>
-								<div div className='flex items-center mt-4 relative justify-between'>
-									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
-										<img width="180" height="132" src="/img/vpn/seen/cnet.svg" alt="CNET" loading="lazy" className='w-11/12' />
+								<a className='inset-0 absolute' href="https://www.cnet.com/tech/services-and-software/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" target="_blank" rel='noreferrer'>
+									<div div className='flex items-center mt-4 relative justify-between'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="180" height="132" src="/img/vpn/seen/cnet.svg" alt="CNET" loading="lazy" className='w-11/12' />
+										</div>
+										<div className="uppercase">CNET</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 									</div>
-									<div className="uppercase">CNET</div>
-									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-									<a className='inset-0 absolute' href="https://www.cnet.com/tech/services-and-software/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" target="_blank" rel='noreferrer' />
-								</div>
+								</a>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
 								<p>
 									Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
 								</p>
-								<div div className='flex items-center mt-4 relative justify-between'>
-									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
-										<img width="360" height="70" src="/img/vpn/seen/coindesk.png" alt="coindesk" loading="lazy" className='w-11/12' />
+								<a className='inset-0 absolute' href="https://www.coindesk.com/markets/2019/05/07/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative/" target="_blank" rel='noreferrer'>
+									<div div className='flex items-center mt-4 relative justify-between'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="360" height="70" src="/img/vpn/seen/coindesk.png" alt="coindesk" loading="lazy" className='w-11/12' />
+										</div>
+										<div className="uppercase">COINDESK</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
 									</div>
-									<div className="uppercase">COINDESK</div>
-									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-									<a className='inset-0 absolute' href="https://www.coindesk.com/markets/2019/05/07/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative/" target="_blank" rel='noreferrer' />
-								</div>
+								</a>
 							</IndexCard>
 						</ContainerOverflow>
 					</div>

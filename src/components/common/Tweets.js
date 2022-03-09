@@ -1,5 +1,5 @@
 import React from 'react'
-import { IndexCard } from "../../pages/index";
+import IndexCard from './IndexCard';
 
 const tweetPool = [
 	{
@@ -76,7 +76,7 @@ const tweetPool = [
 
 function shuffle(array) {
 	let index = array.length, randomIndex;
-	while (index != 0) {
+	while (index !== 0) {
 		randomIndex = Math.floor(Math.random() * index);
 		index--;
 		[array[index], array[randomIndex]] = [
@@ -84,20 +84,20 @@ function shuffle(array) {
 	}
 	return array;
 }
-const URL_REGEX = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)/;
+const URL_REGEX = /https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/;
 const linkLengthLimit = 15;
 const cleanLink = (link) => {
 	return link.replace('https://', '').replace('www.', '').replace(/\/$/, '');
 };
 const addLinks = txt => txt.split(" ").map(part => {
 	if (URL_REGEX.test(part)) {
-		return <><a href={part} target="_blank" rel="noreferrer">{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)}</a> </>;
+		return <a className='mr-1' href={part} target="_blank" rel="noreferrer">{cleanLink(part).length > linkLengthLimit ? cleanLink(part).substr(0, linkLengthLimit) + '...' : cleanLink(part)}</a>;
 	} else if (part.startsWith('@')) {
-		return <><a href={`https://twitter.com/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+		return <a className='mr-1' href={`https://twitter.com/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	} else if (part.startsWith('#')) {
-		return <><a href={`https://twitter.com/hashtag/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+		return <a className='mr-1' href={`https://twitter.com/hashtag/${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	} else if (part.startsWith('$') && part.length > 1) {
-		return <><a href={`https://twitter.com/search?q=%24${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a> </>;
+		return <a className='mr-1' href={`https://twitter.com/search?q=%24${part.substr(1)}`} target="_blank" rel="noreferrer">{part}</a>;
 	}
 	return part + " ";
 });
@@ -110,16 +110,16 @@ const FeaturedTweets = () => {
 		let parsedBody = body;
 		// replace "\n" with line breaks
 		parsedBody = parsedBody.split('\n');
-		parsedBody = parsedBody.map((paragraph) => {
-			return <p>{addLinks(paragraph)}</p>;
+		parsedBody = parsedBody.map((paragraph, i) => {
+			return <p key={i}>{addLinks(paragraph)}</p>;
 		});
 
 
 		return (
-			<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
-				<p>
+			<IndexCard key={index} className='twitter my-4 p-4 pl-5 bg-white text-left'>
+				<div>
 					{parsedBody}
-				</p>
+				</div>
 				<div div className='flex items-center mt-4'>
 					<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
 						<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />

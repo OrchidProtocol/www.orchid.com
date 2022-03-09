@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "@emotion/styled";
-import { break_mobile, shadow } from "./styles";
+import { break_mobile } from "./styles";
 
 const Element = styled.div`
 	--overflowSize: 5rem;
