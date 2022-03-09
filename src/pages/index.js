@@ -132,7 +132,9 @@ function Page(props) {
 						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
 				</Container>
-				<img className='absolute right-0 top-0 h-auto w-1/4 lg:w-1/3' alt={t('A Decentralized Marketplace')} src='/img/home/logo.svg' width={613} height={875} />
+
+				<img className='lg:hidden absolute right-0 top-0 h-auto w-1/4' alt='' src='/img/home/logo-trimmed.svg' width={613} height={875} />
+				<img className='hidden lg:block absolute right-0 h-auto w-1/3' alt='' src='/img/home/logo-trim.svg' width={800} height={875} css={css`top: 10%;`} />
 			</div>
 
 			<Divider className='bg-purple-500' />
@@ -152,8 +154,10 @@ function Page(props) {
 			</Wrapper>
 
 			<Wrapper className='text-center'>
-				<h4 className='text-gray'><Trans>Components of the Marketplace</Trans></h4>
-				<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
+				<div className='w-11/12 mx-auto'>
+					<h4 className='text-gray'><Trans>Components of the Marketplace</Trans></h4>
+					<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
+				</div>
 				<Container>
 					<div className="relative">
 						<img alt='How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.' src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full block m-0" css={css`
