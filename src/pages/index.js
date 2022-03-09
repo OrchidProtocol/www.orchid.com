@@ -413,33 +413,39 @@ function Page(props) {
 								<p>
 									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
 								</p>
-								<div div className='flex items-center mt-4'>
+								<div div className='flex items-center mt-4 relative justify-between'>
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
 										<img width="360" height="51" src="/img/vpn/seen/techcrunch.png" alt="techcrunch" loading="lazy" className='w-11/12' />
 									</div>
 									<div className="uppercase">TECHCRUNCH</div>
+									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									<a className='inset-0 absolute' href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" target="_blank" rel='noreferrer' />
 								</div>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
 								<p>
 									This is what the future of VPN tech looks like. And you gotta see it.”
 								</p>
-								<div div className='flex items-center mt-4'>
+								<div div className='flex items-center mt-4 relative justify-between'>
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
 										<img width="180" height="132" src="/img/vpn/seen/cnet.svg" alt="CNET" loading="lazy" className='w-11/12' />
 									</div>
 									<div className="uppercase">CNET</div>
+									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									<a className='inset-0 absolute' href="https://www.cnet.com/tech/services-and-software/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" target="_blank" rel='noreferrer' />
 								</div>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
 								<p>
 									Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
 								</p>
-								<div div className='flex items-center mt-4'>
+								<div div className='flex items-center mt-4 relative justify-between'>
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
 										<img width="360" height="70" src="/img/vpn/seen/coindesk.png" alt="coindesk" loading="lazy" className='w-11/12' />
 									</div>
 									<div className="uppercase">COINDESK</div>
+									<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									<a className='inset-0 absolute' href="https://www.coindesk.com/markets/2019/05/07/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative/" target="_blank" rel='noreferrer' />
 								</div>
 							</IndexCard>
 						</ContainerOverflow>
