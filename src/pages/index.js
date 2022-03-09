@@ -139,8 +139,8 @@ function Page(props) {
 
 			<Divider className='bg-purple-500' />
 
-			<Wrapper className='relative z-10'>
-				<Container className='phantom flex flex-wrap justify-around'>
+			<Wrapper>
+				<Container className='phantom flex flex-wrap justify-around relative z-10'>
 					<div className='lg:w-5/12 flex flex-col justify-between items-start py-4'>
 						<h2><Trans>Orchid’s mission is privacy, and privacy is a human right.</Trans></h2>
 						<button className='btn btn-primary lg:mt-4'><Trans>About Orchid</Trans></button>
@@ -153,8 +153,37 @@ function Page(props) {
 				</Container>
 			</Wrapper>
 
-			<Wrapper className='text-center'>
-				<div className='w-11/12 mx-auto'>
+			<Wrapper className='text-center relative'>
+				<Circle css={css`
+					top: 0%;
+					left: 65%;
+					width: 46%;
+					max-width: 700px;
+					${break_largeScreen} {
+						top: -200px;
+					}
+				`} />
+				<Circle css={css`
+					top: 0%;
+					right: 70%;
+					width: 20%;
+					max-width: 300px;
+					${break_largeScreen} {
+						top: 200px;
+						right: 50%;
+						transform: translateX(-500px);
+					}
+				`} />
+				<Circle css={css`
+					top: 60%;
+					right: 27%;
+					width: 23%;
+					max-width: 280px;
+					${break_largeScreen} {
+						top: 890px;
+					}
+				`} />
+				<div className='w-11/12 mx-auto relative z-10'>
 					<h4 className='text-gray'><Trans>Components of the Marketplace</Trans></h4>
 					<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
 				</div>
@@ -172,7 +201,7 @@ function Page(props) {
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
 					</div>
 				</Container>
-				<div className='flex flex-wrap justify-between text-left relative z-20' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
+				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-10' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
 					<div className='w-full lg:w-1/2'>
 						<Container>
 							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
@@ -219,8 +248,31 @@ function Page(props) {
 				</Container>
 			</Wrapper>
 
-			<Wrapper className='relative z-10'>
-				<Container>
+			<Wrapper className='relative'>
+				<Circle css={css`
+					top: 55%;
+					left: 40%;
+					width: 46%;
+					max-width: 700px;
+				`} />
+				<Circle css={css`
+					top: -3%;
+					right: 70%;
+					width: 20%;
+					max-width: 300px;
+					${break_largeScreen} {
+						top: -200px;
+						right: 50%;
+						transform: translateX(-500px);
+					}
+				`} />
+				<Circle css={css`
+					top: 110%;
+					right: 80%;
+					width: 23%;
+					max-width: 280px;
+				`} />
+				<Container className="relative z-10">
 					<div className='flex lg:flex-row flex-col-reverse items-center'>
 						<div>
 							<h2 className='my-4'><Trans>OXT: The staking asset for the VPN market</Trans></h2>
@@ -287,90 +339,109 @@ function Page(props) {
 				</Container>
 			</Wrapper>
 
-			<Wrapper className='relative z-10'>
-				<Container className='phantom text-center'>
-					<h2><Trans>Orchid is Open Source</Trans></h2>
-					<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
-					<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
-					<div css={css`
-						margin: 1rem auto;
-						& > a {
-							margin: 1rem 0;
-						}
-						${break_notMobile} {
-							margin: 3rem auto;
-						}
-						width: 80%;
-						max-width: 400px;
-						position: relative;
-						display: flex;
-						flex-direction: column;
-						justify-content: center;
-						align-items: center;
+			<Wrapper className='relative lg:py-10'>
+				<Container className='phantom text-center relative z-10'>
+					<Circle css={css`
+						top: 15%;
+						left: 80%;
+						width: 23%;
+						max-width: 280px;
+					`} />
+					<div className='relative z-10'>
+						<h2><Trans>Orchid is Open Source</Trans></h2>
+						<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
+						<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
+						<div css={css`
+							margin: 1rem auto;
+							& > a {
+								margin: 1rem 0;
+							}
+							${break_notMobile} {
+								margin: 3rem auto;
+							}
+							width: 80%;
+							max-width: 400px;
+							position: relative;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
 
-						&::before,
-						&::after {
-							content: "";
-							position: absolute;
-							top: 0;
-							bottom: 0;
-							width: 150px;
-							max-width: 10vw;
-							background-image: url(/img/vpn/bird.svg);
-							background-size: contain;
-							background-position: center;
-							background-repeat: no-repeat;
-							pointer-events: none;
-						}
-						&::before {
-							right: 100%;
-						}
-						&::after {
-							left: 100%;
-							transform: scaleX(-100%);
-						}
-					`}>
-						<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
-						<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+							&::before,
+							&::after {
+								content: "";
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								width: 150px;
+								max-width: 10vw;
+								background-image: url(/img/vpn/bird.svg);
+								background-size: contain;
+								background-position: center;
+								background-repeat: no-repeat;
+								pointer-events: none;
+							}
+							&::before {
+								right: 100%;
+							}
+							&::after {
+								left: 100%;
+								transform: scaleX(-100%);
+							}
+						`}>
+							<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
+							<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+						</div>
 					</div>
 				</Container>
 
-				<Container className='phantom'>
-					<ContainerOverflow className="-mt-16 lg:-mt-32 flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
-						<IndexCard className='my-4 p-4 pl-5 bg-white'>
-							<p>
-								In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+				<Container className='phantom relative'>
+					<Circle css={css`
+						top: -10%;
+						right: 40%;
+						width: 60%;
+						max-width: 1200px;
+						${break_largeScreen} {
+							top: -60%;
+						}
+					`} />
+					<div className='relative z-10'>
+						<ContainerOverflow className="-mt-16 lg:-mt-32 flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+								</p>
+								<div div className='flex items-center mt-4'>
+									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+									</div>
+									<a href="#" target="_blank" rel="noreferrer">TECHCRUNCH</a>
 								</div>
-								<a href="#" target="_blank" rel="noreferrer">TECHCRUNCH</a>
-							</div>
-						</IndexCard>
-						<IndexCard className='my-4 p-4 pl-5 bg-white'>
-							<p>
-								This is what the future of VPN tech looks like. And you gotta see it.”
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+							</IndexCard>
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									This is what the future of VPN tech looks like. And you gotta see it.”
+								</p>
+								<div div className='flex items-center mt-4'>
+									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+									</div>
+									<a href="#" target="_blank" rel="noreferrer">CNET</a>
 								</div>
-								<a href="#" target="_blank" rel="noreferrer">CNET</a>
-							</div>
-						</IndexCard>
-						<IndexCard className='my-4 p-4 pl-5 bg-white'>
-							<p>
-								Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+							</IndexCard>
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
+								</p>
+								<div div className='flex items-center mt-4'>
+									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
+										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
+									</div>
+									<a href="#" target="_blank" rel="noreferrer">COINDESK</a>
 								</div>
-								<a href="#" target="_blank" rel="noreferrer">COINDESK</a>
-							</div>
-						</IndexCard>
-					</ContainerOverflow>
+							</IndexCard>
+						</ContainerOverflow>
+					</div>
 				</Container>
 			</Wrapper>
 
@@ -399,8 +470,29 @@ function Page(props) {
 				</Container>
 			</Wrapper>
 
-			<Wrapper>
-				<Container className="text-center">
+			<Wrapper className='relative'>
+				<Circle css={css`
+					top: 5%;
+					right: 80%;
+					width: 30%;
+					max-width: 300px;
+				`} />
+				<Circle css={css`
+					top: 30%;
+					left: 80%;
+					width: 40%;
+					max-width: 400px;
+				`} />
+				<Circle css={css`
+					bottom: -1%;
+					right: 60%;
+					width: 20%;
+					max-width: 170px;
+					${break_largeScreen} {
+						bottom: -5%;
+					}
+				`} />
+				<Container className="text-center relative z-10">
 					<h2 className='my-4'><Trans>Connect</Trans></h2>
 					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
 					<p><FooterSocialIcons purple="true" /></p>
