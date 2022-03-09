@@ -283,7 +283,7 @@ function Page(props) {
 							<p>
 								<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
 							</p>
-							<p className='my-8'>
+							<p className='my-8 text-center md:text-left'>
 								<Link to='/oxt/'><button className='btn btn-primary'><Trans>Learn more</Trans></button></Link>
 							</p>
 						</div>
@@ -331,7 +331,7 @@ function Page(props) {
 							<p>
 								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
 							</p>
-							<p className='my-4'>
+							<p className='my-4 text-center md:text-left'>
 								<a href='#'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></a>
 								<a href='#'><button className='btn-secondary m-2'><Trans>Learn more</Trans></button></a>
 							</p>
