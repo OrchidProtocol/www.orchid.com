@@ -8,11 +8,11 @@ const Element = styled.div`
 		z-index: 1;
 		padding: 2.5rem 4rem;
 		border-radius: 1rem;
-		margin: 2rem auto;
+		margin: 3rem auto;
 		${break_mobile} {
 			border-radius: 2rem;
 			padding: 2rem 2rem;
-			margin: 1rem auto;
+			margin: 1.5rem auto;
 		}
 		background: white;
 		max-width: 90%;
