@@ -402,8 +402,8 @@ function Page(props) {
 			<Wrapper>
 				<Container className="text-center">
 					<h2 className='my-4'><Trans>Connect</Trans></h2>
-					<p><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
-
+					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
+					<p><FooterSocialIcons purple="true" /></p>
 					<ContainerOverflow className="flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
 						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
 							<p>
