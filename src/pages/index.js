@@ -403,7 +403,7 @@ function Page(props) {
 						width: 60%;
 						max-width: 1200px;
 						${break_largeScreen} {
-							top: -60%;
+							top: -42%;
 						}
 					`} />
 					<div className='relative z-10'>
