@@ -191,12 +191,11 @@ function Page(props) {
 				</div>
 				<Container>
 					<div className="relative">
-						<img alt='How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.' src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full block m-0" css={css`
-							${break_notLargeScreen} {
-								width: calc(100% + 3rem);
-								margin: 0 -1.5rem;
-								max-width: unset;
-							}
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full hidden lg:block m-0" />
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src='/img/home/marketplace-diagram-mobile.svg' width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
+							width: calc(100% + 3rem);
+							margin: 0 -1.5rem;
+							max-width: unset;
 						`} />
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='first' width={36} height={187} />
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow2.svg' className='middle' width={36} height={650} />
