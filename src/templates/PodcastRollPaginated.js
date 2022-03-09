@@ -35,7 +35,7 @@ const podcastRoll = ({ data, pageContext, location, t }) => {
 		<>
 			<WebsiteMeta
 				title={config.title}
-				description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
+				description={t("Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.")}
 				image={config.feature_image}
 				location={location}
 			/>

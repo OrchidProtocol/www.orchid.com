@@ -17,8 +17,8 @@ function Page(props) {
 	return (
 		<Layout t={t} bodyclassName="index">
 			<WebsiteMeta
-				title="Crypto VPN App | Orchid"
-				description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
+				title={t('Crypto VPN App | Orchid')}
+				description={t('Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy.')}
 				image="/img/vpn/social.png"
 				location={props.location}
 			/>
