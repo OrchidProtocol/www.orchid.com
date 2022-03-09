@@ -332,8 +332,8 @@ function Page(props) {
 								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
 							</p>
 							<p className='my-4 text-center md:text-left'>
-								<a href='#'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></a>
-								<a href='#'><button className='btn-secondary m-2'><Trans>Learn more</Trans></button></a>
+								<Link to='/get-orchid'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></Link>
+								<Link to='/vpn'><button className='btn-secondary m-2'><Trans>Learn more</Trans></button></Link>
 							</p>
 						</div>
 					</div>
@@ -416,7 +416,6 @@ function Page(props) {
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
 										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
 									</div>
-									<a href="#" target="_blank" rel="noreferrer">TECHCRUNCH</a>
 								</div>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
@@ -427,7 +426,6 @@ function Page(props) {
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
 										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
 									</div>
-									<a href="#" target="_blank" rel="noreferrer">CNET</a>
 								</div>
 							</IndexCard>
 							<IndexCard className='my-4 p-4 pl-5 bg-white'>
@@ -438,7 +436,6 @@ function Page(props) {
 									<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
 										<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
 									</div>
-									<a href="#" target="_blank" rel="noreferrer">COINDESK</a>
 								</div>
 							</IndexCard>
 						</ContainerOverflow>
