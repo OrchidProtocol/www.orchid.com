@@ -16,6 +16,7 @@ import NewsletterSignupCore from '../components/newsletter-signup-core';
 import ContainerOverflow from '../components/common/ContainerOverflow';
 import Circle from '../components/common/Circle';
 import Divider from '../components/common/Divider';
+import FeaturedTweets from '../components/common/Tweets';
 
 const DiagramArrow = styled.img`
 	display: block;
@@ -38,7 +39,7 @@ const DiagramArrow = styled.img`
 	}
 `;
 
-const IndexCard = styled.div`
+export const IndexCard = styled.div`
 	${flatShadow}
 	position: relative;
 	width: 17rem;
@@ -495,41 +496,7 @@ function Page(props) {
 					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
 					<p><FooterSocialIcons purple="true" /></p>
 					<ContainerOverflow className="flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
-							<p>
-								Orchid just might be the best thing to ever explode into the world on a widely recognized list of things that are awesome - narrowly overtaking the Big Mac...
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
-								</div>
-								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
-							</div>
-						</IndexCard>
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
-							<p>
-								Orchid just might be the best thing to ever explode into the world on a widely recognized list of things that are awesome - narrowly overtaking the Big Mac...
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
-								</div>
-								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
-							</div>
-						</IndexCard>
-						<IndexCard className='twitter my-4 p-4 pl-5 bg-white text-left'>
-							<p>
-								This is a sample supportive tweet!
-								<br />
-								#twitter #faketweet
-							</p>
-							<div div className='flex items-center mt-4'>
-								<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2'>
-									<img src="/img/vpn/TweetBunny.png" loading="lazy" width="273" height="201" alt="" className='w-24 ml-3' />
-								</div>
-								<a href="https://twitter.com/" target="_blank" rel="noreferrer">@TwitterHandle</a>
-							</div>
-						</IndexCard>
+						<FeaturedTweets />
 					</ContainerOverflow>
 					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
