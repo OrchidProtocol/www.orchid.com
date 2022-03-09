@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../components/common/Layout'
 
 import BlogPosts from '../components/common/BlogPosts';
-import { graphql } from 'gatsby';
+import { graphql, Link } from 'gatsby';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
@@ -141,15 +141,16 @@ function Page(props) {
 
 			<Wrapper>
 				<Container className='phantom flex flex-wrap justify-around relative z-10'>
-					<div className='lg:w-5/12 flex flex-col justify-between items-start py-4'>
+					<div className='lg:w-5/12 flex flex-col justify-between items-start pb-4 md:py-4'>
 						<h2><Trans>Orchid’s mission is privacy, and privacy is a human right.</Trans></h2>
-						<button className='btn btn-primary lg:mt-4'><Trans>About Orchid</Trans></button>
+						<Link to="/about-us/"><button className='btn btn-primary mt-4 hidden lg:block'><Trans>About Orchid</Trans></button></Link>
 					</div>
 					<div className='lg:w-5/12'>
 						<p className='my-4'><Trans>Privacy and freedom are not in conflict; they are one and the same.</Trans></p>
 						<p className='my-4'><Trans>Privacy is an easy target for those in power who say, “if you have nothing to hide, you have nothing to fear.” This is a lie. The truth is that the people in positions of power have the least to worry about being private.</Trans></p>
 						<p className='my-4'><Trans>We stand in solidarity with causes dedicated to privacy and to other fundamental human rights. Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.</Trans></p>
 					</div>
+					<Link to="/about-us/"><button className='btn btn-primary mt-4 mx-auto lg:hidden'><Trans>About Orchid</Trans></button></Link>
 				</Container>
 			</Wrapper>
 
@@ -201,26 +202,26 @@ function Page(props) {
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
 					</div>
 				</Container>
-				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-10' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
+				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-15' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
 					<div className='w-full lg:w-1/2'>
 						<Container>
 							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
 							<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
-							<a href='#' className='underline'><Trans>Learn more</Trans></a>
+							<Link to='/how-it-works/' className='underline'><Trans>Learn more</Trans></Link>
 						</Container>
 					</div>
 					<div className='w-full lg:w-1/2 lg:text-right'>
 						<Container>
 							<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
 							<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
-							<a href='#' className='underline'><Trans>Learn more</Trans></a>
+							<Link to='/how-it-works/' className='underline'><Trans>Learn more</Trans></Link>
 						</Container>
 					</div>
 				</div>
 				<Container>
 					<h2><Trans>Orchid Accounts</Trans></h2>
 					<p className='text-xl font-bold mb-2'><Trans>The cornerstone of the nanopayment system</Trans></p>
-					<p><Trans>Orchid Accounts hold the funds that are sent through Orchid’s scaling nanopayment system. Users are responsible for managing their accounts on the blockchain within the Orchid DApp. Alternatively, fiat users can utilize a Prepaid Access Credits Account managed by Orchid. Each account is composed of a public/private keypair, a special funder wallet that controls the account, and the account makeup (deposit & balance), which determines how efficient the account is at transmitting payments.</Trans></p>
+					<p><Trans>Orchid Accounts hold the funds that are sent through Orchid’s scaling nanopayment system. Users are responsible for managing their accounts on the blockchain within the <a href='https://account.orchid.com/'>Orchid DApp</a>. Alternatively, fiat users can utilize a Prepaid Access Credits Account managed by Orchid. Each account is composed of a public/private keypair, a special funder wallet that controls the account, and the account makeup (deposit & balance), which determines how efficient the account is at transmitting payments.</Trans></p>
 					<div className='flex flex-wrap justify-around mt-4'>
 						<div className='lg:p-2 w-64 max-w-full my-4'>
 							<img className='mx-auto max-w-10/12' src='/img/home/icon-nanopayment.svg' alt='' width={80} height={80} />
@@ -244,7 +245,7 @@ function Page(props) {
 							</p>
 						</div>
 					</div>
-					<a href='#'><button className='btn btn-primary m-4'><Trans>Learn more</Trans></button></a>
+					<a href='https://account.orchid.com/'><button className='btn btn-secondary m-4'><Trans>Launch DApp</Trans></button></a>
 				</Container>
 			</Wrapper>
 
@@ -278,12 +279,12 @@ function Page(props) {
 							<h2 className='my-4'><Trans>OXT: The staking asset for the VPN market</Trans></h2>
 							<p className='text-xl font-bold'><Trans>Decentralizing trust between buyers and sellers</Trans></p>
 							<p><Trans>The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid’s native ERC-20 digital asset that providers use to compete for user payment flow.</Trans></p>
-							<p className='font-bold mt-4'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
+							<p className='font-bold mt-8'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
 							<p>
 								<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
 							</p>
-							<p className='my-4'>
-								<a href='#'><button className='btn btn-primary'><Trans>Learn more</Trans></button></a>
+							<p className='my-8'>
+								<Link to='/oxt/'><button className='btn btn-primary'><Trans>Learn more</Trans></button></Link>
 							</p>
 						</div>
 						<div className='relative mb-4' css={css`
@@ -325,7 +326,7 @@ function Page(props) {
 							<h2 className='my-4'><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
 							<p className='text-xl font-bold'><Trans>An advanced VPN client built on the Orchid platform</Trans></p>
 							<p><Trans>The Orchid VPN app is a demonstrated use-case of Orchid’s decentralized marketplace, tunneling protocol, and the networks other interconnected components. The client provides protection from snooping ISP's, unblocks websites cutoff by firewalls, and many other privacy benefits. Bandwidth sellers receive payments in real-time as they provide service and stake OXT to compete for service requests. Buyers use customized or pre-paid cryptocurrency accounts to purchase bandwidth from stakeweighted providers using Orchid’s probabilistic nanopayment system.</Trans></p>
-							<p><Trans>Available on Android, iOS and macOS.</Trans></p>
+							<p><Trans>Available on <Link to='/download/'>Android</Link>, <Link to='/download/'>iOS</Link> and <Link to='/download/'>macOS</Link>.</Trans></p>
 							<p className='font-bold mt-4'><Trans>PREPAID ACCESS CREDITS: A frictionless payment system</Trans></p>
 							<p>
 								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s preferred providers for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
@@ -389,8 +390,8 @@ function Page(props) {
 								transform: scaleX(-100%);
 							}
 						`}>
-							<a href='#'><button className='btn btn-primary block my-2 mx-auto'><Trans>Get Orchid VPN</Trans></button></a>
-							<a href='#'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+							<a href='https://github.com/OrchidTechnologies'><button className='btn btn-primary block my-2 mx-auto'><Trans>GitHub</Trans></button></a>
+							<a href='/whitepaper/english.pdf' target='_blank'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
 						</div>
 					</div>
 				</Container>
@@ -463,7 +464,7 @@ function Page(props) {
 						<BlogPosts />
 					</div>
 					<a href={t('https://blog.orchid.com/')} className='section-button'>
-						<button className='btn-secondary mx-auto block'>
+						<button className='btn-secondary mx-auto my-4 lg:mt-8 block'>
 							<Trans>Go to Blog</Trans>
 						</button>
 					</a>
@@ -536,6 +537,7 @@ function Page(props) {
 					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
 					<NewsletterSignupCore t={t} largePadding="true" />
+					<div className='h-4' />
 				</Container>
 			</Wrapper>
 		</Layout>
