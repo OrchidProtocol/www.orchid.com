@@ -7,8 +7,7 @@ const Element = styled.div`
 	margin: 0 calc(-1 * var(--overflowSize));
 	width: calc(100% + var(--overflowSize) * 2);
 	${break_mobile} {
-		width: 100%;
-		margin: 0;
+		--overflowSize: 1.5rem;
 	}
 `;
 
