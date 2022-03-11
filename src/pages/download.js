@@ -43,10 +43,10 @@ function Page(props) {
 						<h4><Trans>Android</Trans></h4>
 						<StaticImage src="../../static/img/download/phone-android.png" width={450} height={913} className="download-images__device" alt="" />
 						<img src="/img/download/circle.svg" className="download-images__circle" alt="" width="325" height="325" />
-						<ul className="download-instructions__list" style={{ listStyle: "none" }}>
+						<ul className="download-instructions__list">
 							<li>
 								<a href={androidLink} data-appstorelink>
-									<img width="300" height="89" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem 0", height: "auto", maxWidth: "160px", }} />
+									<img width="300" height="89" src={t("/img/shared/google-play-badge.svg")} alt={t("Get it on Google Play")} style={{ margin: "0.75rem auto", height: "auto", maxWidth: "160px", }} />
 								</a>
 							</li>
 							<li>
