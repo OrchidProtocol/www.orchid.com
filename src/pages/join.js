@@ -76,7 +76,7 @@ function Page(props) {
 						<br />
 						<PricingWidget />
 						<br />
-						<h3><Trans>Step-by-step Orchid Account Creation</Trans></h3>
+						<h3 className='md:text-center'><Trans>Step-by-step Orchid Account Creation</Trans></h3>
 						<YouTubeEmbed id="WLKjCaX6X_E" />
 					</div>
 				</section>
@@ -119,13 +119,13 @@ function Page(props) {
 							</p>
 							<div className="join-apps">
 								<a href={androidLink} data-appstorelink>
-									<img width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px", width: "auto", }} />
+									<img className='inline-block w-auto' width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px" }} />
 								</a>
 								<a href={iOSLink} data-appstorelink>
-									<img alt="iOS" src="/img/shared/ios.png" style={{ height: "40px", width: "auto" }} />
+									<img className='inline-block w-auto' alt="iOS" src="/img/shared/ios.png" style={{ height: "40px" }} />
 								</a>
 								<a href={iOSLink} data-appstorelink>
-									<img alt="macOS" src="/img/shared/macos.svg" style={{ height: "40px", width: "auto" }} />
+									<img className='inline-block w-auto' alt="macOS" src="/img/shared/macos.svg" style={{ height: "40px" }} />
 								</a>
 							</div>
 							<p>
