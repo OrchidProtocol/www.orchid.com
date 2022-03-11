@@ -69,7 +69,7 @@ const tweetPool = [
 	},
 	{
 		body: `Man all you #NBA players need to just use #Orchid VPN and say whatever you guys want. No one will be able to locate your messages calls etc. $oxt https://orchid.com`,
-		username: 'mnalizad',
+		username: '@mnalizad',
 		link: 'https://twitter.com/mnalizad/status/1292954021125398530',
 	},
 ];
