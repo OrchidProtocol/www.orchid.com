@@ -58,7 +58,7 @@ const tweetPool = [
 		link: 'https://twitter.com/CoinDesk/status/1340277363570053122',
 	},
 	{
-		body: `On the #consensusdistributed Foundations track, @bloqinc co-founder. @matthewroszak talks privacy with @deseventral. Learn more about @bloqinc’s work with @orchidprotocol — staking, VPN bandwidth, and nodes — here: https://sync.bloq.com/bloq-and-the-orchid-network-privacy-in-the-tokenized-future/ #vpn #privacy @coindesk`,
+		body: `On the #consensusdistributed Foundations track, @bloqinc co-founder. @matthewroszak talks privacy with @deseventral. Learn more about @bloqinc’s work with @orchidprotocol — staking, VPN bandwidth, and nodes — here: https://sync.bloq.com/bloq-and-the-orchid-network-privacy-in-the-tokenized-future/ \n #vpn #privacy @coindesk`,
 		username: '@bloqinc',
 		link: 'https://twitter.com/bloqinc/status/1259845722289078272',
 	},
