@@ -103,7 +103,7 @@ function Page(props) {
 
 					<div className='lg:w-1/2 h-auto relative z-10'>
 						<h1><img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
-						<p className='my-2'><Trans>Orchid is a Web3 platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
+						<p className='my-2'><Trans>Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
 						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
 				</Container>
