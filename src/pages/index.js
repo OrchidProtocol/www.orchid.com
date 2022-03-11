@@ -176,7 +176,7 @@ function Page(props) {
 						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
 					</div>
 				</Container>
-				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-15' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
+				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-10' css={css`width: 60rem; max-width: 100%; margin: auto;`}>
 					<div className='w-full lg:w-1/2'>
 						<Container>
 							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
