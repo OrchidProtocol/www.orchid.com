@@ -119,13 +119,13 @@ function Page(props) {
 							</p>
 							<div className="join-apps">
 								<a href={androidLink} data-appstorelink>
-									<img className='inline-block w-auto' width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px" }} />
+									<img className='inline-block w-auto my-1' width="300" height="89" i18n-src="@@GooglePlayBadgeURL" src="/img/shared/google-play-badge.svg" i18n-alt="@@GooglePlayBadgeAlt" alt="Get it on Google Play" style={{ height: "40px" }} />
 								</a>
 								<a href={iOSLink} data-appstorelink>
-									<img className='inline-block w-auto' alt="iOS" src="/img/shared/ios.png" style={{ height: "40px" }} />
+									<img className='inline-block w-auto my-1' alt="iOS" src="/img/shared/ios.png" style={{ height: "40px" }} />
 								</a>
 								<a href={iOSLink} data-appstorelink>
-									<img className='inline-block w-auto' alt="macOS" src="/img/shared/macos.svg" style={{ height: "40px" }} />
+									<img className='inline-block w-auto my-1' alt="macOS" src="/img/shared/macos.svg" style={{ height: "40px" }} />
 								</a>
 							</div>
 							<p>
