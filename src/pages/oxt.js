@@ -191,14 +191,14 @@ function Page(props) {
 					<h2 className="color-primary center-text gap-bot-thin"><Trans>OXT Audits</Trans></h2>
 					<div className="oxt-audits__columns center-text">
 						<div>
-							<img width="160" height="138" src="/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
+							<img className="inline-block" width="160" height="138" src="/img/oxt/consensus-systems-logo.svg" alt="Consensys" />
 							<h4>Consensys Diligence</h4>
 							<a className="oxt-special-link" href="https://consensys.net/diligence/audits/2019/11/orchid-network-protocol/">
 								<Trans>Read the full public ConsenSys Diligence Audit here.</Trans>
 							</a>
 						</div>
 						<div>
-							<img width="160" height="131" className="certora-logo" src="/img/oxt/CertoraLogo@3x.png" alt="Certora" />
+							<img className="inline-block certora-logo" width="160" height="131" src="/img/oxt/CertoraLogo@3x.png" alt="Certora" />
 							<h4>Certora</h4>
 							<a className="oxt-special-link" href="/img/oxt/certora.pdf">
 								<Trans>Read the full public Certora Audit here.</Trans>
