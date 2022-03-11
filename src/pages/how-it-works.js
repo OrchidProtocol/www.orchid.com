@@ -131,16 +131,16 @@ function Page(props) {
 
 								<p><Trans>OXT’s primary purpose is to provide a staking-advertising mechanism that aligns operator incentives to the benefit of the Orchid network and mitigates certain risks.</Trans></p>
 								<p><Trans>The OXT digital currency provides value in the Orchid network in a number of ways:</Trans></p>
-								<ul>
+								<ul className='list-disc pl-4'>
 									<li><Trans>A Bandwidth Provider - Anyone can operate an Orchid Node, but must first stake OXT, with the more OXT that is staked, the greater the chances of reward in the Network.</Trans></li>
 									<li><Trans>A Bandwidth User - For the first time, users can pay-on-the-fly for a private, secure internet connection using nanopayments. Users add OXT or any of the supported cryptocurrencies to their Orchid account which is then used to pay providers for service while the VPN is connected.</Trans></li>
 								</ul>
 								<p><Link to="/oxt"><Trans>Learn more about OXT.</Trans></Link></p>
 								<p><Trans>The bandwidth marketplace is peer-to-peer and run in a completely decentralized manner without reliance on any central party. The primary reasons for this new digital currency OXT are:</Trans></p>
-								<ol>
+								<ul className='list-decimal pl-4'>
 									<li><Trans>To have a digital currency that is specifically tied to consumption of bandwidth on the Orchid network</Trans></li>
 									<li><Trans>To align operator incentives towards the benefit of the Orchid Network.</Trans></li>
-								</ol>
+								</ul>
 								<p><Trans>Accordingly, in addition to facilitating bandwidth transactions on the Network, the Orchid digital currency is used to prove a stake within the Orchid network that demonstrates a commitment by bandwidth providers, as well as to mitigate certain risks.</Trans></p>
 							</div>
 						</div>
@@ -187,7 +187,7 @@ function Page(props) {
 
 								<p><Trans><b>Purchased accounts:</b><br /> Orchid supports the ability for users to buy a pre funded Orchid account from within the official iOS app using native FIAT currency. “Orchid credits” are special accounts where the cryptocurrency, xDai, must be spent only with our preferred providers. Like all Orchid accounts, the account can be shared among devices.</Trans></p>
 								<p><Trans>What is being purchased when a user buys Orchid credits?</Trans></p>
-								<ul>
+								<ul className='list-disc pl-4'>
 									<li><b><Trans>Balance</Trans></b> <Trans>Based on the chosen pricing tier, the user will receive an Orchid account funded with an amount of xDai, subject to market fluctuations, which can be used to purchase bandwidth on the Orchid network.</Trans></li>
 									<li><b><Trans>Deposit</Trans></b> <Trans>A portion of the purchase is invested as a deposit to the generated account. This is required for participation in the Orchid network as both a deterrent of client malfeasance as well as a determinant for ticket sizing in our nanopayment system.</Trans></li>
 									<li><b><Trans>Gas</Trans></b> <Trans>Transactions made on the blockchain require small payments and a portion of the credits purchase goes to covering these costs for creating the Orchid account.</Trans></li>
@@ -368,7 +368,7 @@ function Page(props) {
 							<h3><Trans>Staking</Trans></h3>
 							<div>
 								<p><Trans>A provider stakes some number of OXT to create a stake deposit.</Trans></p>
-								<ul>
+								<ul className='list-disc pl-4'>
 									<li><Trans>Anyone can stake OXT on nodes using the smart contract.</Trans></li>
 									<li><Trans>Clients select new nodes in proportion to their relative OXT deposit size.</Trans></li>
 									<li><Trans>Larger stake deposits thus lead to proportionally more users, bandwidth, and revenue.</Trans></li>
