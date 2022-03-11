@@ -309,7 +309,7 @@ class Navbar extends React.Component {
 					</CloseButtonHeader>
 					<NavbarItems>
 						<li className="mobile-only"><Link to="/"><Trans>Home</Trans></Link></li>
-						<li><Link to="/join/"><Trans>Account</Trans></Link></li>
+						<li><a href="https://account.orchid.com/"><Trans>Account</Trans></a></li>
 						<li><Link to="/vpn/"><Trans>VPN</Trans></Link></li>
 						<li><Link to="/how-it-works/"><Trans>How It Works</Trans></Link></li>
 						<li><Link to="/oxt/"><Trans>OXT</Trans></Link></li>

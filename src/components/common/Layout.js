@@ -112,27 +112,28 @@ class TemplateWrapper extends React.Component {
 										<li><a className="phantom-a" href={this.state.androidLink} data-appstorelink><Trans>Android</Trans></a></li>
 										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans>iOS</Trans></a></li>
 										<li><a className="phantom-a" href={this.state.iOSLink} data-appstorelink><Trans>macOS</Trans></a></li>
-										<li><a className="phantom-a" href="/join"><Trans>Orchid Account</Trans></a></li>
-										<li><a className="phantom-a" href="/download"><Trans>Download</Trans></a></li>
+										<li><Link className="phantom-a" to="/download"><Trans>Download</Trans></Link></li>
+										<li><a className="phantom-a" href="https://account.orchid.com/"><Trans>Orchid Account</Trans></a></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-2">
 									<ul id="ft-nav-2-list" className="phantom-list">
 										<li><b><Trans>Learn</Trans></b></li>
-										<li><a className="phantom-a" href="/how-it-works"><Trans>How it Works</Trans></a></li>
-										<li><a className="phantom-a" href="/about-us"><Trans>About Us</Trans></a></li>
+										<li><Link className='phantom-a' to='/join/'>Create Account</Link></li>
+										<li><Link className="phantom-a" to="/how-it-works/"><Trans>How it Works</Trans></Link></li>
+										<li><Link className="phantom-a" to="/about-us/"><Trans>About Us</Trans></Link></li>
 										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans>Whitepaper</Trans></a></li>
-										<li><a className="phantom-a" href="/partners"><Trans>Partners</Trans></a></li>
-										<li><a className="phantom-a" href="/faq"><Trans>FAQ</Trans></a></li>
+										<li><Link className="phantom-a" to="/partners/"><Trans>Partners</Trans></Link></li>
+										<li><Link className="phantom-a" to="/faq/"><Trans>FAQ</Trans></Link></li>
 									</ul>
 								</nav>
 								<nav id="ft-nav-3">
 									<ul id="ft-nav-3-list" className="phantom-list">
 										<li><b><Trans>Engage</Trans></b></li>
-										<li><a className="phantom-a" href="/podcast"><Trans>Podcast</Trans></a></li>
+										<li><Link className="phantom-a" to="/podcast/"><Trans>Podcast</Trans></Link></li>
 										<li><a className="phantom-a" href={t("https://blog.orchid.com/")}>Blog</a></li>
-										<li><a className="phantom-a" href="/privacy-guardian"><Trans>Privacy Guardians</Trans></a></li>
-										<li><a className="phantom-a" href="/contact"><Trans>Contact</Trans></a></li>
+										<li><Link className="phantom-a" to="/privacy-guardian/"><Trans>Privacy Guardians</Trans></Link></li>
+										<li><Link className="phantom-a" to="/contact/"><Trans>Contact</Trans></Link></li>
 									</ul>
 								</nav>
 								<section>
