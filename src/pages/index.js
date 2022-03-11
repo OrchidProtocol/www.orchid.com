@@ -160,7 +160,6 @@ function Page(props) {
 					}
 				`} />
 				<div className='w-11/12 mx-auto relative z-10'>
-					<h4 className='text-gray'><Trans>Components of the Marketplace</Trans></h4>
 					<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
 				</div>
 				<Container>
