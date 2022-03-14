@@ -565,7 +565,7 @@ function Page(props) {
 										</h4>
 										<p className="faq-answer">
 											<span>
-												Orchid is a series of decentralized smart contracts and client software that uses Ethereum.Certain operations require the use of ETH for gas to power the smart contracts that run Orchid.For users who use the Orchid app, ETH is required when adding or removing funds from your Orchid account through the web3 browser interface.
+												Orchid is a series of decentralized smart contracts and client software that uses Ethereum.Certain operations require the use of ETH for gas to power the smart contracts that run Orchid. For users who use the Orchid app, ETH is required when adding or removing funds from your Orchid account through the web3 browser interface.
 											</span>
 										</p>
 									</li>

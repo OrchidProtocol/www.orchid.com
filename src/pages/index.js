@@ -205,9 +205,9 @@ function Page(props) {
 						</div>
 						<div className='lg:p-2 w-64 max-w-full my-4'>
 							<img className='mx-auto max-w-10/12' src='/img/home/icon-efficiency.svg' alt='' width={80} height={80} />
-							<p className='text-xl font-bold my-2'><Trans>Efficiency controls:<br />Fully customize Account payment parameters and composition.</Trans></p>
+							<p className='text-xl font-bold my-2'><Trans>Orchid account manager:<br /> A simple application for managing funds on the layer 2</Trans></p>
 							<p>
-								<Trans>The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.</Trans>
+								<Trans>The Orchid dApp is a hosted front-end for creating and managing Orchid accounts. After connecting a wallet, users can move funds in and out of the layer 2, along with making modifications for account makeup, payment efficiency and ticket sizing.</Trans>
 							</p>
 						</div>
 						<div className='lg:p-2 w-64 max-w-full my-4'>
