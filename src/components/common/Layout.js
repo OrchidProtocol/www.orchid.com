@@ -119,7 +119,7 @@ class TemplateWrapper extends React.Component {
 								<nav id="ft-nav-2">
 									<ul id="ft-nav-2-list" className="phantom-list">
 										<li><b><Trans>Learn</Trans></b></li>
-										<li><Link className='phantom-a' to='/join/'>Create Account</Link></li>
+										<li><Link className='phantom-a' to='/join/'><Trans>Create Account</Trans></Link></li>
 										<li><Link className="phantom-a" to="/how-it-works/"><Trans>How it Works</Trans></Link></li>
 										<li><Link className="phantom-a" to="/about-us/"><Trans>About Us</Trans></Link></li>
 										<li><a className="phantom-a" href="/whitepaper/english.pdf"><Trans>Whitepaper</Trans></a></li>
@@ -131,7 +131,7 @@ class TemplateWrapper extends React.Component {
 									<ul id="ft-nav-3-list" className="phantom-list">
 										<li><b><Trans>Engage</Trans></b></li>
 										<li><Link className="phantom-a" to="/podcast/"><Trans>Podcast</Trans></Link></li>
-										<li><a className="phantom-a" href={t("https://blog.orchid.com/")}>Blog</a></li>
+										<li><a className="phantom-a" href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
 										<li><Link className="phantom-a" to="/privacy-guardian/"><Trans>Privacy Guardians</Trans></Link></li>
 										<li><Link className="phantom-a" to="/contact/"><Trans>Contact</Trans></Link></li>
 									</ul>
