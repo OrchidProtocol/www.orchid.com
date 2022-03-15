@@ -39,13 +39,13 @@ function Page(props) {
 						<Trans>Core components of the Orchid network</Trans>
 					</h2>
 					<div className="buttons">
-						<a className="button" href="/how-it-works/#app"><Trans>The Orchid app</Trans></a>
-						<a className="button" href="/how-it-works/#oxt"><Trans>OXT cryptocurrency</Trans></a>
-						<a className="button" href="/how-it-works/#accounts"><Trans>Orchid Accounts</Trans></a>
-						<a className="button" href="/how-it-works/#protocol"><Trans>Orchid Protocol</Trans></a>
-						<a className="button" href="/how-it-works/#nanopayments"><Trans>Nanopayments</Trans></a>
-						<a className="button" href="/how-it-works/#ProgrammableNetwork"><Trans>Programmable Network</Trans></a>
-						<a className="button" href="/how-it-works/#staking"><Trans>Staking</Trans></a>
+						<Link className="button" to="/how-it-works/#app"><Trans>The Orchid app</Trans></Link>
+						<Link className="button" to="/how-it-works/#oxt"><Trans>OXT cryptocurrency</Trans></Link>
+						<Link className="button" to="/how-it-works/#accounts"><Trans>Orchid Accounts</Trans></Link>
+						<Link className="button" to="/how-it-works/#protocol"><Trans>Orchid Protocol</Trans></Link>
+						<Link className="button" to="/how-it-works/#nanopayments"><Trans>Nanopayments</Trans></Link>
+						<Link className="button" to="/how-it-works/#ProgrammableNetwork"><Trans>Programmable Network</Trans></Link>
+						<Link className="button" to="/how-it-works/#staking"><Trans>Staking</Trans></Link>
 					</div>
 				</div>
 				<div className="explainer__start-cap">
@@ -58,27 +58,27 @@ function Page(props) {
 					<div className="explainer__container">
 						<div className="explainer__start"></div>
 						<div className="explainer__progress">
-							<a className="explainer__dot active" href="/how-it-works/#app">
+							<Link className="explainer__dot active" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>The Orchid app</Trans></h3>
@@ -93,9 +93,9 @@ function Page(props) {
 							<img src="/img/how-it-works/app.svg" width="531" height="530" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -103,27 +103,27 @@ function Page(props) {
 				<section className="explainer" id="oxt">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>The Orchid digital currency (OXT)</Trans></h3>
@@ -149,9 +149,9 @@ function Page(props) {
 							<img src="/img/how-it-works/token.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -159,27 +159,27 @@ function Page(props) {
 				<section className="explainer" id="accounts">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>Orchid Accounts</Trans></h3>
@@ -203,9 +203,9 @@ function Page(props) {
 							<img src="/img/how-it-works/accounts.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -213,27 +213,27 @@ function Page(props) {
 				<section className="explainer" id="protocol">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>The Orchid Protocol</Trans></h3>
@@ -244,9 +244,9 @@ function Page(props) {
 							<img src="/img/how-it-works/protocol.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -254,27 +254,27 @@ function Page(props) {
 				<section className="explainer" id="nanopayments">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>Nanopayments</Trans></h3>
@@ -288,9 +288,9 @@ function Page(props) {
 							<img src="/img/how-it-works/nano.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -298,27 +298,27 @@ function Page(props) {
 				<section className="explainer" id="ProgrammableNetwork">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>Orchid Programmable Network</Trans></h3>
@@ -332,9 +332,9 @@ function Page(props) {
 							<img src="/img/how-it-works/node.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
@@ -342,27 +342,27 @@ function Page(props) {
 				<section className="explainer" id="staking">
 					<div className="explainer__container">
 						<div className="explainer__progress">
-							<a className="explainer__dot" href="/how-it-works/#app">
+							<Link className="explainer__dot" to="/how-it-works/#app">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#oxt">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#oxt">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#accounts">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#accounts">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#protocol">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#protocol">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#nanopayments">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#nanopayments">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot" href="/how-it-works/#ProgrammableNetwork">
+							</Link>
+							<Link className="explainer__dot" to="/how-it-works/#ProgrammableNetwork">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
-							<a className="explainer__dot active" href="/how-it-works/#staking">
+							</Link>
+							<Link className="explainer__dot active" to="/how-it-works/#staking">
 								<img src="/img/how-it-works/progress-dot.svg" alt="" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__text">
 							<h3><Trans>Staking</Trans></h3>
@@ -386,9 +386,9 @@ function Page(props) {
 							<img src="/img/how-it-works/stake.svg" alt="" />
 						</div>
 						<div className="explainer__bottom">
-							<a className="explainer__to-top" href="/how-it-works/#top">
+							<Link className="explainer__to-top" to="/how-it-works/#top">
 								<img src="/img/how-it-works/angle-up.svg" alt="back to top" />
-							</a>
+							</Link>
 						</div>
 						<div className="explainer__connector"></div>
 					</div>
