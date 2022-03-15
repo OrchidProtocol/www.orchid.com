@@ -145,8 +145,7 @@
 			background-repeat: no-repeat;
 			background-size: contain;
 		}
-		&::after {
-			content: "LEARN MORE";
+		.learnMore {
 			font-weight: bold;
 			color: $orc-purple;
 			position: absolute;
