@@ -4,11 +4,9 @@
     "Components of the Marketplace": "Componenti del marketplace",
     "Create Account": "Crea account",
     "EN": "",
-    "Efficiency controls:<br/>Fully customize Account payment parameters and composition.": "Controlli di efficienza:<br/>Personalizza completamente i parametri di pagamento e la composizione del conto.",
     "No 3rd-party sharing.": "Nessuna condivisione con terzi.",
     "No data collection.": "Nessuna raccolta di dati.",
     "No profit markup.": "Nessun ricarico sui profitti.",
     "Orchid News": "News da Orchid",
-    "Orchid is a decentralized bandwidth marketplace": "Orchid è un marketplace di larghezza di banda decentralizzato",
-    "The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.": "La dApp Orchid è un front-end ospitato per la creazione e la gestione di conti Orchid che consente agli utenti di aggirare l'interazione diretta con i contratti intelligenti. Al suo interno, la dApp è un wrapper per le chiamate di funzione del contratto intelligente che consente agli utenti di apportare modifiche personalizzate per la composizione del conto, l'efficienza dei pagamenti e il dimensionamento dei ticket."
+    "Orchid is a decentralized bandwidth marketplace": "Orchid è un marketplace di larghezza di banda decentralizzato"
 }

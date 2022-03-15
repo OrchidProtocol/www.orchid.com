@@ -4,11 +4,9 @@
     "Components of the Marketplace": "Komponen marketplace",
     "Create Account": "Buat akun",
     "EN": "",
-    "Efficiency controls:<br/>Fully customize Account payment parameters and composition.": "Pengendalian efisiensi:<br/>Komposisi dan parameter pembayaran akun dapat disesuaikan sepenuhnya.",
     "No 3rd-party sharing.": "Tidak berbagi dengan pihak ketiga.",
     "No data collection.": "Tidak ada pengumpulan data.",
     "No profit markup.": "Tidak ada peningkatan harga.",
     "Orchid News": "Berita Orchid",
-    "Orchid is a decentralized bandwidth marketplace": "Orchid adalah marketplace bandwidth terdesentralisasi",
-    "The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.": "DApp Orchid merupakan front-end yang di-hosting untuk membuat dan mengelola akun Orchid, sehingga pengguna dapat menghindari interaksi dengan kontrak pintar secara langsung. Pada intinya, DApp adalah wrapper untuk panggilan fungsi kontrak pintar yang membantu pengguna membuat modifikasi khusus pada komposisi akun, efisiensi pembayaran, dan pengukuran tiket."
+    "Orchid is a decentralized bandwidth marketplace": "Orchid adalah marketplace bandwidth terdesentralisasi"
 }

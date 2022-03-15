@@ -4,11 +4,9 @@
     "Components of the Marketplace": "बाजारस्थल के घटक",
     "Create Account": "एक खाता बनाएँ",
     "EN": "",
-    "Efficiency controls:<br/>Fully customize Account payment parameters and composition.": "कार्यदक्षता नियंत्रण:<br/>अपने खाता भुगतान प्राचलों और संघटन को पूरी तरह से मनपसंद बनाएँ।",
     "No 3rd-party sharing.": "तृतीय-पक्षों के साथ कोई साझाकरण नहीं।",
     "No data collection.": "कोई डेटा संग्रह नहीं।",
     "No profit markup.": "कोई लाभ मार्कअप नहीं।",
     "Orchid News": "ऑर्किड समाचार",
-    "Orchid is a decentralized bandwidth marketplace": "आर्किड एक विकेंद्रीकृत बैंडविड्थ बाजार है",
-    "The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.": "ऑर्किड डीऐप एक होस्ट किया गया फ्रंट-एंड है जिसका उपयोग ऑर्किड खाते निर्मित करने और उन्हें प्रबंधित करने के लिए होता है। ये खाते उपयोगकर्ताओं को सीधे स्मार्ट अनुबंधों के साथ अंतर्क्रिया करने से बचाते हैं। डीऐप मूलतः स्मार्ट अनुबंधों के फंक्शन कॉलों के लिए एक रैपर है, जो उपयोगकर्ताओं को खाता मेकअप, भुगतान की कार्यदक्षता और टिकट साइजिंग के लिए मनचाहे परिवर्तन करने में मदद करता है।"
+    "Orchid is a decentralized bandwidth marketplace": "आर्किड एक विकेंद्रीकृत बैंडविड्थ बाजार है"
 }

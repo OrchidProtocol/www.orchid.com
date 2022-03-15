@@ -4,11 +4,9 @@
     "Components of the Marketplace": "Что входит в состав рынка",
     "Create Account": "Создать аккаунт",
     "EN": "",
-    "Efficiency controls:<br/>Fully customize Account payment parameters and composition.": "Контроль эффективности:<br/>полная настройка параметров оплаты и состава аккаунта.",
     "No 3rd-party sharing.": "Не предоставляем данные третьим лицам.",
     "No data collection.": "Не собираем данные.",
     "No profit markup.": "Без рекламного кода.",
     "Orchid News": "Новости Orchid",
-    "Orchid is a decentralized bandwidth marketplace": "Orchid — это децентрализованный рынок пропускных ресурсов",
-    "The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.": "DApp-приложение Orchid — это размещенное фронт-энд решение для создания аккаунтов Orchid и управления ими. Оно служит для того, чтобы пользователям не пришлось напрямую взаимодействовать со смарт-контрактами. По сути своей DApp — это «обертка» для вызова функций смарт-контракта, которая позволяет пользователям самим модифицировать бюджет аккаунта, эффективность платежей и размеры заявок."
+    "Orchid is a decentralized bandwidth marketplace": "Orchid — это децентрализованный рынок пропускных ресурсов"
 }

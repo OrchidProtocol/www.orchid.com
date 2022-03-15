@@ -4,11 +4,9 @@
     "Components of the Marketplace": "Mağazanın bileşenleri",
     "Create Account": "Hesap Oluştur",
     "EN": "",
-    "Efficiency controls:<br/>Fully customize Account payment parameters and composition.": "Verimlilik kontrolleri:<br/>Hesap ödeme parametrelerini ve düzenini tam anlamıyla özelleştirin.",
     "No 3rd-party sharing.": "3. taraflarla paylaşma yok.",
     "No data collection.": "Veri toplama yok.",
     "No profit markup.": "Kâr marjı yok.",
     "Orchid News": "Orchid Haberleri",
-    "Orchid is a decentralized bandwidth marketplace": "Orchid, merkezi olmayan bir bant genişliği mağazasıdır",
-    "The Orchid dApp is a hosted front-end for creating and managing Orchid accounts that allows users to circumvent interacting with smart contracts directly. At its core, the dApp is a wrapper for the function calls of the smart contract which helps users make custom modifications for account makeup, payment efficiency and ticket sizing.": "Orchid dApp'i, kullanıcıların akıllı sözleşmelerle direkt olarak etkileşime girmesini engellemeye yarayan, Orchid hesaplarını oluşturmak ve yönetmek için kullanılan, barındırmalı bir arayüzdür. Özünde dApp, kullanıcıların hesap düzeninde isteğe bağlı modifikasyonlar yapmasına, ödeme verimliliğine ve bilet boyutlamaya yardım eden akıllı sözleşmenin işlev çağrısı için bir sargıdır."
+    "Orchid is a decentralized bandwidth marketplace": "Orchid, merkezi olmayan bir bant genişliği mağazasıdır"
 }
