@@ -43,11 +43,10 @@ const allImportedStrings = [];
 async function run() {
 	for (let i = 0; i < locales.length; i++) {
 		if (locales[i] !== 'en') {
-			let pageText = fs.readFileSync(`./translationImport/common_${locales[i]}.xml`, 'utf8');
-			pageText = pageText.replace(/\s\s+/g, ' ').replace(/WireGuard \./g, 'WireGuard.');
-			const $ = cheerio.load(pageText, {
-				xmlMode: true,
-			});
+			let crowdinImport = fs.readFileSync(`./translationImport/common_${locales[i].replace('-', '_')}.json`, 'utf8');
+			crowdinImport = crowdinImport.replace(/\s\s+/g, ' ').replace(/WireGuard \./g, 'WireGuard.');
+
+			crowdinImport = JSON.parse(crowdinImport);
 
 			const needsUpdate = {};
 			let localeKeys = {};
@@ -55,18 +54,15 @@ async function run() {
 				localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
 			} catch (e) { }
 			const newMissingKeys = {};
-			const units = $('body').find('trans-unit');
 
-			for (let index = 0; index < units.length; index++) {
-				const unit = units[index];
-				const target = cleanup($(unit).find('target').text());
-				const source = cleanup($(unit).find('source').text());
-				let id = unit.attributes[0].value;
-				if (target !== source) {
+			for (const key in crowdinImport) {
+				if (Object.hasOwnProperty.call(crowdinImport, key)) {
+					const target = crowdinImport[key];
+
 					allImportedStrings.push({
-						id,
+						id: key,
 						target,
-						source,
+						source: key,
 					});
 				}
 			}
@@ -74,12 +70,6 @@ async function run() {
 			// initial exact match
 			for (let index = 0; index < allImportedStrings.length; index++) {
 				let { target, source, id } = allImportedStrings[index];
-
-				if (id.length === 40) {
-					id = source;
-				} else {
-					id = `@@${id}`;
-				}
 				if (baseJSON.common[id]) {
 					localeKeys[id] = target;
 				} else if (baseJSON.common[source]) {
