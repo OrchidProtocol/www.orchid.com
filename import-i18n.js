@@ -136,6 +136,7 @@ async function run() {
 				}
 			}
 			console.log(`${locales[i]} missing: ${Object.keys(modernMissingKeys).length}`);
+			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/not-translated.json`, JSON.stringify(modernMissingKeys, null, 4));
 			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/new-not-imported.json`, JSON.stringify(newMissingKeys, null, 4));
 
 			try {
