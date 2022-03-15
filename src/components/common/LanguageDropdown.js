@@ -1,6 +1,6 @@
 import React from "react";
 import styled from '@emotion/styled';
-import { useTranslation, Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 
 
 const LanguageSelector = styled.li`
@@ -98,7 +98,6 @@ const languageKeys = {
 	'zh': '中文',
 }
 const Navigation = () => {
-	const { t } = useTranslation();
 	const { languages, originalPath, language } = useI18next()
 
 	return (
