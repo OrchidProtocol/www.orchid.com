@@ -92,7 +92,7 @@ const languageKeys = {
 	'ja': '日本語',
 	'ko': '한국어',
 	'pt': 'Português',
-	'ptBR': 'Português do Brasil',
+	'pt-BR': 'Português do Brasil',
 	'ru': 'Русский',
 	'tr': 'Türkçe',
 	'zh': '中文',
