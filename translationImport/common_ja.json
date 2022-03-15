@@ -213,7 +213,7 @@
 	"Orchid is Open Source": "Orchid はオープンソースです",
 	"Orchid is a Delaware c-corp": "Orchid はデラウェア州で設立された株式会社 (C-Corp) です",
 	"Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.": "Orchid は、OXT とマルチホップ VPN クライアントによってインセンティブを与えられたオニオン ルーティング ネットワークを可能にする Web3 プラットフォームです。 Orchid コミュニティは、オープンソース ソフトウェアを信じており、Orchid はより明るく、より自由で、権限を与えられた未来を可能にできると信じています。",
-	"Orchid is a decentralized bandwidth marketplace": "Orchid は分散型帯域幅マーケットプレイスです",
+	"Orchid VPN enables a bandwidth marketplace": "Orchid は分散型帯域幅マーケットプレイスです",
 	"Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.": "Orchid ナノペイメントは、サブスクリプションに縛られることはなく、実際の使用に対してのみ支払うことを意味します。",
 	"Orchid nodes maintain registration information in a stake registry and provider directory on Ethereum. The stake registry is optimized for enabling the Orchid app to automatically discover random servers in a decentralized environment, while the provider directory allows Orchid nodes to register metadata such as geolocation or additional services offered.": "Orchid ノードは、イーサリアム上のステーク レジストリおよびプロバイダー ディレクトリに登録情報を保持します。ステーク レジストリは、Orchid アプリが分散型の環境で、ユーザーに代わってランダム サーバーを自動的に検出できるように最適化されています。一方プロバイダー ディレクトリは、ノードがジオロケーションや提供される追加サービスなどのメタデータを登録できるように します。",
 	"Orchid partners with companies around the world to advance our mission of making the internet a safer, more private place for everyone.": "Orchid は世界中の企業と提携して、すべての人にとって、インターネットをより安全で、よりプライベートな場所にするという私どもの使命を推進しています。",
