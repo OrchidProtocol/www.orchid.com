@@ -110,7 +110,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-react-i18next`,
 			options: {
-				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'pt-BR', 'ru', 'tr', 'zh'],
+				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'ptbr', 'ru', 'tr', 'zh'],
 				defaultLanguage: 'en',
 				defaultNS: 'common',
 				siteUrl: 'https://www.orchid.com/',

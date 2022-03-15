@@ -12,7 +12,7 @@ const locales = [
 	'ja',
 	'ko',
 	'pt',
-	'pt-BR',
+	'ptbr',
 	'ru',
 	'tr',
 	'zh',
@@ -43,7 +43,7 @@ const allImportedStrings = [];
 async function run() {
 	for (let i = 0; i < locales.length; i++) {
 		if (locales[i] !== 'en') {
-			let crowdinImport = fs.readFileSync(`./translationImport/common_${locales[i].replace('-', '_')}.json`, 'utf8');
+			let crowdinImport = fs.readFileSync(`./translationImport/common_${locales[i].replace('ptbr', 'pt_BR')}.json`, 'utf8');
 			crowdinImport = crowdinImport.replace(/\s\s+/g, ' ').replace(/WireGuard \./g, 'WireGuard.');
 
 			crowdinImport = JSON.parse(crowdinImport);

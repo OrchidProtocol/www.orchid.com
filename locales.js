@@ -38,7 +38,7 @@ const locales = {
 			name: 'Português',
 		},
 		{
-			key: 'pt-BR',
+			key: 'ptbr',
 			name: 'Português do Brasil',
 		},
 		{
