@@ -113,6 +113,16 @@ async function run() {
 				}
 			}
 
+			for (const key in localeKeys) {
+				if (Object.hasOwnProperty.call(localeKeys, key)) {
+					const value = localeKeys[key];
+					if (value === '') {
+						delete localeKeys[key];
+						newMissingKeys[key] = value;
+					}
+				}
+			}
+
 			fs.mkdirSync(`./pendingTranslations/${locales[i]}/other`, { recursive: true });
 
 			const modernMissingKeys = {};
