@@ -82,6 +82,21 @@ const LanguageSelectorList = styled.ul`
 		}
 	}
 `;
+const languageKeys = {
+	'en': 'English',
+	'es': 'Español',
+	'fr': 'Français',
+	'hi': 'हिंदी',
+	'id': 'Bahasa Indonesia',
+	'it': 'Italiano',
+	'ja': '日本語',
+	'ko': '한국어',
+	'pt': 'Português',
+	'ptBR': 'Português do Brasil',
+	'ru': 'Русский',
+	'tr': 'Türkçe',
+	'zh': '中文',
+}
 const Navigation = () => {
 	const { t } = useTranslation();
 	const { languages, originalPath, language } = useI18next()
@@ -99,7 +114,7 @@ const Navigation = () => {
 				{languages.map((lng) => (
 					<li key={lng}>
 						<Link to={originalPath} language={lng}>
-							{t(lng)}
+							{languageKeys[lng] ? languageKeys[lng] : lng}
 						</Link>
 					</li>
 				))}
