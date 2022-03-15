@@ -6,7 +6,7 @@ import config from '../../../utils/config'
 import { useI18next } from 'gatsby-plugin-react-i18next';
 
 const WebsiteMeta = (props) => {
-	const { languages, originalPath } = useI18next();
+	const { languages, originalPath, language } = useI18next();
 
 	const languageTags = languages.map((lang) => {
 		return (<link key={lang} rel="alternate" href={`${config.siteUrl}${lang === 'en' ? '' : `${lang}`}${lang === 'en' ? originalPath.replace(/^\//, '') : originalPath}`} hreflang={lang} />)
@@ -31,6 +31,7 @@ const WebsiteMeta = (props) => {
 	return (
 		<>
 			<Helmet>
+				<html lang={language.replace('ptbr', 'pt-BR')} />
 				<title>{title}</title>
 				{languageTags}
 				<meta name="description" content={description} />

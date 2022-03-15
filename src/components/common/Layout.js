@@ -29,7 +29,6 @@ class TemplateWrapper extends React.Component {
 		return (
 			<>
 				<Helmet>
-					<html lang={process.env.GATSBY_TARGET_LANG} />
 					<body className={this.props.bodyClass} />
 					<link rel="icon" type="image/ico" href="/favicon.ico" />
 					<link rel="manifest" href="/manifest.webmanifest" />
