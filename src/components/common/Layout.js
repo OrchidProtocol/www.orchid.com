@@ -102,8 +102,8 @@ class TemplateWrapper extends React.Component {
 									<img width="149px" height="39px" alt="" src="/img/shared/orchid-logo-text.svg" />
 									<p>&copy; {new Date().getFullYear()} Orchid Labs Inc.</p>
 									<p className="privacy-terms-links">
-										<a className="phantom-a" href="/privacy-policy"><Trans>Privacy Policy</Trans></a> |
-										<a className="phantom-a" href="/service-terms"><Trans>Terms of Service</Trans></a>
+										<Link className="phantom-a" to="/privacy-policy/"><Trans>Privacy Policy</Trans></Link> |
+										<Link className="phantom-a" to="/service-terms/"><Trans>Terms of Service</Trans></Link>
 									</p>
 								</section>
 								<nav id="ft-nav">
