@@ -243,7 +243,7 @@ class Navbar extends React.Component {
 					</NavbarItems>
 				</div >
 
-				<a css={css`
+				<Link css={css`
 					display: none;
 					button.btn-secondary {
 						font-size: 16px;
@@ -252,11 +252,11 @@ class Navbar extends React.Component {
 					@media screen and (min-width: 1201px) {
 						display: block;
 					}
-				`} href="/get-orchid">
+				`} to="/get-orchid/">
 					<button className="btn-secondary">
 						<Trans>Get Orchid</Trans>
 					</button>
-				</a>
+				</Link>
 
 				{this.state.js ? NavButton : <a href="#footer">{NavButton}</a>}
 			</NavbarContent >
