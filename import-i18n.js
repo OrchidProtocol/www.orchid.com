@@ -2,7 +2,6 @@ const fetch = require('node-fetch');
 const fs = require('fs');
 const cheerio = require('cheerio');
 
-const urlStruct = "https://raw.githubusercontent.com/OrchidProtocol/www.orchid.com/legacy/src/i18n/messages.{locale}.xlf";
 const locales = [
 	'en',
 	'es',
@@ -39,11 +38,13 @@ function searchForNoHTML(string, object) {
 	return null;
 }
 
+const allImportedStrings = [];
+
 async function run() {
 	for (let i = 0; i < locales.length; i++) {
 		if (locales[i] !== 'en') {
-			let pageText = await fetch(urlStruct.replace('{locale}', locales[i])).then(res => res.text());
-			pageText = pageText.replace(/WireGuard \./g, 'WireGuard.');
+			let pageText = fs.readFileSync(`./translationImport/common_${locales[i]}.xml`, 'utf8');
+			pageText = pageText.replace(/\s\s+/g, ' ').replace(/WireGuard \./g, 'WireGuard.');
 			const $ = cheerio.load(pageText, {
 				xmlMode: true,
 			});
@@ -53,29 +54,71 @@ async function run() {
 			try {
 				localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
 			} catch (e) { }
-			const legacyMissingKeys = {};
+			const newMissingKeys = {};
 			const units = $('body').find('trans-unit');
+
 			for (let index = 0; index < units.length; index++) {
 				const unit = units[index];
 				const target = cleanup($(unit).find('target').text());
 				const source = cleanup($(unit).find('source').text());
 				let id = unit.attributes[0].value;
-
 				if (target !== source) {
-					if (id.length === 40) {
-						id = source;
-					} else {
-						id = `@@${id}`;
+					allImportedStrings.push({
+						id,
+						target,
+						source,
+					});
+				}
+			}
+
+			// initial exact match
+			for (let index = 0; index < allImportedStrings.length; index++) {
+				let { target, source, id } = allImportedStrings[index];
+
+				if (id.length === 40) {
+					id = source;
+				} else {
+					id = `@@${id}`;
+				}
+				if (baseJSON.common[id]) {
+					localeKeys[id] = target;
+				} else if (baseJSON.common[source]) {
+					localeKeys[source] = target;
+				} else if (searchForNoHTML(source, baseJSON.common) !== null) {
+					localeKeys[searchForNoHTML(source, baseJSON.common)] = target;
+					needsUpdate[searchForNoHTML(source, baseJSON.common)] = target;
+				} else {
+					newMissingKeys[id] = target;
+				}
+			}
+
+			for (const missingKey in newMissingKeys) {
+				if (Object.hasOwnProperty.call(newMissingKeys, missingKey)) {
+
+					const closeStrings = [];
+					for (const baseKey in baseJSON.common) {
+						if (Object.hasOwnProperty.call(baseJSON.common, baseKey)) {
+							const target = baseJSON.common[baseKey];
+							const source = baseKey;
+
+							const similarity = string_similarity(source, missingKey);
+							if (similarity > 0.75) {
+								closeStrings.push({
+									similarity,
+									source,
+									target,
+									missingKey,
+									missingTarget: newMissingKeys[missingKey],
+								});
+							}
+						}
 					}
-					if (baseJSON.common[id]) {
-						localeKeys[id] = target;
-					} else if (baseJSON.common[source]) {
-						localeKeys[source] = target;
-					} else if (searchForNoHTML(source, baseJSON.common) !== null) {
-						localeKeys[searchForNoHTML(source, baseJSON.common)] = target;
-						needsUpdate[searchForNoHTML(source, baseJSON.common)] = target;
-					} else {
-						legacyMissingKeys[id] = target;
+					closeStrings.sort((a, b) => b.similarity - a.similarity);
+					if (closeStrings.length > 0) {
+						const { missingTarget } = closeStrings[0];
+						localeKeys[missingKey] = missingTarget;
+						delete newMissingKeys[missingKey];
+						console.log('Close enough', missingKey, closeStrings[0]);
 					}
 				}
 			}
@@ -93,7 +136,7 @@ async function run() {
 				}
 			}
 			console.log(`${locales[i]} missing: ${Object.keys(modernMissingKeys).length}`);
-			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/legacy-not-imported.json`, JSON.stringify(legacyMissingKeys, null, 4));
+			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/new-not-imported.json`, JSON.stringify(newMissingKeys, null, 4));
 
 			try {
 				const pendingKeys = JSON.parse(fs.readFileSync(`./pendingTranslations/${locales[i]}/needsupdate.json`, 'utf8'));
@@ -108,6 +151,46 @@ async function run() {
 			fs.writeFileSync(`./src/locales/${locales[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));
 		}
 	}
+}
+
+function string_similarity(s1, s2) {
+	var longer = s1;
+	var shorter = s2;
+	if (s1.length < s2.length) {
+		longer = s2;
+		shorter = s1;
+	}
+	var longerLength = longer.length;
+	if (longerLength == 0) {
+		return 1.0;
+	}
+	return (longerLength - edit_distance(longer, shorter)) / parseFloat(longerLength);
+}
+function edit_distance(s1, s2) {
+	s1 = s1.toLowerCase();
+	s2 = s2.toLowerCase();
+
+	var costs = new Array();
+	for (var i = 0; i <= s1.length; i++) {
+		var lastValue = i;
+		for (var j = 0; j <= s2.length; j++) {
+			if (i == 0)
+				costs[j] = j;
+			else {
+				if (j > 0) {
+					var newValue = costs[j - 1];
+					if (s1.charAt(i - 1) != s2.charAt(j - 1))
+						newValue = Math.min(Math.min(newValue, lastValue),
+							costs[j]) + 1;
+					costs[j - 1] = lastValue;
+					lastValue = newValue;
+				}
+			}
+		}
+		if (i > 0)
+			costs[s2.length] = lastValue;
+	}
+	return costs[s2.length];
 }
 
 run();
