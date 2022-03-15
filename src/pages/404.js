@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby';
 import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/common/Layout'
@@ -6,6 +6,12 @@ import './404.scss'
 
 function Page(props) {
 	const { t } = useTranslation();
+
+	useEffect(() => {
+		if (window.location.pathname.match(/^\/pt-br/i)) {
+			window.location.href = window.location.href.replace(/\/pt-br/i, '/ptbr');
+		}
+	}, [])
 
 	return (<Layout t={t}>
 		<div>
