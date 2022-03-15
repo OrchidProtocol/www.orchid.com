@@ -105,7 +105,7 @@ function Page(props) {
 								width: 3rem;
 							}
 						}
-					`}>UNBLOCK<br />YOUR INTERNET.</h1>
+					`}><Trans>UNBLOCK<br />YOUR INTERNET.</Trans></h1>
 
 					<h3>
 						<Trans>The web has evolved. <span className='text-purple'>So should your VPN.</span></Trans>
