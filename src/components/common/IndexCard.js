@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from '@emotion/styled';
 import { flatShadow } from './styles';
 const IndexCard = styled.div`
