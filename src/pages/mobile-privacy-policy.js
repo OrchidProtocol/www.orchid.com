@@ -11,8 +11,8 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="Privacy Policy | Orchid"
-				description="The Orchid Privacy Policy explains how our site will collect, use, protect or otherwise handle your Personally Identifiable Information with our free private VPN service."
+				title={t("Privacy Policy | Orchid")}
+				description={t("The Orchid Privacy Policy explains how our site will collect, use, protect or otherwise handle your Personally Identifiable Information with our free private VPN service.")}
 				location={props.location}
 			/>
 			<Helmet>

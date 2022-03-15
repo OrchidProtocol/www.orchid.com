@@ -181,9 +181,9 @@ class Navbar extends React.Component {
 				`}>
 					<Link css={css`
 						display: inline-block;
-					`} to="/" aria-label="Home" title="Home">
-						<img width="93" height="24" src="/img/shared/orchid-logo-text.svg" alt="Orchid logo" className="no-mobile" />
-						<img width="35" height="30" src="/img/shared/orchid-logo-small.svg" alt="Orchid logo" className="mobile-only" />
+					`} to="/" aria-label={t("Home")} title={t("Home")}>
+						<img width="93" height="24" src="/img/shared/orchid-logo-text.svg" alt="Orchid" className="no-mobile" />
+						<img width="35" height="30" src="/img/shared/orchid-logo-small.svg" alt="Orchid" className="mobile-only" />
 					</Link>
 				</h1>
 

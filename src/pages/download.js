@@ -23,8 +23,8 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="VPN App for iOS, Android &amp; macOS | Orchid"
-				description="Orchid is a VPN client, VPN service and advanced networking tool."
+				title={t("VPN App for iOS, Android &amp; macOS | Orchid")}
+				description={t("Orchid is a VPN client, VPN service and advanced networking tool.")}
 				image="/img/contact/social.png"
 				location={props.location}
 			/>

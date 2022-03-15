@@ -23,8 +23,8 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="Get Orchid | Orchid"
-				description="We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN."
+				title={t("Get Orchid | Orchid")}
+				description={t("We believe the internet should be open and accessible to everyone, which is why we're building a truly open source network overlay VPN.")}
 				image="/img/join/social.jpg"
 				location={props.location}
 			/>

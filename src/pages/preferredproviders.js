@@ -12,7 +12,7 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="Preferred Providers | Orchid"
+				title={t("Preferred Providers | Orchid")}
 				image="/img/partners/social.png"
 				location={props.location}
 			/>

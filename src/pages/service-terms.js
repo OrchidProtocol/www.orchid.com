@@ -13,8 +13,8 @@ function Page(props) {
 		<Layout t={t}>
 
 			<WebsiteMeta
-				title="Terms of Service | Orchid"
-				description="Orchid Labs Inc. owns the intellectual property rights for all material on this site, please read our terms of service for more details."
+				title={t("Terms of Service | Orchid")}
+				description={t("Orchid Labs Inc. owns the intellectual property rights for all material on this site, please read our terms of service for more details.")}
 				location={props.location}
 			/>
 			<Helmet>

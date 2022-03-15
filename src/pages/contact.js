@@ -13,7 +13,7 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="Get In Touch | Orchid"
+				title={t("Get In Touch | Orchid")}
 				description={t("Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid.")}
 				image="/img/contact/social.png"
 				location={props.location}

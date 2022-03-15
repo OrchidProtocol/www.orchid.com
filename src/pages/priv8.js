@@ -306,8 +306,8 @@ function Page(props) {
 			`}>
 
 			<WebsiteMeta
-				title="Priv8 | Orchid"
-				description="Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders."
+				title={t("Priv8 | Orchid")}
+				description={t("Join us for an in-depth discussion on the state of privacy in today’s world with the foremost experts, policymakers, and builders.")}
 				image="/img/priv8/social.jpg"
 				location={props.location}
 			/>

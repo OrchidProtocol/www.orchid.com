@@ -12,8 +12,8 @@ function Page(props) {
 	return (
 		<Layout t={t}>
 			<WebsiteMeta
-				title="FAQs and Customer Support | Orchid"
-				description="A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet."
+				title={t("FAQs and Customer Support | Orchid")}
+				description={t("A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet.")}
 				image=""
 				location={props.location}
 			/>
