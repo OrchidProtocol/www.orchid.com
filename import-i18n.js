@@ -21,6 +21,14 @@ const locales = [
 const baseJSON = {};
 try {
 	baseJSON.common = JSON.parse(fs.readFileSync('./extractedTranslations/en/common.json', 'utf8'))
+	for (const key in baseJSON.common) {
+		if (Object.hasOwnProperty.call(baseJSON.common, key)) {
+			if (baseJSON.common[key] === '') {
+				baseJSON.common[key] = key;
+			}
+		}
+	}
+	fs.writeFileSync('./extractedTranslations/en/common.json', JSON.stringify(baseJSON.common, null, 2), 'utf8');
 } catch (e) {
 	console.log('No common.json found');
 }
