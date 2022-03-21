@@ -103,8 +103,13 @@ function Page(props) {
 					`} />
 
 					<div className='lg:w-1/2 h-auto relative z-10'>
-						<h1 css={css`
+						<h1 className={`${language}`} css={css`
 							font-family: "Headline One", "Baloo 2", sans-serif !important;
+							&.ru {
+								${break_notLargeScreen} {
+									font-size: 20px;
+								}
+							}
 						`}>
 							{language === 'en' ? <img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /> : <Trans>A Decentralized Marketplace</Trans>}
 						</h1>
