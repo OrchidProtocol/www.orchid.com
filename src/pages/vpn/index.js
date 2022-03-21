@@ -6,13 +6,14 @@ import YouTubeEmbed from '../../components/YouTubeEmbed';
 import NewsletterSignupCore from '../../components/newsletter-signup-core';
 
 import { graphql } from 'gatsby';
-import { Link, Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
 import { css } from '@emotion/react';
 
 function Page(props) {
 	const { t } = useTranslation();
+	const { language } = useI18next();
 
 	return (
 		<Layout t={t} bodyclassName="index">
@@ -93,13 +94,19 @@ function Page(props) {
 							margin-right: 5rem;
 						}
 					`}>
-					<h1 css={css`
+					<h1 className={`${language}`} css={css`
 						&:not(.secondary) {
 							font-family: "Headline One", "Baloo 2", sans-serif;
 							color: var(--orc-purple-gray);
 						}
 						@media (min-width: 870px) {
-							font-size: 6.5rem;
+							font-size: 3rem;
+							&.en {
+								font-size: 6.5rem;
+							}
+							&.ja, &.zh, &.ko {
+								font-size: 4.5rem;
+							}
 							& > .spacer {
 								display: inline-block;
 								width: 3rem;
