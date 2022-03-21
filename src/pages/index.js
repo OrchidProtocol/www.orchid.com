@@ -3,7 +3,7 @@ import Layout from '../components/common/Layout'
 
 import BlogPosts from '../components/common/BlogPosts';
 import { graphql, Link } from 'gatsby';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { css } from '@emotion/react';
 import Wrapper from '../components/common/Wrapper';
@@ -42,6 +42,7 @@ const DiagramArrow = styled.img`
 
 function Page(props) {
 	const { t } = useTranslation();
+	const { language } = useI18next();
 
 	return (
 		<Layout t={t} bodyclassName='index'>
@@ -102,7 +103,11 @@ function Page(props) {
 					`} />
 
 					<div className='lg:w-1/2 h-auto relative z-10'>
-						<h1><img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /></h1>
+						<h1 css={css`
+							font-family: "Headline One", "Baloo 2", sans-serif !important;
+						`}>
+							{language === 'en' ? <img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /> : <Trans>A Decentralized Marketplace</Trans>}
+						</h1>
 						<p className='my-2'><Trans>Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
 						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
@@ -164,8 +169,8 @@ function Page(props) {
 				</div>
 				<Container>
 					<div className="relative">
-						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src='/img/home/marketplace-diagram.svg' width={1000} height={290} className="w-full hidden lg:block m-0" />
-						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src='/img/home/marketplace-diagram-mobile.svg' width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full hidden lg:block m-0" />
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram-mobile.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
 							width: calc(100% + 3rem);
 							margin: 0 -1.5rem;
 							max-width: unset;
