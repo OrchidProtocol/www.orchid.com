@@ -120,11 +120,13 @@ function Page(props) {
 							}
 							&.en {
 								${break_largeScreen} {
-									font-size: 75px;
+									font-size: 85px;
 								}
 								${break_xlargeScreen} {
 									font-size: 100px;
 								}
+								display: inline-block;
+								max-width: 500px;
 							}
 							&.ru {
 								font-size: clamp(20px, 3vw, 51px);
