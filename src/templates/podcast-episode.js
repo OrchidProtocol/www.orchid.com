@@ -49,7 +49,16 @@ PodcastEpisode.propTypes = {
 export default PodcastEpisode
 
 export const staticQuery = graphql`
-	query PodcastEpisodeByID($id: String!, $buildTimestampUTC: Float) {
+	query PodcastEpisodeByID($id: String!, $buildTimestampUTC: Float, $language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
 		markdownRemark(id: { eq: $id }) {
 			id
 			html
