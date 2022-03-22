@@ -104,14 +104,33 @@ function Page(props) {
 
 					<div className='lg:w-1/2 h-auto relative z-10'>
 						<h1 className={`${language}`} css={css`
+							font-size: clamp(25px, 11vw, 75px);
+
 							font-family: "Headline One", "Baloo 2", sans-serif !important;
-							&.ru {
-								${break_notLargeScreen} {
-									font-size: 20px;
+
+							background: #5F45BA;
+							background: linear-gradient(#3B146A, #5434A1, #5F45BA);
+							background-clip: text;
+							color: transparent;
+
+							&.en::first-letter {
+								color: var(--orc-purple-gray);
+								font-size: 75%;
+								margin-right: -0.5ch;
+							}
+							&.en {
+								${break_largeScreen} {
+									font-size: 75px;
+								}
+								${break_xlargeScreen} {
+									font-size: 100px;
 								}
 							}
+							&.ru {
+								font-size: clamp(20px, 3vw, 51px);
+							}
 						`}>
-							{language === 'en' ? <img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /> : <Trans>A Decentralized Marketplace</Trans>}
+							<Trans>A Decentralized Marketplace</Trans>
 						</h1>
 						<p className='my-2'><Trans>Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
 						<p className='mt-8'><FooterSocialIcons /></p>
