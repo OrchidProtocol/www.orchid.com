@@ -5,11 +5,21 @@ import ImageMeta from './ImageMeta'
 import config from '../../../utils/config'
 import { useI18next } from 'gatsby-plugin-react-i18next';
 
+const languageAliases = {
+	'ptbr': 'pt-BR',
+}
+function applyAlias(lang) {
+	if (languageAliases[lang]) {
+		return languageAliases[lang];
+	}
+	return lang;
+}
+
 const WebsiteMeta = (props) => {
 	const { languages, originalPath, language } = useI18next();
 
 	const languageTags = languages.map((lang) => {
-		return (<link key={lang} rel="alternate" href={`${config.siteUrl}${lang === 'en' ? '' : `${lang}`}${lang === 'en' ? originalPath.replace(/^\//, '') : originalPath}`} hreflang={lang} />)
+		return (<link key={lang} rel="alternate" href={`${config.siteUrl}${lang === 'en' ? '' : `${lang}`}${lang === 'en' ? originalPath.replace(/^\//, '') : originalPath}`} hreflang={applyAlias(lang)} />)
 	});
 
 	let { title, description, image, type = "WebSite" } = props;
@@ -31,7 +41,7 @@ const WebsiteMeta = (props) => {
 	return (
 		<>
 			<Helmet>
-				<html lang={language.replace('ptbr', 'pt-BR')} />
+				<html lang={applyAlias(language)} />
 				<title>{title}</title>
 				{languageTags}
 				<meta name="description" content={description} />
