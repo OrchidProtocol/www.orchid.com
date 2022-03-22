@@ -93,7 +93,7 @@
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-left;
-			background-image: url(/img/index/wavy-lines-02.svg);
+			background-image: url(/img/vpn/wavy-lines-02.svg);
 		}
 		@include not-mobile {
 			display: none;
@@ -103,7 +103,7 @@
 		@extend .wavy-shared;
 		&::after {
 			@extend .wavy-right;
-			background-image: url(/img/index/wavy-lines-03.svg);
+			background-image: url(/img/vpn/wavy-lines-03.svg);
 		}
 		@include mobile {
 			display: none;

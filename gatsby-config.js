@@ -12,6 +12,7 @@ module.exports = {
 		siteUrl: `https://www.orchid.com/`,
 	},
 	plugins: [
+		`gatsby-plugin-preact`,
 		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-plugin-sharp`,
@@ -22,7 +23,9 @@ module.exports = {
 					quality: 80,
 					breakpoints: [750, 1080, 1366, 1920],
 					backgroundColor: `transparent`,
-					tracedSVGOptions: {},
+					tracedSVGOptions: {
+						color: '#5f45ba',
+					},
 					blurredOptions: {},
 					jpgOptions: {},
 					pngOptions: {},
@@ -39,7 +42,11 @@ module.exports = {
 			options: {
 				sassOptions: {
 					includePaths: ["src/scss"],
-				}
+				},
+				postCssPlugins: [
+					require("tailwindcss"),
+					require("./tailwind.config.js"), // Optional: Load custom Tailwind CSS configuration
+				],
 			},
 		},
 		{
@@ -63,6 +70,13 @@ module.exports = {
 				path: `${__dirname}/src/img`,
 				name: 'images',
 			},
+		},
+		{
+			resolve: `gatsby-source-filesystem`,
+			options: {
+				path: `${__dirname}/src/locales`,
+				name: `locale`
+			}
 		},
 		`gatsby-plugin-emotion`,
 		{
@@ -94,11 +108,28 @@ module.exports = {
 			},
 		},
 		{
+			resolve: `gatsby-plugin-react-i18next`,
+			options: {
+				languages: ['en', 'es', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'ptbr', 'ru', 'tr', 'zh'],
+				defaultLanguage: 'en',
+				defaultNS: 'common',
+				siteUrl: 'https://www.orchid.com/',
+				i18nextOptions: {
+					lowerCaseLng: true,
+					interpolation: {
+						escapeValue: false
+					},
+					keySeparator: false,
+					nsSeparator: false
+				}
+			}
+		},
+		{
 			resolve: `gatsby-plugin-purgecss`,
 			options: {
 				// printRejected: true, // Print removed selectors and processed file names
 				// develop: true, // Enable while using `gatsby develop`
-				// tailwind: true, // Enable tailwindcss support
+				tailwind: true, // Enable tailwindcss support
 				// ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
 				// purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
 				// purgeCSSOptions: {

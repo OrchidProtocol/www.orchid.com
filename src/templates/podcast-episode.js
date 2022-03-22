@@ -2,7 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
-import { Layout, PostCard } from '../components/common';
+import Layout from '../components/common/Layout';
+import PostCard from '../components/common/PostCard';
 import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
 
@@ -20,6 +21,7 @@ const PodcastEpisode = (props) => {
 		post.frontmatter.featuredimage = ftImage.publicURL;
 	}
 
+	const { t } = props;
 
 	return (
 		<>
@@ -29,7 +31,7 @@ const PodcastEpisode = (props) => {
 				image={post.frontmatter.featuredimage}
 				location={props.location}
 			/>
-			<Layout>
+			<Layout t={t ? t : (string) => { return string }}>
 				<PodcastHero />
 				<PostCard post={post} key={0} keyIndex={0} />
 				<PodcastFooter />

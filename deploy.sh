@@ -130,6 +130,13 @@ function main() {
         version=$(./version.sh | cut -d' ' -f3)
         echo "Version: $version"
         build-site "$language"
+
+		IndexFile=./public/index.html
+		if ! test -f "$IndexFile"; then
+			echo "No index.html file found! Site may not have failed build."
+			exit 1
+		fi
+
         upload-site "$bucket" "$version"
     fi
 

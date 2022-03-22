@@ -1,393 +1,519 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import Layout from '../components/common/Layout'
-import './index.scss'
-import YouTubeEmbed from '../components/YouTubeEmbed';
-import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 import BlogPosts from '../components/common/BlogPosts';
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import { Trans, useTranslation, useI18next } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
-import { StaticImage } from "gatsby-plugin-image";
 import { css } from '@emotion/react';
+import Wrapper from '../components/common/Wrapper';
+import Container from '../components/common/Container';
+import { break_largeScreen, break_xlargeScreen, break_mobile, break_notLargeScreen, break_notMobile } from '../components/common/styles';
+import FooterSocialIcons from '../components/common/FooterSocialIcons';
+import styled from '@emotion/styled';
+import { StaticImage } from 'gatsby-plugin-image';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
+import ContainerOverflow from '../components/common/ContainerOverflow';
+import Circle from '../components/common/Circle';
+import Divider from '../components/common/Divider';
+import FeaturedTweets from '../components/common/Tweets';
+import IndexCard from '../components/common/IndexCard';
 
-class Page extends React.Component {
+const DiagramArrow = styled.img`
+	display: block;
+	position: absolute;
+	top: 80.5%;
+	width: 4%;
+	left: 7.8%;
+	pointer-events: none;
+	&.last {
+		left: unset;
+		right: 7.8%;
+	}
+	&.middle {
+		left: 50%;
+		top: 92.55%;
+		margin-left: -2%;
+	}
+	${break_notLargeScreen} {
+		display: none;
+	}
+`;
 
-	render() {
-		return (
-			<Layout bodyclassName="index">
-				<WebsiteMeta
-					title="Crypto VPN App | Orchid"
-					description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
-					image="/img/index/social.png"
-					location={this.props.location}
-				/>
-				<Helmet>
-					<body className="index-page" />
-				</Helmet>
+function Page(props) {
+	const { t } = useTranslation();
+	const { language } = useI18next();
 
-				<section css={css`
-					position: relative;
-					padding: 2rem 0;
-					padding-top: 3rem;
-					@media (min-width: 768px) {
-						margin-top: 1rem;
-						padding: 5rem 0;
-					}
-					display: flex;
-					justify-content: center;
-					flex-wrap: wrap;
-					@media (max-width: 870px) {
-						align-items: center;
-						flex-direction: column-reverse;
-						padding-top: 9vw;
-					}
-				`}>
-					<div css={css`
-						position: relative;
-						z-index: 1;
-						text-align: center;
-						max-width: 40rem;
-						width: 95%;
-						font-size: 1.5rem;
-						& > h3 {
-							color: inherit;
-							&.color-primary {
-								color: var(--orc-purple);
-							}
-							line-height: 1;
-							& > span {
-								display: inline-block;
-								margin: 0.5em 0.2em;
-								@media (max-width: 870px) {
-									margin: 0.2em 0;
+	return (
+		<Layout t={t} bodyclassName='index'>
+			<WebsiteMeta
+				title={t('Orchid Marketplace')}
+				description={t('The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.')}
+				image='/Orchid-marketplace.png'
+				location={props.location}
+			/>
+
+			<div className='relative z-10 flex items-center' css={css`
+				${break_largeScreen} {
+					min-height: 700px;
+				}
+				${break_xlargeScreen} {
+					min-height: 800px;
+				}
+			`}>
+				<Container className='phantom lg:p-0 relative'>
+
+					<Circle css={css`
+						top: 0%;
+						right: 75%;
+						width: 46%;
+						max-width: 700px;
+						${break_largeScreen} {
+							top: -15%;
+							right: 75%;
+						}
+						${break_xlargeScreen} {
+							top: -22%;
+							right: 75%;
+						}
+					`} />
+					<Circle css={css`
+						top: 0%;
+						right: 50%;
+						width: 11%;
+						max-width: 180px;
+						${break_largeScreen} {
+							top: -5%;
+							right: 50%;
+						}
+						${break_xlargeScreen} {
+							top: -20%;
+							right: 45%;
+						}
+					`} />
+					<Circle css={css`
+						top: 60%;
+						right: 52%;
+						width: 23%;
+						max-width: 280px;
+						${break_xlargeScreen} {
+							top: 70%;
+							right: 52%;
+						}
+					`} />
+
+					<div className='lg:w-1/2 h-auto relative z-10'>
+						<h1 className={`${language}`} css={css`
+							font-family: "Headline One", "Baloo 2", sans-serif !important;
+							&.ru {
+								${break_notLargeScreen} {
+									font-size: 20px;
 								}
 							}
-						}
-						small,
-						button {
-							font-family: var(--font-family-heading);
-						}
-						small {
-							font-weight: 400;
-							font-size: 70%;
-						}
-						button {
-							margin-top: 1rem;
-							padding: 0.4rem 3rem;
-						}
-						img {
-							max-width: 100%;
-							width: 616px;
-							@media screen and (min-width: (870px + 1px)) {
-								margin-bottom: 1rem;
-							}
-							@media (max-width: 870px) {
-								max-width: 300px;
-							}
-						}
-						font-weight: 200;
-						@media (min-width: 60rem) {
-							margin-right: 5rem;
-						}
-					`}>
-						<img src="/img/index/dont-be-a-product.svg" alt="Don't be a product" width="616" height="314" />
-						<h3><span>No data collection.</span> <span>No 3rd-party sharing.</span> <span>No profit markup.</span></h3>
-						<h3 className="color-primary"><span>A new model of VPN.</span></h3>
-						<Link to="/get-orchid" className="btn">
-							<button className="btn-primary">Get Orchid</button>
-						</Link>
-						<br />
-						<small>(starting at just $1)</small>
+						`}>
+							{language === 'en' ? <img alt={t('A Decentralized Marketplace')} title={t('A Decentralized Marketplace')} src='/img/home/a-decentralized-marketplace.svg' width={620} height={251} /> : <Trans>A Decentralized Marketplace</Trans>}
+						</h1>
+						<p className='my-2'><Trans>Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
+						<p className='mt-8'><FooterSocialIcons /></p>
 					</div>
-					<div css={css`
-						width: 400px;
-						max-width: 60%;
-						@media (max-width: 870px) {
-							max-width: 30%;
-							margin-bottom: 1rem;
-						}
-						position: relative;
-						& > img {
+				</Container>
+
+				<img className='lg:hidden absolute right-0 top-0 h-auto w-1/4' alt='' src='/img/home/logo-trimmed.svg' width={613} height={875} />
+				<img className='hidden lg:block absolute right-0 h-auto w-1/3' alt='' src='/img/home/logo-trim.svg' width={800} height={875} css={css`top: 10%;`} />
+			</div>
+
+			<Divider className='bg-purple-500' />
+
+			<Wrapper>
+				<Container className='phantom flex flex-wrap justify-around relative z-10'>
+					<div className='lg:w-5/12 flex flex-col justify-between items-start pb-4 md:py-4'>
+						<h2><Trans>Orchid’s mission is privacy, and privacy is a human right.</Trans></h2>
+						<Link to="/about-us/"><button className='btn btn-primary mt-4 hidden lg:block'><Trans>About Orchid</Trans></button></Link>
+					</div>
+					<div className='lg:w-5/12'>
+						<p className='my-4'><Trans>Privacy and freedom are not in conflict; they are one and the same.</Trans></p>
+						<p className='my-4'><Trans>Privacy is an easy target for those in power who say, “if you have nothing to hide, you have nothing to fear.” This is a lie. The truth is that the people in positions of power have the least to worry about being private.</Trans></p>
+						<p className='my-4'><Trans>We stand in solidarity with causes dedicated to privacy and to other fundamental human rights. Movements that fight for freedom and equality, that fight against oppression and censorship, that help by creating the tools to level the playing field for all.</Trans></p>
+					</div>
+					<Link to="/about-us/"><button className='btn btn-primary mt-4 mx-auto lg:hidden'><Trans>About Orchid</Trans></button></Link>
+				</Container>
+			</Wrapper>
+
+			<Wrapper className='text-center relative'>
+				<Circle css={css`
+					top: 0%;
+					left: 65%;
+					width: 46%;
+					max-width: 700px;
+					${break_largeScreen} {
+						top: -200px;
+					}
+				`} />
+				<Circle css={css`
+					top: 0%;
+					right: 70%;
+					width: 20%;
+					max-width: 300px;
+					${break_largeScreen} {
+						top: 200px;
+						right: 50%;
+						transform: translateX(-500px);
+					}
+				`} />
+				<Circle css={css`
+					top: 60%;
+					right: 27%;
+					width: 23%;
+					max-width: 280px;
+					${break_largeScreen} {
+						top: 890px;
+					}
+				`} />
+				<div className='w-11/12 mx-auto relative z-10'>
+					<h2><Trans>Pursuing Internet freedom with new technologies</Trans></h2>
+				</div>
+				<Container>
+					<div className="relative">
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full hidden lg:block m-0" />
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram-mobile.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
+							width: calc(100% + 3rem);
+							margin: 0 -1.5rem;
+							max-width: unset;
+						`} />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='first' width={36} height={187} />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow2.svg' className='middle' width={36} height={650} />
+						<DiagramArrow alt='' src='/img/home/marketplace-diagram-arrow.svg' className='last' width={36} height={187} />
+					</div>
+				</Container>
+				<div className='flex flex-wrap justify-between text-left relative z-20 lg:-my-10' css={css`width: 60rem; max-width: 100%; margin-left: auto; margin-right: auto;`}>
+					<div className='w-full lg:w-1/2'>
+						<Container>
+							<h4><Trans>The Orchid protocol: A tunneling protocol incorporating payments</Trans></h4>
+							<p><Trans>Orchid has a new VPN protocol developed to work in concert with nanopayments to provide payments at networking speeds. The protocol runs on top of WebRTC for firewall traversal.</Trans></p>
+							<Link to='/how-it-works/' className='underline'><Trans>Learn more</Trans></Link>
+						</Container>
+					</div>
+					<div className='w-full lg:w-1/2 lg:text-right'>
+						<Container>
+							<h4><Trans>The Orchid server: Configuring nodes for service exchange</Trans></h4>
+							<p><Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides service in exchange for immediate payment via the nanopayment system.</Trans></p>
+							<Link to='/how-it-works/' className='underline'><Trans>Learn more</Trans></Link>
+						</Container>
+					</div>
+				</div>
+				<Container>
+					<h2><Trans>Orchid Accounts</Trans></h2>
+					<p className='text-xl font-bold mb-2'><Trans>The cornerstone of the nanopayment system</Trans></p>
+					<p><Trans>Orchid Accounts hold the funds that are sent through Orchid’s scaling nanopayment system. Users are responsible for managing their accounts on the blockchain within the <a href='https://account.orchid.com/'>Orchid DApp</a>. Alternatively, fiat users can utilize a Prepaid Access Credits Account managed by Orchid. Each account is composed of a public/private keypair, a special funder wallet that controls the account, and the account makeup (deposit & balance), which determines how efficient the account is at transmitting payments.</Trans></p>
+					<div className='flex flex-wrap justify-around mt-4'>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-nanopayment.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Nanopayments:<br />Layer 2 scaling that enables high-frequency, trustless interactions</Trans></p>
+							<p>
+								<Trans>Orchid uses off-chain probabilistic payments to create a highly liquid marketplace for buying and selling bandwidth. Payments at packet scale allow for trustless interactions by reducing implicit floated balances between buyers and sellers. Marketplace participants can send &amp; receive payments at networking speeds.</Trans>
+							</p>
+						</div>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-efficiency.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Orchid account manager:<br /> A simple application for managing funds on the layer 2</Trans></p>
+							<p>
+								<Trans>The Orchid dApp is a hosted front-end for creating and managing Orchid accounts. After connecting a wallet, users can move funds in and out of the layer 2, along with making modifications for account makeup, payment efficiency and ticket sizing.</Trans>
+							</p>
+						</div>
+						<div className='lg:p-2 w-64 max-w-full my-4'>
+							<img className='mx-auto max-w-10/12' src='/img/home/icon-multichain.svg' alt='' width={80} height={80} />
+							<p className='text-xl font-bold my-2'><Trans>Multichain support:<br />Make payments on an expanding list of EVM-compatible blockchains</Trans></p>
+							<p>
+								<Trans>Multi-chain compatibility gives users an alternative to high gas prices on Ethereum by allowing them to pay for service on other chains. A system for multiple chains allows users and providers options to find lower transaction fees, and helps provide the most competitive network fee pricing to users everywhere.</Trans>
+							</p>
+						</div>
+					</div>
+					<a href='https://account.orchid.com/'><button className='btn btn-secondary m-4'><Trans>Launch DApp</Trans></button></a>
+				</Container>
+			</Wrapper>
+
+			<Wrapper className='relative'>
+				<Circle css={css`
+					top: 55%;
+					left: 40%;
+					width: 46%;
+					max-width: 700px;
+				`} />
+				<Circle css={css`
+					top: -3%;
+					right: 70%;
+					width: 20%;
+					max-width: 300px;
+					${break_largeScreen} {
+						top: -200px;
+						right: 50%;
+						transform: translateX(-500px);
+					}
+				`} />
+				<Circle css={css`
+					top: 110%;
+					right: 80%;
+					width: 23%;
+					max-width: 280px;
+				`} />
+				<Container className="relative z-10">
+					<div className='flex lg:flex-row flex-col-reverse items-center'>
+						<div>
+							<h2 className='my-4'><Trans>OXT: The staking asset for the VPN market</Trans></h2>
+							<p className='text-xl font-bold'><Trans>Decentralizing trust between buyers and sellers</Trans></p>
+							<p><Trans>The VPN market is exploding with worldwide growth as users fight to regain privacy and break out of state controlled firewalls. OXT is Orchid’s native ERC-20 digital asset that providers use to compete for user payment flow.</Trans></p>
+							<p className='font-bold mt-8'><Trans>STAKING &amp; STAKEWEIGHTING: Algorithmic, incentive-aligned server selection</Trans></p>
+							<p>
+								<Trans>Providers on Orchid run the Orchid server which accepts connection requests and provides VPN service in exchange for immediate payment via nanopayments. Orchid providers stake OXT tokens in an Ethereum smart contract (the directory) to advertise their services to clients. Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake. Users benefit by getting a provably randomized server from a pool of providers while providers have a mechanism to advertise for users through OXT stake.</Trans>
+							</p>
+							<p className='my-8 text-center md:text-left'>
+								<Link to='/oxt/'><button className='btn btn-primary'><Trans>Learn more</Trans></button></Link>
+							</p>
+						</div>
+						<div className='relative mb-4' css={css`
+								${break_notLargeScreen} {
+									width: 90%;
+									max-width: 12rem;
+								}
+								${break_largeScreen} {
+									padding: 20%;
+									margin-right: -20%;
+								}
+							`}>
+							<div className='lg:absolute lg:top-0 lg:left-0'>
+								<StaticImage alt='' className='w-full h-full' src='../../static/img/home/token_hifi.png' objectFit='contain' width={1680 * 0.25} height={1816 * 0.25} loading="lazy" placeholder='blurred' />
+							</div>
+						</div>
+					</div>
+				</Container>
+			</Wrapper>
+
+			<Wrapper className='relative z-10'>
+				<Container className='lg:text-right'>
+					<div className='flex lg:flex-row flex-col items-center'>
+						<div className='relative mb-4' css={css`
+								${break_notLargeScreen} {
+									width: 90%;
+									max-width: 12rem;
+								}
+								${break_largeScreen} {
+									padding: 20%;
+									margin-left: -20%;
+								}
+							`}>
+							<div className='lg:absolute lg:top-0 lg:right-0'>
+								<StaticImage alt='' className='w-full h-full' src='../../static/img/home/deviceTrio.png' objectFit='contain' width={1680 * 0.25} height={1904 * 0.25} loading="lazy" placeholder='blurred' />
+							</div>
+						</div>
+						<div>
+							<h2 className='my-4'><Trans>Orchid VPN: Crypto-powered security</Trans></h2>
+							<p className='text-xl font-bold'><Trans>An advanced VPN client built on the Orchid platform</Trans></p>
+							<p><Trans>The Orchid VPN app is a demonstrated use-case of Orchid’s decentralized marketplace, tunneling protocol, and the networks other interconnected components. The client provides protection from snooping ISP's, unblocks websites cutoff by firewalls, and many other privacy benefits. Bandwidth sellers receive payments in real-time as they provide service and stake OXT to compete for service requests. Buyers use customized or pre-paid cryptocurrency accounts to purchase bandwidth from stakeweighted providers using Orchid’s probabilistic nanopayment system.</Trans></p>
+							<p><Trans>Available on <Link to='/download/'>Android</Link>, <Link to='/download/'>iOS</Link> and <Link to='/download/'>macOS</Link>.</Trans></p>
+							<p className='font-bold mt-4'><Trans>PREPAID ACCESS CREDITS: A frictionless payment system</Trans></p>
+							<p>
+								<Trans>Orchid’s Prepaid Access Credits provide users the option to pay in fiat for VPN credits denominated in the xDAI stablecoin through a simple in-app purchase on mobile devices. The credits are only spendable with Orchid’s <Link to="/preferredproviders/">preferred providers</Link> for VPN service. The system allows for a simple 30-second onramp from any credit card connected to your phone to fund an account with xDAI.</Trans>
+							</p>
+							<p className='my-4 text-center md:text-left'>
+								<Link to='/get-orchid'><button className='btn btn-primary m-2'><Trans>Get Orchid VPN</Trans></button></Link>
+								<Link to='/vpn'><button className='btn-secondary m-2'><Trans>Learn more</Trans></button></Link>
+							</p>
+						</div>
+					</div>
+				</Container>
+			</Wrapper>
+
+			<Wrapper className='relative lg:py-10'>
+				<Container className='phantom text-center relative z-10'>
+					<Circle css={css`
+						top: 15%;
+						left: 80%;
+						width: 23%;
+						max-width: 280px;
+					`} />
+					<div className='relative z-10'>
+						<h2><Trans>Orchid is Open Source</Trans></h2>
+						<p className='text-xl font-bold my-4'><Trans>Explore our code</Trans></p>
+						<p className='mb-10'><Trans>All of Orchid’s code is Open Source and freely available to download on GitHub. Use of Orchid’s source code is governed by the AGPLv3 copyleft Open Source license. Come and follow our project, the community develops code “in the open” by continually pushing changes that anyone can see on GitHub and tagging releases as appropriate. We invite all developers and any curious parties to explore Orchid’s code.</Trans></p>
+						<div css={css`
+							margin: 1rem auto;
+							& > a {
+								margin: 1rem 0;
+							}
+							${break_notMobile} {
+								margin: 3rem auto;
+							}
+							width: 80%;
+							max-width: 400px;
 							position: relative;
-							z-index: 1;
+							display: flex;
+							flex-direction: column;
+							justify-content: center;
+							align-items: center;
+
+							&::before,
+							&::after {
+								content: "";
+								position: absolute;
+								top: 0;
+								bottom: 0;
+								width: 150px;
+								max-width: 10vw;
+								background-image: url(/img/vpn/bird.svg);
+								background-size: contain;
+								background-position: center;
+								background-repeat: no-repeat;
+								pointer-events: none;
+							}
+							&::before {
+								right: 100%;
+							}
+							&::after {
+								left: 100%;
+								transform: scaleX(-100%);
+							}
+						`}>
+							<a href='https://github.com/OrchidTechnologies'><button className='btn btn-primary block my-2 mx-auto'><Trans>GitHub</Trans></button></a>
+							<a href='/whitepaper/english.pdf' target='_blank'><button className='btn-secondary block my-2 mx-auto'><Trans>Whitepaper</Trans></button></a>
+						</div>
+					</div>
+				</Container>
+
+				<Container className='phantom relative'>
+					<Circle css={css`
+						top: -10%;
+						right: 40%;
+						width: 60%;
+						max-width: 1200px;
+						${break_largeScreen} {
+							top: -42%;
 						}
-						&::before {
-							content: "";
-							position: absolute;
-							top: 0;
-							left: 0;
-							right: 0;
-							bottom: 0;
-							background-image: url(/img/index/wavy-lines-01.svg);
-							background-size: contain;
-							background-repeat: no-repeat;
-							background-position: center;
-							transform: scale(2.5) translateX(5%) translateY(5%);
-							pointer-events: none;
+					`} />
+					<div className='relative z-10'>
+						<ContainerOverflow className="-mt-16 lg:-mt-32 flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg when it comes to data abuse, it’s easy to see the project’s appeal."
+								</p>
+								<div div className='mt-8 mb-6 relative'>
+									<a className='inset-0 absolute flex items-center justify-between' href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" target="_blank" rel='noreferrer'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="360" height="51" src="/img/vpn/seen/techcrunch.png" alt="techcrunch" loading="lazy" className='w-3/4' />
+										</div>
+										<div className="uppercase">TECHCRUNCH</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									</a>
+								</div>
+							</IndexCard>
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									This is what the future of VPN tech looks like. And you gotta see it.”
+								</p>
+								<div div className='mt-8 mb-6 relative'>
+									<a className='inset-0 absolute flex items-center justify-between' href="https://www.cnet.com/tech/services-and-software/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" target="_blank" rel='noreferrer'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="180" height="132" src="/img/vpn/seen/cnet.svg" alt="CNET" loading="lazy" className='w-3/4' />
+										</div>
+										<div className="uppercase">CNET</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									</a>
+								</div>
+							</IndexCard>
+							<IndexCard className='my-4 p-4 pl-5 bg-white'>
+								<p>
+									Orchid’s mission is to build open-source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.”
+								</p>
+								<div div className='mt-8 mb-6 relative'>
+									<a className='inset-0 absolute flex items-center justify-between' href="https://www.coindesk.com/markets/2019/05/07/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative/" target="_blank" rel='noreferrer'>
+										<div className='rounded-full border-2 border-gray bg-white w-14 h-14 -ml-8 mr-2 flex justify-center items-center'>
+											<img width="360" height="70" src="/img/vpn/seen/coindesk.png" alt="coindesk" loading="lazy" className='w-3/4' />
+										</div>
+										<div className="uppercase">COINDESK</div>
+										<img src="/img/vpn/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
+									</a>
+								</div>
+							</IndexCard>
+						</ContainerOverflow>
+					</div>
+				</Container >
+			</Wrapper >
+
+			<Wrapper className='relative z-10'>
+				<Container>
+					<h2 className='text-center'><Trans>From the Orchid Blog</Trans></h2>
+					<div css={css`
+						margin: auto;
+						display: grid;
+						grid-gap: 1rem;
+						grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+						${break_mobile} {
+							grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 						}
+						justify-items: center;
+
+						margin: 1rem auto;
 					`}>
-						<StaticImage loading="eager" src="../../static/img/index/phone.png" placeholder="none" width={491} height={765} alt="" />
+						<BlogPosts />
 					</div>
-				</section>
-
-				<div className="wavy-element-02"></div>
-
-				<section className="marketplace__wrapper">
-					<div className="marketplace__container container-common">
-						<h2 className="section-heading">Orchid is a decentralized bandwidth marketplace</h2>
-						<p>
-							Buyers use the <Link to="/download">Orchid app</Link> to get protection from snooping ISP's, unblock websites
-							cutoff by firewalls, and for many other privacy benefits. Sellers receive payments in real-time as they
-							provide service and stake <Link to="/oxt">OXT</Link> to compete for service requests. Orchid Technologies charges no
-							fees, and the community maintains the <a href="https://github.com/OrchidTechnologies">Open Source software</a> that powers
-							the entire ecosystem. Try it out!
-						</p>
-						<StaticImage loading="lazy" src="../../static/img/index/marketplace.png" placeholder="none" width={1600} height={368} alt="" />
-						<div className="marketplace-steps">
-							<div>
-								<h3>Fund your Orchid account</h3>
-								<p>Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto.</p>
-							</div>
-							<div>
-								<h3>Connect to a random provider</h3>
-								<p>Tap "Connect" to match with a VPN server that has locked up OXT to compete for your business.</p>
-							</div>
-							<div>
-								<h3>Pay only for what you actually use</h3>
-								<p>Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.</p>
-							</div>
-						</div>
-						<Link to="/how-it-works/" className="section-button">
-							<button className="btn-secondary">Learn More</button>
-						</Link>
-					</div>
-				</section>
-
-				<div className="wavy-element-03"></div>
-				<div className="decorative-island">
-					<StaticImage loading="lazy" src="../../static/img/index/island-01.png" placeholder="none" width={600} height={357} alt="" />
-				</div>
-
-				<section className="features__wrapper">
-					<div className="features__container container-common">
-						<h2 className="section-heading">Key features</h2>
-						<div className="features-list">
-							<div>
-								<img src="/img/index/icons/crypto.svg" alt="" width="100" height="100" />
-								<h3>Crypto-powered</h3>
-								<p>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.</p>
-								<a href="https://docs.orchid.com/en/latest/accounts/#how-to-get-an-orchid-account">Learn more.</a>
-							</div>
-							<div>
-								<img src="/img/index/icons/nano.svg" alt="" width="100" height="100" />
-								<h3>Nanopayment Ecosystem</h3>
-								<p>Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.</p>
-								<a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency">Learn more.</a>
-							</div>
-							<div>
-								<img src="/img/index/icons/traffic.svg" alt="" width="100" height="100" />
-								<h3>Traffic Analysis</h3>
-								<p>Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.</p>
-								<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-traffic-monitor">Learn more.</a>
-							</div>
-							<div>
-								<img src="/img/index/icons/multi-hop.svg" alt="" width="100" height="100" />
-								<h3>Multi-hop</h3>
-								<p>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.</p>
-								<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-multi-hop-interface">Learn more.</a>
-							</div>
-							<div>
-								<img src="/img/index/icons/servers.svg" alt="" width="100" height="100" />
-								<h3>Randomized Servers</h3>
-								<p>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.</p>
-								<a href="https://docs.orchid.com/en/latest/faq/#technology">Learn more.</a>
-							</div>
-							<div>
-								<img src="/img/index/icons/sharing.svg" alt="" width="100" height="100" />
-								<h3>Unlimited Sharing</h3>
-								<p>Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.</p>
-								<a href="https://docs.orchid.com/en/latest/accounts/#sharing-orchid-accounts">Learn more.</a>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<div className="dove-information">
-					<a href="https://docs.orchid.com/">
-						<button className="btn-primary">Read the Docs</button>
+					<a href={t('https://blog.orchid.com/')} className='section-button'>
+						<button className='btn-secondary mx-auto my-4 lg:mt-8 block'>
+							<Trans>Go to Blog</Trans>
+						</button>
 					</a>
-					<a href="/whitepaper/english.pdf">
-						<button className="btn-secondary">Whitepaper</button>
-					</a>
-				</div>
+				</Container>
+			</Wrapper>
 
-				<div className="wavy-element-04"></div>
-
-				<section className="why-orchid__wrapper">
-					<div className="why-orchid__container container-common">
-						<h2 className="section-heading">Why Orchid?</h2>
-						<div className="why-orchid__flex">
-							<StaticImage className="why-orchid__image" loading="lazy" src="../../static/img/index/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
-							<div className="why-orchid__text">
-
-								<h4>No Subscriptions</h4>
-								<p>When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control. VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use</p>
-
-								<h4>Tracking-free</h4>
-								<p>Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you. Orchid also has no tracking systems in our applications. We absolutely do not track.</p>
-
-								<h4>Open Source</h4>
-								<p>All of Orchid's code is Open Source and freely available to download <a href="https://github.com/OrchidTechnologies/orchid" target="_blank" rel="noreferrer">on GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license. The Orchid community develops code "in the open" by continually pushing changes that anyone can see on GitHub and <a href="https://github.com/OrchidTechnologies/orchid/releases/">tagging releases</a> as appropriate.</p>
-
-								<h4>Decentralized</h4>
-								<p>Orchid brings leading providers together through a unique, decentralized privacy marketplace. Because there are more (and more widely distributed) servers available, the user's data has more possible paths to choose from. This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient.</p>
-
-								<h4>Unblock Website &amp; Apps</h4>
-								<p>Use the Orchid VPN to break through firewalls and access blocked content. Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator.</p>
-
-								<h4>Flexible</h4>
-								<p>Orchid has a WireGuard and Open VPN client built into the app. Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services. Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties.</p>
-							</div>
-						</div>
-
-						<YouTubeEmbed id="zJHFMxGAqyw" defaultThumbnail={true} />
-
-						<Link to="/get-orchid" className="section-button">
-							<button className="btn-secondary">Get Orchid</button>
-						</Link>
-					</div>
-				</section>
-
-				<div className="wavy-element-05"></div>
-
-				<section className="press-wrapper">
-					<div className="press-container container-common">
-						<h2 className="section-heading" i18n="@@HomeAsSeenIn__Title">Orchid News</h2>
-						<div className="press-list">
-							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__TechCrunch">
-									In a world where one assumes the Cambridge Analytica scandal is merely the tip of the iceberg
-									when it comes to data abuse, it’s easy to see the project’s appeal.
-								</p>
-								<a href="https://techcrunch.com/2018/04/20/orchid-labs-is-in-the-process-of-raising-125-million-for-its-surveillance-free-layer-atop-the-internet/" className="footer">
-									<div className="logo">
-										<img width="360" height="51" src="/img/index/seen/techcrunch.png" alt="techcrunch" loading="lazy" />
-									</div>
-									<div className="uppercase">TECHCRUNCH</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-								</a>
-							</div>
-							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__CNET">
-									This is what the future of VPN tech looks like. And you gotta see it.
-								</p>
-								<a href="https://www.cnet.com/news/orchid-vpn-review-it-uses-the-tech-behind-bitcoin-to-improve-privacy/" className="footer">
-									<div className="logo">
-										<img width="180" height="132" src="/img/index/seen/cnet.svg" alt="CNET" loading="lazy" />
-									</div>
-									<div className="uppercase">CNET</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-								</a>
-							</div>
-							<div className="press-card">
-								<p className="press-card__quote" i18n="@@HomeAsSeenIn__CoinDesk">
-									Orchid’s mission is to build open-source software that keeps the Internet open and accessible  —
-									a natural resource for everyone, everywhere.
-								</p>
-								<a href="https://www.coindesk.com/orchid-tops-43-million-raised-in-token-sale-for-crypto-tor-alternative" className="footer">
-									<div className="logo">
-										<img width="360" height="70" src="/img/index/seen/coindesk.png" alt="coindesk" loading="lazy" />
-									</div>
-									<div className="uppercase">COINDESK</div>
-									<img src="/img/index/read-more-arrow.svg" width="42" height="16" alt="" loading="lazy" />
-								</a>
-							</div>
-						</div>
-						<h3 className="center-text vpad-thin color-gray" style={{ marginBottom: "-0.5rem" }}>The Orchid community has a lot to say as well!</h3>
-						<div className="press-list">
-							<div className="press-card">
-								<p className="press-card__quote">
-									"Orchid’s VPN could be very useful from a point of view of freedom."
-									<br /><br />
-									<a href="https://twitter.com/search?q=%24OXT&src=cashtag_click">$OXT</a>&nbsp;<a href="https://twitter.com/hashtag/OrchidProtocol?src=hashtag_click">#OrchidProtocol</a>
-									<br /><br />
-									Excellent read: <a href="https://beincrypto.com/everything-is-an-economy-orchid-ceo-steven-waterhouse/">Orchid CEO Steven Waterhouse on VPNs...</a>
-								</p>
-								<div className="footer">
-									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
-									</div>
-									<a className="press-card__more uppercase color-gray" href="https://twitter.com/justinsanger/status/1380986189503664131">@justinsanger</a>
-								</div>
-							</div>
-							<div className="press-card">
-								<p className="press-card__quote">
-									So proud of <a href="https://twitter.com/OrchidProtocol">@OrchidProtocol</a> getting listed in the Apple app store! Privacy and internet access should be synonymous, and Orchid's decentralized VPN is a key step forward. I'm going to try a week of <a href="https://twitter.com/hashtag/OrchidAlwaysOn?src=hashtag_click">#OrchidAlwaysOn</a> and keep my VPN running in the background.
-								</p>
-								<div className="footer">
-									<div className="logo offset">
-										<img src="/img/index/TweetBunny.png" loading="lazy" width="273" height="201" alt="" />
-									</div>
-									<a className="press-card__more uppercase color-gray" href="https://twitter.com/collectionist/status/1281442941186129920">@collectionist</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<div className="wavy-element-06"></div>
-
-				<section className="blog-wrapper">
-					<div className="blog-container container-common">
-						<h2 className="section-heading">From the Orchid Blog</h2>
-						<div className="blog-grid">
-							<BlogPosts />
-						</div>
-						<a href="https://blog.orchid.com/" className="section-button" i18n-href="@@Navigation-Blog-Link" i18n="@@Navigation-Blog">
-							<button className="btn-secondary">
-								Go to Blog
-							</button>
-						</a>
-					</div>
-				</section>
-
-				{/*<div className="wavy-element-07"></div>*/}
-
-				<section className="newsletter-wrapper">
-					<div className="newsletter-container container-common">
-						<h2 className="section-heading">Connect</h2>
-						<p>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</p>
-
-						<div className="social-icons">
-							<a className="inline-block" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
-								<img src="/img/shared/social-twitter-purple.svg" alt="Twitter" width="32" height="32" />
-							</a>
-							<a className="inline-block" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
-								<img src="/img/shared/social-discord-purple.svg" alt="Discord" width="32" height="32" />
-							</a>
-							<a className="inline-block" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
-								<img src="/img/shared/social-telegram-purple.svg" alt="Telegram" width="32" height="32" />
-							</a>
-							<a className="inline-block" href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
-								<img src="/img/shared/social-github-purple.svg" alt="Github" width="32" height="32" />
-							</a>
-							<a className="inline-block" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
-								<img src="/img/shared/social-facebook-purple.svg" alt="Facebook" width="32" height="32" />
-							</a>
-							<a className="inline-block" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
-								<img src="/img/shared/social-reddit-purple.svg" alt="Reddit" width="32" height="32" />
-							</a>
-						</div>
-
-						<h3>Let’s stay connected</h3>
-						<p>Get the Orchid Onlooker newsletter for updates and privacy news</p>
-						<NewsletterSignupCore largePadding="true" />
-					</div>
-				</section>
-			</Layout>
-		)
-	}
+			<Wrapper className='relative'>
+				<Circle css={css`
+					top: 5%;
+					right: 80%;
+					width: 30%;
+					max-width: 300px;
+				`} />
+				<Circle css={css`
+					top: 30%;
+					left: 80%;
+					width: 40%;
+					max-width: 400px;
+				`} />
+				<Circle css={css`
+					bottom: -1%;
+					right: 60%;
+					width: 20%;
+					max-width: 170px;
+					${break_largeScreen} {
+						bottom: -5%;
+					}
+				`} />
+				<Container className="text-center relative z-10">
+					<h2 className='my-4'><Trans>Connect</Trans></h2>
+					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
+					<p><FooterSocialIcons purple="true" /></p>
+					<ContainerOverflow className="flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
+						<FeaturedTweets />
+					</ContainerOverflow>
+					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
+					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
+					<NewsletterSignupCore t={t} largePadding="true" />
+					<div className='h-4' />
+				</Container>
+			</Wrapper>
+		</Layout >
+	);
 }
 
-export default Page
+export default Page;
+
+export const query = graphql`
+	query ($language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
+	}
+`;

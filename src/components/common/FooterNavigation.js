@@ -1,6 +1,6 @@
 import React from 'react'
 import { css } from '@emotion/react'
-import { Link } from 'gatsby'
+import { Link } from 'gatsby-plugin-react-i18next';
 
 import config from '../../utils/config';
 
