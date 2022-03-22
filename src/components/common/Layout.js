@@ -61,11 +61,15 @@ const TemplateWrapper = (props) => {
 		}
 	`.replace(/\t/g, '').replace(/\n/g, '');
 
+	let preload = <link rel="preload" href="/fonts/HeadlineOne.ttf" as="font" type="font/ttf" />;
+
 	if (MPlusRoundedLanguages.indexOf(language) >= 0) {
 		styleString = styleString.replace('HeadlineOne.ttf', 'M_PLUS_Rounded/MPLUSRounded1c-Black.ttf');
+		preload = <link rel="preload" href="/fonts/M_PLUS_Rounded/MPLUSRounded1c-Black.ttf" as="font" type="font/ttf" />;
 	}
 	if (BebasNeueLanguages.indexOf(language) >= 0) {
 		styleString = styleString.replace('HeadlineOne.ttf', 'BebasNeue/BebasNeue-Regular.ttf');
+		preload = <link rel="preload" href="/fonts/BebasNeue/BebasNeue-Regular.ttf" as="font" type="font/ttf" />;
 	}
 
 	return (
@@ -75,8 +79,11 @@ const TemplateWrapper = (props) => {
 				<link rel="icon" type="image/ico" href="/favicon.ico" />
 				<link rel="manifest" href="/manifest.webmanifest" />
 				<meta name="theme-color" content="#5f45ba" />
-
-				{/* prefetch fonts */}
+				<link rel="preload" href="/fonts/Baloo/Baloo2-Regular.ttf" as="font" type="font/ttf" />
+				<link rel="preload" href="/fonts/Baloo/Baloo2-SemiBold.ttf" as="font" type="font/ttf" />
+				<link rel="preload" href="/fonts/Baloo/Baloo2-Bold.ttf" as="font" type="font/ttf" />
+				<link rel="preload" href="/fonts/Baloo/Baloo2-ExtraBold.ttf" as="font" type="font/ttf" />
+				{preload}
 				<style>{styleString}</style>
 			</Helmet>
 
