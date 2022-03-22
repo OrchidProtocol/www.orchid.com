@@ -56,7 +56,16 @@ const podcastRoll = ({ data, pageContext, location, t }) => {
 export default podcastRoll
 
 export const podcastRollQuery = graphql`
-    query podcastRollPaginatedQuery($buildTimestampUTC: Float, $skip: Int!, $limit: Int!) {
+    query podcastRollPaginatedQuery($buildTimestampUTC: Float, $skip: Int!, $limit: Int!, $language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
         allPosts: allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { 
