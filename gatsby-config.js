@@ -12,6 +12,7 @@ module.exports = {
 		siteUrl: `https://www.orchid.com/`,
 	},
 	plugins: [
+		`gatsby-plugin-preact`,
 		`gatsby-plugin-image`,
 		{
 			resolve: `gatsby-plugin-sharp`,
