@@ -1,4 +1,3 @@
-const parseString = require('xml2js').parseString;
 const fetch = require('node-fetch');
 const fs = require('fs');
 const cheerio = require('cheerio');

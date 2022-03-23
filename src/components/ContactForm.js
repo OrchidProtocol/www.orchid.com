@@ -1,4 +1,5 @@
 import React from 'react'
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 class Component extends React.Component {
 	constructor(props) {
@@ -80,36 +81,37 @@ class Component extends React.Component {
 	}
 
 	render() {
+		const { t } = this.props
 		return (
 			<form className={"contact-form-container" + (this.state.js ? " js" : "") + (this.state.in_progress ? " in_progress" : "")} onSubmit={this.submit.bind(this)} ref={this.setFormRef.bind(this)}>
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="name" placeholder="Your Name" required />
+					<input type="text" name="name" placeholder={t("Your Name")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="email" name="email" placeholder="Your Email" required />
+					<input type="email" name="email" placeholder={t("Your Email")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="subject" placeholder="Subject" required />
+					<input type="text" name="subject" placeholder={t("Subject")} required />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<textarea name="message" placeholder="Enter your message..." required />
+					<textarea name="message" placeholder={t("Enter your message...")} required />
 				</div>
 
 				<div className="contact-form-error contact-form-message">
-					Required fields are missing
+					<Trans>Required fields are missing</Trans>
 				</div>
 				<div className={"contact-form-error contact-form-message" + (this.state.error ? ' active' : '')}>
-					There was an unknown error, your message may not have been sent
+					<Trans>There was an unknown error, your message may not have been sent</Trans>
 				</div>
 				<div className={"contact-form-success contact-form-message" + (this.state.success ? ' active' : '')}>
-					Your message has been sent
+					<Trans>Your message has been sent</Trans>
 				</div>
 
-				<button className="btn-primary">Submit</button>
-				<button onClick={this.clearForm.bind(this)}>Clear</button>
+				<button className="btn-primary"><Trans>Submit</Trans></button>
+				<button onClick={this.clearForm.bind(this)}><Trans>Clear</Trans></button>
 			</form>
 		)
 	}

@@ -1,208 +1,322 @@
-import { Link } from 'gatsby'
+import { graphql } from 'gatsby';
+import { Link } from 'gatsby-plugin-react-i18next';
 import React from 'react'
 import { Helmet } from 'react-helmet'
+import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './faq.scss'
 
-class Page extends React.Component {
-
-	render() {
-		return (
-			<Layout>
-				<WebsiteMeta
-					title="FAQs and Customer Support | Orchid"
-					description="A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet."
-					image=""
-					location={this.props.location}
-				/>
-				<Helmet>
-					<body className="faq-page" />
-				</Helmet>
-				<div className="splash-circuit">
-					<div className="splash-circuit-image section-med">
-					</div>
-					<div className="splash-circuit-grid section-med">
-						<div className="splash-circuit-grid-item hpad-thin vpad-wide">
-							<h1 i18n="@@FaqHero__Title">FAQ
-							</h1>
-						</div>
+function Page(props) {
+	const { t } = useTranslation();
+	return (
+		<Layout t={t}>
+			<WebsiteMeta
+				title={t("FAQs and Customer Support | Orchid")}
+				description={t("A guide to getting started with Orchid\'s VPN, an open-source project committed to ending surveillance and censorship on the Internet.")}
+				image=""
+				location={props.location}
+			/>
+			<Helmet>
+				<body className="faq-page" />
+			</Helmet>
+			<div className="splash-circuit">
+				<div className="splash-circuit-image section-med">
+				</div>
+				<div className="splash-circuit-grid section-med">
+					<div className="splash-circuit-grid-item hpad-thin vpad-wide">
+						<h1>
+							<span>FAQ</span>
+						</h1>
 					</div>
 				</div>
-				<div className="background-white splash-circuit-after">
-					<div className="section-med faq-section">
-						<div className="faq-sidebar">
-							<ul className="faq-nav">
-								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#about-orchid" i18n="@@Faq-AboutOrchid__Title">About Orchid</a>
-									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
-									<ul className="faq-sidebar-questions">
-										<li>
-											<a i18n className="faq-link" href="/faq#about-orchid--what-is-orchid"> What is Orchid?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#about-orchid--the-purpose"> What is the purpose of Orchid?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#about-orchid--how-does-it-work"> How does it work?</a>
-										</li>
-									</ul>
-								</li>
-								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#security-privacy" i18n> Security and Privacy</a>
-									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
-									<ul className="faq-sidebar-questions">
-										<li>
-											<a i18n className="faq-link" href="/faq#privacy--what-protections"> What protections does the Orchid app provide?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#privacy--how-can-orchid-help-today"> How can the Orchid app help me with privacy today?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#privacy--how-is-orchid-private"> How is Orchid private given that it has public payments on Ethereum?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#privacy--can-nodes-monitor-traffic"> Can Orchid nodes monitor network traffic?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#privacy--am-i-totally-private"> So I'm totally private and anonymous when I use a VPN like Orchid? </a>
-										</li>
-									</ul>
-								</li>
-								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#technology" i18n> On Technology</a>
-									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
-									<ul className="faq-sidebar-questions">
-										<li>
-											<a i18n className="faq-link" href="/faq#technology--how-does-oxt-work"> How does (OXT) work?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#technology--how-do-curated-lists-work"> How do curated lists work on Orchid?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#technology--what-is-the-orchid-protocol"> What is the Orchid Protocol?</a>
-										</li>
-									</ul>
-								</li>
-								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#staking" i18n> Staking</a>
-									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
-								</li>
+			</div>
+			<div className="background-white splash-circuit-after">
+				<div className="section-med faq-section">
+					<div className="faq-sidebar">
+						<ul className="faq-nav">
+							<li className="faq-sidebar-category-active">
+								<Link className="faq-category-heading-sidebar faq-link" to="/faq/#about-orchid">
+									<span>
+										About Orchid
+									</span>
+								</Link>
+								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
 								<ul className="faq-sidebar-questions">
 									<li>
-										<a i18n className="faq-link" href="/faq#staking--what-is-staking-in-orchid"> What is Staking in Orchid?</a>
+										<Link className="faq-link" to="/faq/#about-orchid--what-is-orchid">
+											<span>
+												What is Orchid?
+											</span>
+										</Link>
 									</li>
 									<li>
-										<a i18n className="faq-link" href="/faq#staking--is-orchid-staking-like-proof-of-stake"> Is Orchid Staking like Proof of Stake?</a>
+										<Link className="faq-link" to="/faq/#about-orchid--the-purpose">
+											<span>
+												What is the purpose of Orchid?
+											</span>
+										</Link>
 									</li>
 									<li>
-										<a i18n className="faq-link" href="/faq#staking--how-can-i-earn-passive-revenue-on-my-oxt"> How can I earn passive revenue on my OXT?</a>
+										<Link className="faq-link" to="/faq/#about-orchid--how-does-it-work">
+											<span>
+												How does it work?
+											</span>
+										</Link>
 									</li>
 								</ul>
-								<li className="faq-sidebar-category-active">
-									<a className="faq-category-heading-sidebar faq-link" href="/faq#staking" i18n> Orchid App</a>
-									<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
-									<ul className="faq-sidebar-questions">
-										<li>
-											<a i18n className="faq-link" href="/faq#orchid-app--why-new-wallet"> Why do I need a new Ethereum wallet?Why can’t I use my main wallet?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#orchid-app--why-big-exchange"> Why should I trust a big exchange with my personal info?Would a decentralized exchange that doesn’t store my personal info be better?</a>
-										</li>
-										<li>
-											<a i18n className="faq-link" href="/faq#orchid-app--why-eth-and-oxt"> Why do I need ETH and OXT?</a>
-										</li>
-									</ul>
+							</li>
+							<li className="faq-sidebar-category-active">
+								<Link className="faq-category-heading-sidebar faq-link" to="/faq/#security-privacy"><span>Security and Privacy</span></Link>
+								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
+								<ul className="faq-sidebar-questions">
+									<li>
+										<Link className="faq-link" to="/faq/#privacy--what-protections">
+											<span>
+												What protections does the Orchid app provide?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#privacy--how-can-orchid-help-today">
+											<span>
+												How can the Orchid app help me with privacy today?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#privacy--how-is-orchid-private">
+											<span>
+												How is Orchid private given that it has public payments on Ethereum?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#privacy--can-nodes-monitor-traffic">
+											<span>
+												Can Orchid nodes monitor network traffic?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#privacy--am-i-totally-private">
+											<span>
+												So I'm totally private and anonymous when I use a VPN like Orchid?
+											</span>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li className="faq-sidebar-category-active">
+								<Link className="faq-category-heading-sidebar faq-link" to="/faq/#technology"><span>On Technology</span></Link>
+								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
+								<ul className="faq-sidebar-questions">
+									<li>
+										<Link className="faq-link" to="/faq/#technology--how-does-oxt-work">
+											<span>
+												How does (OXT) work?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#technology--how-do-curated-lists-work">
+											<span>
+												How do curated lists work on Orchid?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#technology--what-is-the-orchid-protocol">
+											<span>
+												What is the Orchid Protocol?
+											</span>
+										</Link>
+									</li>
+								</ul>
+							</li>
+							<li className="faq-sidebar-category-active">
+								<Link className="faq-category-heading-sidebar faq-link" to="/faq/#staking"><span>Staking</span></Link>
+								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
+							</li>
+							<ul className="faq-sidebar-questions">
+								<li>
+									<Link className="faq-link" to="/faq/#staking--what-is-staking-in-orchid">
+										<span>
+											What is Staking in Orchid?
+										</span>
+									</Link>
+								</li>
+								<li>
+									<Link className="faq-link" to="/faq/#staking--is-orchid-staking-like-proof-of-stake">
+										<span>
+											Is Orchid Staking like Proof of Stake?
+										</span>
+									</Link>
+								</li>
+								<li>
+									<Link className="faq-link" to="/faq/#staking--how-can-i-earn-passive-revenue-on-my-oxt">
+										<span>
+											How can I earn passive revenue on my OXT?
+										</span>
+									</Link>
 								</li>
 							</ul>
-						</div>
-						<div className="faq-main gap-bot-wide">
-							<ul className="categories">
-								<li>
-									<div id="about-orchid"></div>
-									<h2 className="faq-category-heading" i18n>
+							<li className="faq-sidebar-category-active">
+								<Link className="faq-category-heading-sidebar faq-link" to="/faq/#staking"><span>Orchid App</span></Link>
+								<img alt="Toggle" className="faq-category-expand" height="24" src="/img/shared/more-orc-green.svg" width="24" />
+								<ul className="faq-sidebar-questions">
+									<li>
+										<Link className="faq-link" to="/faq/#orchid-app--why-new-wallet">
+											<span>
+												Why do I need a new Ethereum wallet?Why can’t I use my main wallet?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#orchid-app--why-big-exchange">
+											<span>
+												Why should I trust a big exchange with my personal info?Would a decentralized exchange that doesn’t store my personal info be better?
+											</span>
+										</Link>
+									</li>
+									<li>
+										<Link className="faq-link" to="/faq/#orchid-app--why-eth-and-oxt">
+											<span>
+												Why do I need ETH and OXT?
+											</span>
+										</Link>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div className="faq-main gap-bot-wide">
+						<ul className="categories">
+							<li>
+								<div id="about-orchid"></div>
+								<h2 className="faq-category-heading">
+									<span>
 										About Orchid
-									</h2>
-									<ul className="faq-questions">
-										<li className="faq-question-container" id="about-orchid--what-is-orchid">
-											<h4 className="faq-question" i18n>
+									</span>
+								</h2>
+								<ul className="faq-questions">
+									<li className="faq-question-container" id="about-orchid--what-is-orchid">
+										<h4 className="faq-question">
+											<span>
 												What is Orchid?
-											</h4>
-											<p i18n className="faq-answer">Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake digital currency to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency).
-											</p>
-										</li>
-										<li className="faq-question-container" id="about-orchid--the-purpose">
-											<h4 className="faq-question" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Orchid is a decentralized, market-based system for anonymous communication and virtual private networking, including a bandwidth market where node providers stake digital currency to advertise their services using the Ethereum blockchain and receive payment in OXT (Orchid’s native cryptocurrency).
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="about-orchid--the-purpose">
+										<h4 className="faq-question">
+											<span>
 												What is the purpose of Orchid?
-											</h4>
-											<p i18n className="faq-answer">Orchid’s mission is to build Open Source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.
-											</p>
-										</li>
-										<li className="faq-question-container" id="about-orchid--how-does-it-work">
-											<h4 className="faq-question" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Orchid’s mission is to build Open Source software that keeps the Internet open and accessible — a natural resource for everyone, everywhere.
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="about-orchid--how-does-it-work">
+										<h4 className="faq-question">
+											<span>
 												How does it work?
-											</h4>
-											<p i18n className="faq-answer">
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
 												The Orchid network enables a decentralized virtual private network (VPN), allowing users to buy bandwidth from a global pool of service providers.
 												<br />
 												<br />
-												To do this, Orchid uses a digital currency called OXT, a new VPN protocol for incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum transaction fees on packets are acceptably low.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div id="security-privacy"></div>
-									<h2 className="faq-category-heading" i18n>
+												To do this, Orchid uses a digital currency called OXT, a new VPN protocol for incentivized bandwidth proxying, and smart-contracts with algorithmic advertising and payment functions.Orchid's users connect to bandwidth sellers using a provider directory, and they pay using probabilistic nanopayments so Ethereum spanaction fees on packets are acceptably low.
+											</span>
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div id="security-privacy"></div>
+								<h2 className="faq-category-heading">
+									<span>
 										Security and Privacy
-									</h2>
-									<ul className="faq-questions">
-										<li className="faq-question-container" id="privacy--what-protections">
-											<h4 className="faq-question" i18n>
+									</span>
+								</h2>
+								<ul className="faq-questions">
+									<li className="faq-question-container" id="privacy--what-protections">
+										<h4 className="faq-question">
+											<span>
 												What protections does the Orchid app provide?
-											</h4>
-											<p i18n className="faq-answer">
-												Basic Internet connections function by transmitting packets of data between two hosts (computers).In order to find their way, packets contain both a source and destination IP address.As packets move from the destination to the source, different routers and physical infrastructure require both of these addresses for the two-way connection to be established and maintained.This means that instantly and over time, the owners of the physical infrastructure are in a position to build a profile of Internet usage on their paying user (you!) and also to block content as the owner sees fit.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Basic Internet connections function by spanmitting packets of data between two hosts (computers).In order to find their way, packets contain both a source and destination IP address.As packets move from the destination to the source, different routers and physical infrastructure require both of these addresses for the two-way connection to be established and maintained.This means that instantly and over time, the owners of the physical infrastructure are in a position to build a profile of Internet usage on their paying user (you!) and also to block content as the owner sees fit.
 												<br />
 												<br />
 												Typically these infrastructure owners are ISPs — mobile carriers providing phone data connections, home cable Internet providers, WiFi hotspot operators, and any Internet backbone operators that have peering agreements with user-facing ISPs.In all these cases, the ISP is in an advantaged position to monitor and/or restrict Internet usage.It is common in many countries for ISPs to restrict content so that users cannot load certain websites.
 												<br />
 												<br />
 												If you are not happy with or do not trust your existing ISP(s), by using Orchid you can currently limit their knowledge to knowing only that you are sending and receiving bytes through Orchid, and completely block their ability to mess with the details of your traffic, unblocking the previously blocked content.They either block all of Orchid or nothing, so if things continue to work after turning on Orchid, then your ISP has allowed “Orchid in general” and cannot manipulate the individual bytes between you and the rest of the Internet.
-											</p>
-										</li>
-										<li className="faq-question-container" id="privacy--how-can-orchid-help-today">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="privacy--how-can-orchid-help-today">
+										<h4 className="faq-question">
+											<span>
 												How can the Orchid app help me with privacy today?
-											</h4>
-											<p i18n className="faq-answer">
-												The goal with the Orchid app is to give users insight and control over the network connection of their device.To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT.Then the Orchid app connects to the Orchid network and selects a node using Orchid’s <a href="https://blog.orchid.com/orchids-network-random-selection-stake-weighting/">linear stake-weighted algorithm</a> to serve as a VPN and pays for bandwidth via a continuous stream of tiny OXT <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayments</a>.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												The goal with the Orchid app is to give users insight and control over the network connection of their device.To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT.Then the Orchid app connects to the Orchid network and selects a node using Orchid’s <a href="https://blog.orchid.com/orchids-network-random-selection-stake-weighting/">linear stake-weighted algorithm</a>to serve as a VPN and pays for bandwidth via a continuous stream of tiny OXT <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayments</a>.
 												<br />
 												<br />
 												In a single-hop circuit configuration, Orchid provides:
-											</p>
-											<ul>
-												<li i18n>Protection from websites seeing your real IP address and physical location
-												</li>
-												<li i18n>Protection from the ISP from seeing what websites you are visiting and when
-												</li>
-												<li i18n>Access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP level firewalls and can browse the entire Internet freely
-												</li>
-											</ul>
-											<p i18n className="faq-answer">
+											</span>
+										</p>
+										<ul>
+											<li>
+												<span>
+													Protection from websites seeing your real IP address and physical location
+												</span>
+											</li>
+											<li>
+												<span>
+													Protection from the ISP from seeing what websites you are visiting and when
+												</span>
+											</li>
+											<li>
+												<span>
+													Access to the open Internet--once a user can connect to Orchid, they are not restricted by ISP level firewalls and can browse the entire Internet freely
+												</span>
+											</li>
+										</ul>
+										<p className="faq-answer">
+											<span>
 												A potential problem with using only a single VPN provider is that the provider running the single node circuit knows both your IP address and the content you are accessing.If the provider maintains logs, those logs could be sold to advertisers or otherwise used against you.In the current VPN marketplace, it is hard to know who is maintaining logs and who is not.For Orchid nodes, we have developed a flexible curation system that gives users a way to pick whom to trust.<Link to="/faq#technology--how-do-curated-lists-work">Read more here</Link>.
 												<br />
 
 												<br />
 												Another solution is to trust no single provider with enough information to know both who you are and what information you are accessing.To that end, Orchid supports an advanced feature that allows users to configure multi-hop routes of their own, by stringing together several Orchid nodes into a multi-hop circuit.Each hop may be constructed with any protocol supported by Orchid (initially just Orchid hops and OpenVPN).While the potential is there to protect the user from any one provider knowing enough information to reveal their circuit, this is an advanced feature that is currently “use at your own risk”.
-											</p>
-										</li>
-										<li className="faq-question-container" id="privacy--how-is-orchid-private">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="privacy--how-is-orchid-private">
+										<h4 className="faq-question">
+											<span>
 												How is Orchid private given that it has public payments on Ethereum?
-											</h4>
-											<p i18n className="faq-answer">
-												When a user sets up an Orchid hop, the Orchid protocol requires a digital currency, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection.While the <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayment architecture</a> locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain.When that happens, the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain.Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node.Also, the frequency of how often on-chain payments occur is configurable.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												When a user sets up an Orchid hop, the Orchid protocol requires a digital currency, OXT, to send tiny and continuous nanopayments to providers for the duration of the connection.While the <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayment architecture</a>locks user funds into a smart contract and only issues on-chain payments to providers very rarely, occasional winning tickets result in OXT payments posted on the public Ethereum blockchain.When that happens, the user’s Ethereum address, the provider’s Ethereum address, and a timestamp are stored on the Ethereum blockchain.Note that the address of the provider is not a mapping to a single server, but rather the wallet that the provider created to receive funds for running the Orchid node.Also, the frequency of how often on-chain payments occur is configurable.
 												<br />
 
 												<br />
@@ -215,13 +329,17 @@ class Page extends React.Component {
 
 												<br />
 												A multi-hop circuit affords greater network protections, but to setup a multi-hop Orchid circuit, it would be naive to pay for each hop from the same Ethereum wallet.In that configuration, each provider would be able to see that wallet’s address and potentially use that address to get information about the user.To mitigate that, a better way to setup multi-hop circuits would be to use different wallet addresses for each Orchid hop.If every wallet address is independently dissociated from the user, the full circuit might be quite difficult to link back to the user.Again, the multi-hop circuit feature in Orchid is advanced, and use it at your own risk.
-											</p>
-										</li>
-										<li className="faq-question-container" id="privacy--can-nodes-monitor-traffic">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="privacy--can-nodes-monitor-traffic">
+										<h4 className="faq-question">
+											<span>
 												Can Orchid nodes monitor network traffic?
-											</h4>
-											<p i18n className="faq-answer">
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
 												Yes, providers on Orchid could monitor the bytes that come in and out of the Orchid node.However, all traffic carried over Orchid between hops from the user to the exit is encrypted at the Orchid protocol level, which is an additional layer of encryption.The final exit traffic is then decrypted by the exit node and sent to the destination.In many cases the underlying traffic will also be encrypted with protocols such as TLS, providing at least two layers of encryption.
 												<br />
 
@@ -235,13 +353,17 @@ class Page extends React.Component {
 
 												<br />
 												Lastly, every Orchid user has a “curated list” of providers.This adds an additional layer of protection as users could pick or make their own curated list of providers that they trust or someone that they trust, trusts.Orchid has a default list of trusted providers that will ship with the Orchid app.
-											</p>
-										</li>
-										<li className="faq-question-container" id="privacy--am-i-totally-private">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="privacy--am-i-totally-private">
+										<h4 className="faq-question">
+											<span>
 												So I'm totally private and anonymous when I use a VPN like Orchid?
-											</h4>
-											<p i18n className="faq-answer">
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
 												<br />
 
 												<strong>No.
@@ -266,28 +388,40 @@ class Page extends React.Component {
 
 												<br />
 												Orchid is researching “bandwidth burning” and related techniques to help obfuscate a user’s traffic against these advanced packet timing and size analysis attacks.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div id="technology"></div>
-									<h2 className="faq-category-heading" i18n>
+											</span>
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div id="technology"></div>
+								<h2 className="faq-category-heading">
+									<span>
 										On Technology
-									</h2>
-									<ul className="faq-questions">
-										<li className="faq-question-container" id="technology--how-does-oxt-work">
-											<h4 className="faq-question" i18n>
+									</span>
+								</h2>
+								<ul className="faq-questions">
+									<li className="faq-question-container" id="technology--how-does-oxt-work">
+										<h4 className="faq-question">
+											<span>
 												How does OXT work?
-											</h4>
-											<p i18n className="faq-answer">OXT is a “pre-mined” cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive.At launch we intend there to be a limited supply of one billion (1,000,000,000).We do not intend ever to create any additional OXT.
-											</p>
-										</li>
-										<li className="faq-question-container" id="technology--how-do-curated-lists-work">
-											<h4 className="faq-question" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												OXT is a “pre-mined” cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace.It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive.At launch we intend there to be a limited supply of one billion (1,000,000,000).We do not intend ever to create any additional OXT.
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="technology--how-do-curated-lists-work">
+										<h4 className="faq-question">
+											<span>
 												How do curated lists work on Orchid?
-											</h4>
-											<p i18n className="faq-answer">The Orchid client calls an on-chain ‘curated list’ function which filters the viable nodes on Orchid (that is, nodes that have properly staked) into a custom subset.Initial releases of the official Orchid client will use this feature to prevent certain kinds of attacks from malicious exit nodes (e.g.SSL downgrade attacks) by using a default list consisting of trusted VPN partners.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												The Orchid client calls an on-chain ‘curated list’ function which filters the viable nodes on Orchid (that is, nodes that have properly staked) into a custom subset.Initial releases of the official Orchid client will use this feature to prevent certain kinds of attacks from malicious exit nodes (e.g.SSL downgrade attacks) by using a default list consisting of trusted VPN partners.
 												<br />
 
 												<br />
@@ -300,46 +434,68 @@ class Page extends React.Component {
 
 												<br />
 												The curated list mechanism is a means for the importation of external reputational trust to supplement the economic incentive based trust provided by node staking.
-											</p>
-										</li>
-										<li className="faq-question-container" id="technology--what-is-the-orchid-protocol">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="technology--what-is-the-orchid-protocol">
+										<h4 className="faq-question">
+											<span>
 												What is the Orchid Protocol?
-											</h4>
-											<p i18n className="faq-answer">The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard.The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to transmit video and audio from inside browsers.Our protocol is intended to allow users to request access to remote network resources and pay for these resources using OXT via a nanopayments system.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div id="staking"></div>
-									<h2 className="faq-category-heading" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												The Orchid software is designed to use a custom VPN protocol, similar in scope to OpenVPN or WireGuard.The Orchid protocol is designed for high-performance networking and runs on top of WebRTC, a common web standard, widely used to spanmit video and audio from inside browsers.Our protocol is intended to allow users to request access to remote network resources and pay for these resources using OXT via a nanopayments system.
+											</span>
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div id="staking"></div>
+								<h2 className="faq-category-heading">
+									<span>
 										Staking
-									</h2>
-									<ul className="faq-questions">
-										<li className="faq-question-container" id="staking--what-is-staking-in-orchid">
-											<h4 className="faq-question" i18n>
+									</span>
+								</h2>
+								<ul className="faq-questions">
+									<li className="faq-question-container" id="staking--what-is-staking-in-orchid">
+										<h4 className="faq-question">
+											<span>
 												What is Staking in Orchid?
-											</h4>
-											<p i18n className="faq-answer">Staking is a process where one deposits and locks up an asset into an illiquid contract or mechanism in exchange for revenue or rewards.Orchid providers stake OXT in an Ethereum smart contract (the directory) to advertise their services to clients.Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Staking is a process where one deposits and locks up an asset into an illiquid contract or mechanism in exchange for revenue or rewards.Orchid providers stake OXT in an Ethereum smart contract (the directory) to advertise their services to clients.Orchid clients then select providers randomly, weighted by proportional stake, so that the probability of picking a particular provider is equal to their fraction of the total stake.
 												<br />
 
 												<br />
 												Anyone else can also stake on a provider’s address, allowing a form of “delegated staking”.Any OXT holder can stake their OXT on providers of their choosing.There are no automatic benefits of staking on someone else’s behalf, but the staking mechanism could be combined with a revenue sharing contract between the staker and the stakee.
-											</p>
-										</li>
-										<li className="faq-question-container" id="staking--is-orchid-staking-like-proof-of-stake">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="staking--is-orchid-staking-like-proof-of-stake">
+										<h4 className="faq-question">
+											<span>
 												Is Orchid Staking like Proof of Stake?
-											</h4>
-											<p i18n className="faq-answer">Staking in Orchid is similar to proof of stake systems only in the sense of using stake as a linear weighting mechanism.In most proof-of-stake systems stakeholders can automatically earn revenue just by running nodes with stake.Orchid has no such automatic mechanism, and has no inflation to fund staking.The only source of income on Orchid is customers paying for bandwidth.
-											</p>
-										</li>
-										<li className="faq-question-container" id="staking--how-can-i-earn-passive-revenue-on-my-oxt">
-											<h4 className="faq-question" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Staking in Orchid is similar to proof of stake systems only in the sense of using stake as a linear weighting mechanism.In most proof-of-stake systems stakeholders can automatically earn revenue just by running nodes with stake.Orchid has no such automatic mechanism, and has no inflation to fund staking.The only source of income on Orchid is customers paying for bandwidth.
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="staking--how-can-i-earn-passive-revenue-on-my-oxt">
+										<h4 className="faq-question">
+											<span>
 												How can I earn passive revenue on my OXT?
-											</h4>
-											<p i18n className="faq-answer">You can find an Orchid bandwidth provider who is seeking staking partners in exchange for a share of revenue or recurring payments - using any on-chain or off-chain mechanism.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												You can find an Orchid bandwidth provider who is seeking staking partners in exchange for a share of revenue or recurring payments - using any on-chain or off-chain mechanism.
 												<br />
 
 												<br />
@@ -360,50 +516,81 @@ class Page extends React.Component {
 
 												<br />
 												Eventually third party websites could provide an interface to help simplify and automate the process of finding, evaluating and staking on Orchid bandwidth providers.
-											</p>
-										</li>
-									</ul>
-								</li>
-								<li>
-									<div id="about-orchid"></div>
-									<h2 className="faq-category-heading" i18n>
+											</span>
+										</p>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<div id="about-orchid"></div>
+								<h2 className="faq-category-heading">
+									<span>
 										Orchid App
-									</h2>
-									<ul className="faq-questions">
-										<li className="faq-question-container" id="orchid-app--why-new-wallet">
-											<h4 className="faq-question" i18n>
+									</span>
+								</h2>
+								<ul className="faq-questions">
+									<li className="faq-question-container" id="orchid-app--why-new-wallet">
+										<h4 className="faq-question">
+											<span>
 												Why do I need a new Ethereum wallet?Why can’t I use my main wallet?
-											</h4>
-											<p i18n className="faq-answer">While you could use your primary Ethereum wallet that you typically use for other Ethereum applications, we do not recommend it if you are seeking privacy with Orchid.The main reason is that using Orchid results in on chain payments flowing from your wallet to the Orchid nanopayment contract, and then on to VPN providers selling bandwidth.Ethereum on-chain analytics can easily link payments to/ from the nanopayment smart contract and then to providers.If the source of the funds comes from your personal Ethereum wallet linked to other services, anyone using Etherscan would be able to see that you used Orchid and sent payments to VPN providers, when the occasional Orchid nanopayment system issues a winning ticket.
-											</p>
-										</li>
-										<li className="faq-question-container" id="orchid-app--why-big-exchange">
-											<h4 className="faq-question" i18n>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												While you could use your primary Ethereum wallet that you typically use for other Ethereum applications, we do not recommend it if you are seeking privacy with Orchid.The main reason is that using Orchid results in on chain payments flowing from your wallet to the Orchid nanopayment contract, and then on to VPN providers selling bandwidth.Ethereum on-chain analytics can easily link payments to/ from the nanopayment smart contract and then to providers.If the source of the funds comes from your personal Ethereum wallet linked to other services, anyone using Etherscan would be able to see that you used Orchid and sent payments to VPN providers, when the occasional Orchid nanopayment system issues a winning ticket.
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="orchid-app--why-big-exchange">
+										<h4 className="faq-question">
+											<span>
 												Why should I trust a big exchange with my personal info?Would a decentralized exchange that doesn’t store my personal info be better?
-											</h4>
-											<p i18n className="faq-answer">While a decentralized exchange does not store your personal information that could link your source of funds to your identity, a decentralized exchange does typically require an Ethereum account with some sort of crypto such as ETH, which has its own history of transactions.If that ETH or wallet is linked to your identity, then the source of funds could be linked through the DEX back to your originating Ethereum wallet.
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												While a decentralized exchange does not store your personal information that could link your source of funds to your identity, a decentralized exchange does typically require an Ethereum account with some sort of crypto such as ETH, which has its own history of spanactions.If that ETH or wallet is linked to your identity, then the source of funds could be linked through the DEX back to your originating Ethereum wallet.
 												<br />
 
 												<br />
 												A large exchange typically has a ledger they use to keep track of ownership, with a hot wallet they use to send funds in and out of the exchange.While the exchange knows your identity, the movement of currency in and out of the exchange is anonymous, as the funds can’t be tracked to your identity on the blockchain without the exchange being hacked, subpoenaed or otherwise compromised.
-											</p>
-										</li>
-										<li className="faq-question-container" id="orchid-app--why-eth-and-oxt">
-											<h4 className="faq-question" i18n>
+											</span>
+										</p>
+									</li>
+									<li className="faq-question-container" id="orchid-app--why-eth-and-oxt">
+										<h4 className="faq-question">
+											<span>
 												Why do I need ETH and OXT?
-											</h4>
-											<p i18n className="faq-answer">Orchid is a series of decentralized smart contracts and client software that uses Ethereum.Certain operations require the use of ETH for gas to power the smart contracts that run Orchid.For users who use the Orchid app, ETH is required when adding or removing funds from your Orchid account through the web3 browser interface.
-											</p>
-										</li>
-									</ul>
-								</li>
-							</ul>
-						</div>
+											</span>
+										</h4>
+										<p className="faq-answer">
+											<span>
+												Orchid is a series of decentralized smart contracts and client software that uses Ethereum.Certain operations require the use of ETH for gas to power the smart contracts that run Orchid. For users who use the Orchid app, ETH is required when adding or removing funds from your Orchid account through the web3 browser interface.
+											</span>
+										</p>
+									</li>
+								</ul>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</Layout>
-		)
-	}
+			</div >
+		</Layout >
+	)
 }
 
 export default Page
+
+export const query = graphql`
+	query ($language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
+	}
+`;

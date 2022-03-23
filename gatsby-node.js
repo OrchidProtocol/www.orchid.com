@@ -1,8 +1,23 @@
 const _ = require('lodash')
 const path = require('path')
+const fs = require('fs');
 const { createFilePath } = require('gatsby-source-filesystem')
 
 const { buildTimestampUTC } = require('./src/utils/currentTimestamp');
+
+
+const locales = require('./locales.js');
+const localesNSContent = {};
+for (let index = 0; index < locales.array.length; index++) {
+	const locale = locales.array[index];
+	localesNSContent[locale] = [
+		{
+			content: fs.readFileSync(`src/locales/${locale}/translation.json`, "utf8"),
+			ns: "common"
+		}
+	];
+}
+
 
 exports.createPages = ({ actions, graphql }) => {
 	const { createPage } = actions

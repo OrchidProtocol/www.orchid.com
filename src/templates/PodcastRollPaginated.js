@@ -4,14 +4,16 @@ import config from '../utils/config';
 import { css } from '@emotion/react'
 import { graphql } from 'gatsby'
 
-import { Layout, PostCard, Pagination } from '../components/common';
+import Layout from '../components/common/Layout';
+import PostCard from '../components/common/PostCard';
+import Pagination from '../components/common/Pagination';
 import PodcastHero from '../components/common/PodcastHero';
 import PodcastFooter from '../components/common/PodcastFooter';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 
 const { buildTimestampUTC } = require('../utils/currentTimestamp');
 
-const podcastRoll = ({ data, pageContext, location }) => {
+const podcastRoll = ({ data, pageContext, location, t }) => {
 	const posts = data.allPosts.edges
 
 	for (let index = posts.length - 1; index >= 0; index--) {
@@ -33,11 +35,11 @@ const podcastRoll = ({ data, pageContext, location }) => {
 		<>
 			<WebsiteMeta
 				title={config.title}
-				description="Orchid provides the best crypto powered VPN by harnessing the power of blockchain technology to ensure digital privacy."
+				description="Orchid Podcast - Listen Now"
 				image={config.feature_image}
 				location={location}
 			/>
-			<Layout>
+			<Layout t={t ? t : (string) => { return string }}>
 				<PodcastHero />
 				<div className="container" css={css`
 					margin: 2rem 0;
@@ -54,7 +56,16 @@ const podcastRoll = ({ data, pageContext, location }) => {
 export default podcastRoll
 
 export const podcastRollQuery = graphql`
-    query podcastRollPaginatedQuery($buildTimestampUTC: Float, $skip: Int!, $limit: Int!) {
+    query podcastRollPaginatedQuery($buildTimestampUTC: Float, $skip: Int!, $limit: Int!, $language: String!) {
+		locales: allLocale(filter: {language: {eq: $language}}) {
+			edges {
+				node {
+					ns
+					data
+					language
+				}
+			}
+		}
         allPosts: allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] }
             filter: { 

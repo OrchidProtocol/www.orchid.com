@@ -55,10 +55,10 @@ const VideoContainer = styled.div`
 				}
 				background-position: center;
 				background-repeat: no-repeat;
-				background-image: url(/img/index/yt_icon_mono_light.png);
+				background-image: url(/img/vpn/yt_icon_mono_light.png);
 			}
 			&:hover::after {
-				background-image: url(/img/index/yt_icon_rgb.png);
+				background-image: url(/img/vpn/yt_icon_rgb.png);
 			}
 		}
 	}
@@ -91,7 +91,7 @@ class Component extends React.Component {
 						{this.state.showVideo ?
 							<iframe allowFullScreen title={"YouTube video embed " + this.props.id} src={"https://www.youtube-nocookie.com/embed/" + this.props.id + "?autoplay=true"} /> :
 							<a onClick={this.revealVideo.bind(this)} href={"https://www.youtube.com/watch?v=" + this.props.id}>
-								<StaticImage src="../../static/img/index/video-thumbnail.jpg" width={720} height={405} loading="lazy" placeholder="none" alt="Video thumbnail" />
+								<StaticImage src="../../static/img/vpn/video-thumbnail.jpg" width={720} height={405} loading="lazy" placeholder="none" alt="Video thumbnail" />
 							</a>}
 					</div>
 				</section>

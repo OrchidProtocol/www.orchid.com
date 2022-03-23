@@ -1,60 +1,57 @@
 import React from 'react'
-import styled from '@emotion/styled'
-import { css } from '@emotion/react'
 
-const SocialIcon = styled.li`
-    list-style: none;
-    padding: 0;
-    margin: 0;
-`;
 
 const FooterSocialIcons = (props) => {
-	return (<ul css={css`
-        padding: 0;
-        margin: 0;
-        list-style: none;
-    `}>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://twitter.com/OrchidProtocol" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-twitter.svg' alt='Twitter' />
+	let URLBase = "/img/shared/social-{icon}.svg";
+	if (Object.hasOwnProperty.call(props, 'white')) {
+		URLBase = URLBase.replace('{icon}', '{icon}-white');
+	}
+	if (Object.hasOwnProperty.call(props, 'purple')) {
+		URLBase = URLBase.replace('{icon}', '{icon}-purple');
+	}
+
+	return (<>
+		<li className='list-none inline-block m-1'>
+			<a href="https://twitter.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter" title="Twitter">
+				<img src={URLBase.replace('{icon}', "twitter")} alt="Twitter" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://www.reddit.com/r/orchid/" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/reddit.svg' alt='Reddit' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://www.reddit.com/r/orchid/" target="_blank" rel="noopener noreferrer" aria-label="Check out our Subreddit" title="Reddit">
+				<img src={URLBase.replace('{icon}', "reddit")} alt="Reddit" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-discord.svg' alt='Discord' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
+				<img src={URLBase.replace('{icon}', "discord")} style={{ width: "32px", height: "auto" }} alt="Discord" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://www.t.me/OrchidOfficial" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-telegram.svg' alt='Telegram' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://www.t.me/OrchidOfficial" target="_blank" rel="noopener noreferrer" aria-label="Join us on Telegram" title="Telegram">
+				<img src={URLBase.replace('{icon}', "telegram")} style={{ width: "32px", height: "auto" }} alt="Telegram" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://github.com/OrchidTechnologies" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-github.svg' alt='Github' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://github.com/OrchidTechnologies" target="_blank" rel="noopener noreferrer" aria-label="See the Source" title="Github">
+				<img src={URLBase.replace('{icon}', "github")} alt="Github" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-facebook.svg' alt='Facebook' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://www.facebook.com/OrchidProtocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on Facebook" title="Facebook">
+				<img src={URLBase.replace('{icon}', "facebook")} alt="Facebook" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-youtube.svg' alt='YouTube' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://www.youtube.com/channel/UCIH_BKBlNemsCzDhPYZBlHw" target="_blank" rel="noopener noreferrer" aria-label="Follow on YouTube" title="YouTube">
+				<img src={URLBase.replace('{icon}', "youtube")} alt="YouTube" width="32" height="32" />
 			</a>
-		</SocialIcon>
-		<SocialIcon>
-			<a rel="noopener noreferrer" href="https://www.linkedin.com/company/orchidprotocol" target="_blank" rel="noreferrer">
-				<img width="30" height="30" src='/img/icons/social-linkedin.svg' alt='LinkedIn' />
+		</li>
+		<li className='list-none inline-block m-1'>
+			<a href="https://www.linkedin.com/company/orchidprotocol" target="_blank" rel="noopener noreferrer" aria-label="Follow on LinkedIn" title="LinkedIn">
+				<img src={URLBase.replace('{icon}', "linkedin")} alt="LinkedIn" width="32" height="32" />
 			</a>
-		</SocialIcon>
-	</ul>)
+		</li>
+	</>)
 }
 
 export default FooterSocialIcons

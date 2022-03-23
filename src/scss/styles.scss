@@ -1,8 +1,10 @@
 @use "sass:math";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @import "_media_queries";
 @import "_misc_config";
 @import "_orc_config";
-@import "_orc_fonts";
 
 $pad-xl: 5rem;
 $pad-wide: 4rem;
@@ -27,11 +29,12 @@ $pad-xs-mobile: 1rem;
 
 	--orc-purple: #5f45ba;
 	--orc-purple-active: #856ed2;
+	--orc-light-purple: #9267e4;
 	--orc-bright-purple: #b88dfc;
 	--orc-deep-purple: #3b146a;
 	--orc-purple-gray: #504960;
-	--orc-light-purple: #a29ec0;
 	--orc-green-bright: #2ebf8b;
+	--orc-green-transparent: rgba(197, 248, 222, 40%);
 	--orc-teal: #2a8693;
 	--orc-beige-light: #f4f6f1;
 	--orc-beige: #d5d7e2;
@@ -39,6 +42,7 @@ $pad-xs-mobile: 1rem;
 	--orc-rock-gray: #504960;
 	--orc-tf-primary: "Baloo 2", sans-serif;
 	--orc-tf-secondary: "Baloo 2", sans-serif;
+	--pale-green: #c5f8de;
 }
 
 :root,
@@ -196,7 +200,7 @@ h4,
 }
 
 p {
-	margin: 0;
+	margin: 0.5rem 0;
 	padding: 0;
 
 	&.big {
@@ -398,6 +402,7 @@ button:not(.phantom-btn) {
 	box-sizing: border-box;
 	border-radius: 100vmax;
 	font-size: $size-btn;
+	text-decoration: none;
 	//box-shadow: mat-shadow(6px, $alpha: 0.2);
 
 	&.btn-fixed {
@@ -470,7 +475,7 @@ button:not(.phantom-btn) {
 	width: 100%;
 	background: none;
 	background-color: inherit;
-	border: 3px solid $orc-gray;
+	border: 3px solid $orc-purple;
 	border-radius: 100vmax;
 	font: inherit;
 	font-size: $size-body;

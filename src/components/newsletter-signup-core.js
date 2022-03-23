@@ -1,4 +1,5 @@
 import React from 'react'
+import { Trans } from 'gatsby-plugin-react-i18next';
 import './newsletter-signup-core.scss'
 
 class Component extends React.Component {
@@ -51,6 +52,7 @@ class Component extends React.Component {
 	}
 
 	submit(e) {
+		const { t } = this.props;
 		e.preventDefault();
 
 		// temporarilly disable priv8 functionality, sign users up for the full newsletter but keep priv8 styling elsewhere
@@ -96,7 +98,7 @@ class Component extends React.Component {
 						this.setState({
 							in_progress: false,
 							submitted: true,
-							success: "Great! Now please check your email and confirm your subscription.",
+							success: t("Great! Now please check your email and confirm your subscription."),
 						})
 					} else if (response["detail"]) {
 						this.setState({
@@ -109,26 +111,27 @@ class Component extends React.Component {
 			.catch(error => {
 				this.setState({
 					in_progress: false,
-					error: "Sorry, an error occurred.",
+					error: t("Sorry, an error occurred."),
 				})
 				console.error(error);
 			});
 	}
 
 	render() {
+		const { t } = this.props;
 		return (
 			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '') + (this.props.className ? ' ' + this.props.className : '')}>
 				<form onSubmit={this.submit.bind(this)}>
 					<div style={{ display: this.state.submitted ? 'none' : '' }}>
-						<input type="email" name="email" required i18n-placeholder="@@EmailAddress" placeholder="Email address" className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
+						<input type="email" name="email" required placeholder={t("Email address")} className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />
 						{!this.props.priv8 ? <div className="gap-bot-thin">
 							<label className={"gdpr-consent" + (this.state.blink_box ? ' blink_box' : '')}>
 								<input name="consent" required type="checkbox" />
-								<span i18n="@@Newsletter__Consent">I consent to receiving further instructions at the email address I submitted above.</span>
+								<span><Trans>I consent to receiving further instructions at the email address I submitted above.</Trans></span>
 							</label>
 						</div> : <></>}
-						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")} i18n="@@Newsletter__Subscribe">
-							<span>{this.props.priv8 ? 'Register' : 'Subscribe'}</span>
+						<button className={"btn-primary btn-fixed center-block newsletter-signup__button" + (this.props.priv8 ? " btn-secondary" : " btn-primary") + (this.props.largePadding ? " section-button" : "") + (this.state.in_progress ? " loading" : "")}>
+							<span>{this.props.priv8 ? t('Register') : t('Subscribe')}</span>
 						</button>
 					</div>
 					<div style={{ display: this.state.error ? 'block' : 'none' }}>
@@ -143,4 +146,4 @@ class Component extends React.Component {
 	}
 }
 
-export default Component
+export default Component;
