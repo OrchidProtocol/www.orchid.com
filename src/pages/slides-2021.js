@@ -124,7 +124,7 @@ function Page(props) {
 			<div className="patterning-instance-1"></div>
 
 			<Container>
-				<NewsletterSignupCore />
+				<NewsletterSignupCore t={t} />
 			</Container>
 		</Layout >
 	)

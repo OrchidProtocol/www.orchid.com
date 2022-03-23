@@ -396,7 +396,7 @@ function Page(props) {
 
 
 			<Container>
-				<NewsletterSignupCore />
+				<NewsletterSignupCore t={t} />
 			</Container>
 		</Layout>
 	)

@@ -120,7 +120,7 @@ class NewsletterSignupCore extends React.Component {
 	render() {
 		const { t } = this.props;
 		return (
-			<div className={"newsletter-core" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '') + (this.props.className ? ' ' + this.props.className : '')}>
+			<div className={"newsletter-core text-center" + (this.props.priv8 ? ' priv8' : '') + (this.state.in_progress ? ' in_progress' : '') + (this.props.className ? ' ' + this.props.className : '')}>
 				<form onSubmit={this.submit.bind(this)}>
 					<div style={{ display: this.state.submitted ? 'none' : '' }}>
 						<input type="email" name="email" required placeholder={t("Email address")} className={"input-large center-block vgap-thin newsletter-signup__input" + (this.state.invalid_email ? " invalid" : "")} />

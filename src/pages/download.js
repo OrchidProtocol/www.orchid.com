@@ -122,8 +122,8 @@ function Page(props) {
 				</section>
 			</div>
 
-			<Container className='phatom'>
-				<NewsletterSignupCore />
+			<Container className='phantom'>
+				<NewsletterSignupCore t={t} />
 			</Container>
 
 		</Layout>

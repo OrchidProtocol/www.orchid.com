@@ -237,7 +237,7 @@ function Page(props) {
 			</div>
 
 			<Container>
-				<NewsletterSignupCore />
+				<NewsletterSignupCore t={t} />
 			</Container>
 		</Layout>
 	)
