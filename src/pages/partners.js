@@ -6,6 +6,8 @@ import { useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './partners.scss'
+import Container from '../components/common/Container';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -393,7 +395,9 @@ function Page(props) {
 			<div className="patterning-instance-2"></div>
 
 
-			<app-newsletter-signup></app-newsletter-signup>
+			<Container>
+				<NewsletterSignupCore />
+			</Container>
 		</Layout>
 	)
 }

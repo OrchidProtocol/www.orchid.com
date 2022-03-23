@@ -2,7 +2,7 @@ import React from 'react'
 import { Trans } from 'gatsby-plugin-react-i18next';
 import './newsletter-signup-core.scss'
 
-class Component extends React.Component {
+class NewsletterSignupCore extends React.Component {
 	constructor(props) {
 		super(props)
 		/*
@@ -146,4 +146,4 @@ class Component extends React.Component {
 	}
 }
 
-export default Component;
+export default NewsletterSignupCore;

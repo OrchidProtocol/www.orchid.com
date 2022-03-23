@@ -6,6 +6,8 @@ import Layout from '../components/common/Layout'
 import './how-it-works.scss'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import { useTranslation } from 'gatsby-plugin-react-i18next';
+import Container from '../components/common/Container';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -416,7 +418,9 @@ function Page(props) {
 				</section>
 			</div>
 
-			<app-newsletter-signup></app-newsletter-signup>
+			<Container className='phatom'>
+				<NewsletterSignupCore />
+			</Container>
 		</Layout>
 	)
 }
