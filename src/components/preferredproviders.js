@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import './where-oxt.scss'
 
-const Component = () => (
+const PreferredProviders = () => (
 	<div className="where-oxt">
 		<p>
 			<Trans>
@@ -41,4 +41,4 @@ const Component = () => (
 	</div>
 )
 
-export default Component
+export default PreferredProviders;
