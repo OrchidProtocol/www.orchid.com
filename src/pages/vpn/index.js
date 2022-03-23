@@ -94,22 +94,20 @@ function Page(props) {
 							margin-right: 5rem;
 						}
 					`}>
-					<h1 className={`${language}`} css={css`
+					<h1 className={`${language} mb-2 lg:mb-0`} css={css`
 						&:not(.secondary) {
 							font-family: "Headline One", "Baloo 2", sans-serif;
 							color: var(--orc-purple-gray);
-						}
-						@media (min-width: 870px) {
-							font-size: 3rem;
-							&.en {
-								font-size: 6.5rem;
+							font-size: clamp(2.5rem, 8vw, 5rem);
+
+							&.hi {
+								font-size: clamp(2rem, 8vw, 5rem);
 							}
-							&.ja, &.zh, &.ko {
-								font-size: 4.5rem;
+							&.ja {
+								font-size: clamp(1.25rem, 5vw, 3.25rem);
 							}
-							& > .spacer {
-								display: inline-block;
-								width: 3rem;
+							&.ru {
+								font-size: clamp(1.75rem, 6vw, 4rem);
 							}
 						}
 					`}><Trans>UNBLOCK<br />YOUR INTERNET.</Trans></h1>
