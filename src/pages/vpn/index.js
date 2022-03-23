@@ -261,22 +261,22 @@ function Page(props) {
 						<StaticImage className="why-orchid__image" loading="lazy" src="../../../static/img/vpn/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
 						<div className="why-orchid__text">
 
-							<p className='text-xl font-bold'><Trans>No Subscriptions</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>No Subscriptions</Trans></p>
 							<p><Trans>When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control. VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use</Trans></p>
 
-							<p className='text-xl font-bold'><Trans>Tracking-free</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>Tracking-free</Trans></p>
 							<p><Trans>Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you. Orchid also has no tracking systems in our applications. We absolutely do not track.</Trans></p>
 
-							<p className='text-xl font-bold'><Trans>Open Source</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>Open Source</Trans></p>
 							<p><Trans>All of Orchid's code is Open Source and freely available to download <a href="https://github.com/OrchidTechnologies/orchid" target="_blank" rel="noreferrer">on GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license. The Orchid community develops code "in the open" by continually pushing changes that anyone can see on GitHub and <a href="https://github.com/OrchidTechnologies/orchid/releases/">tagging releases</a> as appropriate.</Trans></p>
 
-							<p className='text-xl font-bold'><Trans>Decentralized</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>Decentralized</Trans></p>
 							<p><Trans>Orchid brings leading providers together through a unique, decentralized privacy marketplace. Because there are more (and more widely distributed) servers available, the user's data has more possible paths to choose from. This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient.</Trans></p>
 
-							<p className='text-xl font-bold'><Trans>Unblock Website & Apps</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>Unblock Website & Apps</Trans></p>
 							<p><Trans>Use the Orchid VPN to break through firewalls and access blocked content. Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator.</Trans></p>
 
-							<p className='text-xl font-bold'><Trans>Flexible</Trans></p>
+							<p className='text-xl font-bold mt-6 lg:mt-4'><Trans>Flexible</Trans></p>
 							<p><Trans>Orchid has a WireGuard and Open VPN client built into the app. Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services. Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties.</Trans></p>
 						</div>
 					</div>
