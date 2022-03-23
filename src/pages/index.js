@@ -123,7 +123,7 @@ function Page(props) {
 									font-size: 85px;
 								}
 								${break_xlargeScreen} {
-									font-size: 100px;
+									font-size: 98px;
 								}
 								display: inline-block;
 								max-width: 500px;
