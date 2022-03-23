@@ -199,7 +199,7 @@ function Page(props) {
 					</p>
 
 					<p>
-						<Trans>Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here.Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.</Trans>
+						<Trans>Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.</Trans>
 					</p>
 				</div>
 			</div>
