@@ -5,7 +5,7 @@ import NewsletterSignupCore from './newsletter-signup-core';
 
 function NewsletterSignup({ t }) {
 	return (<Container className='phantom text-center'>
-		<h2 className="section-heading"><Trans>Let’s stay connected</Trans></h2>
+		<h3 className="section-heading"><Trans>Let’s stay connected</Trans></h3>
 		<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
 		<NewsletterSignupCore t={t} />
 	</Container>)
