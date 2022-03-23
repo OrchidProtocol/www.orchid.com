@@ -1,7 +1,7 @@
 import React from 'react'
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import { Trans } from 'react-i18next';
+import { Trans } from 'gatsby-plugin-react-i18next';
 
 const PodcastButton = styled.a`
 	background: black;

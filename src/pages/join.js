@@ -6,9 +6,9 @@ import Layout from '../components/common/Layout'
 import './join.scss'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import PricingWidget from '../components/PricingWidget'
-import NewsletterSignup from '../components/newsletter-signup-core';
 import { css } from '@emotion/react'
 import YouTubeEmbed from '../components/YouTubeEmbed';
+import NewsletterSignupCore from '../components/newsletter-signup-core';
 
 function Page(props) {
 	const [androidLink, setAndroidLink] = useState("https://play.google.com/store/apps/details?id=net.orchid.Orchid&referrer=utm_source=website&utm_campaign=join-page")
@@ -194,7 +194,7 @@ function Page(props) {
 				`}>
 				<h3><Trans>Let's Stay Connected</Trans></h3>
 				<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
-				<NewsletterSignup t={t} />
+				<NewsletterSignupCore t={t} />
 			</div>
 		</Layout>
 	)

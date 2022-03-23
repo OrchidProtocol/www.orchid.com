@@ -8,8 +8,7 @@ import WhereOXTExtended from '../components/where-oxt-extended';
 import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import Container from '../components/common/Container';
-import NewsletterSignupCore from '../components/newsletter-signup-core';
+import NewsletterSignup from '../components/newsletter-signup';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -217,9 +216,7 @@ function Page(props) {
 				</section>
 			</div>
 
-			<Container>
-				<NewsletterSignupCore t={t} />
-			</Container>
+			<NewsletterSignup t={t} />
 		</Layout >
 	)
 }
