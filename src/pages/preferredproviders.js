@@ -1,10 +1,12 @@
 import { graphql } from 'gatsby';
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { useTranslation } from 'gatsby-plugin-react-i18next'
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './preferredproviders.scss'
+import PreferredProviders from '../components/preferredproviders';
+import Container from '../components/common/Container';
 
 
 function Page(props) {
@@ -166,11 +168,10 @@ function Page(props) {
 					</div>
 					<div className="preferred-hero__column">
 						<h1>
-							Preferred Providers
+							<Trans>Preferred Providers</Trans>
 						</h1>
 						<p>
-							Orchid credit accounts purchased from Orchid are part of our preferred provider system. Credit accounts purchase service exclusively from providers that have gone through a KYC process with Orchid Labs in order to be eligible to accept credits. Contact
-							us if you would like to apply to be a preferred provider
+							<Trans>Orchid credit accounts purchased from Orchid are part of our preferred provider system. Credit accounts purchase service exclusively from providers that have gone through a KYC process with Orchid Labs in order to be eligible to accept credits. Contact us if you would like to apply to be a preferred provider</Trans>
 						</p>
 					</div>
 				</div>
@@ -179,7 +180,7 @@ function Page(props) {
 
 			<div className="preferred-providers__wrapper vpad-xl hpad-thin center-text">
 				<h2>
-					List of preferred providers
+					<Trans>List of preferred providers</Trans>
 				</h2>
 				<br />
 				<a href="https://tenta.com/"><img src="/img/partners/tenta.png" alt="TENTA" /></a>
@@ -190,23 +191,24 @@ function Page(props) {
 
 			<div className="preferred-notice__wrapper bk-beige-light vpad-wide hpad-thin center-text">
 				<div className="preferred-notice__container">
-					<b>Legal Notice</b>
+					<b><Trans>Legal Notice</Trans></b>
 					<br />
 					<br />
 					<p>
-						The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.
+						<Trans>The Orchid preferred providers program is a “closed loop prepaid access” program compliant with FinCEN regulations governing closed loop prepaid access products.</Trans>
 					</p>
 
 					<p>
-						Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here.Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per
-						day.
+						<Trans>Accordingly, Orchid credit accounts can be used only with the “defined merchant” list of VPN bandwidth providers provided here. Additionally, in order to comply with FinCEN regulations, purchase and use of Orchid credit accounts are limited to $200 per day.</Trans>
 					</p>
 				</div>
 			</div>
 
 			<div className="patterning-instance-1"></div>
 
-			<app-newsletter-signup></app-newsletter-signup>
+			<Container className="phantom text-center">
+				<PreferredProviders />
+			</Container>
 		</Layout >
 	)
 }

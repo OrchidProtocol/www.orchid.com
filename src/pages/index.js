@@ -123,7 +123,7 @@ function Page(props) {
 									font-size: 85px;
 								}
 								${break_xlargeScreen} {
-									font-size: 100px;
+									font-size: 98px;
 								}
 								display: inline-block;
 								max-width: 500px;
@@ -135,7 +135,13 @@ function Page(props) {
 							<Trans>A Decentralized Marketplace</Trans>
 						</h1>
 						<p className='my-2'><Trans>Orchid is a platform that enables an onion routing network incentivized by OXT and a multi-hop VPN client. The Orchid community believes in Open Source software and that Orchid can enable a brighter, freer and empowered future.</Trans></p>
-						<p className='mt-8'><FooterSocialIcons /></p>
+						<p className='mt-8' css={css`
+							${break_notLargeScreen} {
+								max-width: 10rem;
+							}
+						`}>
+							<FooterSocialIcons />
+						</p>
 					</div>
 				</Container>
 

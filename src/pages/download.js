@@ -7,6 +7,7 @@ import WhereOxt from '../components/where-oxt';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import NewsletterSignup from '../components/newsletter-signup';
 
 
 function Page(props) {
@@ -120,8 +121,7 @@ function Page(props) {
 				</section>
 			</div>
 
-			<app-newsletter-signup></app-newsletter-signup>
-
+			<NewsletterSignup t={t} />
 		</Layout>
 	)
 }

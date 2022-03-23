@@ -5,6 +5,7 @@ import { useTranslation } from 'gatsby-plugin-react-i18next'
 import Layout from '../components/common/Layout'
 import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import './slides-2021.scss'
+import NewsletterSignup from '../components/newsletter-signup';
 
 
 function Page(props) {
@@ -121,7 +122,7 @@ function Page(props) {
 
 			<div className="patterning-instance-1"></div>
 
-			<app-newsletter-signup></app-newsletter-signup>
+			<NewsletterSignup t={t} />
 		</Layout >
 	)
 }
