@@ -10,6 +10,7 @@ import { Link, Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18
 import WebsiteMeta from '../../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
 import { css } from '@emotion/react';
+import { break_largeScreen } from '../../components/common/styles';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -108,6 +109,12 @@ function Page(props) {
 							}
 							&.ru {
 								font-size: clamp(1.75rem, 6vw, 4rem);
+							}
+							&.zh {
+								margin-bottom: 1ch;
+								${break_largeScreen} {
+									margin-bottom: 0.5ch;
+								}
 							}
 						}
 					`}><Trans>UNBLOCK<br />YOUR INTERNET.</Trans></h1>
