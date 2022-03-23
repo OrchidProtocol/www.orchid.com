@@ -11,6 +11,8 @@ import WebsiteMeta from '../../components/common/meta/WebsiteMeta';
 import { StaticImage } from "gatsby-plugin-image";
 import { css } from '@emotion/react';
 import { break_largeScreen } from '../../components/common/styles';
+import Wrapper from '../../components/common/Wrapper';
+import Container from '../../components/common/Container';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -34,7 +36,7 @@ function Page(props) {
 					padding-top: 3rem;
 					@media (min-width: 768px) {
 						margin-top: 1rem;
-						padding: 5rem 0;
+						padding: 4rem 0 2.5rem;
 					}
 					display: flex;
 					justify-content: center;
@@ -119,7 +121,9 @@ function Page(props) {
 						}
 					`}><Trans>UNBLOCK<br />YOUR INTERNET.</Trans></h1>
 
-					<h3>
+					<h3 css={css`
+						font-size: 24px;
+					`}>
 						<Trans>The web has evolved. <span className='text-purple'>So should your VPN.</span></Trans>
 					</h3>
 					<Link to="/get-orchid" className="btn">
@@ -127,7 +131,7 @@ function Page(props) {
 					</Link>
 				</div>
 				<div css={css`
-						width: 400px;
+						width: 350px;
 						max-width: 60%;
 						@media (max-width: 870px) {
 							max-width: 30%;
@@ -159,8 +163,8 @@ function Page(props) {
 
 			<div className="wavy-element-02"></div>
 
-			<section className="marketplace__wrapper">
-				<div className="marketplace__container container-common">
+			<Wrapper className="marketplace__wrapper">
+				<Container className="marketplace__container">
 					<h2 className="section-heading"><Trans>Orchid VPN enables a bandwidth marketplace</Trans></h2>
 					<p>
 						<Trans>
@@ -170,72 +174,72 @@ function Page(props) {
 					<StaticImage loading="lazy" src="../../../static/img/vpn/marketplace.png" placeholder="none" width={1600} height={368} alt="" />
 					<div className="marketplace-steps">
 						<div>
-							<h3><Trans>Fund your Orchid account</Trans></h3>
+							<p className='text-xl font-bold'><Trans>Fund your Orchid account</Trans></p>
 							<p><Trans>Fund in-app with your native fiat currency or use the DApp to fund an account with your crypto.</Trans></p>
 						</div>
 						<div>
-							<h3><Trans>Connect to a random provider</Trans></h3>
+							<p className='text-xl font-bold'><Trans>Connect to a random provider</Trans></p>
 							<p><Trans>Tap "Connect" to match with a VPN server that has locked up OXT to compete for your business.</Trans></p>
 						</div>
 						<div>
-							<h3><Trans>Pay only for what you actually use</Trans></h3>
+							<p className='text-xl font-bold'><Trans>Pay only for what you actually use</Trans></p>
 							<p><Trans>Orchid nanopayments mean you are never locked into a subscription and pay only for actual use.</Trans></p>
 						</div>
 					</div>
 					<Link to="/how-it-works/" className="section-button">
 						<button className="btn-secondary"><Trans>Learn More</Trans></button>
 					</Link>
-				</div>
-			</section>
+				</Container>
+			</Wrapper>
 
 			<div className="wavy-element-03"></div>
 			<div className="decorative-island">
 				<StaticImage loading="lazy" src="../../../static/img/vpn/island-01.png" placeholder="none" width={600} height={357} alt="" />
 			</div>
 
-			<section className="features__wrapper">
-				<div className="features__container container-common">
+			<Wrapper className="features__wrapper">
+				<Container className="features__container">
 					<h2 className="section-heading"><Trans>Key features</Trans></h2>
 					<div className="features-list">
 						<div>
 							<img src="/img/vpn/icons/crypto.svg" alt="" width="100" height="100" />
-							<h3><Trans>Crypto-powered</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Crypto-powered</Trans></p>
 							<p><Trans>Pay for VPN service using one of our supported cryptocurrencies. Not crypto savvy? You can purchase a pre-loaded account right in the app.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#how-to-get-an-orchid-account"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
 							<img src="/img/vpn/icons/nano.svg" alt="" width="100" height="100" />
-							<h3><Trans>Nanopayment Ecosystem</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Nanopayment Ecosystem</Trans></p>
 							<p><Trans>Orchid uses a new probabilistic nanopayment system to scale payment throughput via cryptocurrency-backed “tickets”.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#orchid-account-efficiency"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
 							<img src="/img/vpn/icons/traffic.svg" alt="" width="100" height="100" />
-							<h3><Trans>Traffic Analysis</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Traffic Analysis</Trans></p>
 							<p><Trans>Peer into the details of your device’s connections by utilizing the built-in network protocol analyzer powered by Wireshark.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-traffic-monitor"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
 							<img src="/img/vpn/icons/multi-hop.svg" alt="" width="100" height="100" />
-							<h3><Trans>Multi-hop</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Multi-hop</Trans></p>
 							<p><Trans>Compose your own onion-routed VPN circuit by stringing together multiple ‘hops’ for increased privacy.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/using-orchid/#using-the-multi-hop-interface"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
 							<img src="/img/vpn/icons/servers.svg" alt="" width="100" height="100" />
-							<h3><Trans>Randomized Servers</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Randomized Servers</Trans></p>
 							<p><Trans>Connect randomly to an OXT-staked VPN server. Change to a new provider at any time by toggling the VPN off and back on.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/faq/#technology"><Trans>Learn more.</Trans></a>
 						</div>
 						<div>
 							<img src="/img/vpn/icons/sharing.svg" alt="" width="100" height="100" />
-							<h3><Trans>Unlimited Sharing</Trans></h3>
+							<p className='text-xl text-purple font-bold'><Trans>Unlimited Sharing</Trans></p>
 							<p><Trans>Share a single account across multiple devices and/or users to help out friends and family, or protect your online activity across all of your devices.</Trans></p>
 							<a href="https://docs.orchid.com/en/latest/accounts/#sharing-orchid-accounts"><Trans>Learn more.</Trans></a>
 						</div>
 					</div>
-				</div>
-			</section>
+				</Container>
+			</Wrapper>
 
 			<div className="dove-information">
 				<a href="https://docs.orchid.com/">
@@ -248,29 +252,29 @@ function Page(props) {
 
 			<div className="wavy-element-04"></div>
 
-			<section className="why-orchid__wrapper">
-				<div className="why-orchid__container container-common">
+			<Wrapper className="why-orchid__wrapper">
+				<Container className="why-orchid__container">
 					<h2 className="section-heading"><Trans>Why Orchid?</Trans></h2>
 					<div className="why-orchid__flex">
 						<StaticImage className="why-orchid__image" loading="lazy" src="../../../static/img/vpn/why-orchid__phone.png" placeholder="none" width={800} height={1019} alt="" />
 						<div className="why-orchid__text">
 
-							<h4><Trans>No Subscriptions</Trans></h4>
+							<p className='text-xl font-bold'><Trans>No Subscriptions</Trans></p>
 							<p><Trans>When you buy an Orchid account via in-app purchase, your funds are converted into a crypto-backed account that you control. VPN service is paid for on a per-use basis, meaning you only pay for the bandwidth you actually use</Trans></p>
 
-							<h4><Trans>Tracking-free</Trans></h4>
+							<p className='text-xl font-bold'><Trans>Tracking-free</Trans></p>
 							<p><Trans>Orchid has no tracking pixels, 3rd-party javascript or any code on Orchid.com that harvests information about you. Orchid also has no tracking systems in our applications. We absolutely do not track.</Trans></p>
 
-							<h4><Trans>Open Source</Trans></h4>
+							<p className='text-xl font-bold'><Trans>Open Source</Trans></p>
 							<p><Trans>All of Orchid's code is Open Source and freely available to download <a href="https://github.com/OrchidTechnologies/orchid" target="_blank" rel="noreferrer">on GitHub</a>. Use of Orchid's source code is governed by the AGPL copyleft Open Source license. The Orchid community develops code "in the open" by continually pushing changes that anyone can see on GitHub and <a href="https://github.com/OrchidTechnologies/orchid/releases/">tagging releases</a> as appropriate.</Trans></p>
 
-							<h4><Trans>Decentralized</Trans></h4>
+							<p className='text-xl font-bold'><Trans>Decentralized</Trans></p>
 							<p><Trans>Orchid brings leading providers together through a unique, decentralized privacy marketplace. Because there are more (and more widely distributed) servers available, the user's data has more possible paths to choose from. This randomness makes user information more difficult for would-be trackers and hackers to exploit and the service is much more resilient.</Trans></p>
 
-							<h4><Trans>Unblock Website & Apps</Trans></h4>
+							<p className='text-xl font-bold'><Trans>Unblock Website & Apps</Trans></p>
 							<p><Trans>Use the Orchid VPN to break through firewalls and access blocked content. Using Orchid you can access the open Internet and bypass restrictions placed by your ISP or network administrator.</Trans></p>
 
-							<h4><Trans>Flexible</Trans></h4>
+							<p className='text-xl font-bold'><Trans>Flexible</Trans></p>
 							<p><Trans>Orchid has a WireGuard and Open VPN client built into the app. Using Orchid is possible with your own VPN server setup ala Streissand or other home grown solutions - even other paid VPN services. Furthermore, Orchid allows you to string multiple types of VPN servers together, which has interesting privacy properties.</Trans></p>
 						</div>
 					</div>
@@ -280,16 +284,16 @@ function Page(props) {
 					<Link to="/get-orchid" className="section-button">
 						<button className="btn-secondary"><Trans>Get Orchid</Trans></button>
 					</Link>
-				</div>
-			</section>
+				</Container>
+			</Wrapper>
 
-			<section className="newsletter-wrapper">
-				<div className="newsletter-container container-common">
-					<h3 className="section-heading"><Trans>Let’s stay connected</Trans></h3>
+			<Wrapper className="newsletter-wrapper">
+				<Container className="text-center">
+					<h2 className='my-4'><Trans>Let’s stay connected</Trans></h2>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
 					<NewsletterSignupCore t={t} largePadding="true" />
-				</div>
-			</section>
+				</Container>
+			</Wrapper>
 		</Layout>
 	);
 }
