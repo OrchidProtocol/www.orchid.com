@@ -285,7 +285,7 @@ function Page(props) {
 
 			<section className="newsletter-wrapper">
 				<div className="newsletter-container container-common">
-					<h2 className="section-heading"><Trans>Let’s stay connected</Trans></h2>
+					<h3 className="section-heading"><Trans>Let’s stay connected</Trans></h3>
 					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
 					<NewsletterSignupCore t={t} largePadding="true" />
 				</div>
