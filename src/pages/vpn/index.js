@@ -102,7 +102,9 @@ function Page(props) {
 							font-family: "Headline One", "Baloo 2", sans-serif;
 							color: var(--orc-purple-gray);
 							font-size: clamp(2.5rem, 8vw, 5rem);
-
+							&.en {
+								font-size: clamp(2.5rem, 9vw, 6rem)
+							}
 							&.hi {
 								font-size: clamp(2rem, 8vw, 5rem);
 							}
