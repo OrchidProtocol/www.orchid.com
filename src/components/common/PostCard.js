@@ -9,7 +9,7 @@ import { getCustomFormatedDate } from '../../utils/date';
 const PButton = styled.a`
 	background: black;
 	border: 2px solid #8c8c8c;
-	max-width: 5rem;
+	max-width: 6rem;
 	min-height: 1.5rem;
 	width: auto;
 	padding: 0.5rem 0.5rem;

@@ -42,7 +42,7 @@ const podcastRoll = ({ data, pageContext, location, t }) => {
 			<Layout t={t ? t : (string) => { return string }}>
 				<PodcastHero />
 				<div className="container" css={css`
-					margin: 2rem 0;
+					margin: 2rem auto;
                 `}>
 					{postElements}
 					<Pagination pageContext={pageContext} />
