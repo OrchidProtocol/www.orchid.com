@@ -1,8 +1,8 @@
 ---
 templateKey: podcast-episode
 public: true
-url: podcast/episode-89-tim-beiko
-title: "Episode 89: Tim Beiko"
+url: podcast/episode-90-tim-beiko
+title: "Episode 90: Tim Beiko"
 description: "This week host Derek E. Silva joins Tim Beiko, AllCoreDevs at the Ethereum Foundation. We discuss Tim’s journey into blockchain, what led him to join AllCoreDevs to help trailblaze the implementation of EIP-1559 last year, and how the team is mapping out Ethereum 2.0."
 date: 1649257200000
 featuredimage: /img/podcast/P8PThumbnail_TimBeiko.jpg
