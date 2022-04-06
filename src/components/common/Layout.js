@@ -81,8 +81,8 @@ const TemplateWrapper = (props) => {
 				<meta name="theme-color" content="#5f45ba" />
 				<link rel="preload" href="/fonts/Baloo/Baloo2-Regular.ttf" as="font" type="font/ttf" crossorigin />
 				<link rel="preload" href="/fonts/Baloo/Baloo2-SemiBold.ttf" as="font" type="font/ttf" crossorigin />
-				<link rel="preload" href="/fonts/Baloo/Baloo2-Bold.ttf" as="font" type="font/ttf" crossorigin />
-				<link rel="preload" href="/fonts/Baloo/Baloo2-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />
+				{/*<link rel="preload" href="/fonts/Baloo/Baloo2-Bold.ttf" as="font" type="font/ttf" crossorigin />
+				<link rel="preload" href="/fonts/Baloo/Baloo2-ExtraBold.ttf" as="font" type="font/ttf" crossorigin />*/}
 				{preload}
 				<style>{styleString}</style>
 			</Helmet>
