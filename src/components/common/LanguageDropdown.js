@@ -85,6 +85,7 @@ const LanguageSelectorList = styled.ul`
 const languageKeys = {
 	'en': 'English',
 	'es': 'Español',
+	'ua': 'Ukrainian',
 	'fr': 'Français',
 	'hi': 'हिंदी',
 	'id': 'Bahasa Indonesia',

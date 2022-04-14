@@ -5,6 +5,7 @@ const cheerio = require('cheerio');
 const locales = [
 	'en',
 	'es',
+	'ua',
 	'fr',
 	'hi',
 	'id',
@@ -115,7 +116,7 @@ async function run() {
 					if (closeStrings.length > 0) {
 						const { missingTarget } = closeStrings[0];
 						localeKeys[missingKey] = missingTarget;
-						delete newMissingKeys[missingKey];
+						delete needsUpdate[missingKey];
 						console.log('Close enough', missingKey, closeStrings[0]);
 					}
 				}

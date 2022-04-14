@@ -10,6 +10,10 @@ const locales = {
 			name: 'Español',
 		},
 		{
+			key: 'ua',
+			name: 'Ukrainian',
+		},
+		{
 			key: 'fr',
 			name: 'Français',
 		},

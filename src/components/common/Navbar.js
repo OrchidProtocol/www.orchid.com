@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, Trans } from 'gatsby-plugin-react-i18next';
 import { css } from '@emotion/react';
 import styled from '@emotion/styled';
-import Navigation from './LanguageDropdown';
+import LanguageDropdown from './LanguageDropdown';
 
 const NavbarWrapper = styled.div`
 	z-index: 999;
@@ -239,7 +239,7 @@ class Navbar extends React.Component {
 						<li><Link to="/about-us/"><Trans>About</Trans></Link></li>
 						<li><a href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
 						<li><Link to="/contact/"><Trans>Contact</Trans></Link></li>
-						<Navigation />
+						<LanguageDropdown />
 					</NavbarItems>
 				</div >
 
