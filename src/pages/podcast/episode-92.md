@@ -3,8 +3,8 @@ templateKey: podcast-episode
 public: true
 url: podcast/episode-92-gabriel-shipton
 title: "Episode 92: Gabriel Shipton"
-description: "This week host Derek E. Silva joins Australian filmmaker Gabriel Shipton, the brother of WikiLeaks founder Julian Assange. Gabriel talks about what inspired him to become a storyteller and discusses his recent documentary "Ithaka," which tells his brother's story through his family's eyes and gives an intimate behind-the-scenes look at their battle for justice. The film follows his father, John Shipton, and Julian's fiance, Stella, in their campaign to free Julian Assange and their fight for the freedom of the press."
-date: 1650472210289
+description: This week host Derek E. Silva joins Australian filmmaker Gabriel Shipton, the brother of WikiLeaks founder Julian Assange. Gabriel talks about what inspired him to become a storyteller and discusses his recent documentary "Ithaka," which tells his brother\'s story through his family\'s eyes and gives an intimate behind-the-scenes look at their battle for justice. The film follows his father, John Shipton, and Julian\'s fiance, Stella, in their campaign to free Julian Assange and their fight for the freedom of the press.
+date: 1649867862253
 featuredimage: /img/podcast/P8PThumbnail_GabrielShipton.jpg
 socialimage: https://www.orchid.com/img/podcast/P8PEpisode_GabrielShipton.jpg
 platformurls:
