@@ -100,7 +100,7 @@ function Page(props) {
 					<h1 className={`${language} mb-2 lg:mb-0`} css={css`
 						&:not(.secondary) {
 							font-family: "Headline One", "Baloo 2", sans-serif;
-							color: var(--orc-purple-gray);
+							color: var(--orc-rock-gray);
 							font-size: clamp(2.5rem, 8vw, 5rem);
 							&.en {
 								font-size: clamp(2.5rem, 9vw, 6rem)
