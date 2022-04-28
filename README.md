@@ -12,3 +12,4 @@ Also see:
 - [Podcast publishing process](podcast.md)
 - Styling best practices
 - Component methodology
+- [Translations](i18n.md)
