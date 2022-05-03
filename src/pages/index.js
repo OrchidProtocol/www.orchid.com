@@ -40,6 +40,11 @@ const DiagramArrow = styled.img`
 	}
 `;
 
+const diagramSkipLanguages = [
+	'en',
+	'ua',
+]
+
 function Page(props) {
 	const { t } = useTranslation();
 	const { language } = useI18next();
@@ -114,7 +119,7 @@ function Page(props) {
 							color: transparent;
 
 							&.en::first-letter {
-								color: var(--orc-purple-gray);
+								color: var(--orc-rock-gray);
 								font-size: 75%;
 								margin-right: -0.5ch;
 							}
@@ -201,8 +206,8 @@ function Page(props) {
 				</div>
 				<Container>
 					<div className="relative">
-						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full hidden lg:block m-0" />
-						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={language === 'en' ? '/img/home/marketplace-diagram-mobile.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={diagramSkipLanguages.includes(language) ? '/img/home/marketplace-diagram.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full hidden lg:block m-0" />
+						<img alt={t('How Buyers, Sellers, Payments and Services fit into the Orchid marketplace.')} src={diagramSkipLanguages.includes(language) ? '/img/home/marketplace-diagram-mobile.svg' : `/img/home/marketplace-diagram_${language}.png`} width={1000} height={290} className="w-full block lg:hidden m-0" css={css`
 							width: calc(100% + 3rem);
 							margin: 0 -1.5rem;
 							max-width: unset;
