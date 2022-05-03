@@ -11,4 +11,5 @@ Also see:
 - [Blog](https://github.com/OrchidProtocol/blog.orchid.com/)
 - [Podcast publishing process](podcast.md)
 - [Styling best practices](styling.md)
+- [Component methodology](components.md)
 - [Translations](i18n.md)
