@@ -1,6 +1,18 @@
 # Styling
 
-There are 4 main ways to add styling to the site
+### [CSS Variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
+
+CSS variables are used for colors throughout the site, they're defined in [`src/scss/styles.scss`](src/scss/styles.scss) and can be accessed from any stylesheet or inline styling using the usual CSS variable syntax. You can also overwrite these or flip them using a theoretical class named something like `.theme-dark`, which allows you to easily swap a page, section, or specific element to use different colors based on stylistic choices or the users dark/light mode preference.
+
+### [REM units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+
+REM units are based on the font size defined in the `:root` element. It's an easy way to use a base number as sizing for the rest of your elements. For instance, instead of having a button with the padding of `padding: 12px 24px;` and needing to remember what pixel sizes you used to keep all spacing feeling relatively consistent, you can use `padding: 1rem 2rem;` instead. That way the relative size of all paddings, margins, and whatever else is maintained throughout the whole site instead of using pixel measurement which more closely resemble "magic numbers".
+
+It is still appropriate to use pixels for something like borders widths or when you need to break out for something really specific.
+
+# Adding styles
+
+There are 4 main ways to add styling to the site.
 
 ## [Tailwind](https://tailwindcss.com/) (preferred)
 
