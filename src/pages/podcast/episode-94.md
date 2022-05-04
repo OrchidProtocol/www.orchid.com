@@ -3,8 +3,8 @@ templateKey: podcast-episode
 public: true
 url: podcast/episode-94-matthew-leising
 title: "Episode 94: Matthew Leising"
-description: "This week Derek E. Silva joins author Matthew Leising, and Co-founder of DeCential Media that focuses on telling the stories of the founders, builders and visionaries who are creating a new decentralized economy and internet experience. We take a deep dive into the fascinating early days of Ethereum to discuss Matt’s critically acclaimed book “Out of the Ether’ and his quest to solve the mystery behind the 2016 DAO hack."
-date: 1651681981131
+description: "This week Derek E. Silva joins author Matthew Leising, and Co-founder of DeCential Media that focuses on telling the stories of the founders, builders and visionaries who are creating a new decentralized economy and internet experience. We take a deep dive into the fascinating early days of Ethereum to discuss Matt’s critically acclaimed book 'Out of the Ether' and his quest to solve the mystery behind the 2016 DAO hack."
+date: 1651676400000
 featuredimage: /img/podcast/P8PThumbnail_MatthewLeising.jpg
 socialimage: https://www.orchid.com/img/podcast/P8PEpisode_MatthewLeising.jpg
 platformurls:
