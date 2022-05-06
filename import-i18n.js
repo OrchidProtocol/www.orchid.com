@@ -1,21 +1,5 @@
 const fs = require('fs');
-
-const locales = [
-	'en',
-	'es',
-	'ua',
-	'fr',
-	'hi',
-	'id',
-	'it',
-	'ja',
-	'ko',
-	'pt',
-	'ptbr',
-	'ru',
-	'tr',
-	'zh',
-]
+import locales from './locales';
 
 const baseJSON = {};
 try {
@@ -48,9 +32,9 @@ function searchForNoHTML(string, object) {
 const allImportedStrings = [];
 
 async function run() {
-	for (let i = 0; i < locales.length; i++) {
-		if (locales[i] !== 'en') {
-			let crowdinImport = fs.readFileSync(`./translationImport/common_${locales[i].replace('ptbr', 'pt_BR')}.json`, 'utf8');
+	for (let i = 0; i < locales.array.length; i++) {
+		if (locales.array[i] !== 'en') {
+			let crowdinImport = fs.readFileSync(`./translationImport/common_${locales.array[i].replace('ptbr', 'pt_BR')}.json`, 'utf8');
 			crowdinImport = crowdinImport.replace(/\s\s+/g, ' ').replace(/WireGuard \./g, 'WireGuard.');
 
 			crowdinImport = JSON.parse(crowdinImport);
@@ -58,7 +42,7 @@ async function run() {
 			const needsUpdate = {};
 			let localeKeys = {};
 			try {
-				localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales[i] + '/translation.json', 'utf8'))
+				localeKeys = JSON.parse(fs.readFileSync('./src/locales/' + locales.array[i] + '/translation.json', 'utf8'))
 			} catch (e) { }
 			const newMissingKeys = {};
 
@@ -130,7 +114,7 @@ async function run() {
 				}
 			}
 
-			fs.mkdirSync(`./pendingTranslations/${locales[i]}/other`, { recursive: true });
+			fs.mkdirSync(`./pendingTranslations/${locales.array[i]}/other`, { recursive: true });
 
 			const modernMissingKeys = {};
 			for (const key in baseJSON.common) {
@@ -142,12 +126,12 @@ async function run() {
 					}
 				}
 			}
-			console.log(`${locales[i]} missing: ${Object.keys(modernMissingKeys).length}`);
-			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/not-translated.json`, JSON.stringify(modernMissingKeys, null, 4));
-			fs.writeFileSync(`./pendingTranslations/${locales[i]}/other/new-not-imported.json`, JSON.stringify(newMissingKeys, null, 4));
+			console.log(`${locales.array[i]} missing: ${Object.keys(modernMissingKeys).length}`);
+			fs.writeFileSync(`./pendingTranslations/${locales.array[i]}/other/not-translated.json`, JSON.stringify(modernMissingKeys, null, 4));
+			fs.writeFileSync(`./pendingTranslations/${locales.array[i]}/other/new-not-imported.json`, JSON.stringify(newMissingKeys, null, 4));
 
 			try {
-				const pendingKeys = JSON.parse(fs.readFileSync(`./pendingTranslations/${locales[i]}/needsupdate.json`, 'utf8'));
+				const pendingKeys = JSON.parse(fs.readFileSync(`./pendingTranslations/${locales.array[i]}/needsupdate.json`, 'utf8'));
 				for (const key in pendingKeys) {
 					if (pendingKeys[key] !== needsUpdate[key] && pendingKeys.hasOwnProperty(key) && needsUpdate.hasOwnProperty(key)) {
 						localeKeys[key] = pendingKeys[key];
@@ -155,8 +139,8 @@ async function run() {
 					}
 				}
 			} catch (e) { }
-			fs.writeFileSync(`./pendingTranslations/${locales[i]}/needsupdate.json`, JSON.stringify(needsUpdate, null, 4));
-			fs.writeFileSync(`./src/locales/${locales[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));
+			fs.writeFileSync(`./pendingTranslations/${locales.array[i]}/needsupdate.json`, JSON.stringify(needsUpdate, null, 4));
+			fs.writeFileSync(`./src/locales/${locales.array[i]}/translation.json`, JSON.stringify(localeKeys, null, 4));
 		}
 	}
 }

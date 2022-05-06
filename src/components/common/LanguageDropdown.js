@@ -1,6 +1,7 @@
 import React from "react";
 import styled from '@emotion/styled';
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import locales from "../../../locales";
 
 
 const LanguageSelector = styled.li`
@@ -82,22 +83,15 @@ const LanguageSelectorList = styled.ul`
 		}
 	}
 `;
+
 const languageKeys = {
 	'en': 'English',
-	'es': 'Español',
-	'ua': 'Ukrainian',
-	'fr': 'Français',
-	'hi': 'हिंदी',
-	'id': 'Bahasa Indonesia',
-	'it': 'Italiano',
-	'ja': '日本語',
-	'ko': '한국어',
-	'pt': 'Português',
-	'ptbr': 'Português do Brasil',
-	'ru': 'Русский',
-	'tr': 'Türkçe',
-	'zh': '中文',
 }
+
+for (let i = 0; i < locales.names.length; i++) {
+	languageKeys[locales.names[i].key] = locales.names[i].name;
+}
+
 const Navigation = () => {
 	const { languages, originalPath, language } = useI18next()
 

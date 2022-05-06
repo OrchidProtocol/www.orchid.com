@@ -3,6 +3,7 @@ require("dotenv").config({
 	path: `.env.production`,
 })
 
+const locales = require('./locales');
 
 module.exports = {
 	siteMetadata: {
@@ -109,7 +110,7 @@ module.exports = {
 		{
 			resolve: `gatsby-plugin-react-i18next`,
 			options: {
-				languages: ['en', 'es', 'ua', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'pt', 'ptbr', 'ru', 'tr', 'zh'],
+				languages: locales.array,
 				defaultLanguage: 'en',
 				defaultNS: 'common',
 				siteUrl: 'https://www.orchid.com/',
