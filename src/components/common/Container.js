@@ -29,6 +29,16 @@ const Element = styled.div`
 		background: transparent;
 		box-shadow: none;
 	}
+	&.no-padding {
+		padding: 0;
+	}
+
+	&.nested-half-col {
+		width: 50%;
+		${break_mobile} {
+			width: 100%;
+		}
+	}
 `;
 
 const Container = (props) => {
