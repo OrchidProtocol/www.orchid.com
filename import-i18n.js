@@ -1,5 +1,5 @@
 const fs = require('fs');
-import locales from './locales';
+const locales = require('./locales');
 
 const baseJSON = {};
 try {
