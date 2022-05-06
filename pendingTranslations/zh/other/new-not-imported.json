@@ -1,11 +1,15 @@
 {
-	"Contact Info": "联系信息",
-	"Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "让我们一起重新掌控互联网！我们期待能有机会展开多方合作，特别是想要与 Orchid 共同发展的基础架构提供商和集成合作伙伴。请与我们联系，我们会尽快回复您。",
-	"Mailing Address": "通信地址",
-	"We want to hear from you": "我们希望听到您的意见",
-	"https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
-	"https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
-	"https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
-	"https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
-	"mailto:contact@orchid.com": "mailto:contact@orchid.com"
+    "We'd love to hear from you": {
+        "": "Sizi dinlemekten mutluluk duyarız."
+    },
+    "Send": "Gönder",
+    "Contact Info": "联系信息",
+    "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "让我们一起重新掌控互联网！我们期待能有机会展开多方合作，特别是想要与 Orchid 共同发展的基础架构提供商和集成合作伙伴。请与我们联系，我们会尽快回复您。",
+    "Mailing Address": "通信地址",
+    "We want to hear from you": "我们希望听到您的意见",
+    "https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
+    "https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
+    "https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
+    "https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
+    "mailto:contact@orchid.com": "mailto:contact@orchid.com"
 }

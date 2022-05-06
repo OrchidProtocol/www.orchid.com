@@ -1,11 +1,15 @@
 {
-	"Contact Info": "연락처 정보",
-	"Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "우리 함께 인터넷을 되찾읍시다! Orchid와 함께 일할 인프라 제공업체 및 통합 파트너를 찾고 있습니다. 연락하여 주시면 곧 회신해 드리겠습니다.",
-	"Mailing Address": "우편 주소",
-	"We want to hear from you": "귀하의 의견을 듣고 싶습니다",
-	"https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
-	"https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
-	"https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
-	"https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
-	"mailto:contact@orchid.com": "mailto:contact@orchid.com"
+    "We'd love to hear from you": {
+        "": "귀하의 연락을 기다리겠습니다."
+    },
+    "Send": "보내기",
+    "Contact Info": "Контактні дані",
+    "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Повертаймо вільне користування Інтернетом! Ми шукаємо можливості партнерства з постачальниками інфраструктури та партнерами з інтеграції, які хочуть розвивати свої потужності разом з Orchid. Звертайтеся до нас, і ми швидко вам відповімо.",
+    "Mailing Address": "Поштова адреса",
+    "We want to hear from you": "Нам важлива ваша думка",
+    "https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
+    "https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
+    "https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
+    "https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
+    "mailto:contact@orchid.com": "mailto:contact@orchid.com"
 }
