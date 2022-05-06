@@ -1,18 +1,11 @@
 {
-    "<0>DISCORD</0> or <2>TELEGRAM</2>": "<0>DISCORD</0> または <2>TELEGRAM</2>",
-    "<0>ORCHID SUPPORT PORTAL</0>": "<0>ORCHID サポート ポータル</0>",
-    "Join in on the live conversations happening about Orchid and other related topics through one of our official channels:": "公式チャンネルの 1 つを通じて、Orchid やその他の関連トピックについて行われているライブ会話にご参加ください。",
-    "Join the discussion": "ディスカッションに加わる",
-    "Need help with an Orchid product? Connect with our support team to quickly find a solution to your issue:": "Orchid 製品についてサポートが必要ですか？ サポート チームに連絡して、問題の解決策をすばやく見つけてください。",
-    "Need product support?": "製品サポートが必要ですか？",
-    "Orchid Office Address": "Orchid オフィス アドレス",
-    "Other inquiries": "その他のお問い合わせ",
-    "Please note: If you are seeking help from Orchid Support, please visit <1>help.orchid.com</1>": "ご注意：Orchid サポートをご希望の場合は、<1>help.orchid.com</1> 宛にお問い合わせください。",
-    "We are always looking for collaborative opportunities with infrastructure providers and integration partners that want to build with Orchid. If that’s you, or if you have any other general inquiries, please fill out the form below or get in touch at <1>contact@orchid.com</1> and we’ll get back to you shortly.": "私どもは、Orchid を利用した構築をお考えのインフラストラクチャ プロバイダーや統合パートナーの皆様とのパートナーシップの機会を求めております。ご関心がおありの場合、またはその他の一般的なご質問がおありの場合は、以下のフォームに記入するか、<1> contact@orchid.com</1> にお問い合わせいただければ、すぐにご連絡いたします。",
-    "We’d love to hear from you.": "We’d love to hear from you.",
-    "Reach out": "連絡する",
-    "We'd love to hear from you": {
-        "": "ご連絡をお待ちしております。"
-    },
-    "Send": "送信"
+	"Contact Info": "連絡先情報",
+	"Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "一緒にインターネットを取り戻しましょう！私どもは Orchid を利用した構築をお考えのインフラストラクチャ プロバイダーや統合パートナーの皆様とのパートナーシップの機会を求めています。お問い合わせいただければ、すぐにご連絡いたします。",
+	"Mailing Address": "住所",
+	"We want to hear from you": "ご連絡をお待ちしております",
+	"https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
+	"https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
+	"https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
+	"https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
+	"mailto:contact@orchid.com": "mailto:contact@orchid.com"
 }
