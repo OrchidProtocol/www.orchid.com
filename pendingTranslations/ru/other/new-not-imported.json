@@ -1,18 +1,15 @@
 {
-    "<0>DISCORD</0> or <2>TELEGRAM</2>": "<0>DISCORD</0> или <2>TELEGRAM</2>",
-    "<0>ORCHID SUPPORT PORTAL</0>": "<0>ПОРТАЛ ПОДДЕРЖКИ ORCHID</0>",
-    "Join in on the live conversations happening about Orchid and other related topics through one of our official channels:": "Присоединяйтесь к живым обсуждениям Orchid и сопутствующих тем в наших официальных каналах:",
-    "Join the discussion": "Присоедянийтесь к обсуждению",
-    "Need help with an Orchid product? Connect with our support team to quickly find a solution to your issue:": "Нужна помощь с продуктом Orchid? Свяжитесь с нашей командой поддержки, чтобы быстро найти решение своей проблемы:",
-    "Need product support?": "Нужна помощь по работе с продуктом?",
-    "Orchid Office Address": "Адрес офиса Orchid",
-    "Other inquiries": "Другие запросы",
-    "Please note: If you are seeking help from Orchid Support, please visit <1>help.orchid.com</1>": "Обратите внимание: если вам нужна помощь службы поддержки Orchid, перейдите на сайт <1>help.orchid.com</1>",
-    "We are always looking for collaborative opportunities with infrastructure providers and integration partners that want to build with Orchid. If that’s you, or if you have any other general inquiries, please fill out the form below or get in touch at <1>contact@orchid.com</1> and we’ll get back to you shortly.": "Мы всегда рады сотрудничеству с поставщиками инфраструктуры и партнерами по интеграции, которые готовы развиваться в одном направлении с Orchid. Если это про вас или у вас есть другие запросы общего характера, заполните форму ниже или напишите нам по адресу <1>contact@orchid.com</1>. Мы с вами свяжемся в кратчайшие сроки.",
-    "We’d love to hear from you.": "We’d love to hear from you.",
-    "Reach out": "Связаться",
     "We'd love to hear from you": {
         "": "Нам важно ваше мнение."
     },
-    "Send": "Отправить"
+    "Send": "Отправить",
+    "Contact Info": "Контактні дані",
+    "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Повертаймо вільне користування Інтернетом! Ми шукаємо можливості партнерства з постачальниками інфраструктури та партнерами з інтеграції, які хочуть розвивати свої потужності разом з Orchid. Звертайтеся до нас, і ми швидко вам відповімо.",
+    "Mailing Address": "Поштова адреса",
+    "We want to hear from you": "Нам важлива ваша думка",
+    "https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
+    "https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
+    "https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
+    "https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
+    "mailto:contact@orchid.com": "mailto:contact@orchid.com"
 }

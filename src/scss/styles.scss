@@ -28,18 +28,18 @@ $pad-xs-mobile: 1rem;
 	scroll-behavior: smooth;
 
 	--orc-purple: #5f45ba;
+	--orc-primary: var(--orc-purple);
 	--orc-purple-active: #856ed2;
 	--orc-light-purple: #9267e4;
 	--orc-bright-purple: #b88dfc;
 	--orc-deep-purple: #3b146a;
-	--orc-purple-gray: #504960;
+	--orc-rock-gray: #504960;
 	--orc-green-bright: #2ebf8b;
 	--orc-green-transparent: rgba(197, 248, 222, 40%);
 	--orc-teal: #2a8693;
 	--orc-beige-light: #f4f6f1;
 	--orc-beige: #d5d7e2;
 	--orc-gray: #939293;
-	--orc-rock-gray: #504960;
 	--orc-tf-primary: "Baloo 2", sans-serif;
 	--orc-tf-secondary: "Baloo 2", sans-serif;
 	--pale-green: #c5f8de;
@@ -63,6 +63,7 @@ body {
 }
 
 .locale-en-US {
+
 	.show-ja,
 	.show-ko,
 	.show-zh,
@@ -72,7 +73,9 @@ body {
 		display: none !important;
 	}
 }
+
 .locale-ja {
+
 	.show-ko,
 	.show-zh,
 	.show-en,
@@ -82,7 +85,9 @@ body {
 		display: none !important;
 	}
 }
+
 .locale-ko {
+
 	.show-ja,
 	.show-zh,
 	.show-en,
@@ -92,7 +97,9 @@ body {
 		display: none !important;
 	}
 }
+
 .locale-zh {
+
 	.show-ja,
 	.show-ko,
 	.show-en,
@@ -102,7 +109,9 @@ body {
 		display: none !important;
 	}
 }
+
 .locale-id {
+
 	.show-ja,
 	.show-ko,
 	.show-en,
@@ -112,7 +121,9 @@ body {
 		display: none !important;
 	}
 }
+
 .locale-ru {
+
 	.show-ja,
 	.show-ko,
 	.show-en,
@@ -124,7 +135,7 @@ body {
 }
 
 a {
-	color: $orc-purple;
+	color: var(--orc-primary);
 }
 
 strong {
@@ -142,13 +153,13 @@ h4,
 h5,
 h6 {
 	@extend strong;
-	color: $orc-purple;
+	color: var(--orc-primary);
 
 	margin: 0;
 	padding: 0;
 	line-height: 1;
 
-	article > &:not(:last-child) {
+	article>&:not(:last-child) {
 		margin-bottom: 1rem;
 	}
 }
@@ -228,7 +239,7 @@ button {
 	font: inherit;
 	line-height: inherit;
 
-	> img {
+	>img {
 		display: block;
 	}
 }
@@ -276,8 +287,10 @@ main {
 	padding-top: $pad-thin;
 	display: flex;
 	flex-direction: column-reverse;
+
 	@include not-mobile {
 		flex-direction: column;
+
 		h1 {
 			font-size: 60px;
 		}
@@ -316,34 +329,41 @@ main {
 		background-size: contain;
 	}
 }
+
 .splash-circuit-after,
 .splash-circuit-grid {
 	position: relative;
 	z-index: 1;
 }
+
 .splash-circuit-grid {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+
 	&.single {
 		grid-template-columns: 1fr;
 	}
+
 	grid-gap: $pad-thin;
 
 	@include mobile {
 		flex-direction: column-reverse;
 	}
 }
-.splash-circuit-grid-item + .splash-circuit-grid-item {
+
+.splash-circuit-grid-item+.splash-circuit-grid-item {
 	@include not-mobile {
 		margin-left: $pad-thin;
 	}
 }
+
 @include not-mobile {
 	.splash-circuit-grid-item:nth-child(1) {
 		width: 60%;
 		max-width: 600px;
 	}
+
 	.splash-circuit-grid-item:nth-child(2) {
 		width: 40%;
 	}
@@ -353,24 +373,29 @@ main {
 	@include not-mobile {
 		padding-top: $pad-wide;
 	}
+
 	@include mobile {
 		padding-bottom: 0;
 	}
 }
+
 .splash-circuit-grid-text {
 	@include not-mobile {
 		margin-top: 4rem;
 	}
 }
+
 .splash-circuit-grid-text h3 {
 	color: $orc-rock-gray;
 	margin-bottom: $pad-thin;
 	font-size: 1.5rem;
+
 	@include mobile {
 		margin-top: $pad-thin;
 		font-size: 1rem;
 	}
 }
+
 .splash-circuit-grid-item:nth-child(2) {
 	justify-content: space-around;
 	align-items: center;
@@ -442,9 +467,13 @@ button:not(.phantom-btn) {
 		background: none;
 		background-color: inherit;
 		border: solid $form-border-w $orc-purple;
-		padding: calc(#{$pad-v} - #{$form-border-w})
-			calc(#{$pad-h} - #{$form-border-w});
+		padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
 		color: $orc-purple;
+
+		&.btn--light {
+			color: #FFFFFF;
+			border-color: #FFFFFF;
+		}
 
 		&:not(:disabled) {
 			&:hover {
@@ -469,12 +498,9 @@ button:not(.phantom-btn) {
 .input-type-text {
 	$pad-h: 1em;
 	$pad-v: $form-pad-v;
-	padding: calc(#{$pad-v} - #{$form-border-w})
-		calc(#{$pad-h} - #{$form-border-w});
+	padding: calc(#{$pad-v} - #{$form-border-w}) calc(#{$pad-h} - #{$form-border-w});
 	box-sizing: border-box;
 	width: 100%;
-	background: none;
-	background-color: inherit;
 	border: 3px solid $orc-purple;
 	border-radius: 100vmax;
 	font: inherit;
@@ -482,7 +508,7 @@ button:not(.phantom-btn) {
 	color: $orc-rock-gray;
 	line-height: inherit;
 
-	.required-input > & {
+	.required-input>& {
 		// Prevent the right edge of the input box overlapping the asterisk
 		padding-right: calc(#{$pad-h + 1em} - #{$form-border-w});
 	}
@@ -497,6 +523,7 @@ button:not(.phantom-btn) {
 }
 
 input {
+
 	&[type="email"],
 	&[type="tel"],
 	&[type="text"] {
@@ -526,7 +553,7 @@ input,
 	}
 }
 
-.required-input > input {
+.required-input>input {
 	max-width: none;
 }
 
@@ -558,6 +585,7 @@ input,
 }
 
 .phantom-a {
+
 	&,
 	&:active,
 	&:visited {
@@ -780,6 +808,7 @@ input,
 		display: none;
 	}
 }
+
 h1,
 h2,
 h3,

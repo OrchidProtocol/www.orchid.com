@@ -85,19 +85,19 @@ class Component extends React.Component {
 		return (
 			<form className={"contact-form-container" + (this.state.js ? " js" : "") + (this.state.in_progress ? " in_progress" : "")} onSubmit={this.submit.bind(this)} ref={this.setFormRef.bind(this)}>
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="name" placeholder={t("Your Name")} required />
+					<input type="text" name="name" placeholder={t("Your Name")} required className='bg-white' />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="email" name="email" placeholder={t("Your Email")} required />
+					<input type="email" name="email" placeholder={t("Your Email")} required className='bg-white' />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<input type="text" name="subject" placeholder={t("Subject")} required />
+					<input type="text" name="subject" placeholder={t("Subject")} required className='bg-white' />
 				</div>
 
 				<div className="contact-form-input-wrapper">
-					<textarea name="message" placeholder={t("Enter your message...")} required />
+					<textarea name="message" placeholder={t("Enter your message...")} required className='bg-white' />
 				</div>
 
 				<div className="contact-form-error contact-form-message">
@@ -109,9 +109,10 @@ class Component extends React.Component {
 				<div className={"contact-form-success contact-form-message" + (this.state.success ? ' active' : '')}>
 					<Trans>Your message has been sent</Trans>
 				</div>
-
-				<button className="btn-primary"><Trans>Submit</Trans></button>
-				<button onClick={this.clearForm.bind(this)}><Trans>Clear</Trans></button>
+				<div className='w-full text-center flex flex-wrap justify-center'>
+					<button className="btn-primary"><Trans>Submit</Trans></button>
+					<button className="btn-secondary btn--light" onClick={this.clearForm.bind(this)}><Trans>Clear</Trans></button>
+				</div>
 			</form>
 		)
 	}

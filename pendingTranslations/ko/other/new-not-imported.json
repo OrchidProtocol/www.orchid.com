@@ -1,18 +1,15 @@
 {
-    "<0>DISCORD</0> or <2>TELEGRAM</2>": "<0>DISCORD</0> 또는 <2>TELEGRAM</2>",
-    "<0>ORCHID SUPPORT PORTAL</0>": "<0>ORCHID 지원 포털</0>",
-    "Join in on the live conversations happening about Orchid and other related topics through one of our official channels:": "당사의 공식 채널 중 하나를 통해 Orchid 및 기타 관련 주제에 대한 라이브 대화에 참가하세요.",
-    "Join the discussion": "토론 참가",
-    "Need help with an Orchid product? Connect with our support team to quickly find a solution to your issue:": "Orchid 제품과 관련하여 도움이 필요하세요? 저희 지원팀에 연락하여 문제에 관한 빠른 해결책을 찾아보세요.",
-    "Need product support?": "제품 관련 지원이 필요하세요?",
-    "Orchid Office Address": "Orchid 사무실 주소",
-    "Other inquiries": "기타 문의 사항",
-    "Please note: If you are seeking help from Orchid Support, please visit <1>help.orchid.com</1>": "주의: Orchid 지원팀의 도움이 필요하시면 <1>help.orchid.com</1>을 방문하시기 바랍니다",
-    "We are always looking for collaborative opportunities with infrastructure providers and integration partners that want to build with Orchid. If that’s you, or if you have any other general inquiries, please fill out the form below or get in touch at <1>contact@orchid.com</1> and we’ll get back to you shortly.": "저희는 Orchid와 함께 일하고 싶은 인프라 공급업체 및 통합 파트너와 협력할 수 있는 기회를 항상 모색하고 있습니다. 귀하께서 이에 해당하시거나, 다른 문의 사항이 있으실 경우, 아래 양식을 작성하시거나 <1>contact@orchid.com</1>으로 연락해 주시기 바랍니다. 신속하게 답변해 드리겠습니다.",
-    "We’d love to hear from you.": "We’d love to hear from you.",
-    "Reach out": "연락하기",
     "We'd love to hear from you": {
         "": "귀하의 연락을 기다리겠습니다."
     },
-    "Send": "보내기"
+    "Send": "보내기",
+    "Contact Info": "Контактні дані",
+    "Let's reclaim the Internet together! We are looking for partnership opportunities with infrastructure providers and integration partners that want to build with Orchid. Contact us and we'll get back to you shortly.": "Повертаймо вільне користування Інтернетом! Ми шукаємо можливості партнерства з постачальниками інфраструктури та партнерами з інтеграції, які хочуть розвивати свої потужності разом з Orchid. Звертайтеся до нас, і ми швидко вам відповімо.",
+    "Mailing Address": "Поштова адреса",
+    "We want to hear from you": "Нам важлива ваша думка",
+    "https://discord.gg/GDbxmjxX9F": "https://discord.gg/GDbxmjxX9F",
+    "https://twitter.com/OrchidProtocol": "https://twitter.com/OrchidProtocol",
+    "https://www.facebook.com/OrchidProtocol": "https://www.facebook.com/OrchidProtocol",
+    "https://www.t.me/OrchidOfficial": "https://www.t.me/OrchidOfficial",
+    "mailto:contact@orchid.com": "mailto:contact@orchid.com"
 }
