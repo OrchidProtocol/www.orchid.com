@@ -1,7 +1,7 @@
 ---
 templateKey: podcast-episode
 public: true
-url: podcast/episode-94-matthew-leising
+url: podcast/episode-95-aishwary-gupta
 title: "Episode 95: Aishwary Gupta"
 description: "This week host Derek E. Silva joins Aishwary Gupta, Marketing and Operations lead at Polygon. We take a deep dive into all things Polygon to discuss the Web3 defi ecosystem, building dApps to scale, and how they are bringing the world to Ethereum."
 date: 1652284800000
