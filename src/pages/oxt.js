@@ -94,7 +94,7 @@ function Page(props) {
 							<a href="https://etherscan.io/token/0x4575f41308ec1483f3d399aa9a2826d74da13deb">
 								<img src="/img/oxt/etherscan.png" alt="etherscan" />
 							</a>
-							<a href="https://xangle.io/project/OXT/profile/">
+							<a href="https://xangle.io/project/OXT/profile">
 								<img src="/img/oxt/xangle.png" style={{ width: "120px" }} alt="xangle" />
 							</a>
 						</div>
