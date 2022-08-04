@@ -1,12 +1,12 @@
 ---
 templateKey: podcast-episode
 public: true
-url: podcast/episode-103-bradley-kem
-title: "Episode 103: Bradley Kem"
+url: podcast/episode-103-bradley-kam
+title: "Episode 103: Bradley Kam"
 description: "This week host Derek E. Silva joins Bradley Kam, Co-founder of Unstoppable Domains, which is building decentralized digital identities for the world. We go down the rabbit hole to dive into Bradley’s early days in crypto, Facebook’s data monopoly, how to stay anonymous on the blockchain, and the future of NFT domains."
 date: 1659561170000
-featuredimage: /img/podcast/BradleyKem_EpCard.jpg
-socialimage: https://www.orchid.com/img/podcast/BradleyKem_EpCard.jpg
+featuredimage: /img/podcast/BradleyKam_EpCard.jpg
+socialimage: https://www.orchid.com/img/podcast/BradleyKam_EpCard.jpg
 platformurls:
   - https://podcasts.apple.com/us/podcast/future-of-internet-anonymity-and-blockchain/id1516705670
   - https://open.spotify.com/episode/5ZOqyj0iRzChK1ST6GmT7z
