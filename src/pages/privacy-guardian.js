@@ -6,7 +6,6 @@ import WebsiteMeta from '../components/common/meta/WebsiteMeta'
 import { Trans } from 'gatsby-plugin-react-i18next';
 import './privacy-guardian.scss'
 import { useTranslation } from 'gatsby-plugin-react-i18next';
-import NewsletterSignup from '../components/newsletter-signup';
 
 function Page(props) {
 	const { t } = useTranslation();
@@ -235,7 +234,6 @@ function Page(props) {
 				</div>
 			</div>
 
-			<NewsletterSignup t={t} />
 		</Layout>
 	)
 }
