@@ -48,7 +48,6 @@ function Page(props) {
 					<p>Cookies could be used to provide a more optimal website experience, such as server load balancing.</p>
 					<h2 id="sec4">Third Parties</h2>
 					<p>We do not sell, trade, or otherwise transfer to outside parties any information that we collect on <a href="https://www.orchid.com">www.orchid.com</a>. We do use some third party vendors, which are listed here.</p>
-					<p>Orchid Labs, Inc uses Mailchimp to manage Orchid’s newsletter list. Mailchimp collects and stores emails for anyone that signs up for our newsletter. Their privacy <a href="https://mailchimp.com/legal/privacy/#3._Privacy_for_Contacts">policy is here</a></p>
 					<p>Orchid Labs, Inc uses Branch.io to simplify links to our iOS and Android applications on <a href="https://www.orchid.com">www.orchid.com</a>. Occasionally when clicking on Branch links, the user will be re-directed to the appropriate experience after Branch performs device detection. Branch’s privacy <a href="https://branch.io/policies/#privacy">policy is here.</a></p>
 					<h2 id="sec5">Consent</h2>
 					<p>By using our application, you hereby consent to our privacy policy and agree to its terms.</p>

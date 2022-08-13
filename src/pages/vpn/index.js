@@ -3,7 +3,6 @@ import React from 'react'
 import Layout from '../../components/common/Layout'
 import './index.scss'
 import YouTubeEmbed from '../../components/YouTubeEmbed';
-import NewsletterSignupCore from '../../components/newsletter-signup-core';
 
 import { graphql } from 'gatsby';
 import { Link, Trans, useI18next, useTranslation } from 'gatsby-plugin-react-i18next';
@@ -289,13 +288,6 @@ function Page(props) {
 				</Container>
 			</Wrapper>
 
-			<Wrapper className="newsletter-wrapper">
-				<Container className="text-center">
-					<h2 className='my-4'><Trans>Let’s stay connected</Trans></h2>
-					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
-					<NewsletterSignupCore t={t} largePadding="true" />
-				</Container>
-			</Wrapper>
 		</Layout>
 	);
 }

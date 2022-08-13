@@ -6,7 +6,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import { StaticImage } from "gatsby-plugin-image";
 
-import NewsletterSignupCore from '../components/newsletter-signup-core';
 import { Link } from 'gatsby-plugin-react-i18next';
 import WebsiteMeta from '../components/common/meta/WebsiteMeta';
 import { useTranslation } from 'gatsby-plugin-react-i18next';
@@ -686,19 +685,6 @@ function Page(props) {
 				`} name="register" id="register">
 				<Container>
 					<div>
-						<div css={css`
-								max-width: 700px;
-								margin: auto;
-								@media (min-width: 1200px) {
-									margin-top: 2rem;
-								}
-							`}>
-							<h2>STAY IN TOUCH</h2>
-							<p>
-								Sign up for the monthyl Orchid Onlooker newsletter and stay in the loop about the next Priv8, Orchid news, privacy topics and more!
-							</p>
-						</div>
-						<NewsletterSignupCore t={t} priv8={true} />
 					</div>
 				</Container>
 			</div>
