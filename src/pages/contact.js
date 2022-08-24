@@ -10,7 +10,6 @@ import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
-import NewsletterSignupCore from '../components/newsletter-signup-core';
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import { break_mobile } from '../components/common/styles';
 
@@ -128,11 +127,6 @@ function Page(props) {
 				<FooterSocialIcons />
 			</Container>
 
-			<Container className='text-center'>
-				<h3 className="section-heading"><Trans>Let’s stay connected</Trans></h3>
-				<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
-				<NewsletterSignupCore t={t} />
-			</Container>
 		</Layout>
 	)
 }

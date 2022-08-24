@@ -12,7 +12,6 @@ import { break_largeScreen, break_xlargeScreen, break_mobile, break_notLargeScre
 import FooterSocialIcons from '../components/common/FooterSocialIcons';
 import styled from '@emotion/styled';
 import { StaticImage } from 'gatsby-plugin-image';
-import NewsletterSignupCore from '../components/newsletter-signup-core';
 import ContainerOverflow from '../components/common/ContainerOverflow';
 import Circle from '../components/common/Circle';
 import Divider from '../components/common/Divider';
@@ -519,14 +518,11 @@ function Page(props) {
 				`} />
 				<Container className="text-center relative z-10">
 					<h2 className='my-4'><Trans>Connect</Trans></h2>
-					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms, meet us in person at one of our upcoming events, and subscribe to our newsletter to stay informed about all things Orchid!</Trans></p>
+					<p className='inline-block max-w-2xl'><Trans>The Orchid community is one of the things that makes this project truly special. Follow us through one of our many social platforms to stay informed about all things Orchid!</Trans></p>
 					<p><FooterSocialIcons purple="true" /></p>
 					<ContainerOverflow className="flex flex-wrap flex-col lg:flex-row items-center lg:items-stretch lg:justify-between">
 						<FeaturedTweets />
 					</ContainerOverflow>
-					<h3 className='my-4'><Trans>Let’s stay connected</Trans></h3>
-					<p><Trans>Get the Orchid Onlooker newsletter for updates and privacy news</Trans></p>
-					<NewsletterSignupCore t={t} largePadding="true" />
 					<div className='h-4' />
 				</Container>
 			</Wrapper>
