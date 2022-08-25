@@ -4,7 +4,7 @@ public: true
 url: podcast/episode-106-brandon-liebowitz
 title: "Episode 106: Brandon Leibowitz"
 description: "This week host Derek E. Silva joins Brandon Liebowitz, the Founder of SEO Optimizers, a full service digital marketing agency. We dive into how Google search really works, keyword optimization, and how it has shaped the Internet."
-date: 1660760100000
+date: 1661443460000
 featuredimage: /img/podcast/BrandonLiebowitz_EpCard.jpg
 socialimage: https://www.orchid.com/img/podcast/BrandonLiebowitz_EpCard.jpg
 platformurls:
