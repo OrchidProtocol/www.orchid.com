@@ -1,8 +1,8 @@
 ---
 templateKey: podcast-episode
 public: true
-url: podcast/episode-107-greg-and-tor
-title: "Episode 107: Greg Osuri and Tor Bair"
+url: podcast/episode-108-greg-and-tor
+title: "Episode 108: Greg Osuri and Tor Bair"
 description: "This week's encore podcast episode features an exclusive talk from Priv8's digital summit. Tech journalist Benjamin Powers moderates a distinguished panel featuring CEO of Akash Network, Greg Osuri, Founder of the Secret Foundation, Tor Bair, and more to discuss Web3, data sovereignty, and the decentralized future!"
 date: 1662575400000
 featuredimage: /img/podcast/GregandTor_EpCard.jpg
