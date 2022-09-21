@@ -2,7 +2,7 @@
 templateKey: podcast-episode
 public: true
 url: podcast/episode-110-shermin-voshmgir
-title: "Episode 1110: Shermin Voshmgir"
+title: "Episode 110: Shermin Voshmgir"
 description: "This week host Derek E. Silva joins author Shermin Voshmgir, the Founder of the BlockchainHub Berlin and Token Kitchen, a data driven farming and publishing house. We take a deep dive into Shermin’s book Token Economy,  how Web3 is rebuilding the Internet, and her new smart farm in Portugal that is using blockchain."
 date: 1663784100000
 featuredimage: /img/podcast/SherminVoshmgir_EpCard.jpg
