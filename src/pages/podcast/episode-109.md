@@ -11,7 +11,7 @@ platformurls:
   - https://podcasts.apple.com/us/podcast/open-source-democracy-and-building-a-decentralized/id1516705670?i=1000579457889
   - https://open.spotify.com/episode/6o02IYJMclb7rm4j4DCYjE
   - https://podcasts.google.com/feed/aHR0cHM6Ly9mb2xsb3d0aGV3aGl0ZXJhYmJpdC5saWJzeW4uY29tL3Jzcw/episode/MWRkOGEyZjYtMDI2NC00N2EwLTk1NjItZDQwYmFhMDFiOGNi?sa=X&ved=0CAUQkfYCahcKEwjg0dja0pT6AhUAAAAAHQAAAAAQAQ
-  - https://www.stitcher.com/show/follow-the-white-rabbit/episode/open-source-democracy-and-building-a-decentralized-web-with-evan-miyazano-206726480
-  - https://castbox.fm/episode/Open-Source-Democracy-and-Building-a-Decentralized-Web-with-Evan-Miyazano-id2954358-id529924043?country=us
+  - https://www.stitcher.com/show/follow-the-white-rabbit/episode/open-source-democracy-and-building-a-decentralized-web-with-evan-miyazono-206726480
+  - https://castbox.fm/episode/Open-Source-Democracy-and-Building-a-Decentralized-Web-with-Evan-Miyazono-id2954358-id529924043?country=us
   - https://tunein.com/podcasts/Technology-Podcasts/Follow-the-White-Rabbit-p1330281/?topicId=177265835
 ---
