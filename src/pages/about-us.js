@@ -519,10 +519,10 @@ function Page(props) {
 								</button>
 							</a>
 							<br />
-							<a href="/OrchidPressKit.zip" target="_blank" rel="noreferrer">
+							<a href="https://drive.google.com/file/d/1uJZby55UVTaVnR9EltvPGvzZGQbz6IPh/view?usp=sharing" target="_blank" rel="noreferrer">
 								<button className="btn-primary btn-fixed">
 									<Trans>
-										Press Kit
+										Brand Kit
 									</Trans>
 								</button>
 							</a>
