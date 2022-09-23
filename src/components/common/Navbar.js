@@ -237,7 +237,7 @@ class Navbar extends React.Component {
 						<li><Link to="/how-it-works/"><Trans>How It Works</Trans></Link></li>
 						<li><Link to="/oxt/"><Trans>OXT</Trans></Link></li>
 						<li><Link to="/about-us/"><Trans>About</Trans></Link></li>
-						<li><a href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
+						<li><a href={t("/podcast/")}><Trans>Podcast</Trans></a></li>
 						<li><Link to="/contact/"><Trans>Contact</Trans></Link></li>
 						<LanguageDropdown />
 					</NavbarItems>
