@@ -514,7 +514,7 @@ function Page(props) {
 								</button>
 							</a>
 							<br />
-							<a href="https://drive.google.com/file/d/1uJZby55UVTaVnR9EltvPGvzZGQbz6IPh/view?usp=sharing" target="_blank" rel="noreferrer">
+							<a href="https://drive.google.com/drive/folders/1b2MCTi58WIbszFuVtHfav3EPL34gIkC0?usp=sharing" target="_blank" rel="noreferrer">
 								<button className="btn-primary btn-fixed">
 									<Trans>
 										Brand Kit

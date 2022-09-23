@@ -233,7 +233,7 @@ class Navbar extends React.Component {
 					<NavbarItems>
 						<li className="mobile-only"><Link to="/"><Trans>Home</Trans></Link></li>
 						<li><a href="https://account.orchid.com/"><Trans>Account</Trans></a></li>
-						<li><Link to="/vpn/"><Trans>VPN</Trans></Link></li>
+						<li><Link to="https://docs.orchid.com/"><Trans>Docs</Trans></Link></li>
 						<li><Link to="/how-it-works/"><Trans>How It Works</Trans></Link></li>
 						<li><Link to="/oxt/"><Trans>OXT</Trans></Link></li>
 						<li><Link to="/about-us/"><Trans>About</Trans></Link></li>
@@ -252,9 +252,9 @@ class Navbar extends React.Component {
 					@media screen and (min-width: 1201px) {
 						display: block;
 					}
-				`} to="/get-orchid/">
+				`} to="/vpn/">
 					<button className="btn-secondary">
-						<Trans>Get Orchid</Trans>
+						<Trans>Get Orchid VPN</Trans>
 					</button>
 				</Link>
 
