@@ -127,7 +127,7 @@ function Page(props) {
 					`}>
 						<Trans>The web has evolved. <span className='text-purple'>So should your VPN.</span></Trans>
 					</h3>
-					<Link to="/get-orchid" className="btn">
+					<Link to="/download" className="btn">
 						<button className="btn-primary"><Trans>Get Orchid</Trans></button>
 					</Link>
 				</div>
@@ -282,7 +282,7 @@ function Page(props) {
 
 					<YouTubeEmbed id="zJHFMxGAqyw" defaultThumbnail={true} />
 
-					<Link to="/get-orchid" className="section-button">
+					<Link to="/download" className="section-button">
 						<button className="btn-secondary"><Trans>Get Orchid</Trans></button>
 					</Link>
 				</Container>
