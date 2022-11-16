@@ -1,7 +1,7 @@
 ---
 templateKey: podcast-episode
 public: true
-url: podcast/episode-116-Seth-for-Privacy
+url: podcast/episode-117-Seth-for-Privacy
 title: "Episode 117: Seth for Privacy"
 description: "This week Derek E. Silva joins Seth for Privacy, an educator and activist who hosts the Opt Out podcast.  In this episode, we dive in to discuss data protection and sovereignty in the digital world, why privacy matters, and we explore open source tools that support Internet freedom."
 date:	1668021300000
