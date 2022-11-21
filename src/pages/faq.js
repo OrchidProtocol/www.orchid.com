@@ -275,7 +275,7 @@ function Page(props) {
 										</h4>
 										<p className="faq-answer">
 											<span>
-												The goal with the Orchid app is to give users insight and control over the network connection of their device. To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT. Then the Orchid app connects to the Orchid network and selects a node using Orchid’s <a href="https://blog.orchid.com/orchids-network-random-selection-stake-weighting/">linear stake-weighted algorithm</a>to serve as a VPN and pays for bandwidth via a continuous stream of tiny <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayments</a>.
+												The goal with the Orchid app is to give users insight and control over the network connection of their device. To gain privacy, users configure a circuit in Orchid by setting up an Orchid account and funding it with OXT. Then the Orchid app connects to the Orchid network and selects a node using Orchid’s <a href="https://blog.orchid.com/orchids-network-random-selection-stake-weighting/">linear stake-weighted algorithm</a> to serve as a VPN and pays for bandwidth via a continuous stream of tiny <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayments</a>.
 												<br />
 												<br />
 												In a single-hop circuit configuration, Orchid provides:
@@ -316,7 +316,7 @@ function Page(props) {
 										</h4>
 										<p className="faq-answer">
 											<span>
-												The Orchid app pays for the circuit by sending a continuous stream of tiny nanopayments to providers for the duration of the connection. While the <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayment architecture</a>locks user funds into a smart contract and--very rarely--winning tickets result in macro-payments posted on the blockchain where the account exists. When that happens, the user’s address, the provider’s address, and a timestamp are stored publically on the blockchain. Note that the payment address of the provider is not a mapping to any single server; instead it is an arbitrary (and potentially temporary) payment address that the provider created specifically to receive funds. Also, the frequency of how often on-chain payments occur is configurable by the user.
+												The Orchid app pays for the circuit by sending a continuous stream of tiny nanopayments to providers for the duration of the connection. While the <a href="https://blog.orchid.com/introducing-nanopayments/">nanopayment architecture</a> locks user funds into a smart contract and--very rarely--winning tickets result in macro-payments posted on the blockchain where the account exists. When that happens, the user’s address, the provider’s address, and a timestamp are stored publically on the blockchain. Note that the payment address of the provider is not a mapping to any single server; instead it is an arbitrary (and potentially temporary) payment address that the provider created specifically to receive funds. Also, the frequency of how often on-chain payments occur is configurable by the user.
 												<br />
 
 												<br />
@@ -413,7 +413,7 @@ function Page(props) {
 										</h4>
 										<p className="faq-answer">
 											<span>
-												OXT is a "pre-mined" cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace. It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive. Read more about OXT<a href="https://www.orchid.com/oxt/">here</a>.
+												OXT is a "pre-mined" cryptocurrency based on the ERC-20 standard that will be used to decentralize trust between buyers and sellers in the Orchid marketplace. It also functions as a tool to promote security and healthy market dynamics, as providers can adjust their OXT stake to remain competitive. Read more about OXT <a href="https://www.orchid.com/oxt/">here</a>.
 											</span>
 										</p>
 									</li>
