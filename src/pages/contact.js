@@ -88,7 +88,7 @@ function Page(props) {
 						</p>
 						<h5 className='mt-auto text-white text-lg mt-6'>
 							<Trans>
-								<a href="https://discord.gg/orchid/">ORCHID DISCORD SERVER</a>
+								<a href="https://discord.gg/GDbxmjxX9F/">ORCHID DISCORD SERVER</a>
 							</Trans>
 						</h5>
 					</Container>
@@ -106,7 +106,7 @@ function Page(props) {
 						<br />
 						<b>
 							<Trans>
-								Please note: If you are seeking help from Orchid Support, please visit <a href="https://discord.gg/orchid/">discord.gg/orchid</a>
+								Please note: If you are seeking help from Orchid Support, please visit <a href="https://discord.gg/GDbxmjxX9F/">discord.gg/GDbxmjxX9F</a>
 							</Trans>
 						</b>
 					</div>
