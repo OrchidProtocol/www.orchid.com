@@ -22,7 +22,7 @@ const FooterSocialIcons = (props) => {
 			</a>
 		</li>
 		<li className='list-none inline-block m-1'>
-			<a href="https://discord.gg/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
+			<a href="https://discord.gg/invite/GDbxmjxX9F" target="_blank" rel="noopener noreferrer" aria-label="Join us on Discord" title="Discord">
 				<img src={URLBase.replace('{icon}', "discord")} style={{ width: "32px", height: "auto" }} alt="Discord" width="32" height="32" />
 			</a>
 		</li>
