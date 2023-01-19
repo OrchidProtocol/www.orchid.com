@@ -62,7 +62,7 @@ function wait-for-cloudfront() {
 function invalidate-cache() {
     local distribution="$1"
     echo "Invalidating CloudFront Cache..."
-    aws cloudfront create-invalidation --distribution-id "$distribution" --paths "/*"
+    AWS_MAX_ATTEMPTS=10 aws cloudfront create-invalidation --distribution-id "$distribution" --paths "/*"
 }
 
 
