@@ -5,7 +5,7 @@ url: podcast/episode-123-Al-Morris
 title: "Episode 123: Al Morris"
 description: "This week, Derek E. Silva joins Al Morris, the Founder and CEO of Koii Network, which is building a more inclusive, community-owned internet through the Web3 DAP protocol. It's a great conversation about the Web3 economy, content creation, and building a better Internet."
 date:	1674155700000
-featuredimage: /img/podcast/AlMorrisEpCard.jpg
+featuredimage: /img/podcast/AlMorris_EpCard.jpg
 socialimage: https://www.orchid.com/img/podcast/AlMorris_EpCard.jpg
 platformurls:
   - https://podcasts.apple.com/us/podcast/web3-digital-economy-and-the-future-of-the/id1516705670?i=1000595285762
