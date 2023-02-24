@@ -57,7 +57,7 @@
 		"gatsby-remark-copy-linked-files": "^6.7.0",
 		"gatsby-remark-relative-images": "^2.0.2",
 		"gatsby-source-filesystem": "^5.7.0",
-		"gatsby-transformer-remark": "^6.7.0",
+		"gatsby-transformer-remark": "^5.25.1",
 		"i18next": "^22.4.10",
 		"lodash": "^4.17.21",
 		"lodash-webpack-plugin": "^0.11.6",
