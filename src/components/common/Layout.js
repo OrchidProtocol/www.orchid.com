@@ -146,7 +146,6 @@ const TemplateWrapper = (props) => {
 									<li><b><Trans>Engage</Trans></b></li>
 									<li><Link className="phantom-a" to="/podcast/"><Trans>Podcast</Trans></Link></li>
 									<li><a className="phantom-a" href={t("https://blog.orchid.com/")}><Trans>Blog</Trans></a></li>
-									<li><Link className="phantom-a" to="/privacy-guardian/"><Trans>Privacy Guardians</Trans></Link></li>
 									<li><Link className="phantom-a" to="/contact/"><Trans>Contact</Trans></Link></li>
 								</ul>
 							</nav>
