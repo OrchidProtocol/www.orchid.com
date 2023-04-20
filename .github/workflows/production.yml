@@ -1,8 +1,9 @@
 name: DeployProduction
 
 on:
-  schedule:
-    - cron: '*/15 * * * *'
+  push:
+    branches:
+      - main
 
 jobs:
   deploy:
