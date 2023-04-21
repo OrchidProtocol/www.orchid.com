@@ -3,7 +3,7 @@ name: DeployProductioni18n
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
