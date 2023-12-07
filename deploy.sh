@@ -9,25 +9,9 @@
 
 function usage () {
     local exit_status="$1"
-    echo "Usage:  deploy [staging [{ja,ko,zh,id,ru,en}] | production [{ja,ko,zh,id,ru,en}]"
+    echo "Usage:  deploy [staging | production ]"
     echo "Deploys the built website to the specified destination."
     exit $exit_status
-}
-
-function build-site() {
-    local language="$1"
-    echo "Building Site..."
-    yarn
-
-    built_files=public
-    # Build the static site...
-    rm -rf ${built_files}
-    if [ -z "$language" ]; then
-        yarn run build:static
-    else
-        yarn run build:static:${language}
-	fi
-		echo "Built Site."
 }
 
 function get-distribution-id() {
@@ -40,7 +24,7 @@ function upload-site() {
     local bucket="$1"
     local version="$2"
     echo "Uploading Website..."
-    aws s3 sync --acl public-read --delete ./public/ "s3://$bucket/$version"
+    aws s3 sync --acl public-read --delete ./ "s3://$bucket/$version"
 }
 
 function update-distribution() {
@@ -72,13 +56,6 @@ function main() {
             h)
                 usage 3
                 ;;
-            l)
-                local language=$OPTARG
-                [[ ! $language =~ en|ja|ko|zh|id|ru ]] && {
-                    echo "Incorrect language specified!"
-                    usage 3
-                }
-                ;;
             s)
                 local stage=$OPTARG
                 [[ ! $stage =~ ^staging$|^production$ ]] && {
@@ -86,9 +63,14 @@ function main() {
                     usage 3
                 }
                 ;;
-            v)
-                local version=$OPTARG
-                ;;
+            #v)
+            #    local version=$OPTARG
+            #    if [ -z ${version} ]; then  # If no version was specified with -v
+	    #    version=$(git rev-parse --short "$GITHUB_SHA")
+            #        #version=$(./version.sh | cut -d' ' -f3)
+            #        echo "Version:  $version"
+            #    fi
+            #    ;;
             *)
                 echo "Incorrect options provided!"
                 usage 3
@@ -101,22 +83,15 @@ function main() {
         usage 3
     fi
 
-    echo "Language: $language"
     echo "Stage: $stage"
     echo "Version: $version"
 
-    if [ -z ${language+x} ]; then  # If a language was NOT specified with -l
-        if [ "$stage" == "staging" ]; then
-            local bucket="www.orchid.dev"
-        elif [ "$stage" == "production" ]; then
-            local bucket="www.orchid.com"
-        fi
-    else  # A language was specified
-        if [ "$stage" == "staging" ]; then
-            local bucket="www.${language}.orchid.dev"
-        elif [ "$stage" == "production" ]; then
-            local bucket="www.${language}.orchid.com"
-        fi
+    if [ "$stage" == "staging" ]; then
+        local bucket="www.orchid.lol"
+    elif [ "$stage" == "production" ]; then
+        local bucket="www.orchid.lol"
+    elif [ "$stage" == "lol"]; then
+	local bucket="www.orchid.lol"
     fi
 
     distribution=$(get-distribution-id "$bucket")
@@ -126,20 +101,9 @@ function main() {
         exit 1
     fi
 
-    if [ -z ${version+x} ]; then  # If no version was specified with -v
-        version=$(./version.sh | cut -d' ' -f3)
-        echo "Version: $version"
-        build-site "$language"
-
-		IndexFile=./public/index.html
-		if ! test -f "$IndexFile"; then
-			echo "No index.html file found! Site may not have failed build."
-			exit 1
-		fi
-
-        upload-site "$bucket" "$version"
-    fi
-
+    version=$(git rev-parse --short "$GITHUB_SHA")
+    echo "Version:  $version"
+    upload-site "$bucket" "$version"
     update-distribution "$distribution" "$version"
     wait-for-cloudfront "$distribution"
     invalidate-cache "$distribution"

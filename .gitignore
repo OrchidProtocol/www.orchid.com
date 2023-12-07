@@ -1,19 +1,6 @@
 # Project dependencies
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
-node_modules
-.cache/
-# Build directory
-public/
 static/admin/*.bundle.*
 .DS_Store
-yarn-error.log
-package-lock.json
-
-.env.production
-.env.development
-
-# blog integration
 static/img/blog-integration
 static/blog.json
-src/components/common/blog.json
-temp/

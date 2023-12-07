@@ -3,7 +3,7 @@ name: DeployProduction
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -22,4 +22,4 @@ jobs:
         aws-region: us-west-2
     - name: Deploy to www.orchid.com
       run: |
-        ./deploy.sh -s production
+        ./deploy.sh -s production 
