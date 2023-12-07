@@ -87,9 +87,9 @@ function main() {
     echo "Version: $version"
 
     if [ "$stage" == "staging" ]; then
-        local bucket="www.orchid.lol"
+        local bucket="www.orchid.dev"
     elif [ "$stage" == "production" ]; then
-        local bucket="www.orchid.lol"
+        local bucket="www.orchid.com"
     elif [ "$stage" == "lol"]; then
 	local bucket="www.orchid.lol"
     fi
