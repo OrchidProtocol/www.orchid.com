@@ -636,6 +636,17 @@
   position: relative;
 }
 
+.aboutu95mobsm .mobile-nav-header {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+}
+
 .aboutu95mobsm .hero {
   align-items: flex-start;
   align-self: stretch;
@@ -765,6 +776,7 @@
   border: 1px solid;
   border-color: var(--aquamarine);
   border-radius: 60px;
+  cursor: pointer;
   display: inline-flex;
   flex: 0 0 auto;
   justify-content: center;
@@ -948,6 +960,7 @@
 .aboutu95mobsm .mobile-button-hero-2 {
   align-items: flex-start;
   background-color: var(--heavy-metal);
+  cursor: pointer;
 }
 
 .aboutu95mobsm .logo-1 {
@@ -1384,7 +1397,6 @@
 .aboutu95tabsm .mobile-button-hero-4 {
   align-items: center;
   background-color: var(--heavy-metal);
-  cursor: pointer;
   justify-content: center;
 }
 
@@ -1453,6 +1465,11 @@
   position: relative;
 }
 
+.aboutu95tabsm .desktop-home-logo-1 {
+  height: 36px;
+  position: relative;
+}
+
 .aboutu95tabsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
@@ -1467,6 +1484,17 @@
   font-weight: 300;
   line-height: 19.6px;
   position: relative;
+}
+
+.aboutu95tabsm .hyperlinks-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
 }
 
 .aboutu95tabsm .x2023-orchid-6 {
@@ -1528,6 +1556,19 @@
   width: 75px;
 }
 
+.aboutu95tabsm .social-icons-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
 .aboutu95tabsm .social-link-1 {
   cursor: pointer;
   height: 32px;
@@ -1565,6 +1606,7 @@
   border: 1px solid;
   border-color: var(--aquamarine);
   border-radius: 60px;
+  cursor: pointer;
   display: inline-flex;
   flex: 0 0 auto;
   padding: 16px 80px;
