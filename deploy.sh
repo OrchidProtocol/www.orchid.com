@@ -49,6 +49,26 @@ function invalidate-cache() {
     AWS_MAX_ATTEMPTS=10 aws cloudfront create-invalidation --distribution-id "$distribution" --paths "/*"
 }
 
+function convert_to_dir() {
+    for x in *-all-breakpoints.html
+    do
+        if [ "$x" != "home-all-breakpoints.html" ]
+        then
+            mkdir ${x%%-all-breakpoints.html}
+            mv $x ${x%%-all-breakpoints.html}/index.html
+            cp -r css ${x%%-all-breakpoints.html}
+            cp -r img ${x%%-all-breakpoints.html}
+            cp nav-overlay* ${x%%-all-breakpoints.html}
+            sed -i -E "s/\"(.*)-all-breakpoints.html\"/..\/\1\//" ${x%%-all-breakpoints.html}/index.html
+            sed -i -e "s/\.\.\/home/../" ${x%%-all-breakpoints.html}/index.html
+        else
+            mv home-all-breakpoints.html index.html
+            sed -i -E "s/\"(.*)-all-breakpoints.html\"/.\/\1\//" index.html
+            sed -i -e "s/\.\/home//" index.html
+        fi
+    done
+}
+
 
 function main() {
     while getopts "hl:s:v:" OPTION; do
@@ -103,6 +123,7 @@ function main() {
 
     version=$(git rev-parse --short "$GITHUB_SHA")
     echo "Version:  $version"
+    convert_to_dir
     upload-site "$bucket" "$version"
     update-distribution "$distribution" "$version"
     wait-for-cloudfront "$distribution"
