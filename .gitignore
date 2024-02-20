@@ -4,4 +4,5 @@ static/admin/*.bundle.*
 .DS_Store
 static/img/blog-integration
 static/blog.json
-.git
+.git/*
+.editorconfig
