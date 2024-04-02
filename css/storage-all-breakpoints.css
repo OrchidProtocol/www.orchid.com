@@ -1,6 +1,6 @@
-/* screen - storchid-all-breakpoints */
+/* screen - storage-all-breakpoints */
 
-.storchid-all-breakpoints {
+.storage-all-breakpoints {
   align-items: center;
   background-color: var(--cod-gray);
   display: flex;
@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .ellipses {
+.storage-all-breakpoints .ellipses {
   display: flex;
   height: 4015px;
   justify-content: center;
@@ -20,7 +20,7 @@
   width: 1967px;
 }
 
-.storchid-all-breakpoints .frame-531 {
+.storage-all-breakpoints .frame-531 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -30,14 +30,14 @@
   width: 1967px;
 }
 
-.storchid-all-breakpoints .overlap-group1 {
+.storage-all-breakpoints .overlap-group1 {
   height: 775px;
   margin-left: 90px;
   position: relative;
   width: 936px;
 }
 
-.storchid-all-breakpoints .ellipse-container {
+.storage-all-breakpoints .ellipse-container {
   height: 775px;
   left: 0;
   position: absolute;
@@ -45,7 +45,7 @@
   width: 912px;
 }
 
-.storchid-all-breakpoints .flex-row {
+.storage-all-breakpoints .flex-row {
   align-items: center;
   display: flex;
   gap: 276px;
@@ -54,7 +54,7 @@
   min-width: 1967px;
 }
 
-.storchid-all-breakpoints .ellipse-37 {
+.storage-all-breakpoints .ellipse-37 {
   background-color: var(--black-2);
   border-radius: 441.5px;
   height: 883px;
@@ -63,7 +63,7 @@
   width: 883px;
 }
 
-.storchid-all-breakpoints .ellipse-container-1 {
+.storage-all-breakpoints .ellipse-container-1 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -72,7 +72,7 @@
   width: 808px;
 }
 
-.storchid-all-breakpoints .ellipse-33 {
+.storage-all-breakpoints .ellipse-33 {
   background-color: var(--black-2);
   border-radius: 260px;
   height: 520px;
@@ -80,7 +80,7 @@
   width: 520px;
 }
 
-.storchid-all-breakpoints .hero-image-2 {
+.storage-all-breakpoints .hero-image-2 {
   background-image: url(../img/storage-splash-1.png);
   background-size: 100% 100%;
   height: 824px;
@@ -90,17 +90,17 @@
   width: calc(100.00% + 314px);
 }
 
-.storchid-all-breakpoints .desktop-home-logo-2 {
+.storage-all-breakpoints .desktop-home-logo-2 {
   cursor: pointer;
   flex: 0 0 auto;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-1 {
+.storage-all-breakpoints .desktop-button-top-nav-1 {
   display: inline-flex;
   flex: 0 0 auto;
 }
 
-.storchid-all-breakpoints .vpn {
+.storage-all-breakpoints .vpn {
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 14.4px;
@@ -110,37 +110,37 @@
   width: fit-content;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-2 {
+.storage-all-breakpoints .desktop-button-top-nav-2 {
   cursor: pointer;
   display: flex;
   width: 37px;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-3 {
+.storage-all-breakpoints .desktop-button-top-nav-3 {
   cursor: pointer;
   display: flex;
   width: 36px;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-4 {
+.storage-all-breakpoints .desktop-button-top-nav-4 {
   cursor: pointer;
   display: flex;
   width: 44px;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-5 {
+.storage-all-breakpoints .desktop-button-top-nav-5 {
   cursor: pointer;
   display: flex;
   width: 61px;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-6 {
+.storage-all-breakpoints .desktop-button-top-nav-6 {
   cursor: pointer;
   display: flex;
   width: 50px;
 }
 
-.storchid-all-breakpoints .desktop-button-header {
+.storage-all-breakpoints .desktop-button-header {
   background-image: url(../img/button-base-1@2x.png);
   background-size: 100% 100%;
   display: flex;
@@ -149,7 +149,7 @@
   width: 196px;
 }
 
-.storchid-all-breakpoints .hero {
+.storage-all-breakpoints .hero {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -161,7 +161,7 @@
   width: 1440px;
 }
 
-.storchid-all-breakpoints .frame-403-2 {
+.storage-all-breakpoints .frame-403-2 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -171,7 +171,7 @@
   width: 855px;
 }
 
-.storchid-all-breakpoints .decentralized-marketplace-2 {
+.storage-all-breakpoints .decentralized-marketplace-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -181,15 +181,11 @@
   text-align: center;
 }
 
-.storchid-all-breakpoints .span-4 {
-  color: var(--aquamarine);
+.storage-all-breakpoints .span-4 {
+  letter-spacing: 0.72px;
 }
 
-.storchid-all-breakpoints .span-5 {
-  color: var(--white);
-}
-
-.storchid-all-breakpoints .storchid-is-a-new-op-2 {
+.storage-all-breakpoints .orchids-new-open-so-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 500;
@@ -198,7 +194,11 @@
   text-align: center;
 }
 
-.storchid-all-breakpoints .storchid-concepts {
+.storage-all-breakpoints .span-5 {
+  letter-spacing: 0.31px;
+}
+
+.storage-all-breakpoints .storchid-concepts {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -209,7 +209,7 @@
   width: 1440px;
 }
 
-.storchid-all-breakpoints .desktop-header-section-full {
+.storage-all-breakpoints .desktop-header-section-full {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -220,7 +220,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .desktop-caption-section {
+.storage-all-breakpoints .desktop-caption-section {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -230,7 +230,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .caption {
+.storage-all-breakpoints .caption {
   color: var(--white);
   font-weight: 600;
   line-height: 22.0px;
@@ -240,7 +240,7 @@
   width: fit-content;
 }
 
-.storchid-all-breakpoints .line-2 {
+.storage-all-breakpoints .line-2 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -248,7 +248,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .desktop-headline-section {
+.storage-all-breakpoints .desktop-headline-section {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -259,7 +259,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .two-color-headline {
+.storage-all-breakpoints .two-color-headline {
   color: transparent;
   flex: 1;
   font-weight: 600;
@@ -268,7 +268,11 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .copy-2 {
+.storage-all-breakpoints .span-6 {
+  letter-spacing: 0.32px;
+}
+
+.storage-all-breakpoints .copy-2 {
   align-self: stretch;
   display: flex;
   height: 651px;
@@ -276,7 +280,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .text {
+.storage-all-breakpoints .text {
   color: transparent;
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxl);
@@ -286,24 +290,25 @@
   width: 1120px;
 }
 
-.storchid-all-breakpoints .span-6 {
-  color: var(--aquamarine);
-  font-weight: 500;
+.storage-all-breakpoints .span-7 {
+  letter-spacing: 0.31px;
   line-height: 34.7px;
 }
 
-.storchid-all-breakpoints .span-7 {
-  color: var(--white);
+.storage-all-breakpoints .span-8 {
+  letter-spacing: 0.08px;
   line-height: 28.0px;
 }
 
-.storchid-all-breakpoints .span6 {
+.storage-all-breakpoints .span6 {
   color: var(--white);
+  font-size: var(--font-size-xl);
   font-weight: 600;
+  letter-spacing: 0.64px;
   line-height: 22.0px;
 }
 
-.storchid-all-breakpoints .storage-design {
+.storage-all-breakpoints .storage-design {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -314,26 +319,24 @@
   width: 1440px;
 }
 
-.storchid-all-breakpoints .desktop-header-section-full-1 {
+.storage-all-breakpoints .desktop-header-section-full-1 {
   align-items: flex-start;
-  align-self: stretch;
-  width: 100%;
 }
 
-.storchid-all-breakpoints .desktop-caption-section-1 {
+.storage-all-breakpoints .desktop-caption-section-1 {
   justify-content: flex-end;
 }
 
-.storchid-all-breakpoints .caption-1 {
+.storage-all-breakpoints .caption-1 {
   text-align: right;
 }
 
-.storchid-all-breakpoints .two-color-headline-1 {
+.storage-all-breakpoints .two-color-headline-1 {
   color: transparent;
   text-align: right;
 }
 
-.storchid-all-breakpoints .frame-496 {
+.storage-all-breakpoints .frame-496 {
   align-self: stretch;
   display: flex;
   height: 140px;
@@ -341,7 +344,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .intro-copy-2 {
+.storage-all-breakpoints .intro-copy-2 {
   color: transparent;
   font-weight: 400;
   height: 140px;
@@ -350,7 +353,11 @@
   width: 1120px;
 }
 
-.storchid-all-breakpoints .hero-cta-button {
+.storage-all-breakpoints .span-9 {
+  letter-spacing: 0.08px;
+}
+
+.storage-all-breakpoints .hero-cta-button {
   align-items: flex-end;
   display: inline-flex;
   flex: 0 0 auto;
@@ -359,44 +366,46 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .cta {
+.storage-all-breakpoints .cta {
   align-items: center;
-  display: inline-flex;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
-.storchid-all-breakpoints .desktop-header-section-full-2 {
+.storage-all-breakpoints .desktop-header-section-full-2 {
   align-items: center;
-  width: 1438px;
 }
 
-.storchid-all-breakpoints .desktop-caption-section-2 {
+.storage-all-breakpoints .desktop-caption-section-2 {
   justify-content: center;
 }
 
-.storchid-all-breakpoints .caption-2 {
+.storage-all-breakpoints .caption-2 {
   text-align: center;
 }
 
-.storchid-all-breakpoints .desktop-headline-section-1 {
+.storage-all-breakpoints .desktop-headline-section-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   gap: 24px;
+  justify-content: center;
   padding: 0px 0px 24px;
   position: relative;
   width: 100%;
 }
 
-.storchid-all-breakpoints .two-color-headline-2 {
+.storage-all-breakpoints .two-color-headline-2 {
   color: var(--aquamarine);
   text-align: center;
 }
 
-.storchid-all-breakpoints .buttons {
+.storage-all-breakpoints .buttons {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -406,7 +415,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .desktop-button-standard {
+.storage-all-breakpoints .desktop-button-standard {
   background-color: var(--log-cabin);
   border: 1px solid;
   border-color: var(--aquamarine);
@@ -418,7 +427,7 @@
   padding: 24px 80px;
 }
 
-.storchid-all-breakpoints .desktopfooter {
+.storage-all-breakpoints .desktopfooter {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--black-2);
@@ -432,7 +441,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .logo-2 {
+.storage-all-breakpoints .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -441,7 +450,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .x2023-orchid-9 {
+.storage-all-breakpoints .x2023-orchid-9 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -449,7 +458,7 @@
   width: 676px;
 }
 
-.storchid-all-breakpoints .hyperlinks-2 {
+.storage-all-breakpoints .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -461,7 +470,7 @@
   width: 100%;
 }
 
-.storchid-all-breakpoints .frame-42 {
+.storage-all-breakpoints .frame-42 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -470,7 +479,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .x2023-orchid-8 {
+.storage-all-breakpoints .x2023-orchid-8 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -479,11 +488,11 @@
   width: 180px;
 }
 
-.storchid-all-breakpoints .apps-17 {
+.storage-all-breakpoints .apps-17 {
   cursor: pointer;
 }
 
-.storchid-all-breakpoints .link-2 {
+.storage-all-breakpoints .link-2 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -491,7 +500,7 @@
   width: 198px;
 }
 
-.storchid-all-breakpoints .social-icons-2 {
+.storage-all-breakpoints .social-icons-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -501,7 +510,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .social-link-github-2 {
+.storage-all-breakpoints .social-link-github-2 {
   cursor: pointer;
   height: 33px;
   margin-bottom: -1.00px;
@@ -509,7 +518,7 @@
   width: 32px;
 }
 
-.storchid-all-breakpoints .apps {
+.storage-all-breakpoints .apps {
   color: var(--white);
   font-weight: 700;
   height: 22px;
@@ -517,27 +526,29 @@
   width: 198px;
 }
 
-.storchid-all-breakpoints .desktop-button-top-nav-7 {
+.storage-all-breakpoints .desktop-button-top-nav-7 {
   align-items: center;
   gap: 10px;
   justify-content: center;
   position: relative;
 }
 
-.storchid-all-breakpoints .desktop-header-section-full-3 {
+.storage-all-breakpoints .desktop-header-section-full-3 {
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
   position: relative;
+  width: 100%;
 }
 
-.storchid-all-breakpoints .desktop-home-logo {
+.storage-all-breakpoints .desktop-home-logo {
   height: 36px;
   position: relative;
 }
 
-.storchid-all-breakpoints .two-color-headline-3 {
+.storage-all-breakpoints .two-color-headline-3 {
   flex: 1;
   font-weight: 600;
   line-height: 44.0px;
@@ -545,7 +556,7 @@
   position: relative;
 }
 
-.storchid-all-breakpoints .vpn-3 {
+.storage-all-breakpoints .vpn-3 {
   color: var(--white);
   font-weight: 700;
   line-height: 14.4px;
@@ -554,9 +565,9 @@
   white-space: nowrap;
   width: fit-content;
 }
-/* screen - storchidu95mobsm */
+/* screen - storageu95mobsm */
 
-.storchidu95mobsm {
+.storageu95mobsm {
   align-items: center;
   background-color: var(--woodsmoke);
   display: flex;
@@ -567,7 +578,7 @@
   position: relative;
 }
 
-.storchidu95mobsm .hero-image-1 {
+.storageu95mobsm .hero-image-1 {
   display: flex;
   height: 209px;
   justify-content: center;
@@ -577,14 +588,14 @@
   width: calc(100.00% + 84px);
 }
 
-.storchidu95mobsm .storage-splash-1 {
+.storageu95mobsm .storage-splash-1 {
   height: 208px;
   margin-left: 10px;
   margin-top: 1px;
   width: 360px;
 }
 
-.storchidu95mobsm .mobile-nav-header-1 {
+.storageu95mobsm .mobile-nav-header-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -595,7 +606,7 @@
   width: 100%;
 }
 
-.storchidu95mobsm .frame-403-1 {
+.storageu95mobsm .frame-403-1 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -606,7 +617,7 @@
   width: 357px;
 }
 
-.storchidu95mobsm .decentralized-marketplace-1 {
+.storageu95mobsm .decentralized-marketplace-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -616,15 +627,15 @@
   text-align: center;
 }
 
-.storchidu95mobsm .span-2 {
+.storageu95mobsm .span-2 {
   color: var(--aquamarine);
 }
 
-.storchidu95mobsm .span-3 {
+.storageu95mobsm .span-3 {
   color: var(--white);
 }
 
-.storchidu95mobsm .line-10-1 {
+.storageu95mobsm .line-10-1 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -632,16 +643,16 @@
   width: 100%;
 }
 
-.storchidu95mobsm .storchid-is-a-new-op-1 {
+.storageu95mobsm .orchids-new-open-so-1 {
   align-self: stretch;
-  color: transparent;
+  color: var(--white);
   font-weight: 600;
   line-height: 18.7px;
   position: relative;
   text-align: center;
 }
 
-.storchidu95mobsm .marketplaces {
+.storageu95mobsm .marketplaces {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -653,11 +664,11 @@
   width: 100%;
 }
 
-.storchidu95mobsm .mobile-3 {
+.storageu95mobsm .mobile-3 {
   align-items: center;
 }
 
-.storchidu95mobsm .line-1 {
+.storageu95mobsm .line-1 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -665,18 +676,18 @@
   position: relative;
 }
 
-.storchidu95mobsm .mobile-headline-section-3 {
+.storageu95mobsm .mobile-headline-section-3 {
   align-items: flex-start;
   align-self: stretch;
   justify-content: space-around;
   width: 100%;
 }
 
-.storchidu95mobsm .the-orchid-ecosystem-3 {
+.storageu95mobsm .the-orchid-ecosystem-2 {
   color: transparent;
 }
 
-.storchidu95mobsm .copy-1 {
+.storageu95mobsm .copy-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -687,16 +698,16 @@
   width: 100%;
 }
 
-.storchidu95mobsm .title-1 {
+.storageu95mobsm .title-1 {
   height: 18px;
   white-space: nowrap;
 }
 
-.storchidu95mobsm .body-3 {
+.storageu95mobsm .body-3 {
   margin-top: -1.00px;
 }
 
-.storchidu95mobsm .developers {
+.storageu95mobsm .developers {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -708,31 +719,31 @@
   width: 100%;
 }
 
-.storchidu95mobsm .mobile-4 {
+.storageu95mobsm .mobile-4 {
   align-items: flex-end;
 }
 
-.storchidu95mobsm .mobile-caption-section-4 {
+.storageu95mobsm .mobile-caption-section-4 {
   justify-content: flex-end;
 }
 
-.storchidu95mobsm .discover-3 {
+.storageu95mobsm .discover-3 {
   text-align: right;
 }
 
-.storchidu95mobsm .mobile-headline-section-4 {
+.storageu95mobsm .mobile-headline-section-4 {
   align-items: center;
   justify-content: flex-end;
   margin-left: -80.00px;
   width: 360px;
 }
 
-.storchidu95mobsm .the-orchid-ecosystem-4 {
+.storageu95mobsm .the-orchid-ecosystem-3 {
   color: transparent;
   text-align: right;
 }
 
-.storchidu95mobsm .intro-copy-1 {
+.storageu95mobsm .intro-copy-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 300;
@@ -742,13 +753,13 @@
   text-align: right;
 }
 
-.storchidu95mobsm .frame-476-2 {
+.storageu95mobsm .frame-476-2 {
   gap: 10px;
   margin-left: -23.50px;
   margin-right: -23.50px;
 }
 
-.storchidu95mobsm .mobile-button-hero-1 {
+.storageu95mobsm .mobile-button-hero-1 {
   align-items: center;
   background-color: var(--log-cabin);
   border: 1px solid;
@@ -762,39 +773,49 @@
   position: relative;
 }
 
-.storchidu95mobsm .mobile-5 {
+.storageu95mobsm .learn-more-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.storageu95mobsm .mobile-5 {
   align-items: center;
 }
 
-.storchidu95mobsm .mobile-caption-section-5 {
+.storageu95mobsm .mobile-caption-section-5 {
   justify-content: center;
 }
 
-.storchidu95mobsm .discover-4 {
+.storageu95mobsm .discover-4 {
   text-align: center;
 }
 
-.storchidu95mobsm .mobile-headline-section-5 {
+.storageu95mobsm .mobile-headline-section-5 {
   align-items: flex-start;
+  align-self: stretch;
   gap: 10px;
   justify-content: center;
-  margin-left: -40.00px;
-  margin-right: -40.00px;
-  width: 360px;
+  width: 100%;
 }
 
-.storchidu95mobsm .the-orchid-ecosystem-5 {
+.storageu95mobsm .the-orchid-ecosystem-4 {
   color: var(--aquamarine);
   text-align: center;
 }
 
-.storchidu95mobsm .frame-476-3 {
+.storageu95mobsm .frame-476-3 {
   gap: 40px;
   margin-left: -27.50px;
   margin-right: -27.50px;
 }
 
-.storchidu95mobsm .logo-1 {
+.storageu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -804,12 +825,7 @@
   position: relative;
 }
 
-.storchidu95mobsm .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
-.storchidu95mobsm .x2023-orchid-4 {
+.storageu95mobsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -817,7 +833,7 @@
   width: 299px;
 }
 
-.storchidu95mobsm .x2023-orchid-5 {
+.storageu95mobsm .x2023-orchid-5 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -825,104 +841,92 @@
   position: relative;
 }
 
-.storchidu95mobsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
+.storageu95mobsm .frame-532-item-1 {
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
+  height: 22px;
+  margin-right: -21.00px;
   position: relative;
-  width: 100%;
+  width: 281px;
 }
 
-.storchidu95mobsm .x2023-orchid-6 {
+.storageu95mobsm .x2023-orchid-6 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
   font-weight: 700;
   line-height: 24px;
+  white-space: nowrap;
   width: 151px;
 }
 
-.storchidu95mobsm .x2023-orchid-7 {
+.storageu95mobsm .x2023-orchid-7 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
   font-weight: 700;
   line-height: 24px;
+  white-space: nowrap;
   width: 132px;
 }
 
-.storchidu95mobsm .link-1 {
+.storageu95mobsm .link-1 {
   cursor: pointer;
   display: flex;
   height: 22px;
+  margin-right: -21.00px;
   position: relative;
-  width: 198px;
+  width: 281px;
 }
 
-.storchidu95mobsm .apps-8 {
+.storageu95mobsm .apps-8 {
   width: 102px;
 }
 
-.storchidu95mobsm .apps-9 {
+.storageu95mobsm .apps-9 {
   width: 132px;
 }
 
-.storchidu95mobsm .apps-10 {
+.storageu95mobsm .apps-10 {
   cursor: pointer;
   width: 113px;
 }
 
-.storchidu95mobsm .apps-11 {
+.storageu95mobsm .apps-11 {
   width: 85px;
 }
 
-.storchidu95mobsm .apps-12 {
+.storageu95mobsm .apps-12 {
   width: 122px;
 }
 
-.storchidu95mobsm .apps-13 {
+.storageu95mobsm .apps-13 {
   width: 76px;
 }
 
-.storchidu95mobsm .apps-14 {
+.storageu95mobsm .apps-14 {
   width: 42px;
 }
 
-.storchidu95mobsm .apps-15 {
+.storageu95mobsm .apps-15 {
   width: 75px;
 }
 
-.storchidu95mobsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
-}
-
-.storchidu95mobsm .social-link-1 {
+.storageu95mobsm .social-link-1 {
   cursor: pointer;
   height: 32px;
   position: relative;
   width: 32px;
 }
 
-.storchidu95mobsm .apps {
+.storageu95mobsm .apps {
   color: var(--white);
   font-weight: 700;
   height: 24px;
   line-height: 24px;
+  white-space: nowrap;
 }
 
-.storchidu95mobsm .body {
+.storageu95mobsm .body {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -930,7 +934,7 @@
   position: relative;
 }
 
-.storchidu95mobsm .discover {
+.storageu95mobsm .discover {
   color: var(--white);
   font-weight: 600;
   line-height: 13.2px;
@@ -939,7 +943,7 @@
   width: fit-content;
 }
 
-.storchidu95mobsm .frame-476 {
+.storageu95mobsm .frame-476 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -948,7 +952,7 @@
   position: relative;
 }
 
-.storchidu95mobsm .mobile {
+.storageu95mobsm .mobile {
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
@@ -958,7 +962,7 @@
   width: 100%;
 }
 
-.storchidu95mobsm .mobile-caption-section {
+.storageu95mobsm .mobile-caption-section {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -968,13 +972,13 @@
   width: 100%;
 }
 
-.storchidu95mobsm .mobile-headline-section {
+.storageu95mobsm .mobile-headline-section {
   display: flex;
   flex: 0 0 auto;
   position: relative;
 }
 
-.storchidu95mobsm .the-orchid-ecosystem {
+.storageu95mobsm .the-orchid-ecosystem {
   flex: 1;
   font-weight: 600;
   line-height: 25.2px;
@@ -982,7 +986,7 @@
   position: relative;
 }
 
-.storchidu95mobsm .title {
+.storageu95mobsm .title {
   align-self: stretch;
   color: var(--aquamarine);
   font-weight: 600;
@@ -990,9 +994,9 @@
   margin-top: -1.00px;
   position: relative;
 }
-/* screen - storchidu95tabsm */
+/* screen - storageu95tabsm */
 
-.storchidu95tabsm {
+.storageu95tabsm {
   align-items: center;
   background-color: var(--woodsmoke);
   display: flex;
@@ -1002,7 +1006,7 @@
   position: relative;
 }
 
-.storchidu95tabsm .hero-image {
+.storageu95tabsm .hero-image {
   background-image: url(../img/storage-splash-1.png);
   background-size: 100% 100%;
   height: 389px;
@@ -1012,7 +1016,7 @@
   width: calc(100.00% + 84px);
 }
 
-.storchidu95tabsm .mobile-nav-header {
+.storageu95tabsm .mobile-nav-header {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1023,18 +1027,15 @@
   width: 100%;
 }
 
-.storchidu95tabsm .frame-403 {
+.storageu95tabsm .frame-403 {
   align-items: center;
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
   gap: 24px;
   padding: 80px 40px;
-  position: relative;
   width: 744px;
 }
 
-.storchidu95tabsm .decentralized-marketplace {
+.storageu95tabsm .decentralized-marketplace {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -1044,29 +1045,25 @@
   text-align: center;
 }
 
-.storchidu95tabsm .span {
-  color: var(--aquamarine);
+.storageu95tabsm .span {
+  letter-spacing: 0.32px;
 }
 
-.storchidu95tabsm .span-1 {
-  color: var(--white);
-}
-
-.storchidu95tabsm .line-10 {
+.storageu95tabsm .line-10 {
   align-self: stretch;
   width: 100%;
 }
 
-.storchidu95tabsm .storchid-is-a-new-op {
+.storageu95tabsm .orchids-new-open-so {
   align-self: stretch;
-  color: transparent;
+  color: var(--white);
   font-weight: 600;
   line-height: 25.2px;
   position: relative;
   text-align: center;
 }
 
-.storchidu95tabsm .storchidu95tabsm-item {
+.storageu95tabsm .storageu95tabsm-item {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1078,11 +1075,11 @@
   width: 100%;
 }
 
-.storchidu95tabsm .mobile {
+.storageu95tabsm .mobile {
   align-items: center;
 }
 
-.storchidu95tabsm .mobile-caption-section {
+.storageu95tabsm .mobile-caption-section {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1092,12 +1089,12 @@
   width: 100%;
 }
 
-.storchidu95tabsm .line {
+.storageu95tabsm .line {
   flex: 1;
   flex-grow: 1;
 }
 
-.storchidu95tabsm .mobile-headline-section {
+.storageu95tabsm .mobile-headline-section {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1107,7 +1104,7 @@
   width: 100%;
 }
 
-.storchidu95tabsm .the-orchid-ecosystem {
+.storageu95tabsm .the-orchid-ecosystem {
   color: transparent;
   flex: 1;
   font-weight: 600;
@@ -1116,7 +1113,15 @@
   position: relative;
 }
 
-.storchidu95tabsm .copy {
+.storageu95tabsm .span-1 {
+  color: var(--white);
+}
+
+.storageu95tabsm .span1 {
+  color: var(--aquamarine);
+}
+
+.storageu95tabsm .copy {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1127,7 +1132,7 @@
   width: 100%;
 }
 
-.storchidu95tabsm .title {
+.storageu95tabsm .title {
   align-self: stretch;
   color: var(--aquamarine);
   font-weight: 600;
@@ -1138,33 +1143,47 @@
   white-space: nowrap;
 }
 
-.storchidu95tabsm .body-1 {
+.storageu95tabsm .body-1 {
   margin-top: -1.00px;
 }
 
-.storchidu95tabsm .mobile-1 {
+.storageu95tabsm .mobile-1 {
   align-items: flex-end;
 }
 
-.storchidu95tabsm .mobile-caption-section-1 {
+.storageu95tabsm .mobile-caption-section-1 {
   justify-content: flex-end;
 }
 
-.storchidu95tabsm .discover-1 {
+.storageu95tabsm .discover-1 {
   text-align: right;
 }
 
-.storchidu95tabsm .mobile-headline-section-1 {
+.storageu95tabsm .mobile-headline-section-1 {
   align-items: center;
   justify-content: flex-end;
+  width: 360px;
 }
 
-.storchidu95tabsm .the-orchid-ecosystem-1 {
+.storageu95tabsm .the-orchid-ecosystem-1 {
   color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
   text-align: right;
 }
 
-.storchidu95tabsm .intro-copy {
+.storageu95tabsm .frame-478 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.storageu95tabsm .intro-copy {
   align-self: stretch;
   color: transparent;
   font-weight: 300;
@@ -1174,17 +1193,14 @@
   text-align: right;
 }
 
-.storchidu95tabsm .frame-476 {
+.storageu95tabsm .frame-476 {
   align-items: center;
   display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
   gap: 10px;
   padding: 60px 0px 0px;
-  position: relative;
 }
 
-.storchidu95tabsm .mobile-button-hero {
+.storageu95tabsm .mobile-button-hero {
   align-items: center;
   background-color: var(--log-cabin);
   border: 1px solid;
@@ -1198,45 +1214,43 @@
   position: relative;
 }
 
-.storchidu95tabsm .mobile-2 {
+.storageu95tabsm .mobile-2 {
   align-items: center;
 }
 
-.storchidu95tabsm .mobile-caption-section-2 {
+.storageu95tabsm .mobile-caption-section-2 {
   justify-content: center;
 }
 
-.storchidu95tabsm .frame-545 {
-  display: flex;
-  height: 13px;
-  justify-content: center;
-  position: relative;
-  width: 40px;
-}
-
-.storchidu95tabsm .get {
+.storageu95tabsm .get {
   color: var(--white);
   font-weight: 600;
-  height: 13px;
   line-height: 13.2px;
-  margin-left: -1px;
+  position: relative;
   text-align: center;
   white-space: nowrap;
-  width: 27px;
+  width: fit-content;
 }
 
-.storchidu95tabsm .mobile-headline-section-2 {
+.storageu95tabsm .mobile-headline-section-2 {
   align-items: flex-start;
+  align-self: stretch;
   gap: 10px;
   justify-content: center;
+  width: 100%;
 }
 
-.storchidu95tabsm .the-orchid-ecosystem-2 {
+.storageu95tabsm .involved {
   color: var(--aquamarine);
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
   text-align: center;
 }
 
-.storchidu95tabsm .frame-476-1 {
+.storageu95tabsm .frame-476-1 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1246,7 +1260,7 @@
   position: relative;
 }
 
-.storchidu95tabsm .logo {
+.storageu95tabsm .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1255,12 +1269,12 @@
   position: relative;
 }
 
-.storchidu95tabsm .desktop-home-logo {
+.storageu95tabsm .desktop-home-logo {
   height: 36px;
   position: relative;
 }
 
-.storchidu95tabsm .x2023-orchid {
+.storageu95tabsm .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1268,7 +1282,7 @@
   width: 299px;
 }
 
-.storchidu95tabsm .x2023-orchid-1 {
+.storageu95tabsm .x2023-orchid-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1276,7 +1290,7 @@
   position: relative;
 }
 
-.storchidu95tabsm .hyperlinks {
+.storageu95tabsm .hyperlinks {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1287,78 +1301,84 @@
   width: 100%;
 }
 
-.storchidu95tabsm .frame-532 {
+.storageu95tabsm .frame-532 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
   gap: 32px;
   padding: 24px 0px;
-  position: relative;
   width: 100%;
 }
 
-.storchidu95tabsm .x2023-orchid-2 {
+.storageu95tabsm .frame-532-item {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.storageu95tabsm .x2023-orchid-2 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
   font-weight: 700;
   line-height: 24px;
+  white-space: nowrap;
   width: 151px;
 }
 
-.storchidu95tabsm .x2023-orchid-3 {
+.storageu95tabsm .x2023-orchid-3 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
   font-weight: 700;
   line-height: 24px;
+  white-space: nowrap;
   width: 132px;
 }
 
-.storchidu95tabsm .link {
+.storageu95tabsm .link {
   cursor: pointer;
   display: flex;
   height: 22px;
   position: relative;
-  width: 198px;
+  width: 281px;
 }
 
-.storchidu95tabsm .apps {
+.storageu95tabsm .apps {
   width: 102px;
 }
 
-.storchidu95tabsm .apps-1 {
+.storageu95tabsm .apps-1 {
   width: 132px;
 }
 
-.storchidu95tabsm .apps-2 {
+.storageu95tabsm .apps-2 {
   cursor: pointer;
   width: 113px;
 }
 
-.storchidu95tabsm .apps-3 {
+.storageu95tabsm .apps-3 {
   width: 85px;
 }
 
-.storchidu95tabsm .apps-4 {
+.storageu95tabsm .apps-4 {
   width: 122px;
 }
 
-.storchidu95tabsm .apps-5 {
+.storageu95tabsm .apps-5 {
   width: 76px;
 }
 
-.storchidu95tabsm .apps-6 {
+.storageu95tabsm .apps-6 {
   width: 42px;
 }
 
-.storchidu95tabsm .apps-7 {
+.storageu95tabsm .apps-7 {
   width: 75px;
 }
 
-.storchidu95tabsm .social-icons {
+.storageu95tabsm .social-icons {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1371,26 +1391,27 @@
   width: 100%;
 }
 
-.storchidu95tabsm .social-link-github {
+.storageu95tabsm .social-link-github {
   height: 33px;
   margin-bottom: -1.00px;
 }
 
-.storchidu95tabsm .social-link-reddit {
+.storageu95tabsm .social-link-reddit {
   background-image: url(../img/combined-shape@2x.png);
   background-size: 100% 100%;
   border-radius: 40px;
   height: 32px;
 }
 
-.storchidu95tabsm .apps-8 {
+.storageu95tabsm .apps-8 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
   line-height: 24px;
+  white-space: nowrap;
 }
 
-.storchidu95tabsm .body-2 {
+.storageu95tabsm .body-2 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1398,22 +1419,19 @@
   position: relative;
 }
 
-.storchidu95tabsm .discover-2 {
-  color: var(--white);
-  font-weight: 600;
-  line-height: 13.2px;
+.storageu95tabsm .frame {
+  flex: 0 0 auto;
+  flex-direction: column;
   position: relative;
-  white-space: nowrap;
-  width: fit-content;
 }
 
-.storchidu95tabsm .line-1 {
+.storageu95tabsm .line-1 {
   height: 1px;
   object-fit: cover;
   position: relative;
 }
 
-.storchidu95tabsm .mobile-3 {
+.storageu95tabsm .mobile-3 {
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
@@ -1423,7 +1441,7 @@
   width: 100%;
 }
 
-.storchidu95tabsm .mobile-caption-section-3 {
+.storageu95tabsm .mobile-caption-section-3 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1433,14 +1451,13 @@
   width: 100%;
 }
 
-.storchidu95tabsm .mobile-headline-section-3 {
+.storageu95tabsm .mobile-headline-section-3 {
   display: flex;
   flex: 0 0 auto;
   position: relative;
-  width: 360px;
 }
 
-.storchidu95tabsm .nanopay-3 {
+.storageu95tabsm .nanopay-3 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1451,40 +1468,32 @@
   width: 100%;
 }
 
-.storchidu95tabsm .social-link-1 {
+.storageu95tabsm .social-link-1 {
   cursor: pointer;
   position: relative;
   width: 32px;
 }
-
-.storchidu95tabsm .the-orchid-ecosystem-3 {
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
-}
 @media screen and (max-width: 743px) {
-  .screen.storchidu95tabsm { 
+  .screen.storageu95tabsm { 
     display: none;
    }
-  .screen.storchid-all-breakpoints { 
+  .screen.storage-all-breakpoints { 
     display: none;
    }
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
-  .screen.storchidu95mobsm { 
+  .screen.storageu95mobsm { 
     display: none;
    }
-  .screen.storchid-all-breakpoints { 
+  .screen.storage-all-breakpoints { 
     display: none;
    }
 }
 @media screen and (min-width: 1440px) {
-  .screen.storchidu95tabsm { 
+  .screen.storageu95tabsm { 
     display: none;
    }
-  .screen.storchidu95mobsm { 
+  .screen.storageu95mobsm { 
     display: none;
    }
 }

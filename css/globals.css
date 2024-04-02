@@ -1,7 +1,7 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 @import url("https://fonts.googleapis.com/css?family=Figtree:400,600,300,800,500,700");
 /* The following line is used to measure usage of this code. You can remove it if you want. */
-/*@import url("https://px.animaapp.com/5e2a282a592dee7a2550cfd0.5ea6adb733c33a7ced6f8c4d.fO9Ui2A.hcp.png");*/
+@import url("https://px.animaapp.com/5e2a282a592dee7a2550cfd0.5ea6adb733c33a7ced6f8c4d.fO9Ui2A.hcp.png");
 
 
 
@@ -77,14 +77,6 @@
   box-sizing: border-box;
 }
 
-.close-icon {
-  cursor: pointer;
-  height: 24px;
-  margin-right: 32px;
-  margin-top: 32px;
-  width: 24px;
-}
-
 .orchid-icon {
   cursor: pointer;
   height: 24px;
@@ -143,17 +135,6 @@
   width: 100%;
 }
 
-.frame-478 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .mobilefooter {
   align-items: center;
   align-self: stretch;
@@ -179,25 +160,19 @@
   width: 100%;
 }
 
-.frame-532-item {
-  display: flex;
-  height: 22px;
-  position: relative;
-  width: 180px;
-}
-
-.dapp {
-  display: flex;
-  height: 22px;
-  position: relative;
-  width: 198px;
-}
-
 .social-link {
   cursor: pointer;
   height: 32px;
   position: relative;
   width: 32px;
+}
+
+.close-icon {
+  cursor: pointer;
+  height: 24px;
+  margin-right: 32px;
+  margin-top: 32px;
+  width: 24px;
 }
 
 .orchid-icon-1 {
@@ -212,17 +187,6 @@
   height: 24px;
   position: relative;
   width: 24px;
-}
-
-.learn-more-1 {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .accounts-1 {
@@ -293,6 +257,22 @@
   width: 100%;
 }
 
+.desktop-home-logo-1 {
+  height: 36px;
+  position: relative;
+}
+
+.hyperlinks-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
 .frame-532-1 {
   align-items: flex-start;
   align-self: stretch;
@@ -305,18 +285,17 @@
   width: 100%;
 }
 
-.frame-532-item-1 {
+.social-icons-1 {
+  align-items: flex-start;
+  align-self: stretch;
   display: flex;
-  height: 22px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
   position: relative;
-  width: 180px;
-}
-
-.dapp-1 {
-  display: flex;
-  height: 22px;
-  position: relative;
-  width: 198px;
+  width: 100%;
 }
 
 .social-link-github-1 {
@@ -335,33 +314,6 @@
   height: 32px;
   position: relative;
   width: 32px;
-}
-
-.cards-item-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  background-color: var(--black-2);
-  border: 1px solid;
-  border-color: var(--true-v);
-  border-radius: 16px;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  overflow: hidden;
-  padding: 24px 24px 40px;
-  position: relative;
-  width: 100%;
-}
-
-.line-8-1 {
-  align-self: stretch;
-  height: 1px;
-  margin-left: -0.50px;
-  margin-right: -0.50px;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
 }
 
 .desktop-header {
@@ -452,21 +404,6 @@
   width: 187px;
 }
 
-.google-play-badge-1 {
-  height: 56.3px;
-  width: 188px;
-}
-
-.apple-store {
-  background-image: url(../img/appstorebadge-2.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  cursor: pointer;
-  height: 56px;
-  position: relative;
-  width: 188px;
-}
-
 .contents {
   align-items: flex-start;
   align-self: stretch;
@@ -485,7 +422,7 @@
   width: 180px;
 }
 
-.dapp-2 {
+.dapp {
   display: flex;
   height: 22px;
   position: relative;
@@ -545,6 +482,37 @@
   width: 100%;
 }
 
+.features {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.line-8-1 {
+  align-self: stretch;
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.discover-2 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
 .ellipse-28 {
   background-color: var(--cod-gray);
   border-radius: 310px;
@@ -581,33 +549,6 @@
   border-radius: 306.5px;
   height: 613px;
   width: 613px;
-}
-
-.features-1 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  padding: 0px 24px;
-  position: relative;
-  width: 100%;
-}
-
-.desktop-home-logo-3 {
-  height: 36px;
-  position: relative;
-}
-
-.apps-16 {
-  width: 42px;
-}
-
-.span1-1 {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 16.5px;
 }
 
 .build-4 {

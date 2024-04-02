@@ -169,3 +169,91 @@
   font-weight: 700;
   letter-spacing: 0;
 }
+
+.figtree-semi-bold-white-40px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.figtree-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.figtree-semi-bold-aquamarine-40px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.figtree-bold-dull-lavender-20px {
+  color: var(--dull-lavender);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.figtree-medium-aquamarine-28px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.figtree-normal-aquamarine-20px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.figtree-extra-bold-aquamarine-40px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.figtree-extra-bold-white-40px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.figtree-extra-bold-white-60px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+.figtree-medium-white-28px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.figtree-extra-bold-aquamarine-60px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 800;
+}
