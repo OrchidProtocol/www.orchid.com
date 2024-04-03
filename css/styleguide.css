@@ -202,20 +202,20 @@
   font-weight: 700;
 }
 
-.figtree-medium-aquamarine-28px {
-  color: var(--aquamarine);
-  font-family: var(--font-family-figtree);
-  font-size: var(--font-size-xxxl);
-  font-style: normal;
-  font-weight: 500;
-}
-
 .figtree-normal-aquamarine-20px {
   color: var(--aquamarine);
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 400;
+}
+
+.figtree-medium-aquamarine-28px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 500;
 }
 
 .figtree-extra-bold-aquamarine-40px {

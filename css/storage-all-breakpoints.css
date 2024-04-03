@@ -366,6 +366,15 @@
   position: relative;
 }
 
+.storage-all-breakpoints .learn-more-2 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
 .storage-all-breakpoints .cta {
   align-items: center;
   align-self: stretch;
@@ -508,14 +517,6 @@
   gap: 40px 24px;
   justify-content: flex-end;
   position: relative;
-}
-
-.storage-all-breakpoints .social-link-github-2 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
-  width: 32px;
 }
 
 .storage-all-breakpoints .apps {
@@ -698,9 +699,31 @@
   width: 100%;
 }
 
+.storageu95mobsm .accounts-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
 .storageu95mobsm .title-1 {
   height: 18px;
   white-space: nowrap;
+}
+
+.storageu95mobsm .directory-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
 }
 
 .storageu95mobsm .body-3 {
@@ -815,6 +838,17 @@
   margin-right: -27.50px;
 }
 
+.storageu95mobsm .content-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .storageu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
@@ -822,6 +856,11 @@
   flex-direction: column;
   gap: 12px;
   margin-right: -39.00px;
+  position: relative;
+}
+
+.storageu95mobsm .desktop-home-logo-1 {
+  height: 36px;
   position: relative;
 }
 
@@ -839,6 +878,17 @@
   font-weight: 300;
   line-height: 19.6px;
   position: relative;
+}
+
+.storageu95mobsm .hyperlinks-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
 }
 
 .storageu95mobsm .frame-532-item-1 {
@@ -911,9 +961,30 @@
   width: 75px;
 }
 
+.storageu95mobsm .social-icons-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
 .storageu95mobsm .social-link-1 {
   cursor: pointer;
   height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.storageu95mobsm .social-link-github-1 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }
