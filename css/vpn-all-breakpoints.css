@@ -850,8 +850,12 @@
 }
 
 .vpnu95mobsm .mobile-nav-header-1 {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
   height: 88px;
+  justify-content: space-between;
+  padding: 32px;
   position: relative;
   width: 100%;
 }
@@ -874,14 +878,14 @@
 }
 
 .vpnu95mobsm .vpn-screens {
-  height: 523px;
-  margin-bottom: -169.00px;
-  margin-left: -165.00px;
-  margin-right: -165.00px;
-  margin-top: -161.00px;
+  height: 365px;
+  margin-bottom: -90.00px;
+  margin-left: -86.00px;
+  margin-right: -86.00px;
+  margin-top: -82.00px;
   object-fit: cover;
   position: relative;
-  width: 580px;
+  width: 422px;
 }
 
 .vpnu95mobsm .hero-copy {
@@ -1423,8 +1427,12 @@
 }
 
 .vpnu95tabsm .mobile-nav-header {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
   height: 88px;
+  justify-content: space-between;
+  padding: 32px;
   position: relative;
   width: 100%;
 }
@@ -1434,7 +1442,8 @@
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
-  justify-content: space-between;
+  gap: 40px;
+  justify-content: center;
   padding: 0px 60px;
   position: relative;
   width: 100%;
@@ -1446,6 +1455,7 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 10px;
+  margin-left: -9.00px;
   position: relative;
 }
 
@@ -1461,6 +1471,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  margin-right: -9.00px;
   padding: 0px 40px;
   position: relative;
   width: 362px;
