@@ -571,11 +571,6 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
 .oxt-all-breakpoints .x2023-orchid-1 {
   color: var(--white);
   font-weight: 300;
@@ -849,6 +844,7 @@
 .oxtu95mobsm .intro-copy-14 {
   align-self: stretch;
   color: transparent;
+  cursor: pointer;
   font-weight: 400;
   line-height: 15px;
   position: relative;
@@ -1026,17 +1022,6 @@
   width: 696px;
 }
 
-.oxtu95mobsm .content-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .oxtu95mobsm .logo-2 {
   align-items: flex-start;
   display: inline-flex;
@@ -1044,6 +1029,11 @@
   flex-direction: column;
   gap: 12px;
   margin-right: -39.00px;
+  position: relative;
+}
+
+.oxtu95mobsm .desktop-home-logo-3 {
+  height: 36px;
   position: relative;
 }
 
@@ -1133,6 +1123,10 @@
   width: 76px;
 }
 
+.oxtu95mobsm .apps-16 {
+  width: 42px;
+}
+
 .oxtu95mobsm .apps-17 {
   width: 75px;
 }
@@ -1148,6 +1142,14 @@
   padding: 24px 0px 0px;
   position: relative;
   width: 100%;
+}
+
+.oxtu95mobsm .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
 }
 
 .oxtu95mobsm .about-orchid {
@@ -1334,6 +1336,7 @@
 .oxtu95tabsm .intro-copy-9 {
   align-self: stretch;
   color: transparent;
+  cursor: pointer;
   font-weight: 400;
   line-height: 15px;
   position: relative;
@@ -1524,17 +1527,6 @@
   position: relative;
 }
 
-.oxtu95tabsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
 .oxtu95tabsm .frame-532 {
   align-items: flex-start;
   align-self: stretch;
@@ -1610,30 +1602,9 @@
   width: 75px;
 }
 
-.oxtu95tabsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
-}
-
 .oxtu95tabsm .social-link-1 {
   cursor: pointer;
   height: 32px;
-  position: relative;
-  width: 32px;
-}
-
-.oxtu95tabsm .social-link-github-1 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }

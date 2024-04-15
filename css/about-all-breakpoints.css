@@ -563,6 +563,14 @@
   position: relative;
 }
 
+.about-all-breakpoints .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
+}
+
 .about-all-breakpoints .apps {
   color: var(--white);
   font-weight: 700;
@@ -1477,28 +1485,12 @@
   justify-content: flex-end;
 }
 
-.aboutu95tabsm .content-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .aboutu95tabsm .logo-3 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 12px;
-  position: relative;
-}
-
-.aboutu95tabsm .desktop-home-logo-1 {
-  height: 36px;
   position: relative;
 }
 
@@ -1516,17 +1508,6 @@
   font-weight: 300;
   line-height: 19.6px;
   position: relative;
-}
-
-.aboutu95tabsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
 }
 
 .aboutu95tabsm .frame-532-item-1 {
@@ -1597,30 +1578,9 @@
   width: 75px;
 }
 
-.aboutu95tabsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
-}
-
 .aboutu95tabsm .social-link-1 {
   cursor: pointer;
   height: 32px;
-  position: relative;
-  width: 32px;
-}
-
-.aboutu95tabsm .social-link-github-1 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }

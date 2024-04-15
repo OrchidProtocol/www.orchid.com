@@ -752,6 +752,14 @@
   position: relative;
 }
 
+.vpn-all-breakpoints .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
+}
+
 .vpn-all-breakpoints .apple-store {
   cursor: pointer;
   position: relative;
@@ -1200,17 +1208,6 @@
   background-size: 100% 100%;
 }
 
-.vpnu95mobsm .content-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .vpnu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
@@ -1218,11 +1215,6 @@
   flex-direction: column;
   gap: 12px;
   margin-right: -39.00px;
-  position: relative;
-}
-
-.vpnu95mobsm .desktop-home-logo-1 {
-  height: 36px;
   position: relative;
 }
 
@@ -1240,17 +1232,6 @@
   font-weight: 300;
   line-height: 19.6px;
   position: relative;
-}
-
-.vpnu95mobsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
 }
 
 .vpnu95mobsm .frame-532-item-1 {
@@ -1323,30 +1304,9 @@
   width: 75px;
 }
 
-.vpnu95mobsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
-}
-
 .vpnu95mobsm .social-link-1 {
   cursor: pointer;
   height: 32px;
-  position: relative;
-  width: 32px;
-}
-
-.vpnu95mobsm .social-link-github-1 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }
@@ -1876,14 +1836,6 @@
   width: 739px;
 }
 
-.vpnu95tabsm .google-play-1 {
-  cursor: pointer;
-  display: flex;
-  height: 56px;
-  position: relative;
-  width: 187px;
-}
-
 .vpnu95tabsm .google-play-badge {
   height: 56.3px;
   width: 188px;
@@ -2069,6 +2021,15 @@
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
+}
+
+.vpnu95tabsm .discover-2 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .vpnu95tabsm .link-2 {
