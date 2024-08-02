@@ -65,6 +65,14 @@
   width: 975px;
 }
 
+.vpn-all-breakpoints .ellipse-34 {
+  align-self: flex-end;
+  background-color: var(--black-2);
+  border-radius: 306.5px;
+  height: 613px;
+  width: 613px;
+}
+
 .vpn-all-breakpoints .ellipse-33 {
   align-self: center;
   background-color: var(--black-2);
@@ -95,7 +103,7 @@
   width: 380px;
 }
 
-.vpn-all-breakpoints .desktop-home-logo-2 {
+.vpn-all-breakpoints .desktop-home-logo-1 {
   cursor: pointer;
   flex: 0 0 auto;
 }
@@ -167,7 +175,7 @@
   width: 196px;
 }
 
-.vpn-all-breakpoints .hero-2 {
+.vpn-all-breakpoints .hero-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -179,7 +187,7 @@
   width: 100%;
 }
 
-.vpn-all-breakpoints .frame-481-1 {
+.vpn-all-breakpoints .frame-481 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -189,14 +197,14 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .composition_-generic_2-1-1 {
+.vpn-all-breakpoints .composition_-generic_2-1 {
   height: 354px;
   object-fit: cover;
   position: relative;
   width: 459px;
 }
 
-.vpn-all-breakpoints .frame-403-1 {
+.vpn-all-breakpoints .frame-403 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -205,7 +213,7 @@
   width: 481px;
 }
 
-.vpn-all-breakpoints .unblock-your-internet-2 {
+.vpn-all-breakpoints .unblock-your-internet-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -214,11 +222,11 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .span-4 {
+.vpn-all-breakpoints .span-2 {
   letter-spacing: 0.72px;
 }
 
-.vpn-all-breakpoints .with-orchids-decent-2 {
+.vpn-all-breakpoints .with-orchids-decent-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -226,28 +234,31 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .span-5 {
+.vpn-all-breakpoints .span-3 {
   letter-spacing: 0.32px;
 }
 
-.vpn-all-breakpoints .frame-380-1 {
+.vpn-all-breakpoints .frame-380 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
   gap: 40px;
+  position: relative;
   width: 481px;
 }
 
-.vpn-all-breakpoints .google-play-4 {
+.vpn-all-breakpoints .google-play-2 {
+  cursor: pointer;
   display: flex;
   height: 56px;
+  position: relative;
   width: 187px;
 }
 
-.vpn-all-breakpoints .google-play-badge-2 {
-  height: 56.3px;
-  width: 188px;
-}
-
-.vpn-all-breakpoints .apple-store-1 {
+.vpn-all-breakpoints .apple-store {
+  cursor: pointer;
   height: 56px;
+  position: relative;
   width: 188px;
 }
 
@@ -300,11 +311,9 @@
   width: fit-content;
 }
 
-.vpn-all-breakpoints .line-2 {
+.vpn-all-breakpoints .line-1 {
   flex: 1;
   flex-grow: 1;
-  height: 1px;
-  object-fit: cover;
   position: relative;
 }
 
@@ -337,7 +346,7 @@
   width: 1180px;
 }
 
-.vpn-all-breakpoints .intro-copy-10 {
+.vpn-all-breakpoints .intro-copy-5 {
   color: var(--white);
   flex: 1;
   font-weight: 400;
@@ -346,7 +355,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .cards-5 {
+.vpn-all-breakpoints .cards-2 {
   align-items: center;
   align-self: stretch;
   flex-direction: column;
@@ -356,15 +365,14 @@
   width: 100%;
 }
 
-.vpn-all-breakpoints .cards-item-5 {
-  align-items: center;
+.vpn-all-breakpoints .cards-item-1 {
   align-self: stretch;
   display: flex;
   padding: 0px 0px 0px 60px;
   width: 100%;
 }
 
-.vpn-all-breakpoints .intro-copy-11 {
+.vpn-all-breakpoints .intro-copy-6 {
   color: var(--white);
   flex: 1;
   font-weight: 500;
@@ -372,7 +380,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .line-8-4 {
+.vpn-all-breakpoints .line-8-2 {
   margin-bottom: -2.00px;
   margin-top: -2.00px;
   width: 4px;
@@ -386,11 +394,11 @@
   width: 120px;
 }
 
-.vpn-all-breakpoints .frame-518-3 {
+.vpn-all-breakpoints .frame-518-2 {
   justify-content: center;
 }
 
-.vpn-all-breakpoints .features-1 {
+.vpn-all-breakpoints .features {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -467,7 +475,7 @@
   width: 1280px;
 }
 
-.vpn-all-breakpoints .cards-6 {
+.vpn-all-breakpoints .cards-3 {
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: wrap;
@@ -476,8 +484,7 @@
   width: 100%;
 }
 
-.vpn-all-breakpoints .cards-item-6 {
-  align-items: center;
+.vpn-all-breakpoints .cards-item-2 {
   background-color: var(--log-cabin);
   border-radius: 16px;
   display: inline-flex;
@@ -487,9 +494,7 @@
   padding: 60px 40px;
 }
 
-.vpn-all-breakpoints .icon-2 {
-  height: 120px;
-  position: relative;
+.vpn-all-breakpoints .icon-1 {
   width: 120px;
 }
 
@@ -503,7 +508,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .title-2 {
+.vpn-all-breakpoints .title-1 {
   color: var(--white);
   font-weight: 500;
   line-height: 34.7px;
@@ -513,7 +518,7 @@
   width: 280px;
 }
 
-.vpn-all-breakpoints .body-4 {
+.vpn-all-breakpoints .body-2 {
   color: var(--white);
   font-weight: 400;
   height: 140px;
@@ -522,7 +527,7 @@
   width: 280px;
 }
 
-.vpn-all-breakpoints .intro-copy-12 {
+.vpn-all-breakpoints .intro-copy-7 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: var(--dull-lavender-2);
@@ -538,15 +543,11 @@
   width: fit-content;
 }
 
-.vpn-all-breakpoints .icon-traffic-1 {
-  height: 120px;
-  position: relative;
+.vpn-all-breakpoints .icon-traffic {
   width: 151.48px;
 }
 
-.vpn-all-breakpoints .icon-payments-1 {
-  height: 120px;
-  position: relative;
+.vpn-all-breakpoints .icon-payments {
   width: 113.82px;
 }
 
@@ -566,16 +567,14 @@
   height: 56px;
 }
 
-.vpn-all-breakpoints .line-2-1 {
-  height: 1px;
+.vpn-all-breakpoints .line-2 {
   left: 0;
-  object-fit: cover;
   position: absolute;
   top: 56px;
   width: 1280px;
 }
 
-.vpn-all-breakpoints .title-3 {
+.vpn-all-breakpoints .title-2 {
   color: transparent;
   font-weight: 600;
   height: 32px;
@@ -587,45 +586,63 @@
   width: 1280px;
 }
 
-.vpn-all-breakpoints .cards-7 {
+.vpn-all-breakpoints .cards-4 {
   align-items: center;
   flex-direction: column;
   gap: 24px;
   width: 1280px;
 }
 
-.vpn-all-breakpoints .cards-item-7 {
-  align-items: flex-start;
+.vpn-all-breakpoints .info-card-1 {
+  align-items: center;
   align-self: stretch;
   background-color: var(--black-2);
   border: 1px solid;
   border-color: var(--true-v);
   border-radius: 16px;
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   gap: 16px;
   overflow: hidden;
   padding: 24px 40px 40px;
+  position: relative;
   width: 100%;
 }
 
-.vpn-all-breakpoints .intro-copy-13 {
+.vpn-all-breakpoints .frame-55 {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.vpn-all-breakpoints .intro-copy-8 {
   color: var(--white);
+  flex: 1;
   font-weight: 500;
   line-height: 34.7px;
   margin-top: -1.00px;
   position: relative;
 }
 
-.vpn-all-breakpoints .line-8-5 {
+.vpn-all-breakpoints .menu-icon-3 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.vpn-all-breakpoints .line-8-3 {
   height: 2px;
   margin-left: -1.00px;
   margin-right: -1.00px;
   width: 100%;
 }
 
-.vpn-all-breakpoints .intro-copy-14 {
+.vpn-all-breakpoints .intro-copy-9 {
   align-self: stretch;
   color: var(--white);
   font-weight: 400;
@@ -633,7 +650,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .intro-copy-15 {
+.vpn-all-breakpoints .intro-copy-10 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;
@@ -647,25 +664,33 @@
   text-overflow: ellipsis;
 }
 
-.vpn-all-breakpoints .frame-380-2 {
+.vpn-all-breakpoints .frame-380-1 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
   gap: 80px;
   justify-content: center;
   padding: 120px 0px 0px;
+  position: relative;
   width: 739px;
 }
 
-.vpn-all-breakpoints .google-play-5 {
+.vpn-all-breakpoints .google-play-3 {
   background-image: url(../img/google-play-badge-2@2x.png);
   background-size: 100% 100%;
+  cursor: pointer;
   height: 88px;
+  position: relative;
   width: 295px;
 }
 
-.vpn-all-breakpoints .apple-store-2 {
+.vpn-all-breakpoints .apple-store-1 {
   background-image: url(../img/appstorebadge-2.png);
   background-position: 50% 50%;
   background-size: cover;
+  cursor: pointer;
   height: 88px;
+  position: relative;
   width: 295px;
 }
 
@@ -683,7 +708,7 @@
   width: 100%;
 }
 
-.vpn-all-breakpoints .logo-2 {
+.vpn-all-breakpoints .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -692,7 +717,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .x2023-orchid-9 {
+.vpn-all-breakpoints .x2023-orchid-3 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -700,7 +725,7 @@
   width: 676px;
 }
 
-.vpn-all-breakpoints .hyperlinks-2 {
+.vpn-all-breakpoints .hyperlinks-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -721,7 +746,14 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .x2023-orchid-8 {
+.vpn-all-breakpoints .pp {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 180px;
+}
+
+.vpn-all-breakpoints .x2023-orchid-4 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -730,11 +762,27 @@
   width: 180px;
 }
 
-.vpn-all-breakpoints .apps-17 {
+.vpn-all-breakpoints .pp-1 {
+  display: flex;
+  height: 44px;
+  position: relative;
+  width: 208px;
+}
+
+.vpn-all-breakpoints .x2023-orchid-5 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 208px;
+}
+
+.vpn-all-breakpoints .apps-9 {
   cursor: pointer;
 }
 
-.vpn-all-breakpoints .link-3 {
+.vpn-all-breakpoints .link-1 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -742,27 +790,21 @@
   width: 198px;
 }
 
-.vpn-all-breakpoints .social-icons-2 {
+.vpn-all-breakpoints .social-icons-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   flex-wrap: wrap;
-  gap: 40px 24px;
+  gap: 24px 40px;
   justify-content: flex-end;
   position: relative;
 }
 
-.vpn-all-breakpoints .social-link-github-2 {
+.vpn-all-breakpoints .social-link-1 {
   cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
+  height: 32px;
   position: relative;
   width: 32px;
-}
-
-.vpn-all-breakpoints .apple-store {
-  cursor: pointer;
-  position: relative;
 }
 
 .vpn-all-breakpoints .apps {
@@ -780,6 +822,7 @@
 }
 
 .vpn-all-breakpoints .cards-item {
+  align-items: center;
   flex: 0 0 auto;
   position: relative;
 }
@@ -806,13 +849,6 @@
   display: flex;
 }
 
-.vpn-all-breakpoints .frame-380 {
-  align-items: center;
-  display: flex;
-  flex: 0 0 auto;
-  position: relative;
-}
-
 .vpn-all-breakpoints .frame-518 {
   align-items: center;
   background-color: var(--black-2);
@@ -828,9 +864,14 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .google-play {
-  cursor: pointer;
+.vpn-all-breakpoints .icon {
+  height: 120px;
   position: relative;
+}
+
+.vpn-all-breakpoints .line {
+  height: 1px;
+  object-fit: cover;
 }
 
 .vpn-all-breakpoints .line-8 {
@@ -849,7 +890,7 @@
   position: relative;
 }
 
-.vpnu95mobsm .mobile-nav-header-1 {
+.vpnu95mobsm .mobile-nav-header {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -860,7 +901,7 @@
   width: 100%;
 }
 
-.vpnu95mobsm .hero-1 {
+.vpnu95mobsm .hero {
   align-self: stretch;
   padding: 0px 60px;
   width: 100%;
@@ -895,7 +936,7 @@
   width: 362px;
 }
 
-.vpnu95mobsm .unblock-your-internet-1 {
+.vpnu95mobsm .unblock-your-internet {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -905,11 +946,11 @@
   text-align: center;
 }
 
-.vpnu95mobsm .span-2 {
+.vpnu95mobsm .span {
   letter-spacing: 0.32px;
 }
 
-.vpnu95mobsm .with-orchids-decent-1 {
+.vpnu95mobsm .with-orchids-decent {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -918,35 +959,38 @@
   text-align: center;
 }
 
-.vpnu95mobsm .span-3 {
+.vpnu95mobsm .span-1 {
   color: var(--white);
 }
 
-.vpnu95mobsm .span1-1 {
+.vpnu95mobsm .span1 {
   color: var(--aquamarine);
 }
 
-.vpnu95mobsm .download-links-1 {
+.vpnu95mobsm .download-links {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
   margin-left: -20.00px;
   margin-right: -20.00px;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 322px;
 }
 
-.vpnu95mobsm .app-store-1 {
-  background-image: url(../img/appstorebadge-2.png);
-  background-position: 50% 50%;
-  background-size: cover;
+.vpnu95mobsm .google-play {
   cursor: pointer;
+  display: flex;
   height: 42px;
+  justify-content: center;
   position: relative;
   width: 144px;
 }
 
-.vpnu95mobsm .google-play-2 {
-  display: flex;
-  justify-content: center;
-}
-
-.vpnu95mobsm .google-play-badge-1-1 {
+.vpnu95mobsm .google-play-badge-1 {
   height: 42px;
   margin-left: 1px;
   width: 143px;
@@ -964,7 +1008,7 @@
   width: 100%;
 }
 
-.vpnu95mobsm .mobile-1 {
+.vpnu95mobsm .mobile {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -975,7 +1019,17 @@
   width: 100%;
 }
 
-.vpnu95mobsm .line-1 {
+.vpnu95mobsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.vpnu95mobsm .line {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -983,14 +1037,26 @@
   position: relative;
 }
 
-.vpnu95mobsm .mobile-headline-section-2 {
+.vpnu95mobsm .mobile-headline-section {
   align-items: flex-start;
   align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
   justify-content: space-around;
+  position: relative;
   width: 100%;
 }
 
-.vpnu95mobsm .copy-1 {
+.vpnu95mobsm .the-orchid-ecosystem {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.vpnu95mobsm .copy {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1001,7 +1067,7 @@
   width: 100%;
 }
 
-.vpnu95mobsm .body-3 {
+.vpnu95mobsm .body-1 {
   margin-top: -1.00px;
 }
 
@@ -1015,25 +1081,19 @@
   width: 100%;
 }
 
-.vpnu95mobsm .frame-518-1 {
-  align-items: flex-start;
-  align-self: stretch;
+.vpnu95mobsm .frame-518 {
   background-color: var(--black-2);
   border: 1px solid;
   border-color: var(--true-v);
   border-radius: 16px;
-  display: flex;
-  flex: 0 0 auto;
   flex-direction: column;
   gap: 16px;
   justify-content: center;
   overflow: hidden;
   padding: 24px;
-  position: relative;
-  width: 100%;
 }
 
-.vpnu95mobsm .intro-copy-5 {
+.vpnu95mobsm .intro-copy {
   color: var(--white);
   font-weight: 600;
   line-height: 19.8px;
@@ -1042,13 +1102,16 @@
   width: 200px;
 }
 
-.vpnu95mobsm .line-8-2 {
+.vpnu95mobsm .line-8 {
+  align-self: stretch;
   height: 2px;
   margin-left: -1.00px;
   margin-right: -1.00px;
+  position: relative;
+  width: 100%;
 }
 
-.vpnu95mobsm .intro-copy-6 {
+.vpnu95mobsm .intro-copy-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1056,48 +1119,66 @@
   position: relative;
 }
 
-.vpnu95mobsm .mobile-caption-section-3 {
+.vpnu95mobsm .mobile-caption-section-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
-.vpnu95mobsm .discover-3 {
+.vpnu95mobsm .discover-1 {
   text-align: center;
 }
 
-.vpnu95mobsm .mobile-headline-section-3 {
+.vpnu95mobsm .mobile-headline-section-1 {
   align-items: flex-start;
-  gap: 10px;
   justify-content: center;
   margin-left: -24.00px;
   margin-right: -24.00px;
   width: 360px;
 }
 
-.vpnu95mobsm .the-orchid-ecosystem-3 {
+.vpnu95mobsm .the-orchid-ecosystem-1 {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
   text-align: center;
 }
 
-.vpnu95mobsm .cards-3 {
+.vpnu95mobsm .cards {
   align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
   flex-wrap: wrap;
   gap: 16px 16px;
   justify-content: center;
+  width: 100%;
 }
 
-.vpnu95mobsm .cards-item-3 {
+.vpnu95mobsm .cards-item {
   align-items: center;
   background-color: var(--log-cabin);
+  border-radius: 16px;
+  flex-direction: column;
+  gap: 16px;
   padding: 32px 24px 40px;
   width: 312px;
 }
 
-.vpnu95mobsm .icon-1 {
+.vpnu95mobsm .icon {
   height: 40px;
   position: relative;
   width: 40px;
 }
 
-.vpnu95mobsm .title-1 {
+.vpnu95mobsm .title {
   align-self: stretch;
   color: var(--white);
   font-weight: 600;
@@ -1106,11 +1187,11 @@
   text-align: center;
 }
 
-.vpnu95mobsm .body-2 {
+.vpnu95mobsm .body {
   text-align: center;
 }
 
-.vpnu95mobsm .intro-copy-7 {
+.vpnu95mobsm .intro-copy-2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: var(--dull-lavender-2);
@@ -1137,11 +1218,10 @@
   width: 41px;
 }
 
-.vpnu95mobsm .mobile-headline-section-4 {
+.vpnu95mobsm .mobile-headline-section-2 {
   align-items: center;
   align-self: stretch;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
 }
 
@@ -1154,41 +1234,52 @@
   position: relative;
 }
 
-.vpnu95mobsm .cards-4 {
+.vpnu95mobsm .cards-1 {
   align-items: center;
+  align-self: stretch;
+  flex: 0 0 auto;
   flex-direction: column;
   gap: 16px;
+  width: 100%;
 }
 
-.vpnu95mobsm .cards-item-4 {
+.vpnu95mobsm .info-card {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--black-2);
   border: 1px solid;
   border-color: var(--true-v);
+  border-radius: 16px;
+  display: flex;
   flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
   overflow: hidden;
   padding: 24px 24px 40px;
+  position: relative;
   width: 100%;
 }
 
-.vpnu95mobsm .intro-copy-8 {
-  align-self: stretch;
+.vpnu95mobsm .frame-56 {
+  gap: 16px;
+}
+
+.vpnu95mobsm .intro-copy-3 {
   color: var(--white);
+  flex: 1;
   font-weight: 600;
   line-height: 19.8px;
   margin-top: -1.00px;
   position: relative;
 }
 
-.vpnu95mobsm .line-8-3 {
-  height: 1px;
-  margin-left: -0.50px;
-  margin-right: -0.50px;
-  object-fit: cover;
+.vpnu95mobsm .menu-icon {
+  height: 24px;
+  position: relative;
+  width: 24px;
 }
 
-.vpnu95mobsm .intro-copy-9 {
+.vpnu95mobsm .intro-copy-4 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;
@@ -1202,17 +1293,32 @@
   text-overflow: ellipsis;
 }
 
-.vpnu95mobsm .download-links-2 {
+.vpnu95mobsm .download-links-1 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
   margin-left: -5.00px;
   margin-right: -5.00px;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 322px;
 }
 
-.vpnu95mobsm .google-play-3 {
-  background-image: url(../img/google-play-badge-2@2x.png);
-  background-size: 100% 100%;
+.vpnu95mobsm .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
 }
 
-.vpnu95mobsm .logo-1 {
+.vpnu95mobsm .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1222,7 +1328,12 @@
   position: relative;
 }
 
-.vpnu95mobsm .x2023-orchid-4 {
+.vpnu95mobsm .desktop-home-logo {
+  height: 36px;
+  position: relative;
+}
+
+.vpnu95mobsm .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1230,7 +1341,7 @@
   width: 299px;
 }
 
-.vpnu95mobsm .x2023-orchid-5 {
+.vpnu95mobsm .x2023-orchid-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1238,7 +1349,24 @@
   position: relative;
 }
 
-.vpnu95mobsm .frame-532-item-1 {
+.vpnu95mobsm .hyperlinks {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.vpnu95mobsm .frame-532 {
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 0px;
+}
+
+.vpnu95mobsm .frame-532-item {
   display: flex;
   height: 22px;
   margin-right: -21.00px;
@@ -1246,17 +1374,7 @@
   width: 281px;
 }
 
-.vpnu95mobsm .x2023-orchid-6 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 151px;
-}
-
-.vpnu95mobsm .x2023-orchid-7 {
+.vpnu95mobsm .x2023-orchid-2 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1266,7 +1384,7 @@
   width: 132px;
 }
 
-.vpnu95mobsm .link-2 {
+.vpnu95mobsm .link {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -1275,47 +1393,65 @@
   width: 281px;
 }
 
-.vpnu95mobsm .apps-8 {
+.vpnu95mobsm .apps {
   width: 102px;
 }
 
-.vpnu95mobsm .apps-9 {
+.vpnu95mobsm .apps-1 {
   width: 132px;
 }
 
-.vpnu95mobsm .apps-10 {
+.vpnu95mobsm .apps-2 {
   cursor: pointer;
   width: 113px;
 }
 
-.vpnu95mobsm .apps-11 {
+.vpnu95mobsm .apps-3 {
   width: 85px;
 }
 
-.vpnu95mobsm .apps-12 {
+.vpnu95mobsm .apps-4 {
   width: 122px;
 }
 
-.vpnu95mobsm .apps-13 {
+.vpnu95mobsm .apps-5 {
   width: 76px;
 }
 
-.vpnu95mobsm .apps-14 {
+.vpnu95mobsm .apps-6 {
   width: 42px;
 }
 
-.vpnu95mobsm .apps-15 {
+.vpnu95mobsm .apps-7 {
   width: 75px;
 }
 
-.vpnu95mobsm .social-link-1 {
-  cursor: pointer;
-  height: 32px;
+.vpnu95mobsm .social-icons {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
   position: relative;
-  width: 32px;
+  width: 100%;
 }
 
-.vpnu95mobsm .apps {
+.vpnu95mobsm .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
+}
+
+.vpnu95mobsm .social-link-reddit {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  height: 32px;
+}
+
+.vpnu95mobsm .apps-8 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -1323,7 +1459,7 @@
   white-space: nowrap;
 }
 
-.vpnu95mobsm .body {
+.vpnu95mobsm .body-2 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1331,23 +1467,12 @@
   position: relative;
 }
 
-.vpnu95mobsm .cards {
-  align-self: stretch;
+.vpnu95mobsm .cards-2 {
   display: flex;
-  flex: 0 0 auto;
-  position: relative;
-  width: 100%;
-}
-
-.vpnu95mobsm .cards-item {
-  border-radius: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
   position: relative;
 }
 
-.vpnu95mobsm .discover {
+.vpnu95mobsm .discover-2 {
   color: var(--white);
   font-weight: 600;
   line-height: 13.2px;
@@ -1356,63 +1481,41 @@
   width: fit-content;
 }
 
-.vpnu95mobsm .download-links {
+.vpnu95mobsm .frame {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.vpnu95mobsm .hero-1 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
-  justify-content: center;
-  padding: 24px 0px 0px;
   position: relative;
-  width: 322px;
 }
 
-.vpnu95mobsm .google-play {
+.vpnu95mobsm .menu-icon-3 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.vpnu95mobsm .mobile-headline-section-3 {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  position: relative;
+}
+
+.vpnu95mobsm .social-link-1 {
   cursor: pointer;
-  height: 42px;
   position: relative;
-  width: 144px;
-}
-
-.vpnu95mobsm .hero {
-  align-items: center;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-}
-
-.vpnu95mobsm .line-8 {
-  align-self: stretch;
-  position: relative;
-  width: 100%;
-}
-
-.vpnu95mobsm .mobile-caption-section {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.vpnu95mobsm .mobile-headline-section {
-  display: flex;
-  flex: 0 0 auto;
-  position: relative;
-}
-
-.vpnu95mobsm .the-orchid-ecosystem {
-  color: transparent;
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
+  width: 32px;
 }
 /* screen - vpnu95tabsm */
 
@@ -1426,7 +1529,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .mobile-nav-header {
+.vpnu95tabsm .mobile-nav-header-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1437,7 +1540,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .hero {
+.vpnu95tabsm .hero-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1449,7 +1552,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .frame-481 {
+.vpnu95tabsm .frame-481-1 {
   align-items: flex-end;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1459,14 +1562,14 @@
   position: relative;
 }
 
-.vpnu95tabsm .composition_-generic_2-1 {
+.vpnu95tabsm .composition_-generic_2-1-1 {
   height: 186px;
   object-fit: cover;
   position: relative;
   width: 240px;
 }
 
-.vpnu95tabsm .frame-403 {
+.vpnu95tabsm .frame-403-1 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -1477,7 +1580,7 @@
   width: 362px;
 }
 
-.vpnu95tabsm .unblock-your-internet {
+.vpnu95tabsm .unblock-your-internet-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -1486,11 +1589,11 @@
   position: relative;
 }
 
-.vpnu95tabsm .span {
+.vpnu95tabsm .span-4 {
   letter-spacing: 0.32px;
 }
 
-.vpnu95tabsm .with-orchids-decent {
+.vpnu95tabsm .with-orchids-decent-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -1498,15 +1601,15 @@
   position: relative;
 }
 
-.vpnu95tabsm .span-1 {
+.vpnu95tabsm .span-5 {
   color: var(--white);
 }
 
-.vpnu95tabsm .span1 {
+.vpnu95tabsm .span1-1 {
   color: var(--aquamarine);
 }
 
-.vpnu95tabsm .download-links {
+.vpnu95tabsm .download-links-2 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -1517,16 +1620,23 @@
   width: 322px;
 }
 
-.vpnu95tabsm .google-play {
+.vpnu95tabsm .app-store-1 {
+  background-image: url(../img/appstorebadge-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
   cursor: pointer;
-  display: flex;
   height: 42px;
-  justify-content: center;
   position: relative;
   width: 144px;
 }
 
-.vpnu95tabsm .google-play-badge-1 {
+.vpnu95tabsm .google-play-4 {
+  height: 42px;
+  justify-content: center;
+  width: 144px;
+}
+
+.vpnu95tabsm .google-play-badge-1-1 {
   height: 42px;
   margin-left: 1px;
   width: 143px;
@@ -1544,7 +1654,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .mobile {
+.vpnu95tabsm .mobile-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1555,17 +1665,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .mobile-caption-section {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 16px;
-  position: relative;
-  width: 100%;
-}
-
-.vpnu95tabsm .line {
+.vpnu95tabsm .line-3 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -1573,26 +1673,13 @@
   position: relative;
 }
 
-.vpnu95tabsm .mobile-headline-section {
-  align-items: flex-start;
+.vpnu95tabsm .mobile-headline-section-3 {
   align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
   justify-content: space-around;
-  position: relative;
   width: 100%;
 }
 
-.vpnu95tabsm .the-orchid-ecosystem {
-  color: transparent;
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
-}
-
-.vpnu95tabsm .copy {
+.vpnu95tabsm .copy-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1603,12 +1690,12 @@
   width: 100%;
 }
 
-.vpnu95tabsm .body-1 {
+.vpnu95tabsm .body-4 {
   align-self: stretch;
   margin-top: -1.00px;
 }
 
-.vpnu95tabsm .cards {
+.vpnu95tabsm .cards-5 {
   align-items: center;
   align-self: stretch;
   flex-direction: column;
@@ -1617,14 +1704,14 @@
   width: 100%;
 }
 
-.vpnu95tabsm .cards-item {
-  align-items: center;
+.vpnu95tabsm .cards-item-3 {
   align-self: stretch;
+  display: flex;
   padding: 0px 0px 0px 40px;
   width: 100%;
 }
 
-.vpnu95tabsm .frame-518 {
+.vpnu95tabsm .frame-518-3 {
   align-items: center;
   background-color: var(--black-2);
   border: 1px solid;
@@ -1639,7 +1726,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .intro-copy {
+.vpnu95tabsm .intro-copy-11 {
   color: var(--white);
   font-weight: 600;
   line-height: 19.8px;
@@ -1647,15 +1734,13 @@
   width: 200px;
 }
 
-.vpnu95tabsm .line-8 {
-  align-self: stretch;
+.vpnu95tabsm .line-8-4 {
   margin-bottom: -1.00px;
   margin-top: -1.00px;
-  position: relative;
   width: 2px;
 }
 
-.vpnu95tabsm .intro-copy-1 {
+.vpnu95tabsm .intro-copy-12 {
   color: var(--white);
   flex: 1;
   font-weight: 300;
@@ -1672,66 +1757,50 @@
   width: 81px;
 }
 
-.vpnu95tabsm .mobile-caption-section-1 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  gap: 8px;
-  height: 16px;
+.vpnu95tabsm .mobile-caption-section-3 {
   justify-content: center;
-  position: relative;
-  width: 100%;
 }
 
-.vpnu95tabsm .discover-1 {
+.vpnu95tabsm .discover-3 {
   text-align: center;
 }
 
-.vpnu95tabsm .mobile-headline-section-1 {
-  align-items: flex-start;
-  display: flex;
-  flex: 0 0 auto;
+.vpnu95tabsm .mobile-headline-section-4 {
   gap: 10px;
   justify-content: center;
-  position: relative;
   width: 360px;
 }
 
-.vpnu95tabsm .the-orchid-ecosystem-1 {
-  color: transparent;
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
+.vpnu95tabsm .the-orchid-ecosystem-3 {
   text-align: center;
 }
 
-.vpnu95tabsm .cards-1 {
+.vpnu95tabsm .cards-6 {
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: wrap;
-  gap: 16px 24px;
+  gap: 24px 16px;
   justify-content: center;
   width: 100%;
 }
 
-.vpnu95tabsm .cards-item-1 {
-  align-items: center;
+.vpnu95tabsm .cards-item-4 {
   background-color: var(--log-cabin);
+  border-radius: 16px;
   display: inline-flex;
+  flex-direction: column;
   gap: 24px;
   min-height: 381px;
   padding: 40px 24px;
 }
 
-.vpnu95tabsm .icon {
+.vpnu95tabsm .icon-2 {
   height: 80px;
   position: relative;
   width: 80px;
 }
 
-.vpnu95tabsm .title {
+.vpnu95tabsm .title-3 {
   color: var(--white);
   font-weight: 600;
   line-height: 19.8px;
@@ -1740,12 +1809,12 @@
   width: 168px;
 }
 
-.vpnu95tabsm .body {
+.vpnu95tabsm .body-3 {
   height: 85px;
   width: 168px;
 }
 
-.vpnu95tabsm .link {
+.vpnu95tabsm .link-2 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: var(--dull-lavender-2);
@@ -1758,13 +1827,13 @@
   width: 45px;
 }
 
-.vpnu95tabsm .icon-traffic {
+.vpnu95tabsm .icon-traffic-1 {
   height: 80px;
   position: relative;
   width: 100px;
 }
 
-.vpnu95tabsm .icon-payments {
+.vpnu95tabsm .icon-payments-1 {
   height: 80px;
   position: relative;
   width: 75.88px;
@@ -1783,36 +1852,58 @@
   position: relative;
 }
 
-.vpnu95tabsm .cards-2 {
+.vpnu95tabsm .cards-7 {
   align-items: center;
   flex-direction: column;
   gap: 16px;
   width: 664px;
 }
 
-.vpnu95tabsm .cards-item-2 {
+.vpnu95tabsm .info-card-2 {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--black-2);
   border: 1px solid;
   border-color: var(--true-v);
+  border-radius: 16px;
   display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   gap: 16px;
   overflow: hidden;
   padding: 24px 24px 40px;
+  position: relative;
   width: 100%;
 }
 
-.vpnu95tabsm .intro-copy-2 {
+.vpnu95tabsm .frame-56-1 {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.vpnu95tabsm .intro-copy-13 {
   color: var(--white);
+  flex: 1;
   font-weight: 600;
   line-height: 19.8px;
   margin-top: -1.00px;
   position: relative;
 }
 
-.vpnu95tabsm .intro-copy-3 {
+.vpnu95tabsm .line-8-5 {
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.vpnu95tabsm .intro-copy-14 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1820,7 +1911,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .intro-copy-4 {
+.vpnu95tabsm .intro-copy-15 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;
@@ -1834,7 +1925,7 @@
   text-overflow: ellipsis;
 }
 
-.vpnu95tabsm .frame-380 {
+.vpnu95tabsm .frame-380-2 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -1847,12 +1938,17 @@
   width: 739px;
 }
 
-.vpnu95tabsm .google-play-badge {
+.vpnu95tabsm .google-play-5 {
+  height: 56px;
+  width: 187px;
+}
+
+.vpnu95tabsm .google-play-badge-2 {
   height: 56.3px;
   width: 188px;
 }
 
-.vpnu95tabsm .apple-store {
+.vpnu95tabsm .apple-store-2 {
   background-image: url(../img/appstorebadge-2.png);
   background-position: 50% 50%;
   background-size: cover;
@@ -1862,7 +1958,7 @@
   width: 188px;
 }
 
-.vpnu95tabsm .logo {
+.vpnu95tabsm .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1871,12 +1967,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .desktop-home-logo {
-  height: 36px;
-  position: relative;
-}
-
-.vpnu95tabsm .x2023-orchid {
+.vpnu95tabsm .x2023-orchid-6 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1884,7 +1975,7 @@
   width: 299px;
 }
 
-.vpnu95tabsm .x2023-orchid-1 {
+.vpnu95tabsm .x2023-orchid-7 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1892,7 +1983,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .hyperlinks {
+.vpnu95tabsm .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1903,36 +1994,14 @@
   width: 100%;
 }
 
-.vpnu95tabsm .frame-532 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
-  position: relative;
-  width: 100%;
-}
-
-.vpnu95tabsm .frame-532-item {
+.vpnu95tabsm .frame-532-item-1 {
   display: flex;
   height: 22px;
   position: relative;
   width: 281px;
 }
 
-.vpnu95tabsm .x2023-orchid-2 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 151px;
-}
-
-.vpnu95tabsm .x2023-orchid-3 {
+.vpnu95tabsm .x2023-orchid-8 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1942,46 +2011,42 @@
   width: 132px;
 }
 
-.vpnu95tabsm .link-1 {
+.vpnu95tabsm .link-3 {
   display: flex;
   height: 22px;
   width: 281px;
 }
 
-.vpnu95tabsm .apps {
+.vpnu95tabsm .apps-10 {
   width: 102px;
 }
 
-.vpnu95tabsm .apps-1 {
+.vpnu95tabsm .apps-11 {
   width: 132px;
 }
 
-.vpnu95tabsm .apps-2 {
+.vpnu95tabsm .apps-12 {
   cursor: pointer;
   width: 113px;
 }
 
-.vpnu95tabsm .apps-3 {
+.vpnu95tabsm .apps-13 {
   width: 85px;
 }
 
-.vpnu95tabsm .apps-4 {
+.vpnu95tabsm .apps-14 {
   width: 122px;
 }
 
-.vpnu95tabsm .apps-5 {
+.vpnu95tabsm .apps-15 {
   width: 76px;
 }
 
-.vpnu95tabsm .apps-6 {
-  width: 42px;
-}
-
-.vpnu95tabsm .apps-7 {
+.vpnu95tabsm .apps-17 {
   width: 75px;
 }
 
-.vpnu95tabsm .social-icons {
+.vpnu95tabsm .social-icons-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1994,19 +2059,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
-}
-
-.vpnu95tabsm .social-link-reddit {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
-  height: 32px;
-}
-
-.vpnu95tabsm .apps-8 {
+.vpnu95tabsm .apps {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -2014,27 +2067,26 @@
   white-space: nowrap;
 }
 
-.vpnu95tabsm .body-2 {
+.vpnu95tabsm .body {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
   position: relative;
 }
 
-.vpnu95tabsm .cards-3 {
+.vpnu95tabsm .cards {
   display: flex;
   flex: 0 0 auto;
   position: relative;
 }
 
-.vpnu95tabsm .cards-item-3 {
-  border-radius: 16px;
+.vpnu95tabsm .cards-item {
+  align-items: center;
   flex: 0 0 auto;
-  flex-direction: column;
   position: relative;
 }
 
-.vpnu95tabsm .discover-2 {
+.vpnu95tabsm .discover {
   color: var(--white);
   font-weight: 600;
   line-height: 13.2px;
@@ -2043,21 +2095,58 @@
   width: fit-content;
 }
 
-.vpnu95tabsm .link-2 {
+.vpnu95tabsm .google-play {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.vpnu95tabsm .line-8 {
+  align-self: stretch;
+  position: relative;
+}
+
+.vpnu95tabsm .link {
   cursor: pointer;
   position: relative;
 }
 
-.vpnu95tabsm .social-link-1 {
-  cursor: pointer;
+.vpnu95tabsm .menu-icon {
+  height: 24px;
   position: relative;
-  width: 32px;
+  width: 24px;
+}
+
+.vpnu95tabsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.vpnu95tabsm .mobile-headline-section {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.vpnu95tabsm .the-orchid-ecosystem {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
 }
 @media screen and (max-width: 743px) {
-  .screen.vpnu95tabsm { 
+  .screen.vpn-all-breakpoints { 
     display: none;
    }
-  .screen.vpn-all-breakpoints { 
+  .screen.vpnu95tabsm { 
     display: none;
    }
 }
@@ -2070,10 +2159,10 @@
    }
 }
 @media screen and (min-width: 1440px) {
-  .screen.vpnu95tabsm { 
+  .screen.vpnu95mobsm { 
     display: none;
    }
-  .screen.vpnu95mobsm { 
+  .screen.vpnu95tabsm { 
     display: none;
    }
 }
