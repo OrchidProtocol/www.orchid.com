@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  height: 2473px;
   min-width: 360px;
   position: relative;
 }
@@ -221,6 +222,14 @@
   padding: 24px 0px 0px;
   position: relative;
   width: 100%;
+}
+
+.mobile-privacy-policy-all-breakpoints .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
 }
 
 .mobile-privacy-policy-all-breakpoints .apps {
@@ -595,9 +604,6 @@
 }
 
 .mobile-privacy-policyu95dt .social-link-reddit {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
   height: 32px;
 }
 
@@ -639,6 +645,7 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+  height: 2200px;
   min-width: 744px;
   position: relative;
 }
@@ -647,9 +654,9 @@
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  height: 88px;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 72px;
   position: relative;
   width: 100%;
 }
@@ -778,17 +785,6 @@
 .mobile-privacy-policyu95tabsm .nanopay {
   align-self: stretch;
   flex: 0 0 auto;
-  position: relative;
-  width: 100%;
-}
-
-.mobile-privacy-policyu95tabsm .content {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
   position: relative;
   width: 100%;
 }

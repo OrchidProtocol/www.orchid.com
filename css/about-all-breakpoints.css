@@ -594,6 +594,14 @@
   position: relative;
 }
 
+.about-all-breakpoints .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
+}
+
 .about-all-breakpoints .apps {
   color: var(--white);
   font-weight: 700;
@@ -667,6 +675,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
+  height: 3030px;
   min-width: 360px;
   position: relative;
 }
@@ -1016,17 +1025,6 @@
   cursor: pointer;
 }
 
-.aboutu95mobsm .content {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .aboutu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
@@ -1163,9 +1161,6 @@
 }
 
 .aboutu95mobsm .social-link-reddit {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;
@@ -1211,6 +1206,7 @@
   display: flex;
   flex-direction: column;
   gap: 120px;
+  height: 2932px;
   min-width: 744px;
   position: relative;
 }
@@ -1219,9 +1215,9 @@
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  height: 88px;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 72px;
   position: relative;
   width: 100%;
 }

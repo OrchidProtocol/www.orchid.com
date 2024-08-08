@@ -71,9 +71,11 @@
   width: 478px;
 }
 
-.x404u95dt .desktop-home-logo-2 {
+.x404u95dt .desktop-home-logo {
   cursor: pointer;
   flex: 0 0 auto;
+  height: 36px;
+  position: relative;
 }
 
 .x404u95dt .desktop-button-top-nav-1 {
@@ -81,44 +83,27 @@
   flex: 0 0 auto;
 }
 
-.x404u95dt .vpn {
-  color: var(--aquamarine);
-}
-
 .x404u95dt .desktop-button-top-nav-2 {
-  cursor: pointer;
   display: flex;
   width: 37px;
 }
 
-.x404u95dt .vpn-1 {
-  color: var(--white);
-}
-
 .x404u95dt .desktop-button-top-nav-3 {
-  cursor: pointer;
   display: flex;
   width: 36px;
 }
 
-.x404u95dt .vpn-2 {
-  color: var(--white);
-}
-
 .x404u95dt .desktop-button-top-nav-4 {
-  cursor: pointer;
   display: flex;
   width: 44px;
 }
 
 .x404u95dt .desktop-button-top-nav-5 {
-  cursor: pointer;
   display: flex;
   width: 61px;
 }
 
 .x404u95dt .desktop-button-top-nav-6 {
-  cursor: pointer;
   display: flex;
   width: 50px;
 }
@@ -142,7 +127,7 @@
   position: relative;
 }
 
-.x404u95dt .frame-403-1 {
+.x404u95dt .frame-403 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -152,7 +137,7 @@
   width: 855px;
 }
 
-.x404u95dt .decentralized-marketplace-2 {
+.x404u95dt .decentralized-marketplace {
   align-self: stretch;
   color: var(--aquamarine);
   font-weight: 800;
@@ -162,7 +147,7 @@
   text-align: center;
 }
 
-.x404u95dt .line-10-2 {
+.x404u95dt .line-10 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -170,7 +155,7 @@
   width: 100%;
 }
 
-.x404u95dt .frame-586-2 {
+.x404u95dt .frame-586 {
   align-self: stretch;
   display: flex;
   height: 529px;
@@ -185,13 +170,16 @@
   width: 670px;
 }
 
-.x404u95dt .intro-copy-4 {
+.x404u95dt .intro-copy {
+  align-self: stretch;
   color: var(--white);
   font-weight: 500;
   line-height: 34.7px;
+  position: relative;
+  text-align: center;
 }
 
-.x404u95dt .frame-587-2 {
+.x404u95dt .frame-587 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -202,18 +190,16 @@
   width: 100%;
 }
 
-.x404u95dt .intro-copy-5 {
+.x404u95dt .intro-copy-1 {
   color: var(--white);
   font-weight: 400;
-  line-height: 28.0px;
   margin-top: -1.00px;
 }
 
-.x404u95dt .intro-copy-6 {
+.x404u95dt .intro-copy-2 {
   color: var(--aquamarine);
   cursor: pointer;
   font-weight: 700;
-  line-height: 28.0px;
 }
 
 .x404u95dt .frame-489 {
@@ -241,7 +227,7 @@
   width: 360px;
 }
 
-.x404u95dt .learn-more-2 {
+.x404u95dt .learn-more {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -264,7 +250,7 @@
   width: 100%;
 }
 
-.x404u95dt .logo-2 {
+.x404u95dt .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -273,7 +259,12 @@
   position: relative;
 }
 
-.x404u95dt .x2023-orchid-6 {
+.x404u95dt .desktop-home-logo-1 {
+  height: 36px;
+  position: relative;
+}
+
+.x404u95dt .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -281,7 +272,7 @@
   width: 676px;
 }
 
-.x404u95dt .hyperlinks-2 {
+.x404u95dt .hyperlinks {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -307,12 +298,7 @@
   width: 180px;
 }
 
-.x404u95dt .x2023-orchid-7 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
+.x404u95dt .x2023-orchid-1 {
   width: 180px;
 }
 
@@ -321,20 +307,15 @@
   width: 208px;
 }
 
-.x404u95dt .x2023-orchid-8 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
+.x404u95dt .x2023-orchid-2 {
   width: 208px;
 }
 
-.x404u95dt .apps-17 {
+.x404u95dt .apps-1 {
   cursor: pointer;
 }
 
-.x404u95dt .link-2 {
+.x404u95dt .link {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -342,7 +323,7 @@
   width: 198px;
 }
 
-.x404u95dt .social-icons-2 {
+.x404u95dt .social-icons {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -352,7 +333,16 @@
   position: relative;
 }
 
-.x404u95dt .apps {
+.x404u95dt .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
+}
+
+.x404u95dt .social-link-reddit {
+  height: 32px;
+}
+
+.x404u95dt .apps-2 {
   color: var(--white);
   font-weight: 700;
   height: 22px;
@@ -370,18 +360,15 @@
 
 .x404u95dt .desktop-button-top-nav-7 {
   align-items: center;
+  cursor: pointer;
   gap: 10px;
   justify-content: center;
   position: relative;
 }
 
-.x404u95dt .desktop-home-logo {
-  height: 36px;
-  position: relative;
-}
-
-.x404u95dt .intro-copy {
+.x404u95dt .intro-copy-3 {
   align-self: stretch;
+  line-height: 28.0px;
   position: relative;
   text-align: center;
 }
@@ -391,13 +378,28 @@
   position: relative;
 }
 
-.x404u95dt .vpn-3 {
+.x404u95dt .social-link-1 {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+}
+
+.x404u95dt .vpn-2 {
+  color: var(--white);
   font-weight: 700;
   line-height: 14.4px;
   margin-top: -1.00px;
   position: relative;
   white-space: nowrap;
   width: fit-content;
+}
+
+.x404u95dt .x2023-orchid-3 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
 }
 /* screen - 404u95tabsm */
 
@@ -407,22 +409,30 @@
   display: flex;
   flex-direction: column;
   gap: 60px;
+  height: 2217px;
   min-width: 744px;
   position: relative;
 }
 
-.x404u95tabsm .mobile-nav-header-1 {
+.x404u95tabsm .mobile-nav-header {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  height: 88px;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 72px;
   position: relative;
   width: 100%;
 }
 
-.x404u95tabsm .frame-403 {
+.x404u95tabsm .menu-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.x404u95tabsm .frame-403-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -461,13 +471,13 @@
   width: 100%;
 }
 
-.x404u95tabsm .orchid404_img-1-1 {
+.x404u95tabsm .orchid404_img-1 {
   height: 532px;
   margin-left: -1px;
   width: 656px;
 }
 
-.x404u95tabsm .title-1 {
+.x404u95tabsm .title {
   align-self: stretch;
   color: var(--white);
   font-weight: 600;
@@ -489,21 +499,21 @@
   width: 100%;
 }
 
-.x404u95tabsm .intro-copy-2 {
+.x404u95tabsm .intro-copy-3 {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
   margin-top: -1.00px;
 }
 
-.x404u95tabsm .intro-copy-3 {
+.x404u95tabsm .intro-copy-4 {
   color: var(--aquamarine);
   cursor: pointer;
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.x404u95tabsm .buttons-1 {
+.x404u95tabsm .buttons {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -515,7 +525,7 @@
   width: 100%;
 }
 
-.x404u95tabsm .mobile-button-hero-1 {
+.x404u95tabsm .mobile-button-hero {
   align-items: center;
   background-color: var(--log-cabin);
   border: 1px solid;
@@ -550,7 +560,7 @@
   position: relative;
 }
 
-.x404u95tabsm .desktop-home-logo-1 {
+.x404u95tabsm .desktop-home-logo-2 {
   height: 36px;
   position: relative;
 }
@@ -582,7 +592,19 @@
   width: 100%;
 }
 
-.x404u95tabsm .frame-532-item-1 {
+.x404u95tabsm .frame-532 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.x404u95tabsm .frame-532-item {
   display: flex;
   height: 22px;
   position: relative;
@@ -607,36 +629,36 @@
   width: 281px;
 }
 
-.x404u95tabsm .apps-8 {
+.x404u95tabsm .apps-2 {
   width: 102px;
 }
 
-.x404u95tabsm .apps-9 {
+.x404u95tabsm .apps-3 {
   width: 132px;
 }
 
-.x404u95tabsm .apps-10 {
+.x404u95tabsm .apps-4 {
   cursor: pointer;
   width: 113px;
 }
 
-.x404u95tabsm .apps-11 {
+.x404u95tabsm .apps-5 {
   width: 85px;
 }
 
-.x404u95tabsm .apps-12 {
+.x404u95tabsm .apps-6 {
   width: 122px;
 }
 
-.x404u95tabsm .apps-13 {
+.x404u95tabsm .apps-7 {
   width: 76px;
 }
 
-.x404u95tabsm .apps-14 {
+.x404u95tabsm .apps-8 {
   width: 42px;
 }
 
-.x404u95tabsm .apps-15 {
+.x404u95tabsm .apps-9 {
   width: 75px;
 }
 
@@ -681,11 +703,12 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
+  height: 1925px;
   min-width: 360px;
   position: relative;
 }
 
-.x404-all-breakpoints .mobile-nav-header {
+.x404-all-breakpoints .mobile-nav-header-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -696,22 +719,19 @@
   width: 100%;
 }
 
-.x404-all-breakpoints .menu-icon {
-  cursor: pointer;
-  height: 24px;
-  position: relative;
-  width: 24px;
-}
-
 .x404-all-breakpoints .frame-404 {
   align-items: center;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
   padding: 24px 40px 40px;
+  position: relative;
+  width: 100%;
 }
 
-.x404-all-breakpoints .decentralized-marketplace {
+.x404-all-breakpoints .decentralized-marketplace-2 {
   align-self: stretch;
   color: var(--aquamarine);
   font-weight: 800;
@@ -721,7 +741,7 @@
   text-align: center;
 }
 
-.x404-all-breakpoints .line-10 {
+.x404-all-breakpoints .line-10-2 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -729,17 +749,21 @@
   width: 100%;
 }
 
-.x404-all-breakpoints .frame-586 {
+.x404-all-breakpoints .frame-586-2 {
+  align-self: stretch;
+  display: flex;
   height: 310px;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
-.x404-all-breakpoints .orchid404_img-1 {
+.x404-all-breakpoints .orchid404_img-1-1 {
   height: 310px;
   width: 360px;
 }
 
-.x404-all-breakpoints .title {
+.x404-all-breakpoints .title-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 600;
@@ -750,34 +774,32 @@
   white-space: nowrap;
 }
 
-.x404-all-breakpoints .frame-587 {
+.x404-all-breakpoints .frame-587-2 {
   align-items: flex-start;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 8px;
+  position: relative;
+  width: 100%;
 }
 
-.x404-all-breakpoints .intro-copy {
-  align-self: stretch;
+.x404-all-breakpoints .intro-copy-5 {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
   margin-top: -1.00px;
-  position: relative;
-  text-align: center;
 }
 
-.x404-all-breakpoints .intro-copy-1 {
-  align-self: stretch;
+.x404-all-breakpoints .intro-copy-6 {
   color: var(--aquamarine);
   cursor: pointer;
   font-weight: 700;
   line-height: 16.5px;
-  position: relative;
-  text-align: center;
 }
 
-.x404-all-breakpoints .buttons {
+.x404-all-breakpoints .buttons-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -789,7 +811,7 @@
   width: 100%;
 }
 
-.x404-all-breakpoints .mobile-button-hero {
+.x404-all-breakpoints .mobile-button-hero-1 {
   align-items: center;
   background-color: var(--log-cabin);
   border: 1px solid;
@@ -804,7 +826,7 @@
   width: 275px;
 }
 
-.x404-all-breakpoints .learn-more {
+.x404-all-breakpoints .learn-more-2 {
   color: var(--white);
   font-weight: 700;
   line-height: 24px;
@@ -815,18 +837,7 @@
   width: fit-content;
 }
 
-.x404-all-breakpoints .content {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
-.x404-all-breakpoints .logo {
+.x404-all-breakpoints .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -836,12 +847,7 @@
   position: relative;
 }
 
-.x404-all-breakpoints .desktop-home-logo {
-  height: 36px;
-  position: relative;
-}
-
-.x404-all-breakpoints .x2023-orchid {
+.x404-all-breakpoints .x2023-orchid-6 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -849,7 +855,7 @@
   width: 299px;
 }
 
-.x404-all-breakpoints .x2023-orchid-1 {
+.x404-all-breakpoints .x2023-orchid-7 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -857,7 +863,7 @@
   position: relative;
 }
 
-.x404-all-breakpoints .hyperlinks {
+.x404-all-breakpoints .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -868,15 +874,7 @@
   width: 100%;
 }
 
-.x404-all-breakpoints .frame-532 {
-  align-items: flex-start;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
-}
-
-.x404-all-breakpoints .frame-532-item {
+.x404-all-breakpoints .frame-532-item-1 {
   display: flex;
   height: 22px;
   margin-right: -21.00px;
@@ -884,7 +882,7 @@
   width: 281px;
 }
 
-.x404-all-breakpoints .x2023-orchid-2 {
+.x404-all-breakpoints .x2023-orchid-8 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -894,7 +892,7 @@
   width: 132px;
 }
 
-.x404-all-breakpoints .link {
+.x404-all-breakpoints .link-2 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -903,45 +901,36 @@
   width: 281px;
 }
 
-.x404-all-breakpoints .apps {
-  color: var(--white);
-  font-weight: 700;
-  height: 24px;
-  line-height: 24px;
-  white-space: nowrap;
+.x404-all-breakpoints .apps-10 {
   width: 102px;
 }
 
-.x404-all-breakpoints .apps-1 {
+.x404-all-breakpoints .apps-11 {
   width: 132px;
 }
 
-.x404-all-breakpoints .apps-2 {
+.x404-all-breakpoints .apps-12 {
   cursor: pointer;
   width: 113px;
 }
 
-.x404-all-breakpoints .apps-3 {
+.x404-all-breakpoints .apps-13 {
   width: 85px;
 }
 
-.x404-all-breakpoints .apps-4 {
+.x404-all-breakpoints .apps-14 {
   width: 122px;
 }
 
-.x404-all-breakpoints .apps-5 {
+.x404-all-breakpoints .apps-15 {
   width: 76px;
 }
 
-.x404-all-breakpoints .apps-6 {
-  width: 42px;
-}
-
-.x404-all-breakpoints .apps-7 {
+.x404-all-breakpoints .apps-17 {
   width: 75px;
 }
 
-.x404-all-breakpoints .social-icons {
+.x404-all-breakpoints .social-icons-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -954,19 +943,15 @@
   width: 100%;
 }
 
-.x404-all-breakpoints .social-link-github {
+.x404-all-breakpoints .social-link-github-2 {
+  cursor: pointer;
   height: 33px;
   margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
 }
 
-.x404-all-breakpoints .social-link-reddit {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
-  height: 32px;
-}
-
-.x404-all-breakpoints .apps-8 {
+.x404-all-breakpoints .apps {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -974,39 +959,32 @@
   white-space: nowrap;
 }
 
-.x404-all-breakpoints .frame {
+.x404-all-breakpoints .intro-copy {
   align-self: stretch;
-  display: flex;
   position: relative;
-  width: 100%;
-}
-
-.x404-all-breakpoints .social-link-1 {
-  cursor: pointer;
-  position: relative;
-  width: 32px;
+  text-align: center;
 }
 @media screen and (max-width: 743px) {
-  .screen.x404u95tabsm { 
+  .screen.x404u95dt { 
     display: none;
    }
-  .screen.x404u95dt { 
+  .screen.x404u95tabsm { 
     display: none;
    }
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
-  .screen.x404-all-breakpoints { 
+  .screen.x404u95dt { 
     display: none;
    }
-  .screen.x404u95dt { 
+  .screen.x404-all-breakpoints { 
     display: none;
    }
 }
 @media screen and (min-width: 1440px) {
-  .screen.x404-all-breakpoints { 
+  .screen.x404u95tabsm { 
     display: none;
    }
-  .screen.x404u95tabsm { 
+  .screen.x404-all-breakpoints { 
     display: none;
    }
 }

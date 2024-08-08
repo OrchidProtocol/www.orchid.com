@@ -10,19 +10,6 @@
   text-decoration: none;
 }
 
-.container-center-horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  pointer-events: none;
-  width: 100%;
-}
-
-.container-center-horizontal > * {
-  flex-shrink: 0;
-  pointer-events: auto;
-}
-
 .overlay-base {
   display: none;
   height: 100%;
@@ -159,17 +146,6 @@
   width: 196px;
 }
 
-.label {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
 .contents {
   align-items: flex-start;
   align-self: stretch;
@@ -205,26 +181,6 @@
   width: fit-content;
 }
 
-.caption-3 {
-  color: var(--white);
-  font-weight: 600;
-  line-height: 22.0px;
-  margin-top: -1.00px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.desktop-caption-section-3 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
 .orchid-icon {
   cursor: pointer;
   height: 24px;
@@ -246,6 +202,17 @@
   width: 100%;
 }
 
+.content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .social-link-github-1 {
   cursor: pointer;
   height: 33px;
@@ -255,9 +222,6 @@
 }
 
 .social-link-reddit-1 {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;
@@ -278,35 +242,13 @@
   width: 24px;
 }
 
-.accounts-1 {
+.copy-item-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 8px;
-  position: relative;
-  width: 100%;
-}
-
-.directory-1 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 8px;
-  position: relative;
-  width: 100%;
-}
-
-.frame-478-1 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
   position: relative;
   width: 100%;
 }
@@ -364,25 +306,14 @@
   width: 32px;
 }
 
-.social-link-github-2 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
-  width: 32px;
-}
-
 .social-link-reddit-2 {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;
   width: 32px;
 }
 
-.copy-item-1 {
+.accounts {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -393,27 +324,37 @@
   width: 100%;
 }
 
-.frame-451 {
+.directory {
+  align-items: center;
+  align-self: stretch;
   display: flex;
-  height: 176px;
-  justify-content: center;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
   position: relative;
-  width: 801px;
+  width: 100%;
 }
 
-.google-play-badge {
-  height: 56.3px;
-  width: 188px;
+.accounts-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
 }
 
-.build-5 {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 14.4px;
-  margin-top: -1.00px;
+.directory-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
   position: relative;
-  white-space: nowrap;
-  width: fit-content;
+  width: 100%;
 }
 
 .app-store {
@@ -426,44 +367,63 @@
   width: 144px;
 }
 
-.google-play-1 {
-  background-image: url(../img/google-play-badge-2@2x.png);
-  background-size: 100% 100%;
-  cursor: pointer;
-  height: 42px;
-  position: relative;
-  width: 144px;
-}
-
-.button-1 {
+.frame-478-1 {
   align-items: center;
-  display: inline-flex;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 10px;
-  padding: 80px 0px 0px;
+  gap: 24px;
   position: relative;
+  width: 100%;
+}
+
+.label {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.build-5 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.caption-3 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop-caption-section-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+  width: 100%;
 }
 
 .menu-icon-2 {
   cursor: pointer;
 }
 
-.line-8-1 {
-  align-self: stretch;
-  height: 1px;
-  margin-left: -0.50px;
-  margin-right: -0.50px;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-}
-
-.menu-icon-5 {
-  cursor: pointer;
-}
-
-.features-1 {
+.features {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -475,10 +435,71 @@
   width: 100%;
 }
 
+.frame-451 {
+  display: flex;
+  height: 176px;
+  justify-content: center;
+  position: relative;
+  width: 801px;
+}
+
 .close-icon {
   cursor: pointer;
   height: 24px;
-  margin-right: 32px;
-  margin-top: 32px;
+  position: relative;
   width: 24px;
+}
+
+.account {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
+}
+
+.account-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
+}
+
+.storchid {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
+}
+
+.how {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
+}
+
+.about {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
+}
+
+.docs {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 22.4px;
+  margin-right: -48.00px;
+  position: relative;
+  width: 281px;
 }

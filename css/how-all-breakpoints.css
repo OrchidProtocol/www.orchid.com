@@ -97,7 +97,7 @@
   width: 1170px;
 }
 
-.how-all-breakpoints .desktop-home-logo-2 {
+.how-all-breakpoints .desktop-home-logo-1 {
   cursor: pointer;
   flex: 0 0 auto;
 }
@@ -164,7 +164,7 @@
   width: 196px;
 }
 
-.how-all-breakpoints .hero-2 {
+.how-all-breakpoints .hero-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -191,11 +191,11 @@
   width: 1062px;
 }
 
-.how-all-breakpoints .span-12 {
+.how-all-breakpoints .span-6 {
   letter-spacing: 0.72px;
 }
 
-.how-all-breakpoints .intro-copy-16 {
+.how-all-breakpoints .intro-copy-8 {
   align-self: stretch;
   color: transparent;
   font-weight: 400;
@@ -203,7 +203,7 @@
   position: relative;
 }
 
-.how-all-breakpoints .span-13 {
+.how-all-breakpoints .span-7 {
   letter-spacing: 0.08px;
 }
 
@@ -234,7 +234,7 @@
   width: 360px;
 }
 
-.how-all-breakpoints .learn-more-4 {
+.how-all-breakpoints .learn-more-2 {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -295,7 +295,7 @@
   width: fit-content;
 }
 
-.how-all-breakpoints .line-2 {
+.how-all-breakpoints .line-1 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -322,15 +322,15 @@
   width: 1280px;
 }
 
-.how-all-breakpoints .span-14 {
+.how-all-breakpoints .span-8 {
   letter-spacing: 0.32px;
 }
 
-.how-all-breakpoints .cards-4 {
+.how-all-breakpoints .cards-2 {
   gap: 24px;
 }
 
-.how-all-breakpoints .info-card-4 {
+.how-all-breakpoints .info-card-2 {
   background-color: var(--black-2);
   border-color: var(--true-v);
   border-radius: 16px;
@@ -349,7 +349,7 @@
   width: 100%;
 }
 
-.how-all-breakpoints .intro-copy-17 {
+.how-all-breakpoints .intro-copy-9 {
   color: var(--white);
   flex: 1;
   font-weight: 500;
@@ -358,13 +358,13 @@
   position: relative;
 }
 
-.how-all-breakpoints .menu-icon-6 {
+.how-all-breakpoints .menu-icon-3 {
   height: 40px;
   position: relative;
   width: 40px;
 }
 
-.how-all-breakpoints .line-8-2 {
+.how-all-breakpoints .line-8-1 {
   align-self: stretch;
   height: 2px;
   margin-left: -1.00px;
@@ -373,7 +373,7 @@
   width: 100%;
 }
 
-.how-all-breakpoints .intro-copy-18 {
+.how-all-breakpoints .intro-copy-10 {
   align-self: stretch;
   color: var(--white);
   font-weight: 400;
@@ -381,7 +381,7 @@
   position: relative;
 }
 
-.how-all-breakpoints .intro-copy-19 {
+.how-all-breakpoints .intro-copy-11 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;
@@ -395,7 +395,7 @@
   text-overflow: ellipsis;
 }
 
-.how-all-breakpoints .span1-2 {
+.how-all-breakpoints .span1-1 {
   color: var(--white);
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xl);
@@ -403,7 +403,7 @@
   letter-spacing: 0.08px;
 }
 
-.how-all-breakpoints .title-4 {
+.how-all-breakpoints .title-2 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -456,11 +456,11 @@
   width: 1280px;
 }
 
-.how-all-breakpoints .cards-5 {
+.how-all-breakpoints .cards-3 {
   gap: 40px;
 }
 
-.how-all-breakpoints .info-card-5 {
+.how-all-breakpoints .info-card-3 {
   background-color: var(--black);
   border-color: var(--aquamarine);
   border-radius: 24px;
@@ -497,7 +497,7 @@
   width: 878px;
 }
 
-.how-all-breakpoints .intro-copy-20 {
+.how-all-breakpoints .intro-copy-12 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: var(--dull-lavender);
@@ -548,7 +548,7 @@
   width: 878px;
 }
 
-.how-all-breakpoints .button-2 {
+.how-all-breakpoints .button-1 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -584,7 +584,7 @@
   width: 100%;
 }
 
-.how-all-breakpoints .logo-2 {
+.how-all-breakpoints .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -593,7 +593,7 @@
   position: relative;
 }
 
-.how-all-breakpoints .x2023-orchid-6 {
+.how-all-breakpoints .x2023-orchid-3 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -601,7 +601,7 @@
   width: 676px;
 }
 
-.how-all-breakpoints .hyperlinks-2 {
+.how-all-breakpoints .hyperlinks-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -629,7 +629,7 @@
   width: 180px;
 }
 
-.how-all-breakpoints .x2023-orchid-7 {
+.how-all-breakpoints .x2023-orchid-4 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -645,7 +645,7 @@
   width: 208px;
 }
 
-.how-all-breakpoints .x2023-orchid-8 {
+.how-all-breakpoints .x2023-orchid-5 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -654,11 +654,11 @@
   width: 208px;
 }
 
-.how-all-breakpoints .apps-17 {
+.how-all-breakpoints .apps-9 {
   cursor: pointer;
 }
 
-.how-all-breakpoints .link-4 {
+.how-all-breakpoints .link-2 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -666,7 +666,7 @@
   width: 198px;
 }
 
-.how-all-breakpoints .social-icons-2 {
+.how-all-breakpoints .social-icons-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -674,6 +674,13 @@
   gap: 24px 40px;
   justify-content: flex-end;
   position: relative;
+}
+
+.how-all-breakpoints .social-link-1 {
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
 }
 
 .how-all-breakpoints .apps {
@@ -749,6 +756,7 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
+  height: 6209px;
   min-width: 360px;
   position: relative;
 }
@@ -1200,17 +1208,6 @@
   cursor: pointer;
 }
 
-.howu95mobsm .content {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-  width: 100%;
-}
-
 .howu95mobsm .logo {
   align-items: flex-start;
   display: inline-flex;
@@ -1339,9 +1336,6 @@
 }
 
 .howu95mobsm .social-link-reddit {
-  background-image: url(../img/combined-shape@2x.png);
-  background-size: 100% 100%;
-  border-radius: 40px;
   height: 32px;
 }
 
@@ -1431,6 +1425,7 @@
   display: flex;
   flex-direction: column;
   gap: 120px;
+  height: 4940px;
   min-width: 744px;
   position: relative;
 }
@@ -1439,14 +1434,18 @@
   align-items: flex-start;
   align-self: stretch;
   display: flex;
-  flex: 0 0 auto;
+  height: 88px;
   justify-content: space-between;
-  padding: 32px;
+  padding: 32px 72px;
   position: relative;
   width: 100%;
 }
 
-.howu95tabsm .hero-1 {
+.howu95tabsm .menu-icon-6 {
+  cursor: pointer;
+}
+
+.howu95tabsm .hero-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1468,7 +1467,7 @@
   position: relative;
 }
 
-.howu95tabsm .title-3 {
+.howu95tabsm .title-4 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -1476,11 +1475,11 @@
   text-align: center;
 }
 
-.howu95tabsm .span-6 {
+.howu95tabsm .span-9 {
   letter-spacing: 0.32px;
 }
 
-.howu95tabsm .intro-copy-8 {
+.howu95tabsm .intro-copy-13 {
   align-self: stretch;
   color: transparent;
   font-weight: 300;
@@ -1488,11 +1487,11 @@
   position: relative;
 }
 
-.howu95tabsm .span-7 {
+.howu95tabsm .span-10 {
   color: var(--white);
 }
 
-.howu95tabsm .span-8 {
+.howu95tabsm .span-11 {
   color: var(--dull-lavender);
 }
 
@@ -1513,7 +1512,7 @@
   width: 275px;
 }
 
-.howu95tabsm .learn-more-3 {
+.howu95tabsm .learn-more-4 {
   margin-left: -6.00px;
   margin-right: -6.00px;
 }
@@ -1541,7 +1540,7 @@
   width: 100%;
 }
 
-.howu95tabsm .line-1 {
+.howu95tabsm .line-2 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -1559,15 +1558,15 @@
   flex: 1;
 }
 
-.howu95tabsm .span-9 {
+.howu95tabsm .span-12 {
   color: var(--aquamarine);
 }
 
-.howu95tabsm .cards-2 {
+.howu95tabsm .cards-4 {
   gap: 16px;
 }
 
-.howu95tabsm .info-card-2 {
+.howu95tabsm .info-card-4 {
   align-items: flex-start;
   background-color: var(--black-2);
   border-color: var(--true-v);
@@ -1586,7 +1585,7 @@
   width: 100%;
 }
 
-.howu95tabsm .intro-copy-9 {
+.howu95tabsm .intro-copy-14 {
   color: var(--white);
   flex: 1;
   font-weight: 600;
@@ -1595,7 +1594,17 @@
   position: relative;
 }
 
-.howu95tabsm .intro-copy-12 {
+.howu95tabsm .line-8-2 {
+  align-self: stretch;
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.howu95tabsm .intro-copy-17 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1603,7 +1612,7 @@
   position: relative;
 }
 
-.howu95tabsm .intro-copy-10 {
+.howu95tabsm .intro-copy-15 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   color: var(--dull-lavender-2);
@@ -1618,7 +1627,7 @@
   width: fit-content;
 }
 
-.howu95tabsm .intro-copy-13 {
+.howu95tabsm .intro-copy-18 {
   align-self: stretch;
   color: transparent;
   font-weight: 400;
@@ -1626,25 +1635,25 @@
   position: relative;
 }
 
-.howu95tabsm .span-10 {
+.howu95tabsm .span-13 {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
 }
 
-.howu95tabsm .span1-1 {
+.howu95tabsm .span1-2 {
   color: var(--white);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.howu95tabsm .span-11 {
+.howu95tabsm .span-14 {
   color: var(--dull-lavender);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.howu95tabsm .intro-copy-14 {
+.howu95tabsm .intro-copy-19 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1652,7 +1661,7 @@
   position: relative;
 }
 
-.howu95tabsm .intro-copy-11 {
+.howu95tabsm .intro-copy-16 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   -webkit-text-stroke: 1px var(--black);
@@ -1670,7 +1679,7 @@
   width: fit-content;
 }
 
-.howu95tabsm .intro-copy-15 {
+.howu95tabsm .intro-copy-20 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1699,11 +1708,11 @@
   width: fit-content;
 }
 
-.howu95tabsm .cards-3 {
+.howu95tabsm .cards-5 {
   gap: 40px;
 }
 
-.howu95tabsm .info-card-3 {
+.howu95tabsm .info-card-5 {
   align-items: center;
   background-color: var(--black);
   border-color: var(--aquamarine);
@@ -1731,7 +1740,7 @@
   width: 100%;
 }
 
-.howu95tabsm .title-2 {
+.howu95tabsm .title-3 {
   color: var(--aquamarine);
   flex: 1;
   font-weight: 600;
@@ -1744,7 +1753,7 @@
   line-height: 15px;
 }
 
-.howu95tabsm .link-2 {
+.howu95tabsm .link-3 {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   align-self: stretch;
@@ -1781,12 +1790,22 @@
   line-height: 18.0px;
 }
 
+.howu95tabsm .button-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 0px 0px;
+  position: relative;
+}
+
 .howu95tabsm .mobile-button-hero-4 {
   cursor: pointer;
   display: inline-flex;
 }
 
-.howu95tabsm .logo-1 {
+.howu95tabsm .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1795,12 +1814,7 @@
   position: relative;
 }
 
-.howu95tabsm .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
-.howu95tabsm .x2023-orchid-3 {
+.howu95tabsm .x2023-orchid-6 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1808,7 +1822,7 @@
   width: 299px;
 }
 
-.howu95tabsm .x2023-orchid-4 {
+.howu95tabsm .x2023-orchid-7 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1816,7 +1830,7 @@
   position: relative;
 }
 
-.howu95tabsm .hyperlinks-1 {
+.howu95tabsm .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1834,7 +1848,7 @@
   width: 281px;
 }
 
-.howu95tabsm .x2023-orchid-5 {
+.howu95tabsm .x2023-orchid-8 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1844,46 +1858,42 @@
   width: 132px;
 }
 
-.howu95tabsm .link-3 {
+.howu95tabsm .link-4 {
   display: flex;
   height: 22px;
   width: 281px;
 }
 
-.howu95tabsm .apps-8 {
+.howu95tabsm .apps-10 {
   width: 102px;
 }
 
-.howu95tabsm .apps-9 {
+.howu95tabsm .apps-11 {
   width: 132px;
 }
 
-.howu95tabsm .apps-10 {
+.howu95tabsm .apps-12 {
   cursor: pointer;
   width: 113px;
 }
 
-.howu95tabsm .apps-11 {
+.howu95tabsm .apps-13 {
   width: 85px;
 }
 
-.howu95tabsm .apps-12 {
+.howu95tabsm .apps-14 {
   width: 122px;
 }
 
-.howu95tabsm .apps-13 {
+.howu95tabsm .apps-15 {
   width: 76px;
 }
 
-.howu95tabsm .apps-14 {
-  width: 42px;
-}
-
-.howu95tabsm .apps-15 {
+.howu95tabsm .apps-17 {
   width: 75px;
 }
 
-.howu95tabsm .social-icons-1 {
+.howu95tabsm .social-icons-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1896,9 +1906,10 @@
   width: 100%;
 }
 
-.howu95tabsm .social-link-1 {
+.howu95tabsm .social-link-github-2 {
   cursor: pointer;
-  height: 32px;
+  height: 33px;
+  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }
@@ -2008,10 +2019,10 @@
   position: relative;
 }
 @media screen and (max-width: 743px) {
-  .screen.howu95tabsm { 
+  .screen.how-all-breakpoints { 
     display: none;
    }
-  .screen.how-all-breakpoints { 
+  .screen.howu95tabsm { 
     display: none;
    }
 }

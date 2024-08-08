@@ -1,63 +1,40 @@
 /* screen - nav-overlay-phone */
 
 .nav-overlay-phone {
-  align-items: flex-start;
-  display: flex;
-  min-width: 360px;
+  align-items: flex-end;
+  background-color: #00000040;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px 40px 60px 24px;
+  position: relative;
 }
 
 .nav-overlay-phone .nav-overlay-phone-1 {
   align-items: flex-end;
   background-color: var(--log-cabin);
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  height: 674px;
-  margin-left: 6197px;
-  margin-top: 1146px;
-  width: 360px;
-}
-
-.nav-overlay-phone .account {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  flex: 1;
-  gap: 24px;
-  margin-top: 32px;
-  max-height: 56px;
-  overflow: hidden;
-  padding: 16px 48px;
-  position: relative;
-  width: 360px;
-}
-
-.nav-overlay-phone .icon {
-  height: 24px;
-  position: relative;
-  width: 24px;
+  gap: 12px;
+  padding: 32px 40px 60px 24px;
 }
 
 .nav-overlay-phone .link {
   align-items: center;
   cursor: pointer;
   display: flex;
-  flex: 1;
+  flex: 0 0 auto;
   gap: 24px;
-  margin-top: 8px;
-  max-height: 56px;
   overflow: hidden;
   padding: 16px 48px;
   position: relative;
-  width: 360px;
+  width: 320px;
 }
 
-.nav-overlay-phone .storchid {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
+.nav-overlay-phone .icon {
+  height: 24px;
   position: relative;
-  width: 281px;
+  width: 24px;
 }
 
 .nav-overlay-phone .vpn {
@@ -70,42 +47,6 @@
 }
 
 .nav-overlay-phone .oxt {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.nav-overlay-phone .how {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.nav-overlay-phone .about {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.nav-overlay-phone .docs {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.nav-overlay-phone .account-3 {
   color: var(--white);
   font-weight: 700;
   line-height: 22.4px;
