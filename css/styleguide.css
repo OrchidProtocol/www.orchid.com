@@ -265,6 +265,21 @@
   font-weight: 500;
 }
 
+.figtree-semi-bold-aquamarine-16px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.figtree-semi-bold-white-16px {
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
 .figtree-medium-white-28px-2 {
   color: var(--white);
   font-family: var(--font-family-figtree);

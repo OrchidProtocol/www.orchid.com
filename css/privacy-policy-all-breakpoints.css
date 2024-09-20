@@ -22,25 +22,14 @@
   width: 100%;
 }
 
-.privacy-policy-all-breakpoints .menu-icon {
-  cursor: pointer;
-  height: 24px;
-  position: relative;
-  width: 24px;
-}
-
-.privacy-policy-all-breakpoints .frame-403-1 {
+.privacy-policy-all-breakpoints .frame-403 {
   align-items: center;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
   gap: 24px;
   padding: 0px 24px 24px;
-  position: relative;
   width: 357px;
 }
 
-.privacy-policy-all-breakpoints .decentralized-marketplace-1 {
+.privacy-policy-all-breakpoints .decentralized-marketplace {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -58,7 +47,7 @@
   color: var(--white);
 }
 
-.privacy-policy-all-breakpoints .line-10-1 {
+.privacy-policy-all-breakpoints .line-10 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -78,12 +67,26 @@
   width: 100%;
 }
 
-.privacy-policy-all-breakpoints .copy-1 {
+.privacy-policy-all-breakpoints .copy {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   gap: 24px;
+  position: relative;
+  width: 100%;
 }
 
 .privacy-policy-all-breakpoints .copy-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   gap: 8px;
+  position: relative;
+  width: 100%;
 }
 
 .privacy-policy-all-breakpoints .title {
@@ -122,13 +125,13 @@
   position: relative;
 }
 
-.privacy-policy-all-breakpoints .span-4 {
+.privacy-policy-all-breakpoints .span {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
 }
 
-.privacy-policy-all-breakpoints .span-5 {
+.privacy-policy-all-breakpoints .span-1 {
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 16.5px;
@@ -147,7 +150,21 @@
   line-height: 18.0px;
 }
 
-.privacy-policy-all-breakpoints .logo-1 {
+.privacy-policy-all-breakpoints .mobilefooter {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--black);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+  padding: 80px 60px 120px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.privacy-policy-all-breakpoints .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -157,12 +174,12 @@
   position: relative;
 }
 
-.privacy-policy-all-breakpoints .desktop-home-logo-2 {
+.privacy-policy-all-breakpoints .desktop-home-logo {
   height: 36px;
   position: relative;
 }
 
-.privacy-policy-all-breakpoints .x2023-orchid-3 {
+.privacy-policy-all-breakpoints .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -170,7 +187,7 @@
   width: 299px;
 }
 
-.privacy-policy-all-breakpoints .x2023-orchid-4 {
+.privacy-policy-all-breakpoints .x2023-orchid-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -178,7 +195,7 @@
   position: relative;
 }
 
-.privacy-policy-all-breakpoints .hyperlinks-1 {
+.privacy-policy-all-breakpoints .hyperlinks {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -192,12 +209,8 @@
 .privacy-policy-all-breakpoints .frame-532 {
   align-items: flex-start;
   align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
   gap: 32px;
   padding: 24px 0px;
-  position: relative;
   width: 100%;
 }
 
@@ -209,7 +222,7 @@
   width: 281px;
 }
 
-.privacy-policy-all-breakpoints .x2023-orchid-5 {
+.privacy-policy-all-breakpoints .x2023-orchid-2 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -219,7 +232,7 @@
   width: 132px;
 }
 
-.privacy-policy-all-breakpoints .link-1 {
+.privacy-policy-all-breakpoints .link {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -228,40 +241,45 @@
   width: 281px;
 }
 
-.privacy-policy-all-breakpoints .apps-2 {
+.privacy-policy-all-breakpoints .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
   width: 102px;
 }
 
-.privacy-policy-all-breakpoints .apps-3 {
+.privacy-policy-all-breakpoints .apps-1 {
   width: 132px;
 }
 
-.privacy-policy-all-breakpoints .apps-4 {
+.privacy-policy-all-breakpoints .apps-2 {
   cursor: pointer;
   width: 113px;
 }
 
-.privacy-policy-all-breakpoints .apps-5 {
+.privacy-policy-all-breakpoints .apps-3 {
   width: 85px;
 }
 
-.privacy-policy-all-breakpoints .apps-6 {
+.privacy-policy-all-breakpoints .apps-4 {
   width: 122px;
 }
 
-.privacy-policy-all-breakpoints .apps-7 {
+.privacy-policy-all-breakpoints .apps-5 {
   width: 76px;
 }
 
-.privacy-policy-all-breakpoints .apps-8 {
+.privacy-policy-all-breakpoints .apps-6 {
   width: 42px;
 }
 
-.privacy-policy-all-breakpoints .apps-9 {
+.privacy-policy-all-breakpoints .apps-7 {
   width: 75px;
 }
 
-.privacy-policy-all-breakpoints .social-icons-1 {
+.privacy-policy-all-breakpoints .social-icons {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -274,14 +292,16 @@
   width: 100%;
 }
 
-.privacy-policy-all-breakpoints .social-link-1 {
-  cursor: pointer;
-  height: 32px;
-  position: relative;
-  width: 32px;
+.privacy-policy-all-breakpoints .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
 }
 
-.privacy-policy-all-breakpoints .apps {
+.privacy-policy-all-breakpoints .social-link-reddit {
+  height: 32px;
+}
+
+.privacy-policy-all-breakpoints .apps-8 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -289,14 +309,17 @@
   white-space: nowrap;
 }
 
-.privacy-policy-all-breakpoints .copy {
-  align-items: center;
-  align-self: stretch;
+.privacy-policy-all-breakpoints .frame {
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
-  width: 100%;
+}
+
+.privacy-policy-all-breakpoints .social-link-1 {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
 }
 /* screen - privacy-policyu95dt */
 
@@ -370,11 +393,9 @@
   width: 613px;
 }
 
-.privacy-policyu95dt .desktop-home-logo {
+.privacy-policyu95dt .desktop-home-logo-1 {
   cursor: pointer;
   flex: 0 0 auto;
-  height: 36px;
-  position: relative;
 }
 
 .privacy-policyu95dt .desktop-button-top-nav-1 {
@@ -434,6 +455,15 @@
   width: 196px;
 }
 
+.privacy-policyu95dt .button-label {
+  color: var(--white);
+  font-weight: 700;
+  height: 14px;
+  line-height: 14.4px;
+  text-align: center;
+  width: 196px;
+}
+
 .privacy-policyu95dt .hero {
   align-items: center;
   display: flex;
@@ -446,7 +476,7 @@
   width: 1440px;
 }
 
-.privacy-policyu95dt .frame-403 {
+.privacy-policyu95dt .frame-403-1 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -456,7 +486,7 @@
   width: 855px;
 }
 
-.privacy-policyu95dt .decentralized-marketplace {
+.privacy-policyu95dt .decentralized-marketplace-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -466,11 +496,11 @@
   text-align: center;
 }
 
-.privacy-policyu95dt .span {
+.privacy-policyu95dt .span-2 {
   letter-spacing: 0.72px;
 }
 
-.privacy-policyu95dt .line-10 {
+.privacy-policyu95dt .line-10-1 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -489,7 +519,7 @@
   width: 1440px;
 }
 
-.privacy-policyu95dt .copy {
+.privacy-policyu95dt .copy-1 {
   align-self: stretch;
   display: flex;
   height: 1134px;
@@ -503,17 +533,17 @@
   width: 1120px;
 }
 
-.privacy-policyu95dt .span-1 {
+.privacy-policyu95dt .span-3 {
   letter-spacing: 0.31px;
   line-height: 34.7px;
 }
 
-.privacy-policyu95dt .span-2 {
+.privacy-policyu95dt .span-4 {
   letter-spacing: 0.08px;
   line-height: 28.0px;
 }
 
-.privacy-policyu95dt .span-3 {
+.privacy-policyu95dt .span-5 {
   letter-spacing: 0.08px;
   line-height: 28.0px;
   text-decoration: underline;
@@ -533,7 +563,7 @@
   width: 100%;
 }
 
-.privacy-policyu95dt .logo {
+.privacy-policyu95dt .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -542,12 +572,7 @@
   position: relative;
 }
 
-.privacy-policyu95dt .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
-.privacy-policyu95dt .x2023-orchid {
+.privacy-policyu95dt .x2023-orchid-3 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -555,7 +580,7 @@
   width: 676px;
 }
 
-.privacy-policyu95dt .hyperlinks {
+.privacy-policyu95dt .hyperlinks-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -583,7 +608,12 @@
   width: 180px;
 }
 
-.privacy-policyu95dt .x2023-orchid-1 {
+.privacy-policyu95dt .x2023-orchid-4 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
   width: 180px;
 }
 
@@ -594,25 +624,42 @@
   width: 208px;
 }
 
-.privacy-policyu95dt .x2023-orchid-2 {
+.privacy-policyu95dt .x2023-orchid-5 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
   width: 208px;
 }
 
-.privacy-policyu95dt .apps-1 {
-  color: var(--white);
+.privacy-policyu95dt .apps-9 {
   cursor: pointer;
-  font-weight: 700;
-  height: 22px;
-  line-height: 22.4px;
-  width: 198px;
 }
 
-.privacy-policyu95dt .link {
+.privacy-policyu95dt .link-1 {
   cursor: pointer;
   display: flex;
   height: 22px;
   position: relative;
   width: 198px;
+}
+
+.privacy-policyu95dt .social-icons-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.privacy-policyu95dt .social-link-1 {
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
 }
 
 .privacy-policyu95dt .apps {
@@ -623,25 +670,6 @@
   width: 198px;
 }
 
-.privacy-policyu95dt .social-icons {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 24px 40px;
-  justify-content: flex-end;
-  position: relative;
-}
-
-.privacy-policyu95dt .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
-}
-
-.privacy-policyu95dt .social-link-reddit {
-  height: 32px;
-}
-
 .privacy-policyu95dt .desktop-button-top-nav-7 {
   align-items: center;
   gap: 10px;
@@ -649,10 +677,9 @@
   position: relative;
 }
 
-.privacy-policyu95dt .social-link-1 {
-  cursor: pointer;
+.privacy-policyu95dt .desktop-home-logo {
+  height: 36px;
   position: relative;
-  width: 32px;
 }
 
 .privacy-policyu95dt .vpn-3 {
@@ -663,14 +690,6 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
-}
-
-.privacy-policyu95dt .x2023-orchid-3 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
 }
 /* screen - privacy-policyu95tabsm */
 
@@ -719,14 +738,6 @@
 
 .privacy-policyu95tabsm .span-6 {
   letter-spacing: 0.32px;
-}
-
-.privacy-policyu95tabsm .line-10-2 {
-  align-self: stretch;
-  height: 1px;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
 }
 
 .privacy-policyu95tabsm .marketplaces-1 {
@@ -800,6 +811,20 @@
 .privacy-policyu95tabsm .nanopay {
   align-self: stretch;
   flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.privacy-policyu95tabsm .mobilefooter-1 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--black);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: flex-end;
+  padding: 80px 60px 120px 40px;
   position: relative;
   width: 100%;
 }
@@ -936,10 +961,10 @@
    }
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
-  .screen.privacy-policyu95dt { 
+  .screen.privacy-policy-all-breakpoints { 
     display: none;
    }
-  .screen.privacy-policy-all-breakpoints { 
+  .screen.privacy-policyu95dt { 
     display: none;
    }
 }
