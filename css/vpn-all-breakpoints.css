@@ -12,23 +12,20 @@
 
 .vpn-all-breakpoints .ellipses {
   height: 5219px;
-  left: calc(50.00% - 984px);
+  left: calc(50.00% - 934px);
   position: absolute;
   top: -90px;
-  width: 1968px;
+  width: 1868px;
 }
 
 .vpn-all-breakpoints .flex-col {
   flex-direction: column;
-  left: 1px;
   min-height: 5219px;
-  position: relative;
-  width: 1967px;
 }
 
 .vpn-all-breakpoints .overlap-group1 {
   height: 775px;
-  margin-left: 90.0px;
+  margin-left: 40.0px;
   position: relative;
   width: 936px;
 }
@@ -41,11 +38,31 @@
   width: 912px;
 }
 
+.vpn-all-breakpoints .ellipse-29 {
+  background-color: var(--cod-gray);
+  border-radius: 155px;
+  height: 310px;
+  left: 602px;
+  position: absolute;
+  top: 465px;
+  width: 310px;
+}
+
+.vpn-all-breakpoints .ellipse-30 {
+  background-color: var(--cod-gray);
+  border-radius: 100px;
+  height: 200px;
+  left: 736px;
+  position: absolute;
+  top: 18px;
+  width: 200px;
+}
+
 .vpn-all-breakpoints .flex-row {
-  gap: 109px;
+  gap: 59px;
   height: 3442px;
   margin-top: 441px;
-  min-width: 1967px;
+  min-width: 1868px;
 }
 
 .vpn-all-breakpoints .ellipse-37 {
@@ -62,7 +79,7 @@
   display: flex;
   flex-direction: column;
   min-height: 3442px;
-  width: 975px;
+  width: 926px;
 }
 
 .vpn-all-breakpoints .ellipse-34 {
@@ -78,7 +95,7 @@
   background-color: var(--black-2);
   border-radius: 260px;
   height: 520px;
-  margin-right: 121.35px;
+  margin-right: 71.35px;
   margin-top: 770px;
   transform: rotate(180.00deg);
   width: 520px;
@@ -97,7 +114,7 @@
   background-color: var(--black-2);
   border-radius: 190px;
   height: 380px;
-  margin-left: 320.0px;
+  margin-left: 270.5px;
   margin-top: 181px;
   transform: rotate(180.00deg);
   width: 380px;
@@ -176,17 +193,6 @@
   justify-content: center;
   padding: 17px 24px;
   position: relative;
-}
-
-.vpn-all-breakpoints .button-label {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 14.4px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .vpn-all-breakpoints .hero-1 {
@@ -330,20 +336,20 @@
   width: fit-content;
 }
 
-.vpn-all-breakpoints .line-1 {
+.vpn-all-breakpoints .line-10-2 {
   flex: 1;
   flex-grow: 1;
+  height: 1px;
+  object-fit: cover;
   position: relative;
 }
 
 .vpn-all-breakpoints .desktop-headline-section {
   align-items: flex-start;
-  align-self: stretch;
-  display: flex;
+  display: inline-flex;
   flex: 0 0 auto;
   padding: 0px 0px 24px;
   position: relative;
-  width: 100%;
 }
 
 .vpn-all-breakpoints .two-color-headline {
@@ -399,7 +405,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .line-8-2 {
+.vpn-all-breakpoints .line-8-6 {
   margin-bottom: -2.00px;
   margin-top: -2.00px;
   width: 4px;
@@ -417,6 +423,12 @@
   justify-content: center;
 }
 
+.vpn-all-breakpoints .line-8-8 {
+  margin-bottom: -2.00px;
+  margin-top: -2.00px;
+  width: 4px;
+}
+
 .vpn-all-breakpoints .features {
   align-items: center;
   align-self: stretch;
@@ -425,17 +437,6 @@
   flex-direction: column;
   gap: 24px;
   padding: 0px 80px;
-  position: relative;
-  width: 100%;
-}
-
-.vpn-all-breakpoints .frame-475 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
   position: relative;
   width: 100%;
 }
@@ -460,6 +461,13 @@
   justify-content: center;
   position: relative;
   width: 100%;
+}
+
+.vpn-all-breakpoints .line {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
 }
 
 .vpn-all-breakpoints .caption-1 {
@@ -491,7 +499,8 @@
   margin-top: -1.00px;
   position: relative;
   text-align: center;
-  width: 1280px;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .vpn-all-breakpoints .cards-3 {
@@ -587,7 +596,9 @@
 }
 
 .vpn-all-breakpoints .line-2 {
+  height: 1px;
   left: 0;
+  object-fit: cover;
   position: absolute;
   top: 56px;
   width: 1280px;
@@ -648,7 +659,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .line-8-3 {
+.vpn-all-breakpoints .line-8-7 {
   height: 2px;
   margin-left: -1.00px;
   margin-right: -1.00px;
@@ -675,6 +686,20 @@
   overflow: hidden;
   position: relative;
   text-overflow: ellipsis;
+}
+
+.vpn-all-breakpoints .line-8-9 {
+  height: 2px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  width: 100%;
+}
+
+.vpn-all-breakpoints .line-8-10 {
+  height: 2px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  width: 100%;
 }
 
 .vpn-all-breakpoints .frame-380-1 {
@@ -730,7 +755,7 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .x2023-orchid-3 {
+.vpn-all-breakpoints .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -766,7 +791,7 @@
   width: 180px;
 }
 
-.vpn-all-breakpoints .x2023-orchid-4 {
+.vpn-all-breakpoints .x2023-orchid-5 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -776,13 +801,24 @@
 }
 
 .vpn-all-breakpoints .pp-1 {
-  display: flex;
-  height: 44px;
-  position: relative;
+  height: 22px;
+}
+
+.vpn-all-breakpoints .x2023-orchid-6 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  white-space: nowrap;
   width: 208px;
 }
 
-.vpn-all-breakpoints .x2023-orchid-5 {
+.vpn-all-breakpoints .pp-2 {
+  height: 44px;
+}
+
+.vpn-all-breakpoints .x2023-orchid-7 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -882,14 +918,15 @@
   position: relative;
 }
 
-.vpn-all-breakpoints .line {
-  height: 1px;
-  object-fit: cover;
-}
-
 .vpn-all-breakpoints .line-8 {
   align-self: stretch;
   position: relative;
+}
+
+.vpn-all-breakpoints .pp-3 {
+  display: flex;
+  position: relative;
+  width: 208px;
 }
 /* screen - vpnu95mobsm */
 
@@ -899,7 +936,6 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  height: 6442px;
   min-width: 360px;
   position: relative;
 }
@@ -1043,7 +1079,7 @@
   width: 100%;
 }
 
-.vpnu95mobsm .line {
+.vpnu95mobsm .line-10 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -1144,16 +1180,29 @@
   width: 100%;
 }
 
+.vpnu95mobsm .line-9 {
+  height: 1px;
+  margin-left: -15.50px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
+}
+
 .vpnu95mobsm .discover-1 {
   text-align: center;
+}
+
+.vpnu95mobsm .line-10-1 {
+  height: 1px;
+  margin-right: -15.50px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
 }
 
 .vpnu95mobsm .mobile-headline-section-1 {
   align-items: flex-start;
   justify-content: center;
-  margin-left: -24.00px;
-  margin-right: -24.00px;
-  width: 360px;
 }
 
 .vpnu95mobsm .the-orchid-ecosystem-1 {
@@ -1234,9 +1283,7 @@
 
 .vpnu95mobsm .mobile-headline-section-2 {
   align-items: center;
-  align-self: stretch;
   flex-direction: column;
-  width: 100%;
 }
 
 .vpnu95mobsm .why-orchid-vpn {
@@ -1324,20 +1371,6 @@
   width: 144px;
 }
 
-.vpnu95mobsm .mobilefooter {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--black);
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: flex-end;
-  padding: 80px 60px 120px 40px;
-  position: relative;
-  width: 100%;
-}
-
 .vpnu95mobsm .logo {
   align-items: flex-start;
   display: inline-flex;
@@ -1411,6 +1444,15 @@
   margin-right: -21.00px;
   position: relative;
   width: 281px;
+}
+
+.vpnu95mobsm .x2023-orchid-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
 }
 
 .vpnu95mobsm .apps {
@@ -1489,6 +1531,15 @@
   position: relative;
 }
 
+.vpnu95mobsm .discover-2 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
 .vpnu95mobsm .frame {
   align-items: flex-start;
   align-self: stretch;
@@ -1507,11 +1558,23 @@
   position: relative;
 }
 
+.vpnu95mobsm .line-8-6 {
+  align-self: stretch;
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
 .vpnu95mobsm .mobile-headline-section-3 {
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   gap: 10px;
   position: relative;
+  width: 100%;
 }
 
 .vpnu95mobsm .social-link-1 {
@@ -1527,7 +1590,6 @@
   display: flex;
   flex-direction: column;
   gap: 120px;
-  height: 4898px;
   min-width: 744px;
   position: relative;
 }
@@ -1668,7 +1730,7 @@
   width: 100%;
 }
 
-.vpnu95tabsm .line-3 {
+.vpnu95tabsm .line-10-3 {
   flex: 1;
   flex-grow: 1;
   height: 1px;
@@ -1677,9 +1739,7 @@
 }
 
 .vpnu95tabsm .mobile-headline-section-3 {
-  align-self: stretch;
   justify-content: space-around;
-  width: 100%;
 }
 
 .vpnu95tabsm .copy-1 {
@@ -1737,7 +1797,7 @@
   width: 200px;
 }
 
-.vpnu95tabsm .line-8-4 {
+.vpnu95tabsm .line-8-11 {
   margin-bottom: -1.00px;
   margin-top: -1.00px;
   width: 2px;
@@ -1764,6 +1824,13 @@
   justify-content: center;
 }
 
+.vpnu95tabsm .line-1 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
+}
+
 .vpnu95tabsm .discover-3 {
   text-align: center;
 }
@@ -1771,7 +1838,6 @@
 .vpnu95tabsm .mobile-headline-section-4 {
   gap: 10px;
   justify-content: center;
-  width: 360px;
 }
 
 .vpnu95tabsm .the-orchid-ecosystem-3 {
@@ -1898,7 +1964,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .line-8-5 {
+.vpnu95tabsm .line-8-12 {
   height: 1px;
   margin-left: -0.50px;
   margin-right: -0.50px;
@@ -1928,6 +1994,22 @@
   text-overflow: ellipsis;
 }
 
+.vpnu95tabsm .line-8-13 {
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.vpnu95tabsm .line-8-14 {
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .vpnu95tabsm .frame-380-2 {
   align-items: center;
   display: flex;
@@ -1948,6 +2030,7 @@
 
 .vpnu95tabsm .google-play-badge-2 {
   height: 56.3px;
+  margin-top: 0;
   width: 188px;
 }
 
@@ -1961,20 +2044,6 @@
   width: 188px;
 }
 
-.vpnu95tabsm .mobilefooter-1 {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--black);
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: flex-end;
-  padding: 80px 60px 120px 40px;
-  position: relative;
-  width: 100%;
-}
-
 .vpnu95tabsm .logo-2 {
   align-items: flex-start;
   display: inline-flex;
@@ -1984,7 +2053,7 @@
   position: relative;
 }
 
-.vpnu95tabsm .x2023-orchid-6 {
+.vpnu95tabsm .x2023-orchid-8 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1992,7 +2061,7 @@
   width: 299px;
 }
 
-.vpnu95tabsm .x2023-orchid-7 {
+.vpnu95tabsm .x2023-orchid-9 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -2018,7 +2087,7 @@
   width: 281px;
 }
 
-.vpnu95tabsm .x2023-orchid-8 {
+.vpnu95tabsm .x2023-orchid-10 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -2032,6 +2101,15 @@
   display: flex;
   height: 22px;
   width: 281px;
+}
+
+.vpnu95tabsm .x2023-orchid-11 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
 }
 
 .vpnu95tabsm .apps-10 {
@@ -2148,9 +2226,11 @@
 
 .vpnu95tabsm .mobile-headline-section {
   align-items: flex-start;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   position: relative;
+  width: 100%;
 }
 
 .vpnu95tabsm .the-orchid-ecosystem {

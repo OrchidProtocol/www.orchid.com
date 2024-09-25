@@ -12,19 +12,19 @@
 
 .about-all-breakpoints .ellipses {
   height: 3119px;
-  left: calc(50.00% - 983px);
+  left: calc(50.00% - 984px);
   position: absolute;
   top: -90px;
-  width: 1967px;
+  width: 1968px;
 }
 
 .about-all-breakpoints .flex-row {
   align-items: center;
   display: flex;
-  gap: 276px;
+  gap: 277px;
   height: 1903px;
   left: 0;
-  min-width: 1967px;
+  min-width: 1968px;
   position: absolute;
   top: 1216px;
 }
@@ -65,7 +65,7 @@
 
 .about-all-breakpoints .overlap-group1 {
   height: 775px;
-  left: 90px;
+  left: 91px;
   position: absolute;
   top: 0;
   width: 936px;
@@ -77,6 +77,26 @@
   position: absolute;
   top: 0;
   width: 912px;
+}
+
+.about-all-breakpoints .ellipse-29 {
+  background-color: var(--cod-gray);
+  border-radius: 155px;
+  height: 310px;
+  left: 602px;
+  position: absolute;
+  top: 465px;
+  width: 310px;
+}
+
+.about-all-breakpoints .ellipse-30 {
+  background-color: var(--cod-gray);
+  border-radius: 100px;
+  height: 200px;
+  left: 736px;
+  position: absolute;
+  top: 18px;
+  width: 200px;
 }
 
 .about-all-breakpoints .logo-4 {
@@ -152,17 +172,6 @@
   padding: 17px 24px;
 }
 
-.about-all-breakpoints .button-label {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 14.4px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
 .about-all-breakpoints .hero-2 {
   align-items: flex-start;
   align-self: stretch;
@@ -201,7 +210,6 @@
 }
 
 .about-all-breakpoints .frame-491 {
-  align-items: flex-start;
   align-self: stretch;
   display: flex;
   gap: 40px;
@@ -268,7 +276,7 @@
   width: 880px;
 }
 
-.about-all-breakpoints .line-2-3 {
+.about-all-breakpoints .line-2-2 {
   margin-bottom: -1.00px;
   position: relative;
   width: 880px;
@@ -289,21 +297,13 @@
 
 .about-all-breakpoints .contact-2 {
   align-items: center;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 40px;
   padding: 0px 80px;
   position: relative;
-  width: 1440px;
-}
-
-.about-all-breakpoints .frame-475 {
-  align-items: center;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  gap: 24px;
   width: 100%;
 }
 
@@ -330,11 +330,10 @@
 }
 
 .about-all-breakpoints .line-4 {
-  flex: 1;
-  flex-grow: 1;
   height: 1px;
   object-fit: cover;
   position: relative;
+  width: 550px;
 }
 
 .about-all-breakpoints .caption {
@@ -366,7 +365,8 @@
   margin-top: -1.00px;
   position: relative;
   text-align: center;
-  width: 1280px;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .about-all-breakpoints .intro-copy-10 {
@@ -419,13 +419,14 @@
 
 .about-all-breakpoints .corp-info-2 {
   align-items: flex-start;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 40px;
   padding: 0px 120px;
   position: relative;
-  width: 1440px;
+  width: 100%;
 }
 
 .about-all-breakpoints .desktop-header-section-simple {
@@ -434,7 +435,7 @@
   width: 1200px;
 }
 
-.about-all-breakpoints .line-2-4 {
+.about-all-breakpoints .line-2-3 {
   left: 0;
   position: absolute;
   top: 56px;
@@ -517,7 +518,7 @@
   position: relative;
 }
 
-.about-all-breakpoints .x2023-orchid-6 {
+.about-all-breakpoints .x2023-orchid-8 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -538,7 +539,6 @@
 }
 
 .about-all-breakpoints .frame-42 {
-  align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   gap: 24px;
@@ -551,7 +551,7 @@
   width: 180px;
 }
 
-.about-all-breakpoints .x2023-orchid-7 {
+.about-all-breakpoints .x2023-orchid-9 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -561,13 +561,24 @@
 }
 
 .about-all-breakpoints .pp-1 {
-  display: flex;
-  height: 44px;
-  position: relative;
+  height: 22px;
+}
+
+.about-all-breakpoints .x2023-orchid-10 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  white-space: nowrap;
   width: 208px;
 }
 
-.about-all-breakpoints .x2023-orchid-8 {
+.about-all-breakpoints .pp-2 {
+  height: 44px;
+}
+
+.about-all-breakpoints .x2023-orchid-11 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -654,6 +665,7 @@
 }
 
 .about-all-breakpoints .frame {
+  align-items: flex-start;
   flex-direction: column;
   position: relative;
 }
@@ -666,6 +678,12 @@
 .about-all-breakpoints .line-2 {
   height: 1px;
   object-fit: cover;
+}
+
+.about-all-breakpoints .pp-3 {
+  display: flex;
+  position: relative;
+  width: 208px;
 }
 
 .about-all-breakpoints .vpn-3 {
@@ -684,7 +702,6 @@
   display: flex;
   flex-direction: column;
   gap: 100px;
-  height: 3030px;
   min-width: 360px;
   position: relative;
 }
@@ -882,9 +899,9 @@
   width: 100%;
 }
 
-.aboutu95mobsm .line-1 {
-  flex: 1;
-  flex-grow: 1;
+.aboutu95mobsm .line-9 {
+  margin-left: -20.50px;
+  width: 135px;
 }
 
 .aboutu95mobsm .discover {
@@ -897,16 +914,20 @@
   width: fit-content;
 }
 
+.aboutu95mobsm .line-10 {
+  margin-right: -20.50px;
+  width: 135px;
+}
+
 .aboutu95mobsm .mobile-headline-section {
   align-items: flex-start;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   gap: 10px;
   justify-content: center;
-  margin-left: -40.00px;
-  margin-right: -40.00px;
   position: relative;
-  width: 360px;
+  width: 100%;
 }
 
 .aboutu95mobsm .the-orchid-ecosystem {
@@ -981,15 +1002,14 @@
 }
 
 .aboutu95mobsm .corporate-info {
+  align-self: stretch;
   color: transparent;
   font-weight: 600;
   height: 23px;
   line-height: 25.2px;
-  margin-right: -224.00px;
   margin-top: -1.00px;
   position: relative;
   white-space: nowrap;
-  width: 504px;
 }
 
 .aboutu95mobsm .frame-493 {
@@ -1025,20 +1045,6 @@
   align-items: flex-start;
   background-color: var(--heavy-metal);
   cursor: pointer;
-}
-
-.aboutu95mobsm .mobilefooter {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--black);
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: flex-end;
-  padding: 80px 60px 120px 40px;
-  position: relative;
-  width: 100%;
 }
 
 .aboutu95mobsm .logo-1 {
@@ -1122,6 +1128,15 @@
   width: 281px;
 }
 
+.aboutu95mobsm .x2023-orchid-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
 .aboutu95mobsm .apps {
   width: 102px;
 }
@@ -1196,7 +1211,7 @@
   position: relative;
 }
 
-.aboutu95mobsm .line-3 {
+.aboutu95mobsm .line-1 {
   height: 1px;
   object-fit: cover;
   position: relative;
@@ -1222,7 +1237,6 @@
   display: flex;
   flex-direction: column;
   gap: 120px;
-  height: 2932px;
   min-width: 744px;
   position: relative;
 }
@@ -1278,7 +1292,7 @@
   color: var(--aquamarine);
 }
 
-.aboutu95tabsm .line-10 {
+.aboutu95tabsm .line-1 {
   align-self: stretch;
   width: 100%;
 }
@@ -1342,7 +1356,12 @@
 }
 
 .aboutu95tabsm .line-2-1 {
+  align-self: stretch;
+  height: 1px;
   margin-bottom: -1.00px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
 }
 
 .aboutu95tabsm .frame-476-1 {
@@ -1374,13 +1393,14 @@
 
 .aboutu95tabsm .contact-1 {
   align-items: center;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 40px;
   padding: 0px 40px;
   position: relative;
-  width: 733px;
+  width: 100%;
 }
 
 .aboutu95tabsm .mobile-1 {
@@ -1406,8 +1426,7 @@
 }
 
 .aboutu95tabsm .line-3 {
-  flex: 1;
-  flex-grow: 1;
+  width: 135px;
 }
 
 .aboutu95tabsm .discover-1 {
@@ -1422,12 +1441,13 @@
 
 .aboutu95tabsm .mobile-headline-section-1 {
   align-items: flex-start;
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   gap: 10px;
   justify-content: center;
   position: relative;
-  width: 360px;
+  width: 100%;
 }
 
 .aboutu95tabsm .the-orchid-ecosystem-1 {
@@ -1545,20 +1565,6 @@
   justify-content: flex-end;
 }
 
-.aboutu95tabsm .mobilefooter-1 {
-  align-items: center;
-  align-self: stretch;
-  background-color: var(--black);
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: flex-end;
-  padding: 80px 60px 120px 40px;
-  position: relative;
-  width: 100%;
-}
-
 .aboutu95tabsm .logo-3 {
   align-items: flex-start;
   display: inline-flex;
@@ -1573,7 +1579,7 @@
   position: relative;
 }
 
-.aboutu95tabsm .x2023-orchid-3 {
+.aboutu95tabsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1581,7 +1587,7 @@
   width: 299px;
 }
 
-.aboutu95tabsm .x2023-orchid-4 {
+.aboutu95tabsm .x2023-orchid-5 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1607,7 +1613,7 @@
   width: 281px;
 }
 
-.aboutu95tabsm .x2023-orchid-5 {
+.aboutu95tabsm .x2023-orchid-6 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1623,6 +1629,15 @@
   height: 22px;
   position: relative;
   width: 281px;
+}
+
+.aboutu95tabsm .x2023-orchid-7 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
 }
 
 .aboutu95tabsm .apps-8 {
@@ -1695,14 +1710,6 @@
   height: 1px;
   object-fit: cover;
   position: relative;
-}
-
-.aboutu95tabsm .line-2 {
-  align-self: stretch;
-  height: 1px;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
 }
 
 .aboutu95tabsm .mobile-button-hero {
