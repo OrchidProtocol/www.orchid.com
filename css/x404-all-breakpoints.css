@@ -729,6 +729,13 @@
   width: 100%;
 }
 
+.x404-all-breakpoints .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .x404-all-breakpoints .frame-404 {
   align-items: center;
   flex: 0 0 auto;

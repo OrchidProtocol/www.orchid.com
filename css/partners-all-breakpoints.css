@@ -684,6 +684,13 @@
   width: 100%;
 }
 
+.partnersu95tabsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .partnersu95tabsm .orchid-partners-1 {
   align-items: center;
   display: flex;

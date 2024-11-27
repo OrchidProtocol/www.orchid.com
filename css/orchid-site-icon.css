@@ -1,0 +1,16 @@
+/* screen - orchid-site-icon */
+
+.orchid-site-icon {
+  background-color: var(--black);
+  display: flex;
+  height: 180px;
+  width: 180px;
+}
+
+.orchid-site-icon .orchid-icon {
+  cursor: pointer;
+  height: 114px;
+  margin-left: 21px;
+  margin-top: 33px;
+  width: 125px;
+}

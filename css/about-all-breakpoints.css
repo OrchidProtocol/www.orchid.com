@@ -717,6 +717,13 @@
   width: 100%;
 }
 
+.aboutu95mobsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .aboutu95mobsm .hero {
   align-items: flex-start;
   align-self: stretch;

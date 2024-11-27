@@ -21,6 +21,13 @@
   width: 100%;
 }
 
+.privacy-policy-all-breakpoints .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .privacy-policy-all-breakpoints .frame-403 {
   align-items: center;
   gap: 24px;

@@ -29,7 +29,6 @@
 }
 
 .home-all-breakpoints .desktop-home-logo-2 {
-  cursor: pointer;
   flex: 0 0 auto;
 }
 
@@ -104,14 +103,13 @@
   align-items: flex-start;
 }
 
-.home-all-breakpoints .decentralize-the-future-2 {
+.home-all-breakpoints .depin-that-works-2 {
   flex: 0 0 auto;
-  margin-top: -1.44px;
   position: relative;
-  width: 916.96px;
+  width: 459.31px;
 }
 
-.home-all-breakpoints .transforming-marketp-2 {
+.home-all-breakpoints .a-decentralized-mark-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -1270,6 +1268,7 @@
 }
 
 .home-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -1344,6 +1343,13 @@
   width: 100%;
 }
 
+.homeu95mobsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .homeu95mobsm .orchid-grid-hero {
   background-image: url(../img/orchidgrid-mob-1.png);
   background-position: 50% 50%;
@@ -1375,15 +1381,13 @@
   width: 100%;
 }
 
-.homeu95mobsm .decentralize-the-future {
-  align-self: stretch;
+.homeu95mobsm .depin-that-works {
   flex: 0 0 auto;
-  margin-top: -0.48px;
   position: relative;
-  width: 100%;
+  width: 268.58px;
 }
 
-.homeu95mobsm .transforming-marketp {
+.homeu95mobsm .a-decentralized-mark {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -2163,6 +2167,7 @@
 }
 
 .homeu95mobsm .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -2478,17 +2483,16 @@
   align-items: flex-start;
   display: flex;
   gap: 8px;
-  width: 500px;
+  width: 592px;
 }
 
-.homeu95tab .decentralize-the-future-1 {
-  align-self: stretch;
+.homeu95tab .depin-that-works-1 {
   flex: 0 0 auto;
   position: relative;
-  width: 100%;
+  width: 402.86px;
 }
 
-.homeu95tab .transforming-marketp-1 {
+.homeu95tab .a-decentralized-mark-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 500;
@@ -2750,7 +2754,7 @@
 }
 
 .homeu95tab .google-play {
-  background-image: url(../img/google-play-badge-2@2x.png);
+  background-image: url(../img/google-play-icon-transparent-6-1@2x.png);
   background-size: 100% 100%;
   cursor: pointer;
   height: 42px;
@@ -3187,6 +3191,7 @@
 }
 
 .homeu95tab .desktop-home-logo-1 {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }

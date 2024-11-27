@@ -1242,6 +1242,13 @@
   width: 100%;
 }
 
+.oxtu95tabsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
 .oxtu95tabsm .hero {
   align-items: flex-start;
   align-self: stretch;
