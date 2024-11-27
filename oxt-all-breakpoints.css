@@ -1,0 +1,1761 @@
+/* screen - oxt-all-breakpoints */
+
+.oxt-all-breakpoints {
+  align-items: center;
+  background-color: var(--cod-gray);
+  display: flex;
+  flex-direction: column;
+  gap: 240px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .ellipses {
+  height: 3119px;
+  left: calc(50.00% - 984px);
+  position: absolute;
+  top: -80px;
+  width: 1968px;
+}
+
+.oxt-all-breakpoints .flex-row {
+  align-items: center;
+  gap: 276px;
+  height: 1903px;
+  left: 1px;
+  min-width: 1967px;
+  top: 1216px;
+}
+
+.oxt-all-breakpoints .ellipse-37 {
+  background-color: var(--black-2);
+  border-radius: 441.5px;
+  height: 883px;
+  margin-top: 106.0px;
+  transform: rotate(180.00deg);
+  width: 883px;
+}
+
+.oxt-all-breakpoints .ellipse-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 770px;
+  min-height: 1903px;
+  width: 808px;
+}
+
+.oxt-all-breakpoints .ellipse-34 {
+  align-self: flex-end;
+  background-color: var(--black-2);
+  border-radius: 306.5px;
+  height: 613px;
+  width: 613px;
+}
+
+.oxt-all-breakpoints .ellipse-33 {
+  background-color: var(--black-2);
+  border-radius: 260px;
+  height: 520px;
+  transform: rotate(180.00deg);
+  width: 520px;
+}
+
+.oxt-all-breakpoints .overlap-group1 {
+  height: 775px;
+  left: 91px;
+  position: absolute;
+  top: 0;
+  width: 936px;
+}
+
+.oxt-all-breakpoints .ellipse-container-1 {
+  height: 775px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 912px;
+}
+
+.oxt-all-breakpoints .ellipse-29 {
+  background-color: var(--cod-gray);
+  border-radius: 155px;
+  height: 310px;
+  left: 602px;
+  position: absolute;
+  top: 465px;
+  width: 310px;
+}
+
+.oxt-all-breakpoints .ellipse-30 {
+  background-color: var(--cod-gray);
+  border-radius: 100px;
+  height: 200px;
+  left: 736px;
+  position: absolute;
+  top: 18px;
+  width: 200px;
+}
+
+.oxt-all-breakpoints .token-graphic-1 {
+  height: 454px;
+  position: absolute;
+  right: 120px;
+  top: 160px;
+  width: 430px;
+}
+
+.oxt-all-breakpoints .desktop-home-logo-1 {
+  cursor: pointer;
+  flex: 0 0 auto;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-1 {
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-2 {
+  cursor: pointer;
+  display: flex;
+  width: 37px;
+}
+
+.oxt-all-breakpoints .vpn {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-3 {
+  display: flex;
+  width: 36px;
+}
+
+.oxt-all-breakpoints .vpn-1 {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-4 {
+  cursor: pointer;
+  display: flex;
+  width: 44px;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-5 {
+  cursor: pointer;
+  display: flex;
+  width: 61px;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-6 {
+  cursor: pointer;
+  display: flex;
+  width: 50px;
+}
+
+.oxt-all-breakpoints .desktop-button-header {
+  align-items: center;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 240px;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 24px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .hero-1 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  max-width: 1800px;
+  padding: 0px 160px;
+  position: relative;
+  width: 1440px;
+}
+
+.oxt-all-breakpoints .frame-403-1 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 800px;
+}
+
+.oxt-all-breakpoints .decentralized-marketplace {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 800;
+  line-height: 54.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .the-staking-asset-fo-1 {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 600;
+  line-height: 44.0px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .span-1 {
+  letter-spacing: 0.32px;
+}
+
+.oxt-all-breakpoints .frame-491 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .line-10-2 {
+  align-self: stretch;
+  margin-top: -1.00px;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .intro-copy-6 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .oxt-all-breakpoints-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .desktop-header-section-full {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .desktop-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .line-9-1 {
+  height: 1px;
+  margin-left: -93.00px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
+}
+
+.oxt-all-breakpoints .caption {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .line-10-3 {
+  margin-right: -93.00px;
+  width: 550px;
+}
+
+.oxt-all-breakpoints .desktop-headline-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .two-color-headline-1 {
+  color: transparent;
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .intro-copy-7 {
+  align-self: stretch;
+  color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+  text-align: center;
+}
+
+.oxt-all-breakpoints .span-2 {
+  letter-spacing: 0.08px;
+}
+
+.oxt-all-breakpoints .frame-459 {
+  background-color: var(--log-cabin);
+  border-radius: 20px;
+  height: 688px;
+  margin-left: -80.00px;
+  margin-right: -80.00px;
+  position: relative;
+  width: 1280px;
+}
+
+.oxt-all-breakpoints .frame-458 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  left: 676px;
+  min-height: 330px;
+  position: absolute;
+  top: 60px;
+  width: 480px;
+}
+
+.oxt-all-breakpoints .intro-copy-8 {
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1px;
+  min-height: 35px;
+  width: 480px;
+}
+
+.oxt-all-breakpoints .group-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 88px;
+  min-width: 448px;
+}
+
+.oxt-all-breakpoints .group-410 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 264px;
+  width: 238px;
+}
+
+.oxt-all-breakpoints .about-orchid-5 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  margin-left: 0.7px;
+  white-space: nowrap;
+  width: 225.25px;
+}
+
+.oxt-all-breakpoints .about-orchid-6 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 225.25px;
+}
+
+.oxt-all-breakpoints .group-409 {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 216px;
+  width: 122px;
+}
+
+.oxt-all-breakpoints .about-orchid-7 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 112px;
+}
+
+.oxt-all-breakpoints .flex-col {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 29px;
+  left: 124px;
+  min-height: 568px;
+  top: 59px;
+  width: 480px;
+}
+
+.oxt-all-breakpoints .intro-copy-9 {
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  min-height: 35px;
+  width: 480px;
+}
+
+.oxt-all-breakpoints .frame-341 {
+  align-items: flex-start;
+  display: flex;
+  gap: 25px;
+  height: 504px;
+  min-width: 411px;
+}
+
+.oxt-all-breakpoints .about-orchid-container {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -1px;
+  min-height: 504px;
+  width: 192px;
+}
+
+.oxt-all-breakpoints .about-orchid-8 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.oxt-all-breakpoints .about-orchid-container-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -1px;
+  min-height: 504px;
+  width: 194px;
+}
+
+.oxt-all-breakpoints .line-9 {
+  height: 1px;
+  margin-left: -53.50px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
+}
+
+.oxt-all-breakpoints .line-10-1 {
+  margin-right: -53.50px;
+  width: 550px;
+}
+
+.oxt-all-breakpoints .two-color-headline {
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .intro-copy-10 {
+  align-self: stretch;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+  text-align: center;
+}
+
+.oxt-all-breakpoints .supply-links-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  justify-content: center;
+  position: relative;
+}
+
+.oxt-all-breakpoints .about-orchid-9 {
+  color: var(--dull-lavender);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxt-all-breakpoints .audits {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .link-2 {
+  align-self: stretch;
+  height: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .intro-copy-5 {
+  color: var(--dull-lavender);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  width: 1120px;
+}
+
+.oxt-all-breakpoints .desktopfooter {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--black-2);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 80px 80px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .logo-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .x2023-orchid-4 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 676px;
+}
+
+.oxt-all-breakpoints .hyperlinks-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.oxt-all-breakpoints .frame-42 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .pp {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 180px;
+}
+
+.oxt-all-breakpoints .x2023-orchid-5 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 180px;
+}
+
+.oxt-all-breakpoints .pp-1 {
+  height: 22px;
+}
+
+.oxt-all-breakpoints .x2023-orchid-6 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  white-space: nowrap;
+  width: 208px;
+}
+
+.oxt-all-breakpoints .pp-2 {
+  height: 44px;
+}
+
+.oxt-all-breakpoints .x2023-orchid-7 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 208px;
+}
+
+.oxt-all-breakpoints .apps-9 {
+  cursor: pointer;
+}
+
+.oxt-all-breakpoints .link-3 {
+  height: 22px;
+  width: 198px;
+}
+
+.oxt-all-breakpoints .social-icons-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.oxt-all-breakpoints .social-link-1 {
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.oxt-all-breakpoints .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 22px;
+  line-height: 22.4px;
+  width: 198px;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav-7 {
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.oxt-all-breakpoints .desktop-home-logo {
+  height: 36px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .flex {
+  display: flex;
+  position: absolute;
+}
+
+.oxt-all-breakpoints .line-10 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.oxt-all-breakpoints .link {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.oxt-all-breakpoints .pp-3 {
+  display: flex;
+  position: relative;
+  width: 208px;
+}
+/* screen - oxtu95mobsm */
+
+.oxtu95mobsm {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  min-width: 360px;
+  position: relative;
+}
+
+.oxtu95mobsm .mobile-nav-header-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .hero-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .token-graphic-2 {
+  height: 196px;
+  position: relative;
+  width: 185px;
+}
+
+.oxtu95mobsm .frame-403-2 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  margin-left: -61.00px;
+  margin-right: -61.00px;
+  padding: 0px 40px;
+  position: relative;
+  width: 362px;
+}
+
+.oxtu95mobsm .title-1 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 800;
+  line-height: 36.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.oxtu95mobsm .the-staking-asset-fo-2 {
+  color: transparent;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-right: -40.00px;
+  position: relative;
+  width: 322px;
+}
+
+.oxtu95mobsm .span0-1 {
+  color: var(--white);
+}
+
+.oxtu95mobsm .span1-2 {
+  color: var(--aquamarine);
+}
+
+.oxtu95mobsm .line-10-5 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.oxtu95mobsm .intro-copy-13 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.oxtu95mobsm .mobile-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .mobile-caption-section-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .line-9-3 {
+  margin-left: -25.00px;
+}
+
+.oxtu95mobsm .discover-1 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxtu95mobsm .line-10-6 {
+  margin-right: -25.00px;
+  width: 135px;
+}
+
+.oxtu95mobsm .mobile-headline-section-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .the-orchid-ecosystem-3 {
+  color: transparent;
+}
+
+.oxtu95mobsm .intro-copy-14 {
+  align-self: stretch;
+  color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+}
+
+.oxtu95mobsm .span-3 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+}
+
+.oxtu95mobsm .span1-3 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 16.5px;
+}
+
+.oxtu95mobsm .span2-1 {
+  color: var(--dull-lavender);
+  font-weight: 700;
+  line-height: 16.5px;
+}
+
+.oxtu95mobsm .cards-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--log-cabin);
+  border-radius: 24px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 24px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .frame-5-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .intro-copy-11 {
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-right: -24.00px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 288px;
+}
+
+.oxtu95mobsm .frame-538-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 40px 80px;
+  padding: 0px 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .frame-53-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 120px;
+  position: relative;
+}
+
+.oxtu95mobsm .about-orchid-10 {
+  color: var(--white);
+  margin-top: -1.00px;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxtu95mobsm .about-orchid-11 {
+  color: var(--white);
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxtu95mobsm .frame-535-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .about-orchid-14 {
+  align-self: stretch;
+  color: var(--white);
+  height: 24px;
+  margin-top: -1.00px;
+  white-space: nowrap;
+}
+
+.oxtu95mobsm .about-orchid-12 {
+  align-self: stretch;
+  color: var(--white);
+  height: 24px;
+  white-space: nowrap;
+}
+
+.oxtu95mobsm .line-9-2 {
+  margin-left: -1.00px;
+}
+
+.oxtu95mobsm .line-10-4 {
+  margin-right: -1.00px;
+  width: 135px;
+}
+
+.oxtu95mobsm .the-orchid-ecosystem-2 {
+  color: var(--aquamarine);
+}
+
+.oxtu95mobsm .intro-copy-15 {
+  align-self: stretch;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+  text-align: center;
+}
+
+.oxtu95mobsm .supply-links-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .about-orchid-15 {
+  align-self: stretch;
+  color: var(--dull-lavender);
+  cursor: pointer;
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.oxtu95mobsm .about-orchid-13 {
+  align-self: stretch;
+  color: var(--dull-lavender);
+  cursor: pointer;
+  text-align: center;
+}
+
+.oxtu95mobsm .link-4 {
+  align-self: stretch;
+  height: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.oxtu95mobsm .intro-copy-12 {
+  color: var(--dull-lavender);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  width: 696px;
+}
+
+.oxtu95mobsm .logo-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: -39.00px;
+  position: relative;
+}
+
+.oxtu95mobsm .x2023-orchid-8 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.oxtu95mobsm .x2023-orchid-9 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.oxtu95mobsm .hyperlinks-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .frame-532-item-1 {
+  display: flex;
+  height: 22px;
+  margin-right: -21.00px;
+  position: relative;
+  width: 281px;
+}
+
+.oxtu95mobsm .x2023-orchid-10 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.oxtu95mobsm .link-5 {
+  height: 22px;
+  margin-right: -21.00px;
+  width: 281px;
+}
+
+.oxtu95mobsm .x2023-orchid-11 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.oxtu95mobsm .apps-10 {
+  width: 102px;
+}
+
+.oxtu95mobsm .apps-11 {
+  width: 132px;
+}
+
+.oxtu95mobsm .apps-12 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.oxtu95mobsm .apps-13 {
+  width: 85px;
+}
+
+.oxtu95mobsm .apps-14 {
+  width: 122px;
+}
+
+.oxtu95mobsm .apps-15 {
+  width: 76px;
+}
+
+.oxtu95mobsm .apps-17 {
+  width: 75px;
+}
+
+.oxtu95mobsm .social-icons-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .social-link-github-2 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
+}
+
+.oxtu95mobsm .about-orchid {
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+}
+
+.oxtu95mobsm .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.oxtu95mobsm .line-10 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.oxtu95mobsm .line-9 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
+}
+
+.oxtu95mobsm .link {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.oxtu95mobsm .the-orchid-ecosystem {
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+/* screen - oxtu95tabsm */
+
+.oxtu95tabsm {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  min-width: 744px;
+  position: relative;
+}
+
+.oxtu95tabsm .mobile-nav-header {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 32px 72px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
+.oxtu95tabsm .hero {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  padding: 0px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .frame-403 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 40px;
+  position: relative;
+  width: 362px;
+}
+
+.oxtu95tabsm .title {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 800;
+  line-height: 36.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.oxtu95tabsm .the-staking-asset-fo {
+  color: transparent;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-right: -40.00px;
+  position: relative;
+  width: 322px;
+}
+
+.oxtu95tabsm .span0 {
+  color: var(--white);
+}
+
+.oxtu95tabsm .span1 {
+  color: var(--aquamarine);
+}
+
+.oxtu95tabsm .line-10 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.oxtu95tabsm .intro-copy-2 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.oxtu95tabsm .token-graphic {
+  height: 300.46px;
+  margin-left: -8px;
+  margin-right: -15.00px;
+  margin-top: -8.00px;
+  position: relative;
+  width: 285px;
+}
+
+.oxtu95tabsm .features {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .mobile {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .line {
+  width: 135px;
+}
+
+.oxtu95tabsm .discover {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxtu95tabsm .mobile-headline-section {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .the-orchid-ecosystem-1 {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.oxtu95tabsm .intro-copy-3 {
+  align-self: stretch;
+  color: transparent;
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 15px;
+  position: relative;
+}
+
+.oxtu95tabsm .span {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+}
+
+.oxtu95tabsm .span1-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 16.5px;
+}
+
+.oxtu95tabsm .span2 {
+  color: var(--dull-lavender);
+  font-weight: 700;
+  line-height: 16.5px;
+}
+
+.oxtu95tabsm .cards {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--log-cabin);
+  border-radius: 24px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 80px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .frame-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .intro-copy {
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 288px;
+}
+
+.oxtu95tabsm .frame-538 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 40px 160px;
+  padding: 0px 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .frame-53 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 120px;
+  position: relative;
+}
+
+.oxtu95tabsm .about-orchid {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.oxtu95tabsm .about-orchid-1 {
+  color: var(--white);
+  width: fit-content;
+}
+
+.oxtu95tabsm .frame-535 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .about-orchid-4 {
+  align-self: stretch;
+  color: var(--white);
+  height: 24px;
+  margin-top: -1.00px;
+}
+
+.oxtu95tabsm .about-orchid-2 {
+  align-self: stretch;
+  color: var(--white);
+  height: 24px;
+}
+
+.oxtu95tabsm .the-orchid-ecosystem {
+  color: var(--aquamarine);
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.oxtu95tabsm .intro-copy-4 {
+  align-self: stretch;
+  color: var(--white);
+  cursor: pointer;
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+  text-align: center;
+}
+
+.oxtu95tabsm .supply-links {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .about-orchid-3 {
+  color: var(--dull-lavender);
+  cursor: pointer;
+  margin-top: -1.00px;
+  width: fit-content;
+}
+
+.oxtu95tabsm .link {
+  align-self: stretch;
+  height: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.oxtu95tabsm .intro-copy-1 {
+  color: var(--dull-lavender);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  width: 696px;
+}
+
+.oxtu95tabsm .logo {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.oxtu95tabsm .desktop-home-logo {
+  height: 36px;
+  position: relative;
+}
+
+.oxtu95tabsm .x2023-orchid {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.oxtu95tabsm .x2023-orchid-1 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.oxtu95tabsm .hyperlinks {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .frame-532 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .frame-532-item {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.oxtu95tabsm .x2023-orchid-2 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.oxtu95tabsm .link-1 {
+  height: 22px;
+  width: 281px;
+}
+
+.oxtu95tabsm .x2023-orchid-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.oxtu95tabsm .apps {
+  width: 102px;
+}
+
+.oxtu95tabsm .apps-1 {
+  width: 132px;
+}
+
+.oxtu95tabsm .apps-2 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.oxtu95tabsm .apps-3 {
+  width: 85px;
+}
+
+.oxtu95tabsm .apps-4 {
+  width: 122px;
+}
+
+.oxtu95tabsm .apps-5 {
+  width: 76px;
+}
+
+.oxtu95tabsm .apps-6 {
+  width: 42px;
+}
+
+.oxtu95tabsm .apps-7 {
+  width: 75px;
+}
+
+.oxtu95tabsm .social-icons {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
+}
+
+.oxtu95tabsm .social-link-reddit {
+  height: 32px;
+}
+
+.oxtu95tabsm .about-orchid-5 {
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+}
+
+.oxtu95tabsm .apps-8 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.oxtu95tabsm .line-1 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.oxtu95tabsm .link-2 {
+  cursor: pointer;
+  display: flex;
+  position: relative;
+}
+
+.oxtu95tabsm .social-link-1 {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+}
+@media screen and (max-width: 743px) {
+  .screen.oxtu95tabsm { 
+    display: none;
+   }
+  .screen.oxt-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .screen.oxt-all-breakpoints { 
+    display: none;
+   }
+  .screen.oxtu95mobsm { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.oxtu95tabsm { 
+    display: none;
+   }
+  .screen.oxtu95mobsm { 
+    display: none;
+   }
+}

@@ -1,0 +1,14 @@
+/* screen - desktopu47home-logo */
+
+.desktopu47home-logo {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 10px;
+  position: relative;
+}
+
+.desktopu47home-logo .union {
+  height: 147px;
+  position: relative;
+  width: 572px;
+}

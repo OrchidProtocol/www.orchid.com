@@ -1,0 +1,17 @@
+/* screen - orchid-site-favicon */
+
+.orchid-site-favicon {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  width: 32px;
+}
+
+.orchid-site-favicon .orchid-icon {
+  cursor: pointer;
+  height: 20px;
+  margin-left: -2px;
+  width: 22px;
+}

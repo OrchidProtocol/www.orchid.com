@@ -1,0 +1,3480 @@
+/* screen - home-all-breakpoints */
+
+.home-all-breakpoints {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.home-all-breakpoints .ellipses {
+  background-image: url(../img/frame-546.png);
+  background-size: 100% 100%;
+  height: 7576px;
+  left: calc(50.00% - 964px);
+  position: absolute;
+  top: -106px;
+  width: 1922px;
+}
+
+.home-all-breakpoints .hero-orchids-vec {
+  height: 1110px;
+  left: calc(50.00% + 20px);
+  position: absolute;
+  top: 193px;
+  width: 1150px;
+}
+
+.home-all-breakpoints .desktop-home-logo-2 {
+  flex: 0 0 auto;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-1 {
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-2 {
+  display: flex;
+  width: 37px;
+}
+
+.home-all-breakpoints .vpn-2 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-3 {
+  display: flex;
+  width: 36px;
+}
+
+.home-all-breakpoints .vpn-3 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-4 {
+  display: flex;
+  width: 44px;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-5 {
+  display: flex;
+  width: 61px;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-6 {
+  display: flex;
+  width: 50px;
+}
+
+.home-all-breakpoints .desktop-button-header {
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 240px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 24px;
+}
+
+.home-all-breakpoints .hero-2 {
+  align-items: center;
+  padding: 120px 80px;
+}
+
+.home-all-breakpoints .hero-content {
+  align-items: flex-start;
+}
+
+.home-all-breakpoints .depin-that-works-2 {
+  flex: 0 0 auto;
+  position: relative;
+  width: 459.31px;
+}
+
+.home-all-breakpoints .a-decentralized-mark-2 {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 600;
+  line-height: 44.0px;
+  position: relative;
+}
+
+.home-all-breakpoints .span-5 {
+  letter-spacing: 0.32px;
+}
+
+.home-all-breakpoints .hero-cta-button-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 96px 0px 0px;
+  position: relative;
+}
+
+.home-all-breakpoints .learn-more-2 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.home-all-breakpoints .home-all-breakpoints-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .desktop-header-section-full-1 {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-all-breakpoints .desktop-caption-section-1 {
+  align-self: stretch;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-all-breakpoints .line-8 {
+  height: 1px;
+  width: 538.5px;
+}
+
+.home-all-breakpoints .caption {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.home-all-breakpoints .desktop-headline-section-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.home-all-breakpoints .the-orchid-ecosystem-9 {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.home-all-breakpoints .frame-4-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .cards-6 {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 24px;
+  justify-content: center;
+  position: relative;
+  width: 1280px;
+}
+
+.home-all-breakpoints .card-springboard-desktop-default {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 40px;
+  height: 456px;
+  justify-content: center;
+  padding: 60px 40px;
+  position: relative;
+}
+
+.home-all-breakpoints .icon-card-large {
+  height: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.home-all-breakpoints .text-8 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .title-4 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.home-all-breakpoints .body-4 {
+  align-self: stretch;
+  color: var(--white);
+  flex: 1;
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+  text-align: center;
+}
+
+.home-all-breakpoints .marketplaces {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 80px;
+  padding: 0px 80px;
+  position: relative;
+  width: 1440px;
+}
+
+.home-all-breakpoints .frame-355 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .desktop-header-section-full {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 1280px;
+}
+
+.home-all-breakpoints .desktop-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.home-all-breakpoints .line-9 {
+  height: 1px;
+  width: 550px;
+}
+
+.home-all-breakpoints .caption-1 {
+  text-align: right;
+}
+
+.home-all-breakpoints .desktop-headline-section {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: flex-end;
+  padding: 0px 0px 24px;
+  position: relative;
+}
+
+.home-all-breakpoints .two-color-headline {
+  color: transparent;
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 1280px;
+}
+
+.home-all-breakpoints .intro-copy-13 {
+  align-self: stretch;
+  color: transparent;
+  position: relative;
+  text-align: right;
+}
+
+.home-all-breakpoints .span-6 {
+  letter-spacing: 0.08px;
+}
+
+.home-all-breakpoints .bullet-points-2 {
+  height: 703px;
+  position: relative;
+  width: 1280px;
+}
+
+.home-all-breakpoints .overlap-group2 {
+  left: 74px;
+  width: 1206px;
+}
+
+.home-all-breakpoints .overlap-group1 {
+  left: 0;
+  width: 730px;
+}
+
+.home-all-breakpoints .circulargrid-wt-1 {
+  height: 618px;
+  left: 0;
+  position: absolute;
+  top: 85px;
+  width: 660px;
+}
+
+.home-all-breakpoints .group-container {
+  height: 436px;
+  left: 8px;
+  position: absolute;
+  top: 255px;
+  width: 722px;
+}
+
+.home-all-breakpoints .group-8 {
+  height: 264px;
+  left: 0;
+  position: absolute;
+  top: 172px;
+  width: 610px;
+}
+
+.home-all-breakpoints .group-9 {
+  height: 214px;
+  left: 438px;
+  position: absolute;
+  top: 0;
+  width: 283px;
+}
+
+.home-all-breakpoints .group-10 {
+  height: 187px;
+  left: 139px;
+  position: absolute;
+  top: 0;
+  width: 482px;
+}
+
+.home-all-breakpoints .nanopayments {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  left: 640px;
+  position: absolute;
+  top: 542px;
+  width: 565px;
+}
+
+.home-all-breakpoints .nanopayment-ecosystem {
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 565px;
+}
+
+.home-all-breakpoints .intro-copy-10 {
+  color: var(--white);
+  flex: 1;
+  position: relative;
+}
+
+.home-all-breakpoints .accounts-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  left: 642px;
+  position: absolute;
+  top: 80px;
+  width: 564px;
+}
+
+.home-all-breakpoints .orchid-accounts {
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 564px;
+}
+
+.home-all-breakpoints .directory-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
+  left: 823px;
+  position: absolute;
+  top: 324px;
+  width: 459px;
+}
+
+.home-all-breakpoints .preferred-provider-directory {
+  color: var(--aquamarine);
+  flex: 1;
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.home-all-breakpoints .intro-copy-14 {
+  color: var(--white);
+  position: relative;
+  width: 459px;
+}
+
+.home-all-breakpoints .frame-48 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 120px 0px 0px;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-button-standard {
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 48px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 80px;
+}
+
+.home-all-breakpoints .vpn-4 {
+  align-items: flex-start;
+  display: flex;
+  gap: 24px;
+  height: 956px;
+  justify-content: center;
+  padding: 0px 80px;
+  position: relative;
+  width: 1440px;
+}
+
+.home-all-breakpoints .frame-442 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 845px;
+  margin-left: -1.00px;
+  position: relative;
+  width: 739px;
+}
+
+.home-all-breakpoints .desktop-header-section-full-2 {
+  display: flex;
+  margin-right: -541.00px;
+  width: 1280px;
+}
+
+.home-all-breakpoints .desktop-caption-section-2 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.home-all-breakpoints .desktop-headline-section-2 {
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.home-all-breakpoints .two-color-headline-1 {
+  color: transparent;
+  width: 1280px;
+}
+
+.home-all-breakpoints .intro-copy-15 {
+  color: var(--white);
+  position: relative;
+  width: 739px;
+}
+
+.home-all-breakpoints .frame-380 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+  width: 739px;
+}
+
+.home-all-breakpoints .google-play-1 {
+  cursor: pointer;
+  display: flex;
+  height: 56px;
+  position: relative;
+  width: 187px;
+}
+
+.home-all-breakpoints .google-play-badge-1 {
+  height: 56.3px;
+  width: 188px;
+}
+
+.home-all-breakpoints .apple-store {
+  background-image: url(../img/appstorebadge-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 56px;
+  position: relative;
+  width: 188px;
+}
+
+.home-all-breakpoints .frame-377 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 36px;
+  padding: 60px 0px 0px 80px;
+  position: relative;
+  width: 739px;
+}
+
+.home-all-breakpoints .frame {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+}
+
+.home-all-breakpoints .frame-371 {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .task_alt-1 {
+  height: 40px;
+  margin-left: 14px;
+  width: 40px;
+}
+
+.home-all-breakpoints .intro-copy-11 {
+  color: var(--white);
+  height: 48px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 574px;
+}
+
+.home-all-breakpoints .line-10 {
+  height: 1px;
+  width: 630px;
+}
+
+.home-all-breakpoints .frame-37-2 {
+  display: flex;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .task_alt {
+  height: 40px;
+  margin-left: 7px;
+  width: 40px;
+}
+
+.home-all-breakpoints .intro-copy-16 {
+  color: var(--white);
+  height: 48px;
+  margin-top: -1.00px;
+  position: relative;
+  width: 575px;
+}
+
+.home-all-breakpoints .frame-487 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: -97.00px;
+  padding: 120px 0px 0px;
+  position: relative;
+}
+
+.home-all-breakpoints .frame-467-1 {
+  flex: 0 0 auto;
+  height: 920px;
+  margin-right: -1.00px;
+  position: relative;
+}
+
+.home-all-breakpoints .token-2 {
+  display: flex;
+  height: 322px;
+  position: relative;
+  width: 240px;
+}
+
+.home-all-breakpoints .frame-516 {
+  align-items: flex-start;
+  display: flex;
+  height: 322px;
+  margin-left: 0;
+  min-width: 240px;
+}
+
+.home-all-breakpoints .frame-container {
+  height: 322px;
+  position: relative;
+  width: 240px;
+}
+
+.home-all-breakpoints .frame-515 {
+  height: 215px;
+  left: 0;
+  position: absolute;
+  top: 107px;
+  width: 240px;
+}
+
+.home-all-breakpoints .frame-470 {
+  height: 225px;
+  left: 14px;
+  position: absolute;
+  top: 0;
+  width: 211px;
+}
+
+.home-all-breakpoints .desktop-header-section-full-3 {
+  display: inline-flex;
+  margin-left: -4.00px;
+  margin-right: -4.00px;
+}
+
+.home-all-breakpoints .desktop-caption-section-3 {
+  justify-content: center;
+  width: 1288px;
+}
+
+.home-all-breakpoints .line-9-1 {
+  flex: 1;
+  flex-grow: 1;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-headline-section-3 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 1288px;
+}
+
+.home-all-breakpoints .two-color-headline-2 {
+  color: var(--white);
+  flex: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.home-all-breakpoints .frame-385 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 839px;
+}
+
+.home-all-breakpoints .intro-copy-17 {
+  color: var(--white);
+  height: 72px;
+  margin-left: -3.50px;
+  margin-right: -3.50px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: 846px;
+}
+
+.home-all-breakpoints .frame-389 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 45px 48px;
+  justify-content: center;
+  padding: 48px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .card-detail-desktop {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 320px;
+}
+
+.home-all-breakpoints .icon-card {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 40px;
+  position: relative;
+  width: 208px;
+}
+
+.home-all-breakpoints .wide-support-2 {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  position: relative;
+  text-align: center;
+}
+
+.home-all-breakpoints .intro-copy-12 {
+  align-self: stretch;
+  color: var(--white);
+  position: relative;
+  text-align: center;
+}
+
+.home-all-breakpoints .line-11 {
+  height: 367px;
+  width: 1px;
+}
+
+.home-all-breakpoints .developers {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 120px 80px;
+  position: relative;
+  width: 1440px;
+}
+
+.home-all-breakpoints .content-2 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .copy-6 {
+  display: flex;
+  height: 72px;
+  justify-content: center;
+  position: relative;
+  width: 1280px;
+}
+
+.home-all-breakpoints .intro-copy-18 {
+  color: var(--white);
+  height: 72px;
+  margin-left: 2px;
+  text-align: right;
+  width: 1281px;
+}
+
+.home-all-breakpoints .links {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 58px;
+  position: relative;
+}
+
+.home-all-breakpoints .x-link {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  position: relative;
+}
+
+.home-all-breakpoints .social-link-github-2 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .about-orchid-4 {
+  width: 222px;
+}
+
+.home-all-breakpoints .whitepaper-icon {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .overlap-group-6 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 20px;
+  display: flex;
+  height: 40px;
+  left: 1px;
+  min-width: 40px;
+  padding: 0 4px;
+  position: relative;
+}
+
+.home-all-breakpoints .anchor-2 {
+  height: 32px;
+  width: 32px;
+}
+
+.home-all-breakpoints .about-orchid-5 {
+  width: 214px;
+}
+
+.home-all-breakpoints .proof {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .frame-41 {
+  align-items: center;
+  background-color: var(--black-2);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 40px 24px;
+  position: relative;
+  width: 400px;
+}
+
+.home-all-breakpoints .in-a-world-where-one-4 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  height: 160px;
+  line-height: 28.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.home-all-breakpoints .frame-412-4 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-left: -20.50px;
+  margin-right: -20.50px;
+  padding: 8px 0px;
+  position: relative;
+  width: 361px;
+}
+
+.home-all-breakpoints .frame-411 {
+  height: 40.5px;
+  margin-top: -0.50px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .frame-410-4 {
+  height: 40px;
+  position: relative;
+  width: 282px;
+}
+
+.home-all-breakpoints .company-6 {
+  color: var(--white);
+  font-weight: 600;
+  height: 20px;
+  left: 0;
+  line-height: 22.0px;
+  position: absolute;
+  top: -2px;
+  white-space: nowrap;
+  width: 240px;
+}
+
+.home-all-breakpoints .company-7 {
+  color: var(--dull-lavender-2);
+  font-weight: 700;
+  height: 16px;
+  left: 0;
+  line-height: 22.4px;
+  position: absolute;
+  top: 22px;
+  white-space: nowrap;
+  width: 282px;
+}
+
+.home-all-breakpoints .frame-404 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-left: -19.50px;
+  margin-right: -19.50px;
+  padding: 8px 0px;
+  position: relative;
+  width: 359px;
+}
+
+.home-all-breakpoints .frame-402 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .frame-40 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.home-all-breakpoints .company-4 {
+  color: var(--white);
+  font-weight: 600;
+  height: 20px;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: 240px;
+}
+
+.home-all-breakpoints .company-5 {
+  color: var(--dull-lavender-2);
+  font-weight: 700;
+  height: 16px;
+  line-height: 22.4px;
+  position: relative;
+  white-space: nowrap;
+  width: 240px;
+}
+
+.home-all-breakpoints .frame-417 {
+  align-items: center;
+  background-color: var(--black-2);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 304px;
+  padding: 40px 40px 24px;
+  position: relative;
+  width: 400px;
+}
+
+.home-all-breakpoints .frame-404-1 {
+  align-items: center;
+  align-self: stretch;
+  cursor: pointer;
+  display: flex;
+  gap: 24px;
+  height: 56px;
+  padding: 8px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .frame-409 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  margin-bottom: -8.00px;
+  margin-top: -8.00px;
+  padding: 8px 0px;
+  position: relative;
+}
+
+.home-all-breakpoints .cnet-4 {
+  height: 40.5px;
+  margin-top: -0.50px;
+  position: relative;
+  width: 40px;
+}
+
+.home-all-breakpoints .desktopfooter {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--black-2);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 80px 80px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .logo-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.home-all-breakpoints .x2023-orchid-8 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 676px;
+}
+
+.home-all-breakpoints .hyperlinks-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .frame-42 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.home-all-breakpoints .pp {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 180px;
+}
+
+.home-all-breakpoints .x2023-orchid-9 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 180px;
+}
+
+.home-all-breakpoints .pp-1 {
+  height: 22px;
+}
+
+.home-all-breakpoints .x2023-orchid-10 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  white-space: nowrap;
+  width: 208px;
+}
+
+.home-all-breakpoints .pp-2 {
+  height: 44px;
+}
+
+.home-all-breakpoints .x2023-orchid-11 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 208px;
+}
+
+.home-all-breakpoints .apps-17 {
+  cursor: pointer;
+}
+
+.home-all-breakpoints .link-2 {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 198px;
+}
+
+.home-all-breakpoints .social-icons-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.home-all-breakpoints .social-link-github-3 {
+  cursor: pointer;
+  height: 33px;
+  margin-bottom: -1.00px;
+  position: relative;
+  width: 32px;
+}
+
+.home-all-breakpoints .about-orchid {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.home-all-breakpoints .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 22px;
+  line-height: 22.4px;
+  width: 198px;
+}
+
+.home-all-breakpoints .desktop-button {
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-button-top-nav-7 {
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-caption-section-4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-header-section-full-4 {
+  align-items: center;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-headline-section-4 {
+  flex: 0 0 auto;
+  padding: 0px 0px 24px;
+  position: relative;
+}
+
+.home-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.home-all-breakpoints .hero {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.home-all-breakpoints .intro-copy {
+  font-weight: 400;
+  line-height: 28.0px;
+}
+
+.home-all-breakpoints .line {
+  object-fit: cover;
+  position: relative;
+}
+
+.home-all-breakpoints .line-10-3 {
+  flex: 1;
+  flex-grow: 1;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.home-all-breakpoints .overlap {
+  height: 703px;
+  position: absolute;
+  top: 0;
+}
+
+.home-all-breakpoints .pp-3 {
+  display: flex;
+  position: relative;
+  width: 208px;
+}
+
+.home-all-breakpoints .two-color-headline-3 {
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+/* screen - homeu95mobsm */
+
+.homeu95mobsm {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  min-width: 360px;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeu95mobsm .mobile-nav-header {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 32px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .orchid-icon {
+  cursor: pointer;
+  height: 24px;
+  position: relative;
+  width: 28.47px;
+}
+
+.homeu95mobsm .orchid-grid-hero {
+  background-image: url(../img/orchidgrid-mob-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 284px;
+  position: absolute;
+  right: -132px;
+  top: 212px;
+  width: 294px;
+}
+
+.homeu95mobsm .hero {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 24px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .copy {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  width: 100%;
+}
+
+.homeu95mobsm .depin-that-works {
+  flex: 0 0 auto;
+  position: relative;
+  width: 268.58px;
+}
+
+.homeu95mobsm .a-decentralized-mark {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 600;
+  line-height: 18.7px;
+  position: relative;
+}
+
+.homeu95mobsm .span {
+  color: var(--aquamarine);
+}
+
+.homeu95mobsm .span-1 {
+  color: var(--white);
+}
+
+.homeu95mobsm .hero-cta-button {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 120px 0px 0px;
+  position: relative;
+}
+
+.homeu95mobsm .mobile-button-hero {
+  align-items: center;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 60px;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 16px 80px;
+  position: relative;
+}
+
+.homeu95mobsm .learn-more {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.homeu95mobsm .homeu95mobsm-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 24px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .line {
+  width: 111px;
+}
+
+.homeu95mobsm .discover {
+  text-align: center;
+}
+
+.homeu95mobsm .mobile-headline-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .the-orchid-ecosystem {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.homeu95mobsm .cards {
+  gap: 8px 8px;
+}
+
+.homeu95mobsm .card-springboard-mobile {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding: 32px 16px;
+  position: relative;
+  width: 152px;
+}
+
+.homeu95mobsm .icon-card-small {
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.homeu95mobsm .text {
+  height: 104px;
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+  width: 136px;
+}
+
+.homeu95mobsm .title {
+  color: var(--white);
+  text-align: center;
+}
+
+.homeu95mobsm .body {
+  flex: 1;
+  text-align: center;
+}
+
+.homeu95mobsm .mobile-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-caption-section-1 {
+  justify-content: flex-end;
+}
+
+.homeu95mobsm .line-1 {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.homeu95mobsm .discover-1 {
+  text-align: right;
+}
+
+.homeu95mobsm .mobile-headline-section-1 {
+  align-items: flex-start;
+  flex: 0 0 auto;
+  justify-content: space-around;
+}
+
+.homeu95mobsm .the-orchid-ecosystem-1 {
+  color: transparent;
+  margin-top: -1.00px;
+  text-align: right;
+}
+
+.homeu95mobsm .copy-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.homeu95mobsm .intro-copy-2 {
+  align-self: stretch;
+  color: transparent;
+  margin-top: -1.00px;
+  text-align: right;
+}
+
+.homeu95mobsm .title-1 {
+  color: var(--aquamarine);
+  height: 18px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.homeu95mobsm .body-1 {
+  text-align: right;
+}
+
+.homeu95mobsm .nanopay {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .frame-476 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 0px 0px;
+  position: relative;
+}
+
+.homeu95mobsm .vpn {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 78px;
+  padding: 0px 24px;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-headline-section-2 {
+  align-items: flex-start;
+  flex: 0 0 auto;
+}
+
+.homeu95mobsm .the-orchid-ecosystem-2 {
+  color: transparent;
+  margin-top: -1.00px;
+}
+
+.homeu95mobsm .images {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  padding: 0px 24px;
+  position: relative;
+  width: 360px;
+}
+
+.homeu95mobsm .download-badges {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  height: 230px;
+  justify-content: center;
+  position: relative;
+}
+
+.homeu95mobsm .app-store-badge {
+  cursor: pointer;
+  height: 42px;
+  object-fit: cover;
+  position: relative;
+  width: 144px;
+}
+
+.homeu95mobsm .google-play-badge {
+  cursor: pointer;
+  height: 42px;
+  position: relative;
+  width: 144px;
+}
+
+.homeu95mobsm .frame-467 {
+  height: 230px;
+  position: relative;
+  width: 152px;
+}
+
+.homeu95mobsm .bullet-points {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .bullet-points-item {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .frame-37 {
+  background-image: url(../img/task-alt@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95mobsm .intro-copy {
+  color: var(--white);
+  flex: 1;
+  font-weight: 300;
+  line-height: 18.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.homeu95mobsm .line-2 {
+  width: 311px;
+}
+
+.homeu95mobsm .frame-472 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .oxt {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 0px 20px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .token {
+  height: 134px;
+  position: relative;
+  width: 100px;
+}
+
+.homeu95mobsm .overlap-group-1 {
+  height: 134px;
+  position: relative;
+}
+
+.homeu95mobsm .vector-747 {
+  left: 0;
+  width: 100px;
+}
+
+.homeu95mobsm .vector-748 {
+  left: 22px;
+  mix-blend-mode: color-dodge;
+  width: 56px;
+}
+
+.homeu95mobsm .token_-hi-fi-dt {
+  height: 94px;
+  left: 6px;
+  position: absolute;
+  top: 0;
+  width: 88px;
+}
+
+.homeu95mobsm .mobile-3 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  margin-left: -56.00px;
+  margin-right: -56.00px;
+}
+
+.homeu95mobsm .line-3 {
+  width: 79px;
+}
+
+.homeu95mobsm .mobile-headline-section-3 {
+  align-items: flex-start;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+}
+
+.homeu95mobsm .the-orchid-ecosystem-3 {
+  color: var(--white);
+  margin-top: -1.00px;
+  text-align: center;
+}
+
+.homeu95mobsm .copy-2 {
+  align-items: center;
+  display: inline-flex;
+  gap: 24px;
+}
+
+.homeu95mobsm .intro-copy-3 {
+  color: var(--white);
+  margin-top: -1.00px;
+  text-align: center;
+  width: 312px;
+}
+
+.homeu95mobsm .cards-1 {
+  gap: 16px 16px;
+  padding: 0px 40px;
+}
+
+.homeu95mobsm .card-detail-mobile {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+  position: relative;
+  width: 160px;
+}
+
+.homeu95mobsm .card-icon {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  height: 128px;
+  justify-content: center;
+  position: relative;
+  width: 128px;
+}
+
+.homeu95mobsm .text-1 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95mobsm .wide-support {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.homeu95mobsm .intro-copy-1 {
+  align-self: stretch;
+  color: var(--white);
+  text-align: center;
+}
+
+.homeu95mobsm .text-2 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95mobsm .text-3 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95mobsm .button {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 0px 0px;
+  position: relative;
+}
+
+.homeu95mobsm .mobile-4 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-headline-section-4 {
+  align-items: center;
+  height: 19px;
+  justify-content: flex-end;
+}
+
+.homeu95mobsm .the-orchid-ecosystem-4 {
+  color: transparent;
+  margin-bottom: -2.00px;
+  margin-top: -4.00px;
+  text-align: right;
+}
+
+.homeu95mobsm .frame-478 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .intro-copy-4 {
+  align-self: stretch;
+  color: var(--white);
+  margin-top: -1.00px;
+  text-align: right;
+}
+
+.homeu95mobsm .frame-396 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 138px;
+  padding: 16px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .frame-39 {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.homeu95mobsm .about-orchid {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 222px;
+}
+
+.homeu95mobsm .github {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95mobsm .about-orchid-1 {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+  width: 214px;
+}
+
+.homeu95mobsm .frame-394 {
+  background-color: var(--aquamarine);
+  border-radius: 12px;
+  display: flex;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95mobsm .anchor {
+  height: 20px;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 20px;
+}
+
+.homeu95mobsm .cards-2 {
+  gap: 24px 24px;
+  padding: 24px 0px;
+}
+
+.homeu95mobsm .quote-card {
+  height: 180px;
+  position: relative;
+  width: 311px;
+}
+
+.homeu95mobsm .overlap-group {
+  width: 312px;
+}
+
+.homeu95mobsm .rectangle-copy-container {
+  height: 180px;
+  top: 0;
+}
+
+.homeu95mobsm .rectangle-copy-9 {
+  height: 72px;
+  top: 107px;
+}
+
+.homeu95mobsm .rectangle-copy-8 {
+  height: 73px;
+  top: 107px;
+}
+
+.homeu95mobsm .rectangle-copy-7 {
+  border: 1px solid;
+  border-color: var(--pixie-powder);
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px #00000033;
+  height: 179px;
+  top: 0;
+}
+
+.homeu95mobsm .in-a-world-where-one {
+  color: var(--white);
+  font-weight: 300;
+  left: 17px;
+  line-height: 18.0px;
+  position: absolute;
+  top: 23px;
+  width: 279px;
+}
+
+.homeu95mobsm .frame-412 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  left: 1px;
+  padding: 0px 16px;
+  position: absolute;
+  top: 123px;
+  width: 311px;
+}
+
+.homeu95mobsm .frame-4 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.homeu95mobsm .overlap-group-2 {
+  align-items: flex-start;
+  background-color: var(--log-cabin);
+  border-radius: 20px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 40px;
+  padding: 13.3px 8.0px;
+}
+
+.homeu95mobsm .union {
+  height: 13px;
+  width: 24px;
+}
+
+.homeu95mobsm .frame-410 {
+  height: 40px;
+  margin-right: -5.00px;
+  position: relative;
+  width: 228px;
+}
+
+.homeu95mobsm .company {
+  color: var(--white);
+  font-weight: 600;
+  height: 20px;
+  line-height: 19.8px;
+  top: -1px;
+}
+
+.homeu95mobsm .company-1 {
+  color: var(--dull-lavender-2);
+  font-weight: 700;
+  height: 16px;
+  line-height: 24px;
+  top: 23px;
+}
+
+.homeu95mobsm .cnet {
+  background-color: var(--log-cabin);
+  border-radius: 20px;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.homeu95mobsm .cnet-1 {
+  height: 22px;
+  left: 5px;
+  position: absolute;
+  top: 10px;
+  width: 31px;
+}
+
+.homeu95mobsm .quote-card-1 {
+  height: 180px;
+  position: relative;
+  width: 312px;
+}
+
+.homeu95mobsm .in-a-world-where-one-1 {
+  color: var(--white);
+  font-weight: 300;
+  left: 16px;
+  line-height: 18.0px;
+  position: absolute;
+  top: 23px;
+  width: 280px;
+}
+
+.homeu95mobsm .frame-412-1 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  left: 0;
+  padding: 0px 16px;
+  position: absolute;
+  top: 123px;
+  width: 312px;
+}
+
+.homeu95mobsm .frame-410-1 {
+  height: 40px;
+  margin-right: -4.00px;
+  position: relative;
+  width: 228px;
+}
+
+.homeu95mobsm .logo {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: -39.00px;
+  position: relative;
+}
+
+.homeu95mobsm .desktop-home-logo {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.homeu95mobsm .x2023-orchid {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.homeu95mobsm .x2023-orchid-1 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.homeu95mobsm .hyperlinks {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .frame-532 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  padding: 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .frame-532-item {
+  display: flex;
+  height: 22px;
+  margin-right: -21.00px;
+  position: relative;
+  width: 281px;
+}
+
+.homeu95mobsm .x2023-orchid-2 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.homeu95mobsm .link {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  margin-right: -21.00px;
+  position: relative;
+  width: 281px;
+}
+
+.homeu95mobsm .x2023-orchid-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.homeu95mobsm .apps {
+  width: 102px;
+}
+
+.homeu95mobsm .apps-1 {
+  width: 132px;
+}
+
+.homeu95mobsm .apps-2 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.homeu95mobsm .apps-3 {
+  width: 85px;
+}
+
+.homeu95mobsm .apps-4 {
+  width: 122px;
+}
+
+.homeu95mobsm .apps-5 {
+  width: 76px;
+}
+
+.homeu95mobsm .apps-6 {
+  width: 42px;
+}
+
+.homeu95mobsm .apps-7 {
+  width: 75px;
+}
+
+.homeu95mobsm .social-icons {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
+}
+
+.homeu95mobsm .social-link-reddit {
+  height: 32px;
+}
+
+.homeu95mobsm .apps-8 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.homeu95mobsm .body-2 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.homeu95mobsm .cards-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .company-2 {
+  left: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 228px;
+}
+
+.homeu95mobsm .copy-3 {
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.homeu95mobsm .discover-3 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.homeu95mobsm .intro-copy-5 {
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.homeu95mobsm .line-4 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.homeu95mobsm .mobile-5 {
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.homeu95mobsm .mobile-caption-section-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .mobile-headline-section-5 {
+  align-self: stretch;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95mobsm .overlap {
+  height: 180px;
+  left: -1px;
+  position: relative;
+}
+
+.homeu95mobsm .rectangle-copy {
+  left: 0;
+  position: absolute;
+  width: 312px;
+}
+
+.homeu95mobsm .social-link-1 {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+}
+
+.homeu95mobsm .text-4 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.homeu95mobsm .the-orchid-ecosystem-5 {
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  position: relative;
+}
+
+.homeu95mobsm .title-2 {
+  align-self: stretch;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.homeu95mobsm .vector {
+  height: 89px;
+  position: absolute;
+  top: 45px;
+}
+/* screen - homeu95tab */
+
+.homeu95tab {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  min-width: 744px;
+  overflow: hidden;
+  position: relative;
+}
+
+.homeu95tab .orchid-grid-hero-1 {
+  background-image: url(../img/orchidgrid-mob-1.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 544px;
+  position: absolute;
+  right: -238px;
+  top: 231px;
+  width: 563px;
+}
+
+.homeu95tab .mobile-nav-header-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 88px;
+  justify-content: space-between;
+  padding: 32px 72px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .hero-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px 32px 40px 72px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .copy-3 {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  width: 592px;
+}
+
+.homeu95tab .depin-that-works-1 {
+  flex: 0 0 auto;
+  position: relative;
+  width: 402.86px;
+}
+
+.homeu95tab .a-decentralized-mark-1 {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 500;
+  line-height: 34.7px;
+  position: relative;
+}
+
+.homeu95tab .span-2 {
+  letter-spacing: 0.31px;
+}
+
+.homeu95tab .hero-cta-button-1 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 120px 0px 0px;
+  position: relative;
+}
+
+.homeu95tab .mobile-button-hero-1 {
+  align-items: center;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 60px;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 16px 80px;
+  position: relative;
+}
+
+.homeu95tab .learn-more-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.homeu95tab .homeu95tab-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 32px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .mobile-5 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeu95tab .mobile-caption-section-3 {
+  justify-content: center;
+}
+
+.homeu95tab .line-4 {
+  width: 295px;
+}
+
+.homeu95tab .discover-3 {
+  text-align: center;
+}
+
+.homeu95tab .mobile-headline-section-5 {
+  align-items: center;
+  align-self: stretch;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeu95tab .the-orchid-ecosystem-6 {
+  color: transparent;
+  text-align: center;
+}
+
+.homeu95tab .span-3 {
+  color: var(--white);
+}
+
+.homeu95tab .span-4 {
+  color: var(--aquamarine);
+}
+
+.homeu95tab .cards-3 {
+  gap: 16px 16px;
+}
+
+.homeu95tab .card-springboard-mobile-1 {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  padding: 32px 16px;
+  position: relative;
+  width: 152px;
+}
+
+.homeu95tab .icon-card-small-1 {
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.homeu95tab .text-4 {
+  height: 104px;
+  margin-left: -8.00px;
+  margin-right: -8.00px;
+  width: 136px;
+}
+
+.homeu95tab .title-2 {
+  color: var(--white);
+  text-align: center;
+}
+
+.homeu95tab .body-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.homeu95tab .mobile-6 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95tab .line-5 {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.homeu95tab .mobile-headline-section-6 {
+  align-items: flex-start;
+  align-self: stretch;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.homeu95tab .the-orchid-ecosystem-5 {
+  color: transparent;
+  text-align: right;
+}
+
+.homeu95tab .copy-4 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+
+.homeu95tab .intro-copy-7 {
+  align-self: stretch;
+  color: transparent;
+  margin-top: -1.00px;
+  text-align: right;
+}
+
+.homeu95tab .title-3 {
+  color: var(--aquamarine);
+  height: 18px;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.homeu95tab .body-3 {
+  text-align: right;
+}
+
+.homeu95tab .nanopay-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .frame-476-1 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 60px 0px 0px;
+  position: relative;
+}
+
+.homeu95tab .vpn-1 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 0px 32px;
+  position: relative;
+  width: 744px;
+}
+
+.homeu95tab .mobile-7 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  height: 75px;
+  width: 100%;
+}
+
+.homeu95tab .mobile-headline-section-7 {
+  align-items: flex-start;
+  width: 360px;
+}
+
+.homeu95tab .the-orchid-ecosystem-7 {
+  color: transparent;
+}
+
+.homeu95tab .frame-473 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 190px;
+  justify-content: center;
+  padding: 40px 0px 40px 40px;
+  position: relative;
+}
+
+.homeu95tab .download-links {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  position: relative;
+}
+
+.homeu95tab .google-play {
+  background-image: url(../img/google-play-icon-transparent-6-1@2x.png);
+  background-size: 100% 100%;
+  cursor: pointer;
+  height: 42px;
+  position: relative;
+  width: 144px;
+}
+
+.homeu95tab .screen-img {
+  height: 447px;
+  left: calc(50.00% + 266px);
+  position: absolute;
+  top: -107px;
+  width: 306px;
+}
+
+.homeu95tab .bullet-points-1 {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px;
+  position: relative;
+  width: 408px;
+}
+
+.homeu95tab .bullet-points-item-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .frame-37-1 {
+  background-image: url(../img/task-alt@2x.png);
+  background-size: 100% 100%;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95tab .intro-copy-5 {
+  color: var(--white);
+  flex: 1;
+  margin-top: -1.00px;
+}
+
+.homeu95tab .line-6 {
+  width: 311px;
+}
+
+.homeu95tab .frame-472-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 24px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .oxt-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .token-1 {
+  height: 134px;
+  position: relative;
+  width: 100px;
+}
+
+.homeu95tab .overlap-group-4 {
+  height: 134px;
+  position: relative;
+}
+
+.homeu95tab .vector-747-1 {
+  height: 89px;
+  left: 0;
+  position: absolute;
+  top: 45px;
+  width: 100px;
+}
+
+.homeu95tab .vector-748-1 {
+  height: 89px;
+  left: 22px;
+  mix-blend-mode: color-dodge;
+  position: absolute;
+  top: 45px;
+  width: 56px;
+}
+
+.homeu95tab .token_-hi-fi-dt-1 {
+  height: 94px;
+  left: 6px;
+  position: absolute;
+  top: 0;
+  width: 88px;
+}
+
+.homeu95tab .mobile-8 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+}
+
+.homeu95tab .line-7 {
+  width: 135px;
+}
+
+.homeu95tab .mobile-headline-section-8 {
+  align-items: flex-start;
+  align-self: stretch;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+.homeu95tab .the-orchid-ecosystem-8 {
+  color: var(--white);
+  text-align: center;
+}
+
+.homeu95tab .copy-5 {
+  align-items: center;
+  display: inline-flex;
+  gap: 24px;
+}
+
+.homeu95tab .intro-copy-8 {
+  color: var(--white);
+  margin-top: -1.00px;
+  text-align: center;
+  width: 312px;
+}
+
+.homeu95tab .cards-4 {
+  gap: 16px 16px;
+  padding: 0px 40px;
+}
+
+.homeu95tab .card-detail-mobile-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+  position: relative;
+  width: 160px;
+}
+
+.homeu95tab .card-icon-1 {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  height: 128px;
+  justify-content: center;
+  position: relative;
+  width: 128px;
+}
+
+.homeu95tab .text-5 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95tab .wide-support-1 {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.homeu95tab .intro-copy-6 {
+  align-self: stretch;
+  color: var(--white);
+  text-align: center;
+}
+
+.homeu95tab .text-6 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95tab .text-7 {
+  align-self: stretch;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95tab .mobile-9 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+.homeu95tab .mobile-headline-section-9 {
+  align-items: center;
+  justify-content: flex-end;
+  width: 360px;
+}
+
+.homeu95tab .intro-copy-9 {
+  align-self: stretch;
+  color: var(--white);
+  margin-top: -1.00px;
+  text-align: right;
+}
+
+.homeu95tab .frame-396-1 {
+  align-items: flex-end;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 138px;
+  padding: 16px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .frame-39-1 {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.homeu95tab .about-orchid-2 {
+  width: 222px;
+}
+
+.homeu95tab .github-1 {
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95tab .about-orchid-3 {
+  width: 214px;
+}
+
+.homeu95tab .frame-394-1 {
+  background-color: var(--aquamarine);
+  border-radius: 12px;
+  display: flex;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+
+.homeu95tab .anchor-1 {
+  height: 20px;
+  margin-left: 2px;
+  margin-top: 2px;
+  width: 20px;
+}
+
+.homeu95tab .cards-5 {
+  gap: 24px 24px;
+  padding: 24px 0px;
+}
+
+.homeu95tab .quote-card-2 {
+  width: 311px;
+}
+
+.homeu95tab .overlap-group-3 {
+  height: 180px;
+  left: -1px;
+  position: relative;
+  width: 312px;
+}
+
+.homeu95tab .rectangle-copy-container-1 {
+  height: 180px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 312px;
+}
+
+.homeu95tab .rectangle-copy-9-1 {
+  height: 72px;
+  left: 0;
+  position: absolute;
+  top: 107px;
+  width: 312px;
+}
+
+.homeu95tab .rectangle-copy-8-1 {
+  height: 73px;
+  left: 0;
+  position: absolute;
+  top: 107px;
+  width: 312px;
+}
+
+.homeu95tab .rectangle-copy-7-1 {
+  border: 1px solid;
+  border-color: var(--pixie-powder);
+  border-radius: 16px;
+  box-shadow: 0px 4px 20px #00000033;
+  height: 179px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 312px;
+}
+
+.homeu95tab .in-a-world-where-one-2 {
+  left: 17px;
+  width: 279px;
+}
+
+.homeu95tab .frame-412-2 {
+  left: 1px;
+  width: 311px;
+}
+
+.homeu95tab .frame-4-1 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.homeu95tab .overlap-group-5 {
+  align-items: flex-start;
+  background-color: var(--log-cabin);
+  border-radius: 20px;
+  display: flex;
+  height: 40px;
+  justify-content: flex-end;
+  min-width: 40px;
+  padding: 13.3px 8.0px;
+}
+
+.homeu95tab .union-1 {
+  height: 13px;
+  width: 24px;
+}
+
+.homeu95tab .frame-410-2 {
+  margin-right: -5.00px;
+}
+
+.homeu95tab .company-2 {
+  color: var(--white);
+  font-weight: 600;
+  height: 20px;
+  line-height: 19.8px;
+  top: -1px;
+}
+
+.homeu95tab .company-3 {
+  color: var(--dull-lavender-2);
+  font-weight: 700;
+  height: 16px;
+  line-height: 24px;
+  top: 23px;
+}
+
+.homeu95tab .cnet-2 {
+  background-color: var(--log-cabin);
+  border-radius: 20px;
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.homeu95tab .cnet-3 {
+  height: 22px;
+  left: 5px;
+  position: absolute;
+  top: 10px;
+  width: 31px;
+}
+
+.homeu95tab .quote-card-3 {
+  width: 312px;
+}
+
+.homeu95tab .overlap-group3-1 {
+  height: 180px;
+  left: -1px;
+  position: relative;
+}
+
+.homeu95tab .in-a-world-where-one-3 {
+  left: 16px;
+  width: 280px;
+}
+
+.homeu95tab .frame-412-3 {
+  left: 0;
+  width: 312px;
+}
+
+.homeu95tab .frame-410-3 {
+  margin-right: -4.00px;
+}
+
+.homeu95tab .logo-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.homeu95tab .desktop-home-logo-1 {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.homeu95tab .x2023-orchid-4 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.homeu95tab .x2023-orchid-5 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.homeu95tab .hyperlinks-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .frame-532-item-1 {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.homeu95tab .x2023-orchid-6 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.homeu95tab .link-1 {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.homeu95tab .x2023-orchid-7 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.homeu95tab .apps-8 {
+  width: 102px;
+}
+
+.homeu95tab .apps-9 {
+  width: 132px;
+}
+
+.homeu95tab .apps-10 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.homeu95tab .apps-11 {
+  width: 85px;
+}
+
+.homeu95tab .apps-12 {
+  width: 122px;
+}
+
+.homeu95tab .apps-13 {
+  width: 76px;
+}
+
+.homeu95tab .apps-14 {
+  width: 42px;
+}
+
+.homeu95tab .apps-15 {
+  width: 75px;
+}
+
+.homeu95tab .social-icons-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .social-link-1 {
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.homeu95tab .about-orchid {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: right;
+}
+
+.homeu95tab .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.homeu95tab .body {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.homeu95tab .cards {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .company {
+  left: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 228px;
+}
+
+.homeu95tab .copy {
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.homeu95tab .discover {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.homeu95tab .frame-410 {
+  height: 40px;
+  position: relative;
+  width: 228px;
+}
+
+.homeu95tab .frame-412 {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  gap: 16px;
+  padding: 0px 16px;
+  position: absolute;
+  top: 123px;
+}
+
+.homeu95tab .in-a-world-where-one {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: absolute;
+  top: 23px;
+}
+
+.homeu95tab .intro-copy {
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.homeu95tab .line {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.homeu95tab .mobile {
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.homeu95tab .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.homeu95tab .mobile-headline-section {
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.homeu95tab .quote-card {
+  height: 180px;
+  position: relative;
+}
+
+.homeu95tab .text {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.homeu95tab .the-orchid-ecosystem {
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.homeu95tab .title {
+  align-self: stretch;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+}
+@media screen and (max-width: 743px) {
+  .screen.homeu95tab { 
+    display: none;
+   }
+  .screen.home-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .screen.homeu95mobsm { 
+    display: none;
+   }
+  .screen.home-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.homeu95mobsm { 
+    display: none;
+   }
+  .screen.homeu95tab { 
+    display: none;
+   }
+}
