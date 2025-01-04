@@ -26,10 +26,9 @@
   --font-size-xxxxl: 40px;
  
   --font-family-figtree: "Figtree", Helvetica;
-  --font-family-figtree-extrabold: "Figtree-ExtraBold", Helvetica;
 }
 .desktopheadline {
-  font-family: var(--font-family-figtree-extrabold);
+  font-family: var(--font-family-figtree);
   font-size: var(--font-size-60px);
   font-style: normal;
   font-weight: 800;
@@ -109,7 +108,7 @@
 }
 
 .mobilesuper-headline {
-  font-family: var(--font-family-figtree-extrabold);
+  font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 800;
@@ -149,7 +148,7 @@
 }
 
 .mobilesuper-subhead {
-  font-family: var(--font-family-figtree-extrabold);
+  font-family: var(--font-family-figtree);
   font-size: var(--font-size-23px);
   font-style: normal;
   font-weight: 800;
@@ -188,19 +187,19 @@
   font-weight: 600;
 }
 
+.figtree-semi-bold-white-16px {
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 600;
+}
+
 .figtree-medium-aquamarine-28px {
   color: var(--aquamarine);
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxl);
   font-style: normal;
   font-weight: 500;
-}
-
-.figtree-semi-bold-white-16px {
-  font-family: var(--font-family-figtree);
-  font-size: var(--font-size-l);
-  font-style: normal;
-  font-weight: 600;
 }
 
 .figtree-semi-bold-white-40px {
@@ -242,26 +241,34 @@
   font-weight: 700;
 }
 
-.figtree-extra-extra-bold-white-60px {
+.figtree-extra-bold-white-60px {
   color: var(--white);
-  font-family: var(--font-family-figtree-extrabold);
+  font-family: var(--font-family-figtree);
   font-size: 60px;
   font-style: normal;
   font-weight: 800;
 }
 
-.figtree-extra-extra-bold-white-40px {
-  color: var(--white);
-  font-family: var(--font-family-figtree-extrabold);
+.figtree-extra-bold-aquamarine-40px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 800;
 }
 
-.figtree-extra-extra-bold-aquamarine-40px {
-  color: var(--aquamarine);
-  font-family: var(--font-family-figtree-extrabold);
+.figtree-extra-bold-white-40px {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxxl);
+  font-style: normal;
+  font-weight: 800;
+}
+
+.figtree-extra-bold-aquamarine-60px {
+  color: var(--aquamarine);
+  font-family: var(--font-family-figtree);
+  font-size: 60px;
   font-style: normal;
   font-weight: 800;
 }
@@ -272,14 +279,6 @@
   font-size: var(--font-size-xl);
   font-style: normal;
   font-weight: 400;
-}
-
-.figtree-extra-extra-bold-aquamarine-60px {
-  color: var(--aquamarine);
-  font-family: var(--font-family-figtree-extrabold);
-  font-size: 60px;
-  font-style: normal;
-  font-weight: 800;
 }
 
 .figtree-medium-white-28px-2 {

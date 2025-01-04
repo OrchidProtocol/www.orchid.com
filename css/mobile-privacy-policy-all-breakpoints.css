@@ -133,6 +133,11 @@
   position: relative;
 }
 
+.mobile-privacy-policy-all-breakpoints .desktop-home-logo-3 {
+  height: 36px;
+  position: relative;
+}
+
 .mobile-privacy-policy-all-breakpoints .x2023-orchid-8 {
   color: var(--white);
   font-weight: 300;

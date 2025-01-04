@@ -108,7 +108,7 @@
   width: 520px;
 }
 
-.storage-all-breakpoints .hero-image-2 {
+.storage-all-breakpoints .hero-image {
   background-image: url(../img/storage-splash-1.png);
   background-size: 100% 100%;
   height: 824px;
@@ -118,9 +118,11 @@
   width: 1754px;
 }
 
-.storage-all-breakpoints .desktop-home-logo-2 {
+.storage-all-breakpoints .desktop-home-logo {
   cursor: pointer;
   flex: 0 0 auto;
+  height: 36px;
+  position: relative;
 }
 
 .storage-all-breakpoints .desktop-button-top-nav-1 {
@@ -192,7 +194,7 @@
   width: 1440px;
 }
 
-.storage-all-breakpoints .frame-403-2 {
+.storage-all-breakpoints .frame-403 {
   align-items: center;
   display: flex;
   flex: 0 0 auto;
@@ -202,7 +204,7 @@
   width: 855px;
 }
 
-.storage-all-breakpoints .decentralized-marketplace-2 {
+.storage-all-breakpoints .decentralized-marketplace {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -212,16 +214,16 @@
   text-align: center;
 }
 
-.storage-all-breakpoints .span-4 {
+.storage-all-breakpoints .span {
   letter-spacing: 0.72px;
 }
 
-.storage-all-breakpoints .line-10-4 {
+.storage-all-breakpoints .line-10-1 {
   align-self: stretch;
   width: 100%;
 }
 
-.storage-all-breakpoints .orchids-new-open-so-2 {
+.storage-all-breakpoints .orchids-new-open-so {
   align-self: stretch;
   color: transparent;
   font-weight: 500;
@@ -230,7 +232,7 @@
   text-align: center;
 }
 
-.storage-all-breakpoints .span-5 {
+.storage-all-breakpoints .span-1 {
   letter-spacing: 0.31px;
 }
 
@@ -276,7 +278,7 @@
   width: fit-content;
 }
 
-.storage-all-breakpoints .line-10-3 {
+.storage-all-breakpoints .line-10 {
   flex: 1;
   flex-grow: 1;
 }
@@ -297,26 +299,30 @@
   width: 1280px;
 }
 
-.storage-all-breakpoints .span-6 {
+.storage-all-breakpoints .span-2 {
   letter-spacing: 0.32px;
 }
 
-.storage-all-breakpoints .copy-4 {
+.storage-all-breakpoints .copy {
+  align-self: stretch;
+  display: flex;
   height: 651px;
+  position: relative;
+  width: 100%;
 }
 
-.storage-all-breakpoints .text-4 {
+.storage-all-breakpoints .text {
   height: 644px;
   line-height: 28px;
   width: 1120px;
 }
 
-.storage-all-breakpoints .span-7 {
+.storage-all-breakpoints .span-3 {
   letter-spacing: 0.31px;
   line-height: 34.7px;
 }
 
-.storage-all-breakpoints .span-8 {
+.storage-all-breakpoints .span-4 {
   letter-spacing: 0.08px;
   line-height: 28.0px;
 }
@@ -350,6 +356,10 @@
   justify-content: flex-end;
 }
 
+.storage-all-breakpoints .line-9 {
+  width: 550px;
+}
+
 .storage-all-breakpoints .caption-1 {
   text-align: right;
 }
@@ -376,7 +386,7 @@
   width: 100%;
 }
 
-.storage-all-breakpoints .intro-copy-2 {
+.storage-all-breakpoints .intro-copy {
   color: transparent;
   font-weight: 400;
   height: 140px;
@@ -385,7 +395,7 @@
   width: 1120px;
 }
 
-.storage-all-breakpoints .span-9 {
+.storage-all-breakpoints .span-5 {
   letter-spacing: 0.08px;
 }
 
@@ -399,7 +409,7 @@
   position: relative;
 }
 
-.storage-all-breakpoints .learn-more-4 {
+.storage-all-breakpoints .learn-more {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -416,28 +426,33 @@
   color: transparent;
 }
 
-.storage-all-breakpoints .copy-5 {
+.storage-all-breakpoints .copy-1 {
   align-items: flex-start;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 40px;
   padding: 10px 0px;
+  position: relative;
+  width: 100%;
 }
 
-.storage-all-breakpoints .text-5 {
-  align-self: stretch;
+.storage-all-breakpoints .text-1 {
   cursor: pointer;
   line-height: 28px;
   margin-top: -1.00px;
-  position: relative;
 }
 
-.storage-all-breakpoints .text-6 {
-  align-self: stretch;
+.storage-all-breakpoints .text-2 {
+  cursor: pointer;
+  line-height: 28px;
+}
+
+.storage-all-breakpoints .text-3 {
   color: var(--aquamarine);
   font-weight: 500;
   line-height: 34.7px;
-  position: relative;
 }
 
 .storage-all-breakpoints .cta {
@@ -461,15 +476,19 @@
   width: 100%;
 }
 
-.storage-all-breakpoints .line-9-2 {
+.storage-all-breakpoints .line-9-1 {
+  height: 1px;
   margin-left: -52.50px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
 }
 
 .storage-all-breakpoints .caption-2 {
   text-align: center;
 }
 
-.storage-all-breakpoints .line-10-5 {
+.storage-all-breakpoints .line-10-2 {
   margin-right: -52.50px;
   width: 550px;
 }
@@ -540,7 +559,7 @@
   width: 100%;
 }
 
-.storage-all-breakpoints .logo-2 {
+.storage-all-breakpoints .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -549,7 +568,13 @@
   position: relative;
 }
 
-.storage-all-breakpoints .x2023-orchid-8 {
+.storage-all-breakpoints .desktop-home-logo-1 {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.storage-all-breakpoints .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -557,7 +582,7 @@
   width: 676px;
 }
 
-.storage-all-breakpoints .hyperlinks-2 {
+.storage-all-breakpoints .hyperlinks {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -585,12 +610,7 @@
   width: 180px;
 }
 
-.storage-all-breakpoints .x2023-orchid-9 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
+.storage-all-breakpoints .x2023-orchid-1 {
   width: 180px;
 }
 
@@ -598,12 +618,7 @@
   height: 22px;
 }
 
-.storage-all-breakpoints .x2023-orchid-10 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
+.storage-all-breakpoints .x2023-orchid-2 {
   white-space: nowrap;
   width: 208px;
 }
@@ -612,43 +627,25 @@
   height: 44px;
 }
 
-.storage-all-breakpoints .x2023-orchid-11 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 22.4px;
+.storage-all-breakpoints .x2023-orchid-3 {
   width: 208px;
 }
 
-.storage-all-breakpoints .apps-17 {
+.storage-all-breakpoints .apps-1 {
+  color: var(--white);
   cursor: pointer;
+  font-weight: 700;
+  height: 22px;
+  line-height: 22.4px;
+  width: 198px;
 }
 
-.storage-all-breakpoints .link-2 {
+.storage-all-breakpoints .link {
   cursor: pointer;
   display: flex;
   height: 22px;
   position: relative;
   width: 198px;
-}
-
-.storage-all-breakpoints .social-icons-2 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 24px 40px;
-  justify-content: flex-end;
-  position: relative;
-}
-
-.storage-all-breakpoints .social-link-github-2 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
-  width: 32px;
 }
 
 .storage-all-breakpoints .apps {
@@ -659,11 +656,23 @@
   width: 198px;
 }
 
-.storage-all-breakpoints .copy {
-  align-self: stretch;
-  display: flex;
+.storage-all-breakpoints .social-icons {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: flex-end;
   position: relative;
-  width: 100%;
+}
+
+.storage-all-breakpoints .social-link-github {
+  height: 33px;
+  margin-bottom: -1.00px;
+}
+
+.storage-all-breakpoints .social-link-reddit {
+  height: 32px;
 }
 
 .storage-all-breakpoints .desktop-button {
@@ -703,28 +712,33 @@
   position: relative;
 }
 
-.storage-all-breakpoints .desktop-home-logo {
-  height: 36px;
-  position: relative;
-}
-
-.storage-all-breakpoints .line-10 {
+.storage-all-breakpoints .line {
   height: 1px;
   object-fit: cover;
   position: relative;
 }
 
-.storage-all-breakpoints .line-9 {
+.storage-all-breakpoints .line-10-3 {
   height: 1px;
   object-fit: cover;
   position: relative;
-  width: 550px;
 }
 
 .storage-all-breakpoints .pp-3 {
   display: flex;
   position: relative;
   width: 208px;
+}
+
+.storage-all-breakpoints .social-link-1 {
+  cursor: pointer;
+  position: relative;
+  width: 32px;
+}
+
+.storage-all-breakpoints .text-4 {
+  align-self: stretch;
+  position: relative;
 }
 
 .storage-all-breakpoints .two-color-headline-4 {
@@ -744,6 +758,14 @@
   white-space: nowrap;
   width: fit-content;
 }
+
+.storage-all-breakpoints .x2023-orchid-4 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+}
 /* screen - storageu95mobsm */
 
 .storageu95mobsm {
@@ -757,7 +779,7 @@
   position: relative;
 }
 
-.storageu95mobsm .hero-image {
+.storageu95mobsm .hero-image-1 {
   display: flex;
   height: 209px;
   justify-content: center;
@@ -792,14 +814,18 @@
   width: 28.47px;
 }
 
-.storageu95mobsm .frame-403 {
+.storageu95mobsm .frame-403-1 {
   align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
   gap: 24px;
   padding: 0px 24px;
+  position: relative;
   width: 357px;
 }
 
-.storageu95mobsm .decentralized-marketplace {
+.storageu95mobsm .decentralized-marketplace-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -809,20 +835,20 @@
   text-align: center;
 }
 
-.storageu95mobsm .span {
+.storageu95mobsm .span-6 {
   color: var(--aquamarine);
 }
 
-.storageu95mobsm .span-1 {
+.storageu95mobsm .span-7 {
   color: var(--white);
 }
 
-.storageu95mobsm .line-10 {
+.storageu95mobsm .line-10-3 {
   align-self: stretch;
   width: 100%;
 }
 
-.storageu95mobsm .orchids-new-open-so {
+.storageu95mobsm .orchids-new-open-so-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 600;
@@ -860,6 +886,9 @@
 .storageu95mobsm .line {
   flex: 1;
   flex-grow: 1;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
 }
 
 .storageu95mobsm .mobile-headline-section {
@@ -881,7 +910,7 @@
   position: relative;
 }
 
-.storageu95mobsm .copy {
+.storageu95mobsm .copy-2 {
   align-items: center;
   gap: 24px;
 }
@@ -933,12 +962,10 @@
 
 .storageu95mobsm .frame-478 {
   align-items: center;
-  align-self: stretch;
   gap: 24px;
-  width: 100%;
 }
 
-.storageu95mobsm .intro-copy {
+.storageu95mobsm .intro-copy-1 {
   align-self: stretch;
   color: transparent;
   font-weight: 300;
@@ -950,10 +977,8 @@
 
 .storageu95mobsm .frame-476 {
   align-items: center;
-  align-self: stretch;
   gap: 10px;
   padding: 60px 0px 0px;
-  width: 100%;
 }
 
 .storageu95mobsm .mobile-button-hero {
@@ -972,30 +997,22 @@
   width: 100%;
 }
 
-.storageu95mobsm .learn-more {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
+.storageu95mobsm .learn-more-1 {
   margin-left: -23.50px;
   margin-right: -23.50px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .storageu95mobsm .mobile-2 {
   align-items: center;
 }
 
-.storageu95mobsm .copy-1 {
+.storageu95mobsm .copy-3 {
   align-items: flex-start;
   gap: 40px;
   padding: 10px 0px;
 }
 
-.storageu95mobsm .text {
+.storageu95mobsm .text-4 {
   cursor: pointer;
   line-height: 16px;
   margin-top: -1.00px;
@@ -1012,7 +1029,12 @@
   line-height: 18.0px;
 }
 
-.storageu95mobsm .text-1 {
+.storageu95mobsm .text-5 {
+  cursor: pointer;
+  line-height: 16px;
+}
+
+.storageu95mobsm .text-6 {
   color: var(--aquamarine);
   font-weight: 600;
   line-height: 19.8px;
@@ -1026,8 +1048,11 @@
   justify-content: center;
 }
 
-.storageu95mobsm .line-9 {
+.storageu95mobsm .line-9-2 {
+  height: 1px;
   margin-left: -16.50px;
+  object-fit: cover;
+  position: relative;
   width: 135px;
 }
 
@@ -1035,11 +1060,8 @@
   text-align: center;
 }
 
-.storageu95mobsm .line-10-1 {
-  height: 1px;
+.storageu95mobsm .line-10-4 {
   margin-right: -16.50px;
-  object-fit: cover;
-  position: relative;
   width: 135px;
 }
 
@@ -1068,17 +1090,17 @@
   width: 100%;
 }
 
-.storageu95mobsm .learn-more-1 {
+.storageu95mobsm .learn-more-2 {
   margin-left: -7.50px;
   margin-right: -7.50px;
 }
 
-.storageu95mobsm .learn-more-2 {
+.storageu95mobsm .learn-more-3 {
   margin-left: -27.50px;
   margin-right: -27.50px;
 }
 
-.storageu95mobsm .logo {
+.storageu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1088,12 +1110,13 @@
   position: relative;
 }
 
-.storageu95mobsm .desktop-home-logo {
+.storageu95mobsm .desktop-home-logo-2 {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
 
-.storageu95mobsm .x2023-orchid {
+.storageu95mobsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1101,7 +1124,7 @@
   width: 299px;
 }
 
-.storageu95mobsm .x2023-orchid-1 {
+.storageu95mobsm .x2023-orchid-5 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1109,7 +1132,7 @@
   position: relative;
 }
 
-.storageu95mobsm .hyperlinks {
+.storageu95mobsm .hyperlinks-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1122,10 +1145,8 @@
 
 .storageu95mobsm .frame-532 {
   align-items: flex-start;
-  align-self: stretch;
   gap: 32px;
   padding: 24px 0px;
-  width: 100%;
 }
 
 .storageu95mobsm .frame-532-item {
@@ -1136,7 +1157,7 @@
   width: 281px;
 }
 
-.storageu95mobsm .x2023-orchid-2 {
+.storageu95mobsm .x2023-orchid-6 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1146,7 +1167,7 @@
   width: 132px;
 }
 
-.storageu95mobsm .link {
+.storageu95mobsm .link-1 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -1155,7 +1176,7 @@
   width: 281px;
 }
 
-.storageu95mobsm .x2023-orchid-3 {
+.storageu95mobsm .x2023-orchid-7 {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -1164,40 +1185,40 @@
   width: 82px;
 }
 
-.storageu95mobsm .apps {
+.storageu95mobsm .apps-2 {
   width: 102px;
 }
 
-.storageu95mobsm .apps-1 {
+.storageu95mobsm .apps-3 {
   width: 132px;
 }
 
-.storageu95mobsm .apps-2 {
+.storageu95mobsm .apps-4 {
   cursor: pointer;
   width: 113px;
 }
 
-.storageu95mobsm .apps-3 {
+.storageu95mobsm .apps-5 {
   width: 85px;
 }
 
-.storageu95mobsm .apps-4 {
+.storageu95mobsm .apps-6 {
   width: 122px;
 }
 
-.storageu95mobsm .apps-5 {
+.storageu95mobsm .apps-7 {
   width: 76px;
 }
 
-.storageu95mobsm .apps-6 {
+.storageu95mobsm .apps-8 {
   width: 42px;
 }
 
-.storageu95mobsm .apps-7 {
+.storageu95mobsm .apps-9 {
   width: 75px;
 }
 
-.storageu95mobsm .social-icons {
+.storageu95mobsm .social-icons-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1210,16 +1231,14 @@
   width: 100%;
 }
 
-.storageu95mobsm .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
-}
-
-.storageu95mobsm .social-link-reddit {
+.storageu95mobsm .social-link-1 {
+  cursor: pointer;
   height: 32px;
+  position: relative;
+  width: 32px;
 }
 
-.storageu95mobsm .apps-8 {
+.storageu95mobsm .apps {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -1235,7 +1254,7 @@
   position: relative;
 }
 
-.storageu95mobsm .copy-2 {
+.storageu95mobsm .copy {
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
@@ -1254,13 +1273,26 @@
 }
 
 .storageu95mobsm .frame {
+  align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
-.storageu95mobsm .line-1 {
+.storageu95mobsm .learn-more {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.storageu95mobsm .line-10 {
   height: 1px;
   object-fit: cover;
   position: relative;
@@ -1303,13 +1335,7 @@
   width: 100%;
 }
 
-.storageu95mobsm .social-link-1 {
-  cursor: pointer;
-  position: relative;
-  width: 32px;
-}
-
-.storageu95mobsm .text-2 {
+.storageu95mobsm .text {
   align-self: stretch;
   position: relative;
 }
@@ -1342,7 +1368,7 @@
   position: relative;
 }
 
-.storageu95tabsm .hero-image-1 {
+.storageu95tabsm .hero-image-2 {
   background-image: url(../img/storage-splash-1.png);
   background-size: 100% 100%;
   height: 389px;
@@ -1363,7 +1389,7 @@
   width: 100%;
 }
 
-.storageu95tabsm .frame-403-1 {
+.storageu95tabsm .frame-403-2 {
   align-items: center;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1373,7 +1399,7 @@
   position: relative;
 }
 
-.storageu95tabsm .decentralized-marketplace-1 {
+.storageu95tabsm .decentralized-marketplace-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 800;
@@ -1383,11 +1409,11 @@
   text-align: center;
 }
 
-.storageu95tabsm .span-2 {
+.storageu95tabsm .span-8 {
   letter-spacing: 0.32px;
 }
 
-.storageu95tabsm .line-10-2 {
+.storageu95tabsm .line-10-5 {
   align-self: stretch;
   height: 1px;
   object-fit: cover;
@@ -1395,7 +1421,7 @@
   width: 100%;
 }
 
-.storageu95tabsm .orchids-new-open-so-1 {
+.storageu95tabsm .orchids-new-open-so-2 {
   align-self: stretch;
   color: var(--white);
   font-weight: 600;
@@ -1436,7 +1462,7 @@
   color: transparent;
 }
 
-.storageu95tabsm .span-3 {
+.storageu95tabsm .span-9 {
   color: var(--white);
 }
 
@@ -1444,7 +1470,7 @@
   color: var(--aquamarine);
 }
 
-.storageu95tabsm .copy-2 {
+.storageu95tabsm .copy-4 {
   align-items: center;
   gap: 24px;
 }
@@ -1479,7 +1505,7 @@
   text-align: right;
 }
 
-.storageu95tabsm .intro-copy-1 {
+.storageu95tabsm .intro-copy-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 300;
@@ -1498,17 +1524,28 @@
   display: inline-flex;
 }
 
+.storageu95tabsm .learn-more-4 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
 .storageu95tabsm .mobile-6 {
   align-items: center;
 }
 
-.storageu95tabsm .copy-3 {
+.storageu95tabsm .copy-5 {
   align-items: flex-start;
   gap: 40px;
   padding: 10px 0px;
 }
 
-.storageu95tabsm .text-2 {
+.storageu95tabsm .text-7 {
   cursor: pointer;
   line-height: 16px;
   margin-top: -1.00px;
@@ -1525,7 +1562,12 @@
   line-height: 18.0px;
 }
 
-.storageu95tabsm .text-3 {
+.storageu95tabsm .text-8 {
+  cursor: pointer;
+  line-height: 16px;
+}
+
+.storageu95tabsm .text-9 {
   color: var(--aquamarine);
   font-weight: 600;
   line-height: 19.8px;
@@ -1572,7 +1614,7 @@
   width: 100%;
 }
 
-.storageu95tabsm .logo-1 {
+.storageu95tabsm .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1581,12 +1623,13 @@
   position: relative;
 }
 
-.storageu95tabsm .desktop-home-logo-1 {
+.storageu95tabsm .desktop-home-logo-3 {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
 
-.storageu95tabsm .x2023-orchid-4 {
+.storageu95tabsm .x2023-orchid-8 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1594,7 +1637,7 @@
   width: 299px;
 }
 
-.storageu95tabsm .x2023-orchid-5 {
+.storageu95tabsm .x2023-orchid-9 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1602,7 +1645,7 @@
   position: relative;
 }
 
-.storageu95tabsm .hyperlinks-1 {
+.storageu95tabsm .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1620,7 +1663,7 @@
   width: 281px;
 }
 
-.storageu95tabsm .x2023-orchid-6 {
+.storageu95tabsm .x2023-orchid-10 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1630,7 +1673,7 @@
   width: 132px;
 }
 
-.storageu95tabsm .link-1 {
+.storageu95tabsm .link-2 {
   cursor: pointer;
   display: flex;
   height: 22px;
@@ -1638,7 +1681,7 @@
   width: 281px;
 }
 
-.storageu95tabsm .x2023-orchid-7 {
+.storageu95tabsm .x2023-orchid-11 {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -1647,40 +1690,36 @@
   width: 82px;
 }
 
-.storageu95tabsm .apps-8 {
+.storageu95tabsm .apps-10 {
   width: 102px;
 }
 
-.storageu95tabsm .apps-9 {
+.storageu95tabsm .apps-11 {
   width: 132px;
 }
 
-.storageu95tabsm .apps-10 {
+.storageu95tabsm .apps-12 {
   cursor: pointer;
   width: 113px;
 }
 
-.storageu95tabsm .apps-11 {
+.storageu95tabsm .apps-13 {
   width: 85px;
 }
 
-.storageu95tabsm .apps-12 {
+.storageu95tabsm .apps-14 {
   width: 122px;
 }
 
-.storageu95tabsm .apps-13 {
+.storageu95tabsm .apps-15 {
   width: 76px;
 }
 
-.storageu95tabsm .apps-14 {
-  width: 42px;
-}
-
-.storageu95tabsm .apps-15 {
+.storageu95tabsm .apps-17 {
   width: 75px;
 }
 
-.storageu95tabsm .social-icons-1 {
+.storageu95tabsm .social-icons-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1693,9 +1732,10 @@
   width: 100%;
 }
 
-.storageu95tabsm .social-link-1 {
+.storageu95tabsm .social-link-github-2 {
   cursor: pointer;
-  height: 32px;
+  height: 33px;
+  margin-bottom: -1.00px;
   position: relative;
   width: 32px;
 }
@@ -1811,18 +1851,18 @@
   position: relative;
 }
 @media screen and (max-width: 743px) {
-  .screen.storageu95tabsm { 
+  .screen.storage-all-breakpoints { 
     display: none;
    }
-  .screen.storage-all-breakpoints { 
+  .screen.storageu95tabsm { 
     display: none;
    }
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
-  .screen.storageu95mobsm { 
+  .screen.storage-all-breakpoints { 
     display: none;
    }
-  .screen.storage-all-breakpoints { 
+  .screen.storageu95mobsm { 
     display: none;
    }
 }
