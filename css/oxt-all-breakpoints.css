@@ -97,7 +97,7 @@
   width: 200px;
 }
 
-.oxt-all-breakpoints .token-graphic-1 {
+.oxt-all-breakpoints .token-graphic-2 {
   height: 454px;
   position: absolute;
   right: 120px;
@@ -105,9 +105,40 @@
   width: 430px;
 }
 
-.oxt-all-breakpoints .desktop-home-logo-1 {
-  cursor: pointer;
+.oxt-all-breakpoints .desktop-home-logo-2 {
   flex: 0 0 auto;
+}
+
+.oxt-all-breakpoints .desktop-header-top-nav {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 48px;
+  height: 14px;
+  justify-content: center;
+  padding: 0px 48px;
+  position: relative;
+}
+
+.oxt-all-breakpoints .desktop-button-top-nav {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 57px;
+}
+
+.oxt-all-breakpoints .build {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .oxt-all-breakpoints .desktop-button-top-nav-1 {
@@ -180,7 +211,7 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .hero-1 {
+.oxt-all-breakpoints .hero-2 {
   align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
@@ -191,7 +222,7 @@
   width: 1440px;
 }
 
-.oxt-all-breakpoints .frame-403-1 {
+.oxt-all-breakpoints .frame-403-2 {
   align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
@@ -210,7 +241,7 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .the-staking-asset-fo-1 {
+.oxt-all-breakpoints .the-staking-asset-fo-2 {
   align-self: stretch;
   color: transparent;
   font-weight: 600;
@@ -218,7 +249,7 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .span-1 {
+.oxt-all-breakpoints .span-2 {
   letter-spacing: 0.32px;
 }
 
@@ -233,13 +264,13 @@
   width: 100%;
 }
 
-.oxt-all-breakpoints .line-10-2 {
+.oxt-all-breakpoints .line-10-4 {
   align-self: stretch;
   margin-top: -1.00px;
   width: 100%;
 }
 
-.oxt-all-breakpoints .intro-copy-6 {
+.oxt-all-breakpoints .intro-copy-11 {
   align-self: stretch;
   color: var(--white);
   font-weight: 400;
@@ -281,12 +312,8 @@
   width: 100%;
 }
 
-.oxt-all-breakpoints .line-9-1 {
-  height: 1px;
+.oxt-all-breakpoints .line-9-3 {
   margin-left: -93.00px;
-  object-fit: cover;
-  position: relative;
-  width: 550px;
 }
 
 .oxt-all-breakpoints .caption {
@@ -300,7 +327,7 @@
   width: fit-content;
 }
 
-.oxt-all-breakpoints .line-10-3 {
+.oxt-all-breakpoints .line-10-5 {
   margin-right: -93.00px;
   width: 550px;
 }
@@ -327,7 +354,7 @@
   width: fit-content;
 }
 
-.oxt-all-breakpoints .intro-copy-7 {
+.oxt-all-breakpoints .intro-copy-12 {
   align-self: stretch;
   color: transparent;
   cursor: pointer;
@@ -337,7 +364,7 @@
   text-align: center;
 }
 
-.oxt-all-breakpoints .span-2 {
+.oxt-all-breakpoints .span-3 {
   letter-spacing: 0.08px;
 }
 
@@ -363,7 +390,7 @@
   width: 480px;
 }
 
-.oxt-all-breakpoints .intro-copy-8 {
+.oxt-all-breakpoints .intro-copy-13 {
   color: var(--aquamarine);
   font-weight: 500;
   line-height: 34.7px;
@@ -387,7 +414,7 @@
   width: 238px;
 }
 
-.oxt-all-breakpoints .about-orchid-5 {
+.oxt-all-breakpoints .about-orchid-11 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -397,7 +424,7 @@
   width: 225.25px;
 }
 
-.oxt-all-breakpoints .about-orchid-6 {
+.oxt-all-breakpoints .about-orchid-12 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -414,7 +441,7 @@
   width: 122px;
 }
 
-.oxt-all-breakpoints .about-orchid-7 {
+.oxt-all-breakpoints .about-orchid-13 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -433,7 +460,7 @@
   width: 480px;
 }
 
-.oxt-all-breakpoints .intro-copy-9 {
+.oxt-all-breakpoints .intro-copy-14 {
   color: var(--aquamarine);
   font-weight: 500;
   line-height: 34.7px;
@@ -459,7 +486,7 @@
   width: 192px;
 }
 
-.oxt-all-breakpoints .about-orchid-8 {
+.oxt-all-breakpoints .about-orchid-14 {
   color: var(--white);
   font-weight: 700;
   line-height: 24px;
@@ -476,15 +503,11 @@
   width: 194px;
 }
 
-.oxt-all-breakpoints .line-9 {
-  height: 1px;
+.oxt-all-breakpoints .line-9-2 {
   margin-left: -53.50px;
-  object-fit: cover;
-  position: relative;
-  width: 550px;
 }
 
-.oxt-all-breakpoints .line-10-1 {
+.oxt-all-breakpoints .line-10-6 {
   margin-right: -53.50px;
   width: 550px;
 }
@@ -500,7 +523,7 @@
   width: fit-content;
 }
 
-.oxt-all-breakpoints .intro-copy-10 {
+.oxt-all-breakpoints .intro-copy-15 {
   align-self: stretch;
   color: var(--white);
   cursor: pointer;
@@ -510,7 +533,7 @@
   text-align: center;
 }
 
-.oxt-all-breakpoints .supply-links-1 {
+.oxt-all-breakpoints .supply-links-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -519,7 +542,7 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .about-orchid-9 {
+.oxt-all-breakpoints .about-orchid-15 {
   color: var(--dull-lavender);
   cursor: pointer;
   font-weight: 700;
@@ -542,14 +565,19 @@
   width: 100%;
 }
 
-.oxt-all-breakpoints .link-2 {
+.oxt-all-breakpoints .line-10-7 {
+  margin-right: -53.50px;
+  width: 550px;
+}
+
+.oxt-all-breakpoints .link-4 {
   align-self: stretch;
   height: 24px;
   justify-content: center;
   width: 100%;
 }
 
-.oxt-all-breakpoints .intro-copy-5 {
+.oxt-all-breakpoints .intro-copy-10 {
   color: var(--dull-lavender);
   font-weight: 700;
   height: 24px;
@@ -572,7 +600,7 @@
   width: 100%;
 }
 
-.oxt-all-breakpoints .logo-1 {
+.oxt-all-breakpoints .logo-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -581,7 +609,7 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .x2023-orchid-4 {
+.oxt-all-breakpoints .x2023-orchid-8 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -589,7 +617,7 @@
   width: 676px;
 }
 
-.oxt-all-breakpoints .hyperlinks-1 {
+.oxt-all-breakpoints .hyperlinks-2 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -601,15 +629,6 @@
   width: 100%;
 }
 
-.oxt-all-breakpoints .frame-42 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-}
-
 .oxt-all-breakpoints .pp {
   display: flex;
   height: 22px;
@@ -617,7 +636,7 @@
   width: 180px;
 }
 
-.oxt-all-breakpoints .x2023-orchid-5 {
+.oxt-all-breakpoints .x2023-orchid-9 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -630,7 +649,7 @@
   height: 22px;
 }
 
-.oxt-all-breakpoints .x2023-orchid-6 {
+.oxt-all-breakpoints .x2023-orchid-10 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -644,7 +663,7 @@
   height: 44px;
 }
 
-.oxt-all-breakpoints .x2023-orchid-7 {
+.oxt-all-breakpoints .x2023-orchid-11 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -653,16 +672,16 @@
   width: 208px;
 }
 
-.oxt-all-breakpoints .apps-9 {
+.oxt-all-breakpoints .apps-17 {
   cursor: pointer;
 }
 
-.oxt-all-breakpoints .link-3 {
+.oxt-all-breakpoints .link-5 {
   height: 22px;
   width: 198px;
 }
 
-.oxt-all-breakpoints .social-icons-1 {
+.oxt-all-breakpoints .social-icons-2 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -672,7 +691,39 @@
   position: relative;
 }
 
-.oxt-all-breakpoints .social-link-1 {
+.oxt-all-breakpoints .social-link-discord-2 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.oxt-all-breakpoints .social-link-github-2 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.oxt-all-breakpoints .github-2 {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.oxt-all-breakpoints .social-link-reddit-2 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;
@@ -695,6 +746,7 @@
 }
 
 .oxt-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -708,6 +760,13 @@
   height: 1px;
   object-fit: cover;
   position: relative;
+}
+
+.oxt-all-breakpoints .line-9 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
 }
 
 .oxt-all-breakpoints .link {
@@ -733,18 +792,43 @@
   position: relative;
 }
 
-.oxtu95mobsm .mobile-nav-header-1 {
+.oxtu95mobsm .top-nav {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px;
+  justify-content: center;
+  padding: 32px 24px;
   position: relative;
   width: 100%;
 }
 
-.oxtu95mobsm .hero-2 {
+.oxtu95mobsm .orchid-icon {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
+  position: relative;
+  width: 28.47px;
+}
+
+.oxtu95mobsm .orchid-icon-1 {
+  height: 24px;
+  margin-left: 1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.oxtu95mobsm .vector {
+  height: 14px;
+  margin-right: 3px;
+  width: 18px;
+}
+
+.oxtu95mobsm .hero {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -756,13 +840,13 @@
   width: 100%;
 }
 
-.oxtu95mobsm .token-graphic-2 {
+.oxtu95mobsm .token-graphic {
   height: 196px;
   position: relative;
   width: 185px;
 }
 
-.oxtu95mobsm .frame-403-2 {
+.oxtu95mobsm .frame-403 {
   align-items: flex-start;
   display: flex;
   flex: 0 0 auto;
@@ -775,7 +859,7 @@
   width: 362px;
 }
 
-.oxtu95mobsm .title-1 {
+.oxtu95mobsm .title {
   align-self: stretch;
   color: var(--white);
   font-weight: 800;
@@ -784,7 +868,7 @@
   position: relative;
 }
 
-.oxtu95mobsm .the-staking-asset-fo-2 {
+.oxtu95mobsm .the-staking-asset-fo {
   color: transparent;
   font-weight: 600;
   line-height: 25.2px;
@@ -793,20 +877,20 @@
   width: 322px;
 }
 
-.oxtu95mobsm .span0-1 {
+.oxtu95mobsm .span0 {
   color: var(--white);
 }
 
-.oxtu95mobsm .span1-2 {
+.oxtu95mobsm .span1 {
   color: var(--aquamarine);
 }
 
-.oxtu95mobsm .line-10-5 {
+.oxtu95mobsm .line-10-1 {
   align-self: stretch;
   width: 100%;
 }
 
-.oxtu95mobsm .intro-copy-13 {
+.oxtu95mobsm .intro-copy-2 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -814,7 +898,19 @@
   position: relative;
 }
 
-.oxtu95mobsm .mobile-1 {
+.oxtu95mobsm .features {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .mobile {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -825,7 +921,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .mobile-caption-section-1 {
+.oxtu95mobsm .mobile-caption-section {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -836,11 +932,15 @@
   width: 100%;
 }
 
-.oxtu95mobsm .line-9-3 {
+.oxtu95mobsm .line-9-1 {
+  height: 1px;
   margin-left: -25.00px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
 }
 
-.oxtu95mobsm .discover-1 {
+.oxtu95mobsm .discover {
   color: var(--white);
   font-weight: 600;
   line-height: 13.2px;
@@ -850,12 +950,12 @@
   width: fit-content;
 }
 
-.oxtu95mobsm .line-10-6 {
+.oxtu95mobsm .line-10-2 {
   margin-right: -25.00px;
   width: 135px;
 }
 
-.oxtu95mobsm .mobile-headline-section-1 {
+.oxtu95mobsm .mobile-headline-section {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -866,11 +966,17 @@
   width: 100%;
 }
 
-.oxtu95mobsm .the-orchid-ecosystem-3 {
+.oxtu95mobsm .the-orchid-ecosystem-1 {
   color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
 }
 
-.oxtu95mobsm .intro-copy-14 {
+.oxtu95mobsm .intro-copy-3 {
   align-self: stretch;
   color: transparent;
   cursor: pointer;
@@ -879,25 +985,25 @@
   position: relative;
 }
 
-.oxtu95mobsm .span-3 {
+.oxtu95mobsm .span {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
 }
 
-.oxtu95mobsm .span1-3 {
+.oxtu95mobsm .span1-1 {
   color: var(--white);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.oxtu95mobsm .span2-1 {
+.oxtu95mobsm .span2 {
   color: var(--dull-lavender);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.oxtu95mobsm .cards-1 {
+.oxtu95mobsm .cards {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--log-cabin);
@@ -911,7 +1017,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .frame-5-1 {
+.oxtu95mobsm .frame-5 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -922,7 +1028,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .intro-copy-11 {
+.oxtu95mobsm .intro-copy {
   color: var(--aquamarine);
   font-weight: 600;
   line-height: 19.8px;
@@ -932,7 +1038,7 @@
   width: 288px;
 }
 
-.oxtu95mobsm .frame-538-1 {
+.oxtu95mobsm .frame-538 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -944,7 +1050,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .frame-53-1 {
+.oxtu95mobsm .frame-53 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -954,20 +1060,23 @@
   position: relative;
 }
 
-.oxtu95mobsm .about-orchid-10 {
+.oxtu95mobsm .about-orchid {
   color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
   margin-top: -1.00px;
+  position: relative;
   white-space: nowrap;
   width: fit-content;
 }
 
-.oxtu95mobsm .about-orchid-11 {
+.oxtu95mobsm .about-orchid-1 {
   color: var(--white);
   white-space: nowrap;
   width: fit-content;
 }
 
-.oxtu95mobsm .frame-535-1 {
+.oxtu95mobsm .frame-535 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -978,7 +1087,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .about-orchid-14 {
+.oxtu95mobsm .about-orchid-4 {
   align-self: stretch;
   color: var(--white);
   height: 24px;
@@ -986,27 +1095,32 @@
   white-space: nowrap;
 }
 
-.oxtu95mobsm .about-orchid-12 {
+.oxtu95mobsm .about-orchid-2 {
   align-self: stretch;
   color: var(--white);
   height: 24px;
   white-space: nowrap;
 }
 
-.oxtu95mobsm .line-9-2 {
+.oxtu95mobsm .line-9 {
   margin-left: -1.00px;
 }
 
-.oxtu95mobsm .line-10-4 {
+.oxtu95mobsm .line-10 {
   margin-right: -1.00px;
-  width: 135px;
 }
 
-.oxtu95mobsm .the-orchid-ecosystem-2 {
+.oxtu95mobsm .the-orchid-ecosystem {
   color: var(--aquamarine);
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
 }
 
-.oxtu95mobsm .intro-copy-15 {
+.oxtu95mobsm .intro-copy-4 {
   align-self: stretch;
   color: var(--white);
   cursor: pointer;
@@ -1016,7 +1130,7 @@
   text-align: center;
 }
 
-.oxtu95mobsm .supply-links-2 {
+.oxtu95mobsm .supply-links {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1027,7 +1141,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .about-orchid-15 {
+.oxtu95mobsm .about-orchid-5 {
   align-self: stretch;
   color: var(--dull-lavender);
   cursor: pointer;
@@ -1035,21 +1149,21 @@
   text-align: center;
 }
 
-.oxtu95mobsm .about-orchid-13 {
+.oxtu95mobsm .about-orchid-3 {
   align-self: stretch;
   color: var(--dull-lavender);
   cursor: pointer;
   text-align: center;
 }
 
-.oxtu95mobsm .link-4 {
+.oxtu95mobsm .link {
   align-self: stretch;
   height: 24px;
   justify-content: center;
   width: 100%;
 }
 
-.oxtu95mobsm .intro-copy-12 {
+.oxtu95mobsm .intro-copy-1 {
   color: var(--dull-lavender);
   font-weight: 700;
   height: 24px;
@@ -1058,7 +1172,18 @@
   width: 696px;
 }
 
-.oxtu95mobsm .logo-2 {
+.oxtu95mobsm .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95mobsm .logo {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1068,12 +1193,13 @@
   position: relative;
 }
 
-.oxtu95mobsm .desktop-home-logo-3 {
+.oxtu95mobsm .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
 
-.oxtu95mobsm .x2023-orchid-8 {
+.oxtu95mobsm .x2023-orchid {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1081,7 +1207,7 @@
   width: 299px;
 }
 
-.oxtu95mobsm .x2023-orchid-9 {
+.oxtu95mobsm .x2023-orchid-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1089,7 +1215,7 @@
   position: relative;
 }
 
-.oxtu95mobsm .hyperlinks-2 {
+.oxtu95mobsm .hyperlinks {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1100,7 +1226,7 @@
   width: 100%;
 }
 
-.oxtu95mobsm .frame-532-item-1 {
+.oxtu95mobsm .frame-532-item {
   display: flex;
   height: 22px;
   margin-right: -21.00px;
@@ -1108,7 +1234,7 @@
   width: 281px;
 }
 
-.oxtu95mobsm .x2023-orchid-10 {
+.oxtu95mobsm .x2023-orchid-2 {
   color: var(--white);
   cursor: pointer;
   flex: 1;
@@ -1118,13 +1244,13 @@
   width: 132px;
 }
 
-.oxtu95mobsm .link-5 {
+.oxtu95mobsm .link-1 {
   height: 22px;
   margin-right: -21.00px;
   width: 281px;
 }
 
-.oxtu95mobsm .x2023-orchid-11 {
+.oxtu95mobsm .x2023-orchid-3 {
   color: var(--white);
   flex: 1;
   font-weight: 700;
@@ -1133,36 +1259,40 @@
   width: 82px;
 }
 
-.oxtu95mobsm .apps-10 {
+.oxtu95mobsm .apps {
   width: 102px;
 }
 
-.oxtu95mobsm .apps-11 {
+.oxtu95mobsm .apps-1 {
   width: 132px;
 }
 
-.oxtu95mobsm .apps-12 {
+.oxtu95mobsm .apps-2 {
   cursor: pointer;
   width: 113px;
 }
 
-.oxtu95mobsm .apps-13 {
+.oxtu95mobsm .apps-3 {
   width: 85px;
 }
 
-.oxtu95mobsm .apps-14 {
+.oxtu95mobsm .apps-4 {
   width: 122px;
 }
 
-.oxtu95mobsm .apps-15 {
+.oxtu95mobsm .apps-5 {
   width: 76px;
 }
 
-.oxtu95mobsm .apps-17 {
+.oxtu95mobsm .apps-6 {
+  width: 42px;
+}
+
+.oxtu95mobsm .apps-7 {
   width: 75px;
 }
 
-.oxtu95mobsm .social-icons-2 {
+.oxtu95mobsm .social-icons {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1175,21 +1305,55 @@
   width: 100%;
 }
 
-.oxtu95mobsm .social-link-github-2 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
+.oxtu95mobsm .social-link-twitter {
+  background-color: var(--aquamarine);
+  display: flex;
+}
+
+.oxtu95mobsm .social-link-discord {
+  align-items: center;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.oxtu95mobsm .vector-1 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.oxtu95mobsm .social-link-github {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.oxtu95mobsm .github {
+  height: 32px;
+  margin-top: 2px;
   width: 32px;
 }
 
-.oxtu95mobsm .about-orchid {
+.oxtu95mobsm .social-link-facebook {
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.oxtu95mobsm .social-link-reddit {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+}
+
+.oxtu95mobsm .about-orchid-6 {
   font-weight: 700;
   line-height: 24px;
   position: relative;
 }
 
-.oxtu95mobsm .apps {
+.oxtu95mobsm .apps-8 {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -1197,32 +1361,31 @@
   white-space: nowrap;
 }
 
-.oxtu95mobsm .line-10 {
-  height: 1px;
-  object-fit: cover;
-  position: relative;
-}
-
-.oxtu95mobsm .line-9 {
+.oxtu95mobsm .line {
   height: 1px;
   object-fit: cover;
   position: relative;
   width: 135px;
 }
 
-.oxtu95mobsm .link {
+.oxtu95mobsm .line-10-3 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.oxtu95mobsm .link-2 {
   cursor: pointer;
   display: flex;
   position: relative;
 }
 
-.oxtu95mobsm .the-orchid-ecosystem {
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
+.oxtu95mobsm .social-link {
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
   position: relative;
-  text-align: center;
+  width: 32px;
 }
 /* screen - oxtu95tabsm */
 
@@ -1236,25 +1399,32 @@
   position: relative;
 }
 
-.oxtu95tabsm .mobile-nav-header {
+.oxtu95tabsm .top-nav-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px 72px;
+  justify-content: center;
+  padding: 32px 60px;
   position: relative;
   width: 100%;
 }
 
-.oxtu95tabsm .orchid-icon {
-  cursor: pointer;
+.oxtu95tabsm .orchid-icon-3 {
   height: 24px;
-  position: relative;
-  width: 28.47px;
+  margin-left: 1.1px;
+  margin-top: 0;
+  width: 26.47px;
 }
 
-.oxtu95tabsm .hero {
+.oxtu95tabsm .vector-2 {
+  height: 14px;
+  margin-right: 2.9px;
+  width: 18px;
+}
+
+.oxtu95tabsm .hero-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1265,7 +1435,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .frame-403 {
+.oxtu95tabsm .frame-403-1 {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -1275,7 +1445,7 @@
   width: 362px;
 }
 
-.oxtu95tabsm .title {
+.oxtu95tabsm .title-1 {
   align-self: stretch;
   color: var(--white);
   font-weight: 800;
@@ -1284,7 +1454,7 @@
   position: relative;
 }
 
-.oxtu95tabsm .the-staking-asset-fo {
+.oxtu95tabsm .the-staking-asset-fo-1 {
   color: transparent;
   font-weight: 600;
   line-height: 25.2px;
@@ -1293,20 +1463,23 @@
   width: 322px;
 }
 
-.oxtu95tabsm .span0 {
+.oxtu95tabsm .span0-1 {
   color: var(--white);
 }
 
-.oxtu95tabsm .span1 {
+.oxtu95tabsm .span1-2 {
   color: var(--aquamarine);
 }
 
-.oxtu95tabsm .line-10 {
+.oxtu95tabsm .line-10-3 {
   align-self: stretch;
+  height: 1px;
+  object-fit: cover;
+  position: relative;
   width: 100%;
 }
 
-.oxtu95tabsm .intro-copy-2 {
+.oxtu95tabsm .intro-copy-7 {
   align-self: stretch;
   color: var(--white);
   font-weight: 300;
@@ -1314,7 +1487,7 @@
   position: relative;
 }
 
-.oxtu95tabsm .token-graphic {
+.oxtu95tabsm .token-graphic-1 {
   height: 300.46px;
   margin-left: -8px;
   margin-right: -15.00px;
@@ -1323,7 +1496,7 @@
   width: 285px;
 }
 
-.oxtu95tabsm .features {
+.oxtu95tabsm .features-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1335,7 +1508,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .mobile {
+.oxtu95tabsm .mobile-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1346,7 +1519,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .mobile-caption-section {
+.oxtu95tabsm .mobile-caption-section-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1358,10 +1531,13 @@
 }
 
 .oxtu95tabsm .line {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
   width: 135px;
 }
 
-.oxtu95tabsm .discover {
+.oxtu95tabsm .discover-1 {
   color: var(--white);
   font-weight: 600;
   line-height: 13.2px;
@@ -1371,7 +1547,7 @@
   width: fit-content;
 }
 
-.oxtu95tabsm .mobile-headline-section {
+.oxtu95tabsm .mobile-headline-section-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1382,17 +1558,11 @@
   width: 100%;
 }
 
-.oxtu95tabsm .the-orchid-ecosystem-1 {
+.oxtu95tabsm .the-orchid-ecosystem-3 {
   color: transparent;
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
 }
 
-.oxtu95tabsm .intro-copy-3 {
+.oxtu95tabsm .intro-copy-8 {
   align-self: stretch;
   color: transparent;
   cursor: pointer;
@@ -1401,25 +1571,25 @@
   position: relative;
 }
 
-.oxtu95tabsm .span {
+.oxtu95tabsm .span-1 {
   color: var(--white);
   font-weight: 300;
   line-height: 18.0px;
 }
 
-.oxtu95tabsm .span1-1 {
+.oxtu95tabsm .span1-3 {
   color: var(--white);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.oxtu95tabsm .span2 {
+.oxtu95tabsm .span2-1 {
   color: var(--dull-lavender);
   font-weight: 700;
   line-height: 16.5px;
 }
 
-.oxtu95tabsm .cards {
+.oxtu95tabsm .cards-1 {
   align-items: flex-start;
   align-self: stretch;
   background-color: var(--log-cabin);
@@ -1433,7 +1603,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .frame-5 {
+.oxtu95tabsm .frame-5-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1444,7 +1614,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .intro-copy {
+.oxtu95tabsm .intro-copy-5 {
   color: var(--aquamarine);
   font-weight: 600;
   line-height: 19.8px;
@@ -1453,7 +1623,7 @@
   width: 288px;
 }
 
-.oxtu95tabsm .frame-538 {
+.oxtu95tabsm .frame-538-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1465,7 +1635,7 @@
   width: 100%;
 }
 
-.oxtu95tabsm .frame-53 {
+.oxtu95tabsm .frame-53-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1475,22 +1645,18 @@
   position: relative;
 }
 
-.oxtu95tabsm .about-orchid {
+.oxtu95tabsm .about-orchid-6 {
   color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
   margin-top: -1.00px;
-  position: relative;
-  white-space: nowrap;
   width: fit-content;
 }
 
-.oxtu95tabsm .about-orchid-1 {
+.oxtu95tabsm .about-orchid-7 {
   color: var(--white);
   width: fit-content;
 }
 
-.oxtu95tabsm .frame-535 {
+.oxtu95tabsm .frame-535-1 {
   align-items: center;
   align-self: stretch;
   display: flex;
@@ -1501,30 +1667,24 @@
   width: 100%;
 }
 
-.oxtu95tabsm .about-orchid-4 {
+.oxtu95tabsm .about-orchid-10 {
   align-self: stretch;
   color: var(--white);
   height: 24px;
   margin-top: -1.00px;
 }
 
-.oxtu95tabsm .about-orchid-2 {
+.oxtu95tabsm .about-orchid-8 {
   align-self: stretch;
   color: var(--white);
   height: 24px;
 }
 
-.oxtu95tabsm .the-orchid-ecosystem {
+.oxtu95tabsm .the-orchid-ecosystem-2 {
   color: var(--aquamarine);
-  flex: 1;
-  font-weight: 600;
-  line-height: 25.2px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
 }
 
-.oxtu95tabsm .intro-copy-4 {
+.oxtu95tabsm .intro-copy-9 {
   align-self: stretch;
   color: var(--white);
   cursor: pointer;
@@ -1534,7 +1694,7 @@
   text-align: center;
 }
 
-.oxtu95tabsm .supply-links {
+.oxtu95tabsm .supply-links-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -1546,21 +1706,21 @@
   width: 100%;
 }
 
-.oxtu95tabsm .about-orchid-3 {
+.oxtu95tabsm .about-orchid-9 {
   color: var(--dull-lavender);
   cursor: pointer;
   margin-top: -1.00px;
   width: fit-content;
 }
 
-.oxtu95tabsm .link {
+.oxtu95tabsm .link-2 {
   align-self: stretch;
   height: 24px;
   justify-content: center;
   width: 100%;
 }
 
-.oxtu95tabsm .intro-copy-1 {
+.oxtu95tabsm .intro-copy-6 {
   color: var(--dull-lavender);
   font-weight: 700;
   height: 24px;
@@ -1569,7 +1729,18 @@
   width: 696px;
 }
 
-.oxtu95tabsm .logo {
+.oxtu95tabsm .content-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.oxtu95tabsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
@@ -1578,12 +1749,7 @@
   position: relative;
 }
 
-.oxtu95tabsm .desktop-home-logo {
-  height: 36px;
-  position: relative;
-}
-
-.oxtu95tabsm .x2023-orchid {
+.oxtu95tabsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
@@ -1591,131 +1757,76 @@
   width: 299px;
 }
 
-.oxtu95tabsm .x2023-orchid-1 {
-  align-self: stretch;
-  color: var(--white);
-  font-weight: 300;
-  line-height: 19.6px;
-  position: relative;
-}
-
-.oxtu95tabsm .hyperlinks {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
-.oxtu95tabsm .frame-532 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
-  position: relative;
-  width: 100%;
-}
-
-.oxtu95tabsm .frame-532-item {
+.oxtu95tabsm .frame-532-item-1 {
   display: flex;
   height: 22px;
   position: relative;
   width: 281px;
 }
 
-.oxtu95tabsm .x2023-orchid-2 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 132px;
-}
-
-.oxtu95tabsm .link-1 {
+.oxtu95tabsm .link-3 {
   height: 22px;
   width: 281px;
 }
 
-.oxtu95tabsm .x2023-orchid-3 {
-  color: var(--white);
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 82px;
-}
-
-.oxtu95tabsm .apps {
+.oxtu95tabsm .apps-8 {
   width: 102px;
 }
 
-.oxtu95tabsm .apps-1 {
+.oxtu95tabsm .apps-9 {
   width: 132px;
 }
 
-.oxtu95tabsm .apps-2 {
+.oxtu95tabsm .apps-10 {
   cursor: pointer;
   width: 113px;
 }
 
-.oxtu95tabsm .apps-3 {
+.oxtu95tabsm .apps-11 {
   width: 85px;
 }
 
-.oxtu95tabsm .apps-4 {
+.oxtu95tabsm .apps-12 {
   width: 122px;
 }
 
-.oxtu95tabsm .apps-5 {
+.oxtu95tabsm .apps-13 {
   width: 76px;
 }
 
-.oxtu95tabsm .apps-6 {
+.oxtu95tabsm .apps-14 {
   width: 42px;
 }
 
-.oxtu95tabsm .apps-7 {
+.oxtu95tabsm .apps-15 {
   width: 75px;
 }
 
-.oxtu95tabsm .social-icons {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
+.oxtu95tabsm .vector-3 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
 }
 
-.oxtu95tabsm .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
-}
-
-.oxtu95tabsm .social-link-reddit {
+.oxtu95tabsm .social-link-reddit-1 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
   height: 32px;
+  position: relative;
+  width: 32px;
 }
 
-.oxtu95tabsm .about-orchid-5 {
+.oxtu95tabsm .about-orchid {
   font-weight: 700;
   line-height: 24px;
   position: relative;
   white-space: nowrap;
 }
 
-.oxtu95tabsm .apps-8 {
+.oxtu95tabsm .apps {
   color: var(--white);
   font-weight: 700;
   height: 24px;
@@ -1723,22 +1834,19 @@
   white-space: nowrap;
 }
 
-.oxtu95tabsm .line-1 {
-  height: 1px;
-  object-fit: cover;
-  position: relative;
-}
-
-.oxtu95tabsm .link-2 {
+.oxtu95tabsm .link {
   cursor: pointer;
   display: flex;
   position: relative;
 }
 
-.oxtu95tabsm .social-link-1 {
-  cursor: pointer;
+.oxtu95tabsm .the-orchid-ecosystem {
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
   position: relative;
-  width: 32px;
+  text-align: center;
 }
 @media screen and (max-width: 743px) {
   .screen.oxtu95tabsm { 
@@ -1749,18 +1857,18 @@
    }
 }
 @media screen and (min-width: 744px) and (max-width: 1439px) {
-  .screen.oxt-all-breakpoints { 
+  .screen.oxtu95mobsm { 
     display: none;
    }
-  .screen.oxtu95mobsm { 
+  .screen.oxt-all-breakpoints { 
     display: none;
    }
 }
 @media screen and (min-width: 1440px) {
-  .screen.oxtu95tabsm { 
+  .screen.oxtu95mobsm { 
     display: none;
    }
-  .screen.oxtu95mobsm { 
+  .screen.oxtu95tabsm { 
     display: none;
    }
 }

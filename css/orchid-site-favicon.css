@@ -10,6 +10,8 @@
 }
 
 .orchid-site-favicon .orchid-icon {
+  background-image: url(../img/orchidicon@2x.png);
+  background-size: 100% 100%;
   cursor: pointer;
   height: 20px;
   margin-left: -2px;

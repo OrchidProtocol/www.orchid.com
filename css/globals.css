@@ -1,5 +1,5 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
-@import url("https://fonts.googleapis.com/css?family=Figtree:400,600,300,800,500,700");
+@import url("https://fonts.googleapis.com/css?family=Figtree:900,700,600,300,800,500,400");
 /* The following line is used to measure usage of this code. You can remove it if you want. */
 @import url("https://px.animaapp.com/5e2a282a592dee7a2550cfd0.5ea6adb733c33a7ced6f8c4d.fO9Ui2A.hcp.png");
 
@@ -85,61 +85,10 @@
   width: 100%;
 }
 
-.desktop-header-top-nav {
-  align-items: flex-start;
-  display: flex;
-  flex: 1;
-  flex-grow: 1;
-  flex-wrap: wrap;
-  gap: 60px 48px;
-  height: 14px;
-  justify-content: center;
-  position: relative;
-}
-
-.desktop-button-top-nav {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  position: relative;
-  width: 90px;
-}
-
-.build {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 14.4px;
-  margin-top: -1.00px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
 .button-label {
   color: var(--white);
   font-weight: 700;
   line-height: 14.4px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.desktop-button-hero {
-  background-image: url(../img/rectangle-6-43@2x.png);
-  background-size: 100% 100%;
-  display: flex;
-  height: 80px;
-  width: 360px;
-}
-
-.label {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
   margin-top: -1.00px;
   position: relative;
   text-align: center;
@@ -158,6 +107,21 @@
   width: 100%;
 }
 
+.desktop-home-logo-1 {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.frame-42 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
 .dapp {
   display: flex;
   height: 22px;
@@ -165,14 +129,20 @@
   width: 198px;
 }
 
-.social-link {
-  cursor: pointer;
-  height: 32px;
-  position: relative;
-  width: 32px;
+.frame-593 {
+  height: 20px;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 20px;
 }
 
-.build-4 {
+.frame-594 {
+  height: 18px;
+  margin-top: 7px;
+  width: 10px;
+}
+
+.build-5 {
   color: var(--white);
   font-weight: 700;
   line-height: 14.4px;
@@ -182,19 +152,24 @@
   width: fit-content;
 }
 
-.caption-3 {
-  color: var(--white);
-  font-weight: 600;
-  line-height: 22.0px;
-  margin-top: -1.00px;
+.frame-590 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  height: 24px;
+  justify-content: space-between;
   position: relative;
-  white-space: nowrap;
-  width: fit-content;
 }
 
 .menu-icon {
+  align-items: center;
   cursor: pointer;
+  display: flex;
   height: 24px;
+  justify-content: flex-end;
+  max-height: 24px;
+  max-width: 24px;
   position: relative;
   width: 24px;
 }
@@ -221,6 +196,44 @@
   width: 100%;
 }
 
+.card-icon {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  height: 128px;
+  justify-content: center;
+  position: relative;
+  width: 128px;
+}
+
+.icon-card-small-1 {
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.wide-support {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.frame-478 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .mobilefooter {
   align-items: center;
   align-self: stretch;
@@ -235,44 +248,76 @@
   width: 100%;
 }
 
-.content {
+.frame-532 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
+  padding: 24px 0px;
   position: relative;
   width: 100%;
 }
 
-.social-link-github-1 {
-  cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
-  width: 32px;
+.frame-592 {
+  height: 20px;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 20px;
 }
 
-.social-link-reddit-1 {
-  cursor: pointer;
+.github-1 {
   height: 32px;
-  position: relative;
+  margin-top: 2px;
   width: 32px;
 }
 
-.orchid-icon-1 {
-  cursor: pointer;
+.frame-591 {
+  height: 18px;
+  margin-top: 7px;
+  width: 10px;
+}
+
+.frame-590-1 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
   height: 24px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.orchid-icon-2 {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
   position: relative;
   width: 28.47px;
 }
 
 .menu-icon-1 {
+  align-items: center;
   cursor: pointer;
+  display: flex;
   height: 24px;
+  justify-content: flex-end;
+  max-height: 24px;
+  max-width: 24px;
   position: relative;
   width: 24px;
+}
+
+.mobile-caption-section-4 {
+  justify-content: flex-end;
+}
+
+.discover-4 {
+  text-align: right;
 }
 
 .accounts-1 {
@@ -297,12 +342,45 @@
   width: 100%;
 }
 
-.mobile-caption-section-4 {
-  justify-content: flex-end;
+.app-store {
+  background-image: url(../img/appstorebadge-2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: pointer;
+  height: 42px;
+  position: relative;
+  width: 144px;
 }
 
-.discover-4 {
-  text-align: right;
+.card-detail-mobile-1 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 0px;
+  position: relative;
+  width: 160px;
+}
+
+.card-icon-1 {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  height: 128px;
+  justify-content: center;
+  position: relative;
+  width: 128px;
+}
+
+.wide-support-1 {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
 }
 
 .frame-478-1 {
@@ -330,13 +408,21 @@
   width: 100%;
 }
 
-.content-1 {
+.x2023-orchid-5 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.hyperlinks-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   position: relative;
   width: 100%;
 }
@@ -353,106 +439,249 @@
   width: 100%;
 }
 
+.x2023-orchid-6 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.x2023-orchid-7 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.social-icons-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.social-link-twitter-1 {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.frame-592-1 {
+  height: 20px;
+  margin-left: 6px;
+  margin-top: 6px;
+  width: 20px;
+}
+
+.social-link-discord-1 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.social-link-github-1 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.social-link-facebook-1 {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.frame-591-1 {
+  height: 18px;
+  margin-top: 7px;
+  width: 10px;
+}
+
+.frame-56 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.line-8-1 {
+  align-self: stretch;
+  height: 1px;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.desktop-button-hero {
+  background-image: url(../img/rectangle-6-43@2x.png);
+  background-size: 100% 100%;
+  display: flex;
+  height: 80px;
+  width: 360px;
+}
+
+.label {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.card-detail-desktop {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 320px;
+}
+
+.icon-card {
+  align-items: center;
+  background-color: var(--heavy-metal);
+  border-radius: 24px;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: space-around;
+  padding: 40px;
+  position: relative;
+  width: 208px;
+}
+
+.wide-support-2 {
+  align-self: stretch;
+  color: var(--aquamarine);
+  font-weight: 500;
+  line-height: 34.7px;
+  position: relative;
+  text-align: center;
+}
+
+.whitepaper-icon {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.social-link-twitter-2 {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.vector-4 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.social-link-facebook-2 {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.caption-3 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.frame-56-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.learn-more-3 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.desktop-home-logo-3 {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
 .apps-16 {
   width: 42px;
 }
 
-.social-link-2 {
-  cursor: pointer;
-  height: 32px;
+.frame-451 {
+  display: flex;
+  height: 176px;
+  justify-content: center;
   position: relative;
-  width: 32px;
+  width: 801px;
 }
 
-.social-link-reddit-2 {
-  cursor: pointer;
-  height: 32px;
-  position: relative;
-  width: 32px;
-}
-
-.close-icon {
-  cursor: pointer;
-  height: 24px;
-  position: relative;
-  width: 24px;
-}
-
-.account {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.account-1 {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.storchid {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.how {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.about {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.docs {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 22.4px;
-  margin-right: -48.00px;
-  position: relative;
-  width: 281px;
-}
-
-.app-store {
-  background-image: url(../img/appstorebadge-2.png);
-  background-position: 50% 50%;
-  background-size: cover;
-  cursor: pointer;
-  height: 42px;
-  position: relative;
-  width: 144px;
-}
-
-.button-1 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 10px;
-  padding: 80px 0px 0px;
-  position: relative;
-}
-
-.build-5 {
+.build-4 {
   color: var(--white);
   font-weight: 700;
   line-height: 14.4px;
@@ -462,24 +691,76 @@
   width: fit-content;
 }
 
-.features-1 {
+.mobile-caption-section-2 {
+  justify-content: center;
+}
+
+.close-icon {
   align-items: center;
-  align-self: stretch;
+  cursor: pointer;
   display: flex;
+  height: 24px;
+  justify-content: center;
+  position: relative;
+  width: 24px;
+}
+
+.account {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.storchid {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.how {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.about {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.docs {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.account-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+}
+
+.policy-1 {
+  align-items: center;
+  display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 24px;
-  padding: 0px 24px;
+  padding: 0px 40px;
   position: relative;
-  width: 100%;
-}
-
-.frame-451 {
-  display: flex;
-  height: 176px;
-  justify-content: center;
-  position: relative;
-  width: 801px;
 }
 
 .copy-item-1 {

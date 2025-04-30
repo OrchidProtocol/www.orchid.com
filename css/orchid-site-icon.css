@@ -8,8 +8,10 @@
 }
 
 .orchid-site-icon .orchid-icon {
+  background-image: url(../img/orchidicon-2@2x.png);
+  background-size: 100% 100%;
   cursor: pointer;
-  height: 114px;
+  height: 113.97px;
   margin-left: 21px;
   margin-top: 33px;
   width: 125px;

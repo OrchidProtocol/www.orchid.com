@@ -10,13 +10,9 @@
   position: relative;
 }
 
-.mobile-privacy-policy-all-breakpoints .mobile-nav-header-1 {
-  align-items: flex-start;
+.mobile-privacy-policy-all-breakpoints .top-nav-1 {
   align-self: stretch;
-  display: flex;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px;
   position: relative;
   width: 100%;
 }
@@ -114,13 +110,23 @@
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 16.5px;
-  text-decoration: underline;
 }
 
 .mobile-privacy-policy-all-breakpoints .span-11 {
   color: var(--aquamarine);
   font-weight: 300;
   line-height: 18.0px;
+}
+
+.mobile-privacy-policy-all-breakpoints .content-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
 }
 
 .mobile-privacy-policy-all-breakpoints .logo-2 {
@@ -130,11 +136,6 @@
   flex-direction: column;
   gap: 12px;
   margin-right: -39.00px;
-  position: relative;
-}
-
-.mobile-privacy-policy-all-breakpoints .desktop-home-logo-3 {
-  height: 36px;
   position: relative;
 }
 
@@ -243,10 +244,48 @@
   width: 100%;
 }
 
-.mobile-privacy-policy-all-breakpoints .social-link-github-2 {
+.mobile-privacy-policy-all-breakpoints .social-link-discord-2 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
   cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.mobile-privacy-policy-all-breakpoints .vector-3 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.mobile-privacy-policy-all-breakpoints .social-link-github-2 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.mobile-privacy-policy-all-breakpoints .github-2 {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.mobile-privacy-policy-all-breakpoints .social-link-reddit-2 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
   position: relative;
   width: 32px;
 }
@@ -365,6 +404,38 @@
   flex: 0 0 auto;
   height: 36px;
   position: relative;
+}
+
+.mobile-privacy-policyu95dt .desktop-header-top-nav {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 48px;
+  height: 14px;
+  justify-content: center;
+  padding: 0px 48px;
+  position: relative;
+}
+
+.mobile-privacy-policyu95dt .desktop-button-top-nav {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 57px;
+}
+
+.mobile-privacy-policyu95dt .build {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .mobile-privacy-policyu95dt .desktop-button-top-nav-1 {
@@ -549,11 +620,6 @@
   position: relative;
 }
 
-.mobile-privacy-policyu95dt .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
 .mobile-privacy-policyu95dt .x2023-orchid {
   color: var(--white);
   font-weight: 300;
@@ -572,15 +638,6 @@
   justify-content: space-between;
   position: relative;
   width: 100%;
-}
-
-.mobile-privacy-policyu95dt .frame-42 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
 }
 
 .mobile-privacy-policyu95dt .pp {
@@ -646,13 +703,46 @@
   position: relative;
 }
 
+.mobile-privacy-policyu95dt .social-link-twitter {
+  background-color: var(--aquamarine);
+  display: flex;
+}
+
+.mobile-privacy-policyu95dt .social-link-discord {
+  align-items: center;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-privacy-policyu95dt .vector {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
 .mobile-privacy-policyu95dt .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-privacy-policyu95dt .github {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.mobile-privacy-policyu95dt .social-link-facebook {
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
 }
 
 .mobile-privacy-policyu95dt .social-link-reddit {
-  height: 32px;
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
 }
 
 .mobile-privacy-policyu95dt .desktop-button-top-nav-7 {
@@ -669,8 +759,10 @@
   width: 208px;
 }
 
-.mobile-privacy-policyu95dt .social-link-1 {
+.mobile-privacy-policyu95dt .social-link {
+  border-radius: 40px;
   cursor: pointer;
+  height: 32px;
   position: relative;
   width: 32px;
 }
@@ -694,22 +786,40 @@
   position: relative;
 }
 
-.mobile-privacy-policyu95tabsm .mobile-nav-header {
+.mobile-privacy-policyu95tabsm .top-nav {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px 72px;
+  justify-content: center;
+  padding: 32px 60px;
   position: relative;
   width: 100%;
 }
 
 .mobile-privacy-policyu95tabsm .orchid-icon {
+  align-items: center;
   cursor: pointer;
+  display: flex;
   height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
   position: relative;
   width: 28.47px;
+}
+
+.mobile-privacy-policyu95tabsm .orchid-icon-1 {
+  height: 24px;
+  margin-left: 1.1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.mobile-privacy-policyu95tabsm .vector-1 {
+  height: 14px;
+  margin-right: 2.9px;
+  width: 18px;
 }
 
 .mobile-privacy-policyu95tabsm .frame-403-1 {
@@ -740,16 +850,6 @@
   object-fit: cover;
   position: relative;
   width: 100%;
-}
-
-.mobile-privacy-policyu95tabsm .policy-1 {
-  align-items: center;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  padding: 0px 40px;
-  position: relative;
 }
 
 .mobile-privacy-policyu95tabsm .copy-1 {
@@ -797,14 +897,12 @@
   color: var(--white);
   font-weight: 700;
   line-height: 16.5px;
-  text-decoration: underline;
 }
 
 .mobile-privacy-policyu95tabsm .span-7 {
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 16.5px;
-  text-decoration: underline;
 }
 
 .mobile-privacy-policyu95tabsm .span3 {
@@ -822,7 +920,18 @@
 
 .mobile-privacy-policyu95tabsm .nanopay {
   align-self: stretch;
+  height: 54px;
+  position: relative;
+  width: 100%;
+}
+
+.mobile-privacy-policyu95tabsm .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
   position: relative;
   width: 100%;
 }
@@ -837,6 +946,7 @@
 }
 
 .mobile-privacy-policyu95tabsm .desktop-home-logo-2 {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -849,52 +959,11 @@
   width: 299px;
 }
 
-.mobile-privacy-policyu95tabsm .x2023-orchid-5 {
-  align-self: stretch;
-  color: var(--white);
-  font-weight: 300;
-  line-height: 19.6px;
-  position: relative;
-}
-
-.mobile-privacy-policyu95tabsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
-.mobile-privacy-policyu95tabsm .frame-532 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
-  position: relative;
-  width: 100%;
-}
-
 .mobile-privacy-policyu95tabsm .frame-532-item {
   display: flex;
   height: 22px;
   position: relative;
   width: 281px;
-}
-
-.mobile-privacy-policyu95tabsm .x2023-orchid-6 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 132px;
 }
 
 .mobile-privacy-policyu95tabsm .link-1 {
@@ -903,15 +972,6 @@
   height: 22px;
   position: relative;
   width: 281px;
-}
-
-.mobile-privacy-policyu95tabsm .x2023-orchid-7 {
-  color: var(--white);
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 82px;
 }
 
 .mobile-privacy-policyu95tabsm .apps-2 {
@@ -947,20 +1007,17 @@
   width: 75px;
 }
 
-.mobile-privacy-policyu95tabsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
+.mobile-privacy-policyu95tabsm .vector-2 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
 }
 
-.mobile-privacy-policyu95tabsm .social-link-1 {
+.mobile-privacy-policyu95tabsm .social-link-reddit-1 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;

@@ -1,0 +1,2612 @@
+/* screen - genai-all-breakpoints */
+
+.genai-all-breakpoints {
+  align-items: center;
+  background-color: #121212;
+  display: flex;
+  flex-direction: column;
+  gap: 240px;
+  min-width: 1440px;
+  position: relative;
+}
+
+.genai-all-breakpoints .ellipses {
+  height: 5323px;
+  left: calc(50.00% - 894px);
+  position: absolute;
+  top: -80px;
+  width: 1789px;
+}
+
+.genai-all-breakpoints .ellipse-container {
+  align-items: flex-start;
+  display: flex;
+  gap: 8px;
+  height: 1541px;
+  left: 230px;
+  min-width: 1558px;
+  position: absolute;
+  top: 3678px;
+}
+
+.genai-all-breakpoints .ellipse-32 {
+  align-self: flex-end;
+  background-color: var(--black-2);
+  border-radius: 190px;
+  height: 380px;
+  transform: rotate(180.00deg);
+  width: 380px;
+}
+
+.genai-all-breakpoints .ellipse-35 {
+  background-color: var(--black-2);
+  border-radius: 585px;
+  height: 1170px;
+  transform: rotate(90.00deg);
+  width: 1170px;
+}
+
+.genai-all-breakpoints .flex-row {
+  gap: 157px;
+  height: 3119px;
+  left: 0;
+  min-width: 1786px;
+  position: absolute;
+  top: 0;
+}
+
+.genai-all-breakpoints .flex-col {
+  flex-direction: column;
+  gap: 1004px;
+  min-height: 2662px;
+  width: 912px;
+}
+
+.genai-all-breakpoints .ellipse-container-1 {
+  height: 775px;
+  position: relative;
+  width: 912px;
+}
+
+.genai-all-breakpoints .ellipse-29 {
+  background-color: var(--cod-gray);
+  border-radius: 155px;
+  height: 310px;
+  left: 602px;
+  position: absolute;
+  top: 465px;
+  width: 310px;
+}
+
+.genai-all-breakpoints .ellipse-37 {
+  background-color: var(--black-2);
+  border-radius: 441.5px;
+  height: 883px;
+  margin-left: 0.5px;
+  transform: rotate(180.00deg);
+  width: 883px;
+}
+
+.genai-all-breakpoints .ellipse-container-2 {
+  align-items: flex-start;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  min-height: 2814px;
+  width: 718px;
+}
+
+.genai-all-breakpoints .ellipse-30 {
+  background-color: var(--cod-gray);
+  border-radius: 100px;
+  height: 200px;
+  margin-left: 59.5px;
+  width: 200px;
+}
+
+.genai-all-breakpoints .ellipse-34 {
+  align-self: flex-end;
+  background-color: var(--black-2);
+  border-radius: 306.5px;
+  height: 613px;
+  margin-top: 711px;
+  width: 613px;
+}
+
+.genai-all-breakpoints .ellipse-33 {
+  background-color: var(--black-2);
+  border-radius: 260px;
+  height: 520px;
+  margin-top: 770px;
+  transform: rotate(180.00deg);
+  width: 520px;
+}
+
+.genai-all-breakpoints .desktop-home-logo-2 {
+  flex: 0 0 auto;
+}
+
+.genai-all-breakpoints .desktop-header-top-nav {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 48px;
+  height: 14px;
+  justify-content: center;
+  padding: 0px 48px;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-button-top-nav {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+}
+
+.genai-all-breakpoints .build {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .vpn {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .vpn-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .desktop-button-header {
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 240px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  padding: 17px 24px;
+}
+
+.genai-all-breakpoints .hero-2 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 72px;
+  max-width: 1800px;
+  min-width: 880px;
+  padding: 0px 200px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .orchid_-gen-ai_-hero-1-2 {
+  height: 455px;
+  object-fit: cover;
+  position: relative;
+  width: 900px;
+}
+
+.genai-all-breakpoints .header-3 {
+  align-items: center;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 855px;
+}
+
+.genai-all-breakpoints .one-interface-dozen-2 {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.genai-all-breakpoints .span-4 {
+  letter-spacing: 0.31px;
+}
+
+.genai-all-breakpoints .line-10-4 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.genai-all-breakpoints .intro-copy-13 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+  text-align: center;
+}
+
+.genai-all-breakpoints .button-2 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 60px 0px 0px;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-button-standard {
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 48px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px 80px;
+}
+
+.genai-all-breakpoints .feature {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  padding: 0px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .title {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .desktop-header-section-full-3 {
+  align-items: flex-start;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .desktop-caption-section-1 {
+  justify-content: center;
+}
+
+.genai-all-breakpoints .line-2 {
+  height: 1px;
+  width: 550px;
+}
+
+.genai-all-breakpoints .caption-1 {
+  text-align: center;
+}
+
+.genai-all-breakpoints .desktop-headline-section-3 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.genai-all-breakpoints .two-color-headline-3 {
+  color: var(--aquamarine);
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .features {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 45px 48px;
+  justify-content: center;
+  padding: 48px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .icon-card-large {
+  height: 120px;
+  position: relative;
+  width: 120px;
+}
+
+.genai-all-breakpoints .line-3 {
+  height: 367px;
+  width: 1px;
+}
+
+.genai-all-breakpoints .ct-as {
+  display: flex;
+  height: 176px;
+  justify-content: center;
+  position: relative;
+  width: 801px;
+}
+
+.genai-all-breakpoints .frame-489 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 80px;
+  height: 176px;
+  justify-content: center;
+  position: relative;
+  width: 800px;
+}
+
+.genai-all-breakpoints .x-cta-button {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 96px 0px 0px;
+  position: relative;
+}
+
+.genai-all-breakpoints .learn-more-2 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.genai-all-breakpoints .title-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .line-10-5 {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.genai-all-breakpoints .desktop-headline-section-4 {
+  align-items: flex-start;
+  display: inline-flex;
+}
+
+.genai-all-breakpoints .two-color-headline-4 {
+  color: transparent;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .span-5 {
+  letter-spacing: 0.32px;
+}
+
+.genai-all-breakpoints .cards-4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .cards-item-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--black-2);
+  border: 1px solid;
+  border-color: var(--true-v);
+  border-radius: 16px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  overflow: hidden;
+  padding: 24px 40px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .intro-copy-14 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 500;
+  line-height: 34.7px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.genai-all-breakpoints .line-8-2 {
+  align-self: stretch;
+  height: 2px;
+  margin-left: -1.00px;
+  margin-right: -1.00px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .intro-copy-15 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 28.0px;
+  position: relative;
+}
+
+.genai-all-breakpoints .intro-copy-16 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: var(--dull-lavender-2);
+  cursor: pointer;
+  display: -webkit-box;
+  font-weight: 700;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.genai-all-breakpoints .span-6 {
+  letter-spacing: 0.08px;
+}
+
+.genai-all-breakpoints .span1-9 {
+  letter-spacing: 0.08px;
+  text-decoration: underline;
+}
+
+.genai-all-breakpoints .models2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  padding: 0px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .desktop-header-section-full-4 {
+  align-items: center;
+  align-self: stretch;
+  width: 100%;
+}
+
+.genai-all-breakpoints .line-9-1 {
+  height: 1px;
+  margin-left: -67.50px;
+  object-fit: cover;
+  position: relative;
+  width: 550px;
+}
+
+.genai-all-breakpoints .line-10-6 {
+  margin-right: -67.50px;
+  width: 550px;
+}
+
+.genai-all-breakpoints .two-color-headline-5 {
+  color: transparent;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .models-list-1 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  margin-left: -160.00px;
+  margin-right: -160.00px;
+  padding: 0px 160px;
+  position: relative;
+  width: 1440px;
+}
+
+.genai-all-breakpoints .copy-3 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .text-10 {
+  line-height: 28px;
+  margin-top: -1.00px;
+}
+
+.genai-all-breakpoints .span0-4 {
+  letter-spacing: 0.31px;
+  line-height: 34.7px;
+}
+
+.genai-all-breakpoints .span1-8 {
+  letter-spacing: 0.08px;
+  line-height: 28.0px;
+}
+
+.genai-all-breakpoints .text-11 {
+  color: var(--dull-lavender);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 28.0px;
+}
+
+.genai-all-breakpoints .copy-4 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-5 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-6 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-7 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-8 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-9 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-10 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .copy-11 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.genai-all-breakpoints .social-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  padding: 120px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .content-4 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 228px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .desktop-header-section-full-5 {
+  align-items: center;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .desktop-headline-section-5 {
+  align-items: flex-start;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.genai-all-breakpoints .two-color-headline-6 {
+  color: transparent;
+  text-align: center;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .copy-12 {
+  flex: 1;
+  flex-grow: 1;
+  justify-content: center;
+  width: 1280px;
+}
+
+.genai-all-breakpoints .intro-copy-17 {
+  color: var(--white);
+  font-weight: 400;
+  height: 72px;
+  line-height: 28.0px;
+  margin-left: 2px;
+  text-align: center;
+  width: 1281px;
+}
+
+.genai-all-breakpoints .links-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 58px;
+  justify-content: center;
+  position: relative;
+}
+
+.genai-all-breakpoints .whitepaper-link-2 {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.genai-all-breakpoints .whitepaper-icon-2 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.genai-all-breakpoints .overlap-group-2 {
+  height: 40px;
+  position: relative;
+  width: 41px;
+}
+
+.genai-all-breakpoints .ellipse-46-2 {
+  background-color: var(--aquamarine);
+  border-radius: 20px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.genai-all-breakpoints .twitter-x_logo-1-2 {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 41px;
+}
+
+.genai-all-breakpoints .about-orchid-2 {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 22.4px;
+  position: relative;
+  width: 231px;
+}
+
+.genai-all-breakpoints .desktopfooter {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--black);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+  padding: 80px 80px 160px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .logo-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.genai-all-breakpoints .x2023-orchid-8 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 676px;
+}
+
+.genai-all-breakpoints .hyperlinks-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .pp {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 180px;
+}
+
+.genai-all-breakpoints .x2023-orchid-9 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 180px;
+}
+
+.genai-all-breakpoints .pp-1 {
+  height: 22px;
+}
+
+.genai-all-breakpoints .x2023-orchid-10 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  white-space: nowrap;
+  width: 208px;
+}
+
+.genai-all-breakpoints .pp-2 {
+  height: 44px;
+}
+
+.genai-all-breakpoints .x2023-orchid-11 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 22.4px;
+  width: 208px;
+}
+
+.genai-all-breakpoints .apps-17 {
+  cursor: pointer;
+}
+
+.genai-all-breakpoints .link-2 {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 198px;
+}
+
+.genai-all-breakpoints .social-icons-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 24px 40px;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.genai-all-breakpoints .social-link-discord-2 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.genai-all-breakpoints .social-link-github-2 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.genai-all-breakpoints .github-2 {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.genai-all-breakpoints .social-link-reddit-2 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.genai-all-breakpoints .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 22px;
+  line-height: 22.4px;
+  width: 198px;
+}
+
+.genai-all-breakpoints .caption {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 22.0px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genai-all-breakpoints .copy {
+  display: flex;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-button {
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genai-all-breakpoints .desktop-header-section-full {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-headline-section {
+  flex: 0 0 auto;
+  padding: 0px 0px 24px;
+  position: relative;
+}
+
+.genai-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.genai-all-breakpoints .flex {
+  align-items: flex-start;
+  display: flex;
+}
+
+.genai-all-breakpoints .line {
+  object-fit: cover;
+  position: relative;
+}
+
+.genai-all-breakpoints .line-10 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.genai-all-breakpoints .pp-3 {
+  display: flex;
+  position: relative;
+  width: 208px;
+}
+
+.genai-all-breakpoints .text {
+  position: relative;
+  width: 1120px;
+}
+
+.genai-all-breakpoints .two-color-headline {
+  font-weight: 600;
+  line-height: 44.0px;
+  margin-top: -1.00px;
+  position: relative;
+}
+/* screen - genaiu95mobsm */
+
+.genaiu95mobsm {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  min-width: 360px;
+  position: relative;
+}
+
+.genaiu95mobsm .top-nav {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 88px;
+  justify-content: center;
+  padding: 32px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .orchid-icon {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
+  position: relative;
+  width: 28.47px;
+}
+
+.genaiu95mobsm .orchid-icon-1 {
+  height: 24px;
+  margin-left: 1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.genaiu95mobsm .vector {
+  height: 14px;
+  margin-right: 3px;
+  width: 18px;
+}
+
+.genaiu95mobsm .hero {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1800px;
+  min-width: 360px;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .orchid_-gen-ai_-hero-1 {
+  align-self: stretch;
+  height: 157.76px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .header {
+  align-items: center;
+  align-self: stretch;
+  background-color: transparent;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .one-interface-dozen {
+  align-self: stretch;
+  color: transparent;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.genaiu95mobsm .span0-1 {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-l);
+  letter-spacing: 0.10px;
+}
+
+.genaiu95mobsm .span1-2 {
+  letter-spacing: 0.10px;
+}
+
+.genaiu95mobsm .line-10 {
+  align-self: stretch;
+  width: 100%;
+}
+
+.genaiu95mobsm .intro-copy {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+  text-align: center;
+}
+
+.genaiu95mobsm .developers {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .frame-476 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 24px 0px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .mobile-button-hero-1 {
+  align-items: center;
+  align-self: stretch;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 60px;
+  cursor: pointer;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 16px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .learn-more {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95mobsm .genaiu95mobsm-item {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .line-9 {
+  margin-left: -6.50px;
+  width: 135px;
+}
+
+.genaiu95mobsm .discover {
+  text-align: center;
+}
+
+.genaiu95mobsm .line-10-1 {
+  height: 1px;
+  margin-right: -6.50px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
+}
+
+.genaiu95mobsm .mobile-headline-section {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .the-orchid-ecosystem {
+  color: var(--aquamarine);
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.genaiu95mobsm .cards {
+  align-items: center;
+  gap: 24px;
+  padding: 0px 12px;
+}
+
+.genaiu95mobsm .card-detail-mobile {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px 0px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .icon-card-small {
+  height: 80px;
+  position: relative;
+  width: 80px;
+}
+
+.genaiu95mobsm .text-2 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95mobsm .text-3 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95mobsm .text-4 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95mobsm .button {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0px 0px;
+  position: relative;
+}
+
+.genaiu95mobsm .mobile-button-hero {
+  align-items: center;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 60px;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 16px 80px;
+  position: relative;
+}
+
+.genaiu95mobsm .mobile-caption-section-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .line {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.genaiu95mobsm .mobile-headline-section-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-around;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .the-orchid-ecosystem-1 {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.genaiu95mobsm .span {
+  color: var(--white);
+}
+
+.genaiu95mobsm .span1 {
+  color: var(--aquamarine);
+}
+
+.genaiu95mobsm .cards-1 {
+  align-items: center;
+  gap: 16px;
+}
+
+.genaiu95mobsm .cards-item {
+  align-items: flex-start;
+  background-color: var(--black-2);
+  border: 1px solid;
+  border-color: var(--true-v);
+  border-radius: 16px;
+  gap: 16px;
+  overflow: hidden;
+  padding: 24px 24px 40px;
+}
+
+.genaiu95mobsm .intro-copy-1 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.genaiu95mobsm .line-8 {
+  align-self: stretch;
+  margin-left: -0.50px;
+  margin-right: -0.50px;
+  width: 100%;
+}
+
+.genaiu95mobsm .intro-copy-2 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.genaiu95mobsm .intro-copy-3 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  align-self: stretch;
+  color: var(--dull-lavender-2);
+  cursor: pointer;
+  display: -webkit-box;
+  font-weight: 700;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.genaiu95mobsm .intro-copy-4 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: var(--dull-lavender-2);
+  cursor: pointer;
+  display: -webkit-box;
+  font-weight: 700;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.genaiu95mobsm .intro-copy-5 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.genaiu95mobsm .span-1 {
+  font-weight: 300;
+}
+
+.genaiu95mobsm .span1-3 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.genaiu95mobsm .models {
+  padding: 0px 24px;
+}
+
+.genaiu95mobsm .desktop-header-section-full {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .desktop-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .caption {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95mobsm .desktop-headline-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 0px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .two-color-headline {
+  color: transparent;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95mobsm .models-list {
+  padding: 0px 12px;
+}
+
+.genaiu95mobsm .copy {
+  align-items: flex-start;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.genaiu95mobsm .text {
+  line-height: 16px;
+  margin-top: -1.00px;
+}
+
+.genaiu95mobsm .span0 {
+  letter-spacing: 0.10px;
+  line-height: 19.8px;
+}
+
+.genaiu95mobsm .span1-1 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+}
+
+.genaiu95mobsm .text-1 {
+  color: var(--dull-lavender);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.genaiu95mobsm .social {
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 24px;
+}
+
+.genaiu95mobsm .content {
+  align-items: center;
+}
+
+.genaiu95mobsm .desktop-header-section-full-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .desktop-headline-section-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 0px 8px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .two-color-headline-1 {
+  color: transparent;
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+}
+
+.genaiu95mobsm .copy-1 {
+  height: 59px;
+  justify-content: center;
+}
+
+.genaiu95mobsm .intro-copy-6 {
+  color: var(--white);
+  font-weight: 300;
+  height: 72px;
+  line-height: 18.0px;
+  margin-left: 16px;
+  text-align: center;
+  width: 312px;
+}
+
+.genaiu95mobsm .links {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 58px;
+  justify-content: center;
+  position: relative;
+}
+
+.genaiu95mobsm .whitepaper-link {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.genaiu95mobsm .overlap-group {
+  height: 40px;
+  position: relative;
+  width: 41px;
+}
+
+.genaiu95mobsm .ellipse-46 {
+  background-color: var(--aquamarine);
+  border-radius: 20px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.genaiu95mobsm .twitter-x_logo-1 {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 41px;
+}
+
+.genaiu95mobsm .about-orchid {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 24px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95mobsm .content-1 {
+  align-items: flex-start;
+}
+
+.genaiu95mobsm .logo {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  margin-right: -39.00px;
+  position: relative;
+}
+
+.genaiu95mobsm .desktop-home-logo {
+  cursor: pointer;
+  height: 36px;
+  position: relative;
+}
+
+.genaiu95mobsm .x2023-orchid {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.genaiu95mobsm .x2023-orchid-1 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+}
+
+.genaiu95mobsm .hyperlinks {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .frame-532-item {
+  display: flex;
+  height: 22px;
+  margin-right: -21.00px;
+  position: relative;
+  width: 281px;
+}
+
+.genaiu95mobsm .x2023-orchid-2 {
+  color: var(--white);
+  cursor: pointer;
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 132px;
+}
+
+.genaiu95mobsm .link {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  margin-right: -21.00px;
+  position: relative;
+  width: 281px;
+}
+
+.genaiu95mobsm .x2023-orchid-3 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 700;
+  line-height: 24px;
+  white-space: nowrap;
+  width: 82px;
+}
+
+.genaiu95mobsm .apps {
+  width: 102px;
+}
+
+.genaiu95mobsm .apps-1 {
+  width: 132px;
+}
+
+.genaiu95mobsm .apps-2 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.genaiu95mobsm .apps-3 {
+  width: 85px;
+}
+
+.genaiu95mobsm .apps-4 {
+  width: 122px;
+}
+
+.genaiu95mobsm .apps-5 {
+  width: 76px;
+}
+
+.genaiu95mobsm .apps-6 {
+  width: 42px;
+}
+
+.genaiu95mobsm .apps-7 {
+  width: 75px;
+}
+
+.genaiu95mobsm .social-icons {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: space-between;
+  padding: 24px 0px 0px;
+}
+
+.genaiu95mobsm .social-link-twitter {
+  background-color: var(--aquamarine);
+  display: flex;
+}
+
+.genaiu95mobsm .social-link-discord {
+  align-items: center;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.genaiu95mobsm .vector-1 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.genaiu95mobsm .social-link-github {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.genaiu95mobsm .github {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.genaiu95mobsm .social-link-facebook {
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.genaiu95mobsm .social-link-reddit {
+  background-image: url(../img/combined-shape-21@2x.png);
+  background-size: 100% 100%;
+}
+
+.genaiu95mobsm .apps-8 {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.genaiu95mobsm .cards-2 {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .content-2 {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .copy-2 {
+  align-self: stretch;
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .discover-2 {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95mobsm .line-1 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.genaiu95mobsm .mobile-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .models-1 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .social-1 {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95mobsm .social-link {
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.genaiu95mobsm .text-5 {
+  align-self: stretch;
+  position: relative;
+}
+/* screen - genaiu95tabsm */
+
+.genaiu95tabsm {
+  align-items: center;
+  background-color: var(--woodsmoke);
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  max-width: 1440px;
+  min-width: 744px;
+  position: relative;
+}
+
+.genaiu95tabsm .top-nav-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  gap: 10px;
+  height: 88px;
+  justify-content: center;
+  padding: 32px 60px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .orchid-icon-3 {
+  height: 24px;
+  margin-left: 1.1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.genaiu95tabsm .vector-2 {
+  height: 14px;
+  margin-right: 2.9px;
+  width: 18px;
+}
+
+.genaiu95tabsm .hero-1 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 60px;
+  max-width: 1800px;
+  min-width: 360px;
+  padding: 0px 80px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .orchid_-gen-ai_-hero-1-1 {
+  align-self: stretch;
+  height: 295.29px;
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .header-1 {
+  gap: 40px;
+}
+
+.genaiu95tabsm .one-interface-dozen-1 {
+  color: transparent;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  width: 580px;
+}
+
+.genaiu95tabsm .span0-3 {
+  color: var(--white);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-l);
+  letter-spacing: 0.10px;
+}
+
+.genaiu95tabsm .span1-6 {
+  letter-spacing: 0.10px;
+}
+
+.genaiu95tabsm .line-10-2 {
+  width: 580px;
+}
+
+.genaiu95tabsm .intro-copy-7 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+  text-align: center;
+}
+
+.genaiu95tabsm .developers-1 {
+  align-self: stretch;
+  gap: 24px;
+  padding: 0px 40px;
+  width: 100%;
+}
+
+.genaiu95tabsm .frame-476-1 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0px 0px;
+  position: relative;
+  width: 335px;
+}
+
+.genaiu95tabsm .mobile-button-hero-3 {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.genaiu95tabsm .learn-more-1 {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95tabsm .oxt {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .mobile-2 {
+  display: inline-flex;
+}
+
+.genaiu95tabsm .line-1 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+  width: 135px;
+}
+
+.genaiu95tabsm .discover-2 {
+  text-align: center;
+}
+
+.genaiu95tabsm .mobile-headline-section-2 {
+  gap: 10px;
+  justify-content: center;
+}
+
+.genaiu95tabsm .the-orchid-ecosystem-2 {
+  color: var(--aquamarine);
+  text-align: center;
+}
+
+.genaiu95tabsm .cards-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  flex-wrap: wrap;
+  gap: 60px 60px;
+  justify-content: center;
+  padding: 0px 40px;
+  width: 100%;
+}
+
+.genaiu95tabsm .text-7 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95tabsm .text-8 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95tabsm .text-9 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.genaiu95tabsm .button-1 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0px 0px;
+  position: relative;
+}
+
+.genaiu95tabsm .mobile-button-hero-2 {
+  display: inline-flex;
+}
+
+.genaiu95tabsm .feature-overview {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .mobile-3 {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.genaiu95tabsm .line-10-3 {
+  flex: 1;
+  flex-grow: 1;
+}
+
+.genaiu95tabsm .mobile-headline-section-3 {
+  justify-content: space-around;
+}
+
+.genaiu95tabsm .the-orchid-ecosystem-3 {
+  color: transparent;
+}
+
+.genaiu95tabsm .span-2 {
+  color: var(--white);
+}
+
+.genaiu95tabsm .span1-4 {
+  color: var(--aquamarine);
+}
+
+.genaiu95tabsm .cards-3 {
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  width: 664px;
+}
+
+.genaiu95tabsm .cards-item-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: var(--black-2);
+  border: 1px solid;
+  border-color: var(--true-v);
+  border-radius: 16px;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  padding: 24px 24px 40px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .intro-copy-8 {
+  color: var(--white);
+  flex: 1;
+  font-weight: 600;
+  line-height: 19.8px;
+  margin-top: -1.00px;
+  position: relative;
+}
+
+.genaiu95tabsm .intro-copy-9 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.genaiu95tabsm .intro-copy-10 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  align-self: stretch;
+  color: var(--dull-lavender-2);
+  cursor: pointer;
+  display: -webkit-box;
+  font-weight: 700;
+  line-height: 24px;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+}
+
+.genaiu95tabsm .intro-copy-11 {
+  align-self: stretch;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 18.0px;
+  position: relative;
+}
+
+.genaiu95tabsm .span-3 {
+  font-weight: 300;
+}
+
+.genaiu95tabsm .span1-7 {
+  font-weight: 300;
+  text-decoration: underline;
+}
+
+.genaiu95tabsm .models1 {
+  align-items: center;
+  gap: 40px;
+  padding: 0px 80px;
+}
+
+.genaiu95tabsm .header-2 {
+  gap: 24px;
+  padding: 0px 24px;
+}
+
+.genaiu95tabsm .mobile-4 {
+  align-self: stretch;
+  display: flex;
+  width: 100%;
+}
+
+.genaiu95tabsm .the-orchid-ecosystem-4 {
+  color: transparent;
+  text-align: center;
+}
+
+.genaiu95tabsm .models1-item {
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.genaiu95tabsm .text-5 {
+  line-height: 16px;
+  margin-top: -1.00px;
+}
+
+.genaiu95tabsm .span0-2 {
+  letter-spacing: 0.10px;
+  line-height: 19.8px;
+}
+
+.genaiu95tabsm .span1-5 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 18.0px;
+}
+
+.genaiu95tabsm .text-6 {
+  color: var(--dull-lavender);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.genaiu95tabsm .developers-2 {
+  padding: 60px 80px;
+  width: 744px;
+}
+
+.genaiu95tabsm .content-2 {
+  align-items: center;
+}
+
+.genaiu95tabsm .desktop-header-section-full-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .desktop-headline-section-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 0px 0px 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .two-color-headline-2 {
+  color: transparent;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95tabsm .copy-2 {
+  align-self: stretch;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .intro-copy-12 {
+  color: var(--white);
+  font-weight: 300;
+  height: 60px;
+  line-height: 18.0px;
+  text-align: center;
+  width: 584px;
+}
+
+.genaiu95tabsm .links-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 58px;
+  justify-content: center;
+  position: relative;
+}
+
+.genaiu95tabsm .whitepaper-link-1 {
+  align-items: center;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+}
+
+.genaiu95tabsm .whitepaper-icon-1 {
+  height: 40px;
+  position: relative;
+  width: 40px;
+}
+
+.genaiu95tabsm .overlap-group-1 {
+  height: 40px;
+  position: relative;
+  width: 41px;
+}
+
+.genaiu95tabsm .ellipse-46-1 {
+  background-color: var(--aquamarine);
+  border-radius: 20px;
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 40px;
+}
+
+.genaiu95tabsm .twitter-x_logo-1-1 {
+  height: 40px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 41px;
+}
+
+.genaiu95tabsm .about-orchid-1 {
+  color: var(--aquamarine);
+  font-weight: 700;
+  line-height: 16.5px;
+  position: relative;
+  width: 231px;
+}
+
+.genaiu95tabsm .content-3 {
+  align-items: flex-start;
+}
+
+.genaiu95tabsm .logo-1 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+}
+
+.genaiu95tabsm .x2023-orchid-4 {
+  color: var(--white);
+  font-weight: 300;
+  line-height: 19.6px;
+  position: relative;
+  width: 299px;
+}
+
+.genaiu95tabsm .frame-532-item-1 {
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.genaiu95tabsm .link-1 {
+  cursor: pointer;
+  display: flex;
+  height: 22px;
+  position: relative;
+  width: 281px;
+}
+
+.genaiu95tabsm .apps-8 {
+  width: 102px;
+}
+
+.genaiu95tabsm .apps-9 {
+  width: 132px;
+}
+
+.genaiu95tabsm .apps-10 {
+  cursor: pointer;
+  width: 113px;
+}
+
+.genaiu95tabsm .apps-11 {
+  width: 85px;
+}
+
+.genaiu95tabsm .apps-12 {
+  width: 122px;
+}
+
+.genaiu95tabsm .apps-13 {
+  width: 76px;
+}
+
+.genaiu95tabsm .apps-14 {
+  width: 42px;
+}
+
+.genaiu95tabsm .apps-15 {
+  width: 75px;
+}
+
+.genaiu95tabsm .vector-3 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.genaiu95tabsm .social-link-reddit-1 {
+  background-image: url(../img/combined-shape-23@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
+  position: relative;
+  width: 32px;
+}
+
+.genaiu95tabsm .apps {
+  color: var(--white);
+  font-weight: 700;
+  height: 24px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.genaiu95tabsm .cards {
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+.genaiu95tabsm .content {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .developers {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+}
+
+.genaiu95tabsm .discover {
+  color: var(--white);
+  font-weight: 600;
+  line-height: 13.2px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.genaiu95tabsm .header {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .line-10 {
+  height: 1px;
+  object-fit: cover;
+  position: relative;
+}
+
+.genaiu95tabsm .mobile {
+  align-items: center;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+}
+
+.genaiu95tabsm .mobile-button-hero {
+  align-items: center;
+  background-color: var(--log-cabin);
+  border: 1px solid;
+  border-color: var(--aquamarine);
+  border-radius: 60px;
+  cursor: pointer;
+  flex: 0 0 auto;
+  justify-content: center;
+  padding: 16px 80px;
+  position: relative;
+}
+
+.genaiu95tabsm .mobile-caption-section {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  gap: 8px;
+  height: 16px;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .mobile-headline-section {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .models1-1 {
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.genaiu95tabsm .text {
+  align-self: stretch;
+  position: relative;
+}
+
+.genaiu95tabsm .the-orchid-ecosystem {
+  flex: 1;
+  font-weight: 600;
+  line-height: 25.2px;
+  margin-top: -1.00px;
+  position: relative;
+}
+@media screen and (max-width: 743px) {
+  .screen.genaiu95tabsm { 
+    display: none;
+   }
+  .screen.genai-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 744px) and (max-width: 1439px) {
+  .screen.genaiu95mobsm { 
+    display: none;
+   }
+  .screen.genai-all-breakpoints { 
+    display: none;
+   }
+}
+@media screen and (min-width: 1440px) {
+  .screen.genaiu95mobsm { 
+    display: none;
+   }
+  .screen.genaiu95tabsm { 
+    display: none;
+   }
+}

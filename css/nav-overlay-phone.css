@@ -19,13 +19,19 @@
   padding: 32px 40px 60px 24px;
 }
 
+.nav-overlay-phone .vector {
+  height: 16px;
+  margin-left: 0;
+  margin-top: 0;
+  width: 16px;
+}
+
 .nav-overlay-phone .link {
   align-items: center;
   cursor: pointer;
   display: flex;
   flex: 0 0 auto;
   gap: 24px;
-  overflow: hidden;
   padding: 16px 48px;
   position: relative;
   width: 320px;
@@ -39,18 +45,16 @@
 
 .nav-overlay-phone .vpn {
   color: var(--white);
+  flex: 1;
   font-weight: 700;
   line-height: 22.4px;
-  margin-right: -48.00px;
   position: relative;
-  width: 281px;
 }
 
 .nav-overlay-phone .oxt {
   color: var(--white);
+  flex: 1;
   font-weight: 700;
   line-height: 22.4px;
-  margin-right: -48.00px;
   position: relative;
-  width: 281px;
 }

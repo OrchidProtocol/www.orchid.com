@@ -108,8 +108,39 @@
 }
 
 .about-all-breakpoints .desktop-home-logo-2 {
-  cursor: pointer;
   flex: 0 0 auto;
+}
+
+.about-all-breakpoints .desktop-header-top-nav {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 48px;
+  height: 14px;
+  justify-content: center;
+  padding: 0px 48px;
+  position: relative;
+}
+
+.about-all-breakpoints .desktop-button-top-nav {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 57px;
+}
+
+.about-all-breakpoints .build {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .about-all-breakpoints .desktop-button-top-nav-1 {
@@ -209,10 +240,13 @@
 }
 
 .about-all-breakpoints .frame-491 {
+  align-items: flex-start;
   align-self: stretch;
   display: flex;
+  flex-direction: column;
   gap: 40px;
   height: 392px;
+  position: relative;
   width: 100%;
 }
 
@@ -537,12 +571,6 @@
   width: 100%;
 }
 
-.about-all-breakpoints .frame-42 {
-  display: inline-flex;
-  flex: 0 0 auto;
-  gap: 24px;
-}
-
 .about-all-breakpoints .pp {
   display: flex;
   height: 22px;
@@ -608,10 +636,41 @@
   position: relative;
 }
 
-.about-all-breakpoints .social-link-github-2 {
+.about-all-breakpoints .social-link-discord-4 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
   cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.about-all-breakpoints .social-link-github-2 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.about-all-breakpoints .github-2 {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.about-all-breakpoints .social-link-reddit-2 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
   position: relative;
   width: 32px;
 }
@@ -659,13 +718,8 @@
 }
 
 .about-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
-  position: relative;
-}
-
-.about-all-breakpoints .frame {
-  align-items: flex-start;
-  flex-direction: column;
   position: relative;
 }
 
@@ -705,22 +759,40 @@
   position: relative;
 }
 
-.aboutu95mobsm .mobile-nav-header {
+.aboutu95mobsm .top-nav {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px;
+  justify-content: center;
+  padding: 32px 24px;
   position: relative;
   width: 100%;
 }
 
 .aboutu95mobsm .orchid-icon {
+  align-items: center;
   cursor: pointer;
+  display: flex;
   height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
   position: relative;
   width: 28.47px;
+}
+
+.aboutu95mobsm .orchid-icon-1 {
+  height: 24px;
+  margin-left: 1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.aboutu95mobsm .vector {
+  height: 14px;
+  margin-right: 3px;
+  width: 18px;
 }
 
 .aboutu95mobsm .hero {
@@ -964,8 +1036,6 @@
 }
 
 .aboutu95mobsm .social-link-discord {
-  height: 32px;
-  position: relative;
   width: 31px;
 }
 
@@ -1053,6 +1123,17 @@
   cursor: pointer;
 }
 
+.aboutu95mobsm .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .aboutu95mobsm .logo-1 {
   align-items: flex-start;
   display: inline-flex;
@@ -1064,6 +1145,7 @@
 }
 
 .aboutu95mobsm .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -1091,18 +1173,6 @@
   flex: 0 0 auto;
   flex-direction: column;
   gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
-.aboutu95mobsm .frame-532 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
   position: relative;
   width: 100%;
 }
@@ -1189,18 +1259,50 @@
   width: 100%;
 }
 
-.aboutu95mobsm .social-link-github {
+.aboutu95mobsm .social-link-twitter {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
   cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
-  position: relative;
+  display: flex;
+  width: 32px;
+}
+
+.aboutu95mobsm .vector-1 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.aboutu95mobsm .social-link-github {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 32px;
+}
+
+.aboutu95mobsm .github {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.aboutu95mobsm .social-link-facebook {
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
   width: 32px;
 }
 
 .aboutu95mobsm .social-link-reddit {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
   cursor: pointer;
-  height: 32px;
-  position: relative;
   width: 32px;
 }
 
@@ -1235,6 +1337,11 @@
   position: relative;
   width: 100%;
 }
+
+.aboutu95mobsm .social-link {
+  height: 32px;
+  position: relative;
+}
 /* screen - aboutu95tabsm */
 
 .aboutu95tabsm {
@@ -1247,15 +1354,29 @@
   position: relative;
 }
 
-.aboutu95tabsm .mobile-nav-header-1 {
+.aboutu95tabsm .top-nav-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px 72px;
+  justify-content: center;
+  padding: 32px 60px;
   position: relative;
   width: 100%;
+}
+
+.aboutu95tabsm .orchid-icon-3 {
+  height: 24px;
+  margin-left: 1.1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.aboutu95tabsm .vector-2 {
+  height: 14px;
+  margin-right: 2.9px;
+  width: 18px;
 }
 
 .aboutu95tabsm .hero-1 {
@@ -1483,9 +1604,7 @@
   position: relative;
 }
 
-.aboutu95tabsm .social-link-discord-1 {
-  height: 32px;
-  position: relative;
+.aboutu95tabsm .social-link-discord-2 {
   width: 31px;
 }
 
@@ -1571,17 +1690,23 @@
   justify-content: flex-end;
 }
 
+.aboutu95tabsm .content-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .aboutu95tabsm .logo-3 {
   align-items: flex-start;
   display: inline-flex;
   flex: 0 0 auto;
   flex-direction: column;
   gap: 12px;
-  position: relative;
-}
-
-.aboutu95tabsm .desktop-home-logo-1 {
-  height: 36px;
   position: relative;
 }
 
@@ -1593,40 +1718,11 @@
   width: 299px;
 }
 
-.aboutu95tabsm .x2023-orchid-5 {
-  align-self: stretch;
-  color: var(--white);
-  font-weight: 300;
-  line-height: 19.6px;
-  position: relative;
-}
-
-.aboutu95tabsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
-}
-
 .aboutu95tabsm .frame-532-item-1 {
   display: flex;
   height: 22px;
   position: relative;
   width: 281px;
-}
-
-.aboutu95tabsm .x2023-orchid-6 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 132px;
 }
 
 .aboutu95tabsm .link-1 {
@@ -1635,15 +1731,6 @@
   height: 22px;
   position: relative;
   width: 281px;
-}
-
-.aboutu95tabsm .x2023-orchid-7 {
-  color: var(--white);
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 82px;
 }
 
 .aboutu95tabsm .apps-8 {
@@ -1679,20 +1766,27 @@
   width: 75px;
 }
 
-.aboutu95tabsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
+.aboutu95tabsm .social-link-discord-3 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
+  cursor: pointer;
   display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
+  justify-content: center;
+  width: 32px;
 }
 
-.aboutu95tabsm .social-link-1 {
+.aboutu95tabsm .vector-3 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
+.aboutu95tabsm .social-link-reddit-1 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;
@@ -1726,6 +1820,11 @@
   display: inline-flex;
   flex: 0 0 auto;
   padding: 16px 80px;
+  position: relative;
+}
+
+.aboutu95tabsm .social-link-discord {
+  height: 32px;
   position: relative;
 }
 @media screen and (max-width: 743px) {

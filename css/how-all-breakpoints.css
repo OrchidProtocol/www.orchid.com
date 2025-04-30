@@ -114,8 +114,39 @@
 }
 
 .how-all-breakpoints .desktop-home-logo-2 {
-  cursor: pointer;
   flex: 0 0 auto;
+}
+
+.how-all-breakpoints .desktop-header-top-nav {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 60px 48px;
+  height: 14px;
+  justify-content: center;
+  padding: 0px 48px;
+  position: relative;
+}
+
+.how-all-breakpoints .desktop-button-top-nav {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  position: relative;
+  width: 57px;
+}
+
+.how-all-breakpoints .build {
+  color: var(--white);
+  font-weight: 700;
+  line-height: 14.4px;
+  margin-top: -1.00px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
 }
 
 .how-all-breakpoints .desktop-button-top-nav-1 {
@@ -334,10 +365,12 @@
 }
 
 .how-all-breakpoints .info-card-4 {
+  align-items: flex-start;
   background-color: var(--black-2);
   border-color: var(--true-v-2);
   border-radius: 16px;
   gap: 24px;
+  overflow: hidden;
   padding: 24px 40px 40px;
   width: 1280px;
 }
@@ -473,6 +506,7 @@
 }
 
 .how-all-breakpoints .info-card-6 {
+  align-items: center;
   background-color: var(--black);
   border-color: var(--aquamarine);
   border-radius: 24px;
@@ -519,6 +553,7 @@
 }
 
 .how-all-breakpoints .info-card-5 {
+  align-items: center;
   background-color: var(--black);
   border-color: var(--aquamarine);
   border-radius: 24px;
@@ -557,6 +592,7 @@
 }
 
 .how-all-breakpoints .info-card-7 {
+  align-items: center;
   background-color: var(--black);
   border-color: var(--aquamarine);
   border-radius: 24px;
@@ -642,15 +678,6 @@
   width: 100%;
 }
 
-.how-all-breakpoints .frame-42 {
-  align-items: flex-start;
-  display: inline-flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 24px;
-  position: relative;
-}
-
 .how-all-breakpoints .pp {
   display: flex;
   height: 22px;
@@ -716,10 +743,41 @@
   position: relative;
 }
 
-.how-all-breakpoints .social-link-github-2 {
+.how-all-breakpoints .social-link-discord-2 {
+  align-items: center;
+  background-color: var(--aquamarine);
+  border-radius: 40px;
   cursor: pointer;
-  height: 33px;
-  margin-bottom: -1.00px;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.how-all-breakpoints .social-link-github-2 {
+  align-items: center;
+  border-radius: 40px;
+  cursor: pointer;
+  display: flex;
+  height: 32px;
+  justify-content: center;
+  position: relative;
+  width: 32px;
+}
+
+.how-all-breakpoints .github-2 {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.how-all-breakpoints .social-link-reddit-2 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  height: 32px;
   position: relative;
   width: 32px;
 }
@@ -756,6 +814,7 @@
 }
 
 .how-all-breakpoints .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -772,7 +831,6 @@
 }
 
 .how-all-breakpoints .info-card {
-  align-items: center;
   border: 1px solid;
   display: flex;
   flex: 0 0 auto;
@@ -817,22 +875,40 @@
   position: relative;
 }
 
-.howu95mobsm .mobile-nav-header {
+.howu95mobsm .top-nav {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px;
+  justify-content: center;
+  padding: 32px 24px;
   position: relative;
   width: 100%;
 }
 
 .howu95mobsm .orchid-icon {
+  align-items: center;
   cursor: pointer;
+  display: flex;
   height: 24px;
+  max-height: 24px;
+  max-width: 28.47px;
   position: relative;
   width: 28.47px;
+}
+
+.howu95mobsm .orchid-icon-1 {
+  height: 24px;
+  margin-left: 1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.howu95mobsm .vector {
+  height: 14px;
+  margin-right: 3px;
+  width: 18px;
 }
 
 .howu95mobsm .hero {
@@ -848,10 +924,13 @@
 }
 
 .howu95mobsm .frame-403 {
+  align-items: flex-start;
+  display: flex;
   flex: 1;
   flex-direction: column;
   flex-grow: 1;
   gap: 24px;
+  position: relative;
 }
 
 .howu95mobsm .title-1 {
@@ -1010,9 +1089,12 @@
 }
 
 .howu95mobsm .frame-57 {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   gap: 16px;
+  position: relative;
   width: 100%;
 }
 
@@ -1066,7 +1148,6 @@
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 16.5px;
-  text-decoration: underline;
 }
 
 .howu95mobsm .span-4 {
@@ -1222,10 +1303,13 @@
 }
 
 .howu95mobsm .frame-58 {
+  align-items: flex-start;
   align-self: stretch;
+  display: flex;
   flex: 0 0 auto;
   gap: 24px;
   justify-content: space-around;
+  position: relative;
   width: 100%;
 }
 
@@ -1303,6 +1387,17 @@
   position: relative;
 }
 
+.howu95mobsm .content {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
+}
+
 .howu95mobsm .logo {
   align-items: flex-start;
   display: inline-flex;
@@ -1314,6 +1409,7 @@
 }
 
 .howu95mobsm .desktop-home-logo {
+  cursor: pointer;
   height: 36px;
   position: relative;
 }
@@ -1342,15 +1438,6 @@
   flex-direction: column;
   gap: 40px;
   position: relative;
-  width: 100%;
-}
-
-.howu95mobsm .frame-532 {
-  align-self: stretch;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 32px;
-  padding: 24px 0px;
   width: 100%;
 }
 
@@ -1434,13 +1521,46 @@
   width: 100%;
 }
 
+.howu95mobsm .social-link-twitter {
+  background-color: var(--aquamarine);
+  display: flex;
+}
+
+.howu95mobsm .social-link-discord {
+  align-items: center;
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
+}
+
+.howu95mobsm .vector-1 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
+}
+
 .howu95mobsm .social-link-github {
-  height: 33px;
-  margin-bottom: -1.00px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.howu95mobsm .github {
+  height: 32px;
+  margin-top: 2px;
+  width: 32px;
+}
+
+.howu95mobsm .social-link-facebook {
+  background-color: var(--aquamarine);
+  display: flex;
+  justify-content: center;
 }
 
 .howu95mobsm .social-link-reddit {
-  height: 32px;
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
 }
 
 .howu95mobsm .apps-8 {
@@ -1475,23 +1595,6 @@
   width: fit-content;
 }
 
-.howu95mobsm .frame {
-  align-items: flex-start;
-  display: flex;
-  position: relative;
-}
-
-.howu95mobsm .learn-more-3 {
-  color: var(--white);
-  font-weight: 700;
-  line-height: 24px;
-  margin-top: -1.00px;
-  position: relative;
-  text-align: center;
-  white-space: nowrap;
-  width: fit-content;
-}
-
 .howu95mobsm .line {
   height: 1px;
   object-fit: cover;
@@ -1503,8 +1606,10 @@
   position: relative;
 }
 
-.howu95mobsm .social-link-1 {
+.howu95mobsm .social-link {
+  border-radius: 40px;
   cursor: pointer;
+  height: 32px;
   position: relative;
   width: 32px;
 }
@@ -1525,15 +1630,29 @@
   position: relative;
 }
 
-.howu95tabsm .mobile-nav-header-1 {
+.howu95tabsm .top-nav-1 {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
+  gap: 10px;
   height: 88px;
-  justify-content: space-between;
-  padding: 32px 72px;
+  justify-content: center;
+  padding: 32px 60px;
   position: relative;
   width: 100%;
+}
+
+.howu95tabsm .orchid-icon-3 {
+  height: 24px;
+  margin-left: 1.1px;
+  margin-top: 0;
+  width: 26.47px;
+}
+
+.howu95tabsm .vector-2 {
+  height: 14px;
+  margin-right: 2.9px;
+  width: 18px;
 }
 
 .howu95tabsm .hero-1 {
@@ -1679,16 +1798,6 @@
   position: relative;
 }
 
-.howu95tabsm .line-8-1 {
-  align-self: stretch;
-  height: 1px;
-  margin-left: -0.50px;
-  margin-right: -0.50px;
-  object-fit: cover;
-  position: relative;
-  width: 100%;
-}
-
 .howu95tabsm .intro-copy-12 {
   align-self: stretch;
   color: var(--white);
@@ -1723,7 +1832,6 @@
   color: var(--aquamarine);
   font-weight: 700;
   line-height: 16.5px;
-  text-decoration: underline;
 }
 
 .howu95tabsm .span-10 {
@@ -1907,8 +2015,29 @@
   line-height: 18.0px;
 }
 
+.howu95tabsm .button-1 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 80px 0px 0px;
+  position: relative;
+}
+
 .howu95tabsm .mobile-button-hero-3 {
   display: inline-flex;
+}
+
+.howu95tabsm .content-1 {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  width: 100%;
 }
 
 .howu95tabsm .logo-1 {
@@ -1920,36 +2049,12 @@
   position: relative;
 }
 
-.howu95tabsm .desktop-home-logo-1 {
-  height: 36px;
-  position: relative;
-}
-
 .howu95tabsm .x2023-orchid-4 {
   color: var(--white);
   font-weight: 300;
   line-height: 19.6px;
   position: relative;
   width: 299px;
-}
-
-.howu95tabsm .x2023-orchid-5 {
-  align-self: stretch;
-  color: var(--white);
-  font-weight: 300;
-  line-height: 19.6px;
-  position: relative;
-}
-
-.howu95tabsm .hyperlinks-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-direction: column;
-  gap: 40px;
-  position: relative;
-  width: 100%;
 }
 
 .howu95tabsm .frame-532-item-1 {
@@ -1959,29 +2064,10 @@
   width: 281px;
 }
 
-.howu95tabsm .x2023-orchid-6 {
-  color: var(--white);
-  cursor: pointer;
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 132px;
-}
-
 .howu95tabsm .link-3 {
   display: flex;
   height: 22px;
   width: 281px;
-}
-
-.howu95tabsm .x2023-orchid-7 {
-  color: var(--white);
-  flex: 1;
-  font-weight: 700;
-  line-height: 24px;
-  white-space: nowrap;
-  width: 82px;
 }
 
 .howu95tabsm .apps-8 {
@@ -2017,20 +2103,17 @@
   width: 75px;
 }
 
-.howu95tabsm .social-icons-1 {
-  align-items: flex-start;
-  align-self: stretch;
-  display: flex;
-  flex: 0 0 auto;
-  flex-wrap: wrap;
-  gap: 60px 60px;
-  justify-content: space-between;
-  padding: 24px 0px 0px;
-  position: relative;
-  width: 100%;
+.howu95tabsm .vector-3 {
+  height: 16px;
+  margin-left: -0.3px;
+  margin-top: 0;
+  width: 21px;
 }
 
-.howu95tabsm .social-link-1 {
+.howu95tabsm .social-link-reddit-1 {
+  background-image: url(../img/combined-shape@2x.png);
+  background-size: 100% 100%;
+  border-radius: 40px;
   cursor: pointer;
   height: 32px;
   position: relative;

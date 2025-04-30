@@ -13,6 +13,7 @@
   --white: #ffffff;
   --woodsmoke: #0f0f0f;
  
+  --font-size-120px: 120px;
   --font-size-12px: 12px;
   --font-size-17px: 17px;
   --font-size-23px: 23px;
@@ -27,6 +28,14 @@
  
   --font-family-figtree: "Figtree", Helvetica;
 }
+.desktopsuper-headline {
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-120px);
+  font-style: normal;
+  font-weight: 900;
+  letter-spacing: 2.4px;
+}
+
 .desktopheadline {
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-60px);
@@ -233,14 +242,6 @@
   font-weight: 700;
 }
 
-.figtree-bold-dull-lavender-20px {
-  color: var(--dull-lavender);
-  font-family: var(--font-family-figtree);
-  font-size: var(--font-size-xl);
-  font-style: normal;
-  font-weight: 700;
-}
-
 .figtree-extra-bold-white-60px {
   color: var(--white);
   font-family: var(--font-family-figtree);
@@ -249,16 +250,24 @@
   font-weight: 800;
 }
 
-.figtree-extra-bold-aquamarine-40px {
-  color: var(--aquamarine);
+.figtree-extra-bold-white-40px {
+  color: var(--white);
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxxl);
   font-style: normal;
   font-weight: 800;
 }
 
-.figtree-extra-bold-white-40px {
-  color: var(--white);
+.figtree-bold-dull-lavender-20px {
+  color: var(--dull-lavender);
+  font-family: var(--font-family-figtree);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.figtree-extra-bold-aquamarine-40px {
+  color: var(--aquamarine);
   font-family: var(--font-family-figtree);
   font-size: var(--font-size-xxxxl);
   font-style: normal;
